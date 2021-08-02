@@ -1,0 +1,35 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭──────────────────────────────ImplementationGuide-gatekeeper.json───────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.eu.fhir.gh
+canonical: http://hl7.eu/fhir/ig/gravitate-health
+version: 0.1.0
+name: GhImplementationGuide
+title: Gravitate Health FHIR Implementation Guide
+status: active
+publisher: Gravitate Health Project
+contact:
+  - name: Gravitate Health Project
+    telecom:
+      - system: url
+        value: https://www.gravitatehealth.eu/
+description: Gravitate Health is an EU project aiming to conduct a robust assessment of the Cancer Survivorship Passport (SurPass).
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.uv.ips: current
+parameters:
+  show-inherited-invariants: false
+copyrightYear: 2021+
+releaseLabel: CI Build
+
+FSHOnly: true
