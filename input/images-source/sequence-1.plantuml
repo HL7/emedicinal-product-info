@@ -1,9 +1,0 @@
-@startuml
-actor Clinician
-"Local System A" -> "PCSP Platform" : Treatment Summary
-opt
-   "Clinician" -> "PCSP Platform" : Complete and validate
-end
-"PCSP Platform" -> "PCSP Platform" : draft SCP
-"PCSP Platform" -> "Local System B" : SurPass w (draft) SCP
-@enduml
