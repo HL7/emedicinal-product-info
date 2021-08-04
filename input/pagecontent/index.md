@@ -63,39 +63,8 @@ Europe & Globally</span>
 
 ### Authors and Contributors
 
-<table>
-<thead>
-<tr class="header">
-<th>Roles</th>
-<th>Name</th>
-<th>Organization</th>
-<th>Contact</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Autore</td>
-<td>Giorgio Cangioli</td>
-<td>HL7 Europe</td>
-<td>giorgio.cangioli_at_gmail.com</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Contributor</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Contributor</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Roles | Name | Organization | Contact |
+|:--------|:-------|:--------|:--------|
+| Author   | Giorgio Cangioli | HL7 Europe | giorgio.cangioli_at_gmail.com |
+| Author   | Jens Kristian Villadsen | Trifork | jvi_at_trifork.com |
+{: rules="groups"}
