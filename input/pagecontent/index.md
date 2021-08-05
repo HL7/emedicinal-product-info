@@ -1,4 +1,4 @@
-## Overview
+### Overview
 This FHIR Implementation Guide demonstrates how to integrate patient health information from the International Patient Summary (IPS) with medicinal product information from regulatory approved electronic Product Information (ePI) documents.
 
 Together, the IPS and ePI will facilitate the creation of new digital platforms that give patients a more accessible way of acquiring trusted health and medicinal product Information.
@@ -62,7 +62,6 @@ IPS
 ISO IDMP
 
 Gravitate Health
-
 
 ### Authors and Contributors
 
