@@ -63,6 +63,14 @@ ISO IDMP
 
 Gravitate Health
 
+### Overly simplfied model
+
+{%include overview.svg%}
+
+__Note:__ Model is overly simplified
+
+
+
 ### Authors and Contributors
 
 | Roles | Name | Organization | Contact |

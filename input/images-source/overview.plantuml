@@ -1,0 +1,15 @@
+@startuml overview
+
+
+node "Data sources" {
+  bundle - [International Patient Summary - IPS]
+  documents - [EMA ePI Consultation]
+}
+
+node "Gravitate Health" {
+  [G-lens] --> documents
+  [G-lens] --> bundle
+}
+
+
+@enduml
