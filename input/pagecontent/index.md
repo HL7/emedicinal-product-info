@@ -65,7 +65,8 @@ Gravitate Health
 
 ### Overly simplfied model
 
-{%include overview.svg%}
+<div style="text-align: center;">{%include overview.svg%}</div>
+
 
 __Note:__ Model is overly simplified
 
