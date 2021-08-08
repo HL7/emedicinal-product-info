@@ -4,12 +4,12 @@ While travelling in Cyprus, a Cypriot pharmacy/HCP recommends an Over the Counte
 
 Maria needs to show the Greek/Cypriot pharmacist/HCP a list of her current medications. Her list is in Norwegian but the Cypriot pharmacist needs it in Greek or English.
 
+**Objectives of this example use case:**
+1. Find Maria's IPS and extract (a)the name and unique IDs of her two prescribed medications; and (b) a list of what she is allergic to.  
+2. Find the Patient Information Leaflets (in Norwegian, Greek and English) for the two prescribed medications using their name or IDs.
+3. Use information from the IPS and ePI to keep Maria informed and safe.
 
 **Scenario 1 - Find and display Patient Information Leaflet**
-Scenario Actions: 
-1. Locate Maria's IPS and extract the names or ID's of her two prescribed medications and information about known allergens.  
-2. Locate the Patient Information Leaflets (in Norwegian, Greek and English) for the two prescribed medications using their name or IDs.
-
 Technical Actions:
 1. Acquire endpoint for FHIR server with IPS documents
 2. Find Maria's IPS instance using her unique ID
@@ -20,13 +20,9 @@ Technical Actions:
 7. Find Patient Information Leaflets for Maria's active medications
 8. Display Patient Information Leaflets in a friendly manner for Maria
 
+[Add detailed cross-references to our example data; e.g., x-paths, product name and ID#, Maria IPS #]
 
 **Scenario 2 – Flag allergens in medication**
-Scenario Actions:
-1. Locate Maria's IPS and extract the names or ID's of her two prescribed medications and information about known allergens.  
-2. Use the name or IDs of the two prescribed medications to locate their respective Patient Information Leaflets.
-3. Compare the acquired allergen information to the  
-
 Technical Actions:
 1. Acquire endpoint for FHIR server with IPS documents
 2. Find Maria's IPS instance using her unique ID
@@ -38,3 +34,5 @@ Technical Actions:
 8. Find available ePI documents for Maria's active medications
 9. Find Patient Information Leaflets for Maria's active medications
 10. Check Patient Information Leaflet and flag if any ingredients are on Maria's allergen list
+
+[Add detailed cross-references to our example data; e.g., x-paths, product name and ID#, Maria IPS #]
