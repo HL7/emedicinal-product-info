@@ -23,3 +23,18 @@ Refer to the (IPS Implementation Guide)[http://build.fhir.org/ig/HL7/fhir-ips/te
 
 #### IPS Value Sets (Relevant to this use case)
 
+
+### ValueSets
+    {% include list-simple-valuesets.xhtml %}
+
+### CodeSystems
+    {% include list-simple-codesystems.xhtml %}
+
+### ConceptMaps
+  
+    {% include list-simple-conceptmaps.xhtml %}
+  
+### NamingSystems
+  
+    {% include list-simple-namingsystems.xhtml %}
+  
