@@ -16,7 +16,7 @@ The ePI uses the following as primary terminologies:
 5.	Units of measure (example)
 
 ### IPS Terminologies
-Refer to the (IPS Implementation Guide)[http://build.fhir.org/ig/HL7/fhir-ips/terminology.html] for complete list of terminologies in use.
+Refer to the [IPS Implementation Guide](http://build.fhir.org/ig/HL7/fhir-ips/terminology.html) for complete list of terminologies in use.
 
 #### IPS Code Systems (Relevant to this use case)
 
@@ -27,22 +27,22 @@ Refer to the (IPS Implementation Guide)[http://build.fhir.org/ig/HL7/fhir-ips/te
 <div xmlns="http://www.w3.org/1999/xhtml" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
-  <h3>ValueSets</h3>
+  <h4>ValueSets</h4>
   <div>
     {% include list-simple-valuesets.xhtml %}
   </div>
 
-  <h3>CodeSystems</h3>
+  <h4>CodeSystems</h4>
   <div>
     {% include list-simple-codesystems.xhtml %}
   </div>
 
-  <h3>ConceptMaps</h3>
+  <h4>ConceptMaps</h4>
   <div>
     {% include list-simple-conceptmaps.xhtml %}
   </div>
 
-  <h3>NamingSystems</h3>
+  <h4>NamingSystems</h4>
   <div>
     {% include list-simple-namingsystems.xhtml %}
   </div>
