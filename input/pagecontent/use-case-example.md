@@ -10,6 +10,7 @@ Maria needs to show the Greek/Cypriot pharmacist/HCP a list of her current medic
 3. Use information from the IPS and ePI to keep Maria informed and safe.
 
 **Scenario 1 - Find and display Patient Information Leaflet**
+
 Technical Actions:
 1. Acquire endpoint for FHIR server with IPS documents
 2. Find Maria's IPS instance using her unique ID
@@ -23,6 +24,7 @@ Technical Actions:
 [Add detailed cross-references to our example data; e.g., x-paths, product name and ID#, Maria IPS #]
 
 **Scenario 2 – Flag allergens in medication**
+
 Technical Actions:
 1. Acquire endpoint for FHIR server with IPS documents
 2. Find Maria's IPS instance using her unique ID
