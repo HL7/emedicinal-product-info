@@ -6,7 +6,6 @@ Description: "Placeholder for EMA example-sections"
 
 * #1 "Package leaflet section"
 * #3 "Package leaflet content section"
-* #3 "Some description"
 * #4 "Some description"
 * #5 "Some description"
 * #6 "Some description"
