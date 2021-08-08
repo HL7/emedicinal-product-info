@@ -24,17 +24,26 @@ Refer to the (IPS Implementation Guide)[http://build.fhir.org/ig/HL7/fhir-ips/te
 #### IPS Value Sets (Relevant to this use case)
 
 
-### ValueSets
+<div xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+
+  <h3>ValueSets</h3>
+  <div>
     {% include list-simple-valuesets.xhtml %}
+  </div>
 
-### CodeSystems
+  <h3>CodeSystems</h3>
+  <div>
     {% include list-simple-codesystems.xhtml %}
+  </div>
 
-### ConceptMaps
-  
+  <h3>ConceptMaps</h3>
+  <div>
     {% include list-simple-conceptmaps.xhtml %}
-  
-### NamingSystems
-  
+  </div>
+
+  <h3>NamingSystems</h3>
+  <div>
     {% include list-simple-namingsystems.xhtml %}
-  
+  </div>
+</div>
