@@ -1,0 +1,1505 @@
+{
+    "resourceType": "Bundle",
+    "id": "DK-IPS-example-bundle",
+    "meta": {
+        "lastUpdated": "2021-08-10T09:13:26.384+02:00"
+    },
+    "language": "da",
+    "identifier": {
+        "system": "urn:oid:2.16.724.4.8.10.200.10",
+        "value": "262ff5c8-587b-4a1b-a63a-55535c4edee5"
+    },
+    "type": "document",
+    "timestamp": "2021-08-10T09:13:26.384+02:00",
+    "entry": [
+        {
+            "fullUrl": "709075af-6e0a-4e42-805a-fa6cd43ff8bc",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "709075af-6e0a-4e42-805a-fa6cd43ff8bc",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "60591-5",
+                            "display": "Patient summary Document"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "date": "2021-08-10T09:13:26+02:00",
+                "author": [
+                    {
+                        "display": "Andreas Bach"
+                    }
+                ],
+                "title": "Patient Summary as of Tue Aug 10 09:13:26 CEST 2021",
+                "section": [
+                    {
+                        "title": "Medication",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "10160-0",
+                                    "display": "History of Medication use Narrative"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                            },
+                            {
+                                "reference": "Medication/48919b80-8a36-46ce-8cf0-eb5fcd678b1b"
+                            },
+                            {
+                                "reference": "MedicationStatement/40210502-4e65-4582-a832-4bb5222afcce"
+                            },
+                            {
+                                "reference": "Medication/14094624-ac98-4523-9381-c54bae44c072"
+                            },
+                            {
+                                "reference": "MedicationStatement/fc5bd927-9cff-4dd2-9766-2ed7b025c17d"
+                            },
+                            {
+                                "reference": "Medication/24f97af1-8976-470b-a916-4447a7c9cf66"
+                            },
+                            {
+                                "reference": "MedicationStatement/b5f8bdf8-7b15-4ee3-8135-7a2a4b428d91"
+                            },
+                            {
+                                "reference": "Medication/1742ac15-760d-42f2-9b1f-4ac279fd27cf"
+                            },
+                            {
+                                "reference": "MedicationStatement/84e3e6b6-3a68-4d46-9c0b-f98f0a5ec228"
+                            },
+                            {
+                                "reference": "Medication/5d94ff00-4a72-4669-ba47-ce7bd222996a"
+                            },
+                            {
+                                "reference": "MedicationStatement/b209cd72-05f6-4c70-8616-88e33966ad88"
+                            },
+                            {
+                                "reference": "Medication/d2d9a909-320b-4a57-b68c-87789f521c29"
+                            },
+                            {
+                                "reference": "MedicationStatement/4bfb3607-b7a6-495b-b976-a93c51a8db5b"
+                            },
+                            {
+                                "reference": "Medication/8e4ca429-d7a7-4787-8ef4-26607a13f9ba"
+                            },
+                            {
+                                "reference": "MedicationStatement/92c4307e-0dbe-4609-90b5-a4d5fc4eea9b"
+                            },
+                            {
+                                "reference": "Medication/b9167873-04d9-4c38-ab75-a94c64958bcd"
+                            },
+                            {
+                                "reference": "MedicationStatement/0b2de542-e4e6-4bdc-a93a-8ec2b65b00a5"
+                            },
+                            {
+                                "reference": "Medication/0cf93a36-1b0e-4442-93e5-43494d3338fe"
+                            },
+                            {
+                                "reference": "MedicationStatement/0ec056bb-8578-408e-a085-5b35e5931646"
+                            },
+                            {
+                                "reference": "Medication/d18d4354-6e6e-47d1-97e2-d621e771a280"
+                            },
+                            {
+                                "reference": "MedicationStatement/5fdf21f2-bc57-4d69-ba93-a3340fb4a4d1"
+                            },
+                            {
+                                "reference": "Medication/cfe6da07-daf3-4dd5-9b69-b3c348d14676"
+                            },
+                            {
+                                "reference": "MedicationStatement/1ed16ad5-47aa-470a-bb45-4bee5c7ab71b"
+                            },
+                            {
+                                "reference": "Medication/0d70a801-dabe-49af-8ab5-2718c830869e"
+                            },
+                            {
+                                "reference": "MedicationStatement/32c70fd2-b3d2-4139-97c3-5b7460d1530a"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "643e5a13-a364-4ee6-983e-401057f89605",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "643e5a13-a364-4ee6-983e-401057f89605",
+                "meta": {
+                    "security": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                            "code": "R",
+                            "display": "restricted"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.208.176.1.2",
+                        "value": "1206450168"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "48919b80-8a36-46ce-8cf0-eb5fcd678b1b",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "48919b80-8a36-46ce-8cf0-eb5fcd678b1b",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "5fbb0908-9f69-48bd-a65a-719126a1490c"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "R03AK07",
+                            "display": "Formoterol og budesonid"
+                        }
+                    ],
+                    "text": "Symbicort"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "INHSPRS"
+                        }
+                    ],
+                    "text": "inhalationsspray, suspension"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "BUDESONID"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "system": "http://medicinpriser.dk/styrkeenhed"
+                            },
+                            "denominator": {
+                                "unit": "inhalationsspray, suspension",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "INHSPRS"
+                            }
+                        }
+                    },
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "FORMOTEROLFUMARAT DIHYDRAT"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "system": "http://medicinpriser.dk/styrkeenhed"
+                            },
+                            "denominator": {
+                                "unit": "inhalationsspray, suspension",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "INHSPRS"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "40210502-4e65-4582-a832-4bb5222afcce",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "40210502-4e65-4582-a832-4bb5222afcce",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "202",
+                            "display": "mod astma"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "48919b80-8a36-46ce-8cf0-eb5fcd678b1b"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-11-03T00:00:00+01:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-11-03T00:00:00+01:00"
+                                }
+                            }
+                        ],
+                        "text": "2 pust 2 gange daglig",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "IH",
+                                    "display": "Til inhalation"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "14094624-ac98-4523-9381-c54bae44c072",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "14094624-ac98-4523-9381-c54bae44c072",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "81792f7b-4765-4d4f-b126-555ac6ed7213"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "B01AC06",
+                            "display": "Acetylsalicylsyre"
+                        }
+                    ],
+                    "text": "Hjertemagnyl"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TABFILM"
+                        }
+                    ],
+                    "text": "filmovertrukne tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "ACETYLSALICYLSYRE"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 75.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "filmovertrukne tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TABFILM"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "fc5bd927-9cff-4dd2-9766-2ed7b025c17d",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "fc5bd927-9cff-4dd2-9766-2ed7b025c17d",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "68",
+                            "display": "blodfortyndende"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "14094624-ac98-4523-9381-c54bae44c072"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-11-02T00:00:00+01:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-11-02T00:00:00+01:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet daglig",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "24f97af1-8976-470b-a916-4447a7c9cf66",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "24f97af1-8976-470b-a916-4447a7c9cf66",
+                "extension": [
+                    {
+                        "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url",
+                        "valueString": "https://www.indlaegssedler.dk/Search/Search/Search/423222"
+                    },
+                    {
+                        "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-number",
+                        "valueString": "423222"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "9cd76df1-8c3f-4b38-a5df-2d56dff223e5"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "N02CC01",
+                            "display": "Sumatriptan"
+                        }
+                    ],
+                    "text": "Imigran"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TABDIS"
+                        }
+                    ],
+                    "text": "dispergible tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "SUMATRIPTANSUCCINAT"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 100.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "dispergible tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TABDIS"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "b5f8bdf8-7b15-4ee3-8135-7a2a4b428d91",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "b5f8bdf8-7b15-4ee3-8135-7a2a4b428d91",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "153",
+                            "display": "mod migræne"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "24f97af1-8976-470b-a916-4447a7c9cf66"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-12-03T00:00:00+01:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-12-03T00:00:00+01:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet morgen",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "1742ac15-760d-42f2-9b1f-4ac279fd27cf",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "1742ac15-760d-42f2-9b1f-4ac279fd27cf",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "e2e76a2f-314c-4c4e-8546-1be7bf1e3356"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "G03AB05",
+                            "display": "Desogestrel og ethinylestradiol"
+                        }
+                    ],
+                    "text": "Gracial"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TAB"
+                        }
+                    ],
+                    "text": "tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "Ethinylestradiol"
+                                }
+                            ]
+                        },
+                        "isActive": true
+                    },
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "DESOGESTREL"
+                                }
+                            ]
+                        },
+                        "isActive": true
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "84e3e6b6-3a68-4d46-9c0b-f98f0a5ec228",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "84e3e6b6-3a68-4d46-9c0b-f98f0a5ec228",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "94",
+                            "display": "P-piller"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "1742ac15-760d-42f2-9b1f-4ac279fd27cf"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-11-02T00:00:00+01:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-11-02T00:00:00+01:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet daglig i 22 dage, herefter 6 dages pause",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "5d94ff00-4a72-4669-ba47-ce7bd222996a",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "5d94ff00-4a72-4669-ba47-ce7bd222996a",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "7905c4e8-7ec5-434a-9f47-d75ff09e4105"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "L04AX07",
+                            "display": "Dimethylfumarat"
+                        }
+                    ],
+                    "text": "Skilarence"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "ENTTAB"
+                        }
+                    ],
+                    "text": "enterotabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "DIMETHYLFUMARAT"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 30.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "enterotabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "ENTTAB"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "b209cd72-05f6-4c70-8616-88e33966ad88",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "b209cd72-05f6-4c70-8616-88e33966ad88",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "336",
+                            "display": "ved multipel sklerose"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "5d94ff00-4a72-4669-ba47-ce7bd222996a"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2021-08-10T00:00:00+02:00",
+                    "end": "2021-10-08T00:00:00+02:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2021-08-10T00:00:00+02:00",
+                                    "end": "2021-10-08T00:00:00+02:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet morgen og aften",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "d2d9a909-320b-4a57-b68c-87789f521c29",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "d2d9a909-320b-4a57-b68c-87789f521c29",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "0a22b407-8f64-446f-9711-94a898c7e9aa"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "M05BA04",
+                            "display": "Alendronsyre"
+                        }
+                    ],
+                    "text": "Alendronat \"Aurobindo\""
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TAB"
+                        }
+                    ],
+                    "text": "tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "Natriumalendronate, vandfrit"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 70.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TAB"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "4bfb3607-b7a6-495b-b976-a93c51a8db5b",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "4bfb3607-b7a6-495b-b976-a93c51a8db5b",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "313",
+                            "display": "mod osteoporose"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "d2d9a909-320b-4a57-b68c-87789f521c29"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-12-03T00:00:00+01:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-12-03T00:00:00+01:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet torsdag hver uge.\nBemærk: mindst en halv time før morgenmad",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "8e4ca429-d7a7-4787-8ef4-26607a13f9ba",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "8e4ca429-d7a7-4787-8ef4-26607a13f9ba",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "790ea689-086c-4a1d-aef9-5c31f8a478ba"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "N02AX02",
+                            "display": "Tramadol"
+                        }
+                    ],
+                    "text": "Tradolan"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TAB"
+                        }
+                    ],
+                    "text": "tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "TRAMADOLHYDROCHLORID"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 50.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TAB"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "92c4307e-0dbe-4609-90b5-a4d5fc4eea9b",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "92c4307e-0dbe-4609-90b5-a4d5fc4eea9b",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "145",
+                            "display": "mod smerter"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "8e4ca429-d7a7-4787-8ef4-26607a13f9ba"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-11-02T00:00:00+01:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-11-02T00:00:00+01:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet efter behov, højst 4 gange daglig",
+                        "asNeededBoolean": true,
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "b9167873-04d9-4c38-ab75-a94c64958bcd",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "b9167873-04d9-4c38-ab75-a94c64958bcd",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "97f0eee7-c41c-43e9-8d4d-656b858baf01"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "G03AA07",
+                            "display": "Levonorgestrel og ethinylestradiol"
+                        }
+                    ],
+                    "text": "Femicept"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TABOTR"
+                        }
+                    ],
+                    "text": "overtrukne tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "Ethinylestradiol"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "system": "http://medicinpriser.dk/styrkeenhed"
+                            },
+                            "denominator": {
+                                "unit": "overtrukne tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TABOTR"
+                            }
+                        }
+                    },
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "LEVONORGESTREL"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "system": "http://medicinpriser.dk/styrkeenhed"
+                            },
+                            "denominator": {
+                                "unit": "overtrukne tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TABOTR"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "0b2de542-e4e6-4bdc-a93a-8ec2b65b00a5",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "0b2de542-e4e6-4bdc-a93a-8ec2b65b00a5",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "94",
+                            "display": "P-piller"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "b9167873-04d9-4c38-ab75-a94c64958bcd"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-06-09T00:00:00+02:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-06-09T00:00:00+02:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet daglig.\nBemærk: efter skema",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "0cf93a36-1b0e-4442-93e5-43494d3338fe",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "0cf93a36-1b0e-4442-93e5-43494d3338fe",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "584b3079-030b-433c-a85d-3159da027942"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "A12BA01",
+                            "display": "Kaliumchlorid"
+                        }
+                    ],
+                    "text": "Kaleorid"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "DEPTAB"
+                        }
+                    ],
+                    "text": "depottabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "KALIUMCHLORID"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 750.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "depottabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "DEPTAB"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "0ec056bb-8578-408e-a085-5b35e5931646",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "0ec056bb-8578-408e-a085-5b35e5931646",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "41",
+                            "display": "mod lavt kalium i blodet"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "0cf93a36-1b0e-4442-93e5-43494d3338fe"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-06-09T00:00:00+02:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-06-09T00:00:00+02:00"
+                                }
+                            }
+                        ],
+                        "text": "According to schema in local system",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "d18d4354-6e6e-47d1-97e2-d621e771a280",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "d18d4354-6e6e-47d1-97e2-d621e771a280",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "cd345f3c-4af4-42dd-bd7a-c0154b2e3c44"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "C09AA02",
+                            "display": "Enalapril"
+                        }
+                    ],
+                    "text": "Enalapril \"Krka\""
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TAB"
+                        }
+                    ],
+                    "text": "tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "ENALAPRILMALEAT"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 10.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TAB"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "5fdf21f2-bc57-4d69-ba93-a3340fb4a4d1",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "5fdf21f2-bc57-4d69-ba93-a3340fb4a4d1",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "48",
+                            "display": "for hjertet"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "d18d4354-6e6e-47d1-97e2-d621e771a280"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-06-09T00:00:00+02:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-06-09T00:00:00+02:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet daglig",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "cfe6da07-daf3-4dd5-9b69-b3c348d14676",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "cfe6da07-daf3-4dd5-9b69-b3c348d14676",
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "9814846b-423b-4878-bdbe-56bec5c93826"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "N02BE01",
+                            "display": "Paracetamol"
+                        }
+                    ],
+                    "text": "Pamol"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "TABFILM"
+                        }
+                    ],
+                    "text": "filmovertrukne tabletter"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "PARACETAMOL"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 500.0,
+                                "unit": "mg",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "MG"
+                            },
+                            "denominator": {
+                                "unit": "filmovertrukne tabletter",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "TABFILM"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "1ed16ad5-47aa-470a-bb45-4bee5c7ab71b",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "1ed16ad5-47aa-470a-bb45-4bee5c7ab71b",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "145",
+                            "display": "mod smerter"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "cfe6da07-daf3-4dd5-9b69-b3c348d14676"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-11-06T00:00:00+01:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-11-06T00:00:00+01:00"
+                                }
+                            }
+                        ],
+                        "text": "1 tablet 3 gange daglig",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "OR",
+                                    "display": "Oral anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "0d70a801-dabe-49af-8ab5-2718c830869e",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "0d70a801-dabe-49af-8ab5-2718c830869e",
+                "extension": [
+                    {
+                        "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url",
+                        "valueString": "https://www.indlaegssedler.dk/Search/Search/Search/16361"
+                    },
+                    {
+                        "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-number",
+                        "valueString": "16361"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.724.4.8.10.200.10",
+                        "value": "ac498450-10fc-458c-bf4b-8f3f3045763f"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "A10AD05",
+                            "display": "Insulin aspart"
+                        }
+                    ],
+                    "text": "NovoMix 30 FlexPen"
+                },
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://medicinpriser.dk/formbetegnelse",
+                            "code": "INJVSP"
+                        }
+                    ],
+                    "text": "injektionsvæske, suspension, fyldt pen"
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "insulin aspart protamin"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 100.0,
+                                "unit": "enheder/ml",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "UML"
+                            },
+                            "denominator": {
+                                "unit": "injektionsvæske, suspension, fyldt pen",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "INJVSP"
+                            }
+                        }
+                    },
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "Insulin aspart"
+                                }
+                            ]
+                        },
+                        "isActive": true,
+                        "strength": {
+                            "numerator": {
+                                "value": 100.0,
+                                "unit": "enheder/ml",
+                                "system": "http://medicinpriser.dk/styrkeenhed",
+                                "code": "UML"
+                            },
+                            "denominator": {
+                                "unit": "injektionsvæske, suspension, fyldt pen",
+                                "system": "http://medicinpriser.dk/formbetegnelse",
+                                "code": "INJVSP"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "32c70fd2-b3d2-4139-97c3-5b7460d1530a",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "32c70fd2-b3d2-4139-97c3-5b7460d1530a",
+                "extension": [
+                    {
+                        "url": "http://medicinpriser.dk/indikation",
+                        "valueCoding": {
+                            "system": "http://medicinpriser.dk/indikation",
+                            "code": "31",
+                            "display": "mod sukkersyge"
+                        }
+                    }
+                ],
+                "status": "active",
+                "medicationReference": {
+                    "id": "0d70a801-dabe-49af-8ab5-2718c830869e"
+                },
+                "subject": {
+                    "reference": "Patient/643e5a13-a364-4ee6-983e-401057f89605"
+                },
+                "effectivePeriod": {
+                    "start": "2020-06-18T00:00:00+02:00"
+                },
+                "dosage": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                                "valuePeriod": {
+                                    "start": "2020-06-18T00:00:00+02:00"
+                                }
+                            }
+                        ],
+                        "text": "6 enheder morgen og aften",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://medicinpriser.dk/administrationsvej",
+                                    "code": "SC",
+                                    "display": "Subkutan anvendelse"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
