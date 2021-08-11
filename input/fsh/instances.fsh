@@ -4,7 +4,7 @@ Description: "Placeholder for EMA example-sections"
 
 * ^url = http://spor.ema.europa.eu/v1/example-sections
 
-* #1 "Package leaflet section"
+* #1 "Some description"
 * #3 "Package leaflet content section"
 * #4 "Some description"
 * #5 "Some description"
@@ -60,5 +60,14 @@ Description: "Placeholder for EMA example-sections"
 * #55 "Some description"
 * #56 "Some description"
 * #57 "Some description"
-* #58 "Some description"
+* #58 
+* #58 ^designation[+].language = urn:ietf:bcp:47#en 
+* #58 ^designation[=].use = http://snomed.info/sct#900000000000003001 
+* #58 ^designation[=].value = "10. DATE OF REVISION OF THE TEXT" 
+* #58 ^designation[+].language = urn:ietf:bcp:47#el 
+* #58 ^designation[=].use = http://snomed.info/sct#900000000000003001 
+* #58 ^designation[=].value = "10. ΗΜΕΡΟΜΗΝΙΑ ΑΝΑΘΕΩΡΗΣΗΣ ΤΟΥ ΚΕΙΜΕΝΟΥ" 
+* #58 ^designation[+].language = urn:ietf:bcp:47#no 
+* #58 ^designation[=].use = http://snomed.info/sct#900000000000003001 
+* #58 ^designation[=].value = "10. OPPDATERINGSDATO" 
 * #59 "Some description"
