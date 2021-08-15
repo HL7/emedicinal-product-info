@@ -11,7 +11,6 @@ The common ePI structure is as described below.
     - Binary
   - Medicinal Product
   - Organization
-  - Ingredient
 
 ### Sections Description
 #### Bundle resource
@@ -31,14 +30,14 @@ Althought some use cases involve pulling metadata, sections or narrative content
 #### Composition resource
 The Composition defines the basic structure and the human readable narrative content for the ePI document. For example, encoded section headings; narrative text (paragraphs, sentences); tables; and bulleted lists. The Composition taggs the language of the narrative content
 
-All narrative content is in XHTML fragment with HTML 4.0 standard formatting (Refer to [FHIR Narrative](http://build.fhir.org/narrative.html#xhtml) for HTML 4.0 exceptions and exclusions). 
+All narrative content is in XHTML fragment with HTML 4.0 standard formatting (Refer to [section 2.4 Narrative](http://build.fhir.org/narrative.html#xhtml) of the FHIR specification for HTML 4.0 exceptions and exclusions). 
 
 Althought some use cases involve pulling metadata, sections or narrative content from the Composition, the Composition resource is not published independently from the Bundle.
 
 ##### Binary resource
 The Binary resource is used to handle images as Base64.
 
-##### Structure of the Summary of Product Characteristics (SmPC) document template
+##### Structure of the Summary of Product Characteristics (SmPC) 
 
 Summary of Product Characteristics (SmPC) is a document describing the properties and the officially approved conditions of use of a medicinal product. The SmPC is used by healthcare professionals, such as doctors, nurses and pharmacists, and explains how to use and prescribe a medicine safely and effectively.
 
