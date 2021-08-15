@@ -4,7 +4,7 @@ All ePI documents are based on the same FHIR structure. The only exception is th
 
 The common ePI structure is as described below.
 
-Figure XX: The common structure for all ePI documents
+**Figure XX: The common structure for all ePI documents (REPLACE WITH A GRAPHIC)**
 - Bundle
   - List
   - Composition
@@ -26,10 +26,14 @@ The list resource references other resources. In this context, the List contains
 1. Narrative description of the medicinal products it contains
 2. An ordered collection of cross-references to the Medicinal Product Definition resources that the ePI document is about. The List is dynamic since the cross-references are added, removed or changed over time.
 
+Althought some use cases involve pulling metadata, sections or narrative content from the Composition, the List resource is not published independently from the Bundle.
+
 #### Composition resource
 The Composition defines the basic structure and the human readable narrative content for the ePI document. For example, encoded section headings; narrative text (paragraphs, sentences); tables; and bulleted lists. The Composition taggs the language of the narrative content
 
 All narrative content is in XHTML fragment with HTML 4.0 standard formatting (Refer to [FHIR Narrative](http://build.fhir.org/narrative.html#xhtml) for HTML 4.0 exceptions and exclusions). 
+
+Althought some use cases involve pulling metadata, sections or narrative content from the Composition, the Composition resource is not published independently from the Bundle.
 
 ##### Binary resource
 The Binary resource is used to handle images as Base64.
@@ -38,7 +42,7 @@ The Binary resource is used to handle images as Base64.
 
 Summary of Product Characteristics (SmPC) is a document describing the properties and the officially approved conditions of use of a medicinal product. The SmPC is used by healthcare professionals, such as doctors, nurses and pharmacists, and explains how to use and prescribe a medicine safely and effectively.
 
-The SmPC document template is made up of the following section and sub-section headings (Refer to the corresponding [Terminology](http://build.fhir.org/ig/hl7-eu/gravitate-health/terminology.html) section of this IG for section codes]):
+The SmPC document template is made up of the following section and sub-section headings (Refer to the corresponding [Terminology](http://build.fhir.org/ig/hl7-eu/gravitate-health/terminology.html) section of this IG for section codes):
 
 Section 1. Name of the medicinal product
 
@@ -130,11 +134,13 @@ Section 6. Further Information
 -	The date the leaflet was approved by the authorities.
 -	Any further information about the medicine.
 
+#### Organization Resource
+The Organization resource is used to describes contact and other information about the Market Authorization Holder (MAH) for the medicine the ePI documents are about. The MAH is also the author of the ePI documents.
 
-#### Organization
-
-
+The Organization resource can live independently from the document Bundle.
 
 #### Medicinal Product Definition
 
+The Medicinal Product Definition resource provides uniquely identifiable detail about the ePI's medicinal product(s). It describes the overall medicinal product as a whole unit (similar to a Stop Keeping Unit or SKU) as authorized by the national competent regulatory authority.
 
+The Medicinal Product Definition resource can live independently from the document Bundle.
