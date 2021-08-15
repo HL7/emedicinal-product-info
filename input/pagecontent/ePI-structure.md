@@ -43,50 +43,34 @@ Summary of Product Characteristics (SmPC) is a document describing the propertie
 
 The SmPC document template is made up of the following section and sub-section headings (Refer to the corresponding [Terminology](http://build.fhir.org/ig/hl7-eu/gravitate-health/terminology.html) section of this IG for section codes):
 
-Section 1. Name of the medicinal product
-
-Section 2. Qualitative and quantitative composition
-
-Section 3. Pharmaceutical form
-
-Section 4. Clinical particulars
-- Section 4.1 Therapeutic indications
-- Section 4.2 Posology and method of administration
-- Section 4.3 Contraindications
-- Section 4.4 Special warnings and precautions for use
-- Section 4.5 Interactions with other medicinal products and other forms of interaction
-- Section 4.6 Pregnancy and lactation
-- Section 4.7 Effects on ability to drive and use machines
-- Section 4.8 Undesirable effects
-
-Section 4.9 Overdose
-
-Section 5. Pharmacological properties
-- Section 5.1 Pharmacodynamic properties
-- Section 5.2 Pharmacokinetic properties
-- Section 5.3 Preclinical safety data
-
-Section 6. Pharmaceutical properties
-- Section 6.1 List of excipients
-- Section 6.2 Incompatibilities
-- Section 6.3 Shelf life
-- Section 6.4 Special precautions for storage
-- Section 6.5 Nature and contents of container
-- Section 6.6 Special precautions for disposal and other handling
-
-Section 7. Marketing authorisation holder
-
-Section 8. Marketing authorisation number(s)
-
-Section 9. Date of first authorisation/renewal of the authorisation
-
-Section 10. Date of revision of the text
-
-Section 11. Dosimetry
-
-Section 12. Instructions for preparation of radiopharmaceuticals
-
-Legal category
+- Section 1. Name of the medicinal product
+- Section 2. Qualitative and quantitative composition
+- Section 3. Pharmaceutical form
+- Section 4. Clinical particulars
+  - Section 4.1 Therapeutic indications
+  - Section 4.2 Posology and method of administration
+  - Section 4.3 Contraindications
+  - Section 4.4 Special warnings and precautions for use
+  - Section 4.5 Interaction with other medicinal products and other forms of interaction
+  - Section 4.6 Fertility, pregnancy and lactation
+  - Section 4.7 Effects on ability to drive and use machines
+  - Section 4.8 Undesirable effects
+  - Section 4.9 Overdose
+- Section 5. Pharmacological properties
+  - Section 5.1 Pharmacodynamic properties
+  - Section 5.2 Pharmacokinetic properties
+  - Section 5.3 Preclinical safety data
+- Section 6. Pharmaceutical particulars
+  - Section 6.1 List of excipients
+  - Section 6.2 Incompatibilities
+  - Section 6.3 Shelf life
+  - Section 6.4 Special precautions for storage
+  - Section 6.5 Nature and contents of container
+  - Section 6.6 Special precautions for disposal and other handling
+- Section 7. Marketing authorisation holder
+- Section 8. Marketing authorisation number(s)
+- Section 9. Date of first authorisation/renewal of the authorisation
+- Section 10. Date of revision of the text
 
 
 ##### Structure of the Patient Information Leaflet document template
