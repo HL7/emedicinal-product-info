@@ -37,7 +37,7 @@ Althought some use cases involve pulling metadata, sections or narrative content
 ##### Binary resource
 The Binary resource is used to handle images as Base64.
 
-##### Structure of the Summary of Product Characteristics (SmPC) 
+##### Structure of the Summary of Product Characteristics (SmPC) template
 
 Summary of Product Characteristics (SmPC) is a document describing the properties and the officially approved conditions of use of a medicinal product. The SmPC is used by healthcare professionals, such as doctors, nurses and pharmacists, and explains how to use and prescribe a medicine safely and effectively.
 
