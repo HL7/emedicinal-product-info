@@ -1,0 +1,1184 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/IPS-examples-Bundle-01> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "IPS-examples-Bundle-01"];
+  fhir:Resource.language [ fhir:value "en-GB"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "175bd032-8b00-4728-b2dc-748bb1501aed" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2017-12-11T14:30:00+01:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d" ];
+     fhir:Bundle.entry.resource <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ];
+     fhir:Bundle.entry.resource <urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef" ];
+     fhir:Bundle.entry.resource <urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15" ];
+     fhir:Bundle.entry.resource <urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80" ];
+     fhir:Bundle.entry.resource <urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6" ];
+     fhir:Bundle.entry.resource <urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e" ];
+     fhir:Bundle.entry.resource <urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e>
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc" ];
+     fhir:Bundle.entry.resource <urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc>
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626" ];
+     fhir:Bundle.entry.resource <urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626>
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132" ];
+     fhir:Bundle.entry.resource <urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132>
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6" ];
+     fhir:Bundle.entry.resource <urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6>
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ];
+     fhir:Bundle.entry.resource <urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>
+  ], [
+     fhir:index 12;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741" ];
+     fhir:Bundle.entry.resource <urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741>
+  ], [
+     fhir:index 13;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70" ];
+     fhir:Bundle.entry.resource <urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70>
+  ], [
+     fhir:index 14;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:b4916505-a06b-460c-9be8-011609282457" ];
+     fhir:Bundle.entry.resource <urn:uuid:b4916505-a06b-460c-9be8-011609282457>
+  ], [
+     fhir:index 15;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4" ];
+     fhir:Bundle.entry.resource <urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4>
+  ], [
+     fhir:index 16;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94" ];
+     fhir:Bundle.entry.resource <urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94>
+  ], [
+     fhir:index 17;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646" ];
+     fhir:Bundle.entry.resource <urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646>
+  ], [
+     fhir:index 18;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572" ];
+     fhir:Bundle.entry.resource <urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572>
+  ], [
+     fhir:index 19;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5" ];
+     fhir:Bundle.entry.resource <urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5>
+  ] .
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "30551ce1-5a28-4356-b684-1e639094ad4d"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>date</b>: Dec 11, 2017, 1:30:00 PM</p><p><b>author</b>: <a href=\"#Practitioner_1c616b24-3895-48c4-9a02-9a64110351ef\">See above (Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef)</a></p><p><b>title</b>: Patient Summary as of December 11, 2017 14:30</p><p><b>confidentiality</b>: N</p><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: Dec 11, 2017, 1:30:00 PM</p><p><b>party</b>: <a href=\"#Practitioner_1c616b24-3895-48c4-9a02-9a64110351ef\">See above (Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef)</a></p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: Dec 11, 2017, 1:30:00 PM</p><p><b>party</b>: <a href=\"#Organization_890751f4-2924-4636-bab7-efffc7f3cf15\">See above (Organization/890751f4-2924-4636-bab7-efffc7f3cf15)</a></p></blockquote><p><b>custodian</b>: <a href=\"#Organization_890751f4-2924-4636-bab7-efffc7f3cf15\">See above (Organization/890751f4-2924-4636-bab7-efffc7f3cf15)</a></p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td>id: c2277753-9f90-4a95-8ddb-a0b3f6e7d292</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActClass PCPR}\">care provision</span></td><td>?? --&gt; Dec 11, 2017, 1:30:00 PM</td></tr></table></div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "3f69e0a5-2177-4540-baab-7a5d0877428f" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:60591-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "60591-5" ];
+       fhir:Coding.display [ fhir:value "Patient summary Document" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Composition.date [ fhir:value "2017-12-11T14:30:00+01:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef>;
+     fhir:Reference.reference [ fhir:value "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef" ]
+  ];
+  fhir:Composition.title [ fhir:value "Patient Summary as of December 11, 2017 14:30"];
+  fhir:Composition.confidentiality [ fhir:value "N"];
+  fhir:Composition.attester [
+     fhir:index 0;
+     fhir:Composition.attester.mode [ fhir:value "legal" ];
+     fhir:Composition.attester.time [ fhir:value "2017-12-11T14:30:00+01:00"^^xsd:dateTime ];
+     fhir:Composition.attester.party [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef>;
+       fhir:Reference.reference [ fhir:value "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.attester.mode [ fhir:value "legal" ];
+     fhir:Composition.attester.time [ fhir:value "2017-12-11T14:30:00+01:00"^^xsd:dateTime ];
+     fhir:Composition.attester.party [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/890751f4-2924-4636-bab7-efffc7f3cf15>;
+       fhir:Reference.reference [ fhir:value "Organization/890751f4-2924-4636-bab7-efffc7f3cf15" ]
+     ]
+  ];
+  fhir:Composition.custodian [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/890751f4-2924-4636-bab7-efffc7f3cf15>;
+     fhir:Reference.reference [ fhir:value "Organization/890751f4-2924-4636-bab7-efffc7f3cf15" ]
+  ];
+  fhir:Composition.relatesTo [
+     fhir:index 0;
+     fhir:Composition.relatesTo.code [ fhir:value "appends" ];
+     fhir:Composition.relatesTo.targetIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+       fhir:Identifier.value [ fhir:value "c2277753-9f90-4a95-8ddb-a0b3f6e7d292" ]
+     ]
+  ];
+  fhir:Composition.event [
+     fhir:index 0;
+     fhir:Composition.event.code [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActClass" ];
+         fhir:Coding.code [ fhir:value "PCPR" ]
+       ]
+     ];
+     fhir:Composition.event.period [
+       fhir:Period.end [ fhir:value "2017-12-11T14:30:00+01:00"^^xsd:dateTime ]
+     ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Active Problems" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:11450-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "11450-4" ];
+         fhir:Coding.display [ fhir:value "Problem list Reported" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80>;
+       fhir:Reference.reference [ fhir:value "Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Medication" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10160-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10160-0" ];
+         fhir:Coding.display [ fhir:value "History of Medication use Narrative" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n							<table>\n								<thead>\n									<tr>\n										<th>Medication</th>\n										<th>Strength</th>\n										<th>Form</th>\n										<th>Dosage</th>\n										<th>Comment</th>\n									</tr>\n								</thead>\n								<tbody>\n									<tr>\n										<td>Anastrozole</td>\n										<td>1 mg</td>\n										<td>tablet</td>\n										<td>once daily</td>\n										<td>treatment for breast cancer</td>\n									</tr>\n									<tr>\n										<td>Black Cohosh Extract</td>\n										<td> </td>\n										<td>pil</td>\n										<td> </td>\n										<td>herbal supplement</td>\n									</tr>\n								</tbody>\n							</table>\n						</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicationStatement/47524493-846a-4a26-bae2-4ab03e60f02e>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/47524493-846a-4a26-bae2-4ab03e60f02e" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "Allergies and Intolerances" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:48765-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "48765-2" ];
+         fhir:Coding.display [ fhir:value "Allergies and adverse reactions Document" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active\n							No known food allergies\n						</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132>;
+       fhir:Reference.reference [ fhir:value "AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/AllergyIntolerance/c7781f44-6df8-4a8b-9e06-0b34263a47c5>;
+       fhir:Reference.reference [ fhir:value "AllergyIntolerance/c7781f44-6df8-4a8b-9e06-0b34263a47c5" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "History of Past Illness" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:11348-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "11348-0" ];
+         fhir:Coding.display [ fhir:value "Hx of Past illness" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Condition/c4597aa2-688a-401b-a658-70acc6de28c6>;
+       fhir:Reference.reference [ fhir:value "Condition/c4597aa2-688a-401b-a658-70acc6de28c6" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Composition.section.title [ fhir:value "Plan of Treatment" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:18776-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "18776-5" ];
+         fhir:Coding.display [ fhir:value "Plan of care note" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</div>"
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Composition.section.title [ fhir:value "Results" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:30954-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "30954-2" ];
+         fhir:Coding.display [ fhir:value "Relevant diagnostic tests/laboratory data Narrative" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n							<table>\n								<thead>\n									<tr>\n										<th colspan=\"3\">Blood typing</th>\n									</tr>\n								</thead>\n								<tbody>\n									<tr>\n										<td>Blood group</td>\n										<td>A+</td>\n										<td/>\n									</tr>\n									<tr>\n										<td>C Ab [Presence] in Serum or Plasma</td>\n										<td>Positive</td>\n										<td/>\n									</tr>\n									<tr>\n										<td>E Ab [Presence] in Serum or Plasma</td>\n										<td>Positive</td>\n										<td/>\n									</tr>\n									<tr>\n										<td>Little c Ab [Presence] in Serum or Plasma</td>\n										<td>Negative</td>\n										<td/>\n									</tr>\n								</tbody>\n							</table>\n							<table>\n								<thead>\n									<tr>\n										<th colspan=\"3\">Hemoglobin A1c monitoring</th>\n									</tr>\n								</thead>\n								<tbody>\n									<tr>\n										<td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td>\n										<td>7.5 %</td>\n										<td/>\n									</tr>\n								</tbody>\n							</table>\n							<table>\n								<thead>\n									<tr>\n										<th colspan=\"3\">Bacteriology</th>\n									</tr>\n								</thead>\n								<tbody>\n									<tr>\n										<td colspan=\"3\">Methicillin resistant Staphylococcus aureus</td>\n									</tr>\n									<tr>\n										<td colspan=\"3\">Healthy carrier of MRSA</td>\n									</tr>\n								</tbody>\n							</table>\n						</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Observation/2639657a-c19a-48e2-82cc-471e13b8ad94>;
+       fhir:Reference.reference [ fhir:value "Observation/2639657a-c19a-48e2-82cc-471e13b8ad94" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Observation/cc354e00-a419-47ea-8b6c-1768b2a01646>;
+       fhir:Reference.reference [ fhir:value "Observation/cc354e00-a419-47ea-8b6c-1768b2a01646" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Observation/26bee0a9-5997-4557-ab9d-c6adbb05b572>;
+       fhir:Reference.reference [ fhir:value "Observation/26bee0a9-5997-4557-ab9d-c6adbb05b572" ]
+     ]
+  ] .
+
+<urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "2b90dd2b-2dab-4c75-9bb9-a355e07401e8"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 574687583</p><p><b>active</b>: true</p><p><b>name</b>: Martha DeLarosa </p><p><b>telecom</b>: <a href=\"tel:+31788700800\">+31788700800</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1972-05-01</p><p><b>address</b>: Laan Van Europa 1600 Dordrecht 3317 DB Netherlands </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">mother</span></td><td>Martha Mum </td><td><a href=\"tel:+33-555-20036\">+33-555-20036</a></td><td>Promenade des Anglais 111 Lyon 69001 France </td></tr></table></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3" ];
+     fhir:Identifier.value [ fhir:value "574687583" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "DeLarosa" ];
+     fhir:HumanName.given [
+       fhir:value "Martha";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+31788700800" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1972-05-01"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "Laan Van Europa 1600";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Dordrecht" ];
+     fhir:Address.postalCode [ fhir:value "3317 DB" ];
+     fhir:Address.country [ fhir:value "Netherlands" ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Patient.contact.relationship [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+         fhir:Coding.code [ fhir:value "MTH" ]
+       ]
+     ];
+     fhir:Patient.contact.name [
+       fhir:HumanName.family [ fhir:value "Mum" ];
+       fhir:HumanName.given [
+         fhir:value "Martha";
+         fhir:index 0
+       ]
+     ];
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "+33-555-20036" ];
+       fhir:ContactPoint.use [ fhir:value "home" ]
+     ];
+     fhir:Patient.contact.address [
+       fhir:Address.line [
+         fhir:value "Promenade des Anglais 111";
+         fhir:index 0
+       ];
+       fhir:Address.city [ fhir:value "Lyon" ];
+       fhir:Address.postalCode [ fhir:value "69001" ];
+       fhir:Address.country [ fhir:value "France" ]
+     ]
+  ] .
+
+<urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "1c616b24-3895-48c4-9a02-9a64110351ef"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 129854633</p><p><b>active</b>: true</p><p><b>name</b>: Beetje van Hulp </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0360|2.7 MD}\">Doctor of Medicine</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.528.1.1007.3.1" ];
+     fhir:Identifier.value [ fhir:value "129854633" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "CIBG" ]
+     ]
+  ];
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "van Hulp" ];
+     fhir:HumanName.given [
+       fhir:value "Beetje";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0360|2.7" ];
+         fhir:Coding.code [ fhir:value "MD" ];
+         fhir:Coding.display [ fhir:value "Doctor of Medicine" ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "890751f4-2924-4636-bab7-efffc7f3cf15"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 564738757</p><p><b>active</b>: true</p><p><b>name</b>: Anorg Aniza Tion BV / The best custodian ever</p><p><b>telecom</b>: <a href=\"tel:+31-51-34343400\">+31-51-34343400</a></p><p><b>address</b>: Houttuinen 27 Dordrecht 3311 CE Netherlands (WORK)</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.528.1.1007.3.3" ];
+     fhir:Identifier.value [ fhir:value "564738757" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.name [ fhir:value "Anorg Aniza Tion BV / The best custodian ever"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+31-51-34343400" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.line [
+       fhir:value "Houttuinen 27";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Dordrecht" ];
+     fhir:Address.postalCode [ fhir:value "3311 CE" ];
+     fhir:Address.country [ fhir:value "Netherlands" ]
+  ] .
+
+<urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80> a fhir:Condition;
+  fhir:Resource.id [ fhir:value "c64139e7-f02d-409c-bf34-75e8bf23bc80"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: c87bf51c-e53c-4bfe-b8b7-aa62bdd93002</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 75326-9}\">Problem</span></p><p><b>severity</b>: <span title=\"Codes: {http://loinc.org LA6751-7}\">Moderate</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 198436008}, {http://hl7.org/fhir/sid/icd-10 N95.1}\">Menopausal flushing (finding)</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>onset</b>: 2015</p><p><b>recordedDate</b>: 2016-10</p></div>"
+  ];
+  fhir:Condition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.3.999" ];
+     fhir:Identifier.value [ fhir:value "c87bf51c-e53c-4bfe-b8b7-aa62bdd93002" ]
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:75326-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "75326-9" ];
+       fhir:Coding.display [ fhir:value "Problem" ]
+     ]
+  ];
+  fhir:Condition.severity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA6751-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA6751-7" ];
+       fhir:Coding.display [ fhir:value "Moderate" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:198436008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "198436008" ];
+       fhir:Coding.display [
+         fhir:value "Menopausal flushing (finding)";
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "lang" ];
+             fhir:Extension.valueCode [ fhir:value "nl-NL" ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "content" ];
+             fhir:Extension.valueString [ fhir:value "opvliegers" ]
+           ];
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ];
+       fhir:Coding.code [ fhir:value "N95.1" ];
+       fhir:Coding.display [ fhir:value "Menopausal and female climacteric states" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Condition.onsetDateTime [ fhir:value "2015"^^xsd:gYear];
+  fhir:Condition.recordedDate [ fhir:value "2016-10"^^xsd:gYearMonth] .
+
+<urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6> a fhir:MedicationStatement;
+  fhir:Resource.id [ fhir:value "c220e36c-eb67-4fc4-9ba1-2fabc52acec6"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: b75f92cb-61d4-469a-9387-df5ef70d25f0</p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_976d0804-cae0-45ae-afe3-a19f3ceba6bc\">See above (Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc)</a></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: 2015-03 --&gt; (ongoing)</p></div>"
+  ];
+  fhir:MedicationStatement.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.3.999" ];
+     fhir:Identifier.value [ fhir:value "b75f92cb-61d4-469a-9387-df5ef70d25f0" ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc>;
+     fhir:Reference.reference [ fhir:value "Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2015-03"^^xsd:gYearMonth ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.count [ fhir:value "1"^^xsd:positiveInteger ];
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu" ];
+         fhir:Coding.code [ fhir:value "20053000" ];
+         fhir:Coding.display [ fhir:value "Oral use" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/dose-rate-type" ];
+           fhir:Coding.code [ fhir:value "ordered" ];
+           fhir:Coding.display [ fhir:value "Ordered" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "tablet" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "1" ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e> a fhir:MedicationStatement;
+  fhir:Resource.id [ fhir:value "47524493-846a-4a26-bae2-4ab03e60f02e"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 9e312d6b-c6b6-439a-a730-6efaa5dcf8bc</p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_8adc0999-9468-4ac9-9557-680fa133d626\">See above (Medication/8adc0999-9468-4ac9-9557-680fa133d626)</a></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: 2016-01 --&gt; (ongoing)</p></div>"
+  ];
+  fhir:MedicationStatement.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.3.999" ];
+     fhir:Identifier.value [ fhir:value "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc" ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Medication/8adc0999-9468-4ac9-9557-680fa133d626>;
+     fhir:Reference.reference [ fhir:value "Medication/8adc0999-9468-4ac9-9557-680fa133d626" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2016-01"^^xsd:gYearMonth ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu" ];
+         fhir:Coding.code [ fhir:value "20053000" ];
+         fhir:Coding.display [ fhir:value "Oral use" ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "976d0804-cae0-45ae-afe3-a19f3ceba6bc"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 108774000}, {urn:oid:2.16.840.1.113883.2.4.4.1 99872}, {urn:oid:2.16.840.1.113883.2.4.4.7 2076667}, {http://www.whocc.no/atc L02BG03}\">Product containing anastrozole (medicinal product)</span></p></div>"
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:108774000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "108774000" ];
+       fhir:Coding.display [ fhir:value "Product containing anastrozole (medicinal product)" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.2.4.4.1" ];
+       fhir:Coding.code [ fhir:value "99872" ];
+       fhir:Coding.display [ fhir:value "ANASTROZOL 1MG TABLET" ]
+     ], [
+       fhir:index 2;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.2.4.4.7" ];
+       fhir:Coding.code [ fhir:value "2076667" ];
+       fhir:Coding.display [ fhir:value "ANASTROZOL CF TABLET FILMOMHULD 1MG" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "L02BG03" ];
+       fhir:Coding.display [ fhir:value "anastrozole" ]
+     ]
+  ] .
+
+<urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "8adc0999-9468-4ac9-9557-680fa133d626"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 412588001}, {http://www.whocc.no/atc G02CX04}\">Black Cohosh Extract herbal supplement</span></p></div>"
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:412588001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "412588001" ];
+       fhir:Coding.display [
+         fhir:value "Cimicifuga racemosa extract (substance)";
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "lang" ];
+             fhir:Extension.valueCode [ fhir:value "nl-NL" ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "content" ];
+             fhir:Extension.valueString [ fhir:value "Zwarte Cohosh Extract" ]
+           ];
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "G02CX04" ];
+       fhir:Coding.display [ fhir:value "Cimicifugae rhizoma" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Black Cohosh Extract herbal supplement" ]
+  ] .
+
+<urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132> a fhir:AllergyIntolerance;
+  fhir:Resource.id [ fhir:value "72884cad-ebe6-4f43-a51a-2f978275f132"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 3a462598-009c-484a-965c-d6b24a821424</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>criticality</b>: high</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 373270004}\">Substance with penicillin structure and antibacterial mechanism of action (substance)</span></p><p><b>patient</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>onset</b>: 2010</p></div>"
+  ];
+  fhir:AllergyIntolerance.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.3.999" ];
+     fhir:Identifier.value [ fhir:value "3a462598-009c-484a-965c-d6b24a821424" ]
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ];
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"];
+  fhir:AllergyIntolerance.category [
+     fhir:value "medication";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.criticality [ fhir:value "high"];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:373270004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "373270004" ];
+       fhir:Coding.display [ fhir:value "Substance with penicillin structure and antibacterial mechanism of action (substance)" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:AllergyIntolerance.onsetDateTime [ fhir:value "2010"^^xsd:gYear] .
+
+<urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6> a fhir:Condition;
+  fhir:Resource.id [ fhir:value "c4597aa2-688a-401b-a658-70acc6de28c6"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 66d4a8c7-9081-43e0-a63f-489c2ae6edd6</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical remission}\">Remission</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 75326-9}\">Problem</span></p><p><b>severity</b>: <span title=\"Codes: {http://loinc.org LA6750-9}\">Severe</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 254837009}, {urn:oid:2.16.840.1.113883.6.43.1 8500/3}\">Malignant tumor of breast</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>onset</b>: 2015-01</p><p><b>abatement</b>: 2015-03</p></div>"
+  ];
+  fhir:Condition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.3.999" ];
+     fhir:Identifier.value [ fhir:value "66d4a8c7-9081-43e0-a63f-489c2ae6edd6" ]
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "remission" ]
+     ]
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:75326-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "75326-9" ];
+       fhir:Coding.display [ fhir:value "Problem" ]
+     ]
+  ];
+  fhir:Condition.severity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA6750-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA6750-9" ];
+       fhir:Coding.display [ fhir:value "Severe" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:254837009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "254837009" ];
+       fhir:Coding.display [
+         fhir:value "Malignant tumor of breast";
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "lang" ];
+             fhir:Extension.valueCode [ fhir:value "nl-NL" ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "content" ];
+             fhir:Extension.valueString [ fhir:value "Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling" ]
+           ];
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.43.1" ];
+       fhir:Coding.code [ fhir:value "8500/3" ];
+       fhir:Coding.display [ fhir:value "Infiltrating duct carcinoma, NOS" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Condition.onsetDateTime [ fhir:value "2015-01"^^xsd:gYearMonth];
+  fhir:Condition.abatementDateTime [ fhir:value "2015-03"^^xsd:gYearMonth] .
+
+<urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type other}\">Other</span></p><p><b>name</b>: Laboratoire de charme</p></div>"
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "other" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "Laboratoire de charme"] .
+
+<urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "aa11a2be-3e36-4be7-b58a-6fc3dace2741"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 882-1}\">ABO and Rh group [Type] in Blood</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: Oct 10, 2015, 8:15:00 AM</p><p><b>performer</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 278149003}\">Blood group A Rh(D) positive</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:882-1;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "882-1" ];
+       fhir:Coding.display [ fhir:value "ABO and Rh group [Type] in Blood" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2015-10-10T09:15:00+01:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>;
+     fhir:Reference.reference [ fhir:value "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:278149003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "278149003" ];
+       fhir:Coding.display [ fhir:value "Blood group A Rh(D) positive" ]
+     ]
+  ] .
+
+<urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "6e39ccf3-f997-4a2b-8f28-b4b71c778c70"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 945-6}\">C Ab [Presence] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: Oct 10, 2015, 8:35:00 AM</p><p><b>performer</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:945-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "945-6" ];
+       fhir:Coding.display [ fhir:value "C Ab [Presence] in Serum or Plasma" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2015-10-10T09:35:00+01:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>;
+     fhir:Reference.reference [ fhir:value "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:10828004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "10828004" ];
+       fhir:Coding.display [ fhir:value "Positive" ]
+     ]
+  ] .
+
+<urn:uuid:b4916505-a06b-460c-9be8-011609282457> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "b4916505-a06b-460c-9be8-011609282457"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 1018-1}\">E Ab [Presence] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: Oct 10, 2015, 8:35:00 AM</p><p><b>performer</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:1018-1;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "1018-1" ];
+       fhir:Coding.display [ fhir:value "E Ab [Presence] in Serum or Plasma" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2015-10-10T09:35:00+01:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>;
+     fhir:Reference.reference [ fhir:value "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:10828004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "10828004" ];
+       fhir:Coding.display [ fhir:value "Positive" ]
+     ]
+  ] .
+
+<urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 1156-9}\">little c Ab [Presence] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: Oct 10, 2015, 8:35:00 AM</p><p><b>performer</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 260385009}\">Negative</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:1156-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "1156-9" ];
+       fhir:Coding.display [ fhir:value "little c Ab [Presence] in Serum or Plasma" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2015-10-10T09:35:00+01:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>;
+     fhir:Reference.reference [ fhir:value "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:260385009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "260385009" ];
+       fhir:Coding.display [ fhir:value "Negative" ]
+     ]
+  ] .
+
+<urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "2639657a-c19a-48e2-82cc-471e13b8ad94"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: \">Blood typing</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: 2015-10-10</p><p><b>performer</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation_aa11a2be-3e36-4be7-b58a-6fc3dace2741\">See above (Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2741)</a></li><li><a href=\"#Observation_6e39ccf3-f997-4a2b-8f28-b4b71c778c70\">See above (Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c70)</a></li><li><a href=\"#Observation_b4916505-a06b-460c-9be8-011609282457\">See above (Observation/b4916505-a06b-460c-9be8-011609282457)</a></li><li><a href=\"#Observation_a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4\">See above (Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4)</a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.text [ fhir:value "Blood typing" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2015-10-10"^^xsd:date];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>;
+     fhir:Reference.reference [ fhir:value "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2741>;
+     fhir:Reference.reference [ fhir:value "Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2741" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c70>;
+     fhir:Reference.reference [ fhir:value "Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c70" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Observation/b4916505-a06b-460c-9be8-011609282457>;
+     fhir:Reference.reference [ fhir:value "Observation/b4916505-a06b-460c-9be8-011609282457" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4>;
+     fhir:Reference.reference [ fhir:value "Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4" ]
+  ] .
+
+<urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "cc354e00-a419-47ea-8b6c-1768b2a01646"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 17856-6}\">Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: Nov 10, 2017, 7:20:00 AM</p><p><b>performer</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p><p><b>value</b>: 7.5 %</p><p><b>note</b>: Above stated goal of 7.0 %</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:17856-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "17856-6" ];
+       fhir:Coding.display [ fhir:value "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2017-11-10T08:20:00+01:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>;
+     fhir:Reference.reference [ fhir:value "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "7.5"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "%" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "%" ]
+  ];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Above stated goal of 7.0 %" ]
+  ] .
+
+<urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "26bee0a9-5997-4557-ab9d-c6adbb05b572"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 42803-7}\">Bacteria identified in Isolate</span></p><p><b>subject</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>effective</b>: Dec 10, 2017, 7:20:00 AM</p><p><b>performer</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 115329001}\">Methicillin resistant Staphylococcus aureus</span></p><p><b>note</b>: Healthy carrier of MRSA</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:42803-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "42803-7" ];
+       fhir:Coding.display [ fhir:value "Bacteria identified in Isolate" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2017-12-10T08:20:00+01:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>;
+     fhir:Reference.reference [ fhir:value "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:115329001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "115329001" ];
+       fhir:Coding.display [ fhir:value "Methicillin resistant Staphylococcus aureus" ]
+     ]
+  ];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Healthy carrier of MRSA" ]
+  ] .
+
+<urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5> a fhir:AllergyIntolerance;
+  fhir:Resource.id [ fhir:value "c7781f44-6df8-4a8b-9e06-0b34263a47c5"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips no-known-food-allergies}\">No known food allergies</span></p><p><b>patient</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p></div>"
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips" ];
+       fhir:Coding.code [ fhir:value "no-known-food-allergies" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8>;
+     fhir:Reference.reference [ fhir:value "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/IPS-examples-Bundle-01.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

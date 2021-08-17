@@ -1,0 +1,424 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hl7.eu.fhir.gh"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GhImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh</pre><div><p>Gravitate Health is an EU project aiming to empower and equip Europeans with health information for active personal health management and adherence to treatment.</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-17T20:09:48+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.gravitatehealth.eu/" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Gravitate Health is an EU project aiming to empower and equip Europeans with health information for active personal health management and adherence to treatment."];
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.eu.fhir.gh"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.1.0";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_ips" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips";
+       fhir:link <http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/medicationStatement-eu-gh>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medicationStatement-eu-gh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationStatement (Gravitate Health)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile defines how to represent in HL7 FHIR a MedicationStatement for the scope of the Gravitate Health project." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/Example-sections-PL>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/Example-sections-PL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMA example-sections-pl" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Placeholder for EMA example-sections PL" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/Example-sections-smpc>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/Example-sections-smpc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMA example-sections-smpc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Placeholder for EMA example-sections smpc" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/00b76159-1583-4374-b892-d360b49dae01>;
+         fhir:Reference.reference [ fhir:value "Bundle/00b76159-1583-4374-b892-d360b49dae01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "00b76159-1583-4374-b892-d360b49dae01" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/234d3626-fac0-4e69-86a6-556910eecfc9>;
+         fhir:Reference.reference [ fhir:value "Bundle/234d3626-fac0-4e69-86a6-556910eecfc9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "234d3626-fac0-4e69-86a6-556910eecfc9" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6>;
+         fhir:Reference.reference [ fhir:value "Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "36773c03-3040-45e2-82c2-bc3fc968b6a6" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/79147eac-56be-4aec-9e71-bee160e588b6>;
+         fhir:Reference.reference [ fhir:value "Bundle/79147eac-56be-4aec-9e71-bee160e588b6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "79147eac-56be-4aec-9e71-bee160e588b6" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/910d1748-674b-430c-b4ab-3665b266a31f>;
+         fhir:Reference.reference [ fhir:value "Bundle/910d1748-674b-430c-b4ab-3665b266a31f" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "910d1748-674b-430c-b4ab-3665b266a31f" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/995d3971-b899-43bf-857d-98c26634796d>;
+         fhir:Reference.reference [ fhir:value "Bundle/995d3971-b899-43bf-857d-98c26634796d" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "995d3971-b899-43bf-857d-98c26634796d" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/IPS-examples-Bundle-01>;
+         fhir:Reference.reference [ fhir:value "Bundle/IPS-examples-Bundle-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPS-examples-Bundle-01" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "List" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/List/List-example>;
+         fhir:Reference.reference [ fhir:value "List/List-example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "List-example" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/CapabilityStatement/capability-statement-ema>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/capability-statement-ema" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/fmk-ips-skilarence>;
+         fhir:Reference.reference [ fhir:value "Bundle/fmk-ips-skilarence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fmk-ips-skilarence" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/example>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "copyright.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Copyright" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "ePI-structure.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "E PI Structure" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-case-example.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case Example" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "copyrightyear" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "2021+" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "releaselabel" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "CI Build" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "show-inherited-invariants" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "false" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 15;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 16;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 17;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-liquid" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/liquid" ]
+     ], [
+       fhir:index 18;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-liquid" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/liquid" ]
+     ], [
+       fhir:index 19;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-qa" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/qa" ]
+     ], [
+       fhir:index 20;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-temp" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/pages" ]
+     ], [
+       fhir:index 21;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-output" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "output" ]
+     ], [
+       fhir:index 22;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ], [
+       fhir:index 23;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-suppressed-warnings" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/ignoreWarnings.txt" ]
+     ], [
+       fhir:index 24;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-history" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "http://hl7.eu/fhir/ig/gravitate-health/history.html" ]
+     ], [
+       fhir:index 25;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-html" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page.html" ]
+     ], [
+       fhir:index 26;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-md" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page-md.html" ]
+     ], [
+       fhir:index 27;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-contact" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 28;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-context" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 29;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-copyright" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 30;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-jurisdiction" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 31;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-license" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 32;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-publisher" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 33;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-version" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 34;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "active-tables" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

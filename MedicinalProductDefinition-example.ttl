@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/example> a fhir:MedicinalProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			<p><b>Generated Narrative</b></p>\n			<p><b>Id</b>: example</p>\n			<p><b>Identifier</b>: {mpid}</p>\n			<p><b>Classification</b>: <span title=\"Codes: {http://ema.europa.eu/example/WHOAnatomicalTherapeuticChemicalATCClassificationSystem B01AF02}\">ATC: B01AF02</span></p>\n			<p><b>Attached Document</b>: (SmPC)</p>\n			<p><b>Master File</b>: (Pharmacovigilence Master File)</p>\n			<p><b>Product Name</b>: Equilidem 2.5 mg film-coated tablets</p>\n			<blockquote>\n				<p><b>Name Part</b></p><p><b>part</b>:Equilidem</p>\n				<p><b>type</b>: <span title=\"Codes: \">Invented</span></p>\n			</blockquote>\n			<blockquote>\n				<p><b>Name Part</b></p><p><b>part</b>:2.5 mg</p>\n				<p><b>type</b>: <span title=\"Codes: \">Strength</span></p>\n			</blockquote>\n			<blockquote>\n				<p><b>Name Part</b></p>\n				<p><b>part</b>:film-coated tablets</p>\n				<p><b>type</b>: <span title=\"Codes: \">Form</span></p>\n				<p><b>Country &amp; Languages</b></p>\n				<table class=\"grid\">\n					<tr>\n						<td>-</td>\n						<td><b>Country</b></td>\n						<td><b>Jurisdiction</b></td>\n						<td><b>Language</b></td>\n					</tr>\n					<tr>\n						<td>*</td>\n						<td><span title=\"Codes: {http://ema.europa.eu/example/countryCode EU}\">EU</span></td>\n						<td><span title=\"Codes: {http://ema.europa.eu/example/jurisdictionCode EU}\">EU</span></td>\n						<td><span title=\"Codes: {http://ema.europa.eu/example/languageCode EN}\">EN</span></td>\n					</tr>\n				</table>\n			</blockquote>\n			<p><b>Manufacturing &amp; Business Operations</b></p>\n			<table class=\"grid\">\n				<tr>\n					<td>-</td>\n					<td><b>Type</b></td>\n					<td><b>EffectiveDate</b></td>\n					<td><b>Authorization</b></td>\n				</tr>\n				<tr>\n					<td>*</td>\n					<td>Batch Release</td>\n					<td>2013-03-15 --&gt; (ongoing)</td>\n					<td><span>1324TZ</span></td>\n				</tr>\n			</table>\n		</div>"
+  ];
+  fhir:MedicinalProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/MPID" ];
+     fhir:Identifier.value [ fhir:value "{mpid}" ]
+  ];
+  fhir:MedicinalProductDefinition.classification [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ema.europa.eu/example/WHOAnatomicalTherapeuticChemicalATCClassificationSystem" ];
+       fhir:Coding.code [ fhir:value "B01AF02" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.attachedDocument [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/example>;
+     fhir:Reference.reference [ fhir:value "DocumentReference/example" ]
+  ];
+  fhir:MedicinalProductDefinition.masterFile [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/example>;
+     fhir:Reference.reference [ fhir:value "DocumentReference/example" ]
+  ];
+  fhir:MedicinalProductDefinition.name [
+     fhir:index 0;
+     fhir:MedicinalProductDefinition.name.productName [ fhir:value "Equilidem 2.5 mg film-coated tablets" ];
+     fhir:MedicinalProductDefinition.name.namePart [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "Equilidem" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "INV" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "2.5 mg" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "STR" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "film-coated tablets" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "FRM" ]
+         ]
+       ]
+     ];
+     fhir:MedicinalProductDefinition.name.countryLanguage [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.countryLanguage.country [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ema.europa.eu/example/countryCode" ];
+           fhir:Coding.code [ fhir:value "EU" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.name.countryLanguage.jurisdiction [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ema.europa.eu/example/jurisdictionCode" ];
+           fhir:Coding.code [ fhir:value "EU" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.name.countryLanguage.language [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ema.europa.eu/example/languageCode" ];
+           fhir:Coding.code [ fhir:value "EN" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.operation [
+     fhir:index 0;
+     fhir:MedicinalProductDefinition.operation.type [
+       fhir:CodeableReference.concept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ema.europa.eu/example/manufacturingOperationType" ];
+           fhir:Coding.code [ fhir:value "Batchrelease" ]
+         ]
+       ]
+     ];
+     fhir:MedicinalProductDefinition.operation.effectiveDate [
+       fhir:Period.start [ fhir:value "2013-03-15"^^xsd:date ]
+     ];
+     fhir:MedicinalProductDefinition.operation.authorization [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/manufacturingAuthorisationReferenceNumber" ];
+         fhir:Identifier.value [ fhir:value "1324TZ" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

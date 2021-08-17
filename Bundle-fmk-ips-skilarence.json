@@ -1,0 +1,705 @@
+{
+  "resourceType": "Bundle",
+  "id": "fmk-ips-skilarence",
+  "meta": {
+    "lastUpdated": "2021-08-10T10:08:22.902+02:00"
+  },
+  "language": "da",
+  "identifier": {
+    "system": "urn:oid:2.16.724.4.8.10.200.10",
+    "value": "3f9ec355-dc5c-4daa-915c-5d8dc3bb11bd"
+  },
+  "type": "document",
+  "timestamp": "2021-08-10T10:08:22.902+02:00",
+  "entry": [
+    {
+      "fullUrl": "bf76b01c-2b4c-4072-8341-d8c78a24091d",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "bf76b01c-2b4c-4072-8341-d8c78a24091d",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>date</b>: Aug 10, 2021, 8:08:22 AM</p><p><b>author</b>: <span>Andreas Bach</span></p><p><b>title</b>: Patient Summary as of Tue Aug 10 10:08:22 CEST 2021</p></div>"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60591-5",
+              "display": "Patient summary Document"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/829b31e4-5457-40ba-897d-4487045b5a1b"
+        },
+        "date": "2021-08-10T10:08:22+02:00",
+        "author": [
+          {
+            "display": "Andreas Bach"
+          }
+        ],
+        "title": "Patient Summary as of Tue Aug 10 10:08:22 CEST 2021",
+        "section": [
+          {
+            "title": "Medication",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "History of Medication use Narrative"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Patient/829b31e4-5457-40ba-897d-4487045b5a1b"
+              },
+              {
+                "reference": "Medication/f4896a53-4200-4684-91d5-d4ee0377fa9e"
+              },
+              {
+                "reference": "MedicationStatement/6fe36b74-d862-465b-92d8-6c89831125ae"
+              },
+              {
+                "reference": "Medication/2ae72155-8b7b-455e-a39b-75f8dce01e81"
+              },
+              {
+                "reference": "MedicationStatement/22bb5d94-8531-4c6a-af09-87bcd57e9421"
+              },
+              {
+                "reference": "Medication/2c1524dc-45ca-4184-939e-063bb31f1ad4"
+              },
+              {
+                "reference": "MedicationStatement/7a9d1be0-3ad9-4568-a67d-1e686fe12b78"
+              },
+              {
+                "reference": "Medication/24816319-aab6-4766-89af-a79f5e921cf3"
+              },
+              {
+                "reference": "MedicationStatement/50d65da1-9f36-4034-903b-d895de8ef758"
+              },
+              {
+                "reference": "Medication/cc2c0a06-7469-465d-956f-59e39133b495"
+              },
+              {
+                "reference": "MedicationStatement/46860de8-4e8c-4c69-8ba5-2492903d0b81"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "829b31e4-5457-40ba-897d-4487045b5a1b",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "829b31e4-5457-40ba-897d-4487045b5a1b",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 2401010005</p><p><b>name</b>: Mads Svendsen (OFFICIAL)</p><p><b>address</b>: Hæstvej 355 Væggerløse 4873 (HOME)</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.208.176.1.2",
+            "value": "2401010005"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Svendsen",
+            "given": [
+              "Mads"
+            ]
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "postal",
+            "line": [
+              "Hæstvej 355"
+            ],
+            "city": "Væggerløse",
+            "postalCode": "4873"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "f4896a53-4200-4684-91d5-d4ee0377fa9e",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "f4896a53-4200-4684-91d5-d4ee0377fa9e",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95cface3-8c65-4c5c-bc89-49c65e3e5fa9</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc L04AX07}\">Skilarence</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse ENTTAB}\">enterotabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">DIMETHYLFUMARAT</span></td><td>true</td><td>30.0 mg/ enterotabletter</td></tr></table></div>"
+        },
+        "extension": [
+          {
+            "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url",
+            "valueString": "https://www.indlaegssedler.dk/Search/Search/Search/500781"
+          },
+          {
+            "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-number",
+            "valueString": "500781"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.724.4.8.10.200.10",
+            "value": "95cface3-8c65-4c5c-bc89-49c65e3e5fa9"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "L04AX07",
+              "display": "Dimethylfumarat"
+            }
+          ],
+          "text": "Skilarence"
+        },
+        "form": {
+          "coding": [
+            {
+              "system": "http://medicinpriser.dk/formbetegnelse",
+              "code": "ENTTAB"
+            }
+          ],
+          "text": "enterotabletter"
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "display": "DIMETHYLFUMARAT"
+                }
+              ]
+            },
+            "isActive": true,
+            "strength": {
+              "numerator": {
+                "value": 30.0,
+                "unit": "mg",
+                "system": "http://medicinpriser.dk/styrkeenhed",
+                "code": "MG"
+              },
+              "denominator": {
+                "unit": "enterotabletter",
+                "system": "http://medicinpriser.dk/formbetegnelse",
+                "code": "ENTTAB"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "6fe36b74-d862-465b-92d8-6c89831125ae",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6fe36b74-d862-465b-92d8-6c89831125ae",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Aug 9, 2021, 10:00:00 PM --&gt; Aug 28, 2021, 10:00:00 PM</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://medicinpriser.dk/indikation",
+            "valueCoding": {
+              "system": "http://medicinpriser.dk/indikation",
+              "code": "336",
+              "display": "ved multipel sklerose"
+            }
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "id": "f4896a53-4200-4684-91d5-d4ee0377fa9e"
+        },
+        "subject": {
+          "reference": "Patient/829b31e4-5457-40ba-897d-4487045b5a1b"
+        },
+        "effectivePeriod": {
+          "start": "2021-08-10T00:00:00+02:00",
+          "end": "2021-08-29T00:00:00+02:00"
+        },
+        "dosage": [
+          {
+            "extension": [
+              {
+                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                "valuePeriod": {
+                  "start": "2021-08-10T00:00:00+02:00",
+                  "end": "2021-08-29T00:00:00+02:00"
+                }
+              }
+            ],
+            "text": "1 tablet morgen og aften",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://medicinpriser.dk/administrationsvej",
+                  "code": "OR",
+                  "display": "Oral anvendelse"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "2ae72155-8b7b-455e-a39b-75f8dce01e81",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "2ae72155-8b7b-455e-a39b-75f8dce01e81",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 4623dd4a-7428-4a8e-897b-eabee5788fc9</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.724.4.8.10.200.10",
+            "value": "4623dd4a-7428-4a8e-897b-eabee5788fc9"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "B01AA03",
+              "display": "Warfarin"
+            }
+          ],
+          "text": "Marevan"
+        },
+        "form": {
+          "coding": [
+            {
+              "system": "http://medicinpriser.dk/formbetegnelse",
+              "code": "TAB"
+            }
+          ],
+          "text": "tabletter"
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "display": "WARFARINNATRIUM"
+                }
+              ]
+            },
+            "isActive": true,
+            "strength": {
+              "numerator": {
+                "value": 2.5,
+                "unit": "mg",
+                "system": "http://medicinpriser.dk/styrkeenhed",
+                "code": "MG"
+              },
+              "denominator": {
+                "unit": "tabletter",
+                "system": "http://medicinpriser.dk/formbetegnelse",
+                "code": "TAB"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "22bb5d94-8531-4c6a-af09-87bcd57e9421",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22bb5d94-8531-4c6a-af09-87bcd57e9421",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://medicinpriser.dk/indikation",
+            "valueCoding": {
+              "system": "http://medicinpriser.dk/indikation",
+              "code": "68",
+              "display": "blodfortyndende"
+            }
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "id": "2ae72155-8b7b-455e-a39b-75f8dce01e81"
+        },
+        "subject": {
+          "reference": "Patient/829b31e4-5457-40ba-897d-4487045b5a1b"
+        },
+        "effectivePeriod": {
+          "start": "2020-09-23T00:00:00+02:00"
+        },
+        "dosage": [
+          {
+            "text": "bla bla",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://medicinpriser.dk/administrationsvej",
+                  "code": "OR",
+                  "display": "Oral anvendelse"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "2c1524dc-45ca-4184-939e-063bb31f1ad4",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "2c1524dc-45ca-4184-939e-063bb31f1ad4",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 8dd0f856-9a58-40c3-bac0-099347883a85</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.724.4.8.10.200.10",
+            "value": "8dd0f856-9a58-40c3-bac0-099347883a85"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "B01AA03",
+              "display": "Warfarin"
+            }
+          ],
+          "text": "Marevan"
+        },
+        "form": {
+          "coding": [
+            {
+              "system": "http://medicinpriser.dk/formbetegnelse",
+              "code": "TAB"
+            }
+          ],
+          "text": "tabletter"
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "display": "WARFARINNATRIUM"
+                }
+              ]
+            },
+            "isActive": true,
+            "strength": {
+              "numerator": {
+                "value": 2.5,
+                "unit": "mg",
+                "system": "http://medicinpriser.dk/styrkeenhed",
+                "code": "MG"
+              },
+              "denominator": {
+                "unit": "tabletter",
+                "system": "http://medicinpriser.dk/formbetegnelse",
+                "code": "TAB"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "7a9d1be0-3ad9-4568-a67d-1e686fe12b78",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "7a9d1be0-3ad9-4568-a67d-1e686fe12b78",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://medicinpriser.dk/indikation",
+            "valueCoding": {
+              "system": "http://medicinpriser.dk/indikation",
+              "code": "68",
+              "display": "blodfortyndende"
+            }
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "id": "2c1524dc-45ca-4184-939e-063bb31f1ad4"
+        },
+        "subject": {
+          "reference": "Patient/829b31e4-5457-40ba-897d-4487045b5a1b"
+        },
+        "effectivePeriod": {
+          "start": "2020-09-23T00:00:00+02:00"
+        },
+        "dosage": [
+          {
+            "extension": [
+              {
+                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                "valuePeriod": {
+                  "start": "2020-09-23T00:00:00+02:00"
+                }
+              }
+            ],
+            "route": {
+              "coding": [
+                {
+                  "system": "http://medicinpriser.dk/administrationsvej",
+                  "code": "OR",
+                  "display": "Oral anvendelse"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "24816319-aab6-4766-89af-a79f5e921cf3",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "24816319-aab6-4766-89af-a79f5e921cf3",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 7894c945-3b9a-47eb-84bb-307c3bd0144d</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.724.4.8.10.200.10",
+            "value": "7894c945-3b9a-47eb-84bb-307c3bd0144d"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "B01AA03",
+              "display": "Warfarin"
+            }
+          ],
+          "text": "Marevan"
+        },
+        "form": {
+          "coding": [
+            {
+              "system": "http://medicinpriser.dk/formbetegnelse",
+              "code": "TAB"
+            }
+          ],
+          "text": "tabletter"
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "display": "WARFARINNATRIUM"
+                }
+              ]
+            },
+            "isActive": true,
+            "strength": {
+              "numerator": {
+                "value": 2.5,
+                "unit": "mg",
+                "system": "http://medicinpriser.dk/styrkeenhed",
+                "code": "MG"
+              },
+              "denominator": {
+                "unit": "tabletter",
+                "system": "http://medicinpriser.dk/formbetegnelse",
+                "code": "TAB"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "50d65da1-9f36-4034-903b-d895de8ef758",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "50d65da1-9f36-4034-903b-d895de8ef758",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://medicinpriser.dk/indikation",
+            "valueCoding": {
+              "system": "http://medicinpriser.dk/indikation",
+              "code": "256",
+              "display": "til forebyggelse af blodprop"
+            }
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "id": "24816319-aab6-4766-89af-a79f5e921cf3"
+        },
+        "subject": {
+          "reference": "Patient/829b31e4-5457-40ba-897d-4487045b5a1b"
+        },
+        "effectivePeriod": {
+          "start": "2020-09-23T00:00:00+02:00"
+        },
+        "dosage": [
+          {
+            "extension": [
+              {
+                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                "valuePeriod": {
+                  "start": "2020-09-23T00:00:00+02:00",
+                  "end": "2020-09-25T00:00:00+02:00"
+                }
+              }
+            ],
+            "route": {
+              "coding": [
+                {
+                  "system": "http://medicinpriser.dk/administrationsvej",
+                  "code": "OR",
+                  "display": "Oral anvendelse"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "cc2c0a06-7469-465d-956f-59e39133b495",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "cc2c0a06-7469-465d-956f-59e39133b495",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 81fbceed-f24e-4105-bfa2-4b604ca35937</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.724.4.8.10.200.10",
+            "value": "81fbceed-f24e-4105-bfa2-4b604ca35937"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "B01AA03",
+              "display": "Warfarin"
+            }
+          ],
+          "text": "Marevan"
+        },
+        "form": {
+          "coding": [
+            {
+              "system": "http://medicinpriser.dk/formbetegnelse",
+              "code": "TAB"
+            }
+          ],
+          "text": "tabletter"
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "display": "WARFARINNATRIUM"
+                }
+              ]
+            },
+            "isActive": true,
+            "strength": {
+              "numerator": {
+                "value": 2.5,
+                "unit": "mg",
+                "system": "http://medicinpriser.dk/styrkeenhed",
+                "code": "MG"
+              },
+              "denominator": {
+                "unit": "tabletter",
+                "system": "http://medicinpriser.dk/formbetegnelse",
+                "code": "TAB"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "46860de8-4e8c-4c69-8ba5-2492903d0b81",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "46860de8-4e8c-4c69-8ba5-2492903d0b81",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://medicinpriser.dk/indikation",
+            "valueCoding": {
+              "system": "http://medicinpriser.dk/indikation",
+              "code": "68",
+              "display": "blodfortyndende"
+            }
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "id": "cc2c0a06-7469-465d-956f-59e39133b495"
+        },
+        "subject": {
+          "reference": "Patient/829b31e4-5457-40ba-897d-4487045b5a1b"
+        },
+        "effectivePeriod": {
+          "start": "2020-09-23T00:00:00+02:00"
+        },
+        "dosage": [
+          {
+            "extension": [
+              {
+                "url": "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod",
+                "valuePeriod": {
+                  "start": "2020-09-23T00:00:00+02:00"
+                }
+              }
+            ],
+            "route": {
+              "coding": [
+                {
+                  "system": "http://medicinpriser.dk/administrationsvej",
+                  "code": "OR",
+                  "display": "Oral anvendelse"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

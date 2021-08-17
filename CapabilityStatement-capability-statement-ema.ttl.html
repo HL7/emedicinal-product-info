@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.EU.FHIR.GH\Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server - TTL Representation - FHIR v4.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/pcsp.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8.1"}
+    h3,h4,h5,h6{--heading-prefix:"8.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+        
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
+            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
+          </a>
+        </div>
+   <!-- <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-capability-statement-ema.html">SmPC / PL</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CapabilityStatement-capability-statement-ema.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CapabilityStatement-capability-statement-ema.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-capability-statement-ema.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server - TTL Representation</h2>
+
+<p><a href="CapabilityStatement-capability-statement-ema.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CapabilityStatement-capability-statement-ema.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf"><code class="language-turtle"><a name="b2fef185-ef13-4ea0-9f69-fb50fb83f816">​</a>
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CapabilityStatement;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">fhir:value</a> "capability-statement-ema"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "extensions" ];
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server&lt;/h2&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET a resource (read interaction)\"&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET past versions of resources (vread interaction)\"&gt;V-Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET all set of resources of the type (search interaction)\"&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"PUT a new resource version (update interaction)\"&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"POST a new resource (create interaction)\"&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET changes to a resource (history interaction on instance)\"&gt;Updates&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\"GET changes for all resources of the type (history interaction on type)\"&gt;History&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Bundle&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/StructureDefinition/Bundle\"&gt;http://hl7.org/fhir/StructureDefinition/Bundle&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;List&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/StructureDefinition/List\"&gt;http://hl7.org/fhir/StructureDefinition/List&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  ];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.url">fhir:CapabilityStatement.url</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">fhir:value</a> "/metadata"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "0.1.0"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.status">fhir:CapabilityStatement.status</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "draft"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.experimental">fhir:CapabilityStatement.experimental</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "true"^^xsd:boolean];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.date">fhir:CapabilityStatement.date</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#dateTime">fhir:value</a> "2021-06-02T10:11:40.5962333Z"^^xsd:dateTime];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.publisher">fhir:CapabilityStatement.publisher</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "https://www.gravitatehealth.eu/"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.contact">fhir:CapabilityStatement.contact</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/branches/R4B//metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "Gravitate Health Project" ];
+     <a href="http://build.fhir.org/branches/R4B//metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/branches/R4B//datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "url" ];
+       <a href="http://build.fhir.org/branches/R4B//datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "https://www.gravitatehealth.eu/" ]     ]
+  ];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.kind">fhir:CapabilityStatement.kind</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "capability"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.implementation">fhir:CapabilityStatement.implementation</a> [
+     <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.implementation.description">fhir:CapabilityStatement.implementation.description</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "Gravitate Health R4 Endpoint" ];
+     <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.implementation.url">fhir:CapabilityStatement.implementation.url</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#url">fhir:value</a> "https://www.gravitatehealth.eu/" ]
+  ];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.fhirVersion">fhir:CapabilityStatement.fhirVersion</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "4.0.1"];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.format">fhir:CapabilityStatement.format</a> [
+     <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "application/fhir+json";
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0
+  ], [
+     <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "json";
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1
+  ], [
+     <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "application/fhir+xml";
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2
+  ], [
+     <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "xml";
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3
+  ];
+  <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest">fhir:CapabilityStatement.rest</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.mode">fhir:CapabilityStatement.rest.mode</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "server" ];
+     <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource">fhir:CapabilityStatement.rest.resource</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.type">fhir:CapabilityStatement.rest.resource.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "Bundle" ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.profile">fhir:CapabilityStatement.rest.resource.profile</a> [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/StructureDefinition/Bundle";
+         <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Bundle&gt;       ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction">fhir:CapabilityStatement.rest.resource.interaction</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "read" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "vread" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "history-type" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "history-instance" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "search-type" ]       ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.versioning">fhir:CapabilityStatement.rest.resource.versioning</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "versioned" ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.readHistory">fhir:CapabilityStatement.rest.resource.readHistory</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "true"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.updateCreate">fhir:CapabilityStatement.rest.resource.updateCreate</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.conditionalCreate">fhir:CapabilityStatement.rest.resource.conditionalCreate</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">fhir:CapabilityStatement.rest.resource.conditionalUpdate</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">fhir:CapabilityStatement.rest.resource.searchRevInclude</a> [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "Composition:entry";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ], [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "List:item";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1       ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">fhir:CapabilityStatement.rest.resource.searchParam</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_id" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-id";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-id&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Logical id of this artifact" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_security" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-security";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-security&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Security Labels applied to this resource" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_profile" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-profile";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-profile&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "uri" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Profiles this resource claims to conform to" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "type" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Bundle-type";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Bundle-type&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection | subscription-notification" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "identifier" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Bundle-identifier";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Bundle-identifier&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Persistent identifier for the bundle" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_lastUpdated" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-lastUpdated&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "date" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "When the resource version last changed" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_source" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-source";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-source&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "uri" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Identifies where the resource comes from" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "timestamp" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Bundle-timestamp";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Bundle-timestamp&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "date" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "When the bundle was assembled" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_tag" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-tag";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-tag&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Tags applied to this resource" ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.type">fhir:CapabilityStatement.rest.resource.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "List" ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.profile">fhir:CapabilityStatement.rest.resource.profile</a> [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/StructureDefinition/List";
+         <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/List&gt;       ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction">fhir:CapabilityStatement.rest.resource.interaction</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "read" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "vread" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "history-type" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "history-instance" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "search-type" ]       ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.versioning">fhir:CapabilityStatement.rest.resource.versioning</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "versioned" ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.readHistory">fhir:CapabilityStatement.rest.resource.readHistory</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "true"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.updateCreate">fhir:CapabilityStatement.rest.resource.updateCreate</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.conditionalCreate">fhir:CapabilityStatement.rest.resource.conditionalCreate</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">fhir:CapabilityStatement.rest.resource.conditionalUpdate</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">fhir:CapabilityStatement.rest.resource.searchInclude</a> [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "List:subject";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ], [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "List:item";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1       ], [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "List:source";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2       ], [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "List:patient";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3       ], [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "List:encounter";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4       ], [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "*";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5       ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">fhir:CapabilityStatement.rest.resource.searchRevInclude</a> [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "Composition:entry";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ], [
+         <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "List:item";
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1       ];
+       <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">fhir:CapabilityStatement.rest.resource.searchParam</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_id" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-id";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-id&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Logical id of this artifact" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_security" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-security";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-security&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Security Labels applied to this resource" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_profile" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-profile";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-profile&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "uri" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Profiles this resource claims to conform to" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "notes" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/List-notes";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/List-notes&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "string" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "The annotation  - text content (as markdown)" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "title" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/List-title";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/List-title&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "string" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Descriptive name for the list" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "identifier" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/clinical-identifier";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/clinical-identifier&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Multiple Resources: \r\n\r\n* [AllergyIntolerance](allergyintolerance.html): External ids for this item\r\n* [CarePlan](careplan.html): External Ids for this plan\r\n* [CareTeam](careteam.html): External Ids for this team\r\n* [Composition](composition.html): Version-independent identifier for the Composition\r\n* [Condition](condition.html): A unique identifier of the condition record\r\n* [Consent](consent.html): Identifier for this record (external references)\r\n* [DetectedIssue](detectedissue.html): Unique id for the detected issue\r\n* [DeviceRequest](devicerequest.html): Business identifier for request/order\r\n* [DiagnosticReport](diagnosticreport.html): An identifier for the report\r\n* [DocumentManifest](documentmanifest.html): Unique Identifier for the set of documents\r\n* [DocumentReference](documentreference.html): Identifier of the attachment binary\r\n* [Encounter](encounter.html): Identifier(s) by which this encounter is known\r\n* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare\r\n* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier\r\n* [Goal](goal.html): External Ids for this goal\r\n* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID and Accession number\r\n* [Immunization](immunization.html): Business identifier\r\n* [List](list.html): Business identifier\r\n* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier\r\n* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier\r\n* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier\r\n* [MedicationUsage](medicationusage.html): Return statements with this external identifier\r\n* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier\r\n* [Observation](observation.html): The unique id for a particular observation\r\n* [Procedure](procedure.html): A unique identifier for a procedure\r\n* [RiskAssessment](riskassessment.html): Unique identifier for the assessment\r\n* [ServiceRequest](servicerequest.html): Identifiers assigned to this order\r\n* [SupplyDelivery](supplydelivery.html): External identifier\r\n* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest\r\n* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_lastUpdated" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-lastUpdated&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "date" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "When the resource version last changed" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "subject" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/List-subject";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/List-subject&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "reference" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "If all resources have the same subject" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "item" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/List-item";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/List-item&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "reference" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Actual entry" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "source" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/List-source";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/List-source&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "reference" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Who and/or what defined the list contents (aka Author)" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_source" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-source";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-source&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "uri" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Identifies where the resource comes from" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "patient" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/clinical-patient";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/clinical-patient&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "reference" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Multiple Resources: \r\n\r\n* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for\r\n* [CarePlan](careplan.html): Who the care plan is for\r\n* [CareTeam](careteam.html): Who care team is for\r\n* [ClinicalImpression](clinicalimpression.html): Patient or group assessed\r\n* [Composition](composition.html): Who and/or what the composition is about\r\n* [Condition](condition.html): Who has the condition?\r\n* [Consent](consent.html): Who the consent applies to\r\n* [DetectedIssue](detectedissue.html): Associated patient\r\n* [DeviceRequest](devicerequest.html): Individual the service is ordered for\r\n* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient\r\n* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient\r\n* [DocumentManifest](documentmanifest.html): The subject of the set of documents\r\n* [DocumentReference](documentreference.html): Who/what is the subject of the document\r\n* [Encounter](encounter.html): The patient or group present at the encounter\r\n* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care\r\n* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for\r\n* [Flag](flag.html): The identity of a subject to list flags for\r\n* [Goal](goal.html): Who this goal is intended for\r\n* [ImagingStudy](imagingstudy.html): Who the study is about\r\n* [Immunization](immunization.html): The patient for the vaccination record\r\n* [List](list.html): If all resources have the same subject\r\n* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for\r\n* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for\r\n* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient\r\n* [MedicationUsage](medicationusage.html): Returns statements for a specific patient.\r\n* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement\r\n* [Observation](observation.html): The subject that the observation is about (if patient)\r\n* [Procedure](procedure.html): Search by subject - a patient\r\n* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?\r\n* [ServiceRequest](servicerequest.html): Search by subject - a patient\r\n* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied\r\n* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "code" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/clinical-code";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/clinical-code&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Multiple Resources: \r\n\r\n* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance\r\n* [Condition](condition.html): Code for the condition\r\n* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered\r\n* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result\r\n* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code\r\n* [List](list.html): What the purpose of this list is\r\n* [Medication](medication.html): Returns medications for a specific code\r\n* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code\r\n* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code\r\n* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code\r\n* [MedicationUsage](medicationusage.html): Return statements of this medication code\r\n* [Observation](observation.html): The code of the observation type\r\n* [Procedure](procedure.html): A code to identify a  procedure\r\n* [ServiceRequest](servicerequest.html): What is being requested/ordered" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "_tag" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/Resource-tag";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Resource-tag&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Tags applied to this resource" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "status" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/List-status";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/List-status&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "current | retired | entered-in-error" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "encounter" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/clinical-encounter";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/clinical-encounter&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "reference" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Multiple Resources: \r\n\r\n* [Composition](composition.html): Context of the Composition\r\n* [DeviceRequest](devicerequest.html): Encounter during which request was created\r\n* [DiagnosticReport](diagnosticreport.html): The Encounter when the order was made\r\n* [DocumentReference](documentreference.html): Context of the document  content\r\n* [Flag](flag.html): Alert relevant during encounter\r\n* [List](list.html): Context in which list created\r\n* [NutritionOrder](nutritionorder.html): Return nutrition orders with this encounter identifier\r\n* [Observation](observation.html): Encounter related to the observation\r\n* [Procedure](procedure.html): The Encounter during which this Procedure was created\r\n* [RiskAssessment](riskassessment.html): Where was assessment performed?\r\n* [ServiceRequest](servicerequest.html): An encounter in which this request is made\r\n* [VisionPrescription](visionprescription.html): Return prescriptions with this encounter identifier" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 16;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "date" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/clinical-date";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/clinical-date&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "date" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Multiple Resources: \r\n\r\n* [AllergyIntolerance](allergyintolerance.html): Date first version of the resource instance was recorded\r\n* [CarePlan](careplan.html): Time period plan covers\r\n* [CareTeam](careteam.html): A date within the coverage time period.\r\n* [ClinicalImpression](clinicalimpression.html): When the assessment was documented\r\n* [Composition](composition.html): Composition editing time\r\n* [Consent](consent.html): When consent was agreed to\r\n* [DiagnosticReport](diagnosticreport.html): The clinically relevant time of the report\r\n* [Encounter](encounter.html): A date within the period the Encounter lasted\r\n* [EpisodeOfCare](episodeofcare.html): The provided date search value falls within the episode of care's period\r\n* [FamilyMemberHistory](familymemberhistory.html): When history was recorded or last updated\r\n* [Flag](flag.html): Time period when flag is active\r\n* [Immunization](immunization.html): Vaccination  (non)-Administration Date\r\n* [List](list.html): When the list was prepared\r\n* [Observation](observation.html): Obtained date/time. If the obtained element is a period, a date that falls in the period\r\n* [Procedure](procedure.html): When the procedure occurred or is occurring\r\n* [RiskAssessment](riskassessment.html): When was assessment made?\r\n* [SupplyRequest](supplyrequest.html): When the request was made" ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 17;
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">fhir:value</a> "empty-reason" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/SearchParameter/List-empty-reason";
+           <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/List-empty-reason&gt;         ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">fhir:value</a> "token" ];
+         <a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">fhir:value</a> "Why list is empty" ]       ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="7088ddf0-d4c9-4e9b-afac-3bd90ea3283c">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Tue, Aug 17, 2021 20:09+0000">2021-08-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            <div style="color: #33333">
+	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7" href="qa.html">QA Report</a>
+	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
+	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
+		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
+	</a>
+	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
+	  <!-- <br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
+	<div id="container width=100% style=&quot;display:block;&quot; ">
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

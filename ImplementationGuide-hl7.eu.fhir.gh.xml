@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.eu.fhir.gh"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>GhImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh</pre><div><p>Gravitate Health is an EU project aiming to empower and equip Europeans with health information for active personal health management and adherence to treatment.</p>
+</div></div>
+  </text>
+  <url value="http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh"/>
+  <version value="0.1.0"/>
+  <name value="GhImplementationGuide"/>
+  <title value="Gravitate Health FHIR Implementation Guide"/>
+  <status value="active"/>
+  <date value="2021-08-17T20:09:48+00:00"/>
+  <contact>
+    <name value="Gravitate Health Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gravitatehealth.eu/"/>
+    </telecom>
+  </contact>
+  <description value="Gravitate Health is an EU project aiming to empower and equip Europeans with health information for active personal health management and adherence to treatment."/>
+  <packageId value="hl7.eu.fhir.gh"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.1.0"/>
+  <dependsOn id="hl7_fhir_uv_ips">
+    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
+    <packageId value="hl7.fhir.uv.ips"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationStatement-eu-gh"/>
+      </reference>
+      <name value="MedicationStatement (Gravitate Health)"/>
+      <description value="This profile defines how to represent in HL7 FHIR a MedicationStatement for the scope of the Gravitate Health project."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Example-sections-PL"/>
+      </reference>
+      <name value="EMA example-sections-pl"/>
+      <description value="Placeholder for EMA example-sections PL"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Example-sections-smpc"/>
+      </reference>
+      <name value="EMA example-sections-smpc"/>
+      <description value="Placeholder for EMA example-sections smpc"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/00b76159-1583-4374-b892-d360b49dae01"/>
+      </reference>
+      <name value="00b76159-1583-4374-b892-d360b49dae01"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/234d3626-fac0-4e69-86a6-556910eecfc9"/>
+      </reference>
+      <name value="234d3626-fac0-4e69-86a6-556910eecfc9"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6"/>
+      </reference>
+      <name value="36773c03-3040-45e2-82c2-bc3fc968b6a6"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/79147eac-56be-4aec-9e71-bee160e588b6"/>
+      </reference>
+      <name value="79147eac-56be-4aec-9e71-bee160e588b6"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/910d1748-674b-430c-b4ab-3665b266a31f"/>
+      </reference>
+      <name value="910d1748-674b-430c-b4ab-3665b266a31f"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/995d3971-b899-43bf-857d-98c26634796d"/>
+      </reference>
+      <name value="995d3971-b899-43bf-857d-98c26634796d"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/IPS-examples-Bundle-01"/>
+      </reference>
+      <name value="IPS-examples-Bundle-01"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/List-example"/>
+      </reference>
+      <name value="List-example"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/capability-statement-ema"/>
+      </reference>
+      <name value="Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/fmk-ips-skilarence"/>
+      </reference>
+      <name value="fmk-ips-skilarence"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/example"/>
+      </reference>
+      <name value="example"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="copyright.html"/>
+        <title value="Copyright"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="ePI-structure.html"/>
+        <title value="E PI Structure"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="use-case-example.html"/>
+        <title value="Use Case Example"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2021+"/>
+    </parameter>
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="show-inherited-invariants"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code value="path-qa"/>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code value="path-temp"/>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code value="path-output"/>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code value="path-suppressed-warnings"/>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code value="path-history"/>
+      <value value="http://hl7.eu/fhir/ig/gravitate-health/history.html"/>
+    </parameter>
+    <parameter>
+      <code value="template-html"/>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code value="template-md"/>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code value="apply-contact"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-context"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-copyright"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-jurisdiction"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-license"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-publisher"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-version"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="active-tables"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

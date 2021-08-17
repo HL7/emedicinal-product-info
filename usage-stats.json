@@ -1,0 +1,79 @@
+{
+  "package": "hl7.eu.fhir.gh",
+  "version": "0.1.0",
+  "fhirVersion": "4.1.0",
+  "extensions": [],
+  "profiles": {
+    "MedicationStatement": [
+      {
+        "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/medicationStatement-eu-gh",
+        "title": "MedicationStatement (Gravitate Health)"
+      }
+    ]
+  },
+  "usage": {
+    "http://ema.europa.eu/fhir/extension/active-substance": [
+      "List.subject"
+    ],
+    "http://ema.europa.eu/fhir/extension/documentType": [
+      "List.entry.item"
+    ],
+    "http://ema.europa.eu/fhir/extension/domain": [
+      "List.subject"
+    ],
+    "http://ema.europa.eu/fhir/extension/dummyValidationReference": [
+      "Bundle.entry.resource"
+    ],
+    "http://ema.europa.eu/fhir/extension/language": [
+      "List.entry.item"
+    ],
+    "http://ema.europa.eu/fhir/extension/marketing-authorization-holder": [
+      "List.subject"
+    ],
+    "http://ema.europa.eu/fhir/extension/medicine-name": [
+      "List.subject"
+    ],
+    "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url": [
+      "Bundle.entry.resource"
+    ],
+    "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-number": [
+      "Bundle.entry.resource"
+    ],
+    "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod": [
+      "Bundle.entry.resource.dosage"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "MedicationStatement.effective[x]"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Bundle.entry.resource.code.coding.display"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://medicinpriser.dk/indikation": [
+      "Bundle.entry.resource"
+    ]
+  }
+}

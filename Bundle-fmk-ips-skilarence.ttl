@@ -1,0 +1,687 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/fmk-ips-skilarence> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fmk-ips-skilarence"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2021-08-10T10:08:22.902+02:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "da"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "3f9ec355-dc5c-4daa-915c-5d8dc3bb11bd" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2021-08-10T10:08:22.902+02:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "bf76b01c-2b4c-4072-8341-d8c78a24091d" ];
+     fhir:Bundle.entry.resource <bf76b01c-2b4c-4072-8341-d8c78a24091d>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "829b31e4-5457-40ba-897d-4487045b5a1b" ];
+     fhir:Bundle.entry.resource <829b31e4-5457-40ba-897d-4487045b5a1b>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "f4896a53-4200-4684-91d5-d4ee0377fa9e" ];
+     fhir:Bundle.entry.resource <f4896a53-4200-4684-91d5-d4ee0377fa9e>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "6fe36b74-d862-465b-92d8-6c89831125ae" ];
+     fhir:Bundle.entry.resource <6fe36b74-d862-465b-92d8-6c89831125ae>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "2ae72155-8b7b-455e-a39b-75f8dce01e81" ];
+     fhir:Bundle.entry.resource <2ae72155-8b7b-455e-a39b-75f8dce01e81>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "22bb5d94-8531-4c6a-af09-87bcd57e9421" ];
+     fhir:Bundle.entry.resource <22bb5d94-8531-4c6a-af09-87bcd57e9421>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "2c1524dc-45ca-4184-939e-063bb31f1ad4" ];
+     fhir:Bundle.entry.resource <2c1524dc-45ca-4184-939e-063bb31f1ad4>
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "7a9d1be0-3ad9-4568-a67d-1e686fe12b78" ];
+     fhir:Bundle.entry.resource <7a9d1be0-3ad9-4568-a67d-1e686fe12b78>
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "24816319-aab6-4766-89af-a79f5e921cf3" ];
+     fhir:Bundle.entry.resource <24816319-aab6-4766-89af-a79f5e921cf3>
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "50d65da1-9f36-4034-903b-d895de8ef758" ];
+     fhir:Bundle.entry.resource <50d65da1-9f36-4034-903b-d895de8ef758>
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "cc2c0a06-7469-465d-956f-59e39133b495" ];
+     fhir:Bundle.entry.resource <cc2c0a06-7469-465d-956f-59e39133b495>
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.fullUrl [ fhir:value "46860de8-4e8c-4c69-8ba5-2492903d0b81" ];
+     fhir:Bundle.entry.resource <46860de8-4e8c-4c69-8ba5-2492903d0b81>
+  ] .
+
+<bf76b01c-2b4c-4072-8341-d8c78a24091d> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "bf76b01c-2b4c-4072-8341-d8c78a24091d"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>date</b>: Aug 10, 2021, 8:08:22 AM</p><p><b>author</b>: <span>Andreas Bach</span></p><p><b>title</b>: Patient Summary as of Tue Aug 10 10:08:22 CEST 2021</p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:60591-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "60591-5" ];
+       fhir:Coding.display [ fhir:value "Patient summary Document" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/829b31e4-5457-40ba-897d-4487045b5a1b>;
+     fhir:Reference.reference [ fhir:value "Patient/829b31e4-5457-40ba-897d-4487045b5a1b" ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-08-10T10:08:22+02:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.display [ fhir:value "Andreas Bach" ]
+  ];
+  fhir:Composition.title [ fhir:value "Patient Summary as of Tue Aug 10 10:08:22 CEST 2021"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Medication" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10160-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10160-0" ];
+         fhir:Coding.display [ fhir:value "History of Medication use Narrative" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/829b31e4-5457-40ba-897d-4487045b5a1b>;
+       fhir:Reference.reference [ fhir:value "Patient/829b31e4-5457-40ba-897d-4487045b5a1b" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Medication/f4896a53-4200-4684-91d5-d4ee0377fa9e>;
+       fhir:Reference.reference [ fhir:value "Medication/f4896a53-4200-4684-91d5-d4ee0377fa9e" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicationStatement/6fe36b74-d862-465b-92d8-6c89831125ae>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/6fe36b74-d862-465b-92d8-6c89831125ae" ]
+     ], [
+       fhir:index 3;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Medication/2ae72155-8b7b-455e-a39b-75f8dce01e81>;
+       fhir:Reference.reference [ fhir:value "Medication/2ae72155-8b7b-455e-a39b-75f8dce01e81" ]
+     ], [
+       fhir:index 4;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicationStatement/22bb5d94-8531-4c6a-af09-87bcd57e9421>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/22bb5d94-8531-4c6a-af09-87bcd57e9421" ]
+     ], [
+       fhir:index 5;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Medication/2c1524dc-45ca-4184-939e-063bb31f1ad4>;
+       fhir:Reference.reference [ fhir:value "Medication/2c1524dc-45ca-4184-939e-063bb31f1ad4" ]
+     ], [
+       fhir:index 6;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicationStatement/7a9d1be0-3ad9-4568-a67d-1e686fe12b78>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/7a9d1be0-3ad9-4568-a67d-1e686fe12b78" ]
+     ], [
+       fhir:index 7;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Medication/24816319-aab6-4766-89af-a79f5e921cf3>;
+       fhir:Reference.reference [ fhir:value "Medication/24816319-aab6-4766-89af-a79f5e921cf3" ]
+     ], [
+       fhir:index 8;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicationStatement/50d65da1-9f36-4034-903b-d895de8ef758>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/50d65da1-9f36-4034-903b-d895de8ef758" ]
+     ], [
+       fhir:index 9;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Medication/cc2c0a06-7469-465d-956f-59e39133b495>;
+       fhir:Reference.reference [ fhir:value "Medication/cc2c0a06-7469-465d-956f-59e39133b495" ]
+     ], [
+       fhir:index 10;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicationStatement/46860de8-4e8c-4c69-8ba5-2492903d0b81>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/46860de8-4e8c-4c69-8ba5-2492903d0b81" ]
+     ]
+  ] .
+
+<829b31e4-5457-40ba-897d-4487045b5a1b> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "829b31e4-5457-40ba-897d-4487045b5a1b"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 2401010005</p><p><b>name</b>: Mads Svendsen (OFFICIAL)</p><p><b>address</b>: Hæstvej 355 Væggerløse 4873 (HOME)</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.2" ];
+     fhir:Identifier.value [ fhir:value "2401010005" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Svendsen" ];
+     fhir:HumanName.given [
+       fhir:value "Mads";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "postal" ];
+     fhir:Address.line [
+       fhir:value "Hæstvej 355";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Væggerløse" ];
+     fhir:Address.postalCode [ fhir:value "4873" ]
+  ] .
+
+<f4896a53-4200-4684-91d5-d4ee0377fa9e> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "f4896a53-4200-4684-91d5-d4ee0377fa9e"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95cface3-8c65-4c5c-bc89-49c65e3e5fa9</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc L04AX07}\">Skilarence</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse ENTTAB}\">enterotabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">DIMETHYLFUMARAT</span></td><td>true</td><td>30.0 mg/ enterotabletter</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url" ];
+     fhir:Extension.valueString [ fhir:value "https://www.indlaegssedler.dk/Search/Search/Search/500781" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-number" ];
+     fhir:Extension.valueString [ fhir:value "500781" ]
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "95cface3-8c65-4c5c-bc89-49c65e3e5fa9" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "L04AX07" ];
+       fhir:Coding.display [ fhir:value "Dimethylfumarat" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Skilarence" ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+       fhir:Coding.code [ fhir:value "ENTTAB" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "enterotabletter" ]
+  ];
+  fhir:Medication.ingredient [
+     fhir:index 0;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.display [ fhir:value "DIMETHYLFUMARAT" ]
+       ]
+     ];
+     fhir:Medication.ingredient.isActive [ fhir:value "true"^^xsd:boolean ];
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "30.0"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/styrkeenhed" ];
+         fhir:Quantity.code [ fhir:value "MG" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.unit [ fhir:value "enterotabletter" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+         fhir:Quantity.code [ fhir:value "ENTTAB" ]
+       ]
+     ]
+  ] .
+
+<6fe36b74-d862-465b-92d8-6c89831125ae> a fhir:MedicationStatement;
+  fhir:Resource.id [ fhir:value "6fe36b74-d862-465b-92d8-6c89831125ae"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Aug 9, 2021, 10:00:00 PM --&gt; Aug 28, 2021, 10:00:00 PM</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medicinpriser.dk/indikation" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/indikation" ];
+       fhir:Coding.code [ fhir:value "336" ];
+       fhir:Coding.display [ fhir:value "ved multipel sklerose" ]
+     ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:Element.id [ fhir:value "f4896a53-4200-4684-91d5-d4ee0377fa9e" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/829b31e4-5457-40ba-897d-4487045b5a1b>;
+     fhir:Reference.reference [ fhir:value "Patient/829b31e4-5457-40ba-897d-4487045b5a1b" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2021-08-10T00:00:00+02:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2021-08-29T00:00:00+02:00"^^xsd:dateTime ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2021-08-10T00:00:00+02:00"^^xsd:dateTime ];
+         fhir:Period.end [ fhir:value "2021-08-29T00:00:00+02:00"^^xsd:dateTime ]
+       ]
+     ];
+     fhir:Dosage.text [ fhir:value "1 tablet morgen og aften" ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://medicinpriser.dk/administrationsvej" ];
+         fhir:Coding.code [ fhir:value "OR" ];
+         fhir:Coding.display [ fhir:value "Oral anvendelse" ]
+       ]
+     ]
+  ] .
+
+<2ae72155-8b7b-455e-a39b-75f8dce01e81> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "2ae72155-8b7b-455e-a39b-75f8dce01e81"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 4623dd4a-7428-4a8e-897b-eabee5788fc9</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "4623dd4a-7428-4a8e-897b-eabee5788fc9" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "B01AA03" ];
+       fhir:Coding.display [ fhir:value "Warfarin" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marevan" ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+       fhir:Coding.code [ fhir:value "TAB" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "tabletter" ]
+  ];
+  fhir:Medication.ingredient [
+     fhir:index 0;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.display [ fhir:value "WARFARINNATRIUM" ]
+       ]
+     ];
+     fhir:Medication.ingredient.isActive [ fhir:value "true"^^xsd:boolean ];
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "2.5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/styrkeenhed" ];
+         fhir:Quantity.code [ fhir:value "MG" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.unit [ fhir:value "tabletter" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+         fhir:Quantity.code [ fhir:value "TAB" ]
+       ]
+     ]
+  ] .
+
+<22bb5d94-8531-4c6a-af09-87bcd57e9421> a fhir:MedicationStatement;
+  fhir:Resource.id [ fhir:value "22bb5d94-8531-4c6a-af09-87bcd57e9421"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medicinpriser.dk/indikation" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/indikation" ];
+       fhir:Coding.code [ fhir:value "68" ];
+       fhir:Coding.display [ fhir:value "blodfortyndende" ]
+     ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:Element.id [ fhir:value "2ae72155-8b7b-455e-a39b-75f8dce01e81" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/829b31e4-5457-40ba-897d-4487045b5a1b>;
+     fhir:Reference.reference [ fhir:value "Patient/829b31e4-5457-40ba-897d-4487045b5a1b" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2020-09-23T00:00:00+02:00"^^xsd:dateTime ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "bla bla" ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://medicinpriser.dk/administrationsvej" ];
+         fhir:Coding.code [ fhir:value "OR" ];
+         fhir:Coding.display [ fhir:value "Oral anvendelse" ]
+       ]
+     ]
+  ] .
+
+<2c1524dc-45ca-4184-939e-063bb31f1ad4> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "2c1524dc-45ca-4184-939e-063bb31f1ad4"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 8dd0f856-9a58-40c3-bac0-099347883a85</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "8dd0f856-9a58-40c3-bac0-099347883a85" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "B01AA03" ];
+       fhir:Coding.display [ fhir:value "Warfarin" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marevan" ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+       fhir:Coding.code [ fhir:value "TAB" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "tabletter" ]
+  ];
+  fhir:Medication.ingredient [
+     fhir:index 0;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.display [ fhir:value "WARFARINNATRIUM" ]
+       ]
+     ];
+     fhir:Medication.ingredient.isActive [ fhir:value "true"^^xsd:boolean ];
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "2.5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/styrkeenhed" ];
+         fhir:Quantity.code [ fhir:value "MG" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.unit [ fhir:value "tabletter" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+         fhir:Quantity.code [ fhir:value "TAB" ]
+       ]
+     ]
+  ] .
+
+<7a9d1be0-3ad9-4568-a67d-1e686fe12b78> a fhir:MedicationStatement;
+  fhir:Resource.id [ fhir:value "7a9d1be0-3ad9-4568-a67d-1e686fe12b78"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medicinpriser.dk/indikation" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/indikation" ];
+       fhir:Coding.code [ fhir:value "68" ];
+       fhir:Coding.display [ fhir:value "blodfortyndende" ]
+     ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:Element.id [ fhir:value "2c1524dc-45ca-4184-939e-063bb31f1ad4" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/829b31e4-5457-40ba-897d-4487045b5a1b>;
+     fhir:Reference.reference [ fhir:value "Patient/829b31e4-5457-40ba-897d-4487045b5a1b" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2020-09-23T00:00:00+02:00"^^xsd:dateTime ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2020-09-23T00:00:00+02:00"^^xsd:dateTime ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://medicinpriser.dk/administrationsvej" ];
+         fhir:Coding.code [ fhir:value "OR" ];
+         fhir:Coding.display [ fhir:value "Oral anvendelse" ]
+       ]
+     ]
+  ] .
+
+<24816319-aab6-4766-89af-a79f5e921cf3> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "24816319-aab6-4766-89af-a79f5e921cf3"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 7894c945-3b9a-47eb-84bb-307c3bd0144d</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "7894c945-3b9a-47eb-84bb-307c3bd0144d" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "B01AA03" ];
+       fhir:Coding.display [ fhir:value "Warfarin" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marevan" ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+       fhir:Coding.code [ fhir:value "TAB" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "tabletter" ]
+  ];
+  fhir:Medication.ingredient [
+     fhir:index 0;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.display [ fhir:value "WARFARINNATRIUM" ]
+       ]
+     ];
+     fhir:Medication.ingredient.isActive [ fhir:value "true"^^xsd:boolean ];
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "2.5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/styrkeenhed" ];
+         fhir:Quantity.code [ fhir:value "MG" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.unit [ fhir:value "tabletter" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+         fhir:Quantity.code [ fhir:value "TAB" ]
+       ]
+     ]
+  ] .
+
+<50d65da1-9f36-4034-903b-d895de8ef758> a fhir:MedicationStatement;
+  fhir:Resource.id [ fhir:value "50d65da1-9f36-4034-903b-d895de8ef758"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medicinpriser.dk/indikation" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/indikation" ];
+       fhir:Coding.code [ fhir:value "256" ];
+       fhir:Coding.display [ fhir:value "til forebyggelse af blodprop" ]
+     ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:Element.id [ fhir:value "24816319-aab6-4766-89af-a79f5e921cf3" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/829b31e4-5457-40ba-897d-4487045b5a1b>;
+     fhir:Reference.reference [ fhir:value "Patient/829b31e4-5457-40ba-897d-4487045b5a1b" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2020-09-23T00:00:00+02:00"^^xsd:dateTime ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2020-09-23T00:00:00+02:00"^^xsd:dateTime ];
+         fhir:Period.end [ fhir:value "2020-09-25T00:00:00+02:00"^^xsd:dateTime ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://medicinpriser.dk/administrationsvej" ];
+         fhir:Coding.code [ fhir:value "OR" ];
+         fhir:Coding.display [ fhir:value "Oral anvendelse" ]
+       ]
+     ]
+  ] .
+
+<cc2c0a06-7469-465d-956f-59e39133b495> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "cc2c0a06-7469-465d-956f-59e39133b495"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 81fbceed-f24e-4105-bfa2-4b604ca35937</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc B01AA03}\">Marevan</span></p><p><b>form</b>: <span title=\"Codes: {http://medicinpriser.dk/formbetegnelse TAB}\">tabletter</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>"
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.724.4.8.10.200.10" ];
+     fhir:Identifier.value [ fhir:value "81fbceed-f24e-4105-bfa2-4b604ca35937" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "B01AA03" ];
+       fhir:Coding.display [ fhir:value "Warfarin" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marevan" ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+       fhir:Coding.code [ fhir:value "TAB" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "tabletter" ]
+  ];
+  fhir:Medication.ingredient [
+     fhir:index 0;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.display [ fhir:value "WARFARINNATRIUM" ]
+       ]
+     ];
+     fhir:Medication.ingredient.isActive [ fhir:value "true"^^xsd:boolean ];
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "2.5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/styrkeenhed" ];
+         fhir:Quantity.code [ fhir:value "MG" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.unit [ fhir:value "tabletter" ];
+         fhir:Quantity.system [ fhir:value "http://medicinpriser.dk/formbetegnelse" ];
+         fhir:Quantity.code [ fhir:value "TAB" ]
+       ]
+     ]
+  ] .
+
+<46860de8-4e8c-4c69-8ba5-2492903d0b81> a fhir:MedicationStatement;
+  fhir:Resource.id [ fhir:value "46860de8-4e8c-4c69-8ba5-2492903d0b81"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href=\"#Patient_829b31e4-5457-40ba-897d-4487045b5a1b\">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medicinpriser.dk/indikation" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://medicinpriser.dk/indikation" ];
+       fhir:Coding.code [ fhir:value "68" ];
+       fhir:Coding.display [ fhir:value "blodfortyndende" ]
+     ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:Element.id [ fhir:value "cc2c0a06-7469-465d-956f-59e39133b495" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Patient/829b31e4-5457-40ba-897d-4487045b5a1b>;
+     fhir:Reference.reference [ fhir:value "Patient/829b31e4-5457-40ba-897d-4487045b5a1b" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2020-09-23T00:00:00+02:00"^^xsd:dateTime ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2020-09-23T00:00:00+02:00"^^xsd:dateTime ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://medicinpriser.dk/administrationsvej" ];
+         fhir:Coding.code [ fhir:value "OR" ];
+         fhir:Coding.display [ fhir:value "Oral anvendelse" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/fmk-ips-skilarence.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

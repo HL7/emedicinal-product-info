@@ -1,0 +1,417 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/List/List-example> a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "List-example"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "106" ];
+     fhir:Meta.lastUpdated [ fhir:value "2021-06-28T10:22:41.368+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Mode: workingStatus: currentCode: ePI Master List</td></tr><tr><td>Subject: ?ngen-16?</td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"Bundle-36773c03-3040-45e2-82c2-bc3fc968b6a6.html\">Generated Summary: id: 0a643523-b8c1-461b-9726-fbad9f06bb9b; type: document; timestamp: Jun 25, 2021, 8:16:54 PM</a></td></tr><tr><td>Bundle/58add5bc-c568-4d46-8bfd-4303634a65ff</td></tr><tr><td>Bundle/15b01a3f-cb36-46ff-9faf-5a6077fec10a</td></tr><tr><td><a href=\"Bundle-234d3626-fac0-4e69-86a6-556910eecfc9.html\">Generated Summary: id: 8c44c334-7839-48d2-b369-2235ae18ad48; type: document; timestamp: Jun 25, 2021, 8:25:07 PM</a></td></tr><tr><td><a href=\"Bundle-910d1748-674b-430c-b4ab-3665b266a31f.html\">Generated Summary: id: d6492916-2a98-4ea8-a938-324d5e5c471b; type: document; timestamp: Jun 25, 2021, 8:28:01 PM</a></td></tr><tr><td>Bundle/464141ec-43e7-4779-baf6-09179a7abe7f</td></tr><tr><td>Bundle/13f82397-5897-4652-a140-199fd38d4e32</td></tr><tr><td><a href=\"Bundle-79147eac-56be-4aec-9e71-bee160e588b6.html\">Generated Summary: id: 943f32dd-dc6f-4079-b364-bb522edb9cfb; type: document; timestamp: Jun 25, 2021, 8:33:58 PM</a></td></tr><tr><td><a href=\"Bundle-995d3971-b899-43bf-857d-98c26634796d.html\">Generated Summary: id: 3103a561-4b54-4e02-9cd0-eceb190a0602; type: document; timestamp: Jun 25, 2021, 10:39:32 PM</a></td></tr><tr><td>Bundle/f7bada29-c5e3-4813-b399-61953447cbd8</td></tr><tr><td>Bundle/8e00e3ad-4e8b-40bf-bbe0-83e2227dd806</td></tr><tr><td><a href=\"Bundle-00b76159-1583-4374-b892-d360b49dae01.html\">Generated Summary: id: d3736342-7e14-4aca-a8a0-2425840518ce; type: document; timestamp: Jun 25, 2021, 10:44:38 PM</a></td></tr></table></div>"
+  ];
+  fhir:List.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/medicine-name" ];
+     fhir:Identifier.value [ fhir:value "acme-product" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/001" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/002" ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/003" ]
+  ], [
+     fhir:index 4;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/004" ]
+  ], [
+     fhir:index 5;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/005" ]
+  ], [
+     fhir:index 6;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/006" ]
+  ], [
+     fhir:index 7;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/007" ]
+  ], [
+     fhir:index 8;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/008" ]
+  ], [
+     fhir:index 9;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/009" ]
+  ], [
+     fhir:index 10;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/010" ]
+  ], [
+     fhir:index 11;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/011" ]
+  ], [
+     fhir:index 12;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/012" ]
+  ], [
+     fhir:index 13;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/013" ]
+  ], [
+     fhir:index 14;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/014" ]
+  ], [
+     fhir:index 15;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/01370" ]
+  ], [
+     fhir:index 16;
+     fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/014210" ]
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "working"];
+  fhir:List.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/example-pi-list-types" ];
+       fhir:Coding.code [ fhir:value "00000021213" ];
+       fhir:Coding.display [ fhir:value "ePI Master List" ]
+     ]
+  ];
+  fhir:List.subject [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/medicine-name" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000005" ];
+         fhir:Coding.code [ fhir:value "Acme-product" ];
+         fhir:Coding.display [ fhir:value "Acme Product" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/marketing-authorization-holder" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000005" ];
+         fhir:Coding.code [ fhir:value "mah-code" ];
+         fhir:Coding.display [ fhir:value "None" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/active-substance" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000005" ];
+         fhir:Coding.code [ fhir:value "acive-substance-code" ];
+         fhir:Coding.display [ fhir:value "None" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/domain" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000004" ];
+         fhir:Coding.code [ fhir:value "100000000012" ];
+         fhir:Coding.display [ fhir:value "H" ]
+       ]
+     ]
+  ];
+  fhir:List.entry [
+     fhir:index 0;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155532" ];
+           fhir:Coding.display [ fhir:value "ΠΕΡΙΛΗΨΗ ΤΩΝ ΧΑΡΑΚΤΗΡΙΣΤΙΚΩΝ ΤΟΥ ΠΡΟΪΟΝΤΟΣ" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072181" ];
+           fhir:Coding.display [ fhir:value "el" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/58add5bc-c568-4d46-8bfd-4303634a65ff>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155533" ];
+           fhir:Coding.display [ fhir:value "ΠΑΡΑΡΤΗΜΑ ΙΙ" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072181" ];
+           fhir:Coding.display [ fhir:value "el" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/58add5bc-c568-4d46-8bfd-4303634a65ff" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/15b01a3f-cb36-46ff-9faf-5a6077fec10a>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155535" ];
+           fhir:Coding.display [ fhir:value "Α. ΕΠΙΣΗΜΑΝΣΗ" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072181" ];
+           fhir:Coding.display [ fhir:value "el" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/15b01a3f-cb36-46ff-9faf-5a6077fec10a" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/234d3626-fac0-4e69-86a6-556910eecfc9>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155538" ];
+           fhir:Coding.display [ fhir:value "Β. ΦΥΛΛΟ ΟΔΗΓΙΩΝ ΧΡΗΣΗΣ" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072181" ];
+           fhir:Coding.display [ fhir:value "el" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/234d3626-fac0-4e69-86a6-556910eecfc9" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/910d1748-674b-430c-b4ab-3665b266a31f>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155532" ];
+           fhir:Coding.display [ fhir:value "SUMMARY OF PRODUCT CHARACTERISTICS" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072147" ];
+           fhir:Coding.display [ fhir:value "en" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/910d1748-674b-430c-b4ab-3665b266a31f" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/464141ec-43e7-4779-baf6-09179a7abe7f>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155533" ];
+           fhir:Coding.display [ fhir:value "ANNEX II" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072147" ];
+           fhir:Coding.display [ fhir:value "en" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/464141ec-43e7-4779-baf6-09179a7abe7f" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/13f82397-5897-4652-a140-199fd38d4e32>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155535" ];
+           fhir:Coding.display [ fhir:value "A. LABELLING" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072147" ];
+           fhir:Coding.display [ fhir:value "en" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/13f82397-5897-4652-a140-199fd38d4e32" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/79147eac-56be-4aec-9e71-bee160e588b6>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155538" ];
+           fhir:Coding.display [ fhir:value "B. PACKAGE LEAFLET" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072147" ];
+           fhir:Coding.display [ fhir:value "en" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/79147eac-56be-4aec-9e71-bee160e588b6" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/995d3971-b899-43bf-857d-98c26634796d>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155532" ];
+           fhir:Coding.display [ fhir:value "PREPARATOMTALE" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072243" ];
+           fhir:Coding.display [ fhir:value "no" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/995d3971-b899-43bf-857d-98c26634796d" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/f7bada29-c5e3-4813-b399-61953447cbd8>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155533" ];
+           fhir:Coding.display [ fhir:value "VEDLEGG II" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072243" ];
+           fhir:Coding.display [ fhir:value "no" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/f7bada29-c5e3-4813-b399-61953447cbd8" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/8e00e3ad-4e8b-40bf-bbe0-83e2227dd806>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155535" ];
+           fhir:Coding.display [ fhir:value "A. MERKING" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072243" ];
+           fhir:Coding.display [ fhir:value "no" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/8e00e3ad-4e8b-40bf-bbe0-83e2227dd806" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:List.entry.item [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/00b76159-1583-4374-b892-d360b49dae01>;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/documentType" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000155531" ];
+           fhir:Coding.code [ fhir:value "100000155538" ];
+           fhir:Coding.display [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/language" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072243" ];
+           fhir:Coding.display [ fhir:value "no" ]
+         ]
+       ];
+       fhir:Reference.reference [ fhir:value "Bundle/00b76159-1583-4374-b892-d360b49dae01" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/List/List-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
