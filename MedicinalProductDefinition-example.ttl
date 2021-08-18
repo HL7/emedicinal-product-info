@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "example"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			<p><b>Generated Narrative</b></p>\n			<p><b>Id</b>: example</p>\n			<p><b>Identifier</b>: {mpid}</p>\n			<p><b>Classification</b>: <span title=\"Codes: {http://ema.europa.eu/example/WHOAnatomicalTherapeuticChemicalATCClassificationSystem B01AF02}\">ATC: B01AF02</span></p>\n			<p><b>Attached Document</b>: (SmPC)</p>\n			<p><b>Master File</b>: (Pharmacovigilence Master File)</p>\n			<p><b>Product Name</b>: Equilidem 2.5 mg film-coated tablets</p>\n			<blockquote>\n				<p><b>Name Part</b></p><p><b>part</b>:Equilidem</p>\n				<p><b>type</b>: <span title=\"Codes: \">Invented</span></p>\n			</blockquote>\n			<blockquote>\n				<p><b>Name Part</b></p><p><b>part</b>:2.5 mg</p>\n				<p><b>type</b>: <span title=\"Codes: \">Strength</span></p>\n			</blockquote>\n			<blockquote>\n				<p><b>Name Part</b></p>\n				<p><b>part</b>:film-coated tablets</p>\n				<p><b>type</b>: <span title=\"Codes: \">Form</span></p>\n				<p><b>Country &amp; Languages</b></p>\n				<table class=\"grid\">\n					<tr>\n						<td>-</td>\n						<td><b>Country</b></td>\n						<td><b>Jurisdiction</b></td>\n						<td><b>Language</b></td>\n					</tr>\n					<tr>\n						<td>*</td>\n						<td><span title=\"Codes: {http://ema.europa.eu/example/countryCode EU}\">EU</span></td>\n						<td><span title=\"Codes: {http://ema.europa.eu/example/jurisdictionCode EU}\">EU</span></td>\n						<td><span title=\"Codes: {http://ema.europa.eu/example/languageCode EN}\">EN</span></td>\n					</tr>\n				</table>\n			</blockquote>\n			<p><b>Manufacturing &amp; Business Operations</b></p>\n			<table class=\"grid\">\n				<tr>\n					<td>-</td>\n					<td><b>Type</b></td>\n					<td><b>EffectiveDate</b></td>\n					<td><b>Authorization</b></td>\n				</tr>\n				<tr>\n					<td>*</td>\n					<td>Batch Release</td>\n					<td>2013-03-15 --&gt; (ongoing)</td>\n					<td><span>1324TZ</span></td>\n				</tr>\n			</table>\n		</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: {mpid}</p><p><b>classification</b>: <span title=\"Codes: {http://ema.europa.eu/example/WHOAnatomicalTherapeuticChemicalATCClassificationSystem B01AF02}\">B01AF02</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Equilidem 2.5 mg film-coated tablets</p><blockquote><p><b>namePart</b></p><p><b>part</b>: Equilidem</p><p><b>type</b>: <span title=\"Codes: \">INV</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 2.5 mg</p><p><b>type</b>: <span title=\"Codes: \">STR</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: film-coated tablets</p><p><b>type</b>: <span title=\"Codes: \">FRM</span></p></blockquote><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ema.europa.eu/example/countryCode EU}\">EU</span></td><td><span title=\"Codes: {http://ema.europa.eu/example/jurisdictionCode EU}\">EU</span></td><td><span title=\"Codes: {http://ema.europa.eu/example/languageCode EN}\">EN</span></td></tr></table></blockquote><blockquote><p><b>operation</b></p><p><b>effectiveDate</b>: 2013-03-15 --&gt; (ongoing)</p><p><b>authorization</b>: <span></span></p></blockquote></div>"
   ];
   fhir:MedicinalProductDefinition.identifier [
      fhir:index 0;
@@ -24,16 +24,6 @@
        fhir:Coding.system [ fhir:value "http://ema.europa.eu/example/WHOAnatomicalTherapeuticChemicalATCClassificationSystem" ];
        fhir:Coding.code [ fhir:value "B01AF02" ]
      ]
-  ];
-  fhir:MedicinalProductDefinition.attachedDocument [
-     fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/example>;
-     fhir:Reference.reference [ fhir:value "DocumentReference/example" ]
-  ];
-  fhir:MedicinalProductDefinition.masterFile [
-     fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/example>;
-     fhir:Reference.reference [ fhir:value "DocumentReference/example" ]
   ];
   fhir:MedicinalProductDefinition.name [
      fhir:index 0;
