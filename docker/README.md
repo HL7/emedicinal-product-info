@@ -1,26 +1,17 @@
 ## Taken from https://github.com/FHIR/auto-ig-builder/tree/master/images/ig-publisher-base
-With R4B modifications
-
-wget http://hl7.org/fhir/2021Mar/hl7.fhir.r4b.core.tgz
-wget http://hl7.org/fhir/2021Mar/hl7.fhir.r4b.expansions.tgz
-
-tar -xf hl7.fhir.r4b.core.tgz 
-
-mkdir -p .fhir/packages/hl7.fhir.r4b.core#4.1.0
-
-mv package .fhir/packages/hl7.fhir.r4b.core#4.1.0/package/
+With R4B support
 
 ## FHIR Publisher for local development
 
 ### Get the image locally
 
     # Pull from Docker Hub
-    docker pull hl7fhir/ig-publisher-base
+    docker pull trifork/ig-publisher-base:r4b
 
     # Build it yourself
     git clone https://github.com/fhir/auto-ig-builder
     cd auto-ig-builder/images/ig-publisher-base
-    docker build -t hl7fhir/ig-publisher-base .
+    docker build -t trifork/ig-publisher-base:r4b .
 
 ### Run a container with the image
 
@@ -28,7 +19,7 @@ You'll want to mount an IG into the Docker ccontainer at `/home/publisher/ig`. F
 
 ```
 cd /path/to/my-ig
-docker run --rm -it -v $(pwd):/home/publisher/ig hl7fhir/ig-publisher-base:latest
+docker run --rm -it -v $(pwd):/home/publisher/ig trifork/ig-publisher-base:r4b
 ```
 
 Inside the docker container, you'll have access to the following commands:
