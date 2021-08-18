@@ -30,6 +30,24 @@ RUN mkdir /home/publisher/bin && \
     chmod +x /home/publisher/bin/with-latest-sushi.sh && \
     /home/publisher/bin/with-latest-sushi.sh
 
+USER publisher
+
+## R4B start
+
+RUN cd /home/publisher && wget http://hl7.org/fhir/2021Mar/hl7.fhir.r4b.core.tgz && \
+    wget http://hl7.org/fhir/2021Mar/hl7.fhir.r4b.expansions.tgz && \
+    tar -xf hl7.fhir.r4b.core.tgz && \
+    mkdir -p /home/publisher/.fhir/packages/hl7.fhir.r4b.core#4.1.0 && \
+    mv package /home/publisher/.fhir/packages/hl7.fhir.r4b.core#4.1.0/package/ && \
+    rm -rf package && \
+    tar -xf hl7.fhir.r4b.expansions.tgz && \
+    mkdir -p /home/publisher/.fhir/packages/hl7.fhir.r4b.expansions#4.1.0 && \
+    mv package /home/publisher/.fhir/packages/hl7.fhir.r4b.expansions#4.1.0/package/ && \
+    rm -rf package 
+ 
+
+## R4B end
+
 # Following technique from https://gist.github.com/yogeek/bc8dc6dadbb72cb39efadf83920077d3
 WORKDIR /home/publisher/ig
 VOLUME /home/publisher/ig
