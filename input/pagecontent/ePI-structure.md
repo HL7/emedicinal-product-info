@@ -4,13 +4,9 @@ All ePI documents are based on the same FHIR structure. The only exception is th
 
 The common ePI structure is as described below.
 
-**Figure XX: The common structure for all ePI documents (REPLACE WITH A GRAPHIC)**
-- Bundle
-  - List
-  - Composition
-    - Binary
-  - Medicinal Product
-  - Organization
+Figure 1: The common structure for all ePI documents
+![image](https://user-images.githubusercontent.com/89136107/129903751-aa7289ec-3152-4941-94ad-36f1088bef44.png)
+
 
 ### Sections Description
 #### Bundle resource
@@ -18,17 +14,17 @@ The Bundle is a container that gathers together a collection of resources into a
 
 1. As a logical document: the bundle of contained resources is a single instance and can only be interpreted, changed or viewed as a whole. For example, the Bundle represents version 3 of a Patient Information Leaflet or version 2 of a SmPC.
 
-2. As individual resources: Certain resoureces exist independently outside the Bundle and outside of the logical document. For example, the Medicinal Product Definition resource lives both as part of the logical document and as an independent resource. 
+2. As individual resources: Certain resources exist independently outside the Bundle and outside of the logical document. For example, the Medicinal Product Definition resource lives both as part of the logical document and as an independent resource. 
 
 #### List resource
 The list resource references other resources. In this context, the List contains:
 1. Narrative description of the medicinal products it contains
 2. An ordered collection of cross-references to the Medicinal Product Definition resources that the ePI document is about. The List is dynamic since the cross-references are added, removed or changed over time.
 
-Althought some use cases involve pulling metadata, sections or narrative content from the Composition, the List resource is not published independently from the Bundle.
+Although some use cases involve pulling metadata, sections or narrative content from the Composition, the List resource is not published independently from the Bundle.
 
 #### Composition resource
-The Composition defines the basic structure and the human readable narrative content for the ePI document. For example, encoded section headings; narrative text (paragraphs, sentences); tables; and bulleted lists. The Composition taggs the language of the narrative content
+The Composition defines the basic structure and the human readable narrative content for the ePI document. For example, encoded section headings; narrative text (paragraphs, sentences); tables; and bulleted lists. The Composition tags the language of the narrative content
 
 All narrative content is in XHTML fragment with HTML 4.0 standard formatting (Refer to [section 2.4 Narrative](http://build.fhir.org/narrative.html#xhtml) of the FHIR specification for HTML 4.0 exceptions and exclusions). 
 
