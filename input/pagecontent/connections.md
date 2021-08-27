@@ -71,4 +71,12 @@ Within the ePI Master List, the identifier for the individual ePI document bundl
 |list.entry.item.reference|Unique identifier to a specific version of a ePI document bundle (e.g., version 1.0 of a PIL for this medicinal product|
 
 
+#### ePI Document Bundle
+the ePI document bundle serves as the logical regulatory document. E.g., SmPC or PIL.
+
+Within the ePI document bundle, the medicinal product identifiers are found here: 
+
+|Path|Description|
+|---------|---------|
+
 
