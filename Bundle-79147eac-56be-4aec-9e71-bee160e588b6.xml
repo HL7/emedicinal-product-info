@@ -18,7 +18,7 @@
       <Composition>
         <language value="en"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155538}">B. PACKAGE LEAFLET</span></p><p><b>date</b>: 2021-02-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Acme Product</p><h3>RelatesTos</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td><a href="${document[n].relatesTo}">${document[n].relatesTo}</a></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155538}">B. PACKAGE LEAFLET</span></p><p><b>date</b>: 2021-02-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: TEST PURPOSES ONLY - PACKAGE LEAFLET for Acme Product (dimethyl fumerate) film coated tablets</p></div>
         </text>
         <contained>
           <Binary>
@@ -34,6 +34,7 @@
         </extension>
         <status value="final"/>
         <type>
+        <!--  ePI PIL  -->
           <coding>
             <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
             <code value="100000155538"/>
@@ -41,21 +42,28 @@
           </coding>
         </type>
         <subject>
+        <!--  Reference to the Medicinal Product Brand Name and MAN  -->
           <reference value="[]"/>
+        <!--  Reference would point to SPOR's Medicinal Product Definition resource  -->
+          <identifier>
+          <!--  Brand Name  -->
+            <system value="http://spor.ema.europa.eu/v2/medicine-name"/>
+            <value value="acme-product"/>
+          </identifier>
+          <identifier>
+          <!--  MAN  -->
+            <system value="http://spor.ema.europa.eu/v2/marketing-authorisation-numbers"/>
+            <value value="EU/1/17/1201/001"/>
+          </identifier>
         </subject>
         <date value="2021-02-01"/>
         <author>
+        <!--  MAH  -->
           <identifier>
-            <system value="[]"/>
+            <system value="http://spor.ema.europa.eu/v1/100000000005"/>
           </identifier>
         </author>
-        <title value="Acme Product"/>
-        <relatesTo>
-          <code value="appends"/>
-          <targetReference>
-            <reference value="${document[n].relatesTo}"/>
-          </targetReference>
-        </relatesTo>
+        <title value="TEST PURPOSES ONLY - PACKAGE LEAFLET for Acme Product (dimethyl fumerate) film coated tablets"/>
         <section id="e18df8b2-00ef-49cc-b94c-232fb914808c">
           <title value="B. PACKAGE LEAFLET"/>
           <code>
@@ -74,13 +82,15 @@
                             <p style="text-align:center;line-height:normal" align="center" class="MsoNormal"/>
                             <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
                                 <b>
-                                    <span lang="EN-GB">Package leaflet: Information for the patient</span>
+                                    <span lang="EN-GB">Package leaflet: Information for the
+                                        patient</span>
                                 </b>
                             </p>
                             <p style="text-align:center;line-height:normal;  background:white" align="center" class="MsoNormal"/>
                             <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
                                 <b>
-                                    <span lang="EN-GB">Acme Product 30 mg gastro‑resistant tablets</span>
+                                    <span lang="EN-GB">Acme Product 30 mg gastro‑resistant
+                                        tablets</span>
                                 </b>
                             </p>
                             <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
@@ -90,20 +100,28 @@
                             <p style="line-height:normal" class="MsoNormal"/>
                             <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
                                 <b>
-                                    <span lang="EN-GB">Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</span>
+                                    <span lang="EN-GB">Read all of this leaflet carefully before you
+                                        start taking this medicine because it contains important
+                                        information for you.</span>
                                 </b>
                             </p>
                             <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
-                                <span lang="EN-GB">-        Keep this leaflet. You may need to read it again.</span>
+                                <span lang="EN-GB">- Keep this leaflet. You may need to read it
+                                    again.</span>
                             </p>
                             <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                <span lang="EN-GB">-        If you have any further questions, ask your doctor or pharmacist.</span>
+                                <span lang="EN-GB">- If you have any further questions, ask your
+                                    doctor or pharmacist.</span>
                             </p>
                             <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                <span lang="EN-GB">-        This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.</span>
+                                <span lang="EN-GB">- This medicine has been prescribed for you only.
+                                    Do not pass it on to others. It may harm them, even if their
+                                    signs of illness are the same as yours.</span>
                             </p>
                             <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                <span lang="EN-GB">-        If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.</span>
+                                <span lang="EN-GB">- If you get any side effects, talk to your
+                                    doctor or pharmacist. This includes any possible side effects
+                                    not listed in this leaflet. See section 4.</span>
                             </p>
                             <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                         </div>
@@ -121,22 +139,25 @@
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">1.    What Acme Product is and what it is used for</span>
+                                    <span lang="EN-GB">1. What Acme Product is and what it is used
+                                        for</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">2.    What you need to know before you take Acme Product</span>
+                                    <span lang="EN-GB">2. What you need to know before you take Acme
+                                        Product</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">3.    How to take Acme Product</span>
+                                    <span lang="EN-GB">3. How to take Acme Product</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">4.    Possible side effects</span>
+                                    <span lang="EN-GB">4. Possible side effects</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">5.    How to store Acme Product</span>
+                                    <span lang="EN-GB">5. How to store Acme Product</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">6.    Contents of the pack and other information</span>
+                                    <span lang="EN-GB">6. Contents of the pack and other
+                                        information</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal"/>
@@ -161,7 +182,12 @@
                                     </b>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Acme Product is a medicine that contains the active substance dimethyl fumarate. Dimethyl fumarate works on cells of the immune system (the body's natural defences). It changes the activity of the immune system and reduces the production of substances involved in causing psoriasis.</span>
+                                    <span lang="EN-GB">Acme Product is a medicine that contains the
+                                        active substance dimethyl fumarate. Dimethyl fumarate works
+                                        on cells of the immune system (the body's natural defences).
+                                        It changes the activity of the immune system and reduces the
+                                        production of substances involved in causing
+                                        psoriasis.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -170,11 +196,17 @@
                                     </b>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Acme Product tablets are used to treat moderate to severe plaque psoriasis in adults. Psoriasis is a disease causing thickened, inflamed, red areas on the skin, often covered by silvery scales.</span>
+                                    <span lang="EN-GB">Acme Product tablets are used to treat
+                                        moderate to severe plaque psoriasis in adults. Psoriasis is
+                                        a disease causing thickened, inflamed, red areas on the
+                                        skin, often covered by silvery scales.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Response to Acme Product can be generally seen as early as week 3 and improves over time. Experience with related products containing dimethyl fumarate shows treatment benefit for at least up to 24 months.</span>
+                                    <span lang="EN-GB">Response to Acme Product can be generally
+                                        seen as early as week 3 and improves over time. Experience
+                                        with related products containing dimethyl fumarate shows
+                                        treatment benefit for at least up to 24 months.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
@@ -207,18 +239,23 @@
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">-        if you are allergic to dimethyl fumarate or any of the other ingredients of this medicine (listed in section 6)</span>
+                                        <span lang="EN-GB">- if you are allergic to dimethyl
+                                            fumarate or any of the other ingredients of this
+                                            medicine (listed in section 6)</span>
                                     </p>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                        <span lang="EN-GB">-        if you have severe problems with your stomach or intestines</span>
+                                        <span lang="EN-GB">- if you have severe problems with your
+                                            stomach or intestines</span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:0in;  margin-bottom:0in;margin-left:28.35pt;text-indent:-28.35pt" class="PrrafodelistaCxSpFirst">
                                         <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                        <span style="font-size:11.0pt" lang="EN-GB">if you have severe liver or kidney problems</span>
+                                        <span style="font-size:11.0pt" lang="EN-GB">if you have
+                                            severe liver or kidney problems</span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:0in;margin-bottom:  0in;margin-left:28.35pt;text-indent:-28.35pt" class="Prrafodelista">
                                         <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                        <span style="font-size:11.0pt" lang="EN-GB">if you are pregnant or breast-feeding</span>
+                                        <span style="font-size:11.0pt" lang="EN-GB">if you are
+                                            pregnant or breast-feeding</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -236,7 +273,8 @@
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Talk to your doctor or pharmacist before taking Acme Product.</span>
+                                        <span lang="EN-GB">Talk to your doctor or pharmacist before
+                                            taking Acme Product.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -247,8 +285,14 @@
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="EN-GB">Acme Product</span>
                                         <span lang="EN-GB">may </span>
-                                        <span lang="EN-GB">cause problems with your blood, liver or kidneys. You will have blood and urine tests before treatment and then regularly during your treatment to make sure that you are not getting these complications and can continue to take this medicine</span>
-                                        <span lang="EN-GB">. Depending on the results of these blood and urine tests, your doctor may reduce your dose of Acme Product or stop treatment.</span>
+                                        <span lang="EN-GB">cause problems with your blood, liver or
+                                            kidneys. You will have blood and urine tests before
+                                            treatment and then regularly during your treatment to
+                                            make sure that you are not getting these complications
+                                            and can continue to take this medicine</span>
+                                        <span lang="EN-GB">. Depending on the results of these blood
+                                            and urine tests, your doctor may reduce your dose of
+                                            Acme Product or stop treatment.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -257,8 +301,16 @@
                                         </u>
                                     </p>
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">White blood cells help your body to fight infections. Acme Product may reduce the number of your white blood cells. Talk to your doctor if you think you may have an infection. Symptoms include </span>
-                                        <span style="color:#262626" lang="EN-GB">fever, pain, aching muscles, headache, loss of appetite and a general feeling of weakness. If you have a serious infection, either before starting treatment with Acme Product or during treatment, your doctor may advise you not to take Acme Product until the infection has resolved.</span>
+                                        <span lang="EN-GB">White blood cells help your body to fight
+                                            infections. Acme Product may reduce the number of your
+                                            white blood cells. Talk to your doctor if you think you
+                                            may have an infection. Symptoms include </span>
+                                        <span style="color:#262626" lang="EN-GB">fever, pain, aching
+                                            muscles, headache, loss of appetite and a general
+                                            feeling of weakness. If you have a serious infection,
+                                            either before starting treatment with Acme Product or
+                                            during treatment, your doctor may advise you not to take
+                                            Acme Product until the infection has resolved.</span>
                                     </p>
                                     <p style="line-height:normal;text-autospace:none" class="MsoNormal">
                                         <u>
@@ -271,7 +323,10 @@
                                         </u>
                                     </p>
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Tell your doctor if you have or have had problems with your stomach or intestines. Your doctor will advise you on what care you need to take during Acme Product treatment.</span>
+                                        <span lang="EN-GB">Tell your doctor if you have or have had
+                                            problems with your stomach or intestines. Your doctor
+                                            will advise you on what care you need to take during
+                                            Acme Product treatment.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -289,7 +344,9 @@
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Children and adolescents below the age of 18 years should not take this medicine because it has not been studied in this age group.</span>
+                                        <span lang="EN-GB">Children and adolescents below the age of
+                                            18 years should not take this medicine because it has
+                                            not been studied in this age group.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -307,49 +364,77 @@
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Tell your doctor or pharmacist if you are taking, have recently taken or might take any other medicines.</span>
+                                        <span lang="EN-GB">Tell your doctor or pharmacist if you are
+                                            taking, have recently taken or might take any other
+                                            medicines.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">In particular, tell your doctor if you are taking the following:</span>
+                                        <span lang="EN-GB">In particular, tell your doctor if you
+                                            are taking the following:</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                         <span lang="EN-GB">-</span>
                                         <b>
-                                            <span lang="EN-GB">Dimethyl fumarate or other fumarates.</span>
+                                            <span lang="EN-GB">Dimethyl fumarate or other
+                                                fumarates.</span>
                                         </b>
-                                        <span lang="EN-GB">The active ingredient in Acme Product, dimethyl fumarate, is also used in other medicines such as tablets, ointments and baths. You must avoid using other products that contain fumarates to prevent taking too much.</span>
+                                        <span lang="EN-GB">The active ingredient in Acme Product,
+                                            dimethyl fumarate, is also used in other medicines such
+                                            as tablets, ointments and baths. You must avoid using
+                                            other products that contain fumarates to prevent taking
+                                            too much.</span>
                                     </p>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                         <span lang="EN-GB">-</span>
                                         <b>
-                                            <span lang="EN-GB">Other medicines used to treat psoriasis,</span>
+                                            <span lang="EN-GB">Other medicines used to treat
+                                                psoriasis,</span>
                                         </b>
-                                        <span lang="EN-GB">such as methotrexate, retinoids, psoralens, ciclosporin, or other immunosuppressants or cytostatics </span>
-                                        <span lang="EN-GB">(medicines that affect the immune system)</span>
-                                        <span lang="EN-GB">. Taking these medicines with Acme Product could increase the risk of side effects on your immune system.</span>
+                                        <span lang="EN-GB">such as methotrexate, retinoids,
+                                            psoralens, ciclosporin, or other immunosuppressants or
+                                            cytostatics </span>
+                                        <span lang="EN-GB">(medicines that affect the immune
+                                            system)</span>
+                                        <span lang="EN-GB">. Taking these medicines with Acme
+                                            Product could increase the risk of side effects on your
+                                            immune system.</span>
                                     </p>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                         <span lang="EN-GB">-</span>
                                         <b>
-                                            <span lang="EN-GB">Other medicines that can affect your kidney function, </span>
+                                            <span lang="EN-GB">Other medicines that can affect your
+                                                kidney function, </span>
                                         </b>
                                         <span lang="EN-GB">such as methotrexate or ciclosporin (used
-to treat psoriasis), aminoglycosides (used to treat infections), diuretics (which
-increase urine), nonsteroidal anti‑inflammatory drugs (used to treat
-pain) or lithium (used for bipolar disease and depression). These medicines taken
-togetherwith Acme Product could increase the risk of side effects on your
-kidneys.</span>
+                                            to treat psoriasis), aminoglycosides (used to treat
+                                            infections), diuretics (which increase urine),
+                                            nonsteroidal anti‑inflammatory drugs (used to treat
+                                            pain) or lithium (used for bipolar disease and
+                                            depression). These medicines taken togetherwith Acme
+                                            Product could increase the risk of side effects on your
+                                            kidneys.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                     <p style="line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">If you get severe or prolonged diarrhoea with Acme Product, other medicines may not work as well as they should. Talk to your doctor if you have bad diarrhoea and are concerned that other medicines you are taking might not work. In particular, if you are taking a contraceptive medicine (the pill), the effect may be reduced and you may need to use other barrier methods to prevent pregnancy.</span>See the instructions in the patient leaflet of the
-contraceptive you are taking.
+                                        <span lang="EN-GB">If you get severe or prolonged diarrhoea
+                                            with Acme Product, other medicines may not work as well
+                                            as they should. Talk to your doctor if you have bad
+                                            diarrhoea and are concerned that other medicines you are
+                                            taking might not work. In particular, if you are taking
+                                            a contraceptive medicine (the pill), the effect may be
+                                            reduced and you may need to use other barrier methods to
+                                            prevent pregnancy.</span>See the instructions in the
+                                        patient leaflet of the contraceptive you are taking.
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                     <p style="line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">If you need a vaccination, talk to your doctor. Certain types of vaccines (live vaccines) may cause infection if used during treatment with Acme Product. Your doctor can advise you what would be best.</span>
+                                        <span lang="EN-GB">If you need a vaccination, talk to your
+                                            doctor. Certain types of vaccines (live vaccines) may
+                                            cause infection if used during treatment with Acme
+                                            Product. Your doctor can advise you what would be
+                                            best.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -367,7 +452,11 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Avoid strong alcoholic drinks (more than 50 ml of spirits containing more than 30% alcohol by volume) during treatment with Acme Product, as alcohol can interact with this medicine. This could cause stomach and intestinal problems.</span>
+                                        <span lang="EN-GB">Avoid strong alcoholic drinks (more than
+                                            50 ml of spirits containing more than 30% alcohol by
+                                            volume) during treatment with Acme Product, as alcohol
+                                            can interact with this medicine. This could cause
+                                            stomach and intestinal problems.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -385,10 +474,16 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Do not take Acme Product if you are pregnant or trying to become pregnant, as Acme Product may harm your baby. Use effective methods of contraception to avoid becoming pregnant during treatment with Acme Product (see also “Other medicines and Acme Product” above).</span>
+                                        <span lang="EN-GB">Do not take Acme Product if you are
+                                            pregnant or trying to become pregnant, as Acme Product
+                                            may harm your baby. Use effective methods of
+                                            contraception to avoid becoming pregnant during
+                                            treatment with Acme Product (see also “Other medicines
+                                            and Acme Product” above).</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">Do not breast-feed during treatment with Acme Product.</span>
+                                        <span lang="EN-GB">Do not breast-feed during treatment with
+                                            Acme Product.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -408,8 +503,11 @@ contraceptive you are taking.
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="EN-GB">Acme Product </span>
                                         <span lang="EN-GB">may have a minor </span>
-                                        <span lang="EN-GB">influence on the ability to drive and use machines</span>
-                                        <span lang="EN-GB">. You may feel dizzy or tired after taking Acme Product. If you are affected, be careful when driving or using machines.</span>
+                                        <span lang="EN-GB">influence on the ability to drive and use
+                                            machines</span>
+                                        <span lang="EN-GB">. You may feel dizzy or tired after
+                                            taking Acme Product. If you are affected, be careful
+                                            when driving or using machines.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -427,7 +525,9 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">If you have been told by your doctor that you have an intolerance to some sugars, contact your doctor before taking this medicinal product.</span>
+                                        <span lang="EN-GB">If you have been told by your doctor that
+                                            you have an intolerance to some sugars, contact your
+                                            doctor before taking this medicinal product.</span>
                                     </p>
                                     <p style="line-height:normal;text-autospace:none" class="MsoNormal"/>
                                 </div>
@@ -445,7 +545,9 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">If you have been told by your doctor that you have an intolerance to some sugars, contact your doctor before taking this medicinal product.</span>
+                                        <span lang="EN-GB">If you have been told by your doctor that
+                                            you have an intolerance to some sugars, contact your
+                                            doctor before taking this medicinal product.</span>
                                     </p>
                                     <p style="line-height:normal;text-autospace:none" class="MsoNormal"/>
                                 </div>
@@ -465,7 +567,9 @@ contraceptive you are taking.
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Always take this medicine exactly as your doctor or pharmacist has told you. Check with your doctor or pharmacist if you are not sure.</span>
+                                    <span lang="EN-GB">Always take this medicine exactly as your
+                                        doctor or pharmacist has told you. Check with your doctor or
+                                        pharmacist if you are not sure.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -474,7 +578,12 @@ contraceptive you are taking.
                                     </b>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Your doctor will start your treatment with a low dose (using 30 mg Acme Product tablets). This helps to reduce stomach problems and other side effects. Your dose will be increased every week as shown in the table below (switching to 120 mg Acme Product tablets from week 4 onwards).</span>
+                                    <span lang="EN-GB">Your doctor will start your treatment with a
+                                        low dose (using 30 mg Acme Product tablets). This helps to
+                                        reduce stomach problems and other side effects. Your dose
+                                        will be increased every week as shown in the table below
+                                        (switching to 120 mg Acme Product tablets from week 4
+                                        onwards).</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <table border="1" cellpadding="0" cellspacing="0" width="101%" style="border-collapse:collapse;border:none" class="Tablanormal">
@@ -491,7 +600,8 @@ contraceptive you are taking.
                                         </td>
                                         <td colspan="3" width="43%" style="width:43.64%;border:solid windowtext 1.0pt;    border-left:none;padding:0in 5.4pt 0in 5.4pt;height:20.8pt">
                                             <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
-                                                <span lang="EN-GB">How many tablets to take during the day</span>
+                                                <span lang="EN-GB">How many tablets to take during
+                                                  the day</span>
                                                 <s/>
                                             </p>
                                         </td>
@@ -859,8 +969,18 @@ contraceptive you are taking.
                                 </table>
                                 <p style="text-align:justify;text-justify:inter-ideograph;  line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Your doctor will check how well your condition is improving after you start taking Acme Product and will check for side effects. If you have severe side effects after an increase in dose, your doctor may recommend that you temporarily go back to the last dose. If the side effects are not troublesome, your dose will be increased until your condition is well controlled. You may not need the maximum dose of 720 mg per day.</span>
-                                    <span lang="EN-GB">After your condition has improved sufficiently, your doctor will consider how to gradually reduce the daily dose of Acme Product to what you need to maintain your improvement.</span>
+                                    <span lang="EN-GB">Your doctor will check how well your
+                                        condition is improving after you start taking Acme Product
+                                        and will check for side effects. If you have severe side
+                                        effects after an increase in dose, your doctor may recommend
+                                        that you temporarily go back to the last dose. If the side
+                                        effects are not troublesome, your dose will be increased
+                                        until your condition is well controlled. You may not need
+                                        the maximum dose of 720 mg per day.</span>
+                                    <span lang="EN-GB">After your condition has improved
+                                        sufficiently, your doctor will consider how to gradually
+                                        reduce the daily dose of Acme Product to what you need to
+                                        maintain your improvement.</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -869,7 +989,11 @@ contraceptive you are taking.
                                     </b>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Swallow Acme Product tablets whole with liquid. Take your tablets during or immediately after a meal. Do not crush, break, dissolve or chew your tablets, as they have a special coating to help prevent irritation of your stomach.</span>
+                                    <span lang="EN-GB">Swallow Acme Product tablets whole with
+                                        liquid. Take your tablets during or immediately after a
+                                        meal. Do not crush, break, dissolve or chew your tablets, as
+                                        they have a special coating to help prevent irritation of
+                                        your stomach.</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                             </div>
@@ -886,7 +1010,9 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">If you think you have taken too many Acme Product tablets, talk to your doctor or pharmacist.</span>
+                                        <span lang="EN-GB">If you think you have taken too many Acme
+                                            Product tablets, talk to your doctor or
+                                            pharmacist.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -904,11 +1030,18 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Do not take a double dose to make up for a forgotten dose. Take the next dose at the usual time and continue taking the medicine exactly as described in this leaflet or exactly as agreed with your doctor. Please ask your doctor or pharmacist if you are not sure.</span>
+                                        <span lang="EN-GB">Do not take a double dose to make up for
+                                            a forgotten dose. Take the next dose at the usual time
+                                            and continue taking the medicine exactly as described in
+                                            this leaflet or exactly as agreed with your doctor.
+                                            Please ask your doctor or pharmacist if you are not
+                                            sure.</span>
                                     </p>
                                     <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">If you have any further questions on the use of this medicine, ask your doctor or pharmacist.</span>
+                                        <span lang="EN-GB">If you have any further questions on the
+                                            use of this medicine, ask your doctor or
+                                            pharmacist.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
@@ -929,37 +1062,53 @@ contraceptive you are taking.
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Like all medicines, this medicine can cause side effects, although not everybody gets them. Some of these side effects, such as reddening of the face or body (flushing), diarrhoea, stomach problems and nausea usually improve as you continue treatment.</span>
+                                    <span lang="EN-GB">Like all medicines, this medicine can cause
+                                        side effects, although not everybody gets them. Some of
+                                        these side effects, such as reddening of the face or body
+                                        (flushing), diarrhoea, stomach problems and nausea usually
+                                        improve as you continue treatment.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
                                     <span lang="EN-GB">The </span>
                                     <span lang="EN-GB">most serious side effects that may</span>
-                                    <span lang="EN-GB">occur with Acme Product are allergic or hypersensitivity reactions; kidney failure or a kidney disease called Fanconi syndrome; or a severe brain infection called progressive multifocal leukoencephalopathy (PML). It is not known how commonly they occur. For symptoms see below.</span>
+                                    <span lang="EN-GB">occur with Acme Product are allergic or
+                                        hypersensitivity reactions; kidney failure or a kidney
+                                        disease called Fanconi syndrome; or a severe brain infection
+                                        called progressive multifocal leukoencephalopathy (PML). It
+                                        is not known how commonly they occur. For symptoms see
+                                        below.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                     <u>
-                                        <span lang="EN-GB">Allergic or hypersensitivity reactions</span>
+                                        <span lang="EN-GB">Allergic or hypersensitivity
+                                            reactions</span>
                                     </u>
                                 </p>
                                 <p style="margin-right:-1.4pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Allergic or hypersensitivity reactions are rare but may be very serious. Reddening of the face or body (flushing) is a very common side effect </span>
+                                    <span lang="EN-GB">Allergic or hypersensitivity reactions are
+                                        rare but may be very serious. Reddening of the face or body
+                                        (flushing) is a very common side effect </span>
                                     <span lang="EN-GB">which </span>
                                     <span lang="EN-GB">may affect more than 1 in 10 people</span>
                                     <span lang="EN-GB">.</span>
-                                    <span lang="EN-GB">However, if you become flushed and get any of the following signs: </span>
+                                    <span lang="EN-GB">However, if you become flushed and get any of
+                                        the following signs: </span>
                                 </p>
                                 <p style="margin-top:0in;margin-right:-1.4pt;  margin-bottom:0in;margin-left:.25in;text-indent:-.25in" class="PrrafodelistaCxSpFirst">
                                     <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                    <span style="font-size:11.0pt" lang="EN-GB">wheezing, difficulty breathing or shortness of breath,</span>
+                                    <span style="font-size:11.0pt" lang="EN-GB">wheezing, difficulty
+                                        breathing or shortness of breath,</span>
                                 </p>
                                 <p style="margin-top:0in;margin-right:-1.4pt;  margin-bottom:0in;margin-left:.25in;text-indent:-.25in" class="PrrafodelistaCxSpLast">
                                     <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                    <span style="font-size:11.0pt" lang="EN-GB">swelling of the face, lips, mouth or tongue </span>
+                                    <span style="font-size:11.0pt" lang="EN-GB">swelling of the
+                                        face, lips, mouth or tongue </span>
                                 </p>
                                 <p style="margin-right:-1.4pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">stop taking Acme Product and call a doctor straight away.</span>
+                                    <span lang="EN-GB">stop taking Acme Product and call a doctor
+                                        straight away.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -968,7 +1117,13 @@ contraceptive you are taking.
                                     </u>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Progressive multifocal leukoencephalopathy (PML) is a rare but serious brain infection that can lead to severe disability or death. If you notice new or worsening weakness on one side of the body; clumsiness; changes in vision, thinking or memory; confusion; or personality changes lasting several days, stop taking Acme Product and talk to your doctor straight away.</span>
+                                    <span lang="EN-GB">Progressive multifocal leukoencephalopathy
+                                        (PML) is a rare but serious brain infection that can lead to
+                                        severe disability or death. If you notice new or worsening
+                                        weakness on one side of the body; clumsiness; changes in
+                                        vision, thinking or memory; confusion; or personality
+                                        changes lasting several days, stop taking Acme Product and
+                                        talk to your doctor straight away.</span>
                                 </p>
                                 <p style="line-height:normal;text-autospace:none" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -977,27 +1132,38 @@ contraceptive you are taking.
                                     </u>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Fanconi syndrome is a rare but serious kidney disorder which may occur with Acme Product. If you notice you are passing more urine, are more thirsty and drinking more than normal, your muscles seem weaker, you break a bone, or just have aches and pains, talk to your doctor as soon as possible so that this can be investigated further.</span>
+                                    <span lang="EN-GB">Fanconi syndrome is a rare but serious kidney
+                                        disorder which may occur with Acme Product. If you notice
+                                        you are passing more urine, are more thirsty and drinking
+                                        more than normal, your muscles seem weaker, you break a
+                                        bone, or just have aches and pains, talk to your doctor as
+                                        soon as possible so that this can be investigated
+                                        further.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Talk to your doctor if you get any of the following side effects.</span>
+                                    <span lang="EN-GB">Talk to your doctor if you get any of the
+                                        following side effects.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Very common side effects (may affect more than 1 in 10 people):</span>
+                                    <span lang="EN-GB">Very common side effects (may affect more
+                                        than 1 in 10 people):</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">decrease in white blood cells called lymphocytes (lymphopenia)</span>
+                                    <span lang="EN-GB">decrease in white blood cells called
+                                        lymphocytes (lymphopenia)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">decrease in all white blood cells (leukopenia)</span>
+                                    <span lang="EN-GB">decrease in all white blood cells
+                                        (leukopenia)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">reddening of the face or body (flushing)</span>
+                                    <span lang="EN-GB">reddening of the face or body
+                                        (flushing)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -1005,7 +1171,8 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">bloating, stomach pain or stomach cramps</span>
+                                    <span lang="EN-GB">bloating, stomach pain or stomach
+                                        cramps</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -1013,19 +1180,23 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Common side effects (may affect up to 1 in 10 people):</span>
+                                    <span lang="EN-GB">Common side effects (may affect up to 1 in 10
+                                        people):</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in all white blood cells (leukocytosis)</span>
+                                    <span lang="EN-GB">increase in all white blood cells
+                                        (leukocytosis)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in specific white blood cells called eosinophils</span>
+                                    <span lang="EN-GB">increase in specific white blood cells called
+                                        eosinophils</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in certain enzymes in the blood (used for checking the health of your liver)</span>
+                                    <span lang="EN-GB">increase in certain enzymes in the blood
+                                        (used for checking the health of your liver)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -1037,7 +1208,8 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">gas (flatulence), stomach discomfort, indigestion</span>
+                                    <span lang="EN-GB">gas (flatulence), stomach discomfort,
+                                        indigestion</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -1061,15 +1233,18 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">abnormal sensations of the skin, such as itching, burning, stinging, tickling or tingling</span>
+                                    <span lang="EN-GB">abnormal sensations of the skin, such as
+                                        itching, burning, stinging, tickling or tingling</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">pink or red blotches on the skin (erythema)</span>
+                                    <span lang="EN-GB">pink or red blotches on the skin
+                                        (erythema)</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Uncommon side effects (may affect up to 1 in 100 people):</span>
+                                    <span lang="EN-GB">Uncommon side effects (may affect up to 1 in
+                                        100 people):</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -1077,35 +1252,43 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">excess protein in the urine (proteinuria)</span>
+                                    <span lang="EN-GB">excess protein in the urine
+                                        (proteinuria)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in serum creatinine (a substance in the blood used for measuring how well your kidneys are working)</span>
+                                    <span lang="EN-GB">increase in serum creatinine (a substance in
+                                        the blood used for measuring how well your kidneys are
+                                        working)</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Rare side effects (may affect up to 1 in 1,000 people):</span>
+                                    <span lang="EN-GB">Rare side effects (may affect up to 1 in
+                                        1,000 people):</span>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">-        allergic skin reaction</span>
+                                    <span lang="EN-GB">- allergic skin reaction</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Very rare side effects (may affect up to 1 in 10,000 people):</span>
+                                    <span lang="EN-GB">Very rare side effects (may affect up to 1 in
+                                        10,000 people):</span>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">-        acute lymphatic leukaemia (a type of blood cancer)</span>
+                                    <span lang="EN-GB">- acute lymphatic leukaemia (a type of blood
+                                        cancer)</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">-        decrease in all types of blood cells (pancytopenia)</span>
+                                    <span lang="EN-GB">- decrease in all types of blood cells
+                                        (pancytopenia)</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span style="color:black">Frequency not known (frequency cannot be estimated from the available data):</span>
+                                    <span style="color:black">Frequency not known (frequency cannot
+                                        be estimated from the available data):</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">-        shingles</span>
+                                    <span lang="EN-GB">- shingles</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                             </div>
@@ -1122,17 +1305,21 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-bottom:0in;line-height:normal;page-break-after:  avoid" class="BodytextAgency">
-                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">If
-you get any side effects, talk to your doctor or pharmacist.This includes any possible side effects not listed in
-this leaflet. You can also report side effects directly via 
-                                            <span style="background:lightgrey">the national reporting system listed in </span>
+                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">If you get any side effects, talk to your
+                                            doctor or pharmacist.This includes any possible side
+                                            effects not listed in this leaflet. You can also report
+                                            side effects directly via
+                                            <span style="background:lightgrey">the national reporting
+                                                system listed in </span>
                                         </span>
                                         <span lang="EN-GB">
                                             <a href="http://www.ema.europa.eu/docs/en_GB/document_library/Template_or_form/2013/03/WC500139752.doc">
                                                 <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;color:blue;  background:lightgrey">Appendix V</span>
                                             </a>
                                         </span>
-                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">. By reporting side effects you can help provide more information on the safety of this medicine.</span>
+                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">. By reporting side effects you can help
+                                            provide more information on the safety of this
+                                            medicine.</span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
@@ -1153,20 +1340,27 @@ this leaflet. You can also report side effects directly via
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Keep this medicine out of the sight and reach of children.</span>
+                                    <span lang="EN-GB">Keep this medicine out of the sight and reach
+                                        of children.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Do not use this medicine after the expiry date which is stated on the carton </span>
-                                    <span lang="EN-GB">and the blister after “EXP”. The expiry date refers to the last day of that month.</span>
+                                    <span lang="EN-GB">Do not use this medicine after the expiry
+                                        date which is stated on the carton </span>
+                                    <span lang="EN-GB">and the blister after “EXP”. The expiry date
+                                        refers to the last day of that month.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                    <span lang="EN-GB">This medicine does not require any special storage conditions.</span>
+                                    <span lang="EN-GB">This medicine does not require any special
+                                        storage conditions.</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away medicines you no longer use. These measures will help protect the environment.</span>
+                                    <span lang="EN-GB">Do not throw away any medicines via
+                                        wastewater or household waste. Ask your pharmacist how to
+                                        throw away medicines you no longer use. These measures will
+                                        help protect the environment.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
@@ -1192,27 +1386,38 @@ this leaflet. You can also report side effects directly via
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">the active substance is dimethyl fumarate. One tablet contains 30 mg dimethyl fumarate.</span>
+                                    <span lang="EN-GB">the active substance is dimethyl fumarate.
+                                        One tablet contains 30 mg dimethyl fumarate.</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">the other ingredients are: lactose monohydrate, cellulose microcrystalline, croscarmellose sodium, colloidal anhydrous silica, magnesium stearate, methacrylic acid‑ethyl acrylate copolymer (1:1), talc, triethyl citrate, titanium dioxide (E171) and simethicone.</span>
+                                    <span lang="EN-GB">the other ingredients are: lactose
+                                        monohydrate, cellulose microcrystalline, croscarmellose
+                                        sodium, colloidal anhydrous silica, magnesium stearate,
+                                        methacrylic acid‑ethyl acrylate copolymer (1:1), talc,
+                                        triethyl citrate, titanium dioxide (E171) and
+                                        simethicone.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                     <b>
-                                        <span lang="EN-GB">What Acme Product 30 mg looks like and contents of the pack</span>
+                                        <span lang="EN-GB">What Acme Product 30 mg looks like and
+                                            contents of the pack</span>
                                     </b>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                     <span lang="EN-GB">Acme Product 30 mg is a </span>
                                     <span lang="EN-GB">white, round </span>
                                     <span lang="EN-GB">tablet</span>
-                                    <span lang="EN-GB">with a diameter of approximately 6.8 mm.</span>
+                                    <span lang="EN-GB">with a diameter of approximately 6.8
+                                        mm.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
                                     <a name="_Hlk9583735">
-                                        <span lang="EN-GB">Acme Product 30 mg is available in packs containing 42, 70 and 210 gastro‑resistant tablets. Not all pack sizes may be marketed. The tablets are packed in PVC/PVDC‑aluminium blisters.</span>
+                                        <span lang="EN-GB">Acme Product 30 mg is available in packs
+                                            containing 42, 70 and 210 gastro‑resistant tablets. Not
+                                            all pack sizes may be marketed. The tablets are packed
+                                            in PVC/PVDC‑aluminium blisters.</span>
                                     </a>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
@@ -1257,13 +1462,15 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="ES">Industrias Farmacéuticas Almirall, S.A.</span>
+                                        <span lang="ES">Industrias Farmacéuticas Almirall,
+                                            S.A.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="ES">Ctra. Nacional II, Km. 593</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="ES">E-08740 Sant Andreu de la Barca, Barcelona</span>
+                                        <span lang="ES">E-08740 Sant Andreu de la Barca,
+                                            Barcelona</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="EN-GB">Spain</span>
@@ -1286,26 +1493,33 @@ this leaflet. You can also report side effects directly via
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <b>
-                                            <span lang="EN-GB">België/Belgique/Belgien/ Luxembourg/Luxemburg</span>
+                                            <span lang="EN-GB">België/Belgique/Belgien/
+                                                Luxembourg/Luxemburg</span>
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Almirall N.V., Tél/Tel: +32 (0)2 771 86 37</span>
+                                        <span lang="EN-GB">Almirall N.V., Tél/Tel: +32 (0)2 771 86
+                                            37</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <b>
-                                            <span lang="EN-GB">България/ Česká republika/ Eesti/ </span>
+                                            <span lang="EN-GB">България/ Česká republika/ Eesti/
+                                            </span>
                                         </b>
                                         <b>
-                                            <span lang="EN-GB">España/ Hrvatska/ Κύπρος/ Latvija/ Lietuva/ Magyarország/ Malta/ România/ Slovenija/ Slovenská republika</span>
+                                            <span lang="EN-GB">España/ Hrvatska/ Κύπρος/ Latvija/
+                                                Lietuva/ Magyarország/ Malta/ România/ Slovenija/
+                                                Slovenská republika</span>
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Almirall, S.A., Teл./ Tel/ Τηλ: +34 93 291 30 00</span>
+                                        <span lang="EN-GB">Almirall, S.A., Teл./ Tel/ Τηλ: +34 93
+                                            291 30 00</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                        <span lang="SV">Tel (Česká republika / Slovenská republika): +420 </span>
+                                        <span lang="SV">Tel (Česká republika / Slovenská republika):
+                                            +420 </span>
                                         <span lang="SV">220 990 139</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
@@ -1313,12 +1527,13 @@ this leaflet. You can also report side effects directly via
                                         <b>
                                             <span lang="SV">Danmark/ Norge</span>
                                         </b>
-                                        <span lang="SV">/ 
+                                        <span lang="SV">/
                                             <b>Suomi/Finland/ Sverige</b>
                                         </span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="SV">Almirall ApS, Tlf/ Puh/Tel: +45 70 25 75 75</span>
+                                        <span lang="SV">Almirall ApS, Tlf/ Puh/Tel: +45 70 25 75
+                                            75</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1327,7 +1542,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="DE">Almirall Hermal GmbH, Tel.: +49 (0)40 72704-0</span>
+                                        <span lang="DE">Almirall Hermal GmbH, Tel.: +49 (0)40
+                                            72704-0</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
                                         <a name="_Hlk36624224"/>
@@ -1349,7 +1565,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Almirall SAS, Tél.: +33(0)1 46 46 19 20</span>
+                                        <span lang="EN-GB">Almirall SAS, Tél.: +33(0)1 46 46 19
+                                            20</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1386,7 +1603,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="DE">Almirall B.V., Tel: +31 (0)30 799 1155</span>
+                                        <span lang="DE">Almirall B.V., Tel: +31 (0)30 799
+                                            1155</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1395,7 +1613,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="DE">Almirall GmbH, Tel.: +43 (0)1/595 39 60</span>
+                                        <span lang="DE">Almirall GmbH, Tel.: +43 (0)1/595 39
+                                            60</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1404,7 +1623,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="DE">Almirall Sp.z o. o., Tel.: +48 22 330 02 57</span>
+                                        <span lang="DE">Almirall Sp.z o. o., Tel.: +48 22 330 02
+                                            57</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1413,12 +1633,14 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="PT">Almirall - Produtos Farmacêuticos, Lda., Tel.: +351 21 415 57 50</span>
+                                        <span lang="PT">Almirall - Produtos Farmacêuticos, Lda.,
+                                            Tel.: +351 21 415 57 50</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <b>
-                                            <span lang="EN-GB">United Kingdom (Northern Ireland)</span>
+                                            <span lang="EN-GB">United Kingdom (Northern
+                                                Ireland)</span>
                                         </b>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal">
@@ -1456,7 +1678,8 @@ this leaflet. You can also report side effects directly via
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Detailed information on this medicine is available on the European Medicines Agency web site: </span>
+                                        <span lang="EN-GB">Detailed information on this medicine is
+                                            available on the European Medicines Agency web site: </span>
                                         <span lang="EN-GB">
                                             <a href="http://www.ema.europa.eu">
                                                 <span class="Hipervnculo">http://www.ema.europa.eu</span>
@@ -1471,13 +1694,15 @@ this leaflet. You can also report side effects directly via
                                     <p style="line-height:normal" class="MsoNormal"/>
                                     <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
                                         <b>
-                                            <span lang="EN-GB">Package leaflet: Information for the patient</span>
+                                            <span lang="EN-GB">Package leaflet: Information for the
+                                                patient</span>
                                         </b>
                                     </p>
                                     <p style="text-align:center;line-height:normal;  background:white" align="center" class="MsoNormal"/>
                                     <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
                                         <b>
-                                            <span lang="EN-GB">Acme Product 120 mg gastro‑resistant tablets</span>
+                                            <span lang="EN-GB">Acme Product 120 mg gastro‑resistant
+                                                tablets</span>
                                         </b>
                                     </p>
                                     <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
@@ -1487,20 +1712,30 @@ this leaflet. You can also report side effects directly via
                                     <p style="line-height:normal" class="MsoNormal"/>
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
                                         <b>
-                                            <span lang="EN-GB">Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</span>
+                                            <span lang="EN-GB">Read all of this leaflet carefully
+                                                before you start taking this medicine because it
+                                                contains important information for you.</span>
                                         </b>
                                     </p>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">-        Keep this leaflet. You may need to read it again.</span>
+                                        <span lang="EN-GB">- Keep this leaflet. You may need to read
+                                            it again.</span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                        <span lang="EN-GB">-        If you have any further questions, ask your doctor or pharmacist.</span>
+                                        <span lang="EN-GB">- If you have any further questions, ask
+                                            your doctor or pharmacist.</span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                        <span lang="EN-GB">-        This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.</span>
+                                        <span lang="EN-GB">- This medicine has been prescribed for
+                                            you only. Do not pass it on to others. It may harm them,
+                                            even if their signs of illness are the same as
+                                            yours.</span>
                                     </p>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                        <span lang="EN-GB">-        If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.</span>
+                                        <span lang="EN-GB">- If you get any side effects, talk to
+                                            your doctor or pharmacist. This includes any possible
+                                            side effects not listed in this leaflet. See section
+                                            4.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1520,22 +1755,25 @@ this leaflet. You can also report side effects directly via
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">1.    What Acme Product is and what it is used for</span>
+                                    <span lang="EN-GB">1. What Acme Product is and what it is used
+                                        for</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">2.    What you need to know before you take Acme Product</span>
+                                    <span lang="EN-GB">2. What you need to know before you take Acme
+                                        Product</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">3.    How to take Acme Product</span>
+                                    <span lang="EN-GB">3. How to take Acme Product</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">4.    Possible side effects</span>
+                                    <span lang="EN-GB">4. Possible side effects</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">5.    How to store Acme Product</span>
+                                    <span lang="EN-GB">5. How to store Acme Product</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">6.    Contents of the pack and other information</span>
+                                    <span lang="EN-GB">6. Contents of the pack and other
+                                        information</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal"/>
@@ -1560,7 +1798,12 @@ this leaflet. You can also report side effects directly via
                                     </b>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Acme Product is a medicine that contains the active substance dimethyl fumarate. Dimethyl fumarate works on cells of the immune system (the body's natural defences). It changes the activity of the immune system and reduces the production of substances involved in causing psoriasis.</span>
+                                    <span lang="EN-GB">Acme Product is a medicine that contains the
+                                        active substance dimethyl fumarate. Dimethyl fumarate works
+                                        on cells of the immune system (the body's natural defences).
+                                        It changes the activity of the immune system and reduces the
+                                        production of substances involved in causing
+                                        psoriasis.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1569,11 +1812,17 @@ this leaflet. You can also report side effects directly via
                                     </b>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Acme Product tablets are used to treat moderate to severe plaque psoriasis in adults. Psoriasis is a disease causing thickened, inflamed, red areas on the skin, often covered by silvery scales.</span>
+                                    <span lang="EN-GB">Acme Product tablets are used to treat
+                                        moderate to severe plaque psoriasis in adults. Psoriasis is
+                                        a disease causing thickened, inflamed, red areas on the
+                                        skin, often covered by silvery scales.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Response to Acme Product can be generally seen as early as week 3 and improves over time. Experience with related products containing dimethyl fumarate shows treatment benefit for at least up to 24 months.</span>
+                                    <span lang="EN-GB">Response to Acme Product can be generally
+                                        seen as early as week 3 and improves over time. Experience
+                                        with related products containing dimethyl fumarate shows
+                                        treatment benefit for at least up to 24 months.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
@@ -1606,18 +1855,23 @@ this leaflet. You can also report side effects directly via
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">-        if you are allergic to dimethyl fumarate or any of the other ingredients of this medicine (listed in section 6)</span>
+                                        <span lang="EN-GB">- if you are allergic to dimethyl
+                                            fumarate or any of the other ingredients of this
+                                            medicine (listed in section 6)</span>
                                     </p>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                        <span lang="EN-GB">-        if you have severe problems with your stomach or intestines </span>
+                                        <span lang="EN-GB">- if you have severe problems with your
+                                            stomach or intestines </span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:0in;  margin-bottom:0in;margin-left:28.35pt;text-indent:-28.35pt" class="PrrafodelistaCxSpFirst">
                                         <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                        <span style="font-size:11.0pt" lang="EN-GB">if you have severe liver or kidney problems</span>
+                                        <span style="font-size:11.0pt" lang="EN-GB">if you have
+                                            severe liver or kidney problems</span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:0in;margin-bottom:  0in;margin-left:28.35pt;text-indent:-28.35pt" class="Prrafodelista">
                                         <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                        <span style="font-size:11.0pt" lang="EN-GB">if you are pregnant or breast-feeding</span>
+                                        <span style="font-size:11.0pt" lang="EN-GB">if you are
+                                            pregnant or breast-feeding</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1635,7 +1889,8 @@ this leaflet. You can also report side effects directly via
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Talk to your doctor or pharmacist before taking Acme Product.</span>
+                                        <span lang="EN-GB">Talk to your doctor or pharmacist before
+                                            taking Acme Product.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1646,8 +1901,14 @@ this leaflet. You can also report side effects directly via
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="EN-GB">Acme Product</span>
                                         <span lang="EN-GB">may </span>
-                                        <span lang="EN-GB">cause problems with your blood, liver or kidneys. You will have blood and urine tests before treatment and then regularly during your treatment to make sure that you are not getting these complications and can continue to take this medicine</span>
-                                        <span lang="EN-GB">. Depending on the results of these blood and urine tests, your doctor may reduce your dose of Acme Product or stop treatment.</span>
+                                        <span lang="EN-GB">cause problems with your blood, liver or
+                                            kidneys. You will have blood and urine tests before
+                                            treatment and then regularly during your treatment to
+                                            make sure that you are not getting these complications
+                                            and can continue to take this medicine</span>
+                                        <span lang="EN-GB">. Depending on the results of these blood
+                                            and urine tests, your doctor may reduce your dose of
+                                            Acme Product or stop treatment.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1656,8 +1917,16 @@ this leaflet. You can also report side effects directly via
                                         </u>
                                     </p>
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">White blood cells help your body to fight infections. Acme Product may reduce the number of your white blood cells. Talk to your doctor if you think you may have an infection. Symptoms include </span>
-                                        <span style="color:#262626" lang="EN-GB">fever, pain, aching muscles, headache, loss of appetite and a general feeling of weakness. If you have a serious infection, either before starting treatment with Acme Product or during treatment, your doctor may advise you not to take Acme Product until the infection has resolved. </span>
+                                        <span lang="EN-GB">White blood cells help your body to fight
+                                            infections. Acme Product may reduce the number of your
+                                            white blood cells. Talk to your doctor if you think you
+                                            may have an infection. Symptoms include </span>
+                                        <span style="color:#262626" lang="EN-GB">fever, pain, aching
+                                            muscles, headache, loss of appetite and a general
+                                            feeling of weakness. If you have a serious infection,
+                                            either before starting treatment with Acme Product or
+                                            during treatment, your doctor may advise you not to take
+                                            Acme Product until the infection has resolved. </span>
                                     </p>
                                     <p style="line-height:normal;text-autospace:none" class="MsoNormal">
                                         <u>
@@ -1670,7 +1939,10 @@ this leaflet. You can also report side effects directly via
                                         </u>
                                     </p>
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Tell your doctor if you have or have had problems with your stomach or intestines. Your doctor will advise you on what care you need to take during Acme Product treatment.</span>
+                                        <span lang="EN-GB">Tell your doctor if you have or have had
+                                            problems with your stomach or intestines. Your doctor
+                                            will advise you on what care you need to take during
+                                            Acme Product treatment.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1688,7 +1960,9 @@ this leaflet. You can also report side effects directly via
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Children and adolescents below the age of 18 years should not take this medicine because it has not been studied in this age group.</span>
+                                        <span lang="EN-GB">Children and adolescents below the age of
+                                            18 years should not take this medicine because it has
+                                            not been studied in this age group.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1706,49 +1980,77 @@ this leaflet. You can also report side effects directly via
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Tell your doctor or pharmacist if you are taking, have recently taken or might take any other medicines.</span>
+                                        <span lang="EN-GB">Tell your doctor or pharmacist if you are
+                                            taking, have recently taken or might take any other
+                                            medicines.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">In particular, tell your doctor if you are taking the following:</span>
+                                        <span lang="EN-GB">In particular, tell your doctor if you
+                                            are taking the following:</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                         <span lang="EN-GB">-</span>
                                         <b>
-                                            <span lang="EN-GB">Dimethyl fumarate or other fumarates.</span>
+                                            <span lang="EN-GB">Dimethyl fumarate or other
+                                                fumarates.</span>
                                         </b>
-                                        <span lang="EN-GB">The active ingredient in Acme Product, dimethyl fumarate, is also used in other medicines such as tablets, ointments and baths. You must avoid using other products that contain fumarates to prevent taking too much.</span>
+                                        <span lang="EN-GB">The active ingredient in Acme Product,
+                                            dimethyl fumarate, is also used in other medicines such
+                                            as tablets, ointments and baths. You must avoid using
+                                            other products that contain fumarates to prevent taking
+                                            too much.</span>
                                     </p>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                         <span lang="EN-GB">-</span>
                                         <b>
-                                            <span lang="EN-GB">Other medicines used to treat psoriasis,</span>
+                                            <span lang="EN-GB">Other medicines used to treat
+                                                psoriasis,</span>
                                         </b>
-                                        <span lang="EN-GB">such as methotrexate, retinoids, psoralens, ciclosporin, or other immunosuppressants or cytostatics</span>
-                                        <span lang="EN-GB">(medicines that affect the immune system)</span>
-                                        <span lang="EN-GB">. Taking these medicines with Acme Product could increase the risk of side effects on your immune system.</span>
+                                        <span lang="EN-GB">such as methotrexate, retinoids,
+                                            psoralens, ciclosporin, or other immunosuppressants or
+                                            cytostatics</span>
+                                        <span lang="EN-GB">(medicines that affect the immune
+                                            system)</span>
+                                        <span lang="EN-GB">. Taking these medicines with Acme
+                                            Product could increase the risk of side effects on your
+                                            immune system.</span>
                                     </p>
                                     <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                         <span lang="EN-GB">-</span>
                                         <b>
-                                            <span lang="EN-GB">Other medicines that can affect your kidney function, </span>
+                                            <span lang="EN-GB">Other medicines that can affect your
+                                                kidney function, </span>
                                         </b>
                                         <span lang="EN-GB">such as methotrexate or ciclosporin (used
-to treat psoriasis), aminoglycosides (used to treat infections), diuretics (which
-increase urine), nonsteroidal anti‑inflammatory drugs (used to treat
-pain) or lithium (used for bipolar disease and depression). These medicines taken
-togetherwith Acme Product could increase the risk of side effects on your
-kidneys.</span>
+                                            to treat psoriasis), aminoglycosides (used to treat
+                                            infections), diuretics (which increase urine),
+                                            nonsteroidal anti‑inflammatory drugs (used to treat
+                                            pain) or lithium (used for bipolar disease and
+                                            depression). These medicines taken togetherwith Acme
+                                            Product could increase the risk of side effects on your
+                                            kidneys.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                     <p style="line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">If you get severe or prolonged diarrhoea with Acme Product, other medicines may not work as well as they should. Talk to your doctor if you have bad diarrhoea and are concerned that other medicines you are taking might not work. In particular, if you are taking a contraceptive medicine (the pill), the effect may be reduced and you may need to use other barrier methods to prevent pregnancy.</span>See the instructions in the patient leaflet of the
-contraceptive you are taking.
+                                        <span lang="EN-GB">If you get severe or prolonged diarrhoea
+                                            with Acme Product, other medicines may not work as well
+                                            as they should. Talk to your doctor if you have bad
+                                            diarrhoea and are concerned that other medicines you are
+                                            taking might not work. In particular, if you are taking
+                                            a contraceptive medicine (the pill), the effect may be
+                                            reduced and you may need to use other barrier methods to
+                                            prevent pregnancy.</span>See the instructions in the
+                                        patient leaflet of the contraceptive you are taking.
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                     <p style="line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">If you need a vaccination, talk to your doctor. Certain types of vaccines (live vaccines) may cause infection if used during treatment with Acme Product. Your doctor can advise you what would be best.</span>
+                                        <span lang="EN-GB">If you need a vaccination, talk to your
+                                            doctor. Certain types of vaccines (live vaccines) may
+                                            cause infection if used during treatment with Acme
+                                            Product. Your doctor can advise you what would be
+                                            best.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1766,7 +2068,11 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Avoid strong alcoholic drinks (more than 50 ml of spirits containing more than 30% alcohol by volume) during treatment with Acme Product, as alcohol can interact with this medicine. This could cause stomach and intestinal problems.</span>
+                                        <span lang="EN-GB">Avoid strong alcoholic drinks (more than
+                                            50 ml of spirits containing more than 30% alcohol by
+                                            volume) during treatment with Acme Product, as alcohol
+                                            can interact with this medicine. This could cause
+                                            stomach and intestinal problems.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1784,10 +2090,16 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Do not take Acme Product if you are pregnant or trying to become pregnant, as Acme Product may harm your baby. Use effective methods of contraception to avoid becoming pregnant during treatment with Acme Product (see also “Other medicines and Acme Product” above).</span>
+                                        <span lang="EN-GB">Do not take Acme Product if you are
+                                            pregnant or trying to become pregnant, as Acme Product
+                                            may harm your baby. Use effective methods of
+                                            contraception to avoid becoming pregnant during
+                                            treatment with Acme Product (see also “Other medicines
+                                            and Acme Product” above).</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">Do not breast-feed during treatment with Acme Product.</span>
+                                        <span lang="EN-GB">Do not breast-feed during treatment with
+                                            Acme Product.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1807,8 +2119,11 @@ contraceptive you are taking.
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="EN-GB">Acme Product </span>
                                         <span lang="EN-GB">may have a minor </span>
-                                        <span lang="EN-GB">influence on the ability to drive and use machines</span>
-                                        <span lang="EN-GB">. You may feel dizzy or tired after taking Acme Product. If you are affected, be careful when driving or using machines.</span>
+                                        <span lang="EN-GB">influence on the ability to drive and use
+                                            machines</span>
+                                        <span lang="EN-GB">. You may feel dizzy or tired after
+                                            taking Acme Product. If you are affected, be careful
+                                            when driving or using machines.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -1826,7 +2141,9 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">If you have been told by your doctor that you have an intolerance to some sugars, contact your doctor before taking this medicinal product.</span>
+                                        <span lang="EN-GB">If you have been told by your doctor that
+                                            you have an intolerance to some sugars, contact your
+                                            doctor before taking this medicinal product.</span>
                                     </p>
                                     <p style="line-height:normal;text-autospace:none" class="MsoNormal"/>
                                 </div>
@@ -1844,7 +2161,9 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                        <span lang="EN-GB">If you have been told by your doctor that you have an intolerance to some sugars, contact your doctor before taking this medicinal product.</span>
+                                        <span lang="EN-GB">If you have been told by your doctor that
+                                            you have an intolerance to some sugars, contact your
+                                            doctor before taking this medicinal product.</span>
                                     </p>
                                     <p style="line-height:normal;text-autospace:none" class="MsoNormal"/>
                                 </div>
@@ -1864,7 +2183,9 @@ contraceptive you are taking.
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Always take this medicine exactly as your doctor or pharmacist has told you. Check with your doctor or pharmacist if you are not sure.</span>
+                                    <span lang="EN-GB">Always take this medicine exactly as your
+                                        doctor or pharmacist has told you. Check with your doctor or
+                                        pharmacist if you are not sure.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -1873,7 +2194,12 @@ contraceptive you are taking.
                                     </b>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Your doctor will start your treatment with a low dose (using 30 mg Acme Product tablets). This helps to reduce stomach problems and other side effects. Your dose will be increased every week as shown in the table below (switching to 120 mg Acme Product tablets from week 4 onwards).</span>
+                                    <span lang="EN-GB">Your doctor will start your treatment with a
+                                        low dose (using 30 mg Acme Product tablets). This helps to
+                                        reduce stomach problems and other side effects. Your dose
+                                        will be increased every week as shown in the table below
+                                        (switching to 120 mg Acme Product tablets from week 4
+                                        onwards).</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <table border="1" cellpadding="0" cellspacing="0" width="102%" style="border-collapse:collapse;border:none" class="Tablanormal">
@@ -1890,7 +2216,8 @@ contraceptive you are taking.
                                         </td>
                                         <td colspan="3" width="44%" style="width:44.28%;border:solid windowtext 1.0pt;    border-left:none;padding:0in 5.4pt 0in 5.4pt;height:20.8pt">
                                             <p style="text-align:center;line-height:normal" align="center" class="MsoNormal">
-                                                <span lang="EN-GB">How many tablets to take during the day</span>
+                                                <span lang="EN-GB">How many tablets to take during
+                                                  the day</span>
                                                 <s/>
                                             </p>
                                         </td>
@@ -2258,8 +2585,18 @@ contraceptive you are taking.
                                 </table>
                                 <p style="text-align:justify;text-justify:inter-ideograph;  line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Your doctor will check how well your condition is improving after you start taking Acme Product and will check for side effects. If you have severe side effects after an increase in dose, your doctor may recommend that you temporarily go back to the last dose. If the side effects are not troublesome, your dose will be increased until your condition is well controlled. You may not need the maximum dose of 720 mg per day.</span>
-                                    <span lang="EN-GB">After your condition has improved sufficiently, your doctor will consider how to gradually reduce the daily dose of Acme Product to what you need to maintain your improvement.</span>
+                                    <span lang="EN-GB">Your doctor will check how well your
+                                        condition is improving after you start taking Acme Product
+                                        and will check for side effects. If you have severe side
+                                        effects after an increase in dose, your doctor may recommend
+                                        that you temporarily go back to the last dose. If the side
+                                        effects are not troublesome, your dose will be increased
+                                        until your condition is well controlled. You may not need
+                                        the maximum dose of 720 mg per day.</span>
+                                    <span lang="EN-GB">After your condition has improved
+                                        sufficiently, your doctor will consider how to gradually
+                                        reduce the daily dose of Acme Product to what you need to
+                                        maintain your improvement.</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2268,7 +2605,11 @@ contraceptive you are taking.
                                     </b>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Swallow Acme Product tablets whole with liquid. Take your tablets during or immediately after a meal. Do not crush, break, dissolve or chew your tablets, as they have a special coating to help prevent irritation of your stomach.</span>
+                                    <span lang="EN-GB">Swallow Acme Product tablets whole with
+                                        liquid. Take your tablets during or immediately after a
+                                        meal. Do not crush, break, dissolve or chew your tablets, as
+                                        they have a special coating to help prevent irritation of
+                                        your stomach.</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                             </div>
@@ -2285,7 +2626,9 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">If you think you have taken too many Acme Product tablets, talk to your doctor or pharmacist.</span>
+                                        <span lang="EN-GB">If you think you have taken too many Acme
+                                            Product tablets, talk to your doctor or
+                                            pharmacist.</span>
                                     </p>
                                     <p style="line-height:normal" class="MsoNormal"/>
                                 </div>
@@ -2303,11 +2646,18 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Do not take a double dose to make up for a forgotten dose. Take the next dose at the usual time and continue taking the medicine exactly as described in this leaflet or exactly as agreed with your doctor. Please ask your doctor or pharmacist if you are not sure.</span>
+                                        <span lang="EN-GB">Do not take a double dose to make up for
+                                            a forgotten dose. Take the next dose at the usual time
+                                            and continue taking the medicine exactly as described in
+                                            this leaflet or exactly as agreed with your doctor.
+                                            Please ask your doctor or pharmacist if you are not
+                                            sure.</span>
                                     </p>
                                     <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                        <span lang="EN-GB">If you have any further questions on the use of this medicine, ask your doctor or pharmacist.</span>
+                                        <span lang="EN-GB">If you have any further questions on the
+                                            use of this medicine, ask your doctor or
+                                            pharmacist.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
@@ -2328,37 +2678,53 @@ contraceptive you are taking.
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Like all medicines, this medicine can cause side effects, although not everybody gets them. Some of these side effects, such as reddening of the face or body (flushing), diarrhoea, stomach problems and nausea usually improve as you continue treatment.</span>
+                                    <span lang="EN-GB">Like all medicines, this medicine can cause
+                                        side effects, although not everybody gets them. Some of
+                                        these side effects, such as reddening of the face or body
+                                        (flushing), diarrhoea, stomach problems and nausea usually
+                                        improve as you continue treatment.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal;text-autospace:none" class="MsoNormal">
                                     <span lang="EN-GB">The </span>
                                     <span lang="EN-GB">most serious side effects that may</span>
-                                    <span lang="EN-GB">occur with Acme Product are allergic or hypersensitivity reactions; kidney failure or a kidney disease called Fanconi syndrome; or a severe brain infection called progressive multifocal leukoencephalopathy (PML). It is not known how commonly they occur. For symptoms see below.</span>
+                                    <span lang="EN-GB">occur with Acme Product are allergic or
+                                        hypersensitivity reactions; kidney failure or a kidney
+                                        disease called Fanconi syndrome; or a severe brain infection
+                                        called progressive multifocal leukoencephalopathy (PML). It
+                                        is not known how commonly they occur. For symptoms see
+                                        below.</span>
                                 </p>
                                 <p style="line-height:normal;text-autospace:none" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                     <u>
-                                        <span lang="EN-GB">Allergic or hypersensitivity reactions</span>
+                                        <span lang="EN-GB">Allergic or hypersensitivity
+                                            reactions</span>
                                     </u>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Allergic or hypersensitivity reactions are rare but may be very serious. Reddening of the face or body (flushing) is a very common side effect </span>
+                                    <span lang="EN-GB">Allergic or hypersensitivity reactions are
+                                        rare but may be very serious. Reddening of the face or body
+                                        (flushing) is a very common side effect </span>
                                     <span lang="EN-GB">which </span>
                                     <span lang="EN-GB">may affect more than 1 in 10 people</span>
                                     <span lang="EN-GB">.</span>
-                                    <span lang="EN-GB">However, if you become flushed and get any of the following signs: </span>
+                                    <span lang="EN-GB">However, if you become flushed and get any of
+                                        the following signs: </span>
                                 </p>
                                 <p style="margin-top:0in;margin-right:-1.45pt;  margin-bottom:0in;margin-left:.25in;text-indent:-.25in" class="PrrafodelistaCxSpFirst">
                                     <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                    <span style="font-size:11.0pt" lang="EN-GB">wheezing, difficulty breathing or shortness of breath,</span>
+                                    <span style="font-size:11.0pt" lang="EN-GB">wheezing, difficulty
+                                        breathing or shortness of breath,</span>
                                 </p>
                                 <p style="margin-top:0in;margin-right:-1.45pt;  margin-bottom:0in;margin-left:.25in;text-indent:-.25in" class="PrrafodelistaCxSpLast">
                                     <span style="font-size:11.0pt" lang="EN-GB">-</span>
-                                    <span style="font-size:11.0pt" lang="EN-GB">swelling of the face, lips, mouth or tongue </span>
+                                    <span style="font-size:11.0pt" lang="EN-GB">swelling of the
+                                        face, lips, mouth or tongue </span>
                                 </p>
                                 <p style="line-height:normal;text-autospace:none" class="MsoNormal">
-                                    <span lang="EN-GB">stop taking Acme Product and call a doctor straight away.</span>
+                                    <span lang="EN-GB">stop taking Acme Product and call a doctor
+                                        straight away.</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal">
                                     <u>
@@ -2371,7 +2737,13 @@ contraceptive you are taking.
                                     </u>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Progressive multifocal leukoencephalopathy (PML) is a rare but serious brain infection that can lead to severe disability or death. If you notice new or worsening weakness on one side of the body; clumsiness; changes in vision, thinking or memory; confusion; or personality changes lasting several days, stop taking Acme Product and talk to your doctor straight away.</span>
+                                    <span lang="EN-GB">Progressive multifocal leukoencephalopathy
+                                        (PML) is a rare but serious brain infection that can lead to
+                                        severe disability or death. If you notice new or worsening
+                                        weakness on one side of the body; clumsiness; changes in
+                                        vision, thinking or memory; confusion; or personality
+                                        changes lasting several days, stop taking Acme Product and
+                                        talk to your doctor straight away.</span>
                                 </p>
                                 <p style="line-height:normal;text-autospace:none" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2380,27 +2752,38 @@ contraceptive you are taking.
                                     </u>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Fanconi syndrome is a rare but serious kidney disorder which may occur with Acme Product. If you notice you are passing more urine, are more thirsty and drinking more than normal, your muscles seem weaker, you break a bone, or just have aches and pains, talk to your doctor as soon as possible so that this can be investigated further.</span>
+                                    <span lang="EN-GB">Fanconi syndrome is a rare but serious kidney
+                                        disorder which may occur with Acme Product. If you notice
+                                        you are passing more urine, are more thirsty and drinking
+                                        more than normal, your muscles seem weaker, you break a
+                                        bone, or just have aches and pains, talk to your doctor as
+                                        soon as possible so that this can be investigated
+                                        further.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Talk to your doctor if you get any of the following side effects.</span>
+                                    <span lang="EN-GB">Talk to your doctor if you get any of the
+                                        following side effects.</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Very common side effects (may affect more than 1 in 10 people):</span>
+                                    <span lang="EN-GB">Very common side effects (may affect more
+                                        than 1 in 10 people):</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">decrease in white blood cells called lymphocytes (lymphopenia)</span>
+                                    <span lang="EN-GB">decrease in white blood cells called
+                                        lymphocytes (lymphopenia)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">decrease in all white blood cells (leukopenia)</span>
+                                    <span lang="EN-GB">decrease in all white blood cells
+                                        (leukopenia)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">reddening of the face or body (flushing)</span>
+                                    <span lang="EN-GB">reddening of the face or body
+                                        (flushing)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -2408,7 +2791,8 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">bloating, stomach pain or stomach cramps</span>
+                                    <span lang="EN-GB">bloating, stomach pain or stomach
+                                        cramps</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -2416,19 +2800,23 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Common side effects (may affect up to 1 in 10 people):</span>
+                                    <span lang="EN-GB">Common side effects (may affect up to 1 in 10
+                                        people):</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in all white blood cells (leukocytosis)</span>
+                                    <span lang="EN-GB">increase in all white blood cells
+                                        (leukocytosis)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in specific white blood cells called eosinophils</span>
+                                    <span lang="EN-GB">increase in specific white blood cells called
+                                        eosinophils</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in certain enzymes in the blood (used for checking the health of your liver)</span>
+                                    <span lang="EN-GB">increase in certain enzymes in the blood
+                                        (used for checking the health of your liver)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -2440,7 +2828,8 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">gas (flatulence), stomach discomfort, indigestion</span>
+                                    <span lang="EN-GB">gas (flatulence), stomach discomfort,
+                                        indigestion</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -2464,15 +2853,18 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">abnormal sensations of the skin, such as itching, burning, stinging, tickling or tingling</span>
+                                    <span lang="EN-GB">abnormal sensations of the skin, such as
+                                        itching, burning, stinging, tickling or tingling</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">pink or red blotches on the skin (erythema)</span>
+                                    <span lang="EN-GB">pink or red blotches on the skin
+                                        (erythema)</span>
                                 </p>
                                 <p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Uncommon side effects (may affect up to 1 in 100 people):</span>
+                                    <span lang="EN-GB">Uncommon side effects (may affect up to 1 in
+                                        100 people):</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
@@ -2480,35 +2872,43 @@ contraceptive you are taking.
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">excess protein in the urine (proteinuria)</span>
+                                    <span lang="EN-GB">excess protein in the urine
+                                        (proteinuria)</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">increase in serum creatinine (a substance in the blood used for measuring how well your kidneys are working)</span>
+                                    <span lang="EN-GB">increase in serum creatinine (a substance in
+                                        the blood used for measuring how well your kidneys are
+                                        working)</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Rare side effects (may affect up to 1 in 1,000 people):</span>
+                                    <span lang="EN-GB">Rare side effects (may affect up to 1 in
+                                        1,000 people):</span>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">-        allergic skin reaction</span>
+                                    <span lang="EN-GB">- allergic skin reaction</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Very rare side effects (may affect up to 1 in 10,000 people):</span>
+                                    <span lang="EN-GB">Very rare side effects (may affect up to 1 in
+                                        10,000 people):</span>
                                 </p>
                                 <p style="line-height:normal;page-break-after:avoid" class="MsoNormal">
-                                    <span lang="EN-GB">-        acute lymphatic leukaemia (a type of blood cancer)</span>
+                                    <span lang="EN-GB">- acute lymphatic leukaemia (a type of blood
+                                        cancer)</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">-        decrease in all types of blood cells (pancytopenia)</span>
+                                    <span lang="EN-GB">- decrease in all types of blood cells
+                                        (pancytopenia)</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span style="color:black">Frequency not known (frequency cannot be estimated from the available data):</span>
+                                    <span style="color:black">Frequency not known (frequency cannot
+                                        be estimated from the available data):</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">-        shingles</span>
+                                    <span lang="EN-GB">- shingles</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                             </div>
@@ -2525,17 +2925,21 @@ contraceptive you are taking.
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-bottom:0in;line-height:normal;page-break-after:  avoid" class="BodytextAgency">
-                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">If
-you get any side effects, talk to your doctor or pharmacist.This includes any possible side effects not listed in
-this leaflet. You can also report side effects directly via 
-                                            <span style="background:lightgrey">the national reporting system listed in </span>
+                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">If you get any side effects, talk to your
+                                            doctor or pharmacist.This includes any possible side
+                                            effects not listed in this leaflet. You can also report
+                                            side effects directly via
+                                            <span style="background:lightgrey">the national reporting
+                                                system listed in </span>
                                         </span>
                                         <span lang="EN-GB">
                                             <a href="http://www.ema.europa.eu/docs/en_GB/document_library/Template_or_form/2013/03/WC500139752.doc">
                                                 <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;color:blue;  background:lightgrey">Appendix V</span>
                                             </a>
                                         </span>
-                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">. By reporting side effects you can help provide more information on the safety of this medicine.</span>
+                                        <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif" lang="EN-GB">. By reporting side effects you can help
+                                            provide more information on the safety of this
+                                            medicine.</span>
                                     </p>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
                                     <p style="margin-top:0in;margin-right:-.1pt;margin-bottom:0in;  margin-left:28.35pt;margin-bottom:.0001pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
@@ -2556,20 +2960,27 @@ this leaflet. You can also report side effects directly via
               <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                    <span lang="EN-GB">Keep this medicine out of the sight and reach of children.</span>
+                                    <span lang="EN-GB">Keep this medicine out of the sight and reach
+                                        of children.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Do not use this medicine after the expiry date which is stated on the carton </span>
-                                    <span lang="EN-GB">and the blister after “EXP”. The expiry date refers to the last day of that month.</span>
+                                    <span lang="EN-GB">Do not use this medicine after the expiry
+                                        date which is stated on the carton </span>
+                                    <span lang="EN-GB">and the blister after “EXP”. The expiry date
+                                        refers to the last day of that month.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
-                                    <span lang="EN-GB">This medicine does not require any special storage conditions.</span>
+                                    <span lang="EN-GB">This medicine does not require any special
+                                        storage conditions.</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away medicines you no longer use. These measures will help protect the environment.</span>
+                                    <span lang="EN-GB">Do not throw away any medicines via
+                                        wastewater or household waste. Ask your pharmacist how to
+                                        throw away medicines you no longer use. These measures will
+                                        help protect the environment.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
@@ -2595,25 +3006,36 @@ this leaflet. You can also report side effects directly via
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal;page-break-after:avoid" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">the active substance is dimethyl fumarate. One tablet contains 120 mg dimethyl fumarate.</span>
+                                    <span lang="EN-GB">the active substance is dimethyl fumarate.
+                                        One tablet contains 120 mg dimethyl fumarate.</span>
                                 </p>
                                 <p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal">
                                     <span lang="EN-GB">-</span>
-                                    <span lang="EN-GB">the other ingredients are: lactose monohydrate, cellulose microcrystalline, croscarmellose sodium, colloidal anhydrous silica, magnesium stearate, methacrylic acid‑ethyl acrylate copolymer (1:1), talc, triethyl citrate, titanium dioxide (E171), simethicone, indigo carmine (E132) and sodium hydroxide.</span>
+                                    <span lang="EN-GB">the other ingredients are: lactose
+                                        monohydrate, cellulose microcrystalline, croscarmellose
+                                        sodium, colloidal anhydrous silica, magnesium stearate,
+                                        methacrylic acid‑ethyl acrylate copolymer (1:1), talc,
+                                        triethyl citrate, titanium dioxide (E171), simethicone,
+                                        indigo carmine (E132) and sodium hydroxide.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                     <b>
-                                        <span lang="EN-GB">What Acme Product 120 mg looks like and contents of the pack</span>
+                                        <span lang="EN-GB">What Acme Product 120 mg looks like and
+                                            contents of the pack</span>
                                     </b>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                     <span lang="EN-GB">Acme Product 120 mg is a </span>
                                     <span lang="EN-GB">blue, round </span>
-                                    <span lang="EN-GB">tablet with a diameter of approximately 11.6 mm.</span>
+                                    <span lang="EN-GB">tablet with a diameter of approximately 11.6
+                                        mm.</span>
                                 </p>
                                 <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                    <span lang="EN-GB">Pack sizes: 40, 70, 90, 100, 120, 180, 200, 240, 300, 360 and 400 gastro‑resistant tablets. Not all pack sizes may be marketed. The tablets are packed in PVC/PVDC‑aluminium blisters.</span>
+                                    <span lang="EN-GB">Pack sizes: 40, 70, 90, 100, 120, 180, 200,
+                                        240, 300, 360 and 400 gastro‑resistant tablets. Not all pack
+                                        sizes may be marketed. The tablets are packed in
+                                        PVC/PVDC‑aluminium blisters.</span>
                                 </p>
                                 <p style="line-height:normal" class="MsoNormal"/>
                             </div>
@@ -2657,13 +3079,15 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="ES">Industrias Farmacéuticas Almirall, S.A.</span>
+                                        <span lang="ES">Industrias Farmacéuticas Almirall,
+                                            S.A.</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="ES">Ctra. Nacional II, Km. 593</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="ES">E-08740 Sant Andreu de la Barca, Barcelona</span>
+                                        <span lang="ES">E-08740 Sant Andreu de la Barca,
+                                            Barcelona</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <span lang="EN-GB">Spain</span>
@@ -2686,11 +3110,13 @@ this leaflet. You can also report side effects directly via
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <b>
-                                            <span lang="EN-GB">België/Belgique/Belgien/ Luxembourg/Luxemburg</span>
+                                            <span lang="EN-GB">België/Belgique/Belgien/
+                                                Luxembourg/Luxemburg</span>
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Almirall N.V., Tél/Tel: +32 (0)2 771 86 37</span>
+                                        <span lang="EN-GB">Almirall N.V., Tél/Tel: +32 (0)2 771 86
+                                            37</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2698,14 +3124,19 @@ this leaflet. You can also report side effects directly via
                                             <span lang="EN-GB">България/</span>
                                         </b>
                                         <b>
-                                            <span lang="EN-GB">Česká republika/ Eesti/ España/ Hrvatska/ Κύπρος/ Latvija/ Lietuva/ Magyarország/ Malta/ România/ Slovenija/ Slovenská republika</span>
+                                            <span lang="EN-GB">Česká republika/ Eesti/ España/
+                                                Hrvatska/ Κύπρος/ Latvija/ Lietuva/ Magyarország/
+                                                Malta/ România/ Slovenija/ Slovenská
+                                                republika</span>
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Almirall, S.A., Teл./ Tel/ Τηλ: +34 93 291 30 00</span>
+                                        <span lang="EN-GB">Almirall, S.A., Teл./ Tel/ Τηλ: +34 93
+                                            291 30 00</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
-                                        <span lang="SV">Tel (Česká republika / Slovenská republika): +420 </span>
+                                        <span lang="SV">Tel (Česká republika / Slovenská republika):
+                                            +420 </span>
                                         <span lang="SV">220 990 139</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
@@ -2713,12 +3144,13 @@ this leaflet. You can also report side effects directly via
                                         <b>
                                             <span lang="SV">Danmark/ Norge</span>
                                         </b>
-                                        <span lang="SV">/ 
+                                        <span lang="SV">/
                                             <b>Suomi/Finland/ Sverige</b>
                                         </span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="SV">Almirall ApS, Tlf/ Puh/Tel: +45 70 25 75 75</span>
+                                        <span lang="SV">Almirall ApS, Tlf/ Puh/Tel: +45 70 25 75
+                                            75</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2727,7 +3159,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="DE">Almirall Hermal GmbH, Tel.: +49 (0)40 72704-0</span>
+                                        <span lang="DE">Almirall Hermal GmbH, Tel.: +49 (0)40
+                                            72704-0</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal">
                                         <a name="_Hlk36633828"/>
@@ -2749,7 +3182,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Almirall SAS, Tél.: +33(0)1 46 46 19 20</span>
+                                        <span lang="EN-GB">Almirall SAS, Tél.: +33(0)1 46 46 19
+                                            20</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2786,7 +3220,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="DE">Almirall B.V., Tel: +31 (0)30 799 1155</span>
+                                        <span lang="DE">Almirall B.V., Tel: +31 (0)30 799
+                                            1155</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2795,7 +3230,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="DE">Almirall GmbH, Tel.: +43 (0)1/595 39 60</span>
+                                        <span lang="DE">Almirall GmbH, Tel.: +43 (0)1/595 39
+                                            60</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2804,7 +3240,8 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Almirall Sp.z o. o., Tel.: +48 22 330 02 57</span>
+                                        <span lang="EN-GB">Almirall Sp.z o. o., Tel.: +48 22 330 02
+                                            57</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
@@ -2813,13 +3250,15 @@ this leaflet. You can also report side effects directly via
                                         </b>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="PT">Almirall - Produtos Farmacêuticos, Lda., Tel.: +351 21 415 57 50</span>
+                                        <span lang="PT">Almirall - Produtos Farmacêuticos, Lda.,
+                                            Tel.: +351 21 415 57 50</span>
                                     </p>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/>
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
                                         <a name="_Hlk61861667">
                                             <b>
-                                                <span lang="EN-GB">United Kingdom (Northern Ireland)</span>
+                                                <span lang="EN-GB">United Kingdom (Northern
+                                                  Ireland)</span>
                                             </b>
                                         </a>
                                     </p>
@@ -2858,7 +3297,8 @@ this leaflet. You can also report side effects directly via
               <text>
                 <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                                     <p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal">
-                                        <span lang="EN-GB">Detailed information on this medicine is available on the European Medicines Agency web site: </span>
+                                        <span lang="EN-GB">Detailed information on this medicine is
+                                            available on the European Medicines Agency web site: </span>
                                         <span lang="EN-GB">
                                             <a href="http://www.ema.europa.eu">
                                                 <span class="Hipervnculo">http://www.ema.europa.eu</span>
