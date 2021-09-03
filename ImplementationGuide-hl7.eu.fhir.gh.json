@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-08-31T13:48:43+00:00",
+  "date": "2021-09-03T14:10:29+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -79,6 +79,19 @@
         "name": "EMA example-sections-smpc",
         "description": "Placeholder for EMA example-sections smpc",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/gravitate-maria"
+        },
+        "name": "gravitate-maria",
+        "exampleBoolean": true
       },
       {
         "extension": [
