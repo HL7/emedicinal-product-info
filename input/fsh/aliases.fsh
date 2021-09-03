@@ -10,6 +10,15 @@ Alias: $phenxtoolkit = https://www.phenxtoolkit.org
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-physical-type
 Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
+Alias: $atc = http://www.whocc.no/atc
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $spor-man = http://spor.ema.europa.eu/v2/marketing-authorisation-numbers
+Alias: $edqm = http://standardterms.edqm.eu
+Alias: $unii = http://fdasis.nlm.nih.gov
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $fake-man-sys = https://www.gravitatehealth.eu/sid/man
 
 
 // =========== Extensions =======
