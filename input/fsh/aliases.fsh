@@ -19,6 +19,9 @@ Alias: $edqm = http://standardterms.edqm.eu
 Alias: $unii = http://fdasis.nlm.nih.gov
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $fake-man-sys = https://www.gravitatehealth.eu/sid/man
+Alias: $phpid = https://www.who-umc.org/phpid
+Alias: $gs1 = https://www.gs1.org/gtin
+
 
 
 // =========== Extensions =======
