@@ -139,7 +139,7 @@ Usage: #inline
 				<td>PL 16028/0049</td>
 				<td>oxymetazoline hydrochloride (K89MJ0S5VY)</td>
 				<td>oxymetazoline hydrochloride</td>
-				<td>R01AA05su</td>
+				<td>R01AA05</td>
 				<td>0.05 mg / 1 ml</td>
 				<td>Spray (unspecified)</td>
 				<td>Nasal use</td>
