@@ -74,7 +74,7 @@
   fhir:Resource.id [ fhir:value "gravitate-maria"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>date</b>: Jul 10, 2018, 1:22:00 PM</p><p><b>author</b>: <a href=\"#Practitioner_Inline-Instance-for-gravitate-maria-3\">Dr. Anna Karlsson. Generated Summary: Anne Karlsson </a></p><p><b>title</b>: Patient Summary (Maria Gravitate)</p><p><b>confidentiality</b>: N</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>date</b>: Jul 10, 2018, 1:22:00 PM</p><p><b>author</b>: <a href=\"#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d8\">Dr. Anna Karlsson. Generated Summary: Anne Karlsson </a></p><p><b>title</b>: Patient Summary (Maria Gravitate)</p><p><b>confidentiality</b>: N</p></div>"
   ];
   fhir:Composition.status [ fhir:value "final"];
   fhir:Composition.type [
@@ -162,12 +162,12 @@
      ];
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ];
-       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Skilarence</td><td>EU/1/17/1201/001</td><td>dimethyl fumarate (FO2303MNI2)</td><td>dimethyl fumarate</td><td>L04AX07</td><td>30 mg</td><td>Tablet</td><td>Oral use</td></tr><tr><td>Karvea</td><td>EMEA/H/C/000142</td><td>irbesartan (J0E2756Z7N)</td><td>irbesartan</td><td>C09DA04</td><td>75 mg</td><td>Tablet</td><td>Oral use</td></tr><tr><td>Boots Decongestant 0.05% w/v Nasal spray</td><td>PL 16028/0049</td><td>oxymetazoline hydrochloride (K89MJ0S5VY)</td><td>oxymetazoline hydrochloride</td><td>R01AA05</td><td>0.05 mg / 1 ml</td><td>Spray (unspecified)</td><td>Nasal use</td></tr></tbody></table></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Skilarence</td><td>EU/1/17/1201/001</td><td>dimethyl fumarate (FO2303MNI2)</td><td>dimethyl fumarate</td><td>L04AX07</td><td>30 mg</td><td>Gastro-resistant tablet</td><td>Oral use</td></tr><tr><td>Karvea</td><td>EMEA/H/C/000142</td><td>irbesartan (J0E2756Z7N)</td><td>irbesartan</td><td>C09DA04</td><td>75 mg</td><td>Tablet</td><td>Oral use</td></tr><tr><td>Boots Decongestant 0.05% w/v Nasal spray</td><td>PL 16028/0049</td><td>oxymetazoline hydrochloride (K89MJ0S5VY)</td><td>oxymetazoline hydrochloride</td><td>R01AA05</td><td>0.05 mg / 1 ml</td><td>Nasal spray, solution</td><td>Nasal use</td></tr></tbody></table></div>"
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:Reference.reference [ fhir:value "urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a899" ];
-       fhir:Reference.display [ fhir:value "Dimethyl fumarate 30 mg Tablet" ]
+       fhir:Reference.display [ fhir:value "Dimethyl fumarate 30 mg Gastro-resistant tablet" ]
      ], [
        fhir:index 1;
        fhir:Reference.reference [ fhir:value "urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78fd" ];
@@ -180,10 +180,10 @@
   ] .
 
 <urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5> a fhir:Patient;
-  fhir:Resource.id [ fhir:value "Inline-Instance-for-gravitate-maria-2"];
+  fhir:Resource.id [ fhir:value "c154158f-6a43-4ab7-8443-e7f4bf915dd5"];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>citizenship</b></p><p><b>value</b>: <span title=\"Codes: {urn:iso:std:iso:3166 NO}\">Norway</span></p></blockquote><p><b>identifier</b>: id: maria-1</p><p><b>active</b>: true</p><p><b>name</b>: Maria Gravitate </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1946-05-05</p></div>"
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Maria Gravitate, Female, 75 years old (1946-05-05)</div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -219,10 +219,10 @@
   fhir:Patient.birthDate [ fhir:value "1946-05-05"^^xsd:date] .
 
 <urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d8> a fhir:Practitioner;
-  fhir:Resource.id [ fhir:value "Inline-Instance-for-gravitate-maria-3"];
+  fhir:Resource.id [ fhir:value "1ece89c5-fda3-4db9-ace6-decbe6c603d8"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Anne Karlsson </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr. Anne Karlsson</div>"
   ];
   fhir:Practitioner.name [
      fhir:index 0;
@@ -238,10 +238,10 @@
   ] .
 
 <urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf07> a fhir:AllergyIntolerance;
-  fhir:Resource.id [ fhir:value "gravitate-maria-allergy-1"];
+  fhir:Resource.id [ fhir:value "1dff4474-fa08-4f45-8260-dbb23094bf07"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 256259004}\">Pollen</span></p><p><b>patient</b>: <a href=\"#Patient_Inline-Instance-for-gravitate-maria-2\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Manifestation</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 21719001}\">Hay fever</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hay fever</div>"
   ];
   fhir:AllergyIntolerance.clinicalStatus [
      fhir:CodeableConcept.coding [
@@ -286,10 +286,10 @@
   ] .
 
 <urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec58> a fhir:Condition;
-  fhir:Resource.id [ fhir:value "gravitate-maria-condition-1"];
+  fhir:Resource.id [ fhir:value "bcc79261-142c-48ec-b032-f3f9af49ec58"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 9014002}\">Psoriasis</span></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-gravitate-maria-2\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p><p><b>asserter</b>: <a href=\"#Practitioner_Inline-Instance-for-gravitate-maria-3\">Dr. Anna Karlsson. Generated Summary: Anne Karlsson </a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 9014002}\">Psoriasis</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd5\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p><p><b>asserter</b>: <a href=\"#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d8\">Dr. Anna Karlsson. Generated Summary: Anne Karlsson </a></p></div>"
   ];
   fhir:Condition.clinicalStatus [
      fhir:CodeableConcept.coding [
@@ -305,8 +305,7 @@
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "9014002" ];
        fhir:Coding.display [ fhir:value "Psoriasis" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "Psoriasis" ]
+     ]
   ];
   fhir:Condition.subject [
      fhir:Reference.reference [ fhir:value "urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5" ];
@@ -318,10 +317,10 @@
   ] .
 
 <urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6256> a fhir:Condition;
-  fhir:Resource.id [ fhir:value "gravitate-maria-condition-2"];
+  fhir:Resource.id [ fhir:value "a4a9d90a-d1b0-4d60-82f0-c52343dc6256"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 42343007}\">Congestive heart failure</span></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-gravitate-maria-2\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p><p><b>onset</b>: 2015</p><p><b>asserter</b>: <a href=\"#Practitioner_Inline-Instance-for-gravitate-maria-3\">Dr. Anna Karlsson. Generated Summary: Anne Karlsson </a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Congestive heart failure (2015)</div>"
   ];
   fhir:Condition.clinicalStatus [
      fhir:CodeableConcept.coding [
@@ -351,10 +350,10 @@
   ] .
 
 <urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5130> a fhir:Condition;
-  fhir:Resource.id [ fhir:value "gravitate-maria-condition-3"];
+  fhir:Resource.id [ fhir:value "f06b7cf8-c15c-4288-a0f9-45a1026e5130"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 38341003}\">Hypertension</span></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-gravitate-maria-2\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p><p><b>onset</b>: 1993</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 38341003}\">Hypertension</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd5\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p><p><b>onset</b>: 1993</p></div>"
   ];
   fhir:Condition.clinicalStatus [
      fhir:CodeableConcept.coding [
@@ -380,10 +379,10 @@
   fhir:Condition.onsetDateTime [ fhir:value "1993"^^xsd:gYear] .
 
 <urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a899> a fhir:MedicationStatement;
-  fhir:Resource.id [ fhir:value "gravitate-maria-medicationStatement-1"];
+  fhir:Resource.id [ fhir:value "29074ca4-efcb-4ff4-8446-feed2399a899"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_gravitate-maria-medication-1\">Dimethyl fumarate 30 mg Tablet. Generated Summary: <span title=\"Codes: {http://spor.ema.europa.eu/v2/marketing-authorisation-numbers EU/1/17/1201/001}, {http://www.whocc.no/atc L04AX07}\">Skilarence</span>; <span title=\"Codes: {http://standardterms.edqm.eu 10219000}\">Tablet</span></a></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-gravitate-maria-2\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Skilarence</td><td>EU/1/17/1201/001</td><td>dimethyl fumarate (FO2303MNI2)</td><td>dimethyl fumarate</td><td>L04AX07</td><td>30 mg</td><td>Gastro-resistant tablet</td><td>Oral use</td></tr></tbody></table></div>"
   ];
   fhir:MedicationStatement.status [ fhir:value "active"];
   fhir:MedicationStatement.medicationReference [
@@ -407,10 +406,10 @@
   ] .
 
 <urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78fd> a fhir:MedicationStatement;
-  fhir:Resource.id [ fhir:value "gravitate-maria-medicationStatement-2"];
+  fhir:Resource.id [ fhir:value "f6cb1218-f81c-4338-80d8-3c10910f78fd"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_gravitate-maria-medication-2\">Irbesartan 75 mg Tablet. Generated Summary: <span title=\"Codes: {http://spor.ema.europa.eu/v2/marketing-authorisation-numbers EMEA/H/C/000142}, {http://www.whocc.no/atc C09DA04}\">Karvea</span>; <span title=\"Codes: {http://standardterms.edqm.eu 10219000}\">Tablet</span></a></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-gravitate-maria-2\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_de131e15-ed13-4b31-b38c-3204a84d99c4\">Irbesartan 75 mg Tablet. Generated Summary: <span title=\"Codes: {http://spor.ema.europa.eu/v2/marketing-authorisation-numbers EMEA/H/C/000142}, {https://www.who-umc.org/phpid 0x8DFB446EDB3B8AE508AE493827A704E4}, {http://www.whocc.no/atc C09DA04}\">Karvea</span>; <span title=\"Codes: {http://standardterms.edqm.eu 10219000}\">Tablet</span></a></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd5\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p></div>"
   ];
   fhir:MedicationStatement.status [ fhir:value "active"];
   fhir:MedicationStatement.medicationReference [
@@ -434,10 +433,10 @@
   ] .
 
 <urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87ba> a fhir:MedicationStatement;
-  fhir:Resource.id [ fhir:value "gravitate-maria-medicationStatement-3"];
+  fhir:Resource.id [ fhir:value "f26084c9-b1c8-46d9-acb2-1d400ade87ba"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_gravitate-maria-medication-3\">Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray. Generated Summary: <span title=\"Codes: {https://www.gravitatehealth.eu/sid/man 16028/0049}, {http://www.whocc.no/atc R01AA05}\">Boots Decongestant 0.05% w/v Nasal spray</span>; <span title=\"Codes: \">Spray (unspecified)</span></a></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-gravitate-maria-2\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9ac3356c-4ea4-4814-84c3-235484f2ef19\">Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray. Generated Summary: <span title=\"Codes: {https://www.gravitatehealth.eu/sid/man 16028/0049}, {https://www.who-umc.org/phpid 0xF79CABF272B6A7EEF104DDDA44E82716}, {http://www.whocc.no/atc R01AA05}\">Boots Decongestant 0.05% w/v Nasal spray</span>; <span title=\"Codes: \">Nasal spray, solution</span></a></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd5\">Maria Gravitate. Generated Summary: id: maria-1; active; Maria Gravitate ; gender: female; birthDate: 1946-05-05</a></p></div>"
   ];
   fhir:MedicationStatement.status [ fhir:value "active"];
   fhir:MedicationStatement.medicationReference [
@@ -461,10 +460,10 @@
   ] .
 
 <urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36b> a fhir:Medication;
-  fhir:Resource.id [ fhir:value "gravitate-maria-medication-1"];
+  fhir:Resource.id [ fhir:value "b50ae644-e0b7-4007-809f-26f493cbe36b"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://spor.ema.europa.eu/v2/marketing-authorisation-numbers EU/1/17/1201/001}, {http://www.whocc.no/atc L04AX07}\">Skilarence</span></p><p><b>form</b>: <span title=\"Codes: {http://standardterms.edqm.eu 10219000}\">Tablet</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://fdasis.nlm.nih.gov FO2303MNI2}\">dimethyl fumarate</span></td><td>30 mg/1 Tablet</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://spor.ema.europa.eu/v2/marketing-authorisation-numbers EU/1/17/1201/001}, {https://www.who-umc.org/phpid 0x9982CA8A825D4561506CE808982E3B9D}, {http://www.whocc.no/atc L04AX07}\">Skilarence</span></p><p><b>form</b>: <span title=\"Codes: {http://standardterms.edqm.eu 10225000}\">Gastro-resistant tablet</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://fdasis.nlm.nih.gov FO2303MNI2}\">dimethyl fumarate</span></td><td>30 mg/1 Tablet</td></tr></table></div>"
   ];
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
@@ -474,6 +473,11 @@
        fhir:Coding.display [ fhir:value "Skilarence" ]
      ], [
        fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://www.who-umc.org/phpid" ];
+       fhir:Coding.code [ fhir:value "0x9982CA8A825D4561506CE808982E3B9D" ];
+       fhir:Coding.display [ fhir:value "dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet" ]
+     ], [
+       fhir:index 2;
        fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
        fhir:Coding.code [ fhir:value "L04AX07" ];
        fhir:Coding.display [ fhir:value "dimethyl fumarate" ]
@@ -483,8 +487,8 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu" ];
-       fhir:Coding.code [ fhir:value "10219000" ];
-       fhir:Coding.display [ fhir:value "Tablet" ]
+       fhir:Coding.code [ fhir:value "10225000" ];
+       fhir:Coding.display [ fhir:value "Gastro-resistant tablet" ]
      ]
   ];
   fhir:Medication.ingredient [
@@ -515,10 +519,10 @@
   ] .
 
 <urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c4> a fhir:Medication;
-  fhir:Resource.id [ fhir:value "gravitate-maria-medication-2"];
+  fhir:Resource.id [ fhir:value "de131e15-ed13-4b31-b38c-3204a84d99c4"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://spor.ema.europa.eu/v2/marketing-authorisation-numbers EMEA/H/C/000142}, {http://www.whocc.no/atc C09DA04}\">Karvea</span></p><p><b>form</b>: <span title=\"Codes: {http://standardterms.edqm.eu 10219000}\">Tablet</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://fdasis.nlm.nih.gov J0E2756Z7N}\">irbesartan</span></td><td>75 mg/1 Tablet</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://spor.ema.europa.eu/v2/marketing-authorisation-numbers EMEA/H/C/000142}, {https://www.who-umc.org/phpid 0x8DFB446EDB3B8AE508AE493827A704E4}, {http://www.whocc.no/atc C09DA04}\">Karvea</span></p><p><b>form</b>: <span title=\"Codes: {http://standardterms.edqm.eu 10219000}\">Tablet</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://fdasis.nlm.nih.gov J0E2756Z7N}\">irbesartan</span></td><td>75 mg/1 Tablet</td></tr></table></div>"
   ];
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
@@ -528,6 +532,11 @@
        fhir:Coding.display [ fhir:value "Karvea" ]
      ], [
        fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://www.who-umc.org/phpid" ];
+       fhir:Coding.code [ fhir:value "0x8DFB446EDB3B8AE508AE493827A704E4" ];
+       fhir:Coding.display [ fhir:value "Irbesartan, 75 mg/ 1 tablet, Tablet" ]
+     ], [
+       fhir:index 2;
        fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
        fhir:Coding.code [ fhir:value "C09DA04" ];
        fhir:Coding.display [ fhir:value "irbesartan and diuretics" ]
@@ -569,10 +578,10 @@
   ] .
 
 <urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19> a fhir:Medication;
-  fhir:Resource.id [ fhir:value "gravitate-maria-medication-3"];
+  fhir:Resource.id [ fhir:value "9ac3356c-4ea4-4814-84c3-235484f2ef19"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.gravitatehealth.eu/sid/man 16028/0049}, {http://www.whocc.no/atc R01AA05}\">Boots Decongestant 0.05% w/v Nasal spray</span></p><p><b>form</b>: <span title=\"Codes: \">Spray (unspecified)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://fdasis.nlm.nih.gov K89MJ0S5VY}\">oxymetazoline hydrochloride</span></td><td>0.05 mg/1 ml</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.gravitatehealth.eu/sid/man 16028/0049}, {https://www.who-umc.org/phpid 0xF79CABF272B6A7EEF104DDDA44E82716}, {http://www.whocc.no/atc R01AA05}\">Boots Decongestant 0.05% w/v Nasal spray</span></p><p><b>form</b>: <span title=\"Codes: \">Nasal spray, solution</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://fdasis.nlm.nih.gov K89MJ0S5VY}\">oxymetazoline hydrochloride</span></td><td>0.05 mg/1 ml</td></tr></table></div>"
   ];
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
@@ -582,13 +591,18 @@
        fhir:Coding.display [ fhir:value "Boots Decongestant 0.05% w/v Nasal spray" ]
      ], [
        fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://www.who-umc.org/phpid" ];
+       fhir:Coding.code [ fhir:value "0xF79CABF272B6A7EEF104DDDA44E82716" ];
+       fhir:Coding.display [ fhir:value "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" ]
+     ], [
+       fhir:index 2;
        fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
        fhir:Coding.code [ fhir:value "R01AA05" ];
        fhir:Coding.display [ fhir:value "oxymetazoline" ]
      ]
   ];
   fhir:Medication.form [
-     fhir:CodeableConcept.text [ fhir:value "Spray (unspecified)" ]
+     fhir:CodeableConcept.text [ fhir:value "Nasal spray, solution" ]
   ];
   fhir:Medication.ingredient [
      fhir:index 0;
