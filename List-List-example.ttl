@@ -56,12 +56,20 @@
        fhir:index 2;
        fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/active-substance" ];
        fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://www.who-umc.org/phpid" ];
+         fhir:Coding.code [ fhir:value "0x9982CA8A825D4561506CE808982E3B9D" ];
+         fhir:Coding.display [ fhir:value "dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/active-substance" ];
+       fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000005" ];
          fhir:Coding.code [ fhir:value "FO2303MNI2" ];
          fhir:Coding.display [ fhir:value "DIMETHYL FUMARATE" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/domain" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000004" ];

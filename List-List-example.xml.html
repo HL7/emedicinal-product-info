@@ -224,7 +224,7 @@
     &lt;/coding&gt;
   &lt;/code&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//list.html#List.subject">subject</a>&gt;
-  &lt;!--  Subject of the List  --&gt;
+  &lt;!--  Subject of the List = dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet  --&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//references.html#Reference#Reference.extension">extension</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">url</a>="http://ema.europa.eu/fhir/extension/medicine-name"&gt;
     &lt;!--  Brand Name  --&gt;
       &lt;<a href="http://build.fhir.org/branches/R4B//extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
@@ -240,6 +240,15 @@
         &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">value</a>="http://spor.ema.europa.eu/v1/100000000005"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="mah-code"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="Acme Incorporated"/&gt;
+      &lt;/valueCoding&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://build.fhir.org/branches/R4B//references.html#Reference#Reference.extension">extension</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">url</a>="http://ema.europa.eu/fhir/extension/active-substance"&gt;
+    &lt;!--  Pharmaceutical Product ID (PhPID)  --&gt;
+      &lt;<a href="http://build.fhir.org/branches/R4B//extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
+        &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">value</a>="https://www.who-umc.org/phpid"/&gt;
+        &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="0x9982CA8A825D4561506CE808982E3B9D"/&gt;
+        &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.display">display</a>
+                 <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet"/&gt;
       &lt;/valueCoding&gt;
     &lt;/extension&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//references.html#Reference#Reference.extension">extension</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">url</a>="http://ema.europa.eu/fhir/extension/active-substance"&gt;
@@ -351,8 +360,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l769">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Sep 6, 2021 15:55+0000">2021-09-06</span>
+        <p><a name="l796">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Sep 6, 2021 23:28+0000">2021-09-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">

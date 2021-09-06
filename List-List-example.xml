@@ -30,7 +30,7 @@
     </coding>
   </code>
   <subject>
-  <!--  Subject of the List  -->
+  <!--  Subject of the List = dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet  -->
     <extension url="http://ema.europa.eu/fhir/extension/medicine-name">
     <!--  Brand Name  -->
       <valueCoding>
@@ -45,6 +45,14 @@
         <system value="http://spor.ema.europa.eu/v1/100000000005"/>
         <code value="mah-code"/>
         <display value="Acme Incorporated"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://ema.europa.eu/fhir/extension/active-substance">
+    <!--  Pharmaceutical Product ID (PhPID)  -->
+      <valueCoding>
+        <system value="https://www.who-umc.org/phpid"/>
+        <code value="0x9982CA8A825D4561506CE808982E3B9D"/>
+        <display value="dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet"/>
       </valueCoding>
     </extension>
     <extension url="http://ema.europa.eu/fhir/extension/active-substance">
