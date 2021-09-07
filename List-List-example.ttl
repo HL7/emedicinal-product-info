@@ -19,7 +19,7 @@
   fhir:List.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/medicine-name" ];
-     fhir:Identifier.value [ fhir:value "acme-product" ]
+     fhir:Identifier.value [ fhir:value "acme dimethyl fumarate 30 mg" ]
   ], [
      fhir:index 1;
      fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
@@ -49,7 +49,7 @@
        fhir:Extension.url [ fhir:value "http://ema.europa.eu/fhir/extension/marketing-authorization-holder" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000005" ];
-         fhir:Coding.code [ fhir:value "mah-code" ];
+         fhir:Coding.code [ fhir:value "1234" ];
          fhir:Coding.display [ fhir:value "Acme Incorporated" ]
        ]
      ], [

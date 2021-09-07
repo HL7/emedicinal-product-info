@@ -56,9 +56,6 @@
   fhir:Composition.subject [
      fhir:Reference.reference [ fhir:value "[]" ];
      fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/medicine-name" ];
-       fhir:Identifier.value [ fhir:value "acme-product" ]
-     ], [
        fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
        fhir:Identifier.value [ fhir:value "EU/1/17/1201/001" ]
      ]
@@ -67,7 +64,8 @@
   fhir:Composition.author [
      fhir:index 0;
      fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000005" ]
+       fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v1/100000000005" ];
+       fhir:Identifier.value [ fhir:value "1234" ]
      ]
   ];
   fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - PACKAGE LEAFLET for Acme Product (dimethyl fumerate) film coated tablets"];
