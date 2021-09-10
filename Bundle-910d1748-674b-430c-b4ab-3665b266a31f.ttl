@@ -28,7 +28,7 @@
   fhir:Resource.language [ fhir:value "en"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155532}\">SUMMARY OF PRODUCT CHARACTERISTICS</span></p><p><b>date</b>: 2021-02-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Acme Product</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td><a href=\"${document[n].relatesTo}\">${document[n].relatesTo}</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155532}\">SUMMARY OF PRODUCT CHARACTERISTICS</span></p><p><b>date</b>: 2021-02-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: TEST PURPOSES ONLY - irbesartan 75 mg tablets</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td><a href=\"${document[n].relatesTo}\">${document[n].relatesTo}</a></td></tr></table></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:Binary;
@@ -54,16 +54,22 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:Reference.reference [ fhir:value "[]" ]
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/[http://spor.ema.europa.eu/v2/MedicinalProductDefinition]>;
+     fhir:Reference.reference [ fhir:value "[http://spor.ema.europa.eu/v2/MedicinalProductDefinition]" ];
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://spor.ema.europa.eu/v2/marketing-authorisation-numbers" ];
+       fhir:Identifier.value [ fhir:value "EMEA/H/C/000142" ]
+     ]
   ];
   fhir:Composition.date [ fhir:value "2021-02-01"^^xsd:date];
   fhir:Composition.author [
      fhir:index 0;
      fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "[]" ]
+       fhir:Identifier.system [ fhir:value "[http://spor.ema.europa.eu/v1/100000000005]" ];
+       fhir:Identifier.value [ fhir:value "2222" ]
      ]
   ];
-  fhir:Composition.title [ fhir:value "Acme Product"];
+  fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - irbesartan 75 mg tablets"];
   fhir:Composition.relatesTo [
      fhir:index 0;
      fhir:Composition.relatesTo.code [ fhir:value "appends" ];
