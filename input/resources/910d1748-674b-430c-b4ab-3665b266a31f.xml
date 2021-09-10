@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="910d1748-674b-430c-b4ab-3665b266a31f" />
+    <id value="910d1748-674b-430c-b4ab-3665b266a31f" /><!--  acme irbesartan 75 mg  English -->
     <meta>
         <versionId value="1" />
         <lastUpdated value="2021-06-25T20:28:04.643+00:00" />
@@ -37,15 +37,21 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="[]" />
+                    <reference value="[http://spor.ema.europa.eu/v2/MedicinalProductDefinition]" />
+                    <identifier>
+                        <!-- Market Authorization Number (MAN) -->
+                        <system value="http://spor.ema.europa.eu/v2/marketing-authorisation-numbers"/>
+                        <value value="EMEA/H/C/000142"/>
+                    </identifier>
                 </subject>
                 <date value="2021-02-01" />
                 <author>
                     <identifier>
-                        <system value="[]" />
+                        <system value="[http://spor.ema.europa.eu/v1/100000000005]" />
+                        <value value="2222"/>
                     </identifier>
                 </author>
-                <title value="Acme Product" />
+                <title value="TEST PURPOSES ONLY - irbesartan 75 mg tablets" />
                 <relatesTo>
                     <code value="appends" />
                     <targetReference>
