@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-09-07T03:22:10+00:00"/>
+  <date value="2021-09-10T03:00:07+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -160,6 +160,16 @@
         <reference value="CapabilityStatement/capability-statement-ema"/>
       </reference>
       <name value="Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/epi-otc-oxymetazoline-hydrochloride"/>
+      </reference>
+      <name value="epi-otc-oxymetazoline-hydrochloride"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

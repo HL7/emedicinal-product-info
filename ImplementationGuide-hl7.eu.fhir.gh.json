@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-09-07T03:22:10+00:00",
+  "date": "2021-09-10T03:00:07+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -208,6 +208,19 @@
           "reference": "CapabilityStatement/capability-statement-ema"
         },
         "name": "Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/epi-otc-oxymetazoline-hydrochloride"
+        },
+        "name": "epi-otc-oxymetazoline-hydrochloride",
         "exampleBoolean": false
       },
       {
