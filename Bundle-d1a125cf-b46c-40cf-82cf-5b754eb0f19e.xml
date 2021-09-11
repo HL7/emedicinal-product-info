@@ -2,8 +2,8 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
 <!--  Bundle for Package Leaflet  -->
-  <id value="epi-otc-oxymetazoline-hydrochloride"/>
-<!--  UUID for the document bundle  -->
+  <id value="d1a125cf-b46c-40cf-82cf-5b754eb0f19e"/>
+<!--  PIL OTC Norwegian  -->
 <!--  date this version was finalized  -->
   <meta>
     <versionId value="1"/>
@@ -13,19 +13,19 @@
   <identifier>
   <!--  unique id assigned to the regulated document  -->
     <system value="http://ema.europa.eu/fhir/identifier/documentid"/>
-    <value value="63b6dbc3-2138-48ff-beec-ef9e9f7036c7"/>
+    <value value="ff41bd8d-8cac-4410-bfa5-b8120002fecf"/>
   </identifier>
   <type value="document"/>
   <timestamp value="2021-09-06T20:34:02.697+00:00"/>
 <!--  date of initial approval for this ePI  -->
   <entry>
-    <fullUrl value="fff1239e-436a-4c3d-8439-77e766cb37a9"/>
+    <fullUrl value="ed1e7d6f-f702-499c-84e9-892cee496751"/>
     <resource>
       <Composition>
       <!--  Composition holds the narrative text of the ePI (e.g., paragraphs, tables, bulleted lists)  -->
-        <language value="en"/>
+        <language value="no"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155538}">B. PACKAGE LEAFLET</span></p><p><b>date</b>: Sep 6, 2021, 8:34:02 PM</p><p><b>author</b>: <span></span></p><p><b>title</b>: TEST PURPOSES ONLY - PACKAGE LEAFLET for Acme Decongestant 0.05% w/v Nasal Spray (Oxymetazoline Hydrochloride)</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="no" lang="no"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155538}">B. PAKNINGSVEDLEGG</span></p><p><b>date</b>: Sep 6, 2021, 8:34:02 PM</p><p><b>author</b>: <span></span></p><p><b>title</b>: BARE TEST FORMÅL -  PAKNINGSVEDLEGG Acme Dekongestant 0,05% m/v nesespray (oksymetazolinHydroklorid)</p></div>
         </text>
         <contained>
           <Binary>
@@ -47,7 +47,7 @@
           <coding>
             <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
             <code value="100000155538"/>
-            <display value="B. PACKAGE LEAFLET"/>
+            <display value="B. PAKNINGSVEDLEGG"/>
           </coding>
         </type>
         <subject>
@@ -56,7 +56,7 @@
           <identifier>
           <!--  Market Authorization Number (MAN)  -->
             <system value="http://spor.ema.europa.eu/v2/marketing-authorisation-numbers"/>
-            <value value="EU/1/17/1201/000"/>
+            <value value="PL 16028/0049"/>
           </identifier>
         </subject>
         <date value="2021-09-06T20:34:02.697+00:00"/>
@@ -68,372 +68,281 @@
             <value value="5678"/>
           </identifier>
         </author>
-        <title value="TEST PURPOSES ONLY - PACKAGE LEAFLET for Acme Decongestant 0.05% w/v Nasal Spray (Oxymetazoline Hydrochloride)"/>
+        <title value="BARE TEST FORMÅL -  PAKNINGSVEDLEGG Acme Dekongestant 0,05% m/v nesespray (oksymetazolinHydroklorid)"/>
       <!--  Human Readable name/title for this ePI  -->
-        <section id="a02031ac-e864-4b85-8c28-c6886668b5ac">
-          <title value="Read all of this leaflet carefully before you start using this medicine because it contains important information for you."/>
+        <section id="d52d35f5-2432-45c6-9e35-18870918d379">
+          <title value="Les hele dette pakningsvedlegget nøye før du begynner å bruke dette legemidletinneholder viktig informasjon for deg."/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="1"/>
-              <display value="Read all of this leaflet carefully before you start using this medicine because it contains important information for you."/>
+              <display value="Les hele dette pakningsvedlegget nøye før du begynner å bruke dette legemidletinneholder viktig informasjon for deg."/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
-                            <p> Always take this medicine exactly as described in this leaflet or as
-                                your doctor or pharmacist has told you. </p>
+                            <p> Ta alltid dette legemidlet nøyaktig som beskrevet i dette pakningsvedlegget eller som legen din eller apotekethar fortalt deg.</p>
                             <ul>
-                                <li>Keep this leaflet. You may need to read it again.</li>
-                                <li>Ask your pharmacist if you need more information or advice.</li>
-                                <li>If you get any side effects, talk to your doctor or pharmacist.
-                                    This includes any possible side effects not listed in this
-                                    leaflet. See section 4.</li>
-                                <li>You must talk to a doctor if you do not feel better or if you
-                                    feel worse after 7 days.</li>
+                                <li>Oppbevar dette pakningsvedlegget. Du må kanskje lese den igjen.</li>
+                                <li>Spør apoteket hvis du trenger mer informasjon eller råd.</li>
+                                <li>Snakk med legen din eller apoteket dersom du får bivirkninger. Dette inkluderer eventuelle bivirkninger som ikke er nevnt i dette pakningsvedlegget. Se avsnitt 4.</li>
+                                <li>Du må snakke med lege hvis du ikke føler deg bedre eller hvis du føler deg verre etter 7 dager.</li>
                             </ul>
                         </div>
           </text>
         </section>
-        <section id="4857fb63-9406-4fb3-8c7b-86ba8a3c2aad">
-          <title value="What is in this leaflet:"/>
+        <section id="1a76ca9a-b2c5-4712-8495-c3322e9dac1d">
+          <title value="Hva står i dette pakningsvedlegget:"/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="2"/>
-              <display value="What is in this leaflet:"/>
+              <display value="Hva står i dette pakningsvedlegget:"/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
                             <ol>
-                                <li><b>What Decongestant Nasal Spray is and what it is used
-                                    for</b></li>
-                                <li><b>What you need to know before you use Decongestant Nasal
-                                        Spray</b></li>
-                                <li><b>How to use Decongestant Nasal Spray</b></li>
-                                <li><b>Possible side effects</b></li>
-                                <li><b>How to store Decongestant Nasal Spray</b></li>
-                                <li><b>Contents of the pack and further information</b></li>
+                                <li><b>Hva Decongestant Nasal Spray er og hva det brukes mot </b></li>
+                                <li><b>Hva du trenger å vite før du bruker Decongestant Nasal Spray </b></li>
+                                <li><b>Hvordan bruke Decongestant Nasal Spray </b></li>
+                                <li><b>Mulige bivirkninger </b></li>
+                                <li><b>Hvordan du oppbevarer Decongestant Nasal Spray </b></li>
+                                <li><b>Innhold av pakningen og ytterligere informasjon</b></li>
                             </ol>
                         </div>
           </text>
         </section>
-        <section id="0589dd01-a4c0-4236-90a4-216cb376caa6">
-          <title value="1. What Decongestant Nasal Spray is and what it is used for"/>
+        <section id="a511f047-1403-4e23-b7e2-212d0310dc5b">
+          <title value="1. Hva Decongestant Nasal Spray er og hva det brukes til"/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="3"/>
-              <display value="1. What Decongestant Nasal Spray is and what it is used for"/>
+              <display value="1. Hva Decongestant Nasal Spray er og hva det brukes til"/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
-                            <p>This nasal spray contains Oxymetazoline Hydrochloride which is a
-                                decongestant. It relieves a stuffy, blocked nose by shrinking the
-                                blood vessels helping to open the nasal passages. It acts within a
-                                few minutes and lasts for up to 12 hours. The medicine is a solution
-                                which is sprayed into the nostrils to relieve the congestion in the
-                                nose and sinuses which you get in conditions such as colds, catarrh
-                                and hayfever.</p>
+                            <p>Denne nesesprayen inneholder oksymetazolinhydroklorid, som er et avsvannende middel. Det lindreren tett, blokkert nese ved å krympe blodårene som hjelper til med å åpne nesegangene. Denvirker i løpet av få minutter og varer i opptil 12 timer.Medisinen er en løsning som sprøytes inn i neseborene for å lindre overbelastningnese og bihuler som du får under forhold som forkjølelse, katar og høysnue.</p>
                         </div>
           </text>
         </section>
-        <section id="1ed1f4be-c012-46cb-93a5-43659bf2030e">
-          <title value="2. What you need to know before you use Decongestant Nasal Spray"/>
+        <section id="da7a3487-d88d-4dee-9049-b5242309d47e">
+          <title value="2. Hva du trenger å vite før du bruker Decongestant Nasal Spray"/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="4"/>
-              <display value="2. What you need to know before you use Decongestant Nasal Spray"/>
+              <display value="2. Hva du trenger å vite før du bruker Decongestant Nasal Spray"/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
-                            <p><b>Do not use this nasal spray if you:</b></p>
+                            <p><b>Ikke bruk denne nesesprayen hvis du:</b></p>
                             <ul>
-                                <li>are allergic to oxymetazoline or any of the other ingredients in
-                                    this medicine (listed in section 6)</li>
-                                <li>have phaeochromocytoma (a rare tumour of the adrenal
-                                    glands)</li>
-                                <li>have had an operation to remove your pituitary gland or you have
-                                    recently had an operation on your nose or sinuses.</li>
-                                <li>are already taking medicines to unblock your nose</li>
-                                <li>have inflamed skin or mucous membranes of your nostrils or have
-                                    scabs in your nose</li>
+                                <li>er allergisk mot oksymetazolin eller noen av de andre ingrediensene i dette legemidlet (listet opp i avsnitt 6)</li>
+                                <li>hhar feokromocytom (en sjelden svulst i binyrene)</li>
+                                <li>har blitt operert for å fjerne hypofysen eller du nylig har operert nesen eller bihulene.</li>
+                                <li>tar allerede medisiner for å blokkere nesen din</li>
+                                <li>har betent hud eller slimhinner i neseborene eller har skorper i nesen</li>
                             </ul>
-                            <p><b>Do not give this nasal spray to children under 12 years of
-                                age</b></p>
+                            <p><b>Ikke gi denne nesesprayen til barn under 12 år</b></p>
                             <br/>
-                            <p><b>Warnings and precautions</b></p>
+                            <p><b>Advarsler og forholdsregler</b></p>
                             <br/>
-                            <p><b>Talk to your doctor or pharmacist before using this nasal spray,
-                                    if you:</b></p>
+                            <p><b>Snakk med legen din eller apoteket før du bruker denne nesesprayen hvis du:</b></p>
                             <ul>
-                                <li>have prostate problems</li>
-                                <li>are elderly</li>
-                                <li>have glaucoma (increased pressure in the eye)</li>
-                                <li>have coronary heart disease, cardiac asthma, or any other heart
-                                    condition</li>
-                                <li>have high blood pressure</li>
-                                <li>have an over-active thyroid gland or other problems with your
-                                    thyroid function</li>
-                                <li>have diabetes</li>
-                                <li>have kidney or liver problems</li>
+                                <li>har problemer med prostata</li>
+                                <li>er eldre</li>
+                                <li>har glaukom (økt trykk i øyet)</li>
+                                <li>har koronar hjertesykdom, hjerte -astma eller annen hjertesykdom</li>
+                                <li>har høyt blodtrykk</li>
+                                <li>har en overaktiv skjoldbruskkjertel eller andre problemer med skjoldbruskkjertelen</li>
+                                <li>har diabetes</li>
+                                <li>har nyre- eller leverproblemer</li>
                             </ul>
-                            <p><b>If any of the following occur, this nasal spray should be
-                                    stopped:</b></p>
+                            <p><b>Hvis noe av det følgende skjer, bør denne nesesprayen stoppes:</b></p>
                             <ul>
-                                <li>hallucinations</li>
-                                <li>restlessness</li>
-                                <li>sleep disturbances</li>
+                                <li>hallusinasjoner</li>
+                                <li>rastløshet</li>
+                                <li>søvnforstyrrelser</li>
                             </ul>
-                            <p><b>Keep away from the eyes.</b></p>
+                            <p><b>Holdes vekk fra øynene.</b></p>
                             <br/>
-                            <p><b>Other medicines and Decongestant Nasal Spray</b></p>
-                            <p>Tell your doctor or pharmacist if you are taking or using, or have
-                                recently taken or used any other medicines:</p>
+                            <p><b>Andre legemidler og decongestant nesespray</b></p>
+                            <p>Fortell legen din eller apoteket dersom du bruker eller bruker, eller nylig har brukt eller bruker andre legemidler:</p>
                             <ul>
-                                <li>Do not use if you are taking or have recently taken Monoamine
-                                    Oxidase Inhibitors (see above)</li>
-                                <li>Do not use if you are taking beta blockers as their effect may
-                                    be reduced</li>
-                                <li>Tricyclic antidepressants (drugs used in the treatment of
-                                    depression such as amitriptyline</li>
-                                <li>and imipramine)</li>
-                                <li>High blood pressure medicines (such as bethanidine, debrisoquine
-                                    and guanethidine) as</li>
-                                <li>their effect may be reduced</li>
-                                <li>Parkinson's disease medicine (bromocriptine and rasagiline)
-                                    treatment may be affected if it</li>
-                                <li>is used at the same time</li>
-                                <li>Digoxin or digitoxin for heart failure, as it can cause
-                                    irregular heart beat (dysrhythmias) if it</li>
-                                <li>is taken at the same time</li>
-                                <li>Ergotamine or methysergide for migraine relief</li>
-                                <li>Medicines or supplements to reduce appetite or make you more
-                                    alert (amphetamine-like</li>
-                                <li>psychostimulants)</li>
-                                <li>Thyroid hormones e.g. levothyroxine</li>
-                                <li>Oxytocin used to assist birth or breastfeeding</li>
-                                <li>If you are taking any other medicines, you should see your
-                                    doctor or pharmacist for advice before using this medicine.</li>
+                                <li>Ikke bruk hvis du tar eller nylig har tatt monoaminoxidasehemmere (se ovenfor)</li>
+                                <li>Ikke bruk hvis du bruker betablokkere, da effekten kan reduseres</li>
+                                <li>Trisykliske antidepressiva (legemidler som brukes til behandling av depresjon som amitriptylin og imipramin)</li>
+                                <li>Medisiner mot høyt blodtrykk (for eksempel bethanidin, debrisoquine og guanethidine), da virkningen kan reduseres</li>
+                                <li>Parkinsons sykdom (bromokriptin og rasagilin) ​​behandling kan påvirkes hvis den brukes samtidig</li>
+                                <li>Digoksin eller digitoksin for hjertesvikt, da det kan forårsake uregelmessig hjerterytme (dysrytmier) hvis det tas samtidig</li>
+                                <li>Ergotamin eller metysergid for lindring av migrene</li>
+                                <li>Medisiner eller kosttilskudd for å redusere appetitten eller gjøre deg mer våken (amfetaminlignende psykostimulerende midler)</li>
+                                <li>Skjoldbruskhormoner f.eks. Levotyroksin</li>
+                                <li>Oksytocin brukes til å hjelpe fødsel eller amming</li>
                             </ul>
-                            <p><b>Pregnancy and breastfeeding:</b></p>
-                            <p><b>Do not use</b> if you are pregnant. Talk to your doctor or
-                                pharmacist before using the nasal spray if you are
-                                breastfeeding.</p>
+                            <p><b>Graviditet og amming:</b></p>
+                            <p><b>Ikke bruk</b> ihvis du er gravid. Snakk med legen din eller apoteket før du bruker nesesprayen hvis du ammer.</p>
                             <br/>
-                            <p><b>Driving and using machines</b></p>
-                            <p>No effect on ability to drive or use of machinery has been
-                                observed.</p>
+                            <p><b>Kjøring og bruk av maskiner</b></p>
+                            <p>Det er ikke observert effekt på evnen til å kjøre bil eller bruke maskiner.</p>
                             <br/>
-                            <p><b>Important information about some of the ingredients in this
-                                    medicine</b></p>
+                            <p><b>Viktig informasjon om noen av ingrediensene i dette legemidlet</b></p>
                             <ul>
-                                <li>Contains benzalkonium chloride which may cause irritation or
-                                    swelling inside the nose, especially if used for a long
-                                    time.</li>
-                                <li>Contains thiomersal as a preservative which may cause local skin
-                                    reactions (e.g. contact dermatitis) and discolouration. It may
-                                    also cause allergic reactions.</li>
+                                <li>Inneholder benzalkoniumklorid som kan forårsake irritasjon eller hevelse inne i nesen, spesielt hvis det brukes i lang tid.</li>
+                                <li>Inneholder tiomersal som et konserveringsmiddel som kan forårsake lokale hudreaksjoner (f.eks. Kontaktdermatitt) og misfarging. Det kan også forårsake allergiske reaksjoner.</li>
                             </ul>
-                            <p>Tell your doctor if you have any known allergies</p>
+                            <p>Fortell legen din dersom du har noen allergier</p>
                         </div>
           </text>
         </section>
-        <section id="b6381a74-1459-4983-96c8-a2e34fd2a1c7">
-          <title value="3. How to use Decongestant Nasal Spray"/>
+        <section id="3b08696c-b145-47ed-9fec-6e10ac431f94">
+          <title value="3. Hvordan du bruker Decongestant Nasal Spray"/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="5"/>
-              <display value="3. How to use Decongestant Nasal Spray"/>
+              <display value="3. Hvordan du bruker Decongestant Nasal Spray"/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
-                            <p>For nasal use only</p>
+                            <p>Kun til nese</p>
                             <img src="#nasal" alt="An image of spraying into nose" width="25%" height="15%"/>
                             <br/>
                             <br/>
                             <table>
                                 <tbody>
                                     <tr>
-                                        <th>Age</th>
-                                        <th>Dose and how to use</th>
-                                        <th>How often to use</th>
+                                        <th>Alder</th>
+                                        <th>Dose og hvordan du bruker</th>
+                                        <th>Hvor ofte skal det brukes</th>
                                     </tr>
                                 </tbody>
                                 <tbody>
                                     <tr>
-                                        <td><b>Adults, the elderly and children aged 12 years and
-                                                above</b></td>
+                                        <td><b>Voksne, eldreog barn i alderen12 år og oppover</b></td>
                                         <td>
                                             <p>See diagram</p>
-                                            <p>Remove the cap. Hold the container upright, place the
-                                                tip of the spray nozzle just into each nostril. Hold
-                                                the other nostril closed. Lightly squeeze the
-                                                container <b>twice</b> as you breathe in through the
-                                                nose at the same time. Repeat for the other nostril.
-                                                Wipe the nasal applicator with a clean, wet tissue
-                                                and replace the cap immediately after the
-                                                application.</p>
+                                            <p>Fjern hetten. Hold beholderenoppreist, plasser tuppen av spraydysenbare inn i hvert nesebor. Hold det andre neseboretlukket. Klem beholderen lett<b>o ganger</b> mens du puster inn gjennom nesensamtidig. Gjenta for den andrenesebor. Tørk av neseapplikatoren med enrent, vått vev og sett på lokketumiddelbart etter søknaden.</p>
                                         </td>
-                                        <td>The nasal spray dose may be applied up to twice daily,
-                                            or used at bedtime to give relief through the
-                                            night.</td>
+                                        <td>Nesespraydosenkan brukes inntilto ganger daglig, eller brukt klsengetid for å gi lindringgjennom natten.</td>
                                     </tr>
                                     <tr>
-                                        <td colspan="3"><b>Do not use in children under 12
-                                            years</b></td>
+                                        <td colspan="3"><b>Skal ikke brukes til barn under 12 år</b></td>
                                     </tr>
                                     <tr>
                                         <td colspan="3">
-                                            <p>Do not exceed the stated dose.</p>
-                                            <p><b>Do not use continuously for more than 7
-                                                days.</b></p>
-                                            <p>This product is not suitable for long-term use (see
-                                                also section 4 'Possible Side Effects’).</p>
-                                            <p>If symptoms persist, consult your doctor.</p>
+                                            <p>Ikke overskrid den angitte dosen.</p>
+                                            <p><b>Ikke bruk kontinuerlig i mer enn 7 dager .</b></p>
+                                            <p>Ikke bruk kontinuerlig i mer enn 7 dager .</p>
+                                            <p>Dette produktet er ikke egnet for langvarig bruk (se også avsnitt 4 'Mulige bivirkninger').</p>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="3">If you do not understand these instructions
-                                            or if you require any further information about your
-                                            medicine, ask your doctor or pharmacist.</td>
+                                        <td colspan="3">Rådfør deg med lege hvis symptomene vedvarer.</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br/>
-                            <p><b>If you use too much:</b></p>
-                            <p>If you have used more spray than the stated dose, talk to a doctor or
-                                pharmacist immediately.</p>
+                            <p><b>Hvis du bruker for mye:</b></p>
+                            <p>Snakk med lege eller apotek hvis du har brukt mer spray enn angitt doseumiddelbart.</p>
                         </div>
           </text>
         </section>
-        <section id="2ddf2454-df03-4407-9144-899441d789fd">
-          <title value="4. Possible side effects"/>
+        <section id="1efef57d-8daf-4371-9760-90787a3754e0">
+          <title value="4. Mulige bivirkninger"/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="6"/>
-              <display value="4. Possible side effect"/>
+              <display value="4. Mulige bivirkninger"/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
-                            <p>Most people use this nasal spray without any problems but, like all
-                                medicines, it can have side effects</p>
+                            <p>De fleste bruker denne nesesprayen uten problemer, men som alle medisiner kan den ha denbivirkninger</p>
                             <br/>
-                            <p><b>Allergic reaction</b></p>
-                            <p><b>Stop using the nasal spray and contact your doctor or go to your
-                                    nearest hospital casualty department immediately if you
-                                    notice:</b></p>
+                            <p><b>Allergisk reaksjon</b></p>
+                            <p><b>Slutt å bruke nesesprayen og kontakt legen din eller gå til nærmeste sykehuslegevakten umiddelbart hvis du merker:</b></p>
                             <ul>
-                                <li>skin rashes or itching</li>
-                                <li>sneezing or stinging or burning of the nose</li>
-                                <li>swelling of the nose, lips, tongue or throat</li>
-                                <li>shortness of breath or difficulty in breathing</li>
+                                <li>hudutslett eller kløe</li>
+                                <li>nysing eller svie eller svie i nesen</li>
+                                <li>hevelse i nese, lepper, tunge eller svelg</li>
+                                <li>kortpustethet eller pustevansker</li>
                             </ul>
-                            <p><b>Other side effects</b></p>
+                            <p><b>Andre bivirkninger</b></p>
                             <ul>
-                                <li>Irritation, dryness or soreness in the nose, mouth or throat </li>
-                                <li>Eye irritation, dryness, discomfort or redness </li>
-                                <li>Headache, dizziness </li>
-                                <li>Weakness, fatigue and trembling </li>
-                                <li>Nausea (feeling sick), vomiting (being sick), less saliva than
-                                    usual in your mouth, decreased appetite </li>
-                                <li>Flushing and visual disturbances </li>
-                                <li>Effects on the heart e.g rapid or irregular heartbeat,
-                                    palpitations </li>
-                                <li>Effects on the circulation e.g. cold feet or hands, high blood
-                                    pressure </li>
-                                <li>If the spray is used regularly over a long period it may cause a
-                                    condition called rebound </li>
-                                <li>congestion. This is an unusual swelling of the lining of the
-                                    nose, leading to itching, sneezing and a blocked nose following
-                                    the last dose of the spray. Therefore do not use the spray
-                                    continuously for more than 7 days </li>
-                                <li>This medicine contains thiomersal as a preservative and it is
-                                    possible that this may cause local skin reactions (e.g. contact
-                                    dermatitis) and discolouration around the nose. It may also
-                                    cause an allergic reaction (see above) </li>
-                                <li>Prolonged and/or heavy use beyond the recommended use of 7 days,
-                                    may lead to cardiovascular and/or CNS effects. </li>
+                                <li>• Irritasjon, tørrhet eller ømhet i nese, munn eller svelg</li>
+                                <li>• Øyeirritasjon, tørrhet, ubehag eller rødhet</li>
+                                <li>• Hodepine, svimmelhet</li>
+                                <li>• Svakhet, tretthet og skjelving</li>
+                                <li>• Angst, frykt, irritabilitet, nervøsitet, rastløs eller ikke sove, forvirret eller se ting</li>
+                                <li>• Kvalme, oppkast, mindre spytt enn vanlig i munnen,redusert appetitt</li>
+                                <li>• Skylling og synsforstyrrelser</li>
+                                <li>• Virkninger på hjertet f.eks. Rask eller uregelmessig hjerterytme, hjertebank</li>
+                                <li>• Virkninger på sirkulasjonen f.eks. Kalde føtter eller hender, høyt blodtrykk</li>
+                                <li>• Hvis sprayen brukes regelmessig over en lengre periode, kan det forårsake en tilstand som kalles reboundopphopning. Dette er en uvanlig hevelse i neseslimhinnen, som fører til kløe,nysing og blokkert nese etter siste dose av sprayen. Bruk derfor ikkesprayen kontinuerlig i mer enn 7 dager</li>
+                                <li>• Dette legemidlet inneholder tiomersal som konserveringsmiddel, og det er mulig at dette kan skjeforårsake lokale hudreaksjoner (f.eks. kontaktdermatitt) og misfarging rundt nesen. Denkan også forårsake en allergisk reaksjon (se ovenfor)</li>
+                                <li>• Langvarig og/eller tung bruk utover anbefalt bruk på 7 dager, kan føre tilkardiovaskulære og/eller CNS -effekter.</li>
 
                             </ul>
-                            <p><b>Reporting of side effects</b></p>
-                            <p>If you get any side effects, talk to your doctor, pharmacist or
-                                nurse. This includes any possible side effects not listed in this
-                                leaflet. You can also report side effects directly via the Yellow
-                                Card Scheme at: <a href="www.mhra.gov.uk/yellowcard">www.mhra.gov.uk/yellowcard</a> or search for the MHRA Yellow
-                                Card in the Google Play or Apple App Store. By reporting side
-                                effects you can help provide more information on the safety of this
-                                medicine.</p>
+                            <p><b>Rapportering av bivirkninger</b></p>
+                            <p>Rådfør deg med lege, apotek eller sykepleier hvis du får bivirkninger. Dette inkluderer evtmulige bivirkninger som ikke er nevnt i dette pakningsvedlegget. Du kan også rapportere bivirkninger direkte viaGul kortordning på: <a href="www.mhra.gov.uk/yellowcard">www.mhra.gov.uk/yellowcard</a> eller søke etter MHRA Yellow Card i Google Play eller Apple App Store. Ved å rapportere bivirkninger kan du hjelpe til med å gi mer informasjon om sikkerheten til dette legemidlet.</p>
                         </div>
           </text>
         </section>
-        <section id="60b8e83a-8177-4e90-9be7-cab5897943f1">
-          <title value="5. How to store Decongestant Nasal Spray"/>
+        <section id="a3776668-4a23-4883-8eec-bd08550da625">
+          <title value="5. Hvordan du oppbevarer Decongestant Nasal Spray"/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="7"/>
-              <display value="5. How to store Decongestant Nasal Spray"/>
+              <display value="5. Hvordan du oppbevarer Decongestant Nasal Spray"/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
-                            <p>Do not use this medicine after the expiry date shown on the bottle
-                                and carton.</p>
-                            <p><b>Keep out of the sight and reach of children.</b></p>
+                            <p>Ikke bruk dette legemidlet etter utløpsdatoen som er angitt på flasken og esken.</p>
+                            <p><b>Oppbevares utilgjengelig for barn.</b></p>
                         </div>
           </text>
         </section>
-        <section id="36fa724e-37a5-4ff7-8cd3-2d446ff26b69">
-          <title value="6. Contents of the pack and other information"/>
+        <section id="3cff4c7d-4b8e-4c8a-87fc-2a42224a741d">
+          <title value="6. Innholdet i pakningen og annen informasjon"/>
           <code>
             <coding>
               <system value="http://spor.ema.europa.eu/v1/example-sections"/>
               <code value="8"/>
-              <display value="6. Contents of the pack and other information"/>
+              <display value="6. Innholdet i pakningen og annen informasjon"/>
             </coding>
           </code>
           <text>
             <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
-                            <p><b>What is in this nasal spray?</b></p>
+                            <p><b>Hva er i denne nesesprayen?</b></p>
                             <br/>
-                            <p><b>The active ingredient is:</b> Oxymetazoline hydrochloride 0.05%
-                                w/v</p>
-                            <p><b>Other ingredient are:</b> Benzalkonium chloride, thiomersal,
-                                sodium chloride, menthol, eucalyptol, camphor, methyl salicylate,
-                                poloxamer, sodium citrate, anhydrous citric acid and purified
-                                water.</p>
+                            <p><b>Den aktive ingrediensen er : </b> Oxymetazoline hydrochloride 0.05% w/v</p>
+                            <p><b>Andre ingredienser er: </b> Benzalkoniumklorid, tiomersal, natriumklorid, mentol,eukalyptol, kamfer, metylsalisylat, poloksamer, natriumsitrat, vannfri sitronsyre ogrenset vann.</p>
                             <br/>
-                            <p><b>What this medicine looks like and contents of the pack</b></p>
-                            <p>The product is a clear liquid which is sprayed in fine droplets out
-                                of the nozzle of the container. A pack contains a white 15 ml bottle </p>
+                            <p><b>Hvordan dette legemidlet ser ut og innholdet i pakningen</b></p>
+                            <p>Produktet er en klar væske som sprayes i fine dråper ut av munnstykketcontainer. En pakke inneholder en hvit 15 ml flaske</p>
                             <br/>
-                            <p><b>Marketing Authorisation Holder:</b></p>
-                            <p>Galpharm Healthcare Ltd., Wrafton, Braunton, Devon, EX33 2DL, United
-                                Kingdom</p>
-                            <p>Manufactured for The Boots Company PLC, Nottingham NG2 3AA by the<br/>
-                                <b>Manufacturer:</b> Galpharm International Ltd., Elmhirst Park,
-                                Middle Field Road, Barnsley, South Yorkshire, S75 4LS, United
-                                Kingdom</p>
-                            <p>Text revised: September 2020</p>
+                            <p><b>Innehaver av markedsføringstillatelse:</b></p>
+                            <p>Galpharm Healthcare Ltd., Wrafton, Braunton, Devon, EX33 2DL, Storbritannia</p>
+                            <p>Produsert for The Boots Company PLC, Nottingham NG2 3AA av<br/>
+                                <b>Produsent:</b> Galpharm International Ltd., Elmhirst Park, Middle Field Road, Barnsley,South Yorkshire, S75 4LS, Storbritannia</p>
+                            <p>Tekst revidert: september 2020</p>
                             <br/>
-                            <p><b>Other formats</b></p>
-                            <p>To request a copy of this leaflet in Braille, large print or audio
-                                please call, free of charge:</p>
-                            <p>0800 198 5000 (UK only)</p>
-                            <p>Please be ready to give the following information:</p>
-                            <p>Product name: Boots Decongestant 0.05% Nasal Spray</p>
-                            <p>Reference number: PL 16028/0049</p>
-                            <p>This is a service provided by the Royal National Institute of Blind
-                                People.</p>
+                            <p><b>Andre formater</b></p>
+                            <p>For å be om en kopi av denne brosjyren i punktskrift, stor skrift eller lyd, ring gratis:</p>
+                            <p>0800 198 5000 (bare Storbritannia)</p>
+                            <p>Vær klar til å gi følgende informasjon:</p>
+                            <p>Produktnavn: Boots Decongestant 0,05% nesespray</p>
+                            <p>Referansenummer: PL 16028/0049</p>
+                            <p>Dette er en tjeneste som tilbys av Royal National Institute of Blind People.</p>
                         </div>
           </text>
         </section>
