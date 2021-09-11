@@ -29,6 +29,11 @@ dependencies:
   hl7.fhir.uv.ips: current
 parameters:
   show-inherited-invariants: false
+  path-resource: !!seq
+  - input/resources/irbesartan
+  - input/resources/oxymetazoline-hydrochloride
+  - input/resources/dimethyl-fumarate
+  autoload-resources: true
 copyrightYear: 2021+
 releaseLabel: CI Build
 
