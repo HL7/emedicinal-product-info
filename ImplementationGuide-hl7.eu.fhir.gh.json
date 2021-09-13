@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-09-13T15:53:30+00:00",
+  "date": "2021-09-13T20:19:52+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -90,21 +90,9 @@
         "reference": {
           "reference": "Bundle/gravitate-maria"
         },
-        "name": "gravitate-maria",
+        "name": "Maria Gravitate's IPS",
+        "description": "Example of International Patient Summary for Maria Gravitate",
         "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/IPS-examples-Bundle-01"
-        },
-        "name": "IPS-examples-Bundle-01",
-        "exampleBoolean": false
       },
       {
         "extension": [
@@ -153,8 +141,11 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/995d3971-b899-43bf-857d-98c26634796d"
-        }
+          "reference": "Bundle/234d3626-fac0-4e69-86a6-556910eecfc9"
+        },
+        "name": "Dimethyl-fumarate PIL (Greek)",
+        "description": "Example of Greek Product information leaflet for Dimethyl-fumarate",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -164,8 +155,25 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/910d1748-674b-430c-b4ab-3665b266a31f"
-        }
+          "reference": "Bundle/79147eac-56be-4aec-9e71-bee160e588b6"
+        },
+        "name": "Dimethyl-fumarate PIL (English)",
+        "description": "Example of English Product information leaflet for Dimethyl-fumarate",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/00b76159-1583-4374-b892-d360b49dae01"
+        },
+        "name": "Dimethyl-fumarate PIL (Norwegian)",
+        "description": "Example of Norwegian Product information leaflet for Dimethyl-fumarate",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -176,18 +184,10 @@
         ],
         "reference": {
           "reference": "Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "List"
-          }
-        ],
-        "reference": {
-          "reference": "List/84d92ad3-386e-47f2-a1c7-7aea06c44074"
-        }
+        },
+        "name": "Irbesartan PIL (Greek)",
+        "description": "Example of Greek Product information leaflet for Irbesartan",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -197,8 +197,11 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e"
-        }
+          "reference": "Bundle/910d1748-674b-430c-b4ab-3665b266a31f"
+        },
+        "name": "Irbesartan PIL (English)",
+        "description": "Example of English Product information leaflet for Irbesartan",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -208,8 +211,11 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00"
-        }
+          "reference": "Bundle/995d3971-b899-43bf-857d-98c26634796d"
+        },
+        "name": "Irbesartan PIL (Norwegian)",
+        "description": "Example of Norwegian Product information leaflet for Irbesartan",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -220,6 +226,48 @@
         ],
         "reference": {
           "reference": "Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a"
+        },
+        "name": "Oxymetazoline-hydrochloride  PIL (Greek)",
+        "description": "Example of Greek Product information leaflet for Oxymetazoline-hydrochloride",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00"
+        },
+        "name": "Oxymetazoline-hydrochloride PIL (English)",
+        "description": "Example of English Product information leaflet for Oxymetazoline-hydrochloride",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e"
+        },
+        "name": "Oxymetazoline-hydrochloride PIL (Norwegian)",
+        "description": "Example of Norwegian Product information leaflet for Oxymetazoline-hydrochloride",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          }
+        ],
+        "reference": {
+          "reference": "List/84d92ad3-386e-47f2-a1c7-7aea06c44074"
         }
       },
       {
@@ -237,44 +285,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/00b76159-1583-4374-b892-d360b49dae01"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "List"
           }
         ],
         "reference": {
           "reference": "List/084b2309-b525-418a-8aa6-de230f9a38f1"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/234d3626-fac0-4e69-86a6-556910eecfc9"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/79147eac-56be-4aec-9e71-bee160e588b6"
         }
       }
     ],

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-09-13T15:53:30+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-09-13T20:19:52+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -98,23 +98,11 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/gravitate-maria>;
          fhir:Reference.reference [ fhir:value "Bundle/gravitate-maria" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "gravitate-maria" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Maria Gravitate's IPS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of International Patient Summary for Maria Gravitate" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/IPS-examples-Bundle-01>;
-         fhir:Reference.reference [ fhir:value "Bundle/IPS-examples-Bundle-01" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPS-examples-Bundle-01" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -127,7 +115,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -140,7 +128,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "fmk-ips-skilarence" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -153,6 +141,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/234d3626-fac0-4e69-86a6-556910eecfc9>;
+         fhir:Reference.reference [ fhir:value "Bundle/234d3626-fac0-4e69-86a6-556910eecfc9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dimethyl-fumarate PIL (Greek)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Greek Product information leaflet for Dimethyl-fumarate" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
        fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
@@ -160,9 +162,12 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/995d3971-b899-43bf-857d-98c26634796d>;
-         fhir:Reference.reference [ fhir:value "Bundle/995d3971-b899-43bf-857d-98c26634796d" ]
-       ]
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/79147eac-56be-4aec-9e71-bee160e588b6>;
+         fhir:Reference.reference [ fhir:value "Bundle/79147eac-56be-4aec-9e71-bee160e588b6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dimethyl-fumarate PIL (English)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of English Product information leaflet for Dimethyl-fumarate" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 9;
        fhir:Element.extension [
@@ -171,9 +176,12 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/910d1748-674b-430c-b4ab-3665b266a31f>;
-         fhir:Reference.reference [ fhir:value "Bundle/910d1748-674b-430c-b4ab-3665b266a31f" ]
-       ]
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/00b76159-1583-4374-b892-d360b49dae01>;
+         fhir:Reference.reference [ fhir:value "Bundle/00b76159-1583-4374-b892-d360b49dae01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dimethyl-fumarate PIL (Norwegian)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Norwegian Product information leaflet for Dimethyl-fumarate" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 10;
        fhir:Element.extension [
@@ -184,9 +192,82 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6>;
          fhir:Reference.reference [ fhir:value "Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Irbesartan PIL (Greek)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Greek Product information leaflet for Irbesartan" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/910d1748-674b-430c-b4ab-3665b266a31f>;
+         fhir:Reference.reference [ fhir:value "Bundle/910d1748-674b-430c-b4ab-3665b266a31f" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Irbesartan PIL (English)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of English Product information leaflet for Irbesartan" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/995d3971-b899-43bf-857d-98c26634796d>;
+         fhir:Reference.reference [ fhir:value "Bundle/995d3971-b899-43bf-857d-98c26634796d" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Irbesartan PIL (Norwegian)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Norwegian Product information leaflet for Irbesartan" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a>;
+         fhir:Reference.reference [ fhir:value "Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Oxymetazoline-hydrochloride  PIL (Greek)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Greek Product information leaflet for Oxymetazoline-hydrochloride" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00>;
+         fhir:Reference.reference [ fhir:value "Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Oxymetazoline-hydrochloride PIL (English)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of English Product information leaflet for Oxymetazoline-hydrochloride" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e>;
+         fhir:Reference.reference [ fhir:value "Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Oxymetazoline-hydrochloride PIL (Norwegian)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Norwegian Product information leaflet for Oxymetazoline-hydrochloride" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -197,40 +278,7 @@
          fhir:Reference.reference [ fhir:value "List/84d92ad3-386e-47f2-a1c7-7aea06c44074" ]
        ]
      ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e>;
-         fhir:Reference.reference [ fhir:value "Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e" ]
-       ]
-     ], [
-       fhir:index 13;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00>;
-         fhir:Reference.reference [ fhir:value "Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00" ]
-       ]
-     ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a>;
-         fhir:Reference.reference [ fhir:value "Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a" ]
-       ]
-     ], [
-       fhir:index 15;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -241,18 +289,7 @@
          fhir:Reference.reference [ fhir:value "List/a3cc87ad-f914-4556-b051-d6fa1c0de7fe" ]
        ]
      ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/00b76159-1583-4374-b892-d360b49dae01>;
-         fhir:Reference.reference [ fhir:value "Bundle/00b76159-1583-4374-b892-d360b49dae01" ]
-       ]
-     ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -261,28 +298,6 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/List/084b2309-b525-418a-8aa6-de230f9a38f1>;
          fhir:Reference.reference [ fhir:value "List/084b2309-b525-418a-8aa6-de230f9a38f1" ]
-       ]
-     ], [
-       fhir:index 18;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/234d3626-fac0-4e69-86a6-556910eecfc9>;
-         fhir:Reference.reference [ fhir:value "Bundle/234d3626-fac0-4e69-86a6-556910eecfc9" ]
-       ]
-     ], [
-       fhir:index 19;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/79147eac-56be-4aec-9e71-bee160e588b6>;
-         fhir:Reference.reference [ fhir:value "Bundle/79147eac-56be-4aec-9e71-bee160e588b6" ]
        ]
      ];
      fhir:ImplementationGuide.definition.page [

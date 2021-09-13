@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-09-13T15:53:30+00:00"/>
+  <date value="2021-09-13T20:19:52+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -69,18 +69,9 @@
       <reference>
         <reference value="Bundle/gravitate-maria"/>
       </reference>
-      <name value="gravitate-maria"/>
+      <name value="Maria Gravitate&#39;s IPS"/>
+      <description value="Example of International Patient Summary for Maria Gravitate"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/IPS-examples-Bundle-01"/>
-      </reference>
-      <name value="IPS-examples-Bundle-01"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -117,16 +108,33 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/995d3971-b899-43bf-857d-98c26634796d"/>
+        <reference value="Bundle/234d3626-fac0-4e69-86a6-556910eecfc9"/>
       </reference>
+      <name value="Dimethyl-fumarate PIL (Greek)"/>
+      <description value="Example of Greek Product information leaflet for Dimethyl-fumarate"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/910d1748-674b-430c-b4ab-3665b266a31f"/>
+        <reference value="Bundle/79147eac-56be-4aec-9e71-bee160e588b6"/>
       </reference>
+      <name value="Dimethyl-fumarate PIL (English)"/>
+      <description value="Example of English Product information leaflet for Dimethyl-fumarate"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/00b76159-1583-4374-b892-d360b49dae01"/>
+      </reference>
+      <name value="Dimethyl-fumarate PIL (Norwegian)"/>
+      <description value="Example of Norwegian Product information leaflet for Dimethyl-fumarate"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -135,22 +143,42 @@
       <reference>
         <reference value="Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6"/>
       </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="List"/>
-      </extension>
-      <reference>
-        <reference value="List/84d92ad3-386e-47f2-a1c7-7aea06c44074"/>
-      </reference>
+      <name value="Irbesartan PIL (Greek)"/>
+      <description value="Example of Greek Product information leaflet for Irbesartan"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e"/>
+        <reference value="Bundle/910d1748-674b-430c-b4ab-3665b266a31f"/>
       </reference>
+      <name value="Irbesartan PIL (English)"/>
+      <description value="Example of English Product information leaflet for Irbesartan"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/995d3971-b899-43bf-857d-98c26634796d"/>
+      </reference>
+      <name value="Irbesartan PIL (Norwegian)"/>
+      <description value="Example of Norwegian Product information leaflet for Irbesartan"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a"/>
+      </reference>
+      <name value="Oxymetazoline-hydrochloride  PIL (Greek)"/>
+      <description value="Example of Greek Product information leaflet for Oxymetazoline-hydrochloride"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -159,13 +187,27 @@
       <reference>
         <reference value="Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00"/>
       </reference>
+      <name value="Oxymetazoline-hydrochloride PIL (English)"/>
+      <description value="Example of English Product information leaflet for Oxymetazoline-hydrochloride"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a"/>
+        <reference value="Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e"/>
+      </reference>
+      <name value="Oxymetazoline-hydrochloride PIL (Norwegian)"/>
+      <description value="Example of Norwegian Product information leaflet for Oxymetazoline-hydrochloride"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/84d92ad3-386e-47f2-a1c7-7aea06c44074"/>
       </reference>
     </resource>
     <resource>
@@ -178,34 +220,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/00b76159-1583-4374-b892-d360b49dae01"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="List"/>
       </extension>
       <reference>
         <reference value="List/084b2309-b525-418a-8aa6-de230f9a38f1"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/234d3626-fac0-4e69-86a6-556910eecfc9"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/79147eac-56be-4aec-9e71-bee160e588b6"/>
       </reference>
     </resource>
     <page>
