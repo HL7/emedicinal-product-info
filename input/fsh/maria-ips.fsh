@@ -1,6 +1,10 @@
 Instance: gravitate-maria
 InstanceOf: Bundle
+Title:   "Maria Gravitate's IPS"
 Usage: #example
+Description: "Example of International Patient Summary for Maria Gravitate"
+
+
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier.value = "maria-ips-1"
 * type = #document
