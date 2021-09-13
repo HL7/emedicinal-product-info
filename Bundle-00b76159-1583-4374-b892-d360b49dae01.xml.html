@@ -231,7 +231,7 @@
         &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.language">language</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="no"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.text">text</a>&gt;
           &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="generated"/&gt;
-          &lt;div xmlns="http://www.w3.org/1999/xhtml" xml:lang="no" lang="no"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155538}"&gt;B. PAKNINGSVEDLEGG&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-02-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Acme Product&lt;/p&gt;&lt;h3&gt;RelatesTos&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;appends&lt;/td&gt;&lt;td&gt;&lt;a href="http://ema.europa.eu/fhirServer/084b2309-b525-418a-8aa6-de230f9a38f1"&gt;http://ema.europa.eu/fhirServer/084b2309-b525-418a-8aa6-de230f9a38f1&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;div xmlns="http://www.w3.org/1999/xhtml" xml:lang="no" lang="no"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes: {http://spor.ema.europa.eu/v1/lists/100000155531 100000155538}"&gt;B. PAKNINGSVEDLEGG&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-02-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Acme Product&lt;/p&gt;&lt;h3&gt;RelatesTos&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;appends&lt;/td&gt;&lt;td&gt;id: 943f32dd-dc6f-4079-b364-bb522edb9cfb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
         &lt;/text&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//binary.html#Binary">contained</a>&gt;
           &lt;<a href="http://build.fhir.org/branches/R4B//binary.html#Binary">Binary</a>&gt;
@@ -275,13 +275,16 @@
           &lt;/identifier&gt;
         &lt;/author&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.title">title</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="Acme Product"/&gt;
+      &lt;!--                 &lt;targetReference&gt;
+                        &lt;reference value="Bundle/910d1748-674b-430c-b4ab-3665b266a31f" /&gt;
+                    &lt;/targetReference&gt;  --&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.relatesTo">relatesTo</a>&gt;
           &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.relatesTo.code">code</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="appends"/&gt;
-          &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.relatesTo.target[x]">targetReference</a>&gt;
-          &lt;!--  to be fixed  --&gt;
-            &lt;<a href="http://build.fhir.org/branches/R4B//references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="http://ema.europa.eu/fhirServer/084b2309-b525-418a-8aa6-de230f9a38f1"/&gt;
-          &lt;/targetReference&gt;
+        &lt;!--  to be checked  --&gt;
+          &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.relatesTo.target[x]">targetIdentifier</a>&gt;
+            &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">value</a>="http://ema.europa.eu/fhir/identifier/documentid"/&gt;
+            &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="943f32dd-dc6f-4079-b364-bb522edb9cfb"/&gt;
+          &lt;/targetIdentifier&gt;
         &lt;/relatesTo&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section">section</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a>="f4c3b399-b61a-4425-a278-b8be818131de"&gt;
           &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="B. PAKNINGSVEDLEGG"/&gt;
@@ -295,8 +298,7 @@
           &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
             &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
             &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                            &lt;p class="QRDBookmark"/&gt;
-                            &lt;span style="font-size:11.0pt;font-family:&amp;quot;Times New Roman&amp;quot;,serif" lang="NO-BOK"&gt;
+                             &lt;span style="font-size:11.0pt;font-family:&amp;quot;Times New Roman&amp;quot;,serif" lang="NO-BOK"&gt;
                                 &lt;br style="page-break-before:always"/&gt;
                             &lt;/span&gt;
                             &lt;br style="page-break-before:always"/&gt;
@@ -365,7 +367,7 @@
                                     &lt;span lang="NO-BOK"&gt;6.    Innholdet i pakningen og ytterligere informasjon&lt;/span&gt;
                                 &lt;/p&gt;
                                 &lt;p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                             &lt;/div&gt;<a name="end-xhtml"></a>
             &lt;/text&gt;
           &lt;/section&gt;
@@ -381,8 +383,7 @@
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
               &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
               &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
-                                &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
+                                                            &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;b&gt;
                                         &lt;span lang="NO-BOK"&gt;Hva Acme Product er&lt;/span&gt;
                                     &lt;/b&gt;
@@ -447,7 +448,7 @@
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;-        dersom du er gravid eller ammer&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -493,7 +494,7 @@
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Rådfør deg med legen din hvis du har eller har hatt problemer med magen eller tarmene. Legen vil gi deg råd om hvilke forsiktighetsregler du må ta under behandling med Acme Product.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -512,7 +513,7 @@
                                     &lt;p style="line-height:normal;page-break-after:avoid;text-autospace:  none" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Barn og ungdom under 18 år bør ikke ta dette legemidlet, da det ikke har blitt studert i denne aldersgruppen.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -568,15 +569,15 @@
                                         &lt;/b&gt;
                                         &lt;span lang="NO-BOK"&gt;slik som metotreksat eller ciklosporin (brukes til å behandle psoriasis), aminoglykosider (brukes til å behandle infeksjoner), diuretika (som øker urinmengden), ikke-steroide antiinflammatoriske legemidler (brukes til å behandle smerte) eller litium (brukes mot bipolar sykdom og depresjon). Disse legemidlene kan når de tas sammen med Acme Product øke risikoen for bivirkninger på nyrene.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Andre legemidler virker kanskje ikke så bra som de bør hvis du får alvorlig eller langvarig diaré med Acme Product. Rådfør deg med legen dersom du har kraftig diaré, og er bekymret for at andre legemidler du tar kanskje ikke virker. Spesielt hvis du tar et prevensjonsmiddel (p-piller) kan virkningen reduseres, og du må kanskje bruke andre barrieremetoder for å forhindre graviditet. Se anvisningene i pakningsvedlegget til prevensjonsmidlet du tar.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Rådfør deg med legen hvis du trenger en vaksinasjon. Visse typer vaksiner (levende vaksiner) kan forårsake infeksjon hvis de brukes under behandling med Acme Product. Legen kan gi deg råd om hva som er best.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -596,7 +597,7 @@
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Unngå sterke alkoholholdige drikkevarer (mer enn 50 ml brennevin som inneholder mer enn 30 vol. % alkohol) under behandling med Acme Product, da alkohol kan påvirke dette legemidlet. Dette kan forårsake mage- og tarmproblemer.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -619,7 +620,7 @@
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Unngå amming under behandling med Acme Product.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -676,7 +677,7 @@
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
               &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
               &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Bruk alltid dette legemidlet nøyaktig slik legen din eller apoteket har fortalt deg. Kontakt lege eller apotek hvis du er usikker.&lt;/span&gt;
                                 &lt;/p&gt;
@@ -691,7 +692,7 @@
                                 &lt;/p&gt;
                                 &lt;p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"/&gt;
                                 &lt;table border="1" cellpadding="0" cellspacing="0" width="92%" style="border-collapse:collapse;border:none" class="MsoNormalTable"&gt;
-                                    &lt;tr style="height:20.8pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td rowspan="2" width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    padding:0in 5.4pt 0in 5.4pt;height:20.8pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;Behandlingsuke&lt;/span&gt;
@@ -718,7 +719,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.65pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="10%" style="width:10.86%;border-top:none;border-left:    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;    padding:0in 5.4pt 0in 5.4pt;height:21.65pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;Frokost&lt;/span&gt;
@@ -741,7 +742,7 @@
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"/&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:22.9pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.9pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;1&lt;/span&gt;
@@ -778,7 +779,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:22.85pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.85pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;2&lt;/span&gt;
@@ -815,7 +816,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:22.85pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.85pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;3&lt;/span&gt;
@@ -852,7 +853,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.25pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:21.25pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;4&lt;/span&gt;
@@ -889,7 +890,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;5&lt;/span&gt;
@@ -926,7 +927,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;6&lt;/span&gt;
@@ -963,7 +964,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;7&lt;/span&gt;
@@ -1000,7 +1001,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;8&lt;/span&gt;
@@ -1037,7 +1038,7 @@
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="19%" style="width:19.1%;border:solid windowtext 1.0pt;    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt" valign="top"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;9+&lt;/span&gt;
@@ -1079,7 +1080,7 @@
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Legen vil kontrollere hvor mye din tilstand bedres etter at du begynner å ta Acme Product og vil kontrollere for bivirkninger. Hvis du får alvorlige bivirkninger etter en doseøkning, kan legen anbefale at du midlertidig går tilbake til forrige dose. Hvis bivirkningene ikke er plagsomme, vil dosen bli økt inntil tilstanden er godt kontrollert. Du trenger kanskje ikke den maksimale dosen på 720 mg per dag. Etter at tilstanden din har bedret seg tilstrekkelig, vil legen vurdere hvordan den daglige dosen av Acme Product skal reduseres gradvis til det du trenger for å opprettholde bedringen.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;b&gt;
                                         &lt;span lang="NO-BOK"&gt;Bruksmåte&lt;/span&gt;
@@ -1088,7 +1089,7 @@
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Svelg Acme Product-tabletter hele med væske. Ta tablettene under eller umiddelbart etter et måltid. Ikke knus, del, oppløs eller tygg tablettene, da de har et spesielt belegg som bidrar til å unngå irritasjon av magen.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                             &lt;/div&gt;<a name="end-xhtml"></a>
             &lt;/text&gt;
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.section">section</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a>="9471fccd-9d42-4bcf-b845-7b0a06bfcdd0"&gt;
@@ -1106,8 +1107,8 @@
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Rådfør deg med lege eller apotek dersom du tror du har tatt for mange Acme Product-tabletter.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -1126,7 +1127,7 @@
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Du må ikke ta en dobbelt dose som erstatning for en glemt dose. Ta neste dose ved vanlig tid og fortsett å ta legemidlet nøyaktig som beskrevet i dette pakningsvedlegget eller som avtalt med legen din. Kontakt lege eller apotek hvis du er usikker.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Spør lege eller apotek dersom du har noen spørsmål om bruken av dette legemidlet.&lt;/span&gt;
                                     &lt;/p&gt;
@@ -1152,11 +1153,11 @@
                                 &lt;p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Som alle legemidler kan dette legemidlet forårsake bivirkninger, men ikke alle får det. Noen av disse bivirkningene, slik som rødhet i ansiktet eller på kroppen (flushing), diaré, mageproblemer og kvalme, bedres vanligvis når du fortsetter behandlingen.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;De mest alvorlige bivirkningene som kan forekomme med Acme Product er allergiske reaksjoner eller hypersensitivitetsreaksjoner, nyresvikt eller en nyresykdom som kalles Fanconi-syndrom eller en alvorlig hjerneinfeksjon som kalles progressiv multifokal leukoencefalopati (PML). Det er ikke kjent hvor ofte de forekommer. For symptomer, se nedenfor.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"&gt;
                                     
                                         &lt;span lang="NO-BOK"&gt;Allergiske reaksjoner eller hypersensitivitetsreaksjoner&lt;/span&gt;
@@ -1176,7 +1177,7 @@
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;skal du straks slutte å ta Acme Product og kontakte lege umiddelbart.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     
                                         &lt;span lang="NO-BOK"&gt;Hjerneinfeksjon kalt PML&lt;/span&gt;
@@ -1298,14 +1299,14 @@
                                     &lt;span lang="NO-BOK"&gt;-&lt;/span&gt;
                                     &lt;span lang="NO-BOK"&gt;økning i serumkreatinin (et stoff i blodet som brukes til å måle hvor bra nyrene dine fungerer)&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Sjeldne bivirkninger (kan ramme opptil 1 av 1000 personer):&lt;/span&gt;
                                 &lt;/p&gt;
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;-        allergisk hudreaksjon&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Svært sjeldne bivirkninger (kan ramme opptil 1 av 10 000 personer):&lt;/span&gt;
                                 &lt;/p&gt;
@@ -1315,14 +1316,14 @@
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;-        redusert antall av alle typer blodceller (pancytopeni)&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Ukjent frekvens (hyppigheten kan ikke anslås ut ifra tilgjengelige data):&lt;/span&gt;
                                 &lt;/p&gt;
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;-        herpes zoster (helvetesild)&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                             &lt;/div&gt;<a name="end-xhtml"></a>
             &lt;/text&gt;
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.section">section</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a>="9708b0f9-a8fc-4527-a7aa-943e18f7275c"&gt;
@@ -1369,7 +1370,7 @@ melde fra om bivirkninger direkte via
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
               &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
               &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Oppbevares utilgjengelig for barn.&lt;/span&gt;
                                 &lt;/p&gt;
@@ -1439,7 +1440,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Acme Product 30 mg er tilgjengelig i pakninger på 42, 70 og 210 enterotabletter. Ikke alle pakningsstørrelser vil nødvendigvis bli markedsført. Tablettene er pakket i PVC/PVDC blisterpakninger av aluminium.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -1456,7 +1457,7 @@ melde fra om bivirkninger direkte via
               &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
                 &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
                 &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                    &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;b&gt;
                                             &lt;span lang="NO-BOK"&gt;Innehaver av markedsføringstillatelsen&lt;/span&gt;
@@ -1548,7 +1549,7 @@ melde fra om bivirkninger direkte via
                                         &lt;/span&gt;
                                     &lt;/p&gt;
                                     &lt;p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"&gt;Almirall ApS, Tlf/Puh/Tel: +45 70 25 75 75&lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;b&gt;
                                             &lt;span lang="DE"&gt;Deutschland&lt;/span&gt;
@@ -1628,7 +1629,7 @@ melde fra om bivirkninger direkte via
                                         &lt;span lang="PT"&gt;,&lt;/span&gt;
                                         &lt;span lang="PT-BR"&gt;Tel.: +351 21 415 57 50&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;b&gt;United Kingdom (Northern Ireland)&lt;/b&gt;
                                     &lt;/p&gt;
@@ -1697,8 +1698,8 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="text-align:center;line-height:normal" align="center" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;dimetylfumarat&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
+                                    
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;b&gt;
                                             &lt;span lang="NO-BOK"&gt;Les nøye gjennom dette pakningsvedlegget før du begynner å bruke dette legemidlet. Det inneholder informasjon som er viktig for deg.&lt;/span&gt;
@@ -1755,7 +1756,7 @@ melde fra om bivirkninger direkte via
                                     &lt;span lang="NO-BOK"&gt;6.    Innholdet i pakningen og ytterligere informasjon&lt;/span&gt;
                                 &lt;/p&gt;
                                 &lt;p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"/&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                             &lt;/div&gt;<a name="end-xhtml"></a>
             &lt;/text&gt;
           &lt;/section&gt;
@@ -1771,7 +1772,7 @@ melde fra om bivirkninger direkte via
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
               &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
               &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;b&gt;
                                         &lt;span lang="NO-BOK"&gt;Hva Acme Product er&lt;/span&gt;
@@ -1837,7 +1838,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;-        dersom du er gravid eller ammer&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -1856,7 +1857,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Rådfør deg med lege eller apotek før du bruker Acme Product.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="margin-right:-.1pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"&gt;
                                         
                                             &lt;span lang="NO-BOK"&gt;Overvåkning&lt;/span&gt;
@@ -1902,7 +1903,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="line-height:normal;page-break-after:avoid;text-autospace:  none" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Barn og ungdom under 18 år bør ikke ta dette legemidlet, da det ikke har blitt studert i denne aldersgruppen.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -1952,15 +1953,15 @@ melde fra om bivirkninger direkte via
                                         &lt;/b&gt;
                                         &lt;span lang="NO-BOK"&gt;slik som metotreksat eller ciklosporin (brukes til å behandle psoriasis), aminoglykosider (brukes til å behandle infeksjoner), diuretika (som øker urinmengden), ikke-steroide antiinflammatoriske legemidler (brukes til å behandle smerte) eller litium (brukes mot bipolar sykdom og depresjon). Disse legemidlene kan når de tas sammen med Acme Product øke risikoen for bivirkninger på nyrene.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Andre legemidler virker kanskje ikke så bra som de bør hvis du får alvorlig eller langvarig diaré med Acme Product. Rådfør deg med legen dersom du har kraftig diaré, og er bekymret for at andre legemidler du tar kanskje ikke virker. Spesielt hvis du tar et prevensjonsmiddel (p-piller) kan virkningen reduseres, og du må kanskje bruke andre barrieremetoder for å forhindre graviditet. Se anvisningene i pakningsvedlegget til prevensjonsmidlet du tar.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Rådfør deg med legen hvis du trenger en vaksinasjon. Visse typer vaksiner (levende vaksiner) kan forårsake infeksjon hvis de brukes under behandling med Acme Product. Legen kan gi deg råd om hva som er best.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -1980,7 +1981,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Unngå sterke alkoholholdige drikkevarer (mer enn 50 ml brennevin som inneholder mer enn 30 vol. % alkohol) under behandling med Acme Product, da alkohol kan påvirke dette legemidlet. Dette kan forårsake mage- og tarmproblemer.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -2004,7 +2005,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Unngå amming under behandling med Acme Product.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -2061,7 +2062,7 @@ melde fra om bivirkninger direkte via
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
               &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
               &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Bruk alltid dette legemidlet nøyaktig slik legen din eller apoteket har fortalt deg. Kontakt lege eller apotek hvis du er usikker.&lt;/span&gt;
                                 &lt;/p&gt;
@@ -2075,7 +2076,7 @@ melde fra om bivirkninger direkte via
                                     &lt;span lang="NO-BOK"&gt;Legen vil begynne behandlingen med en lav dose (ved bruk av 30 mg Acme Product-tabletter). Dette bidrar til å redusere mageproblemer og andre bivirkninger. Din dose vil bli økt hver uke som vist i tabellen nedenfor(ved å bytte til 120 mg Acme Product-tabletter fra og med uke 4). &lt;/span&gt;
                                 &lt;/p&gt;
                                 &lt;table border="1" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;border:none" class="MsoNormalTable"&gt;
-                                    &lt;tr style="height:20.8pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td rowspan="2" width="17%" style="width:17.64%;border:solid windowtext 1.0pt;    padding:0in 5.4pt 0in 5.4pt;height:20.8pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;Behandlingsuke&lt;/span&gt;
@@ -2102,7 +2103,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.65pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="10%" style="width:10.66%;border-top:none;border-left:none;    border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;    padding:0in 5.4pt 0in 5.4pt;height:21.65pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;Frokost&lt;/span&gt;
@@ -2125,7 +2126,7 @@ melde fra om bivirkninger direkte via
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"/&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:22.9pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:22.9pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;1&lt;/span&gt;
@@ -2162,7 +2163,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:22.85pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:22.85pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;2&lt;/span&gt;
@@ -2199,7 +2200,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:22.85pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:22.85pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;3&lt;/span&gt;
@@ -2236,7 +2237,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.25pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:21.25pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;4&lt;/span&gt;
@@ -2273,7 +2274,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;5&lt;/span&gt;
@@ -2310,7 +2311,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;6&lt;/span&gt;
@@ -2347,7 +2348,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;7&lt;/span&gt;
@@ -2384,7 +2385,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;8&lt;/span&gt;
@@ -2421,7 +2422,7 @@ melde fra om bivirkninger direkte via
                                             &lt;/p&gt;
                                         &lt;/td&gt;
                                     &lt;/tr&gt;
-                                    &lt;tr style="height:21.15pt"&gt;
+                                    &lt;tr&gt;
                                         &lt;td width="17%" style="width:17.64%;border:solid windowtext 1.0pt;border-top:    none;padding:0in 5.4pt 0in 5.4pt;height:21.15pt"&gt;
                                             &lt;p style="text-align:center;line-height:normal;    page-break-after:avoid" align="center" class="MsoNormal"&gt;
                                                 &lt;span lang="NO-BOK"&gt;9+&lt;/span&gt;
@@ -2463,7 +2464,7 @@ melde fra om bivirkninger direkte via
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Legen vil kontrollere hvor mye din tilstand bedres etter at du begynner å ta Acme Product og vil kontrollere for bivirkninger. Hvis du får alvorlige bivirkninger etter en doseøkning, kan legen anbefale at du midlertidig går tilbake til forrige dose. Hvis bivirkningene ikke er plagsomme, vil dosen bli økt inntil tilstanden er godt kontrollert. Du trenger kanskje ikke den maksimale dosen på 720 mg per dag. Etter at tilstanden din har bedret seg tilstrekkelig, vil legen vurdere hvordan den daglige dosen av Acme Product skal reduseres gradvis til det du trenger for å opprettholde bedringen.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;b&gt;
                                         &lt;span lang="NO-BOK"&gt;Bruksmåte&lt;/span&gt;
@@ -2472,7 +2473,7 @@ melde fra om bivirkninger direkte via
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Svelg Acme Product-tabletter hele med væske. Ta tablettene under eller umiddelbart etter et måltid. Ikke knus, del, oppløs eller tygg tablettene, da de har et spesielt belegg som bidrar til å unngå irritasjon av magen.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                             &lt;/div&gt;<a name="end-xhtml"></a>
             &lt;/text&gt;
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.section">section</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a>="f3861d5e-4dae-456e-95d0-899102878371"&gt;
@@ -2490,7 +2491,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Rådfør deg med lege eller apotek dersom du tror du har tatt for mange Acme Product-tabletter.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -2509,7 +2510,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Du må ikke ta en dobbelt dose som erstatning for en glemt dose. Ta neste dose ved vanlig tid og fortsett å ta legemidlet nøyaktig som beskrevet i dette pakningsvedlegget eller som avtalt med legen din. Kontakt lege eller apotek hvis du er usikker.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Spør lege eller apotek dersom du har noen spørsmål om bruken av dette legemidlet.&lt;/span&gt;
                                     &lt;/p&gt;
@@ -2535,11 +2536,11 @@ melde fra om bivirkninger direkte via
                                 &lt;p style="margin-right:-1.45pt;line-height:normal;page-break-after:  avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Som alle legemidler kan dette legemidlet forårsake bivirkninger, men ikke alle får det. Noen av disse bivirkningene, slik som rødhet i ansiktet eller på kroppen (flushing), diaré, mageproblemer og kvalme, bedres vanligvis når du fortsetter behandlingen.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;De mest alvorlige bivirkningene som kan forekomme med Acme Product er allergiske reaksjoner eller hypersensitivitetsreaksjoner, nyresvikt eller en nyresykdom som kalles Fanconi-syndrom eller en alvorlig hjerrneinfeksjon som kalles progressiv multifokal leukoencefalopati (PML). Det er ikke kjent hvor ofte de forekommer. For symptomer, se nedenfor.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="margin-right:-1.45pt;line-height:normal" class="MsoNormal"&gt;
                                     
                                         &lt;span lang="NO-BOK"&gt;Allergiske reaksjoner eller hypersensitivitetsreaksjoner&lt;/span&gt;
@@ -2559,7 +2560,7 @@ melde fra om bivirkninger direkte via
                                 &lt;p style="margin-left:28.35pt;text-indent:-28.35pt;line-height:  normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;skal du straks slutte å ta Acme Product og kontakte lege umiddelbart.&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     
                                         &lt;span lang="NO-BOK"&gt;Hjerneinfeksjon kalt PML&lt;/span&gt;
@@ -2681,14 +2682,14 @@ melde fra om bivirkninger direkte via
                                     &lt;span lang="NO-BOK"&gt;-&lt;/span&gt;
                                     &lt;span lang="NO-BOK"&gt;økning i serumkreatinin (et stoff i blodet som brukes til å måle hvor bra nyrene dine fungerer)&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Sjeldne bivirkninger (kan ramme opptil 1 av 1000 personer):&lt;/span&gt;
                                 &lt;/p&gt;
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;-        allergisk hudreaksjon&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Svært sjeldne bivirkninger (kan ramme opptil 1 av 10 000 personer):&lt;/span&gt;
                                 &lt;/p&gt;
@@ -2698,14 +2699,14 @@ melde fra om bivirkninger direkte via
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;-        redusert antall av alle typer blodceller (pancytopeni)&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Ukjent frekvens (hyppigheten kan ikke anslås ut ifra tilgjengelige data):&lt;/span&gt;
                                 &lt;/p&gt;
                                 &lt;p style="line-height:normal" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;-        herpes zoster (helvetesild)&lt;/span&gt;
                                 &lt;/p&gt;
-                                &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                
                             &lt;/div&gt;<a name="end-xhtml"></a>
             &lt;/text&gt;
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.section">section</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a>="5465dfcf-ece6-43b9-835a-f591460b2a79"&gt;
@@ -2752,7 +2753,7 @@ melde fra om bivirkninger direkte via
             &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
               &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
               &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
+                                
                                 &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                     &lt;span lang="NO-BOK"&gt;Oppbevares utilgjengelig for barn.&lt;/span&gt;
                                 &lt;/p&gt;
@@ -2822,7 +2823,7 @@ melde fra om bivirkninger direkte via
                                     &lt;p style="margin-right:-.1pt;line-height:normal" class="MsoNormal"&gt;
                                         &lt;span lang="NO-BOK"&gt;Pakningsstørrelser: 40, 70, 90, 100, 120, 180, 200, 240, 300, 360 og 400 enterotabletter. Ikke alle pakningsstørrelser vil nødvendigvis bli markedsført. Tablettene er pakket i PVC/PVDC blisterpakninger av aluminium.&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -2839,7 +2840,7 @@ melde fra om bivirkninger direkte via
               &lt;<a href="http://build.fhir.org/branches/R4B//composition.html#Composition.section.text">text</a>&gt;
                 &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="additional"/&gt;
                 &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-                                    &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;b&gt;
                                             &lt;span lang="NO-BOK"&gt;Innehaver av markedsføringstillatelsen&lt;/span&gt;
@@ -3015,7 +3016,7 @@ melde fra om bivirkninger direkte via
                                         &lt;span lang="PT"&gt;, &lt;/span&gt;
                                         &lt;span lang="PT"&gt;Tel.: +351 21 415 57 50&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                     &lt;p style="line-height:normal;page-break-after:avoid" class="MsoNormal"&gt;
                                         &lt;b&gt;United Kingdom (Northern Ireland)&lt;/b&gt;
                                     &lt;/p&gt;
@@ -3023,7 +3024,7 @@ melde fra om bivirkninger direkte via
                                         &lt;span lang="EN-GB"&gt;, &lt;/span&gt;Tel: +44 (
                                         &lt;span lang="EN-GB"&gt;0) 800 0087 399&lt;/span&gt;
                                     &lt;/p&gt;
-                                    &lt;p style="line-height:normal" class="MsoNormal"/&gt;
+                                    
                                 &lt;/div&gt;<a name="end-xhtml"></a>
               &lt;/text&gt;
             &lt;/section&gt;
@@ -3103,8 +3104,8 @@ melde fra om bivirkninger direkte via
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l2726">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Sat, Sep 11, 2021 21:15+0000">2021-09-11</span>
+        <p><a name="l2732">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Sep 13, 2021 15:53+0000">2021-09-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">
