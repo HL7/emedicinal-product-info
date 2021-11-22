@@ -10,7 +10,7 @@ InstanceOf: regulatedauthorization
 Usage: #example
 * id = "aebcba30-11a4-4e92-8380-e3bb54858c71"
 * identifier = "EU/1/17/1201/001"
-* subject = Reference(urn:uuid:bfd7b841-3114-4e1d-aa18-0a9d0b031efa) "EU/1/17/1201/001"
+* subject = Reference(urn:uuid:9cda1cb4-c543-40ef-849b-3b802b5e6f9e) "EU/1/17/1201/001" //medicinal product 30 mg 42 pack
 * type = $spor.ema.europa.eu#100000072062 "Marketing Authorisation" //https://spor.ema.europa.eu/rmswi/#/searchback/lists/100000072055/terms Scope
 * description = "Skilarence 30 mg gastro-resistant tablets, 42 tablets in PVC/PVDC-aluminium blister packs"
 * region = $iso:3166-2#eu "european union"

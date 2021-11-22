@@ -1,6 +1,6 @@
 Profile: VPIMedicinalProductDefinition
 Parent: Medicinal Product Definition
-Id: 15f5287a-30eb-4128-a0bd-4bf2938eb57a
+Id: 9cda1cb4-c543-40ef-849b-3b802b5e6f9e
 Title: "VPI Medicinal Product Definition"
 Description: "Vulcan medicinal product information profile and instance examples"
 
