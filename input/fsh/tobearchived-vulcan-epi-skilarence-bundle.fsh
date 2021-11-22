@@ -1746,8 +1746,8 @@ Usage: #example
 * id = "7cb035bd-145e-4305-8cea-4e7ab0e515f9"
 * identifier = "MAN-30"
 * status = "active"
-* manufactureddoseform = $spor.ema.europa.eu#200000002102 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000009/terms basic dosage form
-* unitofpresentation = $spor.ema.europa.eu#200000002152 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000014/terms unit of presentation
+* manufactureddoseform = $spor.ema.europa.eu:200000000009#200000002102 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000009/terms basic dosage form
+* unitofpresentation = $spor.ema.europa.eu:200000000014#200000002152 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000014/terms unit of presentation
 * manufacturer = Reference(urn:uuid:659ba6da-05fc-4335-beb9-a5f3aecec817) "Almirall S.A."
 * ingredient = Reference(urn:uuid:15f5287a-30eb-4128-a0bd-4bf2938eb57a) "dimethyl fumarate"
 * ingredient = Reference(urn:uuid:6dfa75f1-8cb4-4ff0-b4a5-ffcf13b5cebe) "Lactose monohydrate"
@@ -1777,8 +1777,8 @@ InstanceOf: ManufacturedItemDefinition
 Usage: #example
 * id = "b6154e11-fa77-4bdd-99d0-43a5eb03c694"
 * identifier = "MAN-120"
-* manufactureddoseform = $spor.ema.europa.eu#200000002102 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000009/terms basic dosage form
-* unitofpresentation = $spor.ema.europa.eu#200000002152 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000014/terms unit of presentation
+* manufactureddoseform = $spor.ema.europa.eu:200000000009#200000002102 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000009/terms basic dosage form
+* unitofpresentation = $spor.ema.europa.eu:200000000014#200000002152 "Tablet" //https://spor.ema.europa.eu/rmswi/#/lists/200000000014/terms unit of presentation
 * manufacturer = Reference(urn:uuid:659ba6da-05fc-4335-beb9-a5f3aecec817) "Almirall S.A."
 * ingredient = Reference(urn:uuid:15f5287a-30eb-4128-a0bd-4bf2938eb57a) "dimethyl fumarate"
 * ingredient = Reference(urn:uuid:6dfa75f1-8cb4-4ff0-b4a5-ffcf13b5cebe) "Lactose monohydrate"
@@ -1989,7 +1989,7 @@ Usage: #example
 * subject = Reference(urn:uuid:151fc002-4f6b-4fc6-91d6-44439a3fae8c) // Medicinal Product 14 - EU/1/17/1201/014 210 - 30 mg
 
 * status = #current
-* indication.diseasesymptomprocedure.codeablereference.concept = $spor.ema.europa.eu#100000018190 "Psoriasis" //https://spor.ema.europa.eu/rmswi/#/searchback/lists/100000000006/terms Medical Dictionary For Regulatory Activities (MedDRA)
+* indication.diseasesymptomprocedure.codeablereference.concept = $spor.ema.europa.eu:100000000006#100000018190 "Psoriasis" //https://spor.ema.europa.eu/rmswi/#/searchback/lists/100000000006/terms Medical Dictionary For Regulatory Activities (MedDRA)
 
 // Instance of Clinical Use Definition - Contraindication 1 - Gastrointestinal disorders
 Instance: dd37ac2f-f8bd-4b55-93ec-c5412809d270
