@@ -4,7 +4,6 @@ Id: ef262d35-9d2a-4d58-851a-2227a1f028d9
 Title: "VPI Organization"
 Description: "Vulcan medicinal product information profile and instance examples"
 
-
 // Instance example of the MAH
 Instance: ef262d35-9d2a-4d58-851a-2227a1f028d9
 InstanceOf: organization
@@ -16,10 +15,8 @@ Usage: #example
 * active = #true
 * type = $hl7.org/fhir/ValueSet/organization-type#bus "Non-Healthcare Business or Corporation"
 * name = "Almirall S.A."
-
 * telecom.contactpoint.system = #phone
 * telecom.contactpoint.value = "+34 93 291 30 00"
-
 * address.type = #physical
 * address.text = "Ronda General Mitre 15 
 Barcelona 
@@ -29,4 +26,4 @@ Spain"
 * address.city = "Barcelona"
 * address.state = "Barcelona"
 * address.postalcode = "08022"
-* address.country = $iso:3166-2#es "Spain"
+* address.country = "es" //$iso:3166-2 for pain
