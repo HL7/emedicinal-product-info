@@ -7,7 +7,7 @@ Description: "Vulcan medicinal product information profile and instance examples
 // Instance of Composition
 Instance: 4d0991e2-0b99-412b-afa9-f5974d3ab2b8
 InstanceOf: Composition
-Usage:#example
+Usage: #example
 * id = "4d0991e2-0b99-412b-afa9-f5974d3ab2b8"
 * identifier = "EMEA/H/C/002157 - IAIN/0028/G"
 * status = #final

@@ -7,7 +7,7 @@ Description: "Vulcan medicinal product information profile and instance examples
 // Instance of organization #2 Manufacturer
 Instance: 659ba6da-05fc-4335-beb9-a5f3aecec817
 InstanceOf: organization
-Usage:#example
+Usage: #example
 * id = "659ba6da-05fc-4335-beb9-a5f3aecec817"
 * identifier = "ORG-100011518"
 * status = #active
