@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: cfd7b82f-7a6c-4e3b-ae59-deeb69570402
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 12 - Simethicone 
 Instance: cfd7b82f-7a6c-4e3b-ae59-deeb69570402
 InstanceOf: ingredient

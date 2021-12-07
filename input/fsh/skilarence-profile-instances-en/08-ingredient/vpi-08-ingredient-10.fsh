@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: fc06daeb-500a-4c9d-a16e-8db36a8ab32f
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 10 - Triethyl citrate	
 Instance: fc06daeb-500a-4c9d-a16e-8db36a8ab32f
 InstanceOf: ingredient

@@ -1,9 +1,3 @@
-Profile: VPIRegulatedAuthorization
-Parent: RegulatedAuthorization
-Id: b31828b6-5035-4d78-a1aa-b6812ada2e60
-Title: "VPI Regulated Authorization"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Authorization 8 -  EU/1/17/1201/009  240 - 120 mg
 Instance: b31828b6-5035-4d78-a1aa-b6812ada2e60
 InstanceOf: regulatedauthorization

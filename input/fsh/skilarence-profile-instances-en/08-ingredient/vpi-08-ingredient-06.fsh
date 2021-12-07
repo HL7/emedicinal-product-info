@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: 1685c199-1e59-4a7d-af41-6737eb5a8c1b
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 6 - Colloidal anhydrous silica 
 Instance: 1685c199-1e59-4a7d-af41-6737eb5a8c1b
 InstanceOf: ingredient

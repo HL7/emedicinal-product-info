@@ -1,9 +1,3 @@
-Profile: VPIOrganization
-Parent: Organization
-Id: ef262d35-9d2a-4d58-851a-2227a1f028d9
-Title: "VPI Organization"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance example of the MAH
 Instance: ef262d35-9d2a-4d58-851a-2227a1f028d9
 InstanceOf: organization

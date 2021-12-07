@@ -1,9 +1,3 @@
-Profile: VPIOrganization
-Parent: Organization
-Id: b6b3425b-2133-4f66-a7b6-d81ee0e14529
-Title: "VPI Organization"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of organization #3 health authority
 Instance: b6b3425b-2133-4f66-a7b6-d81ee0e14529
 InstanceOf: organization

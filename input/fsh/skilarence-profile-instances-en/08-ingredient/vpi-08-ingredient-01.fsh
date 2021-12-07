@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: 15f5287a-30eb-4128-a0bd-4bf2938eb57a
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 1 - active 30mg
 Instance: 15f5287a-30eb-4128-a0bd-4bf2938eb57a
 InstanceOf: ingredient

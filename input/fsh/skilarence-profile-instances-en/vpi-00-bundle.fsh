@@ -1,10 +1,3 @@
-Profile: VPIBundle
-Parent: Bundle
-Id: 5526bcb3-9b7f-4bc1-a9e7-65302382d6f4
-Title: "VPI Bundle"
-Description: "Vulcan medicinal product information profile and instance examples"
-
-
 // == Instance of Bundle ==
 Instance: 5526bcb3-9b7f-4bc1-a9e7-65302382d6f4
 InstanceOf: Bundle

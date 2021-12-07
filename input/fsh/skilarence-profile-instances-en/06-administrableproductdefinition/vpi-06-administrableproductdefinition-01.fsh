@@ -1,9 +1,3 @@
-Profile: VPIAdministrableProduct
-Parent: AdministrableProductDefinition
-Id: 1969dd8c-91ec-497b-a8f8-808346cc22d0
-Title: "VPI Administrable Product"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Administrable Product Definition 1 - 30 mg
 Instance: 1969dd8c-91ec-497b-a8f8-808346cc22d0
 InstanceOf: AdministrableProductDefinition

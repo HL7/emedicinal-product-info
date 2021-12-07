@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: 6dfa75f1-8cb4-4ff0-b4a5-ffcf13b5cebe
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 3 - Lactose monohydrate 
 Instance: 6dfa75f1-8cb4-4ff0-b4a5-ffcf13b5cebe
 InstanceOf: ingredient

@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: 8b48299a-4cc1-4178-8b9b-7d1d3fa902f7
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 8 -  Methacrylic acid-ethyl acrylate copolymer (1:1) 
 Instance: 8b48299a-4cc1-4178-8b9b-7d1d3fa902f7
 InstanceOf: ingredient

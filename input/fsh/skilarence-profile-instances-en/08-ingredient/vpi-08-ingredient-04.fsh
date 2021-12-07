@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: 1969dd8c-91ec-497b-a8f8-808346cc22d0
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 4 - Cellulose microcrystalline  
 Instance: 1969dd8c-91ec-497b-a8f8-808346cc22d0
 InstanceOf: ingredient

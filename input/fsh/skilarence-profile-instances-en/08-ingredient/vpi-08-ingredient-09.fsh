@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: 331f6234-4bac-40b3-93dd-c98aa1dd3e03
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 9 -  Talc
 Instance: 331f6234-4bac-40b3-93dd-c98aa1dd3e03
 InstanceOf: ingredient

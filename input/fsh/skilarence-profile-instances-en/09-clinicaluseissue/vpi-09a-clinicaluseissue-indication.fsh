@@ -1,9 +1,3 @@
-Profile: VPIClinicaluseissue
-Parent: Clinical Use Issue
-Id: 369b031a-8c6e-4513-a327-8a2cb5f32993
-Title: "VPI Clinical Use Issue"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Clinical Use definition - Indication
 Instance: 369b031a-8c6e-4513-a327-8a2cb5f32993
 InstanceOf: clinicalusedefinition

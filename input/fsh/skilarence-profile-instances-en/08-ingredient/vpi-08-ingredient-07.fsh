@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: 3ec0406d-217d-4cff-a05d-ed0d817542ed
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 7 -  Magnesium stearate 
 Instance: 3ec0406d-217d-4cff-a05d-ed0d817542ed
 InstanceOf: ingredient

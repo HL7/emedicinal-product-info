@@ -1,9 +1,3 @@
-Profile: VPIComposition
-Parent: Composition
-Id: 15f5287a-30eb-4128-a0bd-4bf2938eb57a
-Title: "VPI Composition"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Composition
 Instance: 4d0991e2-0b99-412b-afa9-f5974d3ab2b8
 InstanceOf: Composition

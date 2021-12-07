@@ -1,9 +1,3 @@
-Profile: VPIOrganization
-Parent: Organization
-Id: 659ba6da-05fc-4335-beb9-a5f3aecec817
-Title: "VPI Organization"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of organization #2 Manufacturer
 Instance: 659ba6da-05fc-4335-beb9-a5f3aecec817
 InstanceOf: organization

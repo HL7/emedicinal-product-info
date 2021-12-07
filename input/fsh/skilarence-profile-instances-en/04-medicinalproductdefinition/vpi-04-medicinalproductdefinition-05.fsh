@@ -1,9 +1,3 @@
-Profile: VPIMedicinalProductDefinition
-Parent: Medicinal Product Definition
-Id: 9b5512d5-970b-4978-8f8d-bcd74d5006f2
-Title: "VPI Medicinal Product Definition"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Medicinal Product Definition 5 - 120 mg - 70 gastro-resistant tablets in PVC/PVDC-aluminium blister packs
 Instance: 9b5512d5-970b-4978-8f8d-bcd74d5006f2
 InstanceOf: medicinalproductdefinition

@@ -1,10 +1,3 @@
-Profile: VPIManufacturedItem
-Parent: ManufacturedItemDefinition
-Id: 7cb035bd-145e-4305-8cea-4e7ab0e515f9
-Title: "VPI Manufactured Item"
-Description: "Vulcan medicinal product information profile and instance examples"
-
-
 // Instance of Manufactured Item Definition - 30 mg tablet
 Instance: 7cb035bd-145e-4305-8cea-4e7ab0e515f9
 InstanceOf: ManufacturedItemDefinition

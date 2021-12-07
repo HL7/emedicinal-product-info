@@ -1,9 +1,3 @@
-Profile: VPIIngredient
-Parent: Ingredient
-Id: b4568b7e-675f-4824-8b77-996aeb0b05b4
-Title: "VPI Ingredient"
-Description: "Vulcan medicinal product information profile and instance examples"
-
 // Instance of Ingredient 13 -  Indigo carmine (E132) 
 Instance: b4568b7e-675f-4824-8b77-996aeb0b05b4
 InstanceOf: ingredient

@@ -1,10 +1,3 @@
-Profile: VPIPackagedproductdefinition
-Parent: PackagedProductDefinition
-Id: 15f5287a-30eb-4128-a0bd-4bf2938eb57a
-Title: "VPI Packaged Product Definition"
-Description: "Vulcan medicinal product information profile and instance examples"
-
-
 // Instance of Packaged Product Definition 1 Skilarence 30 mg - 42 gastro-resistant tablets in PVC/PVDC-aluminium blister packs
 Instance: bb2403cc-bb0b-4b1f-b56b-1174d11f6dce
 InstanceOf: PackagedProductDefinition
