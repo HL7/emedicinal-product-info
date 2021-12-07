@@ -1,7 +1,7 @@
 // Instance of Composition
 Instance: d21ae9a3-dcdb-4a47-9644-fddbd44849a0
 InstanceOf: Composition
-Usage:#example
+Usage: #example
 * id = "4d0991e2-0b99-412b-afa9-f5974d3ab2b8"
 * identifier = "EMEA/H/C/002157 - IAIN/0028/G"
 * status = #final
