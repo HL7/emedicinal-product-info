@@ -1,17 +1,14 @@
-// Instance example of the MAH
 Instance: cfsb1639003145277
 InstanceOf: Organization
 Description: "MAH"
 Usage: #example
  
- 
-* identifier.system = "https://spor.ema.europa.eu/rmswi/#/" //Organization role type
-* identifier.value = "Marketing authorisation holder" 
+* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.value = "ORG-100011518"
 * identifier.use = #official
 * active = true
-
 * type = https://spor.ema.europa.eu/rmswi/#/#bus
-* type.text = "Non-Healthcare Business or Corporation"
+* type.text = "Marketing authorisation holder"
 * name = "Almirall S.A."
 * telecom.system = #phone
 * telecom.value = "+34 93 291 30 00"
@@ -21,4 +18,4 @@ Usage: #example
 * address.type = #physical
 * address.line = "Ronda General Mitre 151"
 * address.city = "Barcelona"
-* address.country = "es" //$iso:3166-2 for pain
+* address.country = "es"

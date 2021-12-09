@@ -1,19 +1,18 @@
-// Instance of organization #3 health authority
-Instance: b6b3425b-2133-4f66-a7b6-d81ee0e14529
-InstanceOf: organization
+Instance: cfsb1639015880655
+InstanceOf: Organization
+Description: "EMA"
 Usage: #example
-* id = "b6b3425b-2133-4f66-a7b6-d81ee0e14529"
-* identifier = "ORG-99999999"
-* status = #active
-* type = #bus
+
+* identifier.system = "https://spor.ema.europa.eu/omswi/#/"
+* identifier.value = "ORG-100099999"
+* identifier.use = #official
+* active = true
+* type = https://spor.ema.europa.eu/rmswi/#/#220000000033
+* type.text = "Medicines Regulatory Authority"
 * name = "European Medicines Agency"
-* address.type.system = "https://spor.ema.europa.eu/rmswi/#/lists/"
-* address.type.code = #220000000032 "Medicines Regulatory Authority"
-* address.text = "Domenico Scarlattilaan 6
-1083 HS Amsterdam
-The Netherlands"
-* address.line = "Domenico Scarlattilaan 6, 1083 HS"
+* address.text = "Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands"
+* address.use = #work
+* address.type = #physical
+* address.line = "Carretera De Martorell 41 61, Poligono Industrial Nord-Est"
 * address.city = "Amsterdam"
-* address.state = "North Holland"
-* address.postalcode = "1083"
 * address.country = "nl"

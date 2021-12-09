@@ -1,29 +1,26 @@
-// Instance of Composition
-Instance: 4d0991e2-0b99-412b-afa9-f5974d3ab2b8
+Instance: cfsb1639004037108
 InstanceOf: Composition
+Description: "Package Leaflet 30 mg"
 Usage: #example
-* id = "4d0991e2-0b99-412b-afa9-f5974d3ab2b8"
-* identifier = "EMEA/H/C/002157 - IAIN/0028/G"
+ 
 * status = #final
-* type = $spor.ema.europa.eu:100000155531#100000155538 "Package Leaflet" //SPOR product information type
-* date = "2020-01-01T15:22:00+02:00" // date of revision on the composition
-* author = Reference(urn:uuid:ef262d35-9d2a-4d58-851a-2227a1f028d9) //x-ref to MAH org#1
+* type = https://spor.ema.europa.eu/#100000155538
+* type.text = "Package Leaflet"
+* date = "2015-02-07T13:28:17Z"
+
+ // Reference to Organization: MAH
+* author = Reference(cfsb1639003145277)
 * title = "TEST PURPOSES ONLY - skilarence Vulcan ePI"
 * confidentiality = #unrestricted
+* language = #en
 
-* language = #en //ISO iso:3166-2 for English
 
 * section.title = "B. Package Leaflet"
-* section.code = $spor.ema.europa.eu:100000155531#100000155538 "B. PACKAGE LEAFLET" //ACTION - fill in later from EMA spreadsheet
-* section.text.narrative.status = #generated
-* section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\""
-
-* section.section.title = "Package leaflet: Information for the patient"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-        <p style="text-align:center"><b>Skilarence 30 mg gastro-resistant tablets</b></p>
-        <p style="text-align:center">dimethyl fumarate</p>
+* section.code = https://spor.ema.europa.eu/#100000155538
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>        
+<p><b>Skilarence 30 mg gastro-resistant tablets</b></p>
+        <p>dimethyl fumarate</p>
         <p><b>Read all of this leaflet carefully before you start taking this medicine because it
                 contains important information for you.</b></p>
         <ul>
@@ -33,13 +30,13 @@ Usage: #example
                 harm them, even if their signs of illness are the same as yours.</li>
             <li>If you get any side effects, talk to your doctor or pharmacist. This includes any
                 possible side effects not listed in this leaflet. See section 4.</li>
-        </ul>
-</div>"
+        </ul>"
+* section.text.status = #additional
 
-* section.section.title = "What is in this leaflet"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"
+* section.title = "What is in this leaflet"
+* section.code = https://spor.ema.europa.eu/#100000155538-0
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
         <ol>
             <li>What Skilarence is and what it is used for</li>
             <li>What you need to know before you take Skilarence</li>
@@ -47,14 +44,14 @@ Usage: #example
             <li>Possible side effects</li>
             <li>How to store Skilarence</li>
             <li>Contents of the pack and other information</li>
-        </ol>
-</div>"
+        </ol>"
+* section.text.status = #additional
 
-* section.section.title = "1. What Skilarence is and what it is used for"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"
-        <p><b>What Skilarence is</b></p>
+* section.title = "1. What Skilarence is and what it is used for"
+* section.code = https://spor.ema.europa.eu/#100000155538-1
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+<p><b>What Skilarence is</b></p>
         <p>Skilarence is a medicine that contains the active substance dimethyl fumarate. Dimethyl
             fumarate works on cells of the immune system (the body's natural defences). It changes
             the activity of the immune system and reduces the production of substances involved in
@@ -65,14 +62,15 @@ Usage: #example
             by silvery scales.</p>
         <p>Response to Skilarence can be generally seen as early as week 3 and improves over time.
             Experience with related products containing dimethyl fumarate shows treatment benefit
-            for at least up to 24 months.</p>
-</div>"
+            for at least up to 24 months.</p>"
+* section.text.status = #additional
 
-* section.section.title = "2. What you need to know before you take Skilarence"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"
-        <p><b>Do not take Skilarence</b></p>
+
+* section.title = "2. What you need to know before you take Skilarence"
+* section.code = https://spor.ema.europa.eu/#100000155538-2
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+<p><b>Do not take Skilarence</b></p>
         <ul>
             <li>if you are allergic to dimethyl fumarate or any of the other ingredients of this
                 medicine (listed in section 6)</li>
@@ -224,117 +222,20 @@ Usage: #example
         
         <p>Skilarence contains sodium</p>
         <p>This medicine contains less than 1 mmol sodium (23 mg) per tablet, that is to say
-            essentially ‘sodium- free’.</p>
-</div>"
+            essentially ‘sodium- free’.</p>"
+* section.text.status = #additional
 
-* section.section.title = "3. How to take Skilarence"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"
-        <p>Always take this medicine exactly as your doctor or pharmacist has told you. Check with
+* section.title = "3. How to take Skilarence"
+* section.code = https://spor.ema.europa.eu/#100000155538-3
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+<p>Always take this medicine exactly as your doctor or pharmacist has told you. Check with
             your doctor or pharmacist if you are not sure.</p>
         <p><b>Dose</b></p>
         <p>Your doctor will start your treatment with a low dose (using 30 mg Skilarence tablets).
             This helps to reduce stomach problems and other side effects. Your dose will be
             increased every week as shown in the table below (switching to 120 mg Skilarence tablets
             from week 4 onwards).</p>
-        <table style="text-align:center" border="1">
-            <tbody>
-                <tr>
-                    <td rowspan="2">Treatment week</td>
-                    <td rowspan="2">Tablet strength</td>
-                    <td colspan="3">How many tablets to take during the day</td>
-                    <td rowspan="2">Number of tablets per day</td>
-                    <td rowspan="2">Total daily dose</td>
-                </tr>
-                <tr>
-                    <td>Breakfast</td>
-                    <td>Lunch</td>
-                    <td>Evening meal</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>30 mg</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>30 mg</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>30 mg</td>
-                    <td>1</td>
-                    <td>-</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>60 mg</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>30 mg</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>90 mg</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>120 mg</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>120 mg</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>120 mg</td>
-                    <td>1</td>
-                    <td>-</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>240 mg</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>120 mg</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>360 mg</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>120 mg</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>480 mg</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>120 mg</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>600 mg</td>
-                </tr>
-                <tr>
-                    <td>9+</td>
-                    <td>120 mg</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>720 mg</td>
-                </tr>
-            </tbody>
-        </table>
         <p>Your doctor will check how well your condition is improving after you start taking
             Skilarence and will check for side effects. If you have severe side effects after an
             increase in dose, your doctor may recommend that you temporarily go back to the last
@@ -355,14 +256,14 @@ Usage: #example
             exactly as agreed with your doctor. Please ask your doctor or pharmacist if you are not
             sure.</p>
         <p>If you have any further questions on the use of this medicine, ask your doctor or
-            pharmacist.</p>
-</div>"
+            pharmacist.</p>"
+* section.text.status = #additional
 
-* section.section.title = "4. Possible side effects"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"
-        <p>Like all medicines, this medicine can cause side effects, although not everybody gets
+* section.title = "4. Possible side effects"
+* section.code = https://spor.ema.europa.eu/#100000155538-4
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+<p>Like all medicines, this medicine can cause side effects, although not everybody gets
             them. Some of these side effects, such as reddening of the face or body (flushing),
             diarrhoea, stomach problems and nausea usually improve as you continue treatment.</p>
         <p>The most serious side effects that may occur with Skilarence are allergic or
@@ -438,27 +339,27 @@ Usage: #example
         <p>If you get any side effects, talk to your doctor or pharmacist. This includes any
             possible side effects not listed in this leaflet. You can also report side effects
             directly via the national reporting system listed in Appendix V. By reporting side
-            effects you can help provide more information on the safety of this medicine.</p>
-</div>"
+            effects you can help provide more information on the safety of this medicine.</p>"
+* section.text.status = #additional
 
-* section.section.title = "5. How to store Skilarence"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"
-        <p>Keep this medicine out of the sight and reach of children.</p>
+* section.title = "5. How to store Skilarence"
+* section.code = https://spor.ema.europa.eu/#100000155538-5
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+<p>Keep this medicine out of the sight and reach of children.</p>
         <p>Do not use this medicine after the expiry date which is stated on the carton and the
             blister after “EXP”. The expiry date refers to the last day of that month.</p>
         <p>This medicine does not require any special storage conditions.</p>
         <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist
             how to throw away medicines you no longer use. These measures will help protect the
-            environment.</p>
-</div>"
+            environment.</p>"
+* section.text.status = #additional
 
-* section.section.title = "6. Contents of the pack and other information"
-* section.section.code = $spor.ema.europa.eu# "" //ACTION - fill in later from EMA spreadsheet
-* section.section.text.narrative.status = #generated
-* section.section.text.narrative.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"
-        <p><b>What Skilarence 30 mg contains</b></p>
+* section.title = "6. Contents of the pack and other information"
+* section.code = https://spor.ema.europa.eu/#100000155538-6
+* section.code.text = "B. PACKAGE LEAFLET"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+<p><b>What Skilarence 30 mg contains</b></p>
         <ul>
             <li>the active substance is dimethyl fumarate. One tablet contains 30 mg dimethyl
                 fumarate.</li>
@@ -514,5 +415,6 @@ Usage: #example
         <p> This leaflet was last revised in . </p>
         <p><b> Other sources of information </b></p>
         <p> Detailed information on this medicine is available on the European Medicines Agency web
-            site: http://www.ema.europa.eu. </p>
-</div>"
+            site: http://www.ema.europa.eu. </p>"
+* section.text.status = #additional
+
