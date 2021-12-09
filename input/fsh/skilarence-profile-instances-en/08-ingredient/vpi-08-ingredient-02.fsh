@@ -1,14 +1,16 @@
-// Instance of Ingredient 2 - active 120mg
-Instance: 15f5287a-30eb-4128-a0bd-4bf2938eb57a
-InstanceOf: ingredient
+Instance: cfsb1639018789432
+InstanceOf: Ingredient
+Description: "dimethyl fumarate 120 mg"
 Usage: #example
-* id = "15f5287a-30eb-4128-a0bd-4bf2938eb57a"
-* identifier = "FO2303MNI2" //G-SRS UNII 
-* role = $spor.ema.europa.eu#00000072072 "active"
+ 
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = "FO2303MNI2"
+* identifier.use = #official
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
 * description = "dimethyl fumarate"
-* allergenicindicator = "false"
-* substance.strength.presentationratio.numerator.quantity.value = "120"
-* substance.strength.presentationratio.numerator.quantity.unit = "milligram"
-* substance.strength.presentationratio.numerator.quantity.system = "http://unitsofmeasure.org"
-* substance.strength.presentationratio.numerator.quantity.code = "mg"
-* substance.strength.presentationratio.denominator.quantity.value = "1"
+* allergenicIndicator = false
+ // Reference to Organization: Manufacturer
+* manufacturer = Reference(cfsb1639015344307)
