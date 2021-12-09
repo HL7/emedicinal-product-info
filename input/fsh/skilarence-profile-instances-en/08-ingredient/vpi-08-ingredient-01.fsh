@@ -11,6 +11,6 @@ Usage: #example
 * role.text = "active"
 
 * description = "dimethyl fumarate"
-* allergenicIndicator = true
+* allergenicIndicator = false
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)
