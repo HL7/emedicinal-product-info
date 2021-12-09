@@ -1,6 +1,6 @@
 Instance: cfsb1639015963928
 InstanceOf: Ingredient
-Description: "dimethyl fumarate"
+Description: "dimethyl fumarate 30 mg"
 Usage: #example
  
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"

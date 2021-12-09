@@ -1,10 +1,14 @@
-// Instance of Ingredient 5 - Croscarmellose sodium 
-Instance: 6ba108fe-dae1-4997-80c2-4c63c7362b32
-InstanceOf: ingredient
+Instance: cfsb1639019219159
+InstanceOf: Ingredient
+Description: "Croscarmellose sodium"
 Usage: #example
-* id = "6ba108fe-dae1-4997-80c2-4c63c7362b32"
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
-* identifier.value = "M28OL1HH48" //G-SRS UNII 
-* role = $spor.ema.europa.eu#100000072082 "excipient"
+
+ * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
+* identifier.value = "M28OL1HH48"
+* identifier.use = #official
+* role = https://spor.ema.europa.eu/rmswi/#/#100000072082
+* role.text = "excipient"
 * description = "Croscarmellose sodium"
-* allergenicindicator = "false"
+* allergenicIndicator = false
+ // Reference to Organization: Manufacturer
+* manufacturer = Reference(cfsb1639015344307)
