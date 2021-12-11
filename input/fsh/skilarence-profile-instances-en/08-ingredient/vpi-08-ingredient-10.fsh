@@ -1,10 +1,16 @@
-// Instance of Ingredient 10 - Triethyl citrate	
-Instance: fc06daeb-500a-4c9d-a16e-8db36a8ab32f
-InstanceOf: ingredient
+Instance: cfsb1639188961481
+InstanceOf: Ingredient
+Description: "Triethyl citrate"
 Usage: #example
-* id = "fc06daeb-500a-4c9d-a16e-8db36a8ab32f"
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
-* identifier.value = "8Z96QXD6UM" //G-SRS UNII 
-* role = $spor.ema.europa.eu#100000072082 "excipient"
+
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = "8Z96QXD6UM"
+* identifier.use = #official
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
 * description = "Triethyl citrate"
-* allergenicindicator = "false"
+* allergenicIndicator = false
+// Reference to Organization: Manufacturer
+* manufacturer = Reference(cfsb1639015344307)

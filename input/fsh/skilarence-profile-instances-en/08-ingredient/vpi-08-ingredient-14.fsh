@@ -1,10 +1,16 @@
-// Instance of Ingredient 14 - Sodium hydroxide
-Instance: a6757f15-1d58-4361-a0f1-d28a63b3b0fc
-InstanceOf: ingredient
+Instance: cfsb1639189015872
+InstanceOf: Ingredient
+Description: "Sodium hydroxide"
 Usage: #example
-* id = "a6757f15-1d58-4361-a0f1-d28a63b3b0fc"
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
-* identifier.value = "55X04QC32I" //G-SRS UNII 
-* role = $spor.ema.europa.eu#100000072082 "excipient"
+
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = "55X04QC32I"
+* identifier.use = #official
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
 * description = "Sodium hydroxide"
-* allergenicindicator = "false"
+* allergenicIndicator = false
+// Reference to Organization: Manufacturer
+* manufacturer = Reference(cfsb1639015344307)

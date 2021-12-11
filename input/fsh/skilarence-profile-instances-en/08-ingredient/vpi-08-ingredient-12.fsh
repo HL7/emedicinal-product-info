@@ -1,10 +1,16 @@
-// Instance of Ingredient 12 - Simethicone 
-Instance: cfd7b82f-7a6c-4e3b-ae59-deeb69570402
-InstanceOf: ingredient
+Instance: cfsb1639188991744
+InstanceOf: Ingredient
+Description: "Simethicone"
 Usage: #example
-* id = "cfd7b82f-7a6c-4e3b-ae59-deeb69570402"
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
-* identifier.value = "83D19O7250" //G-SRS UNII 
-* role = $spor.ema.europa.eu#100000072082 "excipient"
+
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = "83D19O7250"
+* identifier.use = #official
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
 * description = "Simethicone"
-* allergenicindicator = "false"
+* allergenicIndicator = false
+// Reference to Organization: Manufacturer
+* manufacturer = Reference(cfsb1639015344307)

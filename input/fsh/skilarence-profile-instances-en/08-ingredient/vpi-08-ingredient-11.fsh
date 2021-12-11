@@ -1,10 +1,16 @@
-// Instance of Ingredient 11 -  Titanium dioxide (E171) 
-Instance: 8cac85ae-061b-489c-a707-e23fc94981ba
-InstanceOf: ingredient
+Instance: cfsb1639188982012
+InstanceOf: Ingredient
+Description: "Titanium dioxide (E171)"
 Usage: #example
-* id = "8cac85ae-061b-489c-a707-e23fc94981ba"
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
-* identifier.value = "15FIX9V2JP" //G-SRS UNII 
-* role = $spor.ema.europa.eu#100000072082 "excipient"
+
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = "15FIX9V2JP"
+* identifier.use = #official
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
 * description = "Titanium dioxide (E171)"
-* allergenicindicator = "false"
+* allergenicIndicator = false
+// Reference to Organization: Manufacturer
+* manufacturer = Reference(cfsb1639015344307)

@@ -14,3 +14,14 @@ Usage: #example
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)
+
+
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = ""
+* identifier.use = #official
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
+* description = ""
+* allergenicIndicator = false

@@ -1,10 +1,16 @@
-// Instance of Ingredient 8 -  Methacrylic acid-ethyl acrylate copolymer (1:1) 
-Instance: 8b48299a-4cc1-4178-8b9b-7d1d3fa902f7
-InstanceOf: ingredient
+Instance: cfsb1639188931320
+InstanceOf: Ingredient
+Description: "Methacrylic acid-ethyl acrylate copolymer (1:1)"
 Usage: #example
-* id = "8b48299a-4cc1-4178-8b9b-7d1d3fa902f7"
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
-* identifier.value = "NX76LV5T8J" //G-SRS UNII 
-* role = $spor.ema.europa.eu#100000072082 "excipient"
+
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = "NX76LV5T8J"
+* identifier.use = #official
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
 * description = "Methacrylic acid-ethyl acrylate copolymer (1:1)"
-* allergenicindicator = "false"
+* allergenicIndicator = false
+// Reference to Organization: Manufacturer
+* manufacturer = Reference(cfsb1639015344307)

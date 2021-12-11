@@ -1,6 +1,6 @@
 Instance: cfsb1639003145277
 InstanceOf: Organization
-Description: "MAH"
+Description: "Market Authorization Holder"
 Usage: #example
  
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
