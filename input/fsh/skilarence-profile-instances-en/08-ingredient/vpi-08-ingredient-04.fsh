@@ -1,14 +1,17 @@
-Instance: cfsb1639018040123
+Instance: cfsb1639188857297
 InstanceOf: Ingredient
-Description: "Cellulose microcrystalline"
+Description: "Lactose monohydrate"
 Usage: #example
- 
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/home"
+
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "OP1R32D61U"
 * identifier.use = #official
-* role = https://spor.ema.europa.eu/rmswi/#/#100000072082
-* role.text = "excipient"
+
+* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role.text = "active"
+
 * description = "Lactose monohydrate"
 * allergenicIndicator = false
- // Reference to Organization: Manufacturer
+
+// Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)
