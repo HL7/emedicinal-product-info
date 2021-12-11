@@ -1,45 +1,81 @@
-//Instance of Medicinal Product Definition 1 - 30 mg - 42 gastro-resistant tablets in PVC/PVDC-aluminium blister packs
-Instance: 9cda1cb4-c543-40ef-849b-3b802b5e6f9e
-InstanceOf: medicinalproductdefinition
+Instance: cfsb1639230499322
+InstanceOf: MedicinalProductDefinition
+Description: "EU/1/17/1201/001 30 mg, 42 blister"
 Usage: #example
-* id = "9cda1cb4-c543-40ef-849b-3b802b5e6f9e"
-* identifier = "EU/1/17/1201/001"
-* type = $spor.ema.europa.eu#100000072062 "Marketing Authorisation" //https://spor.ema.europa.eu/rmswi/#/searchback/lists/100000072055/terms Scope
-* domain = $spor.ema.europa.eu#100000000012 "Human use" //https://spor.ema.europa.eu/rmswi/#/searchback/lists/100000000004/terms
+
+* identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
+* identifier.value = "EU/1/17/1201/001"
+* identifier.use = #official
+
+* type = https://spor.ema.europa.eu/rmswi/#/#100000072062
+* type.text = "Marketing Authorisation"
+
+* domain = https://spor.ema.europa.eu/rmswi/#/#100000000012
+* domain.text = "Human use"
+
 * version = "1"
-* status = $hl7.org/fhir/publication-status#active "Active"
-* statusdate = "2021-05-17T08:38:00+02:00"
+
+* status = http://hl7.org/fhir/publication-status#active "Active"
+
+* statusDate = "2015-02-07T13:28:17Z"
+
 * description = "Skilarence 30 mg; Each gastro-resistant tablet contains 30 mg dimethyl fumarate"
-* route = $spor.ema.europa.eu:100000073345#100000073619 "oral use" //https://spor.ema.europa.eu/rmswi/#/lists/100000073345/terms route and method of administration
+
 * indication = "for the treatment of moderate to severe plaque psoriasis"
-* legalstatusofsupply = $spor.ema.europa.eu#100000072084 "Medicinal product subject to medical prescription" //https://spor.ema.europa.eu/rmswi/#/lists/100000072051/terms
-* additionalmonitoringindicator = $ # "" //ACTION find right terminology
-* specialmeasures = $ # "" //ACTION find right terminology
-* paediatricuseindicator = $ # "" //ACTION find right terminology
-* classification = $whocc.no#L04AX07 "Other immunosuppressants" //WHO ATC
-* classification = $spor.ema.europa.eu:100000000006#100000116590 "Plaque psoriasis" //SPOR MedDRA
 
-* marketingstatus.country = $iso:3166-2#eu "european union"
-* marketingstatus.jurisdiction = $iso:3166-2#eu "european union"
-* marketingstatus.status = $spor.ema.europa.eu#100000072083 "Marketed" //https://spor.ema.europa.eu/rmswi/#/lists/100000072052/terms Marketing Status
-* marketingstatus.daterange.period.start = "2021-05-17T08:38:00+02:00"
-* marketingstatus.daterange.period.end = ""
+* legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
+* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
 
-* name.productname = "Skilarence (dimethyl fumarate) 30 mg gastro-resistant tablet"
-* name.type = $spor.ema.europa.eu:220000000000#220000000001 "Full name"
-* name.namepart.part = "Skilarence"
-* name.namepart.type = $spor.ema.europa.eu:220000000000#220000000002 "Invented name part" //SPOR Medicinal Product Name Part Type
-* name.namepart.part = "Dimethyl fumarate"
-* name.namepart.type = $spor.ema.europa.eu:220000000000# "Scientific name part"
-* name.namepart.part = "30 mg"
-* name.namepart.type = $spor.ema.europa.eu:220000000000#220000000004 "Strength part"
-* name.namepart.part = "gastro-resistant tablet"
-* name.namepart.type = $spor.ema.europa.eu:220000000000#220000000005 "Pharmaceutical dose form part"
-* name.countrylanguage.country = $iso:3166-2#gb "united kingdom"
-* name.countrylanguage.language = $iso:639-2#en "english"
-* name.countrylanguage.country = $iso:3166-2#no "norway"
-* name.countrylanguage.language = $iso:639-2#no "norwegian"
+* classification = https://www.whocc.no/atc_ddd_index/#L04AX07
+* classification.text = "Other immunosuppressants"
+* classification[1] = https://spor.ema.europa.eu/rmswi/#/#100000116590
+* classification[1].text = "Plaque psoriasis"
 
-* crossreference.product = Reference(urn:uuid:7cb035bd-145e-4305-8cea-4e7ab0e515f9) "30 mg tablet" //ManufacturedItemDefinition
-* crossreference.product = Reference(urn:uuid:1969dd8c-91ec-497b-a8f8-808346cc22d0) "30 mg tablet" //AdministrableProductDefinition
-* crossreference.product = Reference(urn:uuid:bb2403cc-bb0b-4b1f-b56b-1174d11f6dce) "42 gastro-resistant tablets in PVC/PVDC-aluminium blister packs" //packagedproductdefinition
+
+* name.productName = "Skilarence (dimethyl fumarate) 30 mg gastro-resistant tablet"
+
+* name.type = https://spor.ema.europa.eu/rmswi/#/#220000000001
+
+* name.type.text = "Full name"
+
+* name.countryLanguage.country = urn:iso:std:iso:3166#eu
+
+* name.countryLanguage.country.text = "European Union"
+
+* name.countryLanguage.jurisdiction = urn:iso:std:iso:3166#eu
+
+* name.countryLanguage.jurisdiction.text = "European Union"
+
+* name.countryLanguage.language = urn:ietf:bcp:47#en
+
+* name.countryLanguage.language.text = "English"
+
+* name.namePart.part = "Skilarence"
+
+* name.namePart.type = https://spor.ema.europa.eu/rmswi/#/#220000000002
+
+* name.namePart.type.text = "Invented name part"
+
+* name.namePart.part = "Dimethyl fumarate"
+
+* name.namePart.type = https://spor.ema.europa.eu/rmswi/#/#220000000003
+
+* name.namePart.type.text = "Scientific name part"
+
+* name.namePart.part = "30 mg"
+
+* name.namePart.type = https://spor.ema.europa.eu/rmswi/#/#220000000004
+
+* name.namePart.type.text = "Strength part"
+
+* name.namePart.part = "gastro-resistant tablet"
+
+* name.namePart.type = https://spor.ema.europa.eu/rmswi/#/#220000000005
+
+* name.namePart.type.text = "Pharmaceutical dose form part"
+
+// Reference to AdministrableProductDefinition: 30 mg tablet
+* administrableProduct.product = Reference(cfsb1639227408981)
+
+// Reference to PackagedProductDefinition: blister x42 - 30 mg
+* package.package = Reference(cfsb1639229333787)
