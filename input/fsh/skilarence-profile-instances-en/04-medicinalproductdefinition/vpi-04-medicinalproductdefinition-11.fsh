@@ -1,4 +1,4 @@
-P// Instance of Medicinal Product Definition 11 - 120 mg - 240 gastro-resistant tablets in PVC/PVDC-aluminium blister packs
+// Instance of Medicinal Product Definition 11 - 120 mg - 240 gastro-resistant tablets in PVC/PVDC-aluminium blister packs
 Instance: d1ec4791-2453-4768-b656-d815bf56aff7
 InstanceOf: medicinalproductdefinition
 Usage: #example
