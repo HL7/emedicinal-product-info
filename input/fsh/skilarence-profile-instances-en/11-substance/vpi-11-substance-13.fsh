@@ -1,13 +1,13 @@
-Instance: cfsb1639349554474
+Instance: cfsb1639349643160
 InstanceOf: SubstanceDefinition
-Description: "Magnesium stearate"
+Description: "Indigo carmine (E132)"
 Usage: #example
- 
+
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "70097M6I30"
+* identifier.value = "D3741U8K7L"
 * identifier.use = #official
 
-* name.name = "Magnesium stearate"
+* name.name = "Indigo carmine (E132)"
 
 * name.type = https://spor.ema.europa.eu/smswi/#/#100000075666
 
