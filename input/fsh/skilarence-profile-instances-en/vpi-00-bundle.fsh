@@ -4,8 +4,8 @@ InstanceOf: Bundle
 Usage: #example
 Title: "Vulcan Skilarence FHIR Package Insert"
 Description: "instance of Skilarence package insert for connectathon testing"
-* extension.versionid = "1"
-* extension.lastupdated = "2021-05-17T08:38:00+02:00" // date of revision of the bundle (document)
+// * extension.versionid = "1"
+//* extension.lastupdated = "2021-05-17T08:38:00+02:00" // date of revision of the bundle (document)
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier.value = "EMEA/H/C/002157"
