@@ -2,6 +2,10 @@ Instance: cfsb1639758328687
 InstanceOf: PackagedProductDefinition
 Description: "Monuril 5 sachets of 8 g of granules (3 g fosfomycin)"
 Usage: #example
+
+* identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
+* identifier.value = "PL 31654/0006-5"
+* identifier.use = #official
  
 * name = "5 sachets of 8 g of granules (3 g fosfomycin)."
 
@@ -31,4 +35,6 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: Medicinal Product
 * subject = Reference(cfsb1639760186202)
+
+* marketingAuthorization = Reference(cfsb1639761980721)
 

@@ -4,7 +4,7 @@ Description: "Medicinal Product"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
-* identifier.value = "PL 31654/0006-5"
+* identifier.value = "PL 31654/0006-2"
 * identifier.use = #official
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
@@ -19,7 +19,7 @@ Usage: #example
 * legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
 
 // Reference to PackagedProductDefinition: Packaged Product
-* package.package = Reference(cfsb1639758328687)
+* package.package = Reference(cfsb1639764389611)
 
 * name.productName = "MONURIL 3 g granules for oral solution"
 * name.type = https://spor.ema.europa.eu/rmswi/#/#220000000001

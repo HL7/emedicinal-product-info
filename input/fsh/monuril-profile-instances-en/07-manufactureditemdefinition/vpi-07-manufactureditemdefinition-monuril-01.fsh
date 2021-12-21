@@ -4,7 +4,7 @@ Description: "Monuril Granules for oral solution"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
-* identifier.value = "EU/1/17/1201/001"
+* identifier.value = "PL 31654/0006"
 * identifier.use = #official
  
 * manufacturedDoseForm = https://spor.ema.europa.eu/rmswi/#100000073365 "Granules for oral solution"

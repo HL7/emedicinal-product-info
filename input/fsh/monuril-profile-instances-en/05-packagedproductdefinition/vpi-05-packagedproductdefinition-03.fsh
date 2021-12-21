@@ -1,20 +1,20 @@
-Instance: cfsb1639764389611
+Instance: cfsb1639764389612
 InstanceOf: PackagedProductDefinition
-Description: "Packaged Product - 2 sachets of 8 g of granules"
+Description: "Packaged Product - 1 sachet of 8 g of granules"
 Usage: #example
  
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
-* identifier.value = "PL 31654/0006-2"
+* identifier.value = "PL 31654/0006-1"
 * identifier.use = #official
  
-* name = "2 sachets of 8 g of granules (3 g fosfomycin)."
+* name = "1 sachet of 8 g of granules (3 g fosfomycin)."
 
 * type = https://spor.ema.europa.eu/rmswi/#100000155527 "Chemical Medicinal Product"
 * type.text = "Chemical Medicinal Product"
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
 
-* containedItemQuantity.value = 2
+* containedItemQuantity.value = 1
 * containedItemQuantity.unit = "Sachet"
 * containedItemQuantity.code = https://spor.ema.europa.eu/rmswi/#200000002143 "Sachet"
 
