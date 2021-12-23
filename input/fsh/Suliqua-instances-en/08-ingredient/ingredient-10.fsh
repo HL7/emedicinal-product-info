@@ -14,7 +14,3 @@ Usage: #example
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
 * manufacturer = Reference()
-
-* substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#059QF0KO0R "Water for injections"
-* substance.strength.presentationQuantity.value =
-* substance.strength.presentationQuantity.unit = ""
