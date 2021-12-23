@@ -74,7 +74,7 @@ Description: "Placeholder for EMA example-sections PL"
 * #23 ^designation[2].use = http://snomed.info/sct#900000000000003001
 * #23 ^designation[2].value = "6. Περιεχόμενα της συσκευασίας και λοιπές πληροφορίες"
 
-CodeSystem: Example-sections-smpc
+CodeSystem: Examplesmpc
 Title: "EMA example-sections-smpc"
 Description: "Placeholder for EMA example-sections smpc"
 
