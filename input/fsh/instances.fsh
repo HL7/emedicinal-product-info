@@ -1,4 +1,4 @@
-CodeSystem: Example-sections-PL
+CodeSystem: Example
 Title: "EMA example-sections-pl"
 Description: "Placeholder for EMA example-sections PL"
 
