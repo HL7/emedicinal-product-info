@@ -3,12 +3,12 @@ InstanceOf: Ingredient
 Description: "fosfomycin trometamol 3g"
 Usage: #example
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#00000072072
 * role.text = "active"
 
-* description = "The active substance is fosfomycin. Each sachet contains 5.631 g of fosfomycin trometamol, equivalent to 3 g of fosfomycin."
-
-* manufacturer = Reference(cfsb1639753766266)
+* manufacturer.manufacturer = Reference(cfsb1639753766266)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#7FXW6U30GY "Fosfomycin Tromethamine"
 * substance.strength.presentationQuantity.value = 5.631

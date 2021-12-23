@@ -3,6 +3,8 @@ InstanceOf: ManufacturedItemDefinition
 Description: "Monuril Granules for oral solution"
 Usage: #example
 
+* status = #active
+
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "PL 31654/0006"
 * identifier.use = #official
@@ -15,8 +17,4 @@ Usage: #example
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639753766266)
-
-* ingredient.reference = Reference(cfsb1639754408039)
-* ingredient[1].reference = Reference(cfsb1639762372321)
-* ingredient[2].reference = Reference(cfsb1639762593730)
 

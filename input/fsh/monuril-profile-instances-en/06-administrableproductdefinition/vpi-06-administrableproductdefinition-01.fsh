@@ -3,8 +3,10 @@ InstanceOf: AdministrableProductDefinition
 Description: "Administrable Product"
 Usage: #example
  
+* status = #active
+
  // Reference to MedicinalProductDefinition: Medicinal Product
-* subject = Reference(cfsb1639760186202)
+* formOf = Reference(cfsb1639760186202)
 
 * administrableDoseForm = https://spor.ema.europa.eu/rmswi/#/#100000116155 "Granules and solvent for oral suspension"
 * administrableDoseForm.text = "Granules and solvent for oral suspension"
