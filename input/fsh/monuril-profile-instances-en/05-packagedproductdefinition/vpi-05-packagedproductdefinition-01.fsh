@@ -34,7 +34,6 @@ Usage: #example
 * package.containedItem.item.reference = Reference(cfsb1639756818482)
 
  // Reference to MedicinalProductDefinition: Medicinal Product
-* subject = Reference(cfsb1639760186202)
+* packageFor = Reference(cfsb1639760186202)
 
-* marketingAuthorization = Reference(cfsb1639761980721)
 
