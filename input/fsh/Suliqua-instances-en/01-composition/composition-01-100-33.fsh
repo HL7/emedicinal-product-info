@@ -708,7 +708,7 @@ Usage: #example
 * section.title = "HYPERGLYKEMI OG HYPOGLYKEMI"
 * section.code = https://spor.ema.europa.eu/#100000155538-2
 * section.code.text = "B. PAKNINGSVEDLEGG"
-* section.text.div = "<div class=\"pil-pasient-info kapittel\">
+* section.text.div = "<div class=\"pil-pasient-info kapittel\" xmlns=\"http://www.w3.org/1999/xhtml\">
             <span class=\"tittel\">
                 <b>HYPERGLYKEMI OG HYPOGLYKEMI</b>
             </span>
@@ -720,7 +720,6 @@ Usage: #example
                         <tbody>
                             <tr>
                                 <td class=\"top left bottom right\">
-                                    <p> 
                                     <div class=\"avsnitt\">
                                         <b>Dersom du bruker insulin skal du alltid ha med
                                           deg følgende:</b>
