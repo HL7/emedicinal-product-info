@@ -7,11 +7,11 @@ Usage: #example
 * identifier.value = "EWQ57Q8I5X"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#100000072082
 * role.text = "excipient"
 
-* description = "Lactose monohydrate"
 * allergenicIndicator = true
-
 // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)

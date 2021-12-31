@@ -7,11 +7,11 @@ Usage: #example
 * identifier.value = "OP1R32D61U"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#100000072082
 * role.text = "excipient"
 
-* description = "Cellulose microcrystalline"
 * allergenicIndicator = false
-
 // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)

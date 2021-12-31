@@ -7,10 +7,11 @@ Usage: #example
 * identifier.value = "M28OL1HH48"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#00000072072
 * role.text = "active"
 
-* description = "Croscarmellose sodium"
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)

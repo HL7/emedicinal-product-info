@@ -7,10 +7,11 @@ Usage: #example
 * identifier.value = "FO2303MNI2"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#00000072072
 * role.text = "active"
 
-* description = "dimethyl fumarate"
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)
@@ -18,3 +19,6 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#FO2303MNI2 "dimethyl fumarate"
 * substance.strength.presentationQuantity.value = 120
 * substance.strength.presentationQuantity.unit = "mg"
+
+* substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity#ACTIB
+* substance.strength.basis.text = "active ingredient - basis of strength"

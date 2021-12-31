@@ -7,10 +7,11 @@ Usage: #example
 * identifier.value = "NX76LV5T8J"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#00000072072
 * role.text = "active"
 
-* description = "Methacrylic acid-ethyl acrylate copolymer (1:1)"
 * allergenicIndicator = false
 // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)

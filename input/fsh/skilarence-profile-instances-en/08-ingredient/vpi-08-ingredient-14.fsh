@@ -7,10 +7,11 @@ Usage: #example
 * identifier.value = "55X04QC32I"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#00000072072
 * role.text = "active"
 
-* description = "Sodium hydroxide"
 * allergenicIndicator = false
 // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)

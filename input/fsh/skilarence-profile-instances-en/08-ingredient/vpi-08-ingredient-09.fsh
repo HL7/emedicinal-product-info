@@ -6,10 +6,11 @@ Usage: #example
 * identifier.value = "7SEV7J4R1U"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#/#00000072072
 * role.text = "active"
 
-* description = "Talc"
 * allergenicIndicator = false
 // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)
