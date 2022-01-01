@@ -7,14 +7,13 @@ Usage: #example
 * identifier.value = "PDC6A3C0OX"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
-* role.text = "active"
+* status = #active
 
-* description = "Glycerol"
+* role = https://spor.ema.europa.eu/rmswi/#/#100000072082
+* role.text = "Excipient"
+
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
-* manufacturer = Reference()
+* manufacturer = Reference(cfsb2176224411725)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#PDC6A3C0OX "Glycerol"
-* substance.strength.presentationQuantity.value = 85
-* substance.strength.presentationQuantity.unit = "%"

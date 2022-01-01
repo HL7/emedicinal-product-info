@@ -7,12 +7,13 @@ Usage: #example
 * identifier.value = "86Q357L16B"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
-* role.text = "active"
+* status = #active
 
-* description = "Zinc chloride"
+* role = https://spor.ema.europa.eu/rmswi/#/#100000072082
+* role.text = "Excipient"
+
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
-* manufacturer = Reference()
+* manufacturer = Reference(cfsb2176224411725)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#86Q357L16B "Zinc chloride"

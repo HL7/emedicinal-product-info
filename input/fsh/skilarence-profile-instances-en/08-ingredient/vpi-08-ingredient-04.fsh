@@ -10,7 +10,7 @@ Usage: #example
 * status = #active
 
 * role = https://spor.ema.europa.eu/rmswi/#/#100000072082
-* role.text = "excipient"
+* role.text = "Excipient"
 
 * allergenicIndicator = false
 // Reference to Organization: Manufacturer
