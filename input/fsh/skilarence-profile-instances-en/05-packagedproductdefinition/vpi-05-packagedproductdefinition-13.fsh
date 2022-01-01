@@ -20,29 +20,19 @@ Usage: #example
 
 * description = "gastro-resistant tablets in PVC/PVDC-aluminium blister packs"
 
-* legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
-
 * copackagedIndicator = false
-
- // Reference to RegulatedAuthorization: EU/1/17/1201/013 70 - 30 mg
-* marketingAuthorization = Reference(cfsb1639231126420)
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)
 
 * package.identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-
 * package.identifier.value = "EU/1/17/1201/013"
-
 * package.identifier.use = #official
 
 * package.type = https://spor.ema.europa.eu/rmswi/#/#100000073496
-
 * package.type.text = "Blister"
 
 * package.quantity = 1
 
 * package.material = https://spor.ema.europa.eu/rmswi/#/#200000003224
-
 * package.material.text = "Non-plasticised PolyVinyl Chloride / Unplasticised PolyVinyl Chloride"
