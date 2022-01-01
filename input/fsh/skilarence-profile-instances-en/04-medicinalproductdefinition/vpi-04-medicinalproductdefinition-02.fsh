@@ -21,6 +21,9 @@ Usage: #example
 
 * description = "Skilarence 120 mg; Each gastro-resistant tablet contains 120 mg dimethyl fumarate"
 
+* route = https://spor.ema.europa.eu/rmswi/#/#100000073619
+* route.text = "Oral use"
+
 * indication = "for the treatment of moderate to severe plaque psoriasis"
 
 * legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
