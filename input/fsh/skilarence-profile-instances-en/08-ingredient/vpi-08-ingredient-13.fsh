@@ -15,3 +15,5 @@ Usage: #example
 * allergenicIndicator = false
 // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)
+
+* substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#D3741U8K7L "Indigo carmine (E132)"
