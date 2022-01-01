@@ -14,6 +14,6 @@ Usage: #example
 
 * allergenicIndicator = true
 // Reference to Organization: Manufacturer
-* manufacturer = Reference(cfsb1639015344307)
+* manufacturer.manufacturer = Reference(cfsb1639015344307)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#EWQ57Q8I5X "Lactose monohydrate"

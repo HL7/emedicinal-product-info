@@ -14,6 +14,6 @@ Usage: #example
 
 * allergenicIndicator = false
 // Reference to Organization: Manufacturer
-* manufacturer = Reference(cfsb1639015344307)
+* manufacturer.manufacturer = Reference(cfsb1639015344307)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#ETJ7Z6XBU4 "Colloidal anhydrous silica"
