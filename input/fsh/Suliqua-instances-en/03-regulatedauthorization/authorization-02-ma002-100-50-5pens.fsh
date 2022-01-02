@@ -7,13 +7,13 @@ Usage: #example
 * identifier.value = "EU/1/16/1157/002"
 * identifier.use = #official
 
- // Reference to MedicinalProductDefinition: TODO
-* subject = Reference(TODO)
+ // Reference to MedicinalProductDefinition
+* subject = Reference(cfsb1151803027115)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
 * type.text = "Marketing Authorisation"
 
-* description = "TODO"
+* description = "Suliqua 100 units/ml + 50 microgram/ml solution for injection in a pre-filled pen"
 
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"
@@ -21,9 +21,9 @@ Usage: #example
 * status = http://hl7.org/fhir/publication-status#active
 * status.text = "Active"
 
-* statusDate = ""
+* statusDate = "2017-01-11T13:28:17Z"
 
-* validityPeriod.start = ""
+* validityPeriod.start = "2017-01-11T13:28:17Z"
 * validityPeriod.end = ""
 
  // Reference to Organization: Market Authorization Holder
