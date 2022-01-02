@@ -14,7 +14,7 @@ Usage: #example
 
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
-* manufacturer = Reference(cfsb2176224411725)
+* manufacturer.manufacturer = Reference(cfsb2176224411725)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#74O62BB01U "Lixisenatide"
 * substance.strength.presentationQuantity.value = 50

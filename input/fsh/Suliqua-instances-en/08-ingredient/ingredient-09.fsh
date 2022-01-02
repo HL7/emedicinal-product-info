@@ -14,6 +14,6 @@ Usage: #example
 
 * allergenicIndicator = false
  // Reference to Organization: Manufacturer
-* manufacturer = Reference(cfsb2176224411725)
+* manufacturer.manufacturer = Reference(cfsb2176224411725)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#55X04QC32I "Sodium hydroxide"
