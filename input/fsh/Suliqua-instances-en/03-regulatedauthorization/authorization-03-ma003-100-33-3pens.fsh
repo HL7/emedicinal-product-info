@@ -24,7 +24,6 @@ Usage: #example
 * statusDate = "2017-01-11T13:28:17Z"
 
 * validityPeriod.start = "2017-01-11T13:28:17Z"
-* validityPeriod.end = ""
 
  // Reference to Organization: Market Authorization Holder
 * holder = Reference(cfsb6005885654359)
