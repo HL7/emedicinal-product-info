@@ -3,7 +3,7 @@ InstanceOf: DocumentReference
 Description: "Suliqua MP4 instruction video"
 Usage: #example
 
-* status = #active
+* status = #current
 * description = "Instruksjonsfilm for bruk av ferdigfylt penn."
 * content.attachment.contentType = #video/mp4
 * content.attachment.language = #no
