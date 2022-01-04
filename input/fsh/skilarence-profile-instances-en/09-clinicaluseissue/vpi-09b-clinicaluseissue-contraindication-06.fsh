@@ -1,5 +1,5 @@
 Instance: cfsb1639241004890
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Contraindication - Breast feeding"
 Usage: #example
 

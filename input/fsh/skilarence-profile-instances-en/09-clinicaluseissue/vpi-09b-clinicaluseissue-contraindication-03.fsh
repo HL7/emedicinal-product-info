@@ -1,5 +1,5 @@
 Instance: cfsb1639240934786
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Contraindication - Hepatic impairment"
 Usage: #example
 

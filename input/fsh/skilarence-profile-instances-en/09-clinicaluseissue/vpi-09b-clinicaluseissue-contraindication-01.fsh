@@ -1,5 +1,5 @@
 Instance: cfsb1639240847910
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Contraindication - Gastrointestinal disorders"
 Usage: #example
 

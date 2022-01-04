@@ -1,5 +1,5 @@
 Instance: cfsb1639240914083
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Contraindication - Hypersensitivity reaction"
 Usage: #example
 

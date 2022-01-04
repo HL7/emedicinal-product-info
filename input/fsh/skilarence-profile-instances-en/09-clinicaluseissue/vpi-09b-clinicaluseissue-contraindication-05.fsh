@@ -1,5 +1,5 @@
 Instance: cfsb1639240978629
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Contraindication - Pregnancy"
 Usage: #example
 

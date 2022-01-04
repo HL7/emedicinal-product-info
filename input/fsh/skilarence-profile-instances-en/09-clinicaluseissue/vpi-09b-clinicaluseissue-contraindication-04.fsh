@@ -1,5 +1,5 @@
 Instance: cfsb1639240956900
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Contraindication - Renal impairment"
 Usage: #example
 

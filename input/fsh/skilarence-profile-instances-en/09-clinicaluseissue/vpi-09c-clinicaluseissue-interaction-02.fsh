@@ -1,5 +1,5 @@
 Instance: cfsb1639241034937
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "interaction - CYCLOSPORINE"
 Usage: #example
 

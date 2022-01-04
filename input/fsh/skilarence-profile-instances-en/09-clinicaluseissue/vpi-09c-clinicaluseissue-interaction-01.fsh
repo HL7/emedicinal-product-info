@@ -1,5 +1,5 @@
 Instance: cfsb1639241023005
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Interaction - METHOTREXATE"
 Usage: #example
 
