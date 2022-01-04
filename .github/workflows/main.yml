@@ -41,7 +41,7 @@ jobs:
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           # Run the publisher - don't run the batch script but run the line directly
-          args: java -jar ./input-cache/publisher.jar publisher -ig .
+          args: export NODE_TLS_REJECT_UNAUTHORIZED=0; java -jar ./input-cache/publisher.jar publisher -ig .
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
