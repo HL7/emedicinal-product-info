@@ -1,5 +1,5 @@
 Instance: cfsb8699684597483
-InstanceOf: ClinicalUseIssue
+InstanceOf: ClinicalUseDefinition
 Description: "Indication"
 Usage: #example
 
