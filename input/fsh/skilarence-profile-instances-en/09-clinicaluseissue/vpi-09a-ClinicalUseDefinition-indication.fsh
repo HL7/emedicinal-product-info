@@ -1,13 +1,13 @@
-Instance: cfsb1639240847910
-InstanceOf: ClinicalUseIssue
-Description: "Contraindication - Gastrointestinal disorders"
+Instance: cfsb1639240824314
+InstanceOf: ClinicalUseDefinition
+Description: "Indication"
 Usage: #example
-
+ 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Gastrointestinal disorders"
+* identifier.value = "Psoriasis"
 * identifier.use = #official
 
-* type = #contraindication
+* type = #indication
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/001 30 mg, 42 blister
 * subject = Reference(cfsb1639230499322)
@@ -50,3 +50,4 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/014 30 mg, 210 blister
 * subject[13] = Reference(cfsb1639230598497)
+

@@ -1,10 +1,10 @@
-Instance: cfsb1639240956900
-InstanceOf: ClinicalUseIssue
-Description: "Contraindication - Renal impairment"
+Instance: cfsb1639240978629
+InstanceOf: ClinicalUseDefinition
+Description: "Contraindication - Pregnancy"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Renal impairment"
+* identifier.value = "Pregnancy"
 * identifier.use = #official
 
 * type = #contraindication

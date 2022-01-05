@@ -1,10 +1,10 @@
-Instance: cfsb1639241004890
-InstanceOf: ClinicalUseIssue
-Description: "Contraindication - Breast feeding"
+Instance: cfsb1639240934786
+InstanceOf: ClinicalUseDefinition
+Description: "Contraindication - Hepatic impairment"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Breast feeding"
+* identifier.value = "Hepatic impairment"
 * identifier.use = #official
 
 * type = #contraindication

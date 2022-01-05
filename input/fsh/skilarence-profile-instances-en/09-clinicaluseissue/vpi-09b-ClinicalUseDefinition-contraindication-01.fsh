@@ -1,10 +1,10 @@
-Instance: cfsb1639240934786
-InstanceOf: ClinicalUseIssue
-Description: "Contraindication - Hepatic impairment"
+Instance: cfsb1639240847910
+InstanceOf: ClinicalUseDefinition
+Description: "Contraindication - Gastrointestinal disorders"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Hepatic impairment"
+* identifier.value = "Gastrointestinal disorders"
 * identifier.use = #official
 
 * type = #contraindication

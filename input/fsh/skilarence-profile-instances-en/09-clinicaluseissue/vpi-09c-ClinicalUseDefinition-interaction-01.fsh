@@ -1,10 +1,10 @@
-Instance: cfsb1639241034937
-InstanceOf: ClinicalUseIssue
-Description: "interaction - CYCLOSPORINE"
+Instance: cfsb1639241023005
+InstanceOf: ClinicalUseDefinition
+Description: "Interaction - METHOTREXATE"
 Usage: #example
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "83HN0GTJ6D"
+* identifier.value = "YL5FZ2Y5U1"
 * identifier.use = #official
 
 * type = #interaction
@@ -51,8 +51,7 @@ Usage: #example
  // Reference to MedicinalProductDefinition: EU/1/17/1201/014 30 mg, 210 blister
 * subject[13] = Reference(cfsb1639230598497)
 
-* interaction.interactant.itemCodeableConcept = https://gsrs.ncats.nih.gov/ginas/app/beta/#83HN0GTJ6D
+* interaction.interactant.itemCodeableConcept = https://gsrs.ncats.nih.gov/ginas/app/beta/#YL5FZ2Y5U1
 
-* interaction.interactant.itemCodeableConcept.text = "CYCLOSPORINE"
-
+* interaction.interactant.itemCodeableConcept.text = "METHOTREXATE"
 

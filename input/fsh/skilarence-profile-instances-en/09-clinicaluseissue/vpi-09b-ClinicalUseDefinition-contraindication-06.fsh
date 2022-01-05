@@ -1,10 +1,10 @@
-Instance: cfsb1639240914083
-InstanceOf: ClinicalUseIssue
-Description: "Contraindication - Hypersensitivity reaction"
+Instance: cfsb1639241004890
+InstanceOf: ClinicalUseDefinition
+Description: "Contraindication - Breast feeding"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Hypersensitivity reaction"
+* identifier.value = "Breast feeding"
 * identifier.use = #official
 
 * type = #contraindication

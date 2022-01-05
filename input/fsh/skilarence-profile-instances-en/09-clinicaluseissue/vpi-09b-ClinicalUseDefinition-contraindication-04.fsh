@@ -1,13 +1,13 @@
-Instance: cfsb1639241023005
-InstanceOf: ClinicalUseIssue
-Description: "Interaction - METHOTREXATE"
+Instance: cfsb1639240956900
+InstanceOf: ClinicalUseDefinition
+Description: "Contraindication - Renal impairment"
 Usage: #example
 
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "YL5FZ2Y5U1"
+* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.value = "Renal impairment"
 * identifier.use = #official
 
-* type = #interaction
+* type = #contraindication
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/001 30 mg, 42 blister
 * subject = Reference(cfsb1639230499322)
@@ -50,8 +50,3 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/014 30 mg, 210 blister
 * subject[13] = Reference(cfsb1639230598497)
-
-* interaction.interactant.itemCodeableConcept = https://gsrs.ncats.nih.gov/ginas/app/beta/#YL5FZ2Y5U1
-
-* interaction.interactant.itemCodeableConcept.text = "METHOTREXATE"
-

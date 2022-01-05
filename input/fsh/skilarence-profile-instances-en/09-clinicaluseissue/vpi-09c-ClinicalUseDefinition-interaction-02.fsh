@@ -1,13 +1,13 @@
-Instance: cfsb1639240978629
-InstanceOf: ClinicalUseIssue
-Description: "Contraindication - Pregnancy"
+Instance: cfsb1639241034937
+InstanceOf: ClinicalUseDefinition
+Description: "interaction - CYCLOSPORINE"
 Usage: #example
 
-* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Pregnancy"
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.value = "83HN0GTJ6D"
 * identifier.use = #official
 
-* type = #contraindication
+* type = #interaction
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/001 30 mg, 42 blister
 * subject = Reference(cfsb1639230499322)
@@ -50,3 +50,9 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/014 30 mg, 210 blister
 * subject[13] = Reference(cfsb1639230598497)
+
+* interaction.interactant.itemCodeableConcept = https://gsrs.ncats.nih.gov/ginas/app/beta/#83HN0GTJ6D
+
+* interaction.interactant.itemCodeableConcept.text = "CYCLOSPORINE"
+
+

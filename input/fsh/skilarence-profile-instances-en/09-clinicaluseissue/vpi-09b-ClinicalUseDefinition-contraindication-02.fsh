@@ -1,13 +1,13 @@
-Instance: cfsb1639240824314
-InstanceOf: ClinicalUseIssue
-Description: "Indication"
+Instance: cfsb1639240914083
+InstanceOf: ClinicalUseDefinition
+Description: "Contraindication - Hypersensitivity reaction"
 Usage: #example
- 
+
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Psoriasis"
+* identifier.value = "Hypersensitivity reaction"
 * identifier.use = #official
 
-* type = #indication
+* type = #contraindication
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/001 30 mg, 42 blister
 * subject = Reference(cfsb1639230499322)
@@ -50,4 +50,3 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/17/1201/014 30 mg, 210 blister
 * subject[13] = Reference(cfsb1639230598497)
-
