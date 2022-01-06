@@ -13,3 +13,6 @@ Description: "instance of Skilarence package insert for connectathon testing"
 * timestamp = "2017-06-23T08:38:00+02:00" // date of first authorization for the bundle (document)
 
 * entry[+].resource = cfsb1639004037108
+
+// Part of the first entry in the composition
+* entry[+].resource = cfsb1639761980721
