@@ -17,25 +17,26 @@ Usage: #example
 * manufacturer = Reference(cfsb1640870328895)
 
 //reference to insulin lispro
-* ingredient = Reference(cfsb1640607635665)
+* ingredient.reference = Reference(cfsb1640607635665)
 
 //reference to Glycerol
-* ingredient[2] = Reference(cfsb1640780048702)
+* ingredient[1].reference = Reference(cfsb1640780048702)
 
 //reference to metacresol
-* ingredient[3] = Reference(cfsb1640780419325)
+* ingredient[2].reference = Reference(cfsb1640780419325)
 
 //reference to Trometamol
-* ingredient[4] = Reference(cfsb1640780546710)
+* ingredient[3].reference = Reference(cfsb1640780546710)
 
 //reference to Zinc Oxide
-* ingredient[5] = Reference(cfsb1640780625902)
+* ingredient[4].reference = Reference(cfsb1640780625902)
 
 //reference to Water for injections
-* ingredient[6] = Reference(cfsb1640780743829)
+* ingredient[5].reference = Reference(cfsb1640780743829)
 
 //reference to Hydrochloric acid
-* ingredient[7] = Reference(cfsb1640780784213)
+* ingredient[6].reference = Reference(cfsb1640780784213)
 
 //reference to Sodium Hydroxide
-* ingredient[8] = Reference(cfsb1640780830373)
+* ingredient[7].reference = Reference(cfsb1640780830373)
+
