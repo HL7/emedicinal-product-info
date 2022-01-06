@@ -11,3 +11,5 @@ Description: "instance of Skilarence package insert for connectathon testing"
 * identifier.value = "EMEA/H/C/002157"
 * type = #document
 * timestamp = "2017-06-23T08:38:00+02:00" // date of first authorization for the bundle (document)
+
+* entry[+].resource = cfsb1639004037108
