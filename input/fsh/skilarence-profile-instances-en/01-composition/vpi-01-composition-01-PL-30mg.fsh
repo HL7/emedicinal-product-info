@@ -15,10 +15,10 @@ Usage: #example
 * language = #en
 
 
-* section.title = "B. Package Leaflet"
-* section.code = https://spor.ema.europa.eu/#100000155538
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>        
+* section[+].title = "B. Package Leaflet"
+* section[=].code = https://spor.ema.europa.eu/#100000155538
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>        
 <p><b>Skilarence 30 mg gastro-resistant tablets</b></p>
         <p>dimethyl fumarate</p>
         <p><b>Read all of this leaflet carefully before you start taking this medicine because it
@@ -31,12 +31,12 @@ Usage: #example
             <li>If you get any side effects, talk to your doctor or pharmacist. This includes any
                 possible side effects not listed in this leaflet. See section 4.</li>
         </ul>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
-* section.title = "What is in this leaflet"
-* section.code = https://spor.ema.europa.eu/#100000155538-0
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+* section[+].title = "What is in this leaflet"
+* section[=].code = https://spor.ema.europa.eu/#100000155538-0
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
         <ol>
             <li>What Skilarence is and what it is used for</li>
             <li>What you need to know before you take Skilarence</li>
@@ -45,12 +45,12 @@ Usage: #example
             <li>How to store Skilarence</li>
             <li>Contents of the pack and other information</li>
         </ol>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
-* section.title = "1. What Skilarence is and what it is used for"
-* section.code = https://spor.ema.europa.eu/#100000155538-1
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+* section[+].title = "1. What Skilarence is and what it is used for"
+* section[=].code = https://spor.ema.europa.eu/#100000155538-1
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <p><b>What Skilarence is</b></p>
         <p>Skilarence is a medicine that contains the active substance dimethyl fumarate. Dimethyl
             fumarate works on cells of the immune system (the body's natural defences). It changes
@@ -63,13 +63,13 @@ Usage: #example
         <p>Response to Skilarence can be generally seen as early as week 3 and improves over time.
             Experience with related products containing dimethyl fumarate shows treatment benefit
             for at least up to 24 months.</p>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
 
-* section.title = "2. What you need to know before you take Skilarence"
-* section.code = https://spor.ema.europa.eu/#100000155538-2
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+* section[+].title = "2. What you need to know before you take Skilarence"
+* section[=].code = https://spor.ema.europa.eu/#100000155538-2
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <p><b>Do not take Skilarence</b></p>
         <ul>
             <li>if you are allergic to dimethyl fumarate or any of the other ingredients of this
@@ -223,12 +223,12 @@ Usage: #example
         <p>Skilarence contains sodium</p>
         <p>This medicine contains less than 1 mmol sodium (23 mg) per tablet, that is to say
             essentially ‘sodium- free’.</p>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
-* section.title = "3. How to take Skilarence"
-* section.code = https://spor.ema.europa.eu/#100000155538-3
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+* section[+].title = "3. How to take Skilarence"
+* section[=].code = https://spor.ema.europa.eu/#100000155538-3
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <p>Always take this medicine exactly as your doctor or pharmacist has told you. Check with
             your doctor or pharmacist if you are not sure.</p>
         <p><b>Dose</b></p>
@@ -257,12 +257,12 @@ Usage: #example
             sure.</p>
         <p>If you have any further questions on the use of this medicine, ask your doctor or
             pharmacist.</p>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
-* section.title = "4. Possible side effects"
-* section.code = https://spor.ema.europa.eu/#100000155538-4
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+* section[+].title = "4. Possible side effects"
+* section[=].code = https://spor.ema.europa.eu/#100000155538-4
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <p>Like all medicines, this medicine can cause side effects, although not everybody gets
             them. Some of these side effects, such as reddening of the face or body (flushing),
             diarrhoea, stomach problems and nausea usually improve as you continue treatment.</p>
@@ -340,12 +340,12 @@ Usage: #example
             possible side effects not listed in this leaflet. You can also report side effects
             directly via the national reporting system listed in Appendix V. By reporting side
             effects you can help provide more information on the safety of this medicine.</p>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
-* section.title = "5. How to store Skilarence"
-* section.code = https://spor.ema.europa.eu/#100000155538-5
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+* section[+].title = "5. How to store Skilarence"
+* section[=].code = https://spor.ema.europa.eu/#100000155538-5
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <p>Keep this medicine out of the sight and reach of children.</p>
         <p>Do not use this medicine after the expiry date which is stated on the carton and the
             blister after “EXP”. The expiry date refers to the last day of that month.</p>
@@ -353,12 +353,12 @@ Usage: #example
         <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist
             how to throw away medicines you no longer use. These measures will help protect the
             environment.</p>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
-* section.title = "6. Contents of the pack and other information"
-* section.code = https://spor.ema.europa.eu/#100000155538-6
-* section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
+* section[+].title = "6. Contents of the pack and other information"
+* section[=].code = https://spor.ema.europa.eu/#100000155538-6
+* section[=].code.text = "B. PACKAGE LEAFLET"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <p><b>What Skilarence 30 mg contains</b></p>
         <ul>
             <li>the active substance is dimethyl fumarate. One tablet contains 30 mg dimethyl
@@ -416,5 +416,5 @@ Usage: #example
         <p><b> Other sources of information </b></p>
         <p> Detailed information on this medicine is available on the European Medicines Agency web
             site: http://www.ema.europa.eu. </p>"
-* section.text.status = #additional
+* section[=].text.status = #additional
 
