@@ -46,6 +46,7 @@ Usage: #example
             <li>Contents of the pack and other information</li>
         </ol>"
 * section[=].text.status = #additional
+* section[=].entry[+] = Reference(cfsb1639761980721)
 
 * section[+].title = "1. What Skilarence is and what it is used for"
 * section[=].code = https://spor.ema.europa.eu/#100000155538-1
