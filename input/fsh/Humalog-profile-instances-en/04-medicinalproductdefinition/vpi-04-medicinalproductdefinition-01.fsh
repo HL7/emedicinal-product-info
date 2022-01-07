@@ -2,7 +2,7 @@ Instance: cfsb1641212233583
 InstanceOf: MedicinalProductDefinition
 Description: "EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
- 
+
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
 * type.text = "Marketing Authorisation"
 
@@ -13,12 +13,6 @@ Usage: #example
 
 * legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
 * legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
-
-
-// Reference to PackagedProductDefinition: Packaged Product
-* package.package = Reference(cfsb1640781499340)
-
-
 
 * name.productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 
