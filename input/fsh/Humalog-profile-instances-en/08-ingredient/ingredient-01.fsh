@@ -7,6 +7,8 @@ Usage: #example
 * identifier.value = "GFX7QIS1II"
 * identifier.use = #official
 
+* status = #active
+
 * role = https://spor.ema.europa.eu/rmswi/#00000072072
 * role.text = "active"
 
@@ -17,6 +19,5 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity#ACTIB
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
-
- // Reference to Organization: Manufaturer API
-* manufacturer = Reference(cfsb1641381635293)
+// Reference to Organization: Manufaturer API
+* manufacturer.manufacturer = Reference(cfsb1641381635293)
