@@ -2,7 +2,7 @@ Instance: cfsb1641383289499
 InstanceOf: Composition
 Description: "Package Leaflet"
 Usage: #example
- 
+
 * status = #final
 * type = https://spor.ema.europa.eu/#100000155538
 * type.text = "Package Leaflet"
@@ -17,7 +17,7 @@ Usage: #example
 * section.title = "B. Package Leaflet"
 * section.code = https://spor.ema.europa.eu/#100000155538
 * section.code.text = "B. PACKAGE LEAFLET"
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'> 
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 PACKAGE LEAFLET: INFORMATION FOR THE USER
 Humalog Mix50 100 units/ml suspension for injection in cartridge
 insulin lispro
@@ -53,7 +53,7 @@ What in this leaflet
 * section[2].code.text = "B. PACKAGE LEAFLET"
 * section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>1. What Humalog Mix50 is and what it is used for</b>
-Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active 
+Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active
 substance is insulin lispro.
 </div>"
 * section[2].text.status = #additional
@@ -73,8 +73,8 @@ Do NOT use Humalog Mix50 if you
 * section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>3. How to use Humalog Mix50</b>
 <b>The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.</b>
-<p>Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor 
-if you are not sure. To prevent the possible transmission of disease, each cartridge must be used by 
+<p>Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor
+if you are not sure. To prevent the possible transmission of disease, each cartridge must be used by
 you only, even if the needle on the delivery device is changed.</p>
 </div>"
 * section[4].text.status = #additional
@@ -94,15 +94,15 @@ you only, even if the needle on the delivery device is changed.</p>
 * section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>5. How to store Humalog Mix50</b>
 <p>Before the first use store your Humalog Mix50 in a refrigerator (2°C – 8°C). Do not freeze.</p>
-<p>Keep your cartridge in use at room temperature (below 30°C) and discard after 28 days. Do not put it 
-near heat or in the sun. Do not keep your pen or the cartridges you are using in the fridge. The pen 
+<p>Keep your cartridge in use at room temperature (below 30°C) and discard after 28 days. Do not put it
+near heat or in the sun. Do not keep your pen or the cartridges you are using in the fridge. The pen
 with the inserted cartridge should not be stored with the needle attached.</p>
 <p>Keep out of the sight and reach of children.
-Do not use this medicine after the expiry date which is stated on the label and the carton. The expiry 
+Do not use this medicine after the expiry date which is stated on the label and the carton. The expiry
 date refers to the last day of that month.</p>
-<p>Do not use this medicine if you notice clumps of material are present or if solid white particles stick to 
+<p>Do not use this medicine if you notice clumps of material are present or if solid white particles stick to
 the bottom or wall of the cartridge, giving it a frosted appearance. Check each time you inject yourself.
-Medicines should not be disposed of via wastewater or household waste. Ask your pharmacist how to 
+Medicines should not be disposed of via wastewater or household waste. Ask your pharmacist how to
 dispose of medicines no longer required. These measures will help to protect the environment.</p>
 </div>"
 * section[6].text.status = #additional
@@ -113,12 +113,12 @@ dispose of medicines no longer required. These measures will help to protect the
 * section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>6. Contents of the pack and other information</b>
 <b>What Humalog Mix50 100 units/ml suspension for injection in cartridge contains</b>
-<p>The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant 
-DNA technology’ process. It is a changed form of human insulin and so is different from other 
-human and animal insulins. Insulin lispro is closely related to human insulin which is a natural 
+<p>The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant
+DNA technology’ process. It is a changed form of human insulin and so is different from other
+human and animal insulins. Insulin lispro is closely related to human insulin which is a natural
 hormone made by the pancreas.
-The other ingredients are protamine sulphate, m-cresol, phenol, glycerol, dibasic sodium 
-phosphate 7H2O, zinc oxide and water for injection. Sodium hydroxide or hydrochloric acid 
+The other ingredients are protamine sulphate, m-cresol, phenol, glycerol, dibasic sodium
+phosphate 7H2O, zinc oxide and water for injection. Sodium hydroxide or hydrochloric acid
 may have been used to adjust the acidity.</p>
 </div>"
 * section[7].text.status = #additional
