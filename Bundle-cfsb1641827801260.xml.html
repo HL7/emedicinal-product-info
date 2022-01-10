@@ -1,0 +1,1172 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH\Vulcan Humalog FHIR Package Insert - XML Representation - FHIR v5.0.0-snapshot1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8.159"}
+    h3,h4,h5,h6{--heading-prefix:"8.159"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="ePI-structure.html">ePI structure</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-capability-statement-ema.html">SmPC / PL</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Vulcan Humalog FHIR Package Insert</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-cfsb1641827801260.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-cfsb1641827801260.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-cfsb1641827801260.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Vulcan Humalog FHIR Package Insert - XML Representation</h2>
+
+<p><a href="Bundle-cfsb1641827801260.xml" no-download="true">Raw xml</a> | <a href="Bundle-cfsb1641827801260.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml"><code>
+
+&lt;<a href="http://build.fhir.org/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1641827801260&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.identifier">identifier</a>&gt;
+    &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://www.gravitatehealth.eu/sid/doc&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;EU/1/96/007/035&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.type">type</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;document&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.timestamp">timestamp</a> <a href="http://build.fhir.org/datatypes.html#instant">value</a>=&quot;2018-06-23T08:38:00+02:00&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/composition.html#Composition">Composition</a>&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1641383289499&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.language">language</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1641383289499&quot;  (Language &quot;en&quot;) &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2015-02-07T13:28:17Z&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=&quot;#Organization_cfsb1640870284639&quot;&gt;See above (Organization/cfsb1640870284639)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Humalog Vulcan ePI&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.type">type</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Package Leaflet&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2015-02-07T13:28:17Z&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.author">author</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870284639&quot;/&gt;
+        &lt;/author&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;TEST PURPOSES ONLY - Humalog Vulcan ePI&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.confidentiality">confidentiality</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;U&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. Package Leaflet&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;PACKAGE LEAFLET: INFORMATION FOR THE USER Humalog Mix50 100 units/ml suspension for injection in cartridge insulin lispro Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.&lt;ul&gt;&lt;li&gt;Keep this leaflet. You may need to read it again.&lt;/li&gt;&lt;li&gt;If you have any further questions, ask your doctor or pharmacist.&lt;/li&gt;&lt;li&gt;This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.&lt;/li&gt;&lt;li&gt;If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;What is in this leaflet&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-0&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;What in this leaflet&lt;ol&gt;&lt;li&gt;What Humalog Mix50 is and what it is used for&lt;/li&gt;&lt;li&gt;What you need to know before you take Humalog Mix50&lt;/li&gt;&lt;li&gt;How to take Humalog Mix50&lt;/li&gt;&lt;li&gt;Possible side effects&lt;/li&gt;&lt;li&gt;How to store Humalog Mix50&lt;/li&gt;&lt;li&gt;Contents of the pack and other information&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1. What Humalog Mix50 is and what it is used for&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-1&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;1. What Humalog Mix50 is and what it is used for&lt;/b&gt; Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active substance is insulin lispro.&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;2. What you need to know before you use Humalog Mix50&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-2&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;2. What you need to know before you use Humalog Mix50&lt;/b&gt; Do NOT use Humalog Mix50 if you&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;3. How to use Humalog Mix50&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-3&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;3. How to use Humalog Mix50&lt;/b&gt; &lt;b&gt;The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.&lt;/b&gt;&lt;p&gt;Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor if you are not sure. To prevent the possible transmission of disease, each cartridge must be used by you only, even if the needle on the delivery device is changed.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;4. Possible side effects&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-4&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;4. Possible side effects&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Like all medicines, this medicine can cause side effects, although not everybody gets them.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;5. How to store Humalog Mix50&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-5&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;5. How to store Humalog Mix50&lt;/b&gt;&lt;p&gt;Before the first use store your Humalog Mix50 in a refrigerator (2°C – 8°C). Do not freeze.&lt;/p&gt;&lt;p&gt;Keep your cartridge in use at room temperature (below 30°C) and discard after 28 days. Do not put it near heat or in the sun. Do not keep your pen or the cartridges you are using in the fridge. The pen with the inserted cartridge should not be stored with the needle attached.&lt;/p&gt;&lt;p&gt;Keep out of the sight and reach of children. Do not use this medicine after the expiry date which is stated on the label and the carton. The expiry date refers to the last day of that month.&lt;/p&gt;&lt;p&gt;Do not use this medicine if you notice clumps of material are present or if solid white particles stick to the bottom or wall of the cartridge, giving it a frosted appearance. Check each time you inject yourself. Medicines should not be disposed of via wastewater or household waste. Ask your pharmacist how to dispose of medicines no longer required. These measures will help to protect the environment.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+        &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;6. Contents of the pack and other information&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-6&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;6. Contents of the pack and other information&lt;/b&gt; &lt;b&gt;What Humalog Mix50 100 units/ml suspension for injection in cartridge contains&lt;/b&gt;&lt;p&gt;The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant DNA technology’ process. It is a changed form of human insulin and so is different from other human and animal insulins. Insulin lispro is closely related to human insulin which is a natural hormone made by the pancreas. The other ingredients are protamine sulphate, m-cresol, phenol, glycerol, dibasic sodium phosphate 7H2O, zinc oxide and water for injection. Sodium hydroxide or hydrochloric acid may have been used to adjust the acidity.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;/text&gt;
+        &lt;/section&gt;
+      &lt;/Composition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/organization.html#Organization">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/organization.html#Organization">Organization</a>&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640870284639&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640870284639&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000426 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing authorisation holder &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#220000000034)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Eli Lilly Nederland B.V.&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/omswi/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ORG-100000426&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.active">active</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.type">type</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;220000000034&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Marketing authorisation holder&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Marketing authorisation holder&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Eli Lilly Nederland B.V.&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.address">address</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.type">type</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;physical&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.line">line</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Papendorpseweg 83, 3528 BJ&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.city">city</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Utrecht&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.country">country</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;NL&quot;/&gt;
+        &lt;/address&gt;
+      &lt;/Organization&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/organization.html#Organization">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/organization.html#Organization">Organization</a>&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1641381635293&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1641381635293&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000156 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Manufacturer API &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Eli Lilly and Company&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Lilly Technology Center Building 333 and 324(WORK)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/omswi/#/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ORG-100000156&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.active">active</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.type">type</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#220000000033&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Manufacturer API&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Eli Lilly and Company&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.address">address</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.type">type</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;physical&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Lilly Technology Center Building 333 and 324&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.line">line</a>
+                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Lilly Technology Center Building 333 and 324,  Indianapolis, Indiana,  USA&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.city">city</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Indianapolis&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.country">country</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;US&quot;/&gt;
+        &lt;/address&gt;
+      &lt;/Organization&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/organization.html#Organization">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/organization.html#Organization">Organization</a>&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640870328895&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640870328895&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100003996 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: manufacturer &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Lilly S.A.&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Avenida de la Industria 30(WORK)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/omswi/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ORG-100003996&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.active">active</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.type">type</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#220000000033&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;manufacturer&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Lilly S.A.&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/organization.html#Organization.address">address</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.type">type</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;physical&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Avenida de la Industria 30&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.line">line</a>
+                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Avenida de la Industria 30, 28108 Alcobendas, Madrid, Spain&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.city">city</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Alcobendas&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Address#Address.country">country</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ES&quot;/&gt;
+        &lt;/address&gt;
+      &lt;/Organization&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization">RegulatedAuthorization</a>&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640870220343&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640870220343&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;#MedicinalProductDefinition_cfsb1641212233583&quot;&gt;See above (MedicinalProductDefinition/cfsb1641212233583)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: European Union &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://build.fhir.org/codesystem-publication-status.html&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07T13:28:17Z&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=&quot;#Organization_cfsb1640870284639&quot;&gt;See above (Organization/cfsb1640870284639)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/#/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;EU/1/96/007/035&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.subject">subject</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;MedicinalProductDefinition/cfsb1641212233583&quot;/&gt;
+        &lt;/subject&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.type">type</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000072062&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Marketing Authorisation&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.region">region</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;eu&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;European Union&quot;/&gt;
+        &lt;/region&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.status">status</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/publication-status&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
+        &lt;/status&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.statusDate">statusDate</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2015-02-07T13:28:17Z&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.holder">holder</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870284639&quot;/&gt;
+        &lt;/holder&gt;
+      &lt;/RegulatedAuthorization&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition">MedicinalProductDefinition</a>&gt;
+        &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1641212233583&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1641212233583&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: Human use &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000000012)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://build.fhir.org/codesystem-publication-status.html&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;legalStatusOfSupply&lt;/b&gt;: Medicinal product subject to medical prescription &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000072084)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;productName&lt;/b&gt;: Humalog Mix50 Insulin KwikPen, 3ml pre-fill&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Full name &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#220000000001)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;NameParts&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Part&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Suspension for injection&lt;/td&gt;&lt;td&gt;Pharmaceutical dose form part &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#220000000005)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;CountryLanguages&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Jurisdiction&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;European Union &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;European Union &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;English &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html&quot;&gt;Tags for the Identification of Languages&lt;/a&gt;#en)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.type">type</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000072062&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Marketing Authorisation&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.domain">domain</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000000012&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Human use&quot;/&gt;
+        &lt;/domain&gt;
+        &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.status">status</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/publication-status&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/status&gt;
+        &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.legalStatusOfSupply">legalStatusOfSupply</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000072084&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Medicinal product subject to medical prescription&quot;/&gt;
+        &lt;/legalStatusOfSupply&gt;
+        &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name">name</a>&gt;
+          &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">productName</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Humalog Mix50 Insulin KwikPen, 3ml pre-fill&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.type">type</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#220000000001&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Full name&quot;/&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart">namePart</a>&gt;
+            &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.part">part</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Suspension for injection&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.type">type</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#220000000005&quot;/&gt;
+              &lt;/coding&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Pharmaceutical dose form part&quot;/&gt;
+            &lt;/type&gt;
+          &lt;/namePart&gt;
+          &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage">countryLanguage</a>&gt;
+            &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.country">country</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;eu&quot;/&gt;
+              &lt;/coding&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;European Union&quot;/&gt;
+            &lt;/country&gt;
+            &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.jurisdiction">jurisdiction</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;eu&quot;/&gt;
+              &lt;/coding&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;European Union&quot;/&gt;
+            &lt;/jurisdiction&gt;
+            &lt;<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.language">language</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;urn:ietf:bcp:47&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+              &lt;/coding&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;English&quot;/&gt;
+            &lt;/language&gt;
+          &lt;/countryLanguage&gt;
+        &lt;/name&gt;
+      &lt;/MedicinalProductDefinition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition">PackagedProductDefinition</a>&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640781499340&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640781499340&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Chemical Medininal Prodcut &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000155527)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=&quot;#MedicinalProductDefinition_cfsb1641212233583&quot;&gt;See above (MedicinalProductDefinition/cfsb1641212233583)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://build.fhir.org/codesystem-publication-status.html&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07T13:28:17Z&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 3 ml&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#Organization_cfsb1641381635293&quot;&gt;See above (Organization/cfsb1641381635293)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Packages&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Quantity&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Material&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Pre-filled pen &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (##100000073543)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Glass type 1 &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (##200000003204)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/pmswi/#/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;EU/1/96/007/035&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.name">name</a>
+              <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.type">type</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000155527&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Chemical Medininal Prodcut&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.packageFor">packageFor</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;MedicinalProductDefinition/cfsb1641212233583&quot;/&gt;
+        &lt;/packageFor&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.status">status</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/publication-status&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/status&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.statusDate">statusDate</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2015-02-07T13:28:17Z&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">containedItemQuantity</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://build.fhir.org/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ml&quot;/&gt;
+        &lt;/containedItemQuantity&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1641381635293&quot;/&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package">package</a>&gt;
+          &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.type">type</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;#100000073543&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Pre-filled pen&quot;/&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.quantity">quantity</a> <a href="http://build.fhir.org/datatypes.html#integer">value</a>=&quot;5&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.material">material</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;#200000003204&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Glass type 1&quot;/&gt;
+          &lt;/material&gt;
+        &lt;/package&gt;
+      &lt;/PackagedProductDefinition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition">AdministrableProductDefinition</a>&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640606978608&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640606978608&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;formOf&lt;/b&gt;: &lt;a href=&quot;#MedicinalProductDefinition_cfsb1641212233583&quot;&gt;See above (MedicinalProductDefinition/cfsb1641212233583)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administrableDoseForm&lt;/b&gt;: Suspension for injection &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000073864)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Pen &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#200000002135)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;producedFrom&lt;/b&gt;: &lt;a href=&quot;#ManufacturedItemDefinition_cfsb1640777487408&quot;&gt;See above (ManufacturedItemDefinition/cfsb1640777487408)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;routeOfAdministration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Subcutaneous use &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000073633)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;TargetSpecies&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Human &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#100000109093)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.formOf">formOf</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;MedicinalProductDefinition/cfsb1641212233583&quot;/&gt;
+        &lt;/formOf&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.administrableDoseForm">administrableDoseForm</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000073864&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Suspension for injection&quot;/&gt;
+        &lt;/administrableDoseForm&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.unitOfPresentation">unitOfPresentation</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#200000002135&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Pen&quot;/&gt;
+        &lt;/unitOfPresentation&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.producedFrom">producedFrom</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ManufacturedItemDefinition/cfsb1640777487408&quot;/&gt;
+        &lt;/producedFrom&gt;
+        &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration">routeOfAdministration</a>&gt;
+          &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000073633&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Subcutaneous use&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.targetSpecies">targetSpecies</a>&gt;
+            &lt;<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.targetSpecies.code">code</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#100000109093&quot;/&gt;
+              &lt;/coding&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Human&quot;/&gt;
+            &lt;/code&gt;
+          &lt;/targetSpecies&gt;
+        &lt;/routeOfAdministration&gt;
+      &lt;/AdministrableProductDefinition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition">ManufacturedItemDefinition</a>&gt;
+        &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640777487408&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640777487408&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturedDoseForm&lt;/b&gt;: Suspension for injection &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000073864)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Pen &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#/#200000002135)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/pmswi/#/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;EU/1/96/007/035&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturedDoseForm">manufacturedDoseForm</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000073864&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Suspension for injection&quot;/&gt;
+        &lt;/manufacturedDoseForm&gt;
+        &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.unitOfPresentation">unitOfPresentation</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;/#200000002135&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Pen&quot;/&gt;
+        &lt;/unitOfPresentation&gt;
+        &lt;<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+        &lt;/manufacturer&gt;
+      &lt;/ManufacturedItemDefinition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640607635665&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640607635665&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: GFX7QIS1II (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#00000072072)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1641381635293&quot;&gt;See above (Organization/cfsb1641381635293)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Strengths&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Presentation[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Basis&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;100 units/ml&lt;/td&gt;&lt;td&gt;active ingredient - basis of strength &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (v3-RoleClassIngredientEntity#ACTIB)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;GFX7QIS1II&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;00000072072&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;active&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1641381635293&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;GFX7QIS1II&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Insulin lispro&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength">strength</a>&gt;
+            &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.presentation[x]">presentationQuantity</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://build.fhir.org/datatypes.html#decimal">value</a>=&quot;100&quot;/&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;units/ml&quot;/&gt;
+            &lt;/presentationQuantity&gt;
+            &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.basis">basis</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;ACTIB&quot;/&gt;
+              &lt;/coding&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;active ingredient - basis of strength&quot;/&gt;
+            &lt;/basis&gt;
+          &lt;/strength&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640780048702&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640780048702&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PDC6A3C0OX (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;PDC6A3C0OX&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000072082&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Excipient&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;PDC6A3C0OX&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Glycerin&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640780784213&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640780784213&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: QTT17582CB (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;QTT17582CB&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000072082&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Excipient&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;QTT17582CB&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Hydrochloric acid&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640780830373&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640780830373&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 55X04QC32I (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;55X04QC32I&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000072082&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Excipient&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;55X04QC32I&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Sodium Hydroxide&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640780743829&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640780743829&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 059QF0KO0R (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;059QF0KO0R&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000072082&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Excipient&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;059QF0KO0R&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Water for Injection&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640780625902&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640780625902&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: SOI2LOH54Z (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;SOI2LOH54Z&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000072082&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Excipient&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;SOI2LOH54Z&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Zinc Oxide&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640780419325&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640780419325&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: GGO4Y809LO (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;GGO4Y809LO&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000072082&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Excipient&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;GGO4Y809LO&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Metacresol&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient">Ingredient</a>&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cfsb1640780546710&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>&gt;
+          &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;cfsb1640780546710&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 023C2WHX2V (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#Organization_cfsb1640870328895&quot;&gt;See above (Organization/cfsb1640870328895)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;023C2WHX2V&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/rmswi/&quot;/&gt;
+            &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000072082&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Excipient&quot;/&gt;
+        &lt;/role&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/cfsb1640870328895&quot;/&gt;
+          &lt;/manufacturer&gt;
+        &lt;/manufacturer&gt;
+        &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>&gt;
+          &lt;<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>&gt;
+            &lt;<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+              &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;023C2WHX2V&quot;/&gt;
+                &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Tromethamine&quot;/&gt;
+              &lt;/coding&gt;
+            &lt;/concept&gt;
+          &lt;/code&gt;
+        &lt;/substance&gt;
+      &lt;/Ingredient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+&lt;/Bundle&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Jan 10, 2022 17:58+0000">2022-01-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

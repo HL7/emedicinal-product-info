@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-01-10T14:57:21+01:00",
+  "date": "2022-01-10T17:58:00+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -1602,20 +1602,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicinalProductDefinition"
-          }
-        ],
-        "reference": {
-          "reference": "MedicinalProductDefinition/cfsb1639238291499"
-        },
-        "name": "cfsb1639238291499",
-        "description": "EU/1/17/1201/014 30 mg, 210 blister",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ClinicalUseDefinition"
           }
         ],
@@ -2246,6 +2232,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/cfsb1641827801260"
+        },
+        "name": "Vulcan Humalog FHIR Package Insert",
+        "description": "Instance of Humalog package insert for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "RegulatedAuthorization"
           }
         ],
@@ -2280,7 +2280,7 @@
         "reference": {
           "reference": "Bundle/cfsb2726030964451"
         },
-        "name": "Vulcan Suliqua FHIR Package Insert",
+        "name": "Vulcan Suliqua FHIR Package Insert 100/33 x3 pre-filled pens",
         "description": "Instance of Suliqua package insert for Connectathon testing",
         "exampleBoolean": true
       },
@@ -2588,7 +2588,7 @@
         "reference": {
           "reference": "Bundle/cfsb9078061117831"
         },
-        "name": "Vulcan Suliqua FHIR Package Insert",
+        "name": "Vulcan Suliqua FHIR Package Insert 100/50 x5 pre-filled pens",
         "description": "Instance of Suliqua package insert for Connectathon testing",
         "exampleBoolean": true
       },

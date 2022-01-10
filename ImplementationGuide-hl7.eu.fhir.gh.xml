@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-01-10T14:57:21+01:00"/>
+  <date value="2022-01-10T17:58:00+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -1258,17 +1258,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicinalProductDefinition"/>
-      </extension>
-      <reference>
-        <reference value="MedicinalProductDefinition/cfsb1639238291499"/>
-      </reference>
-      <name value="cfsb1639238291499"/>
-      <description value="EU/1/17/1201/014 30 mg, 210 blister"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ClinicalUseDefinition"/>
       </extension>
       <reference>
@@ -1764,6 +1753,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cfsb1641827801260"/>
+      </reference>
+      <name value="Vulcan Humalog FHIR Package Insert"/>
+      <description value="Instance of Humalog package insert for Connectathon testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="RegulatedAuthorization"/>
       </extension>
       <reference>
@@ -1791,7 +1791,7 @@
       <reference>
         <reference value="Bundle/cfsb2726030964451"/>
       </reference>
-      <name value="Vulcan Suliqua FHIR Package Insert"/>
+      <name value="Vulcan Suliqua FHIR Package Insert 100/33 x3 pre-filled pens"/>
       <description value="Instance of Suliqua package insert for Connectathon testing"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -2033,7 +2033,7 @@
       <reference>
         <reference value="Bundle/cfsb9078061117831"/>
       </reference>
-      <name value="Vulcan Suliqua FHIR Package Insert"/>
+      <name value="Vulcan Suliqua FHIR Package Insert 100/50 x5 pre-filled pens"/>
       <description value="Instance of Suliqua package insert for Connectathon testing"/>
       <exampleBoolean value="true"/>
     </resource>
