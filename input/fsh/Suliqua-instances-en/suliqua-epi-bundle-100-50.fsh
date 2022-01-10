@@ -1,7 +1,7 @@
 Instance: cfsb9078061117831
 InstanceOf: Bundle
 Usage: #example
-Title: "Vulcan Suliqua FHIR Package Insert"
+Title: "Vulcan Suliqua FHIR Package Insert 100/50 x5 pre-filled pens"
 Description: "Instance of Suliqua package insert for Connectathon testing"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
