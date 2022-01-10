@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ClinicalUseDefinition/cfsb1639241023005> a fhir:ClinicalUseDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1639241023005"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639241023005\" </p></div><p><b>identifier</b>: id: YL5FZ2Y5U1 (OFFICIAL)</p><p><b>type</b>: interaction</p><p><b>subject</b>: </p><ul><li><a href=\"MedicinalProductDefinition-cfsb1639230499322.html\">MedicinalProductDefinition/cfsb1639230499322</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639238291499.html\">MedicinalProductDefinition/cfsb1639238291499</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230646463.html\">MedicinalProductDefinition/cfsb1639230646463</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230697840.html\">MedicinalProductDefinition/cfsb1639230697840</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230722203.html\">MedicinalProductDefinition/cfsb1639230722203</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230742250.html\">MedicinalProductDefinition/cfsb1639230742250</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230766661.html\">MedicinalProductDefinition/cfsb1639230766661</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230793613.html\">MedicinalProductDefinition/cfsb1639230793613</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230826758.html\">MedicinalProductDefinition/cfsb1639230826758</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230887164.html\">MedicinalProductDefinition/cfsb1639230887164</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230903448.html\">MedicinalProductDefinition/cfsb1639230903448</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230862286.html\">MedicinalProductDefinition/cfsb1639230862286</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230548265.html\">MedicinalProductDefinition/cfsb1639230548265</a></li><li><a href=\"MedicinalProductDefinition-cfsb1639230598497.html\">MedicinalProductDefinition/cfsb1639230598497</a></li></ul><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>METHOTREXATE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#YL5FZ2Y5U1)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:ClinicalUseDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+     fhir:Identifier.value [ fhir:value "YL5FZ2Y5U1" ]
+  ];
+  fhir:ClinicalUseDefinition.type [ fhir:value "interaction"];
+  fhir:ClinicalUseDefinition.subject [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230499322>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230499322" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639238291499>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639238291499" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230646463>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230646463" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230697840>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230697840" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230722203>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230722203" ]
+  ], [
+     fhir:index 5;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230742250>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230742250" ]
+  ], [
+     fhir:index 6;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230766661>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230766661" ]
+  ], [
+     fhir:index 7;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230793613>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230793613" ]
+  ], [
+     fhir:index 8;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230826758>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230826758" ]
+  ], [
+     fhir:index 9;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230887164>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230887164" ]
+  ], [
+     fhir:index 10;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230903448>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230903448" ]
+  ], [
+     fhir:index 11;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230862286>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230862286" ]
+  ], [
+     fhir:index 12;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230548265>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230548265" ]
+  ], [
+     fhir:index 13;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230598497>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230598497" ]
+  ];
+  fhir:ClinicalUseDefinition.interaction [
+     fhir:ClinicalUseDefinition.interaction.interactant [
+       fhir:index 0;
+       fhir:ClinicalUseDefinition.interaction.interactant.itemCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+           fhir:Coding.code [ fhir:value "YL5FZ2Y5U1" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "METHOTREXATE" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ClinicalUseDefinition/cfsb1639241023005.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

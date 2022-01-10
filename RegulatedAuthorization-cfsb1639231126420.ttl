@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1639231126420> a fhir:RegulatedAuthorization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1639231126420"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639231126420\" </p></div><p><b>identifier</b>: id: EU/1/17/1201/013 (OFFICIAL)</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-cfsb1639230548265.html\">MedicinalProductDefinition/cfsb1639230548265</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>description</b>: Skilarence 120 mg gastro-resistant tablets, 70 tablets in PVC/PVDC-aluminium blister packs</p><p><b>region</b>: European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>validityPeriod</b>: 2015-02-07T13:28:17Z --&gt; 2022-02-07T13:28:17Z</p><p><b>holder</b>: <a href=\"Organization-cfsb1639003145277.html\">Organization/cfsb1639003145277</a> \"Almirall S.A.\"</p><p><b>regulator</b>: <a href=\"Organization-cfsb1639015880655.html\">Organization/cfsb1639015880655</a> \"European Medicines Agency\"</p></div>"
+  ];
+  fhir:RegulatedAuthorization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/013" ]
+  ];
+  fhir:RegulatedAuthorization.subject [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639230548265>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639230548265" ]
+  ];
+  fhir:RegulatedAuthorization.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#100000072062" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marketing Authorisation" ]
+  ];
+  fhir:RegulatedAuthorization.description [ fhir:value "Skilarence 120 mg gastro-resistant tablets, 70 tablets in PVC/PVDC-aluminium blister packs"];
+  fhir:RegulatedAuthorization.region [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "eu" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "European Union" ]
+  ];
+  fhir:RegulatedAuthorization.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Active" ]
+  ];
+  fhir:RegulatedAuthorization.statusDate [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime];
+  fhir:RegulatedAuthorization.validityPeriod [
+     fhir:Period.start [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2022-02-07T13:28:17Z"^^xsd:dateTime ]
+  ];
+  fhir:RegulatedAuthorization.holder [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639003145277>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb1639003145277" ]
+  ];
+  fhir:RegulatedAuthorization.regulator [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639015880655>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb1639015880655" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1639231126420.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

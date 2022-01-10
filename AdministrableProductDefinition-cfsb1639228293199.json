@@ -1,0 +1,133 @@
+{
+  "resourceType": "AdministrableProductDefinition",
+  "id": "cfsb1639228293199",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639228293199\" </p></div><p><b>identifier</b>: id: TBD (OFFICIAL)</p><p><b>status</b>: active</p><p><b>formOf</b>: </p><ul><li><a href=\"cfsb164028843078232\">cfsb164028843078232</a></li><li><a href=\"cfsb164028843078233\">cfsb164028843078233</a></li><li><a href=\"cfsb164028843078234\">cfsb164028843078234</a></li></ul><p><b>administrableDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000002102)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000002152)</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-cfsb1639191683660.html\">ManufacturedItemDefinition/cfsb1639191683660</a></p><blockquote><p><b>property</b></p><p><b>type</b>: Structured Product Labeling Shape <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48557)</span></p><p><b>value</b>: ROUND <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48348)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Size <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0456389)</span></p><p><b>value</b>: 11.6 mm</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Color <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0009393)</span></p><p><b>value</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48325)</span></p></blockquote><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073619)</span></p><h3>TargetSpecies</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000109093)</span></td></tr></table></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/pmswi/#/",
+      "value": "TBD"
+    }
+  ],
+  "status": "active",
+  "formOf": [
+    {
+      "reference": "cfsb164028843078232"
+    },
+    {
+      "reference": "cfsb164028843078233"
+    },
+    {
+      "reference": "cfsb164028843078234"
+    }
+  ],
+  "administrableDoseForm": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "200000002102"
+      }
+    ],
+    "text": "Tablet"
+  },
+  "unitOfPresentation": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "200000002152"
+      }
+    ],
+    "text": "Tablet"
+  },
+  "producedFrom": [
+    {
+      "reference": "ManufacturedItemDefinition/cfsb1639191683660"
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C48557"
+          }
+        ],
+        "text": "Structured Product Labeling Shape"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C48348"
+          }
+        ],
+        "text": "ROUND"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C0456389"
+          }
+        ],
+        "text": "Size"
+      },
+      "valueQuantity": {
+        "value": 11.6,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C0009393"
+          }
+        ],
+        "text": "Color"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C48325"
+          }
+        ],
+        "text": "White"
+      }
+    }
+  ],
+  "routeOfAdministration": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi/",
+            "code": "100000073619"
+          }
+        ],
+        "text": "oral use"
+      },
+      "targetSpecies": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/rmswi/",
+                "code": "/#100000109093"
+              }
+            ],
+            "text": "Human"
+          }
+        }
+      ]
+    }
+  ]
+}

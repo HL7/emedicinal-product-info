@@ -1,0 +1,96 @@
+{
+  "resourceType": "ManufacturedItemDefinition",
+  "id": "cfsb1639191683660",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639191683660\" </p></div><p><b>identifier</b>: id: EMEA/H/C/002157-120mg (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002102)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002152)</span></p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1639015344307.html\">Organization/cfsb1639015344307</a> \"Carretera De Martorell 41 61 Poligono Industrial Nord-Est Sant Andreu De La Barca Barcelona 08740 Spain\"</p><blockquote><p><b>property</b></p><p><b>type</b>: Structured Product Labeling Shape <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48557)</span></p><p><b>value</b>: ROUND <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48348)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Size <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0456389)</span></p><p><b>value</b>: 6.8 mm</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Color <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0009393)</span></p><p><b>value</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48325)</span></p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/pmswi/#/",
+      "value": "EMEA/H/C/002157-120mg"
+    }
+  ],
+  "status": "active",
+  "manufacturedDoseForm": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "/#200000002102"
+      }
+    ],
+    "text": "Tablet"
+  },
+  "unitOfPresentation": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "/#200000002152"
+      }
+    ],
+    "text": "Tablet"
+  },
+  "manufacturer": [
+    {
+      "reference": "Organization/cfsb1639015344307"
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C48557"
+          }
+        ],
+        "text": "Structured Product Labeling Shape"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C48348"
+          }
+        ],
+        "text": "ROUND"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C0456389"
+          }
+        ],
+        "text": "Size"
+      },
+      "valueQuantity": {
+        "value": 6.8,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C0009393"
+          }
+        ],
+        "text": "Color"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://ncim-stage.nci.nih.gov/ncimbrowser/",
+            "code": "C48325"
+          }
+        ],
+        "text": "White"
+      }
+    }
+  ]
+}

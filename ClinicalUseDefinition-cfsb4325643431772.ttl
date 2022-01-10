@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ClinicalUseDefinition/cfsb4325643431772> a fhir:ClinicalUseDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb4325643431772"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb4325643431772\" </p></div><p><b>identifier</b>: id: Hypersensitivity reaction (OFFICIAL)</p><p><b>type</b>: contraindication</p><p><b>subject</b>: </p><ul><li><a href=\"MedicinalProductDefinition-cfsb1151803027115.html\">MedicinalProductDefinition/cfsb1151803027115</a></li><li><a href=\"MedicinalProductDefinition-cfsb7123030148537.html\">MedicinalProductDefinition/cfsb7123030148537</a></li></ul></div>"
+  ];
+  fhir:ClinicalUseDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+     fhir:Identifier.value [ fhir:value "Hypersensitivity reaction" ]
+  ];
+  fhir:ClinicalUseDefinition.type [ fhir:value "contraindication"];
+  fhir:ClinicalUseDefinition.subject [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1151803027115>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1151803027115" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb7123030148537>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb7123030148537" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ClinicalUseDefinition/cfsb4325643431772.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

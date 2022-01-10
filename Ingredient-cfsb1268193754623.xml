@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Ingredient xmlns="http://hl7.org/fhir">
+  <id value="cfsb1268193754623"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb1268193754623" </p></div><p><b>identifier</b>: id: QTT17582CB (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb2176224411725.html">Organization/cfsb2176224411725</a> "Sanofi-Aventis Deutschland GmbH"</td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+    <value value="QTT17582CB"/>
+  </identifier>
+  <status value="active"/>
+  <role>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="/#100000072082"/>
+    </coding>
+    <text value="Excipient"/>
+  </role>
+  <allergenicIndicator value="false"/>
+  <manufacturer>
+    <manufacturer>
+      <reference value="Organization/cfsb2176224411725"/>
+    </manufacturer>
+  </manufacturer>
+  <substance>
+    <code>
+      <concept>
+        <coding>
+          <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+          <code value="QTT17582CB"/>
+          <display value="Concentrated hydrochloric acid"/>
+        </coding>
+      </concept>
+    </code>
+  </substance>
+</Ingredient>

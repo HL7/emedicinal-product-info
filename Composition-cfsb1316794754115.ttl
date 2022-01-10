@@ -1,0 +1,146 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1316794754115> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1316794754115"];
+  fhir:Resource.language [ fhir:value "no"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"no\" lang=\"no\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1316794754115\"  (Language \"no\") </p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2015-02-07T13:28:17Z</p><p><b>author</b>: <a href=\"Organization-cfsb6005885654359.html\">Organization/cfsb6005885654359</a> \"Sanofi-Aventis Groupe\"</p><p><b>title</b>: TEST PURPOSES ONLY - Suliqua Vulcan ePI</p><p><b>confidentiality</b>: unrestricted</p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+       fhir:Coding.code [ fhir:value "100000155538" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Package Leaflet" ]
+  ];
+  fhir:Composition.date [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb6005885654359>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb6005885654359" ]
+  ];
+  fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - Suliqua Vulcan ePI"];
+  fhir:Composition.confidentiality [ fhir:value "unrestricted"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "B. PAKNINGSVEDLEGG" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Pakningsvedlegg: Informasjon til brukeren</h1></div>"
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "1. Hva Suliqua er og hva det brukes mot" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-1" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>1. Hva Suliqua er og hva det brukes mot</span></div>"
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "2. Hva du må vite før du bruker Suliqua" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-2" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>2. Hva du må vite før du bruker Suliqua</span></div>"
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "3. Hvordan du bruker Suliqua" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-3" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>3. Hvordan du bruker Suliqua</span></div>"
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Composition.section.title [ fhir:value "4. Mulige bivirkninger" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-4" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>4. Mulige bivirkninger</span></div>"
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Composition.section.title [ fhir:value "5. Hvordan du oppbevarer Suliqua" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-2" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>5. Hvordan du oppbevarer Suliqua</span></div>"
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Composition.section.title [ fhir:value "6. Innholdet i pakningen og ytterligere informasjon" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-2" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>6. Innholdet i pakningen og ytterligere informasjon</span></div>"
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1316794754115.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

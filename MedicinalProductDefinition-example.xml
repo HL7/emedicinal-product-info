@@ -3,7 +3,7 @@
 <MedicinalProductDefinition xmlns="http://hl7.org/fhir">
   <id value="example"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: {mpid}</p><p><b>classification</b>: <span title="Codes: {http://ema.europa.eu/example/WHOAnatomicalTherapeuticChemicalATCClassificationSystem B01AF02}">B01AF02</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Equilidem 2.5 mg film-coated tablets</p><blockquote><p><b>namePart</b></p><p><b>part</b>: Equilidem</p><p><b>type</b>: <span title="Codes: ">INV</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 2.5 mg</p><p><b>type</b>: <span title="Codes: ">STR</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: film-coated tablets</p><p><b>type</b>: <span title="Codes: ">FRM</span></p></blockquote><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td><span title="Codes: {http://ema.europa.eu/example/countryCode EU}">EU</span></td><td><span title="Codes: {http://ema.europa.eu/example/jurisdictionCode EU}">EU</span></td><td><span title="Codes: {http://ema.europa.eu/example/languageCode EN}">EN</span></td></tr></table></blockquote><blockquote><p><b>operation</b></p><p><b>effectiveDate</b>: 2013-03-15 --&gt; (ongoing)</p><p><b>authorization</b>: <span></span></p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example" </p></div><p><b>identifier</b>: id: {mpid}</p><p><b>classification</b>: B01AF02 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (WHOAnatomicalTherapeuticChemicalATCClassificationSystem#B01AF02)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Equilidem 2.5 mg film-coated tablets</p><blockquote><p><b>namePart</b></p><p><b>part</b>: Equilidem</p><p><b>type</b>: INV <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#INV)</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 2.5 mg</p><p><b>type</b>: STR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#STR)</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: film-coated tablets</p><p><b>type</b>: FRM <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#FRM)</span></p></blockquote><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>EU <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (countryCode#EU)</span></td><td>EU <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (jurisdictionCode#EU)</span></td><td>EN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (languageCode#EN)</span></td></tr></table></blockquote><blockquote><p><b>operation</b></p><p><b>effectiveDate</b>: 2013-03-15 --&gt; (ongoing)</p></blockquote></div>
   </text>
   <identifier>
     <system value="http://ema.europa.eu/example/MPID"/>
@@ -74,11 +74,5 @@
     <effectiveDate>
       <start value="2013-03-15"/>
     </effectiveDate>
-    <authorization>
-      <identifier>
-        <system value="http://ema.europa.eu/example/manufacturingAuthorisationReferenceNumber"/>
-        <value value="1324TZ"/>
-      </identifier>
-    </authorization>
   </operation>
 </MedicinalProductDefinition>

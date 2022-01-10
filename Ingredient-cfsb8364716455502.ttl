@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb8364716455502> a fhir:Ingredient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb8364716455502"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8364716455502\" </p></div><p><b>identifier</b>: id: 74O62BB01U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#00000072072)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"Organization-cfsb2176224411725.html\">Organization/cfsb2176224411725</a> \"Sanofi-Aventis Deutschland GmbH\"</td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>33 ug/ml</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:Ingredient.identifier [
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+     fhir:Identifier.value [ fhir:value "74O62BB01U" ]
+  ];
+  fhir:Ingredient.status [ fhir:value "active"];
+  fhir:Ingredient.role [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#00000072072" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "active" ]
+  ];
+  fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean];
+  fhir:Ingredient.manufacturer [
+     fhir:index 0;
+     fhir:Ingredient.manufacturer.manufacturer [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+       fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+     ]
+  ];
+  fhir:Ingredient.substance [
+     fhir:Ingredient.substance.code [
+       fhir:CodeableReference.concept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+           fhir:Coding.code [ fhir:value "74O62BB01U" ];
+           fhir:Coding.display [ fhir:value "Lixisenatide" ]
+         ]
+       ]
+     ];
+     fhir:Ingredient.substance.strength [
+       fhir:index 0;
+       fhir:Ingredient.substance.strength.presentationQuantity [
+         fhir:Quantity.value [ fhir:value "33"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "ug/ml" ]
+       ];
+       fhir:Ingredient.substance.strength.basis [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity" ];
+           fhir:Coding.code [ fhir:value "ACTIB" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "active ingredient - basis of strength" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb8364716455502.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

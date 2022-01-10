@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RegulatedAuthorization xmlns="http://hl7.org/fhir">
+  <id value="cfsb1639231032998"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb1639231032998" </p></div><p><b>identifier</b>: id: EU/1/17/1201/006 (OFFICIAL)</p><p><b>subject</b>: <a href="MedicinalProductDefinition-cfsb1639230742250.html">MedicinalProductDefinition/cfsb1639230742250</a></p><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072062)</span></p><p><b>description</b>: Skilarence 120 mg gastro-resistant tablets, 120 tablets in PVC/PVDC-aluminium blister packs</p><p><b>region</b>: European Union <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#eu)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>validityPeriod</b>: 2015-02-07T13:28:17Z --&gt; 2022-02-07T13:28:17Z</p><p><b>holder</b>: <a href="Organization-cfsb1639003145277.html">Organization/cfsb1639003145277</a> "Almirall S.A."</p><p><b>regulator</b>: <a href="Organization-cfsb1639015880655.html">Organization/cfsb1639015880655</a> "European Medicines Agency"</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://spor.ema.europa.eu/rmswi/#/"/>
+    <value value="EU/1/17/1201/006"/>
+  </identifier>
+  <subject>
+    <reference value="MedicinalProductDefinition/cfsb1639230742250"/>
+  </subject>
+  <type>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="/#100000072062"/>
+    </coding>
+    <text value="Marketing Authorisation"/>
+  </type>
+  <description value="Skilarence 120 mg gastro-resistant tablets, 120 tablets in PVC/PVDC-aluminium blister packs"/>
+  <region>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="eu"/>
+    </coding>
+    <text value="European Union"/>
+  </region>
+  <status>
+    <coding>
+      <system value="http://hl7.org/fhir/publication-status"/>
+      <code value="active"/>
+    </coding>
+    <text value="Active"/>
+  </status>
+  <statusDate value="2015-02-07T13:28:17Z"/>
+  <validityPeriod>
+    <start value="2015-02-07T13:28:17Z"/>
+    <end value="2022-02-07T13:28:17Z"/>
+  </validityPeriod>
+  <holder>
+    <reference value="Organization/cfsb1639003145277"/>
+  </holder>
+  <regulator>
+    <reference value="Organization/cfsb1639015880655"/>
+  </regulator>
+</RegulatedAuthorization>

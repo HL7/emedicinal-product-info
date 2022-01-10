@@ -1,0 +1,70 @@
+{
+  "resourceType": "AdministrableProductDefinition",
+  "id": "cfsb5880516529064",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb5880516529064\" </p></div><p><b>identifier</b>: id: TBD (OFFICIAL)</p><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"MedicinalProductDefinition-cfsb7123030148537.html\">MedicinalProductDefinition/cfsb7123030148537</a></p><p><b>administrableDoseForm</b>: Solution for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073863)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002135)</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-cfsb7089233601948.html\">ManufacturedItemDefinition/cfsb7089233601948</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073633)</span></p><h3>TargetSpecies</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000109093)</span></td></tr></table></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/pmswi/",
+      "value": "TBD"
+    }
+  ],
+  "status": "active",
+  "formOf": [
+    {
+      "reference": "MedicinalProductDefinition/cfsb7123030148537"
+    }
+  ],
+  "administrableDoseForm": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "100000073863"
+      }
+    ],
+    "text": "Solution for injection"
+  },
+  "unitOfPresentation": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "/#200000002135"
+      }
+    ],
+    "text": "Pen"
+  },
+  "producedFrom": [
+    {
+      "reference": "ManufacturedItemDefinition/cfsb7089233601948"
+    }
+  ],
+  "routeOfAdministration": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi/",
+            "code": "100000073633"
+          }
+        ],
+        "text": "Subcutaneous use"
+      },
+      "targetSpecies": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/rmswi/",
+                "code": "/#100000109093"
+              }
+            ],
+            "text": "Human"
+          }
+        }
+      ]
+    }
+  ]
+}

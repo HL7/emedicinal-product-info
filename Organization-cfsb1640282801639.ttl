@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1640282801639> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1640282801639"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1640282801639\" </p></div><p><b>identifier</b>: id: ORG-100099999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Medicines Regulatory Authority <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000033)</span></p><p><b>name</b>: European Medicines Agency</p><p><b>address</b>: Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands(WORK)</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/#/" ];
+     fhir:Identifier.value [ fhir:value "ORG-100099999" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#220000000033" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Medicines Regulatory Authority" ]
+  ];
+  fhir:Organization.name [ fhir:value "European Medicines Agency"];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.text [ fhir:value "Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands" ];
+     fhir:Address.line [
+       fhir:value "Carretera De Martorell 41 61, Poligono Industrial Nord-Est";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Amsterdam" ];
+     fhir:Address.country [ fhir:value "nl" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1640282801639.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

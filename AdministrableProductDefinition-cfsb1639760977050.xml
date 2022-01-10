@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AdministrableProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="cfsb1639760977050"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb1639760977050" </p></div><p><b>status</b>: active</p><p><b>formOf</b>: <a href="MedicinalProductDefinition-cfsb1639760186202.html">MedicinalProductDefinition/cfsb1639760186202</a></p><p><b>administrableDoseForm</b>: Granules and solvent for oral suspension <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000116155)</span></p><p><b>producedFrom</b>: <a href="ManufacturedItemDefinition-cfsb1639756818482.html">ManufacturedItemDefinition/cfsb1639756818482</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000073619)</span></p><h3>TargetSpecies</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000109093)</span></td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <formOf>
+    <reference value="MedicinalProductDefinition/cfsb1639760186202"/>
+  </formOf>
+  <administrableDoseForm>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="/#100000116155"/>
+      <display value="Granules and solvent for oral suspension"/>
+    </coding>
+    <text value="Granules and solvent for oral suspension"/>
+  </administrableDoseForm>
+  <producedFrom>
+    <reference value="ManufacturedItemDefinition/cfsb1639756818482"/>
+  </producedFrom>
+  <routeOfAdministration>
+    <code>
+      <coding>
+        <system value="https://spor.ema.europa.eu/rmswi/"/>
+        <code value="100000073619"/>
+      </coding>
+      <text value="oral use"/>
+    </code>
+    <targetSpecies>
+      <code>
+        <coding>
+          <system value="https://spor.ema.europa.eu/rmswi/"/>
+          <code value="/#100000109093"/>
+        </coding>
+        <text value="Human"/>
+      </code>
+    </targetSpecies>
+  </routeOfAdministration>
+</AdministrableProductDefinition>

@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1151803027115> a fhir:MedicinalProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1151803027115"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1151803027115\" </p></div><p><b>identifier</b>: id: EU/1/16/1157/002 (OFFICIAL)</p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000000012)</span></p><p><b>version</b>: 1</p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>description</b>: Suliqua 100 units/ml + 50 microgram/ml solution for injection in a pre-filled pen:\nEach pre-filled pen contains 300 units of insulin glargine* and 150 micrograms lixisenatide in 3 ml solution.\nEach ml contains 100 units of insulin glargine and 50 micrograms lixisenatide.\nEach dose step contains 1 unit of insulin glargine and 0.5 micrograms of lixisenatide</p><p><b>route</b>: Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000073633)</span></p><p><b>indication</b>: Suliqua is indicated for the treatment of adults with insufficiently controlled type 2 diabetes mellitus to improve glycaemic control as an adjunct to diet and exercise in addition to metformin with or without SGLT-2 inhibitors.</p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072084)</span></p><p><b>classification</b>: insulin glargine and lixisenatide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#A10AE54)</span>, Diabetes mellitus inadequate control <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000019249)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen</p><p><b>type</b>: Full name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000001)</span></p><h3>NameParts</h3><table class=\"grid\"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Solution for injection</td><td>Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></td><td>European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#en)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:MedicinalProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+     fhir:Identifier.value [ fhir:value "EU/1/16/1157/002" ]
+  ];
+  fhir:MedicinalProductDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#100000072062" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marketing Authorisation" ]
+  ];
+  fhir:MedicinalProductDefinition.domain [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#100000000012" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Human use" ]
+  ];
+  fhir:MedicinalProductDefinition.version [ fhir:value "1"];
+  fhir:MedicinalProductDefinition.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+       fhir:Coding.code [ fhir:value "active" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.statusDate [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime];
+  fhir:MedicinalProductDefinition.description [ fhir:value "Suliqua 100 units/ml + 50 microgram/ml solution for injection in a pre-filled pen:\nEach pre-filled pen contains 300 units of insulin glargine* and 150 micrograms lixisenatide in 3 ml solution.\nEach ml contains 100 units of insulin glargine and 50 micrograms lixisenatide.\nEach dose step contains 1 unit of insulin glargine and 0.5 micrograms of lixisenatide"];
+  fhir:MedicinalProductDefinition.route [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#100000073633" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Subcutaneous use" ]
+  ];
+  fhir:MedicinalProductDefinition.indication [ fhir:value "Suliqua is indicated for the treatment of adults with insufficiently controlled type 2 diabetes mellitus to improve glycaemic control as an adjunct to diet and exercise in addition to metformin with or without SGLT-2 inhibitors."];
+  fhir:MedicinalProductDefinition.legalStatusOfSupply [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#100000072084" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Medicinal product subject to medical prescription" ]
+  ];
+  fhir:MedicinalProductDefinition.classification [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.whocc.no/atc_ddd_index/" ];
+       fhir:Coding.code [ fhir:value "A10AE54" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "insulin glargine and lixisenatide" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#100000019249" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Diabetes mellitus inadequate control" ]
+  ];
+  fhir:MedicinalProductDefinition.name [
+     fhir:index 0;
+     fhir:MedicinalProductDefinition.name.productName [ fhir:value "Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen" ];
+     fhir:MedicinalProductDefinition.name.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "/#220000000001" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Full name" ]
+     ];
+     fhir:MedicinalProductDefinition.name.namePart [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "Solution for injection" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#220000000005" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Pharmaceutical dose form part" ]
+       ]
+     ];
+     fhir:MedicinalProductDefinition.name.countryLanguage [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.countryLanguage.country [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+           fhir:Coding.code [ fhir:value "eu" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "European Union" ]
+       ];
+       fhir:MedicinalProductDefinition.name.countryLanguage.jurisdiction [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+           fhir:Coding.code [ fhir:value "eu" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "European Union" ]
+       ];
+       fhir:MedicinalProductDefinition.name.countryLanguage.language [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
+           fhir:Coding.code [ fhir:value "en" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "English" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1151803027115.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

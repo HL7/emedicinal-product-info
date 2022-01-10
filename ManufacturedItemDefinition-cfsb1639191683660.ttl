@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639191683660> a fhir:ManufacturedItemDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1639191683660"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639191683660\" </p></div><p><b>identifier</b>: id: EMEA/H/C/002157-120mg (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002102)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002152)</span></p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1639015344307.html\">Organization/cfsb1639015344307</a> \"Carretera De Martorell 41 61 Poligono Industrial Nord-Est Sant Andreu De La Barca Barcelona 08740 Spain\"</p><blockquote><p><b>property</b></p><p><b>type</b>: Structured Product Labeling Shape <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48557)</span></p><p><b>value</b>: ROUND <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48348)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Size <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0456389)</span></p><p><b>value</b>: 6.8 mm</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Color <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0009393)</span></p><p><b>value</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48325)</span></p></blockquote></div>"
+  ];
+  fhir:ManufacturedItemDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+     fhir:Identifier.value [ fhir:value "EMEA/H/C/002157-120mg" ]
+  ];
+  fhir:ManufacturedItemDefinition.status [ fhir:value "active"];
+  fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#200000002102" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+  ];
+  fhir:ManufacturedItemDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#200000002152" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+  ];
+  fhir:ManufacturedItemDefinition.manufacturer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639015344307>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb1639015344307" ]
+  ];
+  fhir:ManufacturedItemDefinition.property [
+     fhir:index 0;
+     fhir:ManufacturedItemDefinition.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C48557" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Structured Product Labeling Shape" ]
+     ];
+     fhir:ManufacturedItemDefinition.property.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C48348" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "ROUND" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ManufacturedItemDefinition.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C0456389" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Size" ]
+     ];
+     fhir:ManufacturedItemDefinition.property.valueQuantity [
+       fhir:Quantity.value [ fhir:value "6.8"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mm" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ManufacturedItemDefinition.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C0009393" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Color" ]
+     ];
+     fhir:ManufacturedItemDefinition.property.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C48325" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "White" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639191683660.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

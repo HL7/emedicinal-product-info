@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/cfsb1639231426617> a fhir:PackagedProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1639231426617"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639231426617\" </p></div><p><b>identifier</b>: id: EU/1/17/1201/008 (OFFICIAL)</p><p><b>name</b>: 42 gastro-resistant tablets in PVC/PVDC-aluminium blister packs</p><p><b>type</b>: Chemical Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000155527)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>containedItemQuantity</b>: 200 tablets</p><p><b>description</b>: gastro-resistant tablets in PVC/PVDC-aluminium blister packs</p><p><b>copackagedIndicator</b>: false</p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1639015344307.html\">Organization/cfsb1639015344307</a> \"Carretera De Martorell 41 61 Poligono Industrial Nord-Est Sant Andreu De La Barca Barcelona 08740 Spain\"</p><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: EU/1/17/1201/008 (OFFICIAL)</td><td>Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000073496)</span></td><td>1</td><td>Non-plasticised PolyVinyl Chloride / Unplasticised PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000003224)</span></td></tr></table></div>"
+  ];
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+     fhir:Identifier.value [ fhir:value "EU/1/17/1201/008" ]
+  ];
+  fhir:PackagedProductDefinition.name [ fhir:value "42 gastro-resistant tablets in PVC/PVDC-aluminium blister packs"];
+  fhir:PackagedProductDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "/#100000155527" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Chemical Medicinal Product" ]
+  ];
+  fhir:PackagedProductDefinition.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+       fhir:Coding.code [ fhir:value "active" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ];
+  fhir:PackagedProductDefinition.statusDate [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime];
+  fhir:PackagedProductDefinition.containedItemQuantity [
+     fhir:index 0;
+     fhir:Quantity.value [ fhir:value "200"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "tablets" ]
+  ];
+  fhir:PackagedProductDefinition.description [ fhir:value "gastro-resistant tablets in PVC/PVDC-aluminium blister packs"];
+  fhir:PackagedProductDefinition.copackagedIndicator [ fhir:value "false"^^xsd:boolean];
+  fhir:PackagedProductDefinition.manufacturer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639015344307>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb1639015344307" ]
+  ];
+  fhir:PackagedProductDefinition.package [
+     fhir:PackagedProductDefinition.package.identifier [
+       fhir:index 0;
+       fhir:Identifier.use [ fhir:value "official" ];
+       fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+       fhir:Identifier.value [ fhir:value "EU/1/17/1201/008" ]
+     ];
+     fhir:PackagedProductDefinition.package.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "/#100000073496" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Blister" ]
+     ];
+     fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+     fhir:PackagedProductDefinition.package.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "/#200000003224" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Non-plasticised PolyVinyl Chloride / Unplasticised PolyVinyl Chloride" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/cfsb1639231426617.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

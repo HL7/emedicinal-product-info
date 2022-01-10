@@ -1,0 +1,106 @@
+{
+  "resourceType": "PackagedProductDefinition",
+  "id": "cfsb1639764389611",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639764389611\" </p></div><p><b>identifier</b>: id: PL 31654/0006-2 (OFFICIAL)</p><p><b>name</b>: 2 sachets of 8 g of granules (3 g fosfomycin).</p><p><b>type</b>: Chemical Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155527)</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-cfsb1639760186202.html\">MedicinalProductDefinition/cfsb1639760186202</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>containedItemQuantity</b>: 2 Sachet<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated] code 200000002143 = '200000002143')</span></p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1639753766266.html\">Organization/cfsb1639753766266</a> \"Zambon S.p.A.\"</p><blockquote><p><b>package</b></p><p><b>type</b>: Sachet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000002143)</span></p><p><b>material</b>: Paper <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000003207)</span>, PolyEthylene <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000003214)</span>, Aluminium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000003200)</span></p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1639753766266.html\">Organization/cfsb1639753766266</a> \"Zambon S.p.A.\"</p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/pmswi/#/",
+      "value": "PL 31654/0006-2"
+    }
+  ],
+  "name": "2 sachets of 8 g of granules (3 g fosfomycin).",
+  "type": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "100000155527",
+        "display": "Chemical Medicinal Product"
+      }
+    ],
+    "text": "Chemical Medicinal Product"
+  },
+  "packageFor": [
+    {
+      "reference": "MedicinalProductDefinition/cfsb1639760186202"
+    }
+  ],
+  "status": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/publication-status",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "containedItemQuantity": [
+    {
+      "value": 2,
+      "unit": "Sachet",
+      "code": "200000002143"
+    }
+  ],
+  "manufacturer": [
+    {
+      "reference": "Organization/cfsb1639753766266"
+    }
+  ],
+  "package": {
+    "type": {
+      "coding": [
+        {
+          "system": "https://spor.ema.europa.eu/rmswi/",
+          "code": "200000002143"
+        }
+      ],
+      "text": "Sachet"
+    },
+    "material": [
+      {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi/",
+            "code": "200000003207"
+          }
+        ],
+        "text": "Paper"
+      },
+      {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi/",
+            "code": "200000003214"
+          }
+        ],
+        "text": "PolyEthylene"
+      },
+      {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi/",
+            "code": "200000003200"
+          }
+        ],
+        "text": "Aluminium"
+      }
+    ],
+    "manufacturer": [
+      {
+        "reference": "Organization/cfsb1639753766266"
+      }
+    ],
+    "containedItem": [
+      {
+        "item": {
+          "reference": {
+            "reference": "ManufacturedItemDefinition/cfsb1639756818482"
+          }
+        }
+      }
+    ]
+  }
+}

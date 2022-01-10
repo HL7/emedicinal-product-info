@@ -1,0 +1,1243 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/cfsb2726030964451> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb2726030964451"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "https://www.gravitatehealth.eu/sid/doc" ];
+     fhir:Identifier.value [ fhir:value "EU/1/16/1157/003" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2017-06-23T08:38:00+02:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.resource [
+       a fhir:Composition;
+       fhir:Resource.id [ fhir:value "cfsb1316794754115" ];
+       fhir:Resource.language [ fhir:value "no" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"no\" lang=\"no\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1316794754115\"  (Language \"no\") </p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2015-02-07T13:28:17Z</p><p><b>author</b>: <a href=\"#Organization_cfsb6005885654359\">See above (Organization/cfsb6005885654359)</a></p><p><b>title</b>: TEST PURPOSES ONLY - Suliqua Vulcan ePI</p><p><b>confidentiality</b>: unrestricted</p></div>"
+       ];
+       fhir:Composition.status [ fhir:value "final" ];
+       fhir:Composition.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+           fhir:Coding.code [ fhir:value "100000155538" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Package Leaflet" ]
+       ];
+       fhir:Composition.date [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime ];
+       fhir:Composition.author [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb6005885654359>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb6005885654359" ]
+       ];
+       fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - Suliqua Vulcan ePI" ];
+       fhir:Composition.confidentiality [ fhir:value "unrestricted" ];
+       fhir:Composition.section [
+         fhir:index 0;
+         fhir:Composition.section.title [ fhir:value "B. PAKNINGSVEDLEGG" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Pakningsvedlegg: Informasjon til brukeren</h1></div>"
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Composition.section.title [ fhir:value "1. Hva Suliqua er og hva det brukes mot" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-1" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>1. Hva Suliqua er og hva det brukes mot</span></div>"
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Composition.section.title [ fhir:value "2. Hva du må vite før du bruker Suliqua" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-2" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>2. Hva du må vite før du bruker Suliqua</span></div>"
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Composition.section.title [ fhir:value "3. Hvordan du bruker Suliqua" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-3" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>3. Hvordan du bruker Suliqua</span></div>"
+         ]
+       ], [
+         fhir:index 4;
+         fhir:Composition.section.title [ fhir:value "4. Mulige bivirkninger" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-4" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>4. Mulige bivirkninger</span></div>"
+         ]
+       ], [
+         fhir:index 5;
+         fhir:Composition.section.title [ fhir:value "5. Hvordan du oppbevarer Suliqua" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-2" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>5. Hvordan du oppbevarer Suliqua</span></div>"
+         ]
+       ], [
+         fhir:index 6;
+         fhir:Composition.section.title [ fhir:value "6. Innholdet i pakningen og ytterligere informasjon" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-2" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PAKNINGSVEDLEGG" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span>6. Innholdet i pakningen og ytterligere informasjon</span></div>"
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "cfsb6005885654359" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb6005885654359\" </p></div><p><b>identifier</b>: id: ORG-100000789 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#bus)</span></p><p><b>name</b>: Sanofi-Aventis Groupe</p><p><b>address</b>: 54 Rue La Boetie  Paris  75008  France(WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "ORG-100000789" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#bus" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Marketing authorisation holder" ]
+       ];
+       fhir:Organization.name [ fhir:value "Sanofi-Aventis Groupe" ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "54 Rue La Boetie  Paris  75008  France" ];
+         fhir:Address.line [
+           fhir:value "54 Rue La Boetie";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "Paris" ];
+         fhir:Address.country [ fhir:value "fr" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "cfsb2176224411725" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb2176224411725\" </p></div><p><b>identifier</b>: id: ORG-100001175 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer API <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000033)</span></p><p><b>name</b>: Sanofi-Aventis Deutschland GmbH</p><p><b>address</b>: Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY(WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/#/" ];
+         fhir:Identifier.value [ fhir:value "ORG-100001175" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#220000000033" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Manufacturer API" ]
+       ];
+       fhir:Organization.name [ fhir:value "Sanofi-Aventis Deutschland GmbH" ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" ];
+         fhir:Address.line [
+           fhir:value "Brueningstrasse 50, Industriepark Höchst";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "Frankfurt am Main" ];
+         fhir:Address.postalCode [ fhir:value "65926" ];
+         fhir:Address.country [ fhir:value "de" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "cfsb7719260512249" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb7719260512249\" </p></div><p><b>identifier</b>: id: ORG-100001175 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer Batch release <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000033)</span></p><p><b>name</b>: Sanofi-Aventis Deutschland GmbH</p><p><b>address</b>: Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY(WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/#/" ];
+         fhir:Identifier.value [ fhir:value "ORG-100001175" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#220000000033" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Manufacturer Batch release" ]
+       ];
+       fhir:Organization.name [ fhir:value "Sanofi-Aventis Deutschland GmbH" ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" ];
+         fhir:Address.line [
+           fhir:value "Brueningstrasse 50, Industriepark Höchst";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "Frankfurt am Main" ];
+         fhir:Address.postalCode [ fhir:value "65926" ];
+         fhir:Address.country [ fhir:value "de" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "cfsb1639015880655" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639015880655\" </p></div><p><b>identifier</b>: id: ORG-100013412 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Medicines Regulatory Authority <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000033)</span></p><p><b>name</b>: European Medicines Agency</p><p><b>address</b>: Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands(WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/#/" ];
+         fhir:Identifier.value [ fhir:value "ORG-100013412" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#220000000033" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Medicines Regulatory Authority" ]
+       ];
+       fhir:Organization.name [ fhir:value "European Medicines Agency" ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands" ];
+         fhir:Address.line [
+           fhir:value "Carretera De Martorell 41 61, Poligono Industrial Nord-Est";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "Amsterdam" ];
+         fhir:Address.postalCode [ fhir:value "1083 HS" ];
+         fhir:Address.country [ fhir:value "nl" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.resource [
+       a fhir:RegulatedAuthorization;
+       fhir:Resource.id [ fhir:value "cfsb2023900992766" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb2023900992766\" </p></div><p><b>identifier</b>: id: EU/1/16/1157/003 (OFFICIAL)</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_cfsb7123030148537\">See above (MedicinalProductDefinition/cfsb7123030148537)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>description</b>: Suliqua 100 units/ml + 33 microgram/ml solution for injection in x3 pre-filled pens</p><p><b>region</b>: European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2017-01-11T13:28:17Z</p><p><b>validityPeriod</b>: 2017-01-11T13:28:17Z --&gt; (ongoing)</p><p><b>holder</b>: <a href=\"#Organization_cfsb6005885654359\">See above (Organization/cfsb6005885654359)</a></p><p><b>regulator</b>: <a href=\"#Organization_cfsb1639015880655\">See above (Organization/cfsb1639015880655)</a></p></div>"
+       ];
+       fhir:RegulatedAuthorization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "EU/1/16/1157/003" ]
+       ];
+       fhir:RegulatedAuthorization.subject [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb7123030148537>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb7123030148537" ]
+       ];
+       fhir:RegulatedAuthorization.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072062" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Marketing Authorisation" ]
+       ];
+       fhir:RegulatedAuthorization.description [ fhir:value "Suliqua 100 units/ml + 33 microgram/ml solution for injection in x3 pre-filled pens" ];
+       fhir:RegulatedAuthorization.region [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+           fhir:Coding.code [ fhir:value "eu" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "European Union" ]
+       ];
+       fhir:RegulatedAuthorization.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+           fhir:Coding.code [ fhir:value "active" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Active" ]
+       ];
+       fhir:RegulatedAuthorization.statusDate [ fhir:value "2017-01-11T13:28:17Z"^^xsd:dateTime ];
+       fhir:RegulatedAuthorization.validityPeriod [
+         fhir:Period.start [ fhir:value "2017-01-11T13:28:17Z"^^xsd:dateTime ]
+       ];
+       fhir:RegulatedAuthorization.holder [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb6005885654359>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb6005885654359" ]
+       ];
+       fhir:RegulatedAuthorization.regulator [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639015880655>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1639015880655" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.resource [
+       a fhir:MedicinalProductDefinition;
+       fhir:Resource.id [ fhir:value "cfsb7123030148537" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb7123030148537\" </p></div><p><b>identifier</b>: id: EU/1/16/1157/003 (OFFICIAL)</p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000000012)</span></p><p><b>version</b>: 1</p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>description</b>: Suliqua 100 units/ml + 33 microgram/ml solution for injection in a pre-filled pen:\nEach pre-filled pen contains 300 units of insulin glargine and 100 micrograms lixisenatide in 3 ml solution.\nEach ml contains 100 units of insulin glargine and 33 micrograms lixisenatide.\nEach dose step contains 1 unit of insulin glargine and 0.33 micrograms of lixisenatide</p><p><b>route</b>: Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000073633)</span></p><p><b>indication</b>: Suliqua is indicated for the treatment of adults with insufficiently controlled type 2 diabetes mellitus to improve glycaemic control as an adjunct to diet and exercise in addition to metformin with or without SGLT-2 inhibitors.</p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072084)</span></p><p><b>classification</b>: insulin glargine and lixisenatide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#A10AE54)</span>, Diabetes mellitus inadequate control <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000019249)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Suliqua 100 units/ml + 33 micrograms/ml solution for injection in a pre-filled pen</p><p><b>type</b>: Full name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000001)</span></p><h3>NameParts</h3><table class=\"grid\"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Solution for injection</td><td>Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></td><td>European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#en)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:MedicinalProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "EU/1/16/1157/003" ]
+       ];
+       fhir:MedicinalProductDefinition.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072062" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Marketing Authorisation" ]
+       ];
+       fhir:MedicinalProductDefinition.domain [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000000012" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Human use" ]
+       ];
+       fhir:MedicinalProductDefinition.version [ fhir:value "1" ];
+       fhir:MedicinalProductDefinition.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+           fhir:Coding.code [ fhir:value "active" ];
+           fhir:Coding.display [ fhir:value "Active" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.statusDate [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime ];
+       fhir:MedicinalProductDefinition.description [ fhir:value "Suliqua 100 units/ml + 33 microgram/ml solution for injection in a pre-filled pen:\nEach pre-filled pen contains 300 units of insulin glargine and 100 micrograms lixisenatide in 3 ml solution.\nEach ml contains 100 units of insulin glargine and 33 micrograms lixisenatide.\nEach dose step contains 1 unit of insulin glargine and 0.33 micrograms of lixisenatide" ];
+       fhir:MedicinalProductDefinition.route [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000073633" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Subcutaneous use" ]
+       ];
+       fhir:MedicinalProductDefinition.indication [ fhir:value "Suliqua is indicated for the treatment of adults with insufficiently controlled type 2 diabetes mellitus to improve glycaemic control as an adjunct to diet and exercise in addition to metformin with or without SGLT-2 inhibitors." ];
+       fhir:MedicinalProductDefinition.legalStatusOfSupply [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072084" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Medicinal product subject to medical prescription" ]
+       ];
+       fhir:MedicinalProductDefinition.classification [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://www.whocc.no/atc_ddd_index/" ];
+           fhir:Coding.code [ fhir:value "A10AE54" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "insulin glargine and lixisenatide" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000019249" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Diabetes mellitus inadequate control" ]
+       ];
+       fhir:MedicinalProductDefinition.name [
+         fhir:index 0;
+         fhir:MedicinalProductDefinition.name.productName [ fhir:value "Suliqua 100 units/ml + 33 micrograms/ml solution for injection in a pre-filled pen" ];
+         fhir:MedicinalProductDefinition.name.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+             fhir:Coding.code [ fhir:value "/#220000000001" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Full name" ]
+         ];
+         fhir:MedicinalProductDefinition.name.namePart [
+           fhir:index 0;
+           fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "Solution for injection" ];
+           fhir:MedicinalProductDefinition.name.namePart.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+               fhir:Coding.code [ fhir:value "/#220000000005" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "Pharmaceutical dose form part" ]
+           ]
+         ];
+         fhir:MedicinalProductDefinition.name.countryLanguage [
+           fhir:index 0;
+           fhir:MedicinalProductDefinition.name.countryLanguage.country [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+               fhir:Coding.code [ fhir:value "eu" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "European Union" ]
+           ];
+           fhir:MedicinalProductDefinition.name.countryLanguage.jurisdiction [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+               fhir:Coding.code [ fhir:value "eu" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "European Union" ]
+           ];
+           fhir:MedicinalProductDefinition.name.countryLanguage.language [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
+               fhir:Coding.code [ fhir:value "en" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "English" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.resource [
+       a fhir:PackagedProductDefinition;
+       fhir:Resource.id [ fhir:value "cfsb5595996591065" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb5595996591065\" </p></div><p><b>identifier</b>: id: EU/1/16/1157/003 (OFFICIAL)</p><p><b>name</b>: 3 ml cartridge (glass) in a pre-filled pen</p><p><b>type</b>: Chemical Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000155527)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>containedItemQuantity</b>: 3 ml</p><p><b>description</b>: Type I colourless glass cartridge with a black plunger (bromobutyl rubber) and a flanged cap (aluminium) with inserted laminated sealing disks (bromobutyl rubber on the medicinal product side and polyisoprene on the outside) containing 3 ml of solution. Each cartridge is assembled into a disposable pen.</p><p><b>copackagedIndicator</b>: false</p><p><b>manufacturer</b>: <a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></p><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: EU/1/16/1157/003 (OFFICIAL)</td><td>Pre-filled pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000073543)</span></td><td>3</td><td>Glass type I <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000003204)</span></td></tr></table></div>"
+       ];
+       fhir:PackagedProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "EU/1/16/1157/003" ]
+       ];
+       fhir:PackagedProductDefinition.name [ fhir:value "3 ml cartridge (glass) in a pre-filled pen" ];
+       fhir:PackagedProductDefinition.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000155527" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Chemical Medicinal Product" ]
+       ];
+       fhir:PackagedProductDefinition.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+           fhir:Coding.code [ fhir:value "active" ];
+           fhir:Coding.display [ fhir:value "Active" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.statusDate [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime ];
+       fhir:PackagedProductDefinition.containedItemQuantity [
+         fhir:index 0;
+         fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "ml" ]
+       ];
+       fhir:PackagedProductDefinition.description [ fhir:value "Type I colourless glass cartridge with a black plunger (bromobutyl rubber) and a flanged cap (aluminium) with inserted laminated sealing disks (bromobutyl rubber on the medicinal product side and polyisoprene on the outside) containing 3 ml of solution. Each cartridge is assembled into a disposable pen." ];
+       fhir:PackagedProductDefinition.copackagedIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:PackagedProductDefinition.manufacturer [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+       ];
+       fhir:PackagedProductDefinition.package [
+         fhir:PackagedProductDefinition.package.identifier [
+           fhir:index 0;
+           fhir:Identifier.use [ fhir:value "official" ];
+           fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+           fhir:Identifier.value [ fhir:value "EU/1/16/1157/003" ]
+         ];
+         fhir:PackagedProductDefinition.package.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+             fhir:Coding.code [ fhir:value "/#100000073543" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Pre-filled pen" ]
+         ];
+         fhir:PackagedProductDefinition.package.quantity [ fhir:value "3"^^xsd:integer ];
+         fhir:PackagedProductDefinition.package.material [
+           fhir:index 0;
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+             fhir:Coding.code [ fhir:value "/#200000003204" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Glass type I" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.resource [
+       a fhir:AdministrableProductDefinition;
+       fhir:Resource.id [ fhir:value "cfsb5880516529064" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb5880516529064\" </p></div><p><b>identifier</b>: id: TBD (OFFICIAL)</p><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"#MedicinalProductDefinition_cfsb7123030148537\">See above (MedicinalProductDefinition/cfsb7123030148537)</a></p><p><b>administrableDoseForm</b>: Solution for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073863)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002135)</span></p><p><b>producedFrom</b>: <a href=\"#ManufacturedItemDefinition_cfsb7089233601948\">See above (ManufacturedItemDefinition/cfsb7089233601948)</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073633)</span></p><h3>TargetSpecies</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000109093)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:AdministrableProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/" ];
+         fhir:Identifier.value [ fhir:value "TBD" ]
+       ];
+       fhir:AdministrableProductDefinition.status [ fhir:value "active" ];
+       fhir:AdministrableProductDefinition.formOf [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb7123030148537>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb7123030148537" ]
+       ];
+       fhir:AdministrableProductDefinition.administrableDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "100000073863" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Solution for injection" ]
+       ];
+       fhir:AdministrableProductDefinition.unitOfPresentation [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#200000002135" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Pen" ]
+       ];
+       fhir:AdministrableProductDefinition.producedFrom [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb7089233601948>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb7089233601948" ]
+       ];
+       fhir:AdministrableProductDefinition.routeOfAdministration [
+         fhir:index 0;
+         fhir:AdministrableProductDefinition.routeOfAdministration.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+             fhir:Coding.code [ fhir:value "100000073633" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Subcutaneous use" ]
+         ];
+         fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies [
+           fhir:index 0;
+           fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+               fhir:Coding.code [ fhir:value "/#100000109093" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "Human" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.resource [
+       a fhir:ManufacturedItemDefinition;
+       fhir:Resource.id [ fhir:value "cfsb7089233601948" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb7089233601948\" </p></div><p><b>identifier</b>: id: EU/1/16/1157/003 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Solution <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002007)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000002135)</span></p><p><b>manufacturer</b>: <a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></p></div>"
+       ];
+       fhir:ManufacturedItemDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "EU/1/16/1157/003" ]
+       ];
+       fhir:ManufacturedItemDefinition.status [ fhir:value "active" ];
+       fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#200000002007" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Solution" ]
+       ];
+       fhir:ManufacturedItemDefinition.unitOfPresentation [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#200000002135" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Pen" ]
+       ];
+       fhir:ManufacturedItemDefinition.manufacturer [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+       ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb3768802370375" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb3768802370375\" </p></div><p><b>identifier</b>: id: 2ZM8CX04RZ (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#00000072072)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>100 units/ml</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "2ZM8CX04RZ" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#00000072072" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "active" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "2ZM8CX04RZ" ];
+               fhir:Coding.display [ fhir:value "Insulin glargine" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength [
+           fhir:index 0;
+           fhir:Ingredient.substance.strength.presentationQuantity [
+             fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "units/ml" ]
+           ];
+           fhir:Ingredient.substance.strength.basis [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity" ];
+               fhir:Coding.code [ fhir:value "ACTIB" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "active ingredient - basis of strength" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb8724428384435" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8724428384435\" </p></div><p><b>identifier</b>: id: 74O62BB01U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#00000072072)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>50 ug/ml</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "74O62BB01U" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#00000072072" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "active" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "74O62BB01U" ];
+               fhir:Coding.display [ fhir:value "Lixisenatide" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength [
+           fhir:index 0;
+           fhir:Ingredient.substance.strength.presentationQuantity [
+             fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "ug/ml" ]
+           ];
+           fhir:Ingredient.substance.strength.basis [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity" ];
+               fhir:Coding.code [ fhir:value "ACTIB" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "active ingredient - basis of strength" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb8364716455502" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8364716455502\" </p></div><p><b>identifier</b>: id: 74O62BB01U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#00000072072)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>33 ug/ml</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "74O62BB01U" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#00000072072" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "active" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "74O62BB01U" ];
+               fhir:Coding.display [ fhir:value "Lixisenatide" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength [
+           fhir:index 0;
+           fhir:Ingredient.substance.strength.presentationQuantity [
+             fhir:Quantity.value [ fhir:value "33"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "ug/ml" ]
+           ];
+           fhir:Ingredient.substance.strength.basis [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity" ];
+               fhir:Coding.code [ fhir:value "ACTIB" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "active ingredient - basis of strength" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb7644964356957" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb7644964356957\" </p></div><p><b>identifier</b>: id: PDC6A3C0OX (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "PDC6A3C0OX" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "PDC6A3C0OX" ];
+               fhir:Coding.display [ fhir:value "Glycerol" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb8873568628101" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8873568628101\" </p></div><p><b>identifier</b>: id: AE28F7PNPL (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "AE28F7PNPL" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "AE28F7PNPL" ];
+               fhir:Coding.display [ fhir:value "Methionine" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb7194634205639" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb7194634205639\" </p></div><p><b>identifier</b>: id: GGO4Y809LO (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "GGO4Y809LO" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "GGO4Y809LO" ];
+               fhir:Coding.display [ fhir:value "Metacresol" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb9561966749493" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb9561966749493\" </p></div><p><b>identifier</b>: id: 86Q357L16B (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "86Q357L16B" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "86Q357L16B" ];
+               fhir:Coding.display [ fhir:value "Zinc chloride" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb1268193754623" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1268193754623\" </p></div><p><b>identifier</b>: id: QTT17582CB (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "QTT17582CB" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "QTT17582CB" ];
+               fhir:Coding.display [ fhir:value "Concentrated hydrochloric acid" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb3286639616821" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb3286639616821\" </p></div><p><b>identifier</b>: id: 55X04QC32I (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "55X04QC32I" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "55X04QC32I" ];
+               fhir:Coding.display [ fhir:value "Sodium hydroxide" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb7034777237464" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb7034777237464\" </p></div><p><b>identifier</b>: id: 059QF0KO0R (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072082)</span></p><p><b>allergenicIndicator</b>: false</p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb2176224411725\">See above (Organization/cfsb2176224411725)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "059QF0KO0R" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.allergenicIndicator [ fhir:value "false"^^xsd:boolean ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb2176224411725>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb2176224411725" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "059QF0KO0R" ];
+               fhir:Coding.display [ fhir:value "Water for injections" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:Bundle.entry.resource [
+       a fhir:ClinicalUseDefinition;
+       fhir:Resource.id [ fhir:value "cfsb4325643431772" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb4325643431772\" </p></div><p><b>identifier</b>: id: Hypersensitivity reaction (OFFICIAL)</p><p><b>type</b>: contraindication</p><p><b>subject</b>: </p><ul><li><a href=\"MedicinalProductDefinition-cfsb1151803027115.html\">MedicinalProductDefinition/cfsb1151803027115</a></li><li><a href=\"#MedicinalProductDefinition_cfsb7123030148537\">See above (MedicinalProductDefinition/cfsb7123030148537)</a></li></ul></div>"
+       ];
+       fhir:ClinicalUseDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "Hypersensitivity reaction" ]
+       ];
+       fhir:ClinicalUseDefinition.type [ fhir:value "contraindication" ];
+       fhir:ClinicalUseDefinition.subject [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1151803027115>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1151803027115" ]
+       ], [
+         fhir:index 1;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb7123030148537>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb7123030148537" ]
+       ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:Bundle.entry.resource [
+       a fhir:ClinicalUseDefinition;
+       fhir:Resource.id [ fhir:value "cfsb8699684597483" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8699684597483\" </p></div><p><b>identifier</b>: id: Type 2 diabetes mellitus (OFFICIAL)</p><p><b>type</b>: indication</p><p><b>subject</b>: </p><ul><li><a href=\"MedicinalProductDefinition-cfsb1151803027115.html\">MedicinalProductDefinition/cfsb1151803027115</a></li><li><a href=\"#MedicinalProductDefinition_cfsb7123030148537\">See above (MedicinalProductDefinition/cfsb7123030148537)</a></li></ul></div>"
+       ];
+       fhir:ClinicalUseDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/rmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "Type 2 diabetes mellitus" ]
+       ];
+       fhir:ClinicalUseDefinition.type [ fhir:value "indication" ];
+       fhir:ClinicalUseDefinition.subject [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1151803027115>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1151803027115" ]
+       ], [
+         fhir:index 1;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb7123030148537>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb7123030148537" ]
+       ]
+     ]
+  ], [
+     fhir:index 22;
+     fhir:Bundle.entry.resource [
+       a fhir:DocumentReference;
+       fhir:Resource.id [ fhir:value "cfsb5671063821622" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb5671063821622\" </p></div><p><b>status</b>: current</p><p><b>description</b>: Instruksjonsfilm for bruk av ferdigfylt penn.</p><blockquote><p><b>content</b></p></blockquote></div>"
+       ];
+       fhir:DocumentReference.status [ fhir:value "current" ];
+       fhir:DocumentReference.description [ fhir:value "Instruksjonsfilm for bruk av ferdigfylt penn." ];
+       fhir:DocumentReference.content [
+         fhir:index 0;
+         fhir:DocumentReference.content.attachment [
+           fhir:Attachment.contentType [ fhir:value "video/mp4" ];
+           fhir:Attachment.language [ fhir:value "no" ];
+           fhir:Attachment.url [ fhir:value "https://www.felleskatalogen.no/medisin/film/suliqua-ferdigfylt-penn.mp4" ];
+           fhir:Attachment.title [ fhir:value "Suliqua ferdigfylt penn" ];
+           fhir:Attachment.creation [ fhir:value "2018-09-28"^^xsd:date ];
+           fhir:Attachment.height [ fhir:value "404"^^xsd:positiveInteger ];
+           fhir:Attachment.width [ fhir:value "720"^^xsd:positiveInteger ];
+           fhir:Attachment.duration [ fhir:value "366"^^xsd:decimal ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/cfsb2726030964451.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

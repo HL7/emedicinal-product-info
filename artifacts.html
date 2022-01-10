@@ -1,38 +1,38 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.EU.FHIR.GH\Artifacts Summary - FHIR v4.1.0</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH\Artifacts Summary - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/pcsp.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -42,46 +42,46 @@
 
     <style type="text/css">h2{--heading-prefix:"8"}
     h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
         
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
-            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
           </a>
         </div>
-   <!-- <div id="family-nav">
+ <!--        <div id="family-nav">
           <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
         </div> -->
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
   </li>
@@ -134,26 +134,26 @@
     <a href="copyright.html">Copyright</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -165,30 +165,32 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
-    <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten --><div class="markdown-toc">
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
    <p>Contents:</p>
    <ul>
       <li>
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#3">Terminology: Code Systems</a>
+         <a href="#3">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#5">Other</a>
+         <a href="#4">Other</a>
       </li>
    </ul>
 </div>
-<div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
    <h3>Behavior: Capability Statements </h3>
@@ -201,33 +203,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CapabilityStatement-capability-statement-ema.html" title="CapabilityStatement/capability-statement-ema">Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server</a>
+                  <a href="CapabilityStatement-capability-statement-ema.html"
+                     title="CapabilityStatement/capability-statement-ema">Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server</a>
                </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
-   <h3>Structures: Resource Profiles </h3>
-   <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-medicationStatement-eu-gh.html" title="StructureDefinition/medicationStatement-eu-gh">MedicationStatement (Gravitate Health)</a>
-               </td>
-               <td>
-<p>This profile defines how to represent in HL7 FHIR a MedicationStatement for the scope of the Gravitate Health project.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -238,7 +221,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-Example-sections-PL.html" title="CodeSystem/Example-sections-PL">EMA example-sections-pl</a>
+                  <a href="CodeSystem-Example.html" title="CodeSystem/Example">EMA example-sections-pl</a>
                </td>
                <td>
 <p>Placeholder for EMA example-sections PL</p>
@@ -246,7 +229,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-Example-sections-smpc.html" title="CodeSystem/Example-sections-smpc">EMA example-sections-smpc</a>
+                  <a href="CodeSystem-Examplesmpc.html" title="CodeSystem/Examplesmpc">EMA example-sections-smpc</a>
                </td>
                <td>
 <p>Placeholder for EMA example-sections smpc</p>
@@ -255,7 +238,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -266,88 +249,1619 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-gravitate-maria.html" title="Bundle/gravitate-maria">Maria Gravitate's IPS</a>
+                  <a href="Bundle-12dde04f-a821-4c44-82ce-ab11e8c87c72.html"
+                     title="Bundle/12dde04f-a821-4c44-82ce-ab11e8c87c72">Vulcan Skilarence 120 mg FHIR Package Insert</a>
                </td>
                <td>
-<p>Example of International Patient Summary for Maria Gravitate</p>
+<p>instance of Skilarence package insert for connectathon testing</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-234d3626-fac0-4e69-86a6-556910eecfc9.html" title="Bundle/234d3626-fac0-4e69-86a6-556910eecfc9">Dimethyl-fumarate PIL (Greek)</a>
+                  <a href="Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382d6f4.html"
+                     title="Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382d6f4">Vulcan Skilarence FHIR Package Insert</a>
                </td>
                <td>
-<p>Example of Greek Product information leaflet for Dimethyl-fumarate</p>
+<p>instance of Skilarence package insert for connectathon testing</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-79147eac-56be-4aec-9e71-bee160e588b6.html" title="Bundle/79147eac-56be-4aec-9e71-bee160e588b6">Dimethyl-fumarate PIL (English)</a>
+                  <a href="MedicinalProductDefinition-cfsb1151803027115.html"
+                     title="MedicinalProductDefinition/cfsb1151803027115">cfsb1151803027115</a>
                </td>
                <td>
-<p>Example of English Product information leaflet for Dimethyl-fumarate</p>
+<p>EU/1/16/1157/002 100/50 x5 pre-filled pens</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-00b76159-1583-4374-b892-d360b49dae01.html" title="Bundle/00b76159-1583-4374-b892-d360b49dae01">Dimethyl-fumarate PIL (Norwegian)</a>
+                  <a href="Binary-cfsb11927037.html" title="Binary/cfsb11927037">cfsb11927037</a>
                </td>
                <td>
-<p>Example of Norwegian Product information leaflet for Dimethyl-fumarate</p>
+<p>Suliqua image 11927037</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-36773c03-3040-45e2-82c2-bc3fc968b6a6.html" title="Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6">Irbesartan PIL (Greek)</a>
+                  <a href="Binary-cfsb11927038.html" title="Binary/cfsb11927038">cfsb11927038</a>
                </td>
                <td>
-<p>Example of Greek Product information leaflet for Irbesartan</p>
+<p>Suliqua image 11927038</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-910d1748-674b-430c-b4ab-3665b266a31f.html" title="Bundle/910d1748-674b-430c-b4ab-3665b266a31f">Irbesartan PIL (English)</a>
+                  <a href="Binary-cfsb11927039.html" title="Binary/cfsb11927039">cfsb11927039</a>
                </td>
                <td>
-<p>Example of English Product information leaflet for Irbesartan</p>
+<p>Suliqua image 11927039</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-995d3971-b899-43bf-857d-98c26634796d.html" title="Bundle/995d3971-b899-43bf-857d-98c26634796d">Irbesartan PIL (Norwegian)</a>
+                  <a href="Binary-cfsb11927040.html" title="Binary/cfsb11927040">cfsb11927040</a>
                </td>
                <td>
-<p>Example of Norwegian Product information leaflet for Irbesartan</p>
+<p>Suliqua image 11927040</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-8f7eede7-0aac-41ca-8552-8f1f1c059e6a.html" title="Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a">Oxymetazoline-hydrochloride  PIL (Greek)</a>
+                  <a href="Binary-cfsb11927041.html" title="Binary/cfsb11927041">cfsb11927041</a>
                </td>
                <td>
-<p>Example of Greek Product information leaflet for Oxymetazoline-hydrochloride</p>
+<p>Suliqua image 11927041</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-69b66755-94ef-4ff6-a794-43a74e16ff00.html" title="Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00">Oxymetazoline-hydrochloride PIL (English)</a>
+                  <a href="Binary-cfsb11927042.html" title="Binary/cfsb11927042">cfsb11927042</a>
                </td>
                <td>
-<p>Example of English Product information leaflet for Oxymetazoline-hydrochloride</p>
+<p>Suliqua image 11927042</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-d1a125cf-b46c-40cf-82cf-5b754eb0f19e.html" title="Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e">Oxymetazoline-hydrochloride PIL (Norwegian)</a>
+                  <a href="Binary-cfsb11927043.html" title="Binary/cfsb11927043">cfsb11927043</a>
                </td>
                <td>
-<p>Example of Norwegian Product information leaflet for Oxymetazoline-hydrochloride</p>
+<p>Suliqua image 11927043</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927044.html" title="Binary/cfsb11927044">cfsb11927044</a>
+               </td>
+               <td>
+<p>Suliqua image 11927044</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927045.html" title="Binary/cfsb11927045">cfsb11927045</a>
+               </td>
+               <td>
+<p>Suliqua image 11927045</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927046.html" title="Binary/cfsb11927046">cfsb11927046</a>
+               </td>
+               <td>
+<p>Suliqua image 11927046</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927047.html" title="Binary/cfsb11927047">cfsb11927047</a>
+               </td>
+               <td>
+<p>Suliqua image 11927047</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927048.html" title="Binary/cfsb11927048">cfsb11927048</a>
+               </td>
+               <td>
+<p>Suliqua image 11927048</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927049.html" title="Binary/cfsb11927049">cfsb11927049</a>
+               </td>
+               <td>
+<p>Suliqua image 11927049</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927050.html" title="Binary/cfsb11927050">cfsb11927050</a>
+               </td>
+               <td>
+<p>Suliqua image 11927050</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927051.html" title="Binary/cfsb11927051">cfsb11927051</a>
+               </td>
+               <td>
+<p>Suliqua image 11927051</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927052.html" title="Binary/cfsb11927052">cfsb11927052</a>
+               </td>
+               <td>
+<p>Suliqua image 11927052</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927053.html" title="Binary/cfsb11927053">cfsb11927053</a>
+               </td>
+               <td>
+<p>Suliqua image 11927053</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927054.html" title="Binary/cfsb11927054">cfsb11927054</a>
+               </td>
+               <td>
+<p>Suliqua image 11927054</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927055.html" title="Binary/cfsb11927055">cfsb11927055</a>
+               </td>
+               <td>
+<p>Suliqua image 11927055</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927056.html" title="Binary/cfsb11927056">cfsb11927056</a>
+               </td>
+               <td>
+<p>Suliqua image 11927056</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927280.html" title="Binary/cfsb11927280">cfsb11927280</a>
+               </td>
+               <td>
+<p>Suliqua image 11927280</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927281.html" title="Binary/cfsb11927281">cfsb11927281</a>
+               </td>
+               <td>
+<p>Suliqua image 11927281</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927282.html" title="Binary/cfsb11927282">cfsb11927282</a>
+               </td>
+               <td>
+<p>Suliqua image 11927282</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927284.html" title="Binary/cfsb11927284">cfsb11927284</a>
+               </td>
+               <td>
+<p>Suliqua image 11927284</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927285.html" title="Binary/cfsb11927285">cfsb11927285</a>
+               </td>
+               <td>
+<p>Suliqua image 11927285</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927286.html" title="Binary/cfsb11927286">cfsb11927286</a>
+               </td>
+               <td>
+<p>Suliqua image 11927286</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927287.html" title="Binary/cfsb11927287">cfsb11927287</a>
+               </td>
+               <td>
+<p>Suliqua image 11927287</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927288.html" title="Binary/cfsb11927288">cfsb11927288</a>
+               </td>
+               <td>
+<p>Suliqua image 11927288</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927289.html" title="Binary/cfsb11927289">cfsb11927289</a>
+               </td>
+               <td>
+<p>Suliqua image 11927289</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927290.html" title="Binary/cfsb11927290">cfsb11927290</a>
+               </td>
+               <td>
+<p>Suliqua image 11927290</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927293.html" title="Binary/cfsb11927293">cfsb11927293</a>
+               </td>
+               <td>
+<p>Suliqua image 11927293</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927295.html" title="Binary/cfsb11927295">cfsb11927295</a>
+               </td>
+               <td>
+<p>Suliqua image 11927295</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927296.html" title="Binary/cfsb11927296">cfsb11927296</a>
+               </td>
+               <td>
+<p>Suliqua image 11927296</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927297.html" title="Binary/cfsb11927297">cfsb11927297</a>
+               </td>
+               <td>
+<p>Suliqua image 11927297</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927298.html" title="Binary/cfsb11927298">cfsb11927298</a>
+               </td>
+               <td>
+<p>Suliqua image 11927298</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927299.html" title="Binary/cfsb11927299">cfsb11927299</a>
+               </td>
+               <td>
+<p>Suliqua image 11927299</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927300.html" title="Binary/cfsb11927300">cfsb11927300</a>
+               </td>
+               <td>
+<p>Suliqua image 11927300</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927301.html" title="Binary/cfsb11927301">cfsb11927301</a>
+               </td>
+               <td>
+<p>Suliqua image 11927301</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927302.html" title="Binary/cfsb11927302">cfsb11927302</a>
+               </td>
+               <td>
+<p>Suliqua image 11927302</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927303.html" title="Binary/cfsb11927303">cfsb11927303</a>
+               </td>
+               <td>
+<p>Suliqua image 11927303</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb11927304.html" title="Binary/cfsb11927304">cfsb11927304</a>
+               </td>
+               <td>
+<p>Suliqua image 11927304</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1268193754623.html"
+                     title="Ingredient/cfsb1268193754623">cfsb1268193754623</a>
+               </td>
+               <td>
+<p>Concentrated hydrochloric acid</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-cfsb1316794754115.html"
+                     title="Composition/cfsb1316794754115">cfsb1316794754115</a>
+               </td>
+               <td>
+<p>Pakningsvedlegg 100 enheter/ml + 33 mikrogram/ml</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1639003145277.html"
+                     title="Organization/cfsb1639003145277">cfsb1639003145277</a>
+               </td>
+               <td>
+<p>Market Authorization Holder</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-cfsb1639004037108.html"
+                     title="Composition/cfsb1639004037108">cfsb1639004037108</a>
+               </td>
+               <td>
+<p>Package Leaflet 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1639015344307.html"
+                     title="Organization/cfsb1639015344307">cfsb1639015344307</a>
+               </td>
+               <td>
+<p>Manufacturer</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1639015880655.html"
+                     title="Organization/cfsb1639015880655">cfsb1639015880655</a>
+               </td>
+               <td>
+<p>EMA</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639015963928.html"
+                     title="Ingredient/cfsb1639015963928">cfsb1639015963928</a>
+               </td>
+               <td>
+<p>dimethyl fumarate 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-cfsb1639016804189.html"
+                     title="Composition/cfsb1639016804189">cfsb1639016804189</a>
+               </td>
+               <td>
+<p>Package Leaflet 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639017722742.html"
+                     title="Ingredient/cfsb1639017722742">cfsb1639017722742</a>
+               </td>
+               <td>
+<p>Lactose monohydrate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639018040123.html"
+                     title="Ingredient/cfsb1639018040123">cfsb1639018040123</a>
+               </td>
+               <td>
+<p>Cellulose microcrystalline</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639018789432.html"
+                     title="Ingredient/cfsb1639018789432">cfsb1639018789432</a>
+               </td>
+               <td>
+<p>dimethyl fumarate 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639019219159.html"
+                     title="Ingredient/cfsb1639019219159">cfsb1639019219159</a>
+               </td>
+               <td>
+<p>Croscarmellose sodium</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639188900323.html"
+                     title="Ingredient/cfsb1639188900323">cfsb1639188900323</a>
+               </td>
+               <td>
+<p>Colloidal anhydrous silica</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639188914522.html"
+                     title="Ingredient/cfsb1639188914522">cfsb1639188914522</a>
+               </td>
+               <td>
+<p>Magnesium stearate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639188931320.html"
+                     title="Ingredient/cfsb1639188931320">cfsb1639188931320</a>
+               </td>
+               <td>
+<p>Methacrylic acid-ethyl acrylate copolymer (1:1)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639188944570.html"
+                     title="Ingredient/cfsb1639188944570">cfsb1639188944570</a>
+               </td>
+               <td>
+<p>Talc</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639188961481.html"
+                     title="Ingredient/cfsb1639188961481">cfsb1639188961481</a>
+               </td>
+               <td>
+<p>Triethyl citrate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639188982012.html"
+                     title="Ingredient/cfsb1639188982012">cfsb1639188982012</a>
+               </td>
+               <td>
+<p>Titanium dioxide (E171)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639188991744.html"
+                     title="Ingredient/cfsb1639188991744">cfsb1639188991744</a>
+               </td>
+               <td>
+<p>Simethicone</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639189003542.html"
+                     title="Ingredient/cfsb1639189003542">cfsb1639189003542</a>
+               </td>
+               <td>
+<p>Indigo carmine (E132)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639189015872.html"
+                     title="Ingredient/cfsb1639189015872">cfsb1639189015872</a>
+               </td>
+               <td>
+<p>Sodium hydroxide</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ManufacturedItemDefinition-cfsb1639190046041.html"
+                     title="ManufacturedItemDefinition/cfsb1639190046041">cfsb1639190046041</a>
+               </td>
+               <td>
+<p>30 mg tablet, Blister, 42 pack</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ManufacturedItemDefinition-cfsb1639191683660.html"
+                     title="ManufacturedItemDefinition/cfsb1639191683660">cfsb1639191683660</a>
+               </td>
+               <td>
+<p>120 mg tablet</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AdministrableProductDefinition-cfsb1639227408981.html"
+                     title="AdministrableProductDefinition/cfsb1639227408981">cfsb1639227408981</a>
+               </td>
+               <td>
+<p>30 mg tablet</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AdministrableProductDefinition-cfsb1639228293199.html"
+                     title="AdministrableProductDefinition/cfsb1639228293199">cfsb1639228293199</a>
+               </td>
+               <td>
+<p>120 mg tablet</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639229333787.html"
+                     title="PackagedProductDefinition/cfsb1639229333787">cfsb1639229333787</a>
+               </td>
+               <td>
+<p>blister x42 - 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230499322.html"
+                     title="MedicinalProductDefinition/cfsb1639230499322">cfsb1639230499322</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/001 30 mg, 42 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230548265.html"
+                     title="MedicinalProductDefinition/cfsb1639230548265">cfsb1639230548265</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/013 30 mg, 70 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230598497.html"
+                     title="MedicinalProductDefinition/cfsb1639230598497">cfsb1639230598497</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/014 30 mg, 210 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230620815.html"
+                     title="MedicinalProductDefinition/cfsb1639230620815">cfsb1639230620815</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/002 120 mg, 40 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230646463.html"
+                     title="MedicinalProductDefinition/cfsb1639230646463">cfsb1639230646463</a>
+               </td>
+               <td>
+<p>120 mg, 70 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230697840.html"
+                     title="MedicinalProductDefinition/cfsb1639230697840">cfsb1639230697840</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/004 120 mg, 90 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230722203.html"
+                     title="MedicinalProductDefinition/cfsb1639230722203">cfsb1639230722203</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/005 120 mg, 100 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230742250.html"
+                     title="MedicinalProductDefinition/cfsb1639230742250">cfsb1639230742250</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/006 120 mg, 120 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230766661.html"
+                     title="MedicinalProductDefinition/cfsb1639230766661">cfsb1639230766661</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/007 120 mg, 180 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230793613.html"
+                     title="MedicinalProductDefinition/cfsb1639230793613">cfsb1639230793613</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/008 120 mg, 200 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230826758.html"
+                     title="MedicinalProductDefinition/cfsb1639230826758">cfsb1639230826758</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/009 120 mg, 240 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230862286.html"
+                     title="MedicinalProductDefinition/cfsb1639230862286">cfsb1639230862286</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/012 120 mg, 300 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230887164.html"
+                     title="MedicinalProductDefinition/cfsb1639230887164">cfsb1639230887164</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/010 120 mg, 360 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639230903448.html"
+                     title="MedicinalProductDefinition/cfsb1639230903448">cfsb1639230903448</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/011 120 mg, 400</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639230948355.html"
+                     title="RegulatedAuthorization/cfsb1639230948355">cfsb1639230948355</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/001 42 - 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639230976872.html"
+                     title="RegulatedAuthorization/cfsb1639230976872">cfsb1639230976872</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/003  70 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231000086.html"
+                     title="RegulatedAuthorization/cfsb1639231000086">cfsb1639231000086</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/004  90 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231013897.html"
+                     title="RegulatedAuthorization/cfsb1639231013897">cfsb1639231013897</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/005  100 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231032998.html"
+                     title="RegulatedAuthorization/cfsb1639231032998">cfsb1639231032998</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/006  120 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231046829.html"
+                     title="RegulatedAuthorization/cfsb1639231046829">cfsb1639231046829</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/007  180 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231057362.html"
+                     title="RegulatedAuthorization/cfsb1639231057362">cfsb1639231057362</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/008  200 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231057363.html"
+                     title="RegulatedAuthorization/cfsb1639231057363">cfsb1639231057363</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/008  200 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231077127.html"
+                     title="RegulatedAuthorization/cfsb1639231077127">cfsb1639231077127</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/012  300 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231090127.html"
+                     title="RegulatedAuthorization/cfsb1639231090127">cfsb1639231090127</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/010 360 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231102456.html"
+                     title="RegulatedAuthorization/cfsb1639231102456">cfsb1639231102456</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/011 400 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231126420.html"
+                     title="RegulatedAuthorization/cfsb1639231126420">cfsb1639231126420</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/013 70 - 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639231145768.html"
+                     title="RegulatedAuthorization/cfsb1639231145768">cfsb1639231145768</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/014 210 - 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231211443.html"
+                     title="PackagedProductDefinition/cfsb1639231211443">cfsb1639231211443</a>
+               </td>
+               <td>
+<p>blister x70 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231308548.html"
+                     title="PackagedProductDefinition/cfsb1639231308548">cfsb1639231308548</a>
+               </td>
+               <td>
+<p>blister x210 30 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231329878.html"
+                     title="PackagedProductDefinition/cfsb1639231329878">cfsb1639231329878</a>
+               </td>
+               <td>
+<p>blister x40 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231345377.html"
+                     title="PackagedProductDefinition/cfsb1639231345377">cfsb1639231345377</a>
+               </td>
+               <td>
+<p>blister x70 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231381772.html"
+                     title="PackagedProductDefinition/cfsb1639231381772">cfsb1639231381772</a>
+               </td>
+               <td>
+<p>blister x100 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231397203.html"
+                     title="PackagedProductDefinition/cfsb1639231397203">cfsb1639231397203</a>
+               </td>
+               <td>
+<p>blister x120 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231412668.html"
+                     title="PackagedProductDefinition/cfsb1639231412668">cfsb1639231412668</a>
+               </td>
+               <td>
+<p>blister x180 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231426617.html"
+                     title="PackagedProductDefinition/cfsb1639231426617">cfsb1639231426617</a>
+               </td>
+               <td>
+<p>blister x200 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231440511.html"
+                     title="PackagedProductDefinition/cfsb1639231440511">cfsb1639231440511</a>
+               </td>
+               <td>
+<p>blister x240 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231457677.html"
+                     title="PackagedProductDefinition/cfsb1639231457677">cfsb1639231457677</a>
+               </td>
+               <td>
+<p>blister x360 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231480623.html"
+                     title="PackagedProductDefinition/cfsb1639231480623">cfsb1639231480623</a>
+               </td>
+               <td>
+<p>blister x400 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639231529999.html"
+                     title="PackagedProductDefinition/cfsb1639231529999">cfsb1639231529999</a>
+               </td>
+               <td>
+<p>blister x300 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639234802176.html"
+                     title="RegulatedAuthorization/cfsb1639234802176">cfsb1639234802176</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/002 40 - 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639238291499.html"
+                     title="MedicinalProductDefinition/cfsb1639238291499">cfsb1639238291499</a>
+               </td>
+               <td>
+<p>EU/1/17/1201/014 30 mg, 210 blister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639240824314.html"
+                     title="ClinicalUseDefinition/cfsb1639240824314">cfsb1639240824314</a>
+               </td>
+               <td>
+<p>Indication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639240847910.html"
+                     title="ClinicalUseDefinition/cfsb1639240847910">cfsb1639240847910</a>
+               </td>
+               <td>
+<p>Contraindication - Gastrointestinal disorders</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639240914083.html"
+                     title="ClinicalUseDefinition/cfsb1639240914083">cfsb1639240914083</a>
+               </td>
+               <td>
+<p>Contraindication - Hypersensitivity reaction</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639240934786.html"
+                     title="ClinicalUseDefinition/cfsb1639240934786">cfsb1639240934786</a>
+               </td>
+               <td>
+<p>Contraindication - Hepatic impairment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639240956900.html"
+                     title="ClinicalUseDefinition/cfsb1639240956900">cfsb1639240956900</a>
+               </td>
+               <td>
+<p>Contraindication - Renal impairment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639240978629.html"
+                     title="ClinicalUseDefinition/cfsb1639240978629">cfsb1639240978629</a>
+               </td>
+               <td>
+<p>Contraindication - Pregnancy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639241004890.html"
+                     title="ClinicalUseDefinition/cfsb1639241004890">cfsb1639241004890</a>
+               </td>
+               <td>
+<p>Contraindication - Breast feeding</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639241023005.html"
+                     title="ClinicalUseDefinition/cfsb1639241023005">cfsb1639241023005</a>
+               </td>
+               <td>
+<p>Interaction - METHOTREXATE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb1639241034937.html"
+                     title="ClinicalUseDefinition/cfsb1639241034937">cfsb1639241034937</a>
+               </td>
+               <td>
+<p>interaction - CYCLOSPORINE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb1639241073348.html" title="Binary/cfsb1639241073348">cfsb1639241073348</a>
+               </td>
+               <td>
+<p>30 mg tablet pic</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-cfsb1639241092664.html" title="Binary/cfsb1639241092664">cfsb1639241092664</a>
+               </td>
+               <td>
+<p>120 mg tablet pic</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1639753766266.html"
+                     title="Organization/cfsb1639753766266">cfsb1639753766266</a>
+               </td>
+               <td>
+<p>Manufacturer</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1639754108144.html"
+                     title="Organization/cfsb1639754108144">cfsb1639754108144</a>
+               </td>
+               <td>
+<p>Market Authorization Holder</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639754408039.html"
+                     title="Ingredient/cfsb1639754408039">cfsb1639754408039</a>
+               </td>
+               <td>
+<p>fosfomycin trometamol 3g</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ManufacturedItemDefinition-cfsb1639756818482.html"
+                     title="ManufacturedItemDefinition/cfsb1639756818482">cfsb1639756818482</a>
+               </td>
+               <td>
+<p>Monuril Granules for oral solution</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639758328687.html"
+                     title="PackagedProductDefinition/cfsb1639758328687">cfsb1639758328687</a>
+               </td>
+               <td>
+<p>Monuril 5 sachets of 8 g of granules (3 g fosfomycin)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1639760186202.html"
+                     title="MedicinalProductDefinition/cfsb1639760186202">cfsb1639760186202</a>
+               </td>
+               <td>
+<p>Medicinal Product</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AdministrableProductDefinition-cfsb1639760977050.html"
+                     title="AdministrableProductDefinition/cfsb1639760977050">cfsb1639760977050</a>
+               </td>
+               <td>
+<p>Administrable Product</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1639761980721.html"
+                     title="RegulatedAuthorization/cfsb1639761980721">cfsb1639761980721</a>
+               </td>
+               <td>
+<p>Regulated Authorization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639762372321.html"
+                     title="Ingredient/cfsb1639762372321">cfsb1639762372321</a>
+               </td>
+               <td>
+<p>Saccharin</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639762372322.html"
+                     title="Ingredient/cfsb1639762372322">cfsb1639762372322</a>
+               </td>
+               <td>
+<p>Orange flavour</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639762372323.html"
+                     title="Ingredient/cfsb1639762372323">cfsb1639762372323</a>
+               </td>
+               <td>
+<p>Mandarin flavour</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1639762593730.html"
+                     title="Ingredient/cfsb1639762593730">cfsb1639762593730</a>
+               </td>
+               <td>
+<p>Sucrose</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639764389611.html"
+                     title="PackagedProductDefinition/cfsb1639764389611">cfsb1639764389611</a>
+               </td>
+               <td>
+<p>Packaged Product - 2 sachets of 8 g of granules</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1639764389612.html"
+                     title="PackagedProductDefinition/cfsb1639764389612">cfsb1639764389612</a>
+               </td>
+               <td>
+<p>Packaged Product - 1 sachet of 8 g of granules</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-cfsb1639991356428.html"
+                     title="Composition/cfsb1639991356428">cfsb1639991356428</a>
+               </td>
+               <td>
+<p>Package Leaflet</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1640282801639.html"
+                     title="Organization/cfsb1640282801639">cfsb1640282801639</a>
+               </td>
+               <td>
+<p>EMA</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb164028843078261.html"
+                     title="PackagedProductDefinition/cfsb164028843078261">cfsb164028843078261</a>
+               </td>
+               <td>
+<p>blister x90 120 mg</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AdministrableProductDefinition-cfsb1640606978608.html"
+                     title="AdministrableProductDefinition/cfsb1640606978608">cfsb1640606978608</a>
+               </td>
+               <td>
+<p>Humalog 100 U/ml 5 pre-filled pen</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640607635665.html"
+                     title="Ingredient/cfsb1640607635665">cfsb1640607635665</a>
+               </td>
+               <td>
+<p>Insulin Lispro</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ManufacturedItemDefinition-cfsb1640777487408.html"
+                     title="ManufacturedItemDefinition/cfsb1640777487408">cfsb1640777487408</a>
+               </td>
+               <td>
+<p>Manufactured Item</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640780048702.html"
+                     title="Ingredient/cfsb1640780048702">cfsb1640780048702</a>
+               </td>
+               <td>
+<p>Glycerol</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640780419325.html"
+                     title="Ingredient/cfsb1640780419325">cfsb1640780419325</a>
+               </td>
+               <td>
+<p>metacresol</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640780546710.html"
+                     title="Ingredient/cfsb1640780546710">cfsb1640780546710</a>
+               </td>
+               <td>
+<p>Trometamol</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640780625902.html"
+                     title="Ingredient/cfsb1640780625902">cfsb1640780625902</a>
+               </td>
+               <td>
+<p>Zinc Oxide</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640780743829.html"
+                     title="Ingredient/cfsb1640780743829">cfsb1640780743829</a>
+               </td>
+               <td>
+<p>Water for injections</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640780784213.html"
+                     title="Ingredient/cfsb1640780784213">cfsb1640780784213</a>
+               </td>
+               <td>
+<p>Hydrochloric acid</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb1640780830373.html"
+                     title="Ingredient/cfsb1640780830373">cfsb1640780830373</a>
+               </td>
+               <td>
+<p>Sodium Hydroxide</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb1640781499340.html"
+                     title="PackagedProductDefinition/cfsb1640781499340">cfsb1640781499340</a>
+               </td>
+               <td>
+<p>5 pre-filled pens, 3 ml (3.5 mg/ml)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb1640870220343.html"
+                     title="RegulatedAuthorization/cfsb1640870220343">cfsb1640870220343</a>
+               </td>
+               <td>
+<p>Regulated Authorization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1640870284639.html"
+                     title="Organization/cfsb1640870284639">cfsb1640870284639</a>
+               </td>
+               <td>
+<p>Marketing Authorization Holder</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1640870328895.html"
+                     title="Organization/cfsb1640870328895">cfsb1640870328895</a>
+               </td>
+               <td>
+<p>Manufacturer</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb1641212233583.html"
+                     title="MedicinalProductDefinition/cfsb1641212233583">cfsb1641212233583</a>
+               </td>
+               <td>
+<p>EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb1641381635293.html"
+                     title="Organization/cfsb1641381635293">cfsb1641381635293</a>
+               </td>
+               <td>
+<p>Manufaturer API</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-cfsb1641383289499.html"
+                     title="Composition/cfsb1641383289499">cfsb1641383289499</a>
+               </td>
+               <td>
+<p>Package Leaflet</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb2023900992766.html"
+                     title="RegulatedAuthorization/cfsb2023900992766">cfsb2023900992766</a>
+               </td>
+               <td>
+<p>EU/1/16/1157/003 100/33 x3 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb2176224411725.html"
+                     title="Organization/cfsb2176224411725">cfsb2176224411725</a>
+               </td>
+               <td>
+<p>Manufacturer API</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-cfsb2726030964451.html" title="Bundle/cfsb2726030964451">Vulcan Suliqua FHIR Package Insert</a>
+               </td>
+               <td>
+<p>Instance of Suliqua package insert for Connectathon testing</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb2900611666086.html"
+                     title="PackagedProductDefinition/cfsb2900611666086">cfsb2900611666086</a>
+               </td>
+               <td>
+<p>x5 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb3286639616821.html"
+                     title="Ingredient/cfsb3286639616821">cfsb3286639616821</a>
+               </td>
+               <td>
+<p>Sodium hydroxide</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AdministrableProductDefinition-cfsb3361388689784.html"
+                     title="AdministrableProductDefinition/cfsb3361388689784">cfsb3361388689784</a>
+               </td>
+               <td>
+<p>Suliqua 100 units/ml + 50 micrograms/ml solution for injection in x5 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb3768802370375.html"
+                     title="Ingredient/cfsb3768802370375">cfsb3768802370375</a>
+               </td>
+               <td>
+<p>Insulin glargine 100 units/ml</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb4325643431772.html"
+                     title="ClinicalUseDefinition/cfsb4325643431772">cfsb4325643431772</a>
+               </td>
+               <td>
+<p>Contraindication - Hypersensitivity reaction</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-cfsb5419150199436.html"
+                     title="Composition/cfsb5419150199436">cfsb5419150199436</a>
+               </td>
+               <td>
+<p>Pakningsvedlegg 100 enheter/ml + 50 mikrogram/ml</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PackagedProductDefinition-cfsb5595996591065.html"
+                     title="PackagedProductDefinition/cfsb5595996591065">cfsb5595996591065</a>
+               </td>
+               <td>
+<p>x3 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DocumentReference-cfsb5671063821622.html"
+                     title="DocumentReference/cfsb5671063821622">cfsb5671063821622</a>
+               </td>
+               <td>
+<p>Suliqua MP4 instruction video</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AdministrableProductDefinition-cfsb5880516529064.html"
+                     title="AdministrableProductDefinition/cfsb5880516529064">cfsb5880516529064</a>
+               </td>
+               <td>
+<p>Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb6005885654359.html"
+                     title="Organization/cfsb6005885654359">cfsb6005885654359</a>
+               </td>
+               <td>
+<p>Market Authorization Holder</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ManufacturedItemDefinition-cfsb6176453266374.html"
+                     title="ManufacturedItemDefinition/cfsb6176453266374">cfsb6176453266374</a>
+               </td>
+               <td>
+<p>Suliqua 100 units/ml + 50 micrograms/ml solution for injection in x5 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb7034777237464.html"
+                     title="Ingredient/cfsb7034777237464">cfsb7034777237464</a>
+               </td>
+               <td>
+<p>Water for injections</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ManufacturedItemDefinition-cfsb7089233601948.html"
+                     title="ManufacturedItemDefinition/cfsb7089233601948">cfsb7089233601948</a>
+               </td>
+               <td>
+<p>Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicinalProductDefinition-cfsb7123030148537.html"
+                     title="MedicinalProductDefinition/cfsb7123030148537">cfsb7123030148537</a>
+               </td>
+               <td>
+<p>EU/1/16/1157/003 100/33 x3 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb7194634205639.html"
+                     title="Ingredient/cfsb7194634205639">cfsb7194634205639</a>
+               </td>
+               <td>
+<p>Metacresol</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb7644964356957.html"
+                     title="Ingredient/cfsb7644964356957">cfsb7644964356957</a>
+               </td>
+               <td>
+<p>Glycerol 85%</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-cfsb7719260512249.html"
+                     title="Organization/cfsb7719260512249">cfsb7719260512249</a>
+               </td>
+               <td>
+<p>Manufacturer Batch release</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb8364716455502.html"
+                     title="Ingredient/cfsb8364716455502">cfsb8364716455502</a>
+               </td>
+               <td>
+<p>Lixisenatide 33 ug/ml</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb8699684597483.html"
+                     title="ClinicalUseDefinition/cfsb8699684597483">cfsb8699684597483</a>
+               </td>
+               <td>
+<p>Indication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb8724428384435.html"
+                     title="Ingredient/cfsb8724428384435">cfsb8724428384435</a>
+               </td>
+               <td>
+<p>Lixisenatide 50 ug/ml</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb8873568628101.html"
+                     title="Ingredient/cfsb8873568628101">cfsb8873568628101</a>
+               </td>
+               <td>
+<p>Methionine</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-cfsb9078061117831.html" title="Bundle/cfsb9078061117831">Vulcan Suliqua FHIR Package Insert</a>
+               </td>
+               <td>
+<p>Instance of Suliqua package insert for Connectathon testing</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Ingredient-cfsb9561966749493.html"
+                     title="Ingredient/cfsb9561966749493">cfsb9561966749493</a>
+               </td>
+               <td>
+<p>Zinc chloride</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RegulatedAuthorization-cfsb9631820498004.html"
+                     title="RegulatedAuthorization/cfsb9631820498004">cfsb9631820498004</a>
+               </td>
+               <td>
+<p>EU/1/16/1157/002 100/50 x5 pre-filled pens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ClinicalUseDefinition-cfsb9751995969937.html"
+                     title="ClinicalUseDefinition/cfsb9751995969937">cfsb9751995969937</a>
+               </td>
+               <td>
+<p>Interaction - Bezafibrat</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="4"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -363,22 +1877,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicinalProductDefinition-example.html" title="MedicinalProductDefinition/example">example</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="List-84d92ad3-386e-47f2-a1c7-7aea06c44074.html" title="List/84d92ad3-386e-47f2-a1c7-7aea06c44074">List/84d92ad3-386e-47f2-a1c7-7aea06c44074</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="List-a3cc87ad-f914-4556-b051-d6fa1c0de7fe.html" title="List/a3cc87ad-f914-4556-b051-d6fa1c0de7fe">List/a3cc87ad-f914-4556-b051-d6fa1c0de7fe</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="List-084b2309-b525-418a-8aa6-de230f9a38f1.html" title="List/084b2309-b525-418a-8aa6-de230f9a38f1">List/084b2309-b525-418a-8aa6-de230f9a38f1</a>
+                  <a href="MedicinalProductDefinition-example.html"
+                     title="MedicinalProductDefinition/example">example</a>
                </td>
             </tr>
          </tbody>
@@ -387,13 +1887,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -403,64 +1903,79 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l758">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Sep 13, 2021 20:19+0000">2021-09-13</span>
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Jan 10, 2022 14:57+0100">2022-01-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333">
-	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7" href="qa.html">QA Report</a>
-	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
-	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
-		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
 	</a>
-	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
-	  <!-- <br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
-	<div id="container width=100% style=&quot;display:block;&quot; ">
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
 			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
 		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
 		</div>
 	</div>
 	<div>
 	</div>
 </div>
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

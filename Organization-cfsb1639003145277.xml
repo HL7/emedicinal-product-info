@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="cfsb1639003145277"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb1639003145277" </p></div><p><b>identifier</b>: id: ORG-100011518 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#bus)</span></p><p><b>name</b>: Almirall S.A.</p><p><b>telecom</b>: <a href="tel:+34932913000">+34 93 291 30 00</a></p><p><b>address</b>: Ronda General Mitre 15  Barcelona  08022  Spain(WORK)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://spor.ema.europa.eu/rmswi/#/"/>
+    <value value="ORG-100011518"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="/#bus"/>
+    </coding>
+    <text value="Marketing authorisation holder"/>
+  </type>
+  <name value="Almirall S.A."/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+34 93 291 30 00"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="physical"/>
+    <text value="Ronda General Mitre 15  Barcelona  08022  Spain"/>
+    <line value="Ronda General Mitre 151"/>
+    <city value="Barcelona"/>
+    <country value="es"/>
+  </address>
+</Organization>

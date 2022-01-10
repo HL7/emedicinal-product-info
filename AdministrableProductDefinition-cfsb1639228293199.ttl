@@ -1,0 +1,133 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/AdministrableProductDefinition/cfsb1639228293199> a fhir:AdministrableProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1639228293199"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639228293199\" </p></div><p><b>identifier</b>: id: TBD (OFFICIAL)</p><p><b>status</b>: active</p><p><b>formOf</b>: </p><ul><li><a href=\"cfsb164028843078232\">cfsb164028843078232</a></li><li><a href=\"cfsb164028843078233\">cfsb164028843078233</a></li><li><a href=\"cfsb164028843078234\">cfsb164028843078234</a></li></ul><p><b>administrableDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000002102)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000002152)</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-cfsb1639191683660.html\">ManufacturedItemDefinition/cfsb1639191683660</a></p><blockquote><p><b>property</b></p><p><b>type</b>: Structured Product Labeling Shape <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48557)</span></p><p><b>value</b>: ROUND <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48348)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Size <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0456389)</span></p><p><b>value</b>: 11.6 mm</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Color <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C0009393)</span></p><p><b>value</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#C48325)</span></p></blockquote><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073619)</span></p><h3>TargetSpecies</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000109093)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:AdministrableProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+     fhir:Identifier.value [ fhir:value "TBD" ]
+  ];
+  fhir:AdministrableProductDefinition.status [ fhir:value "active"];
+  fhir:AdministrableProductDefinition.formOf [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "cfsb164028843078232" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "cfsb164028843078233" ]
+  ], [
+     fhir:index 2;
+     fhir:Reference.reference [ fhir:value "cfsb164028843078234" ]
+  ];
+  fhir:AdministrableProductDefinition.administrableDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "200000002102" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+  ];
+  fhir:AdministrableProductDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "200000002152" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+  ];
+  fhir:AdministrableProductDefinition.producedFrom [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639191683660>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639191683660" ]
+  ];
+  fhir:AdministrableProductDefinition.property [
+     fhir:index 0;
+     fhir:AdministrableProductDefinition.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C48557" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Structured Product Labeling Shape" ]
+     ];
+     fhir:AdministrableProductDefinition.property.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C48348" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "ROUND" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:AdministrableProductDefinition.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C0456389" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Size" ]
+     ];
+     fhir:AdministrableProductDefinition.property.valueQuantity [
+       fhir:Quantity.value [ fhir:value "11.6"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mm" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:AdministrableProductDefinition.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C0009393" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Color" ]
+     ];
+     fhir:AdministrableProductDefinition.property.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://ncim-stage.nci.nih.gov/ncimbrowser/" ];
+         fhir:Coding.code [ fhir:value "C48325" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "White" ]
+     ]
+  ];
+  fhir:AdministrableProductDefinition.routeOfAdministration [
+     fhir:index 0;
+     fhir:AdministrableProductDefinition.routeOfAdministration.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "100000073619" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "oral use" ]
+     ];
+     fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies [
+       fhir:index 0;
+       fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#100000109093" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Human" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/AdministrableProductDefinition/cfsb1639228293199.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PackagedProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="cfsb1639231480623"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb1639231480623" </p></div><p><b>identifier</b>: id: EU/1/17/1201/011 (OFFICIAL)</p><p><b>name</b>: 42 gastro-resistant tablets in PVC/PVDC-aluminium blister packs</p><p><b>type</b>: Chemical Medicinal Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000155527)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>containedItemQuantity</b>: 400 tablets</p><p><b>description</b>: gastro-resistant tablets in PVC/PVDC-aluminium blister packs</p><p><b>copackagedIndicator</b>: false</p><p><b>manufacturer</b>: <a href="Organization-cfsb1639015344307.html">Organization/cfsb1639015344307</a> "Carretera De Martorell 41 61 Poligono Industrial Nord-Est Sant Andreu De La Barca Barcelona 08740 Spain"</p><h3>Packages</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: EU/1/17/1201/011 (OFFICIAL)</td><td>Blister <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000073496)</span></td><td>1</td><td>Non-plasticised PolyVinyl Chloride / Unplasticised PolyVinyl Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#200000003224)</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://spor.ema.europa.eu/pmswi/#/"/>
+    <value value="EU/1/17/1201/011"/>
+  </identifier>
+  <name value="42 gastro-resistant tablets in PVC/PVDC-aluminium blister packs"/>
+  <type>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="/#100000155527"/>
+    </coding>
+    <text value="Chemical Medicinal Product"/>
+  </type>
+  <status>
+    <coding>
+      <system value="http://hl7.org/fhir/publication-status"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </status>
+  <statusDate value="2015-02-07T13:28:17Z"/>
+  <containedItemQuantity>
+    <value value="400"/>
+    <unit value="tablets"/>
+  </containedItemQuantity>
+  <description value="gastro-resistant tablets in PVC/PVDC-aluminium blister packs"/>
+  <copackagedIndicator value="false"/>
+  <manufacturer>
+    <reference value="Organization/cfsb1639015344307"/>
+  </manufacturer>
+  <package>
+    <identifier>
+      <use value="official"/>
+      <system value="https://spor.ema.europa.eu/rmswi/#/"/>
+      <value value="EU/1/17/1201/011"/>
+    </identifier>
+    <type>
+      <coding>
+        <system value="https://spor.ema.europa.eu/rmswi/"/>
+        <code value="/#100000073496"/>
+      </coding>
+      <text value="Blister"/>
+    </type>
+    <quantity value="1"/>
+    <material>
+      <coding>
+        <system value="https://spor.ema.europa.eu/rmswi/"/>
+        <code value="/#200000003224"/>
+      </coding>
+      <text value="Non-plasticised PolyVinyl Chloride / Unplasticised PolyVinyl Chloride"/>
+    </material>
+  </package>
+</PackagedProductDefinition>

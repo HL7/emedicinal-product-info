@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639754108144> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1639754108144"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639754108144\" </p></div><p><b>identifier</b>: id: ORG-100000380 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#220000000034)</span></p><p><b>name</b>: Zambon S.p.A.</p><p><b>telecom</b>: <a href=\"tel:+3902665241\">+39 02 665 241</a></p><p><b>address</b>: Via Lillo del Duca, 10 20091 Bresso (Milan) – Italy(WORK)</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/" ];
+     fhir:Identifier.value [ fhir:value "ORG-100000380" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "220000000034" ];
+       fhir:Coding.display [ fhir:value "Marketing authorisation holder" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marketing authorisation holder" ]
+  ];
+  fhir:Organization.name [ fhir:value "Zambon S.p.A."];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+39 02 665 241" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.text [ fhir:value "Via Lillo del Duca, 10 20091 Bresso (Milan) – Italy" ];
+     fhir:Address.line [
+       fhir:value "Via Lillo del Duca, 10 20091";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Bresso (Milan)" ];
+     fhir:Address.country [ fhir:value "it" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639754108144.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

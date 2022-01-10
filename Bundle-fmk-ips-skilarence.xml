@@ -18,7 +18,7 @@
       <Composition>
         <id value="bf76b01c-2b4c-4072-8341-d8c78a24091d"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 60591-5}">Patient summary Document</span></p><p><b>date</b>: Aug 10, 2021, 8:08:22 AM</p><p><b>author</b>: <span>Andreas Bach</span></p><p><b>title</b>: Patient Summary as of Tue Aug 10 10:08:22 CEST 2021</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "bf76b01c-2b4c-4072-8341-d8c78a24091d" </p></div><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2021-08-10T10:08:22+02:00</p><p><b>author</b>: <span>: Andreas Bach</span></p><p><b>title</b>: Patient Summary as of Tue Aug 10 10:08:22 CEST 2021</p></div>
         </text>
         <status value="final"/>
         <type>
@@ -88,7 +88,7 @@
       <Patient>
         <id value="829b31e4-5457-40ba-897d-4487045b5a1b"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 2401010005</p><p><b>name</b>: Mads Svendsen (OFFICIAL)</p><p><b>address</b>: Hæstvej 355 Væggerløse 4873 (HOME)</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "829b31e4-5457-40ba-897d-4487045b5a1b" </p></div><p><b>identifier</b>: id: 2401010005</p><p><b>name</b>: Mads Svendsen (OFFICIAL)</p><p><b>address</b>: Hæstvej 355 Væggerløse 4873 (HOME)</p></div>
         </text>
         <identifier>
           <system value="urn:oid:1.2.208.176.1.2"/>
@@ -115,7 +115,7 @@
       <Medication>
         <id value="f4896a53-4200-4684-91d5-d4ee0377fa9e"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95cface3-8c65-4c5c-bc89-49c65e3e5fa9</p><p><b>code</b>: <span title="Codes: {http://www.whocc.no/atc L04AX07}">Skilarence</span></p><p><b>form</b>: <span title="Codes: {http://medicinpriser.dk/formbetegnelse ENTTAB}">enterotabletter</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title="Codes: ">DIMETHYLFUMARAT</span></td><td>true</td><td>30.0 mg/ enterotabletter</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "f4896a53-4200-4684-91d5-d4ee0377fa9e" </p></div><p><b>identifier</b>: id: 95cface3-8c65-4c5c-bc89-49c65e3e5fa9</p><p><b>code</b>: Skilarence <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-atc.html">WHO ATC</a>#L04AX07 "Dimethylfumarat")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>IsActive</b></td></tr><tr><td>*</td><td>true</td></tr></table></div>
         </text>
         <extension url="http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url">
           <valueString value="https://www.indlaegssedler.dk/Search/Search/Search/500781"/>
@@ -135,79 +135,15 @@
           </coding>
           <text value="Skilarence"/>
         </code>
-        <form>
-          <coding>
-            <system value="http://medicinpriser.dk/formbetegnelse"/>
-            <code value="ENTTAB"/>
-          </coding>
-          <text value="enterotabletter"/>
-        </form>
         <ingredient>
-          <itemCodeableConcept>
-            <coding>
-              <display value="DIMETHYLFUMARAT"/>
-            </coding>
-          </itemCodeableConcept>
           <isActive value="true"/>
-          <strength>
-            <numerator>
-              <value value="30.0"/>
-              <unit value="mg"/>
-              <system value="http://medicinpriser.dk/styrkeenhed"/>
-              <code value="MG"/>
-            </numerator>
-            <denominator>
-              <unit value="enterotabletter"/>
-              <system value="http://medicinpriser.dk/formbetegnelse"/>
-              <code value="ENTTAB"/>
-            </denominator>
-          </strength>
         </ingredient>
       </Medication>
     </resource>
   </entry>
   <entry>
     <fullUrl value="6fe36b74-d862-465b-92d8-6c89831125ae"/>
-    <resource>
-      <MedicationStatement>
-        <id value="6fe36b74-d862-465b-92d8-6c89831125ae"/>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href="#Patient_829b31e4-5457-40ba-897d-4487045b5a1b">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Aug 9, 2021, 10:00:00 PM --&gt; Aug 28, 2021, 10:00:00 PM</p></div>
-        </text>
-        <extension url="http://medicinpriser.dk/indikation">
-          <valueCoding>
-            <system value="http://medicinpriser.dk/indikation"/>
-            <code value="336"/>
-            <display value="ved multipel sklerose"/>
-          </valueCoding>
-        </extension>
-        <status value="active"/>
-        <medicationReference id="f4896a53-4200-4684-91d5-d4ee0377fa9e"/>
-        <subject>
-          <reference value="Patient/829b31e4-5457-40ba-897d-4487045b5a1b"/>
-        </subject>
-        <effectivePeriod>
-          <start value="2021-08-10T00:00:00+02:00"/>
-          <end value="2021-08-29T00:00:00+02:00"/>
-        </effectivePeriod>
-        <dosage>
-          <extension url="http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod">
-            <valuePeriod>
-              <start value="2021-08-10T00:00:00+02:00"/>
-              <end value="2021-08-29T00:00:00+02:00"/>
-            </valuePeriod>
-          </extension>
-          <text value="1 tablet morgen og aften"/>
-          <route>
-            <coding>
-              <system value="http://medicinpriser.dk/administrationsvej"/>
-              <code value="OR"/>
-              <display value="Oral anvendelse"/>
-            </coding>
-          </route>
-        </dosage>
-      </MedicationStatement>
-    </resource>
+    <resource/>
   </entry>
   <entry>
     <fullUrl value="2ae72155-8b7b-455e-a39b-75f8dce01e81"/>
@@ -215,7 +151,7 @@
       <Medication>
         <id value="2ae72155-8b7b-455e-a39b-75f8dce01e81"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 4623dd4a-7428-4a8e-897b-eabee5788fc9</p><p><b>code</b>: <span title="Codes: {http://www.whocc.no/atc B01AA03}">Marevan</span></p><p><b>form</b>: <span title="Codes: {http://medicinpriser.dk/formbetegnelse TAB}">tabletter</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title="Codes: ">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "2ae72155-8b7b-455e-a39b-75f8dce01e81" </p></div><p><b>identifier</b>: id: 4623dd4a-7428-4a8e-897b-eabee5788fc9</p><p><b>code</b>: Marevan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-atc.html">WHO ATC</a>#B01AA03 "Warfarin")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>IsActive</b></td></tr><tr><td>*</td><td>true</td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:oid:2.16.724.4.8.10.200.10"/>
@@ -229,72 +165,15 @@
           </coding>
           <text value="Marevan"/>
         </code>
-        <form>
-          <coding>
-            <system value="http://medicinpriser.dk/formbetegnelse"/>
-            <code value="TAB"/>
-          </coding>
-          <text value="tabletter"/>
-        </form>
         <ingredient>
-          <itemCodeableConcept>
-            <coding>
-              <display value="WARFARINNATRIUM"/>
-            </coding>
-          </itemCodeableConcept>
           <isActive value="true"/>
-          <strength>
-            <numerator>
-              <value value="2.5"/>
-              <unit value="mg"/>
-              <system value="http://medicinpriser.dk/styrkeenhed"/>
-              <code value="MG"/>
-            </numerator>
-            <denominator>
-              <unit value="tabletter"/>
-              <system value="http://medicinpriser.dk/formbetegnelse"/>
-              <code value="TAB"/>
-            </denominator>
-          </strength>
         </ingredient>
       </Medication>
     </resource>
   </entry>
   <entry>
     <fullUrl value="22bb5d94-8531-4c6a-af09-87bcd57e9421"/>
-    <resource>
-      <MedicationStatement>
-        <id value="22bb5d94-8531-4c6a-af09-87bcd57e9421"/>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href="#Patient_829b31e4-5457-40ba-897d-4487045b5a1b">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>
-        </text>
-        <extension url="http://medicinpriser.dk/indikation">
-          <valueCoding>
-            <system value="http://medicinpriser.dk/indikation"/>
-            <code value="68"/>
-            <display value="blodfortyndende"/>
-          </valueCoding>
-        </extension>
-        <status value="active"/>
-        <medicationReference id="2ae72155-8b7b-455e-a39b-75f8dce01e81"/>
-        <subject>
-          <reference value="Patient/829b31e4-5457-40ba-897d-4487045b5a1b"/>
-        </subject>
-        <effectivePeriod>
-          <start value="2020-09-23T00:00:00+02:00"/>
-        </effectivePeriod>
-        <dosage>
-          <text value="bla bla"/>
-          <route>
-            <coding>
-              <system value="http://medicinpriser.dk/administrationsvej"/>
-              <code value="OR"/>
-              <display value="Oral anvendelse"/>
-            </coding>
-          </route>
-        </dosage>
-      </MedicationStatement>
-    </resource>
+    <resource/>
   </entry>
   <entry>
     <fullUrl value="2c1524dc-45ca-4184-939e-063bb31f1ad4"/>
@@ -302,7 +181,7 @@
       <Medication>
         <id value="2c1524dc-45ca-4184-939e-063bb31f1ad4"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 8dd0f856-9a58-40c3-bac0-099347883a85</p><p><b>code</b>: <span title="Codes: {http://www.whocc.no/atc B01AA03}">Marevan</span></p><p><b>form</b>: <span title="Codes: {http://medicinpriser.dk/formbetegnelse TAB}">tabletter</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title="Codes: ">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "2c1524dc-45ca-4184-939e-063bb31f1ad4" </p></div><p><b>identifier</b>: id: 8dd0f856-9a58-40c3-bac0-099347883a85</p><p><b>code</b>: Marevan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-atc.html">WHO ATC</a>#B01AA03 "Warfarin")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>IsActive</b></td></tr><tr><td>*</td><td>true</td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:oid:2.16.724.4.8.10.200.10"/>
@@ -316,76 +195,15 @@
           </coding>
           <text value="Marevan"/>
         </code>
-        <form>
-          <coding>
-            <system value="http://medicinpriser.dk/formbetegnelse"/>
-            <code value="TAB"/>
-          </coding>
-          <text value="tabletter"/>
-        </form>
         <ingredient>
-          <itemCodeableConcept>
-            <coding>
-              <display value="WARFARINNATRIUM"/>
-            </coding>
-          </itemCodeableConcept>
           <isActive value="true"/>
-          <strength>
-            <numerator>
-              <value value="2.5"/>
-              <unit value="mg"/>
-              <system value="http://medicinpriser.dk/styrkeenhed"/>
-              <code value="MG"/>
-            </numerator>
-            <denominator>
-              <unit value="tabletter"/>
-              <system value="http://medicinpriser.dk/formbetegnelse"/>
-              <code value="TAB"/>
-            </denominator>
-          </strength>
         </ingredient>
       </Medication>
     </resource>
   </entry>
   <entry>
     <fullUrl value="7a9d1be0-3ad9-4568-a67d-1e686fe12b78"/>
-    <resource>
-      <MedicationStatement>
-        <id value="7a9d1be0-3ad9-4568-a67d-1e686fe12b78"/>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href="#Patient_829b31e4-5457-40ba-897d-4487045b5a1b">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>
-        </text>
-        <extension url="http://medicinpriser.dk/indikation">
-          <valueCoding>
-            <system value="http://medicinpriser.dk/indikation"/>
-            <code value="68"/>
-            <display value="blodfortyndende"/>
-          </valueCoding>
-        </extension>
-        <status value="active"/>
-        <medicationReference id="2c1524dc-45ca-4184-939e-063bb31f1ad4"/>
-        <subject>
-          <reference value="Patient/829b31e4-5457-40ba-897d-4487045b5a1b"/>
-        </subject>
-        <effectivePeriod>
-          <start value="2020-09-23T00:00:00+02:00"/>
-        </effectivePeriod>
-        <dosage>
-          <extension url="http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod">
-            <valuePeriod>
-              <start value="2020-09-23T00:00:00+02:00"/>
-            </valuePeriod>
-          </extension>
-          <route>
-            <coding>
-              <system value="http://medicinpriser.dk/administrationsvej"/>
-              <code value="OR"/>
-              <display value="Oral anvendelse"/>
-            </coding>
-          </route>
-        </dosage>
-      </MedicationStatement>
-    </resource>
+    <resource/>
   </entry>
   <entry>
     <fullUrl value="24816319-aab6-4766-89af-a79f5e921cf3"/>
@@ -393,7 +211,7 @@
       <Medication>
         <id value="24816319-aab6-4766-89af-a79f5e921cf3"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 7894c945-3b9a-47eb-84bb-307c3bd0144d</p><p><b>code</b>: <span title="Codes: {http://www.whocc.no/atc B01AA03}">Marevan</span></p><p><b>form</b>: <span title="Codes: {http://medicinpriser.dk/formbetegnelse TAB}">tabletter</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title="Codes: ">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "24816319-aab6-4766-89af-a79f5e921cf3" </p></div><p><b>identifier</b>: id: 7894c945-3b9a-47eb-84bb-307c3bd0144d</p><p><b>code</b>: Marevan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-atc.html">WHO ATC</a>#B01AA03 "Warfarin")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>IsActive</b></td></tr><tr><td>*</td><td>true</td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:oid:2.16.724.4.8.10.200.10"/>
@@ -407,77 +225,15 @@
           </coding>
           <text value="Marevan"/>
         </code>
-        <form>
-          <coding>
-            <system value="http://medicinpriser.dk/formbetegnelse"/>
-            <code value="TAB"/>
-          </coding>
-          <text value="tabletter"/>
-        </form>
         <ingredient>
-          <itemCodeableConcept>
-            <coding>
-              <display value="WARFARINNATRIUM"/>
-            </coding>
-          </itemCodeableConcept>
           <isActive value="true"/>
-          <strength>
-            <numerator>
-              <value value="2.5"/>
-              <unit value="mg"/>
-              <system value="http://medicinpriser.dk/styrkeenhed"/>
-              <code value="MG"/>
-            </numerator>
-            <denominator>
-              <unit value="tabletter"/>
-              <system value="http://medicinpriser.dk/formbetegnelse"/>
-              <code value="TAB"/>
-            </denominator>
-          </strength>
         </ingredient>
       </Medication>
     </resource>
   </entry>
   <entry>
     <fullUrl value="50d65da1-9f36-4034-903b-d895de8ef758"/>
-    <resource>
-      <MedicationStatement>
-        <id value="50d65da1-9f36-4034-903b-d895de8ef758"/>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href="#Patient_829b31e4-5457-40ba-897d-4487045b5a1b">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>
-        </text>
-        <extension url="http://medicinpriser.dk/indikation">
-          <valueCoding>
-            <system value="http://medicinpriser.dk/indikation"/>
-            <code value="256"/>
-            <display value="til forebyggelse af blodprop"/>
-          </valueCoding>
-        </extension>
-        <status value="active"/>
-        <medicationReference id="24816319-aab6-4766-89af-a79f5e921cf3"/>
-        <subject>
-          <reference value="Patient/829b31e4-5457-40ba-897d-4487045b5a1b"/>
-        </subject>
-        <effectivePeriod>
-          <start value="2020-09-23T00:00:00+02:00"/>
-        </effectivePeriod>
-        <dosage>
-          <extension url="http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod">
-            <valuePeriod>
-              <start value="2020-09-23T00:00:00+02:00"/>
-              <end value="2020-09-25T00:00:00+02:00"/>
-            </valuePeriod>
-          </extension>
-          <route>
-            <coding>
-              <system value="http://medicinpriser.dk/administrationsvej"/>
-              <code value="OR"/>
-              <display value="Oral anvendelse"/>
-            </coding>
-          </route>
-        </dosage>
-      </MedicationStatement>
-    </resource>
+    <resource/>
   </entry>
   <entry>
     <fullUrl value="cc2c0a06-7469-465d-956f-59e39133b495"/>
@@ -485,7 +241,7 @@
       <Medication>
         <id value="cc2c0a06-7469-465d-956f-59e39133b495"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 81fbceed-f24e-4105-bfa2-4b604ca35937</p><p><b>code</b>: <span title="Codes: {http://www.whocc.no/atc B01AA03}">Marevan</span></p><p><b>form</b>: <span title="Codes: {http://medicinpriser.dk/formbetegnelse TAB}">tabletter</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title="Codes: ">WARFARINNATRIUM</span></td><td>true</td><td>2.5 mg/ tabletter</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cc2c0a06-7469-465d-956f-59e39133b495" </p></div><p><b>identifier</b>: id: 81fbceed-f24e-4105-bfa2-4b604ca35937</p><p><b>code</b>: Marevan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-atc.html">WHO ATC</a>#B01AA03 "Warfarin")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>IsActive</b></td></tr><tr><td>*</td><td>true</td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:oid:2.16.724.4.8.10.200.10"/>
@@ -499,75 +255,14 @@
           </coding>
           <text value="Marevan"/>
         </code>
-        <form>
-          <coding>
-            <system value="http://medicinpriser.dk/formbetegnelse"/>
-            <code value="TAB"/>
-          </coding>
-          <text value="tabletter"/>
-        </form>
         <ingredient>
-          <itemCodeableConcept>
-            <coding>
-              <display value="WARFARINNATRIUM"/>
-            </coding>
-          </itemCodeableConcept>
           <isActive value="true"/>
-          <strength>
-            <numerator>
-              <value value="2.5"/>
-              <unit value="mg"/>
-              <system value="http://medicinpriser.dk/styrkeenhed"/>
-              <code value="MG"/>
-            </numerator>
-            <denominator>
-              <unit value="tabletter"/>
-              <system value="http://medicinpriser.dk/formbetegnelse"/>
-              <code value="TAB"/>
-            </denominator>
-          </strength>
         </ingredient>
       </Medication>
     </resource>
   </entry>
   <entry>
     <fullUrl value="46860de8-4e8c-4c69-8ba5-2492903d0b81"/>
-    <resource>
-      <MedicationStatement>
-        <id value="46860de8-4e8c-4c69-8ba5-2492903d0b81"/>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span></span></p><p><b>subject</b>: <a href="#Patient_829b31e4-5457-40ba-897d-4487045b5a1b">See above (Patient/829b31e4-5457-40ba-897d-4487045b5a1b)</a></p><p><b>effective</b>: Sep 22, 2020, 10:00:00 PM --&gt; (ongoing)</p></div>
-        </text>
-        <extension url="http://medicinpriser.dk/indikation">
-          <valueCoding>
-            <system value="http://medicinpriser.dk/indikation"/>
-            <code value="68"/>
-            <display value="blodfortyndende"/>
-          </valueCoding>
-        </extension>
-        <status value="active"/>
-        <medicationReference id="cc2c0a06-7469-465d-956f-59e39133b495"/>
-        <subject>
-          <reference value="Patient/829b31e4-5457-40ba-897d-4487045b5a1b"/>
-        </subject>
-        <effectivePeriod>
-          <start value="2020-09-23T00:00:00+02:00"/>
-        </effectivePeriod>
-        <dosage>
-          <extension url="http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dosageperiod">
-            <valuePeriod>
-              <start value="2020-09-23T00:00:00+02:00"/>
-            </valuePeriod>
-          </extension>
-          <route>
-            <coding>
-              <system value="http://medicinpriser.dk/administrationsvej"/>
-              <code value="OR"/>
-              <display value="Oral anvendelse"/>
-            </coding>
-          </route>
-        </dosage>
-      </MedicationStatement>
-    </resource>
+    <resource/>
   </entry>
 </Bundle>

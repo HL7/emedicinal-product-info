@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/cfsb1639758328687> a fhir:PackagedProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1639758328687"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639758328687\" </p></div><p><b>identifier</b>: id: PL 31654/0006-5 (OFFICIAL)</p><p><b>name</b>: 5 sachets of 8 g of granules (3 g fosfomycin).</p><p><b>type</b>: Chemical Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155527)</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-cfsb1639760186202.html\">MedicinalProductDefinition/cfsb1639760186202</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2008-09-19</p><p><b>containedItemQuantity</b>: 5 Sachet<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated] code 200000002143 = '200000002143')</span></p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1639753766266.html\">Organization/cfsb1639753766266</a> \"Zambon S.p.A.\"</p><blockquote><p><b>package</b></p><p><b>type</b>: Sachet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000002143)</span></p><p><b>material</b>: Paper <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000003207)</span>, PolyEthylene <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000003214)</span>, Aluminium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#200000003200)</span></p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1639753766266.html\">Organization/cfsb1639753766266</a> \"Zambon S.p.A.\"</p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
+  ];
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+     fhir:Identifier.value [ fhir:value "PL 31654/0006-5" ]
+  ];
+  fhir:PackagedProductDefinition.name [ fhir:value "5 sachets of 8 g of granules (3 g fosfomycin)."];
+  fhir:PackagedProductDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "100000155527" ];
+       fhir:Coding.display [ fhir:value "Chemical Medicinal Product" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Chemical Medicinal Product" ]
+  ];
+  fhir:PackagedProductDefinition.packageFor [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639760186202>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639760186202" ]
+  ];
+  fhir:PackagedProductDefinition.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+       fhir:Coding.code [ fhir:value "active" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ];
+  fhir:PackagedProductDefinition.statusDate [ fhir:value "2008-09-19"^^xsd:date];
+  fhir:PackagedProductDefinition.containedItemQuantity [
+     fhir:index 0;
+     fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Sachet" ];
+     fhir:Quantity.code [ fhir:value "200000002143" ]
+  ];
+  fhir:PackagedProductDefinition.manufacturer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
+  ];
+  fhir:PackagedProductDefinition.package [
+     fhir:PackagedProductDefinition.package.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "200000002143" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Sachet" ]
+     ];
+     fhir:PackagedProductDefinition.package.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "200000003207" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Paper" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "200000003214" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "PolyEthylene" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+         fhir:Coding.code [ fhir:value "200000003200" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Aluminium" ]
+     ];
+     fhir:PackagedProductDefinition.package.manufacturer [
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+       fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
+     ];
+     fhir:PackagedProductDefinition.package.containedItem [
+       fhir:index 0;
+       fhir:PackagedProductDefinition.package.containedItem.item [
+         fhir:CodeableReference.reference [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+           fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/cfsb1639758328687.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

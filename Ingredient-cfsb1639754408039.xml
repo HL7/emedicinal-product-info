@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Ingredient xmlns="http://hl7.org/fhir">
+  <id value="cfsb1639754408039"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb1639754408039" </p></div><p><b>status</b>: active</p><p><b>role</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#00000072072)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1639753766266.html">Organization/cfsb1639753766266</a> "Zambon S.p.A."</td></tr></table><blockquote><p><b>substance</b></p><blockquote><p><b>strength</b></p><p><b>presentation</b>: 5.631 g</p><p><b>basis</b>: active ingredient - moiety is basis of strength <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-RoleClass.html">RoleClass</a>#ACTIM)</span></p><blockquote><p><b>referenceStrength</b></p><p><b>strength</b>: 3 g</p></blockquote></blockquote></blockquote></div>
+  </text>
+  <status value="active"/>
+  <role>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="/#00000072072"/>
+    </coding>
+    <text value="active"/>
+  </role>
+  <manufacturer>
+    <manufacturer>
+      <reference value="Organization/cfsb1639753766266"/>
+    </manufacturer>
+  </manufacturer>
+  <substance>
+    <code>
+      <concept>
+        <coding>
+          <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+          <code value="7FXW6U30GY"/>
+          <display value="Fosfomycin Tromethamine"/>
+        </coding>
+      </concept>
+    </code>
+    <strength>
+      <presentationQuantity>
+        <value value="5.631"/>
+        <unit value="g"/>
+      </presentationQuantity>
+      <basis>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+          <code value="ACTIM"/>
+          <display value="active ingredient - moiety is basis of strength"/>
+        </coding>
+        <text value="active ingredient - moiety is basis of strength"/>
+      </basis>
+      <referenceStrength>
+        <substance>
+          <concept>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+              <code value="2N81MY12TE"/>
+              <display value="Fosfomycin"/>
+            </coding>
+          </concept>
+        </substance>
+        <strengthQuantity>
+          <value value="3"/>
+          <unit value="g"/>
+        </strengthQuantity>
+      </referenceStrength>
+    </strength>
+  </substance>
+</Ingredient>

@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/cfsb5671063821622> a fhir:DocumentReference;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb5671063821622"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb5671063821622\" </p></div><p><b>status</b>: current</p><p><b>description</b>: Instruksjonsfilm for bruk av ferdigfylt penn.</p><blockquote><p><b>content</b></p></blockquote></div>"
+  ];
+  fhir:DocumentReference.status [ fhir:value "current"];
+  fhir:DocumentReference.description [ fhir:value "Instruksjonsfilm for bruk av ferdigfylt penn."];
+  fhir:DocumentReference.content [
+     fhir:index 0;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "video/mp4" ];
+       fhir:Attachment.language [ fhir:value "no" ];
+       fhir:Attachment.url [ fhir:value "https://www.felleskatalogen.no/medisin/film/suliqua-ferdigfylt-penn.mp4" ];
+       fhir:Attachment.title [ fhir:value "Suliqua ferdigfylt penn" ];
+       fhir:Attachment.creation [ fhir:value "2018-09-28"^^xsd:date ];
+       fhir:Attachment.height [ fhir:value "404"^^xsd:positiveInteger ];
+       fhir:Attachment.width [ fhir:value "720"^^xsd:positiveInteger ];
+       fhir:Attachment.duration [ fhir:value "366"^^xsd:decimal ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/cfsb5671063821622.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

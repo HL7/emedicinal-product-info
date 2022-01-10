@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ClinicalUseDefinition/cfsb9751995969937> a fhir:ClinicalUseDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb9751995969937"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb9751995969937\" </p></div><p><b>identifier</b>: id: Y9449Q51XH (OFFICIAL)</p><p><b>type</b>: interaction</p><p><b>subject</b>: </p><ul><li><a href=\"MedicinalProductDefinition-cfsb1151803027115.html\">MedicinalProductDefinition/cfsb1151803027115</a></li><li><a href=\"MedicinalProductDefinition-cfsb7123030148537.html\">MedicinalProductDefinition/cfsb7123030148537</a></li></ul><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>Y9449Q51XH <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#Y9449Q51XH)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:ClinicalUseDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+     fhir:Identifier.value [ fhir:value "Y9449Q51XH" ]
+  ];
+  fhir:ClinicalUseDefinition.type [ fhir:value "interaction"];
+  fhir:ClinicalUseDefinition.subject [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1151803027115>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1151803027115" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb7123030148537>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb7123030148537" ]
+  ];
+  fhir:ClinicalUseDefinition.interaction [
+     fhir:ClinicalUseDefinition.interaction.interactant [
+       fhir:index 0;
+       fhir:ClinicalUseDefinition.interaction.interactant.itemCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+           fhir:Coding.code [ fhir:value "Y9449Q51XH" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Y9449Q51XH" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/ClinicalUseDefinition/cfsb9751995969937.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

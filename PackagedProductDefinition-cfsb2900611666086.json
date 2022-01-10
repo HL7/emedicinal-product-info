@@ -1,0 +1,78 @@
+{
+  "resourceType": "PackagedProductDefinition",
+  "id": "cfsb2900611666086",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb2900611666086\" </p></div><p><b>identifier</b>: id: EU/1/16/1157/002 (OFFICIAL)</p><p><b>name</b>: 3 ml cartridge (glass) in a pre-filled pen</p><p><b>type</b>: Chemical Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000155527)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>containedItemQuantity</b>: 3 ml</p><p><b>description</b>: Type I colourless glass cartridge with a black plunger (bromobutyl rubber) and a flanged cap (aluminium) with inserted laminated sealing disks (bromobutyl rubber on the medicinal product side and polyisoprene on the outside) containing 3 ml of solution. Each cartridge is assembled into a disposable pen.</p><p><b>copackagedIndicator</b>: false</p><p><b>manufacturer</b>: <a href=\"Organization-cfsb2176224411725.html\">Organization/cfsb2176224411725</a> \"Sanofi-Aventis Deutschland GmbH\"</p><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: EU/1/16/1157/002 (OFFICIAL)</td><td>Pre-filled pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000073543)</span></td><td>3</td><td>Glass type I <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000003204)</span></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/pmswi/#/",
+      "value": "EU/1/16/1157/002"
+    }
+  ],
+  "name": "3 ml cartridge (glass) in a pre-filled pen",
+  "type": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "/#100000155527"
+      }
+    ],
+    "text": "Chemical Medicinal Product"
+  },
+  "status": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/publication-status",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "statusDate": "2015-02-07T13:28:17Z",
+  "containedItemQuantity": [
+    {
+      "value": 3,
+      "unit": "ml"
+    }
+  ],
+  "description": "Type I colourless glass cartridge with a black plunger (bromobutyl rubber) and a flanged cap (aluminium) with inserted laminated sealing disks (bromobutyl rubber on the medicinal product side and polyisoprene on the outside) containing 3 ml of solution. Each cartridge is assembled into a disposable pen.",
+  "copackagedIndicator": false,
+  "manufacturer": [
+    {
+      "reference": "Organization/cfsb2176224411725"
+    }
+  ],
+  "package": {
+    "identifier": [
+      {
+        "use": "official",
+        "system": "https://spor.ema.europa.eu/rmswi/#/",
+        "value": "EU/1/16/1157/002"
+      }
+    ],
+    "type": {
+      "coding": [
+        {
+          "system": "https://spor.ema.europa.eu/rmswi/",
+          "code": "/#100000073543"
+        }
+      ],
+      "text": "Pre-filled pen"
+    },
+    "quantity": 3,
+    "material": [
+      {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi/",
+            "code": "/#200000003204"
+          }
+        ],
+        "text": "Glass type I"
+      }
+    ]
+  }
+}
