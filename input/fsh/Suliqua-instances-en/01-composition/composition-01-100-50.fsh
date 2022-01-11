@@ -590,5 +590,12 @@ Usage: #example
 * section[6].code = https://spor.ema.europa.eu/#100000155538-2
 * section[6].code.text = "B. PAKNINGSVEDLEGG"
 * section[6].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-            <span>6. Innholdet i pakningen og ytterligere informasjon</span></div>"
+            <span>6. Innholdet i pakningen og ytterligere informasjon</span>
+            <div>
+                <span class=\"flytende-tittel\">Mulige injeksjonssteder</span>
+                <p><img src=\"#cfsb11927290\" alt=\"Mulige injeksjonssteder\"/></p>
+            </div>
+            </div>"
 * section[6].text.status = #additional
+
+* contained = cfsb11927290

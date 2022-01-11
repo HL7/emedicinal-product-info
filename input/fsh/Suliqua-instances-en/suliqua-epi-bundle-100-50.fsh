@@ -49,9 +49,9 @@ Description: "Instance of Suliqua package insert for Connectathon testing"
 * entry[+].resource = cfsb4325643431772
 * entry[+].resource = cfsb8699684597483
 
-// binaries
-// Binaries are images used in the package insert HTML.
-// The images should be added to the bundle when the reference to them is added to the HTML.
+// Binary
+
+//* entry[+].resource = cfsb11927290
 
 // Document references
 * entry[+].resource = cfsb5671063821622
