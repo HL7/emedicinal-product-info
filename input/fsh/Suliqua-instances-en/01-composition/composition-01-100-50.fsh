@@ -594,8 +594,13 @@ Usage: #example
             <div>
                 <span class=\"flytende-tittel\">Mulige injeksjonssteder</span>
                 <p><img src=\"#cfsb11927290\" alt=\"Mulige injeksjonssteder\"/></p>
+                <p>
+                    <video width=\"720\" height=\"404\">
+                        <source src=\"https://www.felleskatalogen.no/medisin/film/suliqua-ferdigfylt-penn.mp4\" type=\"video/mp4\"/>
+                    </video>
+                </p>
             </div>
-            </div>"
+        </div>"
 * section[6].text.status = #additional
 
 * contained = cfsb11927290
