@@ -1,9 +1,9 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 1169, warn = 150, info = 1069
-IG Publisher Version: 1.1.94-SNAPSHOT Out of date - current version is 1.1.93
-Generated Mon Jan 10 17:58:45 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+err = 1173, warn = 150, info = 1069
+IG Publisher Version: 1.1.94-SNAPSHOT Out of date - current version is 1.1.94
+Generated Tue Jan 11 15:14:59 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 21 / 3 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639227408981 : 2 / 1 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639228293199 : 3 / 1 / 10
@@ -58,7 +58,7 @@ Generated Mon Jan 10 17:58:45 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382d6f4 : 411 / 72 / 321
  /github/workspace/fsh-generated/resources/Bundle-cfsb1641827801260 : 52 / 22 / 63
  /github/workspace/fsh-generated/resources/Bundle-cfsb2726030964451 : 73 / 28 / 78
- /github/workspace/fsh-generated/resources/Bundle-cfsb9078061117831 : 75 / 28 / 78
+ /github/workspace/fsh-generated/resources/Bundle-cfsb9078061117831 : 77 / 28 / 78
  /github/workspace/fsh-generated/resources/ClinicalUseDefinition-cfsb1639240824314 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ClinicalUseDefinition-cfsb1639240847910 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ClinicalUseDefinition-cfsb1639240914083 : 1 / 0 / 1
@@ -78,7 +78,7 @@ Generated Mon Jan 10 17:58:45 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Composition-cfsb1639016804189 : 0 / 1 / 4
  /github/workspace/fsh-generated/resources/Composition-cfsb1639991356428 : 4 / 1 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb1641383289499 : 0 / 1 / 11
- /github/workspace/fsh-generated/resources/Composition-cfsb5419150199436 : 2 / 1 / 10
+ /github/workspace/fsh-generated/resources/Composition-cfsb5419150199436 : 4 / 1 / 10
  /github/workspace/fsh-generated/resources/DocumentReference-cfsb5671063821622 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1268193754623 : 0 / 1 / 3
@@ -1920,6 +1920,8 @@ ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).se
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[2].text.div: Illegal element name in the XHTML ('u')
 INFORMATION: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[3].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[4].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[4].text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[4].text.div: Illegal attribute name in the XHTML ('target' on 'a')
 INFORMATION: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[5].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Bundle/cfsb9078061117831: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
@@ -2156,6 +2158,8 @@ ERROR: Composition/cfsb5419150199436: Composition.section[2].text.div: txt-1: 'T
 ERROR: Composition/cfsb5419150199436: Composition.section[2].text.div: Illegal element name in the XHTML ('u')
 INFORMATION: Composition/cfsb5419150199436: Composition.section[3].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Composition/cfsb5419150199436: Composition.section[4].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+ERROR: Composition/cfsb5419150199436: Composition.section[4].text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: Composition/cfsb5419150199436: Composition.section[4].text.div: Illegal attribute name in the XHTML ('target' on 'a')
 INFORMATION: Composition/cfsb5419150199436: Composition.section[5].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Composition/cfsb5419150199436: Composition.section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 == fsh-generated/resources/DocumentReference-cfsb5671063821622.json ==
