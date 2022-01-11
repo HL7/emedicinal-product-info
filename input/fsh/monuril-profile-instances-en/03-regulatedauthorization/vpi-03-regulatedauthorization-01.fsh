@@ -24,3 +24,5 @@ Usage: #example
  // Reference to Organization: Market Authorization Holder
 * holder = Reference(cfsb1639754108144)
 
+ // Reference to Organization: EMA
+* regulator = Reference(cfsb1639015880655)

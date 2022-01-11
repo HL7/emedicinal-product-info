@@ -15,7 +15,7 @@ Description: "instance of Monuril package insert for connectathon testing"
 // Organizations
 * entry[+].resource = cfsb1639753766266
 * entry[+].resource = cfsb1639754108144
-* entry[+].resource = cfsb1640282801639
+* entry[+].resource = cfsb1639015880655
 
 // authorizations
 * entry[+].resource = cfsb1639761980721
