@@ -3,6 +3,9 @@ InstanceOf: AdministrableProductDefinition
 Description: "Administrable Product"
 Usage: #example
  
+* identifier.system = "https://spor.ema.europa.eu/pmswi/"
+* identifier.value = "0xE857DA811B4A6F3BD57810C45D2EA1ED"
+* identifier.use = #official
 * status = #active
 
  // Reference to MedicinalProductDefinition: Medicinal Product
