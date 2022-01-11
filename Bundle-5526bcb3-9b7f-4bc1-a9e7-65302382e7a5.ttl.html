@@ -1,0 +1,1119 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH\Vulcan Monuril FHIR Package Insert - TTL Representation - FHIR v5.0.0-snapshot1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8.6"}
+    h3,h4,h5,h6{--heading-prefix:"8.6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="ePI-structure.html">ePI structure</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-capability-statement-ema.html">SmPC / PL</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Vulcan Monuril FHIR Package Insert</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Vulcan Monuril FHIR Package Insert - TTL Representation</h2>
+
+<p><a href="Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/bundle.html#Bundle.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;5526bcb3-9b7f-4bc1-a9e7-65302382e7a5&quot;];
+  <a href="http://build.fhir.org/bundle.html#Bundle.identifier">fhir:Bundle.identifier</a> [
+     <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://www.gravitatehealth.eu/sid/doc&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PL 31654/0006&quot; ]
+  ];
+  <a href="http://build.fhir.org/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;document&quot;];
+  <a href="http://build.fhir.org/bundle.html#Bundle.timestamp">fhir:Bundle.timestamp</a> [ <a href="http://build.fhir.org/datatypes.html#instant">fhir:value</a> &quot;2017-06-23T08:38:00+02:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/bundle.html#Bundle.entry">fhir:Bundle.entry</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/composition.html#Composition">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/composition.html">a</a> fhir:Composition;
+       <a href="http://build.fhir.org/composition.html#Composition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639991356428&quot; ];
+       <a href="http://build.fhir.org/composition.html#Composition.language">fhir:Resource.language</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;en&quot; ];
+       <a href="http://build.fhir.org/composition.html#Composition.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639991356428\&quot;  (Language \&quot;en\&quot;) &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2015-02-07T13:28:17Z&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639754108144\&quot;&gt;See above (Organization/cfsb1639754108144)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Monuril Vulcan ePI&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: unrestricted&lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/composition.html#Composition.status">fhir:Composition.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;final&quot; ];
+       <a href="http://build.fhir.org/composition.html#Composition.type">fhir:Composition.type</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Package Leaflet&quot; ]       ];
+       <a href="http://build.fhir.org/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2015-02-07T13:28:17Z&quot;^^xsd:dateTime ];
+       <a href="http://build.fhir.org/composition.html#Composition.author">fhir:Composition.author</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639754108144&quot; ]       ];
+       <a href="http://build.fhir.org/composition.html#Composition.title">fhir:Composition.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;TEST PURPOSES ONLY - Monuril Vulcan ePI&quot; ];
+       <a href="http://build.fhir.org/composition.html#Composition.confidentiality">fhir:Composition.confidentiality</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;unrestricted&quot; ];
+       <a href="http://build.fhir.org/composition.html#Composition.section">fhir:Composition.section</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. Package Leaflet&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;PACKAGE LEAFLET: INFORMATION FOR THE USER MONURIL 3 g granules for oral solution Fosfomycin Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.&lt;ul&gt;&lt;li&gt;Keep this leaflet. You may need to read it again.&lt;/li&gt;&lt;li&gt;If you have any further questions, ask your doctor or pharmacist.&lt;/li&gt;&lt;li&gt;This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.&lt;/li&gt;&lt;li&gt;If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;What is in this leaflet&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538-0&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;What in this leaflet&lt;ol&gt;&lt;li&gt;What Monuril is and what it is used for&lt;/li&gt;&lt;li&gt;What you need to know before you take Monuril&lt;/li&gt;&lt;li&gt;How to take Monuril&lt;/li&gt;&lt;li&gt;Possible side effects&lt;/li&gt;&lt;li&gt;How to store Monuril&lt;/li&gt;&lt;li&gt;Contents of the pack and other information&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&quot;         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1. What Monuril is and what it is used for&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538-1&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;1. What Monuril is and what it is used for&lt;/b&gt; Monuril contains the active substance fosfomycin (as fosfomycin trometamol). It is an antibiotic that works by killing bacteria which can cause infections. Monuril is used to treat uncomplicated infection of the bladder in women and female adolescents. Monuril is used as antibiotic prophylaxis for transrectal prostate biopsy in adult man.&lt;/div&gt;&quot;         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;2. What you need to know before you take Monuril&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538-2&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;2. What you need to know before you take Monuril&lt;/b&gt;&lt;p&gt;&lt;b&gt;Do not take Monuril if you:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;are allergic to fosfomycin or any of the other ingredients of this medicine (listed in section 6).&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;Warnings and precautions&lt;/b&gt; Talk to your doctor, pharmacist or nurse before using Monuril if you suffer from one of the following disorders:&lt;ul&gt;&lt;li&gt;persistent infections of the bladder,&lt;/li&gt;&lt;li&gt;previously had diarrhea after taking any other antibiotics.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;u&gt;Conditions you need to look out for&lt;/u&gt;&lt;/p&gt;Monuril can cause serious side effects. These include allergic reactions and an inflammation of the large intestine. You must look out for certain symptoms while you are taking this medicine, to reduce the risk of any problems. See “Serious side effects” in Section 4.&lt;p&gt;&lt;b&gt;Children and adolescents&lt;/b&gt;&lt;/p&gt;Do not give this medicine to children less than 12 years of age, as its safety and efficacy have not been established in this age group.&lt;p&gt;&lt;b&gt;Other medicines and Monuril&lt;/b&gt;&lt;/p&gt;Tell your doctor or pharmacist if you are taking, have recently taken or might take any other medicines, including medicines obtained without a prescription. This is especially important if you are taking:&lt;ul&gt;&lt;li&gt;&lt;b&gt;metoclopramide&lt;/b&gt; or other medicinal products that increase the movement of food through the stomach and intestines, because they may reduce the uptake of fosfomycin by your body,&lt;/li&gt;&lt;li&gt;&lt;b&gt;anticoagulants&lt;/b&gt;, as their ability to prevent your blood from clotting might be altered by fosfomycin and other antibiotics.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Monuril with food&lt;/b&gt;&lt;/p&gt;Food may delay the absorption of fosfomycin. Therefore, this medicinal product should be taken on an empty stomach (2-3 hours before or 2-3 hours after a meal).&lt;p&gt;&lt;b&gt;Pregnancy, breast-feeding and fertility&lt;/b&gt;&lt;/p&gt;If you are pregnant or breast-feeding, think you may be pregnant or are planning to have a baby, ask your doctor or pharmacist for advice before taking this medicine.&lt;p&gt;If you are pregnant your doctor will only give you this medicine when it is clearly needed.&lt;/p&gt;&lt;p&gt;Breast-feeding mothers can take a single oral dose of this medicine.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Driving and using machines&lt;/b&gt;&lt;/p&gt;You may experience side effects, such as dizziness, which may affect your ability to drive or use machines.&lt;p&gt;&lt;b&gt;Monuril contains&lt;/b&gt;&lt;/p&gt;&lt;u&gt;Sodium&lt;/u&gt; This medicine contains less than 1 mmol sodium (23 mg) per sachet that is to say essentially 'sodium-free'. &lt;u&gt;Sucrose&lt;/u&gt; If you have been told by your doctor that you have an intolerance to some sugars, contact your doctor before taking this medicinal product. &lt;u&gt;Sulphites&lt;/u&gt; May rarely cause severe hypersensitivity reactions and bronchospasm.&lt;/div&gt;&quot;         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;3. How to take Monuril&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538-3&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;3. How to take Monuril&lt;/b&gt;&lt;/p&gt;Always take this medicine exactly as your doctor or pharmacist has told you. Check with your doctor or pharmacist if you are not sure.&lt;p&gt;In case of treatment of uncomplicated infection of the bladder, in women and female adolescents the recommended dose is 1 sachet of Monuril (3 g Fosfomycin).&lt;/p&gt;&lt;p&gt;When used as antibiotic prophylaxis for transrectal prostate biopsy the recommended dose is 1 sachet of Monuril (3 g fosfomycin) 3 hours prior to the procedure and 1 sachet of Monuril (3 g fosfomycin) 24 hours after the procedure.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Use in patients with renal impairment&lt;/b&gt;&lt;/p&gt;This medicine should not be used in patients with severe renal impairment (creatinin clearance &amp;lt; 10 ml/min).&lt;p&gt;&lt;b&gt;Use in children and adolescents&lt;/b&gt;&lt;/p&gt;This medicine should not be used in children less than 12 years of age.&lt;p&gt;&lt;b&gt;Method of administration&lt;/b&gt;&lt;/p&gt;For oral use.&lt;p&gt;Take this medicine by mouth, on an empty stomach (2-3 hours before or 2-3 hours after a meal), preferably before going to bed after emptying the bladder.&lt;/p&gt;&lt;p&gt;Dissolve the content of one sachet in a glass of water and drink immediately.&lt;/p&gt;&lt;p&gt;&lt;b&gt;If you take more Monuril than you should&lt;/b&gt;&lt;/p&gt;If you accidentally take more than your prescribed dose, contact your doctor or pharmacist.&lt;p&gt;If you have any further questions on the use of this medicine, ask your doctor or pharmacist.&lt;/p&gt;&lt;/div&gt;&quot;         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;4. Possible side effects&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538-4&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;4. Possible side effects&lt;/b&gt;&lt;/p&gt;Like all medicines, this medicine can cause side effects, although not everybody gets them.&lt;p&gt;&lt;b&gt;Serious side effects&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;While taking Monuril, if you develop any of the following symptoms you should stop taking the medicine and contact your doctor immediately:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;anaphylactic shock, a life threatening type of allergic reaction (&lt;em&gt;the frequency is unknown&lt;/em&gt;). Symptoms include a sudden onset of rash, itching or hives on the skin and or shortness of breath, wheezing or difficulty in breathing,&lt;/li&gt;&lt;li&gt;swelling of the face, lips, tongue or throat with breathing difficulties (angioedema) (&lt;em&gt;the frequency is unknown&lt;/em&gt;),&lt;/li&gt;&lt;li&gt;moderate to severe diarrhea, abdominal cramps, bloody stools and/or fever may mean that you have an infection of the large intestine (antibiotic-associated colitis) (&lt;em&gt;the frequency is unknown&lt;/em&gt;). Do not take medicines against diarrhea that inhibit the bowel movements (antiperistaltics).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Other side effects&lt;/b&gt;&lt;/p&gt;&lt;u&gt;Common (may affect up to 1 in 10 people):&lt;/u&gt;&lt;ul&gt;&lt;li&gt;headache&lt;/li&gt;&lt;li&gt;dizziness&lt;/li&gt;&lt;li&gt;diarrhea&lt;/li&gt;&lt;li&gt;nausea&lt;/li&gt;&lt;li&gt;indigestion&lt;/li&gt;&lt;li&gt;abdominal pain&lt;/li&gt;&lt;li&gt;infection of the female genital organs with symptoms like inflammation, irritation, itching (vulvovaginitis).&lt;/li&gt;&lt;/ul&gt;&lt;u&gt;Uncommon (may affect up to 1 in 100 people):&lt;/u&gt;&lt;ul&gt;&lt;li&gt;vomiting&lt;/li&gt;&lt;li&gt;rash&lt;/li&gt;&lt;li&gt;urticaria&lt;/li&gt;&lt;li&gt;itching&lt;/li&gt;&lt;/ul&gt;&lt;u&gt;Not known (frequency cannot be estimated from the available data):&lt;/u&gt;&lt;ul&gt;&lt;li&gt;allergic reactions.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Reporting of side effects&lt;/b&gt;&lt;/p&gt;If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. You can also report side effects directly via the national reporting system website: &lt;a href=\&quot;www.mhra.gov.uk/yellowcard\&quot;&gt;www.mhra.gov.uk/yellowcard&lt;/a&gt;. By reporting side effects you can help provide more information on the safety of this medicine.&lt;/div&gt;&quot;         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;5. How to store Monuril&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538-5&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Keep this medicine out of the sight and reach of children.&lt;/p&gt;&lt;p&gt;Do not use this medicine after the expiry date which is stated on the carton and the blister after “EXP”. The expiry date refers to the last day of that month.&lt;/p&gt;&lt;p&gt;This medicine does not require any special storage conditions.&lt;/p&gt;&lt;p&gt;Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away medicines you no longer use. These measures will help protect the environment.&lt;/p&gt;&lt;/div&gt;&quot;         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+         <a href="http://build.fhir.org/composition.html#Composition.section.title">fhir:Composition.section.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;6. Contents of the pack and other information&quot; ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155538-6&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;B. PACKAGE LEAFLET&quot; ]         ];
+         <a href="http://build.fhir.org/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
+           <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
+           fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;6. Contents of the pack and other information&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;What Monuril contains&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The active substance is fosfomycin. Each sachet contains 5.631 g of fosfomycin trometamol, equivalent to 3 g of fosfomycin&lt;/li&gt;&lt;li&gt;the other ingredients are mandarin flavour, orange flavour, saccharin, sucrose (see section 2 for information on sucrose).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;What Monuril looks like and contents of the pack&lt;/b&gt;&lt;/p&gt;White granules for oral solution in a single dose sachet.&lt;p&gt;Sachets are four layers laminate of: paper/polyethylene/aluminium/polyethylene.&lt;/p&gt;&lt;p&gt;Monuril is available in packs containing:&lt;/p&gt;1 sachet of 8 g of granules (3 g fosfomycin) 2 sachets of 8 g of granules (3 g fosfomycin) 5 sachets of 8 g of granules (3 g fosfomycin). Not all pack sizes may be marketed.&lt;p&gt;&lt;b&gt;Marketing Authorisation Holder and Manufacturer&lt;/b&gt;&lt;/p&gt;Marketing Authorisation Holder: Zambon S.p.A. Via Lillo del Duca, 10 20091 Bresso (Milan) - Italy Tel: +39 02 665 241 Fax: +39 02 665 01 492&lt;p&gt;Manufacturer:&lt;/p&gt;Zambon S.p.A. Via della Chimica, 9 36100 Vicenza - Italy&lt;p&gt;&lt;b&gt;Distributor&lt;/b&gt;&lt;/p&gt;Profile Pharma Limited Bicentennial Building Southern Gate West Sussex PO19 8EZ UK Tel: +44 (0) 800 0288 942 Email: &lt;a href=\&quot;mailto:info.profilepharma@zambongroup.com\&quot;&gt;info.profilepharma@zambongroup.com&lt;/a&gt;&lt;p&gt;&lt;b&gt;This leaflet was last revised in November 2020.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;&quot;         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/organization.html#Organization">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/organization.html">a</a> fhir:Organization;
+       <a href="http://build.fhir.org/organization.html#Organization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639753766266&quot; ];
+       <a href="http://build.fhir.org/organization.html#Organization.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639753766266\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000380 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Manufacturer &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Zambon S.p.A.&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Via della Chimica, 9 36100 Vicenza – Italy(WORK)&lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/organization.html#Organization.identifier">fhir:Organization.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/omswi/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ORG-100000380&quot; ]       ];
+       <a href="http://build.fhir.org/organization.html#Organization.active">fhir:Organization.active</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/organization.html#Organization.type">fhir:Organization.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;220000000033&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Manufacturer&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Manufacturer&quot; ]       ];
+       <a href="http://build.fhir.org/organization.html#Organization.name">fhir:Organization.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Zambon S.p.A.&quot; ];
+       <a href="http://build.fhir.org/organization.html#Organization.address">fhir:Organization.address</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.use">fhir:Address.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;work&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.type">fhir:Address.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;physical&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.text">fhir:Address.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Via della Chimica, 9 36100 Vicenza – Italy&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.line">fhir:Address.line</a> [
+           <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Via della Chimica, 9 36100&quot;;
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0         ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.city">fhir:Address.city</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Vicenza&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.country">fhir:Address.country</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;it&quot; ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://build.fhir.org/organization.html#Organization">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/organization.html">a</a> fhir:Organization;
+       <a href="http://build.fhir.org/organization.html#Organization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639754108144&quot; ];
+       <a href="http://build.fhir.org/organization.html#Organization.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639754108144\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000380 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing authorisation holder &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#220000000034)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Zambon S.p.A.&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;tel:+3902665241\&quot;&gt;+39 02 665 241&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Via Lillo del Duca, 10 20091 Bresso (Milan) – Italy(WORK)&lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/organization.html#Organization.identifier">fhir:Organization.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/omswi/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ORG-100000380&quot; ]       ];
+       <a href="http://build.fhir.org/organization.html#Organization.active">fhir:Organization.active</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/organization.html#Organization.type">fhir:Organization.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;220000000034&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Marketing authorisation holder&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Marketing authorisation holder&quot; ]       ];
+       <a href="http://build.fhir.org/organization.html#Organization.name">fhir:Organization.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Zambon S.p.A.&quot; ];
+       <a href="http://build.fhir.org/organization.html#Organization.telecom">fhir:Organization.telecom</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;phone&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;+39 02 665 241&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.use">fhir:ContactPoint.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;work&quot; ]       ];
+       <a href="http://build.fhir.org/organization.html#Organization.address">fhir:Organization.address</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.use">fhir:Address.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;work&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.type">fhir:Address.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;physical&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.text">fhir:Address.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Via Lillo del Duca, 10 20091 Bresso (Milan) – Italy&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.line">fhir:Address.line</a> [
+           <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Via Lillo del Duca, 10 20091&quot;;
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0         ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.city">fhir:Address.city</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Bresso (Milan)&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.country">fhir:Address.country</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;it&quot; ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+     <a href="http://build.fhir.org/organization.html#Organization">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/organization.html">a</a> fhir:Organization;
+       <a href="http://build.fhir.org/organization.html#Organization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639015880655&quot; ];
+       <a href="http://build.fhir.org/organization.html#Organization.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639015880655\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100013412 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Medicines Regulatory Authority &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: European Medicines Agency&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands(WORK)&lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/organization.html#Organization.identifier">fhir:Organization.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/omswi/#/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ORG-100013412&quot; ]       ];
+       <a href="http://build.fhir.org/organization.html#Organization.active">fhir:Organization.active</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/organization.html#Organization.type">fhir:Organization.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#220000000033&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Medicines Regulatory Authority&quot; ]       ];
+       <a href="http://build.fhir.org/organization.html#Organization.name">fhir:Organization.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;European Medicines Agency&quot; ];
+       <a href="http://build.fhir.org/organization.html#Organization.address">fhir:Organization.address</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.use">fhir:Address.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;work&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.type">fhir:Address.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;physical&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.text">fhir:Address.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.line">fhir:Address.line</a> [
+           <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Carretera De Martorell 41 61, Poligono Industrial Nord-Est&quot;;
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0         ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.city">fhir:Address.city</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Amsterdam&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.postalCode">fhir:Address.postalCode</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1083 HS&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Address#Address.country">fhir:Address.country</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;nl&quot; ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+     <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/regulatedauthorization.html">a</a> fhir:RegulatedAuthorization;
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639761980721&quot; ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639761980721\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PL 31654/0006 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb1639760186202\&quot;&gt;See above (MedicinalProductDefinition/cfsb1639760186202)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: European Union &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07T13:28:17Z&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639754108144\&quot;&gt;See above (Organization/cfsb1639754108144)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;regulator&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639015880655\&quot;&gt;See above (Organization/cfsb1639015880655)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.identifier">fhir:RegulatedAuthorization.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PL 31654/0006&quot; ]       ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.subject">fhir:RegulatedAuthorization.subject</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/cfsb1639760186202&quot; ]       ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.type">fhir:RegulatedAuthorization.type</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#100000072062&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Marketing Authorisation&quot; ]       ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.region">fhir:RegulatedAuthorization.region</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;eu&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;European Union&quot; ]       ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.status">fhir:RegulatedAuthorization.status</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/publication-status&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Active&quot; ]       ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.statusDate">fhir:RegulatedAuthorization.statusDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2015-02-07T13:28:17Z&quot;^^xsd:dateTime ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.holder">fhir:RegulatedAuthorization.holder</a> [
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639754108144&quot; ]       ];
+       <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.regulator">fhir:RegulatedAuthorization.regulator</a> [
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639015880655&quot; ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+     <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/medicinalproductdefinition.html">a</a> fhir:MedicinalProductDefinition;
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639760186202&quot; ];
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639760186202\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PL 31654/0006 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: Human use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#100000000012)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;legalStatusOfSupply&lt;/b&gt;: Medicinal product subject to medical prescription &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#100000072084)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;productName&lt;/b&gt;: MONURIL 3 g granules for oral solution&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Full name &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#220000000001)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;NameParts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Part&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;granules for oral solution&lt;/td&gt;&lt;td&gt;Pharmaceutical dose form part &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#220000000005)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;CountryLanguages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Jurisdiction&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;gb &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#gb)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;European Union &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;English &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html\&quot;&gt;Tags for the Identification of Languages&lt;/a&gt;#en)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.identifier">fhir:MedicinalProductDefinition.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/pmswi/#/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PL 31654/0006&quot; ]       ];
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.type">fhir:MedicinalProductDefinition.type</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#100000072062&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Marketing Authorisation&quot; ]       ];
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.domain">fhir:MedicinalProductDefinition.domain</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#100000000012&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Human use&quot; ]       ];
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.status">fhir:MedicinalProductDefinition.status</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/publication-status&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Active&quot; ]         ]       ];
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.legalStatusOfSupply">fhir:MedicinalProductDefinition.legalStatusOfSupply</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#100000072084&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Medicinal product subject to medical prescription&quot; ]       ];
+       <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name">fhir:MedicinalProductDefinition.name</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">fhir:MedicinalProductDefinition.name.productName</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MONURIL 3 g granules for oral solution&quot; ];
+         <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.type">fhir:MedicinalProductDefinition.name.type</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#220000000001&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Full name&quot; ]         ];
+         <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart">fhir:MedicinalProductDefinition.name.namePart</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.part">fhir:MedicinalProductDefinition.name.namePart.part</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;granules for oral solution&quot; ];
+           <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.type">fhir:MedicinalProductDefinition.name.namePart.type</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#220000000005&quot; ]             ];
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Pharmaceutical dose form part&quot; ]           ]         ];
+         <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage">fhir:MedicinalProductDefinition.name.countryLanguage</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.country">fhir:MedicinalProductDefinition.name.countryLanguage.country</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;gb&quot; ]             ]           ];
+           <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.jurisdiction">fhir:MedicinalProductDefinition.name.countryLanguage.jurisdiction</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;eu&quot; ]             ];
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;European Union&quot; ]           ];
+           <a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.language">fhir:MedicinalProductDefinition.name.countryLanguage.language</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:ietf:bcp:47&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;en&quot; ]             ];
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;English&quot; ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+     <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/packagedproductdefinition.html">a</a> fhir:PackagedProductDefinition;
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639758328687&quot; ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639758328687\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PL 31654/0006-5 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 5 sachets of 8 g of granules (3 g fosfomycin).&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Chemical Medicinal Product &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000155527)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb1639760186202\&quot;&gt;See above (MedicinalProductDefinition/cfsb1639760186202)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2008-09-19&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 5 Sachet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: [not stated] code 200000002143 = '200000002143')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Sachet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000002143)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: Paper &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003207)&lt;/span&gt;, PolyEthylene &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003214)&lt;/span&gt;, Aluminium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003200)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;containedItem&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.identifier">fhir:PackagedProductDefinition.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/pmswi/#/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PL 31654/0006-5&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.name">fhir:PackagedProductDefinition.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;5 sachets of 8 g of granules (3 g fosfomycin).&quot; ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.type">fhir:PackagedProductDefinition.type</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155527&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Chemical Medicinal Product&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Chemical Medicinal Product&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.packageFor">fhir:PackagedProductDefinition.packageFor</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/cfsb1639760186202&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.status">fhir:PackagedProductDefinition.status</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/publication-status&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Active&quot; ]         ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.statusDate">fhir:PackagedProductDefinition.statusDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2008-09-19&quot;^^xsd:date ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">fhir:PackagedProductDefinition.containedItemQuantity</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;5&quot;^^xsd:decimal ];
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000002143&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">fhir:PackagedProductDefinition.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package">fhir:PackagedProductDefinition.package</a> [
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.type">fhir:PackagedProductDefinition.package.type</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000002143&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.material">fhir:PackagedProductDefinition.package.material</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003207&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Paper&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003214&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PolyEthylene&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003200&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Aluminium&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.manufacturer">fhir:PackagedProductDefinition.package.manufacturer</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem">fhir:PackagedProductDefinition.package.containedItem</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.item">fhir:PackagedProductDefinition.package.containedItem.item</a> [
+             <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.reference">fhir:CodeableReference.reference</a> [
+               <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/cfsb1639756818482&quot; ]             ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+     <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/packagedproductdefinition.html">a</a> fhir:PackagedProductDefinition;
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639764389611&quot; ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639764389611\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PL 31654/0006-2 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 2 sachets of 8 g of granules (3 g fosfomycin).&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Chemical Medicinal Product &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000155527)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb1639760186202\&quot;&gt;See above (MedicinalProductDefinition/cfsb1639760186202)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 2 Sachet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: [not stated] code 200000002143 = '200000002143')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Sachet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000002143)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: Paper &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003207)&lt;/span&gt;, PolyEthylene &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003214)&lt;/span&gt;, Aluminium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003200)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;containedItem&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.identifier">fhir:PackagedProductDefinition.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/pmswi/#/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PL 31654/0006-2&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.name">fhir:PackagedProductDefinition.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;2 sachets of 8 g of granules (3 g fosfomycin).&quot; ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.type">fhir:PackagedProductDefinition.type</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155527&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Chemical Medicinal Product&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Chemical Medicinal Product&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.packageFor">fhir:PackagedProductDefinition.packageFor</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/cfsb1639760186202&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.status">fhir:PackagedProductDefinition.status</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/publication-status&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Active&quot; ]         ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">fhir:PackagedProductDefinition.containedItemQuantity</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;2&quot;^^xsd:decimal ];
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000002143&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">fhir:PackagedProductDefinition.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package">fhir:PackagedProductDefinition.package</a> [
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.type">fhir:PackagedProductDefinition.package.type</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000002143&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.material">fhir:PackagedProductDefinition.package.material</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003207&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Paper&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003214&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PolyEthylene&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003200&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Aluminium&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.manufacturer">fhir:PackagedProductDefinition.package.manufacturer</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem">fhir:PackagedProductDefinition.package.containedItem</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.item">fhir:PackagedProductDefinition.package.containedItem.item</a> [
+             <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.reference">fhir:CodeableReference.reference</a> [
+               <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/cfsb1639756818482&quot; ]             ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+     <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/packagedproductdefinition.html">a</a> fhir:PackagedProductDefinition;
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639764389612&quot; ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639764389612\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PL 31654/0006-1 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 1 sachet of 8 g of granules (3 g fosfomycin).&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Chemical Medicinal Product &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000155527)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb1639760186202\&quot;&gt;See above (MedicinalProductDefinition/cfsb1639760186202)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 1 Sachet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: [not stated] code 200000002143 = '200000002143')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Sachet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000002143)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: Paper &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003207)&lt;/span&gt;, PolyEthylene &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003214)&lt;/span&gt;, Aluminium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000003200)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;containedItem&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.identifier">fhir:PackagedProductDefinition.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/pmswi/#/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PL 31654/0006-1&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.name">fhir:PackagedProductDefinition.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1 sachet of 8 g of granules (3 g fosfomycin).&quot; ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.type">fhir:PackagedProductDefinition.type</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000155527&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Chemical Medicinal Product&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Chemical Medicinal Product&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.packageFor">fhir:PackagedProductDefinition.packageFor</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/cfsb1639760186202&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.status">fhir:PackagedProductDefinition.status</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/publication-status&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Active&quot; ]         ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">fhir:PackagedProductDefinition.containedItemQuantity</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000002143&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">fhir:PackagedProductDefinition.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]       ];
+       <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package">fhir:PackagedProductDefinition.package</a> [
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.type">fhir:PackagedProductDefinition.package.type</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000002143&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.material">fhir:PackagedProductDefinition.package.material</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003207&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Paper&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003214&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PolyEthylene&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000003200&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Aluminium&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.manufacturer">fhir:PackagedProductDefinition.package.manufacturer</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ];
+         <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem">fhir:PackagedProductDefinition.package.containedItem</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.item">fhir:PackagedProductDefinition.package.containedItem.item</a> [
+             <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.reference">fhir:CodeableReference.reference</a> [
+               <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/cfsb1639756818482&quot; ]             ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+     <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/administrableproductdefinition.html">a</a> fhir:AdministrableProductDefinition;
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639760977050&quot; ];
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639760977050\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 0xE857DA811B4A6F3BD57810C45D2EA1ED (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;formOf&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb1639760186202\&quot;&gt;See above (MedicinalProductDefinition/cfsb1639760186202)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administrableDoseForm&lt;/b&gt;: Granules and solvent for oral suspension &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#100000116155)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;producedFrom&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_cfsb1639756818482\&quot;&gt;See above (ManufacturedItemDefinition/cfsb1639756818482)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;routeOfAdministration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: oral use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000073619)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;TargetSpecies&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Human &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#100000109093)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.identifier">fhir:AdministrableProductDefinition.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/pmswi/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;0xE857DA811B4A6F3BD57810C45D2EA1ED&quot; ]       ];
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.status">fhir:AdministrableProductDefinition.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.formOf">fhir:AdministrableProductDefinition.formOf</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/cfsb1639760186202&quot; ]       ];
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.administrableDoseForm">fhir:AdministrableProductDefinition.administrableDoseForm</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#100000116155&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Granules and solvent for oral suspension&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Granules and solvent for oral suspension&quot; ]       ];
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.producedFrom">fhir:AdministrableProductDefinition.producedFrom</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/cfsb1639756818482&quot; ]       ];
+       <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration">fhir:AdministrableProductDefinition.routeOfAdministration</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.code">fhir:AdministrableProductDefinition.routeOfAdministration.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+             <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000073619&quot; ]           ];
+           <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;oral use&quot; ]         ];
+         <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.targetSpecies">fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.targetSpecies.code">fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies.code</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#100000109093&quot; ]             ];
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Human&quot; ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+     <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/manufactureditemdefinition.html">a</a> fhir:ManufacturedItemDefinition;
+       <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639756818482&quot; ];
+       <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639756818482\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PL 31654/0006 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturedDoseForm&lt;/b&gt;: Granules for oral solution &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000073365)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Sachet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#200000002143)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.identifier">fhir:ManufacturedItemDefinition.identifier</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/pmswi/#/&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;PL 31654/0006&quot; ]       ];
+       <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.status">fhir:ManufacturedItemDefinition.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturedDoseForm">fhir:ManufacturedItemDefinition.manufacturedDoseForm</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000073365&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Granules for oral solution&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Granules for oral solution&quot; ]       ];
+       <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.unitOfPresentation">fhir:ManufacturedItemDefinition.unitOfPresentation</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;200000002143&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sachet&quot; ]       ];
+       <a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturer">fhir:ManufacturedItemDefinition.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
+     <a href="http://build.fhir.org/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/ingredient.html">a</a> fhir:Ingredient;
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639762372322&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639762372322\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000072082&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Excipient&quot; ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">fhir:Ingredient.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">fhir:Ingredient.manufacturer.manufacturer</a> [
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+           <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://gsrs.ncats.nih.gov/ginas/app/beta/home&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;5EVU04N5QU&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Orange&quot; ]             ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
+     <a href="http://build.fhir.org/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/ingredient.html">a</a> fhir:Ingredient;
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639754408039&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639754408039\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#00000072072)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;presentation&lt;/b&gt;: 5.631 g&lt;/p&gt;&lt;p&gt;&lt;b&gt;basis&lt;/b&gt;: active ingredient - moiety is basis of strength &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v3-RoleClass.html\&quot;&gt;RoleClass&lt;/a&gt;#ACTIM)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;referenceStrength&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 3 g&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;/#00000072072&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;active&quot; ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">fhir:Ingredient.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">fhir:Ingredient.manufacturer.manufacturer</a> [
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+           <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;7FXW6U30GY&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Fosfomycin Tromethamine&quot; ]             ]           ]         ];
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength">fhir:Ingredient.substance.strength</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.presentation[x]">fhir:Ingredient.substance.strength.presentationQuantity</a> [
+             <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;5.631&quot;^^xsd:decimal ];
+             <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;g&quot; ]           ];
+           <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.basis">fhir:Ingredient.substance.strength.basis</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;ACTIM&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;active ingredient - moiety is basis of strength&quot; ]             ];
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;active ingredient - moiety is basis of strength&quot; ]           ];
+           <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.referenceStrength">fhir:Ingredient.substance.strength.referenceStrength</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.referenceStrength.substance">fhir:Ingredient.substance.strength.referenceStrength.substance</a> [
+               <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+                 <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+                   <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+                   <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://gsrs.ncats.nih.gov/ginas/app/beta/&quot; ];
+                   <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;2N81MY12TE&quot; ];
+                   <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Fosfomycin&quot; ]                 ]               ]             ];
+             <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.referenceStrength.strength[x]">fhir:Ingredient.substance.strength.referenceStrength.strengthQuantity</a> [
+               <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;3&quot;^^xsd:decimal ];
+               <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;g&quot; ]             ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
+     <a href="http://build.fhir.org/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/ingredient.html">a</a> fhir:Ingredient;
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639762593730&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639762593730\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000072082&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Excipient&quot; ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">fhir:Ingredient.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">fhir:Ingredient.manufacturer.manufacturer</a> [
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+           <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://gsrs.ncats.nih.gov/ginas/app/beta/home&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;C151H8M554&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sucrose&quot; ]             ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
+     <a href="http://build.fhir.org/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/ingredient.html">a</a> fhir:Ingredient;
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639762372321&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639762372321\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000072082&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Excipient&quot; ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">fhir:Ingredient.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">fhir:Ingredient.manufacturer.manufacturer</a> [
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+           <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://gsrs.ncats.nih.gov/ginas/app/beta/home&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;FST467XS7D&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Saccharin&quot; ]             ]           ]         ]       ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
+     <a href="http://build.fhir.org/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> [
+       <a href="http://build.fhir.org/ingredient.html">a</a> fhir:Ingredient;
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;cfsb1639762372323&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+         <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1639762372323\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1639753766266\&quot;&gt;See above (Organization/cfsb1639753766266)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/rmswi/&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;100000072082&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Excipient&quot; ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">fhir:Ingredient.manufacturer</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">fhir:Ingredient.manufacturer.manufacturer</a> [
+           <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/cfsb1639753766266&quot; ]         ]       ];
+       <a href="http://build.fhir.org/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+         <a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+           <a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;https://gsrs.ncats.nih.gov/ginas/app/beta/home&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;KH3E3096OO&quot; ];
+               <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Tangerine&quot; ]             ]           ]         ]       ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Tue, Jan 11, 2022 15:19+0000">2022-01-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

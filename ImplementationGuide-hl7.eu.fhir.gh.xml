@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-01-11T15:14:18+00:00"/>
+  <date value="2022-01-11T15:19:41+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -66,6 +66,17 @@
       </reference>
       <name value="Vulcan Skilarence FHIR Package Insert"/>
       <description value="instance of Skilarence package insert for connectathon testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5"/>
+      </reference>
+      <name value="Vulcan Monuril FHIR Package Insert"/>
+      <description value="instance of Monuril package insert for connectathon testing"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

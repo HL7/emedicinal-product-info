@@ -1,10 +1,10 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 1173, warn = 150, info = 1069
+err = 1235, warn = 162, info = 1119
 IG Publisher Version: 1.1.94-SNAPSHOT Out of date - current version is 1.1.94
-Generated Tue Jan 11 15:14:59 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
- Build Errors : 21 / 3 / 0
+Generated Tue Jan 11 15:20:21 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+ Build Errors : 22 / 3 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639227408981 : 2 / 1 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639228293199 : 3 / 1 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639760977050 : 0 / 1 / 4
@@ -56,6 +56,7 @@ Generated Tue Jan 11 15:14:59 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Binary-cfsb1639241092664 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-12dde04f-a821-4c44-82ce-ab11e8c87c72 : 405 / 72 / 314
  /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382d6f4 : 411 / 72 / 321
+ /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5 : 62 / 21 / 67
  /github/workspace/fsh-generated/resources/Bundle-cfsb1641827801260 : 52 / 22 / 63
  /github/workspace/fsh-generated/resources/Bundle-cfsb2726030964451 : 73 / 28 / 78
  /github/workspace/fsh-generated/resources/Bundle-cfsb9078061117831 : 77 / 28 / 78
@@ -205,6 +206,7 @@ ERROR: /github/workspace/output/AdministrableProductDefinition-cfsb1639227408981
 ERROR: /github/workspace/output/AdministrableProductDefinition-cfsb1639228293199.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 214, column 414: The link 'cfsb164028843078232' for "cfsb164028843078232" cannot be resolved
 ERROR: /github/workspace/output/AdministrableProductDefinition-cfsb1639228293199.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 214, column 476: The link 'cfsb164028843078233' for "cfsb164028843078233" cannot be resolved
 ERROR: /github/workspace/output/AdministrableProductDefinition-cfsb1639228293199.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 214, column 538: The link 'cfsb164028843078234' for "cfsb164028843078234" cannot be resolved
+ERROR: /github/workspace/output/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.html#/html/body/div/div/div/div/div/div/a at Line 214, column 7513: The link 'www.mhra.gov.uk/yellowcard' for "www.mhra.gov.uk/yellowcard" cannot be resolved
 ERROR: /github/workspace/output/ClinicalUseDefinition-cfsb1639240824314.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 214, column 540: The link 'cfsb1639238291499' for "cfsb1639238291499" cannot be resolved
 ERROR: /github/workspace/output/ClinicalUseDefinition-cfsb1639240847910.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 214, column 563: The link 'cfsb1639238291499' for "cfsb1639238291499" cannot be resolved
 ERROR: /github/workspace/output/ClinicalUseDefinition-cfsb1639240914083.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 214, column 562: The link 'cfsb1639238291499' for "cfsb1639238291499" cannot be resolved
@@ -1655,6 +1657,131 @@ ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382d6f4: Bundle.entry[71]: Except for
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382d6f4: Bundle.entry[72]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382d6f4: Bundle.entry[73]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382d6f4: Bundle.entry[74]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.json ==
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = https://spor.ema.europa.eu/#100000155538)
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).author[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).confidentiality: ValueSet http://terminology.hl7.org/ValueSet/v3-Confidentiality|2.0.0|2.0.0 not found by validator
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[0].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[1].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[2].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[3].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[3].text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[3].text.div: Illegal element name in the XHTML ('u')
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[4].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[5].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[5].text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[5].text.div: Illegal element name in the XHTML ('u')
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0].resource.ofType(Composition).section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[2].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(RegulatedAuthorization).subject[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(RegulatedAuthorization).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(RegulatedAuthorization).region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(RegulatedAuthorization).holder: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(RegulatedAuthorization).regulator: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5].resource.ofType(MedicinalProductDefinition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5].resource.ofType(MedicinalProductDefinition).domain.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5].resource.ofType(MedicinalProductDefinition).legalStatusOfSupply.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].namePart[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0]: The code "gb" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#gb) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#gb'
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].jurisdiction.coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).packageFor[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).containedItemQuantity[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).containedItemQuantity[0]: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[1].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[2].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.containedItem[0].item.reference: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).packageFor[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).containedItemQuantity[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).containedItemQuantity[0]: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).package.material[1].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).package.material[2].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).package.manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7].resource.ofType(PackagedProductDefinition).package.containedItem[0].item.reference: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).packageFor[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).containedItemQuantity[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).containedItemQuantity[0]: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).package.material[1].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).package.material[2].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).package.manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8].resource.ofType(PackagedProductDefinition).package.containedItem[0].item.reference: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9].resource.ofType(AdministrableProductDefinition).status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9].resource.ofType(AdministrableProductDefinition).formOf[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9].resource.ofType(AdministrableProductDefinition).administrableDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9].resource.ofType(AdministrableProductDefinition).producedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9].resource.ofType(AdministrableProductDefinition).routeOfAdministration[0].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9].resource.ofType(AdministrableProductDefinition).routeOfAdministration[0].targetSpecies[0].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[10].resource.ofType(ManufacturedItemDefinition).status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[10].resource.ofType(ManufacturedItemDefinition).manufacturedDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[10].resource.ofType(ManufacturedItemDefinition).unitOfPresentation.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[10]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[10].resource.ofType(ManufacturedItemDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[11].resource.ofType(Ingredient).status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[11].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[11]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[11].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[11].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/home' is unknown so the code cannot be validated
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[12].resource.ofType(Ingredient).status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[12].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[12]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[12].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[12].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[12].resource.ofType(Ingredient).substance.strength[0].referenceStrength[0].substance.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[13].resource.ofType(Ingredient).status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[13].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[13]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[13].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[13].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/home' is unknown so the code cannot be validated
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14].resource.ofType(Ingredient).status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/home' is unknown so the code cannot be validated
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[15].resource.ofType(Ingredient).status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[15].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[15]: Bundle entry missing fullUrl
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[15].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[15].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/home' is unknown so the code cannot be validated
+WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[17]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[8]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[9]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[10]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[11]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[12]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[13]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[15]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 == fsh-generated/resources/Bundle-cfsb1641827801260.json ==
 INFORMATION: Bundle/cfsb1641827801260: Bundle.entry[0].resource.ofType(Composition).type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = https://spor.ema.europa.eu/#100000155538)
 INFORMATION: Bundle/cfsb1641827801260: Bundle.entry[0].resource.ofType(Composition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated

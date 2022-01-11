@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "cfsb1639761980721"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639761980721\" </p></div><p><b>identifier</b>: id: PL 31654/0006 (OFFICIAL)</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-cfsb1639760186202.html\">MedicinalProductDefinition/cfsb1639760186202</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>region</b>: European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>holder</b>: <a href=\"Organization-cfsb1639754108144.html\">Organization/cfsb1639754108144</a> \"Zambon S.p.A.\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1639761980721\" </p></div><p><b>identifier</b>: id: PL 31654/0006 (OFFICIAL)</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-cfsb1639760186202.html\">MedicinalProductDefinition/cfsb1639760186202</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>region</b>: European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07T13:28:17Z</p><p><b>holder</b>: <a href=\"Organization-cfsb1639754108144.html\">Organization/cfsb1639754108144</a> \"Zambon S.p.A.\"</p><p><b>regulator</b>: <a href=\"Organization-cfsb1639015880655.html\">Organization/cfsb1639015880655</a> \"European Medicines Agency\"</p></div>"
   ];
   fhir:RegulatedAuthorization.identifier [
      fhir:index 0;
@@ -52,6 +52,10 @@
   fhir:RegulatedAuthorization.holder [
      fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639754108144>;
      fhir:Reference.reference [ fhir:value "Organization/cfsb1639754108144" ]
+  ];
+  fhir:RegulatedAuthorization.regulator [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639015880655>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb1639015880655" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
