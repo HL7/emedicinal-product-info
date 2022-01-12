@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-11T20:40:24+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-12T10:09:27+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -2412,7 +2412,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/cfsb5671063821622>;
          fhir:Reference.reference [ fhir:value "DocumentReference/cfsb5671063821622" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb5671063821622" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Suliqua MP4 instruction video" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suliqua MP4 instruction video" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -2574,6 +2574,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DocumentReference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/DocumentReference/cfsb8701599964466>;
+         fhir:Reference.reference [ fhir:value "DocumentReference/cfsb8701599964466" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Suliqua PDF - Suliqua veileder, pasienter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suliqua PDF - Suliqua veileder, pasienter" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 182;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Ingredient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -2584,7 +2598,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lixisenatide 50 ug/ml" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 182;
+       fhir:index 183;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2598,7 +2612,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Methionine" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 183;
+       fhir:index 184;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2612,7 +2626,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instance of Suliqua package insert for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 184;
+       fhir:index 185;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2626,7 +2640,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zinc chloride" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 185;
+       fhir:index 186;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2640,7 +2654,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EU/1/16/1157/002 100/50 x5 pre-filled pens" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 186;
+       fhir:index 187;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2654,7 +2668,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Interaction - Bezafibrat" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 187;
+       fhir:index 188;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2667,7 +2681,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 188;
+       fhir:index 189;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2680,7 +2694,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "fmk-ips-skilarence" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 189;
+       fhir:index 190;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

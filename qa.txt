@@ -1,9 +1,9 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 1250, warn = 162, info = 1119
+err = 1280, warn = 162, info = 1119
 IG Publisher Version: 1.1.94-SNAPSHOT Out of date - current version is 1.1.94
-Generated Tue Jan 11 20:41:22 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+Generated Wed Jan 12 10:10:12 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 23 / 3 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639227408981 : 2 / 1 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639228293199 : 3 / 1 / 10
@@ -58,8 +58,8 @@ Generated Tue Jan 11 20:41:22 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382d6f4 : 411 / 72 / 321
  /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5 : 62 / 21 / 67
  /github/workspace/fsh-generated/resources/Bundle-cfsb1641827801260 : 52 / 22 / 63
- /github/workspace/fsh-generated/resources/Bundle-cfsb2726030964451 : 73 / 28 / 78
- /github/workspace/fsh-generated/resources/Bundle-cfsb9078061117831 : 84 / 28 / 79
+ /github/workspace/fsh-generated/resources/Bundle-cfsb2726030964451 : 82 / 28 / 78
+ /github/workspace/fsh-generated/resources/Bundle-cfsb9078061117831 : 94 / 28 / 79
  /github/workspace/fsh-generated/resources/ClinicalUseDefinition-cfsb1639240824314 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ClinicalUseDefinition-cfsb1639240847910 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ClinicalUseDefinition-cfsb1639240914083 : 1 / 0 / 1
@@ -79,8 +79,9 @@ Generated Tue Jan 11 20:41:22 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Composition-cfsb1639016804189 : 0 / 1 / 4
  /github/workspace/fsh-generated/resources/Composition-cfsb1639991356428 : 4 / 1 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb1641383289499 : 0 / 1 / 11
- /github/workspace/fsh-generated/resources/Composition-cfsb5419150199436 : 11 / 1 / 11
- /github/workspace/fsh-generated/resources/DocumentReference-cfsb5671063821622 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-cfsb5419150199436 : 12 / 1 / 11
+ /github/workspace/fsh-generated/resources/DocumentReference-cfsb5671063821622 : 9 / 0 / 1
+ /github/workspace/fsh-generated/resources/DocumentReference-cfsb8701599964466 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1268193754623 : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1639015963928 : 2 / 1 / 4
@@ -2009,6 +2010,15 @@ ERROR: Bundle/cfsb2726030964451: Bundle.entry[20].resource.ofType(ClinicalUseDef
 ERROR: Bundle/cfsb2726030964451: Bundle.entry[21]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2726030964451: Bundle.entry[21].resource.ofType(ClinicalUseDefinition).subject[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb2726030964451: Bundle.entry[21].resource.ofType(ClinicalUseDefinition).subject[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal element name in the XHTML ('video')
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('controls' on 'video')
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('height' on 'video')
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal element name in the XHTML ('source')
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('src' on 'source')
+ERROR: Bundle/cfsb2726030964451: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('type' on 'source')
 WARNING: Bundle/cfsb2726030964451: Bundle.entry[24]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 ERROR: Bundle/cfsb2726030964451: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/cfsb2726030964451: Bundle.entry[23]: Entry  isn't reachable by traversing from first Bundle entry
@@ -2055,6 +2065,7 @@ INFORMATION: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Compositi
 INFORMATION: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].text.div: Illegal element name in the XHTML ('video')
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].text.div: Illegal attribute name in the XHTML ('controls' on 'video')
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].text.div: Illegal attribute name in the XHTML ('height' on 'video')
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].text.div: Illegal element name in the XHTML ('source')
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[0].resource.ofType(Composition).section[6].text.div: Illegal attribute name in the XHTML ('src' on 'source')
@@ -2162,6 +2173,15 @@ ERROR: Bundle/cfsb9078061117831: Bundle.entry[20].resource.ofType(ClinicalUseDef
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[21]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[21].resource.ofType(ClinicalUseDefinition).subject[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[21].resource.ofType(ClinicalUseDefinition).subject[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal element name in the XHTML ('video')
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('controls' on 'video')
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('height' on 'video')
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal element name in the XHTML ('source')
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('src' on 'source')
+ERROR: Bundle/cfsb9078061117831: Bundle.entry[22].resource.ofType(DocumentReference).text.div: Illegal attribute name in the XHTML ('type' on 'source')
 WARNING: Bundle/cfsb9078061117831: Bundle.entry[24]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/cfsb9078061117831: Bundle.entry[23]: Entry  isn't reachable by traversing from first Bundle entry
@@ -2300,11 +2320,23 @@ INFORMATION: Composition/cfsb5419150199436: Composition.section[5].code.coding[0
 INFORMATION: Composition/cfsb5419150199436: Composition.section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 ERROR: Composition/cfsb5419150199436: Composition.section[6].text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
 ERROR: Composition/cfsb5419150199436: Composition.section[6].text.div: Illegal element name in the XHTML ('video')
+ERROR: Composition/cfsb5419150199436: Composition.section[6].text.div: Illegal attribute name in the XHTML ('controls' on 'video')
 ERROR: Composition/cfsb5419150199436: Composition.section[6].text.div: Illegal attribute name in the XHTML ('height' on 'video')
 ERROR: Composition/cfsb5419150199436: Composition.section[6].text.div: Illegal element name in the XHTML ('source')
 ERROR: Composition/cfsb5419150199436: Composition.section[6].text.div: Illegal attribute name in the XHTML ('src' on 'source')
 ERROR: Composition/cfsb5419150199436: Composition.section[6].text.div: Illegal attribute name in the XHTML ('type' on 'source')
 == fsh-generated/resources/DocumentReference-cfsb5671063821622.json ==
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Rule 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: Illegal element name in the XHTML ('video')
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: Illegal attribute name in the XHTML ('controls' on 'video')
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: Illegal attribute name in the XHTML ('height' on 'video')
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: Illegal element name in the XHTML ('source')
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: Illegal attribute name in the XHTML ('src' on 'source')
+ERROR: DocumentReference/cfsb5671063821622: DocumentReference.text.div: Illegal attribute name in the XHTML ('type' on 'source')
+== fsh-generated/resources/DocumentReference-cfsb8701599964466.json ==
+ERROR: DocumentReference/cfsb8701599964466: DocumentReference.text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
 == fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh.json ==
 ERROR: ImplementationGuide/hl7.eu.fhir.gh: ImplementationGuide.fhirVersion[0]: The value provided ('5.0.0-snapshot1') is not in the value set 'FHIRVersion' (http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/FHIR-version#5.0.0-snapshot1 in http://hl7.org/fhir/FHIR-version)
 == fsh-generated/resources/Ingredient-cfsb1268193754623.json ==
