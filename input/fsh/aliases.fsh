@@ -21,6 +21,7 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $fake-man-sys = https://www.gravitatehealth.eu/sid/man
 Alias: $phpid = https://www.who-umc.org/phpid
 Alias: $gs1 = https://www.gs1.org/gtin
+Alias: $spor = https://spor.ema.europa.eu
 
 
 
@@ -35,3 +36,4 @@ Alias: $MedicationStatement-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinit
 Alias: $Patient-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
 Alias: $Practitioner-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips
 Alias: $Condition-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
+Alias: $clinicaldocument = http://hl7.org/fhir/StructureDefinition/clinicaldocument
