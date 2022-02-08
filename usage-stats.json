@@ -3,13 +3,59 @@
   "version": "0.1.0",
   "fhirVersion": "5.0.0-snapshot1",
   "extensions": [],
-  "profiles": {},
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi",
+        "title": "Bundle - ePI"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi",
+        "title": "Composition (ePI)"
+      }
+    ]
+  },
   "usage": {
     "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url": [
       "Bundle.entry.resource"
     ],
     "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-number": [
       "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
