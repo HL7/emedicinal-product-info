@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-02-16T16:23:32+00:00"/>
+  <date value="2022-02-16T17:04:16+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -40,10 +40,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ClinicalUseDefinition-uv-epi"/>
+      </reference>
+      <name value="ClinicalUseDefinition (ePI)"/>
+      <description value="ClinicalUseDefinition (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/Composition-uv-epi"/>
       </reference>
       <name value="Composition (ePI)"/>
       <description value="Clinical document used to represent the Electronic Product Information (ePI) data set. &#xA;An Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Ingredient-uv-epi"/>
+      </reference>
+      <name value="Ingredient (ePI)"/>
+      <description value="Ingredient (ePI)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
