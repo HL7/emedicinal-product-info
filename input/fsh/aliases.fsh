@@ -21,6 +21,8 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $fake-man-sys = https://www.gravitatehealth.eu/sid/man
 Alias: $phpid = https://www.who-umc.org/phpid
 Alias: $gs1 = https://www.gs1.org/gtin
+
+Alias: $spor-prod = https://spor.ema.europa.eu/pmswi // invented to be updated
 Alias: $spor = https://spor.ema.europa.eu
 
 

@@ -1,15 +1,11 @@
 Profile: CompositionUvEpi
-Parent: $clinicaldocument
+Parent: Composition
 Id: Composition-uv-epi
 Title: "Composition (ePI)"
 Description: """Clinical document used to represent the Electronic Product Information (ePI) data set. 
-An Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard.
-
-This profile is based on the ClinicalDocument profile."""
+An Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."""
 * ^status = #active
-* ^publisher = "HL7 International"
 * ^purpose = "An Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."
-* ^copyright = "HL7 International"
 * . ^short = "Electronic Product Information composition"
 * . ^definition = "Electronic Product Information composition. \r\nA composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. \r\nWhile a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."
 // * text 
