@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-02-08T10:58:57+00:00",
+  "date": "2022-02-16T16:23:32+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -55,7 +55,35 @@
           "reference": "StructureDefinition/Composition-uv-epi"
         },
         "name": "Composition (ePI)",
-        "description": "Clinical document used to represent the Electronic Product Information (ePI) data set. \nAn Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard.\n\nThis profile is based on the ClinicalDocument profile.",
+        "description": "Clinical document used to represent the Electronic Product Information (ePI) data set. \nAn Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedicinalProductDefinition-uv-epi"
+        },
+        "name": "MedicinalProductDefinition (ePI)",
+        "description": "MedicinalProductDefinition (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/RegulatedAuthorization-uv-epi"
+        },
+        "name": "RegulatedAuthorization (ePI)",
+        "description": "RegulatedAuthorization (ePI)",
         "exampleBoolean": false
       },
       {
@@ -2937,6 +2965,14 @@
       },
       {
         "code": "active-tables",
+        "value": "true"
+      },
+      {
+        "code": "fmm-definition",
+        "value": "http://hl7.org/fhir/versions.html#maturity"
+      },
+      {
+        "code": "propagate-status",
         "value": "true"
       }
     ]

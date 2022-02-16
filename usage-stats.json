@@ -15,6 +15,18 @@
         "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi",
         "title": "Composition (ePI)"
       }
+    ],
+    "MedicinalProductDefinition": [
+      {
+        "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi",
+        "title": "MedicinalProductDefinition (ePI)"
+      }
+    ],
+    "RegulatedAuthorization": [
+      {
+        "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi",
+        "title": "RegulatedAuthorization (ePI)"
+      }
     ]
   },
   "usage": {
@@ -23,9 +35,6 @@
     ],
     "http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-number": [
       "Bundle.entry.resource"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
-      "Composition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -56,6 +65,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
+      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

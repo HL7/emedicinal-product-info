@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-02-08T10:58:57+00:00"/>
+  <date value="2022-02-16T16:23:32+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -43,7 +43,29 @@
         <reference value="StructureDefinition/Composition-uv-epi"/>
       </reference>
       <name value="Composition (ePI)"/>
-      <description value="Clinical document used to represent the Electronic Product Information (ePI) data set. &#xA;An Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard.&#xA;&#xA;This profile is based on the ClinicalDocument profile."/>
+      <description value="Clinical document used to represent the Electronic Product Information (ePI) data set. &#xA;An Electronic Product Information (ePI) document is is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+      </reference>
+      <name value="MedicinalProductDefinition (ePI)"/>
+      <description value="MedicinalProductDefinition (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RegulatedAuthorization-uv-epi"/>
+      </reference>
+      <name value="RegulatedAuthorization (ePI)"/>
+      <description value="RegulatedAuthorization (ePI)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2345,6 +2367,14 @@
     </parameter>
     <parameter>
       <code value="active-tables"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="fmm-definition"/>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code value="propagate-status"/>
       <value value="true"/>
     </parameter>
   </definition>
