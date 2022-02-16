@@ -49,7 +49,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[binary].resource
 
 * entry[composition].resource only CompositionUvEpi
-* entry[organization].resource only Organization
+* entry[organization].resource only OrganizationUvEpi
 * entry[authorization].resource only RegulatedAuthorizationUvEpi
 * entry[medicinalProduct].resource only MedicinalProductDefinitionUvEpi
 * entry[packagedProduct].resource only PackagedProductDefinition

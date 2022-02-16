@@ -24,6 +24,7 @@ Alias: $gs1 = https://www.gs1.org/gtin
 
 Alias: $spor-prod = https://spor.ema.europa.eu/pmswi // invented to be updated
 Alias: $spor = https://spor.ema.europa.eu
+Alias: $spor-org = https://spor.ema.europa.eu/omswi
 
 
 

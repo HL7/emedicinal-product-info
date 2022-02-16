@@ -55,4 +55,4 @@ Description: "ManufacturedItemDefinition (ePI)"
 
  // Reference to Organization: Manufacturer
 * manufacturer MS
-* manufacturer only Reference(Organization)
+* manufacturer only Reference(OrganizationUvEpi)

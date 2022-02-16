@@ -28,4 +28,4 @@ Description: "RegulatedAuthorization (ePI)"
 
  // Reference to Organization: Marketing Authorization Holder
 * holder 1..
-* holder only Reference(Organization)
+* holder only Reference(OrganizationUvEpi)

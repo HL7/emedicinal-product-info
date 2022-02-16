@@ -18,7 +18,7 @@ Description: "Ingredient (ePI)"
 
  // Reference to Organization: Manufacturer
 * manufacturer.manufacturer MS
-* manufacturer.manufacturer only Reference(Organization)
+* manufacturer.manufacturer only Reference(OrganizationUvEpi)
 
 * substance 1..
   * code.concept 1.. // = https://gsrs.ncats.nih.gov/ginas/app/beta/#2ZM8CX04RZ "Insulin glargine"
