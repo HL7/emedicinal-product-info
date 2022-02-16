@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-02-16T17:04:16+00:00"/>
+  <date value="2022-02-16T18:02:33+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -24,6 +24,17 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0-snapshot1"/>
   <definition>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AdministrableProductDefinition-uv-epi"/>
+      </reference>
+      <name value="AdministrableProductDefinition (ePI)"/>
+      <description value="AdministrableProductDefinition (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -66,6 +77,17 @@
       </reference>
       <name value="Ingredient (ePI)"/>
       <description value="Ingredient (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ManufacturedItemDefinition-uv-epi"/>
+      </reference>
+      <name value="ManufacturedItemDefinition (ePI)"/>
+      <description value="ManufacturedItemDefinition (ePI)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

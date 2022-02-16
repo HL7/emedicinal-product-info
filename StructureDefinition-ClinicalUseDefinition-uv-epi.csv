@@ -38,7 +38,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ClinicalUseDefinition.category","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","A categorisation of the issue, primarily for dividing warnings into subject heading areas such as ""Pregnancy and Lactation"", ""Overdose"", ""Effects on Ability to Drive and Use Machines""","A categorisation of the issue, primarily for dividing warnings into subject heading areas such as ""Pregnancy and Lactation"", ""Overdose"", ""Effects on Ability to Drive and Use Machines"".","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"ClinicalUseDefinition.subject","","","",1,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition]]}
+"ClinicalUseDefinition.subject","","","",1,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi]]}
 ","The medication or procedure for which this is an indication","The medication or procedure for which this is an indication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.subject",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(the link between the IDMP class and Medicinal Product)"
 "ClinicalUseDefinition.status","","","",0,1,"","","Y","CodeableConcept {[]} {[]}

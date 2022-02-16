@@ -4,6 +4,12 @@
   "fhirVersion": "5.0.0-snapshot1",
   "extensions": [],
   "profiles": {
+    "AdministrableProductDefinition": [
+      {
+        "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi",
+        "title": "AdministrableProductDefinition (ePI)"
+      }
+    ],
     "Bundle": [
       {
         "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi",
@@ -26,6 +32,12 @@
       {
         "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi",
         "title": "Ingredient (ePI)"
+      }
+    ],
+    "ManufacturedItemDefinition": [
+      {
+        "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi",
+        "title": "ManufacturedItemDefinition (ePI)"
       }
     ],
     "MedicinalProductDefinition": [
@@ -63,6 +75,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -80,6 +95,9 @@
     ],
     "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/no-binding": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

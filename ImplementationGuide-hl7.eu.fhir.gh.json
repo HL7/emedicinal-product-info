@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-02-16T17:04:16+00:00",
+  "date": "2022-02-16T18:02:33+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -30,6 +30,20 @@
   ],
   "definition": {
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/AdministrableProductDefinition-uv-epi"
+        },
+        "name": "AdministrableProductDefinition (ePI)",
+        "description": "AdministrableProductDefinition (ePI)",
+        "exampleBoolean": false
+      },
       {
         "extension": [
           {
@@ -84,6 +98,20 @@
         },
         "name": "Ingredient (ePI)",
         "description": "Ingredient (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ManufacturedItemDefinition-uv-epi"
+        },
+        "name": "ManufacturedItemDefinition (ePI)",
+        "description": "ManufacturedItemDefinition (ePI)",
         "exampleBoolean": false
       },
       {

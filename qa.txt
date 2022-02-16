@@ -1,10 +1,10 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 1412, warn = 335, info = 1136
+err = 1466, warn = 345, info = 1136
 IG Publisher Version: 1.1.104
-Generated Wed Feb 16 17:05:17 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
- Build Errors : 49 / 3 / 0
+Generated Wed Feb 16 18:03:47 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+ Build Errors : 72 / 3 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639227408981 : 3 / 4 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639228293199 : 3 / 4 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639760977050 : 0 / 1 / 4
@@ -195,10 +195,12 @@ Generated Wed Feb 16 17:05:17 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb1640870220343 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb2023900992766 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb9631820498004 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-AdministrableProductDefinition-uv-epi : 34 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Bundle-uv-epi : 46 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-uv-epi : 24 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Composition-uv-epi : 11 / 5 / 17
  /github/workspace/fsh-generated/resources/StructureDefinition-Ingredient-uv-epi : 11 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi : 19 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProductDefinition-uv-epi : 21 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi : 8 / 5 / 1
  /github/workspace/input/resources/capability-statement-ema : 4 / 1 / 1
@@ -209,10 +211,11 @@ Generated Wed Feb 16 17:05:17 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CapabilityStatement/capability-statement-ema.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/fmk-ips-skilarence.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicinalProductDefinition/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Ingredient.status: The reference http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 could not be resolved
-ERROR: Ingredient.substance.code: The reference http://hl7.org/fhir/ValueSet/substance-codes could not be resolved
+ERROR: AdministrableProductDefinition.status: The reference http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 could not be resolved
+ERROR: AdministrableProductDefinition.ingredient: The reference http://hl7.org/fhir/ValueSet/substance-codes could not be resolved
+ERROR: AdministrableProductDefinition.property.type: The reference http://hl7.org/fhir/ValueSet/product-characteristic-codes could not be resolved
+ERROR: ManufacturedItemDefinition.manufacturedDoseForm: The reference http://hl7.org/fhir/ValueSet/manufactured-dose-form could not be resolved
 ERROR: MedicinalProductDefinition.classification: The reference http://hl7.org/fhir/ValueSet/product-classification-codes could not be resolved
-ERROR: MedicinalProductDefinition.characteristic.type: The reference http://hl7.org/fhir/ValueSet/product-characteristic-codes could not be resolved
 ERROR: /github/workspace/output/AdministrableProductDefinition-cfsb1639227408981.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 233, column 562: The link 'cfsb164028843078230' for "cfsb164028843078230" cannot be resolved
 ERROR: /github/workspace/output/AdministrableProductDefinition-cfsb1639227408981.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 233, column 624: The link 'cfsb164028843078231' for "cfsb164028843078231" cannot be resolved
 ERROR: /github/workspace/output/AdministrableProductDefinition-cfsb1639228293199.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 233, column 414: The link 'cfsb164028843078232' for "cfsb164028843078232" cannot be resolved
@@ -231,6 +234,15 @@ ERROR: /github/workspace/output/ClinicalUseDefinition-cfsb1639241023005.html#/ht
 ERROR: /github/workspace/output/ClinicalUseDefinition-cfsb1639241034937.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 233, column 542: The link 'cfsb1639238291499' for "cfsb1639238291499" cannot be resolved
 ERROR: /github/workspace/output/PackagedProductDefinition-cfsb164028843078261.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 1078: The link 'cfsb16402884307812' for "cfsb16402884307812" cannot be resolved
 ERROR: /github/workspace/output/RegulatedAuthorization-cfsb1639234802176.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 388: The link 'cfsb1639238291499' for "cfsb1639238291499" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 542, column 114: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 829, column 107: The link 'substance-codes.html' for "substance-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 882, column 107: The link 'product-characteristic-codes.html' for "product-characteristic-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 444, column 1919: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 473, column 2353: The link 'substance-codes.html' for "substance-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 481, column 1886: The link 'product-characteristic-codes.html' for "product-characteristic-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 845, column 1919: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 874, column 2353: The link 'substance-codes.html' for "substance-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 882, column 1886: The link 'product-characteristic-codes.html' for "product-characteristic-codes" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 355, column 114: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 502, column 107: The link 'substance-codes.html' for "substance-codes" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 669, column 107: The link 'substance-codes.html' for "substance-codes" cannot be resolved
@@ -241,6 +253,19 @@ ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html
 ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 606, column 1984: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 626, column 1982: The link 'substance-codes.html' for "substance-codes" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 658, column 2117: The link 'substance-codes.html' for "substance-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 449, column 114: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 463, column 107: The link 'manufactured-dose-form.html' for "manufactured-dose-form" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 729, column 107: The link 'substance-codes.html' for "substance-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 775, column 107: The link 'product-characteristic-codes.html' for "product-characteristic-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 2040: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 410, column 1900: The link 'manufactured-dose-form.html' for "manufactured-dose-form" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 437, column 1982: The link 'substance-codes.html' for "substance-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 444, column 1860: The link 'product-characteristic-codes.html' for "product-characteristic-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 563, column 1890: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 649, column 2040: The link 'publication-status|4.6.0|4.6.0.html' for "publication-status|4.6.0|4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 650, column 1900: The link 'manufactured-dose-form.html' for "manufactured-dose-form" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 677, column 1982: The link 'substance-codes.html' for "substance-codes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ManufacturedItemDefinition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 684, column 1860: The link 'product-characteristic-codes.html' for "product-characteristic-codes" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProductDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 575, column 107: The link 'product-classification-codes.html' for "product-classification-codes" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProductDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 602, column 107: The link 'substance-codes.html' for "substance-codes" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProductDefinition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 612, column 107: The link 'substance-codes.html' for "substance-codes" cannot be resolved
@@ -3087,6 +3112,46 @@ ERROR: RegulatedAuthorization/cfsb2023900992766: RegulatedAuthorization.region[0
 == fsh-generated/resources/RegulatedAuthorization-cfsb9631820498004.json ==
 INFORMATION: RegulatedAuthorization/cfsb9631820498004: RegulatedAuthorization.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: RegulatedAuthorization/cfsb9631820498004: RegulatedAuthorization.region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
+== fsh-generated/resources/StructureDefinition-AdministrableProductDefinition-uv-epi.json ==
+WARNING: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[11].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[13].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[13].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[14].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[14].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[20].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[22].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[22].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[23].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[23].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[28].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[31].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[35].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[39].extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[39].extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[44].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[48].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[52].extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[52].extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[57].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/substance-codes' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[60].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[63].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/product-characteristic-codes' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[67].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[71].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[75].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[79].extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[79].extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[89].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[93].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[97].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[101].extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[101].extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve
+ERROR: StructureDefinition/AdministrableProductDefinition-uv-epi: StructureDefinition.snapshot.element[106].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Bundle-uv-epi.json ==
 WARNING: StructureDefinition/Bundle-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: StructureDefinition/Bundle-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
@@ -3219,6 +3284,31 @@ ERROR: StructureDefinition/Ingredient-uv-epi: StructureDefinition.snapshot.eleme
 ERROR: StructureDefinition/Ingredient-uv-epi: StructureDefinition.snapshot.element[26].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
 ERROR: StructureDefinition/Ingredient-uv-epi: StructureDefinition.snapshot.element[46].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi.json ==
+WARNING: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[11].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[13].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[13].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[14].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[14].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[19].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0' does not resolve
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[20].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/manufactured-dose-form' does not resolve
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[21].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[25].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[29].extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[29].extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[34].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[38].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[42].extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[42].extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[47].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/substance-codes' does not resolve
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[49].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ManufacturedItemDefinition-uv-epi: StructureDefinition.snapshot.element[52].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/product-characteristic-codes' does not resolve
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-MedicinalProductDefinition-uv-epi.json ==
 WARNING: StructureDefinition/MedicinalProductDefinition-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: StructureDefinition/MedicinalProductDefinition-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
