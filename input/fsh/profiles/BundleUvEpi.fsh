@@ -50,13 +50,13 @@ Description: "This profile represents the constraints applied to the Bundle reso
 
 * entry[composition].resource only CompositionUvEpi
 * entry[organization].resource only Organization
-* entry[authorization].resource only RegulatedAuthorization
-* entry[medicinalProduct].resource only MedicinalProductDefinition
+* entry[authorization].resource only RegulatedAuthorizationUvEpi
+* entry[medicinalProduct].resource only MedicinalProductDefinitionUvEpi
 * entry[packagedProduct].resource only PackagedProductDefinition
-* entry[administrableProduct].resource only AdministrableProductDefinition
-* entry[manItem].resource only ManufacturedItemDefinition
-* entry[ingredient].resource only Ingredient
-* entry[clinicalUse].resource only ClinicalUseDefinition
+* entry[administrableProduct].resource only AdministrableProductDefinitionUvEpi
+* entry[manItem].resource only ManufacturedItemDefinitionUvEpi
+* entry[ingredient].resource only IngredientUvEpi
+* entry[clinicalUse].resource only ClinicalUseDefinitionUvEpi
 * entry[binary].resource only Binary
 
 
