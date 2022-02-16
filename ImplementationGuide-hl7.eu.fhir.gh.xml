@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-02-16T18:02:33+00:00"/>
+  <date value="2022-02-16T18:21:09+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -99,6 +99,17 @@
       </reference>
       <name value="MedicinalProductDefinition (ePI)"/>
       <description value="MedicinalProductDefinition (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Organization-uv-epi"/>
+      </reference>
+      <name value="Organization (ePI)"/>
+      <description value="Organization (ePI)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

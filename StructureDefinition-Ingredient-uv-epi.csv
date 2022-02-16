@@ -68,7 +68,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Ingredient.manufacturer.role","","","",0,1,"","","Y","code {[]} {[]}
 ","allowed | possible | actual","The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role.","","","","","","","","","",,"required","The way in which this manufacturer is associated with the ingredient.","http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role|4.6.0","",,,,"Ingredient.manufacturer.role",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Ingredient.Manufacturer / Establishment (Organisation)"
-"Ingredient.manufacturer.manufacturer","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"Ingredient.manufacturer.manufacturer","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi]]}
 ","An organization that manufactures this ingredient","An organization that manufactures this ingredient.","","","","","","","","","",,,,,"",,,,"Ingredient.manufacturer.manufacturer",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Ingredient.Manufacturer / Establishment (Organisation)"
 "Ingredient.substance","","","",1,1,"","","Y","BackboneElement {[]} {[]}

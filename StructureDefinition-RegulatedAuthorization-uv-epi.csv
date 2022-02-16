@@ -91,7 +91,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RegulatedAuthorization.basis","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","The legal/regulatory framework or reasons under which this authorization is granted","The legal or regulatory framework against which this authorization is granted, or other reasons for it.","","","","","","","","","",,"example","A legal or regulatory framework against which an authorization is granted, or other reasons for it.","http://hl7.org/fhir/ValueSet/regulated-authorization-basis","",,,,"RegulatedAuthorization.basis",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Marketing Authorisation.Status Reasons.Legal Grounds"
-"RegulatedAuthorization.holder","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"RegulatedAuthorization.holder","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi]]}
 ","The organization that has been granted this authorization, by the regulator","The organization that has been granted this authorization, by some authoritative body (the 'regulator').","","","","","","","","","",,,,,"",,,,"RegulatedAuthorization.holder",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Marketing Authorisation.Marketing Authorisation Holder (Organisation)"
 "RegulatedAuthorization.regulator","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
