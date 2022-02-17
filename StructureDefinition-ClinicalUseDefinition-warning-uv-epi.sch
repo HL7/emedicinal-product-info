@@ -13,6 +13,7 @@
     <sch:title>f:ClinicalUseDefinition</sch:title>
     <sch:rule context="f:ClinicalUseDefinition">
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
+      <sch:assert test="count(f:warning) &gt;= 1">warning: minimum cardinality of 'warning' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -115,36 +116,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:ClinicalUseDefinition/f:contraindication/f:diseaseSymptomProcedure</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:contraindication/f:diseaseSymptomProcedure">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:concept) &gt;= 1">concept: minimum cardinality of 'concept' is 1</sch:assert>
-      <sch:assert test="count(f:concept) &lt;= 1">concept: maximum cardinality of 'concept' is 1</sch:assert>
-      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure</sch:title>
     <sch:rule context="f:ClinicalUseDefinition/f:contraindication/f:diseaseSymptomProcedure">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.extension</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:contraindication/f:diseaseSymptomProcedure/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:contraindication/f:diseaseSymptomProcedure/f:concept">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.reference</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:contraindication/f:diseaseSymptomProcedure/f:reference">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -219,36 +192,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:ClinicalUseDefinition/f:indication/f:diseaseSymptomProcedure</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:indication/f:diseaseSymptomProcedure">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:concept) &gt;= 1">concept: minimum cardinality of 'concept' is 1</sch:assert>
-      <sch:assert test="count(f:concept) &lt;= 1">concept: maximum cardinality of 'concept' is 1</sch:assert>
-      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>ClinicalUseDefinition.indication.diseaseSymptomProcedure</sch:title>
     <sch:rule context="f:ClinicalUseDefinition/f:indication/f:diseaseSymptomProcedure">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ClinicalUseDefinition.indication.diseaseSymptomProcedure.extension</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:indication/f:diseaseSymptomProcedure/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:indication/f:diseaseSymptomProcedure/f:concept">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ClinicalUseDefinition.indication.diseaseSymptomProcedure.reference</sch:title>
-    <sch:rule context="f:ClinicalUseDefinition/f:indication/f:diseaseSymptomProcedure/f:reference">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -331,7 +276,6 @@
   <sch:pattern>
     <sch:title>ClinicalUseDefinition.interaction.interactant.item[x] 1</sch:title>
     <sch:rule context="f:ClinicalUseDefinition/f:interaction/f:interactant/f:item[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

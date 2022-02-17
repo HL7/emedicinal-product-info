@@ -1,9 +1,9 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 1535, warn = 371, info = 1136
+err = 1623, warn = 391, info = 1136
 IG Publisher Version: 1.1.104
-Generated Thu Feb 17 07:44:04 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+Generated Thu Feb 17 14:15:06 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 75 / 3 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639227408981 : 3 / 4 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639228293199 : 3 / 4 / 10
@@ -197,7 +197,11 @@ Generated Thu Feb 17 07:44:04 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb9631820498004 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-AdministrableProductDefinition-uv-epi : 34 / 8 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Bundle-uv-epi : 46 / 5 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-uv-epi : 24 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi : 23 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-indication-uv-epi : 23 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-interaction-uv-epi : 22 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi : 22 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-warning-uv-epi : 22 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Composition-uv-epi : 11 / 6 / 17
  /github/workspace/fsh-generated/resources/StructureDefinition-Ingredient-uv-epi : 11 / 8 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi : 19 / 9 / 1
@@ -3212,36 +3216,148 @@ ERROR: StructureDefinition/Bundle-uv-epi: StructureDefinition.snapshot.element[3
 ERROR: StructureDefinition/Bundle-uv-epi: StructureDefinition.snapshot.element[349].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
 ERROR: StructureDefinition/Bundle-uv-epi: StructureDefinition.snapshot.element[359].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-uv-epi.json ==
-WARNING: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[15].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[19].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[27].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[33].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[37].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[48].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[52].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[63].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[70].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[24].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[36].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[41].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[42].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[58].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/ClinicalUseDefinition-uv-epi: StructureDefinition.snapshot.element[66].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.json ==
+WARNING: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[15].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[19].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[27].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[33].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[44].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[48].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[58].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[65].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[24].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[31].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[36].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[38].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[39].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[53].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi: StructureDefinition.snapshot.element[61].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-indication-uv-epi.json ==
+WARNING: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[15].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[23].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[29].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[33].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[44].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[48].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[58].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[65].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[19].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[20].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[38].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[39].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[53].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-indication-uv-epi: StructureDefinition.snapshot.element[61].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-indication-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-interaction-uv-epi.json ==
+WARNING: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[15].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[23].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[29].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[40].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[44].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[55].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[62].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[19].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[20].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[33].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[34].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[35].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[50].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-interaction-uv-epi: StructureDefinition.snapshot.element[58].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi.json ==
+WARNING: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[15].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[23].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[29].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[40].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[44].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[54].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[61].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[19].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[20].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[33].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[34].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[35].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[49].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi: StructureDefinition.snapshot.element[57].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-warning-uv-epi.json ==
+WARNING: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[15].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[23].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[29].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[40].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[44].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[54].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[61].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[19].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[20].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[33].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[34].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[35].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[49].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[57].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-warning-uv-epi'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Composition-uv-epi.json ==
 WARNING: StructureDefinition/Composition-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: StructureDefinition/Composition-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator

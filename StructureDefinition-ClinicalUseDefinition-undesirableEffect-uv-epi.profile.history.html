@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.EU.FHIR.GH\ClinicalUseDefinition (ePI) - Mappings - FHIR v5.0.0-snapshot1</title>
+    <title>HL7.EU.FHIR.GH\ - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.4"}
-    h3,h4,h5,h6{--heading-prefix:"8.4"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -155,7 +155,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ClinicalUseDefinition (ePI)</b></li>
+          
 
         </ul>
       </div>  <!-- /container -->
@@ -167,7 +167,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 5" class="col-12">
+
+<div style="counter-reset: section 10" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
@@ -185,20 +186,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-ClinicalUseDefinition-uv-epi.html">Content</a>
+    <a href="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-ClinicalUseDefinition-uv-epi-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
-    <li class="active">
-      <a href="#">Mappings</a>
+    <li>
+      <a href="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi-mappings.html">Mappings</a>
     </li>
   
 
@@ -208,21 +209,21 @@
 
   
     <li>
-      <a href="StructureDefinition-ClinicalUseDefinition-uv-epi.profile.xml.html">XML</a>
+      <a href="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-ClinicalUseDefinition-uv-epi.profile.json.html">JSON</a>
+      <a href="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-ClinicalUseDefinition-uv-epi.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -230,8 +231,8 @@
 </ul>
 
 
-<a name="root"> </a>
-<h2 id="root">Resource Profile: ClinicalUseDefinitionUvEpi - Mappings</h2>
+  <a name="root"> </a>
+  <h2 id="root">Resource Profile: ClinicalUseDefinitionUndesirableEffectUvEpi - Change History</h2>
   <table class="colsi">
     <tr>
 
@@ -247,111 +248,9 @@
     </tr>
   </table>
 
+  <p>Changes in the ClinicalUseDefinition-undesirableEffect-uv-epi resource profile.</p>
 
-<p>Mappings for the ClinicalUseDefinition-uv-epi resource profile.</p>
-
-  <!-- insert intro if present -->
   
-
-
-
-  <a name="idmp"> </a><h3>Mappings for IDMP Mapping (https://en.wikipedia.org/wiki/Identification_of_medicinal_products)</h3><table class="grid">
- <tr><td colspan="3"><b>ClinicalUseDefinitionUvEpi</b></td></tr>
- <tr><td>ClinicalUseDefinition</td><td>Contraindication, Therapeutic Indication, Interactions, Undesirable Effects</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>(the type of IDMP class, out of Contraindication, Therapeutic Indication, Interactions, Undesirable Effects)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>(the link between the IDMP class and Medicinal Product)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contraindication</td><td>Contraindication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diseaseSymptomProcedure</td><td>Contraindication.Contraindications as &quot;Disease / Symptom / Procedure&quot; and Contraindication.Contraindications Text</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diseaseStatus</td><td>Contraindication.Disease Status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comorbidity</td><td>Contraindication.Comorbidity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indication</td><td>(the link from Contraindication to Therapeutic Indication)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherTherapy</td><td>Contraindication.Other Therapy Specifics</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relationshipType</td><td>Other Therapy Specifics.Therapy Relationship Type</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;therapy</td><td>Other Therapy Specifics.Medication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;indication</td><td>Therapeutic Indication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diseaseSymptomProcedure</td><td>Therapeutic Indication.Indication as &quot;Disease / Symptom / Procedure&quot;, and Therapeutic Indication.Indication Text</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diseaseStatus</td><td>Therapeutic Indication.Disease Status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comorbidity</td><td>Therapeutic Indication.Comorbidity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;intendedEffect</td><td>Therapeutic Indication.Intended Effect</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duration</td><td>Therapeutic Indication.Timing / Duration</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;undesirableEffect</td><td>Therapeutic Indication.Undesirable Effects</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherTherapy</td><td>Therapeutic Indication.Other Therapy Specifics</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;interaction</td><td>Interactions</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interactant</td><td>Interactions.Interactant and Interactions.Interactions Text</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item[x]</td><td>Interactions.Interactant and Interactions.Interactions Text</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item[x] (itemCodeableConcept)</td><td>Interactions.Interactant and Interactions.Interactions Text</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>Interactions.Interactions Type</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;effect</td><td>Interactions.Interactions Effect</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;incidence</td><td>Interactions.Interactions Incidence</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;management</td><td>Interactions.Management Actions</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;population</td><td>Population Specifics</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;undesirableEffect</td><td>Undesirable Effects</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;symptomConditionEffect</td><td>Undesirable Effects.Undesirable Effect as &quot;Symptom / Condition / Effect&quot;</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classification</td><td>Undesirable Effects.Symptom / Condition / Effect Classification</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frequencyOfOccurrence</td><td>Undesirable Effects.Frequency of Occurrence</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;warning</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>n/a</td> </tr>
-</table>
-<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>ClinicalUseDefinitionUvEpi</b></td></tr>
- <tr><td>ClinicalUseDefinition</td><td>clinical.general</td> </tr>
-</table>
-<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>ClinicalUseDefinitionUvEpi</b></td></tr>
- <tr><td>ClinicalUseDefinition</td><td>Entity. Role, or Act</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contraindication</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diseaseSymptomProcedure</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concept</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherTherapy</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;indication</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diseaseSymptomProcedure</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concept</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;interaction</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interactant</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;undesirableEffect</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;warning</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
-</table>
-
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
 
@@ -399,7 +298,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Feb 17, 2022 07:42+0000">2022-02-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Feb 17, 2022 14:13+0000">2022-02-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333" >

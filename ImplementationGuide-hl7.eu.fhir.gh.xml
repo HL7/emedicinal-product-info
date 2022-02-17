@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-02-17T07:42:42+00:00"/>
+  <date value="2022-02-17T14:13:17+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -51,10 +51,54 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ClinicalUseDefinition-uv-epi"/>
+        <reference value="StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"/>
       </reference>
-      <name value="ClinicalUseDefinition (ePI)"/>
-      <description value="ClinicalUseDefinition (ePI)"/>
+      <name value="ClinicalUseDefinition Contraindication (ePI)"/>
+      <description value="ClinicalUseDefinition Contraindication (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
+      </reference>
+      <name value="ClinicalUseDefinition Indication (ePI)"/>
+      <description value="ClinicalUseDefinition Indication (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
+      </reference>
+      <name value="ClinicalUseDefinition Interaction (ePI)"/>
+      <description value="ClinicalUseDefinition Interaction (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi"/>
+      </reference>
+      <name value="ClinicalUseDefinition Undesirable Effect (ePI)"/>
+      <description value="ClinicalUseDefinition Undesirable Effect (ePI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ClinicalUseDefinition-warning-uv-epi"/>
+      </reference>
+      <name value="ClinicalUseDefinition Warning (ePI)"/>
+      <description value="ClinicalUseDefinition Warning (ePI)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

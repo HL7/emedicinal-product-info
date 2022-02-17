@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-02-17T07:42:42+00:00",
+  "date": "2022-02-17T14:13:17+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -66,10 +66,66 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ClinicalUseDefinition-uv-epi"
+          "reference": "StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"
         },
-        "name": "ClinicalUseDefinition (ePI)",
-        "description": "ClinicalUseDefinition (ePI)",
+        "name": "ClinicalUseDefinition Contraindication (ePI)",
+        "description": "ClinicalUseDefinition Contraindication (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ClinicalUseDefinition-indication-uv-epi"
+        },
+        "name": "ClinicalUseDefinition Indication (ePI)",
+        "description": "ClinicalUseDefinition Indication (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"
+        },
+        "name": "ClinicalUseDefinition Interaction (ePI)",
+        "description": "ClinicalUseDefinition Interaction (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi"
+        },
+        "name": "ClinicalUseDefinition Undesirable Effect (ePI)",
+        "description": "ClinicalUseDefinition Undesirable Effect (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ClinicalUseDefinition-warning-uv-epi"
+        },
+        "name": "ClinicalUseDefinition Warning (ePI)",
+        "description": "ClinicalUseDefinition Warning (ePI)",
         "exampleBoolean": false
       },
       {

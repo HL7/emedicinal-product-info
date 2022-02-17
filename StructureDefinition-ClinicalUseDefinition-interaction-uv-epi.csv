@@ -32,8 +32,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ClinicalUseDefinition.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Business identifier for this issue","Business identifier for this issue.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"ClinicalUseDefinition.type","","","",1,1,"Y","","Y","code {[]} {[]}
-","indication | contraindication | interaction | undesirable-effect | warning","indication | contraindication | interaction | undesirable-effect | warning.","","","","","","","","","",,"required","Overall defining type of this clinical use definition.","http://hl7.org/fhir/ValueSet/clinical-use-definition-type|4.6.0","",,,,"ClinicalUseDefinition.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ClinicalUseDefinition.type","","","",1,1,"","","Y","code {[]} {[]}
+","indication | contraindication | interaction | undesirable-effect | warning","indication | contraindication | interaction | undesirable-effect | warning.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""interaction""/>","","","",,"required","Overall defining type of this clinical use definition.","http://hl7.org/fhir/ValueSet/clinical-use-definition-type|4.6.0","",,,,"ClinicalUseDefinition.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(the type of IDMP class, out of Contraindication, Therapeutic Indication, Interactions, Undesirable Effects)"
 "ClinicalUseDefinition.category","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","A categorisation of the issue, primarily for dividing warnings into subject heading areas such as ""Pregnancy and Lactation"", ""Overdose"", ""Effects on Ability to Drive and Use Machines""","A categorisation of the issue, primarily for dividing warnings into subject heading areas such as ""Pregnancy and Lactation"", ""Overdose"", ""Effects on Ability to Drive and Use Machines"".","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -62,19 +62,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ClinicalUseDefinition.contraindication.diseaseSymptomProcedure","","","",0,1,"","","Y","CodeableReference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ObservationDefinition]]}
 ","The situation that is being documented as contraindicating against this item","The situation that is being documented as contraindicating against this item.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.contraindication.diseaseSymptomProcedure",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Contraindication.Contraindications as ""Disease / Symptom / Procedure"" and Contraindication.Contraindications Text"
-"ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Reference to a concept (by class)","A reference to a concept - e.g. the information is identified by it's general classto the degree of precision found in the terminology.","","","","","","","","","",,,,,"",,,,"CodeableReference.concept",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.reference","","","",0,1,"","","Y","Reference {[]} {[]}
-","Reference to a resource (by instance)","A reference to a resource the provides exact details about the information being referenced.","","","","","","","","","",,,,,"",,,,"CodeableReference.reference",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
 "ClinicalUseDefinition.contraindication.diseaseStatus","","","",0,1,"","","Y","CodeableReference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ObservationDefinition]]}
 ","The status of the disease or symptom for the contraindication","The status of the disease or symptom for the contraindication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.contraindication.diseaseStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Contraindication.Disease Status"
@@ -123,19 +110,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ClinicalUseDefinition.indication.diseaseSymptomProcedure","","","",0,1,"","","Y","CodeableReference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ObservationDefinition]]}
 ","The situation that is being documented as an indicaton for this item","The situation that is being documented as an indicaton for this item.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.indication.diseaseSymptomProcedure",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Therapeutic Indication.Indication as ""Disease / Symptom / Procedure"", and Therapeutic Indication.Indication Text"
-"ClinicalUseDefinition.indication.diseaseSymptomProcedure.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"ClinicalUseDefinition.indication.diseaseSymptomProcedure.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Reference to a concept (by class)","A reference to a concept - e.g. the information is identified by it's general classto the degree of precision found in the terminology.","","","","","","","","","",,,,,"",,,,"CodeableReference.concept",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
-"ClinicalUseDefinition.indication.diseaseSymptomProcedure.reference","","","",0,1,"","","Y","Reference {[]} {[]}
-","Reference to a resource (by instance)","A reference to a resource the provides exact details about the information being referenced.","","","","","","","","","",,,,,"",,,,"CodeableReference.reference",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
 "ClinicalUseDefinition.indication.diseaseStatus","","","",0,1,"","","Y","CodeableReference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ObservationDefinition]]}
 ","The status of the disease or symptom for the indication","The status of the disease or symptom for the indication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.indication.diseaseStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Therapeutic Indication.Disease Status"
@@ -153,7 +127,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Therapeutic Indication.Undesirable Effects"
 "ClinicalUseDefinition.indication.otherTherapy","","","",0,*,"","","Y","","Information about the use of the medicinal product in relation to other therapies described as part of the indication","Information about the use of the medicinal product in relation to other therapies described as part of the indication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.indication.otherTherapy",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Therapeutic Indication.Other Therapy Specifics"
-"ClinicalUseDefinition.interaction","","","",0,1,"","","Y","BackboneElement {[]} {[]}
+"ClinicalUseDefinition.interaction","","","",1,1,"","","Y","BackboneElement {[]} {[]}
 ","Specifics for when this is an interaction","Specifics for when this is an interaction.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.interaction",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Interactions"
 "ClinicalUseDefinition.interaction.id","","","",0,1,"","","","id {[]} {[]}
