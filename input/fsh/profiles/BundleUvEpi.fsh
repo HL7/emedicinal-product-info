@@ -52,7 +52,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[organization].resource only OrganizationUvEpi
 * entry[authorization].resource only RegulatedAuthorizationUvEpi
 * entry[medicinalProduct].resource only MedicinalProductDefinitionUvEpi
-* entry[packagedProduct].resource only PackagedProductDefinition
+* entry[packagedProduct].resource only PackagedProductDefinitionUvEpi
 * entry[administrableProduct].resource only AdministrableProductDefinitionUvEpi
 * entry[manItem].resource only ManufacturedItemDefinitionUvEpi
 * entry[ingredient].resource only IngredientUvEpi
