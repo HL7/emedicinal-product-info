@@ -56,7 +56,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[administrableProduct].resource only AdministrableProductDefinitionUvEpi
 * entry[manItem].resource only ManufacturedItemDefinitionUvEpi
 * entry[ingredient].resource only IngredientUvEpi
-* entry[clinicalUse].resource only ClinicalUseDefinitionUvEpi
+* entry[clinicalUse].resource only ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionInteractionUvEpi  or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi
 * entry[binary].resource only Binary
 
 
