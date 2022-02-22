@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f98eb4e5-a5b9-4079-8342-e7bc626d19f2"/>
+  <id value="31cc2870-34ac-4bd2-ac15-b36176169e15"/>
   <meta>
-    <lastUpdated value="2022-02-22T14:48:55.978+00:00"/>
+    <lastUpdated value="2022-02-22T16:32:49.067+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/regulatedAuthIdSystems"/>
+    <resource>
+      <ValueSet>
+        <id value="regulatedAuthIdSystems"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
+            <p>All codes in this table are from the system 
+              <code>urn:ietf:rfc:3986</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu"> </a>https://spor.ema.europa.eu
+                </td>
+                <td>SPOR (EU)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/regulatedAuthIdSystems"/>
+        <version value="0.1.0"/>
+        <name value="VsRegulatedAuthIdSystems"/>
+        <title value="RegulatedAuthorization identifier systems"/>
+        <status value="active"/>
+        <date value="2022-02-22T16:32:49+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <description value="RegulatedAuthorization Identifier systems (uri)"/>
+        <expansion>
+          <identifier value="urn:uuid:c01c81b6-23e3-4fa5-9bdf-a185468a77d4"/>
+          <timestamp value="2022-02-22T16:33:51+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="https://spor.ema.europa.eu"/>
+            <display value="SPOR (EU)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

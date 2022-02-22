@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-02-22T14:48:55+00:00",
+  "date": "2022-02-22T16:32:49+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -224,6 +224,20 @@
         },
         "name": "RegulatedAuthorization (ePI)",
         "description": "RegulatedAuthorization (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/regulatedAuthIdSystems"
+        },
+        "name": "RegulatedAuthorization identifier systems",
+        "description": "RegulatedAuthorization Identifier systems (uri)",
         "exampleBoolean": false
       },
       {

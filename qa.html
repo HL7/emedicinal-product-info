@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 69, errors = 1645, warn = 390, info = 1200 -->
+<!-- broken links = 69, errors = 1653, warn = 391, info = 1200 -->
 <head>
   <title>GhImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for GhImplementationGuide</h1>
- <p>Generated Tue Feb 22 14:50:15 UTC 2022, FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = <a href="http://hl7.eu/fhir/ig/gravitate-health">http://hl7.eu/fhir/ig/gravitate-health</a> (<a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Feb 22 16:34:30 UTC 2022, FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = <a href="http://hl7.eu/fhir/ig/gravitate-health">http://hl7.eu/fhir/ig/gravitate-health</a> (<a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.106</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.eu.fhir.gh, Canonical = http://hl7.eu/fhir/ig/gravitate-health</td></tr>
@@ -48,10 +48,10 @@
 </table><para>Templates: hl7.eu.fhir.pscp.template#0.0.1 -&gt; fhir.base.template#0.2.2</para></div></td></tr>
  <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
- <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.eu/fhir/ig/gravitate-health (Problem #1 with package-list.json at http://hl7.eu/fhir/ig/gravitate-health: Invalid HTTP response 404 from http://hl7.eu/fhir/ig/gravitate-health/package-list.json?nocache=1645541334329 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> broken links = 69, errors = 1645, warn = 390, info = 1200</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.eu/fhir/ig/gravitate-health (Problem #1 with package-list.json at http://hl7.eu/fhir/ig/gravitate-health: Invalid HTTP response 404 from http://hl7.eu/fhir/ig/gravitate-health/package-list.json?nocache=1645547567081 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 69, errors = 1653, warn = 391, info = 1200</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -670,7 +670,10 @@
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PackagedProductDefinition-uv-epi"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PackagedProductDefinition-uv-epi</b></a></td><td><b>33</b></td><td><b>6</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-RegulatedAuthorization-uv-epi"><b>/github/workspace/fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi</b></a></td><td><b>8</b></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-RegulatedAuthorization-uv-epi"><b>/github/workspace/fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi</b></a></td><td><b>16</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-regulatedAuthIdSystems"><b>/github/workspace/fsh-generated/resources/ValueSet-regulatedAuthIdSystems</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_resources_capability-statement-ema"><b>/github/workspace/input/resources/capability-statement-ema</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -12408,7 +12411,13 @@
      <td><b>StructureDefinition.snapshot.element[1].type[0].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[11].type[0].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
+     <td><b>StructureDefinition.snapshot.element[10].type[0].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[12].binding.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[12].binding.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition.snapshot.element[13].binding.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here</b></td>
@@ -12417,25 +12426,56 @@
      <td><b>StructureDefinition.snapshot.element[13].binding.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[14].binding.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here</b></td>
+     <td><b>StructureDefinition.snapshot.element[20].type[0].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[14].binding.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve</b></td>
+     <td><b>StructureDefinition.snapshot.element[24].type[0].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[33].type[0].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
+     <td><b>StructureDefinition.snapshot.element[28].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[26].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_NO_TARGET_PROFILE"><b>Type CodeableReference does not allow for target Profiles </b></td>
+     <td><b>StructureDefinition.snapshot.element[28].extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[34].example[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[35].example[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[44].type[0].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[11].example[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[12].example[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[37].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_NO_TARGET_PROFILE"><b>Type CodeableReference does not allow for target Profiles </b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-regulatedAuthIdSystems"> </a>
+<h2><a href="ValueSet-regulatedAuthIdSystems.html">fsh-generated/resources/ValueSet-regulatedAuthIdSystems.json</a> <span id="svi205" class="toggle" onclick="toggle('vi205')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi205')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi205"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_input_resources_capability-statement-ema"> </a>
-<h2><a href="CapabilityStatement-capability-statement-ema.html">input/resources/capability-statement-ema.json</a> <span id="svi205" class="toggle" onclick="toggle('vi205')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi205')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi205"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/capabilitystatement.html">CapabilityStatement</a></li></ul>
+<h2><a href="CapabilityStatement-capability-statement-ema.html">input/resources/capability-statement-ema.json</a> <span id="svi206" class="toggle" onclick="toggle('vi206')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi206')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi206"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/capabilitystatement.html">CapabilityStatement</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -12459,8 +12499,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_resources_fmk-ips-skilarence"> </a>
-<h2><a href="Bundle-fmk-ips-skilarence.html">input/resources/fmk-ips-skilarence.json</a> <span id="svi206" class="toggle" onclick="toggle('vi206')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi206')">(13)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi206"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/composition.html">Composition</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/patient.html">Patient</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[8].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[10].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[11].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li></ul>
+<h2><a href="Bundle-fmk-ips-skilarence.html">input/resources/fmk-ips-skilarence.json</a> <span id="svi207" class="toggle" onclick="toggle('vi207')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi207')">(13)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi207"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/composition.html">Composition</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/patient.html">Patient</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[8].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li><li>Bundle.entry[10].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medication.html">Medication</a></li><li>Bundle.entry[11].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/resource.html">Resource</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -12628,8 +12668,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_resources_medicinalproductdefinition-example"> </a>
-<h2><a href="MedicinalProductDefinition-example.html">input/resources/medicinalproductdefinition-example.json</a> <span id="svi207" class="toggle" onclick="toggle('vi207')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi207')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi207"><ul style="font-size: 7px"><li>MedicinalProductDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medicinalproductdefinition.html">MedicinalProductDefinition</a></li></ul>
+<h2><a href="MedicinalProductDefinition-example.html">input/resources/medicinalproductdefinition-example.json</a> <span id="svi208" class="toggle" onclick="toggle('vi208')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi208')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi208"><ul style="font-size: 7px"><li>MedicinalProductDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/medicinalproductdefinition.html">MedicinalProductDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -16030,6 +16070,12 @@
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
    </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="Extension_EXT_Unknown_NotHere"> </a>
@@ -16157,6 +16203,9 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>The extension http://hl7.org/fhir/build/StructureDefinition/binding-definition is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>The extension http://hl7.org/fhir/build/StructureDefinition/no-binding is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Bundle-fmk-ips-skilarence.html">input/resources/fmk-ips-skilarence.json</a></td><td><b>The extension http://gravitatehealth.eu/fhir/StructureDefinition/gravitate-dk-package-leaflet-url is unknown, and not allowed here</b></td>
@@ -21710,6 +21759,9 @@
      <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-regulatedAuthIdSystems.html">fsh-generated/resources/ValueSet-regulatedAuthIdSystems.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
      <td><a href="MedicinalProductDefinition-example.html">input/resources/medicinalproductdefinition-example.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/product-classification-codes not found by validator</b></td>
    </tr>
 </table>
@@ -21840,6 +21892,9 @@
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/binding-definition' does not resolve</b></td>
    </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/no-binding' does not resolve</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="Validation_VAL_Profile_Minimum"> </a>
@@ -21850,6 +21905,18 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-Organization-uv-epi.html">fsh-generated/resources/StructureDefinition-Organization-uv-epi.json</a></td><td><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a></td><td><b>ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Bundle-fmk-ips-skilarence.html">input/resources/fmk-ips-skilarence.json</a></td><td><b>Medication.ingredient.item: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Medication)</b></td>
