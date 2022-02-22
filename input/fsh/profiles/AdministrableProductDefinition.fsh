@@ -26,7 +26,7 @@ Description: "AdministrableProductDefinition (ePI)"
 * identifier[phpid].use = #official
 
 
-* formOf MS
+// * formOf MS
 * formOf only Reference(MedicinalProductDefinitionUvEpi)
 
 // CHANGE TO A VALUE SET BASED DISCRIMINATOR
@@ -45,7 +45,7 @@ Description: "AdministrableProductDefinition (ePI)"
 * unitOfPresentation.coding ^slicing.discriminator[=].path = "system"
 * unitOfPresentation.coding ^slicing.rules = #open
 * unitOfPresentation.coding contains
-    spor 0..* MS
+    spor 0..* 
 * unitOfPresentation.coding[spor] ^short = "SPOR (Europe)"
 * unitOfPresentation.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
 * unitOfPresentation.coding[spor].system = $spor // to be reviewed
@@ -54,7 +54,7 @@ Description: "AdministrableProductDefinition (ePI)"
 
 
  // Reference to ManufacturedItemDefinition: 30 mg tablet
-* producedFrom MS
+// * producedFrom MS
 * producedFrom only Reference(ManufacturedItemDefinitionUvEpi)
 
 // CHANGE TO A VALUE SET BASED DISCRIMINATOR
@@ -62,7 +62,7 @@ Description: "AdministrableProductDefinition (ePI)"
 * routeOfAdministration.code.coding ^slicing.discriminator[=].path = "system"
 * routeOfAdministration.code.coding ^slicing.rules = #open
 * routeOfAdministration.code.coding contains
-    spor 0..* MS
+    spor 0..* 
 * routeOfAdministration.code.coding[spor] ^short = "SPOR (Europe)"
 * routeOfAdministration.code.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
 * routeOfAdministration.code.coding[spor].system = $spor // to be reviewed
@@ -73,7 +73,7 @@ Description: "AdministrableProductDefinition (ePI)"
 * routeOfAdministration.targetSpecies.code.coding ^slicing.discriminator[=].path = "system"
 * routeOfAdministration.targetSpecies.code.coding ^slicing.rules = #open
 * routeOfAdministration.targetSpecies.code.coding contains
-    spor 0..* MS
+    spor 0..* 
 * routeOfAdministration.targetSpecies.code.coding[spor] ^short = "SPOR (Europe)"
 * routeOfAdministration.targetSpecies.code.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
 * routeOfAdministration.targetSpecies.code.coding[spor].system = $spor // to be reviewed
