@@ -77,8 +77,85 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Ingredient/f:role</sch:title>
+    <sch:rule context="f:Ingredient/f:role">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Ingredient.role</sch:title>
     <sch:rule context="f:Ingredient/f:role">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.extension</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.coding</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Ingredient/f:role/f:coding</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.coding.extension</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.coding.system</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.coding.version</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.coding.code</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.coding.display</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.coding.userSelected</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.role.text</sch:title>
+    <sch:rule context="f:Ingredient/f:role/f:text">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -175,8 +252,113 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Ingredient/f:substance/f:code/f:concept</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Ingredient.substance.code.concept</sch:title>
     <sch:rule context="f:Ingredient/f:substance/f:code/f:concept">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.extension</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Ingredient/f:substance/f:code/f:concept/f:coding</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.coding</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.coding.extension</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.coding.system</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.coding.version</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.coding.code</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.coding.display</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.coding.userSelected</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Ingredient.substance.code.concept.text</sch:title>
+    <sch:rule context="f:Ingredient/f:substance/f:code/f:concept/f:text">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -209,6 +391,7 @@
   <sch:pattern>
     <sch:title>Ingredient.substance.strength.presentation[x] 1</sch:title>
     <sch:rule context="f:Ingredient/f:substance/f:strength/f:presentation[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
