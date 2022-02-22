@@ -1,5 +1,5 @@
 Instance: cfsb1639015344307
-InstanceOf: Organization
+InstanceOf: OrganizationUvEpi
 Description: "Manufacturer"
 Usage: #example
  

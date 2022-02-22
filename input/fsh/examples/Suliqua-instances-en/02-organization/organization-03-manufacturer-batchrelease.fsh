@@ -1,6 +1,6 @@
-Instance: cfsb2176224411725
-InstanceOf: Organization
-Description: "Manufacturer API"
+Instance: cfsb7719260512249
+InstanceOf: OrganizationUvEpi
+Description: "Manufacturer Batch release"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/omswi/#/"
@@ -8,7 +8,7 @@ Usage: #example
 * identifier.use = #official
 * active = true
 * type = https://spor.ema.europa.eu/rmswi/#/#220000000033
-* type.text = "Manufacturer API"
+* type.text = "Manufacturer Batch release"
 * name = "Sanofi-Aventis Deutschland GmbH"
 * address.text = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY"
 * address.use = #work

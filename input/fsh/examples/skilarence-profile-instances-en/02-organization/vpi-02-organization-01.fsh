@@ -1,5 +1,5 @@
 Instance: cfsb1639003145277
-InstanceOf: Organization
+InstanceOf: OrganizationUvEpi
 Description: "Market Authorization Holder"
 Usage: #example
  

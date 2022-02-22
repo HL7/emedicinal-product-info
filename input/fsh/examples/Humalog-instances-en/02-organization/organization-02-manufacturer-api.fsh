@@ -1,5 +1,5 @@
 Instance: cfsb1641381635293
-InstanceOf: Organization
+InstanceOf: OrganizationUvEpi
 Description: "Manufaturer API"
 Usage: #example
 
