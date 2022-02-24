@@ -1,9 +1,9 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 1688, warn = 393, info = 1200
+err = 1695, warn = 402, info = 1200
 IG Publisher Version: 1.1.107
-Generated Thu Feb 24 10:59:01 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+Generated Thu Feb 24 14:57:16 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 74 / 3 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639227408981 : 3 / 4 / 10
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639228293199 : 3 / 4 / 10
@@ -202,13 +202,15 @@ Generated Thu Feb 24 10:59:01 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-interaction-uv-epi : 22 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi : 22 / 5 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-warning-uv-epi : 22 / 5 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-Composition-uv-epi : 11 / 6 / 17
+ /github/workspace/fsh-generated/resources/StructureDefinition-Composition-eu-leaflet : 12 / 6 / 17
+ /github/workspace/fsh-generated/resources/StructureDefinition-Composition-uv-epi : 6 / 6 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Ingredient-uv-epi : 29 / 10 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi : 19 / 9 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProductDefinition-uv-epi : 41 / 9 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Organization-uv-epi : 38 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedProductDefinition-uv-epi : 50 / 6 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi : 16 / 5 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-epiType : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-regulatedAuthIdSystems : 0 / 1 / 1
  /github/workspace/input/resources/capability-statement-ema : 4 / 1 / 1
  /github/workspace/input/resources/fmk-ips-skilarence : 52 / 1 / 13
@@ -3422,38 +3424,52 @@ ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefini
 ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[49].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
 ERROR: StructureDefinition/ClinicalUseDefinition-warning-uv-epi: StructureDefinition.snapshot.element[57].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-warning-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Composition-eu-leaflet.json ==
+WARNING: StructureDefinition/Composition-eu-leaflet: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/Composition-eu-leaflet: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/Composition-eu-leaflet: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/Composition-eu-leaflet: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0]: The code "X-EPI" is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[20].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[29].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[36].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[50].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[64].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[68].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[78].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[82].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[92].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[96].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[106].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[110].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[120].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[124].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[134].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[138].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[21].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[25].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/Composition-eu-leaflet: StructureDefinition.differential.element[29].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+WARNING: StructureDefinition/Composition-eu-leaflet: StructureDefinition.snapshot.element[18].binding: The valueSet reference http://terminology.hl7.org/ValueSet/v3-Confidentiality|2.0.0|2.0.0 on element Composition.confidentiality could not be resolved
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-eu-leaflet'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Composition-uv-epi.json ==
 WARNING: StructureDefinition/Composition-uv-epi: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: StructureDefinition/Composition-uv-epi: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
 WARNING: StructureDefinition/Composition-uv-epi: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
 WARNING: StructureDefinition/Composition-uv-epi: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
 ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[1].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0]: The code "X-EPI" is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'
 ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[20].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
 ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[29].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
 ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[36].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[50].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[64].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[68].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[78].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[82].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[92].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[96].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[106].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[110].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[120].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[124].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[134].type[0].extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type' definition allows for the types [uri] but found type url
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[138].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[24].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[28].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[32].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[36].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated
+ERROR: StructureDefinition/Composition-uv-epi: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: The code "X-EPI" is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'
 WARNING: StructureDefinition/Composition-uv-epi: StructureDefinition.snapshot.element[18].binding: The valueSet reference http://terminology.hl7.org/ValueSet/v3-Confidentiality|2.0.0|2.0.0 on element Composition.confidentiality could not be resolved
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Ingredient-uv-epi.json ==
@@ -3698,6 +3714,10 @@ ERROR: StructureDefinition/RegulatedAuthorization-uv-epi: StructureDefinition.di
 ERROR: StructureDefinition/RegulatedAuthorization-uv-epi: StructureDefinition.differential.element[12].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 ERROR: StructureDefinition/RegulatedAuthorization-uv-epi: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-epiType.json ==
+WARNING: ValueSet/epiType: ValueSet.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: ValueSet/epiType: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'epiType'): Error from server: Unable to provide support for code system https://spor.ema.europa.eu/rmswi
 == fsh-generated/resources/ValueSet-regulatedAuthIdSystems.json ==
 WARNING: ValueSet/regulatedAuthIdSystems: ValueSet.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 == input/resources/capability-statement-ema.json ==

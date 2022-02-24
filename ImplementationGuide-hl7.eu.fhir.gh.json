@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-02-24T10:57:23+00:00",
+  "date": "2022-02-24T14:55:32+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -136,6 +136,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/Composition-eu-leaflet"
+        },
+        "name": "Composition (EU Leaflet)",
+        "description": "Clinical document used to represent the Electronic Product Information (ePI) data set. \nAn Electronic Product Information (ePI) document is an authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/Composition-uv-epi"
         },
         "name": "Composition (ePI)",
@@ -224,6 +238,20 @@
         },
         "name": "RegulatedAuthorization (ePI)",
         "description": "RegulatedAuthorization (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/epiType"
+        },
+        "name": "ePI document types",
+        "description": "ePI document types",
         "exampleBoolean": false
       },
       {
