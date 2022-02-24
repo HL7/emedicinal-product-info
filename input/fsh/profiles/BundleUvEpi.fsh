@@ -39,8 +39,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 	clinicalUse 0.. and
 	binary 0..
 	
-* entry[composition].resource 			1..
-* entry[organization].resource 			1..
+* entry[composition].resource  1..
+* entry[organization].resource 	1..
 * entry[authorization].resource 		1..
 * entry[medicinalProduct].resource 		1..
 * entry[packagedProduct].resource 		1..
@@ -60,6 +60,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[ingredient].resource only IngredientUvEpi
 * entry[clinicalUse].resource only ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionInteractionUvEpi  or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi
 * entry[binary].resource only Binary
+* signature ^short = "Digital Signature."
 
 
 

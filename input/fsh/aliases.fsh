@@ -23,11 +23,13 @@ Alias: $phpid = https://www.who-umc.org/phpid
 Alias: $gs1 = https://www.gs1.org/gtin
 Alias: $publication-status = http://hl7.org/fhir/publication-status
 Alias: $unii = http://fdasis.nlm.nih.gov
+Alias: $composition-attestation-mode = http://hl7.org/fhir/composition-attestation-mode
 
 Alias: $spor-prod = https://spor.ema.europa.eu/pmswi // invented to be updated
 Alias: $spor = https://spor.ema.europa.eu
 Alias: $spor-org = https://spor.ema.europa.eu/omswi
 Alias: $spor-sms = https://spor.ema.europa.eu/smswi
+Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
 
 Alias: $VS-publication-status = http://hl7.org/fhir/ValueSet/publication-status
 
