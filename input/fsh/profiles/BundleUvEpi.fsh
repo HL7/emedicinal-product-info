@@ -21,33 +21,35 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry ^short = "Entry resource in the ePI bundle"
 * entry ^definition = "An entry resource included in the ePI document bundle resource."
 * entry ^comment = "Must contain the ePI Composition as the first entry (only a single Composition resource instance may be included).  Additional constraints are specified in the ePI Composition profile."
-* entry.fullUrl 1.. // MS
-* entry.search ..0
-* entry.request ..0
-* entry.response ..0
+* entry
+  * fullUrl 1..
+  * search ..0
+  * request ..0
+  * response ..0
+  * resource 1..
 * entry contains
     composition 1..1 and
 	organization 1.. and
 	authorization 1.. and
 	medicinalProduct 1.. and
+	administrableProduct 1.. and
+	manItem 1.. and
+	ingredient 1.. and
 	packagedProduct 0.. and
-	administrableProduct 0.. and
-	manItem 0.. and
-	ingredient 0.. and
 	clinicalUse 0.. and
 	binary 0..
 	
-* entry[composition].resource 1..
-* entry[organization].resource 1..
-* entry[authorization].resource 1..
-* entry[medicinalProduct].resource 1..
-* entry[packagedProduct].resource
-* entry[administrableProduct].resource
-* entry[manItem].resource
-* entry[ingredient].resource
-* entry[clinicalUse].resource
-* entry[binary].resource
-
+* entry[composition].resource 			1..
+* entry[organization].resource 			1..
+* entry[authorization].resource 		1..
+* entry[medicinalProduct].resource 		1..
+* entry[packagedProduct].resource 		1..
+* entry[administrableProduct].resource 	1..
+* entry[manItem].resource 				1..
+* entry[ingredient].resource 			1..
+* entry[clinicalUse].resource 	1..
+* entry[binary].resource 1..
+	
 * entry[composition].resource only CompositionUvEpi
 * entry[organization].resource only OrganizationUvEpi
 * entry[authorization].resource only RegulatedAuthorizationUvEpi
