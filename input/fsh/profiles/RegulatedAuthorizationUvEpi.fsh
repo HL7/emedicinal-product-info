@@ -10,23 +10,8 @@ Description: "RegulatedAuthorization (ePI)"
   * system 1..
   * value 1..
   
-  
-/*===
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains
-    spor 0..* MS
-* identifier[spor] ^short = "SPOR (Europe)"
-* identifier[spor] ^definition = "EMA - SPOR product identifier" // to be reviewed
-* identifier[spor].system = $spor-prod // to be reviewed
-* identifier[spor].value ^short = "Marketing Authorisation" // to be reviewed
-* identifier[spor].use = #official
-=== */
-
-
  // Reference to MedicinalProductDefinition: EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill
-* subject only Reference(MedicinalProductDefinition)
+* subject only Reference(MedicinalProductDefinitionUvEpi)
 
 // * type  // = $spor#100000072062 "Marketing Authorisation"
 // CHANGE TO A VALUE SET BASED DISCRIMINATOR
@@ -48,8 +33,13 @@ Description: "RegulatedAuthorization (ePI)"
 * status ^example.valueCodeableConcept = http://hl7.org/fhir/publication-status#active
 * statusDate ^example.valueDateTime = "2015-02-07T13:28:17Z"
 
+* indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
+* indication.reference 1..
+
  // Reference to Organization: Marketing Authorization Holder
 * holder 1..
 * holder only Reference(OrganizationUvEpi)
 
 * regulator only Reference(OrganizationUvEpi)
+
+* case ^short = "The case or regulatory procedure for granting or amending a regulated authorization." 
