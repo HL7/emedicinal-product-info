@@ -31,7 +31,7 @@ Description: "Ingredient (ePI)"
 * allergenicIndicator ^short = "If the ingredient is a known or suspected allergen." // = false
 
  // Reference to Organization: Manufacturer
-// * manufacturer.manufacturer MS
+
 * manufacturer.role ^short = "allowed|possible|actual"
 * manufacturer.manufacturer only Reference(OrganizationUvEpi)
 

@@ -20,7 +20,7 @@ Description: "MedicinalProductDefinition (ePI)"
 * combinedPharmaceuticalDoseForm ^short = "The dose form for a single part product or combined form of a multiple part product" // ==> add voc binding 
 * route ^short = "Route of administration" 
 
-// * legalStatusOfSupply MS // https://spor.ema.europa.eu/rmswi/#/#100000072084 "Medicinal product subject to medical prescription"
+// * legalStatusOfSupply  // https://spor.ema.europa.eu/rmswi/#/#100000072084 "Medicinal product subject to medical prescription"
 
 // CHANGE TO A VALUE SET BASED DISCRIMINATOR
 * legalStatusOfSupply.coding ^slicing.discriminator[0].type = #value
@@ -41,7 +41,7 @@ Description: "MedicinalProductDefinition (ePI)"
 
 * name
   * productName ^short = "The full name of this product" // = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-//   * type MS // = https://spor.ema.europa.eu/rmswi/#/#220000000001 "Full name"
+//   * type  // = https://spor.ema.europa.eu/rmswi/#/#220000000001 "Full name"
   // CHANGE TO A VALUE SET BASED DISCRIMINATOR
   * type.coding ^slicing.discriminator[0].type = #value
   * type.coding ^slicing.discriminator[=].path = "system"
@@ -106,7 +106,7 @@ Description: "MedicinalProductDefinition (ePI)"
 -- */
 
 
-// * domain MS // = https://spor.ema.europa.eu/rmswi/#/#100000000012 "Human use"
+// * domain  // = https://spor.ema.europa.eu/rmswi/#/#100000000012 "Human use"
 /* ==== CHANGE TO A VALUE SET BASED DISCRIMINATOR
 * domain.coding ^slicing.discriminator[0].type = #value
 * domain.coding ^slicing.discriminator[=].path = "system"

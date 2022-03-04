@@ -9,7 +9,7 @@ Description: "ClinicalUseDefinition Indication (ePI)"
 
 *  contraindication 0..
 *  indication 1..
-*  indication.diseaseSymptomProcedure.concept 1.. MS
+*  indication.diseaseSymptomProcedure.concept 1..
 *  interaction 0..
 *  undesirableEffect 0..
 *  warning 0..

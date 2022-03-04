@@ -12,7 +12,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * type = #document (exactly)
 * timestamp 1.. 
 * link ..0
-* entry 1.. // MS
+* entry 1.. // 
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.discriminator[+].type = #profile
