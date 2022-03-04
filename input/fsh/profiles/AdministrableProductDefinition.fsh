@@ -61,5 +61,8 @@ Description: "AdministrableProductDefinition (ePI)"
 * routeOfAdministration.targetSpecies.code.coding[spor].system = $spor // to be reviewed
 * routeOfAdministration.targetSpecies.code.coding[spor].code 1.. 
 
+* insert PropertyRulesSet
+
+
 
 
