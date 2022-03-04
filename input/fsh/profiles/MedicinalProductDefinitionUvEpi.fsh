@@ -5,41 +5,12 @@ Title: "MedicinalProductDefinition (ePI)"
 Description: "MedicinalProductDefinition (ePI)"
 
 * identifier 1..
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains
-    spor 0..*
-* identifier[spor] ^short = "SPOR (Europe)"
-* identifier[spor] ^definition = "EMA - SPOR product identifier" // to be reviewed
-* identifier[spor].system = $spor-prod // to be reviewed
-* identifier[spor].value ^short = "Marketing Authorisation" // to be reviewed
-* identifier[spor].use = #official
+  * system from VsMedProdIdSystems (extensible)
+  * system 1..
+  * value 1..
 
-// * type MS // = https://spor.ema.europa.eu/rmswi/#/#100000072062
-
-// CHANGE TO A VALUE SET BASED DISCRIMINATOR
-* type.coding ^slicing.discriminator[0].type = #value
-* type.coding ^slicing.discriminator[=].path = "system"
-* type.coding ^slicing.rules = #open
-* type.coding contains
-    spor 0..*
-* type.coding[spor] ^short = "SPOR (Europe)"
-* type.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
-* type.coding[spor].system = $spor // to be reviewed
-* type.coding[spor].code 1.. 
-
-// * domain MS // = https://spor.ema.europa.eu/rmswi/#/#100000000012 "Human use"
-// CHANGE TO A VALUE SET BASED DISCRIMINATOR
-* domain.coding ^slicing.discriminator[0].type = #value
-* domain.coding ^slicing.discriminator[=].path = "system"
-* domain.coding ^slicing.rules = #open
-* domain.coding contains
-    spor 0..*
-* domain.coding[spor] ^short = "SPOR (Europe)"
-* domain.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
-* domain.coding[spor].system = $spor // to be reviewed
-* domain.coding[spor].code 1.. 
+* type from $VS-medicinal-product-type (extensible)
+* domain from $VS-medicinal-product-domain  (extensible)
 
 * version ^short = "Business version of this product"
 * status from  $VS-publication-status (extensible)
@@ -108,3 +79,42 @@ Description: "MedicinalProductDefinition (ePI)"
 * name.namePart.type = https://spor.ema.europa.eu/rmswi/#/#220000000005
 * name.namePart.type.text = "Pharmaceutical dose form part"
    ----*/
+   
+   /* =====
+* identifier ^slicing.discriminator[0].type = #value
+* identifier ^slicing.discriminator[=].path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains
+    spor 0..*
+* identifier[spor] ^short = "SPOR (Europe)"
+* identifier[spor] ^definition = "EMA - SPOR product identifier" // to be reviewed
+* identifier[spor].system = $spor-prod // to be reviewed
+* identifier[spor].value ^short = "Marketing Authorisation" // to be reviewed
+* identifier[spor].use = #official
+==== */
+/* --- CHANGE TO A VALUE SET BASED DISCRIMINATOR
+* type.coding ^slicing.discriminator[0].type = #value
+* type.coding ^slicing.discriminator[=].path = "system"
+* type.coding ^slicing.rules = #open
+* type.coding contains
+    spor 0..*
+* type.coding[spor] ^short = "SPOR (Europe)"
+* type.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
+* type.coding[spor].system = $spor // to be reviewed
+* type.coding[spor].code 1.. 
+
+-- */
+
+
+// * domain MS // = https://spor.ema.europa.eu/rmswi/#/#100000000012 "Human use"
+/* ==== CHANGE TO A VALUE SET BASED DISCRIMINATOR
+* domain.coding ^slicing.discriminator[0].type = #value
+* domain.coding ^slicing.discriminator[=].path = "system"
+* domain.coding ^slicing.rules = #open
+* domain.coding contains
+    spor 0..*
+* domain.coding[spor] ^short = "SPOR (Europe)"
+* domain.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
+* domain.coding[spor].system = $spor // to be reviewed
+* domain.coding[spor].code 1.. 
+=== */

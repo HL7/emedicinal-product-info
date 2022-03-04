@@ -31,7 +31,15 @@ Alias: $spor-org = https://spor.ema.europa.eu/omswi
 Alias: $spor-sms = https://spor.ema.europa.eu/smswi
 Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
 
+//  VALUE SETS
+
 Alias: $VS-publication-status = http://hl7.org/fhir/ValueSet/publication-status
+
+Alias: $VS-medicinal-product-type =
+	http://hl7.org/fhir/ValueSet/medicinal-product-type
+	
+Alias: $VS-medicinal-product-domain =
+	http://hl7.org/fhir/ValueSet/medicinal-product-domain
 
 
 // =========== Extensions =======

@@ -33,8 +33,9 @@ Description: "RegulatedAuthorization (ePI)"
 * status ^example.valueCodeableConcept = http://hl7.org/fhir/publication-status#active
 * statusDate ^example.valueDateTime = "2015-02-07T13:28:17Z"
 
-* indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
+// * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
 * indication.reference 1..
+* indication.reference only Reference (ClinicalUseDefinitionIndicationUvEpi)
 
  // Reference to Organization: Marketing Authorization Holder
 * holder 1..
