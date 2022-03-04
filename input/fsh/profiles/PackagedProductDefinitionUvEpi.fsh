@@ -4,29 +4,11 @@ Id: PackagedProductDefinition-uv-epi
 Title: "PackagedProductDefinition (ePI)"
 Description: "PackagedProductDefinition (ePI)"
 
-//================
-
-/**
-
-**/
-
-
-// === END
-
 
 * identifier 1..
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains
-    spor 0..* 
-* identifier[spor] ^short = "SPOR (Europe)"
-* identifier[spor] ^definition = "EMA - SPOR product identifier" // to be reviewed
-* identifier[spor].system = $spor-prod // to be reviewed
-* identifier[spor].value ^short = "EMA Package Product ID" // to be reviewed
-* identifier[spor].use = #official
-
-
+  * system from VsPackagedProductIdSystems (extensible)
+  * system 1..
+  * value 1..
 * name ^example.valueString = "3 ml cartridge (glass) in a pre-filled pen"
 
 // * type  // = https://spor.ema.europa.eu/rmswi/#/#100000155527  "Chemical Medicinal Product"

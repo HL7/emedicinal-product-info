@@ -5,16 +5,9 @@ Title: "ManufacturedItemDefinition (ePI)"
 Description: "ManufacturedItemDefinition (ePI)"
 
 * identifier 1..
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains
-    spor 0..* MS
-* identifier[spor] ^short = "SPOR (Europe)"
-* identifier[spor] ^definition = "EMA - SPOR product identifier" // to be reviewed
-* identifier[spor].system = $spor-prod // to be reviewed
-* identifier[spor].value ^short = "Manufactured Item" // to be reviewed
-* identifier[spor].use = #official
+  * system from VsManufacturedItemIdSystems (extensible)
+  * system 1..
+  * value 1..
 
 * status MS
 

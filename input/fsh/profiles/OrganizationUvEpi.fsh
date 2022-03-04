@@ -5,16 +5,9 @@ Title: "Organization (ePI)"
 Description: "Organization (ePI)"
 
 * identifier 1..
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains
-    spor 0..*
-* identifier[spor] ^short = "SPOR (Europe)"
-* identifier[spor] ^definition = "EMA - SPOR Organization identifier" // to be reviewed
-* identifier[spor].system = $spor-org // to be reviewed
-* identifier[spor].value ^short = "Organization" // to be reviewed
-* identifier[spor].use = #official
+  * system from VsOrganizationIdSystems (extensible)
+  * system 1..
+  * value 1..
 
 
 * active ^short = "Whether the organization's record is in active use"

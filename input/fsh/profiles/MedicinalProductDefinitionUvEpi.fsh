@@ -5,7 +5,7 @@ Title: "MedicinalProductDefinition (ePI)"
 Description: "MedicinalProductDefinition (ePI)"
 
 * identifier 1..
-  * system from VsMedProdIdSystems (extensible)
+  * system from VsMedProductIdSystems (extensible)
   * system 1..
   * value 1..
 

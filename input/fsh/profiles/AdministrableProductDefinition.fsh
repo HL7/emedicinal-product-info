@@ -4,7 +4,12 @@ Id: AdministrableProductDefinition-uv-epi
 Title: "AdministrableProductDefinition (ePI)"
 Description: "AdministrableProductDefinition (ePI)"
 
+* identifier 1..
+  * system from VsAdmProductIdSystems (extensible)
+  * system 1..
+  * value 1..
 
+/* ==
 * identifier 1..
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[=].path = "system"
@@ -25,6 +30,7 @@ Description: "AdministrableProductDefinition (ePI)"
 * identifier[phpid].value ^short = "IDMP PhPID" // to be reviewed
 * identifier[phpid].use = #official
 
+== */
 
 // * formOf MS
 * formOf only Reference(MedicinalProductDefinitionUvEpi)
