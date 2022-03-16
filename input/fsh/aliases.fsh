@@ -25,6 +25,9 @@ Alias: $publication-status = http://hl7.org/fhir/publication-status
 Alias: $unii = http://fdasis.nlm.nih.gov
 Alias: $composition-attestation-mode = http://hl7.org/fhir/composition-attestation-mode
 
+Alias: $ginas = https://gsrs.ncats.nih.gov/ginas/app/beta
+
+Alias: $medicinal-product-name-part-type = http://hl7.org/fhir/medicinal-product-name-part-type
 Alias: $medicationknowledge-characteristic = 
 http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic
 

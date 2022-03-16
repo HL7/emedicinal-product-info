@@ -1,3 +1,11 @@
+CodeSystem: CodeSystemGravitate
+Title: "Gravitate Health Project Code System"
+Description: "Gravitate Health Project Code System. Coded concepts defined for internal project use."
+
+* ^url = http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate
+
+* #flavor "Flavor" "Placeholder for the Flavor concept"
+
 CodeSystem: CodeSystemUvEPIRrmswi
 Title: "Referentials Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/rmswi"
@@ -7,6 +15,13 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #220000000034
 * #220000000033
 * #100000155538
+* #220000000002 "Invented name part"
+* #220000000001 "Full name"
+* #100000073646 "Oral solution"
+* #200000002145 "Spoonful"
+* #100000073578 "Gingival use"
+* #100000072084 "Medicinal product subject to medical prescription"
+* #00000072072 "active"
 
 
 CodeSystem: CodeSystemUvEPIRomswi
