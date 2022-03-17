@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "regulatedAuthIdSystems"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>https://spor.ema.europa.eu</td><td>SPOR (EU)</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/regulatedAuthIdSystems"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "VsRegulatedAuthIdSystems"];
   fhir:ValueSet.title [ fhir:value "RegulatedAuthorization identifier systems"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-02-24T14:55:32+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-03-17T13:40:44+00:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -34,8 +34,8 @@
        fhir:ValueSet.compose.include.system [ fhir:value "urn:ietf:rfc:3986" ];
        fhir:ValueSet.compose.include.concept [
          fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://spor.ema.europa.eu" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "SPOR (EU)" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SPOR Product (EU)" ]
        ]
      ]
   ] .

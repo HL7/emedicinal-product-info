@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "organizationIdSystems",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>https://spor.ema.europa.eu/omswi</td><td>SPOR Organization (EU)</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/organizationIdSystems",
+  "version": "0.1.0",
+  "name": "VsOrganizationIdSystems",
+  "title": "Organization identifier systems",
+  "status": "active",
+  "date": "2022-03-17T13:40:44+00:00",
+  "contact": [
+    {
+      "name": "Gravitate Health Project",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.gravitatehealth.eu/"
+        }
+      ]
+    }
+  ],
+  "description": "Organization Identifier systems (uri)",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "concept": [
+          {
+            "code": "https://spor.ema.europa.eu/omswi",
+            "display": "SPOR Organization (EU)"
+          }
+        ]
+      }
+    ]
+  }
+}

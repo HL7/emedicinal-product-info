@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="manufacturedItemIdSystems"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems"/>
+  <version value="0.1.0"/>
+  <name value="VsManufacturedItemIdSystems"/>
+  <title value="ManufacturedItemDefinition identifier systems"/>
+  <status value="active"/>
+  <date value="2022-03-17T13:40:44+00:00"/>
+  <contact>
+    <name value="Gravitate Health Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gravitatehealth.eu/"/>
+    </telecom>
+  </contact>
+  <description value="ManufacturedItemDefinition Identifier systems (uri)"/>
+  <compose>
+    <include>
+      <system value="urn:ietf:rfc:3986"/>
+      <concept>
+        <code value="https://spor.ema.europa.eu/pmswi"/>
+        <display value="SPOR Product (EU)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -30,7 +30,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "ClinicalUseDefinition.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
-","Business identifier for this issue","Business identifier for this issue.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Business identifier for this issue.","Business identifier for this issue.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "ClinicalUseDefinition.type","","","",1,1,"","","Y","code {[]} {[]}
 ","indication | contraindication | interaction | undesirable-effect | warning","indication | contraindication | interaction | undesirable-effect | warning.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""interaction""/>","","","",,"required","Overall defining type of this clinical use definition.","http://hl7.org/fhir/ValueSet/clinical-use-definition-type|4.6.0","",,,,"ClinicalUseDefinition.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -42,9 +42,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The medication or procedure for which this is an indication","The medication or procedure for which this is an indication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.subject",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(the link between the IDMP class and Medicinal Product)"
 "ClinicalUseDefinition.status","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Whether this is a current issue or one that has been retired etc","Whether this is a current issue or one that has been retired etc.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Whether this is a current issue or one that has been retired","Whether this is a current issue or one that has been retired etc.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"ClinicalUseDefinition.contraindication","","","",0,1,"","","Y","BackboneElement {[]} {[]}
+"ClinicalUseDefinition.contraindication","","","",0,0,"","","Y","BackboneElement {[]} {[]}
 ","Specifics for when this is a contraindication","Specifics for when this is a contraindication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.contraindication",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Contraindication"
 "ClinicalUseDefinition.contraindication.id","","","",0,1,"","","","id {[]} {[]}
@@ -92,7 +92,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ClinicalUseDefinition.contraindication.otherTherapy.therapy","","","",1,1,"","","Y","CodeableReference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication], CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance], CanonicalType[http://hl7.org/fhir/StructureDefinition/SubstanceDefinition], CanonicalType[http://hl7.org/fhir/StructureDefinition/ActivityDefinition]]}
 ","Reference to a specific medication (active substance, medicinal product or class of products) as part of an indication or contraindication","Reference to a specific medication (active substance, medicinal product or class of products) as part of an indication or contraindication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.contraindication.otherTherapy.therapy",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Other Therapy Specifics.Medication"
-"ClinicalUseDefinition.indication","","","",0,1,"","","Y","BackboneElement {[]} {[]}
+"ClinicalUseDefinition.indication","","","",0,0,"","","Y","BackboneElement {[]} {[]}
 ","Specifics for when this is an indication","Specifics for when this is an indication.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.indication",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Therapeutic Indication"
 "ClinicalUseDefinition.indication.id","","","",0,1,"","","","id {[]} {[]}
@@ -161,11 +161,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The specific medication, food or laboratory test that interacts","The specific medication, food or laboratory test that interacts.","","","","","","","","","",,,,,"","type:$this}
 ","",,"closed","ClinicalUseDefinition.interaction.interactant.item[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Interactions.Interactant and Interactions.Interactions Text"
-"ClinicalUseDefinition.interaction.interactant.item[x]","itemCodeableConcept","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+"ClinicalUseDefinition.interaction.interactant.item[x]","itemCodeableConcept","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","The specific medication, food or laboratory test that interacts","The specific medication, food or laboratory test that interacts.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.interaction.interactant.item[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Interactions.Interactant and Interactions.Interactions Text"
 "ClinicalUseDefinition.interaction.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction","The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.interaction.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.","The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.interaction.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Interactions.Interactions Type"
 "ClinicalUseDefinition.interaction.effect","","","",0,1,"","","Y","CodeableReference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ObservationDefinition]]}
 ","The effect of the interaction, for example ""reduced gastric absorption of primary medication""","The effect of the interaction, for example ""reduced gastric absorption of primary medication"".","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.interaction.effect",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -179,7 +179,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ClinicalUseDefinition.population","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
 ","The population group to which this applies","The population group to which this applies.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.population",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Population Specifics"
-"ClinicalUseDefinition.undesirableEffect","","","",0,1,"","","Y","BackboneElement {[]} {[]}
+"ClinicalUseDefinition.undesirableEffect","","","",0,0,"","","Y","BackboneElement {[]} {[]}
 ","A possible negative outcome from the use of this treatment","Describe the undesirable effects of the medicinal product.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.undesirableEffect",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Undesirable Effects"
 "ClinicalUseDefinition.undesirableEffect.id","","","",0,1,"","","","id {[]} {[]}
@@ -203,7 +203,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ClinicalUseDefinition.undesirableEffect.frequencyOfOccurrence","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","How often the effect is seen","How often the effect is seen.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.undesirableEffect.frequencyOfOccurrence",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Undesirable Effects.Frequency of Occurrence"
-"ClinicalUseDefinition.warning","","","",0,1,"","","Y","BackboneElement {[]} {[]}
+"ClinicalUseDefinition.warning","","","",0,0,"","","Y","BackboneElement {[]} {[]}
 ","A critical piece of information about environmental, health or physical risks or hazards that serve as caution to the user. For example 'Do not operate heavy machinery', 'May cause drowsiness' or 'Get medical advice/attention if you feel unwell'","A critical piece of information about environmental, health or physical risks or hazards that serve as caution to the user. For example 'Do not operate heavy machinery', 'May cause drowsiness', or 'Get medical advice/attention if you feel unwell'.","","","","","","","","","",,,,,"",,,,"ClinicalUseDefinition.warning",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "ClinicalUseDefinition.warning.id","","","",0,1,"","","","id {[]} {[]}

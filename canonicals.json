@@ -1,10 +1,10 @@
 [
   {
-    "id": "capability-statement-ema",
-    "type": "CapabilityStatement",
-    "url": "/metadata",
+    "id": "gravitate",
+    "type": "CodeSystem",
+    "url": "http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate",
     "version": "0.1.0",
-    "name": "Summary of Product Characteristics (SmPC) / Package Leaflet (PL) server"
+    "name": "CodeSystemGravitate"
   },
   {
     "id": "hl7.eu.fhir.gh",
@@ -119,11 +119,53 @@
     "name": "RegulatedAuthorizationUvEpi"
   },
   {
+    "id": "SubstanceDefinition-uv-epi",
+    "type": "StructureDefinition",
+    "url": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi",
+    "version": "0.1.0",
+    "name": "SubstanceDefinitionUvEpi"
+  },
+  {
+    "id": "admProductIdSystems",
+    "type": "ValueSet",
+    "url": "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems",
+    "version": "0.1.0",
+    "name": "VsAdmProductIdSystems"
+  },
+  {
     "id": "epiType",
     "type": "ValueSet",
     "url": "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/epiType",
     "version": "0.1.0",
     "name": "VsEpiType"
+  },
+  {
+    "id": "manufacturedItemIdSystems",
+    "type": "ValueSet",
+    "url": "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems",
+    "version": "0.1.0",
+    "name": "VsManufacturedItemIdSystems"
+  },
+  {
+    "id": "medProductIdSystems",
+    "type": "ValueSet",
+    "url": "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems",
+    "version": "0.1.0",
+    "name": "VsMedProductIdSystems"
+  },
+  {
+    "id": "organizationIdSystems",
+    "type": "ValueSet",
+    "url": "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/organizationIdSystems",
+    "version": "0.1.0",
+    "name": "VsOrganizationIdSystems"
+  },
+  {
+    "id": "packagedProductIdSystems",
+    "type": "ValueSet",
+    "url": "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/packagedProductIdSystems",
+    "version": "0.1.0",
+    "name": "VsPackagedProductIdSystems"
   },
   {
     "id": "regulatedAuthIdSystems",
@@ -145,5 +187,33 @@
     "url": "http://spor.ema.europa.eu/v1/example-sections-smpc",
     "version": "0.1.0",
     "name": "Examplesmpc"
+  },
+  {
+    "id": "CodeSystemUvEPIRomswi",
+    "type": "CodeSystem",
+    "url": "https://spor.ema.europa.eu/omswi",
+    "version": "0.1.0",
+    "name": "CodeSystemUvEPIRomswi"
+  },
+  {
+    "id": "CodeSystemUvEPIRpmswi",
+    "type": "CodeSystem",
+    "url": "https://spor.ema.europa.eu/pmswi",
+    "version": "0.1.0",
+    "name": "CodeSystemUvEPIRpmswi"
+  },
+  {
+    "id": "CodeSystemUvEPIRrmswi",
+    "type": "CodeSystem",
+    "url": "https://spor.ema.europa.eu/rmswi",
+    "version": "0.1.0",
+    "name": "CodeSystemUvEPIRrmswi"
+  },
+  {
+    "id": "CodeSystemUvEPIRsmswi",
+    "type": "CodeSystem",
+    "url": "https://spor.ema.europa.eu/smswi",
+    "version": "0.1.0",
+    "name": "CodeSystemUvEPIRsmswi"
   }
 ]
