@@ -1,4 +1,5 @@
 CodeSystem: CodeSystemGravitate
+Id: gravitate
 Title: "Gravitate Health Project Code System"
 Description: "Gravitate Health Project Code System. Coded concepts defined for internal project use."
 
@@ -22,6 +23,9 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #100000073578 "Gingival use"
 * #100000072084 "Medicinal product subject to medical prescription"
 * #00000072072 "active"
+* #100000073543 "Pre-filled pen"
+* #200000003204  "Glass type I"
+* #100000155527  "Chemical Medicinal Product"
 
 
 CodeSystem: CodeSystemUvEPIRomswi
