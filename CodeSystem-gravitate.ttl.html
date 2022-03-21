@@ -215,7 +215,7 @@
         
           Active
           
-            as of 2022-03-17
+            as of 2022-03-21
           
         
       </td>
@@ -231,7 +231,7 @@
 
 
 
-  <pre class="rdf"><code class="language-turtle"><a name="l365">​</a>
+  <pre class="rdf"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -241,33 +241,33 @@
 
  a fhir:CodeSystem;
   <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="null#CodeSystem.id">fhir:Resource.id</a> [ <a href="id.html">fhir:value</a> "gravitate"];
-  <a href="null#CodeSystem.text">fhir:DomainResource.text</a> [
-     <a href="null#Narrative.status">fhir:Narrative.status</a> [ <a href="code.html">fhir:value</a> "generated" ];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> "gravitate"];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "generated" ];
      fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;flavor&lt;a name=\"gravitate-flavor\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Flavor&lt;/td&gt;&lt;td&gt;Placeholder for the Flavor concept&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   ];
-  <a href="null#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="uri.html">fhir:value</a> "http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate"];
-  <a href="null#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="string.html">fhir:value</a> "0.1.0"];
-  <a href="null#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="string.html">fhir:value</a> "CodeSystemGravitate"];
-  <a href="null#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="string.html">fhir:value</a> "Gravitate Health Project Code System"];
-  <a href="null#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="code.html">fhir:value</a> "active"];
-  <a href="null#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="dateTime.html">fhir:value</a> "2022-03-17T13:40:44+00:00"^^xsd:dateTime];
-  <a href="null#CodeSystem.contact">fhir:CodeSystem.contact</a> [
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> "http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate"];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "0.1.0"];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "CodeSystemGravitate"];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "Gravitate Health Project Code System"];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "active"];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> "2022-03-21T12:30:51+00:00"^^xsd:dateTime];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.contact">fhir:CodeSystem.contact</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="null#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="string.html">fhir:value</a> "Gravitate Health Project" ];
-     <a href="null#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+     <a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "Gravitate Health Project" ];
+     <a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="null#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="code.html">fhir:value</a> "url" ];
-       <a href="null#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="string.html">fhir:value</a> "https://www.gravitatehealth.eu/" ]     ]
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "url" ];
+       <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "https://www.gravitatehealth.eu/" ]     ]
   ];
-  <a href="null#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="markdown.html">fhir:value</a> "Gravitate Health Project Code System. Coded concepts defined for internal project use."];
-  <a href="null#CodeSystem.content">fhir:CodeSystem.content</a> [ <a href="code.html">fhir:value</a> "complete"];
-  <a href="null#CodeSystem.count">fhir:CodeSystem.count</a> [ <a href="unsignedInt.html">fhir:value</a> "1"^^xsd:nonNegativeInteger];
-  <a href="null#CodeSystem.concept">fhir:CodeSystem.concept</a> [
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> "Gravitate Health Project Code System. Coded concepts defined for internal project use."];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.content">fhir:CodeSystem.content</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "complete"];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.count">fhir:CodeSystem.count</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> "1"^^xsd:nonNegativeInteger];
+  <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept">fhir:CodeSystem.concept</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="null#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="code.html">fhir:value</a> "flavor" ];
-     <a href="null#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="string.html">fhir:value</a> "Flavor" ];
-     <a href="null#CodeSystem.concept.definition">fhir:CodeSystem.concept.definition</a> [ <a href="string.html">fhir:value</a> "Placeholder for the Flavor concept" ]
+     <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "flavor" ];
+     <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "Flavor" ];
+     <a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.definition">fhir:CodeSystem.concept.definition</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "Placeholder for the Flavor concept" ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -306,7 +306,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Mar 17, 2022 13:40+0000">2022-03-17</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Mar 21, 2022 12:30+0000">2022-03-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">

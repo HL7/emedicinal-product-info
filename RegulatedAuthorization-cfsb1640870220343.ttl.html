@@ -229,7 +229,7 @@
 
 
 
-  <pre class="rdf"><code class="language-turtle"><a name="l365">​</a>
+  <pre class="rdf"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -239,46 +239,46 @@
 
  a fhir:RegulatedAuthorization;
   <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="null#RegulatedAuthorization.id">fhir:Resource.id</a> [ <a href="id.html">fhir:value</a> "cfsb1640870220343"];
-  <a href="null#RegulatedAuthorization.text">fhir:DomainResource.text</a> [
-     <a href="null#Narrative.status">fhir:Narrative.status</a> [ <a href="code.html">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb1640870220343\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"MedicinalProductDefinition-cfsb1641212233583.html\"&gt;MedicinalProductDefinition/cfsb1641212233583&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (#/#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: European Union &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (unknown#eu)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (PublicationStatus#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\"Organization-cfsb1640870284639.html\"&gt;Organization/cfsb1640870284639&lt;/a&gt; \"Eli Lilly Nederland B.V.\"&lt;/p&gt;&lt;/div&gt;"
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> "cfsb1640870220343"];
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "generated" ];
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb1640870220343\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"MedicinalProductDefinition-cfsb1641212233583.html\"&gt;MedicinalProductDefinition/cfsb1641212233583&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (#/#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: European Union &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (unknown#eu)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://build.fhir.org/codesystem-publication-status.html\"&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\"Organization-cfsb1640870284639.html\"&gt;Organization/cfsb1640870284639&lt;/a&gt; \"Eli Lilly Nederland B.V.\"&lt;/p&gt;&lt;/div&gt;"
   ];
-  <a href="null#RegulatedAuthorization.identifier">fhir:RegulatedAuthorization.identifier</a> [
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.identifier">fhir:RegulatedAuthorization.identifier</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="null#Identifier.use">fhir:Identifier.use</a> [ <a href="code.html">fhir:value</a> "official" ];
-     <a href="null#Identifier.system">fhir:Identifier.system</a> [ <a href="uri.html">fhir:value</a> "https://spor.ema.europa.eu/rmswi/#/" ];
-     <a href="null#Identifier.value">fhir:Identifier.value</a> [ <a href="string.html">fhir:value</a> "EU/1/96/007/035" ]
+     <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "official" ];
+     <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> "https://spor.ema.europa.eu/rmswi/#/" ];
+     <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "EU/1/96/007/035" ]
   ];
-  <a href="null#RegulatedAuthorization.subject">fhir:RegulatedAuthorization.subject</a> [
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.subject">fhir:RegulatedAuthorization.subject</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="null#Reference.reference">fhir:Reference.reference</a> [ <a href="string.html">fhir:value</a> "MedicinalProductDefinition/cfsb1641212233583" ]
+     <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "MedicinalProductDefinition/cfsb1641212233583" ]
   ];
-  <a href="null#RegulatedAuthorization.type">fhir:RegulatedAuthorization.type</a> [
-     <a href="null#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.type">fhir:RegulatedAuthorization.type</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="null#Coding.system">fhir:Coding.system</a> [ <a href="uri.html">fhir:value</a> "https://spor.ema.europa.eu/rmswi/" ];
-       <a href="null#Coding.code">fhir:Coding.code</a> [ <a href="code.html">fhir:value</a> "/#100000072062" ]     ];
-     <a href="null#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="string.html">fhir:value</a> "Marketing Authorisation" ]
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> "https://spor.ema.europa.eu/rmswi/" ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "/#100000072062" ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "Marketing Authorisation" ]
   ];
-  <a href="null#RegulatedAuthorization.region">fhir:RegulatedAuthorization.region</a> [
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.region">fhir:RegulatedAuthorization.region</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="null#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="null#Coding.system">fhir:Coding.system</a> [ <a href="uri.html">fhir:value</a> "urn:iso:std:iso:3166" ];
-       <a href="null#Coding.code">fhir:Coding.code</a> [ <a href="code.html">fhir:value</a> "eu" ]     ];
-     <a href="null#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="string.html">fhir:value</a> "European Union" ]
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> "urn:iso:std:iso:3166" ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "eu" ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "European Union" ]
   ];
-  <a href="null#RegulatedAuthorization.status">fhir:RegulatedAuthorization.status</a> [
-     <a href="null#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.status">fhir:RegulatedAuthorization.status</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="null#Coding.system">fhir:Coding.system</a> [ <a href="uri.html">fhir:value</a> "http://hl7.org/fhir/publication-status" ];
-       <a href="null#Coding.code">fhir:Coding.code</a> [ <a href="code.html">fhir:value</a> "active" ]     ];
-     <a href="null#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="string.html">fhir:value</a> "Active" ]
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/publication-status" ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> "active" ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "Active" ]
   ];
-  <a href="null#RegulatedAuthorization.statusDate">fhir:RegulatedAuthorization.statusDate</a> [ <a href="dateTime.html">fhir:value</a> "2015-02-07T13:28:17Z"^^xsd:dateTime];
-  <a href="null#RegulatedAuthorization.holder">fhir:RegulatedAuthorization.holder</a> [
-     <a href="null#Reference.reference">fhir:Reference.reference</a> [ <a href="string.html">fhir:value</a> "Organization/cfsb1640870284639" ]
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.statusDate">fhir:RegulatedAuthorization.statusDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> "2015-02-07T13:28:17Z"^^xsd:dateTime];
+  <a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.holder">fhir:RegulatedAuthorization.holder</a> [
+     <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> "Organization/cfsb1640870284639" ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -317,7 +317,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Mar 17, 2022 13:40+0000">2022-03-17</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Mar 21, 2022 12:30+0000">2022-03-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">
