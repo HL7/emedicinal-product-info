@@ -12,20 +12,31 @@ Title: "Referentials Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/rmswi"
 
 * ^url = https://spor.ema.europa.eu/rmswi
-* #100000072082
-* #220000000034
-* #220000000033
-* #100000155538
-* #220000000002 "Invented name part"
-* #220000000001 "Full name"
-* #100000073646 "Oral solution"
-* #200000002145 "Spoonful"
-* #100000073578 "Gingival use"
-* #100000072084 "Medicinal product subject to medical prescription"
+
 * #00000072072 "active"
+* #100000000012
+* #100000072062
+* #100000072082
+* #100000072084 "Medicinal product subject to medical prescription"
 * #100000073543 "Pre-filled pen"
-* #200000003204  "Glass type I"
+* #100000073578 "Gingival use"
+* #100000073633
+* #100000073646 "Oral solution"
+* #100000073864
+* #100000109093
 * #100000155527  "Chemical Medicinal Product"
+* #100000155538
+* #200000002135
+* #200000002145 "Spoonful"
+* #200000003204  "Glass type I"
+* #220000000001 "Full name"
+* #220000000002 "Invented name part"
+* #220000000003
+* #220000000004
+* #220000000005
+* #220000000033
+* #220000000034
+
 
 
 CodeSystem: CodeSystemUvEPIRomswi

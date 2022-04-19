@@ -31,6 +31,7 @@ Alias: $medicinal-product-name-part-type = http://hl7.org/fhir/medicinal-product
 Alias: $medicationknowledge-characteristic = 
 http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic
 
+
 Alias: $spor-prod = https://spor.ema.europa.eu/pmswi // invented to be updated
 Alias: $spor = https://spor.ema.europa.eu
 Alias: $spor-org = https://spor.ema.europa.eu/omswi
@@ -46,6 +47,8 @@ Alias: $VS-medicinal-product-type =
 	
 Alias: $VS-medicinal-product-domain =
 	http://hl7.org/fhir/ValueSet/medicinal-product-domain
+	
+	
 
 
 // =========== Extensions =======

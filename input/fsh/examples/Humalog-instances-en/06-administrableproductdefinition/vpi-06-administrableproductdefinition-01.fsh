@@ -5,15 +5,17 @@ Usage: #example
 
 * status = #active
 
-* administrableDoseForm = https://spor.ema.europa.eu/rmswi/#/#100000073864
+* identifier.system = $phpid
+* identifier.value = "0x073AF2E5B92AE19E8B67635AFFB3D6CA" 
+* administrableDoseForm = $spor-rms#100000073864
 * administrableDoseForm.text = "Suspension for injection"
 
-* unitOfPresentation = https://spor.ema.europa.eu/rmswi/#/#200000002135
+* unitOfPresentation = $spor-rms#200000002135
 * unitOfPresentation.text = "Pen"
 
-* routeOfAdministration.code = https://spor.ema.europa.eu/rmswi/#/#100000073633
+* routeOfAdministration.code = $spor-rms#100000073633
 * routeOfAdministration.code.text = "Subcutaneous use"
-* routeOfAdministration.targetSpecies.code = https://spor.ema.europa.eu/rmswi/#/#100000109093
+* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
 * routeOfAdministration.targetSpecies.code.text = "Human"
 
  // Reference to ManufacturedItemDefinition: Manufactured Item

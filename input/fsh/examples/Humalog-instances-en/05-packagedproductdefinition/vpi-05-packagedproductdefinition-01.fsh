@@ -9,7 +9,7 @@ Usage: #example
 
 * name = "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 
-* type = https://spor.ema.europa.eu/rmswi/#/#100000155527
+* type = $spor-rms#100000155527
 * type.text = "Chemical Medininal Prodcut"
 
 * status = http://hl7.org/fhir/publication-status#active "Active"

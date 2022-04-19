@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "ORG-100003996"
 * identifier.use = #official
 * active = true
-* type = https://spor.ema.europa.eu/rmswi/#/#220000000033
+* type = $spor-rms#220000000033
 * type.text = "manufacturer"
 * name = "Lilly S.A."
 * address.text = "Avenida de la Industria 30"

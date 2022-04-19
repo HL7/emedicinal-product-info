@@ -12,7 +12,7 @@ Usage: #example
 * manufacturedDoseForm = https://spor.ema.europa.eu/rmswi/#100000073864
 * manufacturedDoseForm.text = "Suspension for injection"
 
-* unitOfPresentation = https://spor.ema.europa.eu/rmswi/#/#200000002135
+* unitOfPresentation = $spor-rms#200000002135
 * unitOfPresentation.text = "Pen"
 
  // Reference to Organization: Manufacturer

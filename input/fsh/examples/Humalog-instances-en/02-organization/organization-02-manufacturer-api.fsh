@@ -9,7 +9,7 @@ Usage: #example
 
 * active = true
 
-* type = https://spor.ema.europa.eu/rmswi/#/#220000000033
+* type = $spor-rms#220000000033
 * type.text = "Manufacturer API"
 * name = "Eli Lilly and Company"
 * address.text = "Lilly Technology Center Building 333 and 324"
