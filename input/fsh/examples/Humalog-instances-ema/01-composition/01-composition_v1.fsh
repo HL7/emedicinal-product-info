@@ -6,12 +6,15 @@ Usage: #example
 * status = #final
 * type = https://spor.ema.europa.eu/#100000155538
 * type.text = "Package Leaflet"
+* subject = Reference(cfsb1529720709344)
 * date = "2015-02-07T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
 * author = Reference(cfsb9935015469452)
 * title = "TEST PURPOSES ONLY - Humalog Vulcan ePI v1"
 * confidentiality = #U
+* attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
+* attester.time =  "2015-02-07T13:28:17Z"
 * language = #en
 
 * section.title = "B. Package Leaflet"

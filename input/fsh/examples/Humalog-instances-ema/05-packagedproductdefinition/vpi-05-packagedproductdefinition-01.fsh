@@ -3,7 +3,7 @@ InstanceOf: PackagedProductDefinition
 Description: "5 pre-filled pens, 3 ml (3.5 mg/ml)"
 Usage: #example
 
-* identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
+* identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
 * identifier.use = #official
 
