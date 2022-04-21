@@ -24,6 +24,7 @@ Description: "MedicinalProductDefinition (ePI)"
 
 * legalStatusOfSupply
   * coding 1..
+  * ^example.label = "SPOR example"
   * ^example.valueCodeableConcept = $spor-rms#100000072084 "Medicinal product subject to medical prescription" 
 
 * additionalMonitoringIndicator ^short = "Additional monitoring this Medicinal Product is subject to (for regulatory reasons)" // ==> add voc binding 
@@ -34,17 +35,20 @@ Description: "MedicinalProductDefinition (ePI)"
 
 * name
 * name.productName
-  * ^short = "The full name of this product" 
+  * ^short = "The full name of this product"
+  * ^example.label = "general"  
   * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-//   * type  // = $spor-rms#220000000001 "Full name"
-* name.type ^example.valueCodeableConcept = $spor-rms#220000000001 "Full name"
+
+* name.type 
+  * ^example.label = "SPOR example"
+  * ^example.valueCodeableConcept = $spor-rms#220000000001 "Full name"
 	// * coding 1.. 
 * name.countryLanguage.country ^short = "Country for where this name applies (code)" // ==> add voc bidning = urn:iso:std:iso:3166#eu "European Union"
 * name.countryLanguage.language ^short = "Language for this name (code)" // = urn:ietf:bcp:47#en  "English"
 * name.namePart 0..
+  * part ^example.label = "general" 
   * part ^example.valueString = "Humalog"
+  * type ^example.label = "SPOR example" 
   * type ^example.valueCodeableConcept = $spor-rms#220000000002 "Invented name part"
-	/* ----
-    * type ^example[+].valueCodeableConcept =  $medicinal-product-name-part-type#InventedNamePart "Invented name part"
-	---- */
+
 * domain.coding 1..

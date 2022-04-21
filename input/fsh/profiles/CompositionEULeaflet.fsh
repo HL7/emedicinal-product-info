@@ -4,14 +4,15 @@ Id: Composition-eu-leaflet
 Title: "Composition (EU Leaflet)"
 
 
-Description: """Clinical document used to represent the Electronic Product Information (ePI) data set. 
-An Electronic Product Information (ePI) document is an authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."""
+Description: """This profile provides an example of how the Composition (ePI) profile can be specialized to represent a Product information Leaflet withi a specific jurisdiction"""
 * ^status = #active
 * ^purpose = "An Electronic Product Information (ePI) document is an authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."
 
 * type = $spor#100000155538
 * type ^short = "Kind of composition (\"Package Leaflet\")"
 * type ^definition = "Specifies that this composition refers to a Package Leaflet (ePI)"
+
+* subject only Reference(List) // to be checked
 
 * section 1.. 
 * section ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"

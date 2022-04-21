@@ -17,8 +17,9 @@ An Electronic Product Information (ePI) document is an authorised, statutory pro
 * category ^short  = "ePI document" // add a common code (use a LOINC X-code ?)
 * category = $loinc#X-EPI "electronic Product Information"
 
-* subject 1..
-* subject only Reference (RegulatedAuthorizationUvEpi)
+// * subject 1..
+// * subject only Reference (RegulatedAuthorizationUvEpi)
+* subject ^short = "What the composition is about"
 
 * date 1..
 * date ^short = "Date of last revision of the ePI"

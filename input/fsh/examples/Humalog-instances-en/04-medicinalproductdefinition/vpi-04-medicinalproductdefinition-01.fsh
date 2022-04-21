@@ -20,6 +20,8 @@ Usage: #example
 
 * name.productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 
+* classification = $atc#A10AD04 "insulin lispro"
+
 * name.type = $spor-rms#220000000001
 
 * name.type.text = "Full name"

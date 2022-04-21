@@ -37,7 +37,7 @@ Alias: $spor = https://spor.ema.europa.eu
 Alias: $spor-org = https://spor.ema.europa.eu/omswi
 Alias: $spor-sms = https://spor.ema.europa.eu/smswi
 Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
-Alias: $spor-man = http://spor.ema.europa.eu/v2/marketing-authorisation-numbers
+Alias: $spor-man = http://ema.europa.eu/fhir/marketingAuthorizationNumber
 
 //  VALUE SETS
 
