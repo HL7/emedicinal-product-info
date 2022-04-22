@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-04-22T15:46:20+00:00",
+  "date": "2022-04-22T16:02:12+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -826,6 +826,20 @@
         },
         "name": "cfsb3624842689213",
         "description": "Humalog 100 U/ml 5 pre-filled pen",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          }
+        ],
+        "reference": {
+          "reference": "List/cfsb3868575536701"
+        },
+        "name": "Vulcan Humalog FHIR Package Insert List",
+        "description": "List of Humalog package inserts for Connectathon testing",
         "exampleBoolean": true
       },
       {
