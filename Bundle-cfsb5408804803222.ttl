@@ -192,12 +192,12 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb9935015469452\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: ORG-100000426 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#220000000034)</span></p><p><b>name</b>: Eli Lilly Nederland B.V.</p><p><b>address</b>: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)</p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb9935015469452\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: ORG-100000426 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000034)</span></p><p><b>name</b>: Eli Lilly Nederland B.V.</p><p><b>address</b>: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)</p></div>"
        ];
        fhir:Organization.identifier [
          fhir:index 0;
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi" ];
          fhir:Identifier.value [ fhir:value "ORG-100000426" ]
        ];
        fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
@@ -205,7 +205,7 @@
          fhir:index 0;
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "220000000034" ];
            fhir:Coding.display [ fhir:value "Marketing authorisation holder" ]
          ];
@@ -244,7 +244,7 @@
        fhir:Organization.identifier [
          fhir:index 0;
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/#/" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi" ];
          fhir:Identifier.value [ fhir:value "ORG-100000156" ]
        ];
        fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
@@ -290,7 +290,7 @@
        fhir:Organization.identifier [
          fhir:index 0;
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi" ];
          fhir:Identifier.value [ fhir:value "ORG-100003996" ]
        ];
        fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
@@ -473,7 +473,7 @@
        fhir:Resource.id [ fhir:value "cfsb2466848736985" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb2466848736985\" </p></div><p><b>identifier</b>: id: EU/1/96/007/035 (OFFICIAL)</p><p><b>name</b>: Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_cfsb7543491765740\">See above (MedicinalProductDefinition/cfsb7543491765740)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 3 ml</p><p><b>manufacturer</b>: </p><ul><li><a href=\"#Organization_cfsb8820228934589\">See above (Organization/cfsb8820228934589)</a></li><li><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></li></ul><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>Pre-filled pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (##100000073543)</span></td><td>5</td><td>Glass type 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (##200000003204)</span></td></tr></table></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb2466848736985\" </p></div><p><b>identifier</b>: id: EU/1/96/007/035 (OFFICIAL)</p><p><b>name</b>: Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen</p><p><b>type</b>: Chemical Medicinal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_cfsb7543491765740\">See above (MedicinalProductDefinition/cfsb7543491765740)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 3 ml</p><p><b>manufacturer</b>: </p><ul><li><a href=\"#Organization_cfsb8820228934589\">See above (Organization/cfsb8820228934589)</a></li><li><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></li></ul><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: 123456</td><td>Pre-filled pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000073543)</span></td><td>5</td><td>Glass type 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003204)</span></td></tr></table></div>"
        ];
        fhir:PackagedProductDefinition.identifier [
          fhir:index 0;
@@ -488,7 +488,7 @@
            fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000155527" ]
          ];
-         fhir:CodeableConcept.text [ fhir:value "Chemical Medininal Prodcut" ]
+         fhir:CodeableConcept.text [ fhir:value "Chemical Medicinal Prodcut" ]
        ];
        fhir:PackagedProductDefinition.packageFor [
          fhir:index 0;
@@ -519,23 +519,28 @@
          fhir:Reference.reference [ fhir:value "Organization/cfsb1950833461423" ]
        ];
        fhir:PackagedProductDefinition.package [
+         fhir:PackagedProductDefinition.package.identifier [
+           fhir:index 0;
+           fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
+           fhir:Identifier.value [ fhir:value "123456" ]
+         ];
          fhir:PackagedProductDefinition.package.type [
            fhir:CodeableConcept.coding [
              fhir:index 0;
-             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-             fhir:Coding.code [ fhir:value "#100000073543" ]
-           ];
-           fhir:CodeableConcept.text [ fhir:value "Pre-filled pen" ]
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+             fhir:Coding.code [ fhir:value "100000073543" ];
+             fhir:Coding.display [ fhir:value "Pre-filled pen" ]
+           ]
          ];
          fhir:PackagedProductDefinition.package.quantity [ fhir:value "5"^^xsd:integer ];
          fhir:PackagedProductDefinition.package.material [
            fhir:index 0;
            fhir:CodeableConcept.coding [
              fhir:index 0;
-             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-             fhir:Coding.code [ fhir:value "#200000003204" ]
-           ];
-           fhir:CodeableConcept.text [ fhir:value "Glass type 1" ]
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+             fhir:Coding.code [ fhir:value "200000003204" ];
+             fhir:Coding.display [ fhir:value "Glass type 1" ]
+           ]
          ]
        ]
      ]
@@ -648,18 +653,18 @@
        fhir:Resource.id [ fhir:value "cfsb6320144064544" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb6320144064544\" </p></div><p><b>identifier</b>: id: GFX7QIS1II (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#00000072072)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>100 units/ml</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb6320144064544\" </p></div><p><b>identifier</b>: id: GFX7QIS1II (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#00000072072)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>100 units/ml</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "GFX7QIS1II" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "00000072072" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "active" ]
@@ -676,7 +681,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "GFX7QIS1II" ];
                fhir:Coding.display [ fhir:value "Insulin lispro" ]
              ]
@@ -706,18 +711,18 @@
        fhir:Resource.id [ fhir:value "cfsb8743912652556" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8743912652556\" </p></div><p><b>identifier</b>: id: PDC6A3C0OX (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8743912652556\" </p></div><p><b>identifier</b>: id: PDC6A3C0OX (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "PDC6A3C0OX" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000072082" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Excipient" ]
@@ -734,7 +739,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "PDC6A3C0OX" ];
                fhir:Coding.display [ fhir:value "Glycerin" ]
              ]
@@ -749,18 +754,18 @@
        fhir:Resource.id [ fhir:value "cfsb8374942483045" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8374942483045\" </p></div><p><b>identifier</b>: id: QTT17582CB (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb8374942483045\" </p></div><p><b>identifier</b>: id: QTT17582CB (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "QTT17582CB" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000072082" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Excipient" ]
@@ -777,7 +782,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "QTT17582CB" ];
                fhir:Coding.display [ fhir:value "Hydrochloric acid" ]
              ]
@@ -792,18 +797,18 @@
        fhir:Resource.id [ fhir:value "cfsb0965848064378" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb0965848064378\" </p></div><p><b>identifier</b>: id: 55X04QC32I (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb0965848064378\" </p></div><p><b>identifier</b>: id: 55X04QC32I (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "55X04QC32I" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000072082" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Excipient" ]
@@ -820,7 +825,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "55X04QC32I" ];
                fhir:Coding.display [ fhir:value "Sodium Hydroxide" ]
              ]
@@ -835,18 +840,18 @@
        fhir:Resource.id [ fhir:value "cfsb5825971594998" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb5825971594998\" </p></div><p><b>identifier</b>: id: 059QF0KO0R (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb5825971594998\" </p></div><p><b>identifier</b>: id: 059QF0KO0R (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "059QF0KO0R" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000072082" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Excipient" ]
@@ -863,7 +868,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "059QF0KO0R" ];
                fhir:Coding.display [ fhir:value "Water for Injection" ]
              ]
@@ -878,18 +883,18 @@
        fhir:Resource.id [ fhir:value "cfsb0943822318036" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb0943822318036\" </p></div><p><b>identifier</b>: id: SOI2LOH54Z (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb0943822318036\" </p></div><p><b>identifier</b>: id: SOI2LOH54Z (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "SOI2LOH54Z" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000072082" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Excipient" ]
@@ -906,7 +911,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "SOI2LOH54Z" ];
                fhir:Coding.display [ fhir:value "Zinc Oxide" ]
              ]
@@ -921,18 +926,18 @@
        fhir:Resource.id [ fhir:value "cfsb2603878086630" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb2603878086630\" </p></div><p><b>identifier</b>: id: GGO4Y809LO (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb2603878086630\" </p></div><p><b>identifier</b>: id: GGO4Y809LO (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "GGO4Y809LO" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000072082" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Excipient" ]
@@ -949,7 +954,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "GGO4Y809LO" ];
                fhir:Coding.display [ fhir:value "Metacresol" ]
              ]
@@ -964,18 +969,18 @@
        fhir:Resource.id [ fhir:value "cfsb6349319941521" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb6349319941521\" </p></div><p><b>identifier</b>: id: 023C2WHX2V (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb6349319941521\" </p></div><p><b>identifier</b>: id: 023C2WHX2V (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1950833461423\">See above (Organization/cfsb1950833461423)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
          fhir:Identifier.value [ fhir:value "023C2WHX2V" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.role [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
            fhir:Coding.code [ fhir:value "100000072082" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Excipient" ]
@@ -992,7 +997,7 @@
            fhir:CodeableReference.concept [
              fhir:CodeableConcept.coding [
                fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta" ];
                fhir:Coding.code [ fhir:value "023C2WHX2V" ];
                fhir:Coding.display [ fhir:value "Tromethamine" ]
              ]

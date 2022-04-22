@@ -1,15 +1,15 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 203, warn = 19, info = 209
+err = 203, warn = 25, info = 176
 IG Publisher Version: 1.1.115
-Generated Thu Apr 21 09:32:30 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+Generated Fri Apr 22 15:47:22 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 9 / 0 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1640606978608 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb3624842689213 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-cfsb1641827801260 : 52 / 11 / 55
- /github/workspace/fsh-generated/resources/Bundle-cfsb2705555581978 : 53 / 10 / 55
- /github/workspace/fsh-generated/resources/Bundle-cfsb5408804803222 : 53 / 10 / 55
+ /github/workspace/fsh-generated/resources/Bundle-cfsb2705555581978 : 53 / 12 / 44
+ /github/workspace/fsh-generated/resources/Bundle-cfsb5408804803222 : 53 / 12 / 44
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRomswi : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRpmswi : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRrmswi : 0 / 0 / 2
@@ -21,8 +21,8 @@ Generated Thu Apr 21 09:32:30 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Composition-cfsb3957159408517 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb7223870858596 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Ingredient-cfsb0943822318036 : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Ingredient-cfsb0965848064378 : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb0943822318036 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb0965848064378 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1640607635665 : 2 / 0 / 4
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1640780048702 : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1640780419325 : 0 / 0 / 3
@@ -31,12 +31,12 @@ Generated Thu Apr 21 09:32:30 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1640780743829 : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1640780784213 : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Ingredient-cfsb1640780830373 : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Ingredient-cfsb2603878086630 : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Ingredient-cfsb5825971594998 : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Ingredient-cfsb6320144064544 : 2 / 0 / 4
- /github/workspace/fsh-generated/resources/Ingredient-cfsb6349319941521 : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Ingredient-cfsb8374942483045 : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Ingredient-cfsb8743912652556 : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb2603878086630 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb5825971594998 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb6320144064544 : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb6349319941521 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb8374942483045 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Ingredient-cfsb8743912652556 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ManufacturedItemDefinition-cfsb1210909903210 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ManufacturedItemDefinition-cfsb1640777487408 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicinalProductDefinition-cfsb1641212233583 : 2 / 0 / 1
@@ -46,9 +46,9 @@ Generated Thu Apr 21 09:32:30 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Organization-cfsb1641381635293 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-cfsb1950833461423 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-cfsb8820228934589 : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Organization-cfsb9935015469452 : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Organization-cfsb9935015469452 : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/PackagedProductDefinition-cfsb1640781499340 : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/PackagedProductDefinition-cfsb2466848736985 : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/PackagedProductDefinition-cfsb2466848736985 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb1529720709344 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb1640870220343 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AdministrableProductDefinition-uv-epi : 0 / 1 / 1
@@ -189,7 +189,7 @@ INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[0].resource.ofType(Compositi
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[0].resource.ofType(Composition).section[5].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[0].resource.ofType(Composition).section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+WARNING: Bundle/cfsb2705555581978: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Display Name for https://spor.ema.europa.eu/rmswi#220000000034 should be one of '' instead of 'Marketing authorisation holder' for 'https://spor.ema.europa.eu/rmswi#220000000034'
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[2].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
@@ -203,49 +203,40 @@ ERROR: Bundle/cfsb2705555581978: Bundle.entry[6]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[6].resource.ofType(PackagedProductDefinition).packageFor[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[6].resource.ofType(PackagedProductDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[6].resource.ofType(PackagedProductDefinition).manufacturer[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+WARNING: Bundle/cfsb2705555581978: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Display Name for https://spor.ema.europa.eu/rmswi#200000003204 should be one of 'Glass type I' instead of 'Glass type 1' for 'https://spor.ema.europa.eu/rmswi#200000003204'
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[7]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).formOf[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).producedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[8].resource.ofType(ManufacturedItemDefinition).manufacturedDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[8]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[8].resource.ofType(ManufacturedItemDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[9].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[9]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[9].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[9].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[9].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[9].resource.ofType(Ingredient).substance.strength[0].basis.coding[0]: The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity')
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[9].resource.ofType(Ingredient).substance.strength[0].basis.coding[0]: Invalid System URI: http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity - cannot use a value set URI as a system
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[9].resource.ofType(Ingredient).substance.strength[0].basis.coding[0]: Code System URI 'http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[10].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[10]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[10].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[10].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[11].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[10].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[11]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[11].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[11].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[12].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[11].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[12]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[12].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[12].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[13].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[12].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[13]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[13].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[13].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[14].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[13].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[14]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[14].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[15].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[15]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[15].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[15].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[16].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[15].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[16]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[16].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 WARNING: Bundle/cfsb2705555581978: Bundle.entry[18]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -278,7 +269,7 @@ INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[0].resource.ofType(Compositi
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[0].resource.ofType(Composition).section[5].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[0].resource.ofType(Composition).section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+WARNING: Bundle/cfsb5408804803222: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Display Name for https://spor.ema.europa.eu/rmswi#220000000034 should be one of '' instead of 'Marketing authorisation holder' for 'https://spor.ema.europa.eu/rmswi#220000000034'
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[2].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
@@ -292,49 +283,40 @@ ERROR: Bundle/cfsb5408804803222: Bundle.entry[6]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[6].resource.ofType(PackagedProductDefinition).packageFor[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[6].resource.ofType(PackagedProductDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[6].resource.ofType(PackagedProductDefinition).manufacturer[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+WARNING: Bundle/cfsb5408804803222: Bundle.entry[6].resource.ofType(PackagedProductDefinition).package.material[0].coding[0]: Display Name for https://spor.ema.europa.eu/rmswi#200000003204 should be one of 'Glass type I' instead of 'Glass type 1' for 'https://spor.ema.europa.eu/rmswi#200000003204'
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[7]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).formOf[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[7].resource.ofType(AdministrableProductDefinition).producedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[8].resource.ofType(ManufacturedItemDefinition).manufacturedDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[8]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[8].resource.ofType(ManufacturedItemDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[9].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[9]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[9].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[9].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[9].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[9].resource.ofType(Ingredient).substance.strength[0].basis.coding[0]: The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity')
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[9].resource.ofType(Ingredient).substance.strength[0].basis.coding[0]: Invalid System URI: http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity - cannot use a value set URI as a system
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[9].resource.ofType(Ingredient).substance.strength[0].basis.coding[0]: Code System URI 'http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[10].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[10]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[10].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[10].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[11].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[10].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[11]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[11].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[11].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[12].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[11].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[12]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[12].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[12].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[13].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[12].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[13]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[13].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[13].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[14].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[13].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[14]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[14].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[15].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[15]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[15].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[15].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[16].resource.ofType(Ingredient).role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[15].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[16]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[16].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 WARNING: Bundle/cfsb5408804803222: Bundle.entry[18]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -404,11 +386,9 @@ INFORMATION: Composition/cfsb7223870858596: Composition.section[6].code.coding[0
 INFORMATION: Composition/cfsb7223870858596: Composition.section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh.json ==
 == fsh-generated/resources/Ingredient-cfsb0943822318036.json ==
-INFORMATION: Ingredient/cfsb0943822318036: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb0943822318036: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb0943822318036: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb0965848064378.json ==
-INFORMATION: Ingredient/cfsb0965848064378: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb0965848064378: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb0965848064378: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb1640607635665.json ==
 INFORMATION: Ingredient/cfsb1640607635665: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Ingredient/cfsb1640607635665: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
@@ -437,26 +417,20 @@ INFORMATION: Ingredient/cfsb1640780784213: Ingredient.substance.code.concept.cod
 INFORMATION: Ingredient/cfsb1640780830373: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Ingredient/cfsb1640780830373: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb2603878086630.json ==
-INFORMATION: Ingredient/cfsb2603878086630: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb2603878086630: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb2603878086630: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb5825971594998.json ==
-INFORMATION: Ingredient/cfsb5825971594998: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb5825971594998: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb5825971594998: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb6320144064544.json ==
-INFORMATION: Ingredient/cfsb6320144064544: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb6320144064544: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb6320144064544: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 ERROR: Ingredient/cfsb6320144064544: Ingredient.substance.strength[0].basis.coding[0]: The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity')
 ERROR: Ingredient/cfsb6320144064544: Ingredient.substance.strength[0].basis.coding[0]: Invalid System URI: http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity - cannot use a value set URI as a system
 INFORMATION: Ingredient/cfsb6320144064544: Ingredient.substance.strength[0].basis.coding[0]: Code System URI 'http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb6349319941521.json ==
-INFORMATION: Ingredient/cfsb6349319941521: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb6349319941521: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb6349319941521: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb8374942483045.json ==
-INFORMATION: Ingredient/cfsb8374942483045: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb8374942483045: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb8374942483045: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 == fsh-generated/resources/Ingredient-cfsb8743912652556.json ==
-INFORMATION: Ingredient/cfsb8743912652556: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: Ingredient/cfsb8743912652556: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
+INFORMATION: Ingredient/cfsb8743912652556: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 == fsh-generated/resources/ManufacturedItemDefinition-cfsb1210909903210.json ==
 INFORMATION: ManufacturedItemDefinition/cfsb1210909903210: ManufacturedItemDefinition.manufacturedDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 == fsh-generated/resources/ManufacturedItemDefinition-cfsb1640777487408.json ==
@@ -479,14 +453,13 @@ INFORMATION: Organization/cfsb1950833461423: Organization.type[0].coding[0]: Thi
 == fsh-generated/resources/Organization-cfsb8820228934589.json ==
 INFORMATION: Organization/cfsb8820228934589: Organization.type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 == fsh-generated/resources/Organization-cfsb9935015469452.json ==
-INFORMATION: Organization/cfsb9935015469452: Organization.type[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+WARNING: Organization/cfsb9935015469452: Organization.type[0].coding[0]: Display Name for https://spor.ema.europa.eu/rmswi#220000000034 should be one of '' instead of 'Marketing authorisation holder' for 'https://spor.ema.europa.eu/rmswi#220000000034'
 INFORMATION: Organization/cfsb9935015469452: Organization.type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 == fsh-generated/resources/PackagedProductDefinition-cfsb1640781499340.json ==
 INFORMATION: PackagedProductDefinition/cfsb1640781499340: PackagedProductDefinition.package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: PackagedProductDefinition/cfsb1640781499340: PackagedProductDefinition.package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 == fsh-generated/resources/PackagedProductDefinition-cfsb2466848736985.json ==
-INFORMATION: PackagedProductDefinition/cfsb2466848736985: PackagedProductDefinition.package.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
-INFORMATION: PackagedProductDefinition/cfsb2466848736985: PackagedProductDefinition.package.material[0].coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
+WARNING: PackagedProductDefinition/cfsb2466848736985: PackagedProductDefinition.package.material[0].coding[0]: Display Name for https://spor.ema.europa.eu/rmswi#200000003204 should be one of 'Glass type I' instead of 'Glass type 1' for 'https://spor.ema.europa.eu/rmswi#200000003204'
 == fsh-generated/resources/RegulatedAuthorization-cfsb1529720709344.json ==
 ERROR: RegulatedAuthorization/cfsb1529720709344: RegulatedAuthorization.region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
 == fsh-generated/resources/RegulatedAuthorization-cfsb1640870220343.json ==

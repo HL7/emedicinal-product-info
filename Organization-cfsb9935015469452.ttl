@@ -17,12 +17,12 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb9935015469452\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: ORG-100000426 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#220000000034)</span></p><p><b>name</b>: Eli Lilly Nederland B.V.</p><p><b>address</b>: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb9935015469452\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: ORG-100000426 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000034)</span></p><p><b>name</b>: Eli Lilly Nederland B.V.</p><p><b>address</b>: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
      fhir:Identifier.use [ fhir:value "official" ];
-     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi/" ];
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi" ];
      fhir:Identifier.value [ fhir:value "ORG-100000426" ]
   ];
   fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
@@ -30,7 +30,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
        fhir:Coding.code [ fhir:value "220000000034" ];
        fhir:Coding.display [ fhir:value "Marketing authorisation holder" ]
      ];

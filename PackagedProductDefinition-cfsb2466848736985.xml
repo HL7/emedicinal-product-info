@@ -3,7 +3,7 @@
 <PackagedProductDefinition xmlns="http://hl7.org/fhir">
   <id value="cfsb2466848736985"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb2466848736985" </p></div><p><b>identifier</b>: id: EU/1/96/007/035 (OFFICIAL)</p><p><b>name</b>: Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen</p><p><b>type</b>: Chemical Medininal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href="MedicinalProductDefinition-cfsb7543491765740.html">MedicinalProductDefinition/cfsb7543491765740</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 3 ml</p><p><b>manufacturer</b>: </p><ul><li><a href="Organization-cfsb8820228934589.html">Organization/cfsb8820228934589</a> "Lilly S.A."</li><li><a href="Organization-cfsb1950833461423.html">Organization/cfsb1950833461423</a> "Eli Lilly and Company"</li></ul><h3>Packages</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>Pre-filled pen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (##100000073543)</span></td><td>5</td><td>Glass type 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (##200000003204)</span></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cfsb2466848736985" </p></div><p><b>identifier</b>: id: EU/1/96/007/035 (OFFICIAL)</p><p><b>name</b>: Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen</p><p><b>type</b>: Chemical Medicinal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href="MedicinalProductDefinition-cfsb7543491765740.html">MedicinalProductDefinition/cfsb7543491765740</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 3 ml</p><p><b>manufacturer</b>: </p><ul><li><a href="Organization-cfsb8820228934589.html">Organization/cfsb8820228934589</a> "Lilly S.A."</li><li><a href="Organization-cfsb1950833461423.html">Organization/cfsb1950833461423</a> "Eli Lilly and Company"</li></ul><h3>Packages</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: 123456</td><td>Pre-filled pen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000073543)</span></td><td>5</td><td>Glass type 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#200000003204)</span></td></tr></table></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -16,7 +16,7 @@
       <system value="https://spor.ema.europa.eu/rmswi"/>
       <code value="100000155527"/>
     </coding>
-    <text value="Chemical Medininal Prodcut"/>
+    <text value="Chemical Medicinal Prodcut"/>
   </type>
   <packageFor>
     <reference value="MedicinalProductDefinition/cfsb7543491765740"/>
@@ -40,20 +40,24 @@
     <reference value="Organization/cfsb1950833461423"/>
   </manufacturer>
   <package>
+    <identifier>
+      <system value="https://spor.ema.europa.eu/pmswi"/>
+      <value value="123456"/>
+    </identifier>
     <type>
       <coding>
-        <system value="https://spor.ema.europa.eu/rmswi/"/>
-        <code value="#100000073543"/>
+        <system value="https://spor.ema.europa.eu/rmswi"/>
+        <code value="100000073543"/>
+        <display value="Pre-filled pen"/>
       </coding>
-      <text value="Pre-filled pen"/>
     </type>
     <quantity value="5"/>
     <material>
       <coding>
-        <system value="https://spor.ema.europa.eu/rmswi/"/>
-        <code value="#200000003204"/>
+        <system value="https://spor.ema.europa.eu/rmswi"/>
+        <code value="200000003204"/>
+        <display value="Glass type 1"/>
       </coding>
-      <text value="Glass type 1"/>
     </material>
   </package>
 </PackagedProductDefinition>
