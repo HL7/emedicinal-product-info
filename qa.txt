@@ -1,9 +1,9 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 203, warn = 25, info = 176
+err = 205, warn = 26, info = 176
 IG Publisher Version: 1.1.115
-Generated Fri Apr 22 16:03:16 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+Generated Sat Apr 23 06:30:47 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 9 / 0 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1640606978608 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb3624842689213 : 0 / 0 / 1
@@ -62,6 +62,7 @@ Generated Fri Apr 22 16:03:16 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/StructureDefinition-Composition-eu-leaflet : 1 / 1 / 18
  /github/workspace/fsh-generated/resources/StructureDefinition-Composition-uv-epi : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-Ingredient-uv-epi : 7 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-List-uv-epi : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProductDefinition-uv-epi : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Organization-uv-epi : 2 / 0 / 1
@@ -517,6 +518,10 @@ INFORMATION: StructureDefinition/Ingredient-uv-epi: StructureDefinition.differen
 ERROR: StructureDefinition/Ingredient-uv-epi: StructureDefinition: Duplicate Element id Ingredient.substance.strength.presentation[x]
 WARNING: StructureDefinition/Ingredient-uv-epi: StructureDefinition.snapshot.element[20].binding: The valueSet reference http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role|5.0.0-snapshot1 on element Ingredient.manufacturer.role could not be resolved
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-List-uv-epi.json ==
+ERROR: StructureDefinition/List-uv-epi: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0]: The code "X-EPI" is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'
+ERROR: StructureDefinition/List-uv-epi: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]: The code "X-EPI" is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/List-uv-epi'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-MedicinalProductDefinition-uv-epi.json ==

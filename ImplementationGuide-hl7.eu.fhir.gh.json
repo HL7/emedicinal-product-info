@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-04-22T16:02:12+00:00",
+  "date": "2022-04-23T06:29:29+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -168,6 +168,20 @@
         },
         "name": "Ingredient (ePI)",
         "description": "Ingredient (ePI)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/List-uv-epi"
+        },
+        "name": "List - ePI",
+        "description": "This profile represents the constraints applied to the List resource by the Electronic Product Information (ePI) FHIR Implementation Guide.",
         "exampleBoolean": false
       },
       {

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 8, errors = 203, warn = 25, info = 176 -->
+<!-- broken links = 8, errors = 205, warn = 26, info = 176 -->
 <head>
   <title>GhImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for GhImplementationGuide</h1>
- <p>Generated Fri Apr 22 16:03:15 UTC 2022, FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = <a href="http://hl7.eu/fhir/ig/gravitate-health">http://hl7.eu/fhir/ig/gravitate-health</a> (<a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Sat Apr 23 06:30:46 UTC 2022, FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = <a href="http://hl7.eu/fhir/ig/gravitate-health">http://hl7.eu/fhir/ig/gravitate-health</a> (<a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.115</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.eu.fhir.gh, Canonical = http://hl7.eu/fhir/ig/gravitate-health</td></tr>
@@ -50,8 +50,8 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><a href="qa-hta.html"><span style="background-color: #ffcccc">1 issue</span></a></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.eu/fhir/ig/gravitate-health (Problem #1 with package-list.json at http://hl7.eu/fhir/ig/gravitate-health: Invalid HTTP response 404 from http://hl7.eu/fhir/ig/gravitate-health/package-list.json?nocache=1650643331531 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> broken links = 8, errors = 203, warn = 25, info = 176</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.eu/fhir/ig/gravitate-health (Problem #1 with package-list.json at http://hl7.eu/fhir/ig/gravitate-health: Invalid HTTP response 404 from http://hl7.eu/fhir/ig/gravitate-health/package-list.json?nocache=1650695368622 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 8, errors = 205, warn = 26, info = 176</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -122,6 +122,9 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Ingredient-uv-epi"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Ingredient-uv-epi</b></a></td><td><b>7</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-List-uv-epi"><b>/github/workspace/fsh-generated/resources/StructureDefinition-List-uv-epi</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ManufacturedItemDefinition-uv-epi"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -239,16 +242,16 @@
      <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).subject[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).region[0].coding[0] (l324/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).region[0].coding[0] (l324/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).holder</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0] (l409/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0] (l409/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].jurisdiction.coding[0] (l418/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].jurisdiction.coding[0] (l418/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[6] (l465/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
@@ -513,16 +516,16 @@
      <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).subject[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).region[0].coding[0] (l340/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).region[0].coding[0] (l340/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).holder</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0] (l425/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0] (l425/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].jurisdiction.coding[0] (l434/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].jurisdiction.coding[0] (l434/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[6] (l470/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
@@ -760,16 +763,16 @@
      <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).subject[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).region[0].coding[0] (l340/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).region[0].coding[0] (l340/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[4].resource.ofType(RegulatedAuthorization).holder</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0] (l425/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0] (l425/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].jurisdiction.coding[0] (l434/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[5].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].jurisdiction.coding[0] (l434/c22)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[6] (l470/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
@@ -997,10 +1000,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].country.coding[0] (l62/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].country.coding[0] (l62/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].jurisdiction.coding[0] (l71/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].jurisdiction.coding[0] (l71/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1013,10 +1016,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].country.coding[0] (l62/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].country.coding[0] (l62/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].jurisdiction.coding[0] (l71/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>MedicinalProductDefinition.name[0].countryLanguage[0].jurisdiction.coding[0] (l71/c16)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1058,7 +1061,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>RegulatedAuthorization.region[0].coding[0] (l28/c10)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>RegulatedAuthorization.region[0].coding[0] (l28/c10)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1071,7 +1074,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>RegulatedAuthorization.region[0].coding[0] (l28/c10)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>RegulatedAuthorization.region[0].coding[0] (l28/c10)</b></td><td><b>error</b></td><td><b>The code &quot;eu&quot; is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1178,7 +1181,7 @@
      <td><b>StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+     <td><b>StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://spor.ema.europa.eu' is unknown so the code cannot be validated</b></td>
@@ -1242,10 +1245,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+     <td><b>StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+     <td><b>StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) </b></td>
@@ -1298,9 +1301,28 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ManufacturedItemDefinition-uv-epi"> </a>
-<h2><a href="StructureDefinition-ManufacturedItemDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-List-uv-epi"> </a>
+<h2><a href="StructureDefinition-List-uv-epi.html">fsh-generated/resources/StructureDefinition-List-uv-epi.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/List-uv-epi')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ManufacturedItemDefinition-uv-epi"> </a>
+<h2><a href="StructureDefinition-ManufacturedItemDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-ManufacturedItemDefinition-uv-epi.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1312,8 +1334,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-MedicinalProductDefinition-uv-epi"> </a>
-<h2><a href="StructureDefinition-MedicinalProductDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-MedicinalProductDefinition-uv-epi.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-MedicinalProductDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-MedicinalProductDefinition-uv-epi.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1325,8 +1347,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-Organization-uv-epi"> </a>
-<h2><a href="StructureDefinition-Organization-uv-epi.html">fsh-generated/resources/StructureDefinition-Organization-uv-epi.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-Organization-uv-epi.html">fsh-generated/resources/StructureDefinition-Organization-uv-epi.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1341,8 +1363,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-PackagedProductDefinition-uv-epi"> </a>
-<h2><a href="StructureDefinition-PackagedProductDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-PackagedProductDefinition-uv-epi.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-PackagedProductDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-PackagedProductDefinition-uv-epi.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1408,8 +1430,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-RegulatedAuthorization-uv-epi"> </a>
-<h2><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">fsh-generated/resources/StructureDefinition-RegulatedAuthorization-uv-epi.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1433,8 +1455,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-SubstanceDefinition-uv-epi"> </a>
-<h2><a href="StructureDefinition-SubstanceDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-SubstanceDefinition-uv-epi.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-SubstanceDefinition-uv-epi.html">fsh-generated/resources/StructureDefinition-SubstanceDefinition-uv-epi.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2011,6 +2033,12 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-Composition-uv-epi.html">fsh-generated/resources/StructureDefinition-Composition-uv-epi.json</a></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-List-uv-epi.html">fsh-generated/resources/StructureDefinition-List-uv-epi.json</a></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-List-uv-epi.html">fsh-generated/resources/StructureDefinition-List-uv-epi.json</a></td><td><b>The code &quot;X-EPI&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-EPI) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#X-EPI'</b></td>
    </tr>
 </table>
 <hr/>
