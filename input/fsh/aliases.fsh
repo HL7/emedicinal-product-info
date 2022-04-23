@@ -14,6 +14,7 @@ Alias: $atc = http://www.whocc.no/atc
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $list-order  = http://terminology.hl7.org/CodeSystem/list-order 
 
 Alias: $edqm = http://standardterms.edqm.eu
 Alias: $unii = http://fdasis.nlm.nih.gov
@@ -41,6 +42,7 @@ Alias: $spor-man = http://ema.europa.eu/fhir/marketingAuthorizationNumber
 
 //  VALUE SETS
 
+Alias: $VS-composition-status =	http://hl7.org/fhir/ValueSet/composition-status
 Alias: $VS-publication-status = http://hl7.org/fhir/ValueSet/publication-status
 
 Alias: $VS-medicinal-product-type =

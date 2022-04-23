@@ -29,12 +29,12 @@ Description: "This profile represents the constraints applied to the Bundle reso
   * resource 1..
 * entry contains
     composition 1..1 and
-	organization 1.. and
-	authorization 1.. and
-	medicinalProduct 1.. and
-	administrableProduct 1.. and
-	manItem 1.. and
-	ingredient 1.. and
+	organization 0.. and
+	authorization 0.. and
+	medicinalProduct 0.. and
+	administrableProduct 0.. and
+	manItem 0.. and
+	ingredient 0.. and
 	packagedProduct 0.. and
 	clinicalUse 0.. and
 	substanceDefinition 0.. and

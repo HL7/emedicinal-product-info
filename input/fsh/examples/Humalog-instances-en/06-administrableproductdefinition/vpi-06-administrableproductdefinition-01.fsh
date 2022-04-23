@@ -6,7 +6,8 @@ Usage: #example
 * status = #active
 
 * identifier.system = $phpid
-* identifier.value = "0x073AF2E5B92AE19E8B67635AFFB3D6CA" 
+* identifier.value = "0x073AF2E5B92AE19E8B67635AFFB3D6CA"
+
 * administrableDoseForm = $spor-rms#100000073864
 * administrableDoseForm.text = "Suspension for injection"
 
