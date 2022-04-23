@@ -3,7 +3,7 @@ InstanceOf: OrganizationUvEpi
 Description: "Manufaturer API"
 Usage: #example
 
-* identifier.system = "https://spor.ema.europa.eu/omswi/#/"
+* identifier.system = $spor-org
 * identifier.value = "ORG-100000156"
 * identifier.use = #official
 

@@ -3,13 +3,13 @@ InstanceOf: OrganizationUvEpi
 Description: "Marketing Authorization Holder"
 Usage: #example
 
-* identifier.system = "https://spor.ema.europa.eu/omswi/"
+* identifier.system = $spor-org
 * identifier.value = "ORG-100000426"
 * identifier.use = #official
 
 * active = true
 
-* type = https://spor.ema.europa.eu/rmswi/#220000000034 "Marketing authorisation holder"
+* type = $spor-rms#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
 * name = "Eli Lilly Nederland B.V."
 

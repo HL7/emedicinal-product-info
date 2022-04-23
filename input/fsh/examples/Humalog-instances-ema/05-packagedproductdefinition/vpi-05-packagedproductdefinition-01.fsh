@@ -10,7 +10,7 @@ Usage: #example
 * name = "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 
 * type = $spor-rms#100000155527
-* type.text = "Chemical Medininal Prodcut"
+* type.text = "Chemical Medicinal Prodcut"
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
 * statusDate = "2015-02-07T13:28:17Z"
@@ -18,15 +18,11 @@ Usage: #example
 * containedItemQuantity.value = 3
 * containedItemQuantity.unit = "ml"
 
-* package.type = https://spor.ema.europa.eu/rmswi/##100000073543
-
-* package.type.text = "Pre-filled pen"
-
+* package.identifier.system = $spor-prod
+* package.identifier.value = "123456"
+* package.type = $spor-rms#100000073543 "Pre-filled pen"
 * package.quantity = 5
-
-* package.material = https://spor.ema.europa.eu/rmswi/##200000003204
-
-* package.material.text = "Glass type 1"
+* package.material = $spor-rms#200000003204 "Glass type 1"
 
 //reference to MedicinalProductDefinition: EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill
 * packageFor = Reference(cfsb7543491765740)

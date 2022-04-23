@@ -3,16 +3,16 @@ InstanceOf: Ingredient
 Description: "Insulin Lispro"
 Usage: #example
 
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.system = $ginas
 * identifier.value = "GFX7QIS1II"
 * identifier.use = #official
 
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#00000072072
+* role = $spor-rms#00000072072
 * role.text = "active"
 
-* substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#GFX7QIS1II "Insulin lispro"
+* substance.code.concept.coding = $ginas#GFX7QIS1II "Insulin lispro"
 * substance.strength.presentationQuantity.value = 100
 * substance.strength.presentationQuantity.unit = "units/ml"
 
