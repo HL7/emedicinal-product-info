@@ -1,0 +1,53 @@
+{
+  "resourceType": "Organization",
+  "id": "7f257409-3b65-401d-a246-7ae51e298fbb",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"7f257409-3b65-401d-a246-7ae51e298fbb\" </p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://pmda-org-id",
+      "value": "672212"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://PMDA-org-type.jp/",
+          "code": "tbd",
+          "display": "Marketing authorisation holder"
+        }
+      ],
+      "text": "Manufacturer"
+    }
+  ],
+  "name": "Pfizer, Inc.",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0120-664-467",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "03-3379-3053",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "physical",
+      "text": "3-22-7 Yoyogi, Shibuya-ku, Tokyo",
+      "line": [
+        "3-22-7 Yoyogi"
+      ],
+      "city": "Tokyo",
+      "country": "JP"
+    }
+  ]
+}

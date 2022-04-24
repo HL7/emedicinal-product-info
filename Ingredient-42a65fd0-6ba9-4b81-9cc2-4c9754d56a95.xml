@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Ingredient xmlns="http://hl7.org/fhir">
+  <id value="42a65fd0-6ba9-4b81-9cc2-4c9754d56a95"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "42a65fd0-6ba9-4b81-9cc2-4c9754d56a95" </p></div><p><b>identifier</b>: id: 7SEV7J4R1U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="ManufacturedItemDefinition-7460b712-82ad-4cce-a756-90b0fa04896c.html">ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-7f257409-3b65-401d-a246-7ae51e298fbb.html">Organization/7f257409-3b65-401d-a246-7ae51e298fbb</a> "Pfizer, Inc."</td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+    <value value="7SEV7J4R1U"/>
+  </identifier>
+  <status value="active"/>
+  <for>
+    <reference value="ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c"/>
+  </for>
+  <role>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="100000072082"/>
+    </coding>
+    <text value="Excipient"/>
+  </role>
+  <manufacturer>
+    <manufacturer>
+      <reference value="Organization/7f257409-3b65-401d-a246-7ae51e298fbb"/>
+    </manufacturer>
+  </manufacturer>
+  <substance>
+    <code>
+      <concept>
+        <coding>
+          <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+          <code value="7SEV7J4R1U"/>
+          <display value="talc"/>
+        </coding>
+      </concept>
+    </code>
+  </substance>
+</Ingredient>

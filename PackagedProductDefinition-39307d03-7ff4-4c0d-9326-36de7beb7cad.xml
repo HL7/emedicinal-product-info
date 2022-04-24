@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PackagedProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="39307d03-7ff4-4c0d-9326-36de7beb7cad"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "39307d03-7ff4-4c0d-9326-36de7beb7cad" </p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]</p><p><b>type</b>: Chemical Medininal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000155527)</span></p><p><b>packageFor</b>: <a href="MedicinalProductDefinition-117616c7-3bcc-4665-8e12-0e93447e679e.html">MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 140 tablet</p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://pmda-packinsertno/"/>
+    <value value="4291012F1022_4_02-002"/>
+  </identifier>
+  <name value="Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]"/>
+  <type>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="/#100000155527"/>
+    </coding>
+    <text value="Chemical Medininal Prodcut"/>
+  </type>
+  <packageFor>
+    <reference value="MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e"/>
+  </packageFor>
+  <status>
+    <coding>
+      <system value="http://hl7.org/fhir/publication-status"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </status>
+  <statusDate value="2002-08-01T13:28:17Z"/>
+  <containedItemQuantity>
+    <value value="140"/>
+    <unit value="tablet"/>
+  </containedItemQuantity>
+  <package>
+    <type>
+      <coding>
+        <system value="https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC/"/>
+        <code value="30007000"/>
+      </coding>
+      <text value="Blister"/>
+    </type>
+    <quantity value="1"/>
+    <material>
+      <coding>
+        <system value="https://spor.ema.europa.eu/rmswi/"/>
+        <code value="/#200000003222"/>
+      </coding>
+      <text value="PolyVinyl Chloride"/>
+    </material>
+    <containedItem>
+      <item>
+        <reference>
+          <reference value="ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c"/>
+        </reference>
+      </item>
+    </containedItem>
+  </package>
+</PackagedProductDefinition>

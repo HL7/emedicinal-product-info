@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/570a14b4-3e58-4afc-9cc1-4d4b38bcd485> a fhir:Ingredient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "570a14b4-3e58-4afc-9cc1-4d4b38bcd485"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"570a14b4-3e58-4afc-9cc1-4d4b38bcd485\" </p></div><p><b>identifier</b>: id: A2I8C7HI9T (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"ManufacturedItemDefinition-7460b712-82ad-4cce-a756-90b0fa04896c.html\">ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"Organization-7f257409-3b65-401d-a246-7ae51e298fbb.html\">Organization/7f257409-3b65-401d-a246-7ae51e298fbb</a> \"Pfizer, Inc.\"</td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+  ];
+  fhir:Ingredient.identifier [
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+     fhir:Identifier.value [ fhir:value "A2I8C7HI9T" ]
+  ];
+  fhir:Ingredient.status [ fhir:value "active"];
+  fhir:Ingredient.for [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c" ]
+  ];
+  fhir:Ingredient.role [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+       fhir:Coding.code [ fhir:value "100000072082" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+  ];
+  fhir:Ingredient.manufacturer [
+     fhir:index 0;
+     fhir:Ingredient.manufacturer.manufacturer [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/7f257409-3b65-401d-a246-7ae51e298fbb>;
+       fhir:Reference.reference [ fhir:value "Organization/7f257409-3b65-401d-a246-7ae51e298fbb" ]
+     ]
+  ];
+  fhir:Ingredient.substance [
+     fhir:Ingredient.substance.code [
+       fhir:CodeableReference.concept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+           fhir:Coding.code [ fhir:value "A2I8C7HI9T" ];
+           fhir:Coding.display [ fhir:value "METHYLPARABEN" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/570a14b4-3e58-4afc-9cc1-4d4b38bcd485.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

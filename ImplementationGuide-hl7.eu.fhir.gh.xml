@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-04-23T06:29:29+00:00"/>
+  <date value="2022-04-24T15:59:48+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -364,6 +364,259 @@
       <name value="EMA example-sections-smpc"/>
       <description value="Placeholder for EMA example-sections smpc"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e"/>
+      </reference>
+      <name value="117616c7-3bcc-4665-8e12-0e93447e679e"/>
+      <description value="Aromasin (exemestane) Tablets 25 mg"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/13beb88f-1df3-499d-9c74-4f5925a6f206"/>
+      </reference>
+      <name value="13beb88f-1df3-499d-9c74-4f5925a6f206"/>
+      <description value="synthetic wax"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RegulatedAuthorization"/>
+      </extension>
+      <reference>
+        <reference value="RegulatedAuthorization/15c6f86f-8665-4bd6-86da-a3a61fe16084"/>
+      </reference>
+      <name value="15c6f86f-8665-4bd6-86da-a3a61fe16084"/>
+      <description value="Regulated Authorization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/33d34b6a-afaf-47d9-8848-366768bd429a"/>
+      </reference>
+      <name value="Vulcan FHIR Japanese Package Insert Test - Aromasin (exemestane) Tablets 25 mg"/>
+      <description value="Instance of exemestane tablets JPI for Connectathon testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/39307d03-7ff4-4c0d-9326-36de7beb7cad"/>
+      </reference>
+      <name value="39307d03-7ff4-4c0d-9326-36de7beb7cad"/>
+      <description value="140 tablets [14 tablets (PTP) x 10]"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/41089f24-89ce-4fda-a038-70f3cd28ab06"/>
+      </reference>
+      <name value="41089f24-89ce-4fda-a038-70f3cd28ab06"/>
+      <description value="EXEMESTANE"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/42a65fd0-6ba9-4b81-9cc2-4c9754d56a95"/>
+      </reference>
+      <name value="42a65fd0-6ba9-4b81-9cc2-4c9754d56a95"/>
+      <description value="talc"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/570a14b4-3e58-4afc-9cc1-4d4b38bcd485"/>
+      </reference>
+      <name value="570a14b4-3e58-4afc-9cc1-4d4b38bcd485"/>
+      <description value="METHYLPARABEN"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/65bb58dd-b083-4cd3-892f-60fed75967d5"/>
+      </reference>
+      <name value="65bb58dd-b083-4cd3-892f-60fed75967d5"/>
+      <description value="POLYSORBATE 80"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ManufacturedItemDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c"/>
+      </reference>
+      <name value="7460b712-82ad-4cce-a756-90b0fa04896c"/>
+      <description value="Manufactured Item - Aromasin (exemestane) Tablets 25 mg"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7"/>
+      </reference>
+      <name value="77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7"/>
+      <description value="MAGNESIUM CARBONATE"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/7f257409-3b65-401d-a246-7ae51e298fbb"/>
+      </reference>
+      <name value="7f257409-3b65-401d-a246-7ae51e298fbb"/>
+      <description value="Marketing Authorization Holder"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/86746372-3005-4ba0-a2d0-bcd0d55e56a0"/>
+      </reference>
+      <name value="86746372-3005-4ba0-a2d0-bcd0d55e56a0"/>
+      <description value="SILICON DIOXIDE"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/868c0677-e53b-4f0d-a6aa-a7473756b8e9"/>
+      </reference>
+      <name value="868c0677-e53b-4f0d-a6aa-a7473756b8e9"/>
+      <description value="MANNITOL"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/8d6832f1-7d1d-483b-a0fd-879d531681fb"/>
+      </reference>
+      <name value="8d6832f1-7d1d-483b-a0fd-879d531681fb"/>
+      <description value="SODIUM STARCH GLYCOLATE TYPE A POTATO"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/9df66779-105d-4df6-b920-a3d134cec967"/>
+      </reference>
+      <name value="9df66779-105d-4df6-b920-a3d134cec967"/>
+      <description value="POLYVINYL ALCOHOL, UNSPECIFIED"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/aba217d4-5bc4-4690-b100-401cae4390ed"/>
+      </reference>
+      <name value="aba217d4-5bc4-4690-b100-401cae4390ed"/>
+      <description value="light anhydrous silicic acid"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/aceb61f1-4030-458c-996c-3707c919a0e2"/>
+      </reference>
+      <name value="aceb61f1-4030-458c-996c-3707c919a0e2"/>
+      <description value="crystalline cellulose"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/ad9f21be-db44-4f3d-80fb-8d61722ef070"/>
+      </reference>
+      <name value="ad9f21be-db44-4f3d-80fb-8d61722ef070"/>
+      <description value="MAGNESIUM STEARATE"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/b3773440-614c-4007-bc1c-2fec305b6b81"/>
+      </reference>
+      <name value="b3773440-614c-4007-bc1c-2fec305b6b81"/>
+      <description value="Carnauba wax"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/bb536b04-39f1-4e0a-a723-e9079fd5e994"/>
+      </reference>
+      <name value="bb536b04-39f1-4e0a-a723-e9079fd5e994"/>
+      <description value="28 tablets [14 tablets (PTP) x 2]"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/c33a68c8-aecc-4556-8632-e2f3f7ba5b5a"/>
+      </reference>
+      <name value="c33a68c8-aecc-4556-8632-e2f3f7ba5b5a"/>
+      <description value="POLYETHYLENE GLYCOL 6000"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cbb53556-9c1f-4fa7-b2af-2eea988dee2d"/>
+      </reference>
+      <name value="cbb53556-9c1f-4fa7-b2af-2eea988dee2d"/>
+      <description value="TITANIUM DIOXIDE "/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -793,6 +1046,61 @@
       <name value="cfsb9935015469452"/>
       <description value="Marketing Authorization Holder"/>
       <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/d19473ec-d66c-443d-bd8f-31398daaffee"/>
+      </reference>
+      <name value="d19473ec-d66c-443d-bd8f-31398daaffee"/>
+      <description value="Package Insert"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AdministrableProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="AdministrableProductDefinition/d43df7b9-7815-4eb5-8350-945e4b77d46b"/>
+      </reference>
+      <name value="d43df7b9-7815-4eb5-8350-945e4b77d46b"/>
+      <description value="Aromasin (exemestane) Tablets 25 mg"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/f4d45370-a6f1-4c35-a82a-f64982ab89b3"/>
+      </reference>
+      <name value="f4d45370-a6f1-4c35-a82a-f64982ab89b3"/>
+      <description value="SUCROSE"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SubstanceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="SubstanceDefinition/f733a07f-c7fb-43eb-9776-ec0a3e4748da"/>
+      </reference>
+      <name value="f733a07f-c7fb-43eb-9776-ec0a3e4748da"/>
+      <description value="exemestane-sub"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/fc31fc43-2825-41c6-8757-e1c0cab29712"/>
+      </reference>
+      <name value="fc31fc43-2825-41c6-8757-e1c0cab29712"/>
+      <description value="HYPROMELLOSE, UNSPECIFIED "/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

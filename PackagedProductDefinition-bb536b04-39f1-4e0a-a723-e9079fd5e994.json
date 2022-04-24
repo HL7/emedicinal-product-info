@@ -1,0 +1,78 @@
+{
+  "resourceType": "PackagedProductDefinition",
+  "id": "bb536b04-39f1-4e0a-a723-e9079fd5e994",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"bb536b04-39f1-4e0a-a723-e9079fd5e994\" </p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000155527)</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-117616c7-3bcc-4665-8e12-0e93447e679e.html\">MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 28 tablet</p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://pmda-packinsertno/",
+      "value": "4291012F1022_4_02-002"
+    }
+  ],
+  "name": "Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]",
+  "type": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "/#100000155527"
+      }
+    ],
+    "text": "Chemical Medininal Prodcut"
+  },
+  "packageFor": [
+    {
+      "reference": "MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e"
+    }
+  ],
+  "status": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/publication-status",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "statusDate": "2002-08-01T13:28:17Z",
+  "containedItemQuantity": [
+    {
+      "value": 28,
+      "unit": "tablet"
+    }
+  ],
+  "package": {
+    "type": {
+      "coding": [
+        {
+          "system": "https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC/",
+          "code": "30007000"
+        }
+      ],
+      "text": "Blister"
+    },
+    "quantity": 1,
+    "material": [
+      {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi/",
+            "code": "/#200000003222"
+          }
+        ],
+        "text": "PolyVinyl Chloride"
+      }
+    ],
+    "containedItem": [
+      {
+        "item": {
+          "reference": {
+            "reference": "ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c"
+          }
+        }
+      }
+    ]
+  }
+}
