@@ -31,12 +31,13 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #200000003204  "Glass type I"
 * #220000000001 "Full name"
 * #220000000002 "Invented name part"
-* #220000000003
-* #220000000004
-* #220000000005
+* #220000000003 "Scientific name part"
+* #220000000004 "Strength part"
+* #220000000005 "Pharmaceutical dose form part"
 * #220000000033
 * #220000000034
-
+* #30007000 "Blister"
+* #200000003222 "PolyVinyl Chloride"
 
 
 CodeSystem: CodeSystemUvEPIRomswi
