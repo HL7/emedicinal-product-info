@@ -1,4 +1,4 @@
-Instance: cfsb1641827801260
+Instance: 33d34b6a-afaf-47d9-8848-366768bd429a
 InstanceOf: Bundle
 Usage: #example
 Title: "Vulcan FHIR Japanese Package Insert Test - Aromasin (exemestane) Tablets 25 mg"
