@@ -1,4 +1,4 @@
-Instance: cfsb1640780546713
+Instance: 570a14b4-3e58-4afc-9cc1-4d4b38bcd485
 InstanceOf: Ingredient
 Description: "METHYLPARABEN"
 Usage: #example
@@ -13,9 +13,9 @@ Usage: #example
 * status = #active
 
 // Reference to Manufactured Item
-* for = Reference(cfsb1640777487408)
+* for = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#A2I8C7HI9T "METHYLPARABEN"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(cfsb1640870284639)
+* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)

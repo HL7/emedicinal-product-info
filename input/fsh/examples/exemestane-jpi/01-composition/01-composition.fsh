@@ -1,4 +1,4 @@
-Instance: cfsb1641383289499
+Instance: d19473ec-d66c-443d-bd8f-31398daaffee
 InstanceOf: Composition
 Description: "Package Insert"
 Usage: #example
@@ -9,7 +9,7 @@ Usage: #example
 * date = "2002-08-01T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
-* author = Reference(cfsb1640870284639)
+* author = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
 * title = "TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"
 * confidentiality = #U
 * language = #ja

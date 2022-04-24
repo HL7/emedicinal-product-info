@@ -1,4 +1,4 @@
-Instance: cfsb1640781499341
+Instance: 39307d03-7ff4-4c0d-9326-36de7beb7cad
 InstanceOf: PackagedProductDefinition
 Description: "140 tablets [14 tablets (PTP) x 10]"
 Usage: #example
@@ -29,7 +29,7 @@ Usage: #example
 * package.material.text = "PolyVinyl Chloride"
 
  // Reference to Manufactured Item
-* package.containedItem.item.reference = Reference(cfsb1640777487408)
+* package.containedItem.item.reference = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
 //reference to Medicinal Product: 
-* packageFor = Reference(cfsb1641212233583)
+* packageFor = Reference(117616c7-3bcc-4665-8e12-0e93447e679e)

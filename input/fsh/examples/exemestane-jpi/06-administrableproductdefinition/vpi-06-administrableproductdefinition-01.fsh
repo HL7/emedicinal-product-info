@@ -1,4 +1,4 @@
-Instance: cfsb1640606978608
+Instance: d43df7b9-7815-4eb5-8350-945e4b77d46b
 InstanceOf: AdministrableProductDefinition
 Description: "Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
@@ -17,7 +17,7 @@ Usage: #example
 * routeOfAdministration.targetSpecies.code.text = "Human"
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
-* producedFrom = Reference(cfsb1640777487408)
+* producedFrom = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
-//reference to INSERT MEDICINAL PRODUCT REFERENCE
-* formOf = Reference(cfsb1641212233583)
+//reference to MEDICINAL PRODUCT
+* formOf = Reference(117616c7-3bcc-4665-8e12-0e93447e679e)

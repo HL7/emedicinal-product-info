@@ -1,4 +1,4 @@
-Instance: cfsb1640607635665
+Instance: 41089f24-89ce-4fda-a038-70f3cd28ab06
 InstanceOf: Ingredient
 Description: "EXEMESTANE"
 Usage: #example
@@ -10,7 +10,7 @@ Usage: #example
 * status = #active
 
 // Reference to Manufactured Item
-* for = Reference(cfsb1640777487408)
+* for = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
 * role = https://spor.ema.europa.eu/rmswi/#00000072072
 * role.text = "active"
@@ -23,4 +23,4 @@ Usage: #example
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
 // Reference to Organization: Manufaturer API
-* manufacturer.manufacturer = Reference(cfsb1640870284639)
+* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)

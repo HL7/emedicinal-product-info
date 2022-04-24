@@ -1,4 +1,4 @@
-Instance: cfsb1640780546717
+Instance: c33a68c8-aecc-4556-8632-e2f3f7ba5b5a
 InstanceOf: Ingredient
 Description: "POLYETHYLENE GLYCOL 6000"
 Usage: #example
@@ -13,9 +13,9 @@ Usage: #example
 * status = #active
 
 // Reference to Manufactured Item
-* for = Reference(cfsb1640777487408)
+* for = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#30IQX730WE "POLYETHYLENE GLYCOL 6000"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(cfsb1640870284639)
+* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
