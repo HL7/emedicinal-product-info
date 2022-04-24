@@ -1,14 +1,13 @@
-Instance: 99d32917-3fd8-434b-bd1f-195a462326c1
-
+Instance: 39151aef-f61a-40cb-86fc-d0e556fa07ef
 InstanceOf: PackagedProductDefinitionUvEpi
-Description: "140 tablets [14 tablets (PTP) x 10]"
+Description: "30 in 1 BOTTLE; Type 0: Not a Combination Product"
 Usage: #example
 
-* identifier.system = "https://pmda-packinsertno/"
-* identifier.value = "4291012F1022_4_02-002"
+* identifier.system = $spor-prod
+* identifier.value = "NDC:0009-7663-04"
 * identifier.use = #official
 
-* name = "Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]"
+* name = "Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]"
 
 * type = $spor-rms#100000155527
 * type.text = "Chemical Medininal Prodcut"
@@ -16,14 +15,14 @@ Usage: #example
 * status = http://hl7.org/fhir/publication-status#active "Active"
 * statusDate = "2002-08-01T13:28:17Z"
 
-* containedItemQuantity.value = 140
+* containedItemQuantity.value = 30
 * containedItemQuantity.unit = "tablet"
 
 * package.identifier.system = $spor-prod
-* package.identifier.value = "78910"
-* package.type = $spor-rms#30007000 "Blister"
+* package.identifier.value = "0009-7663-04"
+* package.type = $spor-rms#100000073497 "Bottle"
 * package.quantity = 1
-* package.material = $spor-rms#200000003222 "PolyVinyl Chloride"
+* package.material = $spor-rms#200000003215 "High Density PolyEthylene"
 
 //reference to Medicinal Product: 
 * packageFor = Reference(f1b25777-da7a-4a35-98af-ab18d3246d54)

@@ -22,17 +22,17 @@ Usage: #example
 * name.type = $spor-rms#220000000001
 
 * name.type.text = "Full name"
-* name.countryLanguage.country = urn:iso:std:iso:3166#jp
+* name.countryLanguage.country = urn:iso:std:iso:3166#us
 
-* name.countryLanguage.country.text = "Japan"
+* name.countryLanguage.country.text = "United States of America"
 
-* name.countryLanguage.jurisdiction = urn:iso:std:iso:3166#jp
+* name.countryLanguage.jurisdiction = urn:iso:std:iso:3166#us
 
-* name.countryLanguage.jurisdiction.text = "Japan"
+* name.countryLanguage.jurisdiction.text = "United States of America"
 
-* name.countryLanguage.language = urn:iso:std:iso:639-1#ja
+* name.countryLanguage.language = urn:iso:std:iso:639-1#en
 
-* name.countryLanguage.language.text = "Japanese"
+* name.countryLanguage.language.text = "English"
 * name.namePart.part = "Aromasin"
 * name.namePart.type = $spor-rms#220000000002
 * name.namePart.type.text = "Invented name part"

@@ -3,7 +3,7 @@ InstanceOf: RegulatedAuthorizationUvEpi
 Description: "Regulated Authorization"
 Usage: #example
 
-* identifier.system = "https://pmda-approvalandlicenseno/"
+* identifier.system = "https://fda-approvalandlicenseno/"
 * identifier.value = "21400AMY00186"
 * identifier.use = #official
 
@@ -13,8 +13,8 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
 * type.text = "Marketing Authorisation"
 
-* region = urn:iso:std:iso:3166#jp
-* region.text = "Japan"
+* region = urn:iso:std:iso:3166#us
+* region.text = "United States of America"
 
 * status = http://hl7.org/fhir/publication-status#active
 * status.text = "Active"

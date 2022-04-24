@@ -3,7 +3,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Description: "Manufactured Item - Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
 
-* identifier.system = "https://pmda-sccj"
+* identifier.system = "https://gsrs.ncats.nih.gov/"
 * identifier.value = "874291"
 * identifier.use = #official
 
