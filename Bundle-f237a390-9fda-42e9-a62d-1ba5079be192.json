@@ -199,13 +199,13 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 618054084 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: PHARMACIA &amp; UPJOHN COMPANY LLC</p><p><b>telecom</b>: ph: 1-908-901-8000(WORK)</p><p><b>address</b>: 100 Route 206 North Peapack, NJ 07977 United States(WORK)</p></div>"
         },
         "identifier": [
           {
             "use": "official",
-            "system": "https://pmda-org-id",
-            "value": "672212"
+            "system": "https://fda-org-id",
+            "value": "618054084"
           }
         ],
         "active": true,
@@ -213,7 +213,7 @@
           {
             "coding": [
               {
-                "system": "https://PMDA-org-type.jp/",
+                "system": "https://fda-org-type.gov/",
                 "code": "tbd",
                 "display": "Marketing authorisation holder"
               }
@@ -221,16 +221,11 @@
             "text": "Manufacturer"
           }
         ],
-        "name": "Pfizer, Inc.",
+        "name": "PHARMACIA & UPJOHN COMPANY LLC",
         "telecom": [
           {
             "system": "phone",
-            "value": "0120-664-467",
-            "use": "work"
-          },
-          {
-            "system": "fax",
-            "value": "03-3379-3053",
+            "value": "1-908-901-8000",
             "use": "work"
           }
         ],
@@ -238,12 +233,13 @@
           {
             "use": "work",
             "type": "physical",
-            "text": "3-22-7 Yoyogi, Shibuya-ku, Tokyo",
+            "text": "100 Route 206 North Peapack, NJ 07977 United States",
             "line": [
-              "3-22-7 Yoyogi"
+              "100 Route 206 North Peapack"
             ],
-            "city": "Tokyo",
-            "country": "JP"
+            "city": "New Jersey",
+            "postalCode": "07977",
+            "country": "United States"
           }
         ]
       }
@@ -259,12 +255,12 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"56b3b73e-dba0-4447-b8cd-1e24ed637017\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RegulatedAuthorization-uv-epi.html\">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: 21400AMY00186 (OFFICIAL)</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>region</b>: Japan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#jp)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>holder</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"56b3b73e-dba0-4447-b8cd-1e24ed637017\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RegulatedAuthorization-uv-epi.html\">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: 21400AMY00186 (OFFICIAL)</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>region</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#us)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>holder</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p></div>"
         },
         "identifier": [
           {
             "use": "official",
-            "system": "https://pmda-approvalandlicenseno/",
+            "system": "https://fda-approvalandlicenseno/",
             "value": "21400AMY00186"
           }
         ],
@@ -287,10 +283,10 @@
             "coding": [
               {
                 "system": "urn:iso:std:iso:3166",
-                "code": "jp"
+                "code": "us"
               }
             ],
-            "text": "Japan"
+            "text": "United States of America"
           }
         ],
         "status": {
@@ -319,7 +315,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f1b25777-da7a-4a35-98af-ab18d3246d54\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicinalProductDefinition-uv-epi.html\">MedicinalProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-type.html\">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-domain.html\">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class=\"grid\"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Japan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#jp)</span></td><td>Japan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#jp)</span></td><td>Japanese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#ja)</span></td></tr></table></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f1b25777-da7a-4a35-98af-ab18d3246d54\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicinalProductDefinition-uv-epi.html\">MedicinalProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-type.html\">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-domain.html\">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class=\"grid\"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#us)</span></td><td>United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#us)</span></td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#en)</span></td></tr></table></blockquote></div>"
         },
         "identifier": [
           {
@@ -395,28 +391,28 @@
                   "coding": [
                     {
                       "system": "urn:iso:std:iso:3166",
-                      "code": "jp"
+                      "code": "us"
                     }
                   ],
-                  "text": "Japan"
+                  "text": "United States of America"
                 },
                 "jurisdiction": {
                   "coding": [
                     {
                       "system": "urn:iso:std:iso:3166",
-                      "code": "jp"
+                      "code": "us"
                     }
                   ],
-                  "text": "Japan"
+                  "text": "United States of America"
                 },
                 "language": {
                   "coding": [
                     {
                       "system": "urn:iso:std:iso:639-1",
-                      "code": "ja"
+                      "code": "en"
                     }
                   ],
-                  "text": "Japanese"
+                  "text": "English"
                 }
               }
             ]
@@ -435,13 +431,13 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"39151aef-f61a-40cb-86fc-d0e556fa07ef\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PackagedProductDefinition-uv-epi.html\">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 4291012F1022_4_02-001 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 28 tablet</p><p><b>manufacturer</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"39151aef-f61a-40cb-86fc-d0e556fa07ef\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PackagedProductDefinition-uv-epi.html\">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: NDC:0009-7663-04 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 30 tablet</p><p><b>manufacturer</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 0009-7663-04</p><p><b>type</b>: Bottle <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000073497)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: High Density PolyEthylene <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003215)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
         },
         "identifier": [
           {
             "use": "official",
             "system": "https://spor.ema.europa.eu/pmswi",
-            "value": "4291012F1022_4_02-001"
+            "value": "NDC:0009-7663-04"
           }
         ],
         "name": "Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]",
@@ -471,7 +467,7 @@
         "statusDate": "2002-08-01T13:28:17Z",
         "containedItemQuantity": [
           {
-            "value": 28,
+            "value": 30,
             "unit": "tablet"
           }
         ],
@@ -484,15 +480,15 @@
           "identifier": [
             {
               "system": "https://spor.ema.europa.eu/pmswi",
-              "value": "123456"
+              "value": "0009-7663-04"
             }
           ],
           "type": {
             "coding": [
               {
                 "system": "https://spor.ema.europa.eu/rmswi",
-                "code": "30007000",
-                "display": "Blister"
+                "code": "100000073497",
+                "display": "Bottle"
               }
             ]
           },
@@ -502,104 +498,8 @@
               "coding": [
                 {
                   "system": "https://spor.ema.europa.eu/rmswi",
-                  "code": "200000003222",
-                  "display": "PolyVinyl Chloride"
-                }
-              ]
-            }
-          ],
-          "containedItem": [
-            {
-              "item": {
-                "reference": {
-                  "reference": "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
-                }
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "PackagedProductDefinition",
-        "id": "99d32917-3fd8-434b-bd1f-195a462326c1",
-        "meta": {
-          "profile": [
-            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"99d32917-3fd8-434b-bd1f-195a462326c1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PackagedProductDefinition-uv-epi.html\">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 140 tablet</p><p><b>manufacturer</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 78910</p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
-        },
-        "identifier": [
-          {
-            "use": "official",
-            "system": "https://pmda-packinsertno/",
-            "value": "4291012F1022_4_02-002"
-          }
-        ],
-        "name": "Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]",
-        "type": {
-          "coding": [
-            {
-              "system": "https://spor.ema.europa.eu/rmswi",
-              "code": "100000155527"
-            }
-          ],
-          "text": "Chemical Medininal Prodcut"
-        },
-        "packageFor": [
-          {
-            "reference": "MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54"
-          }
-        ],
-        "status": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/publication-status",
-              "code": "active",
-              "display": "Active"
-            }
-          ]
-        },
-        "statusDate": "2002-08-01T13:28:17Z",
-        "containedItemQuantity": [
-          {
-            "value": 140,
-            "unit": "tablet"
-          }
-        ],
-        "manufacturer": [
-          {
-            "reference": "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
-          }
-        ],
-        "package": {
-          "identifier": [
-            {
-              "system": "https://spor.ema.europa.eu/pmswi",
-              "value": "78910"
-            }
-          ],
-          "type": {
-            "coding": [
-              {
-                "system": "https://spor.ema.europa.eu/rmswi",
-                "code": "30007000",
-                "display": "Blister"
-              }
-            ]
-          },
-          "quantity": 1,
-          "material": [
-            {
-              "coding": [
-                {
-                  "system": "https://spor.ema.europa.eu/rmswi",
-                  "code": "200000003222",
-                  "display": "PolyVinyl Chloride"
+                  "code": "200000003215",
+                  "display": "High Density PolyEthylene"
                 }
               ]
             }
@@ -708,7 +608,7 @@
         "identifier": [
           {
             "use": "official",
-            "system": "https://pmda-sccj",
+            "system": "https://gsrs.ncats.nih.gov/",
             "value": "874291"
           }
         ],
@@ -821,12 +721,12 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f35c1543-e4e2-4215-b91c-f092b1fb9655\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: R12CBM0EIZ (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f35c1543-e4e2-4215-b91c-f092b1fb9655\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 68401960MK (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
         },
         "identifier": {
           "use": "official",
           "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-          "value": "R12CBM0EIZ"
+          "value": "68401960MK"
         },
         "status": "active",
         "for": [
@@ -856,8 +756,8 @@
               "coding": [
                 {
                   "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-                  "code": "R12CBM0EIZ",
-                  "display": "Carnauba wax"
+                  "code": "68401960MK",
+                  "display": "crospovidone"
                 }
               ]
             }
@@ -1023,61 +923,6 @@
                   "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
                   "code": "3NXW29V3WO",
                   "display": "HYPROMELLOSE, UNSPECIFIED "
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Ingredient",
-        "id": "01f6666c-b966-4372-ba61-9ee902912dd8",
-        "meta": {
-          "profile": [
-            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"01f6666c-b966-4372-ba61-9ee902912dd8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: ETJ7Z6XBU4 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
-        },
-        "identifier": {
-          "use": "official",
-          "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-          "value": "ETJ7Z6XBU4"
-        },
-        "status": "active",
-        "for": [
-          {
-            "reference": "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
-          }
-        ],
-        "role": {
-          "coding": [
-            {
-              "system": "https://spor.ema.europa.eu/rmswi/",
-              "code": "100000072082"
-            }
-          ],
-          "text": "Excipient"
-        },
-        "manufacturer": [
-          {
-            "manufacturer": {
-              "reference": "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
-            }
-          }
-        ],
-        "substance": {
-          "code": {
-            "concept": {
-              "coding": [
-                {
-                  "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-                  "code": "ETJ7Z6XBU4",
-                  "display": "light anhydrous silicic acid"
                 }
               ]
             }
@@ -1573,116 +1418,6 @@
                   "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
                   "code": "5856J3G2A2",
                   "display": "SODIUM STARCH GLYCOLATE TYPE A POTATO"
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Ingredient",
-        "id": "d8d6a066-5358-42b2-ab97-de99c90af141",
-        "meta": {
-          "profile": [
-            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"d8d6a066-5358-42b2-ab97-de99c90af141\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 5M631N9V0S (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
-        },
-        "identifier": {
-          "use": "official",
-          "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-          "value": "5M631N9V0S"
-        },
-        "status": "active",
-        "for": [
-          {
-            "reference": "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
-          }
-        ],
-        "role": {
-          "coding": [
-            {
-              "system": "https://spor.ema.europa.eu/rmswi/",
-              "code": "100000072082"
-            }
-          ],
-          "text": "Excipient"
-        },
-        "manufacturer": [
-          {
-            "manufacturer": {
-              "reference": "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
-            }
-          }
-        ],
-        "substance": {
-          "code": {
-            "concept": {
-              "coding": [
-                {
-                  "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-                  "code": "5M631N9V0S",
-                  "display": "synthetic wax"
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Ingredient",
-        "id": "e057aea0-3ef3-4cd8-8a33-fa73c6df1602",
-        "meta": {
-          "profile": [
-            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"e057aea0-3ef3-4cd8-8a33-fa73c6df1602\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 7SEV7J4R1U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
-        },
-        "identifier": {
-          "use": "official",
-          "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-          "value": "7SEV7J4R1U"
-        },
-        "status": "active",
-        "for": [
-          {
-            "reference": "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
-          }
-        ],
-        "role": {
-          "coding": [
-            {
-              "system": "https://spor.ema.europa.eu/rmswi/",
-              "code": "100000072082"
-            }
-          ],
-          "text": "Excipient"
-        },
-        "manufacturer": [
-          {
-            "manufacturer": {
-              "reference": "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
-            }
-          }
-        ],
-        "substance": {
-          "code": {
-            "concept": {
-              "coding": [
-                {
-                  "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
-                  "code": "7SEV7J4R1U",
-                  "display": "talc"
                 }
               ]
             }

@@ -199,48 +199,44 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 618054084 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: PHARMACIA &amp; UPJOHN COMPANY LLC</p><p><b>telecom</b>: ph: 1-908-901-8000(WORK)</p><p><b>address</b>: 100 Route 206 North Peapack, NJ 07977 United States(WORK)</p></div>"
        ];
        fhir:Organization.identifier [
          fhir:index 0;
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://pmda-org-id" ];
-         fhir:Identifier.value [ fhir:value "672212" ]
+         fhir:Identifier.system [ fhir:value "https://fda-org-id" ];
+         fhir:Identifier.value [ fhir:value "618054084" ]
        ];
        fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
        fhir:Organization.type [
          fhir:index 0;
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://PMDA-org-type.jp/" ];
+           fhir:Coding.system [ fhir:value "https://fda-org-type.gov/" ];
            fhir:Coding.code [ fhir:value "tbd" ];
            fhir:Coding.display [ fhir:value "Marketing authorisation holder" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Manufacturer" ]
        ];
-       fhir:Organization.name [ fhir:value "Pfizer, Inc." ];
+       fhir:Organization.name [ fhir:value "PHARMACIA & UPJOHN COMPANY LLC" ];
        fhir:Organization.telecom [
          fhir:index 0;
          fhir:ContactPoint.system [ fhir:value "phone" ];
-         fhir:ContactPoint.value [ fhir:value "0120-664-467" ];
-         fhir:ContactPoint.use [ fhir:value "work" ]
-       ], [
-         fhir:index 1;
-         fhir:ContactPoint.system [ fhir:value "fax" ];
-         fhir:ContactPoint.value [ fhir:value "03-3379-3053" ];
+         fhir:ContactPoint.value [ fhir:value "1-908-901-8000" ];
          fhir:ContactPoint.use [ fhir:value "work" ]
        ];
        fhir:Organization.address [
          fhir:index 0;
          fhir:Address.use [ fhir:value "work" ];
          fhir:Address.type [ fhir:value "physical" ];
-         fhir:Address.text [ fhir:value "3-22-7 Yoyogi, Shibuya-ku, Tokyo" ];
+         fhir:Address.text [ fhir:value "100 Route 206 North Peapack, NJ 07977 United States" ];
          fhir:Address.line [
-           fhir:value "3-22-7 Yoyogi";
+           fhir:value "100 Route 206 North Peapack";
            fhir:index 0
          ];
-         fhir:Address.city [ fhir:value "Tokyo" ];
-         fhir:Address.country [ fhir:value "JP" ]
+         fhir:Address.city [ fhir:value "New Jersey" ];
+         fhir:Address.postalCode [ fhir:value "07977" ];
+         fhir:Address.country [ fhir:value "United States" ]
        ]
      ]
   ], [
@@ -257,12 +253,12 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"56b3b73e-dba0-4447-b8cd-1e24ed637017\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RegulatedAuthorization-uv-epi.html\">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: 21400AMY00186 (OFFICIAL)</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>region</b>: Japan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#jp)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>holder</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"56b3b73e-dba0-4447-b8cd-1e24ed637017\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RegulatedAuthorization-uv-epi.html\">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: 21400AMY00186 (OFFICIAL)</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>region</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#us)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>holder</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p></div>"
        ];
        fhir:RegulatedAuthorization.identifier [
          fhir:index 0;
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://pmda-approvalandlicenseno/" ];
+         fhir:Identifier.system [ fhir:value "https://fda-approvalandlicenseno/" ];
          fhir:Identifier.value [ fhir:value "21400AMY00186" ]
        ];
        fhir:RegulatedAuthorization.subject [
@@ -283,9 +279,9 @@
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-           fhir:Coding.code [ fhir:value "jp" ]
+           fhir:Coding.code [ fhir:value "us" ]
          ];
-         fhir:CodeableConcept.text [ fhir:value "Japan" ]
+         fhir:CodeableConcept.text [ fhir:value "United States of America" ]
        ];
        fhir:RegulatedAuthorization.status [
          fhir:CodeableConcept.coding [
@@ -315,7 +311,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f1b25777-da7a-4a35-98af-ab18d3246d54\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicinalProductDefinition-uv-epi.html\">MedicinalProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-type.html\">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-domain.html\">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class=\"grid\"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Japan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#jp)</span></td><td>Japan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#jp)</span></td><td>Japanese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#ja)</span></td></tr></table></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f1b25777-da7a-4a35-98af-ab18d3246d54\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicinalProductDefinition-uv-epi.html\">MedicinalProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-type.html\">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-domain.html\">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class=\"grid\"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#us)</span></td><td>United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#us)</span></td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#en)</span></td></tr></table></blockquote></div>"
        ];
        fhir:MedicinalProductDefinition.identifier [
          fhir:index 0;
@@ -383,25 +379,25 @@
              fhir:CodeableConcept.coding [
                fhir:index 0;
                fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-               fhir:Coding.code [ fhir:value "jp" ]
+               fhir:Coding.code [ fhir:value "us" ]
              ];
-             fhir:CodeableConcept.text [ fhir:value "Japan" ]
+             fhir:CodeableConcept.text [ fhir:value "United States of America" ]
            ];
            fhir:MedicinalProductDefinition.name.countryLanguage.jurisdiction [
              fhir:CodeableConcept.coding [
                fhir:index 0;
                fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-               fhir:Coding.code [ fhir:value "jp" ]
+               fhir:Coding.code [ fhir:value "us" ]
              ];
-             fhir:CodeableConcept.text [ fhir:value "Japan" ]
+             fhir:CodeableConcept.text [ fhir:value "United States of America" ]
            ];
            fhir:MedicinalProductDefinition.name.countryLanguage.language [
              fhir:CodeableConcept.coding [
                fhir:index 0;
                fhir:Coding.system [ fhir:value "urn:iso:std:iso:639-1" ];
-               fhir:Coding.code [ fhir:value "ja" ]
+               fhir:Coding.code [ fhir:value "en" ]
              ];
-             fhir:CodeableConcept.text [ fhir:value "Japanese" ]
+             fhir:CodeableConcept.text [ fhir:value "English" ]
            ]
          ]
        ]
@@ -420,13 +416,13 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"39151aef-f61a-40cb-86fc-d0e556fa07ef\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PackagedProductDefinition-uv-epi.html\">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 4291012F1022_4_02-001 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 28 tablet</p><p><b>manufacturer</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"39151aef-f61a-40cb-86fc-d0e556fa07ef\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PackagedProductDefinition-uv-epi.html\">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: NDC:0009-7663-04 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 30 tablet</p><p><b>manufacturer</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 0009-7663-04</p><p><b>type</b>: Bottle <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000073497)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: High Density PolyEthylene <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003215)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
        ];
        fhir:PackagedProductDefinition.identifier [
          fhir:index 0;
          fhir:Identifier.use [ fhir:value "official" ];
          fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
-         fhir:Identifier.value [ fhir:value "4291012F1022_4_02-001" ]
+         fhir:Identifier.value [ fhir:value "NDC:0009-7663-04" ]
        ];
        fhir:PackagedProductDefinition.name [ fhir:value "Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]" ];
        fhir:PackagedProductDefinition.type [
@@ -453,7 +449,7 @@
        fhir:PackagedProductDefinition.statusDate [ fhir:value "2002-08-01T13:28:17Z"^^xsd:dateTime ];
        fhir:PackagedProductDefinition.containedItemQuantity [
          fhir:index 0;
-         fhir:Quantity.value [ fhir:value "28"^^xsd:decimal ];
+         fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
          fhir:Quantity.unit [ fhir:value "tablet" ]
        ];
        fhir:PackagedProductDefinition.manufacturer [
@@ -465,14 +461,14 @@
          fhir:PackagedProductDefinition.package.identifier [
            fhir:index 0;
            fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
-           fhir:Identifier.value [ fhir:value "123456" ]
+           fhir:Identifier.value [ fhir:value "0009-7663-04" ]
          ];
          fhir:PackagedProductDefinition.package.type [
            fhir:CodeableConcept.coding [
              fhir:index 0;
              fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-             fhir:Coding.code [ fhir:value "30007000" ];
-             fhir:Coding.display [ fhir:value "Blister" ]
+             fhir:Coding.code [ fhir:value "100000073497" ];
+             fhir:Coding.display [ fhir:value "Bottle" ]
            ]
          ];
          fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
@@ -481,8 +477,8 @@
            fhir:CodeableConcept.coding [
              fhir:index 0;
              fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-             fhir:Coding.code [ fhir:value "200000003222" ];
-             fhir:Coding.display [ fhir:value "PolyVinyl Chloride" ]
+             fhir:Coding.code [ fhir:value "200000003215" ];
+             fhir:Coding.display [ fhir:value "High Density PolyEthylene" ]
            ]
          ];
          fhir:PackagedProductDefinition.package.containedItem [
@@ -498,96 +494,6 @@
      ]
   ], [
      fhir:index 5;
-     fhir:Bundle.entry.resource [
-       a fhir:PackagedProductDefinition;
-       fhir:Resource.id [ fhir:value "99d32917-3fd8-434b-bd1f-195a462326c1" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi";
-           fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"99d32917-3fd8-434b-bd1f-195a462326c1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PackagedProductDefinition-uv-epi.html\">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\">See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 140 tablet</p><p><b>manufacturer</b>: <a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 78910</p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
-       ];
-       fhir:PackagedProductDefinition.identifier [
-         fhir:index 0;
-         fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://pmda-packinsertno/" ];
-         fhir:Identifier.value [ fhir:value "4291012F1022_4_02-002" ]
-       ];
-       fhir:PackagedProductDefinition.name [ fhir:value "Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]" ];
-       fhir:PackagedProductDefinition.type [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-           fhir:Coding.code [ fhir:value "100000155527" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "Chemical Medininal Prodcut" ]
-       ];
-       fhir:PackagedProductDefinition.packageFor [
-         fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54>;
-         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54" ]
-       ];
-       fhir:PackagedProductDefinition.status [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
-           fhir:Coding.code [ fhir:value "active" ];
-           fhir:Coding.display [ fhir:value "Active" ]
-         ]
-       ];
-       fhir:PackagedProductDefinition.statusDate [ fhir:value "2002-08-01T13:28:17Z"^^xsd:dateTime ];
-       fhir:PackagedProductDefinition.containedItemQuantity [
-         fhir:index 0;
-         fhir:Quantity.value [ fhir:value "140"^^xsd:decimal ];
-         fhir:Quantity.unit [ fhir:value "tablet" ]
-       ];
-       fhir:PackagedProductDefinition.manufacturer [
-         fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
-         fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
-       ];
-       fhir:PackagedProductDefinition.package [
-         fhir:PackagedProductDefinition.package.identifier [
-           fhir:index 0;
-           fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
-           fhir:Identifier.value [ fhir:value "78910" ]
-         ];
-         fhir:PackagedProductDefinition.package.type [
-           fhir:CodeableConcept.coding [
-             fhir:index 0;
-             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-             fhir:Coding.code [ fhir:value "30007000" ];
-             fhir:Coding.display [ fhir:value "Blister" ]
-           ]
-         ];
-         fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
-         fhir:PackagedProductDefinition.package.material [
-           fhir:index 0;
-           fhir:CodeableConcept.coding [
-             fhir:index 0;
-             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-             fhir:Coding.code [ fhir:value "200000003222" ];
-             fhir:Coding.display [ fhir:value "PolyVinyl Chloride" ]
-           ]
-         ];
-         fhir:PackagedProductDefinition.package.containedItem [
-           fhir:index 0;
-           fhir:PackagedProductDefinition.package.containedItem.item [
-             fhir:CodeableReference.reference [
-               fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
-               fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939" ]
-             ]
-           ]
-         ]
-       ]
-     ]
-  ], [
-     fhir:index 6;
      fhir:Bundle.entry.resource [
        a fhir:AdministrableProductDefinition;
        fhir:Resource.id [ fhir:value "8cf05f7c-481d-4bd6-9a7c-9ca3275601c3" ];
@@ -658,7 +564,7 @@
        ]
      ]
   ], [
-     fhir:index 7;
+     fhir:index 6;
      fhir:Bundle.entry.resource [
        a fhir:ManufacturedItemDefinition;
        fhir:Resource.id [ fhir:value "23fed712-2d60-461d-83a6-5fb939b2a939" ];
@@ -676,7 +582,7 @@
        fhir:ManufacturedItemDefinition.identifier [
          fhir:index 0;
          fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://pmda-sccj" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/" ];
          fhir:Identifier.value [ fhir:value "874291" ]
        ];
        fhir:ManufacturedItemDefinition.status [ fhir:value "active" ];
@@ -703,7 +609,7 @@
        ]
      ]
   ], [
-     fhir:index 8;
+     fhir:index 7;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "5a574ff2-f3e6-4aaa-8d3c-27e6ab343533" ];
@@ -773,7 +679,7 @@
        ]
      ]
   ], [
-     fhir:index 9;
+     fhir:index 8;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "f35c1543-e4e2-4215-b91c-f092b1fb9655" ];
@@ -786,12 +692,12 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f35c1543-e4e2-4215-b91c-f092b1fb9655\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: R12CBM0EIZ (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"f35c1543-e4e2-4215-b91c-f092b1fb9655\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 68401960MK (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
        ];
        fhir:Ingredient.identifier [
          fhir:Identifier.use [ fhir:value "official" ];
          fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-         fhir:Identifier.value [ fhir:value "R12CBM0EIZ" ]
+         fhir:Identifier.value [ fhir:value "68401960MK" ]
        ];
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.for [
@@ -820,15 +726,15 @@
              fhir:CodeableConcept.coding [
                fhir:index 0;
                fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-               fhir:Coding.code [ fhir:value "R12CBM0EIZ" ];
-               fhir:Coding.display [ fhir:value "Carnauba wax" ]
+               fhir:Coding.code [ fhir:value "68401960MK" ];
+               fhir:Coding.display [ fhir:value "crospovidone" ]
              ]
            ]
          ]
        ]
      ]
   ], [
-     fhir:index 10;
+     fhir:index 9;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "32e98fc8-b8fb-4bd9-a4d3-2ce97c151d61" ];
@@ -883,7 +789,7 @@
        ]
      ]
   ], [
-     fhir:index 11;
+     fhir:index 10;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "7b23dea1-ce14-4c13-8004-f297bb75eda0" ];
@@ -938,7 +844,7 @@
        ]
      ]
   ], [
-     fhir:index 12;
+     fhir:index 11;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "cc5753cd-e648-47d2-a135-503cd8a3e1da" ];
@@ -993,62 +899,7 @@
        ]
      ]
   ], [
-     fhir:index 13;
-     fhir:Bundle.entry.resource [
-       a fhir:Ingredient;
-       fhir:Resource.id [ fhir:value "01f6666c-b966-4372-ba61-9ee902912dd8" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
-           fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"01f6666c-b966-4372-ba61-9ee902912dd8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: ETJ7Z6XBU4 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
-       ];
-       fhir:Ingredient.identifier [
-         fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-         fhir:Identifier.value [ fhir:value "ETJ7Z6XBU4" ]
-       ];
-       fhir:Ingredient.status [ fhir:value "active" ];
-       fhir:Ingredient.for [
-         fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
-         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939" ]
-       ];
-       fhir:Ingredient.role [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-           fhir:Coding.code [ fhir:value "100000072082" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
-       ];
-       fhir:Ingredient.manufacturer [
-         fhir:index 0;
-         fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
-           fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
-         ]
-       ];
-       fhir:Ingredient.substance [
-         fhir:Ingredient.substance.code [
-           fhir:CodeableReference.concept [
-             fhir:CodeableConcept.coding [
-               fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-               fhir:Coding.code [ fhir:value "ETJ7Z6XBU4" ];
-               fhir:Coding.display [ fhir:value "light anhydrous silicic acid" ]
-             ]
-           ]
-         ]
-       ]
-     ]
-  ], [
-     fhir:index 14;
+     fhir:index 12;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "db5e392b-e7b2-47dc-829c-ee5182986dca" ];
@@ -1103,7 +954,7 @@
        ]
      ]
   ], [
-     fhir:index 15;
+     fhir:index 13;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "5acc6759-a7f7-4380-ab2e-ad72e8587598" ];
@@ -1158,7 +1009,7 @@
        ]
      ]
   ], [
-     fhir:index 16;
+     fhir:index 14;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "5f2c1669-3991-4cc2-b252-958b738d5df8" ];
@@ -1213,7 +1064,7 @@
        ]
      ]
   ], [
-     fhir:index 17;
+     fhir:index 15;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "0c81c330-cf57-45c2-9ca2-559aea4c8060" ];
@@ -1268,7 +1119,7 @@
        ]
      ]
   ], [
-     fhir:index 18;
+     fhir:index 16;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "6708560e-135d-4b2a-afde-9e3b03f27939" ];
@@ -1323,7 +1174,7 @@
        ]
      ]
   ], [
-     fhir:index 19;
+     fhir:index 17;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "733fb580-1139-4188-aff8-ad6efe243555" ];
@@ -1378,7 +1229,7 @@
        ]
      ]
   ], [
-     fhir:index 20;
+     fhir:index 18;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "c5a3cb57-3f3e-4309-ae34-0926300de57e" ];
@@ -1433,7 +1284,7 @@
        ]
      ]
   ], [
-     fhir:index 21;
+     fhir:index 19;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "16dc4148-5296-4f7a-8576-2e6bf9dde736" ];
@@ -1488,7 +1339,7 @@
        ]
      ]
   ], [
-     fhir:index 22;
+     fhir:index 20;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "b254f961-61ca-43f9-b3f9-5b0b5d4406a9" ];
@@ -1543,117 +1394,7 @@
        ]
      ]
   ], [
-     fhir:index 23;
-     fhir:Bundle.entry.resource [
-       a fhir:Ingredient;
-       fhir:Resource.id [ fhir:value "d8d6a066-5358-42b2-ab97-de99c90af141" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
-           fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"d8d6a066-5358-42b2-ab97-de99c90af141\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 5M631N9V0S (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
-       ];
-       fhir:Ingredient.identifier [
-         fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-         fhir:Identifier.value [ fhir:value "5M631N9V0S" ]
-       ];
-       fhir:Ingredient.status [ fhir:value "active" ];
-       fhir:Ingredient.for [
-         fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
-         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939" ]
-       ];
-       fhir:Ingredient.role [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-           fhir:Coding.code [ fhir:value "100000072082" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
-       ];
-       fhir:Ingredient.manufacturer [
-         fhir:index 0;
-         fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
-           fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
-         ]
-       ];
-       fhir:Ingredient.substance [
-         fhir:Ingredient.substance.code [
-           fhir:CodeableReference.concept [
-             fhir:CodeableConcept.coding [
-               fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-               fhir:Coding.code [ fhir:value "5M631N9V0S" ];
-               fhir:Coding.display [ fhir:value "synthetic wax" ]
-             ]
-           ]
-         ]
-       ]
-     ]
-  ], [
-     fhir:index 24;
-     fhir:Bundle.entry.resource [
-       a fhir:Ingredient;
-       fhir:Resource.id [ fhir:value "e057aea0-3ef3-4cd8-8a33-fa73c6df1602" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
-           fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"e057aea0-3ef3-4cd8-8a33-fa73c6df1602\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 7SEV7J4R1U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\">See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\">See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
-       ];
-       fhir:Ingredient.identifier [
-         fhir:Identifier.use [ fhir:value "official" ];
-         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-         fhir:Identifier.value [ fhir:value "7SEV7J4R1U" ]
-       ];
-       fhir:Ingredient.status [ fhir:value "active" ];
-       fhir:Ingredient.for [
-         fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
-         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939" ]
-       ];
-       fhir:Ingredient.role [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-           fhir:Coding.code [ fhir:value "100000072082" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
-       ];
-       fhir:Ingredient.manufacturer [
-         fhir:index 0;
-         fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
-           fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
-         ]
-       ];
-       fhir:Ingredient.substance [
-         fhir:Ingredient.substance.code [
-           fhir:CodeableReference.concept [
-             fhir:CodeableConcept.coding [
-               fhir:index 0;
-               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
-               fhir:Coding.code [ fhir:value "7SEV7J4R1U" ];
-               fhir:Coding.display [ fhir:value "talc" ]
-             ]
-           ]
-         ]
-       ]
-     ]
-  ], [
-     fhir:index 25;
+     fhir:index 21;
      fhir:Bundle.entry.resource [
        a fhir:Ingredient;
        fhir:Resource.id [ fhir:value "854be59d-070a-44d7-a82e-bbb83200dc6a" ];
@@ -1708,7 +1449,7 @@
        ]
      ]
   ], [
-     fhir:index 26;
+     fhir:index 22;
      fhir:Bundle.entry.resource [
        a fhir:SubstanceDefinition;
        fhir:Resource.id [ fhir:value "17c536c9-efd1-4427-a7b0-1bcdc266798f" ];
