@@ -8,9 +8,16 @@
 <http://hl7.eu/fhir/ig/gravitate-health/Organization/7f257409-3b65-401d-a246-7ae51e298fbb> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "7f257409-3b65-401d-a246-7ae51e298fbb"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi";
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
+     ]
+  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"7f257409-3b65-401d-a246-7ae51e298fbb\" </p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"7f257409-3b65-401d-a246-7ae51e298fbb\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;

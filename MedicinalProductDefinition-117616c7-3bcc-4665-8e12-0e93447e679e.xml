@@ -2,20 +2,27 @@
 
 <MedicinalProductDefinition xmlns="http://hl7.org/fhir">
   <id value="117616c7-3bcc-4665-8e12-0e93447e679e"/>
+  <meta>
+    <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "117616c7-3bcc-4665-8e12-0e93447e679e" </p></div><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072062)</span></p><p><b>domain</b>: Human use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000000012)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#220000000001)</span></p><h3>NameParts</h3><table class="grid"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japanese <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#ja)</span></td></tr></table></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "117616c7-3bcc-4665-8e12-0e93447e679e" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicinalProductDefinition-uv-epi.html">MedicinalProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Medicinal Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-type.html">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-domain.html">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class="grid"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japanese <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#ja)</span></td></tr></table></blockquote></div>
   </text>
+  <identifier>
+    <system value="https://spor.ema.europa.eu/pmswi"/>
+    <value value="123456"/>
+  </identifier>
   <type>
     <coding>
-      <system value="https://spor.ema.europa.eu/rmswi/"/>
-      <code value="/#100000072062"/>
+      <system value="http://hl7.org/fhir/medicinal-product-type"/>
+      <code value="MedicinalProduct"/>
     </coding>
-    <text value="Marketing Authorisation"/>
+    <text value="Medicinal Product"/>
   </type>
   <domain>
     <coding>
-      <system value="https://spor.ema.europa.eu/rmswi/"/>
-      <code value="/#100000000012"/>
+      <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+      <code value="Human"/>
     </coding>
     <text value="Human use"/>
   </domain>
@@ -28,8 +35,8 @@
   </status>
   <legalStatusOfSupply>
     <coding>
-      <system value="https://spor.ema.europa.eu/rmswi/"/>
-      <code value="/#100000072084"/>
+      <system value="https://spor.ema.europa.eu/rmswi"/>
+      <code value="100000072084"/>
     </coding>
     <text value="Medicinal product subject to medical prescription"/>
   </legalStatusOfSupply>
@@ -37,8 +44,8 @@
     <productName value="Aromasin (exemestane) Tablets 25 mg"/>
     <type>
       <coding>
-        <system value="https://spor.ema.europa.eu/rmswi/"/>
-        <code value="/#220000000001"/>
+        <system value="https://spor.ema.europa.eu/rmswi"/>
+        <code value="220000000001"/>
       </coding>
       <text value="Full name"/>
     </type>
@@ -46,8 +53,8 @@
       <part value="Tablet"/>
       <type>
         <coding>
-          <system value="https://spor.ema.europa.eu/rmswi/"/>
-          <code value="/#220000000005"/>
+          <system value="https://spor.ema.europa.eu/rmswi"/>
+          <code value="220000000005"/>
         </coding>
         <text value="Pharmaceutical dose form part"/>
       </type>
@@ -55,7 +62,7 @@
     <countryLanguage>
       <country>
         <coding>
-          <system value="urn:iso:std:iso:639"/>
+          <system value="urn:iso:std:iso:3166"/>
           <code value="jp"/>
         </coding>
         <text value="Japan"/>

@@ -12,9 +12,12 @@
     <resource>
       <Composition>
         <id value="d19473ec-d66c-443d-bd8f-31398daaffee"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"/>
+        </meta>
         <language value="ja"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "d19473ec-d66c-443d-bd8f-31398daaffee"  (Language "ja") </p></div><p><b>status</b>: final</p><p><b>type</b>: Package Insert <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000155538)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p><p><b>title</b>: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets</p><p><b>confidentiality</b>: U</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "d19473ec-d66c-443d-bd8f-31398daaffee"  (Language "ja") </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-uv-epi.html">Composition (ePI)</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000155538)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p><p><b>title</b>: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-composition-attestation-mode.html">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table></div>
         </text>
         <status value="final"/>
         <type>
@@ -22,14 +25,26 @@
             <system value="https://spor.ema.europa.eu/"/>
             <code value="100000155538"/>
           </coding>
-          <text value="Package Insert"/>
+          <text value="Package Leaflet"/>
         </type>
+        <subject>
+          <reference value="RegulatedAuthorization/15c6f86f-8665-4bd6-86da-a3a61fe16084"/>
+        </subject>
         <date value="2002-08-01T13:28:17Z"/>
         <author>
           <reference value="Organization/7f257409-3b65-401d-a246-7ae51e298fbb"/>
         </author>
         <title value="TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"/>
         <confidentiality value="U"/>
+        <attester>
+          <mode>
+            <coding>
+              <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+              <code value="official"/>
+            </coding>
+          </mode>
+          <time value="2002-08-01T13:28:17Z"/>
+        </attester>
         <section>
           <title value="2. 禁忌(次の患者には投与しないこと)"/>
           <code>
@@ -297,8 +312,11 @@
     <resource>
       <Organization>
         <id value="7f257409-3b65-401d-a246-7ae51e298fbb"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "7f257409-3b65-401d-a246-7ae51e298fbb" </p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#tbd "Marketing authorisation holder")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "7f257409-3b65-401d-a246-7ae51e298fbb" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Organization-uv-epi.html">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#tbd "Marketing authorisation holder")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -340,8 +358,11 @@
     <resource>
       <RegulatedAuthorization>
         <id value="15c6f86f-8665-4bd6-86da-a3a61fe16084"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "15c6f86f-8665-4bd6-86da-a3a61fe16084" </p></div><p><b>identifier</b>: id: 21400AMY00186 (OFFICIAL)</p><p><b>subject</b>: <a href="#PackagedProductDefinition_39307d03-7ff4-4c0d-9326-36de7beb7cad">See above (PackagedProductDefinition/39307d03-7ff4-4c0d-9326-36de7beb7cad)</a></p><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072062)</span></p><p><b>region</b>: Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>holder</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "15c6f86f-8665-4bd6-86da-a3a61fe16084" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: 21400AMY00186 (OFFICIAL)</p><p><b>subject</b>: <a href="#MedicinalProductDefinition_117616c7-3bcc-4665-8e12-0e93447e679e">See above (MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e)</a></p><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072062)</span></p><p><b>region</b>: Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>holder</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -349,7 +370,7 @@
           <value value="21400AMY00186"/>
         </identifier>
         <subject>
-          <reference value="PackagedProductDefinition/39307d03-7ff4-4c0d-9326-36de7beb7cad"/>
+          <reference value="MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e"/>
         </subject>
         <type>
           <coding>
@@ -383,20 +404,27 @@
     <resource>
       <MedicinalProductDefinition>
         <id value="117616c7-3bcc-4665-8e12-0e93447e679e"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "117616c7-3bcc-4665-8e12-0e93447e679e" </p></div><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072062)</span></p><p><b>domain</b>: Human use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000000012)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#220000000001)</span></p><h3>NameParts</h3><table class="grid"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japanese <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#ja)</span></td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "117616c7-3bcc-4665-8e12-0e93447e679e" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicinalProductDefinition-uv-epi.html">MedicinalProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Medicinal Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-type.html">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-domain.html">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Aromasin (exemestane) Tablets 25 mg</p><p><b>type</b>: Full name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class="grid"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Tablet</td><td>Pharmaceutical dose form part <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#jp)</span></td><td>Japanese <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#ja)</span></td></tr></table></blockquote></div>
         </text>
+        <identifier>
+          <system value="https://spor.ema.europa.eu/pmswi"/>
+          <value value="123456"/>
+        </identifier>
         <type>
           <coding>
-            <system value="https://spor.ema.europa.eu/rmswi/"/>
-            <code value="/#100000072062"/>
+            <system value="http://hl7.org/fhir/medicinal-product-type"/>
+            <code value="MedicinalProduct"/>
           </coding>
-          <text value="Marketing Authorisation"/>
+          <text value="Medicinal Product"/>
         </type>
         <domain>
           <coding>
-            <system value="https://spor.ema.europa.eu/rmswi/"/>
-            <code value="/#100000000012"/>
+            <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+            <code value="Human"/>
           </coding>
           <text value="Human use"/>
         </domain>
@@ -409,8 +437,8 @@
         </status>
         <legalStatusOfSupply>
           <coding>
-            <system value="https://spor.ema.europa.eu/rmswi/"/>
-            <code value="/#100000072084"/>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000072084"/>
           </coding>
           <text value="Medicinal product subject to medical prescription"/>
         </legalStatusOfSupply>
@@ -418,8 +446,8 @@
           <productName value="Aromasin (exemestane) Tablets 25 mg"/>
           <type>
             <coding>
-              <system value="https://spor.ema.europa.eu/rmswi/"/>
-              <code value="/#220000000001"/>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="220000000001"/>
             </coding>
             <text value="Full name"/>
           </type>
@@ -427,8 +455,8 @@
             <part value="Tablet"/>
             <type>
               <coding>
-                <system value="https://spor.ema.europa.eu/rmswi/"/>
-                <code value="/#220000000005"/>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="220000000005"/>
               </coding>
               <text value="Pharmaceutical dose form part"/>
             </type>
@@ -436,7 +464,7 @@
           <countryLanguage>
             <country>
               <coding>
-                <system value="urn:iso:std:iso:639"/>
+                <system value="urn:iso:std:iso:3166"/>
                 <code value="jp"/>
               </coding>
               <text value="Japan"/>
@@ -464,19 +492,22 @@
     <resource>
       <PackagedProductDefinition>
         <id value="bb536b04-39f1-4e0a-a723-e9079fd5e994"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "bb536b04-39f1-4e0a-a723-e9079fd5e994" </p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]</p><p><b>type</b>: Chemical Medininal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000155527)</span></p><p><b>packageFor</b>: <a href="#MedicinalProductDefinition_117616c7-3bcc-4665-8e12-0e93447e679e">See above (MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e)</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 28 tablet</p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "bb536b04-39f1-4e0a-a723-e9079fd5e994" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PackagedProductDefinition-uv-epi.html">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 4291012F1022_4_02-001 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]</p><p><b>type</b>: Chemical Medininal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href="#MedicinalProductDefinition_117616c7-3bcc-4665-8e12-0e93447e679e">See above (MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e)</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 28 tablet</p><p><b>manufacturer</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 123456</p><p><b>type</b>: Blister <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
-          <system value="https://pmda-packinsertno/"/>
-          <value value="4291012F1022_4_02-002"/>
+          <system value="https://spor.ema.europa.eu/pmswi"/>
+          <value value="4291012F1022_4_02-001"/>
         </identifier>
         <name value="Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]"/>
         <type>
           <coding>
-            <system value="https://spor.ema.europa.eu/rmswi/"/>
-            <code value="/#100000155527"/>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000155527"/>
           </coding>
           <text value="Chemical Medininal Prodcut"/>
         </type>
@@ -495,21 +526,28 @@
           <value value="28"/>
           <unit value="tablet"/>
         </containedItemQuantity>
+        <manufacturer>
+          <reference value="Organization/7f257409-3b65-401d-a246-7ae51e298fbb"/>
+        </manufacturer>
         <package>
+          <identifier>
+            <system value="https://spor.ema.europa.eu/pmswi"/>
+            <value value="123456"/>
+          </identifier>
           <type>
             <coding>
-              <system value="https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC/"/>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
               <code value="30007000"/>
+              <display value="Blister"/>
             </coding>
-            <text value="Blister"/>
           </type>
           <quantity value="1"/>
           <material>
             <coding>
-              <system value="https://spor.ema.europa.eu/rmswi/"/>
-              <code value="/#200000003222"/>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000003222"/>
+              <display value="PolyVinyl Chloride"/>
             </coding>
-            <text value="PolyVinyl Chloride"/>
           </material>
           <containedItem>
             <item>
@@ -526,8 +564,11 @@
     <resource>
       <PackagedProductDefinition>
         <id value="39307d03-7ff4-4c0d-9326-36de7beb7cad"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "39307d03-7ff4-4c0d-9326-36de7beb7cad" </p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]</p><p><b>type</b>: Chemical Medininal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000155527)</span></p><p><b>packageFor</b>: <a href="#MedicinalProductDefinition_117616c7-3bcc-4665-8e12-0e93447e679e">See above (MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e)</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 140 tablet</p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "39307d03-7ff4-4c0d-9326-36de7beb7cad" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PackagedProductDefinition-uv-epi.html">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]</p><p><b>type</b>: Chemical Medininal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href="#MedicinalProductDefinition_117616c7-3bcc-4665-8e12-0e93447e679e">See above (MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e)</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 140 tablet</p><p><b>manufacturer</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 78910</p><p><b>type</b>: Blister <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -537,8 +578,8 @@
         <name value="Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]"/>
         <type>
           <coding>
-            <system value="https://spor.ema.europa.eu/rmswi/"/>
-            <code value="/#100000155527"/>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000155527"/>
           </coding>
           <text value="Chemical Medininal Prodcut"/>
         </type>
@@ -557,21 +598,28 @@
           <value value="140"/>
           <unit value="tablet"/>
         </containedItemQuantity>
+        <manufacturer>
+          <reference value="Organization/7f257409-3b65-401d-a246-7ae51e298fbb"/>
+        </manufacturer>
         <package>
+          <identifier>
+            <system value="https://spor.ema.europa.eu/pmswi"/>
+            <value value="78910"/>
+          </identifier>
           <type>
             <coding>
-              <system value="https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC/"/>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
               <code value="30007000"/>
+              <display value="Blister"/>
             </coding>
-            <text value="Blister"/>
           </type>
           <quantity value="1"/>
           <material>
             <coding>
-              <system value="https://spor.ema.europa.eu/rmswi/"/>
-              <code value="/#200000003222"/>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000003222"/>
+              <display value="PolyVinyl Chloride"/>
             </coding>
-            <text value="PolyVinyl Chloride"/>
           </material>
           <containedItem>
             <item>
@@ -588,9 +636,16 @@
     <resource>
       <AdministrableProductDefinition>
         <id value="d43df7b9-7815-4eb5-8350-945e4b77d46b"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "d43df7b9-7815-4eb5-8350-945e4b77d46b" </p></div><p><b>status</b>: active</p><p><b>formOf</b>: <a href="#MedicinalProductDefinition_117616c7-3bcc-4665-8e12-0e93447e679e">See above (MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e)</a></p><p><b>administrableDoseForm</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#10219000)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#15054000)</span></p><p><b>producedFrom</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#20053000)</span></p><h3>TargetSpecies</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000109093)</span></td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "d43df7b9-7815-4eb5-8350-945e4b77d46b" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AdministrableProductDefinition-uv-epi.html">AdministrableProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: abc123</p><p><b>status</b>: active</p><p><b>formOf</b>: <a href="#MedicinalProductDefinition_117616c7-3bcc-4665-8e12-0e93447e679e">See above (MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e)</a></p><p><b>administrableDoseForm</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#10219000)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#15054000)</span></p><p><b>producedFrom</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#20053000)</span></p><h3>TargetSpecies</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000109093)</span></td></tr></table></blockquote></div>
         </text>
+        <identifier>
+          <system value="https://www.who-umc.org/phpid"/>
+          <value value="abc123"/>
+        </identifier>
         <status value="active"/>
         <formOf>
           <reference value="MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e"/>
@@ -637,8 +692,11 @@
     <resource>
       <ManufacturedItemDefinition>
         <id value="7460b712-82ad-4cce-a756-90b0fa04896c"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "7460b712-82ad-4cce-a756-90b0fa04896c" </p></div><p><b>identifier</b>: id: 874291 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#10219000)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#15054000)</span></p><p><b>manufacturer</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "7460b712-82ad-4cce-a756-90b0fa04896c" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ManufacturedItemDefinition-uv-epi.html">ManufacturedItemDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 874291 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#10219000)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#15054000)</span></p><p><b>manufacturer</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -670,8 +728,11 @@
     <resource>
       <Ingredient>
         <id value="41089f24-89ce-4fda-a038-70f3cd28ab06"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "41089f24-89ce-4fda-a038-70f3cd28ab06" </p></div><p><b>identifier</b>: id: NY22HMQ4BX (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#00000072072)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class="grid"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>25 mg</td><td>active ingredient - basis of strength <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "41089f24-89ce-4fda-a038-70f3cd28ab06" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: NY22HMQ4BX (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#00000072072)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class="grid"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>25 mg</td><td>active ingredient - basis of strength <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (v3-RoleClassIngredientEntity#ACTIB)</span></td></tr></table></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -725,8 +786,11 @@
     <resource>
       <Ingredient>
         <id value="b3773440-614c-4007-bc1c-2fec305b6b81"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "b3773440-614c-4007-bc1c-2fec305b6b81" </p></div><p><b>identifier</b>: id: R12CBM0EIZ (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "b3773440-614c-4007-bc1c-2fec305b6b81" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: R12CBM0EIZ (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -767,8 +831,11 @@
     <resource>
       <Ingredient>
         <id value="aceb61f1-4030-458c-996c-3707c919a0e2"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "aceb61f1-4030-458c-996c-3707c919a0e2" </p></div><p><b>identifier</b>: id: OP1R32D61U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "aceb61f1-4030-458c-996c-3707c919a0e2" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: OP1R32D61U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -809,8 +876,11 @@
     <resource>
       <Ingredient>
         <id value="868c0677-e53b-4f0d-a6aa-a7473756b8e9"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "868c0677-e53b-4f0d-a6aa-a7473756b8e9" </p></div><p><b>identifier</b>: id: 3OWL53L36A (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "868c0677-e53b-4f0d-a6aa-a7473756b8e9" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 3OWL53L36A (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -851,8 +921,11 @@
     <resource>
       <Ingredient>
         <id value="fc31fc43-2825-41c6-8757-e1c0cab29712"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "fc31fc43-2825-41c6-8757-e1c0cab29712" </p></div><p><b>identifier</b>: id: 3NXW29V3WO (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "fc31fc43-2825-41c6-8757-e1c0cab29712" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 3NXW29V3WO (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -893,8 +966,11 @@
     <resource>
       <Ingredient>
         <id value="aba217d4-5bc4-4690-b100-401cae4390ed"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "aba217d4-5bc4-4690-b100-401cae4390ed" </p></div><p><b>identifier</b>: id: ETJ7Z6XBU4 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "aba217d4-5bc4-4690-b100-401cae4390ed" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: ETJ7Z6XBU4 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -935,8 +1011,11 @@
     <resource>
       <Ingredient>
         <id value="77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7" </p></div><p><b>identifier</b>: id: 0E53J927NA (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 0E53J927NA (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -977,8 +1056,11 @@
     <resource>
       <Ingredient>
         <id value="ad9f21be-db44-4f3d-80fb-8d61722ef070"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "ad9f21be-db44-4f3d-80fb-8d61722ef070" </p></div><p><b>identifier</b>: id: 70097M6I30 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "ad9f21be-db44-4f3d-80fb-8d61722ef070" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 70097M6I30 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1019,8 +1101,11 @@
     <resource>
       <Ingredient>
         <id value="570a14b4-3e58-4afc-9cc1-4d4b38bcd485"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "570a14b4-3e58-4afc-9cc1-4d4b38bcd485" </p></div><p><b>identifier</b>: id: A2I8C7HI9T (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "570a14b4-3e58-4afc-9cc1-4d4b38bcd485" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: A2I8C7HI9T (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1061,8 +1146,11 @@
     <resource>
       <Ingredient>
         <id value="c33a68c8-aecc-4556-8632-e2f3f7ba5b5a"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "c33a68c8-aecc-4556-8632-e2f3f7ba5b5a" </p></div><p><b>identifier</b>: id: 30IQX730WE (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "c33a68c8-aecc-4556-8632-e2f3f7ba5b5a" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 30IQX730WE (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1103,8 +1191,11 @@
     <resource>
       <Ingredient>
         <id value="65bb58dd-b083-4cd3-892f-60fed75967d5"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "65bb58dd-b083-4cd3-892f-60fed75967d5" </p></div><p><b>identifier</b>: id: 6OZP39ZG8H (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "65bb58dd-b083-4cd3-892f-60fed75967d5" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 6OZP39ZG8H (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1145,8 +1236,11 @@
     <resource>
       <Ingredient>
         <id value="9df66779-105d-4df6-b920-a3d134cec967"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "9df66779-105d-4df6-b920-a3d134cec967" </p></div><p><b>identifier</b>: id: 532B59J990 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "9df66779-105d-4df6-b920-a3d134cec967" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 532B59J990 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1187,8 +1281,11 @@
     <resource>
       <Ingredient>
         <id value="f4d45370-a6f1-4c35-a82a-f64982ab89b3"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "f4d45370-a6f1-4c35-a82a-f64982ab89b3" </p></div><p><b>identifier</b>: id: C151H8M554 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "f4d45370-a6f1-4c35-a82a-f64982ab89b3" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: C151H8M554 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1229,8 +1326,11 @@
     <resource>
       <Ingredient>
         <id value="86746372-3005-4ba0-a2d0-bcd0d55e56a0"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "86746372-3005-4ba0-a2d0-bcd0d55e56a0" </p></div><p><b>identifier</b>: id: ETJ7Z6XBU4 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "86746372-3005-4ba0-a2d0-bcd0d55e56a0" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: ETJ7Z6XBU4 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1271,8 +1371,11 @@
     <resource>
       <Ingredient>
         <id value="8d6832f1-7d1d-483b-a0fd-879d531681fb"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "8d6832f1-7d1d-483b-a0fd-879d531681fb" </p></div><p><b>identifier</b>: id: 5856J3G2A2 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "8d6832f1-7d1d-483b-a0fd-879d531681fb" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 5856J3G2A2 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1313,8 +1416,11 @@
     <resource>
       <Ingredient>
         <id value="13beb88f-1df3-499d-9c74-4f5925a6f206"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "13beb88f-1df3-499d-9c74-4f5925a6f206" </p></div><p><b>identifier</b>: id: 5M631N9V0S (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "13beb88f-1df3-499d-9c74-4f5925a6f206" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 5M631N9V0S (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1355,8 +1461,11 @@
     <resource>
       <Ingredient>
         <id value="42a65fd0-6ba9-4b81-9cc2-4c9754d56a95"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "42a65fd0-6ba9-4b81-9cc2-4c9754d56a95" </p></div><p><b>identifier</b>: id: 7SEV7J4R1U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "42a65fd0-6ba9-4b81-9cc2-4c9754d56a95" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 7SEV7J4R1U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1397,8 +1506,11 @@
     <resource>
       <Ingredient>
         <id value="cbb53556-9c1f-4fa7-b2af-2eea988dee2d"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cbb53556-9c1f-4fa7-b2af-2eea988dee2d" </p></div><p><b>identifier</b>: id: 15FIX9V2JP (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cbb53556-9c1f-4fa7-b2af-2eea988dee2d" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 15FIX9V2JP (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="#ManufacturedItemDefinition_7460b712-82ad-4cce-a756-90b0fa04896c">See above (ManufacturedItemDefinition/7460b712-82ad-4cce-a756-90b0fa04896c)</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
         </text>
         <identifier>
           <use value="official"/>
@@ -1439,8 +1551,11 @@
     <resource>
       <SubstanceDefinition>
         <id value="f733a07f-c7fb-43eb-9776-ec0a3e4748da"/>
+        <meta>
+          <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi"/>
+        </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "f733a07f-c7fb-43eb-9776-ec0a3e4748da" </p></div><p><b>identifier</b>: id: NY22HMQ4BX (OFFICIAL)</p><p><b>version</b>: 39</p><p><b>status</b>: Validated (UNII) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#1)</span></p><p><b>description</b>: White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water.</p><p><b>manufacturer</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p><h3>MolecularWeights</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Amount</b></td></tr><tr><td>*</td><td>exact <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>296.4</td></tr></table><h3>Structures</h3><table class="grid"><tr><td>-</td><td><b>MolecularFormula</b></td></tr><tr><td>*</td><td>C20H24O2</td></tr></table><h3>Names</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>(+)-6-methyleneandrosta-1,4-diene-3,17-dione</td><td>Chemical Name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#1)</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "f733a07f-c7fb-43eb-9776-ec0a3e4748da" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SubstanceDefinition-uv-epi.html">SubstanceDefinition (ePI)</a></p></div><p><b>identifier</b>: id: NY22HMQ4BX (OFFICIAL)</p><p><b>version</b>: 39</p><p><b>status</b>: Validated (UNII) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#1)</span></p><p><b>description</b>: White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water.</p><p><b>manufacturer</b>: <a href="#Organization_7f257409-3b65-401d-a246-7ae51e298fbb">See above (Organization/7f257409-3b65-401d-a246-7ae51e298fbb)</a></p><h3>MolecularWeights</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Amount</b></td></tr><tr><td>*</td><td>exact <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>296.4</td></tr></table><h3>Structures</h3><table class="grid"><tr><td>-</td><td><b>MolecularFormula</b></td></tr><tr><td>*</td><td>C20H24O2</td></tr></table><h3>Names</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>(+)-6-methyleneandrosta-1,4-diene-3,17-dione</td><td>Chemical Name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#1)</span></td></tr></table></div>
         </text>
         <identifier>
           <use value="official"/>

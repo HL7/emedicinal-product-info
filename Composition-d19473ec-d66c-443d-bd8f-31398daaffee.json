@@ -1,10 +1,15 @@
 {
   "resourceType": "Composition",
   "id": "d19473ec-d66c-443d-bd8f-31398daaffee",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
+    ]
+  },
   "language": "ja",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"d19473ec-d66c-443d-bd8f-31398daaffee\"  (Language \"ja\") </p></div><p><b>status</b>: final</p><p><b>type</b>: Package Insert <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href=\"Organization-7f257409-3b65-401d-a246-7ae51e298fbb.html\">Organization/7f257409-3b65-401d-a246-7ae51e298fbb</a> \"Pfizer, Inc.\"</p><p><b>title</b>: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets</p><p><b>confidentiality</b>: U</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"d19473ec-d66c-443d-bd8f-31398daaffee\"  (Language \"ja\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-uv-epi.html\">Composition (ePI)</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href=\"Organization-7f257409-3b65-401d-a246-7ae51e298fbb.html\">Organization/7f257409-3b65-401d-a246-7ae51e298fbb</a> \"Pfizer, Inc.\"</p><p><b>title</b>: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-composition-attestation-mode.html\">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table></div>"
   },
   "status": "final",
   "type": {
@@ -14,7 +19,10 @@
         "code": "100000155538"
       }
     ],
-    "text": "Package Insert"
+    "text": "Package Leaflet"
+  },
+  "subject": {
+    "reference": "RegulatedAuthorization/15c6f86f-8665-4bd6-86da-a3a61fe16084"
   },
   "date": "2002-08-01T13:28:17Z",
   "author": [
@@ -24,6 +32,19 @@
   ],
   "title": "TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets",
   "confidentiality": "U",
+  "attester": [
+    {
+      "mode": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/composition-attestation-mode",
+            "code": "official"
+          }
+        ]
+      },
+      "time": "2002-08-01T13:28:17Z"
+    }
+  ],
   "section": [
     {
       "title": "2. 禁忌(次の患者には投与しないこと)",

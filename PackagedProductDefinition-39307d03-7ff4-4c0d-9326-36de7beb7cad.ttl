@@ -8,9 +8,16 @@
 <http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/39307d03-7ff4-4c0d-9326-36de7beb7cad> a fhir:PackagedProductDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "39307d03-7ff4-4c0d-9326-36de7beb7cad"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi";
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi>
+     ]
+  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"39307d03-7ff4-4c0d-9326-36de7beb7cad\" </p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000155527)</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-117616c7-3bcc-4665-8e12-0e93447e679e.html\">MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 140 tablet</p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"39307d03-7ff4-4c0d-9326-36de7beb7cad\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PackagedProductDefinition-uv-epi.html\">PackagedProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: 4291012F1022_4_02-002 (OFFICIAL)</p><p><b>name</b>: Aromasin (exemestane) Tablets 25 mg - 140 tablets [14 tablets (PTP) x 10]</p><p><b>type</b>: Chemical Medininal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-117616c7-3bcc-4665-8e12-0e93447e679e.html\">MedicinalProductDefinition/117616c7-3bcc-4665-8e12-0e93447e679e</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-08-01 01:28:17+0000</p><p><b>containedItemQuantity</b>: 140 tablet</p><p><b>manufacturer</b>: <a href=\"Organization-7f257409-3b65-401d-a246-7ae51e298fbb.html\">Organization/7f257409-3b65-401d-a246-7ae51e298fbb</a> \"Pfizer, Inc.\"</p><blockquote><p><b>package</b></p><p><b>identifier</b>: id: 78910</p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#30007000)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></div>"
   ];
   fhir:PackagedProductDefinition.identifier [
      fhir:index 0;
@@ -22,8 +29,8 @@
   fhir:PackagedProductDefinition.type [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-       fhir:Coding.code [ fhir:value "/#100000155527" ]
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+       fhir:Coding.code [ fhir:value "100000155527" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Chemical Medininal Prodcut" ]
   ];
@@ -46,24 +53,34 @@
      fhir:Quantity.value [ fhir:value "140"^^xsd:decimal ];
      fhir:Quantity.unit [ fhir:value "tablet" ]
   ];
+  fhir:PackagedProductDefinition.manufacturer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/7f257409-3b65-401d-a246-7ae51e298fbb>;
+     fhir:Reference.reference [ fhir:value "Organization/7f257409-3b65-401d-a246-7ae51e298fbb" ]
+  ];
   fhir:PackagedProductDefinition.package [
+     fhir:PackagedProductDefinition.package.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
+       fhir:Identifier.value [ fhir:value "78910" ]
+     ];
      fhir:PackagedProductDefinition.package.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC/" ];
-         fhir:Coding.code [ fhir:value "30007000" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "Blister" ]
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+         fhir:Coding.code [ fhir:value "30007000" ];
+         fhir:Coding.display [ fhir:value "Blister" ]
+       ]
      ];
      fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
      fhir:PackagedProductDefinition.package.material [
        fhir:index 0;
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-         fhir:Coding.code [ fhir:value "/#200000003222" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "PolyVinyl Chloride" ]
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+         fhir:Coding.code [ fhir:value "200000003222" ];
+         fhir:Coding.display [ fhir:value "PolyVinyl Chloride" ]
+       ]
      ];
      fhir:PackagedProductDefinition.package.containedItem [
        fhir:index 0;

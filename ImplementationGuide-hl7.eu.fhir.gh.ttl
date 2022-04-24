@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-24T16:56:32+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-24T17:04:20+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -482,7 +482,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "117616c7-3bcc-4665-8e12-0e93447e679e" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aromasin (exemestane) Tablets 25 mg" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi>
+       ]
      ], [
        fhir:index 32;
        fhir:Element.extension [
@@ -496,7 +499,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "13beb88f-1df3-499d-9c74-4f5925a6f206" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "synthetic wax" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 33;
        fhir:Element.extension [
@@ -510,7 +516,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "15c6f86f-8665-4bd6-86da-a3a61fe16084" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulated Authorization" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi>
+       ]
      ], [
        fhir:index 34;
        fhir:Element.extension [
@@ -538,7 +547,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "39307d03-7ff4-4c0d-9326-36de7beb7cad" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "140 tablets [14 tablets (PTP) x 10]" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi>
+       ]
      ], [
        fhir:index 36;
        fhir:Element.extension [
@@ -552,7 +564,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "41089f24-89ce-4fda-a038-70f3cd28ab06" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EXEMESTANE" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 37;
        fhir:Element.extension [
@@ -566,7 +581,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "42a65fd0-6ba9-4b81-9cc2-4c9754d56a95" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "talc" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 38;
        fhir:Element.extension [
@@ -580,7 +598,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "570a14b4-3e58-4afc-9cc1-4d4b38bcd485" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "METHYLPARABEN" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 39;
        fhir:Element.extension [
@@ -594,7 +615,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "65bb58dd-b083-4cd3-892f-60fed75967d5" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "POLYSORBATE 80" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 40;
        fhir:Element.extension [
@@ -608,7 +632,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "7460b712-82ad-4cce-a756-90b0fa04896c" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item - Aromasin (exemestane) Tablets 25 mg" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi>
+       ]
      ], [
        fhir:index 41;
        fhir:Element.extension [
@@ -622,7 +649,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "MAGNESIUM CARBONATE" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 42;
        fhir:Element.extension [
@@ -636,7 +666,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "7f257409-3b65-401d-a246-7ae51e298fbb" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
+       ]
      ], [
        fhir:index 43;
        fhir:Element.extension [
@@ -650,7 +683,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "86746372-3005-4ba0-a2d0-bcd0d55e56a0" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SILICON DIOXIDE" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 44;
        fhir:Element.extension [
@@ -664,7 +700,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "868c0677-e53b-4f0d-a6aa-a7473756b8e9" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "MANNITOL" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 45;
        fhir:Element.extension [
@@ -678,7 +717,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "8d6832f1-7d1d-483b-a0fd-879d531681fb" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SODIUM STARCH GLYCOLATE TYPE A POTATO" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 46;
        fhir:Element.extension [
@@ -692,7 +734,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "9df66779-105d-4df6-b920-a3d134cec967" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "POLYVINYL ALCOHOL, UNSPECIFIED" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 47;
        fhir:Element.extension [
@@ -706,7 +751,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "aba217d4-5bc4-4690-b100-401cae4390ed" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "light anhydrous silicic acid" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 48;
        fhir:Element.extension [
@@ -720,7 +768,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "aceb61f1-4030-458c-996c-3707c919a0e2" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "crystalline cellulose" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 49;
        fhir:Element.extension [
@@ -734,7 +785,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ad9f21be-db44-4f3d-80fb-8d61722ef070" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "MAGNESIUM STEARATE" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 50;
        fhir:Element.extension [
@@ -748,7 +802,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "b3773440-614c-4007-bc1c-2fec305b6b81" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Carnauba wax" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 51;
        fhir:Element.extension [
@@ -762,7 +819,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "bb536b04-39f1-4e0a-a723-e9079fd5e994" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "28 tablets [14 tablets (PTP) x 2]" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi>
+       ]
      ], [
        fhir:index 52;
        fhir:Element.extension [
@@ -776,7 +836,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "c33a68c8-aecc-4556-8632-e2f3f7ba5b5a" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "POLYETHYLENE GLYCOL 6000" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 53;
        fhir:Element.extension [
@@ -790,7 +853,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "cbb53556-9c1f-4fa7-b2af-2eea988dee2d" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TITANIUM DIOXIDE " ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 54;
        fhir:Element.extension [
@@ -1367,8 +1433,11 @@
          fhir:Reference.reference [ fhir:value "Composition/d19473ec-d66c-443d-bd8f-31398daaffee" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "d19473ec-d66c-443d-bd8f-31398daaffee" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package Insert" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package Leaflet" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi>
+       ]
      ], [
        fhir:index 94;
        fhir:Element.extension [
@@ -1382,7 +1451,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "d43df7b9-7815-4eb5-8350-945e4b77d46b" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aromasin (exemestane) Tablets 25 mg" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi>
+       ]
      ], [
        fhir:index 95;
        fhir:Element.extension [
@@ -1396,7 +1468,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "f4d45370-a6f1-4c35-a82a-f64982ab89b3" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SUCROSE" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 96;
        fhir:Element.extension [
@@ -1410,7 +1485,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "f733a07f-c7fb-43eb-9776-ec0a3e4748da" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "exemestane-sub" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi>
+       ]
      ], [
        fhir:index 97;
        fhir:Element.extension [
@@ -1424,7 +1502,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "fc31fc43-2825-41c6-8757-e1c0cab29712" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HYPROMELLOSE, UNSPECIFIED " ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
