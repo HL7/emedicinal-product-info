@@ -36,7 +36,8 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #220000000005 "Pharmaceutical dose form part"
 * #220000000033
 * #220000000034
-
+* #30007000 "Blister"
+* #200000003222 "PolyVinyl Chloride"
 
 
 CodeSystem: CodeSystemUvEPIRomswi
