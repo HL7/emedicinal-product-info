@@ -1,5 +1,5 @@
 Instance: b3773440-614c-4007-bc1c-2fec305b6b81
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "Carnauba wax"
 Usage: #example
 

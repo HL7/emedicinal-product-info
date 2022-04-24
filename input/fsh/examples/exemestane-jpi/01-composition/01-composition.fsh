@@ -1,17 +1,20 @@
 Instance: d19473ec-d66c-443d-bd8f-31398daaffee
-InstanceOf: Composition
-Description: "Package Insert"
+InstanceOf: CompositionUvEpi
+Description: "Package Leaflet"
 Usage: #example
 
 * status = #final
 * type = https://spor.ema.europa.eu/#100000155538
-* type.text = "Package Insert"
+* type.text = "Package Leaflet"
+* subject = Reference(15c6f86f-8665-4bd6-86da-a3a61fe16084) //reference to the authorization
 * date = "2002-08-01T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
 * author = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
 * title = "TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"
 * confidentiality = #U
+* attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
+* attester.time =  "2002-08-01T13:28:17Z"
 * language = #ja
 
 * section.title = "2. 禁忌(次の患者には投与しないこと)"

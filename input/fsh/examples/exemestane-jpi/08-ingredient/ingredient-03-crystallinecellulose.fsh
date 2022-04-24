@@ -1,5 +1,5 @@
 Instance: aceb61f1-4030-458c-996c-3707c919a0e2
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "crystalline cellulose"
 Usage: #example
 

@@ -1,5 +1,5 @@
 Instance: 9df66779-105d-4df6-b920-a3d134cec967
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "POLYVINYL ALCOHOL, UNSPECIFIED"
 Usage: #example
 

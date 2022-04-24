@@ -1,5 +1,5 @@
 Instance: 868c0677-e53b-4f0d-a6aa-a7473756b8e9
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "MANNITOL"
 Usage: #example
 

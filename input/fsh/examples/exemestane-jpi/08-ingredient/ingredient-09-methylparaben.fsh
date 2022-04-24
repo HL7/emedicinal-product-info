@@ -1,5 +1,5 @@
 Instance: 570a14b4-3e58-4afc-9cc1-4d4b38bcd485
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "METHYLPARABEN"
 Usage: #example
 

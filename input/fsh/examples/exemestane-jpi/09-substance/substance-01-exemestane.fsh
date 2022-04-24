@@ -1,5 +1,5 @@
 Instance: f733a07f-c7fb-43eb-9776-ec0a3e4748da
-InstanceOf: SubstanceDefinition
+InstanceOf: SubstanceDefinitionUvEpi
 Description: "exemestane-sub"
 Usage: #example
  

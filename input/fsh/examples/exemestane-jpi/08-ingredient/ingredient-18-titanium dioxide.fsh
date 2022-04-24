@@ -1,5 +1,5 @@
 Instance: cbb53556-9c1f-4fa7-b2af-2eea988dee2d
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "TITANIUM DIOXIDE "
 Usage: #example
 

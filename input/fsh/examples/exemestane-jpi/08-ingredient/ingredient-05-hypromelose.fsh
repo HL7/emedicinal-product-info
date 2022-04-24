@@ -1,5 +1,5 @@
 Instance: fc31fc43-2825-41c6-8757-e1c0cab29712
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "HYPROMELLOSE, UNSPECIFIED "
 Usage: #example
 

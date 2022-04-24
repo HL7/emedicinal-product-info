@@ -1,5 +1,5 @@
 Instance: aba217d4-5bc4-4690-b100-401cae4390ed
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "light anhydrous silicic acid"
 Usage: #example
 

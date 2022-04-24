@@ -1,5 +1,5 @@
 Instance: 7f257409-3b65-401d-a246-7ae51e298fbb
-InstanceOf: Organization
+InstanceOf: OrganizationUvEpi
 Description: "Marketing Authorization Holder"
 Usage: #example
 

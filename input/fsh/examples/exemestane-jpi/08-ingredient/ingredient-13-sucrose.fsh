@@ -1,5 +1,5 @@
 Instance: f4d45370-a6f1-4c35-a82a-f64982ab89b3
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "SUCROSE"
 Usage: #example
 

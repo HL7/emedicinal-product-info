@@ -1,5 +1,5 @@
 Instance: c33a68c8-aecc-4556-8632-e2f3f7ba5b5a
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "POLYETHYLENE GLYCOL 6000"
 Usage: #example
 

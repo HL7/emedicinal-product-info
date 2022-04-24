@@ -1,5 +1,5 @@
 Instance: 86746372-3005-4ba0-a2d0-bcd0d55e56a0
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "SILICON DIOXIDE"
 Usage: #example
 

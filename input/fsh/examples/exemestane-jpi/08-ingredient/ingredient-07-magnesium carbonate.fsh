@@ -1,5 +1,5 @@
 Instance: 77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "MAGNESIUM CARBONATE"
 Usage: #example
 

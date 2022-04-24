@@ -1,5 +1,5 @@
 Instance: ad9f21be-db44-4f3d-80fb-8d61722ef070
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "MAGNESIUM STEARATE"
 Usage: #example
 

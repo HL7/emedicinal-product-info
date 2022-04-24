@@ -1,5 +1,5 @@
 Instance: 8d6832f1-7d1d-483b-a0fd-879d531681fb
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "SODIUM STARCH GLYCOLATE TYPE A POTATO"
 Usage: #example
 

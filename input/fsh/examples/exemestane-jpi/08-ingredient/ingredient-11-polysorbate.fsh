@@ -1,5 +1,5 @@
 Instance: 65bb58dd-b083-4cd3-892f-60fed75967d5
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "POLYSORBATE 80"
 Usage: #example
 

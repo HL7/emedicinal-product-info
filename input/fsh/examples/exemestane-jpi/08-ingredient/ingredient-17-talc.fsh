@@ -1,5 +1,5 @@
 Instance: 42a65fd0-6ba9-4b81-9cc2-4c9754d56a95
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "talc"
 Usage: #example
 

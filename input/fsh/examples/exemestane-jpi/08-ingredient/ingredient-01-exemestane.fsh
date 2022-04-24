@@ -1,5 +1,5 @@
 Instance: 41089f24-89ce-4fda-a038-70f3cd28ab06
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "EXEMESTANE"
 Usage: #example
 

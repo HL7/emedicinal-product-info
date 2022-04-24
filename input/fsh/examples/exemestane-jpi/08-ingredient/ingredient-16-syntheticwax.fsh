@@ -1,5 +1,5 @@
 Instance: 13beb88f-1df3-499d-9c74-4f5925a6f206
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "synthetic wax"
 Usage: #example
 

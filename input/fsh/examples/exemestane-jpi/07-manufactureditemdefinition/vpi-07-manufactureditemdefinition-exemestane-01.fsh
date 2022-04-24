@@ -1,5 +1,5 @@
 Instance: 7460b712-82ad-4cce-a756-90b0fa04896c
-InstanceOf: ManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinitionUvEpi
 Description: "Manufactured Item - Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
 

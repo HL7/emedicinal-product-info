@@ -1,7 +1,10 @@
 Instance: d43df7b9-7815-4eb5-8350-945e4b77d46b
-InstanceOf: AdministrableProductDefinition
+InstanceOf: AdministrableProductDefinitionUvEpi
 Description: "Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
+
+* identifier.system = $phpid
+* identifier.value = "abc123" // get PHPID 
 
 * status = #active
 
