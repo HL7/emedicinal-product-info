@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"/>
+  <meta>
+    <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Organization-uv-epi.html">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 672212 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#tbd "Marketing authorisation holder")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: 0120-664-467(WORK), fax: 03-3379-3053(WORK)</p><p><b>address</b>: 3-22-7 Yoyogi, Shibuya-ku, Tokyo(WORK)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://pmda-org-id"/>
+    <value value="672212"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="https://PMDA-org-type.jp/"/>
+      <code value="tbd"/>
+      <display value="Marketing authorisation holder"/>
+    </coding>
+    <text value="Manufacturer"/>
+  </type>
+  <name value="Pfizer, Inc."/>
+  <telecom>
+    <system value="phone"/>
+    <value value="0120-664-467"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="03-3379-3053"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="physical"/>
+    <text value="3-22-7 Yoyogi, Shibuya-ku, Tokyo"/>
+    <line value="3-22-7 Yoyogi"/>
+    <city value="Tokyo"/>
+    <country value="JP"/>
+  </address>
+</Organization>

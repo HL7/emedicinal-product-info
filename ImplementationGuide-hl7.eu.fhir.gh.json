@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-04-24T17:04:20+00:00",
+  "date": "2022-04-24T17:58:11+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -468,6 +468,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/01f6666c-b966-4372-ba61-9ee902912dd8"
+        },
+        "name": "01f6666c-b966-4372-ba61-9ee902912dd8",
+        "description": "light anhydrous silicic acid",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/0c81c330-cf57-45c2-9ca2-559aea4c8060"
+        },
+        "name": "0c81c330-cf57-45c2-9ca2-559aea4c8060",
+        "description": "POLYETHYLENE GLYCOL 6000",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicinalProductDefinition"
           }
         ],
@@ -510,6 +538,62 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/16dc4148-5296-4f7a-8576-2e6bf9dde736"
+        },
+        "name": "16dc4148-5296-4f7a-8576-2e6bf9dde736",
+        "description": "SILICON DIOXIDE",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SubstanceDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f"
+        },
+        "name": "17c536c9-efd1-4427-a7b0-1bcdc266798f",
+        "description": "exemestane-sub",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ManufacturedItemDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+        },
+        "name": "23fed712-2d60-461d-83a6-5fb939b2a939",
+        "description": "Manufactured Item - Aromasin (exemestane) Tablets 25 mg",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/32e98fc8-b8fb-4bd9-a4d3-2ce97c151d61"
+        },
+        "name": "32e98fc8-b8fb-4bd9-a4d3-2ce97c151d61",
+        "description": "crystalline cellulose",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -519,6 +603,34 @@
         "name": "Vulcan FHIR Japanese Package Insert Test - Aromasin (exemestane) Tablets 25 mg",
         "description": "Instance of exemestane tablets JPI for Connectathon testing",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/363cbf4a-9c4d-442a-af67-b72a1225ca28"
+        },
+        "name": "363cbf4a-9c4d-442a-af67-b72a1225ca28",
+        "description": "Package Leaflet",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/39151aef-f61a-40cb-86fc-d0e556fa07ef"
+        },
+        "name": "39151aef-f61a-40cb-86fc-d0e556fa07ef",
+        "description": "28 tablets [14 tablets (PTP) x 2]",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"
       },
       {
         "extension": [
@@ -566,6 +678,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RegulatedAuthorization"
+          }
+        ],
+        "reference": {
+          "reference": "RegulatedAuthorization/56b3b73e-dba0-4447-b8cd-1e24ed637017"
+        },
+        "name": "56b3b73e-dba0-4447-b8cd-1e24ed637017",
+        "description": "Regulated Authorization",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -584,10 +710,80 @@
           }
         ],
         "reference": {
+          "reference": "Ingredient/5a574ff2-f3e6-4aaa-8d3c-27e6ab343533"
+        },
+        "name": "5a574ff2-f3e6-4aaa-8d3c-27e6ab343533",
+        "description": "EXEMESTANE",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/5acc6759-a7f7-4380-ab2e-ad72e8587598"
+        },
+        "name": "5acc6759-a7f7-4380-ab2e-ad72e8587598",
+        "description": "MAGNESIUM STEARATE",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/5f2c1669-3991-4cc2-b252-958b738d5df8"
+        },
+        "name": "5f2c1669-3991-4cc2-b252-958b738d5df8",
+        "description": "METHYLPARABEN",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
           "reference": "Ingredient/65bb58dd-b083-4cd3-892f-60fed75967d5"
         },
         "name": "65bb58dd-b083-4cd3-892f-60fed75967d5",
         "description": "POLYSORBATE 80",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/6708560e-135d-4b2a-afde-9e3b03f27939"
+        },
+        "name": "6708560e-135d-4b2a-afde-9e3b03f27939",
+        "description": "POLYSORBATE 80",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/733fb580-1139-4188-aff8-ad6efe243555"
+        },
+        "name": "733fb580-1139-4188-aff8-ad6efe243555",
+        "description": "POLYVINYL ALCOHOL, UNSPECIFIED",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
       },
       {
@@ -622,6 +818,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/7b23dea1-ce14-4c13-8004-f297bb75eda0"
+        },
+        "name": "7b23dea1-ce14-4c13-8004-f297bb75eda0",
+        "description": "MANNITOL",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -629,6 +839,34 @@
           "reference": "Organization/7f257409-3b65-401d-a246-7ae51e298fbb"
         },
         "name": "7f257409-3b65-401d-a246-7ae51e298fbb",
+        "description": "Marketing Authorization Holder",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/854be59d-070a-44d7-a82e-bbb83200dc6a"
+        },
+        "name": "854be59d-070a-44d7-a82e-bbb83200dc6a",
+        "description": "TITANIUM DIOXIDE ",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+        },
+        "name": "85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8",
         "description": "Marketing Authorization Holder",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
       },
@@ -664,6 +902,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AdministrableProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "AdministrableProductDefinition/8cf05f7c-481d-4bd6-9a7c-9ca3275601c3"
+        },
+        "name": "8cf05f7c-481d-4bd6-9a7c-9ca3275601c3",
+        "description": "Aromasin (exemestane) Tablets 25 mg",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -673,6 +925,20 @@
         "name": "8d6832f1-7d1d-483b-a0fd-879d531681fb",
         "description": "SODIUM STARCH GLYCOLATE TYPE A POTATO",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/99d32917-3fd8-434b-bd1f-195a462326c1"
+        },
+        "name": "99d32917-3fd8-434b-bd1f-195a462326c1",
+        "description": "140 tablets [14 tablets (PTP) x 10]",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"
       },
       {
         "extension": [
@@ -738,6 +1004,20 @@
           }
         ],
         "reference": {
+          "reference": "Ingredient/b254f961-61ca-43f9-b3f9-5b0b5d4406a9"
+        },
+        "name": "b254f961-61ca-43f9-b3f9-5b0b5d4406a9",
+        "description": "SODIUM STARCH GLYCOLATE TYPE A POTATO",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
           "reference": "Ingredient/b3773440-614c-4007-bc1c-2fec305b6b81"
         },
         "name": "b3773440-614c-4007-bc1c-2fec305b6b81",
@@ -780,10 +1060,38 @@
           }
         ],
         "reference": {
+          "reference": "Ingredient/c5a3cb57-3f3e-4309-ae34-0926300de57e"
+        },
+        "name": "c5a3cb57-3f3e-4309-ae34-0926300de57e",
+        "description": "SUCROSE",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
           "reference": "Ingredient/cbb53556-9c1f-4fa7-b2af-2eea988dee2d"
         },
         "name": "cbb53556-9c1f-4fa7-b2af-2eea988dee2d",
         "description": "TITANIUM DIOXIDE ",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cc5753cd-e648-47d2-a135-503cd8a3e1da"
+        },
+        "name": "cc5753cd-e648-47d2-a135-503cd8a3e1da",
+        "description": "HYPROMELLOSE, UNSPECIFIED ",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
       },
       {
@@ -1359,6 +1667,90 @@
         "name": "d43df7b9-7815-4eb5-8350-945e4b77d46b",
         "description": "Aromasin (exemestane) Tablets 25 mg",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/d8d6a066-5358-42b2-ab97-de99c90af141"
+        },
+        "name": "d8d6a066-5358-42b2-ab97-de99c90af141",
+        "description": "synthetic wax",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/db5e392b-e7b2-47dc-829c-ee5182986dca"
+        },
+        "name": "db5e392b-e7b2-47dc-829c-ee5182986dca",
+        "description": "MAGNESIUM CARBONATE",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/e057aea0-3ef3-4cd8-8a33-fa73c6df1602"
+        },
+        "name": "e057aea0-3ef3-4cd8-8a33-fa73c6df1602",
+        "description": "talc",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicinalProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54"
+        },
+        "name": "f1b25777-da7a-4a35-98af-ab18d3246d54",
+        "description": "Aromasin (exemestane) Tablets 25 mg",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/f237a390-9fda-42e9-a62d-1ba5079be192"
+        },
+        "name": "Vulcan FHIR USA Patient Package Insert Test - Aromasin (exemestane) Tablets 25 mg",
+        "description": "Instance of exemestane tablets JPI for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/f35c1543-e4e2-4215-b91c-f092b1fb9655"
+        },
+        "name": "f35c1543-e4e2-4215-b91c-f092b1fb9655",
+        "description": "Carnauba wax",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
       },
       {
         "extension": [
