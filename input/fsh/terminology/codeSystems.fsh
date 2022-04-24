@@ -38,6 +38,7 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #220000000034
 * #30007000 "Blister"
 * #200000003222 "PolyVinyl Chloride"
+* #200000003215 "High Density PolyEthylene"
 
 
 CodeSystem: CodeSystemUvEPIRomswi
