@@ -1,0 +1,463 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH\f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6 - XML Representation - FHIR v5.0.0-snapshot1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8.138"}
+    h3,h4,h5,h6{--heading-prefix:"8.138"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="ePI-structure.html">ePI structure</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Composition-f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Composition-f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Composition-f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6 - XML Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Composition-f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6.xml" no-download="true">Raw xml</a> | <a href="Composition-f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml"><code class="language-xml">
+
+&lt;<a href="http://build.fhir.org/composition.html#Composition">Composition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.language">language</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.text">text</a>&gt;
+    &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6&quot;  (Language &quot;en&quot;) &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2015-04-19 12:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=&quot;Organization-4317c03f-3558-4548-9465-3dc4b4ab7b55.html&quot;&gt;Organization/4317c03f-3558-4548-9465-3dc4b4ab7b55&lt;/a&gt; &quot;Eli Lilly Nederland B.V.&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Humalog Vulcan ePI - UK&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.type">type</a>&gt;
+    &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Package Leaflet&quot;/&gt;
+  &lt;/type&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2015-04-19T00:00:00Z&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.author">author</a>&gt;
+    &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/4317c03f-3558-4548-9465-3dc4b4ab7b55&quot;/&gt;
+  &lt;/author&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;TEST PURPOSES ONLY - Humalog Vulcan ePI - UK&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.confidentiality">confidentiality</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;U&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. Package Leaflet&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;PACKAGE LEAFLET: INFORMATION FOR THE USER Humalog Mix50 100 units/ml suspension for injection in cartridge insulin lispro Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.&lt;ul&gt;&lt;li&gt;Keep this leaflet. You may need to read it again.&lt;/li&gt;&lt;li&gt;If you have any further questions, ask your doctor or pharmacist.&lt;/li&gt;&lt;li&gt;This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.&lt;/li&gt;&lt;li&gt;If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;What is in this leaflet&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-0&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;What in this leaflet&lt;ol&gt;&lt;li&gt;What Humalog Mix50 is and what it is used for&lt;/li&gt;&lt;li&gt;What you need to know before you take Humalog Mix50&lt;/li&gt;&lt;li&gt;How to take Humalog Mix50&lt;/li&gt;&lt;li&gt;Possible side effects&lt;/li&gt;&lt;li&gt;How to store Humalog Mix50&lt;/li&gt;&lt;li&gt;Contents of the pack and other information&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1. What Humalog Mix50 is and what it is used for&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-1&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;1. What Humalog Mix50 is and what it is used for&lt;/b&gt; Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active substance is insulin lispro.&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;2. What you need to know before you use Humalog Mix50&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-2&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;2. What you need to know before you use Humalog Mix50&lt;/b&gt; Do NOT use Humalog Mix50 if you&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;3. How to use Humalog Mix50&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-3&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;3. How to use Humalog Mix50&lt;/b&gt; &lt;b&gt;The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.&lt;/b&gt;&lt;p&gt;Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor if you are not sure. To prevent the possible transmission of disease, each cartridge must be used by you only, even if the needle on the delivery device is changed.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;4. Possible side effects&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-4&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;4. Possible side effects&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Like all medicines, this medicine can cause side effects, although not everybody gets them.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;5. How to store Humalog Mix50&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-5&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;5. How to store Humalog Mix50&lt;/b&gt;&lt;p&gt;Before the first use store your Humalog Mix50 in a refrigerator (2°C – 8°C). Do not freeze.&lt;/p&gt;&lt;p&gt;Keep your cartridge in use at room temperature (below 30°C) and discard after 28 days. Do not put it near heat or in the sun. Do not keep your pen or the cartridges you are using in the fridge. The pen with the inserted cartridge should not be stored with the needle attached.&lt;/p&gt;&lt;p&gt;Keep out of the sight and reach of children. Do not use this medicine after the expiry date which is stated on the label and the carton. The expiry date refers to the last day of that month.&lt;/p&gt;&lt;p&gt;Do not use this medicine if you notice clumps of material are present or if solid white particles stick to the bottom or wall of the cartridge, giving it a frosted appearance. Check each time you inject yourself. Medicines should not be disposed of via wastewater or household waste. Ask your pharmacist how to dispose of medicines no longer required. These measures will help to protect the environment.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;6. Contents of the pack and other information&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538-6&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;B. PACKAGE LEAFLET&quot;/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
+      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;b&gt;6. Contents of the pack and other information&lt;/b&gt; &lt;b&gt;What Humalog Mix50 100 units/ml suspension for injection in cartridge contains&lt;/b&gt;&lt;p&gt;The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant DNA technology’ process. It is a changed form of human insulin and so is different from other human and animal insulins. Insulin lispro is closely related to human insulin which is a natural hormone made by the pancreas. The other ingredients are protamine sulphate, m-cresol, phenol, glycerol, dibasic sodium phosphate 7H2O, zinc oxide and water for injection. Sodium hydroxide or hydrochloric acid may have been used to adjust the acidity.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/text&gt;
+  &lt;/section&gt;
+&lt;/Composition&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Apr 25, 2022 21:02+0000">2022-04-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

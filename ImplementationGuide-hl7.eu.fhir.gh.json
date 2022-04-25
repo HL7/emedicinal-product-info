@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-04-24T18:37:31+00:00",
+  "date": "2022-04-25T21:02:51+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -482,6 +482,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915"
+        },
+        "name": "Vulcan Humalog FHIR Package Insert v1 gb",
+        "description": "Instance of Humalog package insert for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicinalProductDefinition"
           }
         ],
@@ -566,6 +580,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RegulatedAuthorization"
+          }
+        ],
+        "reference": {
+          "reference": "RegulatedAuthorization/2a153905-acbd-4e65-9aef-7a8e2772f5ec"
+        },
+        "name": "Regulated Authorization GB",
+        "description": "Regulated Authorization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -636,6 +664,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/3cfc2347-44ef-448d-8929-7e06687d9473"
+        },
+        "name": "3cfc2347-44ef-448d-8929-7e06687d9473",
+        "description": "Manufaturer API",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/3df8b236-9a7f-41da-8cc1-6e851a179d0a"
+        },
+        "name": "3df8b236-9a7f-41da-8cc1-6e851a179d0a",
+        "description": "Water for injections",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -664,6 +720,48 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/4317c03f-3558-4548-9465-3dc4b4ab7b55"
+        },
+        "name": "4317c03f-3558-4548-9465-3dc4b4ab7b55",
+        "description": "Marketing Authorization Holder",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/4915c27b-b51a-4071-a031-71c5c5e52036"
+        },
+        "name": "4915c27b-b51a-4071-a031-71c5c5e52036",
+        "description": "Manufacturer",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/541e16ce-bbb6-4fdf-9691-1843a1fdd560"
+        },
+        "name": "541e16ce-bbb6-4fdf-9691-1843a1fdd560",
+        "description": "Sodium Hydroxide",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "RegulatedAuthorization"
           }
         ],
@@ -687,6 +785,20 @@
         "name": "570a14b4-3e58-4afc-9cc1-4d4b38bcd485",
         "description": "METHYLPARABEN",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/58982a29-3996-4c6e-87a4-902003cbdc21"
+        },
+        "name": "58982a29-3996-4c6e-87a4-902003cbdc21",
+        "description": "Glycerol",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -734,6 +846,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicinalProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "MedicinalProductDefinition/6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2"
+        },
+        "name": "PLGB 14895/0253 Humalog Mix50 Insulin KwikPen, 3ml pre-fill",
+        "description": "PLGB 14895/0253 Humalog Mix50 Insulin KwikPen, 3ml pre-fill",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          }
+        ],
+        "reference": {
+          "reference": "List/65bafcca-64b1-4d90-bd9b-66afd83d6d05"
+        },
+        "name": "Vulcan Humalog FHIR Package Insert List GB",
+        "description": "List of Humalog package inserts for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -748,6 +888,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/66455bf7-c6c4-429c-a856-a9a4eeea3183"
+        },
+        "name": "5 pre-filled pens, 3 ml (3.5 mg/ml)",
+        "description": "5 pre-filled pens, 3 ml (3.5 mg/ml)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -757,6 +911,20 @@
         "name": "6708560e-135d-4b2a-afde-9e3b03f27939",
         "description": "POLYSORBATE 80",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3"
+        },
+        "name": "Vulcan Humalog FHIR Package Insert v2 gb",
+        "description": "Instance of Humalog package insert for Connectathon testing",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -818,6 +986,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/7cecf03f-277f-44b1-be59-2839683ec50f"
+        },
+        "name": "7cecf03f-277f-44b1-be59-2839683ec50f",
+        "description": "Hydrochloric acid",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -826,6 +1008,20 @@
         },
         "name": "7f257409-3b65-401d-a246-7ae51e298fbb",
         "description": "Marketing Authorization Holder",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/81da637d-8053-4826-80c9-3c462ba02b01"
+        },
+        "name": "81da637d-8053-4826-80c9-3c462ba02b01",
+        "description": "Marketing Authorization Regulator",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
       },
       {
@@ -888,6 +1084,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/89a7d05e-1e03-4a74-8467-075c0778689a"
+        },
+        "name": "89a7d05e-1e03-4a74-8467-075c0778689a",
+        "description": "metacresol",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/8b002e0b-8e9d-4448-a740-82f2ba8423c1"
+        },
+        "name": "8b002e0b-8e9d-4448-a740-82f2ba8423c1",
+        "description": "Trometamol",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "AdministrableProductDefinition"
           }
         ],
@@ -920,11 +1144,39 @@
           }
         ],
         "reference": {
+          "reference": "Ingredient/945de333-594d-41ae-8be1-c9b2e7601040"
+        },
+        "name": "945de333-594d-41ae-8be1-c9b2e7601040",
+        "description": "Zinc Oxide",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
           "reference": "Ingredient/9df66779-105d-4df6-b920-a3d134cec967"
         },
         "name": "9df66779-105d-4df6-b920-a3d134cec967",
         "description": "POLYVINYL ALCOHOL, UNSPECIFIED",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ManufacturedItemDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ManufacturedItemDefinition/9e08ee95-3a63-4f09-9ada-d0b9773ccc80"
+        },
+        "name": "9e08ee95-3a63-4f09-9ada-d0b9773ccc80",
+        "description": "Manufactured Item",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1018,6 +1270,20 @@
           }
         ],
         "reference": {
+          "reference": "Ingredient/c2613b44-2f13-4af2-b882-7fe7db8b013e"
+        },
+        "name": "c2613b44-2f13-4af2-b882-7fe7db8b013e",
+        "description": "Insulin Lispro",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
           "reference": "Ingredient/c33a68c8-aecc-4556-8632-e2f3f7ba5b5a"
         },
         "name": "c33a68c8-aecc-4556-8632-e2f3f7ba5b5a",
@@ -1037,6 +1303,20 @@
         "name": "c5a3cb57-3f3e-4309-ae34-0926300de57e",
         "description": "SUCROSE",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AdministrableProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "AdministrableProductDefinition/c5b74d97-ed74-4709-a30e-c061f0f1e21f"
+        },
+        "name": "Humalog 100 U/ml 5 pre-filled pen",
+        "description": "Humalog 100 U/ml 5 pre-filled pen",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1644,6 +1924,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/d66cd3f0-d5ae-4b05-8598-6d809f8fe61a"
+        },
+        "name": "d66cd3f0-d5ae-4b05-8598-6d809f8fe61a",
+        "description": "Composition - Package Leaflet UK",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -1653,6 +1947,20 @@
         "name": "db5e392b-e7b2-47dc-829c-ee5182986dca",
         "description": "MAGNESIUM CARBONATE",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6"
+        },
+        "name": "f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6",
+        "description": "Composition - Package Leaflet UK",
+        "exampleBoolean": true
       },
       {
         "extension": [

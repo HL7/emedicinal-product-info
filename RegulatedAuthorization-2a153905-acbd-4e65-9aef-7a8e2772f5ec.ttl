@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/2a153905-acbd-4e65-9aef-7a8e2772f5ec> a fhir:RegulatedAuthorization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "2a153905-acbd-4e65-9aef-7a8e2772f5ec"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"2a153905-acbd-4e65-9aef-7a8e2772f5ec\" </p></div><p><b>identifier</b>: id: PLGB 14895/0253 (OFFICIAL)</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2.html\">MedicinalProductDefinition/6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072062)</span></p><p><b>region</b>: UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#gb)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2022-02-07 01:28:17+0000</p><p><b>holder</b>: <a href=\"Organization-4317c03f-3558-4548-9465-3dc4b4ab7b55.html\">Organization/4317c03f-3558-4548-9465-3dc4b4ab7b55</a> \"Eli Lilly Nederland B.V.\"</p><p><b>regulator</b>: <a href=\"Organization-81da637d-8053-4826-80c9-3c462ba02b01.html\">Organization/81da637d-8053-4826-80c9-3c462ba02b01</a> \"MHRA\"</p></div>"
+  ];
+  fhir:RegulatedAuthorization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://mhra.gov.uk/example/man" ];
+     fhir:Identifier.value [ fhir:value "PLGB 14895/0253" ]
+  ];
+  fhir:RegulatedAuthorization.subject [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2" ]
+  ];
+  fhir:RegulatedAuthorization.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+       fhir:Coding.code [ fhir:value "100000072062" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Marketing Authorisation" ]
+  ];
+  fhir:RegulatedAuthorization.region [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "gb" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND" ]
+  ];
+  fhir:RegulatedAuthorization.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Active" ]
+  ];
+  fhir:RegulatedAuthorization.statusDate [ fhir:value "2022-02-07T13:28:17Z"^^xsd:dateTime];
+  fhir:RegulatedAuthorization.holder [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/4317c03f-3558-4548-9465-3dc4b4ab7b55>;
+     fhir:Reference.reference [ fhir:value "Organization/4317c03f-3558-4548-9465-3dc4b4ab7b55" ]
+  ];
+  fhir:RegulatedAuthorization.regulator [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/81da637d-8053-4826-80c9-3c462ba02b01>;
+     fhir:Reference.reference [ fhir:value "Organization/81da637d-8053-4826-80c9-3c462ba02b01" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/2a153905-acbd-4e65-9aef-7a8e2772f5ec.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

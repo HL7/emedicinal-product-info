@@ -1,0 +1,46 @@
+{
+  "resourceType": "Organization",
+  "id": "4317c03f-3558-4548-9465-3dc4b4ab7b55",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"4317c03f-3558-4548-9465-3dc4b4ab7b55\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: ORG-100000426 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#220000000034)</span></p><p><b>name</b>: Eli Lilly Nederland B.V.</p><p><b>address</b>: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/omswi/",
+      "value": "ORG-100000426"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://spor.ema.europa.eu/rmswi/",
+          "code": "220000000034",
+          "display": "Marketing authorisation holder"
+        }
+      ],
+      "text": "Marketing authorisation holder"
+    }
+  ],
+  "name": "Eli Lilly Nederland B.V.",
+  "address": [
+    {
+      "use": "work",
+      "type": "physical",
+      "text": "Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands",
+      "line": [
+        "Papendorpseweg 83, 3528 BJ"
+      ],
+      "city": "Utrecht",
+      "country": "NL"
+    }
+  ]
+}
