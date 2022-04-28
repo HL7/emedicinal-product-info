@@ -4,7 +4,7 @@ Description: "Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
 
 * identifier.system = $phpid
-* identifier.value = "abc123" // get PHPID 
+* identifier.value = "0x712653c26276d3c31c11a7c198246a38" PHPID 
 
 * status = #active
 
