@@ -40,7 +40,9 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #200000003222 "PolyVinyl Chloride"
 * #200000003215 "High Density PolyEthylene"
 * #100000073497 "Bottle"
-
+* #10219000 "Tablet"
+* #15054000 "Tablet"
+* #20053000 "Oral use"
 
 CodeSystem: CodeSystemUvEPIRomswi
 Title: "Organization Management Services CodeSystem"
