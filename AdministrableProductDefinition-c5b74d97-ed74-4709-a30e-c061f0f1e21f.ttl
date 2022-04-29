@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -10,7 +11,7 @@
   fhir:Resource.id [ fhir:value "c5b74d97-ed74-4709-a30e-c061f0f1e21f"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"c5b74d97-ed74-4709-a30e-c061f0f1e21f\" </p></div><p><b>identifier</b>: id: 0x073AF2E5B92AE19E8B67635AFFB3D6CA</p><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"MedicinalProductDefinition-6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2.html\">MedicinalProductDefinition/6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2</a></p><p><b>administrableDoseForm</b>: Suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000073864)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000002135)</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-9e08ee95-3a63-4f09-9ada-d0b9773ccc80.html\">ManufacturedItemDefinition/9e08ee95-3a63-4f09-9ada-d0b9773ccc80</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000073633)</span></p><h3>TargetSpecies</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000109093)</span></td></tr></table></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"c5b74d97-ed74-4709-a30e-c061f0f1e21f\" </p></div><p><b>identifier</b>: id: 0x073AF2E5B92AE19E8B67635AFFB3D6CA</p><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"MedicinalProductDefinition-6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2.html\">MedicinalProductDefinition/6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2</a></p><p><b>administrableDoseForm</b>: Suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#385220007)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#733006000)</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-9e08ee95-3a63-4f09-9ada-d0b9773ccc80.html\">ManufacturedItemDefinition/9e08ee95-3a63-4f09-9ada-d0b9773ccc80</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#34206005)</span></p><h3>TargetSpecies</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#278412004)</span></td></tr></table></blockquote></div>"
   ];
   fhir:AdministrableProductDefinition.identifier [
      fhir:index 0;
@@ -26,16 +27,18 @@
   fhir:AdministrableProductDefinition.administrableDoseForm [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-       fhir:Coding.code [ fhir:value "100000073864" ]
+       a sct:385220007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "385220007" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Suspension for injection" ]
   ];
   fhir:AdministrableProductDefinition.unitOfPresentation [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-       fhir:Coding.code [ fhir:value "200000002135" ]
+       a sct:733006000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "733006000" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Pen" ]
   ];
@@ -49,8 +52,9 @@
      fhir:AdministrableProductDefinition.routeOfAdministration.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-         fhir:Coding.code [ fhir:value "100000073633" ]
+         a sct:34206005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "34206005" ]
        ];
        fhir:CodeableConcept.text [ fhir:value "Subcutaneous use" ]
      ];
@@ -59,8 +63,9 @@
        fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-           fhir:Coding.code [ fhir:value "100000109093" ]
+           a sct:278412004;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "278412004" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Human" ]
        ]

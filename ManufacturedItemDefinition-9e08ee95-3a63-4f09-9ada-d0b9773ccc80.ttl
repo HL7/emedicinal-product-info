@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -10,7 +11,7 @@
   fhir:Resource.id [ fhir:value "9e08ee95-3a63-4f09-9ada-d0b9773ccc80"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"9e08ee95-3a63-4f09-9ada-d0b9773ccc80\" </p></div><p><b>identifier</b>: id: PLGB 14895/0253 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073864)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000002135)</span></p><p><b>manufacturer</b>: <a href=\"Organization-4915c27b-b51a-4071-a031-71c5c5e52036.html\">Organization/4915c27b-b51a-4071-a031-71c5c5e52036</a> \"Lilly S.A.\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"9e08ee95-3a63-4f09-9ada-d0b9773ccc80\" </p></div><p><b>identifier</b>: id: PLGB 14895/0253 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#385220007)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#733006000)</span></p><p><b>manufacturer</b>: <a href=\"Organization-4915c27b-b51a-4071-a031-71c5c5e52036.html\">Organization/4915c27b-b51a-4071-a031-71c5c5e52036</a> \"Lilly S.A.\"</p></div>"
   ];
   fhir:ManufacturedItemDefinition.identifier [
      fhir:index 0;
@@ -22,16 +23,18 @@
   fhir:ManufacturedItemDefinition.manufacturedDoseForm [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
-       fhir:Coding.code [ fhir:value "100000073864" ]
+       a sct:385220007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "385220007" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Suspension for injection" ]
   ];
   fhir:ManufacturedItemDefinition.unitOfPresentation [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
-       fhir:Coding.code [ fhir:value "200000002135" ]
+       a sct:733006000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "733006000" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Pen" ]
   ];

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-28T02:47:58+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-29T16:37:30+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -1406,7 +1406,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "c2613b44-2f13-4af2-b882-7fe7db8b013e" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Insulin Lispro" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       ]
      ], [
        fhir:index 89;
        fhir:Element.extension [
