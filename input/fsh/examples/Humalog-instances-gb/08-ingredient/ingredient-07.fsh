@@ -3,11 +3,11 @@ InstanceOf: Ingredient
 Description: "metacresol"
 Usage: #example
 
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "GGO4Y809LO"
+* identifier.system = "$sct"
+* identifier.value = "725616000"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
+* role = http://hl7.org/fhir/ingredient-role/#100000072082
 * role.text = "Excipient"
 
 * status = #active

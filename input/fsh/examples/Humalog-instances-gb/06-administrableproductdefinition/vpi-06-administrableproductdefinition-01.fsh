@@ -8,15 +8,15 @@ Usage: #example
 
 * identifier.system = $phpid
 * identifier.value = "0x073AF2E5B92AE19E8B67635AFFB3D6CA" 
-* administrableDoseForm = $spor-rms#100000073864
+* administrableDoseForm = $sct#385220007
 * administrableDoseForm.text = "Suspension for injection"
 
-* unitOfPresentation = $spor-rms#200000002135
+* unitOfPresentation = $sct#733006000
 * unitOfPresentation.text = "Pen"
 
-* routeOfAdministration.code = $spor-rms#100000073633
+* routeOfAdministration.code = $sct#34206005
 * routeOfAdministration.code.text = "Subcutaneous use"
-* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
+* routeOfAdministration.targetSpecies.code = $sct#278412004
 * routeOfAdministration.targetSpecies.code.text = "Human"
 
  // Reference to ManufacturedItemDefinition: Manufactured Item

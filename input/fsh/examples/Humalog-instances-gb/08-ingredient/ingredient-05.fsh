@@ -4,11 +4,11 @@ Description: "Water for injections"
 Usage: #example
 
 
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "059QF0KO0R"
+* identifier.system = "$sct"
+* identifier.value = "3330811000001107"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
+* role = http://hl7.org/fhir/ingredient-role/#100000072082
 * role.text = "Excipient"
 
 * status = #active

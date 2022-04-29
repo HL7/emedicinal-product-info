@@ -10,7 +10,7 @@ Usage: #example
 
 * name = "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 
-* type = $spor-rms#100000155527
+* type = $sct#767102007
 * type.text = "Chemical Medininal Prodcut"
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
@@ -19,9 +19,10 @@ Usage: #example
 * containedItemQuantity.value = 3
 * containedItemQuantity.unit = "ml"
 
-* package.type = https://spor.ema.europa.eu/rmswi/##100000073543
+* package.type = $sct#3318611000001103
+// * package.type = http://hl7.org/fhir/packaging-type/##100000073543
 
-* package.type.text = "Pre-filled pen"
+* package.type.text = "Pre-filled disposable injection"
 
 * package.quantity = 5
 

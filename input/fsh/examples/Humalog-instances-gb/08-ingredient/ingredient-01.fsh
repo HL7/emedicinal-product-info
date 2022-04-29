@@ -1,16 +1,19 @@
 Instance: c2613b44-2f13-4af2-b882-7fe7db8b013e
-InstanceOf: Ingredient
+InstanceOf: IngredientUvEpi
 Description: "Insulin Lispro"
 Usage: #example
 
-* identifier.system = "$src"
+* identifier.system = "$sct"
 * identifier.value = "412210000"
 * identifier.use = #official
 
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#00000072072
+// * role = https://spor.ema.europa.eu/rmswi/#00000072072
+* role = http://hl7.org/fhir/ingredient-role/#100000072072
 * role.text = "active"
+
+
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#GFX7QIS1II "Insulin lispro"
 * substance.strength.presentationQuantity.value = 100

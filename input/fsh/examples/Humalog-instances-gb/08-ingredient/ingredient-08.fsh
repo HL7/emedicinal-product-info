@@ -3,11 +3,11 @@ InstanceOf: Ingredient
 Description: "Trometamol"
 Usage: #example
 
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "023C2WHX2V"
+* identifier.system = "$sct"
+* identifier.value = "404882002"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
+* role = http://hl7.org/fhir/ingredient-role/#100000072082
 * role.text = "Excipient"
 
 * status = #active
