@@ -12,6 +12,9 @@ Description: "instance of Monuril package insert for connectathon testing"
 // Composition
 * entry[+].resource = emacfsb1639991356428
 
+// List Product Index
+* entry[+].resource = emacfsb3868575536701
+
 // Organizations
 // * entry[+].resource = emacfsb1639753766266
 // * entry[+].resource = emacfsb1639754108144
