@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-05-01T14:48:42+00:00",
+  "date": "2022-05-01T15:28:00+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -2162,6 +2162,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c"
+        },
+        "name": "Vulcan Monuril FHIR Package Insert",
+        "description": "instance of Monuril package insert for connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -2171,6 +2185,244 @@
         "name": "db5e392b-e7b2-47dc-829c-ee5182986dca",
         "description": "MAGNESIUM CARBONATE",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          }
+        ],
+        "reference": {
+          "reference": "List/ema3868575536701"
+        },
+        "name": "Vulcan Humalog FHIR Package Insert List",
+        "description": "List of Humalog package inserts for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/emacfsb1639753766266"
+        },
+        "name": "emacfsb1639753766266",
+        "description": "Manufacturer",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/emacfsb1639754108144"
+        },
+        "name": "emacfsb1639754108144",
+        "description": "Market Authorization Holder",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/emacfsb1639754408039"
+        },
+        "name": "emacfsb1639754408039",
+        "description": "fosfomycin trometamol 3g",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ManufacturedItemDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ManufacturedItemDefinition/emacfsb1639756818482"
+        },
+        "name": "emacfsb1639756818482",
+        "description": "Monuril Granules for oral solution",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/emacfsb1639758328687"
+        },
+        "name": "emacfsb1639758328687",
+        "description": "Monuril 5 sachets of 8 g of granules (3 g fosfomycin)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicinalProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "MedicinalProductDefinition/emacfsb1639760186202"
+        },
+        "name": "emacfsb1639760186202",
+        "description": "Medicinal Product",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AdministrableProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "AdministrableProductDefinition/emacfsb1639760977050"
+        },
+        "name": "emacfsb1639760977050",
+        "description": "Administrable Product",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RegulatedAuthorization"
+          }
+        ],
+        "reference": {
+          "reference": "RegulatedAuthorization/emacfsb1639761980721"
+        },
+        "name": "emacfsb1639761980721",
+        "description": "Regulated Authorization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/emacfsb1639762372321"
+        },
+        "name": "emacfsb1639762372321",
+        "description": "Saccharin",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/emacfsb1639762372322"
+        },
+        "name": "emacfsb1639762372322",
+        "description": "Orange flavour",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/emacfsb1639762372323"
+        },
+        "name": "emacfsb1639762372323",
+        "description": "Mandarin flavour",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/emacfsb1639762593730"
+        },
+        "name": "emacfsb1639762593730",
+        "description": "Sucrose",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/emacfsb1639764389611"
+        },
+        "name": "emacfsb1639764389611",
+        "description": "Packaged Product - 2 sachets of 8 g of granules",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/emacfsb1639764389612"
+        },
+        "name": "emacfsb1639764389612",
+        "description": "Packaged Product - 1 sachet of 8 g of granules",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/emacfsb1639991356428"
+        },
+        "name": "emacfsb1639991356428",
+        "description": "Package Leaflet",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          }
+        ],
+        "reference": {
+          "reference": "List/emacfsb3868575536701"
+        },
+        "name": "EMA Profile - Monuril FHIR Package Insert List",
+        "description": "List of monuril package inserts for Connectathon testing",
+        "exampleBoolean": true
       },
       {
         "extension": [

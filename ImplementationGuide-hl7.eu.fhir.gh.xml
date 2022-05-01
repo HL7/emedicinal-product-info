@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-05-01T14:48:42+00:00"/>
+  <date value="2022-05-01T15:28:00+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -1698,6 +1698,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c"/>
+      </reference>
+      <name value="Vulcan Monuril FHIR Package Insert"/>
+      <description value="instance of Monuril package insert for connectathon testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Ingredient"/>
       </extension>
       <reference>
@@ -1706,6 +1717,193 @@
       <name value="db5e392b-e7b2-47dc-829c-ee5182986dca"/>
       <description value="MAGNESIUM CARBONATE"/>
       <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/ema3868575536701"/>
+      </reference>
+      <name value="Vulcan Humalog FHIR Package Insert List"/>
+      <description value="List of Humalog package inserts for Connectathon testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/emacfsb1639753766266"/>
+      </reference>
+      <name value="emacfsb1639753766266"/>
+      <description value="Manufacturer"/>
+      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/emacfsb1639754108144"/>
+      </reference>
+      <name value="emacfsb1639754108144"/>
+      <description value="Market Authorization Holder"/>
+      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/emacfsb1639754408039"/>
+      </reference>
+      <name value="emacfsb1639754408039"/>
+      <description value="fosfomycin trometamol 3g"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ManufacturedItemDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ManufacturedItemDefinition/emacfsb1639756818482"/>
+      </reference>
+      <name value="emacfsb1639756818482"/>
+      <description value="Monuril Granules for oral solution"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/emacfsb1639758328687"/>
+      </reference>
+      <name value="emacfsb1639758328687"/>
+      <description value="Monuril 5 sachets of 8 g of granules (3 g fosfomycin)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/emacfsb1639760186202"/>
+      </reference>
+      <name value="emacfsb1639760186202"/>
+      <description value="Medicinal Product"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AdministrableProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="AdministrableProductDefinition/emacfsb1639760977050"/>
+      </reference>
+      <name value="emacfsb1639760977050"/>
+      <description value="Administrable Product"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RegulatedAuthorization"/>
+      </extension>
+      <reference>
+        <reference value="RegulatedAuthorization/emacfsb1639761980721"/>
+      </reference>
+      <name value="emacfsb1639761980721"/>
+      <description value="Regulated Authorization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/emacfsb1639762372321"/>
+      </reference>
+      <name value="emacfsb1639762372321"/>
+      <description value="Saccharin"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/emacfsb1639762372322"/>
+      </reference>
+      <name value="emacfsb1639762372322"/>
+      <description value="Orange flavour"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/emacfsb1639762372323"/>
+      </reference>
+      <name value="emacfsb1639762372323"/>
+      <description value="Mandarin flavour"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/emacfsb1639762593730"/>
+      </reference>
+      <name value="emacfsb1639762593730"/>
+      <description value="Sucrose"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/emacfsb1639764389611"/>
+      </reference>
+      <name value="emacfsb1639764389611"/>
+      <description value="Packaged Product - 2 sachets of 8 g of granules"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/emacfsb1639764389612"/>
+      </reference>
+      <name value="emacfsb1639764389612"/>
+      <description value="Packaged Product - 1 sachet of 8 g of granules"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/emacfsb1639991356428"/>
+      </reference>
+      <name value="emacfsb1639991356428"/>
+      <description value="Package Leaflet"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/emacfsb3868575536701"/>
+      </reference>
+      <name value="EMA Profile - Monuril FHIR Package Insert List"/>
+      <description value="List of monuril package inserts for Connectathon testing"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

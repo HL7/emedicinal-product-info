@@ -1,0 +1,56 @@
+{
+  "resourceType": "RegulatedAuthorization",
+  "id": "emacfsb1639761980721",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"emacfsb1639761980721\" </p></div><p><b>identifier</b>: id: PL 31654/0006 (OFFICIAL)</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-emacfsb1639760186202.html\">MedicinalProductDefinition/emacfsb1639760186202</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000072062)</span></p><p><b>region</b>: European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07 01:28:17+0000</p><p><b>holder</b>: <a href=\"Organization-emacfsb1639754108144.html\">Organization/emacfsb1639754108144</a> \"Zambon S.p.A.\"</p><p><b>regulator</b>: <a href=\"emacfsb1639015880655\">emacfsb1639015880655</a></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/rmswi/",
+      "value": "PL 31654/0006"
+    }
+  ],
+  "subject": [
+    {
+      "reference": "MedicinalProductDefinition/emacfsb1639760186202"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "/#100000072062"
+      }
+    ],
+    "text": "Marketing Authorisation"
+  },
+  "region": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "eu"
+        }
+      ],
+      "text": "European Union"
+    }
+  ],
+  "status": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/publication-status",
+        "code": "active"
+      }
+    ],
+    "text": "Active"
+  },
+  "statusDate": "2015-02-07T13:28:17Z",
+  "holder": {
+    "reference": "Organization/emacfsb1639754108144"
+  },
+  "regulator": {
+    "reference": "emacfsb1639015880655"
+  }
+}

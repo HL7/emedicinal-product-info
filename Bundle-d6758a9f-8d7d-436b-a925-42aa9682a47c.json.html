@@ -1,0 +1,531 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH\Vulcan Monuril FHIR Package Insert - JSON Representation - FHIR v5.0.0-snapshot1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8.153"}
+    h3,h4,h5,h6{--heading-prefix:"8.153"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="ePI-structure.html">ePI structure</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Vulcan Monuril FHIR Package Insert</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Vulcan Monuril FHIR Package Insert - JSON Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.json" no-download="true">Raw json</a> | <a href="Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code class="language-json">
+{
+  "<a href="http://build.fhir.org/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.id">id</a>" : "d6758a9f-8d7d-436b-a925-42aa9682a47c",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.identifier">identifier</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://www.gravitatehealth.eu/sid/doc",
+    "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "PL 31654/0006"
+  },
+  "<a href="http://build.fhir.org/bundle.html#Bundle.type">type</a>" : "document",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.timestamp">timestamp</a>" : "2017-06-23T08:38:00+02:00",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://build.fhir.org/composition.html#Composition">resource</a>" : {
+        "<a href="http://build.fhir.org/composition.html">resourceType</a>" : "Composition",
+        "<a href="http://build.fhir.org/composition.html#Composition.id">id</a>" : "emacfsb1639991356428",
+        "<a href="http://build.fhir.org/composition.html#Composition.language">language</a>" : "en",
+        "<a href="http://build.fhir.org/composition.html#Composition.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;emacfsb1639991356428\&quot;  (Language \&quot;en\&quot;) &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Organization-cfsb1639754108144.html\&quot;&gt;Organization/cfsb1639754108144&lt;/a&gt; \&quot;Zambon S.p.A.\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Monuril Vulcan ePI&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Official &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-composition-attestation-mode.html\&quot;&gt;CompositionAttestationMode&lt;/a&gt;#official)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2002-08-01 01:28:17+0000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/composition.html#Composition.status">status</a>" : "final",
+        "<a href="http://build.fhir.org/composition.html#Composition.type">type</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Package Leaflet"
+        },
+        "<a href="http://build.fhir.org/composition.html#Composition.date">date</a>" : "2015-02-07T13:28:17Z",
+        "<a href="http://build.fhir.org/composition.html#Composition.author">author</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/cfsb1639754108144"
+          }
+        ],
+        "<a href="http://build.fhir.org/composition.html#Composition.title">title</a>" : "TEST PURPOSES ONLY - Monuril Vulcan ePI",
+        "<a href="http://build.fhir.org/composition.html#Composition.confidentiality">confidentiality</a>" : "U",
+        "<a href="http://build.fhir.org/composition.html#Composition.attester">attester</a>" : [
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.attester.mode">mode</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/composition-attestation-mode",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "official"
+                }
+              ]
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.attester.time">time</a>" : "2002-08-01T13:28:17Z"
+          }
+        ],
+        "<a href="http://build.fhir.org/composition.html#Composition.section">section</a>" : [
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "B. Package Leaflet",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;PACKAGE LEAFLET: INFORMATION FOR THE USER MONURIL 3 g granules for oral solution Fosfomycin Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.&lt;ul&gt;&lt;li&gt;Keep this leaflet. You may need to read it again.&lt;/li&gt;&lt;li&gt;If you have any further questions, ask your doctor or pharmacist.&lt;/li&gt;&lt;li&gt;This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.&lt;/li&gt;&lt;li&gt;If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "What is in this leaflet",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538-0"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;What in this leaflet&lt;ol&gt;&lt;li&gt;What Monuril is and what it is used for&lt;/li&gt;&lt;li&gt;What you need to know before you take Monuril&lt;/li&gt;&lt;li&gt;How to take Monuril&lt;/li&gt;&lt;li&gt;Possible side effects&lt;/li&gt;&lt;li&gt;How to store Monuril&lt;/li&gt;&lt;li&gt;Contents of the pack and other information&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "1. What Monuril is and what it is used for",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538-1"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;1. What Monuril is and what it is used for&lt;/b&gt; Monuril contains the active substance fosfomycin (as fosfomycin trometamol). It is an antibiotic that works by killing bacteria which can cause infections. Monuril is used to treat uncomplicated infection of the bladder in women and female adolescents. Monuril is used as antibiotic prophylaxis for transrectal prostate biopsy in adult man.&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "2. What you need to know before you take Monuril",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538-2"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;2. What you need to know before you take Monuril&lt;/b&gt;&lt;p&gt;&lt;b&gt;Do not take Monuril if you:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;are allergic to fosfomycin or any of the other ingredients of this medicine (listed in section 6).&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;Warnings and precautions&lt;/b&gt; Talk to your doctor, pharmacist or nurse before using Monuril if you suffer from one of the following disorders:&lt;ul&gt;&lt;li&gt;persistent infections of the bladder,&lt;/li&gt;&lt;li&gt;previously had diarrhea after taking any other antibiotics.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;u&gt;Conditions you need to look out for&lt;/u&gt;&lt;/p&gt;Monuril can cause serious side effects. These include allergic reactions and an inflammation of the large intestine. You must look out for certain symptoms while you are taking this medicine, to reduce the risk of any problems. See “Serious side effects” in Section 4.&lt;p&gt;&lt;b&gt;Children and adolescents&lt;/b&gt;&lt;/p&gt;Do not give this medicine to children less than 12 years of age, as its safety and efficacy have not been established in this age group.&lt;p&gt;&lt;b&gt;Other medicines and Monuril&lt;/b&gt;&lt;/p&gt;Tell your doctor or pharmacist if you are taking, have recently taken or might take any other medicines, including medicines obtained without a prescription. This is especially important if you are taking:&lt;ul&gt;&lt;li&gt;&lt;b&gt;metoclopramide&lt;/b&gt; or other medicinal products that increase the movement of food through the stomach and intestines, because they may reduce the uptake of fosfomycin by your body,&lt;/li&gt;&lt;li&gt;&lt;b&gt;anticoagulants&lt;/b&gt;, as their ability to prevent your blood from clotting might be altered by fosfomycin and other antibiotics.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Monuril with food&lt;/b&gt;&lt;/p&gt;Food may delay the absorption of fosfomycin. Therefore, this medicinal product should be taken on an empty stomach (2-3 hours before or 2-3 hours after a meal).&lt;p&gt;&lt;b&gt;Pregnancy, breast-feeding and fertility&lt;/b&gt;&lt;/p&gt;If you are pregnant or breast-feeding, think you may be pregnant or are planning to have a baby, ask your doctor or pharmacist for advice before taking this medicine.&lt;p&gt;If you are pregnant your doctor will only give you this medicine when it is clearly needed.&lt;/p&gt;&lt;p&gt;Breast-feeding mothers can take a single oral dose of this medicine.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Driving and using machines&lt;/b&gt;&lt;/p&gt;You may experience side effects, such as dizziness, which may affect your ability to drive or use machines.&lt;p&gt;&lt;b&gt;Monuril contains&lt;/b&gt;&lt;/p&gt;&lt;u&gt;Sodium&lt;/u&gt; This medicine contains less than 1 mmol sodium (23 mg) per sachet that is to say essentially 'sodium-free'. &lt;u&gt;Sucrose&lt;/u&gt; If you have been told by your doctor that you have an intolerance to some sugars, contact your doctor before taking this medicinal product. &lt;u&gt;Sulphites&lt;/u&gt; May rarely cause severe hypersensitivity reactions and bronchospasm.&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "3. How to take Monuril",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538-3"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;3. How to take Monuril&lt;/b&gt;&lt;/p&gt;Always take this medicine exactly as your doctor or pharmacist has told you. Check with your doctor or pharmacist if you are not sure.&lt;p&gt;In case of treatment of uncomplicated infection of the bladder, in women and female adolescents the recommended dose is 1 sachet of Monuril (3 g Fosfomycin).&lt;/p&gt;&lt;p&gt;When used as antibiotic prophylaxis for transrectal prostate biopsy the recommended dose is 1 sachet of Monuril (3 g fosfomycin) 3 hours prior to the procedure and 1 sachet of Monuril (3 g fosfomycin) 24 hours after the procedure.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Use in patients with renal impairment&lt;/b&gt;&lt;/p&gt;This medicine should not be used in patients with severe renal impairment (creatinin clearance &amp;lt; 10 ml/min).&lt;p&gt;&lt;b&gt;Use in children and adolescents&lt;/b&gt;&lt;/p&gt;This medicine should not be used in children less than 12 years of age.&lt;p&gt;&lt;b&gt;Method of administration&lt;/b&gt;&lt;/p&gt;For oral use.&lt;p&gt;Take this medicine by mouth, on an empty stomach (2-3 hours before or 2-3 hours after a meal), preferably before going to bed after emptying the bladder.&lt;/p&gt;&lt;p&gt;Dissolve the content of one sachet in a glass of water and drink immediately.&lt;/p&gt;&lt;p&gt;&lt;b&gt;If you take more Monuril than you should&lt;/b&gt;&lt;/p&gt;If you accidentally take more than your prescribed dose, contact your doctor or pharmacist.&lt;p&gt;If you have any further questions on the use of this medicine, ask your doctor or pharmacist.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "4. Possible side effects",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538-4"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;4. Possible side effects&lt;/b&gt;&lt;/p&gt;Like all medicines, this medicine can cause side effects, although not everybody gets them.&lt;p&gt;&lt;b&gt;Serious side effects&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;While taking Monuril, if you develop any of the following symptoms you should stop taking the medicine and contact your doctor immediately:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;anaphylactic shock, a life threatening type of allergic reaction (&lt;em&gt;the frequency is unknown&lt;/em&gt;). Symptoms include a sudden onset of rash, itching or hives on the skin and or shortness of breath, wheezing or difficulty in breathing,&lt;/li&gt;&lt;li&gt;swelling of the face, lips, tongue or throat with breathing difficulties (angioedema) (&lt;em&gt;the frequency is unknown&lt;/em&gt;),&lt;/li&gt;&lt;li&gt;moderate to severe diarrhea, abdominal cramps, bloody stools and/or fever may mean that you have an infection of the large intestine (antibiotic-associated colitis) (&lt;em&gt;the frequency is unknown&lt;/em&gt;). Do not take medicines against diarrhea that inhibit the bowel movements (antiperistaltics).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Other side effects&lt;/b&gt;&lt;/p&gt;&lt;u&gt;Common (may affect up to 1 in 10 people):&lt;/u&gt;&lt;ul&gt;&lt;li&gt;headache&lt;/li&gt;&lt;li&gt;dizziness&lt;/li&gt;&lt;li&gt;diarrhea&lt;/li&gt;&lt;li&gt;nausea&lt;/li&gt;&lt;li&gt;indigestion&lt;/li&gt;&lt;li&gt;abdominal pain&lt;/li&gt;&lt;li&gt;infection of the female genital organs with symptoms like inflammation, irritation, itching (vulvovaginitis).&lt;/li&gt;&lt;/ul&gt;&lt;u&gt;Uncommon (may affect up to 1 in 100 people):&lt;/u&gt;&lt;ul&gt;&lt;li&gt;vomiting&lt;/li&gt;&lt;li&gt;rash&lt;/li&gt;&lt;li&gt;urticaria&lt;/li&gt;&lt;li&gt;itching&lt;/li&gt;&lt;/ul&gt;&lt;u&gt;Not known (frequency cannot be estimated from the available data):&lt;/u&gt;&lt;ul&gt;&lt;li&gt;allergic reactions.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Reporting of side effects&lt;/b&gt;&lt;/p&gt;If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. You can also report side effects directly via the national reporting system website: &lt;a href=\&quot;www.mhra.gov.uk/yellowcard\&quot;&gt;www.mhra.gov.uk/yellowcard&lt;/a&gt;. By reporting side effects you can help provide more information on the safety of this medicine.&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "5. How to store Monuril",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538-5"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Keep this medicine out of the sight and reach of children.&lt;/p&gt;&lt;p&gt;Do not use this medicine after the expiry date which is stated on the carton and the blister after “EXP”. The expiry date refers to the last day of that month.&lt;/p&gt;&lt;p&gt;This medicine does not require any special storage conditions.&lt;/p&gt;&lt;p&gt;Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away medicines you no longer use. These measures will help protect the environment.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "6. Contents of the pack and other information",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538-6"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "B. PACKAGE LEAFLET"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;6. Contents of the pack and other information&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;What Monuril contains&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The active substance is fosfomycin. Each sachet contains 5.631 g of fosfomycin trometamol, equivalent to 3 g of fosfomycin&lt;/li&gt;&lt;li&gt;the other ingredients are mandarin flavour, orange flavour, saccharin, sucrose (see section 2 for information on sucrose).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;What Monuril looks like and contents of the pack&lt;/b&gt;&lt;/p&gt;White granules for oral solution in a single dose sachet.&lt;p&gt;Sachets are four layers laminate of: paper/polyethylene/aluminium/polyethylene.&lt;/p&gt;&lt;p&gt;Monuril is available in packs containing:&lt;/p&gt;1 sachet of 8 g of granules (3 g fosfomycin) 2 sachets of 8 g of granules (3 g fosfomycin) 5 sachets of 8 g of granules (3 g fosfomycin). Not all pack sizes may be marketed.&lt;p&gt;&lt;b&gt;Marketing Authorisation Holder and Manufacturer&lt;/b&gt;&lt;/p&gt;Marketing Authorisation Holder: Zambon S.p.A. Via Lillo del Duca, 10 20091 Bresso (Milan) - Italy Tel: +39 02 665 241 Fax: +39 02 665 01 492&lt;p&gt;Manufacturer:&lt;/p&gt;Zambon S.p.A. Via della Chimica, 9 36100 Vicenza - Italy&lt;p&gt;&lt;b&gt;Distributor&lt;/b&gt;&lt;/p&gt;Profile Pharma Limited Bicentennial Building Southern Gate West Sussex PO19 8EZ UK Tel: +44 (0) 800 0288 942 Email: &lt;a href=\&quot;mailto:info.profilepharma@zambongroup.com\&quot;&gt;info.profilepharma@zambongroup.com&lt;/a&gt;&lt;p&gt;&lt;b&gt;This leaflet was last revised in November 2020.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/list.html#List">resource</a>" : {
+        "<a href="http://build.fhir.org/list.html">resourceType</a>" : "List",
+        "<a href="http://build.fhir.org/list.html#List.id">id</a>" : "ema3868575536701",
+        "<a href="http://build.fhir.org/list.html#List.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;ema3868575536701\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: current&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: working&lt;/p&gt;&lt;h3&gt;Entries&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Item&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;MedicinalProductDefinition-emacfsb1639760186202.html\&quot;&gt;MedicinalProductDefinition/emacfsb1639760186202&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/list.html#List.status">status</a>" : "current",
+        "<a href="http://build.fhir.org/list.html#List.mode">mode</a>" : "working",
+        "<a href="http://build.fhir.org/list.html#List.entry">entry</a>" : [
+          {
+            "<a href="http://build.fhir.org/list.html#List.entry.item">item</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/emacfsb1639760186202"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Sun, May 1, 2022 15:28+0000">2022-05-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
