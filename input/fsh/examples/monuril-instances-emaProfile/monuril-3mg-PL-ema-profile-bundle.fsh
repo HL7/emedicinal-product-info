@@ -1,7 +1,7 @@
 Instance: d6758a9f-8d7d-436b-a925-42aa9682a47c
 InstanceOf: Bundle
 Usage: #example
-Title: "Vulcan Monuril FHIR Package Insert"
+Title: "EMA-Profile Monuril FHIR Package Insert"
 Description: "instance of Monuril package insert for connectathon testing"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
