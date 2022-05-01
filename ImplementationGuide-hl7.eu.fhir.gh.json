@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-04-29T16:37:30+00:00",
+  "date": "2022-05-01T14:48:42+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -762,6 +762,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5"
+        },
+        "name": "Vulcan Monuril FHIR Package Insert",
+        "description": "instance of Monuril package insert for connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "RegulatedAuthorization"
           }
         ],
@@ -1400,6 +1414,216 @@
         },
         "name": "cfsb1529720709344",
         "description": "Regulated Authorization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/cfsb1639753766266"
+        },
+        "name": "cfsb1639753766266",
+        "description": "Manufacturer",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/cfsb1639754108144"
+        },
+        "name": "cfsb1639754108144",
+        "description": "Market Authorization Holder",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1639754408039"
+        },
+        "name": "cfsb1639754408039",
+        "description": "fosfomycin trometamol 3g",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ManufacturedItemDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ManufacturedItemDefinition/cfsb1639756818482"
+        },
+        "name": "cfsb1639756818482",
+        "description": "Monuril Granules for oral solution",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/cfsb1639758328687"
+        },
+        "name": "cfsb1639758328687",
+        "description": "Monuril 5 sachets of 8 g of granules (3 g fosfomycin)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicinalProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "MedicinalProductDefinition/cfsb1639760186202"
+        },
+        "name": "cfsb1639760186202",
+        "description": "Medicinal Product",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AdministrableProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "AdministrableProductDefinition/cfsb1639760977050"
+        },
+        "name": "cfsb1639760977050",
+        "description": "Administrable Product",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RegulatedAuthorization"
+          }
+        ],
+        "reference": {
+          "reference": "RegulatedAuthorization/cfsb1639761980721"
+        },
+        "name": "cfsb1639761980721",
+        "description": "Regulated Authorization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1639762372321"
+        },
+        "name": "cfsb1639762372321",
+        "description": "Saccharin",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1639762372322"
+        },
+        "name": "cfsb1639762372322",
+        "description": "Orange flavour",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1639762372323"
+        },
+        "name": "cfsb1639762372323",
+        "description": "Mandarin flavour",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1639762593730"
+        },
+        "name": "cfsb1639762593730",
+        "description": "Sucrose",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/cfsb1639764389611"
+        },
+        "name": "cfsb1639764389611",
+        "description": "Packaged Product - 2 sachets of 8 g of granules",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/cfsb1639764389612"
+        },
+        "name": "cfsb1639764389612",
+        "description": "Packaged Product - 1 sachet of 8 g of granules",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/cfsb1639991356428"
+        },
+        "name": "cfsb1639991356428",
+        "description": "Package Leaflet",
         "exampleBoolean": true
       },
       {
