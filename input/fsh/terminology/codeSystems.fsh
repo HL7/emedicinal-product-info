@@ -43,6 +43,8 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #10219000 "Tablet"
 * #15054000 "Tablet"
 * #20053000 "Oral use"
+* #100000116155 "Granules and solvent for oral suspension"
+* #100000073619 "oral use"
 
 CodeSystem: CodeSystemUvEPIRomswi
 Title: "Organization Management Services CodeSystem"
