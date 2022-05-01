@@ -183,7 +183,7 @@ By reporting side effects you can help provide more information on the safety of
         <p>This medicine does not require any special storage conditions.</p>
         <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist
             how to throw away medicines you no longer use. These measures will help protect the
-            environment.</p>"
+            environment.</p></div>"
 * section[6].text.status = #additional
 
 * section[7].title = "6. Contents of the pack and other information"
