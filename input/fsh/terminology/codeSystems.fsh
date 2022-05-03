@@ -45,6 +45,9 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #20053000 "Oral use"
 * #100000116155 "Granules and solvent for oral suspension"
 * #100000073619 "oral use"
+* #100000073504 "Child-resistant closure"
+* #200000003529 "Cardboard"
+* #200000002152
 
 CodeSystem: CodeSystemUvEPIRomswi
 Title: "Organization Management Services CodeSystem"
