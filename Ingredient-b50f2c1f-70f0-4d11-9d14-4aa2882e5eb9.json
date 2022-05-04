@@ -1,0 +1,48 @@
+{
+  "resourceType": "Ingredient",
+  "id": "b50f2c1f-70f0-4d11-9d14-4aa2882e5eb9",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"b50f2c1f-70f0-4d11-9d14-4aa2882e5eb9\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Ingredient-uv-epi.html\">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 55X04QC32I (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"Organization-1a2b1f1d-5e6c-40cd-96a1-ee4183243de8.html\">Organization/1a2b1f1d-5e6c-40cd-96a1-ee4183243de8</a> \"Lilly S.A.\"</td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+  },
+  "identifier": {
+    "use": "official",
+    "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+    "value": "55X04QC32I"
+  },
+  "status": "active",
+  "role": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "100000072082"
+      }
+    ],
+    "text": "Excipient"
+  },
+  "manufacturer": [
+    {
+      "manufacturer": {
+        "reference": "Organization/1a2b1f1d-5e6c-40cd-96a1-ee4183243de8"
+      }
+    }
+  ],
+  "substance": {
+    "code": {
+      "concept": {
+        "coding": [
+          {
+            "system": "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+            "code": "55X04QC32I",
+            "display": "Sodium Hydroxide"
+          }
+        ]
+      }
+    }
+  }
+}

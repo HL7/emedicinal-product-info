@@ -1,0 +1,44 @@
+{
+  "resourceType": "ManufacturedItemDefinition",
+  "id": "cfd35737-9e60-4604-9132-717615cfaf4c",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfd35737-9e60-4604-9132-717615cfaf4c\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ManufacturedItemDefinition-uv-epi.html\">ManufacturedItemDefinition (ePI)</a></p></div><p><b>identifier</b>: id: EU/1/96/007/035 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073864)</span></p><p><b>unitOfPresentation</b>: Pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000002135)</span></p><p><b>manufacturer</b>: <a href=\"Organization-1a2b1f1d-5e6c-40cd-96a1-ee4183243de8.html\">Organization/1a2b1f1d-5e6c-40cd-96a1-ee4183243de8</a> \"Lilly S.A.\"</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://spor.ema.europa.eu/pmswi/#/",
+      "value": "EU/1/96/007/035"
+    }
+  ],
+  "status": "active",
+  "manufacturedDoseForm": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi/",
+        "code": "100000073864"
+      }
+    ],
+    "text": "Suspension for injection"
+  },
+  "unitOfPresentation": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi",
+        "code": "200000002135"
+      }
+    ],
+    "text": "Pen"
+  },
+  "manufacturer": [
+    {
+      "reference": "Organization/1a2b1f1d-5e6c-40cd-96a1-ee4183243de8"
+    }
+  ]
+}

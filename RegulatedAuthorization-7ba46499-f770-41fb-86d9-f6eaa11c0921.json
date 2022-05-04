@@ -1,0 +1,58 @@
+{
+  "resourceType": "RegulatedAuthorization",
+  "id": "7ba46499-f770-41fb-86d9-f6eaa11c0921",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"7ba46499-f770-41fb-86d9-f6eaa11c0921\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RegulatedAuthorization-uv-epi.html\">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: EU/1/96/007/035 (OFFICIAL)</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-fb3d4c9b-3abe-4ef4-9ef8-73dcd1059258.html\">MedicinalProductDefinition/fb3d4c9b-3abe-4ef4-9ef8-73dcd1059258</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072062)</span></p><p><b>region</b>: European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07 01:28:17+0000</p><p><b>holder</b>: <a href=\"Organization-71dc2536-d675-4558-92a9-cc8a6342ab0f.html\">Organization/71dc2536-d675-4558-92a9-cc8a6342ab0f</a> \"Eli Lilly Nederland B.V.\"</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+      "value": "EU/1/96/007/035"
+    }
+  ],
+  "subject": [
+    {
+      "reference": "MedicinalProductDefinition/fb3d4c9b-3abe-4ef4-9ef8-73dcd1059258"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi",
+        "code": "100000072062",
+        "display": "Marketing Authorisation"
+      }
+    ]
+  },
+  "region": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "eu",
+          "display": "European Union"
+        }
+      ]
+    }
+  ],
+  "status": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/publication-status",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "statusDate": "2015-02-07T13:28:17Z",
+  "holder": {
+    "reference": "Organization/71dc2536-d675-4558-92a9-cc8a6342ab0f"
+  }
+}

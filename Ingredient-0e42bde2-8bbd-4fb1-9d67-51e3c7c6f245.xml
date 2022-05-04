@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Ingredient xmlns="http://hl7.org/fhir">
+  <id value="0e42bde2-8bbd-4fb1-9d67-51e3c7c6f245"/>
+  <meta>
+    <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "0e42bde2-8bbd-4fb1-9d67-51e3c7c6f245" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 059QF0KO0R (OFFICIAL)</p><p><b>status</b>: active</p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-1a2b1f1d-5e6c-40cd-96a1-ee4183243de8.html">Organization/1a2b1f1d-5e6c-40cd-96a1-ee4183243de8</a> "Lilly S.A."</td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+    <value value="059QF0KO0R"/>
+  </identifier>
+  <status value="active"/>
+  <role>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/"/>
+      <code value="100000072082"/>
+    </coding>
+    <text value="Excipient"/>
+  </role>
+  <manufacturer>
+    <manufacturer>
+      <reference value="Organization/1a2b1f1d-5e6c-40cd-96a1-ee4183243de8"/>
+    </manufacturer>
+  </manufacturer>
+  <substance>
+    <code>
+      <concept>
+        <coding>
+          <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/"/>
+          <code value="059QF0KO0R"/>
+          <display value="Water for Injection"/>
+        </coding>
+      </concept>
+    </code>
+  </substance>
+</Ingredient>
