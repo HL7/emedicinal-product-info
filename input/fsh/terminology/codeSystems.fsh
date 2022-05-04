@@ -45,6 +45,7 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #20053000 "Oral use"
 * #100000116155 "Granules and solvent for oral suspension"
 * #100000073619 "oral use"
+
 // Not in SPOR.. added beacuse used in the composition example....
 * #100000155538-0
 * #100000155538-1
@@ -53,6 +54,10 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #100000155538-4
 * #100000155538-5
 * #100000155538-6
+
+* #100000073504 "Child-resistant closure"
+* #200000003529 "Cardboard"
+* #200000002152
 
 
 CodeSystem: CodeSystemUvEPIRomswi
