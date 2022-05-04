@@ -1,5 +1,5 @@
-Instance: cfsb1641212233583
-InstanceOf: MedicinalProductDefinition
+Instance: fb3d4c9b-3abe-4ef4-9ef8-73dcd1059258
+InstanceOf: MedicinalProductDefinitionUvEpi
 Description: "EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 

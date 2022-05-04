@@ -15,8 +15,12 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry 1.. // 
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
+
+/* --------
 * entry ^slicing.discriminator[+].type = #profile
 * entry ^slicing.discriminator[=].path = "resource"
+--- */
+
 * entry ^slicing.rules = #open
 * entry ^short = "Entry resource in the ePI bundle"
 * entry ^definition = "An entry resource included in the ePI document bundle resource."

@@ -1,5 +1,5 @@
-Instance: cfsb1640780784213
-InstanceOf: Ingredient
+Instance: 713b8153-be01-4a8a-8903-e6dd558af4ae
+InstanceOf: IngredientUvEpi
 Description: "Hydrochloric acid"
 Usage: #example
 
@@ -15,4 +15,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#QTT17582CB "Hydrochloric acid"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(cfsb1640870328895)
+* manufacturer.manufacturer = Reference(1a2b1f1d-5e6c-40cd-96a1-ee4183243de8)

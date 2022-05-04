@@ -1,5 +1,5 @@
-Instance: cfsb1640606978608
-InstanceOf: AdministrableProductDefinition
+Instance: f38a9470-24db-4d2a-b5ea-cace3e38db63
+InstanceOf: AdministrableProductDefinitionUvEpi
 Description: "Humalog 100 U/ml 5 pre-filled pen"
 Usage: #example
 
@@ -20,7 +20,7 @@ Usage: #example
 * routeOfAdministration.targetSpecies.code.text = "Human"
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
-* producedFrom = Reference(cfsb1640777487408)
+* producedFrom = Reference(cfd35737-9e60-4604-9132-717615cfaf4c)
 
 //reference to EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill
-* formOf = Reference(cfsb1641212233583)
+* formOf = Reference(fb3d4c9b-3abe-4ef4-9ef8-73dcd1059258)

@@ -1,5 +1,5 @@
-Instance: cfsb1640780048702
-InstanceOf: Ingredient
+Instance: 03f0b798-cf2a-4964-9e26-fb4958480a66
+InstanceOf: IngredientUvEpi
 Description: "Glycerol"
 Usage: #example
 
@@ -16,4 +16,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#PDC6A3C0OX "Glycerin"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(cfsb1640870328895)
+* manufacturer.manufacturer = Reference(1a2b1f1d-5e6c-40cd-96a1-ee4183243de8)

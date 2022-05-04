@@ -45,6 +45,15 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #20053000 "Oral use"
 * #100000116155 "Granules and solvent for oral suspension"
 * #100000073619 "oral use"
+// Not in SPOR.. added beacuse used in the composition example....
+* #100000155538-0
+* #100000155538-1
+* #100000155538-2
+* #100000155538-3
+* #100000155538-4
+* #100000155538-5
+* #100000155538-6
+
 
 CodeSystem: CodeSystemUvEPIRomswi
 Title: "Organization Management Services CodeSystem"

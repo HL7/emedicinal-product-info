@@ -1,5 +1,5 @@
-Instance: cfsb1640777487408
-InstanceOf: ManufacturedItemDefinition
+Instance: cfd35737-9e60-4604-9132-717615cfaf4c
+InstanceOf: ManufacturedItemDefinitionUvEpi
 Description: "Manufactured Item"
 Usage: #example
 
@@ -16,4 +16,4 @@ Usage: #example
 * unitOfPresentation.text = "Pen"
 
  // Reference to Organization: Manufacturer
-* manufacturer = Reference(cfsb1640870328895)
+* manufacturer = Reference(1a2b1f1d-5e6c-40cd-96a1-ee4183243de8)

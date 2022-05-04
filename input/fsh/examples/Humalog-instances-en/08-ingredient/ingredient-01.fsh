@@ -1,5 +1,5 @@
-Instance: cfsb1640607635665
-InstanceOf: Ingredient
+Instance: b4c4de8c-c991-4771-bd28-557e2b98d67f
+InstanceOf: IngredientUvEpi
 Description: "Insulin Lispro"
 Usage: #example
 
@@ -20,4 +20,4 @@ Usage: #example
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
 // Reference to Organization: Manufaturer API
-* manufacturer.manufacturer = Reference(cfsb1641381635293)
+* manufacturer.manufacturer = Reference(02108a99-0146-4b46-ae72-44e35ca682fc)

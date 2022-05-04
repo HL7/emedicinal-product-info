@@ -1,22 +1,34 @@
-Instance: cfsb1641383289499
-InstanceOf: Composition
+Instance: 85d72429-82e2-4199-b9e3-2124d43455c1
+InstanceOf: CompositionUvEpi
 Description: "Package Leaflet"
 Usage: #example
 
 * status = #final
-* type = https://spor.ema.europa.eu/#100000155538
+* type = $spor-rms#100000155538
 * type.text = "Package Leaflet"
 * date = "2015-02-07T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
-* author = Reference(cfsb1640870284639)
+* author = Reference(71dc2536-d675-4558-92a9-cc8a6342ab0f)
 * title = "TEST PURPOSES ONLY - Humalog Vulcan ePI"
 * confidentiality = #U
 * language = #en
 
+//==== ADDED FCAT May 2022
+
+* identifier
+  * system  = "https://www.gravitatehealth.eu/sid/doc"
+  * value   = "humalog-comp-ex"
+  
+* attester
+  * mode = $composition-attestation-mode#official
+  * time = "2015-02-07T13:28:17Z"
+* subject = Reference(4ab64267-c4a9-46e4-95c6-93907f62a9d6)
+
+// === FCAT May 2022
+
 * section.title = "B. Package Leaflet"
-* section.code = https://spor.ema.europa.eu/#100000155538
-* section.code.text = "B. PACKAGE LEAFLET"
+* section.code = $spor-rms#100000155538  "B. PACKAGE LEAFLET"
 * section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 PACKAGE LEAFLET: INFORMATION FOR THE USER
 Humalog Mix50 100 units/ml suspension for injection in cartridge
@@ -33,8 +45,7 @@ Read all of this leaflet carefully before you start taking this medicine because
 * section.text.status = #additional
 
 * section[1].title = "What is in this leaflet"
-* section[1].code = https://spor.ema.europa.eu/#100000155538-0
-* section[1].code.text = "B. PACKAGE LEAFLET"
+* section[1].code = $spor-rms#100000155538-0 "B. PACKAGE LEAFLET"
 * section[1].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 What in this leaflet
 <ol>
@@ -49,8 +60,7 @@ What in this leaflet
 * section[1].text.status = #additional
 
 * section[2].title = "1. What Humalog Mix50 is and what it is used for"
-* section[2].code = https://spor.ema.europa.eu/#100000155538-1
-* section[2].code.text = "B. PACKAGE LEAFLET"
+* section[2].code = $spor-rms#100000155538-1 "B. PACKAGE LEAFLET"
 * section[2].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>1. What Humalog Mix50 is and what it is used for</b>
 Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active
@@ -59,8 +69,7 @@ substance is insulin lispro.
 * section[2].text.status = #additional
 
 * section[3].title = "2. What you need to know before you use Humalog Mix50"
-* section[3].code = https://spor.ema.europa.eu/#100000155538-2
-* section[3].code.text = "B. PACKAGE LEAFLET"
+* section[3].code = $spor-rms#100000155538-2 "B. PACKAGE LEAFLET"
 * section[3].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>2. What you need to know before you use Humalog Mix50</b>
 Do NOT use Humalog Mix50 if you
@@ -68,8 +77,7 @@ Do NOT use Humalog Mix50 if you
 * section[3].text.status = #additional
 
 * section[4].title = "3. How to use Humalog Mix50"
-* section[4].code = https://spor.ema.europa.eu/#100000155538-3
-* section[4].code.text = "B. PACKAGE LEAFLET"
+* section[4].code = $spor-rms#100000155538-3 "B. PACKAGE LEAFLET"
 * section[4].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>3. How to use Humalog Mix50</b>
 <b>The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.</b>
@@ -80,8 +88,7 @@ you only, even if the needle on the delivery device is changed.</p>
 * section[4].text.status = #additional
 
 * section[5].title = "4. Possible side effects"
-* section[5].code = https://spor.ema.europa.eu/#100000155538-4
-* section[5].code.text = "B. PACKAGE LEAFLET"
+* section[5].code = $spor-rms#100000155538-4 "B. PACKAGE LEAFLET"
 * section[5].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <p><b>4. Possible side effects</b></p>
 <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
@@ -89,8 +96,7 @@ you only, even if the needle on the delivery device is changed.</p>
 * section[5].text.status = #additional
 
 * section[6].title = "5. How to store Humalog Mix50"
-* section[6].code = https://spor.ema.europa.eu/#100000155538-5
-* section[6].code.text = "B. PACKAGE LEAFLET"
+* section[6].code = $spor-rms#100000155538-5 "B. PACKAGE LEAFLET"
 * section[6].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>5. How to store Humalog Mix50</b>
 <p>Before the first use store your Humalog Mix50 in a refrigerator (2°C – 8°C). Do not freeze.</p>
@@ -108,8 +114,7 @@ dispose of medicines no longer required. These measures will help to protect the
 * section[6].text.status = #additional
 
 * section[7].title = "6. Contents of the pack and other information"
-* section[7].code = https://spor.ema.europa.eu/#100000155538-6
-* section[7].code.text = "B. PACKAGE LEAFLET"
+* section[7].code = $spor-rms#100000155538-6  "B. PACKAGE LEAFLET"
 * section[7].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>6. Contents of the pack and other information</b>
 <b>What Humalog Mix50 100 units/ml suspension for injection in cartridge contains</b>
