@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-05-01T15:49:46+00:00",
+  "date": "2022-05-04T10:49:28+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -1876,6 +1876,258 @@
         },
         "name": "Vulcan Humalog FHIR Package Insert",
         "description": "Instance of Humalog package insert for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicinalProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "MedicinalProductDefinition/cfsb1650904258324"
+        },
+        "name": "cfsb1650904258324",
+        "description": "EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PackagedProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "PackagedProductDefinition/cfsb1650995718524"
+        },
+        "name": "cfsb1650995718524",
+        "description": "50 mg/300 mg film-coated tablets",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/cfsb1650997423990"
+        },
+        "name": "cfsb1650997423990",
+        "description": "Manufacturer",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ManufacturedItemDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ManufacturedItemDefinition/cfsb1650998521654"
+        },
+        "name": "cfsb1650998521654",
+        "description": "Manufactured Item: Dovato 50 mg/300 mg film-coated tablets",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AdministrableProductDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "AdministrableProductDefinition/cfsb1650999516847"
+        },
+        "name": "cfsb1650999516847",
+        "description": "Dovato 50 mg/300 mg film-coated tablets",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RegulatedAuthorization"
+          }
+        ],
+        "reference": {
+          "reference": "RegulatedAuthorization/cfsb1651148079894"
+        },
+        "name": "cfsb1651148079894",
+        "description": "Regulated authorization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/cfsb1651149636159"
+        },
+        "name": "cfsb1651149636159",
+        "description": "Marketing Authorization Holder",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/cfsb1651152112409"
+        },
+        "name": "cfsb1651152112409",
+        "description": "Regulator",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1651162710491"
+        },
+        "name": "cfsb1651162710491",
+        "description": "dolutegravir",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1651164758053"
+        },
+        "name": "cfsb1651164758053",
+        "description": "lamivudine",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1651170791283"
+        },
+        "name": "cfsb1651170791283",
+        "description": "microcrystalline cellulose",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1651229974487"
+        },
+        "name": "cfsb1651229974487",
+        "description": "sodium starch glycolate",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1651230170831"
+        },
+        "name": "cfsb1651230170831",
+        "description": "magnesium stearate",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Ingredient"
+          }
+        ],
+        "reference": {
+          "reference": "Ingredient/cfsb1651230330246"
+        },
+        "name": "cfsb1651230330246",
+        "description": "mannitol",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/cfsb1651231019151"
+        },
+        "name": "cfsb1651231019151",
+        "description": "Package Leaflet",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/cfsb1651234995610"
+        },
+        "name": "cfsb1651234995610",
+        "description": "Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/cfsb1651596479132"
+        },
+        "name": "Vulcan Dovato FHIR Package Insert EMA",
+        "description": "English Instance of Dovato package insert for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/cfsb1651597532341"
+        },
+        "name": "Vulcan Dovato FHIR Package Insert EMA ESP",
+        "description": "Spanish Instance of Dovato package insert for Connectathon testing",
         "exampleBoolean": true
       },
       {

@@ -1,0 +1,80 @@
+{
+  "resourceType": "PackagedProductDefinition",
+  "id": "cfsb1650995718524",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1650995718524\" </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>name</b>: Dovato 50 mg/300 mg film-coated tablets</p><p><b>type</b>: Chemical Medicinal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-cfsb1650904258324.html\">MedicinalProductDefinition/cfsb1650904258324</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2012-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 30 tablets</p><p><b>manufacturer</b>: <a href=\"Organization-cfsb1650997423990.html\">Organization/cfsb1650997423990</a> \"GLAXO WELLCOME, S.A.\"</p><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: 654321</td><td>Child-resistant closure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000073504)</span></td><td>1</td><td>Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003529)</span></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "$spor-prod",
+      "value": "EU/1/19/1370/001"
+    }
+  ],
+  "name": "Dovato 50 mg/300 mg film-coated tablets",
+  "type": {
+    "coding": [
+      {
+        "system": "https://spor.ema.europa.eu/rmswi",
+        "code": "100000155527"
+      }
+    ],
+    "text": "Chemical Medicinal Prodcut"
+  },
+  "packageFor": [
+    {
+      "reference": "MedicinalProductDefinition/cfsb1650904258324"
+    }
+  ],
+  "status": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/publication-status",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "statusDate": "2012-02-07T13:28:17Z",
+  "containedItemQuantity": [
+    {
+      "value": 30,
+      "unit": "tablets"
+    }
+  ],
+  "manufacturer": [
+    {
+      "reference": "Organization/cfsb1650997423990"
+    }
+  ],
+  "package": {
+    "identifier": [
+      {
+        "system": "https://spor.ema.europa.eu/pmswi",
+        "value": "654321"
+      }
+    ],
+    "type": {
+      "coding": [
+        {
+          "system": "https://spor.ema.europa.eu/rmswi",
+          "code": "100000073504",
+          "display": "Child-resistant closure"
+        }
+      ]
+    },
+    "quantity": 1,
+    "material": [
+      {
+        "coding": [
+          {
+            "system": "https://spor.ema.europa.eu/rmswi",
+            "code": "200000003529",
+            "display": "Cardboard"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,965 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/cfsb1651597532341> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1651597532341"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "https://www.gravitatehealth.eu/sid/doc" ];
+     fhir:Identifier.value [ fhir:value "EU/1/19/1370/001" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2011-06-23T08:38:00+02:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.resource [
+       a fhir:Composition;
+       fhir:Resource.id [ fhir:value "cfsb1651234995610" ];
+       fhir:Resource.language [ fhir:value "es" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" lang=\"es\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651234995610\"  (Language \"es\") </p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2022-04-29 01:28:17+0000</p><p><b>author</b>: <a href=\"#Organization_cfsb1651149636159\">See above (Organization/cfsb1651149636159)</a></p><p><b>title</b>: TEST PURPOSES ONLY/EJEMPLO DE PRUEBAS - Dovato 50 mg/300 mg comprimidos recubiertos con película</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-composition-attestation-mode.html\">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table></div>"
+       ];
+       fhir:Composition.status [ fhir:value "final" ];
+       fhir:Composition.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+           fhir:Coding.code [ fhir:value "100000155538" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Package Leaflet" ]
+       ];
+       fhir:Composition.subject [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1651148079894>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/cfsb1651148079894" ]
+       ];
+       fhir:Composition.date [ fhir:value "2022-04-29T13:28:17Z"^^xsd:dateTime ];
+       fhir:Composition.author [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651149636159>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1651149636159" ]
+       ];
+       fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY/EJEMPLO DE PRUEBAS - Dovato 50 mg/300 mg comprimidos recubiertos con película" ];
+       fhir:Composition.confidentiality [ fhir:value "U" ];
+       fhir:Composition.attester [
+         fhir:index 0;
+         fhir:Composition.attester.mode [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/composition-attestation-mode" ];
+             fhir:Coding.code [ fhir:value "official" ]
+           ]
+         ];
+         fhir:Composition.attester.time [ fhir:value "2002-08-01T13:28:17Z"^^xsd:dateTime ]
+       ];
+       fhir:Composition.section [
+         fhir:index 0;
+         fhir:Composition.section.title [ fhir:value "B. Package Leaflet" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prospecto: información para el paciente Dovato 50 mg/300 mg comprimidos recubiertos con película dolutegravir/lamivudina <b>Lea todo el prospecto detenidamente antes de empezar a tomar este medicamento, porque contiene información importante para usted.</b><ul><li>Conserve este prospecto, ya que puede tener que volver a leerlo.</li><li>Si tiene alguna duda, consulte a su médico o farmacéutico.</li><li>Este medicamento se le ha recetado solamente a usted, y no debe dárselo a otras personas aunque tengan los mismos síntomas que usted, ya que puede perjudicarles.</li><li>Si experimenta efectos adversos, consulte a su médico o farmacéutico, incluso si se trata de efectos adversos que no aparecen en este prospecto. Ver sección 4.</li></ul></div>"
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Composition.section.title [ fhir:value "What is in this leaflet" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-0" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Contenido del prospecto<ol><li>Qué es Dovato y para qué se utiliza</li><li>Qué necesita saber antes de empezar a tomar Dovato</li><li>Cómo tomar Dovato</li><li>Posibles efectos adversos</li><li>Conservación de Dovato</li><li>Contenido del envase e información adicional</li></ol></div>"
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Composition.section.title [ fhir:value "1. What Dovato is and what it is used for" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-1" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>1. Qué es Dovato y para qué se utiliza</b> Dovato es un medicamento que contiene dos principios activos usados para tratar la infección por el virus de la inmunodeficiencia humana (VIH): dolutegravir y lamivudina. Dolutegravir pertenece al grupo de medicamentos antirretrovirales llamados inhibidores de la integrasa (INI) y lamivudina pertenece a un grupo de medicamentos antirretrovirales denominados inhibidores de la transcriptasa inversa análogos de nucleósido (ITIAN).</div>"
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Composition.section.title [ fhir:value "2. What you need to know before you take Dovato" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-2" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>2. Qué necesita saber antes de empezar a tomar Dovato</b> <b>No tome Dovato</b><ul><li>si es <b>alérgico</b> (hipersensible) a dolutegravir o lamivudina o a alguno de los demás componentes de este medicamento (incluidos en la sección 6)</li><li>si está tomando un medicamento llamado <b>fampridina</b> (también conocido como dalfampridina; utilizado para tratar la esclerosis múltiple).</li></ul></div>"
+         ]
+       ], [
+         fhir:index 4;
+         fhir:Composition.section.title [ fhir:value "3. How to take Dovato" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-3" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>3. Cómo tomar Dovato</b><p>Siga exactamente las instrucciones de administración de este medicamento indicadas por su médico. En caso de duda, consulte de nuevo a su médico o farmacéutico.</p><ul><li>La dosis recomendada de Dovato es <b>un comprimido una vez al día.</b></li></ul><p>Trague el comprimido con un poco de líquido. Dovato se puede tomar con o sin alimentos.</p></div>"
+         ]
+       ], [
+         fhir:index 5;
+         fhir:Composition.section.title [ fhir:value "4. Possible side effects" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-4" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>4. Posibles efectos adversos</b></p><p>Al igual que todos los medicamentos, este medicamento puede producir efectos adversos, aunque no todas las personas los sufran, <b>por lo que es muy importante que le comente a su médico cualquier cambio en su estado de salud.</b></p></div>"
+         ]
+       ], [
+         fhir:index 6;
+         fhir:Composition.section.title [ fhir:value "5. How to store Dovato" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-5" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>5. Conservación de Dovato</b><p>Mantener este medicamento fuera de la vista y del alcance de los niños</p><p>No utilice este medicamento después de la fecha de caducidad que aparece en la caja y el frasco después de CAD. La fecha de caducidad es el último día del mes que se indica.</p><p>Este medicamento no requiere ninguna condición especial de conservación.</p><p>Los medicamentos no se deben tirar por los desagües ni a la basura. Pregunte a su farmacéutico cómo deshacerse de los envases y de los medicamentos que ya no necesita. De esta forma, ayudará a proteger el medio ambiente.</p></div>"
+         ]
+       ], [
+         fhir:index 7;
+         fhir:Composition.section.title [ fhir:value "6. Contents of the pack and other information" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+             fhir:Coding.code [ fhir:value "100000155538-6" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>6. Contenido del envase e información adicional</b> <b>Composición de Dovato</b><ul><li>Los principios activos son dolutegravir y lamivudina. Cada comprimido contiene dolutegravir sódico equivalente a 50 mg de dolutegravir y 300 mg de lamivudina.</li><li>Los demás componentes son celulosa microcristalina, carboximetilalmidón sódico, estearato de magnesio, manitol (E421), povidona (K29/32), fumarato estearilo de sodio, hipromelosa (E464), macrogol, dióxido de titanio (E171).</li><li>Este medicamento contiene menos de 1 mmol de sodio (23 mg) por comprimido; esto es, esencialmente “exento de sodio”.</li></ul></div>"
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "cfsb1650997423990" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1650997423990\" </p></div><p><b>identifier</b>: id: ORG-100004538 (OFFICIAL), id: LOC-100000153 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000033)</span></p><p><b>name</b>: GLAXO WELLCOME, S.A.</p><p><b>address</b>: Avda. Extremadura, 3(WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "$spor-org" ];
+         fhir:Identifier.value [ fhir:value "ORG-100004538" ]
+       ], [
+         fhir:index 1;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "$spor-org" ];
+         fhir:Identifier.value [ fhir:value "LOC-100000153" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+           fhir:Coding.code [ fhir:value "220000000033" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "manufacturer" ]
+       ];
+       fhir:Organization.name [ fhir:value "GLAXO WELLCOME, S.A." ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "Avda. Extremadura, 3" ];
+         fhir:Address.line [
+           fhir:value "Avda. Extremadura 3, 09400 Aranda De Duero";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "Aranda De Duero" ];
+         fhir:Address.country [ fhir:value "ES" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "cfsb1651152112409" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651152112409\" </p></div><p><b>identifier</b>: id: ORG-100013412 (OFFICIAL), id: LOC-100020264 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Medicines Regulatory Authority <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#220000000032)</span></p><p><b>name</b>: European Medicines Agency</p><p><b>address</b>: Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands(WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi" ];
+         fhir:Identifier.value [ fhir:value "ORG-100013412" ]
+       ], [
+         fhir:index 1;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "$spor-org" ];
+         fhir:Identifier.value [ fhir:value "LOC-100020264" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "/#220000000032" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Medicines Regulatory Authority" ]
+       ];
+       fhir:Organization.name [ fhir:value "European Medicines Agency" ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands" ];
+         fhir:Address.line [
+           fhir:value "Carretera De Martorell 41 61, Poligono Industrial Nord-Est";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "Amsterdam" ];
+         fhir:Address.postalCode [ fhir:value "1083 HS" ];
+         fhir:Address.country [ fhir:value "nl" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "cfsb1651149636159" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651149636159\" </p></div><p><b>identifier</b>: id: ORG-100012958 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000034)</span></p><p><b>name</b>: ViiV Healthcare BV</p><p><b>address</b>: Van Asch van Wijckstraat 55H 3811 LP Amersfoort Netherlands(WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/omswi" ];
+         fhir:Identifier.value [ fhir:value "ORG-100012958" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+           fhir:Coding.code [ fhir:value "220000000034" ];
+           fhir:Coding.display [ fhir:value "Marketing authorisation holder" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Marketing authorisation holder" ]
+       ];
+       fhir:Organization.name [ fhir:value "ViiV Healthcare BV" ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "Van Asch van Wijckstraat 55H 3811 LP Amersfoort Netherlands" ];
+         fhir:Address.line [
+           fhir:value "Van Asch van Wijckstraat 55H";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "Amersfoort" ];
+         fhir:Address.country [ fhir:value "NL" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.resource [
+       a fhir:RegulatedAuthorization;
+       fhir:Resource.id [ fhir:value "cfsb1651148079894" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651148079894\" </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_cfsb1650904258324\">See above (MedicinalProductDefinition/cfsb1650904258324)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072062)</span></p><p><b>region</b>: European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2019-07-01 01:28:17+0000</p><p><b>holder</b>: <a href=\"#Organization_cfsb1651149636159\">See above (Organization/cfsb1651149636159)</a></p><p><b>regulator</b>: <a href=\"#Organization_cfsb1651152112409\">See above (Organization/cfsb1651152112409)</a></p></div>"
+       ];
+       fhir:RegulatedAuthorization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
+         fhir:Identifier.value [ fhir:value "EU/1/19/1370/001" ]
+       ];
+       fhir:RegulatedAuthorization.subject [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1650904258324>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1650904258324" ]
+       ];
+       fhir:RegulatedAuthorization.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+           fhir:Coding.code [ fhir:value "100000072062" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Marketing Authorisation" ]
+       ];
+       fhir:RegulatedAuthorization.region [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+           fhir:Coding.code [ fhir:value "eu" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "European Union" ]
+       ];
+       fhir:RegulatedAuthorization.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+           fhir:Coding.code [ fhir:value "active" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Active" ]
+       ];
+       fhir:RegulatedAuthorization.statusDate [ fhir:value "2019-07-01T13:28:17Z"^^xsd:dateTime ];
+       fhir:RegulatedAuthorization.holder [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651149636159>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1651149636159" ]
+       ];
+       fhir:RegulatedAuthorization.regulator [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651152112409>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1651152112409" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.resource [
+       a fhir:MedicinalProductDefinition;
+       fhir:Resource.id [ fhir:value "cfsb1650904258324" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1650904258324\" </p></div><p><b>identifier</b>: id: 498163</p><p><b>type</b>: Medicinal Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-type.html\">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-medicinal-product-domain.html\">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Dovato 50 mg/300 mg film-coated tablets</p><p><b>type</b>: Full name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class=\"grid\"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>film-coated tablets</td><td>Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></td><td>European Union <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#eu)</span></td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#en)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:MedicinalProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
+         fhir:Identifier.value [ fhir:value "498163" ]
+       ];
+       fhir:MedicinalProductDefinition.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/medicinal-product-type" ];
+           fhir:Coding.code [ fhir:value "MedicinalProduct" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Medicinal Product" ]
+       ];
+       fhir:MedicinalProductDefinition.domain [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/medicinal-product-domain" ];
+           fhir:Coding.code [ fhir:value "Human" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Human use" ]
+       ];
+       fhir:MedicinalProductDefinition.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+           fhir:Coding.code [ fhir:value "active" ];
+           fhir:Coding.display [ fhir:value "Active" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.legalStatusOfSupply [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+           fhir:Coding.code [ fhir:value "100000072084" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Medicinal product subject to medical prescription" ]
+       ];
+       fhir:MedicinalProductDefinition.name [
+         fhir:index 0;
+         fhir:MedicinalProductDefinition.name.productName [ fhir:value "Dovato 50 mg/300 mg film-coated tablets" ];
+         fhir:MedicinalProductDefinition.name.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+             fhir:Coding.code [ fhir:value "220000000001" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Full name" ]
+         ];
+         fhir:MedicinalProductDefinition.name.namePart [
+           fhir:index 0;
+           fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "film-coated tablets" ];
+           fhir:MedicinalProductDefinition.name.namePart.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+               fhir:Coding.code [ fhir:value "220000000005" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "Pharmaceutical dose form part" ]
+           ]
+         ];
+         fhir:MedicinalProductDefinition.name.countryLanguage [
+           fhir:index 0;
+           fhir:MedicinalProductDefinition.name.countryLanguage.country [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+               fhir:Coding.code [ fhir:value "eu" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "European Union" ]
+           ];
+           fhir:MedicinalProductDefinition.name.countryLanguage.jurisdiction [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+               fhir:Coding.code [ fhir:value "eu" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "European Union" ]
+           ];
+           fhir:MedicinalProductDefinition.name.countryLanguage.language [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
+               fhir:Coding.code [ fhir:value "en" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "English" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.resource [
+       a fhir:PackagedProductDefinition;
+       fhir:Resource.id [ fhir:value "cfsb1650995718524" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1650995718524\" </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>name</b>: Dovato 50 mg/300 mg film-coated tablets</p><p><b>type</b>: Chemical Medicinal Prodcut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_cfsb1650904258324\">See above (MedicinalProductDefinition/cfsb1650904258324)</a></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2012-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 30 tablets</p><p><b>manufacturer</b>: <a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></p><h3>Packages</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>Material</b></td></tr><tr><td>*</td><td>id: 654321</td><td>Child-resistant closure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#100000073504)</span></td><td>1</td><td>Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000003529)</span></td></tr></table></div>"
+       ];
+       fhir:PackagedProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "$spor-prod" ];
+         fhir:Identifier.value [ fhir:value "EU/1/19/1370/001" ]
+       ];
+       fhir:PackagedProductDefinition.name [ fhir:value "Dovato 50 mg/300 mg film-coated tablets" ];
+       fhir:PackagedProductDefinition.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+           fhir:Coding.code [ fhir:value "100000155527" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Chemical Medicinal Prodcut" ]
+       ];
+       fhir:PackagedProductDefinition.packageFor [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1650904258324>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1650904258324" ]
+       ];
+       fhir:PackagedProductDefinition.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+           fhir:Coding.code [ fhir:value "active" ];
+           fhir:Coding.display [ fhir:value "Active" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.statusDate [ fhir:value "2012-02-07T13:28:17Z"^^xsd:dateTime ];
+       fhir:PackagedProductDefinition.containedItemQuantity [
+         fhir:index 0;
+         fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "tablets" ]
+       ];
+       fhir:PackagedProductDefinition.manufacturer [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+       ];
+       fhir:PackagedProductDefinition.package [
+         fhir:PackagedProductDefinition.package.identifier [
+           fhir:index 0;
+           fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi" ];
+           fhir:Identifier.value [ fhir:value "654321" ]
+         ];
+         fhir:PackagedProductDefinition.package.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+             fhir:Coding.code [ fhir:value "100000073504" ];
+             fhir:Coding.display [ fhir:value "Child-resistant closure" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+         fhir:PackagedProductDefinition.package.material [
+           fhir:index 0;
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+             fhir:Coding.code [ fhir:value "200000003529" ];
+             fhir:Coding.display [ fhir:value "Cardboard" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.resource [
+       a fhir:AdministrableProductDefinition;
+       fhir:Resource.id [ fhir:value "cfsb1650999516847" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1650999516847\" </p></div><p><b>identifier</b>: id: 123456</p><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"#MedicinalProductDefinition_cfsb1650904258324\">See above (MedicinalProductDefinition/cfsb1650904258324)</a></p><p><b>administrableDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#10219000)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#15054000)</span></p><p><b>producedFrom</b>: <a href=\"#ManufacturedItemDefinition_cfsb1650998521654\">See above (ManufacturedItemDefinition/cfsb1650998521654)</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#20053000)</span></p><h3>TargetSpecies</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#/#100000109093)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:AdministrableProductDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.system [ fhir:value "https://www.who-umc.org/phpid" ];
+         fhir:Identifier.value [ fhir:value "123456" ]
+       ];
+       fhir:AdministrableProductDefinition.status [ fhir:value "active" ];
+       fhir:AdministrableProductDefinition.formOf [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1650904258324>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1650904258324" ]
+       ];
+       fhir:AdministrableProductDefinition.administrableDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://standardterms.edqm.eu/browse/get_concepts_by/SOM/SOM/" ];
+           fhir:Coding.code [ fhir:value "10219000" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+       ];
+       fhir:AdministrableProductDefinition.unitOfPresentation [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://standardterms.edqm.eu/browse/get_concepts/UOP/" ];
+           fhir:Coding.code [ fhir:value "15054000" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+       ];
+       fhir:AdministrableProductDefinition.producedFrom [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:AdministrableProductDefinition.routeOfAdministration [
+         fhir:index 0;
+         fhir:AdministrableProductDefinition.routeOfAdministration.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://standardterms.edqm.eu/browse/get_concepts/ROA/" ];
+             fhir:Coding.code [ fhir:value "20053000" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Oral use" ]
+         ];
+         fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies [
+           fhir:index 0;
+           fhir:AdministrableProductDefinition.routeOfAdministration.targetSpecies.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+               fhir:Coding.code [ fhir:value "/#100000109093" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "Human" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.resource [
+       a fhir:ManufacturedItemDefinition;
+       fhir:Resource.id [ fhir:value "cfsb1650998521654" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1650998521654\" </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000073665)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem</a>#200000002152)</span></p><p><b>manufacturer</b>: <a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></p></div>"
+       ];
+       fhir:ManufacturedItemDefinition.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/pmswi/#/" ];
+         fhir:Identifier.value [ fhir:value "EU/1/19/1370/001" ]
+       ];
+       fhir:ManufacturedItemDefinition.status [ fhir:value "active" ];
+       fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "100000073665" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Film-coated tablet" ]
+       ];
+       fhir:ManufacturedItemDefinition.unitOfPresentation [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi" ];
+           fhir:Coding.code [ fhir:value "200000002152" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+       ];
+       fhir:ManufacturedItemDefinition.manufacturer [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+       ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb1651162710491" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651162710491\" </p></div><p><b>identifier</b>: id: 1Q1V9V5WYQ (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_cfsb1650998521654\">See above (ManufacturedItemDefinition/cfsb1650998521654)</a></p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#00000072072)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>50 mg</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity##ACTIB)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "1Q1V9V5WYQ" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.for [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "00000072072" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "active" ]
+       ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "1Q1V9V5WYQ" ];
+               fhir:Coding.display [ fhir:value "DOLUTEGRAVIR SODIUM" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength [
+           fhir:index 0;
+           fhir:Ingredient.substance.strength.presentationQuantity [
+             fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "mg" ]
+           ];
+           fhir:Ingredient.substance.strength.basis [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity" ];
+               fhir:Coding.code [ fhir:value "#ACTIB" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "active ingredient - basis of strength" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb1651164758053" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651164758053\" </p></div><p><b>identifier</b>: id: 2T8Q726O95 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_cfsb1650998521654\">See above (ManufacturedItemDefinition/cfsb1650998521654)</a></p><p><b>role</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072072)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>300 mg</td><td>active ingredient - basis of strength <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (v3-RoleClassIngredientEntity##ACTIB)</span></td></tr></table></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "2T8Q726O95" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.for [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "100000072072" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "active" ]
+       ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "2T8Q726O95" ];
+               fhir:Coding.display [ fhir:value "lamivudine" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength [
+           fhir:index 0;
+           fhir:Ingredient.substance.strength.presentationQuantity [
+             fhir:Quantity.value [ fhir:value "300"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "mg" ]
+           ];
+           fhir:Ingredient.substance.strength.basis [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity" ];
+               fhir:Coding.code [ fhir:value "#ACTIB" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "active ingredient - basis of strength" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb1651170791283" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651170791283\" </p></div><p><b>identifier</b>: id: OP1R32D61U (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_cfsb1650998521654\">See above (ManufacturedItemDefinition/cfsb1650998521654)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "OP1R32D61U" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.for [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "OP1R32D61U" ];
+               fhir:Coding.display [ fhir:value "microcrystalline cellulose" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb1651229974487" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651229974487\" </p></div><p><b>identifier</b>: id: H8AV0SQX4D (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_cfsb1650998521654\">See above (ManufacturedItemDefinition/cfsb1650998521654)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "H8AV0SQX4D" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.for [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "H8AV0SQX4D" ];
+               fhir:Coding.display [ fhir:value "sodium starch glycolate" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb1651230170831" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651230170831\" </p></div><p><b>identifier</b>: id: 70097M6I30 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_cfsb1650998521654\">See above (ManufacturedItemDefinition/cfsb1650998521654)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "70097M6I30" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.for [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "70097M6I30" ];
+               fhir:Coding.display [ fhir:value "magnesium stearate" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:Bundle.entry.resource [
+       a fhir:Ingredient;
+       fhir:Resource.id [ fhir:value "cfsb1651230330246" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cfsb1651230330246\" </p></div><p><b>identifier</b>: id: 3OWL53L36A (OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href=\"#ManufacturedItemDefinition_cfsb1650998521654\">See above (ManufacturedItemDefinition/cfsb1650998521654)</a></p><p><b>role</b>: Excipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000072082)</span></p><h3>Manufacturers</h3><table class=\"grid\"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href=\"#Organization_cfsb1650997423990\">See above (Organization/cfsb1650997423990)</a></td></tr></table><blockquote><p><b>substance</b></p></blockquote></div>"
+       ];
+       fhir:Ingredient.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Identifier.value [ fhir:value "3OWL53L36A" ]
+       ];
+       fhir:Ingredient.status [ fhir:value "active" ];
+       fhir:Ingredient.for [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:Ingredient.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/rmswi/" ];
+           fhir:Coding.code [ fhir:value "100000072082" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Excipient" ]
+       ];
+       fhir:Ingredient.manufacturer [
+         fhir:index 0;
+         fhir:Ingredient.manufacturer.manufacturer [
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+           fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+         ]
+       ];
+       fhir:Ingredient.substance [
+         fhir:Ingredient.substance.code [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+               fhir:Coding.code [ fhir:value "3OWL53L36A" ];
+               fhir:Coding.display [ fhir:value "mannitol" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/cfsb1651597532341.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
