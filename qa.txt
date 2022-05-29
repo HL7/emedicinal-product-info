@@ -1,10 +1,10 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 811, warn = 83, info = 727
-IG Publisher Version: 1.1.116
-Generated Wed May 04 11:37:15 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
- Build Errors : 13 / 0 / 0
+err = 840, warn = 83, info = 727
+IG Publisher Version: 1.1.121
+Generated Sun May 29 13:17:55 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+ Build Errors : 19 / 0 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-8cf05f7c-481d-4bd6-9a7c-9ca3275601c3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-c5b74d97-ed74-4709-a30e-c061f0f1e21f : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1639760977050 : 0 / 0 / 1
@@ -13,17 +13,17 @@ Generated Wed May 04 11:37:15 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-d43df7b9-7815-4eb5-8350-945e4b77d46b : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-emacfsb1639760977050 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-f38a9470-24db-4d2a-b5ea-cace3e38db63 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Bundle-0e81d40e-3ba1-4349-a709-fba791e3b915 : 83 / 11 / 46
- /github/workspace/fsh-generated/resources/Bundle-33d34b6a-afaf-47d9-8848-366768bd429a : 110 / 26 / 126
- /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5 : 67 / 13 / 60
- /github/workspace/fsh-generated/resources/Bundle-6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3 : 83 / 11 / 46
+ /github/workspace/fsh-generated/resources/Bundle-0e81d40e-3ba1-4349-a709-fba791e3b915 : 87 / 11 / 46
+ /github/workspace/fsh-generated/resources/Bundle-33d34b6a-afaf-47d9-8848-366768bd429a : 112 / 27 / 126
+ /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5 : 70 / 13 / 60
+ /github/workspace/fsh-generated/resources/Bundle-6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3 : 87 / 11 / 46
  /github/workspace/fsh-generated/resources/Bundle-cfsb1641827801260 : 9 / 22 / 85
- /github/workspace/fsh-generated/resources/Bundle-cfsb1651596479132 : 59 / 9 / 46
- /github/workspace/fsh-generated/resources/Bundle-cfsb1651597532341 : 59 / 9 / 46
- /github/workspace/fsh-generated/resources/Bundle-cfsb2705555581978 : 53 / 12 / 44
- /github/workspace/fsh-generated/resources/Bundle-cfsb5408804803222 : 53 / 12 / 44
- /github/workspace/fsh-generated/resources/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c : 12 / 0 / 13
- /github/workspace/fsh-generated/resources/Bundle-f237a390-9fda-42e9-a62d-1ba5079be192 : 92 / 20 / 99
+ /github/workspace/fsh-generated/resources/Bundle-cfsb1651596479132 : 63 / 10 / 46
+ /github/workspace/fsh-generated/resources/Bundle-cfsb1651597532341 : 63 / 10 / 46
+ /github/workspace/fsh-generated/resources/Bundle-cfsb2705555581978 : 57 / 13 / 44
+ /github/workspace/fsh-generated/resources/Bundle-cfsb5408804803222 : 57 / 13 / 44
+ /github/workspace/fsh-generated/resources/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c : 10 / 0 / 13
+ /github/workspace/fsh-generated/resources/Bundle-f237a390-9fda-42e9-a62d-1ba5079be192 : 94 / 21 / 99
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRomswi : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRpmswi : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRrmswi : 0 / 0 / 2
@@ -205,14 +205,20 @@ Generated Wed May 04 11:37:15 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/ValueSet-regulatedAuthIdSystems : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: Ingredient.manufacturer.role: The reference http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role could not be resolved
+ERROR: Ingredient.manufacturer.role: The reference http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role|5.0.0-snapshot1 could not be resolved
 ERROR: /github/workspace/output/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.html#/html/body/div/div/div/div/div/div/a at Line 225, column 7513: The link 'www.mhra.gov.uk/yellowcard' for "www.mhra.gov.uk/yellowcard" cannot be resolved
 ERROR: /github/workspace/output/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.html#/html/body/div/div/div/div/div/div/a at Line 225, column 7513: The link 'www.mhra.gov.uk/yellowcard' for "www.mhra.gov.uk/yellowcard" cannot be resolved
 ERROR: /github/workspace/output/RegulatedAuthorization-cfsb1639761980721.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 1211: The link 'cfsb1639015880655' for "cfsb1639015880655" cannot be resolved
 ERROR: /github/workspace/output/RegulatedAuthorization-emacfsb1639761980721.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 1226: The link 'emacfsb1639015880655' for "emacfsb1639015880655" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 441, column 114: The link 'ingredient-manufacturer-role.html' for "ingredient-manufacturer-role" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 422, column 1970: The link 'ingredient-manufacturer-role.html' for "ingredient-manufacturer-role" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 663, column 1970: The link 'ingredient-manufacturer-role.html' for "ingredient-manufacturer-role" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Composition-eu-leaflet-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 445, column 114: The link 'http://terminology.hl7.org/3.0.0/2.0.0/ValueSet-v3-Confidentiality.html' for "Confidentiality (2.0.0)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Composition-eu-leaflet.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 471, column 1743: The link 'http://terminology.hl7.org/3.0.0/2.0.0/ValueSet-v3-Confidentiality.html' for "Confidentiality (2.0.0)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Composition-eu-leaflet.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1040, column 1743: The link 'http://terminology.hl7.org/3.0.0/2.0.0/ValueSet-v3-Confidentiality.html' for "Confidentiality (2.0.0)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Composition-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 454, column 114: The link 'http://terminology.hl7.org/3.0.0/2.0.0/ValueSet-v3-Confidentiality.html' for "Confidentiality (2.0.0)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Composition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 441, column 1753: The link 'http://terminology.hl7.org/3.0.0/2.0.0/ValueSet-v3-Confidentiality.html' for "Confidentiality (2.0.0)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Composition-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 684, column 1753: The link 'http://terminology.hl7.org/3.0.0/2.0.0/ValueSet-v3-Confidentiality.html' for "Confidentiality (2.0.0)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 441, column 114: The link 'ingredient-manufacturer-role|5.0.0-snapshot1.html' for "ingredient-manufacturer-role|5.0.0-snapshot1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 422, column 1970: The link 'ingredient-manufacturer-role|5.0.0-snapshot1.html' for "ingredient-manufacturer-role|5.0.0-snapshot1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Ingredient-uv-epi.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 663, column 1970: The link 'ingredient-manufacturer-role|5.0.0-snapshot1.html' for "ingredient-manufacturer-role|5.0.0-snapshot1" cannot be resolved
 ERROR: /github/workspace/output/copyright.html#/html/body/div/div/div/div/div/p/a at Line 227, column 14: The link 'http://build.fhir.org/ig/HL7/fhir-ips/copyrights.html' for "IPS Implementation Guide" cannot be resolved
 ERROR: /github/workspace/output/ePI-structure.html#/html/body/div/div/div/div/div/p/a at Line 232, column 121: The link 'http://build.fhir.org/ig/hl7-eu/gravitate-health/terminology.html' for "Terminology" cannot be resolved
 ERROR: /github/workspace/output/ePI-structure.html#/html/body/div/div/div/div/div/p/a at Line 278, column 106: The link 'http://build.fhir.org/ig/hl7-eu/gravitate-health/terminology.html' for "Terminology" cannot be resolved
@@ -322,6 +328,10 @@ ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[16]: Bundle ent
 ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[16].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
 WARNING: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[18]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[6]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -499,6 +509,8 @@ ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[26]: Bundle ent
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[26].resource.ofType(SubstanceDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[26].resource.ofType(SubstanceDefinition).name[0].type.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
 WARNING: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[28]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -553,7 +565,7 @@ INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3].resour
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3].resource.ofType(RegulatedAuthorization).region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3].resource.ofType(RegulatedAuthorization).holder: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3].resource.ofType(RegulatedAuthorization).regulator: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3].resource.ofType(RegulatedAuthorization).regulator: Unable to resolve resource 'cfsb1639015880655'
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3].resource.ofType(RegulatedAuthorization).regulator: Unable to resolve resource with reference 'cfsb1639015880655'
 INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(MedicinalProductDefinition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(MedicinalProductDefinition).domain.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[4].resource.ofType(MedicinalProductDefinition).name[0].countryLanguage[0].country.coding[0]: The code "gb" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#gb) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#gb'
@@ -625,6 +637,9 @@ INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14].resou
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/home' is unknown so the code cannot be validated
 WARNING: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[16]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[5]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -732,6 +747,10 @@ ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[16]: Bundle ent
 ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[16].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
 WARNING: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[18]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[6]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -890,6 +909,10 @@ INFORMATION: Bundle/cfsb1651596479132: Bundle.entry[14].resource.ofType(Ingredie
 ERROR: Bundle/cfsb1651596479132: Bundle.entry[14].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/cfsb1651596479132: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
 WARNING: Bundle/cfsb1651596479132: Bundle.entry[16]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/cfsb1651596479132: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb1651596479132: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb1651596479132: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb1651596479132: Bundle.entry[6]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/cfsb1651596479132: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb1651596479132: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb1651596479132: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -982,6 +1005,10 @@ INFORMATION: Bundle/cfsb1651597532341: Bundle.entry[14].resource.ofType(Ingredie
 ERROR: Bundle/cfsb1651597532341: Bundle.entry[14].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/cfsb1651597532341: Bundle.entry[14].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
 WARNING: Bundle/cfsb1651597532341: Bundle.entry[16]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/cfsb1651597532341: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb1651597532341: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb1651597532341: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb1651597532341: Bundle.entry[6]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/cfsb1651597532341: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb1651597532341: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb1651597532341: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -1060,6 +1087,10 @@ ERROR: Bundle/cfsb2705555581978: Bundle.entry[16]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[16].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/cfsb2705555581978: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 WARNING: Bundle/cfsb2705555581978: Bundle.entry[18]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/cfsb2705555581978: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb2705555581978: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb2705555581978: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb2705555581978: Bundle.entry[6]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb2705555581978: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -1140,6 +1171,10 @@ ERROR: Bundle/cfsb5408804803222: Bundle.entry[16]: Bundle entry missing fullUrl
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[16].resource.ofType(Ingredient).manufacturer[0].manufacturer: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/cfsb5408804803222: Bundle.entry[16].resource.ofType(Ingredient).substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated
 WARNING: Bundle/cfsb5408804803222: Bundle.entry[18]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/cfsb5408804803222: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb5408804803222: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb5408804803222: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/cfsb5408804803222: Bundle.entry[6]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/cfsb5408804803222: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -1176,8 +1211,6 @@ INFORMATION: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[0].resour
 INFORMATION: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[0].resource.ofType(Composition).section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[1]: Bundle entry missing fullUrl
 ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[1].resource.ofType(List).entry[0].item: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[1].resource.author[1].reference: Can't find 'Organization/cfsb1639754108144' in the bundle (Composition.author)
-ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 == fsh-generated/resources/Bundle-f237a390-9fda-42e9-a62d-1ba5079be192.json ==
@@ -1305,6 +1338,8 @@ ERROR: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[22]: Bundle ent
 ERROR: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[22].resource.ofType(SubstanceDefinition).manufacturer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[22].resource.ofType(SubstanceDefinition).name[0].type.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
 WARNING: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[24]: Entry  isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[4]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/f237a390-9fda-42e9-a62d-1ba5079be192: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -1935,13 +1970,13 @@ ERROR: RegulatedAuthorization/cfsb1529720709344: RegulatedAuthorization.region[0
 == fsh-generated/resources/RegulatedAuthorization-cfsb1639761980721.json ==
 INFORMATION: RegulatedAuthorization/cfsb1639761980721: RegulatedAuthorization.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: RegulatedAuthorization/cfsb1639761980721: RegulatedAuthorization.region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
-ERROR: RegulatedAuthorization/cfsb1639761980721: RegulatedAuthorization.regulator: Unable to resolve resource 'cfsb1639015880655'
+ERROR: RegulatedAuthorization/cfsb1639761980721: RegulatedAuthorization.regulator: Unable to resolve resource with reference 'cfsb1639015880655'
 == fsh-generated/resources/RegulatedAuthorization-cfsb1651148079894.json ==
 ERROR: RegulatedAuthorization/cfsb1651148079894: RegulatedAuthorization.region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
 == fsh-generated/resources/RegulatedAuthorization-emacfsb1639761980721.json ==
 INFORMATION: RegulatedAuthorization/emacfsb1639761980721: RegulatedAuthorization.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: RegulatedAuthorization/emacfsb1639761980721: RegulatedAuthorization.region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
-ERROR: RegulatedAuthorization/emacfsb1639761980721: RegulatedAuthorization.regulator: Unable to resolve resource 'emacfsb1639015880655'
+ERROR: RegulatedAuthorization/emacfsb1639761980721: RegulatedAuthorization.regulator: Unable to resolve resource with reference 'emacfsb1639015880655'
 == fsh-generated/resources/StructureDefinition-AdministrableProductDefinition-uv-epi.json ==
 == fsh-generated/resources/StructureDefinition-Bundle-uv-epi.json ==
 == fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.json ==

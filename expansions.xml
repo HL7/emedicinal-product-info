@@ -1,81 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4a492c87-75e1-40de-9615-567108067034"/>
+  <id value="d643bc68-bde5-46b0-b54b-3bbfd07f74e0"/>
   <meta>
-    <lastUpdated value="2022-05-04T11:35:34.005+00:00"/>
+    <lastUpdated value="2022-05-29T13:16:26.682+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems"/>
-    <resource>
-      <ValueSet>
-        <id value="manufacturedItemIdSystems"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
-            <p>All codes in this table are from the system 
-              <code>urn:ietf:rfc:3986</code>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
-                </td>
-                <td>SPOR Product (EU)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems"/>
-        <version value="0.1.0"/>
-        <name value="VsManufacturedItemIdSystems"/>
-        <title value="ManufacturedItemDefinition identifier systems"/>
-        <status value="active"/>
-        <date value="2022-05-04T11:35:34+00:00"/>
-        <contact>
-          <name value="Gravitate Health Project"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.gravitatehealth.eu/"/>
-          </telecom>
-        </contact>
-        <description value="ManufacturedItemDefinition Identifier systems (uri)"/>
-        <expansion>
-          <identifier value="urn:uuid:67decbcc-1889-403b-b460-08f719a0e248"/>
-          <timestamp value="2022-05-04T11:36:01+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="urn:ietf:rfc:3986|n/a"/>
-          </parameter>
-          <contains>
-            <system value="urn:ietf:rfc:3986"/>
-            <code value="https://spor.ema.europa.eu/pmswi"/>
-            <display value="SPOR Product (EU)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/regulatedAuthIdSystems"/>
     <resource>
@@ -112,7 +42,7 @@
         <name value="VsRegulatedAuthIdSystems"/>
         <title value="RegulatedAuthorization identifier systems"/>
         <status value="active"/>
-        <date value="2022-05-04T11:35:34+00:00"/>
+        <date value="2022-05-29T13:16:26+00:00"/>
         <contact>
           <name value="Gravitate Health Project"/>
           <telecom>
@@ -122,8 +52,369 @@
         </contact>
         <description value="RegulatedAuthorization Identifier systems (uri)"/>
         <expansion>
-          <identifier value="urn:uuid:5671ccd0-cf45-49a0-8fc0-8ad76a56eae8"/>
-          <timestamp value="2022-05-04T11:36:05+00:00"/>
+          <identifier value="urn:uuid:5ee14f37-9411-426b-8413-313cdff4780c"/>
+          <timestamp value="2022-05-29T13:16:55+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="https://spor.ema.europa.eu/pmswi"/>
+            <display value="SPOR Product (EU)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/packagedProductIdSystems"/>
+    <resource>
+      <ValueSet>
+        <id value="packagedProductIdSystems"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
+            <p>All codes in this table are from the system 
+              <code>urn:ietf:rfc:3986</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
+                </td>
+                <td>SPOR Product (EU)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/packagedProductIdSystems"/>
+        <version value="0.1.0"/>
+        <name value="VsPackagedProductIdSystems"/>
+        <title value="PackagedProductDefinition identifier systems"/>
+        <status value="active"/>
+        <date value="2022-05-29T13:16:26+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <description value="PackagedProductDefinition Identifier systems (uri)"/>
+        <expansion>
+          <identifier value="urn:uuid:76437756-062d-4aba-97b0-a652bb3cf5be"/>
+          <timestamp value="2022-05-29T13:16:56+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="https://spor.ema.europa.eu/pmswi"/>
+            <display value="SPOR Product (EU)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/organizationIdSystems"/>
+    <resource>
+      <ValueSet>
+        <id value="organizationIdSystems"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
+            <p>All codes in this table are from the system 
+              <code>urn:ietf:rfc:3986</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-omswi"> </a>  https://spor.ema.europa.eu/omswi
+                </td>
+                <td>SPOR Organization (EU)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/organizationIdSystems"/>
+        <version value="0.1.0"/>
+        <name value="VsOrganizationIdSystems"/>
+        <title value="Organization identifier systems"/>
+        <status value="active"/>
+        <date value="2022-05-29T13:16:26+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <description value="Organization Identifier systems (uri)"/>
+        <expansion>
+          <identifier value="urn:uuid:cdee4518-9fd8-4c4e-8318-7ca32fc652ff"/>
+          <timestamp value="2022-05-29T13:17:00+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="https://spor.ema.europa.eu/omswi"/>
+            <display value="SPOR Organization (EU)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems"/>
+    <resource>
+      <ValueSet>
+        <id value="admProductIdSystems"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
+            <p>All codes in this table are from the system 
+              <code>urn:ietf:rfc:3986</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
+                </td>
+                <td>SPOR Product (EU)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-https---www.who-umc.org-phpid"> </a>  https://www.who-umc.org/phpid
+                </td>
+                <td>IDMP PhPID</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems"/>
+        <version value="0.1.0"/>
+        <name value="VsAdmProductIdSystems"/>
+        <title value="AdministrableProductDefinition identifier systems"/>
+        <status value="active"/>
+        <date value="2022-05-29T13:16:26+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <description value="AdministrableProductDefinition Identifier systems (uri)"/>
+        <expansion>
+          <identifier value="urn:uuid:13c1f2cf-cd7b-42c3-9346-10c482627ec7"/>
+          <timestamp value="2022-05-29T13:17:01+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="https://spor.ema.europa.eu/pmswi"/>
+            <display value="SPOR Product (EU)"/>
+          </contains>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="https://www.who-umc.org/phpid"/>
+            <display value="IDMP PhPID"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems"/>
+    <resource>
+      <ValueSet>
+        <id value="medProductIdSystems"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
+            <p>All codes in this table are from the system 
+              <code>urn:ietf:rfc:3986</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
+                </td>
+                <td>SPOR Product (EU)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems"/>
+        <version value="0.1.0"/>
+        <name value="VsMedProductIdSystems"/>
+        <title value="MedicinalProductDefinition identifier systems"/>
+        <status value="active"/>
+        <date value="2022-05-29T13:16:26+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <description value="MedicinalProductDefinition Identifier systems (uri)"/>
+        <expansion>
+          <identifier value="urn:uuid:9b2081cc-7fa6-4c99-b255-529980467322"/>
+          <timestamp value="2022-05-29T13:17:03+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="https://spor.ema.europa.eu/pmswi"/>
+            <display value="SPOR Product (EU)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems"/>
+    <resource>
+      <ValueSet>
+        <id value="manufacturedItemIdSystems"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
+            <p>All codes in this table are from the system 
+              <code>urn:ietf:rfc:3986</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
+                </td>
+                <td>SPOR Product (EU)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems"/>
+        <version value="0.1.0"/>
+        <name value="VsManufacturedItemIdSystems"/>
+        <title value="ManufacturedItemDefinition identifier systems"/>
+        <status value="active"/>
+        <date value="2022-05-29T13:16:26+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <description value="ManufacturedItemDefinition Identifier systems (uri)"/>
+        <expansion>
+          <identifier value="urn:uuid:92b6f2d0-760a-4a28-9b95-0ab914cb4006"/>
+          <timestamp value="2022-05-29T13:17:03+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -208,7 +499,7 @@
         <name value="VsEpiType"/>
         <title value="ePI document types"/>
         <status value="active"/>
-        <date value="2022-05-04T11:35:34+00:00"/>
+        <date value="2022-05-29T13:16:26+00:00"/>
         <contact>
           <name value="Gravitate Health Project"/>
           <telecom>
@@ -218,8 +509,8 @@
         </contact>
         <description value="ePI document types"/>
         <expansion>
-          <identifier value="urn:uuid:2018dc51-ac6b-4330-84be-7f5d377917f9"/>
-          <timestamp value="2022-05-04T11:36:18+00:00"/>
+          <identifier value="urn:uuid:ff79de3d-9a52-4f6d-b257-70925de66562"/>
+          <timestamp value="2022-05-29T13:17:05+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -255,297 +546,6 @@
             <system value="http://loinc.org"/>
             <code value="34391-3"/>
             <display value="HUMAN PRESCRIPTION DRUG LABEL"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems"/>
-    <resource>
-      <ValueSet>
-        <id value="admProductIdSystems"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
-            <p>All codes in this table are from the system 
-              <code>urn:ietf:rfc:3986</code>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
-                </td>
-                <td>SPOR Product (EU)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="urn-ietf-rfc-3986-https---www.who-umc.org-phpid"> </a>  https://www.who-umc.org/phpid
-                </td>
-                <td>IDMP PhPID</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems"/>
-        <version value="0.1.0"/>
-        <name value="VsAdmProductIdSystems"/>
-        <title value="AdministrableProductDefinition identifier systems"/>
-        <status value="active"/>
-        <date value="2022-05-04T11:35:34+00:00"/>
-        <contact>
-          <name value="Gravitate Health Project"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.gravitatehealth.eu/"/>
-          </telecom>
-        </contact>
-        <description value="AdministrableProductDefinition Identifier systems (uri)"/>
-        <expansion>
-          <identifier value="urn:uuid:4cc64613-1e84-4396-818f-644dc42bf72b"/>
-          <timestamp value="2022-05-04T11:36:20+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="urn:ietf:rfc:3986|n/a"/>
-          </parameter>
-          <contains>
-            <system value="urn:ietf:rfc:3986"/>
-            <code value="https://spor.ema.europa.eu/pmswi"/>
-            <display value="SPOR Product (EU)"/>
-          </contains>
-          <contains>
-            <system value="urn:ietf:rfc:3986"/>
-            <code value="https://www.who-umc.org/phpid"/>
-            <display value="IDMP PhPID"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/packagedProductIdSystems"/>
-    <resource>
-      <ValueSet>
-        <id value="packagedProductIdSystems"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
-            <p>All codes in this table are from the system 
-              <code>urn:ietf:rfc:3986</code>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
-                </td>
-                <td>SPOR Product (EU)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/packagedProductIdSystems"/>
-        <version value="0.1.0"/>
-        <name value="VsPackagedProductIdSystems"/>
-        <title value="PackagedProductDefinition identifier systems"/>
-        <status value="active"/>
-        <date value="2022-05-04T11:35:34+00:00"/>
-        <contact>
-          <name value="Gravitate Health Project"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.gravitatehealth.eu/"/>
-          </telecom>
-        </contact>
-        <description value="PackagedProductDefinition Identifier systems (uri)"/>
-        <expansion>
-          <identifier value="urn:uuid:9ba81c26-f127-44bd-8050-67345e677d49"/>
-          <timestamp value="2022-05-04T11:36:21+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="urn:ietf:rfc:3986|n/a"/>
-          </parameter>
-          <contains>
-            <system value="urn:ietf:rfc:3986"/>
-            <code value="https://spor.ema.europa.eu/pmswi"/>
-            <display value="SPOR Product (EU)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems"/>
-    <resource>
-      <ValueSet>
-        <id value="medProductIdSystems"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
-            <p>All codes in this table are from the system 
-              <code>urn:ietf:rfc:3986</code>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi"> </a>  https://spor.ema.europa.eu/pmswi
-                </td>
-                <td>SPOR Product (EU)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems"/>
-        <version value="0.1.0"/>
-        <name value="VsMedProductIdSystems"/>
-        <title value="MedicinalProductDefinition identifier systems"/>
-        <status value="active"/>
-        <date value="2022-05-04T11:35:34+00:00"/>
-        <contact>
-          <name value="Gravitate Health Project"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.gravitatehealth.eu/"/>
-          </telecom>
-        </contact>
-        <description value="MedicinalProductDefinition Identifier systems (uri)"/>
-        <expansion>
-          <identifier value="urn:uuid:1785da62-3c65-43c2-aeb2-020b31cb723b"/>
-          <timestamp value="2022-05-04T11:36:24+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="urn:ietf:rfc:3986|n/a"/>
-          </parameter>
-          <contains>
-            <system value="urn:ietf:rfc:3986"/>
-            <code value="https://spor.ema.europa.eu/pmswi"/>
-            <display value="SPOR Product (EU)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/organizationIdSystems"/>
-    <resource>
-      <ValueSet>
-        <id value="organizationIdSystems"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on urn:ietf:rfc:3986 version n/a</p>
-            <p>All codes in this table are from the system 
-              <code>urn:ietf:rfc:3986</code>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="urn-ietf-rfc-3986-https---spor.ema.europa.eu-omswi"> </a>  https://spor.ema.europa.eu/omswi
-                </td>
-                <td>SPOR Organization (EU)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/organizationIdSystems"/>
-        <version value="0.1.0"/>
-        <name value="VsOrganizationIdSystems"/>
-        <title value="Organization identifier systems"/>
-        <status value="active"/>
-        <date value="2022-05-04T11:35:34+00:00"/>
-        <contact>
-          <name value="Gravitate Health Project"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.gravitatehealth.eu/"/>
-          </telecom>
-        </contact>
-        <description value="Organization Identifier systems (uri)"/>
-        <expansion>
-          <identifier value="urn:uuid:a793afcf-22c8-4a7d-8abc-e2d3ecea2602"/>
-          <timestamp value="2022-05-04T11:36:27+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="urn:ietf:rfc:3986|n/a"/>
-          </parameter>
-          <contains>
-            <system value="urn:ietf:rfc:3986"/>
-            <code value="https://spor.ema.europa.eu/omswi"/>
-            <display value="SPOR Organization (EU)"/>
           </contains>
         </expansion>
       </ValueSet>

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-04T11:35:34+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-29T13:16:26+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -33,6 +33,16 @@
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "5.0.0-snapshot1";
      fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r5" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.resource [
@@ -3065,11 +3075,16 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "newToC.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "New To C" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 6;
+         fhir:index 7;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-case-example.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case Example" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

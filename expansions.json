@@ -1,58 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4a492c87-75e1-40de-9615-567108067034",
+  "id" : "d643bc68-bde5-46b0-b54b-3bbfd07f74e0",
   "meta" : {
-    "lastUpdated" : "2022-05-04T11:35:34.005+00:00"
+    "lastUpdated" : "2022-05-29T13:16:26.682+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "manufacturedItemIdSystems",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on urn:ietf:rfc:3986 version n/a</p><p>All codes in this table are from the system <code>urn:ietf:rfc:3986</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi\"> </a>  https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr></table></div>"
-      },
-      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems",
-      "version" : "0.1.0",
-      "name" : "VsManufacturedItemIdSystems",
-      "title" : "ManufacturedItemDefinition identifier systems",
-      "status" : "active",
-      "date" : "2022-05-04T11:35:34+00:00",
-      "contact" : [{
-        "name" : "Gravitate Health Project",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.gravitatehealth.eu/"
-        }]
-      }],
-      "description" : "ManufacturedItemDefinition Identifier systems (uri)",
-      "expansion" : {
-        "identifier" : "urn:uuid:67decbcc-1889-403b-b460-08f719a0e248",
-        "timestamp" : "2022-05-04T11:36:01+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "urn:ietf:rfc:3986|n/a"
-        }],
-        "contains" : [{
-          "system" : "urn:ietf:rfc:3986",
-          "code" : "https://spor.ema.europa.eu/pmswi",
-          "display" : "SPOR Product (EU)"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/regulatedAuthIdSystems",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -66,7 +19,7 @@
       "name" : "VsRegulatedAuthIdSystems",
       "title" : "RegulatedAuthorization identifier systems",
       "status" : "active",
-      "date" : "2022-05-04T11:35:34+00:00",
+      "date" : "2022-05-29T13:16:26+00:00",
       "contact" : [{
         "name" : "Gravitate Health Project",
         "telecom" : [{
@@ -76,8 +29,8 @@
       }],
       "description" : "RegulatedAuthorization Identifier systems (uri)",
       "expansion" : {
-        "identifier" : "urn:uuid:5671ccd0-cf45-49a0-8fc0-8ad76a56eae8",
-        "timestamp" : "2022-05-04T11:36:05+00:00",
+        "identifier" : "urn:uuid:5ee14f37-9411-426b-8413-313cdff4780c",
+        "timestamp" : "2022-05-29T13:16:55+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -95,123 +48,6 @@
           "system" : "urn:ietf:rfc:3986",
           "code" : "https://spor.ema.europa.eu/pmswi",
           "display" : "SPOR Product (EU)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/epiType",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "epiType",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem v0.1.0 (CodeSystem)</a></li><li>Loinc v2.72</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---spor.ema.europa.eu-rmswi-100000155538\"> </a>  <a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html#CodeSystemUvEPIRrmswi-100000155538\">100000155538</a></td><td>https://spor.ema.europa.eu/rmswi</td><td>Package Leaflet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-34390-5\"> </a>  <a href=\"http://details.loinc.org/LOINC/34390-5.html\">34390-5</a></td><td>http://loinc.org</td><td>HUMAN OTC DRUG LABEL</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-34391-3\"> </a>  <a href=\"http://details.loinc.org/LOINC/34391-3.html\">34391-3</a></td><td>http://loinc.org</td><td>HUMAN PRESCRIPTION DRUG LABEL</td></tr></table></div>"
-      },
-      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/epiType",
-      "version" : "0.1.0",
-      "name" : "VsEpiType",
-      "title" : "ePI document types",
-      "status" : "active",
-      "date" : "2022-05-04T11:35:34+00:00",
-      "contact" : [{
-        "name" : "Gravitate Health Project",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.gravitatehealth.eu/"
-        }]
-      }],
-      "description" : "ePI document types",
-      "expansion" : {
-        "identifier" : "urn:uuid:2018dc51-ac6b-4330-84be-7f5d377917f9",
-        "timestamp" : "2022-05-04T11:36:18+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://spor.ema.europa.eu/rmswi|0.1.0"
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.72"
-        }],
-        "contains" : [{
-          "system" : "https://spor.ema.europa.eu/rmswi",
-          "code" : "100000155538",
-          "display" : "Package Leaflet"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "34390-5",
-          "display" : "HUMAN OTC DRUG LABEL"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "34391-3",
-          "display" : "HUMAN PRESCRIPTION DRUG LABEL"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "admProductIdSystems",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on urn:ietf:rfc:3986 version n/a</p><p>All codes in this table are from the system <code>urn:ietf:rfc:3986</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi\"> </a>  https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---www.who-umc.org-phpid\"> </a>  https://www.who-umc.org/phpid</td><td>IDMP PhPID</td></tr></table></div>"
-      },
-      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems",
-      "version" : "0.1.0",
-      "name" : "VsAdmProductIdSystems",
-      "title" : "AdministrableProductDefinition identifier systems",
-      "status" : "active",
-      "date" : "2022-05-04T11:35:34+00:00",
-      "contact" : [{
-        "name" : "Gravitate Health Project",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.gravitatehealth.eu/"
-        }]
-      }],
-      "description" : "AdministrableProductDefinition Identifier systems (uri)",
-      "expansion" : {
-        "identifier" : "urn:uuid:4cc64613-1e84-4396-818f-644dc42bf72b",
-        "timestamp" : "2022-05-04T11:36:20+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "urn:ietf:rfc:3986|n/a"
-        }],
-        "contains" : [{
-          "system" : "urn:ietf:rfc:3986",
-          "code" : "https://spor.ema.europa.eu/pmswi",
-          "display" : "SPOR Product (EU)"
-        },
-        {
-          "system" : "urn:ietf:rfc:3986",
-          "code" : "https://www.who-umc.org/phpid",
-          "display" : "IDMP PhPID"
         }]
       }
     }
@@ -230,7 +66,7 @@
       "name" : "VsPackagedProductIdSystems",
       "title" : "PackagedProductDefinition identifier systems",
       "status" : "active",
-      "date" : "2022-05-04T11:35:34+00:00",
+      "date" : "2022-05-29T13:16:26+00:00",
       "contact" : [{
         "name" : "Gravitate Health Project",
         "telecom" : [{
@@ -240,55 +76,8 @@
       }],
       "description" : "PackagedProductDefinition Identifier systems (uri)",
       "expansion" : {
-        "identifier" : "urn:uuid:9ba81c26-f127-44bd-8050-67345e677d49",
-        "timestamp" : "2022-05-04T11:36:21+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "urn:ietf:rfc:3986|n/a"
-        }],
-        "contains" : [{
-          "system" : "urn:ietf:rfc:3986",
-          "code" : "https://spor.ema.europa.eu/pmswi",
-          "display" : "SPOR Product (EU)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "medProductIdSystems",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on urn:ietf:rfc:3986 version n/a</p><p>All codes in this table are from the system <code>urn:ietf:rfc:3986</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi\"> </a>  https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr></table></div>"
-      },
-      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems",
-      "version" : "0.1.0",
-      "name" : "VsMedProductIdSystems",
-      "title" : "MedicinalProductDefinition identifier systems",
-      "status" : "active",
-      "date" : "2022-05-04T11:35:34+00:00",
-      "contact" : [{
-        "name" : "Gravitate Health Project",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.gravitatehealth.eu/"
-        }]
-      }],
-      "description" : "MedicinalProductDefinition Identifier systems (uri)",
-      "expansion" : {
-        "identifier" : "urn:uuid:1785da62-3c65-43c2-aeb2-020b31cb723b",
-        "timestamp" : "2022-05-04T11:36:24+00:00",
+        "identifier" : "urn:uuid:76437756-062d-4aba-97b0-a652bb3cf5be",
+        "timestamp" : "2022-05-29T13:16:56+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -324,7 +113,7 @@
       "name" : "VsOrganizationIdSystems",
       "title" : "Organization identifier systems",
       "status" : "active",
-      "date" : "2022-05-04T11:35:34+00:00",
+      "date" : "2022-05-29T13:16:26+00:00",
       "contact" : [{
         "name" : "Gravitate Health Project",
         "telecom" : [{
@@ -334,8 +123,8 @@
       }],
       "description" : "Organization Identifier systems (uri)",
       "expansion" : {
-        "identifier" : "urn:uuid:a793afcf-22c8-4a7d-8abc-e2d3ecea2602",
-        "timestamp" : "2022-05-04T11:36:27+00:00",
+        "identifier" : "urn:uuid:cdee4518-9fd8-4c4e-8318-7ca32fc652ff",
+        "timestamp" : "2022-05-29T13:17:00+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -353,6 +142,217 @@
           "system" : "urn:ietf:rfc:3986",
           "code" : "https://spor.ema.europa.eu/omswi",
           "display" : "SPOR Organization (EU)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "admProductIdSystems",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on urn:ietf:rfc:3986 version n/a</p><p>All codes in this table are from the system <code>urn:ietf:rfc:3986</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi\"> </a>  https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---www.who-umc.org-phpid\"> </a>  https://www.who-umc.org/phpid</td><td>IDMP PhPID</td></tr></table></div>"
+      },
+      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/admProductIdSystems",
+      "version" : "0.1.0",
+      "name" : "VsAdmProductIdSystems",
+      "title" : "AdministrableProductDefinition identifier systems",
+      "status" : "active",
+      "date" : "2022-05-29T13:16:26+00:00",
+      "contact" : [{
+        "name" : "Gravitate Health Project",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.gravitatehealth.eu/"
+        }]
+      }],
+      "description" : "AdministrableProductDefinition Identifier systems (uri)",
+      "expansion" : {
+        "identifier" : "urn:uuid:13c1f2cf-cd7b-42c3-9346-10c482627ec7",
+        "timestamp" : "2022-05-29T13:17:01+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:ietf:rfc:3986|n/a"
+        }],
+        "contains" : [{
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "https://spor.ema.europa.eu/pmswi",
+          "display" : "SPOR Product (EU)"
+        },
+        {
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "https://www.who-umc.org/phpid",
+          "display" : "IDMP PhPID"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medProductIdSystems",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on urn:ietf:rfc:3986 version n/a</p><p>All codes in this table are from the system <code>urn:ietf:rfc:3986</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi\"> </a>  https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr></table></div>"
+      },
+      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems",
+      "version" : "0.1.0",
+      "name" : "VsMedProductIdSystems",
+      "title" : "MedicinalProductDefinition identifier systems",
+      "status" : "active",
+      "date" : "2022-05-29T13:16:26+00:00",
+      "contact" : [{
+        "name" : "Gravitate Health Project",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.gravitatehealth.eu/"
+        }]
+      }],
+      "description" : "MedicinalProductDefinition Identifier systems (uri)",
+      "expansion" : {
+        "identifier" : "urn:uuid:9b2081cc-7fa6-4c99-b255-529980467322",
+        "timestamp" : "2022-05-29T13:17:03+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:ietf:rfc:3986|n/a"
+        }],
+        "contains" : [{
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "https://spor.ema.europa.eu/pmswi",
+          "display" : "SPOR Product (EU)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "manufacturedItemIdSystems",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on urn:ietf:rfc:3986 version n/a</p><p>All codes in this table are from the system <code>urn:ietf:rfc:3986</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-ietf-rfc-3986-https---spor.ema.europa.eu-pmswi\"> </a>  https://spor.ema.europa.eu/pmswi</td><td>SPOR Product (EU)</td></tr></table></div>"
+      },
+      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/manufacturedItemIdSystems",
+      "version" : "0.1.0",
+      "name" : "VsManufacturedItemIdSystems",
+      "title" : "ManufacturedItemDefinition identifier systems",
+      "status" : "active",
+      "date" : "2022-05-29T13:16:26+00:00",
+      "contact" : [{
+        "name" : "Gravitate Health Project",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.gravitatehealth.eu/"
+        }]
+      }],
+      "description" : "ManufacturedItemDefinition Identifier systems (uri)",
+      "expansion" : {
+        "identifier" : "urn:uuid:92b6f2d0-760a-4a28-9b95-0ab914cb4006",
+        "timestamp" : "2022-05-29T13:17:03+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:ietf:rfc:3986|n/a"
+        }],
+        "contains" : [{
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "https://spor.ema.europa.eu/pmswi",
+          "display" : "SPOR Product (EU)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/epiType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "epiType",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\">Referentials Management Services CodeSystem v0.1.0 (CodeSystem)</a></li><li>Loinc v2.72</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---spor.ema.europa.eu-rmswi-100000155538\"> </a>  <a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html#CodeSystemUvEPIRrmswi-100000155538\">100000155538</a></td><td>https://spor.ema.europa.eu/rmswi</td><td>Package Leaflet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-34390-5\"> </a>  <a href=\"http://details.loinc.org/LOINC/34390-5.html\">34390-5</a></td><td>http://loinc.org</td><td>HUMAN OTC DRUG LABEL</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-34391-3\"> </a>  <a href=\"http://details.loinc.org/LOINC/34391-3.html\">34391-3</a></td><td>http://loinc.org</td><td>HUMAN PRESCRIPTION DRUG LABEL</td></tr></table></div>"
+      },
+      "url" : "http://hl7.eu/fhir/ig/gravitate-health/ValueSet/epiType",
+      "version" : "0.1.0",
+      "name" : "VsEpiType",
+      "title" : "ePI document types",
+      "status" : "active",
+      "date" : "2022-05-29T13:16:26+00:00",
+      "contact" : [{
+        "name" : "Gravitate Health Project",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.gravitatehealth.eu/"
+        }]
+      }],
+      "description" : "ePI document types",
+      "expansion" : {
+        "identifier" : "urn:uuid:ff79de3d-9a52-4f6d-b257-70925de66562",
+        "timestamp" : "2022-05-29T13:17:05+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://spor.ema.europa.eu/rmswi|0.1.0"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.72"
+        }],
+        "contains" : [{
+          "system" : "https://spor.ema.europa.eu/rmswi",
+          "code" : "100000155538",
+          "display" : "Package Leaflet"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "34390-5",
+          "display" : "HUMAN OTC DRUG LABEL"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "34391-3",
+          "display" : "HUMAN PRESCRIPTION DRUG LABEL"
         }]
       }
     }

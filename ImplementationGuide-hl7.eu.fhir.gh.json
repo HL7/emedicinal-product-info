@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-05-04T11:35:34+00:00",
+  "date": "2022-05-29T13:16:26+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -27,6 +27,14 @@
   "license": "CC0-1.0",
   "fhirVersion": [
     "5.0.0-snapshot1"
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7tx",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId": "hl7.terminology.r5",
+      "version": "3.0.0"
+    }
   ],
   "definition": {
     "resource": [
@@ -2817,6 +2825,11 @@
         {
           "nameUrl": "ePI-structure.html",
           "title": "E PI Structure",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "newToC.html",
+          "title": "New To C",
           "generation": "markdown"
         },
         {
