@@ -1,40 +1,38 @@
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>HL7.EU.FHIR.GH\Vulcan Humalog FHIR Package Insert EMA v1 - JSON Representation - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/pcsp.css"/>
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -42,21 +40,21 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.153"}
-    h3,h4,h5,h6{--heading-prefix:"9.153"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
+    <style type="text/css">h2{--heading-prefix:"13.153"}
+    h3,h4,h5,h6{--heading-prefix:"13.153"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
         
         <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
-            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
+            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
           </a>
         </div>
- <!--        <div id="family-nav">
+   <!-- <div id="family-nav">
           <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
         </div> -->
         <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
 
@@ -69,28 +67,28 @@
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li>
+<ul class="nav navbar-nav">
+  <li><a name="l147">​</a>
     <a href="index.html">IG Home</a>
   </li>
   <li>
@@ -101,13 +99,13 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
+      <li><a name="l168">​</a>
         <a href="connections.html">Connections</a>
       </li>
-      <li>
+      <li><a name="l174">​</a>
         <a href="ePI-structure.html">ePI structure</a>
       </li>
-      <li>
+      <li><a name="l180">​</a>
         <a href="use-case-example.html">Use Case</a>
       </li>
     </ul>
@@ -123,40 +121,40 @@
       <li>
         <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
       </li>
-      <li>
+      <li><a name="l209">​</a>
         <a href="downloads.html">Downloads</a>
       </li>
     </ul>
   </li>
-  <li>
+  <li><a name="l217">​</a>
     <a href="copyright.html">Copyright</a>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Vulcan Humalog FHIR Package Insert EMA v1</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Vulcan Humalog FHIR Package Insert EMA v1</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -202,7 +200,7 @@
 
 
 <h2 id="root">: Vulcan Humalog FHIR Package Insert EMA v1 - JSON Representation</h2>
-  <table class="">
+  <table class="null">
     <tr>
 
       <td colspan="2">
@@ -216,9 +214,9 @@
   </table>
 
 
-<p><a href="Bundle-cfsb2705555581978.json" no-download="true">Raw json</a> | <a href="Bundle-cfsb2705555581978.json" download>Download</a></p>
+<p><a href="Bundle-cfsb2705555581978.json" no-download="true">Raw json</a> | <a download="null" href="Bundle-cfsb2705555581978.json">Download</a></p>
 
-  <!-- insert intro if present -->
+    <!-- insert intro if present -->
   
 
 
@@ -241,7 +239,7 @@
         "<a href="http://build.fhir.org/composition.html#Composition.language">language</a>" : "en",
         "<a href="http://build.fhir.org/composition.html#Composition.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb7223870858596\&quot;  (Language \&quot;en\&quot;) &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb9935015469452\&quot;&gt;See above (Organization/cfsb9935015469452)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Humalog Vulcan ePI v1&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Official &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-composition-attestation-mode.html\&quot;&gt;CompositionAttestationMode&lt;/a&gt;#official)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2015-02-07 01:28:17+0000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb7223870858596\"  (Language \"en\") &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\"#Organization_cfsb9935015469452\"&gt;See above (Organization/cfsb9935015469452)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Humalog Vulcan ePI v1&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Official &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://build.fhir.org/codesystem-composition-attestation-mode.html\"&gt;CompositionAttestationMode&lt;/a&gt;#official)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2015-02-07 01:28:17+0000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/composition.html#Composition.status">status</a>" : "final",
         "<a href="http://build.fhir.org/composition.html#Composition.type">type</a>" : {
@@ -291,7 +289,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;PACKAGE LEAFLET: INFORMATION FOR THE USER Humalog Mix50 100 units/ml suspension for injection in cartridge insulin lispro Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.&lt;ul&gt;&lt;li&gt;Keep this leaflet. You may need to read it again.&lt;/li&gt;&lt;li&gt;If you have any further questions, ask your doctor or pharmacist.&lt;/li&gt;&lt;li&gt;This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.&lt;/li&gt;&lt;li&gt;If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;PACKAGE LEAFLET: INFORMATION FOR THE USER Humalog Mix50 100 units/ml suspension for injection in cartridge insulin lispro Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.&lt;ul&gt;&lt;li&gt;Keep this leaflet. You may need to read it again.&lt;/li&gt;&lt;li&gt;If you have any further questions, ask your doctor or pharmacist.&lt;/li&gt;&lt;li&gt;This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.&lt;/li&gt;&lt;li&gt;If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           },
           {
@@ -307,7 +305,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;What in this leaflet&lt;ol&gt;&lt;li&gt;What Humalog Mix50 is and what it is used for&lt;/li&gt;&lt;li&gt;What you need to know before you take Humalog Mix50&lt;/li&gt;&lt;li&gt;How to take Humalog Mix50&lt;/li&gt;&lt;li&gt;Possible side effects&lt;/li&gt;&lt;li&gt;How to store Humalog Mix50&lt;/li&gt;&lt;li&gt;Contents of the pack and other information&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;What in this leaflet&lt;ol&gt;&lt;li&gt;What Humalog Mix50 is and what it is used for&lt;/li&gt;&lt;li&gt;What you need to know before you take Humalog Mix50&lt;/li&gt;&lt;li&gt;How to take Humalog Mix50&lt;/li&gt;&lt;li&gt;Possible side effects&lt;/li&gt;&lt;li&gt;How to store Humalog Mix50&lt;/li&gt;&lt;li&gt;Contents of the pack and other information&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           },
           {
@@ -323,7 +321,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;1. What Humalog Mix50 is and what it is used for&lt;/b&gt; Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active substance is insulin lispro.&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;b&gt;1. What Humalog Mix50 is and what it is used for&lt;/b&gt; Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active substance is insulin lispro.&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           },
           {
@@ -339,7 +337,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;2. What you need to know before you use Humalog Mix50&lt;/b&gt; Do NOT use Humalog Mix50 if you&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;b&gt;2. What you need to know before you use Humalog Mix50&lt;/b&gt; Do NOT use Humalog Mix50 if you&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           },
           {
@@ -355,7 +353,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;3. How to use Humalog Mix50&lt;/b&gt; &lt;b&gt;The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.&lt;/b&gt;&lt;p&gt;Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor if you are not sure. To prevent the possible transmission of disease, each cartridge must be used by you only, even if the needle on the delivery device is changed.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;b&gt;3. How to use Humalog Mix50&lt;/b&gt; &lt;b&gt;The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.&lt;/b&gt;&lt;p&gt;Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor if you are not sure. To prevent the possible transmission of disease, each cartridge must be used by you only, even if the needle on the delivery device is changed.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           },
           {
@@ -371,7 +369,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;4. Possible side effects&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Like all medicines, this medicine can cause side effects, although not everybody gets them.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;4. Possible side effects&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Like all medicines, this medicine can cause side effects, although not everybody gets them.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           },
           {
@@ -387,7 +385,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;5. How to store Humalog Mix50&lt;/b&gt;&lt;p&gt;Before the first use store your Humalog Mix50 in a refrigerator (2°C – 8°C). Do not freeze.&lt;/p&gt;&lt;p&gt;Keep your cartridge in use at room temperature (below 30°C) and discard after 28 days. Do not put it near heat or in the sun. Do not keep your pen or the cartridges you are using in the fridge. The pen with the inserted cartridge should not be stored with the needle attached.&lt;/p&gt;&lt;p&gt;Keep out of the sight and reach of children. Do not use this medicine after the expiry date which is stated on the label and the carton. The expiry date refers to the last day of that month.&lt;/p&gt;&lt;p&gt;Do not use this medicine if you notice clumps of material are present or if solid white particles stick to the bottom or wall of the cartridge, giving it a frosted appearance. Check each time you inject yourself. Medicines should not be disposed of via wastewater or household waste. Ask your pharmacist how to dispose of medicines no longer required. These measures will help to protect the environment.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;b&gt;5. How to store Humalog Mix50&lt;/b&gt;&lt;p&gt;Before the first use store your Humalog Mix50 in a refrigerator (2°C – 8°C). Do not freeze.&lt;/p&gt;&lt;p&gt;Keep your cartridge in use at room temperature (below 30°C) and discard after 28 days. Do not put it near heat or in the sun. Do not keep your pen or the cartridges you are using in the fridge. The pen with the inserted cartridge should not be stored with the needle attached.&lt;/p&gt;&lt;p&gt;Keep out of the sight and reach of children. Do not use this medicine after the expiry date which is stated on the label and the carton. The expiry date refers to the last day of that month.&lt;/p&gt;&lt;p&gt;Do not use this medicine if you notice clumps of material are present or if solid white particles stick to the bottom or wall of the cartridge, giving it a frosted appearance. Check each time you inject yourself. Medicines should not be disposed of via wastewater or household waste. Ask your pharmacist how to dispose of medicines no longer required. These measures will help to protect the environment.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           },
           {
@@ -403,7 +401,7 @@
             },
             "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
               "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
-              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;6. Contents of the pack and other information&lt;/b&gt; &lt;b&gt;What Humalog Mix50 100 units/ml suspension for injection in cartridge contains&lt;/b&gt;&lt;p&gt;The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant DNA technology’ process. It is a changed form of human insulin and so is different from other human and animal insulins. Insulin lispro is closely related to human insulin which is a natural hormone made by the pancreas. The other ingredients are protamine sulphate, m-cresol, phenol, glycerol, dibasic sodium phosphate 7H2O, zinc oxide and water for injection. Sodium hydroxide or hydrochloric acid may have been used to adjust the acidity.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;b&gt;6. Contents of the pack and other information&lt;/b&gt; &lt;b&gt;What Humalog Mix50 100 units/ml suspension for injection in cartridge contains&lt;/b&gt;&lt;p&gt;The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant DNA technology’ process. It is a changed form of human insulin and so is different from other human and animal insulins. Insulin lispro is closely related to human insulin which is a natural hormone made by the pancreas. The other ingredients are protamine sulphate, m-cresol, phenol, glycerol, dibasic sodium phosphate 7H2O, zinc oxide and water for injection. Sodium hydroxide or hydrochloric acid may have been used to adjust the acidity.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
             }
           }
         ]
@@ -420,7 +418,7 @@
         },
         "<a href="http://build.fhir.org/organization.html#Organization.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb9935015469452\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Organization-uv-epi.html\&quot;&gt;Organization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000426 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing authorisation holder &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000034)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Eli Lilly Nederland B.V.&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb9935015469452\" &lt;/p&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-Organization-uv-epi.html\"&gt;Organization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000426 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing authorisation holder &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000034)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Eli Lilly Nederland B.V.&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Papendorpseweg 83, 3528 BJ Utrecht  The Netherlands(WORK)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/organization.html#Organization.identifier">identifier</a>" : [
           {
@@ -468,7 +466,7 @@
         },
         "<a href="http://build.fhir.org/organization.html#Organization.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1950833461423\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Organization-uv-epi.html\&quot;&gt;Organization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000156 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Manufacturer API &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Eli Lilly and Company&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Lilly Technology Center Building 333 and 324(WORK)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb1950833461423\" &lt;/p&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-Organization-uv-epi.html\"&gt;Organization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100000156 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Manufacturer API &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Eli Lilly and Company&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Lilly Technology Center Building 333 and 324(WORK)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/organization.html#Organization.identifier">identifier</a>" : [
           {
@@ -515,7 +513,7 @@
         },
         "<a href="http://build.fhir.org/organization.html#Organization.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb8820228934589\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Organization-uv-epi.html\&quot;&gt;Organization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100003996 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: manufacturer &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Lilly S.A.&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Avenida de la Industria 30(WORK)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb8820228934589\" &lt;/p&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-Organization-uv-epi.html\"&gt;Organization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORG-100003996 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: manufacturer &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000033)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Lilly S.A.&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Avenida de la Industria 30(WORK)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/organization.html#Organization.identifier">identifier</a>" : [
           {
@@ -557,7 +555,7 @@
         "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.id">id</a>" : "cfsb1529720709344",
         "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1529720709344\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb7543491765740\&quot;&gt;See above (MedicinalProductDefinition/cfsb7543491765740)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: European Union &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb9935015469452\&quot;&gt;See above (Organization/cfsb9935015469452)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb1529720709344\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"#MedicinalProductDefinition_cfsb7543491765740\"&gt;See above (MedicinalProductDefinition/cfsb7543491765740)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: European Union &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (unknown#eu)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://build.fhir.org/codesystem-publication-status.html\"&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\"#Organization_cfsb9935015469452\"&gt;See above (Organization/cfsb9935015469452)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.identifier">identifier</a>" : [
           {
@@ -612,7 +610,7 @@
         "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.id">id</a>" : "cfsb7543491765740",
         "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb7543491765740\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 123456&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Medicinal Product &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-medicinal-product-type.html\&quot;&gt;MedicinalProductType&lt;/a&gt;#MedicinalProduct)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: Human use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-medicinal-product-domain.html\&quot;&gt;MedicinalProductDomain&lt;/a&gt;#Human)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;legalStatusOfSupply&lt;/b&gt;: Medicinal product subject to medical prescription &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072084)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;productName&lt;/b&gt;: Humalog Mix50 Insulin KwikPen, 3ml pre-fill&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Full name &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000001)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;NameParts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Part&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Suspension for injection&lt;/td&gt;&lt;td&gt;Pharmaceutical dose form part &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000005)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;CountryLanguages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Jurisdiction&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;European Union &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;European Union &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#eu)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;English &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html\&quot;&gt;Tags for the Identification of Languages&lt;/a&gt;#en)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb7543491765740\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 123456&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Medicinal Product &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://build.fhir.org/codesystem-medicinal-product-type.html\"&gt;MedicinalProductType&lt;/a&gt;#MedicinalProduct)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: Human use &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://build.fhir.org/codesystem-medicinal-product-domain.html\"&gt;MedicinalProductDomain&lt;/a&gt;#Human)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://build.fhir.org/codesystem-publication-status.html\"&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;legalStatusOfSupply&lt;/b&gt;: Medicinal product subject to medical prescription &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072084)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;productName&lt;/b&gt;: Humalog Mix50 Insulin KwikPen, 3ml pre-fill&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Full name &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000001)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;NameParts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Part&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Suspension for injection&lt;/td&gt;&lt;td&gt;Pharmaceutical dose form part &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000005)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;CountryLanguages&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Jurisdiction&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;European Union &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (unknown#eu)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;European Union &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (unknown#eu)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;English &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html\"&gt;Tags for the Identification of Languages&lt;/a&gt;#en)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.identifier">identifier</a>" : [
           {
@@ -723,7 +721,7 @@
         "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.id">id</a>" : "cfsb2466848736985",
         "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb2466848736985\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Chemical Medicinal Prodcut &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000155527)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb7543491765740\&quot;&gt;See above (MedicinalProductDefinition/cfsb7543491765740)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 3 ml&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Organization_cfsb8820228934589\&quot;&gt;See above (Organization/cfsb8820228934589)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Packages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Identifier&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Quantity&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Material&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;id: 123456&lt;/td&gt;&lt;td&gt;Pre-filled pen &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000073543)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Glass type 1 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#200000003204)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb2466848736985\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Chemical Medicinal Prodcut &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000155527)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\"#MedicinalProductDefinition_cfsb7543491765740\"&gt;See above (MedicinalProductDefinition/cfsb7543491765740)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://build.fhir.org/codesystem-publication-status.html\"&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2015-02-07 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 3 ml&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\"#Organization_cfsb8820228934589\"&gt;See above (Organization/cfsb8820228934589)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Packages&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Identifier&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Quantity&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Material&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;id: 123456&lt;/td&gt;&lt;td&gt;Pre-filled pen &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000073543)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Glass type 1 &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#200000003204)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.identifier">identifier</a>" : [
           {
@@ -808,7 +806,7 @@
         "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.id">id</a>" : "cfsb3624842689213",
         "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb3624842689213\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 0x073AF2E5B92AE19E8B67635AFFB3D6CA&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;formOf&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_cfsb7543491765740\&quot;&gt;See above (MedicinalProductDefinition/cfsb7543491765740)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administrableDoseForm&lt;/b&gt;: Suspension for injection &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000073864)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Pen &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#200000002135)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;producedFrom&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_cfsb1210909903210\&quot;&gt;See above (ManufacturedItemDefinition/cfsb1210909903210)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;routeOfAdministration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Subcutaneous use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000073633)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;TargetSpecies&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Human &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000109093)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb3624842689213\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 0x073AF2E5B92AE19E8B67635AFFB3D6CA&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;formOf&lt;/b&gt;: &lt;a href=\"#MedicinalProductDefinition_cfsb7543491765740\"&gt;See above (MedicinalProductDefinition/cfsb7543491765740)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administrableDoseForm&lt;/b&gt;: Suspension for injection &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000073864)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Pen &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#200000002135)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;producedFrom&lt;/b&gt;: &lt;a href=\"#ManufacturedItemDefinition_cfsb1210909903210\"&gt;See above (ManufacturedItemDefinition/cfsb1210909903210)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;routeOfAdministration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Subcutaneous use &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000073633)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;TargetSpecies&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Human &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000109093)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.identifier">identifier</a>" : [
           {
@@ -879,7 +877,7 @@
         "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.id">id</a>" : "cfsb1210909903210",
         "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb1210909903210\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturedDoseForm&lt;/b&gt;: Suspension for injection &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000073864)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Pen &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#200000002135)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_cfsb8820228934589\&quot;&gt;See above (Organization/cfsb8820228934589)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb1210909903210\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/96/007/035 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturedDoseForm&lt;/b&gt;: Suspension for injection &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (#100000073864)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Pen &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#200000002135)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\"#Organization_cfsb8820228934589\"&gt;See above (Organization/cfsb8820228934589)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.identifier">identifier</a>" : [
           {
@@ -920,7 +918,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb6320144064544",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb6320144064544\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: GFX7QIS1II (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#00000072072)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Strengths&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Presentation[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Basis&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;100 units/ml&lt;/td&gt;&lt;td&gt;active ingredient - basis of strength &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (v3-RoleClassIngredientEntity#ACTIB)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb6320144064544\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: GFX7QIS1II (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#00000072072)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Strengths&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Presentation[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Basis&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;100 units/ml&lt;/td&gt;&lt;td&gt;active ingredient - basis of strength &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (v3-RoleClassIngredientEntity#ACTIB)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -982,7 +980,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb8743912652556",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb8743912652556\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PDC6A3C0OX (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb8743912652556\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PDC6A3C0OX (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -1027,7 +1025,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb8374942483045",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb8374942483045\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: QTT17582CB (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb8374942483045\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: QTT17582CB (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -1072,7 +1070,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb0965848064378",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb0965848064378\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 55X04QC32I (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb0965848064378\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 55X04QC32I (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -1117,7 +1115,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb5825971594998",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb5825971594998\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 059QF0KO0R (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb5825971594998\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 059QF0KO0R (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -1162,7 +1160,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb0943822318036",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb0943822318036\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: SOI2LOH54Z (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb0943822318036\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: SOI2LOH54Z (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -1207,7 +1205,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb2603878086630",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb2603878086630\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: GGO4Y809LO (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb2603878086630\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: GGO4Y809LO (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -1252,7 +1250,7 @@
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cfsb6349319941521",
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
           "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cfsb6349319941521\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 023C2WHX2V (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_cfsb1950833461423\&quot;&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"cfsb6349319941521\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 023C2WHX2V (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-CodeSystemUvEPIRrmswi.html\"&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"#Organization_cfsb1950833461423\"&gt;See above (Organization/cfsb1950833461423)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -1295,19 +1293,19 @@
 }</code></pre>
 
 
-  <!-- insert notes if present -->
+    <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -1317,81 +1315,66 @@
     });
   </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Sun, May 29, 2022 13:16+0000">2022-05-29</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Jun 23, 2022 05:00+0000">2022-06-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333" >
-	Links: <a style="color: #81BEF7"
- 		href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7"
- 		href="qa.html">QA Report</a>
-	<!--
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
--->
-	<a style="color: #81BEF7"
- 		rel="license"
- 		href="http://build.fhir.org/license.html">
-		<img style="border-style: none;"
-   			alt="CC0"
-   			src="cc0.png"/>
+            <div style="color: #33333">
+	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7" href="qa.html">QA Report</a>
+	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
+	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
+		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
 	</a>
-	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	<!--
-                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
--->
-	<!--				 
-<br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
-	-->
-	<div id=container width=100% style="display:block;" >
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
+	  <!-- <br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
+	<div id="container width=100% style=&quot;display:block;&quot; ">
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
 			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
 		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img height="41"
-   				alt="a EU funded project"
-   				src="assets/images/eu.png"/>
+			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
 		</div>
 	</div>
 	<div>
 	</div>
 </div>
-          </span>
+          
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
   
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
 
 
 
-<!-- / feedback form  -->
+  <!-- / feedback form -->
 
-  <!-- Analytics Below
+    <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
-

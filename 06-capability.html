@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.EU.FHIR.GH\E PI Structure - FHIR v5.0.0-snapshot1</title>
+    <title>HL7.EU.FHIR.GH\06 Capability - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
@@ -88,7 +88,7 @@
                 <!-- menu.xml -->
 
 <ul class="nav navbar-nav">
-  <li>
+  <li><a name="l147">​</a>
     <a href="index.html">IG Home</a>
   </li>
   <li>
@@ -99,13 +99,13 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
+      <li><a name="l168">​</a>
         <a href="connections.html">Connections</a>
       </li>
-      <li>
+      <li><a name="l174">​</a>
         <a href="ePI-structure.html">ePI structure</a>
       </li>
-      <li>
+      <li><a name="l180">​</a>
         <a href="use-case-example.html">Use Case</a>
       </li>
     </ul>
@@ -121,12 +121,12 @@
       <li>
         <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
       </li>
-      <li>
+      <li><a name="l209">​</a>
         <a href="downloads.html">Downloads</a>
       </li>
     </ul>
   </li>
-  <li>
+  <li><a name="l217">​</a>
     <a href="copyright.html">Copyright</a>
   </li>
 </ul>
@@ -141,7 +141,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>E PI Structure</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>06 Capability</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -162,7 +162,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>E PI Structure</h2>
+  <h2>06 Capability</h2>
   
 
 
@@ -177,166 +177,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#epi-structure" id="markdown-toc-epi-structure">ePI Structure</a></li>
-  <li><a href="#sections-description" id="markdown-toc-sections-description">Sections Description</a></li>
-</ul>
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<h3 id="epi-structure">ePI Structure</h3>
-
-<p>All ePI documents are based on the same FHIR structure. The only exception is that each ePI document has unique section and sub-section headings. For example, the SmPC and PIL have the same FHIR document structure and have the same metadata but have different section headings and different narrative content.</p>
-
-<p>The common ePI structure is as described below.</p>
-
-<p>Figure 1: The common structure for all ePI documents
-<img src="https://user-images.githubusercontent.com/89136107/129903751-aa7289ec-3152-4941-94ad-36f1088bef44.png" alt="image"/></p>
-
-<h3 id="sections-description">Sections Description</h3>
-<h4 id="bundle-resource">Bundle resource</h4>
-<p>The Bundle is a container that gathers together a collection of resources into a single instance. The contained resources in the Bundle can be interpreted in two ways:</p>
-
-<ol>
-  <li>
-    <p>As a logical document: the bundle of contained resources is a single instance and can only be interpreted, changed or viewed as a whole. For example, the Bundle represents version 3 of a Patient Information Leaflet or version 2 of a SmPC.</p>
-  </li>
-  <li>
-    <p>As individual resources: Certain resources exist independently outside the Bundle and outside of the logical document. For example, the Medicinal Product Definition resource lives both as part of the logical document and as an independent resource.</p>
-  </li>
-</ol>
-
-<h4 id="list-resource">List resource</h4>
-<p>The list resource references other resources. In this context, the List contains:</p>
-<ol>
-  <li>Narrative description of the medicinal products it contains</li>
-  <li>An ordered collection of cross-references to the Medicinal Product Definition resources that the ePI document is about. The List is dynamic since the cross-references are added, removed or changed over time.</li>
-</ol>
-
-<p>Although some use cases involve pulling metadata, sections or narrative content from the Composition, the List resource is not published independently from the Bundle.</p>
-
-<h4 id="composition-resource">Composition resource</h4>
-<p>The Composition defines the basic structure and the human readable narrative content for the ePI document. For example, encoded section headings; narrative text (paragraphs, sentences); tables; and bulleted lists. The Composition tags the language of the narrative content</p>
-
-<p>All narrative content is in XHTML fragment with HTML 4.0 standard formatting (Refer to <a href="http://build.fhir.org/narrative.html#xhtml">section 2.4 Narrative</a> of the FHIR specification for HTML 4.0 exceptions and exclusions).</p>
-
-<p>Althought some use cases involve pulling metadata, sections or narrative content from the Composition, the Composition resource is not published independently from the Bundle.</p>
-
-<h5 id="binary-resource">Binary resource</h5>
-<p>The Binary resource is used to handle images as Base64.</p>
-
-<h5 id="structure-of-the-summary-of-product-characteristics-smpc-template">Structure of the Summary of Product Characteristics (SmPC) template</h5>
-
-<p>Summary of Product Characteristics (SmPC) is a document describing the properties and the officially approved conditions of use of a medicinal product. The SmPC is used by healthcare professionals, such as doctors, nurses and pharmacists, and explains how to use and prescribe a medicine safely and effectively.</p>
-
-<p><a name="l397">​</a>The SmPC document template is made up of the following section and sub-section headings (Refer to the corresponding <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/terminology.html">Terminology</a> section of this IG for section codes):</p>
-
-<ul>
-  <li>Section 1. Name of the medicinal product</li>
-  <li>Section 2. Qualitative and quantitative composition</li>
-  <li>Section 3. Pharmaceutical form</li>
-  <li>Section 4. Clinical particulars
-    <ul>
-      <li>Section 4.1 Therapeutic indications</li>
-      <li>Section 4.2 Posology and method of administration</li>
-      <li>Section 4.3 Contraindications</li>
-      <li>Section 4.4 Special warnings and precautions for use</li>
-      <li>Section 4.5 Interaction with other medicinal products and other forms of interaction</li>
-      <li>Section 4.6 Fertility, pregnancy and lactation</li>
-      <li>Section 4.7 Effects on ability to drive and use machines</li>
-      <li>Section 4.8 Undesirable effects</li>
-      <li>Section 4.9 Overdose</li>
-    </ul>
-  </li>
-  <li>Section 5. Pharmacological properties
-    <ul>
-      <li>Section 5.1 Pharmacodynamic properties</li>
-      <li>Section 5.2 Pharmacokinetic properties</li>
-      <li>Section 5.3 Preclinical safety data</li>
-    </ul>
-  </li>
-  <li>Section 6. Pharmaceutical particulars
-    <ul>
-      <li>Section 6.1 List of excipients</li>
-      <li>Section 6.2 Incompatibilities</li>
-      <li>Section 6.3 Shelf life</li>
-      <li>Section 6.4 Special precautions for storage</li>
-      <li>Section 6.5 Nature and contents of container</li>
-      <li>Section 6.6 Special precautions for disposal and other handling</li>
-    </ul>
-  </li>
-  <li>Section 7. Marketing authorisation holder</li>
-  <li>Section 8. Marketing authorisation number(s)</li>
-  <li>Section 9. Date of first authorisation/renewal of the authorisation</li>
-  <li>Section 10. Date of revision of the text</li>
-</ul>
-
-<h5 id="structure-of-the-patient-information-leaflet-document-template">Structure of the Patient Information Leaflet document template</h5>
-
-<p>Patient Information Leaflet (PIL):is included in the pack with a medicine. The PIL is written as a patient-friendly version of the SmPC.</p>
-
-<p><a name="l505">​</a>The PIL document template is made up of the following section and sub-section headings (Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/terminology.html">Terminology</a> section of this IG for the corresponding section codes]):</p>
-
-<p>Section 1. What is your medicine and what it is used for</p>
-<ul>
-  <li>What type of medicine is it?</li>
-  <li>What diseases or medical conditions is it approved to treat?</li>
-</ul>
-
-<p>Section 2. Before you take or use your medicine</p>
-<ul>
-  <li>Do not take or use - situations where a medicine should not be taken or used.</li>
-  <li>Take special care - situations where the prescriber needs to be extra careful when prescribing a medicine.</li>
-  <li>Taking or using other medicines - if this medicine interacts or interferes with any other medicines, herbal or dietary supplements.</li>
-  <li>Taking or using your medicine with food and drink - if you should take the medicine with or without certain foods or drinks.</li>
-  <li>Pregnancy and breast-feeding - if you can use or take this medicine if you are pregnant, thinking of getting pregnant or are breast-feeding a baby.</li>
-  <li>Driving and using machines - if the medicine can affect your ability to drive or use any tools or machines.</li>
-  <li>Important information about some of the ingredients in your medicine.</li>
-</ul>
-
-<p>Section 3. How to take or use your medicine</p>
-<ul>
-  <li>How to take or use the medicine.</li>
-  <li>How often it should be used or taken.</li>
-  <li>How long it should be used or taken for.</li>
-  <li>What to do if you take or use more than you should.</li>
-  <li>What to do if you forget a dose.</li>
-  <li>What might happen if you stop taking or using the medicine.</li>
-</ul>
-
-<p>Section 4. Possible side effects</p>
-<ul>
-  <li>All medicines can cause side effects, although not everybody gets them. This section tells you about the side effects and what you should do if you get them.</li>
-</ul>
-
-<p>Section 5. How to store your medicine</p>
-<ul>
-  <li>How to check the expiry date of the medicine.</li>
-  <li>How to store your medicine.</li>
-  <li>How to dispose of your medicine.</li>
-</ul>
-
-<p>Section 6. Further Information</p>
-<ul>
-  <li>What your medicine contains - both the active and inactive ingredients.</li>
-  <li>The amount of active ingredient.</li>
-  <li>What the medicine looks like.</li>
-  <li>The pack size.</li>
-  <li>The name of the company that makes and sells the medicine.</li>
-  <li>The date the leaflet was approved by the authorities.</li>
-  <li>Any further information about the medicine.</li>
-</ul>
-
-<h4 id="organization-resource">Organization Resource</h4>
-<p>The Organization resource is used to describes contact and other information about the Market Authorization Holder (MAH) for the medicine the ePI documents are about. The MAH is also the author of the ePI documents.</p>
-
-<p>The Organization resource can live independently from the document Bundle.</p>
-
-<h4 id="medicinal-product-definition">Medicinal Product Definition</h4>
-
-<p>The Medicinal Product Definition resource provides uniquely identifiable detail about the ePI’s medicinal product(s). It describes the overall medicinal product as a whole unit (similar to a Stop Keeping Unit or SKU) as authorized by the national competent regulatory authority.</p>
-
-<p>The Medicinal Product Definition resource can live independently from the document Bundle.</p>
 
 
 
@@ -363,7 +206,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Sun, May 29, 2022 13:16+0000">2022-05-29</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Jun 23, 2022 05:00+0000">2022-06-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">

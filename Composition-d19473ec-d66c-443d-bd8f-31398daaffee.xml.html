@@ -1,40 +1,38 @@
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>HL7.EU.FHIR.GH\d19473ec-d66c-443d-bd8f-31398daaffee - XML Representation - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/pcsp.css"/>
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -42,21 +40,21 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.167"}
-    h3,h4,h5,h6{--heading-prefix:"9.167"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
+    <style type="text/css">h2{--heading-prefix:"13.167"}
+    h3,h4,h5,h6{--heading-prefix:"13.167"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
         
         <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
-            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
+            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
           </a>
         </div>
- <!--        <div id="family-nav">
+   <!-- <div id="family-nav">
           <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
         </div> -->
         <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
 
@@ -69,28 +67,28 @@
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li>
+<ul class="nav navbar-nav">
+  <li><a name="l147">​</a>
     <a href="index.html">IG Home</a>
   </li>
   <li>
@@ -101,13 +99,13 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
+      <li><a name="l168">​</a>
         <a href="connections.html">Connections</a>
       </li>
-      <li>
+      <li><a name="l174">​</a>
         <a href="ePI-structure.html">ePI structure</a>
       </li>
-      <li>
+      <li><a name="l180">​</a>
         <a href="use-case-example.html">Use Case</a>
       </li>
     </ul>
@@ -123,40 +121,40 @@
       <li>
         <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
       </li>
-      <li>
+      <li><a name="l209">​</a>
         <a href="downloads.html">Downloads</a>
       </li>
     </ul>
   </li>
-  <li>
+  <li><a name="l217">​</a>
     <a href="copyright.html">Copyright</a>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>d19473ec-d66c-443d-bd8f-31398daaffee</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>d19473ec-d66c-443d-bd8f-31398daaffee</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -216,350 +214,350 @@
   </table>
 
 
-<p><a href="Composition-d19473ec-d66c-443d-bd8f-31398daaffee.xml" no-download="true">Raw xml</a> | <a href="Composition-d19473ec-d66c-443d-bd8f-31398daaffee.xml" download>Download</a></p>
+<p><a href="Composition-d19473ec-d66c-443d-bd8f-31398daaffee.xml" no-download="true">Raw xml</a> | <a download="null" href="Composition-d19473ec-d66c-443d-bd8f-31398daaffee.xml">Download</a></p>
 
-  <!-- insert intro if present -->
+    <!-- insert intro if present -->
   
 
 
 
   <pre class="xml"><code>
 
-&lt;<a href="http://build.fhir.org/composition.html#Composition">Composition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://build.fhir.org/composition.html#Composition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;d19473ec-d66c-443d-bd8f-31398daaffee&quot;/&gt;
+&lt;<a href="http://build.fhir.org/composition.html#Composition">Composition</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>="d19473ec-d66c-443d-bd8f-31398daaffee"/&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.meta">meta</a>&gt;
     &lt;<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>
-             <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi&quot;/&gt;
+             <a href="http://build.fhir.org/datatypes.html#canonical">value</a>="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"/&gt;
   &lt;/meta&gt;
-  &lt;<a href="http://build.fhir.org/composition.html#Composition.language">language</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;ja&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.language">language</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="ja"/&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.text">text</a>&gt;
-    &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;ja&quot; lang=&quot;ja&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;d19473ec-d66c-443d-bd8f-31398daaffee&quot;  (Language &quot;ja&quot;) &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-Composition-uv-epi.html&quot;&gt;Composition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2002-08-01 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=&quot;Organization-7f257409-3b65-401d-a246-7ae51e298fbb.html&quot;&gt;Organization/7f257409-3b65-401d-a246-7ae51e298fbb&lt;/a&gt; &quot;Pfizer, Inc.&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Official &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://build.fhir.org/codesystem-composition-attestation-mode.html&quot;&gt;CompositionAttestationMode&lt;/a&gt;#official)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2002-08-01 01:28:17+0000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource "d19473ec-d66c-443d-bd8f-31398daaffee"  (Language "ja") &lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Profile: &lt;a href="StructureDefinition-Composition-uv-epi.html"&gt;Composition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2002-08-01 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href="Organization-7f257409-3b65-401d-a246-7ae51e298fbb.html"&gt;Organization/7f257409-3b65-401d-a246-7ae51e298fbb&lt;/a&gt; "Pfizer, Inc."&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Official &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="http://build.fhir.org/codesystem-composition-attestation-mode.html"&gt;CompositionAttestationMode&lt;/a&gt;#official)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2002-08-01 01:28:17+0000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
-  &lt;<a href="http://build.fhir.org/composition.html#Composition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="final"/&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.type">type</a>&gt;
     &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;100000155538&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://spor.ema.europa.eu/"/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="100000155538"/&gt;
     &lt;/coding&gt;
-    &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Package Leaflet&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="Package Leaflet"/&gt;
   &lt;/type&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.subject">subject</a>&gt;
     &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>
-               <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;RegulatedAuthorization/15c6f86f-8665-4bd6-86da-a3a61fe16084&quot;/&gt;
+               <a href="http://build.fhir.org/datatypes.html#string">value</a>="RegulatedAuthorization/15c6f86f-8665-4bd6-86da-a3a61fe16084"/&gt;
   &lt;/subject&gt;
-  &lt;<a href="http://build.fhir.org/composition.html#Composition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2002-08-01T13:28:17Z&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>="2002-08-01T13:28:17Z"/&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.author">author</a>&gt;
-    &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Organization/7f257409-3b65-401d-a246-7ae51e298fbb&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="Organization/7f257409-3b65-401d-a246-7ae51e298fbb"/&gt;
   &lt;/author&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.title">title</a>
-         <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/composition.html#Composition.confidentiality">confidentiality</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;U&quot;/&gt;
+         <a href="http://build.fhir.org/datatypes.html#string">value</a>="TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"/&gt;
+  &lt;<a href="http://build.fhir.org/composition.html#Composition.confidentiality">confidentiality</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="U"/&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.attester">attester</a>&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.attester.mode">mode</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/composition-attestation-mode&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="http://hl7.org/fhir/composition-attestation-mode"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="official"/&gt;
       &lt;/coding&gt;
     &lt;/mode&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.attester.time">time</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2002-08-01T13:28:17Z&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.attester.time">time</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>="2002-08-01T13:28:17Z"/&gt;
   &lt;/attester&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;2. 禁忌(次の患者には投与しないこと)&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="2. 禁忌(次の患者には投与しないこと)"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;2&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="2"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;禁忌(次の患者には投与しないこと)&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="禁忌(次の患者には投与しないこと)"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;2.1 妊婦又は妊娠している可能性のある女性[9.5参照] 2.2 授乳婦[9.6参照] 2.3 本剤の成分に対し過敏症の既往歴のある患者&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;2.1 妊婦又は妊娠している可能性のある女性[9.5参照] 2.2 授乳婦[9.6参照] 2.3 本剤の成分に対し過敏症の既往歴のある患者&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;3. 組成・性状&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="3. 組成・性状"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;3&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="3"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;組成・性状&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="組成・性状"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;3.1 組成 3.2 製剤の性状&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;3.1 組成 3.2 製剤の性状&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;4. 効能又は効果&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="4. 効能又は効果"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;4&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="4"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;効能又は効果&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="効能又は効果"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;閉経後乳癌&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;閉経後乳癌&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;6. 用法及び用量&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="6. 用法及び用量"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;6&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="6"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;用法及び用量&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="用法及び用量"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;通常、成人にはエキセメスタンとして1日1回25mgを食後に経口投 与する。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;通常、成人にはエキセメスタンとして1日1回25mgを食後に経口投 与する。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;8. 重要な基本的注意&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="8. 重要な基本的注意"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;8&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="8"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;重要な基本的注意&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="重要な基本的注意"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;8.1 本剤はホルモン療法剤であり、がんに対する薬物療法について十 分な知識・経験を持つ医師のもとで、本剤による治療が適切と判断 される患者についてのみ使用すること。 8.2 本剤は末梢アロマターゼを阻害することにより治療効果を発揮す るものであり、活発な卵巣機能を有する閉経前の患者ではアロマ ターゼを阻害する効果は不十分であると予想されること、並びに閉 経前の患者では使用経験がないことを考慮して、閉経前患者に対し 使用しないこと。 8.3 本剤の投与によって、骨粗鬆症、骨折が起こりやすくなるので、 骨密度等の骨状態を定期的に観察することが望ましい。 8.4 本剤の使用による嗜眠、傾眠、無力(症)及びめまいが報告され ており、このような症状がある場合、機械操作や自動車の運転はさ せないよう十分注意すること。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;8.1 本剤はホルモン療法剤であり、がんに対する薬物療法について十 分な知識・経験を持つ医師のもとで、本剤による治療が適切と判断 される患者についてのみ使用すること。 8.2 本剤は末梢アロマターゼを阻害することにより治療効果を発揮す るものであり、活発な卵巣機能を有する閉経前の患者ではアロマ ターゼを阻害する効果は不十分であると予想されること、並びに閉 経前の患者では使用経験がないことを考慮して、閉経前患者に対し 使用しないこと。 8.3 本剤の投与によって、骨粗鬆症、骨折が起こりやすくなるので、 骨密度等の骨状態を定期的に観察することが望ましい。 8.4 本剤の使用による嗜眠、傾眠、無力(症)及びめまいが報告され ており、このような症状がある場合、機械操作や自動車の運転はさ せないよう十分注意すること。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;9. 特定の背景を有する患者に関する注意&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="9. 特定の背景を有する患者に関する注意"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;9&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="9"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;特定の背景を有する患者に関する注意&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="特定の背景を有する患者に関する注意"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;9.2 腎機能障害患者 9.2.1 重度の腎障害のある患者 本剤の重度の腎障害患者における長期安全性を指標とした臨床試験 は実施していない。 9.3 肝機能障害患者 9.3.1 重度の肝障害のある患者 本剤の重度の肝障害患者における長期安全性を指標とした臨床試験 は実施していない。 9.5 妊婦 妊婦又は妊娠している可能性のある女性には投与しないこと。本剤 は、閉経後の患者を対象とするため、妊婦に対する投与は想定され ていないが、妊婦への投与の安全性については次の知見がある。動 物実験(ラット)で、分娩障害、妊娠期間の延長、吸収胚数の増加 及び生存胎児数の減少が認められている。また動物実験(ウサギ)で、 流産、吸収胚数の増加及び胎児体重の低下が認められている。しか し両種による動物実験で、催奇形性は認められてはいない。本剤の 妊婦又は妊娠している可能性のある女性における臨床使用経験はな い。[2.1参照] 9.6 授乳婦 投与しないこと。本剤は、閉経後の患者を対象とするため、授乳婦に 対する投与は想定されていないが、授乳婦への投与の安全性について は次の知見がある。動物実験(ラット)で乳汁中への移行が認められ ている。本剤の授乳中の女性における臨床使用経験はない。[2.2参照]&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;9.2 腎機能障害患者 9.2.1 重度の腎障害のある患者 本剤の重度の腎障害患者における長期安全性を指標とした臨床試験 は実施していない。 9.3 肝機能障害患者 9.3.1 重度の肝障害のある患者 本剤の重度の肝障害患者における長期安全性を指標とした臨床試験 は実施していない。 9.5 妊婦 妊婦又は妊娠している可能性のある女性には投与しないこと。本剤 は、閉経後の患者を対象とするため、妊婦に対する投与は想定され ていないが、妊婦への投与の安全性については次の知見がある。動 物実験(ラット)で、分娩障害、妊娠期間の延長、吸収胚数の増加 及び生存胎児数の減少が認められている。また動物実験(ウサギ)で、 流産、吸収胚数の増加及び胎児体重の低下が認められている。しか し両種による動物実験で、催奇形性は認められてはいない。本剤の 妊婦又は妊娠している可能性のある女性における臨床使用経験はな い。[2.1参照] 9.6 授乳婦 投与しないこと。本剤は、閉経後の患者を対象とするため、授乳婦に 対する投与は想定されていないが、授乳婦への投与の安全性について は次の知見がある。動物実験(ラット)で乳汁中への移行が認められ ている。本剤の授乳中の女性における臨床使用経験はない。[2.2参照]&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;10. 相互作用&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="10. 相互作用"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;10&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="10"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;10. 相互作用&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="10. 相互作用"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;10.2 併用注意(併用に注意すること)&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;10.2 併用注意(併用に注意すること)&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;11. 副作用&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="11. 副作用"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;11&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="11"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;11. 副作用&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="11. 副作用"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;次の副作用があらわれることがあるので、観察を十分に行い、異常 が認められた場合には投与を中止するなど適切な処置を行うこと。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;次の副作用があらわれることがあるので、観察を十分に行い、異常 が認められた場合には投与を中止するなど適切な処置を行うこと。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;14. 適用上の注意&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="14. 適用上の注意"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;14&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="14"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;14. 適用上の注意&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="14. 適用上の注意"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;14.1 薬剤交付時の注意 PTP包装の薬剤はPTPシートから取り出して服用するよう指導するこ と。PTPシートの誤飲により、硬い鋭角部が食道粘膜へ刺入し、更に は穿孔をおこして縦隔洞炎等の重篤な合併症を併発することがある。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;14.1 薬剤交付時の注意 PTP包装の薬剤はPTPシートから取り出して服用するよう指導するこ と。PTPシートの誤飲により、硬い鋭角部が食道粘膜へ刺入し、更に は穿孔をおこして縦隔洞炎等の重篤な合併症を併発することがある。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;15. その他の注意&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="15. その他の注意"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;15&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="15"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;15. その他の注意&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="15. その他の注意"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;15.2 非臨床試験に基づく情報&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="15.2 非臨床試験に基づく情報"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;15.2&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="15.2"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;15.2 非臨床試験に基づく情報&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="15.2 非臨床試験に基づく情報"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;24ヵ月間のマウスがん原性試験において、中用量(150mg/kg/日)、 高用量(450mg/kg/日)で雌雄において肝細胞腺腫及び肝細胞癌の 発生率の上昇が認められた。また、雄の高用量群で腎腺腫の発生の 上昇がみられた。これらの腫瘍はマウス特有なものである可能性が 高くヒトにおける臨床的な安全性との関連は低いと考えられる1)。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;24ヵ月間のマウスがん原性試験において、中用量(150mg/kg/日)、 高用量(450mg/kg/日)で雌雄において肝細胞腺腫及び肝細胞癌の 発生率の上昇が認められた。また、雄の高用量群で腎腺腫の発生の 上昇がみられた。これらの腫瘍はマウス特有なものである可能性が 高くヒトにおける臨床的な安全性との関連は低いと考えられる1)。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;16. 薬物動態&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="16. 薬物動態"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;16&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="16"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;16. 薬物動態&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="16. 薬物動態"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;16.1 血中濃度 日本人の閉経後進行乳癌患者にエキセメスタン25mgを1日1回反復投与したと き、tmaxは2.01±1.35時間、Cmaxは27.4±16.6ng/mL、AUCは115±76ng・h/mL、 終末相のt1/2は20.2±11.7時間であった。血漿中エキセメスタン濃度推移を下図 に示す。 図 日本人閉経後進行乳癌患者にエキセメスタン25mgを1日1回29日間反復投 与した後の血漿中エキセメスタン濃度推移(n=15~16、平均値±標準偏差) 日本人の閉経後健康成人女性に単回及び反復経口投与(0.5~50mg)後のエ キセメスタンのCmax及びAUCは用量比例的であった2~4)。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;16.1 血中濃度 日本人の閉経後進行乳癌患者にエキセメスタン25mgを1日1回反復投与したと き、tmaxは2.01±1.35時間、Cmaxは27.4±16.6ng/mL、AUCは115±76ng・h/mL、 終末相のt1/2は20.2±11.7時間であった。血漿中エキセメスタン濃度推移を下図 に示す。 図 日本人閉経後進行乳癌患者にエキセメスタン25mgを1日1回29日間反復投 与した後の血漿中エキセメスタン濃度推移(n=15~16、平均値±標準偏差) 日本人の閉経後健康成人女性に単回及び反復経口投与(0.5~50mg)後のエ キセメスタンのCmax及びAUCは用量比例的であった2~4)。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;17. 臨床成績&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="17. 臨床成績"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;17&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="17"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;17. 臨床成績&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="17. 臨床成績"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;17.1 有効性及び安全性に関する試験 &quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="17.1 有効性及び安全性に関する試験 "/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;17.1&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="17.1"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;17.1 有効性及び安全性に関する試験 &quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="17.1 有効性及び安全性に関する試験 "/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;17.1.1 国内臨床試験 第I相試験において、閉経後健康女性(単回14例、反復25例)を対象として、 本剤の0.5~50mg/日までの用量における安全性及び薬力学的作用(血清中エ ストロゲン濃度抑制作用)を検討した結果、用量依存的な血清中エストロゲ ン濃度の低下が認められた。前期第II相試験において、閉経後乳癌患者(10mg、 25mg各36例)を対象として、本剤の有効性及び安全性を検討の上、臨床推奨 用量の設定を試みた。奏効率において有意差はないものの25mgの方が10mg より優っていたことなどから、本剤の臨床推奨用量として25mg/日を選択した。 ホルモン療法耐性例に対する25mg群の奏効率は26.1%(6/23)であった3,4,10)。 17.1.2 ブリッジング試験 後期第II相試験において、抗エストロゲン剤耐性の閉経後乳癌患者33例を対 象として本剤の有効性及び安全性が検討された。なお、本試験は海外にて実 施された同様の試験(No.120002及びNo.010)結果の再現性を確認すること を目的として実施された11~13)。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;17.1.1 国内臨床試験 第I相試験において、閉経後健康女性(単回14例、反復25例)を対象として、 本剤の0.5~50mg/日までの用量における安全性及び薬力学的作用(血清中エ ストロゲン濃度抑制作用)を検討した結果、用量依存的な血清中エストロゲ ン濃度の低下が認められた。前期第II相試験において、閉経後乳癌患者(10mg、 25mg各36例)を対象として、本剤の有効性及び安全性を検討の上、臨床推奨 用量の設定を試みた。奏効率において有意差はないものの25mgの方が10mg より優っていたことなどから、本剤の臨床推奨用量として25mg/日を選択した。 ホルモン療法耐性例に対する25mg群の奏効率は26.1%(6/23)であった3,4,10)。 17.1.2 ブリッジング試験 後期第II相試験において、抗エストロゲン剤耐性の閉経後乳癌患者33例を対 象として本剤の有効性及び安全性が検討された。なお、本試験は海外にて実 施された同様の試験(No.120002及びNo.010)結果の再現性を確認すること を目的として実施された11~13)。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;18. 薬効薬理&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="18. 薬効薬理"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;18&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="18"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;18. 薬効薬理&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="18. 薬効薬理"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;18.1 作用機序 18.1.1 アロマターゼ阻害作用 エキセメスタンはアンドロゲンをエストロゲンに変換する酵素であるアロマ ターゼを非可逆的に阻害することにより、血中エストロゲン濃度を抑制し、 エストロゲン依存性の乳癌の増殖を阻害する。 (1)in vivo試験 妊馬血清ゴナドトロピン刺激ラットにおいて、エキセメスタンの単回経口投与は卵 巣アロマターゼ活性を用量依存的に減少させ、そのED50値は3.7mg/kgであった。 (2)in vitro試験 エキセメスタンは、他のステロイド合成系酵素にはほとんど影響を与えるこ となく、アロマターゼを選択的に不活性化した。 18.2 抗腫瘍効果 DMBA誘発ラット乳癌(閉経後モデル)に対しエキセメスタンを週6日、4週 間経口投与した結果、1mg/kg/日以上の用量で腫瘍の増殖を有意に阻害した。 18.3 エストロゲン抑制作用 18.3.1 妊馬血清ゴナドトロピン刺激ラットにおいて、エキセメスタンの単回経 口投与により血漿中エストラジオール濃度は用量依存的に低下し、そのED50 値は3.8mg/kgであった。 18.3.2 閉経後乳癌患者にエキセメスタン25mgを連日経口投与することにより、 血漿又は血清中エストロゲン(エストラジオール、エストロン及びエストロ ンスルフェート)濃度は81~95%低下した。&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;18.1 作用機序 18.1.1 アロマターゼ阻害作用 エキセメスタンはアンドロゲンをエストロゲンに変換する酵素であるアロマ ターゼを非可逆的に阻害することにより、血中エストロゲン濃度を抑制し、 エストロゲン依存性の乳癌の増殖を阻害する。 (1)in vivo試験 妊馬血清ゴナドトロピン刺激ラットにおいて、エキセメスタンの単回経口投与は卵 巣アロマターゼ活性を用量依存的に減少させ、そのED50値は3.7mg/kgであった。 (2)in vitro試験 エキセメスタンは、他のステロイド合成系酵素にはほとんど影響を与えるこ となく、アロマターゼを選択的に不活性化した。 18.2 抗腫瘍効果 DMBA誘発ラット乳癌(閉経後モデル)に対しエキセメスタンを週6日、4週 間経口投与した結果、1mg/kg/日以上の用量で腫瘍の増殖を有意に阻害した。 18.3 エストロゲン抑制作用 18.3.1 妊馬血清ゴナドトロピン刺激ラットにおいて、エキセメスタンの単回経 口投与により血漿中エストラジオール濃度は用量依存的に低下し、そのED50 値は3.8mg/kgであった。 18.3.2 閉経後乳癌患者にエキセメスタン25mgを連日経口投与することにより、 血漿又は血清中エストロゲン(エストラジオール、エストロン及びエストロ ンスルフェート)濃度は81~95%低下した。&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;19. 有効成分に関する理化学的知見&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="19. 有効成分に関する理化学的知見"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;19&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="19"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;19. 有効成分に関する理化学的知見&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="19. 有効成分に関する理化学的知見"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;一般的名称:エキセメスタン(Exemestane) 化学名:(+)-6-methyleneandrosta-1,4-diene-3,17-dione 分子式:C20H24O2 分子量:296.40 性状:白色~黄白色の粉末である。N ,N -ジメチルホルムアミド及びテトラヒ ドロフランに溶けやすく、メタノール及びエタノール(95)にやや溶けやすく、 アセトニトリルにやや溶けにくく、水にほとんど溶けない。 化学構造式:&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;一般的名称:エキセメスタン(Exemestane) 化学名:(+)-6-methyleneandrosta-1,4-diene-3,17-dione 分子式:C20H24O2 分子量:296.40 性状:白色~黄白色の粉末である。N ,N -ジメチルホルムアミド及びテトラヒ ドロフランに溶けやすく、メタノール及びエタノール(95)にやや溶けやすく、 アセトニトリルにやや溶けにくく、水にほとんど溶けない。 化学構造式:&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;22. 包装&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="22. 包装"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;22&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="22"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;22. 包装&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="22. 包装"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;28錠[14錠(PTP)×2] 140錠[14錠(PTP)×10]&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;28錠[14錠(PTP)×2] 140錠[14錠(PTP)×10]&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;23. 主要文献&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="23. 主要文献"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;23&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="23"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;23. 主要文献&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="23. 主要文献"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;1) 社内資料:マウスにおける発癌性試験 [L20050107111] 2) 社内資料:閉経後乳癌患者における薬物動態(2002年7月5日承認、申請資 料概要ヘ.3.1.2、ヘ.3.2.1.iv) [L20070831006] 3) 三浦 重人ほか:癌と化学療法.2002;29(7):1179-1187 4) 三浦 重人ほか:癌と化学療法.2002;29(7):1189-1197 5) 社内資料:臓器・組織内濃度(単回投与)(2002年7月5日承認、申請資料 概要ヘ.2.2.1.i、ヘ.2.2.3.i、ヘ.2.4.4) [L20070831010] 6) 社内資料:蛋白結合率(2002年7月5日承認、申請資料概要ヘ.2.2.4) [L20070831009] 7) 社内資料:代謝(2002年7月5日承認、申請資料概要ヘ.2.3、ヘ.3.2.1.vi、ヘ.4) [L20070831007] 8) 社内資料:健康人における薬物動態(海外データ)(2002年7月5日承認、申 請資料概要ヘ.3.2.1.i) [L20070831008] 9) Jannuzzo Maria Gabriella et al.:Cancer Chemother Pharmacol.2004; 53(6):475-481 10)田部井 敏夫ほか:癌と化学療法.2002;29(7):1199-1209 11)渡辺 亨ほか:癌と化学療法.2002;29(7):1211-1221 12)社内資料:第二次療法における第II相試験(海外データ)(2002年7月5日 承認、申請資料概要ト.1.3) [L20070831011] 13)Kvinnaland, S. et al.:Eur J Cancer.2000;36(8):976-982 14)Kaufmann, M. et al.:J Clin Oncol.2000;18(7):1399-1411 15)社内資料:術後補助療法としてタモキシフェンを2から3年間投与された閉 経後原発乳癌患者を対象にエキセメスタン療法への切り替えとタモキシ フェン療法継続とを比較する無作為化二重盲検試験 [L20041214003] 16)Lonning, P. E. et al.:J Clin Oncol.2005;23(22):5126-5137 17)社内資料:閉経後患者における転移性乳癌に対する第一次ホルモン療法と してのエキセメスタンおよびタモキシフェンを比較する無作為化第II-III 相試験 [L20060111037]&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;1) 社内資料:マウスにおける発癌性試験 [L20050107111] 2) 社内資料:閉経後乳癌患者における薬物動態(2002年7月5日承認、申請資 料概要ヘ.3.1.2、ヘ.3.2.1.iv) [L20070831006] 3) 三浦 重人ほか:癌と化学療法.2002;29(7):1179-1187 4) 三浦 重人ほか:癌と化学療法.2002;29(7):1189-1197 5) 社内資料:臓器・組織内濃度(単回投与)(2002年7月5日承認、申請資料 概要ヘ.2.2.1.i、ヘ.2.2.3.i、ヘ.2.4.4) [L20070831010] 6) 社内資料:蛋白結合率(2002年7月5日承認、申請資料概要ヘ.2.2.4) [L20070831009] 7) 社内資料:代謝(2002年7月5日承認、申請資料概要ヘ.2.3、ヘ.3.2.1.vi、ヘ.4) [L20070831007] 8) 社内資料:健康人における薬物動態(海外データ)(2002年7月5日承認、申 請資料概要ヘ.3.2.1.i) [L20070831008] 9) Jannuzzo Maria Gabriella et al.:Cancer Chemother Pharmacol.2004; 53(6):475-481 10)田部井 敏夫ほか:癌と化学療法.2002;29(7):1199-1209 11)渡辺 亨ほか:癌と化学療法.2002;29(7):1211-1221 12)社内資料:第二次療法における第II相試験(海外データ)(2002年7月5日 承認、申請資料概要ト.1.3) [L20070831011] 13)Kvinnaland, S. et al.:Eur J Cancer.2000;36(8):976-982 14)Kaufmann, M. et al.:J Clin Oncol.2000;18(7):1399-1411 15)社内資料:術後補助療法としてタモキシフェンを2から3年間投与された閉 経後原発乳癌患者を対象にエキセメスタン療法への切り替えとタモキシ フェン療法継続とを比較する無作為化二重盲検試験 [L20041214003] 16)Lonning, P. E. et al.:J Clin Oncol.2005;23(22):5126-5137 17)社内資料:閉経後患者における転移性乳癌に対する第一次ホルモン療法と してのエキセメスタンおよびタモキシフェンを比較する無作為化第II-III 相試験 [L20060111037]&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;24. 文献請求先及び問い合わせ先&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="24. 文献請求先及び問い合わせ先"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;24&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="24"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;24. 文献請求先及び問い合わせ先&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="24. 文献請求先及び問い合わせ先"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;ファイザー株式会社 製品情報センター 〒151-8589 東京都渋谷区代々木3-22-7 学術情報ダイヤル 0120-664-467 FAX 03-3379-3053&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;ファイザー株式会社 製品情報センター 〒151-8589 東京都渋谷区代々木3-22-7 学術情報ダイヤル 0120-664-467 FAX 03-3379-3053&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
   &lt;<a href="http://build.fhir.org/composition.html#Composition.section">section</a>&gt;
-    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;26. 製造販売業者等&quot;/&gt;
+    &lt;<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="26. 製造販売業者等"/&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;https://pmda.jp/&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;26&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="https://pmda.jp/"/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="26"/&gt;
       &lt;/coding&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;26. 製造販売業者等&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="26. 製造販売業者等"/&gt;
     &lt;/code&gt;
     &lt;<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>&gt;
-      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;additional&quot;/&gt;
-      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;ファイザー株式会社 東京都渋谷区代々木3-22-7&lt;/div&gt;<a name="end-xhtml"></a>
+      &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="additional"/&gt;
+      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;ファイザー株式会社 東京都渋谷区代々木3-22-7&lt;/div&gt;<a name="end-xhtml"></a>
     &lt;/text&gt;
   &lt;/section&gt;
 &lt;/Composition&gt;</code></pre>
 
 
-  <!-- insert notes if present -->
+    <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -569,81 +567,66 @@
     });
   </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Sun, May 29, 2022 13:16+0000">2022-05-29</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Jun 23, 2022 05:00+0000">2022-06-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333" >
-	Links: <a style="color: #81BEF7"
- 		href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7"
- 		href="qa.html">QA Report</a>
-	<!--
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
--->
-	<a style="color: #81BEF7"
- 		rel="license"
- 		href="http://build.fhir.org/license.html">
-		<img style="border-style: none;"
-   			alt="CC0"
-   			src="cc0.png"/>
+            <div style="color: #33333">
+	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7" href="qa.html">QA Report</a>
+	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
+	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
+		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
 	</a>
-	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	<!--
-                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
--->
-	<!--				 
-<br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
-	-->
-	<div id=container width=100% style="display:block;" >
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
+	  <!-- <br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
+	<div id="container width=100% style=&quot;display:block;&quot; ">
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
 			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
 		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img height="41"
-   				alt="a EU funded project"
-   				src="assets/images/eu.png"/>
+			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
 		</div>
 	</div>
 	<div>
 	</div>
 </div>
-          </span>
+          
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
   
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
 
 
 
-<!-- / feedback form  -->
+  <!-- / feedback form -->
 
-  <!-- Analytics Below
+    <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
-
