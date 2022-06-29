@@ -1,9 +1,9 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 840, warn = 83, info = 727
-IG Publisher Version: 1.1.121
-Generated Thu Jun 23 05:02:02 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+err = 842, warn = 79, info = 693
+IG Publisher Version: 1.1.122
+Generated Wed Jun 29 00:51:32 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 6315 / 0 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-8cf05f7c-481d-4bd6-9a7c-9ca3275601c3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-c5b74d97-ed74-4709-a30e-c061f0f1e21f : 0 / 0 / 1
@@ -14,7 +14,7 @@ Generated Thu Jun 23 05:02:02 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-emacfsb1639760977050 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-f38a9470-24db-4d2a-b5ea-cace3e38db63 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-0e81d40e-3ba1-4349-a709-fba791e3b915 : 87 / 11 / 46
- /github/workspace/fsh-generated/resources/Bundle-33d34b6a-afaf-47d9-8848-366768bd429a : 112 / 27 / 126
+ /github/workspace/fsh-generated/resources/Bundle-33d34b6a-afaf-47d9-8848-366768bd429a : 113 / 25 / 109
  /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5 : 70 / 13 / 60
  /github/workspace/fsh-generated/resources/Bundle-6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3 : 87 / 11 / 46
  /github/workspace/fsh-generated/resources/Bundle-cfsb1641827801260 : 9 / 22 / 85
@@ -38,7 +38,7 @@ Generated Thu Jun 23 05:02:02 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Composition-cfsb1651234995610 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb3957159408517 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb7223870858596 : 0 / 0 / 11
- /github/workspace/fsh-generated/resources/Composition-d19473ec-d66c-443d-bd8f-31398daaffee : 2 / 2 / 22
+ /github/workspace/fsh-generated/resources/Composition-d19473ec-d66c-443d-bd8f-31398daaffee : 3 / 0 / 5
  /github/workspace/fsh-generated/resources/Composition-d66cd3f0-d5ae-4b05-8598-6d809f8fe61a : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-emacfsb1639991356428 : 4 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6 : 0 / 0 / 11
@@ -6652,29 +6652,11 @@ ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0]: Bundle entr
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).author[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].text.div: Wrong namespace on the XHTML ('http://www.w3.org/119/xhtml', should be 'http://www.w3.org/1999/xhtml')
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[1].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[1].text.div: Wrong namespace on the XHTML ('http://www.w3.org/119/xhtml', should be 'http://www.w3.org/1999/xhtml')
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[2].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[3].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[4].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[5].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[7].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[8].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[9].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[9].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[10].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[11].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[12].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[12].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-WARNING: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[13].title: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[13].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-WARNING: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[13].code.text: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[14].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[15].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[16].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[17].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[18].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[19].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[2].text.div: Wrong namespace on the XHTML ('http://www.w3.org/119/xhtml', should be 'http://www.w3.org/1999/xhtml')
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://PMDA-org-type.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[1].resource.ofType(Organization).telecom[1]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
@@ -7757,29 +7739,11 @@ INFORMATION: Composition/cfsb7223870858596: Composition.section[7].code.coding[0
 == fsh-generated/resources/Composition-d19473ec-d66c-443d-bd8f-31398daaffee.json ==
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].text.div: Wrong namespace on the XHTML ('http://www.w3.org/119/xhtml', should be 'http://www.w3.org/1999/xhtml')
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[1].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[1].text.div: Wrong namespace on the XHTML ('http://www.w3.org/119/xhtml', should be 'http://www.w3.org/1999/xhtml')
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[2].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[3].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[4].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[5].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[6].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[7].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[8].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[9].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[9].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[10].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[11].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[12].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[12].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-WARNING: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[13].title: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[13].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-WARNING: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[13].code.text: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[14].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[15].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[16].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[17].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[18].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[19].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[2].text.div: Wrong namespace on the XHTML ('http://www.w3.org/119/xhtml', should be 'http://www.w3.org/1999/xhtml')
 == fsh-generated/resources/Composition-d66cd3f0-d5ae-4b05-8598-6d809f8fe61a.json ==
 INFORMATION: Composition/d66cd3f0-d5ae-4b05-8598-6d809f8fe61a: Composition.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = https://spor.ema.europa.eu/#100000155538)
 INFORMATION: Composition/d66cd3f0-d5ae-4b05-8598-6d809f8fe61a: Composition.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
