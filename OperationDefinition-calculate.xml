@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="calculate"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>calcuate</h2><p>OPERATION: calcuate</p><p>The official URL for this operation definition is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate</pre><div><p>This operation calculates an enhanced version of an ePI as well as</p>
+</div><p>URL: [base]/$calculate</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ips</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>IPS bundle</p>
+</div></td></tr><tr><td>IN</td><td>epi</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>epi Bundle</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle extracts</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate"/>
+  <version value="0.1.0"/>
+  <name value="calcuate"/>
+  <title value="calcuate"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2022-06-30T08:49:36+00:00"/>
+  <contact>
+    <name value="Gravitate Health Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gravitatehealth.eu/"/>
+    </telecom>
+  </contact>
+  <description value="This operation calculates an enhanced version of an ePI as well as "/>
+  <affectsState value="false"/>
+  <code value="calculate"/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="ips"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="IPS bundle"/>
+    <type value="Bundle"/>
+  </parameter>
+  <parameter>
+    <name value="epi"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="epi Bundle"/>
+    <type value="Bundle"/>
+  </parameter>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Enhanced epi Bundle"/>
+    <type value="Bundle"/>
+  </parameter>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Enhanced epi Bundle extracts"/>
+    <type value="Bundle"/>
+  </parameter>
+</OperationDefinition>

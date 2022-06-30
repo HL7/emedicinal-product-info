@@ -1,0 +1,66 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "calculate",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>calcuate</h2><p>OPERATION: calcuate</p><p>The official URL for this operation definition is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate</pre><div><p>This operation calculates an enhanced version of an ePI as well as</p>\n</div><p>URL: [base]/$calculate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ips</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>IPS bundle</p>\n</div></td></tr><tr><td>IN</td><td>epi</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>epi Bundle</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle extracts</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate",
+  "version": "0.1.0",
+  "name": "calcuate",
+  "title": "calcuate",
+  "status": "active",
+  "kind": "operation",
+  "date": "2022-06-30T08:49:36+00:00",
+  "contact": [
+    {
+      "name": "Gravitate Health Project",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.gravitatehealth.eu/"
+        }
+      ]
+    }
+  ],
+  "description": "This operation calculates an enhanced version of an ePI as well as ",
+  "affectsState": false,
+  "code": "calculate",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "ips",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "IPS bundle",
+      "type": "Bundle"
+    },
+    {
+      "name": "epi",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "epi Bundle",
+      "type": "Bundle"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Enhanced epi Bundle",
+      "type": "Bundle"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Enhanced epi Bundle extracts",
+      "type": "Bundle"
+    }
+  ]
+}

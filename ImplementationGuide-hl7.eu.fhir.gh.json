@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-06-29T01:22:39+00:00",
+  "date": "2022-06-30T08:49:36+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -1549,6 +1549,20 @@
         "name": "c9a02053-149d-48b9-beb8-f7cd3cf1fdd9",
         "description": "5 pre-filled pens, 3 ml (3.5 mg/ml)",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/calculate"
+        },
+        "name": "calculate",
+        "description": "This operation calculates an enhanced version of an ePI as well as",
+        "exampleBoolean": false
       },
       {
         "extension": [
