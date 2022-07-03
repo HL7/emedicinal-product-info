@@ -65,7 +65,7 @@
        ];
        fhir:Composition.section [
          fhir:index 0;
-         fhir:Composition.section.title [ fhir:value "level 1" ];
+         fhir:Composition.section.title [ fhir:value "2. 禁忌(次の患者には投与しないこと)" ];
          fhir:Composition.section.code [
            fhir:CodeableConcept.coding [
              fhir:index 0;
@@ -76,26 +76,11 @@
          ];
          fhir:Composition.section.text [
            fhir:Narrative.status [ fhir:value "additional" ];
-           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/119/xhtml\"/>"
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">2.1 妊婦又は妊娠している可能性のある女性[9.5参照] 2.2 授乳婦[9.6参照] 2.3 本剤の成分に対し過敏症の既往歴のある患者</div>"
          ]
        ], [
          fhir:index 1;
-         fhir:Composition.section.title [ fhir:value "level 2" ];
-         fhir:Composition.section.code [
-           fhir:CodeableConcept.coding [
-             fhir:index 0;
-             fhir:Coding.system [ fhir:value "https://pmda.jp/" ];
-             fhir:Coding.code [ fhir:value "2" ]
-           ];
-           fhir:CodeableConcept.text [ fhir:value "禁忌(次の患者には投与しないこと)" ]
-         ];
-         fhir:Composition.section.text [
-           fhir:Narrative.status [ fhir:value "additional" ];
-           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/119/xhtml\">test level 2 text</div>"
-         ]
-       ], [
-         fhir:index 2;
-         fhir:Composition.section.title [ fhir:value "level 3" ];
+         fhir:Composition.section.title [ fhir:value "3. 組成・性状" ];
          fhir:Composition.section.code [
            fhir:CodeableConcept.coding [
              fhir:index 0;
@@ -106,7 +91,7 @@
          ];
          fhir:Composition.section.text [
            fhir:Narrative.status [ fhir:value "additional" ];
-           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/119/xhtml\">test level 3 text</div>"
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><p>外 形</p></td><td><p>識別コード</p></td><td><p>色調等</p></td></tr><tr><td><p>上面</p></td><td><p>下面</p></td><td><p>側面</p></td></tr><tr><td><p>image1</p></td><td><p>image2</p></td><td><p>image3</p></td><td><p>7663</p></td><td><p>白色~微灰白色</p><p>糖衣錠</p><p></p></td></tr><tr><td><p>直径</p></td><td><p>厚さ</p></td><td><p>重量</p></td></tr><tr><td><p>6.0mm</p></td><td><p>4.0mm</p></td><td><p>100mg</p></td></tr></table></div>"
          ]
        ]
      ]
