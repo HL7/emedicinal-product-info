@@ -17,7 +17,7 @@ Usage: #example
 * attester.time =  "2002-08-01T13:28:17Z"
 * language = #ja
 
-* section[0]
+* section
   * title = "アロマターゼ阻害剤/閉経後乳癌治療剤" //JPI main document header
   * code = https://pmda.jp/#2
   * code.text = "アロマターゼ阻害剤/閉経後乳癌治療剤"
@@ -89,7 +89,7 @@ Usage: #example
   * code = https://pmda.jp/#2
   * code.text = "1. 警告"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p>empty test</p></div>"""
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
@@ -100,8 +100,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "2.1"
@@ -136,8 +134,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "3.1 組成"
@@ -293,8 +289,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "8.1"
@@ -342,8 +336,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "9.2 腎機能障害患者"
@@ -351,8 +343,6 @@ Usage: #example
   * code.text = "9.2 腎機能障害患者"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "9.2.1 重度の腎障害のある患者"
@@ -371,8 +361,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "9.3.1 重度の肝障害のある患者"
@@ -391,8 +379,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#1
-  * emptyReason.text = "Not Applicable"
 
 * section.section[+]
   * title = "9.5 妊婦"
@@ -419,8 +405,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "10.1"
@@ -483,8 +467,6 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "11.1.1"
@@ -663,8 +645,6 @@ Usage: #example
   * code.text = "14. 適用上の注意"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
-  * emptyReason = https://pmda.jp/#2
-  * emptyReason.text =  "Section Heading"
 
 * section.section[+]
   * title = "14.1 薬剤交付時の注意"
