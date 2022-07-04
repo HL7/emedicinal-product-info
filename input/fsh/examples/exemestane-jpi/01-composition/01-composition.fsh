@@ -146,10 +146,10 @@ Usage: #example
             </tr>                        
             <tr>
                 <td style="text-align:center">
-                    <p><img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-above.png">Aromasin Tablets 25mg</img></p>
+                    <p><img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-above.png"/></p>
                 </td>
                 <td style="text-align:center">
-                    <p>image2 <img alt="Aromasin tablet shape. Under the tablet" src="aromasin-tablet-shape-under.png"></img></p>
+                    <p><img alt="Aromasin tablet shape. Under the tablet" src="aromasin-tablet-shape-under.png"/></p>
                 </td>
                 <td style="text-align:center">
                     <p>image3</p>
