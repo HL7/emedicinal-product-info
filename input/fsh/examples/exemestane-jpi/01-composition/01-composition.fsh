@@ -26,10 +26,7 @@ Usage: #example
 <p>アロマターゼ阻害剤/閉経後乳癌治療剤</p>
 <p>エキセメスタン錠</p>
 <p>
-    <img src="figure0-aromasin-header.png" alt="Aromasin Tablets 25mg"/>
-</p>
-<p>
-    <img src="figure0-aromasin-header.png" alt="Aromasin Tablets 25mg"/>
+    <img src="figure0-aromasin-header.png" alt="Aromasin Tablets 25mg" width="400" height="500"/>
 </p>
 </div>"""
 
@@ -151,13 +148,19 @@ Usage: #example
             </tr>                        
             <tr>
                 <td style="text-align:center">
-                    <img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-above.png"/>
+                    <p>
+                        <img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-above.png"/>
+                    </p>
                 </td>
                 <td style="text-align:center">
-                    <p>image2</p>
+                    <p>
+                        <img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-under.png"/>
+                    </p>
                 </td>
                 <td style="text-align:center">
-                    <p>image3</p>
+                    <p>
+                        <img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-side.png"/>
+                    </p>
                 </td>
                 <td rowspan="3" style="text-align:center">
                     <p>7663 </p>
