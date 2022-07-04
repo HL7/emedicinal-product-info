@@ -1,9 +1,9 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 2652, warn = 84, info = 784
+err = 3024, warn = 80, info = 820
 IG Publisher Version: 1.1.122
-Generated Sun Jul 03 23:32:18 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+Generated Mon Jul 04 02:52:03 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
  Build Errors : 6333 / 0 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-8cf05f7c-481d-4bd6-9a7c-9ca3275601c3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-c5b74d97-ed74-4709-a30e-c061f0f1e21f : 0 / 0 / 1
@@ -14,7 +14,7 @@ Generated Sun Jul 03 23:32:18 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-emacfsb1639760977050 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-f38a9470-24db-4d2a-b5ea-cace3e38db63 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-0e81d40e-3ba1-4349-a709-fba791e3b915 : 87 / 11 / 46
- /github/workspace/fsh-generated/resources/Bundle-33d34b6a-afaf-47d9-8848-366768bd429a : 1018 / 27 / 158
+ /github/workspace/fsh-generated/resources/Bundle-33d34b6a-afaf-47d9-8848-366768bd429a : 1204 / 25 / 181
  /github/workspace/fsh-generated/resources/Bundle-5526bcb3-9b7f-4bc1-a9e7-65302382e7a5 : 70 / 13 / 60
  /github/workspace/fsh-generated/resources/Bundle-6e0b6a32-7437-41c5-a1ec-9dfe7abfd3d3 : 87 / 11 / 46
  /github/workspace/fsh-generated/resources/Bundle-cfsb1641827801260 : 9 / 22 / 85
@@ -38,7 +38,7 @@ Generated Sun Jul 03 23:32:18 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Composition-cfsb1651234995610 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb3957159408517 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb7223870858596 : 0 / 0 / 11
- /github/workspace/fsh-generated/resources/Composition-d19473ec-d66c-443d-bd8f-31398daaffee : 908 / 2 / 47
+ /github/workspace/fsh-generated/resources/Composition-d19473ec-d66c-443d-bd8f-31398daaffee : 1094 / 0 / 60
  /github/workspace/fsh-generated/resources/Composition-d66cd3f0-d5ae-4b05-8598-6d809f8fe61a : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-emacfsb1639991356428 : 4 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-f14eb2d1-ef5b-48ec-8256-0dd49a0dc7b6 : 0 / 0 / 11
@@ -6665,11 +6665,15 @@ ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[14]: Except for
 ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[15]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/0e81d40e-3ba1-4349-a709-fba791e3b915: Bundle.entry[16]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 == fsh-generated/resources/Bundle-33d34b6a-afaf-47d9-8848-366768bd429a.json ==
-ERROR: Bundle.entry[0].resource.section[12]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[12])
-ERROR: Bundle.entry[0].resource.section[13]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[13])
+ERROR: Bundle.entry[0].resource.section[15]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[15])
+ERROR: Bundle.entry[0].resource.section[16]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[16])
+ERROR: Bundle.entry[0].resource.section[17]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[17])
+ERROR: Bundle.entry[0].resource.section[18]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[18])
+ERROR: Bundle.entry[0].resource.section[19]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[19])
 ERROR: Bundle.entry[0].resource.section[20]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[20])
-ERROR: Bundle.entry[0].resource.section[21]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[21])
+ERROR: Bundle.entry[0].resource.section[24]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[24])
 ERROR: Bundle.entry[0].resource.section[25]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[25])
+ERROR: Bundle.entry[0].resource.section[26]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[26])
 ERROR: Bundle.entry[0].resource.section[27]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[27])
 ERROR: Bundle.entry[0].resource.section[28]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[28])
 ERROR: Bundle.entry[0].resource.section[29]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[29])
@@ -6729,12 +6733,10 @@ ERROR: Bundle.entry[0].resource.section[88]: The property section must be an Arr
 ERROR: Bundle.entry[0].resource.section[89]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[89])
 ERROR: Bundle.entry[0].resource.section[90]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[90])
 ERROR: Bundle.entry[0].resource.section[91]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[91])
-ERROR: Bundle.entry[0].resource.section[94]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[94])
 ERROR: Bundle.entry[0].resource.section[97]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[97])
 ERROR: Bundle.entry[0].resource.section[98]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[98])
 ERROR: Bundle.entry[0].resource.section[99]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[99])
 ERROR: Bundle.entry[0].resource.section[100]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[100])
-ERROR: Bundle.entry[0].resource.section[101]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[101])
 ERROR: Bundle.entry[0].resource.section[103]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[103])
 ERROR: Bundle.entry[0].resource.section[104]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[104])
 ERROR: Bundle.entry[0].resource.section[105]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[105])
@@ -6743,8 +6745,6 @@ ERROR: Bundle.entry[0].resource.section[107]: The property section must be an Ar
 ERROR: Bundle.entry[0].resource.section[108]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[108])
 ERROR: Bundle.entry[0].resource.section[109]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[109])
 ERROR: Bundle.entry[0].resource.section[110]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[110])
-ERROR: Bundle.entry[0].resource.section[111]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[111])
-ERROR: Bundle.entry[0].resource.section[112]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[112])
 ERROR: Bundle.entry[0].resource.section[113]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[113])
 ERROR: Bundle.entry[0].resource.section[114]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[114])
 ERROR: Bundle.entry[0].resource.section[115]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[115])
@@ -6773,7 +6773,6 @@ ERROR: Bundle.entry[0].resource.section[137]: The property section must be an Ar
 ERROR: Bundle.entry[0].resource.section[138]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[138])
 ERROR: Bundle.entry[0].resource.section[139]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[139])
 ERROR: Bundle.entry[0].resource.section[140]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[140])
-ERROR: Bundle.entry[0].resource.section[141]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[141])
 ERROR: Bundle.entry[0].resource.section[142]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[142])
 ERROR: Bundle.entry[0].resource.section[143]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[143])
 ERROR: Bundle.entry[0].resource.section[144]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[144])
@@ -6803,6 +6802,7 @@ ERROR: Bundle.entry[0].resource.section[167]: The property section must be an Ar
 ERROR: Bundle.entry[0].resource.section[168]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[168])
 ERROR: Bundle.entry[0].resource.section[169]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[169])
 ERROR: Bundle.entry[0].resource.section[170]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[170])
+ERROR: Bundle.entry[0].resource.section[171]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[171])
 ERROR: Bundle.entry[0].resource.section[172]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[172])
 ERROR: Bundle.entry[0].resource.section[173]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[173])
 ERROR: Bundle.entry[0].resource.section[174]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[174])
@@ -7561,6 +7561,185 @@ ERROR: Bundle.entry[0].resource.section[927]: The property section must be an Ar
 ERROR: Bundle.entry[0].resource.section[928]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[928])
 ERROR: Bundle.entry[0].resource.section[929]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[929])
 ERROR: Bundle.entry[0].resource.section[930]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[930])
+ERROR: Bundle.entry[0].resource.section[932]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[932])
+ERROR: Bundle.entry[0].resource.section[933]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[933])
+ERROR: Bundle.entry[0].resource.section[934]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[934])
+ERROR: Bundle.entry[0].resource.section[935]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[935])
+ERROR: Bundle.entry[0].resource.section[936]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[936])
+ERROR: Bundle.entry[0].resource.section[937]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[937])
+ERROR: Bundle.entry[0].resource.section[938]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[938])
+ERROR: Bundle.entry[0].resource.section[939]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[939])
+ERROR: Bundle.entry[0].resource.section[940]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[940])
+ERROR: Bundle.entry[0].resource.section[941]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[941])
+ERROR: Bundle.entry[0].resource.section[942]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[942])
+ERROR: Bundle.entry[0].resource.section[943]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[943])
+ERROR: Bundle.entry[0].resource.section[944]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[944])
+ERROR: Bundle.entry[0].resource.section[945]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[945])
+ERROR: Bundle.entry[0].resource.section[946]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[946])
+ERROR: Bundle.entry[0].resource.section[947]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[947])
+ERROR: Bundle.entry[0].resource.section[948]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[948])
+ERROR: Bundle.entry[0].resource.section[949]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[949])
+ERROR: Bundle.entry[0].resource.section[950]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[950])
+ERROR: Bundle.entry[0].resource.section[951]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[951])
+ERROR: Bundle.entry[0].resource.section[952]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[952])
+ERROR: Bundle.entry[0].resource.section[953]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[953])
+ERROR: Bundle.entry[0].resource.section[954]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[954])
+ERROR: Bundle.entry[0].resource.section[955]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[955])
+ERROR: Bundle.entry[0].resource.section[956]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[956])
+ERROR: Bundle.entry[0].resource.section[957]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[957])
+ERROR: Bundle.entry[0].resource.section[958]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[958])
+ERROR: Bundle.entry[0].resource.section[959]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[959])
+ERROR: Bundle.entry[0].resource.section[960]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[960])
+ERROR: Bundle.entry[0].resource.section[961]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[961])
+ERROR: Bundle.entry[0].resource.section[962]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[962])
+ERROR: Bundle.entry[0].resource.section[963]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[963])
+ERROR: Bundle.entry[0].resource.section[964]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[964])
+ERROR: Bundle.entry[0].resource.section[965]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[965])
+ERROR: Bundle.entry[0].resource.section[966]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[966])
+ERROR: Bundle.entry[0].resource.section[967]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[967])
+ERROR: Bundle.entry[0].resource.section[968]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[968])
+ERROR: Bundle.entry[0].resource.section[969]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[969])
+ERROR: Bundle.entry[0].resource.section[970]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[970])
+ERROR: Bundle.entry[0].resource.section[971]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[971])
+ERROR: Bundle.entry[0].resource.section[972]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[972])
+ERROR: Bundle.entry[0].resource.section[973]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[973])
+ERROR: Bundle.entry[0].resource.section[974]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[974])
+ERROR: Bundle.entry[0].resource.section[975]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[975])
+ERROR: Bundle.entry[0].resource.section[976]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[976])
+ERROR: Bundle.entry[0].resource.section[977]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[977])
+ERROR: Bundle.entry[0].resource.section[978]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[978])
+ERROR: Bundle.entry[0].resource.section[979]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[979])
+ERROR: Bundle.entry[0].resource.section[980]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[980])
+ERROR: Bundle.entry[0].resource.section[981]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[981])
+ERROR: Bundle.entry[0].resource.section[982]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[982])
+ERROR: Bundle.entry[0].resource.section[983]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[983])
+ERROR: Bundle.entry[0].resource.section[984]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[984])
+ERROR: Bundle.entry[0].resource.section[985]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[985])
+ERROR: Bundle.entry[0].resource.section[986]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[986])
+ERROR: Bundle.entry[0].resource.section[987]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[987])
+ERROR: Bundle.entry[0].resource.section[988]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[988])
+ERROR: Bundle.entry[0].resource.section[989]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[989])
+ERROR: Bundle.entry[0].resource.section[990]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[990])
+ERROR: Bundle.entry[0].resource.section[991]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[991])
+ERROR: Bundle.entry[0].resource.section[992]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[992])
+ERROR: Bundle.entry[0].resource.section[993]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[993])
+ERROR: Bundle.entry[0].resource.section[994]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[994])
+ERROR: Bundle.entry[0].resource.section[995]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[995])
+ERROR: Bundle.entry[0].resource.section[996]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[996])
+ERROR: Bundle.entry[0].resource.section[997]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[997])
+ERROR: Bundle.entry[0].resource.section[998]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[998])
+ERROR: Bundle.entry[0].resource.section[999]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[999])
+ERROR: Bundle.entry[0].resource.section[1000]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1000])
+ERROR: Bundle.entry[0].resource.section[1001]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1001])
+ERROR: Bundle.entry[0].resource.section[1002]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1002])
+ERROR: Bundle.entry[0].resource.section[1003]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1003])
+ERROR: Bundle.entry[0].resource.section[1004]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1004])
+ERROR: Bundle.entry[0].resource.section[1005]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1005])
+ERROR: Bundle.entry[0].resource.section[1006]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1006])
+ERROR: Bundle.entry[0].resource.section[1007]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1007])
+ERROR: Bundle.entry[0].resource.section[1008]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1008])
+ERROR: Bundle.entry[0].resource.section[1009]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1009])
+ERROR: Bundle.entry[0].resource.section[1010]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1010])
+ERROR: Bundle.entry[0].resource.section[1011]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1011])
+ERROR: Bundle.entry[0].resource.section[1012]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1012])
+ERROR: Bundle.entry[0].resource.section[1013]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1013])
+ERROR: Bundle.entry[0].resource.section[1014]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1014])
+ERROR: Bundle.entry[0].resource.section[1015]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1015])
+ERROR: Bundle.entry[0].resource.section[1016]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1016])
+ERROR: Bundle.entry[0].resource.section[1017]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1017])
+ERROR: Bundle.entry[0].resource.section[1018]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1018])
+ERROR: Bundle.entry[0].resource.section[1019]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1019])
+ERROR: Bundle.entry[0].resource.section[1020]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1020])
+ERROR: Bundle.entry[0].resource.section[1021]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1021])
+ERROR: Bundle.entry[0].resource.section[1022]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1022])
+ERROR: Bundle.entry[0].resource.section[1023]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1023])
+ERROR: Bundle.entry[0].resource.section[1024]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1024])
+ERROR: Bundle.entry[0].resource.section[1025]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1025])
+ERROR: Bundle.entry[0].resource.section[1026]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1026])
+ERROR: Bundle.entry[0].resource.section[1027]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1027])
+ERROR: Bundle.entry[0].resource.section[1028]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1028])
+ERROR: Bundle.entry[0].resource.section[1029]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1029])
+ERROR: Bundle.entry[0].resource.section[1030]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1030])
+ERROR: Bundle.entry[0].resource.section[1031]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1031])
+ERROR: Bundle.entry[0].resource.section[1032]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1032])
+ERROR: Bundle.entry[0].resource.section[1033]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1033])
+ERROR: Bundle.entry[0].resource.section[1034]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1034])
+ERROR: Bundle.entry[0].resource.section[1035]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1035])
+ERROR: Bundle.entry[0].resource.section[1036]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1036])
+ERROR: Bundle.entry[0].resource.section[1037]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1037])
+ERROR: Bundle.entry[0].resource.section[1038]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1038])
+ERROR: Bundle.entry[0].resource.section[1039]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1039])
+ERROR: Bundle.entry[0].resource.section[1040]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1040])
+ERROR: Bundle.entry[0].resource.section[1041]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1041])
+ERROR: Bundle.entry[0].resource.section[1042]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1042])
+ERROR: Bundle.entry[0].resource.section[1043]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1043])
+ERROR: Bundle.entry[0].resource.section[1044]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1044])
+ERROR: Bundle.entry[0].resource.section[1045]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1045])
+ERROR: Bundle.entry[0].resource.section[1046]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1046])
+ERROR: Bundle.entry[0].resource.section[1047]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1047])
+ERROR: Bundle.entry[0].resource.section[1048]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1048])
+ERROR: Bundle.entry[0].resource.section[1049]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1049])
+ERROR: Bundle.entry[0].resource.section[1050]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1050])
+ERROR: Bundle.entry[0].resource.section[1051]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1051])
+ERROR: Bundle.entry[0].resource.section[1052]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1052])
+ERROR: Bundle.entry[0].resource.section[1053]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1053])
+ERROR: Bundle.entry[0].resource.section[1054]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1054])
+ERROR: Bundle.entry[0].resource.section[1055]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1055])
+ERROR: Bundle.entry[0].resource.section[1056]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1056])
+ERROR: Bundle.entry[0].resource.section[1057]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1057])
+ERROR: Bundle.entry[0].resource.section[1058]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1058])
+ERROR: Bundle.entry[0].resource.section[1059]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1059])
+ERROR: Bundle.entry[0].resource.section[1060]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1060])
+ERROR: Bundle.entry[0].resource.section[1061]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1061])
+ERROR: Bundle.entry[0].resource.section[1062]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1062])
+ERROR: Bundle.entry[0].resource.section[1063]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1063])
+ERROR: Bundle.entry[0].resource.section[1064]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1064])
+ERROR: Bundle.entry[0].resource.section[1065]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1065])
+ERROR: Bundle.entry[0].resource.section[1066]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1066])
+ERROR: Bundle.entry[0].resource.section[1067]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1067])
+ERROR: Bundle.entry[0].resource.section[1068]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1068])
+ERROR: Bundle.entry[0].resource.section[1069]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1069])
+ERROR: Bundle.entry[0].resource.section[1070]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1070])
+ERROR: Bundle.entry[0].resource.section[1071]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1071])
+ERROR: Bundle.entry[0].resource.section[1072]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1072])
+ERROR: Bundle.entry[0].resource.section[1073]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1073])
+ERROR: Bundle.entry[0].resource.section[1074]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1074])
+ERROR: Bundle.entry[0].resource.section[1075]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1075])
+ERROR: Bundle.entry[0].resource.section[1076]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1076])
+ERROR: Bundle.entry[0].resource.section[1077]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1077])
+ERROR: Bundle.entry[0].resource.section[1078]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1078])
+ERROR: Bundle.entry[0].resource.section[1079]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1079])
+ERROR: Bundle.entry[0].resource.section[1080]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1080])
+ERROR: Bundle.entry[0].resource.section[1081]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1081])
+ERROR: Bundle.entry[0].resource.section[1082]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1082])
+ERROR: Bundle.entry[0].resource.section[1083]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1083])
+ERROR: Bundle.entry[0].resource.section[1084]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1084])
+ERROR: Bundle.entry[0].resource.section[1085]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1085])
+ERROR: Bundle.entry[0].resource.section[1086]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1086])
+ERROR: Bundle.entry[0].resource.section[1087]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1087])
+ERROR: Bundle.entry[0].resource.section[1088]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1088])
+ERROR: Bundle.entry[0].resource.section[1089]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1089])
+ERROR: Bundle.entry[0].resource.section[1090]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1090])
+ERROR: Bundle.entry[0].resource.section[1091]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1091])
+ERROR: Bundle.entry[0].resource.section[1092]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1092])
+ERROR: Bundle.entry[0].resource.section[1093]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1093])
+ERROR: Bundle.entry[0].resource.section[1094]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1094])
+ERROR: Bundle.entry[0].resource.section[1095]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1095])
+ERROR: Bundle.entry[0].resource.section[1096]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1096])
+ERROR: Bundle.entry[0].resource.section[1097]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1097])
+ERROR: Bundle.entry[0].resource.section[1098]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1098])
+ERROR: Bundle.entry[0].resource.section[1099]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1099])
+ERROR: Bundle.entry[0].resource.section[1100]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1100])
+ERROR: Bundle.entry[0].resource.section[1101]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1101])
+ERROR: Bundle.entry[0].resource.section[1102]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1102])
+ERROR: Bundle.entry[0].resource.section[1103]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1103])
+ERROR: Bundle.entry[0].resource.section[1104]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1104])
+ERROR: Bundle.entry[0].resource.section[1105]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1105])
+ERROR: Bundle.entry[0].resource.section[1106]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1106])
+ERROR: Bundle.entry[0].resource.section[1107]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1107])
+ERROR: Bundle.entry[0].resource.section[1108]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1108])
+ERROR: Bundle.entry[0].resource.section[1109]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1109])
+ERROR: Bundle.entry[0].resource.section[1110]: The property section must be an Array, not null (at Bundle.entry[0].resource.section[1110])
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = https://spor.ema.europa.eu/#100000155538)
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0]: Bundle entry missing fullUrl
@@ -7571,41 +7750,61 @@ ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofT
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].code.text: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].code.text: @value cannot be empty
-ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[0].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[1].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[1].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[1].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[2].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[2].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[2].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[2].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[3].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[3].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[3].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[3].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[4].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[4].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[5].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[5].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[5].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[5].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[5].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[6].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[7].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[7].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[7].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[7].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[7].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[8].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[8].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[8].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[8].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[9].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[9].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[9].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[9].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[10].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[10].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[10].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[10].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[11].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[12].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[12].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[12].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[12].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[13].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[13].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[13].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[13].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[14].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[14].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[14].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[14].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[15].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[15].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[16].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[17].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[17].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[17].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[18].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[19].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[20].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
@@ -7613,25 +7812,33 @@ INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resour
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[22].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[23].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[24].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[24].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[24].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[24].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[25].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[25].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[25].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[25].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[26].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[26].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[26].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[26].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[27].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[28].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[28].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[28].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[28].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[29].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[29].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[29].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[29].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#1)
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[29].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[30].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[31].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[31].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[31].emptyReason: None of the codings provided are in the value set 'List Empty Reasons' (http://hl7.org/fhir/ValueSet/list-empty-reason), and a coding is recommended to come from this value set) (codes = https://pmda.jp/#2)
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[31].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[32].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-WARNING: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[33].title: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[33].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-WARNING: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[33].code.text: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[34].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[35].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[0].resource.ofType(Composition).section[36].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://PMDA-org-type.jp/' is unknown so the code cannot be validated
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[1].resource.ofType(Organization).telecom[1]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 INFORMATION: Bundle/33d34b6a-afaf-47d9-8848-366768bd429a: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
@@ -8712,11 +8919,15 @@ INFORMATION: Composition/cfsb7223870858596: Composition.section[5].code.coding[0
 INFORMATION: Composition/cfsb7223870858596: Composition.section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Composition/cfsb7223870858596: Composition.section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 == fsh-generated/resources/Composition-d19473ec-d66c-443d-bd8f-31398daaffee.json ==
-ERROR: Composition.section[12]: The property section must be an Array, not null (at Composition.section[12])
-ERROR: Composition.section[13]: The property section must be an Array, not null (at Composition.section[13])
+ERROR: Composition.section[15]: The property section must be an Array, not null (at Composition.section[15])
+ERROR: Composition.section[16]: The property section must be an Array, not null (at Composition.section[16])
+ERROR: Composition.section[17]: The property section must be an Array, not null (at Composition.section[17])
+ERROR: Composition.section[18]: The property section must be an Array, not null (at Composition.section[18])
+ERROR: Composition.section[19]: The property section must be an Array, not null (at Composition.section[19])
 ERROR: Composition.section[20]: The property section must be an Array, not null (at Composition.section[20])
-ERROR: Composition.section[21]: The property section must be an Array, not null (at Composition.section[21])
+ERROR: Composition.section[24]: The property section must be an Array, not null (at Composition.section[24])
 ERROR: Composition.section[25]: The property section must be an Array, not null (at Composition.section[25])
+ERROR: Composition.section[26]: The property section must be an Array, not null (at Composition.section[26])
 ERROR: Composition.section[27]: The property section must be an Array, not null (at Composition.section[27])
 ERROR: Composition.section[28]: The property section must be an Array, not null (at Composition.section[28])
 ERROR: Composition.section[29]: The property section must be an Array, not null (at Composition.section[29])
@@ -8776,12 +8987,10 @@ ERROR: Composition.section[88]: The property section must be an Array, not null 
 ERROR: Composition.section[89]: The property section must be an Array, not null (at Composition.section[89])
 ERROR: Composition.section[90]: The property section must be an Array, not null (at Composition.section[90])
 ERROR: Composition.section[91]: The property section must be an Array, not null (at Composition.section[91])
-ERROR: Composition.section[94]: The property section must be an Array, not null (at Composition.section[94])
 ERROR: Composition.section[97]: The property section must be an Array, not null (at Composition.section[97])
 ERROR: Composition.section[98]: The property section must be an Array, not null (at Composition.section[98])
 ERROR: Composition.section[99]: The property section must be an Array, not null (at Composition.section[99])
 ERROR: Composition.section[100]: The property section must be an Array, not null (at Composition.section[100])
-ERROR: Composition.section[101]: The property section must be an Array, not null (at Composition.section[101])
 ERROR: Composition.section[103]: The property section must be an Array, not null (at Composition.section[103])
 ERROR: Composition.section[104]: The property section must be an Array, not null (at Composition.section[104])
 ERROR: Composition.section[105]: The property section must be an Array, not null (at Composition.section[105])
@@ -8790,8 +8999,6 @@ ERROR: Composition.section[107]: The property section must be an Array, not null
 ERROR: Composition.section[108]: The property section must be an Array, not null (at Composition.section[108])
 ERROR: Composition.section[109]: The property section must be an Array, not null (at Composition.section[109])
 ERROR: Composition.section[110]: The property section must be an Array, not null (at Composition.section[110])
-ERROR: Composition.section[111]: The property section must be an Array, not null (at Composition.section[111])
-ERROR: Composition.section[112]: The property section must be an Array, not null (at Composition.section[112])
 ERROR: Composition.section[113]: The property section must be an Array, not null (at Composition.section[113])
 ERROR: Composition.section[114]: The property section must be an Array, not null (at Composition.section[114])
 ERROR: Composition.section[115]: The property section must be an Array, not null (at Composition.section[115])
@@ -8820,7 +9027,6 @@ ERROR: Composition.section[137]: The property section must be an Array, not null
 ERROR: Composition.section[138]: The property section must be an Array, not null (at Composition.section[138])
 ERROR: Composition.section[139]: The property section must be an Array, not null (at Composition.section[139])
 ERROR: Composition.section[140]: The property section must be an Array, not null (at Composition.section[140])
-ERROR: Composition.section[141]: The property section must be an Array, not null (at Composition.section[141])
 ERROR: Composition.section[142]: The property section must be an Array, not null (at Composition.section[142])
 ERROR: Composition.section[143]: The property section must be an Array, not null (at Composition.section[143])
 ERROR: Composition.section[144]: The property section must be an Array, not null (at Composition.section[144])
@@ -8850,6 +9056,7 @@ ERROR: Composition.section[167]: The property section must be an Array, not null
 ERROR: Composition.section[168]: The property section must be an Array, not null (at Composition.section[168])
 ERROR: Composition.section[169]: The property section must be an Array, not null (at Composition.section[169])
 ERROR: Composition.section[170]: The property section must be an Array, not null (at Composition.section[170])
+ERROR: Composition.section[171]: The property section must be an Array, not null (at Composition.section[171])
 ERROR: Composition.section[172]: The property section must be an Array, not null (at Composition.section[172])
 ERROR: Composition.section[173]: The property section must be an Array, not null (at Composition.section[173])
 ERROR: Composition.section[174]: The property section must be an Array, not null (at Composition.section[174])
@@ -9608,42 +9815,234 @@ ERROR: Composition.section[927]: The property section must be an Array, not null
 ERROR: Composition.section[928]: The property section must be an Array, not null (at Composition.section[928])
 ERROR: Composition.section[929]: The property section must be an Array, not null (at Composition.section[929])
 ERROR: Composition.section[930]: The property section must be an Array, not null (at Composition.section[930])
+ERROR: Composition.section[932]: The property section must be an Array, not null (at Composition.section[932])
+ERROR: Composition.section[933]: The property section must be an Array, not null (at Composition.section[933])
+ERROR: Composition.section[934]: The property section must be an Array, not null (at Composition.section[934])
+ERROR: Composition.section[935]: The property section must be an Array, not null (at Composition.section[935])
+ERROR: Composition.section[936]: The property section must be an Array, not null (at Composition.section[936])
+ERROR: Composition.section[937]: The property section must be an Array, not null (at Composition.section[937])
+ERROR: Composition.section[938]: The property section must be an Array, not null (at Composition.section[938])
+ERROR: Composition.section[939]: The property section must be an Array, not null (at Composition.section[939])
+ERROR: Composition.section[940]: The property section must be an Array, not null (at Composition.section[940])
+ERROR: Composition.section[941]: The property section must be an Array, not null (at Composition.section[941])
+ERROR: Composition.section[942]: The property section must be an Array, not null (at Composition.section[942])
+ERROR: Composition.section[943]: The property section must be an Array, not null (at Composition.section[943])
+ERROR: Composition.section[944]: The property section must be an Array, not null (at Composition.section[944])
+ERROR: Composition.section[945]: The property section must be an Array, not null (at Composition.section[945])
+ERROR: Composition.section[946]: The property section must be an Array, not null (at Composition.section[946])
+ERROR: Composition.section[947]: The property section must be an Array, not null (at Composition.section[947])
+ERROR: Composition.section[948]: The property section must be an Array, not null (at Composition.section[948])
+ERROR: Composition.section[949]: The property section must be an Array, not null (at Composition.section[949])
+ERROR: Composition.section[950]: The property section must be an Array, not null (at Composition.section[950])
+ERROR: Composition.section[951]: The property section must be an Array, not null (at Composition.section[951])
+ERROR: Composition.section[952]: The property section must be an Array, not null (at Composition.section[952])
+ERROR: Composition.section[953]: The property section must be an Array, not null (at Composition.section[953])
+ERROR: Composition.section[954]: The property section must be an Array, not null (at Composition.section[954])
+ERROR: Composition.section[955]: The property section must be an Array, not null (at Composition.section[955])
+ERROR: Composition.section[956]: The property section must be an Array, not null (at Composition.section[956])
+ERROR: Composition.section[957]: The property section must be an Array, not null (at Composition.section[957])
+ERROR: Composition.section[958]: The property section must be an Array, not null (at Composition.section[958])
+ERROR: Composition.section[959]: The property section must be an Array, not null (at Composition.section[959])
+ERROR: Composition.section[960]: The property section must be an Array, not null (at Composition.section[960])
+ERROR: Composition.section[961]: The property section must be an Array, not null (at Composition.section[961])
+ERROR: Composition.section[962]: The property section must be an Array, not null (at Composition.section[962])
+ERROR: Composition.section[963]: The property section must be an Array, not null (at Composition.section[963])
+ERROR: Composition.section[964]: The property section must be an Array, not null (at Composition.section[964])
+ERROR: Composition.section[965]: The property section must be an Array, not null (at Composition.section[965])
+ERROR: Composition.section[966]: The property section must be an Array, not null (at Composition.section[966])
+ERROR: Composition.section[967]: The property section must be an Array, not null (at Composition.section[967])
+ERROR: Composition.section[968]: The property section must be an Array, not null (at Composition.section[968])
+ERROR: Composition.section[969]: The property section must be an Array, not null (at Composition.section[969])
+ERROR: Composition.section[970]: The property section must be an Array, not null (at Composition.section[970])
+ERROR: Composition.section[971]: The property section must be an Array, not null (at Composition.section[971])
+ERROR: Composition.section[972]: The property section must be an Array, not null (at Composition.section[972])
+ERROR: Composition.section[973]: The property section must be an Array, not null (at Composition.section[973])
+ERROR: Composition.section[974]: The property section must be an Array, not null (at Composition.section[974])
+ERROR: Composition.section[975]: The property section must be an Array, not null (at Composition.section[975])
+ERROR: Composition.section[976]: The property section must be an Array, not null (at Composition.section[976])
+ERROR: Composition.section[977]: The property section must be an Array, not null (at Composition.section[977])
+ERROR: Composition.section[978]: The property section must be an Array, not null (at Composition.section[978])
+ERROR: Composition.section[979]: The property section must be an Array, not null (at Composition.section[979])
+ERROR: Composition.section[980]: The property section must be an Array, not null (at Composition.section[980])
+ERROR: Composition.section[981]: The property section must be an Array, not null (at Composition.section[981])
+ERROR: Composition.section[982]: The property section must be an Array, not null (at Composition.section[982])
+ERROR: Composition.section[983]: The property section must be an Array, not null (at Composition.section[983])
+ERROR: Composition.section[984]: The property section must be an Array, not null (at Composition.section[984])
+ERROR: Composition.section[985]: The property section must be an Array, not null (at Composition.section[985])
+ERROR: Composition.section[986]: The property section must be an Array, not null (at Composition.section[986])
+ERROR: Composition.section[987]: The property section must be an Array, not null (at Composition.section[987])
+ERROR: Composition.section[988]: The property section must be an Array, not null (at Composition.section[988])
+ERROR: Composition.section[989]: The property section must be an Array, not null (at Composition.section[989])
+ERROR: Composition.section[990]: The property section must be an Array, not null (at Composition.section[990])
+ERROR: Composition.section[991]: The property section must be an Array, not null (at Composition.section[991])
+ERROR: Composition.section[992]: The property section must be an Array, not null (at Composition.section[992])
+ERROR: Composition.section[993]: The property section must be an Array, not null (at Composition.section[993])
+ERROR: Composition.section[994]: The property section must be an Array, not null (at Composition.section[994])
+ERROR: Composition.section[995]: The property section must be an Array, not null (at Composition.section[995])
+ERROR: Composition.section[996]: The property section must be an Array, not null (at Composition.section[996])
+ERROR: Composition.section[997]: The property section must be an Array, not null (at Composition.section[997])
+ERROR: Composition.section[998]: The property section must be an Array, not null (at Composition.section[998])
+ERROR: Composition.section[999]: The property section must be an Array, not null (at Composition.section[999])
+ERROR: Composition.section[1000]: The property section must be an Array, not null (at Composition.section[1000])
+ERROR: Composition.section[1001]: The property section must be an Array, not null (at Composition.section[1001])
+ERROR: Composition.section[1002]: The property section must be an Array, not null (at Composition.section[1002])
+ERROR: Composition.section[1003]: The property section must be an Array, not null (at Composition.section[1003])
+ERROR: Composition.section[1004]: The property section must be an Array, not null (at Composition.section[1004])
+ERROR: Composition.section[1005]: The property section must be an Array, not null (at Composition.section[1005])
+ERROR: Composition.section[1006]: The property section must be an Array, not null (at Composition.section[1006])
+ERROR: Composition.section[1007]: The property section must be an Array, not null (at Composition.section[1007])
+ERROR: Composition.section[1008]: The property section must be an Array, not null (at Composition.section[1008])
+ERROR: Composition.section[1009]: The property section must be an Array, not null (at Composition.section[1009])
+ERROR: Composition.section[1010]: The property section must be an Array, not null (at Composition.section[1010])
+ERROR: Composition.section[1011]: The property section must be an Array, not null (at Composition.section[1011])
+ERROR: Composition.section[1012]: The property section must be an Array, not null (at Composition.section[1012])
+ERROR: Composition.section[1013]: The property section must be an Array, not null (at Composition.section[1013])
+ERROR: Composition.section[1014]: The property section must be an Array, not null (at Composition.section[1014])
+ERROR: Composition.section[1015]: The property section must be an Array, not null (at Composition.section[1015])
+ERROR: Composition.section[1016]: The property section must be an Array, not null (at Composition.section[1016])
+ERROR: Composition.section[1017]: The property section must be an Array, not null (at Composition.section[1017])
+ERROR: Composition.section[1018]: The property section must be an Array, not null (at Composition.section[1018])
+ERROR: Composition.section[1019]: The property section must be an Array, not null (at Composition.section[1019])
+ERROR: Composition.section[1020]: The property section must be an Array, not null (at Composition.section[1020])
+ERROR: Composition.section[1021]: The property section must be an Array, not null (at Composition.section[1021])
+ERROR: Composition.section[1022]: The property section must be an Array, not null (at Composition.section[1022])
+ERROR: Composition.section[1023]: The property section must be an Array, not null (at Composition.section[1023])
+ERROR: Composition.section[1024]: The property section must be an Array, not null (at Composition.section[1024])
+ERROR: Composition.section[1025]: The property section must be an Array, not null (at Composition.section[1025])
+ERROR: Composition.section[1026]: The property section must be an Array, not null (at Composition.section[1026])
+ERROR: Composition.section[1027]: The property section must be an Array, not null (at Composition.section[1027])
+ERROR: Composition.section[1028]: The property section must be an Array, not null (at Composition.section[1028])
+ERROR: Composition.section[1029]: The property section must be an Array, not null (at Composition.section[1029])
+ERROR: Composition.section[1030]: The property section must be an Array, not null (at Composition.section[1030])
+ERROR: Composition.section[1031]: The property section must be an Array, not null (at Composition.section[1031])
+ERROR: Composition.section[1032]: The property section must be an Array, not null (at Composition.section[1032])
+ERROR: Composition.section[1033]: The property section must be an Array, not null (at Composition.section[1033])
+ERROR: Composition.section[1034]: The property section must be an Array, not null (at Composition.section[1034])
+ERROR: Composition.section[1035]: The property section must be an Array, not null (at Composition.section[1035])
+ERROR: Composition.section[1036]: The property section must be an Array, not null (at Composition.section[1036])
+ERROR: Composition.section[1037]: The property section must be an Array, not null (at Composition.section[1037])
+ERROR: Composition.section[1038]: The property section must be an Array, not null (at Composition.section[1038])
+ERROR: Composition.section[1039]: The property section must be an Array, not null (at Composition.section[1039])
+ERROR: Composition.section[1040]: The property section must be an Array, not null (at Composition.section[1040])
+ERROR: Composition.section[1041]: The property section must be an Array, not null (at Composition.section[1041])
+ERROR: Composition.section[1042]: The property section must be an Array, not null (at Composition.section[1042])
+ERROR: Composition.section[1043]: The property section must be an Array, not null (at Composition.section[1043])
+ERROR: Composition.section[1044]: The property section must be an Array, not null (at Composition.section[1044])
+ERROR: Composition.section[1045]: The property section must be an Array, not null (at Composition.section[1045])
+ERROR: Composition.section[1046]: The property section must be an Array, not null (at Composition.section[1046])
+ERROR: Composition.section[1047]: The property section must be an Array, not null (at Composition.section[1047])
+ERROR: Composition.section[1048]: The property section must be an Array, not null (at Composition.section[1048])
+ERROR: Composition.section[1049]: The property section must be an Array, not null (at Composition.section[1049])
+ERROR: Composition.section[1050]: The property section must be an Array, not null (at Composition.section[1050])
+ERROR: Composition.section[1051]: The property section must be an Array, not null (at Composition.section[1051])
+ERROR: Composition.section[1052]: The property section must be an Array, not null (at Composition.section[1052])
+ERROR: Composition.section[1053]: The property section must be an Array, not null (at Composition.section[1053])
+ERROR: Composition.section[1054]: The property section must be an Array, not null (at Composition.section[1054])
+ERROR: Composition.section[1055]: The property section must be an Array, not null (at Composition.section[1055])
+ERROR: Composition.section[1056]: The property section must be an Array, not null (at Composition.section[1056])
+ERROR: Composition.section[1057]: The property section must be an Array, not null (at Composition.section[1057])
+ERROR: Composition.section[1058]: The property section must be an Array, not null (at Composition.section[1058])
+ERROR: Composition.section[1059]: The property section must be an Array, not null (at Composition.section[1059])
+ERROR: Composition.section[1060]: The property section must be an Array, not null (at Composition.section[1060])
+ERROR: Composition.section[1061]: The property section must be an Array, not null (at Composition.section[1061])
+ERROR: Composition.section[1062]: The property section must be an Array, not null (at Composition.section[1062])
+ERROR: Composition.section[1063]: The property section must be an Array, not null (at Composition.section[1063])
+ERROR: Composition.section[1064]: The property section must be an Array, not null (at Composition.section[1064])
+ERROR: Composition.section[1065]: The property section must be an Array, not null (at Composition.section[1065])
+ERROR: Composition.section[1066]: The property section must be an Array, not null (at Composition.section[1066])
+ERROR: Composition.section[1067]: The property section must be an Array, not null (at Composition.section[1067])
+ERROR: Composition.section[1068]: The property section must be an Array, not null (at Composition.section[1068])
+ERROR: Composition.section[1069]: The property section must be an Array, not null (at Composition.section[1069])
+ERROR: Composition.section[1070]: The property section must be an Array, not null (at Composition.section[1070])
+ERROR: Composition.section[1071]: The property section must be an Array, not null (at Composition.section[1071])
+ERROR: Composition.section[1072]: The property section must be an Array, not null (at Composition.section[1072])
+ERROR: Composition.section[1073]: The property section must be an Array, not null (at Composition.section[1073])
+ERROR: Composition.section[1074]: The property section must be an Array, not null (at Composition.section[1074])
+ERROR: Composition.section[1075]: The property section must be an Array, not null (at Composition.section[1075])
+ERROR: Composition.section[1076]: The property section must be an Array, not null (at Composition.section[1076])
+ERROR: Composition.section[1077]: The property section must be an Array, not null (at Composition.section[1077])
+ERROR: Composition.section[1078]: The property section must be an Array, not null (at Composition.section[1078])
+ERROR: Composition.section[1079]: The property section must be an Array, not null (at Composition.section[1079])
+ERROR: Composition.section[1080]: The property section must be an Array, not null (at Composition.section[1080])
+ERROR: Composition.section[1081]: The property section must be an Array, not null (at Composition.section[1081])
+ERROR: Composition.section[1082]: The property section must be an Array, not null (at Composition.section[1082])
+ERROR: Composition.section[1083]: The property section must be an Array, not null (at Composition.section[1083])
+ERROR: Composition.section[1084]: The property section must be an Array, not null (at Composition.section[1084])
+ERROR: Composition.section[1085]: The property section must be an Array, not null (at Composition.section[1085])
+ERROR: Composition.section[1086]: The property section must be an Array, not null (at Composition.section[1086])
+ERROR: Composition.section[1087]: The property section must be an Array, not null (at Composition.section[1087])
+ERROR: Composition.section[1088]: The property section must be an Array, not null (at Composition.section[1088])
+ERROR: Composition.section[1089]: The property section must be an Array, not null (at Composition.section[1089])
+ERROR: Composition.section[1090]: The property section must be an Array, not null (at Composition.section[1090])
+ERROR: Composition.section[1091]: The property section must be an Array, not null (at Composition.section[1091])
+ERROR: Composition.section[1092]: The property section must be an Array, not null (at Composition.section[1092])
+ERROR: Composition.section[1093]: The property section must be an Array, not null (at Composition.section[1093])
+ERROR: Composition.section[1094]: The property section must be an Array, not null (at Composition.section[1094])
+ERROR: Composition.section[1095]: The property section must be an Array, not null (at Composition.section[1095])
+ERROR: Composition.section[1096]: The property section must be an Array, not null (at Composition.section[1096])
+ERROR: Composition.section[1097]: The property section must be an Array, not null (at Composition.section[1097])
+ERROR: Composition.section[1098]: The property section must be an Array, not null (at Composition.section[1098])
+ERROR: Composition.section[1099]: The property section must be an Array, not null (at Composition.section[1099])
+ERROR: Composition.section[1100]: The property section must be an Array, not null (at Composition.section[1100])
+ERROR: Composition.section[1101]: The property section must be an Array, not null (at Composition.section[1101])
+ERROR: Composition.section[1102]: The property section must be an Array, not null (at Composition.section[1102])
+ERROR: Composition.section[1103]: The property section must be an Array, not null (at Composition.section[1103])
+ERROR: Composition.section[1104]: The property section must be an Array, not null (at Composition.section[1104])
+ERROR: Composition.section[1105]: The property section must be an Array, not null (at Composition.section[1105])
+ERROR: Composition.section[1106]: The property section must be an Array, not null (at Composition.section[1106])
+ERROR: Composition.section[1107]: The property section must be an Array, not null (at Composition.section[1107])
+ERROR: Composition.section[1108]: The property section must be an Array, not null (at Composition.section[1108])
+ERROR: Composition.section[1109]: The property section must be an Array, not null (at Composition.section[1109])
+ERROR: Composition.section[1110]: The property section must be an Array, not null (at Composition.section[1110])
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].title: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].title: @value cannot be empty
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].code.text: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].code.text: @value cannot be empty
-ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[0].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[1].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[1].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[2].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[2].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[2].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[3].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[3].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[3].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[4].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[4].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[5].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[5].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[5].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[5].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[6].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[6].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[7].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[7].code.coding[1]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[7].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[7].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[8].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[8].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[8].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[9].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[9].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[9].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[10].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[10].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[10].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[11].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[12].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[12].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[12].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[13].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[13].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[13].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[14].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[14].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[14].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[15].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[15].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[16].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[17].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[17].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[18].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[19].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[20].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
@@ -9651,23 +10050,28 @@ INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.secti
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[22].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[23].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[24].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[24].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[24].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[25].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[25].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[25].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[26].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[26].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[26].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[27].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[28].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[28].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
-INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[28].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[29].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[29].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[29].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[30].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[31].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+ERROR: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[31].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[31].emptyReason.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[32].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-WARNING: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[33].title: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[33].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
-WARNING: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[33].code.text: value should not start or finish with whitespace '17.1...有効性及び安全性に関する試験 '
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[34].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[35].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
+INFORMATION: Composition/d19473ec-d66c-443d-bd8f-31398daaffee: Composition.section[36].code.coding[0]: Code System URI 'https://pmda.jp/' is unknown so the code cannot be validated
 == fsh-generated/resources/Composition-d66cd3f0-d5ae-4b05-8598-6d809f8fe61a.json ==
 INFORMATION: Composition/d66cd3f0-d5ae-4b05-8598-6d809f8fe61a: Composition.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = https://spor.ema.europa.eu/#100000155538)
 INFORMATION: Composition/d66cd3f0-d5ae-4b05-8598-6d809f8fe61a: Composition.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
