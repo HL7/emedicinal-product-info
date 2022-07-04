@@ -84,7 +84,7 @@ Usage: #example
 </div>"""
 
 
-* section[0]
+* section[1]
   * title = "1. 警告" //1. WARNINGS
   * code = https://pmda.jp/#2
   * code.text = "1. 警告"
@@ -93,7 +93,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[0]
+* section[2]
   * title = "2. 禁忌(次の患者には投与しないこと)" //2. CONTRAINDICATIONS
   * code = https://pmda.jp/#2
   * code.text = "禁忌(次の患者には投与しないこと)"
@@ -101,7 +101,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "2.1"
@@ -129,7 +129,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[0]
+* section[3]
   * title = "3. 組成・性状" //3. COMPOSITION AND PRODUCT DESCRIPTION
   * code = https://pmda.jp/#2
   * code.text = "3. 組成・性状"
@@ -137,7 +137,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "3.1 組成"
@@ -248,7 +248,7 @@ Usage: #example
         </table>
 </div>"""
 
-* section[0]
+* section[4]
   * title = "4. 効能又は効果" //4. INDICATIONS
   * code = https://pmda.jp/#4
   * code.text = "効能又は効果"
@@ -257,7 +257,7 @@ Usage: #example
 閉経後乳癌
 </div>"""
 
-* section[0]
+* section[5]
   * title = "5. 効能又は効果に関連する注意" //5. PRECAUTIONS CONCERNING INDICATIONS
   * code = https://pmda.jp/#4
   * code.text = "効能又は効果に関連する注意"
@@ -267,7 +267,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[0]
+* section[6]
   * title = "6. 用法及び用量" //6. DOSAGE AND ADMINISTRATION
   * code = https://pmda.jp/#6
   * code.text = "用法及び用量"
@@ -276,7 +276,7 @@ Usage: #example
 通常、成人にはエキセメスタンとして1日1回25mgを食後に経口投 与する。
 </div>"""
 
-* section[0]
+* section[7]
   * title = "7. 用法及び用量に関連する注意" //7. PRECAUTIONS CONCERNING DOSAGE ANDADMINISTRATION
   * code = https://pmda.jp/#4
   * code.text = "7. 用法及び用量に関連する注意"
@@ -286,7 +286,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[0]
+* section[8]
   * title = "8. 重要な基本的注意" //8. IMPORTANT PRECAUTIONS
   * code = https://pmda.jp/#8
   * code.text = "重要な基本的注意"
@@ -294,7 +294,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "8.1"
@@ -335,7 +335,7 @@ Usage: #example
 本剤の使用による嗜眠、傾眠、無力(症)及びめまいが報告され ており、このような症状がある場合、機械操作や自動車の運転はさ せないよう十分注意すること。
 </div>"""
 
-* section[0]
+* section[9]
   * title = "9. 特定の背景を有する患者に関する注意" // 9. PRECAUTIONS CONCERNING PATIENTS WITH SPECIFIC BACKGROUNDS
   * code = https://pmda.jp/#9
   * code.text = "特定の背景を有する患者に関する注意"
@@ -343,7 +343,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "9.2 腎機能障害患者"
@@ -352,7 +352,7 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "9.2.1 重度の腎障害のある患者"
@@ -372,7 +372,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "9.3.1 重度の肝障害のある患者"
@@ -403,7 +403,7 @@ Usage: #example
 妊婦又は妊娠している可能性のある女性には投与しないこと。本剤 は、閉経後の患者を対象とするため、妊婦に対する投与は想定され ていないが、妊婦への投与の安全性については次の知見がある。動 物実験(ラット)で、分娩障害、妊娠期間の延長、吸収胚数の増加 及び生存胎児数の減少が認められている。また動物実験(ウサギ)で、 流産、吸収胚数の増加及び胎児体重の低下が認められている。しか し両種による動物実験で、催奇形性は認められてはいない。本剤の 妊婦又は妊娠している可能性のある女性における臨床使用経験はな い。[2.1参照]
 </div>"""
 
-* section[0]
+* section[+]
   * title = "9.6 授乳婦"
   * code = https://pmda.jp/#9
   * code.text = "9.6 授乳婦"
@@ -412,7 +412,7 @@ Usage: #example
 投与しないこと。本剤は、閉経後の患者を対象とするため、授乳婦に 対する投与は想定されていないが、授乳婦への投与の安全性について は次の知見がある。動物実験(ラット)で乳汁中への移行が認められ ている。本剤の授乳中の女性における臨床使用経験はない。[2.2参照]
 </div>"""
 
-* section[0]
+* section[10]
   * title = "10. 相互作用" //10. INTERACTIONS
   * code = https://pmda.jp/#10
   * code.text = "10. 相互作用"
@@ -420,7 +420,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "10.1"
@@ -466,7 +466,7 @@ Usage: #example
         </table>
 </div>"""
 
-* section[0]
+* section[11]
   * title = "11. 副作用" //11. ADVERSE REACTIONS
   * code = https://pmda.jp/#11
   * code.text = "11. 副作用"
@@ -484,7 +484,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "11.1.1"
@@ -639,7 +639,7 @@ Usage: #example
         </table>
 </div>"""
 
-* section[0]
+* section[12]
   * title = "12. 臨床検査結果に及ぼす影響"
   * code = https://pmda.jp/#9
   * code.text = "12. 臨床検査結果に及ぼす影響"
@@ -648,7 +648,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[0]
+* section[13]
   * title = "13. 過量投与" //13. OVERDOSAGE
   * code = https://pmda.jp/#9
   * code.text = "13. 過量投与"
@@ -657,14 +657,14 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[0]
+* section[14]
   * title = "14. 適用上の注意" //14. PRECAUTIONS CONCERNING USE
   * code = https://pmda.jp/#14
   * code.text = "14. 適用上の注意"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
   * emptyReason = https://pmda.jp/#2
-  * emptyReason.text = "Major Section Heading"
+  * emptyReason.text =  "Section Heading"
 
 * section[+]
   * title = "14.1 薬剤交付時の注意"
