@@ -287,7 +287,7 @@ Usage: #example
   * code = https://pmda.jp/#8
   * code.text = "重要な基本的注意"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p></p>
 </div>"""
 
 * section.section[+]
@@ -334,7 +334,7 @@ Usage: #example
   * code = https://pmda.jp/#9
   * code.text = "特定の背景を有する患者に関する注意"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p></p>
 </div>"""
 
 * section.section[+]
@@ -403,7 +403,7 @@ Usage: #example
   * code = https://pmda.jp/#10
   * code.text = "10. 相互作用"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p></p>
 </div>"""
 
 * section.section[+]
@@ -455,9 +455,8 @@ Usage: #example
   * code = https://pmda.jp/#11
   * code.text = "11. 副作用"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
-次の副作用があらわれることがあるので、観察を十分に行い、異常
- が認められた場合には投与を中止するなど適切な処置を行うこと。
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p>次の副作用があらわれることがあるので、観察を十分に行い、異常
+ が認められた場合には投与を中止するなど適切な処置を行うこと。</p>
 </div>"""
 
 * section.section[+]
@@ -626,7 +625,7 @@ Usage: #example
   * code = https://pmda.jp/#9
   * code.text = "12. 臨床検査結果に及ぼす影響"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p></p></div>"""
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
@@ -635,7 +634,7 @@ Usage: #example
   * code = https://pmda.jp/#9
   * code.text = "13. 過量投与"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p></p></div>"""
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
@@ -644,7 +643,7 @@ Usage: #example
   * code = https://pmda.jp/#14
   * code.text = "14. 適用上の注意"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"></div>"""
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p></p></div>"""
 
 * section.section[+]
   * title = "14.1 薬剤交付時の注意"
