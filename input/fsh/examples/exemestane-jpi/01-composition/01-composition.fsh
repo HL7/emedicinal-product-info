@@ -25,6 +25,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
 <p>アロマターゼ阻害剤/閉経後乳癌治療剤</p>
 <p>エキセメスタン錠</p>
+<p><img alt="Aromasin Tablets 25mg" src="figure0-aromasin-header.png">Aromasin Tablets 25mg</img></p>
 </div>"""
 
 * section[+]
@@ -120,7 +121,7 @@ Usage: #example
   * code.text = "3.2 製剤の性状"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
-<table border="1">
+<table border="1" width="100%">
             <tr>
                 <td colspan="3" style="text-align:center">
                     <p>外         形 </p>
@@ -145,10 +146,10 @@ Usage: #example
             </tr>                        
             <tr>
                 <td style="text-align:center">
-                    <p>image1</p>
+                    <p><img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-above.png">Aromasin Tablets 25mg</img></p>
                 </td>
                 <td style="text-align:center">
-                    <p>image2</p>
+                    <p>image2 <img alt="Aromasin tablet shape. Under the tablet" src="aromasin-tablet-shape-under.png"></img></p>
                 </td>
                 <td style="text-align:center">
                     <p>image3</p>
