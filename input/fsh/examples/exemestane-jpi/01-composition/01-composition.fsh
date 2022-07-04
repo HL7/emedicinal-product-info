@@ -27,7 +27,7 @@ Usage: #example
 <p>エキセメスタン錠</p>
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "ア. 作成又は改訂年月 " // Date of Preparation or Revision
   * code = https://pmda.jp/#2
   * code.text = "ア. 作成又は改訂年月 "
@@ -35,7 +35,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "イ. 日本標準商品分類番号 " // Standard Commodity Classification Number of Japan
   * code = https://pmda.jp/#2
   * code.text = "イ. 日本標準商品分類番号 "
@@ -43,7 +43,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "ウ. 承認番号、販売開始年月"   // Approval Number, Date of Initial Marketing in Japan
   * code = https://pmda.jp/#2
   * code.text = "ウ. 承認番号、販売開始年月"
@@ -51,7 +51,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "エ． 貯法、有効期間 " // Storage, Shelf Life
   * code = https://pmda.jp/#2
   * code.text = "エ． 貯法、有効期間 "
@@ -59,7 +59,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "オ. 薬効分類名" // Therapeutic Category
   * code = https://pmda.jp/#2
   * code.text = "オ. 薬効分類名"
@@ -67,7 +67,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "カ. 規制区分 " // Regulatory Classification
   * code = https://pmda.jp/#2
   * code.text = "カ. 規制区分 "
@@ -75,7 +75,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "キ. 名称"  // Product name
   * code = https://pmda.jp/#2
   * code.text = "キ. 名称"
@@ -103,7 +103,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "2.1"
   * code = https://pmda.jp/#2
   * code.text = "2.1"
@@ -111,7 +111,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p>妊婦又は妊娠している可能性のある女性[9.5参照] </p>
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "2.2"
   * code = https://pmda.jp/#2
   * code.text = "2.2"
@@ -119,7 +119,7 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><p>授乳婦[9.6参照]</p>
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "2.3"
   * code = https://pmda.jp/#2
   * code.text = "2.3"
@@ -139,7 +139,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "3.1 組成"
   * code = https://pmda.jp/#2
   * code.text = "3.1 組成"
@@ -175,7 +175,7 @@ Usage: #example
         </table>
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "3.2 製剤の性状"
   * code = https://pmda.jp/#3
   * code.text = "3.2 製剤の性状"
@@ -296,7 +296,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "8.1"
   * code = https://pmda.jp/#8
   * code.text = "8.1"
@@ -307,7 +307,7 @@ Usage: #example
 される患者についてのみ使用すること。
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "8.2"
   * code = https://pmda.jp/#8
   * code.text = "8.2"
@@ -317,7 +317,7 @@ Usage: #example
 るものであり、活発な卵巣機能を有する閉経前の患者ではアロマ ターゼを阻害する効果は不十分であると予想されること、並びに閉 経前の患者では使用経験がないことを考慮して、閉経前患者に対し 使用しないこと。
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "8.3"
   * code = https://pmda.jp/#8
   * code.text = "8.3"
@@ -326,7 +326,7 @@ Usage: #example
 本剤の投与によって、骨粗鬆症、骨折が起こりやすくなるので、 骨密度等の骨状態を定期的に観察することが望ましい。
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "8.4"
   * code = https://pmda.jp/#8
   * code.text = "8.4"
@@ -345,7 +345,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "9.2 腎機能障害患者"
   * code = https://pmda.jp/#9
   * code.text = "9.2 腎機能障害患者"
@@ -354,7 +354,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "9.2.1 重度の腎障害のある患者"
   * code = https://pmda.jp/#9
   * code.text = "9.2.1 重度の腎障害のある患者"
@@ -364,7 +364,7 @@ Usage: #example
 は実施していない。
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "9.3 肝機能障害患者"
   * code = https://pmda.jp/#9
   * code.text = "9.3 肝機能障害患者"
@@ -374,7 +374,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "9.3.1 重度の肝障害のある患者"
   * code = https://pmda.jp/#9
   * code.text = "9.3.1 重度の肝障害のある患者"
@@ -384,7 +384,7 @@ Usage: #example
 は実施していない。
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "9.4"
   * code = https://pmda.jp/#9
   * code.text = "9.4"
@@ -394,7 +394,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[+]
+* section.section[+]
   * title = "9.5 妊婦"
   * code = https://pmda.jp/#9
   * code.text = "9.5 妊婦"
@@ -403,7 +403,7 @@ Usage: #example
 妊婦又は妊娠している可能性のある女性には投与しないこと。本剤 は、閉経後の患者を対象とするため、妊婦に対する投与は想定され ていないが、妊婦への投与の安全性については次の知見がある。動 物実験(ラット)で、分娩障害、妊娠期間の延長、吸収胚数の増加 及び生存胎児数の減少が認められている。また動物実験(ウサギ)で、 流産、吸収胚数の増加及び胎児体重の低下が認められている。しか し両種による動物実験で、催奇形性は認められてはいない。本剤の 妊婦又は妊娠している可能性のある女性における臨床使用経験はな い。[2.1参照]
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "9.6 授乳婦"
   * code = https://pmda.jp/#9
   * code.text = "9.6 授乳婦"
@@ -422,7 +422,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "10.1"
   * code = https://pmda.jp/#9
   * code.text = "10.1"
@@ -432,7 +432,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#1
   * emptyReason.text = "Not Applicable"
 
-* section[+]
+* section.section[+]
   * title = "10.2 併用注意(併用に注意すること)"
   * code = https://pmda.jp/#10
   * code.text = "10.2 併用注意(併用に注意すること)"
@@ -476,7 +476,7 @@ Usage: #example
  が認められた場合には投与を中止するなど適切な処置を行うこと。
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "11.1 重大な副作用"
   * code = https://pmda.jp/#11
   * code.text = "11.1 重大な副作用"
@@ -486,7 +486,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "11.1.1"
   * code = https://pmda.jp/#11
   * code.text = "11.1.1"
@@ -497,7 +497,7 @@ Usage: #example
 黄疸があらわれることがある。
 </div>"""
 
-* section[+]
+* section.section[+]
   * title = "11.1 重大な副作用"
   * code = https://pmda.jp/#11
   * code.text = "11.1 重大な副作用"
@@ -666,7 +666,7 @@ Usage: #example
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text =  "Section Heading"
 
-* section[+]
+* section.section[+]
   * title = "14.1 薬剤交付時の注意"
   * code = https://pmda.jp/#14
   * code.text = "14.1 薬剤交付時の注意"
