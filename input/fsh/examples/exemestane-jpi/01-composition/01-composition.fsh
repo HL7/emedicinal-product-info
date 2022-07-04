@@ -25,7 +25,12 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
 <p>アロマターゼ阻害剤/閉経後乳癌治療剤</p>
 <p>エキセメスタン錠</p>
-<p><img alt="Aromasin Tablets 25mg" src="figure0-aromasin-header.png">Aromasin Tablets 25mg</img></p>
+<p>
+    <img src="figure0-aromasin-header.png" alt="Aromasin Tablets 25mg"/>
+</p>
+<p>
+    <img src="figure0-aromasin-header.png" alt="Aromasin Tablets 25mg"/>
+</p>
 </div>"""
 
 * section[+]
@@ -85,7 +90,7 @@ Usage: #example
   * code.text = "3.1 組成"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
-        <table border="1">
+        <table border="1" width="100%">
             <tr>
                 <td style="text-align:center">
                     <p>販売名 </p></td>
@@ -149,7 +154,7 @@ Usage: #example
                     <img alt="Aromasin Tablets 25mg" src="aromasin-tablet-shape-above.png"/>
                 </td>
                 <td style="text-align:center">
-                    <img alt="Aromasin tablet shape. Under the tablet" src="aromasin-tablet-shape-under.png"/>
+                    <p>image2</p>
                 </td>
                 <td style="text-align:center">
                     <p>image3</p>
@@ -273,7 +278,7 @@ Usage: #example
 本剤の使用による嗜眠、傾眠、無力(症)及びめまいが報告され ており、このような症状がある場合、機械操作や自動車の運転はさ せないよう十分注意すること。
 </div>"""
 
-* section[9]
+* section[+]
   * title = "9. 特定の背景を有する患者に関する注意" // 9. PRECAUTIONS CONCERNING PATIENTS WITH SPECIFIC BACKGROUNDS
   * code = https://pmda.jp/#9
   * code.text = "特定の背景を有する患者に関する注意"
@@ -342,7 +347,7 @@ Usage: #example
 投与しないこと。本剤は、閉経後の患者を対象とするため、授乳婦に 対する投与は想定されていないが、授乳婦への投与の安全性について は次の知見がある。動物実験(ラット)で乳汁中への移行が認められ ている。本剤の授乳中の女性における臨床使用経験はない。[2.2参照]
 </div>"""
 
-* section[10]
+* section[+]
   * title = "10. 相互作用" //10. INTERACTIONS
   * code = https://pmda.jp/#10
   * code.text = "10. 相互作用"
@@ -394,7 +399,7 @@ Usage: #example
         </table>
 </div>"""
 
-* section[11]
+* section[+]
   * title = "11. 副作用" //11. ADVERSE REACTIONS
   * code = https://pmda.jp/#11
   * code.text = "11. 副作用"
@@ -597,3 +602,5 @@ Usage: #example
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
 PTP包装の薬剤はPTPシートから取り出して服用するよう指導するこ と。PTPシートの誤飲により、硬い鋭角部が食道粘膜へ刺入し、更に は穿孔をおこして縦隔洞炎等の重篤な合併症を併発することがある。
 </div>"""
+
+
