@@ -26,7 +26,7 @@ Usage: #example
 <p>アロマターゼ阻害剤/閉経後乳癌治療剤</p>
 <p>エキセメスタン錠</p>
 <p>
-    <img src="figure0-aromasin-header.png" alt="Aromasin Tablets 25mg" width="400" height="500"/>
+    <img src="figure0-aromasin-header.png" alt="Aromasin Tablets 25mg"/>
 </p>
 </div>"""
 
