@@ -4,8 +4,9 @@ Description: "Ibrance Patient Package Leaflet"
 Usage: #example
 
 * status = #final
-* type = $loinc#42230-3
+* type = http://loinc.org#42230-3
 * type.text = "SPL PATIENT PACKAGE INSERT SECTION"
+* subject = Reference(ibrancetabletsauth) //reference to the authorization
 * date = "2002-08-01T13:28:17Z"
 
 // Reference to Organization: Marketing Authorization Holder
@@ -17,12 +18,12 @@ Usage: #example
 * language = #en
 
 * section[+]
-* title = "PATIENT PACKAGE INSERT SECTION"
-* id = "560f9fe6-7134-4542-90bd-dd2224024a77"
-* code = $loinc#42230-3
-* code.text = "SPL PATIENT PACKAGE INSERT SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * title = "PATIENT PACKAGE INSERT SECTION"
+  * id = "560f9fe6-7134-4542-90bd-dd2224024a77"
+  * code = http://loinc.org#42230-3
+  * code.text = "SPL PATIENT PACKAGE INSERT SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <p>PATIENT INFORMATION</p>
     <p>IBRANCE<sup>®</sup>(EYE-brans)</p>
     <p>(palbociclib)</p>
@@ -30,12 +31,12 @@ Usage: #example
 </div>"""
 
 * section[=].section[+]
-* title = "What is the most important information I should know about IBRANCE?"
-* id = "b30ca09b-538c-438b-9362-b3bb06fe721e"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * title = "What is the most important information I should know about IBRANCE?"
+  * id = "b30ca09b-538c-438b-9362-b3bb06fe721e"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <p>IBRANCE may cause serious side effects, including:</p>
     <p>Low white blood cell counts (neutropenia). Low white blood cell counts are very common when taking IBRANCE and may cause serious infections that can lead to death. Your healthcare provider should check your white blood cell counts before and during treatment.</p>
     <p>If you develop low white blood cell counts during treatment with IBRANCE, your healthcare provider may stop your treatment, decrease your dose, or may tell you to wait to begin your treatment cycle. Tell your healthcare provider right away if you have signs and symptoms of low white blood cell counts or infections such as fever and chills.</p>
@@ -50,13 +51,13 @@ Usage: #example
 </div>"""
 
 * section[=].section[+]
-* id = "c2102a92-28bf-414d-921c-66fc1c6ee9d7"
-* title = "What is IBRANCE?"
-* id = "3e315c68-9ff3-474f-859b-0eef8ea68f3e"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * id = "c2102a92-28bf-414d-921c-66fc1c6ee9d7"
+  * title = "What is IBRANCE?"
+  * id = "3e315c68-9ff3-474f-859b-0eef8ea68f3e"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <p>IBRANCE is a prescription medicine used in adults to treat hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative breast cancer that has spread to other parts of the body (metastatic) in combination with:</p>
     <ul>
         <li>an aromatase inhibitor as the first hormonal based therapy in postmenopausal women or in men, or</li>
@@ -67,13 +68,13 @@ Usage: #example
 </div>"""
 
 * section[=].section[+]
-* id = "39f88c38-d19a-42a9-ba06-1e962df8cc3b"
-* title = "Before taking IBRANCE, tell your healthcare provider about all of your medical conditions, including if you:"
-* id = "d482615f-f669-4668-8402-e99d8a66b7a4"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * id = "39f88c38-d19a-42a9-ba06-1e962df8cc3b"
+  * title = "Before taking IBRANCE, tell your healthcare provider about all of your medical conditions, including if you:"
+  * id = "d482615f-f669-4668-8402-e99d8a66b7a4"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <ul>
         <li>have fever, chills, or any other signs or symptoms of infection.</li>
         <li>have liver or kidney problems.</li>
@@ -92,12 +93,12 @@ Usage: #example
 </div>"""
 
 * section[=].section[+]
-* title = "How should I take IBRANCE?"
-* id = "bcef6dcc-92f6-4d4c-b81e-da747b966288"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * title = "How should I take IBRANCE?"
+  * id = "bcef6dcc-92f6-4d4c-b81e-da747b966288"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <ul>
         <li>Take IBRANCE exactly as your healthcare provider tells
             you.</li>
@@ -122,12 +123,12 @@ Usage: #example
 </div>"""
 
 * section[=].section[+]
-* title = "What are the possible side effects of IBRANCE?"
-* id = "5830ab77-7a1b-4aa2-b985-6be1a4829ffe"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * title = "What are the possible side effects of IBRANCE?"
+  * id = "5830ab77-7a1b-4aa2-b985-6be1a4829ffe"
+  * code = http://loinc.org#42229-5 
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <p>IBRANCE may cause serious side effects. See <span id="b30ca09b-538c-438b-9362-b3bb06fe721e">"WHAT IS THE MOST IMPORTANT INFORMATION I SHOULD KNOW ABOUT IBRANCE?"</span></p>
     <p>The most common side effects of IBRANCE when used with either letrozole or fulvestrant include:</p>
     <ul>
@@ -184,44 +185,44 @@ Usage: #example
 </div>"""
 
 * section[=].section[+]
-* title = "How should I store IBRANCE?"
-* id = "4246721d-42b3-4414-a8a8-7522e9596dbe"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * title = "How should I store IBRANCE?"
+  * id = "4246721d-42b3-4414-a8a8-7522e9596dbe"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <p>Store IBRANCE at 68 °F to 77 °F (20 °C to 25 °C) in the original blister pack.</p>
     <p><b>Keep IBRANCE and all medicines out of the reach of children.</b></p>
 </div>"""
 
 * section[=].section[+]
-* title = "General information about the safe and effective use of IBRANCE"
-* id = "7a518f83-ab14-4eac-9e10-bf88044e9d9f"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * title = "General information about the safe and effective use of IBRANCE"
+  * id = "7a518f83-ab14-4eac-9e10-bf88044e9d9f"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <p>Medicines are sometimes prescribed for purposes other than those listed in a Patient Information leaflet. Do not use IBRANCE for a condition for which it was not prescribed. Do not give IBRANCE to other people, even if they have the same symptoms you have. It may harm them. You can ask your pharmacist or healthcare provider for more information about IBRANCE that is written for health professionals.</p>
 </div>"""
 
 * section[=].section[+]
-* title = "What are the ingredients in IBRANCE?"
-* id = "f716ada5-4dd2-4f73-b411-ece8ba363e4a"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * title = "What are the ingredients in IBRANCE?"
+  * id = "f716ada5-4dd2-4f73-b411-ece8ba363e4a"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
     <p>Active ingredient: palbociclib</p>
     <p>Inactive ingredients: microcrystalline cellulose, colloidal silicon dioxide, crospovidone, magnesium stearate, succinic acid, HPMC 2910/hypromellose, titanium dioxide, triacetin, and FD&amp;C Blue #2/Indigo Carmine Aluminum Lake. In addition, the 75 mg and 125 mg tablets contain red iron oxide and the 100 mg tablets contain yellow iron oxide.</p>
 </div>"""
 
 * section[=].section[+]
-* title = "Manufacturer"
-* id = "b76074f4-699d-49b1-8e4f-79ecee43879c"
-* code = $loinc#42229-5
-* code.text = "SPL UNCLASSIFIED SECTION"
-* text.status = #additional
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+  * title = "Manufacturer"
+  * id = "b76074f4-699d-49b1-8e4f-79ecee43879c"
+  * code = http://loinc.org#42229-5
+  * code.text = "SPL UNCLASSIFIED SECTION"
+  * text.status = #additional
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
     <p><img src="PfizerLabsLogo"/></p>
     <p>LAB-1372-1.0</p>
     <p>For more information, go to www.IBRANCE.com or call 1-800-438-1985.</p>
