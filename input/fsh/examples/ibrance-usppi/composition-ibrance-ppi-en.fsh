@@ -47,7 +47,7 @@ Usage: #example
         <li>trouble breathing or shortness of breath</li>
     </ul>
     <p>Your healthcare provider may interrupt or stop treatment with IBRANCE completely if your symptoms are severe.</p>
-    <p>See <a href="5830ab77-7a1b-4aa2-b985-6be1a4829ffe"><b>WHAT ARE THE POSSIBLE SIDE EFFECTS OF IBRANCE?</b></a> for more information about side effects.</p>
+    <p>See <a href="#5830ab77-7a1b-4aa2-b985-6be1a4829ffe"><b>WHAT ARE THE POSSIBLE SIDE EFFECTS OF IBRANCE?</b></a> for more information about side effects.</p>
 </div>"""
 
 * section[=].section[+]
@@ -151,7 +151,7 @@ Usage: #example
         <tr>
             <td>
                 <ul>
-                    <li>infections (see "<a href="b30ca09b-538c-438b-9362-b3bb06fe721e"><b>What is the most
+                    <li>infections (see "<a href="#b30ca09b-538c-438b-9362-b3bb06fe721e"><b>What is the most
                         important information I should know about
                         IBRANCE?</b></a>")</li>
                     <li>tiredness</li>
