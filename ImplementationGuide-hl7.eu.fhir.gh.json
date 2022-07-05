@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-07-04T19:42:20+00:00",
+  "date": "2022-07-05T12:21:33+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -695,6 +695,34 @@
         "name": "9df66779-105d-4df6-b920-a3d134cec967",
         "description": "POLYVINYL ALCOHOL, UNSPECIFIED",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/IbrancePPIComposition"
+        },
+        "name": "IbrancePPIComposition",
+        "description": "Ibrance Patient Package Leaflet",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/PfizerLaboratoriesDivPfizerInc"
+        },
+        "name": "PfizerLaboratoriesDivPfizerInc",
+        "description": "Marketing Authorization Holder",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1675,6 +1703,34 @@
         "name": "fc31fc43-2825-41c6-8757-e1c0cab29712",
         "description": "HYPROMELLOSE, UNSPECIFIED ",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RegulatedAuthorization"
+          }
+        ],
+        "reference": {
+          "reference": "RegulatedAuthorization/ibrancetabletsauth"
+        },
+        "name": "ibrancetabletsauth",
+        "description": "Regulated Authorization",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/ibranceusppibundle"
+        },
+        "name": "Vulcan FHIR US FDA Patient Package Insert Test - Ibrance (palbociclib) Tablets",
+        "description": "Instance of exemestane tablets JPI for Connectathon testing",
+        "exampleBoolean": true
       }
     ],
     "page": {

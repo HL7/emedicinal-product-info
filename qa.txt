@@ -1,10 +1,10 @@
 ﻿GhImplementationGuide : Validation Results
 =========================================
 
-err = 466, warn = 33, info = 456
+err = 511, warn = 33, info = 463
 IG Publisher Version: 1.1.122
-Generated Mon Jul 04 19:43:53 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
- Build Errors : 3902 / 0 / 0
+Generated Tue Jul 05 12:22:54 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.fhir.gh#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health)
+ Build Errors : 4023 / 0 / 0
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb1650999516847 : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-cfsb3624842689213 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/AdministrableProductDefinition-d43df7b9-7815-4eb5-8350-945e4b77d46b : 0 / 0 / 1
@@ -15,6 +15,7 @@ Generated Mon Jul 04 19:43:53 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/Bundle-cfsb2705555581978 : 57 / 13 / 44
  /github/workspace/fsh-generated/resources/Bundle-cfsb5408804803222 : 57 / 13 / 44
  /github/workspace/fsh-generated/resources/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c : 13 / 0 / 13
+ /github/workspace/fsh-generated/resources/Bundle-ibranceusppibundle : 27 / 0 / 10
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRomswi : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRpmswi : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-CodeSystemUvEPIRrmswi : 0 / 0 / 2
@@ -22,6 +23,7 @@ Generated Mon Jul 04 19:43:53 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/CodeSystem-Example : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-Examplesmpc : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-gravitate : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Composition-IbrancePPIComposition : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Composition-cfsb1651231019151 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb1651234995610 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Composition-cfsb3957159408517 : 0 / 0 / 11
@@ -79,6 +81,7 @@ Generated Mon Jul 04 19:43:53 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/MedicinalProductDefinition-emacfsb1639760186202 : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/OperationDefinition-calculate : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Organization-7f257409-3b65-401d-a246-7ae51e298fbb : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/Organization-PfizerLaboratoriesDivPfizerInc : 17 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-cfsb1650997423990 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-cfsb1651149636159 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Organization-cfsb1651152112409 : 1 / 0 / 2
@@ -98,6 +101,7 @@ Generated Mon Jul 04 19:43:53 UTC 2022. FHIR version 5.0.0-snapshot1 for hl7.eu.
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb1529720709344 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-cfsb1651148079894 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/RegulatedAuthorization-emacfsb1639761980721 : 2 / 0 / 2
+ /github/workspace/fsh-generated/resources/RegulatedAuthorization-ibrancetabletsauth : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-AdministrableProductDefinition-uv-epi : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Bundle-uv-epi : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi : 0 / 1 / 1
@@ -487,6 +491,37 @@ ERROR: /github/workspace/output/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.xml.
 ERROR: /github/workspace/output/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
 ERROR: /github/workspace/output/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Bundle-d6758a9f-8d7d-436b-a925-42aa9682a47c.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 134, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.html#/html/body/div/div/nav/div/div/ul/li/a at Line 92, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 103, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 109, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.html#/html/body/div/div/nav/div/div/ul/li/a at Line 130, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.html#/html/body/div/div/div/div/div/div/p/img at Line 225, column 7164: The image source 'PfizerLabsLogo' cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-ibranceusppibundle.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-CodeSystemUvEPIRomswi.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-CodeSystemUvEPIRomswi.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-CodeSystemUvEPIRomswi.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
@@ -697,6 +732,36 @@ ERROR: /github/workspace/output/CodeSystem-gravitate.xml.html#/html/body/div/div
 ERROR: /github/workspace/output/CodeSystem-gravitate.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-gravitate.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-gravitate.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 134, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.html#/html/body/div/div/nav/div/div/ul/li/a at Line 92, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 103, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 109, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.html#/html/body/div/div/nav/div/div/ul/li/a at Line 130, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Composition-IbrancePPIComposition.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
 ERROR: /github/workspace/output/Composition-cfsb1651231019151.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /github/workspace/output/Composition-cfsb1651231019151.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
 ERROR: /github/workspace/output/Composition-cfsb1651231019151.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
@@ -2378,6 +2443,36 @@ ERROR: /github/workspace/output/Organization-7f257409-3b65-401d-a246-7ae51e298fb
 ERROR: /github/workspace/output/Organization-7f257409-3b65-401d-a246-7ae51e298fbb.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
 ERROR: /github/workspace/output/Organization-7f257409-3b65-401d-a246-7ae51e298fbb.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Organization-7f257409-3b65-401d-a246-7ae51e298fbb.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 134, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 92, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 103, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 109, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 130, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Organization-PfizerLaboratoriesDivPfizerInc.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
 ERROR: /github/workspace/output/Organization-cfsb1650997423990.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /github/workspace/output/Organization-cfsb1650997423990.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
 ERROR: /github/workspace/output/Organization-cfsb1650997423990.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
@@ -2949,6 +3044,36 @@ ERROR: /github/workspace/output/RegulatedAuthorization-emacfsb1639761980721.xml.
 ERROR: /github/workspace/output/RegulatedAuthorization-emacfsb1639761980721.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
 ERROR: /github/workspace/output/RegulatedAuthorization-emacfsb1639761980721.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/RegulatedAuthorization-emacfsb1639761980721.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 134, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.html#/html/body/div/div/nav/div/div/ul/li/a at Line 92, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 103, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 109, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.html#/html/body/div/div/nav/div/div/ul/li/a at Line 130, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 94, column 6: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 10: The link 'connections.html' for "Connections" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use-case-example.html' for "Use Case" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/RegulatedAuthorization-ibrancetabletsauth.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 132, column 6: The link 'copyright.html' for "Copyright" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 96, column 6: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 107, column 10: The link 'connections.html' for "Connections" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-AdministrableProductDefinition-uv-epi-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'ePI-structure.html' for "ePI structure" cannot be resolved
@@ -4651,6 +4776,38 @@ ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[1].resource.aut
 ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
 ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/d6758a9f-8d7d-436b-a925-42aa9682a47c: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== fsh-generated/resources/Bundle-ibranceusppibundle.json ==
+INFORMATION: Bundle/ibranceusppibundle: Bundle.entry[0].resource.ofType(Composition).type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://loinc.org#42230-3)
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[0].resource.ofType(Composition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[0].resource.ofType(Composition).author[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).identifier[0]: Identifier.system must be an absolute reference, not a local reference
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).identifier[0].system: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).identifier[0].system: @value cannot be empty
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).identifier[0].value: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).identifier[0].value: @value cannot be empty
+INFORMATION: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'https://PMDA-org-type.jp/' is unknown so the code cannot be validated
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).telecom[0].value: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).telecom[0].value: @value cannot be empty
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).telecom[1].value: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).telecom[1].value: @value cannot be empty
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].text: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].text: @value cannot be empty
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].line[0]: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].line[0]: @value cannot be empty
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].city: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].city: @value cannot be empty
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].country: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1].resource.ofType(Organization).address[0].country: @value cannot be empty
+INFORMATION: Bundle/ibranceusppibundle: Bundle.entry[2].resource.ofType(RegulatedAuthorization).type.coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[2].resource.ofType(RegulatedAuthorization).region[0].coding[0]: The code "us" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#us) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#us'
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[2]: Bundle entry missing fullUrl
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[2].resource.ofType(RegulatedAuthorization).holder: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/ibranceusppibundle: Bundle.entry[2].resource.ofType(RegulatedAuthorization).type.coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/ibranceusppibundle: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 == fsh-generated/resources/CodeSystem-CodeSystemUvEPIRomswi.json ==
 INFORMATION: CodeSystem/CodeSystemUvEPIRomswi: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-CodeSystemUvEPIRpmswi.json ==
@@ -4667,6 +4824,7 @@ INFORMATION: CodeSystem/Example: CodeSystem: CodeSystems SHOULD have a stated va
 INFORMATION: CodeSystem/Examplesmpc: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-gravitate.json ==
 INFORMATION: CodeSystem/gravitate: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/Composition-IbrancePPIComposition.json ==
 == fsh-generated/resources/Composition-cfsb1651231019151.json ==
 INFORMATION: Composition/cfsb1651231019151: Composition.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = https://spor.ema.europa.eu/#100000155538)
 INFORMATION: Composition/cfsb1651231019151: Composition.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
@@ -4790,8 +4948,8 @@ ERROR: Composition/emacfsb1639991356428: Composition.section[5].text.div: Illega
 INFORMATION: Composition/emacfsb1639991356428: Composition.section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 INFORMATION: Composition/emacfsb1639991356428: Composition.section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/' is unknown so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh.json ==
-WARNING: ImplementationGuide/hl7.eu.fhir.gh: ImplementationGuide.definition.resource[54].description: value should not start or finish with whitespace 'TITANIUM...DIOXIDE '
-WARNING: ImplementationGuide/hl7.eu.fhir.gh: ImplementationGuide.definition.resource[116].description: value should not start or finish with whitespace 'HYPROMELLOSE,...UNSPECIFIED '
+WARNING: ImplementationGuide/hl7.eu.fhir.gh: ImplementationGuide.definition.resource[56].description: value should not start or finish with whitespace 'TITANIUM...DIOXIDE '
+WARNING: ImplementationGuide/hl7.eu.fhir.gh: ImplementationGuide.definition.resource[118].description: value should not start or finish with whitespace 'HYPROMELLOSE,...UNSPECIFIED '
 == fsh-generated/resources/Ingredient-13beb88f-1df3-499d-9c74-4f5925a6f206.json ==
 INFORMATION: Ingredient/13beb88f-1df3-499d-9c74-4f5925a6f206: Ingredient.role.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Ingredient/13beb88f-1df3-499d-9c74-4f5925a6f206: Ingredient.substance.code.concept.coding[0]: Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta/' is unknown so the code cannot be validated
@@ -4947,6 +5105,25 @@ WARNING: OperationDefinition/calculate: OperationDefinition: cnl-0: 'Name should
 INFORMATION: Organization/7f257409-3b65-401d-a246-7ae51e298fbb: Organization.telecom[1]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
 INFORMATION: Organization/7f257409-3b65-401d-a246-7ae51e298fbb: Organization.type[0].coding[0]: Code System URI 'https://PMDA-org-type.jp/' is unknown so the code cannot be validated
 INFORMATION: Organization/7f257409-3b65-401d-a246-7ae51e298fbb: Organization.type[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi
+== fsh-generated/resources/Organization-PfizerLaboratoriesDivPfizerInc.json ==
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.identifier[0].system: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.identifier[0].system: @value cannot be empty
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.identifier[0].value: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.identifier[0].value: @value cannot be empty
+INFORMATION: Organization/PfizerLaboratoriesDivPfizerInc: Organization.type[0].coding[0]: Code System URI 'https://PMDA-org-type.jp/' is unknown so the code cannot be validated
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.telecom[0].value: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.telecom[0].value: @value cannot be empty
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.telecom[1].value: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.telecom[1].value: @value cannot be empty
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].text: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].text: @value cannot be empty
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].line[0]: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].line[0]: @value cannot be empty
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].city: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].city: @value cannot be empty
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].country: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: Organization/PfizerLaboratoriesDivPfizerInc: Organization.address[0].country: @value cannot be empty
 == fsh-generated/resources/Organization-cfsb1650997423990.json ==
 ERROR: Organization/cfsb1650997423990: Organization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 ERROR: Organization/cfsb1650997423990: Organization.identifier[1]: Identifier.system must be an absolute reference, not a local reference
@@ -5007,6 +5184,10 @@ ERROR: RegulatedAuthorization/cfsb1651148079894: RegulatedAuthorization.region[0
 INFORMATION: RegulatedAuthorization/emacfsb1639761980721: RegulatedAuthorization.type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 ERROR: RegulatedAuthorization/emacfsb1639761980721: RegulatedAuthorization.region[0].coding[0]: The code "eu" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#eu) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#eu'
 ERROR: RegulatedAuthorization/emacfsb1639761980721: RegulatedAuthorization.regulator: Unable to resolve resource with reference 'emacfsb1639015880655'
+== fsh-generated/resources/RegulatedAuthorization-ibrancetabletsauth.json ==
+INFORMATION: RegulatedAuthorization/ibrancetabletsauth: RegulatedAuthorization.type.coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+INFORMATION: RegulatedAuthorization/ibrancetabletsauth: RegulatedAuthorization.type.coding[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi
+ERROR: RegulatedAuthorization/ibrancetabletsauth: RegulatedAuthorization.region[0].coding[0]: The code "us" is not valid in the system urn:iso:std:iso:3166; The code provided (urn:iso:std:iso:3166#us) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:3166#us'
 == fsh-generated/resources/StructureDefinition-AdministrableProductDefinition-uv-epi.json ==
 == fsh-generated/resources/StructureDefinition-Bundle-uv-epi.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi'): The Implementation Guide contains no examples for this profile

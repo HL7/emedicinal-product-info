@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-04T19:42:20+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-05T12:21:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -753,6 +753,37 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Composition/IbrancePPIComposition>;
+         fhir:Reference.reference [ fhir:value "Composition/IbrancePPIComposition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IbrancePPIComposition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ibrance Patient Package Leaflet" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi>
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/PfizerLaboratoriesDivPfizerInc>;
+         fhir:Reference.reference [ fhir:value "Organization/PfizerLaboratoriesDivPfizerInc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PfizerLaboratoriesDivPfizerInc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Ingredient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -766,7 +797,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 48;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -783,7 +814,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 49;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -800,7 +831,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 50;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -817,7 +848,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 51;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -834,7 +865,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi>
        ]
      ], [
-       fhir:index 52;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -851,7 +882,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 53;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -865,7 +896,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation calculates an enhanced version of an ePI as well as" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -882,7 +913,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -896,7 +927,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Zinc Oxide" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 56;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -910,7 +941,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sodium Hydroxide" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -924,7 +955,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 58;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -938,7 +969,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulated Authorization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 59;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -952,7 +983,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -966,7 +997,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "50 mg/300 mg film-coated tablets" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 61;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -980,7 +1011,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufacturer" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 62;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -994,7 +1025,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item: Dovato 50 mg/300 mg film-coated tablets" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 63;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1008,7 +1039,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dovato 50 mg/300 mg film-coated tablets" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 64;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1022,7 +1053,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulated authorization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 65;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1036,7 +1067,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 66;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1050,7 +1081,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulator" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1064,7 +1095,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "dolutegravir" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1078,7 +1109,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "lamivudine" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1092,7 +1123,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "microcrystalline cellulose" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 70;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1106,7 +1137,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "sodium starch glycolate" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 71;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1120,7 +1151,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "magnesium stearate" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 72;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1134,7 +1165,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "mannitol" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 73;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1148,7 +1179,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package Leaflet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 74;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1162,7 +1193,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 75;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1176,7 +1207,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "English Instance of Dovato package insert for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 76;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1190,7 +1221,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Spanish Instance of Dovato package insert for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1207,7 +1238,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
        ]
      ], [
-       fhir:index 78;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1221,7 +1252,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "5 pre-filled pens, 3 ml (3.5 mg/ml)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 79;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1235,7 +1266,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "metacresol" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 80;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1249,7 +1280,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instance of Humalog package insert for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 81;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1263,7 +1294,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Humalog 100 U/ml 5 pre-filled pen" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 82;
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1277,7 +1308,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "List of Humalog package inserts for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 83;
+       fhir:index 85;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1291,7 +1322,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package Leaflet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 84;
+       fhir:index 86;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1305,7 +1336,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instance of Humalog package insert for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 85;
+       fhir:index 87;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1319,7 +1350,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Water for injections" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 86;
+       fhir:index 88;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1333,7 +1364,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Insulin Lispro" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 87;
+       fhir:index 89;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1347,7 +1378,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Trometamol" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 88;
+       fhir:index 90;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1361,7 +1392,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package Leaflet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 89;
+       fhir:index 91;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1375,7 +1406,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 90;
+       fhir:index 92;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1389,7 +1420,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hydrochloric acid" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 91;
+       fhir:index 93;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1403,7 +1434,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Glycerol" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 92;
+       fhir:index 94;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1420,7 +1451,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
        ]
      ], [
-       fhir:index 93;
+       fhir:index 95;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1437,7 +1468,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
        ]
      ], [
-       fhir:index 94;
+       fhir:index 96;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1454,7 +1485,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi>
        ]
      ], [
-       fhir:index 95;
+       fhir:index 97;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1471,7 +1502,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi>
        ]
      ], [
-       fhir:index 96;
+       fhir:index 98;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1485,7 +1516,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "instance of Monuril package insert for connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 97;
+       fhir:index 99;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1499,7 +1530,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "List of Humalog package inserts for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 98;
+       fhir:index 100;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1516,7 +1547,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
        ]
      ], [
-       fhir:index 99;
+       fhir:index 101;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1533,7 +1564,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
        ]
      ], [
-       fhir:index 100;
+       fhir:index 102;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1547,7 +1578,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "fosfomycin trometamol 3g" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 101;
+       fhir:index 103;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1561,7 +1592,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Monuril Granules for oral solution" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 102;
+       fhir:index 104;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1575,7 +1606,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Monuril 5 sachets of 8 g of granules (3 g fosfomycin)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 103;
+       fhir:index 105;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1589,7 +1620,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicinal Product" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 104;
+       fhir:index 106;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1603,7 +1634,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrable Product" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 105;
+       fhir:index 107;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1617,7 +1648,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulated Authorization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 106;
+       fhir:index 108;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1631,7 +1662,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Saccharin" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 107;
+       fhir:index 109;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1645,7 +1676,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Orange flavour" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 108;
+       fhir:index 110;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1659,7 +1690,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mandarin flavour" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 109;
+       fhir:index 111;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1673,7 +1704,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sucrose" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 110;
+       fhir:index 112;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1687,7 +1718,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product - 2 sachets of 8 g of granules" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 111;
+       fhir:index 113;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1701,7 +1732,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product - 1 sachet of 8 g of granules" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 112;
+       fhir:index 114;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1715,7 +1746,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package Leaflet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 113;
+       fhir:index 115;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1729,7 +1760,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "List of monuril package inserts for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 114;
+       fhir:index 116;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1746,7 +1777,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 115;
+       fhir:index 117;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1763,7 +1794,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi>
        ]
      ], [
-       fhir:index 116;
+       fhir:index 118;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1779,6 +1810,37 @@
          fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "RegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/ibrancetabletsauth>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/ibrancetabletsauth" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ibrancetabletsauth" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulated Authorization" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi";
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi>
+       ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/ibranceusppibundle>;
+         fhir:Reference.reference [ fhir:value "Bundle/ibranceusppibundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vulcan FHIR US FDA Patient Package Insert Test - Ibrance (palbociclib) Tablets" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instance of exemestane tablets JPI for Connectathon testing" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

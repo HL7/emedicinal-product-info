@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Organization/PfizerLaboratoriesDivPfizerInc> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PfizerLaboratoriesDivPfizerInc"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PfizerLaboratoriesDivPfizerInc\" </p></div><p><b>identifier</b>: id: ?ngen-9? (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: -unknown-(WORK), fax: -unknown-(WORK)</p><p><b>address</b>:  (WORK)</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "" ];
+     fhir:Identifier.value [ fhir:value "" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://PMDA-org-type.jp/" ];
+       fhir:Coding.code [ fhir:value "tbd" ];
+       fhir:Coding.display [ fhir:value "Marketing authorisation holder" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Manufacturer" ]
+  ];
+  fhir:Organization.name [ fhir:value "Pfizer, Inc."];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.text [ fhir:value "" ];
+     fhir:Address.line [
+       fhir:value "";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "" ];
+     fhir:Address.country [ fhir:value "" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Organization/PfizerLaboratoriesDivPfizerInc.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
