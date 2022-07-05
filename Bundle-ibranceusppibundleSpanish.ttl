@@ -1,0 +1,353 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/ibranceusppibundleSpanish> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ibranceusppibundleSpanish"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:d139b471-6c01-45d3-a566-01dcb505c149" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2002-12-02T00:00:00Z"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.resource [
+       a fhir:Composition;
+       fhir:Resource.id [ fhir:value "IbrancePPICompositionSpanish" ];
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi";
+           fhir:index 0;
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi>
+         ]
+       ];
+       fhir:Resource.language [ fhir:value "en" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"IbrancePPICompositionSpanish\"  (Language \"en\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-uv-epi.html\">Composition (ePI)</a></p></div><p><b>status</b>: final</p><p><b>type</b>: SPL PATIENT PACKAGE INSERT SECTION <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#42230-3)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href=\"#Organization_PfizerLaboratoriesDivPfizerInc\">See above (Organization/PfizerLaboratoriesDivPfizerInc)</a></p><p><b>title</b>: TEST PURPOSES ONLY - IBRANCE (palbociclib) Tablets</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-composition-attestation-mode.html\">CompositionAttestationMode</a>#official)</span></td><td>2020-12-02 12:00:00+0000</td></tr></table></div>"
+       ];
+       fhir:Composition.status [ fhir:value "final" ];
+       fhir:Composition.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:42230-3;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "42230-3" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "SPL PATIENT PACKAGE INSERT SECTION" ]
+       ];
+       fhir:Composition.subject [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/ibrancetabletsauth>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/ibrancetabletsauth" ]
+       ];
+       fhir:Composition.date [ fhir:value "2002-08-01T13:28:17Z"^^xsd:dateTime ];
+       fhir:Composition.author [
+         fhir:index 0;
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/PfizerLaboratoriesDivPfizerInc>;
+         fhir:Reference.reference [ fhir:value "Organization/PfizerLaboratoriesDivPfizerInc" ]
+       ];
+       fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - IBRANCE (palbociclib) Tablets" ];
+       fhir:Composition.confidentiality [ fhir:value "U" ];
+       fhir:Composition.attester [
+         fhir:index 0;
+         fhir:Composition.attester.mode [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/composition-attestation-mode" ];
+             fhir:Coding.code [ fhir:value "official" ]
+           ]
+         ];
+         fhir:Composition.attester.time [ fhir:value "2020-12-02T00:00:00.000Z"^^xsd:dateTime ]
+       ];
+       fhir:Composition.section [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "4a09b121-97f9-4bf7-8804-11fde2fbd945" ];
+         fhir:Composition.section.title [ fhir:value "INFORMACIÓN PARA EL PACIENTE" ];
+         fhir:Composition.section.code [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             a loinc:42230-3;
+             fhir:Coding.system [ fhir:value "http://loinc.org" ];
+             fhir:Coding.code [ fhir:value "42230-3" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "SPL PATIENT PACKAGE INSERT SECTION" ]
+         ];
+         fhir:Composition.section.text [
+           fhir:Narrative.status [ fhir:value "additional" ];
+           fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>IBRANCE <sup>®</sup> (AI-brans)<br/>(palbociclib)</b><br/>Comprimidos</p></div>"
+         ];
+         fhir:Composition.section.section [
+           fhir:index 0;
+           fhir:Element.id [ fhir:value "5790c3c4-e66a-4c76-9331-3722a6263a73" ];
+           fhir:Composition.section.title [ fhir:value "¿Cuál es la información más importante que debo saber sobre IBRANCE?" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>IBRANCE puede causar efectos secundarios graves, entre ellos:</b></p><p><b>Recuento bajo de glóbulos blancos (neutropenia).</b> Los recuentos bajos de glóbulos blancos son muy frecuentes cuando se toma IBRANCE y pueden causar infecciones graves que pueden producir la muerte. Su proveedor de atención médica debe verificar sus recuentos de glóbulos blancos antes del tratamiento y durante este.</p><p>Si presenta recuentos bajos de glóbulos blancos durante el tratamiento con IBRANCE, su proveedor de atención médica puede interrumpir el tratamiento, disminuir la dosis o indicarle que espere para comenzar el ciclo de tratamiento. Informe de inmediato a su proveedor de atención médica si presenta signos o síntomas de recuentos bajos de glóbulos blancos o de infección, como fiebre o escalofríos</p><p><b>Problemas pulmonares (neumonitis).</b> IBRANCE puede provocar una inflamación grave o potencialmente mortal en los pulmones durante el tratamiento lo cual puede conducir a la muerte. Informe a su proveedor de atención médica si tiene síntomas nuevos o si empeoraron, entre ellos:</p><ul><li>dolor en el pecho</li><li>tos con o sin mucosidad</li><li>problemas para respirar o falta de aliento</li></ul><p>Su proveedor de atención médica puede interrumpir o suspender el tratamiento con IBRANCE completamente si sus síntomas son graves.</p><p><b>Consulte <a href=\"#60fb2ab9-fb12-4187-93fe-83026e8c2264\">¿Cuáles son los posibles efectos secundarios de IBRANCE?</a> para obtener más información acerca de los efectos secundarios.</b></p></div>"
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Element.id [ fhir:value "e9d197a7-0505-4d90-9f5b-d855bb688a9f" ];
+           fhir:Composition.section.title [ fhir:value "¿Qué es IBRANCE?" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>IBRANCE es un medicamento de venta con receta que se utiliza en adultos para el tratamiento del cáncer de mama con receptor hormonal positivo (HR+) y receptor 2 del factor de crecimiento epidérmico humano negativo (HER2-) que se ha propagado a otras partes del cuerpo (metastásico) en combinación con:</p><ul><li>un inhibidor de la aromatasa como primer tratamiento a base de hormonas en mujeres posmenopáusicas o en hombres, o</li><li>fulvestrant para personas con progresión de la enfermedad después del tratamiento hormonal.</li></ul><p>Se desconoce si IBRANCE es seguro y eficaz en niños.</p></div>"
+           ]
+         ], [
+           fhir:index 2;
+           fhir:Element.id [ fhir:value "7ec4aa59-869a-404f-9f04-c5f8596bcf5d" ];
+           fhir:Composition.section.title [ fhir:value "Antes de tomar IBRANCE, dígale a su proveedor de atención médica acerca de sus afecciones médicas, incluso si le sucede lo siguiente:" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>tiene fiebre, escalofríos o cualquier otro signo o síntoma de infección.</li><li>tiene problemas hepáticos o renales.</li><li>está embarazada o tiene previsto quedar embarazada. IBRANCE puede hacerle daño al bebé en gestación.</li><ul><li>Las mujeres con capacidad de quedar embarazadas deben utilizar un método anticonceptivo eficaz durante el tratamiento y, como mínimo, durante 3 semanas después de tomar la última dosis de IBRANCE. Es posible que su proveedor de atención médica le pida que se haga una prueba de embarazo antes de comenzar el tratamiento con IBRANCE.</li><li>Los hombres que tengan parejas del sexo femenino que puedan quedar embarazadas deben utilizar un método anticonceptivo eficaz durante el tratamiento con IBRANCE y, como mínimo, durante 3 meses después de tomar la última dosis de IBRANCE.</li><li>Hable con su proveedor de atención médica sobre los métodos anticonceptivos que puedan ser adecuados para usted durante este tiempo.</li><li>Si queda embarazada o cree que está embarazada, dígaselo a su proveedor de atención médica inmediatamente.</li></ul><li>está amamantando o planea hacerlo. Se desconoce si IBRANCE se excreta en la leche materna. No amamante mientras esté en tratamiento con IBRANCE ni durante 3 semanas después de tomar la última dosis.</li></ul><p><b>Informe a su proveedor de atención médica sobre todos los medicamentos que toma, incluidos</b> los de venta con receta y los de venta libre, las vitaminas y los suplementos a base de hierbas. IBRANCE y otros medicamentos pueden interactuar entre sí y causar efectos secundarios.</p></div>"
+           ]
+         ], [
+           fhir:index 3;
+           fhir:Element.id [ fhir:value "7ca6c680-4601-47df-8deb-f87d20b60641" ];
+           fhir:Composition.section.title [ fhir:value "¿Cómo debo tomar IBRANCE?" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Tome IBRANCE exactamente como se lo indique su proveedor de atención médica.</li><li>Los comprimidos de IBRANCE pueden tomarse con o sin alimentos.</li><li>IBRANCE debe tomarse aproximadamente a la misma hora todos los días.</li><li>Trague los comprimidos enteros. No mastique, triture ni parta los comprimidos de IBRANCE antes de tragarlos.</li><li>No tome ningún comprimido de IBRANCE que esté roto, agrietado o que parezca estar dañado.</li><li>Evitar consumir toronja (pomelo) y productos de toronja durante el tratamiento con IBRANCE. La toronja puede aumentar la cantidad de IBRANCE en la sangre.</li><li>No modifique su dosis ni deje de tomar IBRANCE a menos que se lo indique su proveedor de atención médica.</li><li>Si olvida una dosis de IBRANCE o vomita después de tomar una dosis de IBRANCE, no tome otra dosis ese día. Tome la siguiente dosis en su horario habitual.</li><li>Si toma una dosis excesiva de IBRANCE, llame de inmediato a su proveedor de atención médica o diríjase a la sala de emergencias del hospital más cercano.</li></ul></div>"
+           ]
+         ], [
+           fhir:index 4;
+           fhir:Element.id [ fhir:value "60fb2ab9-fb12-4187-93fe-83026e8c2264" ];
+           fhir:Composition.section.title [ fhir:value "¿Cuáles son los posibles efectos secundarios de IBRANCE?" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>IBRANCE puede causar efectos secundarios graves. Consulte <a href=\"\">\"¿Cuál es la información más importante que debo saber sobre IBRANCE?\"</a></b></p><p><b>Los efectos secundarios más frecuentes de IBRANCE cuando se usa con letrozol o fulvestrant incluyen:</b></p><ul><li>Los recuentos bajos de glóbulos rojos y los recuentos bajos de plaquetas son frecuentes con IBRANCE. Llame de inmediato a su proveedor de atención médica si presenta cualquiera de estos síntomas durante el tratamiento:<ul><li>mareos</li><li>falta de aliento</li><li>debilidad</li><li>sangrado o formación de moretones con más facilidad</li><li>hemorragia nasal</li></ul></li><li>infecciones (consultar <a href=\"\">\"¿Cuál es la información más importante que debo saber sobre IBRANCE?</a> \")</li><li>fatiga</li><li>náuseas</li><li>llagas bucales</li><li>valores anormales en las pruebas de función hepática</li><li>diarrea</li><li>caída o pérdida del cabello</li><li>vómitos</li><li>erupción cutánea</li><li>falta de apetito</li></ul><p>IBRANCE puede causar problemas de fertilidad en los hombres. Esto puede afectar su capacidad de engendrar un hijo. Si esto le preocupa, antes de tomar IBRANCE hable con su proveedor de atención médica sobre sus opciones de planificación familiar.</p><p>Estos no son todos los efectos secundarios posibles de IBRANCE.</p><p>Llame a su médico para que le asesore sobre los efectos secundarios. Puede reportar los efectos secundarios a la FDA llamando al 1-800-FDA-1088.</p></div>"
+           ]
+         ], [
+           fhir:index 5;
+           fhir:Element.id [ fhir:value "5700baec-4fac-4a90-bd40-80b4d5bcfb47" ];
+           fhir:Composition.section.title [ fhir:value "¿Cómo debo conservar IBRANCE?" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Conserve IBRANCE entre 68 °F y 77 °F (de 20 °C a 25 °C) en el paquete original de blíster.</li></ul><p><b>Mantenga IBRANCE y todos los medicamentos fuera del alcance de los niños.</b></p></div>"
+           ]
+         ], [
+           fhir:index 6;
+           fhir:Element.id [ fhir:value "2a746afc-f607-4378-a8c6-bf9ff0b1c90f" ];
+           fhir:Composition.section.title [ fhir:value "Información general sobre el uso seguro y eficaz de IBRANCE" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>A veces los medicamentos se recetan para fines distintos de los descritos en el folleto de información para el paciente. No use IBRANCE para una afección para la que no se recetó. No les dé IBRANCE a otras personas, incluso si tienen los mismos síntomas que usted, porque podría hacerles daño. Puede pedirle a su farmacéutico o proveedor de atención médica más información sobre IBRANCE redactada para profesionales de la salud.</p></div>"
+           ]
+         ], [
+           fhir:index 7;
+           fhir:Element.id [ fhir:value "75762a44-fc4a-4f19-9464-78013b613c57" ];
+           fhir:Composition.section.title [ fhir:value "¿Cuáles son los ingredientes de IBRANCE?" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Principio activo: palbociclib</p><p>Excipientes: Celulosa microcristalina, dióxido de silicio coloidal, crospovidona, estearato de magnesio, ácido succínico, HPMC 2910/hipromelosa, dióxido de titanio, triacetín y FD&amp;C Azul No. 2 laca alumínica de carmín de índigo. Además, los comprimidos de 75 mg y 125 mg tienen óxido de hierro rojo y los comprimidos de 100 mg tienen óxido de hierro amarillo.</p></div>"
+           ]
+         ], [
+           fhir:index 8;
+           fhir:Element.id [ fhir:value "44024188-2e64-4976-95de-d906f72ff2f2" ];
+           fhir:Composition.section.title [ fhir:value "Manufacturer" ];
+           fhir:Composition.section.code [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               a loinc:42229-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "42229-5" ]
+             ];
+             fhir:CodeableConcept.text [ fhir:value "SPL UNCLASSIFIED SECTION" ]
+           ];
+           fhir:Composition.section.text [
+             fhir:Narrative.status [ fhir:value "additional" ];
+             fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><img src=\"UUID-IBRANCE-05\"/></p><p>LAB-1372-1.0</p><p>Para obtener más información, visite www.IBRANCE.com o llame al 1-800-438-1985.</p></div>"
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.resource [
+       a fhir:Organization;
+       fhir:Resource.id [ fhir:value "PfizerLaboratoriesDivPfizerInc" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PfizerLaboratoriesDivPfizerInc\" </p></div><p><b>identifier</b>: id: ?ngen-9? (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: Pfizer, Inc.</p><p><b>telecom</b>: ph: -unknown-(WORK), fax: -unknown-(WORK)</p><p><b>address</b>:  (WORK)</p></div>"
+       ];
+       fhir:Organization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "" ];
+         fhir:Identifier.value [ fhir:value "" ]
+       ];
+       fhir:Organization.active [ fhir:value "true"^^xsd:boolean ];
+       fhir:Organization.type [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://PMDA-org-type.jp/" ];
+           fhir:Coding.code [ fhir:value "tbd" ];
+           fhir:Coding.display [ fhir:value "Marketing authorisation holder" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Manufacturer" ]
+       ];
+       fhir:Organization.name [ fhir:value "Pfizer, Inc." ];
+       fhir:Organization.telecom [
+         fhir:index 0;
+         fhir:ContactPoint.system [ fhir:value "phone" ];
+         fhir:ContactPoint.value [ fhir:value "" ];
+         fhir:ContactPoint.use [ fhir:value "work" ]
+       ], [
+         fhir:index 1;
+         fhir:ContactPoint.system [ fhir:value "fax" ];
+         fhir:ContactPoint.value [ fhir:value "" ];
+         fhir:ContactPoint.use [ fhir:value "work" ]
+       ];
+       fhir:Organization.address [
+         fhir:index 0;
+         fhir:Address.use [ fhir:value "work" ];
+         fhir:Address.type [ fhir:value "physical" ];
+         fhir:Address.text [ fhir:value "" ];
+         fhir:Address.line [
+           fhir:value "";
+           fhir:index 0
+         ];
+         fhir:Address.city [ fhir:value "" ];
+         fhir:Address.country [ fhir:value "" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.resource [
+       a fhir:RegulatedAuthorization;
+       fhir:Resource.id [ fhir:value "ibrancetabletsauth" ];
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi";
+           fhir:index 0;
+           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi>
+         ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ibrancetabletsauth\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RegulatedAuthorization-uv-epi.html\">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: NDA212436 (OFFICIAL)</p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (Thesaurus.owl#C73594)</span></p><p><b>region</b>: United States <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#us)</span></p><p><b>status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-publication-status.html\">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2002-03-30 01:28:17+0000</p><p><b>holder</b>: <a href=\"#Organization_PfizerLaboratoriesDivPfizerInc\">See above (Organization/PfizerLaboratoriesDivPfizerInc)</a></p></div>"
+       ];
+       fhir:RegulatedAuthorization.identifier [
+         fhir:index 0;
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.3.150" ];
+         fhir:Identifier.value [ fhir:value "NDA212436" ]
+       ];
+       fhir:RegulatedAuthorization.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+           fhir:Coding.code [ fhir:value "C73594" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Marketing Authorisation" ]
+       ];
+       fhir:RegulatedAuthorization.region [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+           fhir:Coding.code [ fhir:value "us" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "United States" ]
+       ];
+       fhir:RegulatedAuthorization.status [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ];
+           fhir:Coding.code [ fhir:value "active" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Active" ]
+       ];
+       fhir:RegulatedAuthorization.statusDate [ fhir:value "2002-03-30T13:28:17Z"^^xsd:dateTime ];
+       fhir:RegulatedAuthorization.holder [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/PfizerLaboratoriesDivPfizerInc>;
+         fhir:Reference.reference [ fhir:value "Organization/PfizerLaboratoriesDivPfizerInc" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Bundle/ibranceusppibundleSpanish.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-07-05T15:30:33+00:00",
+  "date": "2022-07-05T18:45:13+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -707,6 +707,34 @@
           "reference": "Composition/IbrancePPIComposition"
         },
         "name": "IbrancePPIComposition",
+        "description": "Ibrance Patient Package Leaflet",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/IbrancePPICompositionEnglish"
+        },
+        "name": "IbrancePPICompositionEnglish",
+        "description": "Ibrance Patient Package Leaflet",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/IbrancePPICompositionSpanish"
+        },
+        "name": "IbrancePPICompositionSpanish",
         "description": "Ibrance Patient Package Leaflet",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
       },
@@ -1727,6 +1755,34 @@
         ],
         "reference": {
           "reference": "Bundle/ibranceusppibundle"
+        },
+        "name": "Vulcan FHIR US FDA Patient Package Insert Test - Ibrance (palbociclib) Tablets",
+        "description": "Instance of exemestane tablets JPI for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/ibranceusppibundleEnglish"
+        },
+        "name": "Vulcan FHIR US FDA Patient Package Insert Test - Ibrance (palbociclib) Tablets",
+        "description": "Instance of exemestane tablets JPI for Connectathon testing",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/ibranceusppibundleSpanish"
         },
         "name": "Vulcan FHIR US FDA Patient Package Insert Test - Ibrance (palbociclib) Tablets",
         "description": "Instance of exemestane tablets JPI for Connectathon testing",
