@@ -2,7 +2,7 @@ Instance: calculate
 InstanceOf: OperationDefinition
 Usage: #definition
 * url = "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate"
-* name = "calcuate"
+* name = "calculate"
 * title = "calculate"
 * status = #active
 * kind = #operation
