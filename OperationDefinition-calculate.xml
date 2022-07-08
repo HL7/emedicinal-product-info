@@ -5,7 +5,7 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>calculate</h2><p>OPERATION: calculate</p><p>The official URL for this operation definition is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate</pre><div><p>This operation calculates an enhanced version of an ePI as well as</p>
 </div><p>URL: [base]/$calculate</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ips</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>IPS bundle</p>
-</div></td></tr><tr><td>IN</td><td>epi</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>epi Bundle</p>
+</div></td></tr><tr><td>IN</td><td>epi</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>ePI identifier Bundle</p>
 </div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle</p>
 </div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://build.fhir.org/bundle.html">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle extracts</p>
 </div></td></tr></table></div>
@@ -16,7 +16,7 @@
   <title value="calculate"/>
   <status value="active"/>
   <kind value="operation"/>
-  <date value="2022-07-08T09:27:24+00:00"/>
+  <date value="2022-07-08T09:29:32+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -43,7 +43,7 @@
     <use value="in"/>
     <min value="1"/>
     <max value="1"/>
-    <documentation value="epi Bundle"/>
+    <documentation value="ePI identifier Bundle"/>
     <type value="Bundle"/>
   </parameter>
   <parameter>
