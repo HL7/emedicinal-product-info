@@ -10,15 +10,15 @@
   fhir:Resource.id [ fhir:value "calculate"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>calcuate</h2><p>OPERATION: calcuate</p><p>The official URL for this operation definition is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate</pre><div><p>This operation calculates an enhanced version of an ePI as well as</p>\n</div><p>URL: [base]/$calculate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ips</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>IPS bundle</p>\n</div></td></tr><tr><td>IN</td><td>epi</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>epi Bundle</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle extracts</p>\n</div></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>calculate</h2><p>OPERATION: calculate</p><p>The official URL for this operation definition is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate</pre><div><p>This operation calculates an enhanced version of an ePI as well as</p>\n</div><p>URL: [base]/$calculate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ips</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>IPS bundle</p>\n</div></td></tr><tr><td>IN</td><td>epi</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>epi Bundle</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/bundle.html\">Bundle</a></td><td/><td><div><p>Enhanced epi Bundle extracts</p>\n</div></td></tr></table></div>"
   ];
   fhir:OperationDefinition.url [ fhir:value "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate"];
   fhir:OperationDefinition.version [ fhir:value "0.1.0"];
-  fhir:OperationDefinition.name [ fhir:value "calcuate"];
+  fhir:OperationDefinition.name [ fhir:value "calculate"];
   fhir:OperationDefinition.title [ fhir:value "calculate"];
   fhir:OperationDefinition.status [ fhir:value "active"];
   fhir:OperationDefinition.kind [ fhir:value "operation"];
-  fhir:OperationDefinition.date [ fhir:value "2022-07-08T09:19:23+00:00"^^xsd:dateTime];
+  fhir:OperationDefinition.date [ fhir:value "2022-07-08T09:27:24+00:00"^^xsd:dateTime];
   fhir:OperationDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
