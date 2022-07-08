@@ -23,7 +23,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "epi Bundle"
+* parameter[=].documentation = "ePI identifier Bundle"
 * parameter[=].type = #Bundle
 
 * parameter[+].name = #return
