@@ -3,7 +3,7 @@ InstanceOf: OperationDefinition
 Usage: #definition
 * url = "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate"
 * name = "calcuate"
-* title = "calcuate"
+* title = "calculate"
 * status = #active
 * kind = #operation
 * description = "This operation calculates an enhanced version of an ePI as well as "
