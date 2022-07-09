@@ -24,17 +24,9 @@ Usage: #example
   * code.text = "SPL PATIENT PACKAGE INSERT SECTION"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
-                               <p>
-                                   <b>
-                                       IBRANCE
-                                       <sup>®</sup>
-                                       (AI-brans)
-                                       <br />
-                                       (palbociclib)
-                                   </b>
-                                   <br />
-                                   Comprimidos
-                               </p>
+<p>IBRANCE<sup>®</sup>(AI-brans)</p>
+<p>(palbociclib)</p>
+<p>Comprimidos</p>
 </div>"""
 
 * section[=].section[+]
@@ -246,7 +238,7 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
                                 <p>
-                                    <img src="UUID-IBRANCE-05" />
+                                    <img src="PfizerLabsLogo.jpg" />
                                 </p>
                                 <p>
                                     LAB-1372-1.0

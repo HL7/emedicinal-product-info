@@ -11,7 +11,7 @@ Usage: #example
 
 // Reference to Organization: Marketing Authorization Holder
 * author = Reference(PfizerLaboratoriesDivPfizerInc)
-* title = "TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"
+* title = "TEST PURPOSES ONLY - IBRANCE (palbociclib) Tablets"
 * confidentiality = #U
 * attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
 * attester.time =  "2020-12-02T00:00:00.000Z"
@@ -24,7 +24,6 @@ Usage: #example
   * code.text = "SPL PATIENT PACKAGE INSERT SECTION"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
-    <p>PATIENT INFORMATION</p>
     <p>IBRANCE<sup>®</sup>(EYE-brans)</p>
     <p>(palbociclib)</p>
     <p>Tablets</p>
@@ -221,7 +220,7 @@ Usage: #example
   * code.text = "SPL UNCLASSIFIED SECTION"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
-    <p><img src="PfizerLabsLogo"/></p>
+    <p><img src="PfizerLabsLogo.jpg"/></p>
     <p>LAB-1372-1.0</p>
     <p>For more information, go to www.IBRANCE.com or call 1-800-438-1985.</p>
     <p>This Patient Information has been approved by the U.S. Food and Drug Administration.</p>
