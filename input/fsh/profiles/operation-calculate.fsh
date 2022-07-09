@@ -2,8 +2,8 @@ Instance: calculate
 InstanceOf: OperationDefinition
 Usage: #definition
 * url = "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/calculate"
-* name = "calcuate"
-* title = "calcuate"
+* name = "calculate"
+* title = "calculate"
 * status = #active
 * kind = #operation
 * description = "This operation calculates an enhanced version of an ePI as well as "
@@ -23,7 +23,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "epi Bundle"
+* parameter[=].documentation = "ePI identifier Bundle"
 * parameter[=].type = #Bundle
 
 * parameter[+].name = #return
