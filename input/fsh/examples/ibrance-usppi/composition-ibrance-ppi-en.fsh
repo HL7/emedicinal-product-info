@@ -36,7 +36,8 @@ Usage: #example
   * code = http://loinc.org#42229-5
   * code.text = "SPL UNCLASSIFIED SECTION"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+    <a name="link2"/>     
     <p>IBRANCE may cause serious side effects, including:</p>
     <p>Low white blood cell counts (neutropenia). Low white blood cell counts are very common when taking IBRANCE and may cause serious infections that can lead to death. Your healthcare provider should check your white blood cell counts before and during treatment.</p>
     <p>If you develop low white blood cell counts during treatment with IBRANCE, your healthcare provider may stop your treatment, decrease your dose, or may tell you to wait to begin your treatment cycle. Tell your healthcare provider right away if you have signs and symptoms of low white blood cell counts or infections such as fever and chills.</p>
@@ -126,7 +127,7 @@ Usage: #example
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
     <a name="link1"/>     
-    <p>IBRANCE may cause serious side effects. See <a href="#b30ca09b-538c-438b-9362-b3bb06fe721e"><b>WHAT IS THE MOST IMPORTANT INFORMATION I SHOULD KNOW ABOUT IBRANCE?</b></a></p>
+    <p>IBRANCE may cause serious side effects. See <a href="#link2"><b>WHAT IS THE MOST IMPORTANT INFORMATION I SHOULD KNOW ABOUT IBRANCE?</b></a></p>
     <p>The most common side effects of IBRANCE when used with either letrozole or fulvestrant include:</p>
     <ul>
         <li>Low red blood cell counts and low platelet counts are common with IBRANCE. Call your healthcare provider right away if you develop any of these symptoms during treatment:</li>
@@ -150,7 +151,7 @@ Usage: #example
         <tr>
             <td>
                 <ul>
-                    <li>infections (see "<a href="#b30ca09b-538c-438b-9362-b3bb06fe721e"><b>What is the most
+                    <li>infections (see "<a href="#link2"><b>What is the most
                         important information I should know about
                         IBRANCE?</b></a>")</li>
                     <li>tiredness</li>

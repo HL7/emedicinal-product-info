@@ -43,7 +43,8 @@ Usage: #example
   * code = http://loinc.org#42229-5
   * code.text = "SPL UNCLASSIFIED SECTION"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+  <a name="link2"/>     
     <p>
                                     <b>IBRANCE puede causar efectos secundarios graves, entre ellos:</b>
                                 </p>
@@ -69,7 +70,7 @@ Usage: #example
                                 <p>
                                     <b>
                                         Consulte 
-                                        <a href="#60fb2ab9-fb12-4187-93fe-83026e8c2264">¿Cuáles son los posibles efectos secundarios de IBRANCE?</a>
+                                        <a href="#link1">¿Cuáles son los posibles efectos secundarios de IBRANCE?</a>
                                         para obtener más información acerca de los efectos secundarios.
                                     </b>
                                 </p>
@@ -146,11 +147,12 @@ Usage: #example
   * code = http://loinc.org#42229-5 
   * code.text = "SPL UNCLASSIFIED SECTION"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+  <a name="link1"/>     
 <p>
                                     <b>
                                         IBRANCE puede causar efectos secundarios graves. Consulte 
-                                        <a href="">"¿Cuál es la información más importante que debo saber sobre IBRANCE?"</a>
+                                        <a href="#link2">"¿Cuál es la información más importante que debo saber sobre IBRANCE?"</a>
                                     </b>
                                 </p>
                                 <p>
@@ -169,7 +171,7 @@ Usage: #example
                                     </li>
                                     <li>
                                         infecciones (consultar 
-                                        <a href="">"¿Cuál es la información más importante que debo saber sobre IBRANCE?</a>
+                                        <a href="#link2">"¿Cuál es la información más importante que debo saber sobre IBRANCE?</a>
                                         ")
                                     </li>
                                     <li>fatiga</li>
