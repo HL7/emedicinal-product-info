@@ -646,9 +646,9 @@ PTP包装の薬剤はPTPシートから取り出して服用するよう指導�
   * emptyReason.text = "Section Heading"
 
 * section[=].section[+]
-  * title = "" //16.1
+  * title = "16.1 血中濃度" //16.1
   * code = https://pmda.jp/#13
-  * code.text = ""
+  * code.text = "16.1 血中濃度"
   * text.status = #additional
   * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
  <p>日本人の閉経後進行乳癌患者にエキセメスタン25mgを1日1回反復投与したと き、tmaxは2.01±1.35時間、Cmaxは27.4±16.6ng/mL、AUCは115±76ng・h/mL、 終末相のt1/2は20.2±11.7時間であった。血漿中エキセメスタン濃度推移を下図 に示す。</p>
@@ -658,8 +658,6 @@ PTP包装の薬剤はPTPシートから取り出して服用するよう指導�
   <p>図 日本人閉経後進行乳癌患者にエキセメスタン25mgを1日1回29日間反復投 与した後の血漿中エキセメスタン濃度推移(n=15~16、平均値±標準偏差)</p>
   <p>日本人の閉経後健康成人女性に単回及び反復経口投与(0.5~50mg)後のエ キセメスタンのCmax及びAUCは用量比例的であった2~4)。</p>
   </div>"""
-  * emptyReason = https://pmda.jp/#1
-  * emptyReason.text = "Not Applicable"
 
 * section[=].section[+]
   * title = "16.2 吸収" //16.2
@@ -707,7 +705,7 @@ PTP包装の薬剤はPTPシートから取り出して服用するよう指導�
 し胎児に分布した5)。</p>
   </div>"""
 
-  * section[=].section[=].section[+]
+* section[=].section[=].section[+]
   * title = "16.3.3 蛋白結合率" //
   * code = https://pmda.jp/#13
   * code.text = "16.3.3 蛋白結合率"
@@ -754,7 +752,7 @@ PTP包装の薬剤はPTPシートから取り出して服用するよう指導�
   * emptyReason = https://pmda.jp/#2
   * emptyReason.text = "Section Heading"
 
-  * section[=].section[=].section[+]
+* section[=].section[=].section[+]
   * title = "16.6.1 腎機能障害患者における体内動態" //
   * code = https://pmda.jp/#13
   * code.text = "16.6.1 腎機能障害患者における体内動態"
