@@ -47,7 +47,7 @@ Usage: #example
         <li>trouble breathing or shortness of breath</li>
     </ul>
     <p>Your healthcare provider may interrupt or stop treatment with IBRANCE completely if your symptoms are severe.</p>
-    <p>See <a href="#5830ab77-7a1b-4aa2-b985-6be1a4829ffe"><b>WHAT ARE THE POSSIBLE SIDE EFFECTS OF IBRANCE?</b></a> for more information about side effects.</p>
+    <p>See <a href="#link1"><b>WHAT ARE THE POSSIBLE SIDE EFFECTS OF IBRANCE?</b></a> for more information about side effects.</p>
 </div>"""
 
 * section[=].section[+]
@@ -77,14 +77,12 @@ Usage: #example
         <li>have fever, chills, or any other signs or symptoms of infection.</li>
         <li>have liver or kidney problems.</li>
         <li>are pregnant, or plan to become pregnant. IBRANCE can harm your unborn baby.</li>
-        <li>
             <ul>
                 <li>Females who are able to become pregnant should use effective birth control during treatment and for at least 3 weeks after the last dose of IBRANCE. Your healthcare provider may ask you to take a pregnancy test before you start treatment with IBRANCE.</li>
                 <li>Males with female partners who can become pregnant should use effective birth control during treatment with IBRANCE for at least 3 months after the last dose of IBRANCE.</li>
                 <li>Talk to your healthcare provider about birth control methods that may be right for you during this time.</li>
                 <li>If you become pregnant or think you are pregnant, tell your healthcare provider right away.</li>
             </ul>
-        </li>
         <li>are breastfeeding or plan to breastfeed. It is not known if IBRANCE passes into your breast milk. Do not breastfeed during treatment with IBRANCE and for 3 weeks after the last dose.</li>
     </ul>
     <p><b>Tell your healthcare provider about all of the medicines you take, including </b>prescription and over-the-counter medicines, vitamins, and herbal supplements. IBRANCE and other medicines may affect each other causing side effects.</p>
@@ -126,7 +124,8 @@ Usage: #example
   * code = http://loinc.org#42229-5 
   * code.text = "SPL UNCLASSIFIED SECTION"
   * text.status = #additional
-  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">     
+  * text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+    <a name="link1"/>     
     <p>IBRANCE may cause serious side effects. See <a href="#b30ca09b-538c-438b-9362-b3bb06fe721e"><b>WHAT IS THE MOST IMPORTANT INFORMATION I SHOULD KNOW ABOUT IBRANCE?</b></a></p>
     <p>The most common side effects of IBRANCE when used with either letrozole or fulvestrant include:</p>
     <ul>
