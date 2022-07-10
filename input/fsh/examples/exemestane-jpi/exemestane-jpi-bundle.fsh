@@ -10,7 +10,7 @@ Description: "Instance of exemestane tablets JPI for Connectathon testing"
 * timestamp = "2002-08-01T13:28:17Z"
 
 // Composition
-* entry[+].resource = d19473ec-d66c-443d-bd8f-31398daaffee
+* entry[+].resource = aromasin-jpi-bundle-jp
 
 // Organizations
 * entry[+].resource = 7f257409-3b65-401d-a246-7ae51e298fbb
