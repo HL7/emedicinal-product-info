@@ -10,7 +10,7 @@
   "name": "GhImplementationGuide",
   "title": "Gravitate Health FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-07-10T01:20:38+00:00",
+  "date": "2022-07-10T01:52:20+00:00",
   "contact": [
     {
       "name": "Gravitate Health Project",
@@ -784,6 +784,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/aromasin-jpi-bundle-jp"
+        },
+        "name": "aromasin-jpi-bundle-jp",
+        "description": "Package Leaflet",
+        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Ingredient"
           }
         ],
@@ -1395,20 +1409,6 @@
         "name": "cfsb9935015469452",
         "description": "Marketing Authorization Holder",
         "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/d19473ec-d66c-443d-bd8f-31398daaffee"
-        },
-        "name": "d19473ec-d66c-443d-bd8f-31398daaffee",
-        "description": "Package Leaflet",
-        "exampleCanonical": "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
       },
       {
         "extension": [

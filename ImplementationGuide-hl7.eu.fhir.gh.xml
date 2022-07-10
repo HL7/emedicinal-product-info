@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-07-10T01:20:38+00:00"/>
+  <date value="2022-07-10T01:52:20+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -614,6 +614,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/aromasin-jpi-bundle-jp"/>
+      </reference>
+      <name value="aromasin-jpi-bundle-jp"/>
+      <description value="Package Leaflet"/>
+      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Ingredient"/>
       </extension>
       <reference>
@@ -1095,17 +1106,6 @@
       <name value="cfsb9935015469452"/>
       <description value="Marketing Authorization Holder"/>
       <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/d19473ec-d66c-443d-bd8f-31398daaffee"/>
-      </reference>
-      <name value="d19473ec-d66c-443d-bd8f-31398daaffee"/>
-      <description value="Package Leaflet"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
