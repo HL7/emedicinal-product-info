@@ -16,17 +16,22 @@ Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $list-order  = http://terminology.hl7.org/CodeSystem/list-order 
 
+
 Alias: $edqm = http://standardterms.edqm.eu
+
+// --- Substances
 Alias: $unii = http://fdasis.nlm.nih.gov
+Alias: $ginas = https://gsrs.ncats.nih.gov/ginas/app/beta
+Alias: $spor-sms = https://spor.ema.europa.eu/smswi  // Invented, to be checked
+
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $fake-man-sys = https://www.gravitatehealth.eu/sid/man
 Alias: $phpid = https://www.who-umc.org/phpid
 Alias: $gs1 = https://www.gs1.org/gtin
 Alias: $publication-status = http://hl7.org/fhir/publication-status
-Alias: $unii = http://fdasis.nlm.nih.gov
 Alias: $composition-attestation-mode = http://hl7.org/fhir/composition-attestation-mode
 
-Alias: $ginas = https://gsrs.ncats.nih.gov/ginas/app/beta
+
 
 Alias: $medicinal-product-name-part-type = http://hl7.org/fhir/medicinal-product-name-part-type
 Alias: $medicationknowledge-characteristic = 
@@ -36,7 +41,7 @@ http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic
 Alias: $spor-prod = https://spor.ema.europa.eu/pmswi // invented to be updated
 Alias: $spor = https://spor.ema.europa.eu
 Alias: $spor-org = https://spor.ema.europa.eu/omswi
-Alias: $spor-sms = https://spor.ema.europa.eu/smswi
+
 Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
 Alias: $spor-man = http://ema.europa.eu/fhir/marketingAuthorizationNumber
 
