@@ -14,11 +14,6 @@ NEW Implementation Guide is under development. New content soon to come
 
 ### How to use this document
 
-### Background
-#### ePI 
-#### Gravitate Health
-#### HL7 Vulcan Accelerator
-
 
 ### Authors and Contributors
 
