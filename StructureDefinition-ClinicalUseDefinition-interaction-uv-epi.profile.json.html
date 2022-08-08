@@ -1,38 +1,46 @@
-﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+<!-- get modelType -->
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>HL7.EU.FHIR.GH\ClinicalUseDefinition Interaction (ePI) - JSON Representation - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/pcsp.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -42,19 +50,19 @@
 
     <style type="text/css">h2{--heading-prefix:"12.6"}
     h3,h4,h5,h6{--heading-prefix:"12.6"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
         
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
-            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
           </a>
         </div>
-   <!-- <div id="family-nav">
+ <!--        <div id="family-nav">
           <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
         </div> -->
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
 
@@ -67,27 +75,27 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="toc.html">Table of Contents</a>
   </li>
@@ -97,8 +105,24 @@
   <li>
     <a href="background.html">Background</a>
   </li>
-  <li><a name="l166">​</a>
-    <a href="core-epi-structure.html terminology.html steps-to-create-core-epi.html general-technical-conformance-requirements.html">The Specification</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">The Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="core-epi-structure.html">Core ePI Structure</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="steps-to-create-core-epi.html">Step to create ePI</a>
+      </li>
+      <li>
+        <a href="general-technical-conformance-requirements.html">General Technical Conformance</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="capability.html">Capability</a>
@@ -126,31 +150,31 @@
     </ul>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>ClinicalUseDefinition Interaction (ePI)</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ClinicalUseDefinition Interaction (ePI)</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -232,9 +256,9 @@
 
 <p>JSON representation of the ClinicalUseDefinition-interaction-uv-epi resource profile.</p>
 
-<p><a href="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi.json" no-download="true">Raw json</a> | <a download="null" href="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi.json">Download</a></p>
+<p><a href="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi.json" no-download="true">Raw json</a> | <a href="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi.json" download>Download</a></p>
 
-    <!-- insert intro if present -->
+  <!-- insert intro if present -->
   
 
 
@@ -245,7 +269,7 @@
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.id">id</a>" : "ClinicalUseDefinition-interaction-uv-epi",
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.text">text</a>" : {
     "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"&gt;&lt;tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"&gt;&lt;th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/formats.html#table\" title=\"The logical name of the element\"&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/formats.html#table\" title=\"Information about the use of the element\"&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\"&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=\"width: 100px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/formats.html#table\" title=\"Reference to the type of the element\"&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/formats.html#table\" title=\"Additional information about the element\"&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\"float: right\"&gt;&lt;a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition\"&gt;ClinicalUseDefinition&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;0&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;..&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/clinicalusedefinition.html\"&gt;ClinicalUseDefinition&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;A single issue - either an indication, contraindication, interaction or an undesirable effect for a medicinal product, medication, device or procedure&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.identifier\"&gt;identifier&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.identifier\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;0&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;..&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a style=\"opacity: 0.5\" href=\"http://build.fhir.org/datatypes.html#Identifier\"&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Business identifier for this issue.&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.type\"&gt;type&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.type\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;1&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;..&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a style=\"opacity: 0.5\" href=\"http://build.fhir.org/datatypes.html#code\"&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;indication | contraindication | interaction | undesirable-effect | warning&lt;/span&gt;&lt;br/&gt;&lt;span style=\"font-weight:bold\"&gt;Required Pattern: &lt;/span&gt;&lt;span style=\"color: darkgreen\"&gt;interaction&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.subject\"&gt;subject&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.subject\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1..&lt;span style=\"opacity: 0.5\"&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/references.html\"&gt;Reference&lt;/a&gt;(&lt;a href=\"StructureDefinition-MedicinalProductDefinition-uv-epi.html\"&gt;MedicinalProductDefinition (ePI)&lt;/a&gt;)&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;The medication or procedure for which this is an indication&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.status\"&gt;status&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.status\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;0&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;..&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a style=\"opacity: 0.5\" href=\"http://build.fhir.org/datatypes.html#CodeableConcept\"&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Whether this is a current issue or one that has been retired&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;span style=\"text-decoration:line-through\"&gt;contraindication&lt;/span&gt;&lt;a name=\"ClinicalUseDefinition.contraindication\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"text-decoration:line-through\"/&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;..&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;span style=\"text-decoration:line-through\"&gt;indication&lt;/span&gt;&lt;a name=\"ClinicalUseDefinition.indication\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"text-decoration:line-through\"/&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;..&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction\"&gt;interaction&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.interaction\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1..&lt;span style=\"opacity: 0.5\"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a style=\"opacity: 0.5\" href=\"http://build.fhir.org/types.html#BackboneElement\"&gt;BackboneElement&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;Specifics for when this is an interaction&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction.interactant\"&gt;interactant&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.interaction.interactant\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction.interactant.itemCodeableConcept\"&gt;itemCodeableConcept&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.interaction.interactant.itemCodeableConcept\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"http://build.fhir.org/datatypes.html#CodeableConcept\"&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;The specific medication, food or laboratory test that interacts&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;a href=\"StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction.type\"&gt;type&lt;/a&gt;&lt;a name=\"ClinicalUseDefinition.interaction.type\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"opacity: 0.5\"&gt;0&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;..&lt;/span&gt;&lt;span style=\"opacity: 0.5\"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a style=\"opacity: 0.5\" href=\"http://build.fhir.org/datatypes.html#CodeableConcept\"&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;span style=\"text-decoration:line-through\"&gt;undesirableEffect&lt;/span&gt;&lt;a name=\"ClinicalUseDefinition.undesirableEffect\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"text-decoration:line-through\"/&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;..&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/&gt; &lt;span style=\"text-decoration:line-through\"&gt;warning&lt;/span&gt;&lt;a name=\"ClinicalUseDefinition.warning\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span style=\"text-decoration:line-through\"/&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;..&lt;/span&gt;&lt;span style=\"text-decoration:line-through\"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\"5\" class=\"hierarchy\"&gt;&lt;br/&gt;&lt;a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;The logical name of the element\&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Information about the use of the element\&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Minimum and Maximum # of times the the element can appear in the instance\&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;width: 100px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Reference to the type of the element\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Additional information about the element\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;http://build.fhir.org/help16.png\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_resource.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition\&quot;&gt;ClinicalUseDefinition&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/clinicalusedefinition.html\&quot;&gt;ClinicalUseDefinition&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;A single issue - either an indication, contraindication, interaction or an undesirable effect for a medicinal product, medication, device or procedure&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.identifier\&quot;&gt;identifier&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://build.fhir.org/datatypes.html#Identifier\&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Business identifier for this issue.&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.type\&quot;&gt;type&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://build.fhir.org/datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;indication | contraindication | interaction | undesirable-effect | warning&lt;/span&gt;&lt;br/&gt;&lt;span style=\&quot;font-weight:bold\&quot;&gt;Required Pattern: &lt;/span&gt;&lt;span style=\&quot;color: darkgreen\&quot;&gt;interaction&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.subject\&quot;&gt;subject&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/references.html\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;StructureDefinition-MedicinalProductDefinition-uv-epi.html\&quot;&gt;MedicinalProductDefinition (ePI)&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;The medication or procedure for which this is an indication&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.status\&quot;&gt;status&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.status\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://build.fhir.org/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Whether this is a current issue or one that has been retired&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;span style=\&quot;text-decoration:line-through\&quot;&gt;contraindication&lt;/span&gt;&lt;a name=\&quot;ClinicalUseDefinition.contraindication\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;/&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;span style=\&quot;text-decoration:line-through\&quot;&gt;indication&lt;/span&gt;&lt;a name=\&quot;ClinicalUseDefinition.indication\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;/&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction\&quot;&gt;interaction&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.interaction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://build.fhir.org/types.html#BackboneElement\&quot;&gt;BackboneElement&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Specifics for when this is an interaction&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction.interactant\&quot;&gt;interactant&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.interaction.interactant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_datatype.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction.interactant.itemCodeableConcept\&quot;&gt;itemCodeableConcept&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.interaction.interactant.itemCodeableConcept\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://build.fhir.org/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;The specific medication, food or laboratory test that interacts&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-ClinicalUseDefinition-interaction-uv-epi-definitions.html#ClinicalUseDefinition.interaction.type\&quot;&gt;type&lt;/a&gt;&lt;a name=\&quot;ClinicalUseDefinition.interaction.type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://build.fhir.org/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;span style=\&quot;text-decoration:line-through\&quot;&gt;undesirableEffect&lt;/span&gt;&lt;a name=\&quot;ClinicalUseDefinition.undesirableEffect\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;/&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;span style=\&quot;text-decoration:line-through\&quot;&gt;warning&lt;/span&gt;&lt;a name=\&quot;ClinicalUseDefinition.warning\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;/&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;text-decoration:line-through\&quot;&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;http://build.fhir.org/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;http://build.fhir.org/help16.png\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.extension">extension</a>" : [
     {
@@ -262,7 +286,7 @@
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a>" : "ClinicalUseDefinitionInteractionUvEpi",
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.title">title</a>" : "ClinicalUseDefinition Interaction (ePI)",
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a>" : "2022-08-08T11:05:17+00:00",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a>" : "2022-08-08T11:11:55+00:00",
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
       "<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Gravitate Health Project",
@@ -537,8 +561,8 @@
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.id">id</a>" : "ClinicalUseDefinition.text",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.path">path</a>" : "ClinicalUseDefinition.text",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a>" : "Text summary of the resource, for human interpretation",
-        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
-        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Contained resources do not have a narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \"text blob\" or where text is additionally entered raw or narrated and encoded information is added later.",
+        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Contained resources do not have a narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \&quot;text blob\&quot; or where text is additionally entered raw or narrated and encoded information is added later.",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
           "narrative",
           "html",
@@ -646,7 +670,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -697,7 +721,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -801,8 +825,8 @@
       {
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.id">id</a>" : "ClinicalUseDefinition.category",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.path">path</a>" : "ClinicalUseDefinition.category",
-        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a>" : "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy and Lactation\", \"Overdose\", \"Effects on Ability to Drive and Use Machines\"",
-        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy and Lactation\", \"Overdose\", \"Effects on Ability to Drive and Use Machines\".",
+        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a>" : "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \&quot;Pregnancy and Lactation\&quot;, \&quot;Overdose\&quot;, \&quot;Effects on Ability to Drive and Use Machines\&quot;",
+        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \&quot;Pregnancy and Lactation\&quot;, \&quot;Overdose\&quot;, \&quot;Effects on Ability to Drive and Use Machines\&quot;.",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -1020,7 +1044,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -1071,7 +1095,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -1121,7 +1145,7 @@
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "idmp",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Contraindication.Contraindications as \"Disease / Symptom / Procedure\" and Contraindication.Contraindications Text"
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Contraindication.Contraindications as \&quot;Disease / Symptom / Procedure\&quot; and Contraindication.Contraindications Text"
           }
         ]
       },
@@ -1353,7 +1377,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -1404,7 +1428,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -1618,7 +1642,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -1669,7 +1693,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -1719,7 +1743,7 @@
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "idmp",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Therapeutic Indication.Indication as \"Disease / Symptom / Procedure\", and Therapeutic Indication.Indication Text"
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Therapeutic Indication.Indication as \&quot;Disease / Symptom / Procedure\&quot;, and Therapeutic Indication.Indication Text"
           }
         ]
       },
@@ -2061,7 +2085,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -2112,7 +2136,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -2234,7 +2258,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -2285,7 +2309,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -2424,8 +2448,8 @@
       {
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.id">id</a>" : "ClinicalUseDefinition.interaction.effect",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.path">path</a>" : "ClinicalUseDefinition.interaction.effect",
-        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a>" : "The effect of the interaction, for example \"reduced gastric absorption of primary medication\"",
-        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The effect of the interaction, for example \"reduced gastric absorption of primary medication\".",
+        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a>" : "The effect of the interaction, for example \&quot;reduced gastric absorption of primary medication\&quot;",
+        "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The effect of the interaction, for example \&quot;reduced gastric absorption of primary medication\&quot;.",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -2683,7 +2707,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -2734,7 +2758,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -2784,7 +2808,7 @@
         "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "idmp",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Undesirable Effects.Undesirable Effect as \"Symptom / Condition / Effect\""
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Undesirable Effects.Undesirable Effect as \&quot;Symptom / Condition / Effect\&quot;"
           }
         ]
       },
@@ -2970,7 +2994,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -3021,7 +3045,7 @@
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
             "<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
@@ -3202,20 +3226,20 @@
 }</code></pre>
 
 
-    <!-- insert notes if present -->
+  <!-- insert notes if present -->
   
 
 
 
 </div>
 
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     try {
@@ -3248,66 +3272,81 @@
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 11:05+0000">2022-08-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 11:11+0000">2022-08-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333">
-	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7" href="qa.html">QA Report</a>
-	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
-	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
-		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
 	</a>
-	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
-	  <!-- <br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
-	<div id="container width=100% style=&quot;display:block;&quot; ">
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
 			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
 		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
 		</div>
 	</div>
 	<div>
 	</div>
 </div>
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

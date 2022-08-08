@@ -1,38 +1,38 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>HL7.EU.FHIR.GH\Vulcan Dovato FHIR Package Insert EMA - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/pcsp.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -42,19 +42,19 @@
 
     <style type="text/css">h2{--heading-prefix:"12.80"}
     h3,h4,h5,h6{--heading-prefix:"12.80"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
         
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
-            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
           </a>
         </div>
-   <!-- <div id="family-nav">
+ <!--        <div id="family-nav">
           <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
         </div> -->
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
 
@@ -67,27 +67,27 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="toc.html">Table of Contents</a>
   </li>
@@ -97,8 +97,24 @@
   <li>
     <a href="background.html">Background</a>
   </li>
-  <li><a name="l165">​</a>
-    <a href="core-epi-structure.html terminology.html steps-to-create-core-epi.html general-technical-conformance-requirements.html">The Specification</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">The Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="core-epi-structure.html">Core ePI Structure</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="steps-to-create-core-epi.html">Step to create ePI</a>
+      </li>
+      <li>
+        <a href="general-technical-conformance-requirements.html">General Technical Conformance</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="capability.html">Capability</a>
@@ -126,31 +142,31 @@
     </ul>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Vulcan Dovato FHIR Package Insert EMA</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Vulcan Dovato FHIR Package Insert EMA</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -198,7 +214,7 @@
 
   <h2 id="root">Example Bundle: Vulcan Dovato FHIR Package Insert EMA</h2>
 
-  <table class="null">
+  <table class="">
     <tr>
 
       <td colspan="2">
@@ -213,28 +229,28 @@
 
 
 
-    <!-- insert intro if present -->
+  <!-- insert intro if present -->
   
 
 
 
-  <div><hr/><p><b>Generated Narrative: Composition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition "cfsb1651231019151"  (Language "en") </p></div><p><b>status</b>: FINAL</p><p><b>type</b>: Package Leaflet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000155538)</span></p><p><b>date</b>: 2022-04-29 01:28:17+0000</p><p><b>author</b>: <a href="Organization-cfsb1651149636159.html">Organization/cfsb1651149636159</a> "ViiV Healthcare BV"</p><p><b>title</b>: TEST PURPOSES ONLY - Dovato 50 mg/300 mg film-coated tablets</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-composition-attestation-mode.html">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table><hr/><div><h2>B. Package Leaflet</h2></div>Package leaflet: Information for the patient Dovato 50 mg/300 mg film-coated tablets dolutegravir/lamivudine Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.<ul><li>Keep this leaflet. You may need to read it again.</li><li>If you have any further questions, ask your doctor or pharmacist.</li><li>This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.</li><li>If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.</li></ul><div><h2>What is in this leaflet</h2></div>What in this leaflet<ol><li>What Dovato is and what it is used for</li><li>What you need to know before you take Dovato</li><li>How to take Dovato</li><li>Possible side effects</li><li>How to store Dovato</li><li>Contents of the pack and other information</li></ol><div><h2>1. What Dovato is and what it is used for</h2></div><b>1. What Dovato is and what it is used for</b> Dovato is a medicine that contains two active ingredients used to treat human immunodeficiency virus (HIV) infection: dolutegravir and lamivudine.<div><h2>2. What you need to know before you take Dovato</h2></div><b>2. What you need to know before you take Dovato</b> Do not take Dovato<ul><li>if you are allergic (hypersensitive) to dolutegravir or lamivudine or any of the other ingredients of this medicine (listed in section 6).</li><li>If you are taking a medicine called fampridine (also known as dalfampridine; used in multiple sclerosis).</li></ul><div><h2>3. How to take Dovato</h2></div><b>How to take Dovato</b><p>Always take this medicine exactly as your doctor has told you. Check with your doctor or pharmacist if you are not sure</p><ul><li>The recommended dose of Dovato is <b>one tablet once a day.</b></li><li>If you are taking a medicine called fampridine (also known as dalfampridine; used in multiple sclerosis).</li></ul><div><h2>4. Possible side effects</h2></div><p><b>4. Possible side effects</b></p><p>Like all medicines, this medicine can cause side effects, although not everybody gets them,<b>so it is very important to talk to your doctor about any changes in your health</b></p><div><h2>5. How to store Dovato</h2></div><b>5. How to store Dovato</b><p>Keep this medicine out of the sight and reach of children.</p><p>Do not use this medicine after the expiry date which is stated on the carton and bottle after EXP. The expiry date refers to the last day of that month.</p><p>This medicine does not require any special storage conditions.</p><p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away medicines you no longer use. These measures will help protect the environment.</p><div><h2>6. Contents of the pack and other information</h2></div><b>6. Contents of the pack and other information</b> <b>What Dovato contains</b><ul><li>The active substances are dolutegravir and lamivudine. Each tablet contains dolutegravir sodium equivalent to 50 mg dolutegravir and 300 mg lamivudine.</li><li>The other ingredients are microcrystalline cellulose, sodium starch glycolate, magnesium stearate, mannitol (E421), povidone (K29/32), sodium stearyl fumarate, hypromellose (E464), macrogol, titanium dioxide (E171).</li><li>This medicine contains less than 1 mmol sodium (23 mg) per tablet, that is to say essentially ‘sodiumfree’.</li></ul><hr/><h2>Additional Document Content</h2><a name="Organization_cfsb1650997423990"> </a><hr/><p>2. cfsb1650997423990/{3}</p><blockquote><p><p><b>Generated Narrative: Organization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization "cfsb1650997423990" </p></div><p><b>identifier</b>: id: ORG-100004538 (OFFICIAL), id: LOC-100000153 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: manufacturer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000033)</span></p><p><b>name</b>: GLAXO WELLCOME, S.A.</p><p><b>address</b>: Avda. Extremadura, 3(WORK)</p></p></blockquote><a name="Organization_cfsb1651152112409"> </a><hr/><p>3. cfsb1651152112409/{3}</p><blockquote><p><p><b>Generated Narrative: Organization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization "cfsb1651152112409" </p></div><p><b>identifier</b>: id: ORG-100013412 (OFFICIAL), id: LOC-100020264 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Medicines Regulatory Authority <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#220000000032)</span></p><p><b>name</b>: European Medicines Agency</p><p><b>address</b>: Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands(WORK)</p></p></blockquote><a name="Organization_cfsb1651149636159"> </a><hr/><p>4. cfsb1651149636159/{3}</p><blockquote><p><p><b>Generated Narrative: Organization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization "cfsb1651149636159" </p></div><p><b>identifier</b>: id: ORG-100012958 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000034)</span></p><p><b>name</b>: ViiV Healthcare BV</p><p><b>address</b>: Van Asch van Wijckstraat 55H 3811 LP Amersfoort Netherlands(WORK)</p></p></blockquote><a name="RegulatedAuthorization_cfsb1651148079894"> </a><hr/><p>5. cfsb1651148079894/{3}</p><blockquote><p><p><b>Generated Narrative: RegulatedAuthorization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RegulatedAuthorization "cfsb1651148079894" </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>subject</b>: <a href="MedicinalProductDefinition-cfsb1650904258324.html">MedicinalProductDefinition/cfsb1650904258324</a></p><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000072062)</span></p><p><b>region</b>: European Union <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#eu)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2019-07-01 01:28:17+0000</p><p><b>holder</b>: <a href="Organization-cfsb1651149636159.html">Organization/cfsb1651149636159</a> "ViiV Healthcare BV"</p><p><b>regulator</b>: <a href="Organization-cfsb1651152112409.html">Organization/cfsb1651152112409</a> "European Medicines Agency"</p></p></blockquote><a name="MedicinalProductDefinition_cfsb1650904258324"> </a><hr/><p>6. cfsb1650904258324/{3}</p><blockquote><p><p><b>Generated Narrative: MedicinalProductDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicinalProductDefinition "cfsb1650904258324" </p></div><p><b>identifier</b>: id: 498163</p><p><b>type</b>: Medicinal Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-type.html">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-domain.html">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Dovato 50 mg/300 mg film-coated tablets</p><p><b>type</b>: Full name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class="grid"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>film-coated tablets</td><td>Pharmaceutical dose form part <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>European Union <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#eu)</span></td><td>European Union <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#eu)</span></td><td>English <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>#en)</span></td></tr></table></blockquote></p></blockquote><a name="PackagedProductDefinition_cfsb1650995718524"> </a><hr/><p>7. cfsb1650995718524/{3}</p><blockquote><p><p><b>Generated Narrative: PackagedProductDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PackagedProductDefinition "cfsb1650995718524" </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>name</b>: Dovato 50 mg/300 mg film-coated tablets</p><p><b>type</b>: Chemical Medicinal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href="MedicinalProductDefinition-cfsb1650904258324.html">MedicinalProductDefinition/cfsb1650904258324</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2012-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 30 tablets</p><p><b>manufacturer</b>: <a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</p></p></blockquote><a name="AdministrableProductDefinition_cfsb1650999516847"> </a><hr/><p>8. cfsb1650999516847/{3}</p><blockquote><p><p><b>Generated Narrative: AdministrableProductDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AdministrableProductDefinition "cfsb1650999516847" </p></div><p><b>identifier</b>: id: 123456</p><p><b>status</b>: ACTIVE</p><p><b>formOf</b>: <a href="MedicinalProductDefinition-cfsb1650904258324.html">MedicinalProductDefinition/cfsb1650904258324</a></p><p><b>administrableDoseForm</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#10219000)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#15054000)</span></p><p><b>producedFrom</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#20053000)</span></p><h3>TargetSpecies</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000109093)</span></td></tr></table></blockquote></p></blockquote><a name="ManufacturedItemDefinition_cfsb1650998521654"> </a><hr/><p>9. cfsb1650998521654/{3}</p><blockquote><p><p><b>Generated Narrative: ManufacturedItemDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ManufacturedItemDefinition "cfsb1650998521654" </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>manufacturedDoseForm</b>: Film-coated tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000073665)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#200000002152)</span></p><p><b>manufacturer</b>: <a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</p></p></blockquote><a name="Ingredient_cfsb1651162710491"> </a><hr/><p>10. cfsb1651162710491/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient "cfsb1651162710491" </p></div><p><b>identifier</b>: id: 1Q1V9V5WYQ (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#00000072072)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class="grid"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>50 mg</td><td>active ingredient - basis of strength <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (v3-RoleClassIngredientEntity##ACTIB)</span></td></tr></table></blockquote></p></blockquote><a name="Ingredient_cfsb1651164758053"> </a><hr/><p>11. cfsb1651164758053/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient "cfsb1651164758053" </p></div><p><b>identifier</b>: id: 2T8Q726O95 (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072072)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class="grid"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>300 mg</td><td>active ingredient - basis of strength <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (v3-RoleClassIngredientEntity##ACTIB)</span></td></tr></table></blockquote></p></blockquote><a name="Ingredient_cfsb1651170791283"> </a><hr/><p>12. cfsb1651170791283/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient "cfsb1651170791283" </p></div><p><b>identifier</b>: id: OP1R32D61U (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote><a name="Ingredient_cfsb1651229974487"> </a><hr/><p>13. cfsb1651229974487/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient "cfsb1651229974487" </p></div><p><b>identifier</b>: id: H8AV0SQX4D (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote><a name="Ingredient_cfsb1651230170831"> </a><hr/><p>14. cfsb1651230170831/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient "cfsb1651230170831" </p></div><p><b>identifier</b>: id: 70097M6I30 (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote><a name="Ingredient_cfsb1651230330246"> </a><hr/><p>15. cfsb1651230330246/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient "cfsb1651230330246" </p></div><p><b>identifier</b>: id: 3OWL53L36A (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> "GLAXO WELLCOME, S.A."</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote></div>
+  <div><hr/><p><b>Generated Narrative: Composition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;cfsb1651231019151&quot;  (Language &quot;en&quot;) </p></div><p><b>status</b>: FINAL</p><p><b>type</b>: Package Leaflet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000155538)</span></p><p><b>date</b>: 2022-04-29 01:28:17+0000</p><p><b>author</b>: <a href="Organization-cfsb1651149636159.html">Organization/cfsb1651149636159</a> &quot;ViiV Healthcare BV&quot;</p><p><b>title</b>: TEST PURPOSES ONLY - Dovato 50 mg/300 mg film-coated tablets</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-composition-attestation-mode.html">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table><hr/><div><h2>B. Package Leaflet</h2></div>Package leaflet: Information for the patient Dovato 50 mg/300 mg film-coated tablets dolutegravir/lamivudine Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.<ul><li>Keep this leaflet. You may need to read it again.</li><li>If you have any further questions, ask your doctor or pharmacist.</li><li>This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.</li><li>If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.</li></ul><div><h2>What is in this leaflet</h2></div>What in this leaflet<ol><li>What Dovato is and what it is used for</li><li>What you need to know before you take Dovato</li><li>How to take Dovato</li><li>Possible side effects</li><li>How to store Dovato</li><li>Contents of the pack and other information</li></ol><div><h2>1. What Dovato is and what it is used for</h2></div><b>1. What Dovato is and what it is used for</b> Dovato is a medicine that contains two active ingredients used to treat human immunodeficiency virus (HIV) infection: dolutegravir and lamivudine.<div><h2>2. What you need to know before you take Dovato</h2></div><b>2. What you need to know before you take Dovato</b> Do not take Dovato<ul><li>if you are allergic (hypersensitive) to dolutegravir or lamivudine or any of the other ingredients of this medicine (listed in section 6).</li><li>If you are taking a medicine called fampridine (also known as dalfampridine; used in multiple sclerosis).</li></ul><div><h2>3. How to take Dovato</h2></div><b>How to take Dovato</b><p>Always take this medicine exactly as your doctor has told you. Check with your doctor or pharmacist if you are not sure</p><ul><li>The recommended dose of Dovato is <b>one tablet once a day.</b></li><li>If you are taking a medicine called fampridine (also known as dalfampridine; used in multiple sclerosis).</li></ul><div><h2>4. Possible side effects</h2></div><p><b>4. Possible side effects</b></p><p>Like all medicines, this medicine can cause side effects, although not everybody gets them,<b>so it is very important to talk to your doctor about any changes in your health</b></p><div><h2>5. How to store Dovato</h2></div><b>5. How to store Dovato</b><p>Keep this medicine out of the sight and reach of children.</p><p>Do not use this medicine after the expiry date which is stated on the carton and bottle after EXP. The expiry date refers to the last day of that month.</p><p>This medicine does not require any special storage conditions.</p><p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away medicines you no longer use. These measures will help protect the environment.</p><div><h2>6. Contents of the pack and other information</h2></div><b>6. Contents of the pack and other information</b> <b>What Dovato contains</b><ul><li>The active substances are dolutegravir and lamivudine. Each tablet contains dolutegravir sodium equivalent to 50 mg dolutegravir and 300 mg lamivudine.</li><li>The other ingredients are microcrystalline cellulose, sodium starch glycolate, magnesium stearate, mannitol (E421), povidone (K29/32), sodium stearyl fumarate, hypromellose (E464), macrogol, titanium dioxide (E171).</li><li>This medicine contains less than 1 mmol sodium (23 mg) per tablet, that is to say essentially ‘sodiumfree’.</li></ul><hr/><h2>Additional Document Content</h2><a name="Organization_cfsb1650997423990"> </a><hr/><p>2. cfsb1650997423990/{3}</p><blockquote><p><p><b>Generated Narrative: Organization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;cfsb1650997423990&quot; </p></div><p><b>identifier</b>: id: ORG-100004538 (OFFICIAL), id: LOC-100000153 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: manufacturer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000033)</span></p><p><b>name</b>: GLAXO WELLCOME, S.A.</p><p><b>address</b>: Avda. Extremadura, 3(WORK)</p></p></blockquote><a name="Organization_cfsb1651152112409"> </a><hr/><p>3. cfsb1651152112409/{3}</p><blockquote><p><p><b>Generated Narrative: Organization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;cfsb1651152112409&quot; </p></div><p><b>identifier</b>: id: ORG-100013412 (OFFICIAL), id: LOC-100020264 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Medicines Regulatory Authority <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#220000000032)</span></p><p><b>name</b>: European Medicines Agency</p><p><b>address</b>: Domenico Scarlattilaan 6 1083 HS Amsterdam The Netherlands(WORK)</p></p></blockquote><a name="Organization_cfsb1651149636159"> </a><hr/><p>4. cfsb1651149636159/{3}</p><blockquote><p><p><b>Generated Narrative: Organization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;cfsb1651149636159&quot; </p></div><p><b>identifier</b>: id: ORG-100012958 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Marketing authorisation holder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000034)</span></p><p><b>name</b>: ViiV Healthcare BV</p><p><b>address</b>: Van Asch van Wijckstraat 55H 3811 LP Amersfoort Netherlands(WORK)</p></p></blockquote><a name="RegulatedAuthorization_cfsb1651148079894"> </a><hr/><p>5. cfsb1651148079894/{3}</p><blockquote><p><p><b>Generated Narrative: RegulatedAuthorization</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RegulatedAuthorization &quot;cfsb1651148079894&quot; </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>subject</b>: <a href="MedicinalProductDefinition-cfsb1650904258324.html">MedicinalProductDefinition/cfsb1650904258324</a></p><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000072062)</span></p><p><b>region</b>: European Union <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#eu)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2019-07-01 01:28:17+0000</p><p><b>holder</b>: <a href="Organization-cfsb1651149636159.html">Organization/cfsb1651149636159</a> &quot;ViiV Healthcare BV&quot;</p><p><b>regulator</b>: <a href="Organization-cfsb1651152112409.html">Organization/cfsb1651152112409</a> &quot;European Medicines Agency&quot;</p></p></blockquote><a name="MedicinalProductDefinition_cfsb1650904258324"> </a><hr/><p>6. cfsb1650904258324/{3}</p><blockquote><p><p><b>Generated Narrative: MedicinalProductDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicinalProductDefinition &quot;cfsb1650904258324&quot; </p></div><p><b>identifier</b>: id: 498163</p><p><b>type</b>: Medicinal Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-type.html">MedicinalProductType</a>#MedicinalProduct)</span></p><p><b>domain</b>: Human use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-medicinal-product-domain.html">MedicinalProductDomain</a>#Human)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000072084)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Dovato 50 mg/300 mg film-coated tablets</p><p><b>type</b>: Full name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000001)</span></p><h3>NameParts</h3><table class="grid"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>film-coated tablets</td><td>Pharmaceutical dose form part <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#220000000005)</span></td></tr></table><h3>CountryLanguages</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Jurisdiction</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>European Union <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#eu)</span></td><td>European Union <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#eu)</span></td><td>English <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>#en)</span></td></tr></table></blockquote></p></blockquote><a name="PackagedProductDefinition_cfsb1650995718524"> </a><hr/><p>7. cfsb1650995718524/{3}</p><blockquote><p><p><b>Generated Narrative: PackagedProductDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PackagedProductDefinition &quot;cfsb1650995718524&quot; </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>name</b>: Dovato 50 mg/300 mg film-coated tablets</p><p><b>type</b>: Chemical Medicinal Prodcut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#100000155527)</span></p><p><b>packageFor</b>: <a href="MedicinalProductDefinition-cfsb1650904258324.html">MedicinalProductDefinition/cfsb1650904258324</a></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2012-02-07 01:28:17+0000</p><p><b>containedItemQuantity</b>: 30 tablets</p><p><b>manufacturer</b>: <a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</p></p></blockquote><a name="AdministrableProductDefinition_cfsb1650999516847"> </a><hr/><p>8. cfsb1650999516847/{3}</p><blockquote><p><p><b>Generated Narrative: AdministrableProductDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AdministrableProductDefinition &quot;cfsb1650999516847&quot; </p></div><p><b>identifier</b>: id: 123456</p><p><b>status</b>: ACTIVE</p><p><b>formOf</b>: <a href="MedicinalProductDefinition-cfsb1650904258324.html">MedicinalProductDefinition/cfsb1650904258324</a></p><p><b>administrableDoseForm</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#10219000)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#15054000)</span></p><p><b>producedFrom</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#20053000)</span></p><h3>TargetSpecies</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#/#100000109093)</span></td></tr></table></blockquote></p></blockquote><a name="ManufacturedItemDefinition_cfsb1650998521654"> </a><hr/><p>9. cfsb1650998521654/{3}</p><blockquote><p><p><b>Generated Narrative: ManufacturedItemDefinition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ManufacturedItemDefinition &quot;cfsb1650998521654&quot; </p></div><p><b>identifier</b>: id: EU/1/19/1370/001 (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>manufacturedDoseForm</b>: Film-coated tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000073665)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystemUvEPIRrmswi.html">Referentials Management Services CodeSystem</a>#200000002152)</span></p><p><b>manufacturer</b>: <a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</p></p></blockquote><a name="Ingredient_cfsb1651162710491"> </a><hr/><p>10. cfsb1651162710491/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient &quot;cfsb1651162710491&quot; </p></div><p><b>identifier</b>: id: 1Q1V9V5WYQ (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#00000072072)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class="grid"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>50 mg</td><td>active ingredient - basis of strength <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (v3-RoleClassIngredientEntity##ACTIB)</span></td></tr></table></blockquote></p></blockquote><a name="Ingredient_cfsb1651164758053"> </a><hr/><p>11. cfsb1651164758053/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient &quot;cfsb1651164758053&quot; </p></div><p><b>identifier</b>: id: 2T8Q726O95 (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072072)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</td></tr></table><blockquote><p><b>substance</b></p><h3>Strengths</h3><table class="grid"><tr><td>-</td><td><b>Presentation[x]</b></td><td><b>Basis</b></td></tr><tr><td>*</td><td>300 mg</td><td>active ingredient - basis of strength <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (v3-RoleClassIngredientEntity##ACTIB)</span></td></tr></table></blockquote></p></blockquote><a name="Ingredient_cfsb1651170791283"> </a><hr/><p>12. cfsb1651170791283/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient &quot;cfsb1651170791283&quot; </p></div><p><b>identifier</b>: id: OP1R32D61U (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote><a name="Ingredient_cfsb1651229974487"> </a><hr/><p>13. cfsb1651229974487/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient &quot;cfsb1651229974487&quot; </p></div><p><b>identifier</b>: id: H8AV0SQX4D (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote><a name="Ingredient_cfsb1651230170831"> </a><hr/><p>14. cfsb1651230170831/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient &quot;cfsb1651230170831&quot; </p></div><p><b>identifier</b>: id: 70097M6I30 (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote><a name="Ingredient_cfsb1651230330246"> </a><hr/><p>15. cfsb1651230330246/{3}</p><blockquote><p><p><b>Generated Narrative: Ingredient</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient &quot;cfsb1651230330246&quot; </p></div><p><b>identifier</b>: id: 3OWL53L36A (OFFICIAL)</p><p><b>status</b>: ACTIVE</p><p><b>for</b>: <a href="ManufacturedItemDefinition-cfsb1650998521654.html">ManufacturedItemDefinition/cfsb1650998521654</a></p><p><b>role</b>: Excipient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000072082)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-cfsb1650997423990.html">Organization/cfsb1650997423990</a> &quot;GLAXO WELLCOME, S.A.&quot;</td></tr></table><blockquote><p><b>substance</b></p></blockquote></p></blockquote></div>
 
   
 
-    <!-- insert notes if present -->
+  <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -244,66 +260,81 @@
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 11:05+0000">2022-08-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 11:11+0000">2022-08-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333">
-	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7" href="qa.html">QA Report</a>
-	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
-	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
-		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
 	</a>
-	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
-	  <!-- <br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
-	<div id="container width=100% style=&quot;display:block;&quot; ">
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
 			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
 		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
 		</div>
 	</div>
 	<div>
 	</div>
 </div>
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+
