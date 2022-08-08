@@ -188,7 +188,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2022-08-04
+            as of 2022-08-08
           
         
       </td>
@@ -214,7 +214,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#goals" id="markdown-toc-goals">Goals</a></li>
+  <li><a href="#objectives" id="markdown-toc-objectives">Objectives</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
   <li><a href="#how-to-use-this-guide" id="markdown-toc-how-to-use-this-guide">How to use this guide</a></li>
   <li><a href="#status" id="markdown-toc-status">Status</a></li>
   <li><a href="#governance" id="markdown-toc-governance">Governance</a></li>
@@ -224,23 +227,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>NEW Implementation Guide is under development. New content soon to come</p>
 
-<h3 id="introduction">Introduction</h3>
-
-<h4 id="purpose">Purpose</h4>
+<h3 id="purpose">Purpose</h3>
 <p>To provide guidance on the technical and business conformance rules needed to create and exchange electronic Product Information (ePI) using FHIR and standard terminologies; 
 and 
 To create a common global approach for structuring medicinal product information and medicinal product labelling that is based on HL7 International standards.</p>
 
-<h4 id="goals">Goals</h4>
+<h3 id="goals">Goals</h3>
 <p>The immediate goal of this specification is to expose ePI consumers and vendor community to a set of profiles that identify the data elements, code systems and value sets commonly used in ePIs regardless of the jurisdiction.</p>
 
 <p>The strategic goal is to offer a better route for patients to access trustworthy, up-to-date medicinal product information that better meets their individual needs.</p>
 
-<h4 id="objectives">Objectives</h4>
+<h3 id="objectives">Objectives</h3>
 <p>Define a common and interoperable standard for exchanging medicinal product information across international healthcare jurisdictions.</p>
 
-<h4 id="scope">Scope</h4>
-<h5 id="in-scope">In Scope</h5>
+<h3 id="scope">Scope</h3>
+<h4 id="in-scope">In Scope</h4>
 <p>ePI (information for healthcare practitioner, information for the patient, package label). 
 Human pharmaceutical, radiopharmaceutical and biologic medicinal products (prescription and physician-administered). 
 Over the counter (non-prescription) drugs 
@@ -261,31 +262,31 @@ Packaged Product Definition
 Clinical Use Definition 
 Binary</p>
 
-<h5 id="out-of-scope">Out of Scope</h5>
+<h4 id="out-of-scope">Out of Scope</h4>
 <p>Self-care products, natural health products, medical devices, food and veterinary drugs.</p>
 
-<h3 id="how-to-use-this-guide">How to use this guide</h3>
+<h2 id="how-to-use-this-guide">How to use this guide</h2>
 <p>The Core ePI Implementation Guide is a common baseline from which other FHIR ePI implementation guides can be derived. It is not expected to be implemented as is. It is meant to be a common starting point to build region specific profiles that support local requirements and local use cases.</p>
 
 <p>For example, the content of this implementation guide can be used to develop FHIR ePI profiles for the USA, European Union, and Japan that are interoperable and can be supported by the same vendor marketplace.</p>
 
 <p>Establishing a consistent set of rules across jurisdictions promotes interoperability; allows flexibility for standard evolution; and creates a uniform landscape for vendors to create solutions and services.</p>
 
-<h5 id="core-epi-profile">Core ePI Profile</h5>
+<h4 id="core-epi-profile">Core ePI Profile</h4>
 <p>The Core ePI Profile defines the minimum set of rules to create a compliant FHIR ePI. National ePI profiles are expected to comply with the Core ePI Profile.</p>
 
-<h5 id="national-epi-profiles">National ePI Profiles</h5>
+<h4 id="national-epi-profiles">National ePI Profiles</h4>
 <p>National profiles define the minimum mandatory elements, extensions and terminology requirements to create a compliant FHIR ePI for a given jurisdiction.<br/>
 Conformance to a national ePI profiles is tied to the regulatory mandates of the health authority for that jurisdiction. ####</p>
 
-<h3 id="status">Status</h3>
+<h2 id="status">Status</h2>
 <p>This implementation guide is based on FHIR v5.0.0-snapshot1: R5 Snapshot #1 and is intended to be a balloted draft standard for trial use. It is subject to a formal review and approval process.</p>
 
 <p>This guide is a living document that includes instructions and profiles that will evolve as it undergoes review by the FHIR community and through testing feedback.</p>
 
 <p>Additional changes by HL7 are expected because FHIR is an evolving standard. Developments will be assessed for impact; updates will be planned and communicated publicly in advance to allow time for a stakeholders to adapt to the new version.</p>
 
-<h3 id="governance">Governance</h3>
+<h2 id="governance">Governance</h2>
 <p>The Core FHIR ePI Profile was defined by representatives from Gravitate Health, HL7’s Vulcan Accelerator, the European Medicines Agency (EMA), the US Food and Drug Administration (FDA), and the Pharmaceuticals and Medical Devices Agency (PMDA).</p>
 
 <p>The national FHIR ePI profiles were defined by representatives from the health authority for the corresponding jurisdiction, representatives from Gravitate Health, and HL7’s Vulcan Accelerator. 
@@ -293,7 +294,7 @@ On behalf of the international community and health authorities, this guide is m
 
 <p>This guide will be reviewed annually for active use, obsolescence, and potential need for change. When a change is identified, HL7’s BR&amp;R will make efforts to communicate to stakeholders or potential users in advance of any action.</p>
 
-<h3 id="authors-and-contributors">Authors and Contributors</h3>
+<h2 id="authors-and-contributors">Authors and Contributors</h2>
 
 <table rules="groups">
   <thead>
@@ -357,7 +358,7 @@ On behalf of the international community and health authorities, this guide is m
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Aug 4, 2022 10:31+0000">2022-08-04</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 10:51+0000">2022-08-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">
