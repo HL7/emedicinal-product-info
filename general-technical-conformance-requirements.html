@@ -176,6 +176,219 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
+<h1 id="general-technical-conformance-requirements">General Technical Conformance Requirements</h1>
+<h2 id="lifecycle-management">Lifecycle Management</h2>
+<p>Changing the content of a resource requires both the @date attribute, @last updated, and @version in the parent Bundle containing the changed resource to be updated. No need to update the other resources in the bundle unless they have also been updated.</p>
+
+<p>Managing the resources discretely.</p>
+
+<p>Managing the resources as a document in a Bundle.</p>
+
+<p>Managing the document as a static Bundle versions that are manually updated vs managing a dynamic Bundle that is automatically updated anytime one of its leaf resources is updated.</p>
+
+<h2 id="acceptable-file-formats">Acceptable file formats</h2>
+<p>Only use the file formats accepted by FHIR: XML, JSON, and RDF</p>
+
+<h2 id="case-sensitivity">Case sensitivity</h2>
+<p>All data elements associated with controlled vocabularies are case sensitive. There are no other case sensitivity rules aside from what is described in the FHIR schema or FHIR specification.</p>
+
+<h2 id="display-names">Display names</h2>
+<p>All display names are language specific and shall match the language of the document. French display name for French documents and English display names for English documents. 
+NOTE:</p>
+<ul>
+  <li>The display name shall be present for all code systems unless disallowed by the schema.</li>
+</ul>
+
+<h2 id="images">Images</h2>
+<p>Images are converted into Base64 encoding and incorporated into the Binary resource.</p>
+
+<p>Images are rendered by the style sheet as provided, with no resizing or adjustments to resolution made by the style sheet. Only include images that are clear and easy to read.</p>
+
+<p>All images require a meaningful description in the text element to allow screen reader software to describe the image to visually impaired audiences. Images should also have descriptive, yet simple, file names. This helps search engines find the image.</p>
+
+<p>Colours should meet the WCAG AA accessibility level for contrast.</p>
+
+<p>When authoring the ePI take into consideration the fact that it will be viewed on different screen sizes. Small screens may require more steps to access the same amount of information than on desktop or laptop screens.</p>
+
+<p>Alternative text (or alt text) is text that describes an image. It makes it possible for people using assistive technologies to access the information conveyed by an image. It also helps search engines better understand the purpose of the image.</p>
+
+<p>Recommendations for authors when writing alternative text for images:</p>
+<ul>
+  <li>describe the image as if describing it to someone over the phone.</li>
+  <li>use as few words as possible.</li>
+  <li>limit the text to around 140 characters (including spaces).</li>
+  <li>use the text that is embedded in the image only if it provides enough context; otherwise, write different text that includes more information.</li>
+  <li>don’t use “image of…” or “graphic of…” to describe the image; screen readers do this already.</li>
+</ul>
+
+<h2 id="section-headings">Section headings</h2>
+<p>All ePI section and sub-section headings are managed as controlled vocabularies. They shall have a code and display name.</p>
+
+<p>NOTE:</p>
+<ul>
+  <li>Section and sub-section headings are region specific. Refer to the Annex for region specific details on section headings.</li>
+</ul>
+
+<h2 id="accessibility">Accessibility</h2>
+<p>Web Content Accessibility Guidelines (WCAG) explains how to make web content more accessible to people with disabilities. Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. Although these guidelines cover a wide range of issues, they are not able to address the needs of people with all types, degrees, and combinations of disability. These guidelines also make Web content more usable by older individuals with changing abilities due to aging and often improve usability for users in general.</p>
+
+<p>WCAG covers web sites, applications, and other digital content. It is developed by the World Wide Web Consortium (W3C) Web Accessibility Initiative (WAI). WCAG is an international standard.</p>
+
+<p>There are three levels of conformance:</p>
+<ul>
+  <li>Level A is the minimum level.</li>
+  <li>Level AA includes all Level A and AA requirements. Many organizations strive to meet Level AA.</li>
+  <li>Level AAA includes all Level A, AA, and AAA requirements.</li>
+</ul>
+
+<p>FHIR ePIs are encouraged to fulfill the success criteria for the WCAG 2.1, Level AA standard.</p>
+
+<p>NOTE:</p>
+<ul>
+  <li>Refer to the World Wide Web Consortium’s (W3C) Web Content Accessibility Guidelines (WCAG) 2.1 for further information about Level AA success criteria.</li>
+</ul>
+
+<h2 id="semi-structured-text">Semi-structured Text</h2>
+<p>As per the FHIR specification, narrative text in FHIR is encoded with xhtml. The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes.</a></p>
+
+<p>For convenience, this section outlines HTML elements commonly used by ePIs. However, refer to the HTML v4.0 standard for details on compliant formatting.</p>
+
+<p>NOTE:</p>
+<ul>
+  <li>Rendering systems can ignore or override any of the ePI’s internal or external styles.</li>
+  <li>The XHTML content SHALL NOT contain a head, a bodyelement, external stylesheet references, deprecated elements, scripts, forms, base/link/xlink, frames, iframes, objects or event related attributes (e.g. onClick).   This is to ensure that the content of the narrative is contained within the resource and that there is no active content. Such content would introduce security issues.</li>
+</ul>
+
+<h2 id="paragraphs">Paragraphs</h2>
+<p>The P element is used to define paragraphs.</p>
+
+<p>The BR element is used to define line breaks.</p>
+
+<p>NOTE:</p>
+<ul>
+  <li>All text is within a P element with the exception of tables and lists.</li>
+  <li>Authors are advised to use style sheets to control text flow. Particularly around images and other objects.</li>
+</ul>
+
+<h2 id="bold-italics-underline">Bold, Italics, Underline</h2>
+<p>The B element is used to define bold text.</p>
+
+<p>The I element is used to define italicized text.</p>
+
+<p>The U element is used to define underlined text.</p>
+
+<h2 id="colours-and-shading">Colours and Shading</h2>
+<p>Use the paragraph style attribute to Coloured paragraph text.</p>
+
+<p>Use the paragraph style attribute for shading paragraphs or adding a background to paragraph text. 
+[INSERT a list of standardized class attributes and meanings]</p>
+
+<p>NOTE:</p>
+<ul>
+  <li>There needs to be a special reason to colour text. [look up in EMA guidance for standard text]</li>
+</ul>
+
+<h2 id="lists">Lists</h2>
+<p>The UL element is used to create an unordered list.</p>
+
+<p>The OL element is sued to create an ordered list</p>
+
+<h2 id="symbols-and-special-characters">Symbols and special characters</h2>
+<p>For XML, the following characters must be escaped to prevent validation errors.</p>
+
+<p>Special characters 
+Escape string 
+“ 
+" 
+‘ 
+' 
+&lt; 
+&lt;</p>
+<blockquote>
+
+  <p>&gt; 
+&amp; 
+&amp;</p>
+</blockquote>
+
+<h2 id="superscript-and-subscript">Superscript and subscript</h2>
+<p>Enclose text the sup element for superscript and enclose text within the sub element for subscript.</p>
+
+<h2 id="table-formatting">Table formatting</h2>
+<p>The TABLE element is used to create a table.</p>
+
+<p>The THEAD element is used to designate an entire row or rows as the table header.</p>
+
+<p>The TFOOT element is used to define the table footer.</p>
+
+<p>The TR element is used to define table rows.</p>
+
+<p>The TH element is used to define header cells.</p>
+
+<p>The TD element is used to define non-header cells.</p>
+
+<p>The COLSPAN elements are used to merge columns.</p>
+
+<p>The ROWSPAN elements are used to merge rows. 
+The @frame attribute specifies which of the table’s outside borders are visible:</p>
+<ul>
+  <li>void: No sides. This is the default value.</li>
+  <li>above: The top side only.</li>
+  <li>below: The bottom side only.</li>
+  <li>hsides: The top and bottom sides only.</li>
+  <li>vsides: The right and left sides only.</li>
+  <li>lhs: The left-hand side only.</li>
+  <li>rhs: The right-hand side only.</li>
+  <li>box: All four sides.</li>
+  <li>border: All four sides.</li>
+</ul>
+
+<p>The @rules attribute specifies which of the table’s internal borders are visible:</p>
+<ul>
+  <li>none: No rules. This is the default value.</li>
+  <li>groups: Rules will appear between row groups (see THEAD, TFOOT, and TBODY) and column groups (see COLGROUP and COL) only.</li>
+  <li>rows: Rules will appear between rows only.</li>
+  <li>cols: Rules will appear between columns only.</li>
+  <li>all: Rules will appear between all rows and columns.</li>
+</ul>
+
+<p>The table/@ID attribute is used to give the table a unique identifier. For example, &lt;tbody ID="t1"&gt;. Use the linkHtml/@href attribute to create cross-reference links to this table.</p>
+
+<p>NOTE:</p>
+<ul>
+  <li>Authors are encouraged to create a table header [update this text to say table needs table header so screen reader knows how to read the table properly]</li>
+  <li>Best practice recommendation is not to use tables for formatting</li>
+  <li>Authors are encouraged to use the CAPTION element to provide a short description of the table. A longer description may also be provided via the SUMMARY attribute for people using speech or Braille-based applications.</li>
+  <li>Authors should use style sheets to control content layout rather than tables.</li>
+  <li>Authors should use style sheets to control the following: borders; width; colours and shading; emphasis and alignment of table header text; emphasis and alignment of table titles.</li>
+</ul>
+
+<h2 id="additional-monitoring-indicators">Additional Monitoring Indicators</h2>
+<p>Recommendations on how to handle:</p>
+
+<p>Black triangle</p>
+
+<p>Black box warnings</p>
+
+<h2 id="hypertext-links-and-cross-referencing">Hypertext links and cross-referencing</h2>
+<p>To create hypertext links from text to text within the ePI’s Composition resource:</p>
+
+<p>Add an id to a block of text or table:</p>
+<div id="a1"> 
+<p>sample text</p> 
+</div>
+<p>And a link to the sample text:</p>
+<p><a href="#a1">refer to sample text</a></p>
+<p>To create hypertext links from text to content outside of the ePI document use the following format:
+<a href="http://www.w3.org/">W3C Web site</a></p>
+
+<h2 id="linking-between-data-and-narrative-text">Linking between data and narrative text</h2>
+<p>In some contexts, it is useful to link between the two representations of the same content: structured data, and human readable narrative. This can be used to assert that the text is a representation of the data, or specifically that the data is derived from some particular text. This specification defines the extensions narrativeLink and originalText to establish these links.</p>
+
+<p>Refer to section 2.4.0.5 of the FHIR Narrative for further detail.</p>
+
+<h2 id="stylesheets">Stylesheets</h2>
+<p>The ePI’s XHTML SHALL not reference any external stylesheets. This is to ensure there is no active content that could introduce security issues.</p>
 
 
 
@@ -202,7 +415,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 10:51+0000">2022-08-08</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 11:05+0000">2022-08-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">
