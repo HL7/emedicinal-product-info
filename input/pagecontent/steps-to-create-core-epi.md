@@ -16,14 +16,14 @@ Create a reference from the SubstanceDefinition to the Organization resource for
 
 Refer to the [SubstanceDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
  
-##### Create Ingredient resource(s) 
+#### Create Ingredient resource(s) 
 Using the Core ePI Profile as a template, complete one Ingredient resource for each active ingredient and excipient for each medicinal product in the ePI. 
 
 Create a reference from the relevant Ingredient resources to the corresponding ManufacturedItem resource. 
 
 Refer to [Ingredient](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Ingredient-uv-epi.html) for detail. 
 
-##### Create Manufactured Item Definition resource(s) 
+#### Create Manufactured Item Definition resource(s) 
 The manufactured item describes the product as contained in its primary package. This is different from the Administrable Product. For example, a powder in a vial and a diluent in a vial are packaged together. The powder is one manufactured item and the diluent is a second manufactured item.  
  
 Using the FHIR ePI Profile as a template, complete one Ingredient resource for each Manufactured Item in the ePI.  
@@ -34,21 +34,21 @@ Refer to [ManufacturedItemDefinition Profile](http://build.fhir.org/ig/hl7-eu/gr
 
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
  
-##### Create Medicinal Product Definition resource(s) 
+#### Create Medicinal Product Definition resource(s) 
 Using the FHIR ePI Profile as a template, complete one MedicinalProductDefinition resource for each authorized presentation of the product referenced in the ePI. 
  
 For example, the following are four presentations would be four separate medicinal products 
 
-|Medicinal Product Identifier (MPID)| Invented Name  | Strength | Dosage Form  | Route of Administration | Primary Packaging  | Pack Size |
+|Medicinal Product Identifier (MPID)| Invented Name | Strength | Dosage Form | Route of Administration | Primary Packaging  | Pack Size |
 |--|--|--|--|--|--|--|
-| 123 | Drug X | 30 mg  | Gastro -resistant tablet   | Oral use  | Blister (PVC/PVDC - alu) | 42 tablets |
-| 456 | Drug X | 120 mg | Gastro -resistant tablet   | Oral use  | Blister (PVC/PVDC - alu) | 40 tablets |
-| 789 | Drug X | 120 mg | Gastro -resistant tablet   | Oral use  | Blister (PVC/PVDC - alu) | 70 tablets |
-| 101 | Drug X | 120 mg | Gastro -resistant tablet   | Oral use  | Blister (PVC/PVDC - alu) | 90 tablets |
+| 123 | Drug X | 30 mg  | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 42 tablets |
+| 456 | Drug X | 120 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 40 tablets |
+| 789 | Drug X | 120 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 70 tablets |
+| 101 | Drug X | 120 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 90 tablets |
  
 Refer to [MedicinalProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html) for detail.
 
-##### Create Administrable Product Definition resource(s) 
+#### Create Administrable Product Definition resource(s) 
 The manufactured item describes the product as administering to a patient (after any mixing of multiple components or transformations has been performed). This is different from the manufactured item. For example, a powder in a vial and a diluent in a vial are packaged together. The combined solution made from the powder and diluent, ready for administration to the patient, is the administrable product.  
  
 Using the Core ePI Profile as a template, complete one PharmaceuticalProductDefinition resource for each pharmaceutical product described in the ePI.  
@@ -61,7 +61,7 @@ Refer to [AdministrableProductDefinition Profile](http://build.fhir.org/ig/hl7-e
 
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
-##### Create Packaged Product Definition resource(s) 
+#### Create Packaged Product Definition resource(s) 
 
 Using the Core ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation described in the ePI. 
 

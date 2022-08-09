@@ -31,5 +31,5 @@ Refer to Annex for national ePI profiles for a description of each resource.
 - Binary
 
 ** Figure 1	Resource relationship hierarchy for the Core ePI Profile**  
-[diagram of the ePI resource relationship diagram](https://github.com/hl7-eu/gravitate-health/blob/master/input/images/IG%20Figure%201%20ePI%20Resource%20relationship%20model.png)
+![diagram of the ePI resource relationship diagram](https://github.com/hl7-eu/gravitate-health/blob/master/input/images/IG%20Figure%201%20ePI%20Resource%20relationship%20model.png)
  
