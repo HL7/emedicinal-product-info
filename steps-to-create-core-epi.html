@@ -191,31 +191,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#step-1-create-foundation-resources" id="markdown-toc-step-1-create-foundation-resources">Step 1: Create foundation resources</a>    <ul>
-      <li><a href="#create-organization-resources" id="markdown-toc-create-organization-resources">Create Organization resource(s)</a></li>
-      <li><a href="#create-substance-definition-resources" id="markdown-toc-create-substance-definition-resources">Create Substance Definition resource(s)</a></li>
-      <li><a href="#create-ingredient-resources" id="markdown-toc-create-ingredient-resources">Create Ingredient resource(s)</a></li>
-      <li><a href="#create-manufactured-item-definition-resources" id="markdown-toc-create-manufactured-item-definition-resources">Create Manufactured Item Definition resource(s)</a></li>
-      <li><a href="#create-medicinal-product-definition-resources" id="markdown-toc-create-medicinal-product-definition-resources">Create Medicinal Product Definition resource(s)</a></li>
-      <li><a href="#create-administrable-product-definition-resources" id="markdown-toc-create-administrable-product-definition-resources">Create Administrable Product Definition resource(s)</a></li>
-      <li><a href="#create-packaged-product-definition-resources" id="markdown-toc-create-packaged-product-definition-resources">Create Packaged Product Definition resource(s)</a></li>
-      <li><a href="#create-clinical-use-definition-resources--contraindication" id="markdown-toc-create-clinical-use-definition-resources--contraindication">Create Clinical Use Definition resource(s) – Contraindication</a></li>
-      <li><a href="#create-clinical-use-definition-resources---indication" id="markdown-toc-create-clinical-use-definition-resources---indication">Create Clinical Use Definition resource(s) - Indication</a></li>
-      <li><a href="#create-clinical-use-definition-resource---interaction" id="markdown-toc-create-clinical-use-definition-resource---interaction">Create Clinical Use Definition resource - Interaction</a></li>
-      <li><a href="#create-clinical-use-definition-resource---undesirable-effect" id="markdown-toc-create-clinical-use-definition-resource---undesirable-effect">Create Clinical Use Definition resource - Undesirable Effect</a></li>
-      <li><a href="#create-clinical-use-definition-resource---warning" id="markdown-toc-create-clinical-use-definition-resource---warning">Create Clinical Use Definition resource - Warning</a></li>
-      <li><a href="#create-regulated-authorization-resource" id="markdown-toc-create-regulated-authorization-resource">Create Regulated Authorization resource</a></li>
-      <li><a href="#create-binary-resource" id="markdown-toc-create-binary-resource">Create Binary resource</a></li>
-      <li><a href="#create-composition-resource" id="markdown-toc-create-composition-resource">Create Composition resource</a></li>
-    </ul>
-  </li>
+  <li><a href="#step-1-create-foundation-resources" id="markdown-toc-step-1-create-foundation-resources">Step 1: Create foundation resources</a></li>
   <li><a href="#step-2-create-bundle" id="markdown-toc-step-2-create-bundle">Step 2: Create Bundle</a></li>
   <li><a href="#step-3-create-list" id="markdown-toc-step-3-create-list">Step 3: Create List</a></li>
   <li><a href="#sample-epi-data" id="markdown-toc-sample-epi-data">Sample ePI data</a></li>
 </ul>
 
 </div>
-<h2 id="step-1-create-foundation-resources">Step 1: Create foundation resources</h2>
+<h3 id="step-1-create-foundation-resources">Step 1: Create foundation resources</h3>
 <p>Create the Core ePI document by creating and then bundling these FHIR resources in the order described in section 7.</p>
 
 <p>NOTE:</p>
@@ -223,37 +206,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>National Profiles can be built using the Core FHIR ePI profile as is; or they can use a subset of resources and relationships.</li>
 </ul>
 
-<h3 id="create-organization-resources">Create Organization resource(s)</h3>
+<h4 id="create-organization-resources">Create Organization resource(s)</h4>
 <p>Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with this ePI. Typically that means the Market Authorization Holder, Manufacturer, and regulator.</p>
 
-<p><a name="l432">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Organization-uv-epi.html">Organization profile</a> for detail.</p>
+<p><a name="l368">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Organization-uv-epi.html">Organization profile</a> for detail.</p>
 
-<h3 id="create-substance-definition-resources">Create Substance Definition resource(s)</h3>
+<h4 id="create-substance-definition-resources">Create Substance Definition resource(s)</h4>
 <p>Using the Core ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient in the medicinal product.</p>
 
 <p>Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder.</p>
 
-<p><a name="l447">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-SubstanceDefinition-uv-epi.html">SubstanceDefinition Profile</a> for detail.</p>
+<p><a name="l383">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-SubstanceDefinition-uv-epi.html">SubstanceDefinition Profile</a> for detail.</p>
 
-<h3 id="create-ingredient-resources">Create Ingredient resource(s)</h3>
+<h5 id="create-ingredient-resources">Create Ingredient resource(s)</h5>
 <p>Using the Core ePI Profile as a template, complete one Ingredient resource for each active ingredient and excipient for each medicinal product in the ePI.</p>
 
 <p>Create a reference from the relevant Ingredient resources to the corresponding ManufacturedItem resource.</p>
 
-<p><a name="l462">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Ingredient-uv-epi.html">Ingredient</a> for detail.</p>
+<p><a name="l398">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Ingredient-uv-epi.html">Ingredient</a> for detail.</p>
 
-<h3 id="create-manufactured-item-definition-resources">Create Manufactured Item Definition resource(s)</h3>
+<h5 id="create-manufactured-item-definition-resources">Create Manufactured Item Definition resource(s)</h5>
 <p>The manufactured item describes the product as contained in its primary package. This is different from the Administrable Product. For example, a powder in a vial and a diluent in a vial are packaged together. The powder is one manufactured item and the diluent is a second manufactured item.</p>
 
 <p>Using the FHIR ePI Profile as a template, complete one Ingredient resource for each Manufactured Item in the ePI.</p>
 
 <p>Create a reference from each ManufacturedItem resource to the corresponding Organization resource for the manufacturer or marketing authorization holder.</p>
 
-<p><a name="l480">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ManufacturedItemDefinition-uv-epi.html">ManufacturedItemDefinition Profile</a> for detail.</p>
+<p><a name="l416">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ManufacturedItemDefinition-uv-epi.html">ManufacturedItemDefinition Profile</a> for detail.</p>
 
 <p>(add two examples, one for a product with no transformation (tablet) and one with transformation).</p>
 
-<h3 id="create-medicinal-product-definition-resources">Create Medicinal Product Definition resource(s)</h3>
+<h5 id="create-medicinal-product-definition-resources">Create Medicinal Product Definition resource(s)</h5>
 <p>Using the FHIR ePI Profile as a template, complete one MedicinalProductDefinition resource for each authorized presentation of the product referenced in the ePI.</p>
 
 <p>For example, the following are four presentations would be four separate medicinal products</p>
@@ -310,9 +293,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p><a name="l627">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html">MedicinalProductDefinition Profile</a> for detail.</p>
+<p><a name="l563">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html">MedicinalProductDefinition Profile</a> for detail.</p>
 
-<h3 id="create-administrable-product-definition-resources">Create Administrable Product Definition resource(s)</h3>
+<h5 id="create-administrable-product-definition-resources">Create Administrable Product Definition resource(s)</h5>
 <p>The manufactured item describes the product as administering to a patient (after any mixing of multiple components or transformations has been performed). This is different from the manufactured item. For example, a powder in a vial and a diluent in a vial are packaged together. The combined solution made from the powder and diluent, ready for administration to the patient, is the administrable product.</p>
 
 <p>Using the Core ePI Profile as a template, complete one PharmaceuticalProductDefinition resource for each pharmaceutical product described in the ePI.</p>
@@ -321,11 +304,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Create a reference from each PharmaceuticalProductDefinition resource to the corresponding ManufacturedItem resource used to make the pharmaceutical product.</p>
 
-<p><a name="l648">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-AdministrableProductDefinition-uv-epi.html">AdministrableProductDefinition Profile</a> for detail.</p>
+<p><a name="l584">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-AdministrableProductDefinition-uv-epi.html">AdministrableProductDefinition Profile</a> for detail.</p>
 
 <p>(add two examples, one for a product with no transformation (tablet) and one with transformation).</p>
 
-<h3 id="create-packaged-product-definition-resources">Create Packaged Product Definition resource(s)</h3>
+<h5 id="create-packaged-product-definition-resources">Create Packaged Product Definition resource(s)</h5>
 
 <p>Using the Core ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation described in the ePI.</p>
 
@@ -333,7 +316,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Create a reference from each PackagedProductDefinition resource to the corresponding Organization resource for the manufacturer or marketing authorization holder.</p>
 
-<p><a name="l669">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-PackagedProductDefinition-uv-epi.html">PackagedProductDefinition Profile</a> for detail.</p>
+<p><a name="l605">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-PackagedProductDefinition-uv-epi.html">PackagedProductDefinition Profile</a> for detail.</p>
 
 <p>(Add several examples: (1) simple bottle in carton; (2) simple blisters in carton; (3) complex kit with medicinal product and devices).</p>
 
@@ -391,52 +374,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="create-clinical-use-definition-resources--contraindication">Create Clinical Use Definition resource(s) – Contraindication</h3>
+<h4 id="create-clinical-use-definition-resources--contraindication">Create Clinical Use Definition resource(s) – Contraindication</h4>
 <p>Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each contraindication.</p>
 
 <p>Create a reference from the ClinicalUseDefinition (contraindication) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l819">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l755">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
-<h3 id="create-clinical-use-definition-resources---indication">Create Clinical Use Definition resource(s) - Indication</h3>
+<h4 id="create-clinical-use-definition-resources---indication">Create Clinical Use Definition resource(s) - Indication</h4>
 <p>Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Indication.</p>
 
 <p>Create a reference from each ClinicalUseDefinition (Indication) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l834">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l770">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
-<h3 id="create-clinical-use-definition-resource---interaction">Create Clinical Use Definition resource - Interaction</h3>
+<h4 id="create-clinical-use-definition-resource---interaction">Create Clinical Use Definition resource - Interaction</h4>
 <p>Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Interaction.</p>
 
 <p>Create a reference each ClinicalUseDefinition (Interaction) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l849">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l785">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
-<h3 id="create-clinical-use-definition-resource---undesirable-effect">Create Clinical Use Definition resource - Undesirable Effect</h3>
+<h4 id="create-clinical-use-definition-resource---undesirable-effect">Create Clinical Use Definition resource - Undesirable Effect</h4>
 <p>Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Undesirable Effect.</p>
 
 <p>Create a reference from each ClinicalUseDefinition (Undesirable Effect) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l864">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l800">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
-<h3 id="create-clinical-use-definition-resource---warning">Create Clinical Use Definition resource - Warning</h3>
+<h4 id="create-clinical-use-definition-resource---warning">Create Clinical Use Definition resource - Warning</h4>
 <p>Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Warning.</p>
 
 <p>Create a reference from each ClinicalUseDefinition (Warning) to the corresponding MedicinalProduct.</p>
 
 <p>INSERT reference to the Profile page.</p>
 
-<h3 id="create-regulated-authorization-resource">Create Regulated Authorization resource</h3>
+<h4 id="create-regulated-authorization-resource">Create Regulated Authorization resource</h4>
 <p>Using the Core ePI Profile as a template, complete one RegulatedAuthorization resource for each medicinal product associated with this ePI. For example, if there are four medicinal products then there will be four RegulatedAuthorization resources.</p>
 
-<p><a name="l888">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-RegulatedAuthorization-uv-epi.html">RegulatedAuthorization Profile</a> for detail.</p>
+<p><a name="l824">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-RegulatedAuthorization-uv-epi.html">RegulatedAuthorization Profile</a> for detail.</p>
 
 <p>NOTE:</p>
 <ul>
   <li>Depending on the jurisdiction there will either be (1) one authorization per medicinal product (i.e., resulting in many RegulatedAuthorization resources); or (2) one authorization for all medicinal products (i.e., resulting in one RegulatedAuthorization resource). Refer to the regional profile for confirmation on which approach is required.</li>
 </ul>
 
-<h3 id="create-binary-resource">Create Binary resource</h3>
+<h4 id="create-binary-resource">Create Binary resource</h4>
 <p>Convert each image in the ePI to Base64.</p>
 
 <p>Using the FHIR ePI Profile as a template, complete one Binary resource for each image in the ePI. Add the Base64 version of the image to the Binary resource.</p>
@@ -445,7 +428,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Refer to <a href="http://build.fhir.org/binary.html">Binary Profile</a> for detail.</p>
 
-<h3 id="create-composition-resource">Create Composition resource</h3>
+<h4 id="create-composition-resource">Create Composition resource</h4>
 <p>Using the FHIR ePI Profile as a template, complete one Composition resource for each ePI document.</p>
 
 <p>Reference the Composition resource to each Binary. The reference to the Binary is made from the narrative text of the Composition resource’s @text element.</p>
@@ -462,9 +445,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Create one Composition for each translation; e.g., one Composition for the French version of the ePI document and another Composition resource for a Spanish version of the ePI document.</li>
 </ul>
 
-<p><a name="l951">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Composition-uv-epi.html">Composition Profile</a> for detail.</p>
+<p><a name="l887">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Composition-uv-epi.html">Composition Profile</a> for detail.</p>
 
-<h2 id="step-2-create-bundle">Step 2: Create Bundle</h2>
+<h3 id="step-2-create-bundle">Step 2: Create Bundle</h3>
 <p>Using the Core ePI Profile as a template, complete one Bundle resource for each ePI document.</p>
 
 <p>Complete the Bundle resource by referencing it to only one Composition plus all other resources completed in Step 1. Refer to sample ePI #1 and sample ePI #2 for examples of how this is done.</p>
@@ -481,11 +464,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>INSERT call out the options to list all bundles in the List vs just List the set ids for the bundles and all documents in the List vs separate Lists for documents and translations.</li>
 </ul>
 
-<p><a name="l996">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Bundle-uv-epi.html">Bundle Profile</a> for detail.</p>
+<p><a name="l932">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Bundle-uv-epi.html">Bundle Profile</a> for detail.</p>
 
-<h2 id="step-3-create-list">Step 3: Create List</h2>
+<h3 id="step-3-create-list">Step 3: Create List</h3>
 
-<h2 id="sample-epi-data">Sample ePI data</h2>
+<h3 id="sample-epi-data">Sample ePI data</h3>
 <p>European Union Samples</p>
 <ul>
   <li>Centrally Authorized Product (CAP)
@@ -539,7 +522,7 @@ INSERT consider using Monuril as an example since it is used in the UNICOM examp
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Tue, Aug 9, 2022 00:31+0000">2022-08-09</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Tue, Aug 9, 2022 00:49+0000">2022-08-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333">
