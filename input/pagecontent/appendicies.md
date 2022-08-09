@@ -1,7 +1,7 @@
-## Glossary 
+### Glossary 
 To be added at a later time. 
 
-## Copyrights 
+### Copyrights 
 This guide, as well the artifacts developed by HL7® including terminologies, is produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions. 
 
 This document is licensed under Creative Commons “No Rights Reserved” (CC0). 
@@ -22,7 +22,7 @@ Following is a non-exhaustive list of third-party terminologies used in this gui
 | ISO 639-1 Language Code | International Organization for Standardization (ISO) | https://www.iso.org/iso-639-language-codes.html |
 | Unified Codes for Units of Measures (UCUM) | Regenstrief Institute, Inc. and the UCUM Organization  | http://unitsofmeasure.org/trac/wiki/TermsOfUse |
 
-## References 
+### References 
 1. There are no sources in the current document.
 1. FHIR Validation - https://www.hl7.org/fhir/validation.html
 1. FHIR Narrative specification - http://hl7.org/fhir/5.0.0-snapshot1/narrative.html#Narrative

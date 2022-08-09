@@ -1,20 +1,18 @@
-NEW Implementation Guide is under development. New content soon to come
-
-### Purpose
+## Purpose
 To provide guidance on the technical and business conformance rules needed to create and exchange electronic Product Information (ePI) using FHIR and standard terminologies; 
 and 
 To create a common global approach for structuring medicinal product information and medicinal product labelling that is based on HL7 International standards. 
 
-### Goals
+## Goals
 The immediate goal of this specification is to expose ePI consumers and vendor community to a set of profiles that identify the data elements, code systems and value sets commonly used in ePIs regardless of the jurisdiction. 
 
 The strategic goal is to offer a better route for patients to access trustworthy, up-to-date medicinal product information that better meets their individual needs. 
 
-### Objectives
+## Objectives
 Define a common and interoperable standard for exchanging medicinal product information across international healthcare jurisdictions. 
 
-### Scope
-#### In Scope
+## Scope
+### In Scope
 ePI (information for healthcare practitioner, information for the patient, package label). 
 Human pharmaceutical, radiopharmaceutical and biologic medicinal products (prescription and physician-administered). 
 Over the counter (non-prescription) drugs 
@@ -35,7 +33,7 @@ Packaged Product Definition
 Clinical Use Definition 
 Binary 
 
-#### Out of Scope
+### Out of Scope
 Self-care products, natural health products, medical devices, food and veterinary drugs. 
 
 ## How to use this guide
@@ -45,10 +43,10 @@ For example, the content of this implementation guide can be used to develop FHI
 
 Establishing a consistent set of rules across jurisdictions promotes interoperability; allows flexibility for standard evolution; and creates a uniform landscape for vendors to create solutions and services. 
 
-#### Core ePI Profile 
+### Core ePI Profile 
 The Core ePI Profile defines the minimum set of rules to create a compliant FHIR ePI. National ePI profiles are expected to comply with the Core ePI Profile. 
 
-#### National ePI Profiles 
+### National ePI Profiles 
 National profiles define the minimum mandatory elements, extensions and terminology requirements to create a compliant FHIR ePI for a given jurisdiction.  
 Conformance to a national ePI profiles is tied to the regulatory mandates of the health authority for that jurisdiction. ####
 
@@ -75,5 +73,6 @@ This guide will be reviewed annually for active use, obsolescence, and potential
 | Co-Lead   | Catherine Chronaki | HL7 Europe |
 | Technical Lead  |Jens Kristian Villadsen | Trifork |
 | Technical Leads | Giorgio Cangioli | HL7 Europe |
-| Contributors | | |
+| Gravitate Health Contributors | | |
+| HL7 Vulcan Contributors | | |
 {: rules="groups"}
