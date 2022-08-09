@@ -1,4 +1,3 @@
-# General Technical Conformance Requirements 
 ## Lifecycle Management 
 Changing the content of a resource requires both the @date attribute, @last updated, and @version in the parent Bundle containing the changed resource to be updated. No need to update the other resources in the bundle unless they have also been updated. 
 
@@ -16,6 +15,7 @@ All data elements associated with controlled vocabularies are case sensitive. Th
 
 ## Display names 
 All display names are language specific and shall match the language of the document. French display name for French documents and English display names for English documents. 
+
 NOTE:  
 - The display name shall be present for all code systems unless disallowed by the schema.  
 
@@ -102,18 +102,15 @@ The OL element is sued to create an ordered list
 ## Symbols and special characters 
 For XML, the following characters must be escaped to prevent validation errors. 
 
-Special characters 
-Escape string 
-" 
-&quot; 
-' 
-&apos; 
-< 
-&lt; 
-> 
-&gt; 
-& 
-&amp; 
+Special characters that need to be escaped in XML:
+
+| Special Characters | Escape String |
+|--|--|
+| " | &quot; |
+| ' | &apos; |
+| < | &lt; |
+| > | &gt; |
+| & | &amp; |
  
 ## Superscript and subscript 
 Enclose text the sup element for superscript and enclose text within the sub element for subscript. 
@@ -172,6 +169,8 @@ Black box warnings
 To create hypertext links from text to text within the ePI’s Composition resource: 
 
 Add an id to a block of text or table: 
+
+```
 <div id="a1"> 
 <p>sample text</p> 
 </div> 
@@ -179,11 +178,13 @@ And a link to the sample text:
 <p><a href="#a1">refer to sample text</a></p> 
 To create hypertext links from text to content outside of the ePI document use the following format: 
 <A href="http://www.w3.org/">W3C Web site</A> 
+```
+
 
 ## Linking between data and narrative text 
 In some contexts, it is useful to link between the two representations of the same content: structured data, and human readable narrative. This can be used to assert that the text is a representation of the data, or specifically that the data is derived from some particular text. This specification defines the extensions narrativeLink and originalText to establish these links. 
 
-Refer to section 2.4.0.5 of the FHIR Narrative for further detail. 
+Refer to [section 2.4.0.5 of the FHIR Narrative](http://build.fhir.org/narrative.html#linking) for further detail. 
 
 ## Stylesheets 
 The ePI’s XHTML SHALL not reference any external stylesheets. This is to ensure there is no active content that could introduce security issues. 

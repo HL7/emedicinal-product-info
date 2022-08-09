@@ -1,4 +1,3 @@
-# Appendix 
 ## Glossary 
 To be added at a later time. 
 
@@ -15,21 +14,13 @@ Implementers and testers of this specification SHALL abide by the license requir
 
 Following is a non-exhaustive list of third-party terminologies used in this guide that may require a separate license: 
 
-Terminology 
-Owner/Contact 
-Links 
-EDQM Standard Terms 
-European Directorate for the Quality of Medicines (EDQM) 
-https://www.edqm.eu/en/standard-terms-database 
-ISO 3166 Country Code 
-International Organization for Standardization (ISO) 
-https://www.iso.org/iso-3166-country-codes.html 
-ISO 639-1 Language Code 
-International Organization for Standardization (ISO) 
-https://www.iso.org/iso-639-language-codes.html 
-Unified Codes for Units of Measures (UCUM) 
-Regenstrief Institute, Inc. and the UCUM Organization 
-http://unitsofmeasure.org/trac/wiki/TermsOfUse 
+
+| Terminology | Owner/Contact | Links |
+|--|--|--|
+| EDQM Standard Terms | European Directorate for the Quality of Medicines (EDQM) | https://www.edqm.eu/en/standard-terms-database |
+| ISO 3166 Country Code | International Organization for Standardization (ISO) | https://www.iso.org/iso-3166-country-codes.html |
+| ISO 639-1 Language Code | International Organization for Standardization (ISO) | https://www.iso.org/iso-639-language-codes.html |
+| Unified Codes for Units of Measures (UCUM) | Regenstrief Institute, Inc. and the UCUM Organization  | http://unitsofmeasure.org/trac/wiki/TermsOfUse |
 
 ## References 
 1. There are no sources in the current document.

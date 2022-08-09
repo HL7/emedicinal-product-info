@@ -1,4 +1,3 @@
-# Background
 ## ePI 
 A medicine’s product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. 
 
