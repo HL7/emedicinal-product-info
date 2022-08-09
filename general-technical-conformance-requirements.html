@@ -192,7 +192,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h1 id="general-technical-conformance-requirements">General Technical Conformance Requirements</h1>
 <h2 id="lifecycle-management">Lifecycle Management</h2>
 <p>Changing the content of a resource requires both the @date attribute, @last updated, and @version in the parent Bundle containing the changed resource to be updated. No need to update the other resources in the bundle unless they have also been updated.</p>
 
@@ -209,8 +208,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>All data elements associated with controlled vocabularies are case sensitive. There are no other case sensitivity rules aside from what is described in the FHIR schema or FHIR specification.</p>
 
 <h2 id="display-names">Display names</h2>
-<p>All display names are language specific and shall match the language of the document. French display name for French documents and English display names for English documents. 
-NOTE:</p>
+<p>All display names are language specific and shall match the language of the document. French display name for French documents and English display names for English documents.</p>
+
+<p>NOTE:</p>
 <ul>
   <li>The display name shall be present for all code systems unless disallowed by the schema.</li>
 </ul>
@@ -312,20 +312,38 @@ NOTE:</p>
 <h2 id="symbols-and-special-characters">Symbols and special characters</h2>
 <p>For XML, the following characters must be escaped to prevent validation errors.</p>
 
-<p>Special characters 
-Escape string 
-“ 
-" 
-‘ 
-' 
-&lt; 
-&lt;</p>
-<blockquote>
+<p>Special characters that need to be escaped in XML:</p>
 
-  <p>&gt; 
-&amp; 
-&amp;</p>
-</blockquote>
+<table>
+  <thead>
+    <tr>
+      <th>Special Characters</th>
+      <th>Escape String</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>”</td>
+      <td>"</td>
+    </tr>
+    <tr>
+      <td>’</td>
+      <td>'</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>&lt;</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>&gt;</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>&amp;</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="superscript-and-subscript">Superscript and subscript</h2>
 <p>Enclose text the sup element for superscript and enclose text within the sub element for subscript.</p>
@@ -390,18 +408,20 @@ The @frame attribute specifies which of the table’s outside borders are visibl
 <p>To create hypertext links from text to text within the ePI’s Composition resource:</p>
 
 <p>Add an id to a block of text or table:</p>
-<div id="a1"> 
-<p>sample text</p> 
-</div>
-<p>And a link to the sample text:</p>
-<p><a href="#a1">refer to sample text</a></p>
-<p>To create hypertext links from text to content outside of the ePI document use the following format:
-<a href="http://www.w3.org/">W3C Web site</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div id="a1"&gt; 
+&lt;p&gt;sample text&lt;/p&gt; 
+&lt;/div&gt; 
+And a link to the sample text: 
+&lt;p&gt;&lt;a href="#a1"&gt;refer to sample text&lt;/a&gt;&lt;/p&gt; 
+To create hypertext links from text to content outside of the ePI document use the following format: 
+&lt;A href="http://www.w3.org/"&gt;W3C Web site&lt;/A&gt; 
+</code></pre></div></div>
 
 <h2 id="linking-between-data-and-narrative-text">Linking between data and narrative text</h2>
 <p>In some contexts, it is useful to link between the two representations of the same content: structured data, and human readable narrative. This can be used to assert that the text is a representation of the data, or specifically that the data is derived from some particular text. This specification defines the extensions narrativeLink and originalText to establish these links.</p>
 
-<p>Refer to section 2.4.0.5 of the FHIR Narrative for further detail.</p>
+<p>Refer to <a href="http://build.fhir.org/narrative.html#linking">section 2.4.0.5 of the FHIR Narrative</a> for further detail.</p>
 
 <h2 id="stylesheets">Stylesheets</h2>
 <p>The ePI’s XHTML SHALL not reference any external stylesheets. This is to ensure there is no active content that could introduce security issues.</p>
@@ -431,7 +451,7 @@ The @frame attribute specifies which of the table’s outside borders are visibl
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 8, 2022 11:11+0000">2022-08-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Tue, Aug 9, 2022 00:31+0000">2022-08-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333" >
