@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-08-20T18:05:15+00:00"/>
+  <date value="2022-08-20T18:51:18+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -600,6 +600,204 @@
       <name value="cc5753cd-e648-47d2-a135-503cd8a3e1da"/>
       <description value="HYPROMELLOSE, UNSPECIFIED"/>
       <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/cfsb1650904258324"/>
+      </reference>
+      <name value="cfsb1650904258324"/>
+      <description value="EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/cfsb1650995718524"/>
+      </reference>
+      <name value="cfsb1650995718524"/>
+      <description value="50 mg/300 mg film-coated tablets"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/cfsb1650997423990"/>
+      </reference>
+      <name value="cfsb1650997423990"/>
+      <description value="Manufacturer"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ManufacturedItemDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ManufacturedItemDefinition/cfsb1650998521654"/>
+      </reference>
+      <name value="cfsb1650998521654"/>
+      <description value="Manufactured Item: Dovato 50 mg/300 mg film-coated tablets"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AdministrableProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="AdministrableProductDefinition/cfsb1650999516847"/>
+      </reference>
+      <name value="cfsb1650999516847"/>
+      <description value="Dovato 50 mg/300 mg film-coated tablets"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RegulatedAuthorization"/>
+      </extension>
+      <reference>
+        <reference value="RegulatedAuthorization/cfsb1651148079894"/>
+      </reference>
+      <name value="cfsb1651148079894"/>
+      <description value="Regulated authorization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/cfsb1651149636159"/>
+      </reference>
+      <name value="cfsb1651149636159"/>
+      <description value="Marketing Authorization Holder"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/cfsb1651152112409"/>
+      </reference>
+      <name value="cfsb1651152112409"/>
+      <description value="Regulator"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1651162710491"/>
+      </reference>
+      <name value="cfsb1651162710491"/>
+      <description value="dolutegravir"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1651164758053"/>
+      </reference>
+      <name value="cfsb1651164758053"/>
+      <description value="lamivudine"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1651170791283"/>
+      </reference>
+      <name value="cfsb1651170791283"/>
+      <description value="microcrystalline cellulose"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1651229974487"/>
+      </reference>
+      <name value="cfsb1651229974487"/>
+      <description value="sodium starch glycolate"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1651230170831"/>
+      </reference>
+      <name value="cfsb1651230170831"/>
+      <description value="magnesium stearate"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1651230330246"/>
+      </reference>
+      <name value="cfsb1651230330246"/>
+      <description value="mannitol"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/cfsb1651231019151"/>
+      </reference>
+      <name value="cfsb1651231019151"/>
+      <description value="Package Leaflet"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/cfsb1651234995610"/>
+      </reference>
+      <name value="cfsb1651234995610"/>
+      <description value="Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cfsb1651596479132"/>
+      </reference>
+      <name value="Vulcan Dovato FHIR Package Insert EMA"/>
+      <description value="English Instance of Dovato package insert for Connectathon testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cfsb1651597532341"/>
+      </reference>
+      <name value="Vulcan Dovato FHIR Package Insert EMA ESP"/>
+      <description value="Spanish Instance of Dovato package insert for Connectathon testing"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

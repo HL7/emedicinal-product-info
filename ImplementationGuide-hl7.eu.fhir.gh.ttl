@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GhImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Gravitate Health FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-20T18:05:15+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-20T18:51:18+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -838,6 +838,258 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1650904258324>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1650904258324" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1650904258324" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/cfsb1650995718524>;
+         fhir:Reference.reference [ fhir:value "PackagedProductDefinition/cfsb1650995718524" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1650995718524" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "50 mg/300 mg film-coated tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1650997423990" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1650997423990" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufacturer" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1650998521654" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item: Dovato 50 mg/300 mg film-coated tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/AdministrableProductDefinition/cfsb1650999516847>;
+         fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/cfsb1650999516847" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1650999516847" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dovato 50 mg/300 mg film-coated tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "RegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1651148079894>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/cfsb1651148079894" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651148079894" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulated authorization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651149636159>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1651149636159" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651149636159" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651152112409>;
+         fhir:Reference.reference [ fhir:value "Organization/cfsb1651152112409" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651152112409" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1651162710491>;
+         fhir:Reference.reference [ fhir:value "Ingredient/cfsb1651162710491" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651162710491" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "dolutegravir" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1651164758053>;
+         fhir:Reference.reference [ fhir:value "Ingredient/cfsb1651164758053" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651164758053" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "lamivudine" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1651170791283>;
+         fhir:Reference.reference [ fhir:value "Ingredient/cfsb1651170791283" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651170791283" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "microcrystalline cellulose" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1651229974487>;
+         fhir:Reference.reference [ fhir:value "Ingredient/cfsb1651229974487" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651229974487" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "sodium starch glycolate" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1651230170831>;
+         fhir:Reference.reference [ fhir:value "Ingredient/cfsb1651230170831" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651230170831" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "magnesium stearate" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1651230330246>;
+         fhir:Reference.reference [ fhir:value "Ingredient/cfsb1651230330246" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651230330246" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "mannitol" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1651231019151>;
+         fhir:Reference.reference [ fhir:value "Composition/cfsb1651231019151" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651231019151" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package Leaflet" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1651234995610>;
+         fhir:Reference.reference [ fhir:value "Composition/cfsb1651234995610" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "cfsb1651234995610" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/cfsb1651596479132>;
+         fhir:Reference.reference [ fhir:value "Bundle/cfsb1651596479132" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vulcan Dovato FHIR Package Insert EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "English Instance of Dovato package insert for Connectathon testing" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Bundle/cfsb1651597532341>;
+         fhir:Reference.reference [ fhir:value "Bundle/cfsb1651597532341" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vulcan Dovato FHIR Package Insert EMA ESP" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Spanish Instance of Dovato package insert for Connectathon testing" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Ingredient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -851,7 +1103,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
        ]
      ], [
-       fhir:index 53;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -868,7 +1120,7 @@
          fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi>
        ]
      ], [
-       fhir:index 54;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -882,7 +1134,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instance of exemestane tablets JPI for Connectathon testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

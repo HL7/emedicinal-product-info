@@ -1,0 +1,176 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1651234995610> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cfsb1651234995610"];
+  fhir:Resource.language [ fhir:value "es"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" lang=\"es\"><p><b>Generated Narrative: Composition</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition \"cfsb1651234995610\"  (Language \"es\") </p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2022-04-29 01:28:17+0000</p><p><b>author</b>: <a href=\"Organization-cfsb1651149636159.html\">Organization/cfsb1651149636159</a> \"ViiV Healthcare BV\"</p><p><b>title</b>: TEST PURPOSES ONLY/EJEMPLO DE PRUEBAS - Dovato 50 mg/300 mg comprimidos recubiertos con película</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-composition-attestation-mode.html\">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+       fhir:Coding.code [ fhir:value "100000155538" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Package Leaflet" ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1651148079894>;
+     fhir:Reference.reference [ fhir:value "RegulatedAuthorization/cfsb1651148079894" ]
+  ];
+  fhir:Composition.date [ fhir:value "2022-04-29T13:28:17Z"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651149636159>;
+     fhir:Reference.reference [ fhir:value "Organization/cfsb1651149636159" ]
+  ];
+  fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY/EJEMPLO DE PRUEBAS - Dovato 50 mg/300 mg comprimidos recubiertos con película"];
+  fhir:Composition.confidentiality [ fhir:value "U"];
+  fhir:Composition.attester [
+     fhir:index 0;
+     fhir:Composition.attester.mode [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/composition-attestation-mode" ];
+         fhir:Coding.code [ fhir:value "official" ]
+       ]
+     ];
+     fhir:Composition.attester.time [ fhir:value "2002-08-01T13:28:17Z"^^xsd:dateTime ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "B. Package Leaflet" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prospecto: información para el paciente Dovato 50 mg/300 mg comprimidos recubiertos con película dolutegravir/lamivudina <b>Lea todo el prospecto detenidamente antes de empezar a tomar este medicamento, porque contiene información importante para usted.</b><ul><li>Conserve este prospecto, ya que puede tener que volver a leerlo.</li><li>Si tiene alguna duda, consulte a su médico o farmacéutico.</li><li>Este medicamento se le ha recetado solamente a usted, y no debe dárselo a otras personas aunque tengan los mismos síntomas que usted, ya que puede perjudicarles.</li><li>Si experimenta efectos adversos, consulte a su médico o farmacéutico, incluso si se trata de efectos adversos que no aparecen en este prospecto. Ver sección 4.</li></ul></div>"
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "What is in this leaflet" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-0" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Contenido del prospecto<ol><li>Qué es Dovato y para qué se utiliza</li><li>Qué necesita saber antes de empezar a tomar Dovato</li><li>Cómo tomar Dovato</li><li>Posibles efectos adversos</li><li>Conservación de Dovato</li><li>Contenido del envase e información adicional</li></ol></div>"
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "1. What Dovato is and what it is used for" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-1" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>1. Qué es Dovato y para qué se utiliza</b> Dovato es un medicamento que contiene dos principios activos usados para tratar la infección por el virus de la inmunodeficiencia humana (VIH): dolutegravir y lamivudina. Dolutegravir pertenece al grupo de medicamentos antirretrovirales llamados inhibidores de la integrasa (INI) y lamivudina pertenece a un grupo de medicamentos antirretrovirales denominados inhibidores de la transcriptasa inversa análogos de nucleósido (ITIAN).</div>"
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "2. What you need to know before you take Dovato" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-2" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>2. Qué necesita saber antes de empezar a tomar Dovato</b> <b>No tome Dovato</b><ul><li>si es <b>alérgico</b> (hipersensible) a dolutegravir o lamivudina o a alguno de los demás componentes de este medicamento (incluidos en la sección 6)</li><li>si está tomando un medicamento llamado <b>fampridina</b> (también conocido como dalfampridina; utilizado para tratar la esclerosis múltiple).</li></ul></div>"
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Composition.section.title [ fhir:value "3. How to take Dovato" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-3" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>3. Cómo tomar Dovato</b><p>Siga exactamente las instrucciones de administración de este medicamento indicadas por su médico. En caso de duda, consulte de nuevo a su médico o farmacéutico.</p><ul><li>La dosis recomendada de Dovato es <b>un comprimido una vez al día.</b></li></ul><p>Trague el comprimido con un poco de líquido. Dovato se puede tomar con o sin alimentos.</p></div>"
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Composition.section.title [ fhir:value "4. Possible side effects" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-4" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>4. Posibles efectos adversos</b></p><p>Al igual que todos los medicamentos, este medicamento puede producir efectos adversos, aunque no todas las personas los sufran, <b>por lo que es muy importante que le comente a su médico cualquier cambio en su estado de salud.</b></p></div>"
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Composition.section.title [ fhir:value "5. How to store Dovato" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-5" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>5. Conservación de Dovato</b><p>Mantener este medicamento fuera de la vista y del alcance de los niños</p><p>No utilice este medicamento después de la fecha de caducidad que aparece en la caja y el frasco después de CAD. La fecha de caducidad es el último día del mes que se indica.</p><p>Este medicamento no requiere ninguna condición especial de conservación.</p><p>Los medicamentos no se deben tirar por los desagües ni a la basura. Pregunte a su farmacéutico cómo deshacerse de los envases y de los medicamentos que ya no necesita. De esta forma, ayudará a proteger el medio ambiente.</p></div>"
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Composition.section.title [ fhir:value "6. Contents of the pack and other information" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/" ];
+         fhir:Coding.code [ fhir:value "100000155538-6" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "B. PACKAGE LEAFLET" ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>6. Contenido del envase e información adicional</b> <b>Composición de Dovato</b><ul><li>Los principios activos son dolutegravir y lamivudina. Cada comprimido contiene dolutegravir sódico equivalente a 50 mg de dolutegravir y 300 mg de lamivudina.</li><li>Los demás componentes son celulosa microcristalina, carboximetilalmidón sódico, estearato de magnesio, manitol (E421), povidona (K29/32), fumarato estearilo de sodio, hipromelosa (E464), macrogol, dióxido de titanio (E171).</li><li>Este medicamento contiene menos de 1 mmol de sodio (23 mg) por comprimido; esto es, esencialmente “exento de sodio”.</li></ul></div>"
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1651234995610.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
