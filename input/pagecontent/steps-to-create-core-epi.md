@@ -19,7 +19,7 @@ The following synthetic medicinal product data is used to throughout this sectio
 |--|--|--|--|--|--|--|
 | 123 | Drug X | 30 mg  | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 42 tablets |
 
-**Example 3 - Kit with an injection, powder, lyophilized, for solution **
+**Example 3 - Kit with an injection, powder, lyophilized, for solution**
 
 |Medicinal Product Identifier (MPID)| Invented Name | Strength | Dosage Form | Route of Administration | Primary Packaging  | Pack Size |
 |--|--|--|--|--|--|--|
@@ -51,7 +51,7 @@ Create a reference from the SubstanceDefinition to the Organization resource for
 Refer to the [SubstanceDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step2.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Substance</figcaption>
 </figure>
 
