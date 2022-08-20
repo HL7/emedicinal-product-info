@@ -1,5 +1,5 @@
-Instance: cfsb1650280714062
-InstanceOf: SubstanceDefinition
+Instance: f733a07f-c7fb-43eb-9776-ec0a3e4748da
+InstanceOf: SubstanceDefinitionUvEpi
 Description: "exemestane-sub"
 Usage: #example
  
@@ -15,7 +15,7 @@ Usage: #example
 * description = "White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water."
 
  // Reference to Organization: MAH
-* manufacturer = Reference(cfsb1650282011366)
+* manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
 
 * structure.molecularFormula = "C20H24O2"
 

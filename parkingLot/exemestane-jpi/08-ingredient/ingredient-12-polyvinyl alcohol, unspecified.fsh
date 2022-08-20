@@ -1,5 +1,5 @@
-Instance: cfsb1640780546712
-InstanceOf: Ingredient
+Instance: 9df66779-105d-4df6-b920-a3d134cec967
+InstanceOf: IngredientUvEpi
 Description: "POLYVINYL ALCOHOL, UNSPECIFIED"
 Usage: #example
 
@@ -13,9 +13,9 @@ Usage: #example
 * status = #active
 
 // Reference to Manufactured Item
-* for = Reference(cfsb1640777487408)
+* for = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#532B59J990 "POLYVINYL ALCOHOL, UNSPECIFIED"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(cfsb1640870284639)
+* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)

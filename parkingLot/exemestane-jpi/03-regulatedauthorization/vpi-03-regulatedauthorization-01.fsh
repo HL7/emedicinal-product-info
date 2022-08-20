@@ -1,5 +1,5 @@
-Instance: cfsb1640870220343
-InstanceOf: RegulatedAuthorization
+Instance: 15c6f86f-8665-4bd6-86da-a3a61fe16084
+InstanceOf: RegulatedAuthorizationUvEpi
 Description: "Regulated Authorization"
 Usage: #example
 
@@ -8,13 +8,7 @@ Usage: #example
 * identifier.use = #official
 
  // Reference to MedicinalProductDefinition: Aromasin (exemestane) Tablets 25 mg
-* subject = Reference(cfsb1641212233583)
-
-// Reference to the PackagedProductDefinition: 28 tablets (14x2)
-* subject = Reference(cfsb1640781499340)
-
-// Reference to the PackagedProductDefinition: 140 tablets (14x10)
-* subject = Reference(cfsb1640781499341)
+* subject[+] = Reference(117616c7-3bcc-4665-8e12-0e93447e679e)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
 * type.text = "Marketing Authorisation"
@@ -28,4 +22,4 @@ Usage: #example
 * statusDate = "2002-08-01T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
-* holder = Reference(cfsb1640870284639)
+* holder = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)

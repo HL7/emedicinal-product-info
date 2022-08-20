@@ -1,5 +1,5 @@
-Instance: cfsb1640780048752
-InstanceOf: Ingredient
+Instance: 13beb88f-1df3-499d-9c74-4f5925a6f206
+InstanceOf: IngredientUvEpi
 Description: "synthetic wax"
 Usage: #example
 
@@ -14,9 +14,9 @@ Usage: #example
 * status = #active
 
 // Reference to Manufactured Item
-* for = Reference(cfsb1640777487408)
+* for = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#5M631N9V0S "synthetic wax"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(cfsb1640870284639)
+* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)

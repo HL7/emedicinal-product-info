@@ -1,5 +1,5 @@
-Instance: cfsb1640780743129
-InstanceOf: Ingredient
+Instance: fc31fc43-2825-41c6-8757-e1c0cab29712
+InstanceOf: IngredientUvEpi
 Description: "HYPROMELLOSE, UNSPECIFIED "
 Usage: #example
 
@@ -14,9 +14,9 @@ Usage: #example
 * status = #active
 
 // Reference to Manufactured Item
-* for = Reference(cfsb1640777487408)
+* for = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#3NXW29V3WO "HYPROMELLOSE, UNSPECIFIED "
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(cfsb1640870284639)
+* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
