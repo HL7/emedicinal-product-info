@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f> a fhir:SubstanceDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "17c536c9-efd1-4427-a7b0-1bcdc266798f"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi";
+       fhir:index 0;
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SubstanceDefinition</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SubstanceDefinition \"17c536c9-efd1-4427-a7b0-1bcdc266798f\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SubstanceDefinition-uv-epi.html\">SubstanceDefinition (ePI)</a></p></div><p><b>identifier</b>: id: NY22HMQ4BX (OFFICIAL)</p><p><b>version</b>: 39</p><p><b>status</b>: Validated (UNII) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#1)</span></p><p><b>description</b>: White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water.</p><p><b>manufacturer</b>: <a href=\"Organization-85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8.html\">Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8</a> \"PHARMACIA &amp; UPJOHN COMPANY LLC\"</p><h3>MolecularWeights</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Amount</b></td></tr><tr><td>*</td><td>exact <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>296.4</td></tr></table><h3>Structures</h3><table class=\"grid\"><tr><td>-</td><td><b>MolecularFormula</b></td></tr><tr><td>*</td><td>C20H24O2</td></tr></table><h3>Names</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>(+)-6-methyleneandrosta-1,4-diene-3,17-dione</td><td>Chemical Name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#1)</span></td></tr></table></div>"
+  ];
+  fhir:SubstanceDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+     fhir:Identifier.value [ fhir:value "NY22HMQ4BX" ]
+  ];
+  fhir:SubstanceDefinition.version [ fhir:value "39"];
+  fhir:SubstanceDefinition.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+       fhir:Coding.code [ fhir:value "1" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Validated (UNII)" ]
+  ];
+  fhir:SubstanceDefinition.description [ fhir:value "White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water."];
+  fhir:SubstanceDefinition.manufacturer [
+     fhir:index 0;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
+     fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
+  ];
+  fhir:SubstanceDefinition.molecularWeight [
+     fhir:index 0;
+     fhir:SubstanceDefinition.molecularWeight.type [
+       fhir:CodeableConcept.text [ fhir:value "exact" ]
+     ];
+     fhir:SubstanceDefinition.molecularWeight.amount [
+       fhir:Quantity.value [ fhir:value "296.4"^^xsd:decimal ]
+     ]
+  ];
+  fhir:SubstanceDefinition.structure [
+     fhir:SubstanceDefinition.structure.molecularFormula [ fhir:value "C20H24O2" ]
+  ];
+  fhir:SubstanceDefinition.name [
+     fhir:index 0;
+     fhir:SubstanceDefinition.name.name [ fhir:value "(+)-6-methyleneandrosta-1,4-diene-3,17-dione" ];
+     fhir:SubstanceDefinition.name.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://gsrs.ncats.nih.gov/ginas/app/beta/" ];
+         fhir:Coding.code [ fhir:value "1" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Chemical Name" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health/SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

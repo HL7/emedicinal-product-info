@@ -1,0 +1,54 @@
+{
+  "resourceType": "Organization",
+  "id": "85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-uv-epi.html\">Organization (ePI)</a></p></div><p><b>identifier</b>: id: 618054084 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Manufacturer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#tbd \"Marketing authorisation holder\")</span></p><p><b>name</b>: PHARMACIA &amp; UPJOHN COMPANY LLC</p><p><b>telecom</b>: ph: 1-908-901-8000(WORK)</p><p><b>address</b>: 100 Route 206 North Peapack, NJ 07977 United States(WORK)</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://fda-org-id",
+      "value": "618054084"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fda-org-type.gov/",
+          "code": "tbd",
+          "display": "Marketing authorisation holder"
+        }
+      ],
+      "text": "Manufacturer"
+    }
+  ],
+  "name": "PHARMACIA & UPJOHN COMPANY LLC",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-908-901-8000",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "physical",
+      "text": "100 Route 206 North Peapack, NJ 07977 United States",
+      "line": [
+        "100 Route 206 North Peapack"
+      ],
+      "city": "New Jersey",
+      "postalCode": "07977",
+      "country": "United States"
+    }
+  ]
+}

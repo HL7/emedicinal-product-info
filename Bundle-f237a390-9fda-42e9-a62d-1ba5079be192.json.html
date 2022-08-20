@@ -1,0 +1,1889 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH\Vulcan FHIR USA Patient Package Insert Test - Aromasin (exemestane) Tablets 25 mg - JSON Representation - FHIR v5.0.0-snapshot1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"12.55"}
+    h3,h4,h5,h6{--heading-prefix:"12.55"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="index.html">Introduction</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">The Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="core-epi-structure.html">Core ePI Structure</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="steps-to-create-core-epi.html">Step to create ePI</a>
+      </li>
+      <li>
+        <a href="general-technical-conformance-requirements.html">General Technical Conformance</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="capability.html">Capability</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="appendicies.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">National Annexes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="annex1-ema-fhir-epi.html">EU/EMA FHIR ePI Profile</a>
+      </li>
+      <li>
+        <a href="annex2-fda-fhir-epi.html">US/FDA FHIR ePI Profile</a>
+      </li>
+      <li>
+        <a href="annex3-pmda-fhir-epi.html">Japan/PMDA FHIR ePI Profile</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Vulcan FHIR USA Patient Package Insert Test - Aromasin (exemestane) Tablets 25 mg</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-f237a390-9fda-42e9-a62d-1ba5079be192.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Bundle-f237a390-9fda-42e9-a62d-1ba5079be192.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-f237a390-9fda-42e9-a62d-1ba5079be192.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Vulcan FHIR USA Patient Package Insert Test - Aromasin (exemestane) Tablets 25 mg - JSON Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Bundle-f237a390-9fda-42e9-a62d-1ba5079be192.json" no-download="true">Raw json</a> | <a href="Bundle-f237a390-9fda-42e9-a62d-1ba5079be192.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code>
+{
+  "<a href="http://build.fhir.org/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.id">id</a>" : "f237a390-9fda-42e9-a62d-1ba5079be192",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.identifier">identifier</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://www.gravitatehealth.eu/sid/doc",
+    "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "4291012F1022_4_02"
+  },
+  "<a href="http://build.fhir.org/bundle.html#Bundle.type">type</a>" : "document",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.timestamp">timestamp</a>" : "2002-08-01T13:28:17Z",
+  "<a href="http://build.fhir.org/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://build.fhir.org/composition.html#Composition">resource</a>" : {
+        "<a href="http://build.fhir.org/composition.html">resourceType</a>" : "Composition",
+        "<a href="http://build.fhir.org/composition.html#Composition.id">id</a>" : "363cbf4a-9c4d-442a-af67-b72a1225ca28",
+        "<a href="http://build.fhir.org/composition.html#Composition.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/composition.html#Composition.language">language</a>" : "en",
+        "<a href="http://build.fhir.org/composition.html#Composition.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Composition&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Composition \&quot;363cbf4a-9c4d-442a-af67-b72a1225ca28\&quot;  (Language \&quot;en\&quot;) &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Composition-uv-epi.html\&quot;&gt;Composition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Package Leaflet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000155538)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2002-08-01 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: U&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Official &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-composition-attestation-mode.html\&quot;&gt;CompositionAttestationMode&lt;/a&gt;#official)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2002-08-01 01:28:17+0000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/composition.html#Composition.status">status</a>" : "final",
+        "<a href="http://build.fhir.org/composition.html#Composition.type">type</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155538"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Package Leaflet"
+        },
+        "<a href="http://build.fhir.org/composition.html#Composition.subject">subject</a>" : {
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "RegulatedAuthorization/56b3b73e-dba0-4447-b8cd-1e24ed637017"
+        },
+        "<a href="http://build.fhir.org/composition.html#Composition.date">date</a>" : "2002-08-01T13:28:17Z",
+        "<a href="http://build.fhir.org/composition.html#Composition.author">author</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+          }
+        ],
+        "<a href="http://build.fhir.org/composition.html#Composition.title">title</a>" : "TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets",
+        "<a href="http://build.fhir.org/composition.html#Composition.confidentiality">confidentiality</a>" : "U",
+        "<a href="http://build.fhir.org/composition.html#Composition.attester">attester</a>" : [
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.attester.mode">mode</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/composition-attestation-mode",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "official"
+                }
+              ]
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.attester.time">time</a>" : "2002-08-01T13:28:17Z"
+          }
+        ],
+        "<a href="http://build.fhir.org/composition.html#Composition.section">section</a>" : [
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "SPL PATIENT PACKAGE INSERT SECTION",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "PATIENT PACKAGE INSERT"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "What is AROMASIN?",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3-1"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "What is AROMASIN?"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;AROMASIN is used in women who are past menopause for the treatment of:&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "Before you take AROMASIN, tell your doctor about all your medical conditions, including if you:",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3-2"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Before you take AROMASIN, tell your doctor about all your medical conditions, including if you:"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;are still having menstrual periods (are not past menopause). AROMASIN is only for women who are past menopause. have weak or brittle bones (osteoporosis)&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "How should I take AROMASIN?",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3-3"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "How should I take AROMASIN?"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Take AROMASIN exactly as your doctor tells you. Take AROMASIN 1 time each day after a meal. If you take too much AROMASIN, call your doctor right away or go to nearest hospital emergency room.&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "What are the possible side effects of AROMASIN?",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3-4"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "What are the possible side effects of AROMASIN?"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Your doctor will do blood tests to check your vitamin D level before starting treatment with AROMASIN. AROMASIN may cause decreased fertility in males and females. Talk to your doctor if you have concerns about fertility. These are not all the possible side effects of AROMASIN. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "How should I store AROMASIN?",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3-5"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "How should I store AROMASIN?"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Store AROMASIN at room temperature 68°F to 77°F (20°C to 25°C). Keep AROMASIN and all medicines out of the reach of children.&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "General information about the safe and effective use of AROMASIN.",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3-6"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "General information about the safe and effective use of AROMASIN."
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Medicines are sometimes prescribed for purposes other than those listed in a Patient Information leaflet. Do not use AROMASIN for a condition for which it was not prescribed. Do not give AROMASIN to other people, even if they have the same symptoms you have. It may harm them. You can ask your pharmacist or doctor for information about AROMASIN that is written for health professionals.&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          },
+          {
+            "<a href="http://build.fhir.org/composition.html#Composition.section.title">title</a>" : "What is in AROMASIN?",
+            "<a href="http://build.fhir.org/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.loinc.org/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "42230-3-6"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "What is in AROMASIN?"
+            },
+            "<a href="http://build.fhir.org/composition.html#Composition.section.text">text</a>" : {
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "additional",
+              "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Active ingredient: exemestane Inactive ingredients: mannitol, crospovidone, polysorbate 80, hypromellose, colloidal silicon dioxide, microcrystalline cellulose, sodium starch glycolate, magnesium stearate, simethicone, polyethylene glycol 6000, sucrose, magnesium carbonate, titanium dioxide, methylparaben, and polyvinyl alcohol. Logo LAB-0399-9.0 For more information, go to www.AROMASIN.com or call 1-888-AROMASIN (1-888-276-6274).&lt;/div&gt;"<a name="end-xhtml"></a>
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/organization.html#Organization">resource</a>" : {
+        "<a href="http://build.fhir.org/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://build.fhir.org/organization.html#Organization.id">id</a>" : "85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8",
+        "<a href="http://build.fhir.org/organization.html#Organization.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/organization.html#Organization.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Organization \&quot;85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Organization-uv-epi.html\&quot;&gt;Organization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 618054084 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Manufacturer &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#tbd \&quot;Marketing authorisation holder\&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: PHARMACIA &amp;amp; UPJOHN COMPANY LLC&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: 1-908-901-8000(WORK)&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 100 Route 206 North Peapack, NJ 07977 United States(WORK)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/organization.html#Organization.identifier">identifier</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fda-org-id",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "618054084"
+          }
+        ],
+        "<a href="http://build.fhir.org/organization.html#Organization.active">active</a>" : true,
+        "<a href="http://build.fhir.org/organization.html#Organization.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://fda-org-type.gov/",
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "tbd",
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Marketing authorisation holder"
+              }
+            ],
+            "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Manufacturer"
+          }
+        ],
+        "<a href="http://build.fhir.org/organization.html#Organization.name">name</a>" : "PHARMACIA &amp; UPJOHN COMPANY LLC",
+        "<a href="http://build.fhir.org/organization.html#Organization.telecom">telecom</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+            "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "1-908-901-8000",
+            "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+          }
+        ],
+        "<a href="http://build.fhir.org/organization.html#Organization.address">address</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Address#Address.use">use</a>" : "work",
+            "<a href="http://build.fhir.org/datatypes.html#Address#Address.type">type</a>" : "physical",
+            "<a href="http://build.fhir.org/datatypes.html#Address#Address.text">text</a>" : "100 Route 206 North Peapack, NJ 07977 United States",
+            "<a href="http://build.fhir.org/datatypes.html#Address#Address.line">line</a>" : [
+              "100 Route 206 North Peapack"
+            ],
+            "<a href="http://build.fhir.org/datatypes.html#Address#Address.city">city</a>" : "New Jersey",
+            "<a href="http://build.fhir.org/datatypes.html#Address#Address.postalCode">postalCode</a>" : "07977",
+            "<a href="http://build.fhir.org/datatypes.html#Address#Address.country">country</a>" : "United States"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization">resource</a>" : {
+        "<a href="http://build.fhir.org/regulatedauthorization.html">resourceType</a>" : "RegulatedAuthorization",
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.id">id</a>" : "56b3b73e-dba0-4447-b8cd-1e24ed637017",
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: RegulatedAuthorization&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource RegulatedAuthorization \&quot;56b3b73e-dba0-4447-b8cd-1e24ed637017\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-RegulatedAuthorization-uv-epi.html\&quot;&gt;RegulatedAuthorization (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 21400AMY00186 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\&quot;&gt;See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#/#100000072062)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: United States of America &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#us)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2002-08-01 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.identifier">identifier</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fda-approvalandlicenseno/",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "21400AMY00186"
+          }
+        ],
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.subject">subject</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54"
+          }
+        ],
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.type">type</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "/#100000072062"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Marketing Authorisation"
+        },
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.region">region</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "us"
+              }
+            ],
+            "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "United States of America"
+          }
+        ],
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.status">status</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/publication-status",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "active"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Active"
+        },
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.statusDate">statusDate</a>" : "2002-08-01T13:28:17Z",
+        "<a href="http://build.fhir.org/regulatedauthorization.html#RegulatedAuthorization.holder">holder</a>" : {
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition">resource</a>" : {
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html">resourceType</a>" : "MedicinalProductDefinition",
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.id">id</a>" : "f1b25777-da7a-4a35-98af-ab18d3246d54",
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: MedicinalProductDefinition&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource MedicinalProductDefinition \&quot;f1b25777-da7a-4a35-98af-ab18d3246d54\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-MedicinalProductDefinition-uv-epi.html\&quot;&gt;MedicinalProductDefinition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 123456&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Medicinal Product &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-medicinal-product-type.html\&quot;&gt;MedicinalProductType&lt;/a&gt;#MedicinalProduct)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: Human use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-medicinal-product-domain.html\&quot;&gt;MedicinalProductDomain&lt;/a&gt;#Human)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;legalStatusOfSupply&lt;/b&gt;: Medicinal product subject to medical prescription &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000072084)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;productName&lt;/b&gt;: Aromasin (exemestane) Tablets 25 mg&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Full name &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000001)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;NameParts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Part&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Tablet&lt;/td&gt;&lt;td&gt;Pharmaceutical dose form part &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#220000000005)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;CountryLanguages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Jurisdiction&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;United States of America &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#us)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;United States of America &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#us)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;English &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#en)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://spor.ema.europa.eu/pmswi",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "123456"
+          }
+        ],
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.type">type</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/medicinal-product-type",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "MedicinalProduct"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Medicinal Product"
+        },
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.domain">domain</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/medicinal-product-domain",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "Human"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Human use"
+        },
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.status">status</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/publication-status",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "active",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Active"
+            }
+          ]
+        },
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.legalStatusOfSupply">legalStatusOfSupply</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072084"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Medicinal product subject to medical prescription"
+        },
+        "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name">name</a>" : [
+          {
+            "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">productName</a>" : "Aromasin (exemestane) Tablets 25 mg",
+            "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.type">type</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "220000000001"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Full name"
+            },
+            "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart">namePart</a>" : [
+              {
+                "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.part">part</a>" : "Tablet",
+                "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.type">type</a>" : {
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "220000000005"
+                    }
+                  ],
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Pharmaceutical dose form part"
+                }
+              }
+            ],
+            "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage">countryLanguage</a>" : [
+              {
+                "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.country">country</a>" : {
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "us"
+                    }
+                  ],
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "United States of America"
+                },
+                "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.jurisdiction">jurisdiction</a>" : {
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "us"
+                    }
+                  ],
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "United States of America"
+                },
+                "<a href="http://build.fhir.org/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.language">language</a>" : {
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:639-1",
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "en"
+                    }
+                  ],
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "English"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition">resource</a>" : {
+        "<a href="http://build.fhir.org/packagedproductdefinition.html">resourceType</a>" : "PackagedProductDefinition",
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.id">id</a>" : "39151aef-f61a-40cb-86fc-d0e556fa07ef",
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PackagedProductDefinition&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource PackagedProductDefinition \&quot;39151aef-f61a-40cb-86fc-d0e556fa07ef\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PackagedProductDefinition-uv-epi.html\&quot;&gt;PackagedProductDefinition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: NDC:0009-7663-04 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Chemical Medininal Prodcut &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000155527)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\&quot;&gt;See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://build.fhir.org/codesystem-publication-status.html\&quot;&gt;PublicationStatus&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2002-08-01 01:28:17+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 30 tablet&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 0009-7663-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Bottle &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000073497)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: High Density PolyEthylene &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#200000003215)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;containedItem&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://spor.ema.europa.eu/pmswi",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "NDC:0009-7663-04"
+          }
+        ],
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.name">name</a>" : "Aromasin (exemestane) Tablets 25 mg - 28 tablets [14 tablets (PTP) x 2]",
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.type">type</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000155527"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Chemical Medininal Prodcut"
+        },
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.packageFor">packageFor</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54"
+          }
+        ],
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.status">status</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/publication-status",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "active",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Active"
+            }
+          ]
+        },
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.statusDate">statusDate</a>" : "2002-08-01T13:28:17Z",
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">containedItemQuantity</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">value</a>" : 30,
+            "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">unit</a>" : "tablet"
+          }
+        ],
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+          }
+        ],
+        "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package">package</a>" : {
+          "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.identifier">identifier</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://spor.ema.europa.eu/pmswi",
+              "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "0009-7663-04"
+            }
+          ],
+          "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.type">type</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000073497",
+                "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Bottle"
+              }
+            ]
+          },
+          "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.quantity">quantity</a>" : 1,
+          "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.material">material</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "200000003215",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "High Density PolyEthylene"
+                }
+              ]
+            }
+          ],
+          "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem">containedItem</a>" : [
+            {
+              "<a href="http://build.fhir.org/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.item">item</a>" : {
+                "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.reference">reference</a>" : {
+                  "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition">resource</a>" : {
+        "<a href="http://build.fhir.org/administrableproductdefinition.html">resourceType</a>" : "AdministrableProductDefinition",
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.id">id</a>" : "8cf05f7c-481d-4bd6-9a7c-9ca3275601c3",
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: AdministrableProductDefinition&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource AdministrableProductDefinition \&quot;8cf05f7c-481d-4bd6-9a7c-9ca3275601c3\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-AdministrableProductDefinition-uv-epi.html\&quot;&gt;AdministrableProductDefinition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 0x712653c26276d3c31c11a7c198246a38&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;formOf&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_f1b25777-da7a-4a35-98af-ab18d3246d54\&quot;&gt;See above (MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administrableDoseForm&lt;/b&gt;: Tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#10219000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#15054000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;producedFrom&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;routeOfAdministration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Oral use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#20053000)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;TargetSpecies&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Human &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CodeSystemUvEPIRrmswi.html\&quot;&gt;Referentials Management Services CodeSystem&lt;/a&gt;#100000109093)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://www.who-umc.org/phpid",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "0x712653c26276d3c31c11a7c198246a38"
+          }
+        ],
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.formOf">formOf</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54"
+          }
+        ],
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.administrableDoseForm">administrableDoseForm</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "10219000"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Tablet"
+        },
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.unitOfPresentation">unitOfPresentation</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "15054000"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Tablet"
+        },
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.producedFrom">producedFrom</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration">routeOfAdministration</a>" : [
+          {
+            "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.code">code</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "20053000"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Oral use"
+            },
+            "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.targetSpecies">targetSpecies</a>" : [
+              {
+                "<a href="http://build.fhir.org/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.targetSpecies.code">code</a>" : {
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi",
+                      "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000109093"
+                    }
+                  ],
+                  "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Human"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition">resource</a>" : {
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html">resourceType</a>" : "ManufacturedItemDefinition",
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.id">id</a>" : "23fed712-2d60-461d-83a6-5fb939b2a939",
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ManufacturedItemDefinition&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ManufacturedItemDefinition \&quot;23fed712-2d60-461d-83a6-5fb939b2a939\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ManufacturedItemDefinition-uv-epi.html\&quot;&gt;ManufacturedItemDefinition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 874291 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturedDoseForm&lt;/b&gt;: Tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#10219000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#15054000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "874291"
+          }
+        ],
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturedDoseForm">manufacturedDoseForm</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://standardterms.edqm.eu/browse/get_concepts_by/SOM/SOM/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "10219000"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Tablet"
+        },
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.unitOfPresentation">unitOfPresentation</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://standardterms.edqm.eu/browse/get_concepts/UOP/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "15054000"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Tablet"
+        },
+        "<a href="http://build.fhir.org/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "5a574ff2-f3e6-4aaa-8d3c-27e6ab343533",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;5a574ff2-f3e6-4aaa-8d3c-27e6ab343533\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: NY22HMQ4BX (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#00000072072)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Strengths&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Presentation[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Basis&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;25 mg&lt;/td&gt;&lt;td&gt;active ingredient - basis of strength &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (v3-RoleClassIngredientEntity#ACTIB)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "NY22HMQ4BX"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "00000072072"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "active"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "NY22HMQ4BX",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "exemestane"
+                }
+              ]
+            }
+          },
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength">strength</a>" : [
+            {
+              "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.presentation[x]">presentationQuantity</a>" : {
+                "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">value</a>" : 25,
+                "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mg"
+              },
+              "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.strength.basis">basis</a>" : {
+                "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity",
+                    "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "ACTIB"
+                  }
+                ],
+                "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "active ingredient - basis of strength"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "f35c1543-e4e2-4215-b91c-f092b1fb9655",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;f35c1543-e4e2-4215-b91c-f092b1fb9655\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 68401960MK (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "68401960MK"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "68401960MK",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "crospovidone"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "32e98fc8-b8fb-4bd9-a4d3-2ce97c151d61",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;32e98fc8-b8fb-4bd9-a4d3-2ce97c151d61\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: OP1R32D61U (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "OP1R32D61U"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "OP1R32D61U",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "crystalline cellulose"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "7b23dea1-ce14-4c13-8004-f297bb75eda0",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;7b23dea1-ce14-4c13-8004-f297bb75eda0\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 3OWL53L36A (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "3OWL53L36A"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "3OWL53L36A",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "MANNITOL"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "cc5753cd-e648-47d2-a135-503cd8a3e1da",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;cc5753cd-e648-47d2-a135-503cd8a3e1da\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 3NXW29V3WO (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "3NXW29V3WO"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "3NXW29V3WO",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "HYPROMELLOSE, UNSPECIFIED "
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "db5e392b-e7b2-47dc-829c-ee5182986dca",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;db5e392b-e7b2-47dc-829c-ee5182986dca\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 0E53J927NA (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "0E53J927NA"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "0E53J927NA",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "MAGNESIUM CARBONATE"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "5acc6759-a7f7-4380-ab2e-ad72e8587598",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;5acc6759-a7f7-4380-ab2e-ad72e8587598\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 70097M6I30 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "70097M6I30"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "70097M6I30",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "MAGNESIUM STEARATE"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "5f2c1669-3991-4cc2-b252-958b738d5df8",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;5f2c1669-3991-4cc2-b252-958b738d5df8\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: A2I8C7HI9T (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "A2I8C7HI9T"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "A2I8C7HI9T",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "METHYLPARABEN"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "0c81c330-cf57-45c2-9ca2-559aea4c8060",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;0c81c330-cf57-45c2-9ca2-559aea4c8060\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 30IQX730WE (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "30IQX730WE"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "30IQX730WE",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "POLYETHYLENE GLYCOL 6000"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "6708560e-135d-4b2a-afde-9e3b03f27939",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;6708560e-135d-4b2a-afde-9e3b03f27939\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 6OZP39ZG8H (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "6OZP39ZG8H"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "6OZP39ZG8H",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "POLYSORBATE 80"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "733fb580-1139-4188-aff8-ad6efe243555",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;733fb580-1139-4188-aff8-ad6efe243555\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 532B59J990 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "532B59J990"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "532B59J990",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "POLYVINYL ALCOHOL, UNSPECIFIED"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "c5a3cb57-3f3e-4309-ae34-0926300de57e",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;c5a3cb57-3f3e-4309-ae34-0926300de57e\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: C151H8M554 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "C151H8M554"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "C151H8M554",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "SUCROSE"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "16dc4148-5296-4f7a-8576-2e6bf9dde736",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;16dc4148-5296-4f7a-8576-2e6bf9dde736\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ETJ7Z6XBU4 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "ETJ7Z6XBU4"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "ETJ7Z6XBU4",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "SILICON DIOXIDE"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "b254f961-61ca-43f9-b3f9-5b0b5d4406a9",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;b254f961-61ca-43f9-b3f9-5b0b5d4406a9\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 5856J3G2A2 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "5856J3G2A2"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "5856J3G2A2",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "SODIUM STARCH GLYCOLATE TYPE A POTATO"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://build.fhir.org/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.id">id</a>" : "854be59d-070a-44d7-a82e-bbb83200dc6a",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient \&quot;854be59d-070a-44d7-a82e-bbb83200dc6a\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Ingredient-uv-epi.html\&quot;&gt;Ingredient (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 15FIX9V2JP (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;#ManufacturedItemDefinition_23fed712-2d60-461d-83a6-5fb939b2a939\&quot;&gt;See above (ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: Excipient &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#100000072082)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Manufacturers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.identifier">identifier</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+          "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "15FIX9V2JP"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939"
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/rmswi/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "100000072082"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Excipient"
+        },
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/ingredient.html#Ingredient.manufacturer.manufacturer">manufacturer</a>" : {
+              "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://build.fhir.org/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://build.fhir.org/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "15FIX9V2JP",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "TITANIUM DIOXIDE "
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition">resource</a>" : {
+        "<a href="http://build.fhir.org/substancedefinition.html">resourceType</a>" : "SubstanceDefinition",
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.id">id</a>" : "17c536c9-efd1-4427-a7b0-1bcdc266798f",
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.meta">meta</a>" : {
+          "<a href="http://build.fhir.org/resource.html#Meta#Meta.profile">profile</a>" : [
+            "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi"
+          ]
+        },
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.text">text</a>" : {
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: SubstanceDefinition&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource SubstanceDefinition \&quot;17c536c9-efd1-4427-a7b0-1bcdc266798f\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-SubstanceDefinition-uv-epi.html\&quot;&gt;SubstanceDefinition (ePI)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: NY22HMQ4BX (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 39&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Validated (UNII) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water.&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: &lt;a href=\&quot;#Organization_85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8\&quot;&gt;See above (Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;MolecularWeights&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Amount&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;exact &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/td&gt;&lt;td&gt;296.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Structures&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;MolecularFormula&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;C20H24O2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Names&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;(+)-6-methyleneandrosta-1,4-diene-3,17-dione&lt;/td&gt;&lt;td&gt;Chemical Name &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (#1)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+            "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "NY22HMQ4BX"
+          }
+        ],
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.version">version</a>" : "39",
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.status">status</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+              "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "1"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Validated (UNII)"
+        },
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.description">description</a>" : "White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water.",
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.manufacturer">manufacturer</a>" : [
+          {
+            "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"
+          }
+        ],
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.molecularWeight">molecularWeight</a>" : [
+          {
+            "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.molecularWeight.type">type</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "exact"
+            },
+            "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.molecularWeight.amount">amount</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">value</a>" : 296.4
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.structure">structure</a>" : {
+          "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.structure.molecularFormula">molecularFormula</a>" : "C20H24O2"
+        },
+        "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.name">name</a>" : [
+          {
+            "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.name.name">name</a>" : "(+)-6-methyleneandrosta-1,4-diene-3,17-dione",
+            "<a href="http://build.fhir.org/substancedefinition.html#SubstanceDefinition.name.type">type</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "https://gsrs.ncats.nih.gov/ginas/app/beta/",
+                  "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "1"
+                }
+              ],
+              "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Chemical Name"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Sat, Aug 20, 2022 18:05+0000">2022-08-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://build.fhir.org/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

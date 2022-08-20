@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="363cbf4a-9c4d-442a-af67-b72a1225ca28"/>
+  <meta>
+    <profile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b>Generated Narrative: Composition</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition "363cbf4a-9c4d-442a-af67-b72a1225ca28"  (Language "en") </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-uv-epi.html">Composition (ePI)</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#100000155538)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href="Organization-85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8.html">Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8</a> "PHARMACIA &amp; UPJOHN COMPANY LLC"</p><p><b>title</b>: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-composition-attestation-mode.html">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="https://spor.ema.europa.eu/"/>
+      <code value="100000155538"/>
+    </coding>
+    <text value="Package Leaflet"/>
+  </type>
+  <subject>
+    <reference value="RegulatedAuthorization/56b3b73e-dba0-4447-b8cd-1e24ed637017"/>
+  </subject>
+  <date value="2002-08-01T13:28:17Z"/>
+  <author>
+    <reference value="Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"/>
+  </author>
+  <title value="TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"/>
+  <confidentiality value="U"/>
+  <attester>
+    <mode>
+      <coding>
+        <system value="http://hl7.org/fhir/composition-attestation-mode"/>
+        <code value="official"/>
+      </coding>
+    </mode>
+    <time value="2002-08-01T13:28:17Z"/>
+  </attester>
+  <section>
+    <title value="SPL PATIENT PACKAGE INSERT SECTION"/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3"/>
+      </coding>
+      <text value="PATIENT PACKAGE INSERT"/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml"></div>
+    </text>
+  </section>
+  <section>
+    <title value="What is AROMASIN?"/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3-1"/>
+      </coding>
+      <text value="What is AROMASIN?"/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">AROMASIN is used in women who are past menopause for the treatment of:</div>
+    </text>
+  </section>
+  <section>
+    <title value="Before you take AROMASIN, tell your doctor about all your medical conditions, including if you:"/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3-2"/>
+      </coding>
+      <text value="Before you take AROMASIN, tell your doctor about all your medical conditions, including if you:"/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">are still having menstrual periods (are not past menopause). AROMASIN is only for women who are past menopause. have weak or brittle bones (osteoporosis)</div>
+    </text>
+  </section>
+  <section>
+    <title value="How should I take AROMASIN?"/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3-3"/>
+      </coding>
+      <text value="How should I take AROMASIN?"/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Take AROMASIN exactly as your doctor tells you. Take AROMASIN 1 time each day after a meal. If you take too much AROMASIN, call your doctor right away or go to nearest hospital emergency room.</div>
+    </text>
+  </section>
+  <section>
+    <title value="What are the possible side effects of AROMASIN?"/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3-4"/>
+      </coding>
+      <text value="What are the possible side effects of AROMASIN?"/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Your doctor will do blood tests to check your vitamin D level before starting treatment with AROMASIN. AROMASIN may cause decreased fertility in males and females. Talk to your doctor if you have concerns about fertility. These are not all the possible side effects of AROMASIN. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.</div>
+    </text>
+  </section>
+  <section>
+    <title value="How should I store AROMASIN?"/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3-5"/>
+      </coding>
+      <text value="How should I store AROMASIN?"/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Store AROMASIN at room temperature 68°F to 77°F (20°C to 25°C). Keep AROMASIN and all medicines out of the reach of children.</div>
+    </text>
+  </section>
+  <section>
+    <title value="General information about the safe and effective use of AROMASIN."/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3-6"/>
+      </coding>
+      <text value="General information about the safe and effective use of AROMASIN."/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Medicines are sometimes prescribed for purposes other than those listed in a Patient Information leaflet. Do not use AROMASIN for a condition for which it was not prescribed. Do not give AROMASIN to other people, even if they have the same symptoms you have. It may harm them. You can ask your pharmacist or doctor for information about AROMASIN that is written for health professionals.</div>
+    </text>
+  </section>
+  <section>
+    <title value="What is in AROMASIN?"/>
+    <code>
+      <coding>
+        <system value="https://fhir.loinc.org/"/>
+        <code value="42230-3-6"/>
+      </coding>
+      <text value="What is in AROMASIN?"/>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Active ingredient: exemestane Inactive ingredients: mannitol, crospovidone, polysorbate 80, hypromellose, colloidal silicon dioxide, microcrystalline cellulose, sodium starch glycolate, magnesium stearate, simethicone, polyethylene glycol 6000, sucrose, magnesium carbonate, titanium dioxide, methylparaben, and polyvinyl alcohol. Logo LAB-0399-9.0 For more information, go to www.AROMASIN.com or call 1-888-AROMASIN (1-888-276-6274).</div>
+    </text>
+  </section>
+</Composition>
