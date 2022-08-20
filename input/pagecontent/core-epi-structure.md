@@ -30,19 +30,10 @@ Refer to Annex for national ePI profiles for a description of each resource.
     - Clinical Use Definition Warning
 - Binary
 
-** Figure 1	Resource relationship hierarchy for the Core ePI Profile**  
-![ePI resource relationship diagram](https://github.com/hl7-eu/gravitate-health/blob/master/input/images/figure1-epi-resource-relationship.png)
-
-![ePI resource relationship diagram](https://github.com/hl7-eu/gravitate-health/blob/master/input/images/f1-epi-resource-relationship-step2.jpg)
-   
-{::options parse_block_html="false" /}
-<figure>
-  <img style="padding-top:0;padding-bottom:30px" width="800px" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
-  <figcaption>ePI resource relationship diagram</figcaption>
-</figure>
-{::options parse_block_html="true" /}
+** Figure 1	Resource relationship hierarchy for the Core ePI Profile**     
 
 <figure>
-  <img style="padding-top:0;padding-bottom:30px" width="800px" src="f1-epi-resource-relationship-step2.jpg" alt="ePI Resource Relationship"/>
-  <figcaption>ePI resource relationship diagram</figcaption>
+  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <figcaption>Core ePI resource relationship diagram</figcaption>
 </figure>
+
