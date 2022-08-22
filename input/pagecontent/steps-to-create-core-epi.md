@@ -34,7 +34,7 @@ Part 2 - Syringe
 
 
 #### Create Organization resource(s) 
-Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with this ePI. Typically that means the Market Authorization Holder, Manufacturer, and regulator.  
+Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with the ePI: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
 
 Refer to the [Organization profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Organization-uv-epi.html) for detail. 
 
@@ -44,7 +44,7 @@ Refer to the [Organization profile](http://build.fhir.org/ig/hl7-eu/gravitate-he
 </figure>
 
 #### Create Substance Definition resource(s) 
-Using the Core ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient in the medicinal product. 
+Using the Core ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient associated with the authorized product(s) in this ePI.
 
 Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder. 
 
@@ -56,89 +56,92 @@ Refer to the [SubstanceDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravi
 </figure>
 
 #### Create Manufactured Item Definition resource(s) 
-The manufactured item describes the product as contained in its primary package. This is different from the Administrable Product. For example, a powder in a vial and a diluent in a vial are packaged together. The powder is one manufactured item and the diluent is a second manufactured item.  
+The manufactured item describes the medicinal product as the dosage form contained in its primary package. For example, a powder in a vial and a diluent in another vial are packaged together in a kit. The powder is one manufactured item and the diluent is a second manufactured item.  
  
-Using the FHIR ePI Profile as a template, complete one Ingredient resource for each Manufactured Item in the ePI.  
+Using the FHIR ePI Profile as a template, complete one ManufacturedItemDefinition resource for each manufactured item associated with the authorized product(s) in this ePI.  
  
-Create a reference from each ManufacturedItem resource to the corresponding Organization resource for the manufacturer or marketing authorization holder. 
+Create a reference from each ManufacturedItemDefinition resource to the corresponding Organization resource (e.g., reference to the manufacturer; reference to the marketing authorization holder). 
 
 Refer to [ManufacturedItemDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ManufacturedItemDefinition-uv-epi.html) for detail. 
 
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step3.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Manufactured Item</figcaption>
 </figure>
 
-#### Create Medicinal Product Definition resource(s) 
-Using the FHIR ePI Profile as a template, complete one MedicinalProductDefinition resource for each authorized presentation of the product referenced in the ePI. 
- 
-For example, the following two presentations would be four separate medicinal products 
-
-|Medicinal Product Identifier (MPID)| Invented Name | Strength | Dosage Form | Route of Administration | Primary Packaging  | Pack Size |
-|--|--|--|--|--|--|--|
-| 123 | Drug X | 30 mg  | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 42 tablets |
-| 101 | Drug X | 120 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 90 tablets |
- 
-Refer to [MedicinalProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html) for detail.
-
-<figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
-  <figcaption>Create Medicinal Product</figcaption>
-</figure>
-
 #### Create Ingredient resource(s) 
-Using the Core ePI Profile as a template, complete one Ingredient resource for each active ingredient and excipient for each medicinal product in the ePI. 
+Using the Core ePI Profile as a template, complete one Ingredient resource for each active ingredient and each excipient that make up each manufactured item associated with the authorized product(s) in this ePI. 
 
-Create a reference from the relevant Ingredient resources to the corresponding ManufacturedItem resource. 
+Create a reference from the relevant Ingredient resources to the corresponding ManufacturedItemDefinition resource (e.g., reference the ingredients that make up the powder to the powder's manufactured item, and reference the ingredients that make up the diluent to the diluent's manufactured item). 
+Create a reference from the relevant Ingredient resources to the corresponding Organization resource (e.g., reference to the Organization that manufactures that ingredient). 
+
 
 Refer to [Ingredient](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Ingredient-uv-epi.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step4.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Ingredient</figcaption>
 </figure>
 
-#### Create Administrable Product Definition resource(s) 
-The manufactured item describes the product as administering to a patient (after any mixing of multiple components or transformations has been performed). This is different from the manufactured item. For example, a powder in a vial and a diluent in a vial are packaged together. The combined solution made from the powder and diluent, ready for administration to the patient, is the administrable product.  
+#### Create Medicinal Product Definition resource(s) 
+Using the FHIR ePI Profile as a template, complete one MedicinalProductDefinition resource for each presentation of the medicinal product(s) associated with the authorized product(s) in this ePI. 
  
-Using the Core ePI Profile as a template, complete one PharmaceuticalProductDefinition resource for each pharmaceutical product described in the ePI.  
- 
-Create a reference from each PharmaceuticalProductDefinition resource to its corresponding MedicinalProduct resource for this pharmaceutical product. 
+For example, the following three presentations require three separate medicinal products:
 
-Create a reference from each PharmaceuticalProductDefinition resource to the corresponding ManufacturedItem resource used to make the pharmaceutical product. 
+|Medicinal Product Identifier (MPID)| Invented Name | Strength | Dosage Form | Route of Administration | Primary Packaging  | Pack Size |
+|--|--|--|--|--|--|--|
+| 100 | Drug X | 25 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 42 tablets |
+| 101 | Drug X | 50 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 90 tablets |
+| 102 | Drug X | 50 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 100 tablets |
+
+There are no references from the medicinal product to other resources. Instead, other resources will refer to the medicinal product.
+
+Refer to [MedicinalProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html) for detail.
+
+<figure>
+  <img style="padding-top:0;padding-bottom:0" src="step5.png" alt="ePI Resource Relationship"/>
+  <figcaption>Create Medicinal Product</figcaption>
+</figure>
+
+#### Create Administrable Product Definition resource(s) 
+The administrable product describes the medicinal product in the dosage form ready for administration to the patient (after any mixing of multiple components or transformations has been performed). This is different from the manufactured item which described the medicinal product as the dosage form in the primary packaging and before any mixing or transformation. For example, a powder in a vial and a diluent in a vial are packaged together. The combined solution, made by mixing the powder and diluent, is the administrable product since that is the dosage form ready for administration to the patient.  
+ 
+Using the Core ePI Profile as a template, complete one PharmaceuticalProductDefinition resource for each pharmaceutical product associated with the authorized product(s) in this ePI.  
+ 
+Create a reference from each PharmaceuticalProductDefinition resource to the corresponding MedicinalProductDefinition resource. 
+
+Create a reference from each PharmaceuticalProductDefinition resource to the corresponding ManufacturedItemDefinition resource. 
 
 Refer to [AdministrableProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-AdministrableProductDefinition-uv-epi.html) for detail. 
 
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step6.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Administrable Product</figcaption>
 </figure>
 
 #### Create Packaged Product Definition resource(s) 
 
-Using the Core ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation described in the ePI. 
+Using the Core ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation associated with the authorized product(s) in this ePI. 
 
-Create a reference from each PackagedProductDefinition resource to its corresponding MedicinalProduct resource for this package. 
+Example 1 - One bottle in one carton
+
+Example 2 - Two blisters in one carton
+
+Example 3 - Kit with a vial and a syringe
+
+
+Create a reference from each PackagedProductDefinition resource to the corresponding MedicinalProductDefinition resource for this package. 
 
 Create a reference from each PackagedProductDefinition resource to the corresponding Organization resource for the manufacturer or marketing authorization holder. 
 
 Refer to [PackagedProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-PackagedProductDefinition-uv-epi.html) for detail. 
-
-(Add several examples: (1) simple bottle in carton; (2) simple blisters in carton; (3) complex kit with medicinal product and devices).  
- 
-INSERT examples that there is one resource per presentation 
-
-|Medicinal Product Identifier (MPID)| Invented Name  | Strength | Dosage Form  | Route of Administration | Primary Packaging  | Pack Size |
-|--|--|--|--|--|--|--|
-| 123 | Drug X | 30 mg  | Gastro -resistant tablet   | Oral use  | Blister (PVC/PVDC - alu) | 42 tablets |
-| 101 | Drug X | 120 mg | Gastro -resistant tablet   | Oral use  | Blister (PVC/PVDC - alu) | 90 tablets |
  
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step7.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Packaged Product</figcaption>
 </figure>
 
@@ -150,7 +153,7 @@ Create a reference from the ClinicalUseDefinition (contraindication) to the corr
 Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Clinical Use</figcaption>
 </figure>
 
@@ -162,7 +165,7 @@ Create a reference from each ClinicalUseDefinition (Indication) to the correspon
 Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Clinical Use - Indication</figcaption>
 </figure>
 
@@ -174,7 +177,7 @@ Create a reference each ClinicalUseDefinition (Interaction) to the corresponding
 Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Clinical Use - Interaction</figcaption>
 </figure>
 
@@ -186,7 +189,7 @@ Create a reference from each ClinicalUseDefinition (Undesirable Effect) to the c
 Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Clinical Use - undesireable effect</figcaption>
 </figure>
 
@@ -198,12 +201,16 @@ Create a reference from each ClinicalUseDefinition (Warning) to the correspondin
 INSERT reference to the Profile page. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Clinical Use - warning</figcaption>
 </figure>
 
 #### Create Regulated Authorization resource 
 Using the Core ePI Profile as a template, complete one RegulatedAuthorization resource for each medicinal product associated with this ePI. For example, if there are four medicinal products then there will be four RegulatedAuthorization resources. 
+
+Create a reference from each RegulatedAuthorization resource to its corresponding MedicinalProductDefinition.
+
+Create a reference from each RegulatedAuthorization resource to to the corresponding Organization resource for the marketing authorization holder and the health authority.
 
 Refer to [RegulatedAuthorization Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-RegulatedAuthorization-uv-epi.html) for detail.
  
@@ -211,12 +218,12 @@ NOTE:
 - Depending on the jurisdiction there will either be (1) one authorization per medicinal product (i.e., resulting in many RegulatedAuthorization resources); or (2) one authorization for all medicinal products (i.e., resulting in one RegulatedAuthorization resource). Refer to the regional profile for confirmation on which approach is required. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step13.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Regulated Authorization</figcaption>
 </figure>
 
 #### Create Binary resource 
-Convert each image in the ePI to Base64. 
+Convert each image used in the ePI to Base64 (e.g., images used as figures; the chemical structure of the active ingredient). 
 
 Using the FHIR ePI Profile as a template, complete one Binary resource for each image in the ePI. Add the Base64 version of the image to the Binary resource. 
 
@@ -225,12 +232,14 @@ The Binary can also be used to create a cross-reference linking to an outside ob
 Refer to [Binary Profile](http://build.fhir.org/binary.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step14.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Binary</figcaption>
 </figure>
 
 #### Create Composition resource 
-Using the FHIR ePI Profile as a template, complete one Composition resource for each ePI document. 
+The composition captures all section headings, sub-section headings and narrative text/narrative content (e.g., paragraphs, tables, bulleted lists) in the ePI.
+
+Using the FHIR ePI Profile as a template, complete one Composition resource for each ePI document.
 
 Reference the Composition resource to each Binary. The reference to the Binary is made from the narrative text of the Composition resource’s @text element. 
 
@@ -241,20 +250,23 @@ The section/@Title is the display text of the section heading and sub-section he
 The section/@code is the code for the corresponding section heading or sub-section heading prescribed by the relevant national health authority. 
 
 NOTE:  
-- Create one Composition for each ePI document; e.g., one Composition resource for the healthcare practitioner document and another Composition resource for the Patient Insert document.
-- Create one Composition for each translation; e.g., one Composition for the French version of the ePI document and another Composition resource for a Spanish version of the ePI document.
+ePI documents are meant to be separate and shall not be combined into one large composition. E.g., 
+- one Composition for the healthcare practitioner document and a separate Composition  for the Patient Insert document;
+- one Composition for each translation (e.g., one Composition for the French version of the ePI document and a separate Composition for the Spanish version of the ePI document).
 
 Refer to [Composition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Composition-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step15.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Composition</figcaption>
 </figure>
 
 ### Step 2: Create Bundle 
+The bundle is used to gather together the resources needed to create a unique ePI document. E.g., one bundle for the health care practitioner ePI; a second bundle for the patient insert ePI; a third bundle for the pack label ePI document.
+
 Using the Core ePI Profile as a template, complete one Bundle resource for each ePI document.  
 
-Complete the Bundle resource by referencing it to only one Composition plus all other resources completed in Step 1. Refer to sample ePI #1 and sample ePI #2 for examples of how this is done. 
+Complete the Bundle resource by referencing it to only one Composition plus all other resources completed in Step 1. E.g., reference the Bundle to the patient insert composition and all other resources associated with that patient insert (e.g., the binaries, regulated authorizations, clinical uses, medicinal products,  packaged products, administrable products, manufactured items, organizations, ingredients, substances).
 
 NOTE: 
 - There is one bundle for each ePI document. E.g., one Bundle resource for each healthcare practitioner document, patient information document and their respective translations.
@@ -269,7 +281,7 @@ NOTE:
 Refer to [Bundle Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Bundle-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step16.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Bundle </figcaption>
 </figure>
 
@@ -277,12 +289,12 @@ Refer to [Bundle Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/Struc
 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
+  <img style="padding-top:0;padding-bottom:0" src="step17.png" alt="ePI Resource Relationship"/>
   <figcaption>Create List</figcaption>
 </figure>
 
 ### Sample ePI data 
-European Union Samples
+European Union ePI example data
 - Centrally Authorized Product (CAP)
     - Summary of Product Characteristics (SmPC)
     - Package Leaflet
@@ -290,10 +302,10 @@ European Union Samples
     - Summary of Product Characteristics (SmPC)
     - Package Leaflet
 
-United States Samples
+United States ePI example data
 - Prescription Drug Product Label
 
-Japanese Samples
+Japanese ePI example data
 - Package Insert (JPI)
 
 
