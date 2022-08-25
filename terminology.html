@@ -191,7 +191,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#value-sets--code-system" id="markdown-toc-value-sets--code-system">Value Sets / Code System</a>    <ul>
+  <li><a href="#code-systems" id="markdown-toc-code-systems">Code Systems</a></li>
+  <li><a href="#value-sets-per-resource" id="markdown-toc-value-sets-per-resource">Value Sets per resource</a>    <ul>
       <li><a href="#list" id="markdown-toc-list">List</a></li>
       <li><a href="#bundle" id="markdown-toc-bundle">Bundle</a></li>
       <li><a href="#composition" id="markdown-toc-composition">Composition</a></li>
@@ -211,106 +212,121 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 
-<p>This page lists the recommended ValueSets and CodeSystems needed to support each of the resources that make up a core ePI document.</p>
+<p>This page lists the recommended or preferred ValueSets and CodeSystems needed to complete an ePI document.</p>
 
-<h2 id="value-sets--code-system">Value Sets / Code System</h2>
+<h2 id="code-systems">Code Systems</h2>
+<p>| Source | URI |
+|–|–|–|
+| ISO Country | urn:iso:std:iso:3166:-2 |
+| ISO Language | urn:ietf:bcp:47 |
+| UCUM | http://unitsofmeasure.org |
+| MED-RT | http://va.gov/terminology/medrt |
+| WHO ATC | https://www.whocc.no/atc_ddd_index |
+| MedDRA | TBD |
+| UNII | http://fdasis.nlm.nih.gov |
+| NCI Thesaurus | TBD |
+| Health Canada Controlled Vocabulary List | 2.16.840.1.113883.2.20.6 |
+| EDQM Standard Terms |  |
+| EMA SPOR-RMS | https://spor.ema.europa.eu/rmswi |
+| EMA SPOR-OMS | https://spor.ema.europa.eu/omswi  |
+| LOINC | http://loinc.org; 2.16.840.1.113883.6.1 |
+| G-SRS | https://gsrs.ncats.nih.gov/ginas/app/beta |
+| HL7 RoleClass | http://terminology.hl7.org/CodeSystem/v3-RoleClass |</p>
+
+<h2 id="value-sets-per-resource">Value Sets per resource</h2>
 <h3 id="list">List</h3>
-<p>status  / custom
-mode    / FHIR
-code    / custom
-emptyReason / custom</p>
+<p>status - FHIR terminology
+mode -  FHIR terminology
+code -  custom</p>
 
 <h3 id="bundle">Bundle</h3>
-<p>type    / FHIR</p>
+<p>type - FHIR terminology</p>
 
 <h3 id="composition">Composition</h3>
-<p>Status  / custom
-type    / custom
-category    / custom
-section / custom
-section.emptyReason / custom</p>
+<p>Status - FHIR terminology
+type - EMA SPOR-RMS; LOINC
+category -  EMA SPOR-RMS; LOINC
+section - EMA SPOR-RMS; LOINC
+section.emptyReason - custom</p>
 
 <h3 id="organization">Organization</h3>
-<p>Type    / Custom
-telecom / FHIR
-Address.Use     / FHIR
-Address.Type    / FHIR 
-Address.Country / ISO 3166 2 letter code</p>
+<p>Type -  EMA SPOR-RMS; NCI Thesaurus
+telecom.code - FHIR terminology
+Address.Use  -  FHIR terminology
+Address.Type -  FHIR terminology 
+Address.Country - ISO 3166 2 letter country code</p>
 
 <h3 id="regulated-authorization">Regulated Authorization</h3>
-<p>type    / custom
-region  / ISO 3166 2 letter code
-status  / custom
-case    / custom</p>
+<p>type -  EMA SPOR-RMS; NCI Thesaurus
+region - ISO 3166 2 letter country code
+status - EMA SPOR-RMS; NCI Thesaurus
+case -  EMA SPOR-RMS; NCI Thesaurus</p>
 
 <h3 id="medicinal-product-definition">Medicinal Product Definition</h3>
-<p>Type    / custom
-Domain  / custom
-Status
-combinedPharmaceuticalDoseForm  / EDQM	
-route   / EDQM
-legalStatusOfSupply / custom
-additionalMonitoringIndicator   / custom
-pediatricUseIndicator   / custom
-classification  / custom
-marketingStatus / custom
-packagedMedicinalProduct    / EDQM
-name.type   / custom
-namePart.type   / custom
-countryLanguage.country / ISO 3166 2 letter code
-countryLanguage.language    / ISO 639-1 2 letter code</p>
+<p>Type -  EMA SPOR-RMS; NCI Thesaurus
+Domain - EMA SPOR-RMS
+Status - EMA SPOR-RMS; NCI Thesaurus
+combinedPharmaceuticalDoseForm - EDQM Standard Terms	
+route  - EDQM Standard Terms
+legalStatusOfSupply - custom
+additionalMonitoringIndicator  - custom
+pediatricUseIndicator  - custom
+classification - WHO; MED-RT
+marketingStatus - EMA SPOR-RMS; NCI Thesaurus
+packagedMedicinalProduct -  EDQM Standard Terms
+name.type  - EMA SPOR
+namePart.type  - EMA SPOR
+countryLanguage.country - ISO 3166 2 letter country code
+countryLanguage.language -  ISO 639-1 2 letter language code</p>
 
 <h3 id="administrable-product-definition">Administrable Product Definition</h3>
-<p>status  / custom
-administrableDoseForm   / EDQM
-unitOfPresentation  / EDQM
-property.colour / NCIT
-property.flavour    / NCIT
-property.score  / NCIT
-property.shape  / NCIT
-routeOfAdministration   / EDQM</p>
+<p>status - FHIR terminology
+administrableDoseForm  - EDQM Standard Terms
+unitOfPresentation - EDQM Standard Terms
+property.colour - NCI Thesaurus SPL Color Terminology (Code C54453)
+property.flavour - NCI Thesaurus SPL Flavor Terminology (Code C73339)
+property.score - Health Canada Controlled Vocabulary List 2.16.840.1.113883.2.20.6.4
+property.shape - NCI Thesaurus SPL Shape Terminology (Code C54454)
+routeOfAdministration  - EDQM Standard Terms</p>
 
 <h3 id="manufactured-item-definition">Manufactured Item Definition</h3>
-<p>status  / custom
-manufacturedDoseForm    / EDQM
-unitOfPresentation  / EDQM
-property.colour / NCIT
-property.flavour    / NCIT
-property.score  / NCIT
-property.shape  / NCIT</p>
+<p>status - FHIR terminology
+manufacturedDoseForm -  EDQM Standard Terms
+unitOfPresentation - EDQM Standard Terms
+property.colour - NCI Thesaurus SPL Color Terminology (Code C54453)
+property.flavour - NCI Thesaurus SPL Flavor Terminology (Code C73339)
+property.score - Health Canada Controlled Vocabulary List 2.16.840.1.113883.2.20.6.4
+property.shape - NCI Thesaurus SPL Shape Terminology (Code C54454)</p>
 
 <h3 id="ingredient">Ingredient</h3>
-<p>status  / custom
-Role    / custom
-Function / custom 
-Group   / custom
-allergenIndicator   / FHIR
-manufacturer.role   / Custom
-substance.code  / G-SRS
-quantity.unit   / UCUM
-strength.basis  / FHIR (e.g., ACTIM, ACTIB, ACTIR)</p>
+<p>status - FHIR terminology
+Role -  EMA SPOR
+Function - EMA SPOR 
+allergenIndicator  - FHIR terminology
+manufacturer.role  - NCI Thesaurus SPL Business Operation Terminology (Code C73600)
+substance.code - G-SRS UNII
+quantity.unit  - UCUM
+strength.basis - FHIR RoleClassIngredientEntity</p>
 
 <h3 id="substance-definition">Substance Definition</h3>
-<p>Grade
-molecularWeight.amount
-name.type       / custom
-name.language   / ISO 639-1 2 letter code</p>
+<p>name.type    -  EMA SPOR
+name.language  - ISO 639-1 2 letter language code</p>
 
 <h3 id="packaged-product-definition">Packaged Product Definition</h3>
-<p>type    / EDQM
-status  / custom
-quantity    / UCUM
-legalStatusOfSupply  / custom
-marketingStatus  / custom
-material  / EDQM</p>
+<p>type -  EDQM Standard Terms
+status - EMA SPOR-RMS; NCI Thesaurus
+quantity -  UCUM
+legalStatusOfSupply - EMA SPOR-RMS; NCI Thesaurus
+marketingStatus - EMA SPOR-RMS; NCI Thesaurus
+material - EDQM Standard Terms</p>
 
 <h3 id="clinical-use-definition">Clinical Use Definition</h3>
-<p>type  / custom
-status  / custom
-diseaseSymptomProcedure	/ MedDRA</p>
+<p>type - FHIR terminology
+status - FHIR terminology
+diseaseSymptomProcedure - MedDRA</p>
 
 <h3 id="binary">Binary</h3>
-<p>contentType / custom</p>
+<p>contentType - FHIR terminology</p>
 
 
 
@@ -337,7 +353,7 @@ diseaseSymptomProcedure	/ MedDRA</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Tue, Aug 23, 2022 21:43+0000">2022-08-23</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Thu, Aug 25, 2022 03:29+0000">2022-08-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             <div style="color: #33333" >
