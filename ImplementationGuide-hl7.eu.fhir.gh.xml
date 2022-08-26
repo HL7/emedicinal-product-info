@@ -11,7 +11,7 @@
   <name value="GhImplementationGuide"/>
   <title value="Gravitate Health FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-08-25T03:29:49+00:00"/>
+  <date value="2022-08-26T02:06:18+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -449,6 +449,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5"/>
+      </reference>
+      <name value="Vulcan Monuril FHIR Package Insert"/>
+      <description value="instance of Monuril package insert for connectathon testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="RegulatedAuthorization"/>
       </extension>
       <reference>
@@ -600,6 +611,171 @@
       <name value="cc5753cd-e648-47d2-a135-503cd8a3e1da"/>
       <description value="HYPROMELLOSE, UNSPECIFIED"/>
       <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/cfsb1639753766266"/>
+      </reference>
+      <name value="cfsb1639753766266"/>
+      <description value="Manufacturer"/>
+      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/cfsb1639754108144"/>
+      </reference>
+      <name value="cfsb1639754108144"/>
+      <description value="Market Authorization Holder"/>
+      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1639754408039"/>
+      </reference>
+      <name value="cfsb1639754408039"/>
+      <description value="fosfomycin trometamol 3g"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ManufacturedItemDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ManufacturedItemDefinition/cfsb1639756818482"/>
+      </reference>
+      <name value="cfsb1639756818482"/>
+      <description value="Monuril Granules for oral solution"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/cfsb1639758328687"/>
+      </reference>
+      <name value="cfsb1639758328687"/>
+      <description value="Monuril 5 sachets of 8 g of granules (3 g fosfomycin)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/cfsb1639760186202"/>
+      </reference>
+      <name value="cfsb1639760186202"/>
+      <description value="Medicinal Product"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AdministrableProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="AdministrableProductDefinition/cfsb1639760977050"/>
+      </reference>
+      <name value="cfsb1639760977050"/>
+      <description value="Administrable Product"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RegulatedAuthorization"/>
+      </extension>
+      <reference>
+        <reference value="RegulatedAuthorization/cfsb1639761980721"/>
+      </reference>
+      <name value="cfsb1639761980721"/>
+      <description value="Regulated Authorization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1639762372321"/>
+      </reference>
+      <name value="cfsb1639762372321"/>
+      <description value="Saccharin"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1639762372322"/>
+      </reference>
+      <name value="cfsb1639762372322"/>
+      <description value="Orange flavour"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1639762372323"/>
+      </reference>
+      <name value="cfsb1639762372323"/>
+      <description value="Mandarin flavour"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Ingredient"/>
+      </extension>
+      <reference>
+        <reference value="Ingredient/cfsb1639762593730"/>
+      </reference>
+      <name value="cfsb1639762593730"/>
+      <description value="Sucrose"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/cfsb1639764389611"/>
+      </reference>
+      <name value="cfsb1639764389611"/>
+      <description value="Packaged Product - 2 sachets of 8 g of granules"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/cfsb1639764389612"/>
+      </reference>
+      <name value="cfsb1639764389612"/>
+      <description value="Packaged Product - 1 sachet of 8 g of granules"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/cfsb1639991356428"/>
+      </reference>
+      <name value="cfsb1639991356428"/>
+      <description value="Package Leaflet"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
