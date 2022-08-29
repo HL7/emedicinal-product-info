@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1639754408039> a fhir:Ingredient;
+<http://hl7.org/fhir/uv/vulcan-epi/Ingredient/cfsb1639754408039> a fhir:Ingredient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1639754408039"];
   fhir:DomainResource.text [
@@ -20,7 +20,7 @@
   fhir:Ingredient.status [ fhir:value "active"];
   fhir:Ingredient.for [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
      fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
   ];
   fhir:Ingredient.role [
@@ -34,7 +34,7 @@
   fhir:Ingredient.manufacturer [
      fhir:index 0;
      fhir:Ingredient.manufacturer.manufacturer [
-       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+       fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
        fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
      ]
   ];
@@ -84,10 +84,15 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cfsb1639754408039.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/Ingredient/cfsb1639754408039.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/Ingredient/cfsb1639754408039.ttl> .
 
 # -------------------------------------------------------------------------------------
 

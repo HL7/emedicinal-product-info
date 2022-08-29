@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.EU.FHIR.GH\Bundle - ePI - XML Representation - FHIR v5.0.0-snapshot1</title>
+    <title>HL7.FHIR.UV.VULCAN-EPI\Bundle - ePI - XML Representation - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -27,7 +27,8 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -52,22 +53,23 @@
     h3,h4,h5,h6{--heading-prefix:"12.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
         <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
-            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
           </a>
         </div>
- <!--        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
-        </div> -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
         <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">Vulcan ePI FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - CI Build
 
@@ -174,7 +176,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Vulcan ePI FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/vulcan-epi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -245,7 +247,7 @@
         
           Active
           
-            as of 2022-08-26
+            as of 2022-08-29
           
         
       </td>
@@ -269,8 +271,8 @@
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;Bundle-uv-epi&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.text">text</a>&gt;
     &lt;<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;The logical name of the element&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Information about the use of the element&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Minimum and Maximum # of times the the element can appear in the instance&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;width: 100px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Reference to the type of the element&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Additional information about the element&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;http://build.fhir.org/help16.png&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_resource.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-Bundle-uv-epi-definitions.html#Bundle&quot; title=&quot;Electronic Product Information Bundle. 
-A container for a collection of resources in the ePI document.&quot;&gt;Bundle&lt;/a&gt;&lt;a name=&quot;Bundle&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: black; null&quot; title=&quot;This element has or is affected by some invariants (bdl-epi-1)&quot;&gt;I&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/bundle.html&quot;&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Electronic Product Information Bundle&lt;br/&gt;&lt;span style=&quot;font-weight:bold&quot;&gt;bdl-epi-1: &lt;/span&gt;An ePI document must have no additional Composition (including Composition subclass) resources besides the first.&lt;/td&gt;&lt;/tr&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;The logical name of the element&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Information about the use of the element&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Minimum and Maximum # of times the the element can appear in the instance&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;width: 100px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Reference to the type of the element&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Additional information about the element&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;http://build.fhir.org/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;http://build.fhir.org/help16.png&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_resource.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-Bundle-uv-epi-definitions.html#Bundle&quot; title=&quot;Electronic Product Information Bundle Document. 
+A container for a collection of resources in the ePI document.&quot;&gt;Bundle&lt;/a&gt;&lt;a name=&quot;Bundle&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: black; null&quot; title=&quot;This element has or is affected by some invariants (bdl-epi-1)&quot;&gt;I&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://build.fhir.org/bundle.html&quot;&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Electronic Product Information Bundle Document&lt;br/&gt;&lt;span style=&quot;font-weight:bold&quot;&gt;bdl-epi-1: &lt;/span&gt;An ePI document must have no additional Composition (including Composition subclass) resources besides the first.&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-Bundle-uv-epi-definitions.html#Bundle.identifier&quot;&gt;identifier&lt;/a&gt;&lt;a name=&quot;Bundle.identifier&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;1..&lt;span style=&quot;opacity: 0.5&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.5&quot; href=&quot;http://build.fhir.org/datatypes.html#Identifier&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;Persistent identifier for the bundle&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-Bundle-uv-epi-definitions.html#Bundle.type&quot;&gt;type&lt;/a&gt;&lt;a name=&quot;Bundle.type&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.5&quot; href=&quot;http://build.fhir.org/datatypes.html#code&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection | subscription-notification&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-weight:bold&quot;&gt;Fixed Value: &lt;/span&gt;&lt;span style=&quot;color: darkgreen&quot;&gt;document&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-Bundle-uv-epi-definitions.html#Bundle.timestamp&quot;&gt;timestamp&lt;/a&gt;&lt;a name=&quot;Bundle.timestamp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;1..&lt;span style=&quot;opacity: 0.5&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.5&quot; href=&quot;http://build.fhir.org/datatypes.html#instant&quot;&gt;instant&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;When the bundle was assembled&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
@@ -316,12 +318,12 @@ A container for a collection of resources in the ePI document.&quot;&gt;Bundle&l
     &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;not-classified&quot;/&gt;
   &lt;/extension&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.url">url</a>
-       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi&quot;/&gt;
+       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;BundleUvEpi&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Bundle - ePI&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2022-08-26T02:06:18+00:00&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2022-08-29T07:02:49+00:00&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Gravitate Health Project&quot;/&gt;
     &lt;<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -330,9 +332,9 @@ A container for a collection of resources in the ePI document.&quot;&gt;Bundle&l
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.description">description</a>
-               <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;This profile represents the constraints applied to the Bundle resource by the Electronic Product Information (ePI) FHIR Implementation Guide.&quot;/&gt;
+               <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;A medicine’s product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide.&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.purpose">purpose</a>
-           <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;An electronic product information (ePI) is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard.&quot;/&gt;
+           <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;This profile represents the constraints applied to the Bundle resource used to create an Electronic Product Information (ePI) document.&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;5.0.0-snapshot1&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -362,9 +364,9 @@ A container for a collection of resources in the ePI document.&quot;&gt;Bundle&l
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot">snapshot</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle&quot;&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Bundle&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Electronic Product Information Bundle&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Electronic Product Information Bundle Document&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Electronic Product Information Bundle. 
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Electronic Product Information Bundle Document. 
 A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
@@ -482,7 +484,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;An ePI document must have no additional Composition (including Composition subclass) resources besides the first.&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;entry.tail().where(resource is Composition).empty()&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi&quot;/&gt;
+                <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -2316,8 +2318,8 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Electronic Product Information composition&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Electronic Product Information composition. 
-A composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. 
-While a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained.&quot;/&gt;
+A composition is a set of source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. 
+While a Composition defines the structure and content of the ePI's narrative text, it does not contain the full content of an ePI document. The Bundle, of which the Composition is the first resource contained, is the container for the full  content of an ePI.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.comment">comment</a>
                <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;While the focus of this specification is on patient-specific clinical statements, this resource can also apply to other healthcare-related statements such as study protocol designs, healthcare invoices and other activities that are not necessarily patient-specific or clinical.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -2330,7 +2332,7 @@ While a Composition defines the structure, it does not actually contain the cont
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Composition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Composition-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -3487,7 +3489,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Organization&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -4653,7 +4655,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;RegulatedAuthorization&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/RegulatedAuthorization-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -5798,7 +5800,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;MedicinalProductDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -6944,7 +6946,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;AdministrableProductDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -8089,7 +8091,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ManufacturedItemDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -9234,7 +9236,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Ingredient&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -10379,7 +10381,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;PackagedProductDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/PackagedProductDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -11524,15 +11526,15 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ClinicalUseDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-indication-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-indication-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-warning-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-warning-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;cud-1&quot;/&gt;
@@ -12690,7 +12692,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;SubstanceDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-2&quot;/&gt;
@@ -14699,9 +14701,9 @@ This outcome is not used for error responses in batch/transaction, only for hint
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential">differential</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle&quot;&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Bundle&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Electronic Product Information Bundle&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Electronic Product Information Bundle Document&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Electronic Product Information Bundle. 
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Electronic Product Information Bundle Document. 
 A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;bdl-epi-1&quot;/&gt;
@@ -14710,7 +14712,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;An ePI document must have no additional Composition (including Composition subclass) resources besides the first.&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;entry.tail().where(resource is Composition).empty()&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi&quot;/&gt;
+                <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi&quot;/&gt;
       &lt;/constraint&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.identifier&quot;&gt;
@@ -14776,7 +14778,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Composition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Composition-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:organization&quot;&gt;
@@ -14790,7 +14792,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Organization&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:authorization&quot;&gt;
@@ -14804,7 +14806,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;RegulatedAuthorization&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/RegulatedAuthorization-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:medicinalProduct&quot;&gt;
@@ -14818,7 +14820,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;MedicinalProductDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:administrableProduct&quot;&gt;
@@ -14832,7 +14834,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;AdministrableProductDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:manItem&quot;&gt;
@@ -14846,7 +14848,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ManufacturedItemDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:ingredient&quot;&gt;
@@ -14860,7 +14862,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Ingredient&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:packagedProduct&quot;&gt;
@@ -14874,7 +14876,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;PackagedProductDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/PackagedProductDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:clinicalUse&quot;&gt;
@@ -14888,15 +14890,15 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ClinicalUseDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-indication-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-indication-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ClinicalUseDefinition-warning-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ClinicalUseDefinition-warning-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:substanceDefinition&quot;&gt;
@@ -14910,7 +14912,7 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;SubstanceDefinition&quot;/&gt;
         &lt;<a href="http://build.fhir.org/elementdefinition.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Bundle.entry:binary&quot;&gt;
@@ -14984,44 +14986,17 @@ A container for a collection of resources in the ePI document.&quot;/&gt;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Fri, Aug 26, 2022 02:06+0000">2022-08-26</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.fhir.uv.vulcan-epi#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 29, 2022 07:02+0000">2022-08-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333" >
-	Links: <a style="color: #81BEF7"
- 		href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7"
- 		href="qa.html">QA Report</a>
-	<!--
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
--->
-	<a style="color: #81BEF7"
- 		rel="license"
- 		href="http://build.fhir.org/license.html">
-		<img style="border-style: none;"
-   			alt="CC0"
-   			src="cc0.png"/>
-	</a>
-	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	<!--
-                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
--->
-	<!--				 
-<br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
-	-->
-	<div id=container width=100% style="display:block;" >
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
-			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
-		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img height="41"
-   				alt="a EU funded project"
-   				src="assets/images/eu.png"/>
-		</div>
-	</div>
-	<div>
-	</div>
-</div>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/vulcan-epi/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

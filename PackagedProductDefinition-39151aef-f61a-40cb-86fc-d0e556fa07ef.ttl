@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/39151aef-f61a-40cb-86fc-d0e556fa07ef> a fhir:PackagedProductDefinition;
+<http://hl7.org/fhir/uv/vulcan-epi/PackagedProductDefinition/39151aef-f61a-40cb-86fc-d0e556fa07ef> a fhir:PackagedProductDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "39151aef-f61a-40cb-86fc-d0e556fa07ef"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi";
+       fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/PackagedProductDefinition-uv-epi";
        fhir:index 0;
-       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi>
+       fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/PackagedProductDefinition-uv-epi>
      ]
   ];
   fhir:DomainResource.text [
@@ -36,7 +36,7 @@
   ];
   fhir:PackagedProductDefinition.packageFor [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54>;
      fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54" ]
   ];
   fhir:PackagedProductDefinition.status [
@@ -55,7 +55,7 @@
   ];
   fhir:PackagedProductDefinition.manufacturer [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
      fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
   ];
   fhir:PackagedProductDefinition.package [
@@ -86,17 +86,24 @@
        fhir:index 0;
        fhir:PackagedProductDefinition.package.containedItem.item [
          fhir:CodeableReference.reference [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
            fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939" ]
          ]
        ]
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/PackagedProductDefinition/39151aef-f61a-40cb-86fc-d0e556fa07ef.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/PackagedProductDefinition/39151aef-f61a-40cb-86fc-d0e556fa07ef.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/PackagedProductDefinition/39151aef-f61a-40cb-86fc-d0e556fa07ef.ttl> .
 
 # -------------------------------------------------------------------------------------
 

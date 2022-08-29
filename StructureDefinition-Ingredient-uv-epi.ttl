@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi> a fhir:StructureDefinition;
+<http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Ingredient-uv-epi"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "anonymous" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "IngredientUvEpi"];
   fhir:StructureDefinition.title [ fhir:value "Ingredient (ePI)"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-26T02:06:18+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-29T07:02:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -617,17 +617,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi>
          ], [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi";
            fhir:index 1;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi>
          ], [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi";
            fhir:index 2;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1065,9 +1065,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1479,9 +1479,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2398,17 +2398,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi>
          ], [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi";
            fhir:index 1;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi>
          ], [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi";
            fhir:index 2;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi>
          ]
        ]
      ], [
@@ -2444,9 +2444,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi>
          ]
        ]
      ], [
@@ -2474,9 +2474,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi>
          ]
        ]
      ], [
@@ -2514,8 +2514,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi.ttl> .
 
 # -------------------------------------------------------------------------------------
 

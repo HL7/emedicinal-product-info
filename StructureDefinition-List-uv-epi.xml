@@ -29,12 +29,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/List-uv-epi"/>
+  <url value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/List-uv-epi"/>
   <version value="0.1.0"/>
   <name value="ListUvEpi"/>
   <title value="List - ePI"/>
   <status value="active"/>
-  <date value="2022-08-26T02:06:18+00:00"/>
+  <date value="2022-08-29T07:02:49+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -1124,7 +1124,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi"/>
+        <targetProfile value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1256,7 +1256,7 @@
       <path value="List.entry.item"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi"/>
+        <targetProfile value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi"/>
       </type>
     </element>
     <element id="List.emptyReason">

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482> a fhir:ManufacturedItemDefinition;
+<http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482> a fhir:ManufacturedItemDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1639756818482"];
   fhir:DomainResource.text [
@@ -39,14 +39,17 @@
   ];
   fhir:ManufacturedItemDefinition.manufacturer [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
      fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482.ttl> .
 
 # -------------------------------------------------------------------------------------
 

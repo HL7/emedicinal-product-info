@@ -41,12 +41,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="anonymous"/>
   </extension>
-  <url value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+  <url value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
   <version value="0.1.0"/>
   <name value="MedicinalProductDefinitionUvEpi"/>
   <title value="MedicinalProductDefinition (ePI)"/>
   <status value="active"/>
-  <date value="2022-08-26T02:06:18+00:00"/>
+  <date value="2022-08-29T07:02:49+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -642,7 +642,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems"/>
+        <valueSet value="http://hl7.org/fhir/uv/vulcan-epi/ValueSet/medProductIdSystems"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -3352,7 +3352,7 @@
       <min value="1"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.eu/fhir/ig/gravitate-health/ValueSet/medProductIdSystems"/>
+        <valueSet value="http://hl7.org/fhir/uv/vulcan-epi/ValueSet/medProductIdSystems"/>
       </binding>
     </element>
     <element id="MedicinalProductDefinition.identifier.value">

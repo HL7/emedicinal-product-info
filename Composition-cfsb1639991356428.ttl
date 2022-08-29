@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1639991356428> a fhir:Composition;
+<http://hl7.org/fhir/uv/vulcan-epi/Composition/cfsb1639991356428> a fhir:Composition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1639991356428"];
   fhir:Resource.language [ fhir:value "en"];
@@ -25,7 +25,7 @@
   fhir:Composition.date [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639754108144>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639754108144>;
      fhir:Reference.reference [ fhir:value "Organization/cfsb1639754108144" ]
   ];
   fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - Monuril Vulcan ePI"];
@@ -163,10 +163,13 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639754108144> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1639991356428.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/Composition/cfsb1639991356428.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/Composition/cfsb1639991356428.ttl> .
 
 # -------------------------------------------------------------------------------------
 

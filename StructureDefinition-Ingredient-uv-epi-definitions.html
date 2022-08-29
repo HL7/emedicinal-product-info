@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.EU.FHIR.GH\Ingredient (ePI) - Definitions - FHIR v5.0.0-snapshot1</title>
+    <title>HL7.FHIR.UV.VULCAN-EPI\Ingredient (ePI) - Definitions - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/pcsp.css"/>
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -40,26 +41,27 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"12.11"}
-    h3,h4,h5,h6{--heading-prefix:"12.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"12.10"}
+    h3,h4,h5,h6{--heading-prefix:"12.10"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-        
+          <!-- Placeholder for child template header declarations -->
+
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
-            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
           </a>
         </div>
-   <!-- <div id="family-nav">
-          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
-        </div> -->
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">Vulcan ePI FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - CI Build
 
@@ -166,7 +168,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Vulcan ePI FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/vulcan-epi/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -247,7 +249,7 @@
         
           Active
           
-            as of 2022-08-26
+            as of 2022-08-29
           
         
       </td>
@@ -373,7 +375,7 @@ The lifecycle status of an artifact.
   <tr><td>Definition</td><td><p>The product which this ingredient is a constituent part of.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/references.html#Reference">Reference</a>(<a href="StructureDefinition-MedicinalProductDefinition-uv-epi.html" title="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi">MedicinalProductDefinitionUvEpi</a> | <a href="StructureDefinition-AdministrableProductDefinition-uv-epi.html" title="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi">AdministrableProductDefinitionUvEpi</a> | <a href="StructureDefinition-ManufacturedItemDefinition-uv-epi.html" title="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi">ManufacturedItemDefinitionUvEpi</a>)</td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/references.html#Reference">Reference</a>(<a href="StructureDefinition-MedicinalProductDefinition-uv-epi.html" title="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi">MedicinalProductDefinitionUvEpi</a> | <a href="StructureDefinition-AdministrableProductDefinition-uv-epi.html" title="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi">AdministrableProductDefinitionUvEpi</a> | <a href="StructureDefinition-ManufacturedItemDefinition-uv-epi.html" title="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi">ManufacturedItemDefinitionUvEpi</a>)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Ingredient.role"> </a><span style="color: grey">13.</span> <b>Ingredient.role</b><a href="#Ingredient.role" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -446,7 +448,7 @@ The lifecycle status of an artifact.
   <tr><td>Definition</td><td><p>The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/terminologies.html">Binding</a></td><td><a name="l1644">​</a>The codes SHALL be taken from <a href="ingredient-manufacturer-role|5.0.0-snapshot1.html">ingredient-manufacturer-role|5.0.0-snapshot1</a>
+  <tr><td><a href="http://build.fhir.org/terminologies.html">Binding</a></td><td><a name="l1653">​</a>The codes SHALL be taken from <a href="ingredient-manufacturer-role|5.0.0-snapshot1.html">ingredient-manufacturer-role|5.0.0-snapshot1</a>
 The way in which this manufacturer is associated with the ingredient.
 </td></tr>
   <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/datatypes.html#Coding">Coding</a></td></tr>
@@ -456,7 +458,7 @@ The way in which this manufacturer is associated with the ingredient.
   <tr><td>Definition</td><td><p>An organization that manufactures this ingredient.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/references.html#Reference">Reference</a>(<a href="StructureDefinition-Organization-uv-epi.html" title="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi">OrganizationUvEpi</a>)</td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/references.html#Reference">Reference</a>(<a href="StructureDefinition-Organization-uv-epi.html" title="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi">OrganizationUvEpi</a>)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Ingredient.substance"> </a><span style="color: grey">23.</span> <b>Ingredient.substance</b><a href="#Ingredient.substance" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -531,7 +533,7 @@ The way in which this manufacturer is associated with the ingredient.
   <tr><td>Definition</td><td><p>A reference to a resource the provides exact details about the information being referenced.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/references.html#Reference">Reference</a>(<a href="StructureDefinition-SubstanceDefinition-uv-epi.html" title="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi">SubstanceDefinitionUvEpi</a>)</td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a href="http://build.fhir.org/references.html#Reference">Reference</a>(<a href="StructureDefinition-SubstanceDefinition-uv-epi.html" title="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi">SubstanceDefinitionUvEpi</a>)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Ingredient.substance.strength"> </a><span style="color: grey">32.</span> <b>Ingredient.substance.strength</b><a href="#Ingredient.substance.strength" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -750,30 +752,17 @@ The way in which this manufacturer is associated with the ingredient.
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Fri, Aug 26, 2022 02:06+0000">2022-08-26</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.fhir.uv.vulcan-epi#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 29, 2022 07:02+0000">2022-08-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333">
-	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7" href="qa.html">QA Report</a>
-	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
-	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
-		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
-	</a>
-	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
-	  <!-- <br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
-	<div id="container width=100% style=&quot;display:block;&quot; ">
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
-			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
-		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
-		</div>
-	</div>
-	<div>
-	</div>
-</div>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/vulcan-epi/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
           
         </p>
       </div>    <!-- /inner-wrapper -->

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/AdministrableProductDefinition/cfsb1650999516847> a fhir:AdministrableProductDefinition;
+<http://hl7.org/fhir/uv/vulcan-epi/AdministrableProductDefinition/cfsb1650999516847> a fhir:AdministrableProductDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1650999516847"];
   fhir:DomainResource.text [
@@ -20,7 +20,7 @@
   fhir:AdministrableProductDefinition.status [ fhir:value "active"];
   fhir:AdministrableProductDefinition.formOf [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1650904258324>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1650904258324>;
      fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1650904258324" ]
   ];
   fhir:AdministrableProductDefinition.administrableDoseForm [
@@ -41,7 +41,7 @@
   ];
   fhir:AdministrableProductDefinition.producedFrom [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1650998521654>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1650998521654>;
      fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1650998521654" ]
   ];
   fhir:AdministrableProductDefinition.routeOfAdministration [
@@ -67,10 +67,15 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1650904258324> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1650998521654> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/AdministrableProductDefinition/cfsb1650999516847.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/AdministrableProductDefinition/cfsb1650999516847.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/AdministrableProductDefinition/cfsb1650999516847.ttl> .
 
 # -------------------------------------------------------------------------------------
 

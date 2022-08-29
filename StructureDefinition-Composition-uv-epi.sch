@@ -12,7 +12,8 @@
   <sch:pattern>
     <sch:title>f:Composition</sch:title>
     <sch:rule context="f:Composition">
-      <sch:assert test="count(f:attester) &gt;= 1">attester: minimum cardinality of 'attester' is 1</sch:assert>
+      <sch:assert test="count(f:attester) &lt;= 0">attester: maximum cardinality of 'attester' is 0</sch:assert>
+      <sch:assert test="count(f:custodian) &lt;= 0">custodian: maximum cardinality of 'custodian' is 0</sch:assert>
       <sch:assert test="count(f:section) &gt;= 1">section: minimum cardinality of 'section' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -122,12 +123,6 @@
     <sch:title>Composition.confidentiality</sch:title>
     <sch:rule context="f:Composition/f:confidentiality">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Composition/f:attester</sch:title>
-    <sch:rule context="f:Composition/f:attester">
-      <sch:assert test="count(f:time) &gt;= 1">time: minimum cardinality of 'time' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

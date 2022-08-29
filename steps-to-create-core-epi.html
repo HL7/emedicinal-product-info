@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.EU.FHIR.GH\Steps to create a Core FHIR ePI - FHIR v5.0.0-snapshot1</title>
+    <title>HL7.FHIR.UV.VULCAN-EPI\Steps to create a Core FHIR ePI - FHIR v5.0.0-snapshot1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/pcsp.css"/>
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -44,22 +45,23 @@
     h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-        
+          <!-- Placeholder for child template header declarations -->
+
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
-            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
           </a>
         </div>
-   <!-- <div id="family-nav">
-          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
-        </div> -->
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">Vulcan ePI FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - CI Build
 
@@ -173,7 +175,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Vulcan ePI FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/vulcan-epi/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Steps to create a Core FHIR ePI</h2>
   
 
@@ -315,7 +317,7 @@ Part 1 - Vial with powder</p>
 <h4 id="create-organization-resources">Create Organization resource(s)</h4>
 <p>Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with the ePI: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).</p>
 
-<p><a name="l608">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Organization-uv-epi.html">Organization profile</a> for detail.</p>
+<p><a name="l617">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Organization-uv-epi.html">Organization profile</a> for detail.</p>
 
 <figure>
   <img src="step1.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -327,7 +329,7 @@ Part 1 - Vial with powder</p>
 
 <p>Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder.</p>
 
-<p><a name="l631">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-SubstanceDefinition-uv-epi.html">SubstanceDefinition Profile</a> for detail.</p>
+<p><a name="l640">​</a>Refer to the <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-SubstanceDefinition-uv-epi.html">SubstanceDefinition Profile</a> for detail.</p>
 
 <figure>
   <img src="step2.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -341,7 +343,7 @@ Part 1 - Vial with powder</p>
 
 <p>Create a reference from each ManufacturedItemDefinition resource to the corresponding Organization resource (e.g., reference to the manufacturer; reference to the marketing authorization holder).</p>
 
-<p><a name="l657">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ManufacturedItemDefinition-uv-epi.html">ManufacturedItemDefinition Profile</a> for detail.</p>
+<p><a name="l666">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ManufacturedItemDefinition-uv-epi.html">ManufacturedItemDefinition Profile</a> for detail.</p>
 
 <p>(add two examples, one for a product with no transformation (tablet) and one with transformation).</p>
 
@@ -356,7 +358,7 @@ Part 1 - Vial with powder</p>
 <p>Create a reference from the relevant Ingredient resources to the corresponding ManufacturedItemDefinition resource (e.g., reference the ingredients that make up the powder to the powder’s manufactured item, and reference the ingredients that make up the diluent to the diluent’s manufactured item). 
 Create a reference from the relevant Ingredient resources to the corresponding Organization resource (e.g., reference to the Organization that manufactures that ingredient).</p>
 
-<p><a name="l683">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Ingredient-uv-epi.html">Ingredient</a> for detail.</p>
+<p><a name="l692">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Ingredient-uv-epi.html">Ingredient</a> for detail.</p>
 
 <figure>
   <img src="step4.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -413,7 +415,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>There are no references from the medicinal product to other resources. Instead, other resources will refer to the medicinal product.</p>
 
-<p><a name="l814">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html">MedicinalProductDefinition Profile</a> for detail.</p>
+<p><a name="l823">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html">MedicinalProductDefinition Profile</a> for detail.</p>
 
 <figure>
   <img src="step5.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -429,7 +431,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>Create a reference from each PharmaceuticalProductDefinition resource to the corresponding ManufacturedItemDefinition resource.</p>
 
-<p><a name="l843">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-AdministrableProductDefinition-uv-epi.html">AdministrableProductDefinition Profile</a> for detail.</p>
+<p><a name="l852">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-AdministrableProductDefinition-uv-epi.html">AdministrableProductDefinition Profile</a> for detail.</p>
 
 <p>(add two examples, one for a product with no transformation (tablet) and one with transformation).</p>
 
@@ -452,7 +454,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>Create a reference from each PackagedProductDefinition resource to the corresponding Organization resource for the manufacturer or marketing authorization holder.</p>
 
-<p><a name="l881">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-PackagedProductDefinition-uv-epi.html">PackagedProductDefinition Profile</a> for detail.</p>
+<p><a name="l890">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-PackagedProductDefinition-uv-epi.html">PackagedProductDefinition Profile</a> for detail.</p>
 
 <figure>
   <img src="step7.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -464,7 +466,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>Create a reference from the ClinicalUseDefinition (contraindication) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l904">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l913">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
 <figure>
   <img src="step8-12.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -476,7 +478,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>Create a reference from each ClinicalUseDefinition (Indication) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l927">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l936">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
 <figure>
   <img src="step8-12.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -488,7 +490,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>Create a reference each ClinicalUseDefinition (Interaction) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l950">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l959">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
 <figure>
   <img src="step8-12.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -500,7 +502,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>Create a reference from each ClinicalUseDefinition (Undesirable Effect) to the corresponding MedicinalProduct.</p>
 
-<p><a name="l973">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
+<p><a name="l982">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html">ClinicalUseDefinition Profile</a> for detail.</p>
 
 <figure>
   <img src="step8-12.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -526,7 +528,7 @@ Create a reference from the relevant Ingredient resources to the corresponding O
 
 <p>Create a reference from each RegulatedAuthorization resource to to the corresponding Organization resource for the marketing authorization holder and the health authority.</p>
 
-<p><a name="l1019">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-RegulatedAuthorization-uv-epi.html">RegulatedAuthorization Profile</a> for detail.</p>
+<p><a name="l1028">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-RegulatedAuthorization-uv-epi.html">RegulatedAuthorization Profile</a> for detail.</p>
 
 <p>NOTE:</p>
 <ul>
@@ -572,7 +574,7 @@ ePI documents are meant to be separate and shall not be combined into one large 
   <li>one Composition for each translation (e.g., one Composition for the French version of the ePI document and a separate Composition for the Spanish version of the ePI document).</li>
 </ul>
 
-<p><a name="l1103">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Composition-uv-epi.html">Composition Profile</a> for detail.</p>
+<p><a name="l1112">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Composition-uv-epi.html">Composition Profile</a> for detail.</p>
 
 <figure>
   <img src="step15.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -598,7 +600,7 @@ ePI documents are meant to be separate and shall not be combined into one large 
   <li>INSERT call out the options to list all bundles in the List vs just List the set ids for the bundles and all documents in the List vs separate Lists for documents and translations.</li>
 </ul>
 
-<p><a name="l1159">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Bundle-uv-epi.html">Bundle Profile</a> for detail.</p>
+<p><a name="l1168">​</a>Refer to <a href="http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Bundle-uv-epi.html">Bundle Profile</a> for detail.</p>
 
 <figure>
   <img src="step16.png" alt="ePI Resource Relationship" style="padding-top:0;padding-bottom:0"/>
@@ -666,30 +668,17 @@ INSERT consider using Monuril as an example since it is used in the UNICOM examp
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Fri, Aug 26, 2022 02:06+0000">2022-08-26</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.fhir.uv.vulcan-epi#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 5.0.0-snapshot1</a>. Generated <span title="Mon, Aug 29, 2022 07:02+0000">2022-08-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            <div style="color: #33333">
-	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-	<a style="color: #81BEF7" href="qa.html">QA Report</a>
-	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
-	<a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html">
-		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
-	</a>
-	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
-	  <!-- <br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
-	<div id="container width=100% style=&quot;display:block;&quot; ">
-		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
-			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
-		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
-			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
-		</div>
-	</div>
-	<div>
-	</div>
-</div>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/vulcan-epi/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
           
         </p>
       </div>    <!-- /inner-wrapper -->

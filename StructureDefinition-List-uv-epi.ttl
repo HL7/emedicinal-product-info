@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/List-uv-epi> a fhir:StructureDefinition;
+<http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/List-uv-epi> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "List-uv-epi"];
   fhir:DomainResource.text [
@@ -22,12 +22,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/List-uv-epi"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/List-uv-epi"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "ListUvEpi"];
   fhir:StructureDefinition.title [ fhir:value "List - ePI"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-26T02:06:18+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-29T07:02:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Gravitate Health Project" ];
@@ -1465,9 +1465,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1644,9 +1644,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Bundle-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Bundle-uv-epi>
          ]
        ]
      ], [
@@ -1659,8 +1659,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/List-uv-epi.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/List-uv-epi.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/StructureDefinition/List-uv-epi.ttl> .
 
 # -------------------------------------------------------------------------------------
 

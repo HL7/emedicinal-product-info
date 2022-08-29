@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5> a fhir:Bundle;
+<http://hl7.org/fhir/uv/vulcan-epi/Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "5526bcb3-9b7f-4bc1-a9e7-65302382e7a5"];
   fhir:Bundle.identifier [
@@ -36,7 +36,7 @@
        fhir:Composition.date [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime ];
        fhir:Composition.author [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639754108144>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639754108144>;
          fhir:Reference.reference [ fhir:value "Organization/cfsb1639754108144" ]
        ];
        fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - Monuril Vulcan ePI" ];
@@ -181,9 +181,9 @@
        fhir:Resource.id [ fhir:value "cfsb1639753766266" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi>
          ]
        ];
        fhir:DomainResource.text [
@@ -228,9 +228,9 @@
        fhir:Resource.id [ fhir:value "cfsb1639754108144" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi";
+           fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi";
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi>
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi>
          ]
        ];
        fhir:DomainResource.text [
@@ -291,7 +291,7 @@
        ];
        fhir:RegulatedAuthorization.subject [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639760186202>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202>;
          fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639760186202" ]
        ];
        fhir:RegulatedAuthorization.type [
@@ -321,7 +321,7 @@
        ];
        fhir:RegulatedAuthorization.statusDate [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime ];
        fhir:RegulatedAuthorization.holder [
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639754108144>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639754108144>;
          fhir:Reference.reference [ fhir:value "Organization/cfsb1639754108144" ]
        ];
        fhir:RegulatedAuthorization.regulator [
@@ -452,7 +452,7 @@
        ];
        fhir:PackagedProductDefinition.packageFor [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639760186202>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202>;
          fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639760186202" ]
        ];
        fhir:PackagedProductDefinition.status [
@@ -472,7 +472,7 @@
        ];
        fhir:PackagedProductDefinition.manufacturer [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
          fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
        ];
        fhir:PackagedProductDefinition.package [
@@ -511,14 +511,14 @@
          ];
          fhir:PackagedProductDefinition.package.manufacturer [
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ];
          fhir:PackagedProductDefinition.package.containedItem [
            fhir:index 0;
            fhir:PackagedProductDefinition.package.containedItem.item [
              fhir:CodeableReference.reference [
-               fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+               fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
                fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
              ]
            ]
@@ -552,7 +552,7 @@
        ];
        fhir:PackagedProductDefinition.packageFor [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639760186202>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202>;
          fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639760186202" ]
        ];
        fhir:PackagedProductDefinition.status [
@@ -571,7 +571,7 @@
        ];
        fhir:PackagedProductDefinition.manufacturer [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
          fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
        ];
        fhir:PackagedProductDefinition.package [
@@ -610,14 +610,14 @@
          ];
          fhir:PackagedProductDefinition.package.manufacturer [
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ];
          fhir:PackagedProductDefinition.package.containedItem [
            fhir:index 0;
            fhir:PackagedProductDefinition.package.containedItem.item [
              fhir:CodeableReference.reference [
-               fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+               fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
                fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
              ]
            ]
@@ -651,7 +651,7 @@
        ];
        fhir:PackagedProductDefinition.packageFor [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639760186202>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202>;
          fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639760186202" ]
        ];
        fhir:PackagedProductDefinition.status [
@@ -670,7 +670,7 @@
        ];
        fhir:PackagedProductDefinition.manufacturer [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
          fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
        ];
        fhir:PackagedProductDefinition.package [
@@ -709,14 +709,14 @@
          ];
          fhir:PackagedProductDefinition.package.manufacturer [
            fhir:index 0;
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ];
          fhir:PackagedProductDefinition.package.containedItem [
            fhir:index 0;
            fhir:PackagedProductDefinition.package.containedItem.item [
              fhir:CodeableReference.reference [
-               fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+               fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
                fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
              ]
            ]
@@ -741,7 +741,7 @@
        fhir:AdministrableProductDefinition.status [ fhir:value "active" ];
        fhir:AdministrableProductDefinition.formOf [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639760186202>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202>;
          fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639760186202" ]
        ];
        fhir:AdministrableProductDefinition.administrableDoseForm [
@@ -754,7 +754,7 @@
        ];
        fhir:AdministrableProductDefinition.producedFrom [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
          fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
        ];
        fhir:AdministrableProductDefinition.routeOfAdministration [
@@ -816,7 +816,7 @@
        ];
        fhir:ManufacturedItemDefinition.manufacturer [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
          fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
        ]
      ]
@@ -837,7 +837,7 @@
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.for [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
          fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
        ];
        fhir:Ingredient.role [
@@ -851,7 +851,7 @@
        fhir:Ingredient.manufacturer [
          fhir:index 0;
          fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ]
        ];
@@ -885,7 +885,7 @@
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.for [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
          fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
        ];
        fhir:Ingredient.role [
@@ -899,7 +899,7 @@
        fhir:Ingredient.manufacturer [
          fhir:index 0;
          fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ]
        ];
@@ -966,7 +966,7 @@
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.for [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
          fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
        ];
        fhir:Ingredient.role [
@@ -980,7 +980,7 @@
        fhir:Ingredient.manufacturer [
          fhir:index 0;
          fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ]
        ];
@@ -1014,7 +1014,7 @@
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.for [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
          fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
        ];
        fhir:Ingredient.role [
@@ -1028,7 +1028,7 @@
        fhir:Ingredient.manufacturer [
          fhir:index 0;
          fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ]
        ];
@@ -1062,7 +1062,7 @@
        fhir:Ingredient.status [ fhir:value "active" ];
        fhir:Ingredient.for [
          fhir:index 0;
-         fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/cfsb1639756818482>;
+         fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482>;
          fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/cfsb1639756818482" ]
        ];
        fhir:Ingredient.role [
@@ -1076,7 +1076,7 @@
        fhir:Ingredient.manufacturer [
          fhir:index 0;
          fhir:Ingredient.manufacturer.manufacturer [
-           fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639753766266>;
+           fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266>;
            fhir:Reference.reference [ fhir:value "Organization/cfsb1639753766266" ]
          ]
        ];
@@ -1095,10 +1095,19 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639754108144> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639753766266> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/cfsb1639756818482> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/Bundle/5526bcb3-9b7f-4bc1-a9e7-65302382e7a5.ttl> .
 
 # -------------------------------------------------------------------------------------
 

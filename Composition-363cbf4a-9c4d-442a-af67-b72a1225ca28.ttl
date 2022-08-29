@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Composition/363cbf4a-9c4d-442a-af67-b72a1225ca28> a fhir:Composition;
+<http://hl7.org/fhir/uv/vulcan-epi/Composition/363cbf4a-9c4d-442a-af67-b72a1225ca28> a fhir:Composition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "363cbf4a-9c4d-442a-af67-b72a1225ca28"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi";
+       fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Composition-uv-epi";
        fhir:index 0;
-       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi>
+       fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Composition-uv-epi>
      ]
   ];
   fhir:Resource.language [ fhir:value "en"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative: Composition</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition \"363cbf4a-9c4d-442a-af67-b72a1225ca28\"  (Language \"en\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-uv-epi.html\">Composition (ePI)</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href=\"Organization-85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8.html\">Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8</a> \"PHARMACIA &amp; UPJOHN COMPANY LLC\"</p><p><b>title</b>: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets</p><p><b>confidentiality</b>: U</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td></tr><tr><td>*</td><td>Official <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://build.fhir.org/codesystem-composition-attestation-mode.html\">CompositionAttestationMode</a>#official)</span></td><td>2002-08-01 01:28:17+0000</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative: Composition</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition \"363cbf4a-9c4d-442a-af67-b72a1225ca28\"  (Language \"en\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-uv-epi.html\">Composition (ePI)</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Package Leaflet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#100000155538)</span></p><p><b>date</b>: 2002-08-01 01:28:17+0000</p><p><b>author</b>: <a href=\"Organization-85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8.html\">Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8</a> \"PHARMACIA &amp; UPJOHN COMPANY LLC\"</p><p><b>title</b>: TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets</p><p><b>confidentiality</b>: U</p></div>"
   ];
   fhir:Composition.status [ fhir:value "final"];
   fhir:Composition.type [
@@ -30,28 +30,17 @@
      fhir:CodeableConcept.text [ fhir:value "Package Leaflet" ]
   ];
   fhir:Composition.subject [
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/56b3b73e-dba0-4447-b8cd-1e24ed637017>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/56b3b73e-dba0-4447-b8cd-1e24ed637017>;
      fhir:Reference.reference [ fhir:value "RegulatedAuthorization/56b3b73e-dba0-4447-b8cd-1e24ed637017" ]
   ];
   fhir:Composition.date [ fhir:value "2002-08-01T13:28:17Z"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
      fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
   ];
   fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"];
   fhir:Composition.confidentiality [ fhir:value "U"];
-  fhir:Composition.attester [
-     fhir:index 0;
-     fhir:Composition.attester.mode [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/composition-attestation-mode" ];
-         fhir:Coding.code [ fhir:value "official" ]
-       ]
-     ];
-     fhir:Composition.attester.time [ fhir:value "2002-08-01T13:28:17Z"^^xsd:dateTime ]
-  ];
   fhir:Composition.section [
      fhir:index 0;
      fhir:Composition.section.title [ fhir:value "SPL PATIENT PACKAGE INSERT SECTION" ];
@@ -174,10 +163,15 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/56b3b73e-dba0-4447-b8cd-1e24ed637017> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Composition/363cbf4a-9c4d-442a-af67-b72a1225ca28.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/Composition/363cbf4a-9c4d-442a-af67-b72a1225ca28.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/Composition/363cbf4a-9c4d-442a-af67-b72a1225ca28.ttl> .
 
 # -------------------------------------------------------------------------------------
 

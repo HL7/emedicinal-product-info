@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54> a fhir:MedicinalProductDefinition;
+<http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54> a fhir:MedicinalProductDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "f1b25777-da7a-4a35-98af-ab18d3246d54"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi";
+       fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi";
        fhir:index 0;
-       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi>
+       fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi>
      ]
   ];
   fhir:DomainResource.text [
@@ -110,8 +110,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/MedicinalProductDefinition/f1b25777-da7a-4a35-98af-ab18d3246d54.ttl> .
 
 # -------------------------------------------------------------------------------------
 

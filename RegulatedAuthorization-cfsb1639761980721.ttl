@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1639761980721> a fhir:RegulatedAuthorization;
+<http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/cfsb1639761980721> a fhir:RegulatedAuthorization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1639761980721"];
   fhir:DomainResource.text [
@@ -20,7 +20,7 @@
   ];
   fhir:RegulatedAuthorization.subject [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1639760186202>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202>;
      fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1639760186202" ]
   ];
   fhir:RegulatedAuthorization.type [
@@ -50,17 +50,22 @@
   ];
   fhir:RegulatedAuthorization.statusDate [ fhir:value "2015-02-07T13:28:17Z"^^xsd:dateTime];
   fhir:RegulatedAuthorization.holder [
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1639754108144>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639754108144>;
      fhir:Reference.reference [ fhir:value "Organization/cfsb1639754108144" ]
   ];
   fhir:RegulatedAuthorization.regulator [
      fhir:Reference.reference [ fhir:value "cfsb1639015880655" ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1639760186202> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1639754108144> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1639761980721.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/cfsb1639761980721.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/RegulatedAuthorization/cfsb1639761980721.ttl> .
 
 # -------------------------------------------------------------------------------------
 

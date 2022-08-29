@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1651148079894> a fhir:RegulatedAuthorization;
+<http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/cfsb1651148079894> a fhir:RegulatedAuthorization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1651148079894"];
   fhir:DomainResource.text [
@@ -20,7 +20,7 @@
   ];
   fhir:RegulatedAuthorization.subject [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/MedicinalProductDefinition/cfsb1650904258324>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1650904258324>;
      fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/cfsb1650904258324" ]
   ];
   fhir:RegulatedAuthorization.type [
@@ -50,18 +50,25 @@
   ];
   fhir:RegulatedAuthorization.statusDate [ fhir:value "2019-07-01T13:28:17Z"^^xsd:dateTime];
   fhir:RegulatedAuthorization.holder [
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651149636159>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1651149636159>;
      fhir:Reference.reference [ fhir:value "Organization/cfsb1651149636159" ]
   ];
   fhir:RegulatedAuthorization.regulator [
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651152112409>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1651152112409>;
      fhir:Reference.reference [ fhir:value "Organization/cfsb1651152112409" ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/MedicinalProductDefinition/cfsb1650904258324> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1651149636159> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1651152112409> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1651148079894.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/cfsb1651148079894.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/RegulatedAuthorization/cfsb1651148079894.ttl> .
 
 # -------------------------------------------------------------------------------------
 

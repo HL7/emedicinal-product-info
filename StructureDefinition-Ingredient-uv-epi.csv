@@ -35,7 +35,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Ingredient.status","Ingredient.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","draft|active|retired|unknown","The status of this ingredient. Enables tracking the life-cycle of the content.","Allows filtering of ingredient that are appropriate for use versus not.","","","","","","","","",,"required","The lifecycle status of an artifact.","http://hl7.org/fhir/ValueSet/publication-status|5.0.0-snapshot1","",,,,"Ingredient.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Ingredient.for","Ingredient.for","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi], CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi], CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi]]}
+"Ingredient.for","Ingredient.for","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi], CanonicalType[http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi], CanonicalType[http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi]]}
 ","The product which this ingredient is a constituent part of","The product which this ingredient is a constituent part of.","","","","","","","","","",,,,,"",,,,"Ingredient.for",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "Ingredient.role","Ingredient.role","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
@@ -74,7 +74,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Ingredient.manufacturer.role","Ingredient.manufacturer.role","","","",0,1,"","","Y","Coding {[]} {[]}
 ","allowed|possible|actual","The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role.","","","","","","","","","",,"required","The way in which this manufacturer is associated with the ingredient.","http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role|5.0.0-snapshot1","",,,,"Ingredient.manufacturer.role",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Ingredient.Manufacturer / Establishment (Organisation)"
-"Ingredient.manufacturer.manufacturer","Ingredient.manufacturer.manufacturer","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi]]}
+"Ingredient.manufacturer.manufacturer","Ingredient.manufacturer.manufacturer","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi]]}
 ","An organization that manufactures this ingredient","An organization that manufactures this ingredient.","","","","","","","","","",,,,,"",,,,"Ingredient.manufacturer.manufacturer",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Ingredient.Manufacturer / Establishment (Organisation)"
 "Ingredient.substance","Ingredient.substance","","","",1,1,"","","Y","BackboneElement {[]} {[]}
@@ -111,7 +111,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   </coding>
 </valueCodeableConcept>","","",,,,,"",,,,"CodeableReference.concept",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Ingredient.substance.code.reference","Ingredient.substance.code.reference","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi]]}
+"Ingredient.substance.code.reference","Ingredient.substance.code.reference","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi]]}
 ","Reference to a resource (by instance)","A reference to a resource the provides exact details about the information being referenced.","","","","","","","","","",,,,,"",,,,"CodeableReference.reference",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Ingredient.substance.strength","Ingredient.substance.strength","","","",0,*,"","","Y","BackboneElement {[]} {[]}

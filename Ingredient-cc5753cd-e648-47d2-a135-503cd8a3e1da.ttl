@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cc5753cd-e648-47d2-a135-503cd8a3e1da> a fhir:Ingredient;
+<http://hl7.org/fhir/uv/vulcan-epi/Ingredient/cc5753cd-e648-47d2-a135-503cd8a3e1da> a fhir:Ingredient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cc5753cd-e648-47d2-a135-503cd8a3e1da"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi";
+       fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi";
        fhir:index 0;
-       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi>
+       fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi>
      ]
   ];
   fhir:DomainResource.text [
@@ -27,7 +27,7 @@
   fhir:Ingredient.status [ fhir:value "active"];
   fhir:Ingredient.for [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939>;
      fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939" ]
   ];
   fhir:Ingredient.role [
@@ -41,7 +41,7 @@
   fhir:Ingredient.manufacturer [
      fhir:index 0;
      fhir:Ingredient.manufacturer.manufacturer [
-       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
+       fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
        fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
      ]
   ];
@@ -58,10 +58,15 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/ManufacturedItemDefinition/23fed712-2d60-461d-83a6-5fb939b2a939> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Ingredient/cc5753cd-e648-47d2-a135-503cd8a3e1da.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/Ingredient/cc5753cd-e648-47d2-a135-503cd8a3e1da.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/Ingredient/cc5753cd-e648-47d2-a135-503cd8a3e1da.ttl> .
 
 # -------------------------------------------------------------------------------------
 

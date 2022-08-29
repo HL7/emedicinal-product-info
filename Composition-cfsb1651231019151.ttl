@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1651231019151> a fhir:Composition;
+<http://hl7.org/fhir/uv/vulcan-epi/Composition/cfsb1651231019151> a fhir:Composition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1651231019151"];
   fhir:Resource.language [ fhir:value "en"];
@@ -23,13 +23,13 @@
      fhir:CodeableConcept.text [ fhir:value "Package Leaflet" ]
   ];
   fhir:Composition.subject [
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/RegulatedAuthorization/cfsb1651148079894>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/cfsb1651148079894>;
      fhir:Reference.reference [ fhir:value "RegulatedAuthorization/cfsb1651148079894" ]
   ];
   fhir:Composition.date [ fhir:value "2022-04-29T13:28:17Z"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1651149636159>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1651149636159>;
      fhir:Reference.reference [ fhir:value "Organization/cfsb1651149636159" ]
   ];
   fhir:Composition.title [ fhir:value "TEST PURPOSES ONLY - Dovato 50 mg/300 mg film-coated tablets"];
@@ -167,10 +167,15 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/RegulatedAuthorization/cfsb1651148079894> a fhir:uv .
+
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1651149636159> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Composition/cfsb1651231019151.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/Composition/cfsb1651231019151.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/Composition/cfsb1651231019151.ttl> .
 
 # -------------------------------------------------------------------------------------
 

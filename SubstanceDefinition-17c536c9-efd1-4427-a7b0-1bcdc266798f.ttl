@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f> a fhir:SubstanceDefinition;
+<http://hl7.org/fhir/uv/vulcan-epi/SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f> a fhir:SubstanceDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "17c536c9-efd1-4427-a7b0-1bcdc266798f"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi";
+       fhir:value "http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi";
        fhir:index 0;
-       fhir:link <http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi>
+       fhir:link <http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi>
      ]
   ];
   fhir:DomainResource.text [
@@ -37,7 +37,7 @@
   fhir:SubstanceDefinition.description [ fhir:value "White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water."];
   fhir:SubstanceDefinition.manufacturer [
      fhir:index 0;
-     fhir:link <http://hl7.eu/fhir/ig/gravitate-health/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
+     fhir:link <http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8>;
      fhir:Reference.reference [ fhir:value "Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8" ]
   ];
   fhir:SubstanceDefinition.molecularWeight [
@@ -65,10 +65,13 @@
      ]
   ] .
 
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8> a fhir:uv .
+
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/SubstanceDefinition/17c536c9-efd1-4427-a7b0-1bcdc266798f.ttl> .
 
 # -------------------------------------------------------------------------------------
 

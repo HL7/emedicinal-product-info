@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990> a fhir:Organization;
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1650997423990> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cfsb1650997423990"];
   fhir:DomainResource.text [
@@ -49,8 +49,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.eu/fhir/ig/gravitate-health/Organization/cfsb1650997423990.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/uv/vulcan-epi/Organization/cfsb1650997423990.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/vulcan-epi/Organization/cfsb1650997423990.ttl> .
 
 # -------------------------------------------------------------------------------------
 

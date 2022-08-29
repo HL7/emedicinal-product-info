@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.eu.fhir.gh"/>
+  <id value="hl7.fhir.uv.vulcan-epi"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>GhImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh</pre><div><p>Gravitate Health is an EU project aiming to empower and equip Europeans with health information for active personal health management and adherence to treatment.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VulcanEpiIG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/vulcan-epi/ImplementationGuide/hl7.fhir.uv.vulcan-epi</pre><div><p>Gravitate Health is an EU project aiming to empower and equip Europeans with health information for active personal health management and adherence to treatment.</p>
 </div></div>
   </text>
-  <url value="http://hl7.eu/fhir/ig/gravitate-health/ImplementationGuide/hl7.eu.fhir.gh"/>
+  <url value="http://hl7.org/fhir/uv/vulcan-epi/ImplementationGuide/hl7.fhir.uv.vulcan-epi"/>
   <version value="0.1.0"/>
-  <name value="GhImplementationGuide"/>
-  <title value="Gravitate Health FHIR Implementation Guide"/>
+  <name value="VulcanEpiIG"/>
+  <title value="Vulcan ePI FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-08-26T02:06:18+00:00"/>
+  <date value="2022-08-29T07:02:49+00:00"/>
   <contact>
     <name value="Gravitate Health Project"/>
     <telecom>
@@ -20,7 +20,7 @@
     </telecom>
   </contact>
   <description value="Gravitate Health is an EU project aiming to empower and equip Europeans with health information for active personal health management and adherence to treatment."/>
-  <packageId value="hl7.eu.fhir.gh"/>
+  <packageId value="hl7.fhir.uv.vulcan-epi"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0-snapshot1"/>
   <dependsOn id="hl7tx">
@@ -48,7 +48,7 @@
         <reference value="StructureDefinition/Bundle-uv-epi"/>
       </reference>
       <name value="Bundle - ePI"/>
-      <description value="This profile represents the constraints applied to the Bundle resource by the Electronic Product Information (ePI) FHIR Implementation Guide."/>
+      <description value="A medicine’s product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -111,21 +111,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Composition-eu-leaflet"/>
-      </reference>
-      <name value="Composition (EU Leaflet)"/>
-      <description value="This profile provides an example of how the Composition (ePI) profile can be specialized to represent a Product information Leaflet withi a specific jurisdiction"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/Composition-uv-epi"/>
       </reference>
       <name value="Composition (ePI)"/>
-      <description value="Clinical document used to represent the Electronic Product Information (ePI) data set. &#xA;An Electronic Product Information (ePI) document is an authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."/>
+      <description value="The Composition captures the section headings, sub-section headings, and narrative text (For example, paragraphs, bulleted lists, tables) in an ePI."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -379,7 +368,7 @@
       </reference>
       <name value="0c81c330-cf57-45c2-9ca2-559aea4c8060"/>
       <description value="POLYETHYLENE GLYCOL 6000"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -390,7 +379,7 @@
       </reference>
       <name value="16dc4148-5296-4f7a-8576-2e6bf9dde736"/>
       <description value="SILICON DIOXIDE"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -401,7 +390,7 @@
       </reference>
       <name value="17c536c9-efd1-4427-a7b0-1bcdc266798f"/>
       <description value="exemestane-sub"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/SubstanceDefinition-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/SubstanceDefinition-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -412,7 +401,7 @@
       </reference>
       <name value="23fed712-2d60-461d-83a6-5fb939b2a939"/>
       <description value="Manufactured Item - Aromasin (exemestane) Tablets 25 mg"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/ManufacturedItemDefinition-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/ManufacturedItemDefinition-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -423,7 +412,7 @@
       </reference>
       <name value="32e98fc8-b8fb-4bd9-a4d3-2ce97c151d61"/>
       <description value="microcrystalline cellulose"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -434,7 +423,7 @@
       </reference>
       <name value="363cbf4a-9c4d-442a-af67-b72a1225ca28"/>
       <description value="Package Leaflet"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Composition-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Composition-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -445,7 +434,7 @@
       </reference>
       <name value="39151aef-f61a-40cb-86fc-d0e556fa07ef"/>
       <description value="30 in 1 BOTTLE; Type 0: Not a Combination Product"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/PackagedProductDefinition-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/PackagedProductDefinition-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -467,7 +456,7 @@
       </reference>
       <name value="56b3b73e-dba0-4447-b8cd-1e24ed637017"/>
       <description value="Regulated Authorization"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/RegulatedAuthorization-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/RegulatedAuthorization-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -478,7 +467,7 @@
       </reference>
       <name value="5a574ff2-f3e6-4aaa-8d3c-27e6ab343533"/>
       <description value="EXEMESTANE"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -489,7 +478,7 @@
       </reference>
       <name value="5acc6759-a7f7-4380-ab2e-ad72e8587598"/>
       <description value="MAGNESIUM STEARATE"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -500,7 +489,7 @@
       </reference>
       <name value="5f2c1669-3991-4cc2-b252-958b738d5df8"/>
       <description value="METHYLPARABEN"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -511,7 +500,7 @@
       </reference>
       <name value="6708560e-135d-4b2a-afde-9e3b03f27939"/>
       <description value="POLYSORBATE 80"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -522,7 +511,7 @@
       </reference>
       <name value="733fb580-1139-4188-aff8-ad6efe243555"/>
       <description value="POLYVINYL ALCOHOL, UNSPECIFIED"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -533,7 +522,7 @@
       </reference>
       <name value="7b23dea1-ce14-4c13-8004-f297bb75eda0"/>
       <description value="MANNITOL"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -544,7 +533,7 @@
       </reference>
       <name value="854be59d-070a-44d7-a82e-bbb83200dc6a"/>
       <description value="TITANIUM DIOXIDE "/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -555,7 +544,7 @@
       </reference>
       <name value="85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8"/>
       <description value="Marketing Authorization Holder"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -566,7 +555,7 @@
       </reference>
       <name value="8cf05f7c-481d-4bd6-9a7c-9ca3275601c3"/>
       <description value="Aromasin (exemestane) Tablets 25 mg"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/AdministrableProductDefinition-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/AdministrableProductDefinition-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -577,7 +566,7 @@
       </reference>
       <name value="b254f961-61ca-43f9-b3f9-5b0b5d4406a9"/>
       <description value="SODIUM STARCH GLYCOLATE TYPE A POTATO"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -588,7 +577,7 @@
       </reference>
       <name value="c5a3cb57-3f3e-4309-ae34-0926300de57e"/>
       <description value="SUCROSE"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -610,7 +599,7 @@
       </reference>
       <name value="cc5753cd-e648-47d2-a135-503cd8a3e1da"/>
       <description value="HYPROMELLOSE, UNSPECIFIED"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -621,7 +610,7 @@
       </reference>
       <name value="cfsb1639753766266"/>
       <description value="Manufacturer"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -632,7 +621,7 @@
       </reference>
       <name value="cfsb1639754108144"/>
       <description value="Market Authorization Holder"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Organization-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Organization-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -984,7 +973,7 @@
       </reference>
       <name value="db5e392b-e7b2-47dc-829c-ee5182986dca"/>
       <description value="MAGNESIUM CARBONATE"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -995,7 +984,7 @@
       </reference>
       <name value="f1b25777-da7a-4a35-98af-ab18d3246d54"/>
       <description value="Aromasin (exemestane) Tablets 25 mg"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1017,7 +1006,7 @@
       </reference>
       <name value="f35c1543-e4e2-4215-b91c-f092b1fb9655"/>
       <description value="microcrystalline cellulose"/>
-      <exampleCanonical value="http://hl7.eu/fhir/ig/gravitate-health/StructureDefinition/Ingredient-uv-epi"/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/vulcan-epi/StructureDefinition/Ingredient-uv-epi"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -1108,6 +1097,10 @@
       <value value="true"/>
     </parameter>
     <parameter>
+      <code value="path-history"/>
+      <value value="http://hl7.org/fhir/uv/vulcan-epi/history.html"/>
+    </parameter>
+    <parameter>
       <code value="path-resource"/>
       <value value="input/capabilities"/>
     </parameter>
@@ -1186,10 +1179,6 @@
     <parameter>
       <code value="path-suppressed-warnings"/>
       <value value="input/ignoreWarnings.txt"/>
-    </parameter>
-    <parameter>
-      <code value="path-history"/>
-      <value value="http://hl7.eu/fhir/ig/gravitate-health/history.html"/>
     </parameter>
     <parameter>
       <code value="template-html"/>
