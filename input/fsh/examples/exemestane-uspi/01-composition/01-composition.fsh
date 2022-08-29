@@ -13,8 +13,6 @@ Usage: #example
 * author = Reference(85c5d81e-9d5a-4a15-8b9d-42bbbe0409c8)
 * title = "TEST PURPOSES ONLY - Aromasin (exemestane) Tablets 25 mg tablets"
 * confidentiality = #U
-* attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
-* attester.time =  "2002-08-01T13:28:17Z"
 * language = #en
 
 * section.title = "SPL PATIENT PACKAGE INSERT SECTION"

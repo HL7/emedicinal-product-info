@@ -10,7 +10,7 @@ Description: "Organization (ePI)"
   * value 1..
 
 
-* active ^short = "Whether the organization's record is in active use"
+* active ^short = "Whether this organization's record is in active use"
 
 // * type = https://spor.ema.europa.eu/rmswi/#/#220000000033
 // * type.text = "Manufacturer API"
@@ -28,7 +28,7 @@ Description: "Organization (ePI)"
 
 
 
-* name ^short = "Organization's name"
+* name ^short = "Organization's legal name"
 * alias ^short = "A list of alternate names for this organization"
 
 * telecom 0..
@@ -43,21 +43,23 @@ Description: "Organization (ePI)"
 	url 0..
 	
 * telecom[phone] ^short = "Phone"
-* telecom[phone] ^definition = "Contact Point - phone" // to be reviewed
+* telecom[phone] ^definition = "Corporate phone contact information for the local representative of the marketing authorization holder. International dialling code followed by the area code and telephone number."
 * telecom[phone].system = #phone
 
 * telecom[email] ^short = "email"
-* telecom[email] ^definition = "Contact Point - email" // to be reviewed
+* telecom[email] ^definition = "Corporate email contact information for the local representative of the marketing authorization holder."
 * telecom[email].system = #email
 
 * telecom[url] ^short = "Web Site"
-* telecom[url] ^definition = "Contact Point - Web Site" // to be reviewed
+* telecom[url] ^definition = "Website of the local health authority and market authorization holder website "
 * telecom[url].system = #url
 
 * address 0..
   * use ^short = "home | work | temp | old | billing" // = #work
+  * use = #work
   * text ^example.valueString = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" // = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" 
   * type ^short = "postal|physical|both" // = #physical
+  * type = #physical
   * line ^example.valueString = "Brueningstrasse 50, Industriepark Höchst" // = "Brueningstrasse 50, Industriepark Höchst"
   * postalCode ^example.valueString = "65926"
   * city ^example.valueString = "Frankfurt am Main"
