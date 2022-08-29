@@ -2,47 +2,47 @@ Profile: CompositionUvEpi
 Parent: Composition
 Id: Composition-uv-epi
 Title: "Composition (ePI)"
-Description: """Clinical document used to represent the Electronic Product Information (ePI) data set. 
-An Electronic Product Information (ePI) document is an authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."""
+Description: """The Composition captures the section headings, sub-section headings, and narrative text (For example, paragraphs, bulleted lists, tables) in an ePI."""
 * ^status = #active
-* ^purpose = "An Electronic Product Information (ePI) document is an authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."
+* ^purpose = "This profile represents the constraints applied to the Composition resource used in an Electronic Product Information (ePI) document."
 * . ^short = "Electronic Product Information composition"
-* . ^definition = "Electronic Product Information composition. \r\nA composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. \r\nWhile a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."
+* . ^definition = "Electronic Product Information composition. \r\nA composition is a set of source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. \r\nWhile a Composition defines the structure and content of the ePI's narrative text, it does not contain the full content of an ePI document. The Bundle, of which the Composition is the first resource contained, is the container for the full  content of an ePI."
 // * text 
-* identifier ^short = "ePI business identifier"
+* identifier ^short = "Unique identifier only for this version of the Composition"
 * status ^short = "preliminary|final|amended|entered-in-error|deprecated"
 * type from VsEpiType (extensible)
-* type ^short = "Kind of ePI (\"Package Leaflet\")"
-* type ^definition = "Specifies that this composition refers to a Package Leaflet (ePI)"
-* category ^short  = "ePI document" // add a common code (use a LOINC X-code ?)
+* type ^short = "Type of ePI document template"
+* type ^definition = "Specifies the type of ePI template. For example, Package Insert, Patient Information, Summary of Product Characteristics, Human Prescription, Drug Label."
+* category ^short  = "High-level type of document"
+* category ^definition = "High-level type of document. For example, Human Prescription Drug Label, Human OTC Drug Label"
 * category = $loinc#X-EPI "electronic Product Information"
 
 // * subject 1..
 // * subject only Reference (RegulatedAuthorizationUvEpi)
-* subject ^short = "What the composition is about"
+* subject ^short = "The authorized medicinal product(s) that this ePI's composition is about"
 
 * date 1..
-* date ^short = "Date of last revision of the ePI"
-* author ^short = "Who and/or what authored the ePI, that is the Markting Authorization Holder"
-* author ^definition = "Identifies who is responsible for the information in the ePI."
+* date ^short = "Date of last revision for this version of the authorized ePI."
+* author ^short = "The Organization responsible for the ePI"
+* author ^definition = "Link to the Organization resource that describes the organization responsible for the ePI (For example, Markting Authorization Holder)."
 * title 1..
-* title ^short = "Electronic Product Information"
-* title ^definition = "Official human-readable label for the composition.\r\n\r\nFor this document should be \"Electronic Product Information\" or any equivalent translation"
+* title ^short = "Title of the ePI Document"
+* title ^definition = "A brief summary name describing the ePI. The title should include: Proprietary Name(s) (Non-proprietary Name(s)) Dosage Form, Route of Administration."
 
 
 // USED TO RECORD THE FIRST Authorization TO BE CHECKED
-* attester 1..
-* attester.mode = $composition-attestation-mode#official
-* attester.time 1..
+* attester ..0
+* custodian ..0
 
-* custodian ^short = "Organization which maintains the composition."
-* relatesTo ^short = "Relationships to other ePI compositions/documents"
+* relatesTo ^short = "Cross-reference to anotherother ePI compositions or ePI document()s)"
+* relatesTo ^definition = "A cross-reference from this ePI's composition to another related Composition or ePI document."
 
 * section 1..
-  * ^short = "Sections composing the ePI"
-  * ^definition = "The root of the sections that make up the ePI composition."
+  * ^short = "Level 1 section heading for the whole ePI"
+  * ^definition = "This is the root or level 1 section heading in the ePI. All other section headings are sub-sections, or children, of this section heading"
   * code 1.. // => ADD VALUE SET - SLICE PER JURISDICTION ?
-  * text ^short = "Section text"
-  * orderedBy ^short = "Order of section entries." // IS THIS ACTUALLY NEEDED ?
-  * emptyReason ^short = "Why the section is empty."
-  * section ^short = "Nested Section."
+  * code ^short = "unique identifier for this section."
+  * text ^short = "Narrative text for this section."
+  * orderedBy ^short = "Order of section entries."
+  * emptyReason ^short = "Reason the section is empty."
+  * section ^short = "Nested Sections (sub-section headings for level 2, 3, 4 or 5)."

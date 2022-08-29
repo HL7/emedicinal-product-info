@@ -2,12 +2,12 @@ Profile: BundleUvEpi
 Parent: Bundle
 Id: Bundle-uv-epi
 Title: "Bundle - ePI"
-Description: "This profile represents the constraints applied to the Bundle resource by the Electronic Product Information (ePI) FHIR Implementation Guide."
-* ^purpose = "An electronic product information (ePI) is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."
+Description: """A medicine’s product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide."""
+* ^purpose = "This profile represents the constraints applied to the Bundle resource used to create an Electronic Product Information (ePI) document."
 * . 
 * obeys bdl-epi-1
-* . ^short = "Electronic Product Information Bundle"
-* . ^definition = "Electronic Product Information Bundle. \r\nA container for a collection of resources in the ePI document."
+* . ^short = "Electronic Product Information Bundle Document"
+* . ^definition = "Electronic Product Information Bundle Document. \r\nA container for a collection of resources in the ePI document."
 * identifier 1.. 
 * type = #document (exactly)
 * timestamp 1.. 
