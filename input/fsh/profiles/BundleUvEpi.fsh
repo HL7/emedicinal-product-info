@@ -12,6 +12,7 @@ Description: """A medicine’s product information is a pivotal source of regula
   * ^short = "Persistent identifier for the bundle"
   * ^definition = "Persistent identifier that remains the same for all versions of this ePI. The identifier remains the same regardless of any changes to the Bundle and regardless of any changes made to the Resources within the Bundle. This purpose of this identifier is to ensure all versions of an ePI can be collected as a set under a common parent identifier."
 
+
 * type = #document (exactly)
 * timestamp 1.. 
   * ^short = "Persistent original date of approval"

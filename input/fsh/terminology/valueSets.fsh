@@ -6,10 +6,24 @@ Description: "RegulatedAuthorization Identifier systems (uri)"
 * $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
 
 //=========================
+ValueSet: VsRegulatedAuthorizationTypeIdSystems
+Id: RegulatedAuthorizationTypeIdSystems
+Title: "Regulated Authorization Type identifier systems"
+Description: "Regulated Authorization Type Identifier systems (uri)"
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+
+//=========================
 ValueSet: VsMedProductIdSystems
 Id: medProductIdSystems
 Title: "MedicinalProductDefinition identifier systems"
 Description: "MedicinalProductDefinition Identifier systems (uri)"
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+
+//=========================
+ValueSet: VsMedProductTypeIdSystems
+Id: medProductTypeIdSystems
+Title: "Medicinal Product Type identifier systems"
+Description: "Medicinal Product Type identifier systems"
 * $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
 
 //=========================
@@ -86,7 +100,7 @@ Description: "Classification"
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
 
 //==========================
-ValueSet: VsmarketingStatusIdSystems
+ValueSet: VsMarketingStatusIdSystems
 Id: VsmarketingStatusIdSystems
 Title: "MarketingStatus"
 Description: "MarketingStatus"

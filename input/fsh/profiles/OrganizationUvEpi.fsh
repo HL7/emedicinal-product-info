@@ -2,22 +2,23 @@ Profile: OrganizationUvEpi
 Parent: Organization
 Id: Organization-uv-epi
 Title: "Organization (ePI)"
-Description: "Organizations associated with ePI and the authorized medicinal products that the ePI is about. For example, Market Authorization Holder, Manufacturer, Health Authority."
+Description: "Organization (ePI)"
 
 * identifier 1..
   * system from VsOrganizationIdSystems (extensible)
   * system 1..
   * value 1..
 
+
 * active ^short = "Whether this organization's record is in active use"
 
 // * type = https://spor.ema.europa.eu/rmswi/#/#220000000033
 // * type.text = "Manufacturer API"
 
-// CHANGE TO A VALUE SET BASED DISCRIMINATOR
 * type from VsOrganizationTypeIdSystems (extensible)
+  * ^short = "Type of organization"
+  * ^definition = "Organization type clarifies what purpose or busines operation this organization performs in relation to the ePI and the associated authorized medicinal products mentioned."
 
-* name 1..
 * name ^short = "Organization's legal name"
 * alias ^short = "A list of alternate names for this organization"
 
@@ -53,5 +54,4 @@ Description: "Organizations associated with ePI and the authorized medicinal pro
   * line ^example.valueString = "Brueningstrasse 50, Industriepark Höchst" // = "Brueningstrasse 50, Industriepark Höchst"
   * postalCode ^example.valueString = "65926"
   * city ^example.valueString = "Frankfurt am Main"
-  * country 
-    * ^example.valueString = "DE"
+  * country ^example.valueString = "DE"
