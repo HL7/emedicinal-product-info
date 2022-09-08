@@ -3,6 +3,8 @@ InstanceOf: CompositionUvEpi
 Description: "Package Leaflet"
 Usage: #example
 
+* identifier.system = "https://fda-epi-id"
+* identifier.value = "363cbf4a-9c4d-442a-af67-b72a1225ca28"
 * status = #final
 * type = https://spor.ema.europa.eu/#100000155538
 * type.text = "Package Leaflet"

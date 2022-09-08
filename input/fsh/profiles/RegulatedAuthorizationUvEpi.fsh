@@ -25,10 +25,9 @@ Description: "RegulatedAuthorization (ePI)"
 * type.coding[spor].system = $spor // to be reviewed
 * type.coding[spor].code 1.. 
 
-
 * description ^short = "Brief description of the authorization"
 
-* region ^short = "The jusrisdiction in which the authorization has been granted"// = urn:iso:std:iso:3166#eu "European Union" use http://unstats.un.org/unsd/methods/m49/m49.htm#150 for europe
+* region ^short = "The jusrisdiction in which the authorization has been granted"
 
 * status ^short = "The current status of this authorization"
 * status ^example.valueCodeableConcept = http://hl7.org/fhir/publication-status#active
@@ -37,12 +36,13 @@ Description: "RegulatedAuthorization (ePI)"
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
 * indication.reference 1..
 * indication.reference only Reference (ClinicalUseDefinitionIndicationUvEpi)
-* indication.reference ^short = "Reference to the "
+* indication.reference ^short = "Cross reference to the authorized indications for this authorization and medicinal product. "
 
- // Reference to Organization: Marketing Authorization Holder
 * holder 1..
-* holder only Reference(OrganizationUvEpi)
+* holder only Reference(OrganizationUvEpi) 
+  * ^short = "Reference to the Marketing Authorization Holder named on the authorization"
 
-* regulator only Reference(OrganizationUvEpi)
+* regulator only Reference(OrganizationUvEpi) 
+  * ^short = "Reference to the health authority that issued this authorization"
 
-* case ^short = "The regulatory procedure for granting or amending a regulated authorization." 
+* case ^short = "The regulatory procedure under which the authorization was granted or amended." 

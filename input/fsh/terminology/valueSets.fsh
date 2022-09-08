@@ -49,3 +49,73 @@ Description: "ePI document types"
 * $spor-rms#100000155538 "Package Leaflet"
 * $loinc#34390-5	"HUMAN OTC DRUG LABEL"
 * $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
+
+//==========================
+ValueSet: VsOrganizationTypeIdSystems
+Id: organizationTypeIdSystems
+Title: "Type of organization"
+Description: "Type of organization"
+* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600 "Business Operation"
+
+//==========================
+ValueSet: VsLegalStatusOfSupplyIdSystems
+Id: legalStatusOfSupplyIdSystems
+Title: "Legal Status of Supply"
+Description: "Legal Status of Supply"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsadditionalMonitoringIndicatorIdSystems
+Id: VsadditionalMonitoringIndicatorIdSystems
+Title: "Additional Monitoring Indicator"
+Description: "Additional Monitoring Indicator"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VspediatricUseIndicatorIdSystems
+Id: VspediatricUseIndicatorIdSystems
+Title: "Pediatric Use Indicator"
+Description: "Pediatric Use Indicator"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsclassificationIdSystems
+Id: VsclassificationIdSystems
+Title: "Classification"
+Description: "Classification"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsmarketingStatusIdSystems
+Id: VsmarketingStatusIdSystems
+Title: "MarketingStatus"
+Description: "MarketingStatus"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsPackTypeIdSystems
+Id: VsPackTypeIdSystems
+Title: "Pack Type"
+Description: "Pack Type"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsIsoCountryIdSystems
+Id: VsIsoCountryIdSystems
+Title: "ISO Country two letter code"
+Description: "ISO Country two letter code"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsIsoLanguageIdSystems
+Id: VsIsoLanguageIdSystems
+Title: "ISO Language two letter code"
+Description: "ISO Language two letter code"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsNameTypeIdSystems
+Id: VsNameTypeIdSystems
+Title: "Name Type"
+Description: "Name Type"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed

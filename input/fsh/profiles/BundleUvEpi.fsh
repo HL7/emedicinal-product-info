@@ -7,10 +7,15 @@ Description: """A medicine’s product information is a pivotal source of regula
 * . 
 * obeys bdl-epi-1
 * . ^short = "Electronic Product Information Bundle Document"
-* . ^definition = "Electronic Product Information Bundle Document. \r\nA container for a collection of resources in the ePI document."
+* . ^definition = "Electronic Product Information Bundle Document. A container for the collection of resources that make up the ePI document."
 * identifier 1.. 
+  * ^short = "Persistent identifier for the bundle"
+  * ^definition = "Persistent identifier that remains the same for all versions of this ePI. The identifier remains the same regardless of any changes to the Bundle and regardless of any changes made to the Resources within the Bundle. This purpose of this identifier is to ensure all versions of an ePI can be collected as a set under a common parent identifier."
+
 * type = #document (exactly)
 * timestamp 1.. 
+  * ^short = "Persistent original date of approval"
+  * ^definition = "Original date in which this ePI document received its first authorization. As with the identifier, this date persists across versions. "
 * link ..0
 * entry 1.. // 
 * entry ^slicing.discriminator[0].type = #type
@@ -67,7 +72,9 @@ Description: """A medicine’s product information is a pivotal source of regula
 * entry[clinicalUse].resource only ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionInteractionUvEpi  or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi
 * entry[substanceDefinition].resource only SubstanceDefinitionUvEpi
 * entry[binary].resource only Binary
-* signature ^short = "Digital Signature."
+* signature 
+  * ^short = "Digital Signature."
+  * ^definition = "Market authorization holder can digitally sign the ePI document."
 
 
 

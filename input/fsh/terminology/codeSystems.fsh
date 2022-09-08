@@ -83,3 +83,11 @@ Description: "Items from https://spor.ema.europa.eu/smswi"
 * ^url = https://spor.ema.europa.eu/smswi
 * #1
 * #2
+
+CodeSystem: CodeSystemUvEPIOrganizationType
+Title: "Type of organization"
+Description: "Type of organization"
+
+* ^url = https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600
+* #1
+* #2

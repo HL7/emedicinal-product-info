@@ -2,13 +2,12 @@ Profile: OrganizationUvEpi
 Parent: Organization
 Id: Organization-uv-epi
 Title: "Organization (ePI)"
-Description: "Organization (ePI)"
+Description: "Organizations associated with ePI and the authorized medicinal products that the ePI is about. For example, Market Authorization Holder, Manufacturer, Health Authority."
 
 * identifier 1..
   * system from VsOrganizationIdSystems (extensible)
   * system 1..
   * value 1..
-
 
 * active ^short = "Whether this organization's record is in active use"
 
@@ -16,18 +15,9 @@ Description: "Organization (ePI)"
 // * type.text = "Manufacturer API"
 
 // CHANGE TO A VALUE SET BASED DISCRIMINATOR
-* type.coding ^slicing.discriminator[0].type = #value
-* type.coding ^slicing.discriminator[=].path = "system"
-* type.coding ^slicing.rules = #open
-* type.coding contains
-    spor 0..* 
-* type.coding[spor] ^short = "SPOR (Europe)"
-* type.coding[spor] ^definition = "EMA - SPOR Referential" // to be reviewed
-* type.coding[spor].system = $spor // to be reviewed
-* type.coding[spor].code 1.. 
+* type from VsOrganizationTypeIdSystems (extensible)
 
-
-
+* name 1..
 * name ^short = "Organization's legal name"
 * alias ^short = "A list of alternate names for this organization"
 
@@ -63,4 +53,5 @@ Description: "Organization (ePI)"
   * line ^example.valueString = "Brueningstrasse 50, Industriepark Höchst" // = "Brueningstrasse 50, Industriepark Höchst"
   * postalCode ^example.valueString = "65926"
   * city ^example.valueString = "Frankfurt am Main"
-  * country ^example.valueString = "DE"
+  * country 
+    * ^example.valueString = "DE"
