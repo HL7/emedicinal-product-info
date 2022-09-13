@@ -54,7 +54,7 @@ Description: "PackagedProductDefinition (ePI)"
     * specialPrecautionsForStorage from VsSpecialPrecautionsForStorageIdSystems (extensible)
   * manufacturer only Reference (OrganizationUvEpi)
   * containedItem
-    * item only Reference(ManufacturedItemDefinitionUvEpi) 
+    * item only Reference(ManufacturedItemDefinitionUvEpi or DeviceDefinition) 
   * packaging ^short = "Allows containers (and parts of containers) within containers, still a single packaged product."
 
 
