@@ -29,6 +29,7 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 * #200000002135
 * #200000002145 "Spoonful"
 * #200000003204  "Glass type I"
+* #100000073496 "Blister"
 * #220000000001 "Full name"
 * #220000000002 "Invented name part"
 * #220000000003 "Scientific name part"
