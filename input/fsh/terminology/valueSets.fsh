@@ -133,3 +133,45 @@ Id: VsNameTypeIdSystems
 Title: "Name Type"
 Description: "Name Type"
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsPartTypeIdSystems
+Id: VsPartTypeIdSystems
+Title: "Part Type"
+Description: "Part Type"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsProductCrossReferenceTypeIdSystems
+Id: VsProductCrossReferenceTypeIdSystems
+Title: "Product Cross Reference Type"
+Description: "Product Cross Reference Type"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsProductConfidentialityIdSystems
+Id: VsProductConfidentialityIdSystems
+Title: "Product Confidentiality"
+Description: "Product Confidentiality"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsPackageMaterialIdSystems
+Id: VsPackageMaterialIdSystems
+Title: "Package Material"
+Description: "Package Material"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsShelfLifeTypeIdSystems
+Id: VsShelfLifeTypeIdSystems
+Title: "Shelf Life Type"
+Description: "Shelf Life Type"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsSpecialPrecautionsForStorageIdSystems
+Id: VsSpecialPrecautionsForStorageIdSystems
+Title: "Special Precautions For Storage"
+Description: "Special Precautions For Storage"
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed

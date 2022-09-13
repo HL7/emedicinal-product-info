@@ -4,18 +4,20 @@ Id: PackagedProductDefinition-uv-epi
 Title: "PackagedProductDefinition (ePI)"
 Description: "PackagedProductDefinition (ePI)"
 
-
-* identifier 1..
+* identifier 
   * system from VsPackagedProductIdSystems (extensible)
   * system 1..
   * value 1..
+
 * name ^example.valueString = "3 ml cartridge (glass) in a pre-filled pen"
 
 * type  ^example.valueCodeableConcept = $spor-rms#100000155527  "Chemical Medicinal Product"
 //reference to EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill
+
 * packageFor only Reference(MedicinalProductDefinitionUvEpi)
 
 * status ^example.valueCodeableConcept = http://hl7.org/fhir/publication-status#active
+
 * statusDate ^example.valueDateTime = "2015-02-07T13:28:17Z"
 
 * containedItemQuantity ^example.valueQuantity.value = 3
@@ -32,21 +34,28 @@ Description: "PackagedProductDefinition (ePI)"
  // Reference to Organization: Manufacturer
 * manufacturer only Reference(OrganizationUvEpi)
 
-* package.identifier 1..
-  * system from VsPackagedProductIdSystems (extensible)
-  * system 1..
-  * value 1..
-
-* package.type ^example.valueCodeableConcept = $spor-rms#100000073543 "Pre-filled pen"
-
-* package.quantity ^example.valueInteger = 3
-
-* package.material ^example.valueCodeableConcept = $spor-rms#200000003204  "Glass type I"
-
-
-// * package.shelfLifeStorage ^short = "Shelf Life and storage information."
-* package.containedItem.item only Reference(ManufacturedItemDefinitionUvEpi or DeviceDefinition or PackagedProductDefinitionUvEpi or BiologicallyDerivedProduct or NutritionProduct) 
-* package.package ^short = "Allows containers (and parts of containers) within containers, still a single packaged product."
+* packaging
+  * identifier 1..
+    * system from VsPackagedProductIdSystems (extensible)
+    * system 1..
+    * value 1..
+  * type from VsPackTypeIdSystems (extensible)
+    * ^example.valueCodeableConcept = $spor-rms#100000073543 "Pre-filled pen"
+  * quantity 
+    * ^example.valueInteger = 3
+  * material from VsPackageMaterialIdSystems (extensible)
+    * ^example.valueCodeableConcept = $spor-rms#200000003204  "Glass type I"
+  * shelfLifeStorage 
+    * ^short = "Shelf Life and storage information."
+    * type from VsShelfLifeTypeIdSystems (extensible)
+    * period[x]
+      * periodDuration
+      * periodString
+    * specialPrecautionsForStorage from VsSpecialPrecautionsForStorageIdSystems (extensible)
+  * manufacturer only Reference (OrganizationUvEpi)
+  * containedItem
+    * item only Reference(ManufacturedItemDefinitionUvEpi) 
+  * packaging ^short = "Allows containers (and parts of containers) within containers, still a single packaged product."
 
 
 

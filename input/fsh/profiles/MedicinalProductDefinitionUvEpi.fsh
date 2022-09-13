@@ -43,38 +43,37 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 * packagedMedicinalProduct ^short = "Package type for this product" // ==> add voc binding 
 
 * name
-* name.productName
+  * productName
   * ^short = "The full name of this product"
   * ^example.label = "general"  
   * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-
-* name.type from VsNameTypeIdSystems (extensible)
+  
+  * type from VsNameTypeIdSystems (extensible)
   * ^example.label = "Example"
   * ^example.valueCodeableConcept = $spor-rms#220000000001 "Full name"
 	// * coding 1.. 
+  
+  * type from VsPartTypeIdSystems (extensible)
+  * part ^slicing.discriminator[0].type = #value
+  * part ^slicing.discriminator[=].path = "system"
+  * part ^slicing.rules = #open
+  * part contains
+    ProprietaryNamePart 0.. and
+  Non-proprietaryNamePart 0.. and
+  StrengthPart 0.. and
+  PharmaceuticalDoseFormPart 0..
 
-* name.countryLanguage.country from VsIsoCountryIdSystems (extensible)
-* name.countryLanguage.country ^short = "Country for where this name applies (code)" // ==> add voc bidning = urn:iso:std:iso:3166#eu "European Union"
+  * usage
+    * country from VsIsoCountryIdSystems (extensible)
+    * jurisdiction from VsIsoCountryIdSystems (extensible)
+    * language from VsIsoLanguageIdSystems (extensible)
 
-* name.countryLanguage.country from VsIsoLanguageIdSystems (extensible)
-* name.countryLanguage.language ^short = "Language for this name (code)" // = urn:ietf:bcp:47#en  "English"
-* name.namePart 0..
-  * part ^example.label = "general" 
-  * part ^example.valueString = "Humalog"
-  * type ^example.label = "Example" 
-  * type ^example.valueCodeableConcept = $spor-rms#220000000002 "Invented name part"
-* name.namePart ^slicing.discriminator[0].type = #value
-* name.namePart ^slicing.discriminator[=].path = "system"
-* name.namePart ^slicing.rules = #open
-* name.namePart contains
-  ProprietaryNamePart 0.. and
- Non-proprietaryNamePart 0.. and
- StrengthPart 0.. and
- PharmaceuticalDoseFormPart 0..
+* crossReference
+  * product from VsMedProductIdSystems (extensible)
+  * type from VsProductCrossReferenceTypeIdSystems (extensible)
 
-* name.namePart[ProprietaryNamePart] ^short = "Brand name of the medicinal product"
-* name.namePart[Non-proprietaryNamePart] ^short = "Scientific name of the active ingredient"
-* name.namePart[StrengthPart] ^short = "Strength of the medicinal product"
-* name.namePart[PharmaceuticalDoseFormPart] ^short = "dose form of the medicinal product"
-
-* domain.coding 1..
+* operation
+  * type from VsOrganizationTypeIdSystems (extensible)
+  * effectiveDate
+  * organization only Reference(OrganizationUvEpi)
+  * confidentialityIndicator from ProductConfidentiality (extensible)
