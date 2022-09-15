@@ -7,15 +7,18 @@ Usage: #example
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
 * status = #final
+
 * type = https://spor.ema.europa.eu/#100000155538
 * type.text = "Package Leaflet"
+
 * subject = Reference(authorizationkarvea75) //reference to the authorization
+
 * date = "2022-02-16T13:28:17Z"
 
 * author = Reference(sanofi-aventis-groupe) // Reference to Organization: Marketing Authorization Holder
 
 * title = "TEST PURPOSES ONLY - Karvea (irbesartan) 75 mg tablets"
-* confidentiality = #U
+
 * language = #en
 
 * section[+].

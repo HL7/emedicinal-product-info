@@ -18,11 +18,12 @@ Usage: #example
 * containedItemQuantity.value = 75
 * containedItemQuantity.unit = "mg"
 
-* package.identifier.system = $spor-prod
-* package.identifier.value = "123456"
-* package.type = $spor-rms#100000073496 "Blister"
-* package.quantity = 28
-* package.material = $spor-rms#200000003222 "PolyVinyl Chloride"
+* packaging
+  * identifier.system = $spor-prod
+  * identifier.value = "123456"
+  * type = $spor-rms#100000073496 "Blister"
+  * quantity = 28
+  * material = $spor-rms#200000003222 "PolyVinyl Chloride"
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(karvea75mgblisterx28)

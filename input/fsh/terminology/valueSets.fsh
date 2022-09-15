@@ -175,3 +175,17 @@ Id: VsSpecialPrecautionsForStorageIdSystems
 Title: "Special Precautions For Storage"
 Description: "Special Precautions For Storage"
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsListOrderCodesIdSystems
+Id: VsListOrderCodesIdSystems
+Title: "Order Codes for List"
+Description: "Order Codes for List"
+* $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
+
+//==========================
+ValueSet: VsExampleUseCodesForListIdSystems
+Id: VsExampleUseCodesForListIdSystems
+Title: "Use Codes for List"
+Description: "Use Codes for List"
+* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes"
