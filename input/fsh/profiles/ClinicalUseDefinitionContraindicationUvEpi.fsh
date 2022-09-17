@@ -8,6 +8,7 @@ Description: "ClinicalUseDefinition Contraindication (ePI)"
 * type = #contraindication
 
 *  contraindication 1..
+*  indication 0..0
 *  contraindication.diseaseSymptomProcedure.concept 1..
 *  interaction 0..0
 *  undesirableEffect 0..0
