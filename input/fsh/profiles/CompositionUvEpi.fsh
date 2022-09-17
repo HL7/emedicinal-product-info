@@ -21,10 +21,10 @@ Description: """The Composition captures the section headings, sub-section headi
 * type ^short = "Type of ePI document template"
 * type ^definition = "Specifies the type of ePI template. For example, Package Insert, Patient Information, Summary of Product Characteristics, Human Prescription, Drug Label."
 
-* category ..0
+* category ^short = "Categorization of ePI"
 
 * subject 1..
-* subject only Reference (RegulatedAuthorizationUvEpi)
+* subject only Reference (MedicinalProductDefinitionUvEpi)
 * subject ^short = "The authorized medicinal product(s) that this ePI's composition is about"
 
 * date 1..
@@ -39,8 +39,8 @@ Description: """The Composition captures the section headings, sub-section headi
 * title ^definition = "A brief summary name describing the ePI. The title should include: Proprietary Name(s) (Non-proprietary Name(s)) Dose Form, Route of Administration."
 
 // USED TO RECORD THE FIRST Authorization TO BE CHECKED
-* attester ..0
-* custodian ..0
+* attester
+* custodian 
 
 * relatesTo ^short = "Cross-reference to anotherother ePI compositions or ePI document()s)"
 * relatesTo ^definition = "A cross-reference from this ePI's composition to another related Composition or ePI document."
@@ -48,9 +48,18 @@ Description: """The Composition captures the section headings, sub-section headi
 * section 1..
   * ^short = "Level 1 section heading for the whole ePI"
   * ^definition = "This is the root or level 1 section heading in the ePI. All other section headings are sub-sections, or children, of this section heading"
-  * code 1.. // => ADD VALUE SET - SLICE PER JURISDICTION ?
+  * code 1.. 
+  * code from VsSectionCode (extensible) 
     * ^short = "unique identifier for this section."
   * text ^short = "Narrative text for this section."
   * orderedBy ^short = "Order of section entries."
   * emptyReason ^short = "Reason the section is empty."
-  * section ^short = "Nested Sections (sub-section headings for level 2, 3, 4 or 5)."
+  * section 
+    *  ^short = "Nested Sections (sub-section headings for level 2, 3, 4 or 5)."
+    *  ^definition = "Nested Sections (sub-section headings for level 2, 3, 4 or 5)."
+    * code 1.. 
+    * code from VsSectionCode (extensible) 
+      * ^short = "unique identifier for this section."
+    * text ^short = "Narrative text for this section."
+    * orderedBy ^short = "Order of section entries."
+    * emptyReason ^short = "Reason the section is empty."

@@ -15,7 +15,7 @@ Description: "Organization (ePI)"
 // * type = https://spor.ema.europa.eu/rmswi/#/#220000000033
 // * type.text = "Manufacturer API"
 
-* type from VsOrganizationTypeIdSystems (extensible)
+* type from VsOrganizationType (extensible)
   * ^short = "Type of organization"
   * ^definition = "Organization type clarifies what purpose or busines operation this organization performs in relation to the ePI and the associated authorized medicinal products mentioned."
 
@@ -50,7 +50,11 @@ Description: "Organization (ePI)"
     * text ^example.valueString = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" // = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" 
     * type ^short = "postal|physical|both" // = #physical
     * type = #physical
+    * line 1..
     * line ^example.valueString = "Brueningstrasse 50, Industriepark Höchst" // = "Brueningstrasse 50, Industriepark Höchst"
     * postalCode ^example.valueString = "65926"
     * city ^example.valueString = "Frankfurt am Main"
+    * city 1..
     * country ^example.valueString = "DE"
+    * country from $VS-country (preferred)
+    * country 1..

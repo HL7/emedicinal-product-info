@@ -73,7 +73,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * type from VsProductCrossReferenceTypeIdSystems (extensible)
 
 * operation
-  * type from VsOrganizationTypeIdSystems (extensible)
+  * type from VsOrganizationType (extensible)
   * effectiveDate
   * organization only Reference(OrganizationUvEpi)
   * confidentialityIndicator from ProductConfidentiality (extensible)

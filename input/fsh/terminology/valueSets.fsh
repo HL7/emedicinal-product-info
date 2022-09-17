@@ -65,11 +65,11 @@ Description: "ePI document types"
 * $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
 
 //==========================
-ValueSet: VsOrganizationTypeIdSystems
-Id: organizationTypeIdSystems
+ValueSet: VsOrganizationType
+Id: organizationType
 Title: "Type of organization"
 Description: "Type of organization"
-* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600 "Business Operation"
+* codes from system $spor-organisationRoleType-cs
 
 //==========================
 ValueSet: VsLegalStatusOfSupplyIdSystems
@@ -174,8 +174,9 @@ ValueSet: VsSpecialPrecautionsForStorageIdSystems
 Id: VsSpecialPrecautionsForStorageIdSystems
 Title: "Special Precautions For Storage"
 Description: "Special Precautions For Storage"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
-
+* codes from system $spor-precautionsforstorage-cs // "SPOR Organization (EU)"  to be reviewed
+// add fda codes
+// add PMDA
 //==========================
 ValueSet: VsListOrderCodesIdSystems
 Id: VsListOrderCodesIdSystems
@@ -189,3 +190,10 @@ Id: VsExampleUseCodesForListIdSystems
 Title: "Use Codes for List"
 Description: "Use Codes for List"
 * $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes"
+
+//==========================
+ValueSet: VsSectionCode
+Id: VsSectionCode
+Title: "Section Codes"
+Description: "Section Codes"
+* $example-org#sectionCode "sedtion code placeholder"

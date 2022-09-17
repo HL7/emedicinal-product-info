@@ -16,6 +16,9 @@ Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $list-order  = http://terminology.hl7.org/CodeSystem/list-order 
 
+Alias: $spor-precautionsforstorage-cs  = https://spor.ema.europa.eu/rmswi/100000073344
+Alias: $example-org = http://example.org
+Alias: $spor-organisationRoleType-cs = https://spor.ema.europa.eu/rmswi/220000000031
 
 Alias: $edqm = http://standardterms.edqm.eu
 
@@ -56,7 +59,7 @@ Alias: $VS-medicinal-product-type =
 Alias: $VS-medicinal-product-domain =
 	http://hl7.org/fhir/ValueSet/medicinal-product-domain
 	
-	
+Alias: $VS-country = http://hl7.org/fhir/ValueSet/country
 
 
 // =========== Extensions =======
