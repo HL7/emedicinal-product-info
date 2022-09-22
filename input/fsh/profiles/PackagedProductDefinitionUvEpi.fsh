@@ -39,7 +39,7 @@ Description: "PackagedProductDefinition (ePI)"
     * system from VsPackagedProductIdSystems (extensible)
     * system 1..
     * value 1..
-  * type from VsPackTypeIdSystems (extensible)
+  * type from VsPackType (preferred)
     * ^example.valueCodeableConcept = $spor-rms#100000073543 "Pre-filled pen"
   * quantity 
     * ^example.valueInteger = 3

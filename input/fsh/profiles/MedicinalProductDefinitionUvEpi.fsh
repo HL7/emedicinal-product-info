@@ -10,9 +10,9 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * value 1..
   * ^short = "Unique identifier assigned to this medicinal product by the health authority. Could be the ISO IDMP Medicinal Product Identifier (MPID)."
 
-* type from VsMedProductTypeIdSystems (extensible)
+* type from VsMedProductType (preferred)
 
-* domain from $VS-medicinal-product-domain  (extensible)
+* domain from $VS-medicinal-product-domain  (preferred)
 
 * indication ^short = "Narrative text of the authorized indication(s) for this product."
 
@@ -21,26 +21,26 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 * statusDate ^short = "The date at which this status became applicable." 
 * description ^short = "General description of the medicinal product referred by the ePI"
 
-* combinedPharmaceuticalDoseForm ^short = "The dose form for a combined form of a multiple part product" // ==> add voc binding 
-* route ^short = "Route of administration" 
+* combinedPharmaceuticalDoseForm from VsCombinedPharmaceuticalDoseForm (preferred)
+* route from VsRouteOfAdministration (preferred)
 
-* legalStatusOfSupply from VsLegalStatusOfSupplyIdSystems (extensible)
+* legalStatusOfSupply from VsLegalStatusOfSupply (preferred)
 
-* additionalMonitoringIndicator from VsadditionalMonitoringIndicatorIdSystems (extensible)
-* additionalMonitoringIndicator ^short = "Additional monitoring this Medicinal Product is subject to (for regulatory reasons)" // ==> add voc binding 
+* additionalMonitoringIndicator from VsAdditionalMonitoringIndicator (preferred)
+ // additionalMonitoringIndicator ^short = "Additional monitoring this Medicinal Product is subject to (for regulatory reasons)" // ==> add voc binding 
 
-* pediatricUseIndicator from VspediatricUseIndicatorIdSystems (extensible)
-* pediatricUseIndicator ^short = "Authorised for pediatric use"
+* pediatricUseIndicator from VsPediatricUseIndicator (preferred)
+// * pediatricUseIndicator ^short = "Authorised for pediatric use"
 
-* classification from VsclassificationIdSystems (extensible)
-* classification ^short = "Classifications used for this product" // ==> add voc binding and slices
+* classification from VsAtcClassification (preferred)
+// * classification ^short = "Classifications used for this product" // ==> add voc binding and slices
 
 * marketingStatus 0..
   * ^short = "Marketing status of the medicinal product in contrast to marketing authorization"
-  * status from VsMarketingStatusIdSystems (extensible)
+  * status from VsMarketingStatus (preferred)
 
-* packagedMedicinalProduct from VsPackTypeIdSystems (extensible)
-* packagedMedicinalProduct ^short = "Package type for this product" // ==> add voc binding 
+* packagedMedicinalProduct from VsPackType (preferred)
+// * packagedMedicinalProduct ^short = "Package type for this product" // ==> add voc binding 
 
 * name
   * productName
@@ -48,12 +48,10 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * ^example.label = "general"  
   * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
   
-  * type from VsNameTypeIdSystems (extensible)
+  * type from VsProductNamePartType (extensible)
   * ^example.label = "Example"
-  * ^example.valueCodeableConcept = $spor-rms#220000000001 "Full name"
+  * ^example.valueCodeableConcept = $spor-productNamePartType-cs#220000000001 "Full name"
 	// * coding 1.. 
-  
-  * type from VsPartTypeIdSystems (extensible)
   * part ^slicing.discriminator[0].type = #value
   * part ^slicing.discriminator[=].path = "system"
   * part ^slicing.rules = #open
@@ -69,11 +67,12 @@ Description: "Description of the packaged authorized medicinal product(s) associ
     * language from VsIsoLanguageIdSystems (extensible)
 
 * crossReference
-  * product from VsMedProductIdSystems (extensible)
-  * type from VsProductCrossReferenceTypeIdSystems (extensible)
+  * product.reference 1.. 
+  // * type from VsProductCrossReferenceTypeIdSystems (extensible)
 
 * operation
-  * type from VsOrganizationType (extensible)
+  * type from VsOperationType (preferred)
+  * type.concept 1..
   * effectiveDate
   * organization only Reference(OrganizationUvEpi)
-  * confidentialityIndicator from ProductConfidentiality (extensible)
+  // * confidentialityIndicator from ProductConfidentiality (extensible)

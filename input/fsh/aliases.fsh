@@ -15,12 +15,24 @@ Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/alle
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $list-order  = http://terminology.hl7.org/CodeSystem/list-order 
-
-Alias: $spor-precautionsforstorage-cs  = https://spor.ema.europa.eu/rmswi/100000073344
 Alias: $example-org = http://example.org
-Alias: $spor-organisationRoleType-cs = https://spor.ema.europa.eu/rmswi/220000000031
 
-Alias: $edqm = http://standardterms.edqm.eu
+// SPOR Code systems (lists)
+	
+Alias: $spor-precautionsForStorage-cs  = https://spor.ema.europa.eu/rmswi/100000073344
+Alias: $spor-medicinalProducttype-cs  = https://spor.ema.europa.eu/rmswi/200000025915
+Alias: $spor-organisationRoleType-cs = https://spor.ema.europa.eu/rmswi/220000000031
+Alias: $spor-combinedPharmaceuticalDoseForm-cs = https://spor.ema.europa.eu/rmswi/200000000006
+Alias: $spor-route-cs = https://spor.ema.europa.eu/rmswi/100000073345 // Routes and Methods of Administration
+Alias: $spor-legalStatusForSupply-cs = https://spor.ema.europa.eu/rmswi/100000072051	// Legal Status for the Supply
+Alias: $spor-additionalMonitoringIndicator-cs = http://example.org // TO BE FIXED
+Alias: $spor-packType-cs = http://example.org // TO BE FIXED
+Alias: $spor-operationType-cs  = http://example.org // TO BE FIXED
+Alias: $spor-pediatricUseIndicator-cs = http://example.org // TO BE FIXED
+Alias: $spor-marketingStatus-cs = https://spor.ema.europa.eu/rmswi/100000072052
+Alias: $spor-productNamePartType-cs = https://spor.ema.europa.eu/rmswi/220000000000 // Medicinal Product Name Part Type
+
+// $edqm = http://standardterms.edqm.eu
 
 // --- Substances
 Alias: $unii = http://fdasis.nlm.nih.gov

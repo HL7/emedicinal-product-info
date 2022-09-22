@@ -17,14 +17,29 @@ ValueSet: VsMedProductIdSystems
 Id: medProductIdSystems
 Title: "MedicinalProductDefinition identifier systems"
 Description: "MedicinalProductDefinition Identifier systems (uri)"
-* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+* $uri#https://spor.ema.europa.eu/pmswi "EU MP ID system (placeholder)" // to be reviewed
 
 //=========================
-ValueSet: VsMedProductTypeIdSystems
-Id: medProductTypeIdSystems
-Title: "Medicinal Product Type identifier systems"
-Description: "Medicinal Product Type identifier systems"
-* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+ValueSet: VsMedProductType
+Id: medProductType
+Title: "Medicinal Product Type"
+Description: "Medicinal Product Type"
+* codes from system $spor-medicinalProducttype-cs
+
+//=========================
+ValueSet: VsCombinedPharmaceuticalDoseForm
+Id: combinedPharmaceuticalDoseForm
+Title: "Combined Pharmaceutical Dose Form"
+Description: "Combined Pharmaceutical Dose Form"
+* codes from system $spor-combinedPharmaceuticalDoseForm-cs
+
+//=========================
+ValueSet: VsRouteOfAdministration
+Id: routeOfAdministration
+Title: "Route Of Administration"
+Description:  "Route Of Administration"
+* codes from system $spor-route-cs
+
 
 //=========================
 ValueSet: VsPackagedProductIdSystems
@@ -72,46 +87,56 @@ Description: "Type of organization"
 * codes from system $spor-organisationRoleType-cs
 
 //==========================
-ValueSet: VsLegalStatusOfSupplyIdSystems
-Id: legalStatusOfSupplyIdSystems
-Title: "Legal Status of Supply"
-Description: "Legal Status of Supply"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+ValueSet: VsOperationType
+Id: operationType
+Title: "Type of operation"
+Description: "Type of operation"
+* codes from system $spor-operationType-cs
+
 
 //==========================
-ValueSet: VsadditionalMonitoringIndicatorIdSystems
-Id: VsadditionalMonitoringIndicatorIdSystems
+ValueSet: VsLegalStatusOfSupply
+Id: legalStatusOfSupply
+Title: "Legal Status for the Supply"
+Description: "Legal Status for the Supply"
+* codes from system $spor-legalStatusForSupply-cs
+
+//==========================
+ValueSet: VsAdditionalMonitoringIndicator
+Id: additionalMonitoringIndicator
 Title: "Additional Monitoring Indicator"
 Description: "Additional Monitoring Indicator"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* codes from system $spor-additionalMonitoringIndicator-cs
 
 //==========================
-ValueSet: VspediatricUseIndicatorIdSystems
-Id: VspediatricUseIndicatorIdSystems
+ValueSet: VsPediatricUseIndicator
+Id: pediatricUseIndicator
 Title: "Pediatric Use Indicator"
 Description: "Pediatric Use Indicator"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* codes from system $spor-pediatricUseIndicator-cs
+
+
 
 //==========================
-ValueSet: VsclassificationIdSystems
-Id: VsclassificationIdSystems
-Title: "Classification"
-Description: "Classification"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+ValueSet: VsAtcClassification
+Id: atcClassification
+Title: "ATC Classification"
+Description: "ATC Classification"
+* codes from system $atc 
+//==========================
+ValueSet: VsMarketingStatus
+Id: marketingStatus
+Title: "Marketing Status"
+Description: "Marketing Status"
+* codes from system $spor-marketingStatus-cs
+
 
 //==========================
-ValueSet: VsMarketingStatusIdSystems
-Id: VsmarketingStatusIdSystems
-Title: "MarketingStatus"
-Description: "MarketingStatus"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
-
-//==========================
-ValueSet: VsPackTypeIdSystems
-Id: VsPackTypeIdSystems
+ValueSet: VsPackType
+Id: packType
 Title: "Pack Type"
 Description: "Pack Type"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* codes from system $spor-packType-cs
 
 //==========================
 ValueSet: VsIsoCountryIdSystems
@@ -128,12 +153,11 @@ Description: "ISO Language two letter code"
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
 
 //==========================
-ValueSet: VsNameTypeIdSystems
-Id: VsNameTypeIdSystems
-Title: "Name Type"
-Description: "Name Type"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
-
+ValueSet: VsProductNamePartType
+Id: productNamePartType
+Title: "Product Name Part Type"
+Description: "Product Name Part Type"
+* codes from system $spor-productNamePartType-cs
 //==========================
 ValueSet: VsPartTypeIdSystems
 Id: VsPartTypeIdSystems
@@ -174,7 +198,7 @@ ValueSet: VsSpecialPrecautionsForStorageIdSystems
 Id: VsSpecialPrecautionsForStorageIdSystems
 Title: "Special Precautions For Storage"
 Description: "Special Precautions For Storage"
-* codes from system $spor-precautionsforstorage-cs // "SPOR Organization (EU)"  to be reviewed
+* codes from system $spor-precautionsForStorage-cs // "SPOR Organization (EU)"  to be reviewed
 // add fda codes
 // add PMDA
 //==========================
