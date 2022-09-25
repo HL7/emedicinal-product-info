@@ -27,11 +27,11 @@ Description: "Medicinal Product Type"
 * codes from system $spor-medicinalProducttype-cs
 
 //=========================
-ValueSet: VsCombinedPharmaceuticalDoseForm
-Id: combinedPharmaceuticalDoseForm
-Title: "Combined Pharmaceutical Dose Form"
-Description: "Combined Pharmaceutical Dose Form"
-* codes from system $spor-combinedPharmaceuticalDoseForm-cs
+ValueSet: VsPharmaceuticalDoseForm
+Id: PharmaceuticalDoseForm
+Title: "Pharmaceutical Dose Form"
+Description: "Pharmaceutical Dose Form"
+* $uri#https://spor.ema.europa.eu/pmswi "Pharmaceutical Dose Form" // to be reviewed
 
 //=========================
 ValueSet: VsRouteOfAdministration
@@ -39,7 +39,6 @@ Id: routeOfAdministration
 Title: "Route Of Administration"
 Description:  "Route Of Administration"
 * codes from system $spor-route-cs
-
 
 //=========================
 ValueSet: VsPackagedProductIdSystems
@@ -93,7 +92,6 @@ Title: "Type of operation"
 Description: "Type of operation"
 * codes from system $spor-operationType-cs
 
-
 //==========================
 ValueSet: VsLegalStatusOfSupply
 Id: legalStatusOfSupply
@@ -136,18 +134,18 @@ Description: "Pack Type"
 * codes from system $spor-packType-cs
 
 //==========================
-ValueSet: VsIsoCountryIdSystems
-Id: VsIsoCountryIdSystems
+ValueSet: VsCountry
+Id: VsCountry
 Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* $uri#http://hl7.org/fhir/ValueSet/iso3166-1-2 "Iso 3166 Part 1: 2 Letter Codes" // FHIR terminology
 
 //==========================
-ValueSet: VsIsoLanguageIdSystems
-Id: VsIsoLanguageIdSystems
-Title: "ISO Language two letter code"
-Description: "ISO Language two letter code"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+ValueSet: VsLanguage
+Id: VsLanguage
+Title: "Languages"
+Description: "Languages"
+* $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
 
 //==========================
 ValueSet: VsProductNamePartType
@@ -163,11 +161,11 @@ Description: "Part Type"
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
 
 //==========================
-ValueSet: VsProductCrossReferenceTypeIdSystems
-Id: VsProductCrossReferenceTypeIdSystems
+ValueSet: VsMedicinalProductCrossReferenceType
+Id: VsMedicinalProductCrossReferenceType
 Title: "Product Cross Reference Type"
 Description: "Product Cross Reference Type"
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
 
 //==========================
 ValueSet: VsProductConfidentialityIdSystems
@@ -218,3 +216,10 @@ Id: VsSectionCode
 Title: "Section Codes"
 Description: "Section Codes"
 * $example-org#sectionCode "sedtion code placeholder"
+
+//==========================
+ValueSet: VsUnitofPresentation
+Id: VsUnitofPresentation
+Title: "Units of Presentation"
+Description: "Units of Presentation"
+* $uri#https://spor.ema.europa.eu/rmswi // to be reviewed

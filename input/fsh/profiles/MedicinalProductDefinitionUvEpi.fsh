@@ -21,7 +21,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 * statusDate ^short = "The date at which this status became applicable." 
 * description ^short = "General description of the medicinal product referred by the ePI"
 
-* combinedPharmaceuticalDoseForm from VsCombinedPharmaceuticalDoseForm (preferred)
+* combinedPharmaceuticalDoseForm from VsPharmaceuticalDoseForm (preferred)
 * route from VsRouteOfAdministration (preferred)
 
 * legalStatusOfSupply from VsLegalStatusOfSupply (preferred)
@@ -83,13 +83,13 @@ Description: "Description of the packaged authorized medicinal product(s) associ
     * type from VsProductNamePartType (preferred)
 
   * usage
-    * country from VsIsoCountryIdSystems (preferred)
-    * jurisdiction from VsIsoCountryIdSystems (preferred)
-    * language from VsIsoLanguageIdSystems (preferred)
+    * country from VsCountry (preferred)
+    * jurisdiction from VsCountry (preferred)
+    * language from VsLanguage (preferred)
 
 * crossReference
-  * product.reference 1.. 
-  // * type from VsProductCrossReferenceTypeIdSystems (extensible)
+  * product only Reference(MedicinalProductDefinition)
+  * type from VsMedicinalProductCrossReferenceType (extensible)
 
 * operation
   * type from VsOperationType (preferred)
