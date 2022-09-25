@@ -42,15 +42,15 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 * packagedMedicinalProduct from VsPackType (preferred)
 // * packagedMedicinalProduct ^short = "Package type for this product" // ==> add voc binding 
 
-* name
-  * productName
-  * ^short = "The full name of this product"
-  * ^example.label = "general"  
-  * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* name 1..
+  * productName 1..1
+    * ^short = "The full name of this product"
+    * ^example.label = "general"  
+    * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3 ml pre-fill"
   
-  * type from VsProductNamePartType (extensible)
-  * ^example.label = "Example"
-  * ^example.valueCodeableConcept = $spor-productNamePartType-cs#220000000001 "Full name"
+  * type from VsProductNamePartType (preferred)
+    * ^example.label = "Example"
+    * ^example.valueCodeableConcept = $spor-productNamePartType-cs#220000000001 "Full name"
 	// * coding 1.. 
   * part ^slicing.discriminator[0].type = #value
   * part ^slicing.discriminator[=].path = "system"
@@ -60,11 +60,32 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   Non-proprietaryNamePart 0.. and
   StrengthPart 0.. and
   PharmaceuticalDoseFormPart 0..
+  
+  * part[ProprietaryNamePart]
+    * part
+      * ^short = "brand name of this product"
+      * ^example.valueString = "Humalog Mix50"
+    * type from VsProductNamePartType (preferred)
+  * part[Non-proprietaryNamePart]
+    * part
+      * ^short = "International Non-proprietary Name (INN) of this product"
+      * ^example.valueString = "Insulin lispro"
+    * type from VsProductNamePartType (preferred)
+  * part[StrengthPart]
+    * part
+      * ^short = "strength expressed as the quantity of active ingredient"
+      * ^example.valueString = "100 units/ml"
+    * type from VsProductNamePartType (preferred)
+  * part[PharmaceuticalDoseFormPart]
+    * part
+      * ^short = "Physical manifestation of a product as intended to be delivered to the patient."
+      * ^example.valueString = "solution for injection"
+    * type from VsProductNamePartType (preferred)
 
   * usage
-    * country from VsIsoCountryIdSystems (extensible)
-    * jurisdiction from VsIsoCountryIdSystems (extensible)
-    * language from VsIsoLanguageIdSystems (extensible)
+    * country from VsIsoCountryIdSystems (preferred)
+    * jurisdiction from VsIsoCountryIdSystems (preferred)
+    * language from VsIsoLanguageIdSystems (preferred)
 
 * crossReference
   * product.reference 1.. 

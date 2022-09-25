@@ -115,8 +115,6 @@ Title: "Pediatric Use Indicator"
 Description: "Pediatric Use Indicator"
 * codes from system $spor-pediatricUseIndicator-cs
 
-
-
 //==========================
 ValueSet: VsAtcClassification
 Id: atcClassification
@@ -129,7 +127,6 @@ Id: marketingStatus
 Title: "Marketing Status"
 Description: "Marketing Status"
 * codes from system $spor-marketingStatus-cs
-
 
 //==========================
 ValueSet: VsPackType
