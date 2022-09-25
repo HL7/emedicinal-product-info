@@ -32,19 +32,22 @@ Description: "Organization (ePI)"
         phone 0.. and
 	     email 0.. and
 	     url 0..
-  * telecom[phone] ^short = "Phone"
-  * telecom[phone] ^definition = "Corporate phone contact information for the local representative of the marketing authorization holder. International dialling code followed by the area code and telephone number."
-  * telecom[phone].system = #phone
+  * telecom[phone] 1..
+    * ^short = "Phone"
+    * ^definition = "Corporate phone contact information for the local representative of the marketing authorization holder. International dialling code followed by the area code and telephone number."
+    * system = #phone
 
-  * telecom[email] ^short = "email"
-  * telecom[email] ^definition = "Corporate email contact information for the local representative of the marketing authorization holder."
-  * telecom[email].system = #email
+  * telecom[email] 1..
+    * ^short = "email"
+    * ^definition = "Corporate email contact information for the local representative of the marketing authorization holder."
+    * system = #email
 
-  * telecom[url] ^short = "Web Site"
-  * telecom[url] ^definition = "Website of the local health authority and market authorization holder website "
-  * telecom[url].system = #url
+  * telecom[url] 1..
+    * ^short = "Web Site"
+    * ^definition = "Website of the local health authority and market authorization holder website "
+    * system = #url
 
-  * address 0..
+  * address 1..
     * use ^short = "home | work | temp | old | billing" // = #work
     * use = #work
     * text ^example.valueString = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" // = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" 
