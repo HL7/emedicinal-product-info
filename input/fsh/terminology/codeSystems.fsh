@@ -2,7 +2,8 @@ CodeSystem: CodeSystemGravitate
 Id: gravitate
 Title: "Gravitate Health Project Code System"
 Description: "Gravitate Health Project Code System. Coded concepts defined for internal project use."
-
+* ^experimental = false
+* ^caseSensitive = false
 * ^url = http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate
 
 * #flavor "Flavor" "Placeholder for the Flavor concept"
@@ -10,7 +11,8 @@ Description: "Gravitate Health Project Code System. Coded concepts defined for i
 CodeSystem: CodeSystemUvEPIRrmswi
 Title: "Referentials Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/rmswi"
-
+* ^experimental = false
+* ^caseSensitive = false
 * ^url = https://spor.ema.europa.eu/rmswi
 
 * #00000072072 "active"
@@ -64,7 +66,8 @@ Description: "Items from https://spor.ema.europa.eu/rmswi"
 CodeSystem: CodeSystemUvEPIRomswi
 Title: "Organization Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/omswi"
-
+* ^experimental = false
+* ^caseSensitive = false
 * ^url = https://spor.ema.europa.eu/omswi
 * #1
 * #2
@@ -72,7 +75,8 @@ Description: "Items from https://spor.ema.europa.eu/omswi"
 CodeSystem: CodeSystemUvEPIRpmswi
 Title: "Products Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/pmswi"
-
+* ^experimental = false
+* ^caseSensitive = false
 * ^url = https://spor.ema.europa.eu/pmswi
 * #1
 * #2
@@ -80,7 +84,8 @@ Description: "Items from https://spor.ema.europa.eu/pmswi"
 CodeSystem: CodeSystemUvEPIRsmswi
 Title: "Substances Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/smswi"
-
+* ^experimental = false
+* ^caseSensitive = false
 * ^url = https://spor.ema.europa.eu/smswi
 * #1
 * #2
@@ -88,7 +93,8 @@ Description: "Items from https://spor.ema.europa.eu/smswi"
 CodeSystem: CodeSystemUvEPIOrganizationType
 Title: "Type of organization"
 Description: "Type of organization"
-
+* ^experimental = false
+* ^caseSensitive = false
 * ^url = https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600
 * #1
 * #2

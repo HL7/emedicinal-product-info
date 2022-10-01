@@ -3,7 +3,7 @@ InstanceOf: CompositionUvEpi
 Description: "Package Leaflet"
 Usage: #example
 
-* identifier.system = "https://spor.ema.europa.eu"
+* identifier.system = "https://spor.ema.europa.eu/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
 * status = #final
@@ -26,17 +26,17 @@ Usage: #example
   * code = https://spor.ema.europa.eu/#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 
-</div>"""
 * section[+].
   * title = "B. Package Leaflet"
   * code = https://spor.ema.europa.eu/#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
-            
-        </div>"""
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable        
+        
         
 * section[=].section[+]
   * title = "Package leaflet: Information for the user"
