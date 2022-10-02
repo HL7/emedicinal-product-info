@@ -22,10 +22,10 @@ Description: "Ingredient (ePI)"
 
  // Reference to Organization: Manufacturer
 
-* manufacturer.manufacturer only Reference(OrganizationUvEpi)
+* manufacturer
+  * manufacturer only Reference(OrganizationUvEpi)
 
 * substance
-  * code.reference only Reference(SubstanceDefinitionUvEpi)
   * code.concept 1..
     * coding
       * system from VsSubstance (preferred)
@@ -40,11 +40,32 @@ Description: "Ingredient (ePI)"
   * strength ^slicing.discriminator[=].path = "system"
   * strength ^slicing.rules = #open
   * strength contains
-        presentation 0.. and 
-        concentration 0..
+      // presentation
+      presentationRatio 0.. and 
+      presentationRatioRange 0.. and
+      presentationCodeableConcept 0.. and 
+      presentationQuantity 0.. and
+      // concentration
+      concentrationRatio 0.. and 
+      concentrationRatioRange 0.. and
+      concentrationCodeableConcept 0.. and 
+      concentrationQuantity 0.. 
 
-  * presentation[presentation].presentation[x]
+// presentation
+  * strength[presentationRatio].presentation[x] only Ratio
+  * strength[presentationRatioRange].presentation[x] only RatioRange
+  * strength[presentationCodeableConcept].presentation[x] only CodeableConcept
+  * strength[presentationQuantity].presentation[x] only Quantity
 
-  * presentation[concentration].concentration[x]
+// concentration
+  * strength[concentrationRatio].concentration[x] only Ratio
+  * strength[concentrationRatioRange].concentration[x] only RatioRange
+  * strength[concentrationCodeableConcept].concentration[x] only CodeableConcept
+  * strength[concentrationQuantity].concentration[x] only Quantity
 
-
+  * textPresentation
+  * textConcentration
+  * basis
+  * referenceStrength
+    * substance
+    * strength[x]
