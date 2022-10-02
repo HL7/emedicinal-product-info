@@ -14,15 +14,12 @@ Description: "AdministrableProductDefinition (ePI)"
 * formOf only Reference(MedicinalProductDefinitionUvEpi)
 
 * administrableDoseForm from VsPharmaceuticalDoseForm (preferred)
-  * ^example.valueString = "Oral solution"
 
 * unitOfPresentation from VsUnitofPresentation (preferred)
-  * ^example.valueString = "vial"
 
 * producedFrom only Reference(ManufacturedItemDefinitionUvEpi)
 
 * routeOfAdministration 
-  * ^example.valueString = "Oral use"
   * code from VsRouteOfAdministration (preferred)
 
 * insert PropertyRulesSet

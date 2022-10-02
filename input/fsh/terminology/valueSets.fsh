@@ -288,3 +288,10 @@ Description: "Shape of the product"
 * ^experimental = false
 * $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54454 // to be reviewed
 
+//==========================
+ValueSet: VsSubstance
+Id: VsSubstance
+Title: "Substances"
+Description: "Substances"
+* ^experimental = false
+* $uri#https://gsrs.ncats.nih.gov/ginas/app/beta // to be reviewed
