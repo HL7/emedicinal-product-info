@@ -31,17 +31,17 @@ Description: "Organization (ePI)"
         phone 0.. and
 	     email 0.. and
 	     url 0..
-  * telecom[phone] 1..
+  * telecom[phone] 0..
     * ^short = "Phone"
     * ^definition = "Corporate phone contact information for the local representative of the marketing authorization holder. International dialling code followed by the area code and telephone number."
     * system = #phone
 
-  * telecom[email] 1..
+  * telecom[email] 0..
     * ^short = "email"
     * ^definition = "Corporate email contact information for the local representative of the marketing authorization holder."
     * system = #email
 
-  * telecom[url] 1..
+  * telecom[url] 0..
     * ^short = "Web Site"
     * ^definition = "Website of the local health authority and market authorization holder website "
     * system = #url
