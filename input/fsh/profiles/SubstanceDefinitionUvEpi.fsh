@@ -15,9 +15,9 @@ Description: "SubstanceDefinition (ePI)"
 
 * molecularWeight 
   * amount ^short = "The molecular weight."
-    * value
-    * unit
-    * code
+    * value ^short = "numerical value."
+    * unit ^short = "Unit of measure."
+    * code ^short = "coded form of the unit of measure."
 
 * structure 
   * molecularFormula ^short = "Structural information."
