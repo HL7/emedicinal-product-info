@@ -14,19 +14,17 @@ Description: "SubstanceDefinition (ePI)"
 * manufacturer only Reference ( OrganizationUvEpi )
 
 * molecularWeight 
-  * ^short = "The molecular weight."
-  * amount
+  * amount ^short = "The molecular weight."
     * value
     * unit
     * code
 
 * structure 
-  * ^short = "Structural information."
-  * molecularFormula
+  * molecularFormula ^short = "Structural information."
 
 * code 
   * ^short = "Codes associated with the substance." // Clarify when use codes and when identifiers
   * code from VsSubstance (preferred)
 
 * name ^short = "Names applicable to this substance."
-  * name ^short = "The actual name."
+  * name ^short = "International Non-Proprietary Name (INN) of the substance."
