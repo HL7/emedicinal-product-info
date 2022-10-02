@@ -26,46 +26,25 @@ Description: "Ingredient (ePI)"
   * manufacturer only Reference(OrganizationUvEpi)
 
 * substance
-  * code.concept 1..
-    * coding
-      * system from VsSubstance (preferred)
-        * ^short = "Global Substance Registration System (G-SRS)"
-      * code
-        * ^short = "Unique code identifying the substance (UNII)"
-      * display
-        * ^short = "International Non-Proprietary Name (INN) of the ingredient"
+  * code from VsSubstance (preferred)
   * strength 
     * ^short = "The quantity of substance, per presentation, or per volume or mass, and type of quantity."
   * strength ^slicing.discriminator[0].type = #value
   * strength ^slicing.discriminator[=].path = "system"
   * strength ^slicing.rules = #open
   * strength contains
-      // presentation
-      presentationRatio 0.. and 
-      presentationRatioRange 0.. and
-      presentationCodeableConcept 0.. and 
-      presentationQuantity 0.. and
-      // concentration
-      concentrationRatio 0.. and 
-      concentrationRatioRange 0.. and
-      concentrationCodeableConcept 0.. and 
-      concentrationQuantity 0.. 
+      presentation 0.. and 
+      concentration 0..  
 
-// presentation
-  * strength[presentationRatio].presentation[x] only Ratio
-  * strength[presentationRatioRange].presentation[x] only RatioRange
-  * strength[presentationCodeableConcept].presentation[x] only CodeableConcept
-  * strength[presentationQuantity].presentation[x] only Quantity
+  // presentation
+  * strength[presentation].presentation[x] only Ratio
+  // concentration
+  * strength[concentration].concentration[x] only Ratio
 
-// concentration
-  * strength[concentrationRatio].concentration[x] only Ratio
-  * strength[concentrationRatioRange].concentration[x] only RatioRange
-  * strength[concentrationCodeableConcept].concentration[x] only CodeableConcept
-  * strength[concentrationQuantity].concentration[x] only Quantity
 
-  * textPresentation
-  * textConcentration
-  * basis
-  * referenceStrength
-    * substance
-    * strength[x]
+  * strength.textPresentation ^short = "Text of either the whole presentation strength or a part of it"
+  * strength.textConcentration ^short = "Text of either the whole concentration strength or a part of it"
+  * strength.basis from VsRoleClassIngredientEntity (preferred)
+  * strength.referenceStrength ^short = "Strength expressed in terms of a reference substance"
+    * substance from VsSubstance (preferred)
+    * strength[x] ^short = "Strength of the reference substance."

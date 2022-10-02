@@ -295,3 +295,11 @@ Title: "Substances"
 Description: "Substances"
 * ^experimental = false
 * $uri#https://gsrs.ncats.nih.gov/ginas/app/beta // to be reviewed
+
+//==========================
+ValueSet: VsRoleClassIngredientEntity
+Id: VsRoleClassIngredientEntity
+Title: "Ingredient Role; e.g., inactive, active base, active moiety"
+Description: "Ingredient Role; e.g., inactive, active base, active moiety"
+* ^experimental = false
+* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed
