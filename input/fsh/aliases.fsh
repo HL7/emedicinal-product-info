@@ -70,7 +70,10 @@ Alias: $VS-medicinal-product-type =
 	
 Alias: $VS-medicinal-product-domain =
 	http://hl7.org/fhir/ValueSet/medicinal-product-domain
-	
+
+Alias: $VS-RoleClassIngredientEntity =
+	http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity
+
 Alias: $VS-country = http://hl7.org/fhir/ValueSet/country
 
 

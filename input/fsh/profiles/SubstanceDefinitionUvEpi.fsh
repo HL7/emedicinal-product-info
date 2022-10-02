@@ -20,7 +20,7 @@ Description: "SubstanceDefinition (ePI)"
     * code ^short = "coded form of the unit of measure."
 
 * structure 
-  * molecularFormula ^short = "Structural information."
+  * molecularFormula ^short = "Molecular formula (e.g. using the Hill system)."
 
 * code 
   * ^short = "Codes associated with the substance." // Clarify when use codes and when identifiers
