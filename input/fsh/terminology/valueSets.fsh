@@ -153,6 +153,14 @@ Description: "Pack Type"
 * codes from system $spor-packType-cs
 
 //==========================
+ValueSet: Vs-package-type
+Id: VsPackageType
+Title: "High level Pack Type"
+Description: "High level type of pack; e.g., medicinal product pack, sample pack, shipping container."
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/package-type // FHIR terminology
+
+//==========================
 ValueSet: VsCountry
 Id: VsCountry
 Title: "ISO Country two letter code"
@@ -216,8 +224,8 @@ Description: "Shelf Life Type"
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
 
 //==========================
-ValueSet: VsSpecialPrecautionsForStorageIdSystems
-Id: VsSpecialPrecautionsForStorageIdSystems
+ValueSet: VsSpecialPrecautionsForStorage
+Id: VsSpecialPrecautionsForStorage
 Title: "Special Precautions For Storage"
 Description: "Special Precautions For Storage"
 * ^experimental = false
@@ -247,6 +255,14 @@ Title: "Section Codes"
 Description: "Section Codes"
 * ^experimental = false
 * $example-org#sectionCode "sedtion code placeholder"
+
+//==========================
+ValueSet: VsUnitofMeasure
+Id: VsUnitofMeasure
+Title: "Units of Measure"
+Description: "Units of Measure"
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/ucum-units // FHIR terminology
 
 //==========================
 ValueSet: VsUnitofPresentation
@@ -301,5 +317,13 @@ ValueSet: VsRoleClassIngredientEntity
 Id: VsRoleClassIngredientEntity
 Title: "Ingredient Role; e.g., inactive, active base, active moiety"
 Description: "Ingredient Role; e.g., inactive, active base, active moiety"
+* ^experimental = false
+* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed
+
+//==========================
+ValueSet: VsDataCarrierIdSystem
+Id: VsDataCarrierIdSystem
+Title: "Data Carrier Identifiers"
+Description: "Listing of identifiers for Data Carriers"
 * ^experimental = false
 * $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed
