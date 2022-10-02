@@ -34,39 +34,17 @@ Description: "Ingredient (ePI)"
         * ^short = "Unique code identifying the substance (UNII)"
       * display
         * ^short = "International Non-Proprietary Name (INN) of the ingredient"
-  * code.concept ^example.label = "UNII example"
-  * code.concept ^example.valueCodeableConcept = $ginas#2ZM8CX04RZ "Insulin glargine"
-  // => add value set binding
   * strength 
     * ^short = "The quantity of substance, per presentation, or per volume or mass, and type of quantity."
-    * presentation[x] ^slicing.discriminator[0].type = #value
-    * presentation[x] ^slicing.discriminator[=].path = "system"
-    * presentation[x] ^slicing.rules = #open
-    * presentation[x] contains
-        Ratio 0.. and 
-        RatioRange 0.. and 
-        CodeableConcept 0.. and
-        Quantity 0..
+  * strength ^slicing.discriminator[0].type = #value
+  * strength ^slicing.discriminator[=].path = "system"
+  * strength ^slicing.rules = #open
+  * strength contains
+        presentation 0.. and 
+        concentration 0..
 
-    * presentation[Ratio]
-    * presentation[RatioRange]
-    * presentation[Quantity]
-    * presentation[CodeableConcept]
+  * presentation[presentation].presentation[x]
 
-    * presentation[Ratio].numerator
-      * Quantity.value
-      * Quantity.unit
-      * Quantity.code
-      * Quantity.system
+  * presentation[concentration].concentration[x]
 
-    * presentation[Ratio].denominator
-      * Quantity.value
-      * Quantity.unit
-      * Quantity.code
-      * Quantity.system
 
-    * presentation[Ratio].denominator
-      * Quantity.value
-      * Quantity.unit
-      * Quantity.code
-      * Quantity.system
