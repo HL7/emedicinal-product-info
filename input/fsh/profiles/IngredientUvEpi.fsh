@@ -31,6 +31,7 @@ Description: "Ingredient (ePI)"
     * ^short = "The quantity of substance, per presentation, or per volume or mass, and type of quantity."
   * strength ^slicing.discriminator[0].type = #value
   * strength ^slicing.discriminator[=].path = "system"
+  * strength ^slicing.ordered = true
   * strength ^slicing.rules = #open
   * strength contains
       presentation 0.. and 
