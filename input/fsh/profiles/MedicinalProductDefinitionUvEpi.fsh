@@ -49,8 +49,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
     * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3 ml pre-fill"
   
   * type from VsProductNamePartType (preferred)
-    * ^example.label = "Example"
-    * ^example.valueCodeableConcept = $spor-productNamePartType-cs#220000000001 "Full name"
+  
 	// * coding 1.. 
   * part ^slicing.discriminator[0].type = #value
   * part ^slicing.discriminator[=].path = "system"

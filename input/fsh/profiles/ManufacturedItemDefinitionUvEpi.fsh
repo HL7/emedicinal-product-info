@@ -12,10 +12,10 @@ Description: "ManufacturedItemDefinition (ePI)"
 * status ^short = "draft|active|retired|unknown"
 
 * manufacturedDoseForm from VsPharmaceuticalDoseForm (preferred)
-  * ^example.label = "Powder for oral solution"
+  * ^example.valueString = "Powder for oral solution"
 
 * unitOfPresentation from VsUnitofPresentation (preferred)
-  * ^example.label = "Vial"
+  * ^example.valueString = "Vial"
 
 * manufacturer only Reference(OrganizationUvEpi)
 * insert PropertyRulesSet

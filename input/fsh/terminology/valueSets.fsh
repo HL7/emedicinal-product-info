@@ -255,3 +255,36 @@ Title: "Units of Presentation"
 Description: "Units of Presentation"
 * ^experimental = false
 * $uri#https://spor.ema.europa.eu/rmswi // to be reviewed
+
+//==========================
+ValueSet: VsPropertyColor
+Id: VsPropertyColor
+Title: "Color of the product"
+Description: "Color of the product"
+* ^experimental = false
+* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54453 // to be reviewed
+
+//==========================
+ValueSet: VsPropertyFlavor
+Id: VsPropertyFlavor
+Title: "Flavor of the product"
+Description: "Flavor of the product"
+* ^experimental = false
+* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73339 // to be reviewed
+
+//==========================
+ValueSet: VsPropertyScore
+Id: VsPropertyScore
+Title: "Score on the product"
+Description: "Score on the product"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed - request HL7 terminology team add this as a valueset
+
+//==========================
+ValueSet: VsPropertyShape
+Id: VsPropertyShape
+Title: "Shape of the product"
+Description: "Shape of the product"
+* ^experimental = false
+* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54454 // to be reviewed
+

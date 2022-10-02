@@ -8,20 +8,21 @@ Description: "AdministrableProductDefinition (ePI)"
   * system from VsAdmProductIdSystems (extensible)
   * system 1..
   * value 1..
+
 * status ^short = "draft | active | retired |unknown"
 
 * formOf only Reference(MedicinalProductDefinitionUvEpi)
 
 * administrableDoseForm from VsPharmaceuticalDoseForm (preferred)
-  * ^example.label = "Oral solution"
+  * ^example.valueString = "Oral solution"
 
 * unitOfPresentation from VsUnitofPresentation (preferred)
-  * ^example.label = "vial"
+  * ^example.valueString = "vial"
 
 * producedFrom only Reference(ManufacturedItemDefinitionUvEpi)
 
 * routeOfAdministration 
-  * ^example.label = "Oral use"
+  * ^example.valueString = "Oral use"
   * code from VsRouteOfAdministration (preferred)
 
 * insert PropertyRulesSet
