@@ -47,22 +47,17 @@ Description: "PackagedProductDefinition (ePI)"
     * system 1..
     * value 1..
   * type from VsPackType (preferred)
-    * ^example.valueCodeableConcept = $spor-rms#100000073543 "Pre-filled pen"
-    * ^example.label = "type"
   * quantity 
-    * ^example.valueInteger = 3
-    * ^example.label = "quantity"
-  * material from VsPackageMaterialIdSystems (preferred)
-    * ^example.valueCodeableConcept = $spor-rms#200000003204  "Glass type I"
-    * ^example.label = "material"
+  * material from VsPackageMaterial (preferred)
   * shelfLifeStorage 
     * ^short = "Shelf Life and storage information."
-    * type from VsShelfLifeTypeIdSystems (preferred)
-    * period[periodDuration].period[x]
+    * type from VsShelfLifeType (preferred)
+    * period[periodDuration].periodDuration
       * value
       * unit
       * system
       * code
+
     * period[periodstring].period[x]
     * specialPrecautionsForStorage from VsSpecialPrecautionsForStorage (preferred)
   * manufacturer only Reference (OrganizationUvEpi)

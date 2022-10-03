@@ -208,16 +208,16 @@ Description: "Product Confidentiality"
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
 
 //==========================
-ValueSet: VsPackageMaterialIdSystems
-Id: VsPackageMaterialIdSystems
+ValueSet: VsPackageMaterial
+Id: VsPackageMaterial
 Title: "Package Material"
 Description: "Package Material"
 * ^experimental = false
 * $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
 
 //==========================
-ValueSet: VsShelfLifeTypeIdSystems
-Id: VsShelfLifeTypeIdSystems
+ValueSet: VsShelfLifeType
+Id: VsShelfLifeType
 Title: "Shelf Life Type"
 Description: "Shelf Life Type"
 * ^experimental = false
