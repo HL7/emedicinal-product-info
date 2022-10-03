@@ -46,7 +46,7 @@ Description: "PackagedProductDefinition (ePI)"
     * system from VsDataCarrierIdSystem (preferred)
     * system 1..
     * value 1..
-  * type from VsPackType (preferred)
+  * type from VsSecondaryPrimaryPackType (preferred)
   * quantity 
   * material from VsPackageMaterial (preferred)
   * shelfLifeStorage 
@@ -62,7 +62,7 @@ Description: "PackagedProductDefinition (ePI)"
     * specialPrecautionsForStorage from VsSpecialPrecautionsForStorage (preferred)
   * manufacturer only Reference (OrganizationUvEpi)
   * containedItem
-    * item only Reference(ManufacturedItemDefinitionUvEpi or DeviceDefinition) 
+    * item only Reference (ManufacturedItemDefinitionUvEpi or DeviceDefinition) 
   * packaging ^short = "Used to nest layers of packaging; e.g., outside to inside with secondary package and then primary package)"
 
 

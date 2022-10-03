@@ -17,7 +17,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 * indication ^short = "Narrative text of the authorized indication(s) for this product."
 
 * version ^short = "Business version of this product"
-* status from  $VS-publication-status (extensible)
+* status from  $VS-publication-status (preferred)
 * statusDate ^short = "The date at which this status became applicable." 
 * description ^short = "General description of the medicinal product referred by the ePI"
 
@@ -39,8 +39,8 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * ^short = "Marketing status of the medicinal product in contrast to marketing authorization"
   * status from VsMarketingStatus (preferred)
 
-* packagedMedicinalProduct from VsPackType (preferred)
-// * packagedMedicinalProduct ^short = "Package type for this product" // ==> add voc binding 
+* packagedMedicinalProduct from VsPackageType (preferred)
+  * ^short = "High level package type for this product. E.g., sample pack" 
 
 * name 1..
   * productName 1..1

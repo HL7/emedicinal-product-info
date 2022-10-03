@@ -1,8 +1,8 @@
 //=========================
-ValueSet: VsRegulatedAuthIdSystems
-Id: regulatedAuthIdSystems
-Title: "RegulatedAuthorization identifier systems"
-Description: "RegulatedAuthorization Identifier systems (uri)"
+ValueSet: VsRegulatedAuthorization
+Id: VsRegulatedAuthorization
+Title: "Type of Regulated Authorization"
+Description: "Type of Regulated Authorization"
 * ^experimental = false
 * $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
 
@@ -16,7 +16,7 @@ Description: "Regulated Authorization Type Identifier systems (uri)"
 
 //=========================
 ValueSet: VsMedProductIdSystems
-Id: medProductIdSystems
+Id: VsMedProductIdSystems
 Title: "MedicinalProductDefinition identifier systems"
 Description: "MedicinalProductDefinition Identifier systems (uri)"
 * ^experimental = false
@@ -115,7 +115,7 @@ Description: "Legal Status for the Supply"
 
 //==========================
 ValueSet: VsAdditionalMonitoringIndicator
-Id: additionalMonitoringIndicator
+Id: VsAdditionalMonitoringIndicator
 Title: "Additional Monitoring Indicator"
 Description: "Additional Monitoring Indicator"
 * ^experimental = false
@@ -136,6 +136,7 @@ Title: "ATC Classification"
 Description: "ATC Classification"
 * ^experimental = false
 * codes from system $atc 
+
 //==========================
 ValueSet: VsMarketingStatus
 Id: marketingStatus
@@ -145,8 +146,16 @@ Description: "Marketing Status"
 * codes from system $spor-marketingStatus-cs
 
 //==========================
-ValueSet: VsPackType
-Id: packType
+ValueSet: VsAuthorizationStatus
+Id: VsAuthorizationStatus
+Title: "Authorization Status"
+Description: "Authorization Status"
+* ^experimental = false
+* codes from system $spor-marketingStatus-cs // to be reviewed
+
+//==========================
+ValueSet: VsSecondaryPrimaryPackType
+Id: VsSecondaryPrimaryPackType
 Title: "Pack Type"
 Description: "Pack Type"
 * ^experimental = false
@@ -169,6 +178,14 @@ Description: "ISO Country two letter code"
 * $uri#http://hl7.org/fhir/ValueSet/iso3166-1-2 "Iso 3166 Part 1: 2 Letter Codes" // FHIR terminology
 
 //==========================
+ValueSet: VsJurisdiction
+Id: VsJurisdiction
+Title: "Two letter country code"
+Description: "Two letter country code"
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/jurisdiction "JurisdictionValueSet" // FHIR terminology
+
+//==========================
 ValueSet: VsLanguage
 Id: VsLanguage
 Title: "Languages"
@@ -184,8 +201,8 @@ Description: "Product Name Part Type"
 * ^experimental = false
 * codes from system $spor-productNamePartType-cs
 //==========================
-ValueSet: VsPartTypeIdSystems
-Id: VsPartTypeIdSystems
+ValueSet: VsPartType
+Id: VsPartType
 Title: "Part Type"
 Description: "Part Type"
 * ^experimental = false
@@ -326,4 +343,28 @@ Id: VsDataCarrierIdSystem
 Title: "Data Carrier Identifiers"
 Description: "Listing of identifiers for Data Carriers"
 * ^experimental = false
-* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed
+* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // FHIR terminology to be reviewed
+
+//==========================
+ValueSet: VsCaseIdSystem
+Id: VsCaseIdSystem
+Title: "Case System Identifiers"
+Description: "Case System Identifiers"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+//==========================
+ValueSet: VsRegulatoryActivityType
+Id: VsRegulatoryActivityType
+Title: "Regulatory Activity Type"
+Description: "Regulatory Activity Type; e.g., MAA"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+//==========================
+ValueSet: VsGeneralStatus
+Id: VsGeneralStatus
+Title: "General Status used across the ePI"
+Description: "General Status used across the ePI"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
