@@ -18,6 +18,7 @@ Description: "PackagedProductDefinition (ePI)"
 * packageFor only Reference(MedicinalProductDefinitionUvEpi)
 
 * status ^example.valueCodeableConcept = http://hl7.org/fhir/publication-status#active
+* status ^example.label = "Example Status"
 * statusDate ^example.valueDateTime = "2015-02-07T13:28:17Z"
 * statusDate ^example.label = "statusDate"
 

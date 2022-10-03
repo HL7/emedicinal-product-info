@@ -63,21 +63,25 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * part[ProprietaryNamePart]
     * part
       * ^short = "brand name of this product"
+      * ^example.label = "Example brand name"
       * ^example.valueString = "Humalog Mix50"
     * type from VsProductNamePartType (preferred)
   * part[Non-proprietaryNamePart]
     * part
       * ^short = "International Non-proprietary Name (INN) of this product"
+      * ^example.label = "Example INN"
       * ^example.valueString = "Insulin lispro"
     * type from VsProductNamePartType (preferred)
   * part[StrengthPart]
     * part
       * ^short = "strength expressed as the quantity of active ingredient"
+      * ^example.label = "Example quantity"
       * ^example.valueString = "100 units/ml"
     * type from VsProductNamePartType (preferred)
   * part[PharmaceuticalDoseFormPart]
     * part
       * ^short = "Physical manifestation of a product as intended to be delivered to the patient."
+      * ^example.label = "Example dose form"
       * ^example.valueString = "solution for injection"
     * type from VsProductNamePartType (preferred)
 
