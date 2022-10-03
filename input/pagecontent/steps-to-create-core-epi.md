@@ -36,7 +36,7 @@ Part 2 - Syringe
 #### Create Organization resource(s) 
 Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with the ePI: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
 
-Refer to the [Organization profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Organization-uv-epi.html) for detail. 
+Refer to the [Organization profile](StructureDefinition-Organization-uv-epi.html) for detail. 
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step1.png" alt="ePI Resource Relationship"/>
@@ -48,7 +48,7 @@ Using the Core ePI Profile as a template, complete one SubstanceDefinition resou
 
 Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder. 
 
-Refer to the [SubstanceDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
+Refer to the [SubstanceDefinition Profile](StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step2.png" alt="ePI Resource Relationship"/>
@@ -62,7 +62,7 @@ Using the FHIR ePI Profile as a template, complete one ManufacturedItemDefinitio
  
 Create a reference from each ManufacturedItemDefinition resource to the corresponding Organization resource (e.g., reference to the manufacturer; reference to the marketing authorization holder). 
 
-Refer to [ManufacturedItemDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ManufacturedItemDefinition-uv-epi.html) for detail. 
+Refer to [ManufacturedItemDefinition Profile](StructureDefinition-ManufacturedItemDefinition-uv-epi.html) for detail. 
 
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
@@ -78,7 +78,7 @@ Create a reference from the relevant Ingredient resources to the corresponding M
 Create a reference from the relevant Ingredient resources to the corresponding Organization resource (e.g., reference to the Organization that manufactures that ingredient). 
 
 
-Refer to [Ingredient](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Ingredient-uv-epi.html) for detail. 
+Refer to [Ingredient](StructureDefinition-Ingredient-uv-epi.html) for detail. 
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step4.png" alt="ePI Resource Relationship"/>
@@ -98,7 +98,7 @@ For example, the following three presentations require three separate medicinal 
 
 There are no references from the medicinal product to other resources. Instead, other resources will refer to the medicinal product.
 
-Refer to [MedicinalProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-MedicinalProductDefinition-uv-epi.html) for detail.
+Refer to [MedicinalProductDefinition Profile](StructureDefinition-MedicinalProductDefinition-uv-epi.html) for detail.
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step5.png" alt="ePI Resource Relationship"/>
@@ -114,7 +114,7 @@ Create a reference from each PharmaceuticalProductDefinition resource to the cor
 
 Create a reference from each PharmaceuticalProductDefinition resource to the corresponding ManufacturedItemDefinition resource. 
 
-Refer to [AdministrableProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-AdministrableProductDefinition-uv-epi.html) for detail. 
+Refer to [AdministrableProductDefinition Profile](StructureDefinition-AdministrableProductDefinition-uv-epi.html) for detail. 
 
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
@@ -138,7 +138,7 @@ Create a reference from each PackagedProductDefinition resource to the correspon
 
 Create a reference from each PackagedProductDefinition resource to the corresponding Organization resource for the manufacturer or marketing authorization holder. 
 
-Refer to [PackagedProductDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-PackagedProductDefinition-uv-epi.html) for detail. 
+Refer to [PackagedProductDefinition Profile](StructureDefinition-PackagedProductDefinition-uv-epi.html) for detail. 
  
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step7.png" alt="ePI Resource Relationship"/>
@@ -150,7 +150,7 @@ Using the Core ePI Profile as a template, complete one ClinicalUseDefinition res
 
 Create a reference from the ClinicalUseDefinition (contraindication) to the corresponding MedicinalProduct. 
 
-Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail. 
+Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail. 
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
@@ -162,7 +162,7 @@ Using the Core ePI Profile as a template, complete one ClinicalUseDefinition res
 
 Create a reference from each ClinicalUseDefinition (Indication) to the corresponding MedicinalProduct. 
 
-Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
+Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
@@ -174,7 +174,7 @@ Using the Core ePI Profile as a template, complete one ClinicalUseDefinition res
 
 Create a reference each ClinicalUseDefinition (Interaction) to the corresponding MedicinalProduct. 
 
-Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
+Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
@@ -186,7 +186,7 @@ Using the Core ePI Profile as a template, complete one ClinicalUseDefinition res
 
 Create a reference from each ClinicalUseDefinition (Undesirable Effect) to the corresponding MedicinalProduct. 
 
-Refer to [ClinicalUseDefinition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
+Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
@@ -212,7 +212,7 @@ Create a reference from each RegulatedAuthorization resource to its correspondin
 
 Create a reference from each RegulatedAuthorization resource to to the corresponding Organization resource for the marketing authorization holder and the health authority.
 
-Refer to [RegulatedAuthorization Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-RegulatedAuthorization-uv-epi.html) for detail.
+Refer to [RegulatedAuthorization Profile](StructureDefinition-RegulatedAuthorization-uv-epi.html) for detail.
  
 NOTE:  
 - Depending on the jurisdiction there will either be (1) one authorization per medicinal product (i.e., resulting in many RegulatedAuthorization resources); or (2) one authorization for all medicinal products (i.e., resulting in one RegulatedAuthorization resource). Refer to the regional profile for confirmation on which approach is required. 
@@ -254,7 +254,7 @@ ePI documents are meant to be separate and shall not be combined into one large 
 - one Composition for the healthcare practitioner document and a separate Composition  for the Patient Insert document;
 - one Composition for each translation (e.g., one Composition for the French version of the ePI document and a separate Composition for the Spanish version of the ePI document).
 
-Refer to [Composition Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Composition-uv-epi.html) for detail.
+Refer to [Composition Profile](StructureDefinition-Composition-uv-epi.html) for detail.
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step15.png" alt="ePI Resource Relationship"/>
@@ -278,7 +278,7 @@ NOTE:
 - INSERT another figure showing the List of Bundles for the various ePI documents
 - INSERT call out the options to list all bundles in the List vs just List the set ids for the bundles and all documents in the List vs separate Lists for documents and translations.
 
-Refer to [Bundle Profile](http://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-Bundle-uv-epi.html) for detail.
+Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step16.png" alt="ePI Resource Relationship"/>
