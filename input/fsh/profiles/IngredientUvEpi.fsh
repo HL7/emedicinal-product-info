@@ -29,18 +29,26 @@ Description: "Ingredient (ePI)"
   * code from VsSubstance (preferred)
   * strength 
     * ^short = "The quantity of substance, per presentation, or per volume or mass, and type of quantity."
-  * strength ^slicing.discriminator[0].type = #value
-  * strength ^slicing.discriminator[=].path = "system"
-  * strength ^slicing.ordered = true
-  * strength ^slicing.rules = #open
-  * strength contains
-      presentation 0.. and 
-      concentration 0..  
+//  * strength ^slicing.discriminator[0].type = #value
+//  * strength ^slicing.discriminator[=].path = "system"
+//  * strength ^slicing.ordered = true
+//  * strength ^slicing.discriminator[0].type = #type
+//  * strength ^slicing.discriminator[=].path = "presentation"
+//  * strength ^slicing.discriminator[+].type = #type
+//  * strength ^slicing.discriminator[=].path = "concentration"
+//  * strength ^slicing.ordered = false
+//  * strength ^slicing.rules = #open
+//  * strength contains
+//      presentation 0.. and 
+//      concentration 0..  
 
   // presentation
-  * strength[presentation].presentation[x] only Ratio
+//  * strength[presentation].presentation[x] only Ratio
+//  * strength[presentation].concentration[x] 0..0
+  
   // concentration
-  * strength[concentration].concentration[x] only Ratio
+//  * strength[concentration].concentration[x] only Ratio
+//  * strength[concentration].presentation[x] 0..0
 
 
   * strength.textPresentation ^short = "Text of either the whole presentation strength or a part of it"
