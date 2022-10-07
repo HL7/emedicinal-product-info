@@ -77,7 +77,7 @@ Title: "Products Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/pmswi"
 * ^experimental = false
 * ^caseSensitive = false
-* ^url = https://spor.ema.europa.eu/pmswi
+// * ^url = https://spor.ema.europa.eu/pmswi
 * #1
 * #2
 
