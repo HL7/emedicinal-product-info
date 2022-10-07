@@ -4,7 +4,7 @@ Id: VsRegulatedAuthorization
 Title: "Type of Regulated Authorization"
 Description: "Type of Regulated Authorization"
 * ^experimental = false
-* codes from system "https://spor.ema.europa.eu/pmswi" // to be reviewed
+* codes from system https://spor.ema.europa.eu/pmswi // to be reviewed
 
 //=========================
 ValueSet: VsRegulatedAuthorizationTypeIdSystems
