@@ -4,10 +4,10 @@ Id: AdministrableProductDefinition-uv-epi
 Title: "AdministrableProductDefinition (ePI)"
 Description: "AdministrableProductDefinition (ePI)"
 
-* identifier 1..
+* identifier 1..*
   * system from VsAdmProductIdSystems (extensible)
-  * system 1..
-  * value 1..
+  * system 1..1
+  * value 1..1
 
 * status ^short = "draft | active | retired |unknown"
 
@@ -23,7 +23,3 @@ Description: "AdministrableProductDefinition (ePI)"
   * code from VsRouteOfAdministration (preferred)
 
 * insert PropertyRulesSet
-
-
-
-

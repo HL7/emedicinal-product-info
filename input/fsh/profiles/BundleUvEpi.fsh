@@ -25,10 +25,10 @@ Description: """A medicine’s product information is a pivotal source of regula
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
 
-/* --------
-* entry ^slicing.discriminator[+].type = #profile
-* entry ^slicing.discriminator[=].path = "resource"
---- */
+
+//* entry ^slicing.discriminator[+].type = #profile
+//* entry ^slicing.discriminator[=].path = "resource"
+
 
 * entry ^slicing.rules = #open
 * entry ^short = "Entry resource in the ePI bundle"

@@ -86,13 +86,14 @@ Description: "Description of the packaged authorized medicinal product(s) associ
     * type from VsProductNamePartType (preferred)
 
   * usage
-    * country from VsCountry (preferred)
-    * jurisdiction from VsCountry (preferred)
-    * language from VsLanguage (preferred)
+    * country from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2
+    * jurisdiction from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2
+//    * language from VsLanguage (preferred)
 
 * crossReference
   * product only Reference(MedicinalProductDefinition)
-  * type from VsMedicinalProductCrossReferenceType (extensible)
+//  * type from VsMedicinalProductCrossReferenceType (extensible) //http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type
+  * type from http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type (extensible)
 
 * operation
   * type from VsOperationType (preferred)

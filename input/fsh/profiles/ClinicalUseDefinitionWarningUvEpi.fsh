@@ -11,5 +11,5 @@ Description: "ClinicalUseDefinition Warning (ePI)"
 *  indication 0..0
 *  interaction 0..0
 *  undesirableEffect 0..0
-*  warning 1..
+*  warning 1..1
   * description	^short = "A textual definition of this warning, with formatting."

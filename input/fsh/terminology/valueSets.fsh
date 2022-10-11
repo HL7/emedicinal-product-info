@@ -36,7 +36,7 @@ Id: PharmaceuticalDoseForm
 Title: "Pharmaceutical Dose Form"
 Description: "Pharmaceutical Dose Form"
 * ^experimental = false
-* $uri#https://spor.ema.europa.eu/pmswi "Pharmaceutical Dose Form" // to be reviewed
+* codes from system https://spor.ema.europa.eu/pmswi //"Pharmaceutical Dose Form" // to be reviewed
 
 //=========================
 ValueSet: VsRouteOfAdministration
@@ -167,7 +167,7 @@ Id: VsPackageType
 Title: "High level Pack Type"
 Description: "High level type of pack; e.g., medicinal product pack, sample pack, shipping container."
 * ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/package-type // FHIR terminology
+* codes from system http://hl7.org/fhir/package-type //http://hl7.org/fhir/ValueSet/package-type // FHIR terminology
 
 //==========================
 ValueSet: VsCountry
@@ -175,23 +175,26 @@ Id: VsCountry
 Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
 * ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/iso3166-1-2 "Iso 3166 Part 1: 2 Letter Codes" // FHIR terminology
+//* $uri#http://hl7.org/fhir/ValueSet/iso3166-1-2 "Iso 3166 Part 1: 2 Letter Codes" // FHIR terminology
+* codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
+//* https://www.iso.org/obp/ui/#iso:code:3166:EU
+* urn:iso:std:iso:3166#EU "European Union"
 
 //==========================
-ValueSet: VsJurisdiction
-Id: VsJurisdiction
-Title: "Two letter country code"
-Description: "Two letter country code"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/jurisdiction "JurisdictionValueSet" // FHIR terminology
+//ValueSet: VsJurisdiction
+//Id: VsJurisdiction
+//Title: "Two letter country code"
+//Description: "Two letter country code"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/jurisdiction "JurisdictionValueSet" // FHIR terminology
 
 //==========================
-ValueSet: VsLanguage
-Id: VsLanguage
-Title: "Languages"
-Description: "Languages"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
+//ValueSet: VsLanguage
+//Id: VsLanguage
+//Title: "Languages"
+//Description: "Languages"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
 
 //==========================
 ValueSet: VsProductNamePartType
@@ -206,15 +209,16 @@ Id: VsPartType
 Title: "Part Type"
 Description: "Part Type"
 * ^experimental = false
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
 
 //==========================
-ValueSet: VsMedicinalProductCrossReferenceType
-Id: VsMedicinalProductCrossReferenceType
-Title: "Product Cross Reference Type"
-Description: "Product Cross Reference Type"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
+//ValueSet: VsMedicinalProductCrossReferenceType
+//Id: VsMedicinalProductCrossReferenceType
+//Title: "Product Cross Reference Type"
+//Description: "Product Cross Reference Type"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
+//* codes from system http://hl7.org/fhir/medicinal-product-cross-reference-type
 
 //==========================
 ValueSet: VsProductConfidentialityIdSystems
@@ -230,7 +234,7 @@ Id: VsPackageMaterial
 Title: "Package Material"
 Description: "Package Material"
 * ^experimental = false
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
 
 //==========================
 ValueSet: VsShelfLifeType
@@ -238,7 +242,7 @@ Id: VsShelfLifeType
 Title: "Shelf Life Type"
 Description: "Shelf Life Type"
 * ^experimental = false
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
 
 //==========================
 ValueSet: VsSpecialPrecautionsForStorage
@@ -250,20 +254,21 @@ Description: "Special Precautions For Storage"
 // add fda codes
 // add PMDA
 //==========================
-ValueSet: VsListOrderCodesIdSystems
-Id: VsListOrderCodesIdSystems
-Title: "Order Codes for List"
-Description: "Order Codes for List"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
+//ValueSet: VsListOrderCodesIdSystems
+//Id: VsListOrderCodesIdSystems
+//Title: "Order Codes for List"
+//Description: "Order Codes for List"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
+//* codes from system http://terminology.hl7.org/CodeSystem/list-order
 
 //==========================
-ValueSet: VsExampleUseCodesForListIdSystems
-Id: VsExampleUseCodesForListIdSystems
-Title: "Use Codes for List"
-Description: "Use Codes for List"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes"
+//ValueSet: VsExampleUseCodesForListIdSystems
+//Id: VsExampleUseCodesForListIdSystems
+//Title: "Use Codes for List"
+//Description: "Use Codes for List"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes"
 
 //==========================
 ValueSet: VsSectionCode
@@ -274,12 +279,12 @@ Description: "Section Codes"
 * $example-org#sectionCode "sedtion code placeholder"
 
 //==========================
-ValueSet: VsUnitofMeasure
-Id: VsUnitofMeasure
-Title: "Units of Measure"
-Description: "Units of Measure"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/ucum-units // FHIR terminology
+//ValueSet: VsUnitofMeasure
+//Id: VsUnitofMeasure
+//Title: "Units of Measure"
+//Description: "Units of Measure"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/ucum-units // FHIR terminology
 
 //==========================
 ValueSet: VsUnitofPresentation

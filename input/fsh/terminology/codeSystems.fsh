@@ -4,7 +4,7 @@ Title: "Gravitate Health Project Code System"
 Description: "Gravitate Health Project Code System. Coded concepts defined for internal project use."
 * ^experimental = false
 * ^caseSensitive = false
-* ^url = http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate
+//* ^url = http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate
 
 * #flavor "Flavor" "Placeholder for the Flavor concept"
 
@@ -13,7 +13,7 @@ Title: "Referentials Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/rmswi"
 * ^experimental = false
 * ^caseSensitive = false
-* ^url = https://spor.ema.europa.eu/rmswi
+//* ^url = https://spor.ema.europa.eu/rmswi
 
 * #00000072072 "active"
 * #100000000012
@@ -68,7 +68,7 @@ Title: "Organization Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/omswi"
 * ^experimental = false
 * ^caseSensitive = false
-* ^url = https://spor.ema.europa.eu/omswi
+//* ^url = https://spor.ema.europa.eu/omswi
 * #1
 * #2
 
@@ -86,15 +86,17 @@ Title: "Substances Management Services CodeSystem"
 Description: "Items from https://spor.ema.europa.eu/smswi"
 * ^experimental = false
 * ^caseSensitive = false
-* ^url = https://spor.ema.europa.eu/smswi
+//* ^url = https://spor.ema.europa.eu/smswi
 * #1
 * #2
 
-CodeSystem: CodeSystemUvEPIOrganizationType
-Title: "Type of organization"
-Description: "Type of organization"
-* ^experimental = false
-* ^caseSensitive = false
-* ^url = https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600
-* #1
-* #2
+//either use codes from https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600
+//or refer to https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600 as a codesystem
+//CodeSystem: CodeSystemUvEPIOrganizationType
+//Title: "Type of organization"
+//Description: "Type of organization"
+//* ^experimental = false
+//* ^caseSensitive = false
+//* ^url = https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73600
+//* #1
+//* #2

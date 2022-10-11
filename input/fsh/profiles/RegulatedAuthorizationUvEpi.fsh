@@ -18,7 +18,7 @@ Description: "RegulatedAuthorization (ePI)"
 
 * description ^short = "Brief description of the authorization"
 
-* region from VsJurisdiction (preferred)
+* region from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2 
   * ^short = "The jusrisdiction in which the authorization has been granted"
 
 * status from VsAuthorizationStatus (preferred)
@@ -26,8 +26,8 @@ Description: "RegulatedAuthorization (ePI)"
 
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
 * indication.reference 1..
-* indication.reference only Reference (ClinicalUseDefinitionIndicationUvEpi)
-* indication.reference ^short = "Reference to the "
+* indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
+* indication ^short = "Reference to the Clinical Use Definition"
 
  // Reference to Organization: Marketing Authorization Holder
 * holder 1..

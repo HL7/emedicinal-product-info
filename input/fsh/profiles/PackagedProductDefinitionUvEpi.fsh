@@ -28,10 +28,10 @@ Description: "PackagedProductDefinition (ePI)"
 
 * legalStatusOfSupply ^short = "The legal status of supply of the packaged item as classified by the regulator."
   * code from VsLegalStatusOfSupply (preferred)
-  * jurisdiction from VsCountry (preferred)
+  * jurisdiction from http://terminology.hl7.org/ValueSet/v3-Country2 (preferred) //VsCountry
 
 * marketingStatus ^short = "Allows specifying that an item is on the market for sale, or that it is not available, and the dates and locations associated."
-  * country from VsCountry (preferred) 
+  * country from http://terminology.hl7.org/ValueSet/v3-Country2 (preferred) //VsCountry
   * status from VsMarketingStatus (preferred)
   * dateRange.start
   * dateRange.end

@@ -1,20 +1,20 @@
 RuleSet:  PropertyRulesSet
-
+* property 0..*
 * property ^slicing.discriminator[0].type = #value
 * property ^slicing.discriminator[=].path = "type"
 * property ^slicing.rules = #open
 * property contains
     // codeableconcept
-	color 0.. and
-	flavor 0..  and
-	score  0.. and
-	shape  0.. and
-	//quantity
-	size  0.. and
-	//data
-	image  0.. and
-	//string
-	imprint 0.. 
+    color 0..* and
+    flavor 0..*  and
+    score  0..* and
+    shape  0..* and
+    //quantity
+    size  0..* and
+    //data
+    image  0..* and
+    //string
+    imprint 0..* 
 
 * property[color].value[x]     only CodeableConcept
 * property[flavor].value[x]     only CodeableConcept

@@ -1,8 +1,9 @@
 CodeSystem: Example
 Title: "EMA example-sections-pl"
-Description: "Placeholder for EMA example-sections PL"
-
-* ^url = http://spor.ema.europa.eu/v1/example-sections
+Description: "Placeholder for EMA example-sections PL. see http://spor.ema.europa.eu/v1/example-sections"
+* ^experimental = false
+* ^caseSensitive = false
+//* ^url = http://spor.ema.europa.eu/v1/example-sections
 * #3
 * #3 ^designation[0].language = #no
 * #3 ^designation[0].use = http://snomed.info/sct#900000000000003001
@@ -76,9 +77,10 @@ Description: "Placeholder for EMA example-sections PL"
 
 CodeSystem: Examplesmpc
 Title: "EMA example-sections-smpc"
-Description: "Placeholder for EMA example-sections smpc"
-
-* ^url = http://spor.ema.europa.eu/v1/example-sections-smpc
+Description: "Placeholder for EMA example-sections smpc. see http://spor.ema.europa.eu/v1/example-sections-smpc."
+* ^experimental = false
+* ^caseSensitive = false
+//* ^url = http://spor.ema.europa.eu/v1/example-sections-smpc
 * #3
 // * #3 ^designation[0].language = #en
 * #3 ^designation[0].use = http://snomed.info/sct#900000000000003001
