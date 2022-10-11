@@ -364,7 +364,7 @@ Description: "Regulatory Activity Type; e.g., MAA"
 //==========================
 ValueSet: VsGeneralStatus
 Id: VsGeneralStatus
-Title: "General Status used across the ePI"
-Description: "General Status used across the ePI"
+Title: "General Status used across ePI resources"
+Description: "General Status used across ePI resources"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed
