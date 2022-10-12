@@ -13,8 +13,8 @@ Usage: #example
 * type = $spor-rms#100000072062
 * type.text = "Marketing Authorisation"
 
-* region = urn:iso:std:iso:3166#EU
-* region.text = "European Union"
+* region = urn:iso:std:iso:3166#DK
+* region.text = "Denmark"
 
 * status = http://hl7.org/fhir/publication-status#active
 * status.text = "Active"
@@ -22,4 +22,4 @@ Usage: #example
 * statusDate = "2015-02-07T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
-* holder = Reference(sanofi-aventis-groupe)
+* holder = Reference(sanofiaventisgroupe)

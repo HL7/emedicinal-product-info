@@ -23,4 +23,4 @@ Usage: #example
 * for = Reference(manitemkarvea75)
 
 // Reference to Organization:  Reference to MAH
-* manufacturer.manufacturer = Reference(sanofi-aventis-groupe)
+* manufacturer.manufacturer = Reference(sanofiaventisgroupe)
