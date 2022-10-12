@@ -279,12 +279,12 @@ Description: "Section Codes"
 * $example-org#sectionCode "sedtion code placeholder"
 
 //==========================
-//ValueSet: VsUnitofMeasure
-//Id: VsUnitofMeasure
-//Title: "Units of Measure"
-//Description: "Units of Measure"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/ucum-units // FHIR terminology
+ValueSet: VsUnitofMeasure
+Id: VsUnitofMeasure
+Title: "Units of Measure"
+Description: "Units of Measure"
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/ucum-units // FHIR terminology
 
 //==========================
 ValueSet: VsUnitofPresentation
