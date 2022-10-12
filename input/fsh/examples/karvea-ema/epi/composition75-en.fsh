@@ -1,4 +1,4 @@
-Instance: composition-karvea-75
+Instance: compositionkarvea75
 InstanceOf: CompositionUvEpi
 Description: "Package Leaflet"
 Usage: #example

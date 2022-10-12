@@ -13,7 +13,7 @@ Description: "List of Karvea package inserts for Connectathon testing"
 
 * title = "List of all authorized Karvea presentations"
 
-* code = #worklist // correct this code system
+* code = http://hl7.org/fhir/ValueSet/list-example-codes/#worklist
 
 * date = "2018-06-23T08:38:00+02:00"
 
