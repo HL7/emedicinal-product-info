@@ -17,11 +17,11 @@ Description: "ClinicalUseDefinition Interaction (ePI)"
 	   substanceclass 0..
 
   * interactant[substance]
-    * itemCodeableConcept from VsSubstance
+    * itemCodeableConcept from VsSubstance (preferred)
     * ^short = "The specific substance that interacts."
     
   * interactant[substanceclass]
-    * itemCodeableConcept from VsAtcClassification
+    * itemCodeableConcept from VsAtcClassification (preferred)
     * ^short = "The class of substances that interacts"
 
   *  type ^short = "The type of the interaction e.g. drug-drug, drug-food, drug-lab."

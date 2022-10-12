@@ -10,10 +10,8 @@ Description: "Instance of Humalog package insert for Connectathon testing"
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-
 * entry[+].resource = composition-karvea-75
-* entry[=].fullUrl = "urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d"
 
 // List of Products
 * entry[+].resource = listofproducts
-* entry[=].fullUrl = "urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349e"
+

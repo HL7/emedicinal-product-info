@@ -1,4 +1,4 @@
-Instance: sanofi-aventis-groupe
+Instance: sanofiaventisgroupe
 InstanceOf: OrganizationUvEpi
 Description: "Marketing Authorization Holder"
 Usage: #example
