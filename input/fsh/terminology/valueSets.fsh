@@ -373,3 +373,11 @@ Title: "General Status used across ePI resources"
 Description: "General Status used across ePI resources"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed
+
+//==========================
+ValueSet: VsMeddra
+Id: VsMeddra
+Title: "MedDRA Terms for clinical diseases and symptoms"
+Description: "MedDRA Terms for clinical diseases and symptoms"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed

@@ -7,9 +7,8 @@ RuleSet: ClinicalUseDefinitionCommonRules
 * identifier.use = #official
 --- */
 
-* identifier ^short = "Business identifier for this issue."
-* status ^short = "Whether this is a current issue or one that has been retired"
-// Reference to MedicinalProductDefinition: EU/1/16/1157/002 100/50 x5 pre-filled pens
+* identifier ^short = "Business identifier for this clinical use."
+* status ^short = "Defines whether this clinical use is draft, active or retired"
 * subject 1..* 
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 

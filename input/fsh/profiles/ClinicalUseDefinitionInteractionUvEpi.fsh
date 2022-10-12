@@ -8,10 +8,20 @@ Description: "ClinicalUseDefinition Interaction (ePI)"
 * insert ClinicalUseDefinitionCommonRules
 * type = #interaction
 
-*  contraindication 0..0
-*  indication 0..0
-*  interaction 1..
-  *  interactant.itemCodeableConcept 1.. // https://gsrs.ncats.nih.gov/ginas/app/beta/#YL5FZ2Y5U1 "METHOTREXATE"
-  *  type ^short = "The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction."
-*  undesirableEffect 0..0
-*  warning 0..0
+* interaction
+  * interactant ^slicing.discriminator[0].type = #value
+  * interactant ^slicing.discriminator[=].path = "system"
+  * interactant ^slicing.rules = #open
+  * interactant contains
+      substance 0.. and
+	   substanceclass 0..
+
+  * interactant[substance]
+    * itemCodeableConcept from VsSubstance
+    * ^short = "The specific substance that interacts."
+    
+  * interactant[substanceclass]
+    * itemCodeableConcept from VsAtcClassification
+    * ^short = "The class of substances that interacts"
+
+  *  type ^short = "The type of the interaction e.g. drug-drug, drug-food, drug-lab."
