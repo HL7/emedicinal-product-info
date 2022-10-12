@@ -53,11 +53,11 @@ Description: "PackagedProductDefinition (ePI)"
   * shelfLifeStorage 
     * ^short = "Shelf Life and storage information."
     * type from VsShelfLifeType (preferred)
-    * period[periodDuration].periodDuration
+    * periodDuration
       * value
       * unit
       * system
-      * code
+      * code from VsUnitofMeasure (preferred)
 
     * period[periodstring].period[x]
     * specialPrecautionsForStorage from VsSpecialPrecautionsForStorage (preferred)
