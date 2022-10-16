@@ -1,5 +1,6 @@
 Instance: Croscarmellosesodium
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Croscarmellose sodium"
 Description: "Croscarmellose sodium"
 Usage: #example
 

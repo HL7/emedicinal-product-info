@@ -1,5 +1,6 @@
 Instance: lactosemonohydrate
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Lactose Monohydrate"
 Description: "Lactose Monohydrate"
 Usage: #example
 

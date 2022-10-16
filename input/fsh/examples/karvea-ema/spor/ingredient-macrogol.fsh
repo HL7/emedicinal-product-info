@@ -1,5 +1,6 @@
 Instance: Macrogol3000
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Macrogol 3000"
 Description: "Macrogol 3000"
 Usage: #example
 

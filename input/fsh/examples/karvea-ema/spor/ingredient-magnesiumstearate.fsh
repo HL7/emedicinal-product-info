@@ -1,5 +1,6 @@
 Instance: Magnesiumstearate
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 

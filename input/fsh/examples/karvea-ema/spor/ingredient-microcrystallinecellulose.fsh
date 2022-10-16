@@ -1,5 +1,6 @@
 Instance: Microcrystallinecellulose
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"
 Usage: #example
 

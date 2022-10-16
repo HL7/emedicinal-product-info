@@ -1,8 +1,8 @@
 Instance: bundlepackageleaflet75
 InstanceOf: BundleUvEpi
+Title: "ePI document Bundle for Karvea 75 mg Package Leaflet"
+Description: "Bundle for Karvea Package Leaflet ePI document"
 Usage: #example
-Title: "Vulcan Humalog FHIR Package Insert EMA v2"
-Description: "Instance of Karvea package leaflet"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier.value = "EU/1/96/007/035"

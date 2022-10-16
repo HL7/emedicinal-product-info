@@ -1,5 +1,6 @@
 Instance: karvea75mgblisterx28
 InstanceOf: MedicinalProductDefinition
+Title: "Medicinal Product Karvea 75 mg tablet in blister pack of 28 tablets"
 Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
 Usage: #example
 

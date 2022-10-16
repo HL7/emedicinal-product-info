@@ -1,5 +1,6 @@
 Instance: compositionkarvea75
 InstanceOf: CompositionUvEpi
+Title: "Composition for Karvea 75 mg Package Leaflet"
 Description: "Package Leaflet"
 Usage: #example
 

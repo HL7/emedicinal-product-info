@@ -1,5 +1,6 @@
 Instance: sanofiaventisgroupe
 InstanceOf: OrganizationUvEpi
+Title: "Sanofi-Aventis Groupe as Marketing Authorization Holder"
 Description: "Marketing Authorization Holder"
 Usage: #example
 

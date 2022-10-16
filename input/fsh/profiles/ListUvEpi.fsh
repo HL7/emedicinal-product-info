@@ -24,7 +24,7 @@ Description: "This profile represents the constraints applied to the List resour
 * title 
   * ^short = "Name of the list" // It should contain the product name ?
 
-* code from VsExampleUseCodesForListIdSystems (extensible)
+* code from VsExampleUseCodesForList (extensible)
 
 * subject 0..0
 
@@ -36,19 +36,19 @@ Description: "This profile represents the constraints applied to the List resour
 * source only Reference(OrganizationUvEpi)
 
 * orderedBy = #entry-date (exactly)
-  * ^example.label = "general"
-  * ^example.valueCode = $list-order#entry-date
+  * ^short = "Entries in the list are ordered by date"
 
 * note
   * text
+    * ^short = "Description or comments about the list's contents"
 
 * entry
-  * flag from VsMarketingStatusIdSystems (extensible)
-    * ^short = "Marketing status of this Medicinal Product"
+  * flag from VsMarketingStatus (extensible)
+    * ^short = "Marketing status of this ePI document"
   * deleted
-    * ^short = "True or False flag on whether this medicinal product is delete."
+    * ^short = "True or False flag on whether this ePI document was deleted."
   * date 
-    * ^short = "Date of Last Authorization for this medicinal product"
+    * ^short = "Date of Last Authorization for this ePI document."
   * item only Reference (BundleUvEpi)
 
 * emptyReason	0..0

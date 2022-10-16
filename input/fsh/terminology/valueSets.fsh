@@ -253,6 +253,7 @@ Description: "Special Precautions For Storage"
 * codes from system $spor-precautionsForStorage-cs // "SPOR Organization (EU)"  to be reviewed
 // add fda codes
 // add PMDA
+
 //==========================
 //ValueSet: VsListOrderCodesIdSystems
 //Id: VsListOrderCodesIdSystems
@@ -263,12 +264,12 @@ Description: "Special Precautions For Storage"
 //* codes from system http://terminology.hl7.org/CodeSystem/list-order
 
 //==========================
-//ValueSet: VsExampleUseCodesForListIdSystems
-//Id: VsExampleUseCodesForListIdSystems
-//Title: "Use Codes for List"
-//Description: "Use Codes for List"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes"
+ValueSet: VsExampleUseCodesForList
+Id: VsExampleUseCodesForList
+Title: "The topic of this list"
+Description: "The topic of this list"
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes"
 
 //==========================
 ValueSet: VsSectionCode

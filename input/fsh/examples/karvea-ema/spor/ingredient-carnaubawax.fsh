@@ -1,5 +1,6 @@
 Instance: carnaubawax
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient carnauba wax"
 Description: "Carnauba wax"
 Usage: #example
 

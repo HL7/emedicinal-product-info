@@ -1,8 +1,8 @@
 Instance: listofproducts
-InstanceOf: List
+InstanceOf: ListUvEpi
+Title: "List of Karvea ePI documents"
+Description: "List of Karvea ePI documents"
 Usage: #example
-Title: "Vulcan Karvea FHIR Package Insert List"
-Description: "List of Karvea package inserts for Connectathon testing"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier.value = "karvea"
@@ -26,6 +26,6 @@ Description: "List of Karvea package inserts for Connectathon testing"
 * entry
   * flag = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
   * date = "2018-06-23T08:38:00+02:00"
-  * item = Reference(karvea75mgblisterx28)
+  * item = Reference(bundlepackageleaflet75) // Reference to the karvea 75mg package leaflet bundle
 
 

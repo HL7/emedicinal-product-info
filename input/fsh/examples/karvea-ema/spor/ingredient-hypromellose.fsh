@@ -1,5 +1,6 @@
 Instance: Hypromellose
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Hypromellose"
 Description: "Hypromellose"
 Usage: #example
 

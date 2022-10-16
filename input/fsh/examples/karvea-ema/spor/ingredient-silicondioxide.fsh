@@ -1,5 +1,6 @@
 Instance: Silicondioxide
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Silicon dioxide"
 Description: "Silicon dioxide"
 Usage: #example
 

@@ -1,6 +1,7 @@
 Instance: manitemkarvea75
 InstanceOf: ManufacturedItemDefinition
-Description: "karvea t5 mg tablet"
+Title: "Manufactured item Karvea 75 mg tabelt"
+Description: "karvea 75 mg tablet"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"

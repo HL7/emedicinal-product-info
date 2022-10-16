@@ -1,5 +1,6 @@
 Instance: titaniumdioxide
 InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Titanium Dioxide"
 Description: "Titanium Dioxide"
 Usage: #example
 
