@@ -18,11 +18,9 @@ Usage: #example
 * legalStatusOfSupply = $spor-rms#100000072084
 * legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
 
-* name.productName = "Karvea 75 mg tablet blister x28"
-
-* name.type = $spor-rms#220000000001
-
 * name
+  * productName = "Karvea 75 mg tablet blister x28"
+  * type = $spor-rms#220000000001
   * type.text = "Full name"
   * usage
     * country = urn:iso:std:iso:3166#DK
@@ -32,12 +30,15 @@ Usage: #example
     * part = "Karvea"
     * type = $spor-rms#220000000002
     * type.text = "Invented name part"
+  * part
     * part = "irbesartan"
     * type = $spor-rms#220000000003
     * type.text = "Scientific name part"
+  * part
     * part = "75 mg"
     * type = $spor-rms#220000000004
     * type.text = "Strength part"
+  * part
     * part = "tablet"
     * type = $spor-rms#220000000005
     * type.text = "Pharmaceutical dose form part"
