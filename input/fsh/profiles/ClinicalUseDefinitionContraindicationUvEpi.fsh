@@ -8,6 +8,5 @@ Description: "ClinicalUseDefinition Contraindication (ePI)"
 * type = #contraindication
 
 *  contraindication 1..
-  * diseaseSymptomProcedure
-    * concept from VsMeddra (preferred)
+  * diseaseSymptomProcedure from VsMeddra (preferred)
 
