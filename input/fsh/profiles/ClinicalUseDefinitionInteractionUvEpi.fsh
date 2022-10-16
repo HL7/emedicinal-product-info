@@ -17,10 +17,12 @@ Description: "ClinicalUseDefinition Interaction (ePI)"
 	   substanceclass 0..
 
   * interactant[substance]
+    * item[x]
     * itemCodeableConcept from VsSubstance (preferred)
     * ^short = "The specific substance that interacts."
     
   * interactant[substanceclass]
+    * item[x]
     * itemCodeableConcept from VsAtcClassification (preferred)
     * ^short = "The class of substances that interacts"
 

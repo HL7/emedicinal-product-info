@@ -8,6 +8,5 @@ Description: "ClinicalUseDefinition Indication (ePI)"
 * type = #indication
 
 *  indication 1..
-  * diseaseSymptomProcedure
-    * concept from VsMeddra (preferred)
+  * diseaseSymptomProcedure from VsMeddra (preferred)
 
