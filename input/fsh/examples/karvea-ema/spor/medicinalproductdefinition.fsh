@@ -26,19 +26,19 @@ Usage: #example
     * country = urn:iso:std:iso:3166#DK
     * jurisdiction = urn:iso:std:iso:3166#DK
     * language = urn:ietf:bcp:47#en
-  * part
+  * part[ProprietaryNamePart]
     * part = "Karvea"
     * type = $spor-rms#220000000002
     * type.text = "Invented name part"
-  * part
+  * part[Non-proprietaryNamePart]
     * part = "irbesartan"
     * type = $spor-rms#220000000003
     * type.text = "Scientific name part"
-  * part
+  * part[StrengthPart]
     * part = "75 mg"
     * type = $spor-rms#220000000004
     * type.text = "Strength part"
-  * part
+  * part[PharmaceuticalDoseFormPart]
     * part = "tablet"
     * type = $spor-rms#220000000005
     * type.text = "Pharmaceutical dose form part"
