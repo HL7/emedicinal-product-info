@@ -12,7 +12,7 @@ Usage: #example
 
 * type = $spor-rms#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
-* name = "sanofi-aventis groupe"
+* name = "Sanofi-Aventis Groupe"
 
 * contact
   * address

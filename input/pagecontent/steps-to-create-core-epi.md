@@ -2,36 +2,7 @@
 Create the Core ePI document by creating and then bundling these FHIR resources in the order described in section 7. 
 
 NOTE: 
-- National Profiles can be built using the Core FHIR ePI profile as is; or they can use a subset of resources and relationships.
-
-The following synthetic medicinal product data is used to throughout this section as an example of common scenarios. This is not an exhaustive list of medicinal product scenarios.
-
-**Example 1 - Blister pack with a solid dosage form**
-
-|Medicinal Product Identifier (MPID)| Invented Name | Strength | Dosage Form | Route of Administration | Primary Packaging  | Pack Size |
-|--|--|--|--|--|--|--|
-| 123 | Drug X | 30 mg  | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 42 tablets |
-| 101 | Drug X | 120 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 90 tablets |
-
-**Example 2 - Pre-filled syringe**
-
-|Medicinal Product Identifier (MPID)| Invented Name | Strength | Dosage Form | Route of Administration | Primary Packaging  | Pack Size |
-|--|--|--|--|--|--|--|
-| 123 | Drug X | 30 mg  | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 42 tablets |
-
-**Example 3 - Kit with an injection, powder, lyophilized, for solution**
-
-|Medicinal Product Identifier (MPID)| Invented Name | Strength | Dosage Form | Route of Administration | Primary Packaging  | Pack Size |
-|--|--|--|--|--|--|--|
-| 123 | Drug X | 30 mg  | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 42 tablets |
-| 101 | Drug X | 120 mg | Gastro -resistant tablet | Oral use | Blister (PVC/PVDC - alu) | 90 tablets |
-
-Kit 
-Part 1 - Vial with powder
-
-
-Part 2 - Syringe
-
+- National Profiles can be built using the Core FHIR ePI profile as is; or they can use a subset of these resources and relationships.
 
 #### Create Organization resource(s) 
 Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with the ePI: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
@@ -42,6 +13,7 @@ Refer to the [Organization profile](StructureDefinition-Organization-uv-epi.html
   <img style="padding-top:0;padding-bottom:0" src="step1.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Organization</figcaption>
 </figure>
+
 
 #### Create Substance Definition resource(s) 
 Using the Core ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient associated with the authorized product(s) in this ePI.
@@ -54,6 +26,7 @@ Refer to the [SubstanceDefinition Profile](StructureDefinition-SubstanceDefiniti
   <img style="padding-top:0;padding-bottom:0" src="step2.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Substance</figcaption>
 </figure>
+
 
 #### Create Manufactured Item Definition resource(s) 
 The manufactured item describes the medicinal product as the dosage form contained in its primary package. For example, a powder in a vial and a diluent in another vial are packaged together in a kit. The powder is one manufactured item and the diluent is a second manufactured item.  
@@ -71,6 +44,7 @@ Refer to [ManufacturedItemDefinition Profile](StructureDefinition-ManufacturedIt
   <figcaption>Create Manufactured Item</figcaption>
 </figure>
 
+
 #### Create Ingredient resource(s) 
 Using the Core ePI Profile as a template, complete one Ingredient resource for each active ingredient and each excipient that make up each manufactured item associated with the authorized product(s) in this ePI. 
 
@@ -84,6 +58,7 @@ Refer to [Ingredient](StructureDefinition-Ingredient-uv-epi.html) for detail.
   <img style="padding-top:0;padding-bottom:0" src="step4.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Ingredient</figcaption>
 </figure>
+
 
 #### Create Medicinal Product Definition resource(s) 
 Using the FHIR ePI Profile as a template, complete one MedicinalProductDefinition resource for each presentation of the medicinal product(s) associated with the authorized product(s) in this ePI. 
@@ -105,6 +80,7 @@ Refer to [MedicinalProductDefinition Profile](StructureDefinition-MedicinalProdu
   <figcaption>Create Medicinal Product</figcaption>
 </figure>
 
+
 #### Create Administrable Product Definition resource(s) 
 The administrable product describes the medicinal product in the dosage form ready for administration to the patient (after any mixing of multiple components or transformations has been performed). This is different from the manufactured item which described the medicinal product as the dosage form in the primary packaging and before any mixing or transformation. For example, a powder in a vial and a diluent in a vial are packaged together. The combined solution, made by mixing the powder and diluent, is the administrable product since that is the dosage form ready for administration to the patient.  
  
@@ -123,16 +99,10 @@ Refer to [AdministrableProductDefinition Profile](StructureDefinition-Administra
   <figcaption>Create Administrable Product</figcaption>
 </figure>
 
+
 #### Create Packaged Product Definition resource(s) 
 
 Using the Core ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation associated with the authorized product(s) in this ePI. 
-
-Example 1 - One bottle in one carton
-
-Example 2 - Two blisters in one carton
-
-Example 3 - Kit with a vial and a syringe
-
 
 Create a reference from each PackagedProductDefinition resource to the corresponding MedicinalProductDefinition resource for this package. 
 
@@ -144,6 +114,7 @@ Refer to [PackagedProductDefinition Profile](StructureDefinition-PackagedProduct
   <img style="padding-top:0;padding-bottom:0" src="step7.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Packaged Product</figcaption>
 </figure>
+
 
 #### Create Clinical Use Definition resource(s) – Contraindication 
 Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each contraindication.  
@@ -157,6 +128,7 @@ Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefiniti
   <figcaption>Create Clinical Use</figcaption>
 </figure>
 
+
 #### Create Clinical Use Definition resource(s) - Indication 
 Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Indication. 
 
@@ -168,6 +140,7 @@ Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefiniti
   <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Clinical Use - Indication</figcaption>
 </figure>
+
 
 #### Create Clinical Use Definition resource - Interaction 
 Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Interaction. 
@@ -181,6 +154,7 @@ Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefiniti
   <figcaption>Create Clinical Use - Interaction</figcaption>
 </figure>
 
+
 #### Create Clinical Use Definition resource - Undesirable Effect 
 Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Undesirable Effect. 
 
@@ -193,6 +167,7 @@ Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefiniti
   <figcaption>Create Clinical Use - undesireable effect</figcaption>
 </figure>
 
+
 #### Create Clinical Use Definition resource - Warning 
 Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Warning. 
 
@@ -204,6 +179,7 @@ INSERT reference to the Profile page.
   <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Clinical Use - warning</figcaption>
 </figure>
+
 
 #### Create Regulated Authorization resource 
 Using the Core ePI Profile as a template, complete one RegulatedAuthorization resource for each medicinal product associated with this ePI. For example, if there are four medicinal products then there will be four RegulatedAuthorization resources. 
@@ -222,6 +198,7 @@ NOTE:
   <figcaption>Create Regulated Authorization</figcaption>
 </figure>
 
+
 #### Create Binary resource 
 Convert each image used in the ePI to Base64 (e.g., images used as figures; the chemical structure of the active ingredient). 
 
@@ -235,6 +212,7 @@ Refer to [Binary Profile](http://build.fhir.org/binary.html) for detail.
   <img style="padding-top:0;padding-bottom:0" src="step14.png" alt="ePI Resource Relationship"/>
   <figcaption>Create Binary</figcaption>
 </figure>
+
 
 #### Create Composition resource 
 The composition captures all section headings, sub-section headings and narrative text/narrative content (e.g., paragraphs, tables, bulleted lists) in the ePI.
@@ -261,6 +239,7 @@ Refer to [Composition Profile](StructureDefinition-Composition-uv-epi.html) for 
   <figcaption>Create Composition</figcaption>
 </figure>
 
+
 ### Step 2: Create Bundle 
 The bundle is used to gather together the resources needed to create a unique ePI document. E.g., one bundle for the health care practitioner ePI; a second bundle for the patient insert ePI; a third bundle for the pack label ePI document.
 
@@ -285,31 +264,12 @@ Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.
   <figcaption>Create Bundle </figcaption>
 </figure>
 
-### Step 3: Create List
 
+### Step 3: Create List (of ePIs)
+The List of ePIs is ued to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step17.png" alt="ePI Resource Relationship"/>
   <figcaption>Create List</figcaption>
 </figure>
 
-### Sample ePI data 
-European Union ePI example data
-- Centrally Authorized Product (CAP)
-    - Summary of Product Characteristics (SmPC)
-    - Package Leaflet
-- Nationally Authorized Product (NAP)
-    - Summary of Product Characteristics (SmPC)
-    - Package Leaflet
-
-United States ePI example data
-- Prescription Drug Product Label
-
-Japanese ePI example data
-- Package Insert (JPI)
-
-
-
-
-INSERT a reference to sample #1 and sample #2 
-INSERT consider using Monuril as an example since it is used in the UNICOM example 

@@ -1,5 +1,5 @@
 Instance: manitemkarvea75
-InstanceOf: ManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Karvea 75 mg tabelt"
 Description: "karvea 75 mg tablet"
 Usage: #example

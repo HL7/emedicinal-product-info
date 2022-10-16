@@ -1,5 +1,5 @@
 Instance: authorizationkarvea75
-InstanceOf: RegulatedAuthorization
+InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for Karvea 75 mg tablets"
 Description: "Regulated Authorization"
 Usage: #example

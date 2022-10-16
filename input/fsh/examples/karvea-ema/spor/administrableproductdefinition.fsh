@@ -1,5 +1,5 @@
 Instance: adminproductkarvea75
-InstanceOf: AdministrableProductDefinition
+InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Karvea 75mg tablet administrable product"
 Description: "Karvea 75 mg tablet"
 Usage: #example
