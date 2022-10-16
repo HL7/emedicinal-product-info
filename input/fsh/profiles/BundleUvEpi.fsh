@@ -4,6 +4,10 @@ Id: Bundle-uv-epi
 Title: "Bundle - ePI"
 Description: "Medicinal product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide."
 * ^purpose = "This profile represents the constraints applied to the Bundle resource used to create an Electronic Product Information (ePI) document."
+ 
+* obeys bdl-epi-1
+* . ^short = "Electronic Product Information Bundle Document"
+* . ^definition = "Electronic Product Information Bundle Document. A container for the collection of resources that make up the ePI document."
 
 * identifier 1.. 
   * ^short = "Persistent identifier for the bundle"
@@ -38,6 +42,7 @@ Description: "Medicinal product information is a pivotal source of regulated and
   * resource 1..
 * entry contains
     composition 1..1 and
+  list 0.. and
 	organization 0.. and
 	authorization 0.. and
 	medicinalProduct 0.. and
@@ -50,6 +55,7 @@ Description: "Medicinal product information is a pivotal source of regulated and
 	binary 0..
 	
 * entry[composition].resource  1..
+* entry[list].resource 1..
 * entry[organization].resource 	1..
 * entry[authorization].resource 		1..
 * entry[medicinalProduct].resource 		1..
@@ -62,6 +68,7 @@ Description: "Medicinal product information is a pivotal source of regulated and
 * entry[binary].resource 1.. 
 	
 * entry[composition].resource only CompositionUvEpi
+* entry[list].resource only ListUvProduct
 * entry[organization].resource only OrganizationUvEpi
 * entry[authorization].resource only RegulatedAuthorizationUvEpi
 * entry[medicinalProduct].resource only MedicinalProductDefinitionUvEpi

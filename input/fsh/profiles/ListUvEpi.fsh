@@ -1,7 +1,7 @@
-Profile: ListUvEpi
+Profile: ListUvEpiDocuments
 Parent: List
-Id: List-uv-epi
-Title: "List - ePI"
+Id: List-uv-EpiDocuments
+Title: "List - ePI documents"
 Description: "This profile represents the constraints applied to the List resource by the Electronic Product Information (ePI) FHIR Implementation Guide."
 * ^purpose = "An electronic product information (ePI) is authorised, statutory product information for medicines (i.e. summary of product characteristics, package leaflet and labelling) in a semi-structured format created using the common EU electronic standard."
 * . ^short = "Electronic Product Information List"
@@ -10,8 +10,8 @@ Description: "This profile represents the constraints applied to the List resour
 * identifier 1..
   * system 1..
   * value 1..
-  * ^short = "Unique identifier only for this list of authorized products associated with this ePI"
-  * ^definition = "Identifier for this list of all authorized products associated with this ePI."
+  * ^short = "Unique identifier only for this list of ePI documents associated with this medicinal product"
+  * ^definition = "Unique identifier only for this list of ePI documents associated with this medicinal product"
 
 * status
   * ^example.label = "general" 
@@ -22,7 +22,7 @@ Description: "This profile represents the constraints applied to the List resour
   * ^example.valueCode = #working
 
 * title 
-  * ^short = "Name of the list" // It should contain the product name ?
+  * ^short = "Name for this list of medicinal products" // It should contain the product name ?
 
 * code from VsExampleUseCodesForList (extensible)
 
@@ -44,11 +44,11 @@ Description: "This profile represents the constraints applied to the List resour
 
 * entry
   * flag from VsMarketingStatus (extensible)
-    * ^short = "Marketing status of this ePI document"
+    * ^short = "Marketing status of this medicinal product"
   * deleted
-    * ^short = "True or False flag on whether this ePI document was deleted."
+    * ^short = "True or False flag on whether this medicinal product was deleted."
   * date 
-    * ^short = "Date of Last Authorization for this ePI document."
+    * ^short = "Date of Last Authorization for this medicinal product."
   * item only Reference (BundleUvEpi)
 
 * emptyReason	0..0

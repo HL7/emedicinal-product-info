@@ -1,7 +1,7 @@
-Instance: listofKarveaEpiDocuments
-InstanceOf: ListUvEpi
-Title: "List of Karvea ePI documents"
-Description: "List of Karvea ePI documents"
+Instance: listofKarveaProducts
+InstanceOf: ListUvProduct
+Title: "List of Karvea medicinal products"
+Description: "List of medicinal products"
 Usage: #example
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
@@ -11,7 +11,7 @@ Usage: #example
 
 * mode = #working
 
-* title = "List of all authorized Karvea ePI documents"
+* title = "List of all authorized Karvea medicinal products"
 
 * code = #worklist
 
@@ -26,6 +26,6 @@ Usage: #example
 * entry
   * flag = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
   * date = "2018-06-23T08:38:00+02:00"
-  * item = Reference(bundlepackageleaflet75) // Reference to the karvea 75mg package leaflet bundle
+  * item = Reference(karvea75mgblisterx28) // Reference to the karvea 75mg package medicinal product
 
 

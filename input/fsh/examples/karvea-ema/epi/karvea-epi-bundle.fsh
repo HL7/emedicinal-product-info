@@ -13,5 +13,5 @@ Usage: #example
 * entry[+].resource = compositionkarvea75
 
 // List of Products
-* entry[+].resource = listofKarveaEpiDocuments
+* entry[+].resource = listofKarveaProducts
 
