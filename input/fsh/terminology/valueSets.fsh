@@ -203,6 +203,7 @@ Title: "Product Name Part Type"
 Description: "Product Name Part Type"
 * ^experimental = false
 * codes from system $spor-productNamePartType-cs
+
 //==========================
 ValueSet: VsPartType
 Id: VsPartType
