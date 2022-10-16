@@ -1,4 +1,4 @@
-Instance: listofproducts
+Instance: listofKarveaEpiDocuments
 InstanceOf: ListUvEpi
 Title: "List of Karvea ePI documents"
 Description: "List of Karvea ePI documents"
@@ -11,9 +11,9 @@ Usage: #example
 
 * mode = #working
 
-* title = "List of all authorized Karvea presentations"
+* title = "List of all authorized Karvea ePI documents"
 
-* code = http://hl7.org/fhir/ValueSet/list-example-codes/#worklist
+* code = #worklist
 
 * date = "2018-06-23T08:38:00+02:00"
 
