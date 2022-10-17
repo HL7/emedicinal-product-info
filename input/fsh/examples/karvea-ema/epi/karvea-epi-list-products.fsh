@@ -5,7 +5,7 @@ Description: "List of medicinal products"
 Usage: #example
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier.value = "karvea"
+* identifier.value = "cb8b2201-5db4-44e8-b7fd-31703b1ae0de"
 
 * status = #current
 

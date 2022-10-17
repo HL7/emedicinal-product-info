@@ -11,7 +11,8 @@ Usage: #example
 
 // Composition
 * entry[+].resource = compositionkarvea75
+* entry[0].fullUrl = "urn:uuid:0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
 // List of Products
 * entry[+].resource = listofKarveaProducts
-
+* entry[0].fullUrl = "urn:uuid:cb8b2201-5db4-44e8-b7fd-31703b1ae0de"
