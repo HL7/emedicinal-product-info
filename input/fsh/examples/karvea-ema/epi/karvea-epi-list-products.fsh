@@ -13,7 +13,7 @@ Usage: #example
 
 * title = "List of all authorized Karvea medicinal products"
 
-* code = #worklist
+* code = $spor-rms#200000001111 
 
 * date = "2018-06-23T08:38:00+02:00"
 
