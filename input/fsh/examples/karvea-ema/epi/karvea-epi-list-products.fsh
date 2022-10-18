@@ -27,5 +27,7 @@ Usage: #example
   * flag = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
   * date = "2018-06-23T08:38:00+02:00"
   * item = Reference(karvea75mgblisterx28) // Reference to the karvea 75mg package medicinal product
+    * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
+    * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 
 

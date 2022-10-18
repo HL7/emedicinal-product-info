@@ -5,7 +5,7 @@ Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
 Usage: #example
 
 * identifier.system = $spor-prod
-* identifier.value = "123456"
+* identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
 * type.text = "Medicinal Product"
