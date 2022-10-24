@@ -35,7 +35,6 @@ Description: "Medicinal product information is a pivotal source of regulated and
 * entry ^definition = "An entry resource included in the ePI document bundle resource."
 * entry ^comment = "Must contain the ePI Composition as the first entry (only a single Composition resource instance may be included).  Additional constraints are specified in the ePI Composition profile."
 * entry
-  * fullUrl 0..
   * search ..0
   * request ..0
   * response ..0
