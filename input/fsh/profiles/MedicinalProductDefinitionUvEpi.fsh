@@ -71,7 +71,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
       * ^short = "International Non-proprietary Name (INN) of this product"
       * ^example.label = "Example INN"
       * ^example.valueString = "Insulin lispro"
-    * type from VsProductNamePartType (preferred)
+    * type from VsNonproprietaryNamePart (preferred)
   * part[StrengthPart]
     * part
       * ^short = "strength expressed as the quantity of active ingredient"
@@ -83,7 +83,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
       * ^short = "Physical manifestation of a product as intended to be delivered to the patient."
       * ^example.label = "Example dose form"
       * ^example.valueString = "solution for injection"
-    * type from VsProductNamePartType (preferred)
+    * type from VsPharmaceuticalDoseFormPart (preferred)
 
   * usage
     * country from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2
