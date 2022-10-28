@@ -399,3 +399,11 @@ Title: "Pharmaceutical Dose Form of the medicinal product"
 Description: "Pharmaceutical Dose Form of the medicinal product"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed
+
+//==========================
+ValueSet: VsStrengthPart
+Id: VsStrengthPart
+Title: "Strength of the medicinal product name"
+Description: "Strength of the medicinal product name"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
