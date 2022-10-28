@@ -53,7 +53,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 	// * coding 1.. 
   * part ^slicing.discriminator[0].type = #value
   * part ^slicing.discriminator[=].path = "system"
-  * part ^slicing.rules = #open
+  * part ^slicing.rules = #openAtEnd
   * part contains
     ProprietaryNamePart 0.. and
   Non-proprietaryNamePart 0.. and
