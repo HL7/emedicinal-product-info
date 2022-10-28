@@ -65,7 +65,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
       * ^short = "brand name of this product"
       * ^example.label = "Example brand name"
       * ^example.valueString = "Humalog Mix50"
-    * type from VsProductNamePartType (preferred)
+    * type from VsProprietaryNamePart (preferred)
   * part[Non-proprietaryNamePart]
     * part
       * ^short = "International Non-proprietary Name (INN) of this product"
@@ -77,7 +77,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
       * ^short = "strength expressed as the quantity of active ingredient"
       * ^example.label = "Example quantity"
       * ^example.valueString = "100 units/ml"
-    * type from VsProductNamePartType (preferred)
+    * type from VsStrengthPart (preferred)
   * part[PharmaceuticalDoseFormPart]
     * part
       * ^short = "Physical manifestation of a product as intended to be delivered to the patient."
