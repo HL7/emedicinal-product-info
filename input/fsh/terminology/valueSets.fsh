@@ -385,6 +385,14 @@ Description: "MedDRA Terms for clinical diseases and symptoms"
 * $uri#https://placeholder.com // to be reviewed
 
 //==========================
+ValueSet: VsProprietaryNamePart
+Id: VsProprietaryNamePart
+Title: "Proprietary Name of the medicinal product"
+Description: "Proprietary Name of the medicinal product"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+//==========================
 ValueSet: VsNonproprietaryNamePart
 Id: VsNonproprietaryNamePart
 Title: "Non-proprietary Name of the active ingredient(s)"
@@ -393,17 +401,17 @@ Description: "Non-proprietary Name of the active ingredient(s)"
 * $uri#https://placeholder.com // to be reviewed
 
 //==========================
-ValueSet: VsPharmaceuticalDoseFormPart
-Id: VsPharmaceuticalDoseFormPart
-Title: "Pharmaceutical Dose Form of the medicinal product"
-Description: "Pharmaceutical Dose Form of the medicinal product"
-* ^experimental = false
-* $uri#https://placeholder.com // to be reviewed
-
-//==========================
 ValueSet: VsStrengthPart
 Id: VsStrengthPart
 Title: "Strength of the medicinal product name"
 Description: "Strength of the medicinal product name"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+//==========================
+ValueSet: VsPharmaceuticalDoseFormPart
+Id: VsPharmaceuticalDoseFormPart
+Title: "Pharmaceutical Dose Form of the medicinal product"
+Description: "Pharmaceutical Dose Form of the medicinal product"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed
