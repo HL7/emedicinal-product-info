@@ -9,6 +9,7 @@ RuleSet:  PropertyRulesSet
     flavor 0..*  and
     score  0..* and
     shape  0..* and
+    surfaceform 0..* and
     //quantity
     size  0..* and
     //data
@@ -20,8 +21,10 @@ RuleSet:  PropertyRulesSet
 * property[flavor].value[x]     only CodeableConcept
 * property[score].value[x]     only CodeableConcept
 * property[shape].value[x]     only CodeableConcept
+* property[surfaceform].value[x]     only CodeableConcept
 * property[size].value[x]     only Quantity
 * property[image].value[x]     only Attachment
+* property[imprint].value[x]     only CodeableConcept or Attachment
 
 // to be checked
 * property[imprint].valueCodeableConcept.coding 0..0 
@@ -38,6 +41,9 @@ RuleSet:  PropertyRulesSet
 
 * property[shape].type   = $medicationknowledge-characteristic#shape
 * property[shape].value[x] from VsPropertyShape (preferred)
+
+* property[surfaceform].type   = CodeSystemGravitate#surfaceform
+* property[surfaceform].value[x] from VsPropertySurfaceForm (preferred)
 
 * property[size].type    = $medicationknowledge-characteristic#size
 

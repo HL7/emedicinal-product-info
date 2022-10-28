@@ -329,6 +329,14 @@ Description: "Shape of the product"
 * $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54454 // to be reviewed
 
 //==========================
+ValueSet: VsPropertySurfaceForm
+Id: VsPropertySurfaceForm
+Title: "Surface form of the product"
+Description: "Surface form of the product"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+//==========================
 ValueSet: VsSubstance
 Id: VsSubstance
 Title: "Substances"
