@@ -115,7 +115,7 @@ Description: "Legal Status for the Supply"
 
 //==========================
 ValueSet: VsAdditionalMonitoringIndicator
-Id: VsAdditionalMonitoringIndicator
+Id: additionalMonitoringIndicator
 Title: "Additional Monitoring Indicator"
 Description: "Additional Monitoring Indicator"
 * ^experimental = false
@@ -147,7 +147,7 @@ Description: "Marketing Status"
 
 //==========================
 ValueSet: VsAuthorizationStatus
-Id: VsAuthorizationStatus
+Id: authorizationStatus
 Title: "Authorization Status"
 Description: "Authorization Status"
 * ^experimental = false
@@ -155,15 +155,15 @@ Description: "Authorization Status"
 
 //==========================
 ValueSet: VsSecondaryPrimaryPackType
-Id: VsSecondaryPrimaryPackType
+Id: secondaryPrimaryPackType
 Title: "Pack Type"
 Description: "Pack Type"
 * ^experimental = false
 * codes from system $spor-packType-cs
 
 //==========================
-ValueSet: Vs-package-type
-Id: VsPackageType
+ValueSet: VsPackageType
+Id: packageType
 Title: "High level Pack Type"
 Description: "High level type of pack; e.g., medicinal product pack, sample pack, shipping container."
 * ^experimental = false
@@ -171,7 +171,7 @@ Description: "High level type of pack; e.g., medicinal product pack, sample pack
 
 //==========================
 ValueSet: VsCountry
-Id: VsCountry
+Id: country
 Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
 * ^experimental = false
@@ -206,7 +206,7 @@ Description: "Product Name Part Type"
 
 //==========================
 ValueSet: VsPartType
-Id: VsPartType
+Id: partType
 Title: "Part Type"
 Description: "Part Type"
 * ^experimental = false
@@ -223,7 +223,7 @@ Description: "Part Type"
 
 //==========================
 ValueSet: VsProductConfidentialityIdSystems
-Id: VsProductConfidentialityIdSystems
+Id: productConfidentialityIdSystems
 Title: "Product Confidentiality"
 Description: "Product Confidentiality"
 * ^experimental = false
@@ -231,7 +231,7 @@ Description: "Product Confidentiality"
 
 //==========================
 ValueSet: VsPackageMaterial
-Id: VsPackageMaterial
+Id: packageMaterial
 Title: "Package Material"
 Description: "Package Material"
 * ^experimental = false
@@ -239,7 +239,7 @@ Description: "Package Material"
 
 //==========================
 ValueSet: VsShelfLifeType
-Id: VsShelfLifeType
+Id: shelfLifeType
 Title: "Shelf Life Type"
 Description: "Shelf Life Type"
 * ^experimental = false
@@ -247,7 +247,7 @@ Description: "Shelf Life Type"
 
 //==========================
 ValueSet: VsSpecialPrecautionsForStorage
-Id: VsSpecialPrecautionsForStorage
+Id: specialPrecautionsForStorage
 Title: "Special Precautions For Storage"
 Description: "Special Precautions For Storage"
 * ^experimental = false
@@ -266,7 +266,7 @@ Description: "Special Precautions For Storage"
 
 //==========================
 ValueSet: VsExampleUseCodesForList
-Id: VsExampleUseCodesForList
+Id: exampleUseCodesForList
 Title: "The topic of this list"
 Description: "The topic of this list"
 * ^experimental = false
@@ -274,7 +274,7 @@ Description: "The topic of this list"
 
 //==========================
 ValueSet: VsSectionCode
-Id: VsSectionCode
+Id: sectionCode
 Title: "Section Codes"
 Description: "Section Codes"
 * ^experimental = false
@@ -282,7 +282,7 @@ Description: "Section Codes"
 
 //==========================
 ValueSet: VsUnitofMeasure
-Id: VsUnitofMeasure
+Id: unitofMeasure
 Title: "Units of Measure"
 Description: "Units of Measure"
 * ^experimental = false
@@ -290,7 +290,7 @@ Description: "Units of Measure"
 
 //==========================
 ValueSet: VsUnitofPresentation
-Id: VsUnitofPresentation
+Id: unitofPresentation
 Title: "Units of Presentation"
 Description: "Units of Presentation"
 * ^experimental = false
@@ -298,7 +298,7 @@ Description: "Units of Presentation"
 
 //==========================
 ValueSet: VsPropertyColor
-Id: VsPropertyColor
+Id: propertyColor
 Title: "Color of the product"
 Description: "Color of the product"
 * ^experimental = false
@@ -306,7 +306,7 @@ Description: "Color of the product"
 
 //==========================
 ValueSet: VsPropertyFlavor
-Id: VsPropertyFlavor
+Id: propertyFlavor
 Title: "Flavor of the product"
 Description: "Flavor of the product"
 * ^experimental = false
@@ -314,7 +314,7 @@ Description: "Flavor of the product"
 
 //==========================
 ValueSet: VsPropertyScore
-Id: VsPropertyScore
+Id: propertyScore
 Title: "Score on the product"
 Description: "Score on the product"
 * ^experimental = false
@@ -322,7 +322,7 @@ Description: "Score on the product"
 
 //==========================
 ValueSet: VsPropertyShape
-Id: VsPropertyShape
+Id: propertyShape
 Title: "Shape of the product"
 Description: "Shape of the product"
 * ^experimental = false
@@ -330,7 +330,7 @@ Description: "Shape of the product"
 
 //==========================
 ValueSet: VsSubstance
-Id: VsSubstance
+Id: substance
 Title: "Substances"
 Description: "Substances"
 * ^experimental = false
@@ -338,7 +338,7 @@ Description: "Substances"
 
 //==========================
 ValueSet: VsRoleClassIngredientEntity
-Id: VsRoleClassIngredientEntity
+Id: roleClassIngredientEntity
 Title: "Ingredient Role; e.g., inactive, active base, active moiety"
 Description: "Ingredient Role; e.g., inactive, active base, active moiety"
 * ^experimental = false
@@ -346,7 +346,7 @@ Description: "Ingredient Role; e.g., inactive, active base, active moiety"
 
 //==========================
 ValueSet: VsDataCarrierIdSystem
-Id: VsDataCarrierIdSystem
+Id: dataCarrierIdSystem
 Title: "Data Carrier Identifiers"
 Description: "Listing of identifiers for Data Carriers"
 * ^experimental = false
@@ -354,7 +354,7 @@ Description: "Listing of identifiers for Data Carriers"
 
 //==========================
 ValueSet: VsCaseIdSystem
-Id: VsCaseIdSystem
+Id: caseIdSystem
 Title: "Case System Identifiers"
 Description: "Case System Identifiers"
 * ^experimental = false
@@ -362,7 +362,7 @@ Description: "Case System Identifiers"
 
 //==========================
 ValueSet: VsRegulatoryActivityType
-Id: VsRegulatoryActivityType
+Id: regulatoryActivityType
 Title: "Regulatory Activity Type"
 Description: "Regulatory Activity Type; e.g., MAA"
 * ^experimental = false
@@ -370,7 +370,7 @@ Description: "Regulatory Activity Type; e.g., MAA"
 
 //==========================
 ValueSet: VsGeneralStatus
-Id: VsGeneralStatus
+Id: generalStatus
 Title: "General Status used across ePI resources"
 Description: "General Status used across ePI resources"
 * ^experimental = false
@@ -378,7 +378,7 @@ Description: "General Status used across ePI resources"
 
 //==========================
 ValueSet: VsMeddra
-Id: VsMeddra
+Id: meddra
 Title: "MedDRA Terms for clinical diseases and symptoms"
 Description: "MedDRA Terms for clinical diseases and symptoms"
 * ^experimental = false
@@ -386,7 +386,7 @@ Description: "MedDRA Terms for clinical diseases and symptoms"
 
 //==========================
 ValueSet: VsProprietaryNamePart
-Id: VsProprietaryNamePart
+Id: proprietaryNamePart
 Title: "Proprietary Name of the medicinal product"
 Description: "Proprietary Name of the medicinal product"
 * ^experimental = false
@@ -394,7 +394,7 @@ Description: "Proprietary Name of the medicinal product"
 
 //==========================
 ValueSet: VsNonproprietaryNamePart
-Id: VsNonproprietaryNamePart
+Id: nonproprietaryNamePart
 Title: "Non-proprietary Name of the active ingredient(s)"
 Description: "Non-proprietary Name of the active ingredient(s)"
 * ^experimental = false
@@ -402,7 +402,7 @@ Description: "Non-proprietary Name of the active ingredient(s)"
 
 //==========================
 ValueSet: VsStrengthPart
-Id: VsStrengthPart
+Id: strengthPart
 Title: "Strength of the medicinal product name"
 Description: "Strength of the medicinal product name"
 * ^experimental = false
@@ -410,7 +410,7 @@ Description: "Strength of the medicinal product name"
 
 //==========================
 ValueSet: VsPharmaceuticalDoseFormPart
-Id: VsPharmaceuticalDoseFormPart
+Id: pharmaceuticalDoseFormPart
 Title: "Pharmaceutical Dose Form of the medicinal product"
 Description: "Pharmaceutical Dose Form of the medicinal product"
 * ^experimental = false
