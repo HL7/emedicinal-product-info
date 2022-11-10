@@ -49,5 +49,8 @@ RuleSet:  PropertyRulesSet
 
 * property[image].type   = $medicationknowledge-characteristic#image
 * property[image].value[x].data ^short = "base64 version of the product image"
+* property[image].extension contains
+     PropertyOrder named PropertyOrder 0..*
+* property[image].extension[PropertyOrder] 0..1
 
 * property[imprint].type = $medicationknowledge-characteristic#imprintcd 

@@ -12,7 +12,7 @@ Description: "PackagedProductDefinition (ePI)"
 * name ^example.valueString = "3 ml cartridge (glass) in a pre-filled pen"
 * name ^example.label = "name"
 
-* type from Vs-package-type (preferred)
+* type from VsPackageType (preferred)
   * ^short = "A high level category e.g., medicinal product pack, sample pack, shipping container."
 
 * packageFor only Reference(MedicinalProductDefinitionUvEpi)
