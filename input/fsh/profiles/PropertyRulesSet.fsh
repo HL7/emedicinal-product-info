@@ -11,7 +11,8 @@ RuleSet:  PropertyRulesSet
     shape  0..* and
     surfaceform 0..* and
     //quantity
-    size  0..* and
+    sizeheight  0..* and
+    sizewidth  0..* and
     //data
     image  0..* and
     //string
