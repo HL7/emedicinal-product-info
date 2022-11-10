@@ -329,6 +329,14 @@ Description: "Shape of the product"
 * $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54454 // to be reviewed
 
 //==========================
+ValueSet: VsPropertysurfaceshape
+Id: VsPropertysurfaceshape
+Title: "Surface shape of the product"
+Description: "Surface shape of the product; e.g., flat, convex, or concave"
+* ^experimental = false
+* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54454 // to be reviewed
+
+//==========================
 ValueSet: VsSubstance
 Id: substance
 Title: "Substances"
