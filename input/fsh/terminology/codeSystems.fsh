@@ -7,6 +7,7 @@ Description: "Gravitate Health Project Code System. Coded concepts defined for i
 //* ^url = http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate
 
 * #flavor "Flavor" "Placeholder for the Flavor concept"
+* #surfaceform "Surface form" "Placeholder for the Surface form concept"
 
 CodeSystem: CodeSystemUvEPIRrmswi
 Title: "Referentials Management Services CodeSystem"
