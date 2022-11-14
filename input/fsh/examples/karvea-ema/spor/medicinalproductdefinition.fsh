@@ -23,22 +23,22 @@ Usage: #example
   * type = $spor-rms#220000000001
     * text = "Full name"
   
-  * part[ProprietaryNamePart]
+  * part
     * part = "Karvea"
     * type = $spor-rms#220000000002
     * type.text = "Invented name part"
   
-  * part[Non-proprietaryNamePart]
+  * part
     * part = "irbesartan"
     * type = $spor-rms#220000000003
     * type.text = "Scientific name part"
   
-  * part[StrengthPart]
+  * part
     * part = "75 mg"
     * type = $spor-rms#220000000004
     * type.text = "Strength part"
   
-  * part[PharmaceuticalDoseFormPart]
+  * part
     * part = "tablet"
     * type = $spor-rms#220000000005
     * type.text = "Pharmaceutical dose form part"
