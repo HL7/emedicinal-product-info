@@ -11,8 +11,7 @@ RuleSet:  PropertyRulesSet
     shape  0..* and
     surfaceform 0..* and
     //quantity
-    sizeheight  0..* and
-    sizewidth  0..* and
+    size  0..* and
     //data
     image  0..* and
     //string
@@ -23,8 +22,7 @@ RuleSet:  PropertyRulesSet
 * property[score].value[x]     only CodeableConcept
 * property[shape].value[x]     only CodeableConcept
 * property[surfaceform].value[x]     only CodeableConcept
-* property[sizeheight].value[x]     only Quantity
-* property[sizewidth].value[x]     only Quantity
+* property[size].value[x]     only Quantity
 * property[image].value[x]     only Attachment
 * property[imprint].value[x]     only CodeableConcept or Attachment
 
@@ -47,9 +45,7 @@ RuleSet:  PropertyRulesSet
 * property[surfaceform].type   = CodeSystemGravitate#surfaceform
 * property[surfaceform].value[x] from VsPropertySurfaceForm (preferred)
 
-* property[sizeheight].type    = $medicationknowledge-characteristic#sizeheight
-
-* property[sizewidth].type    = $medicationknowledge-characteristic#sizewidth
+* property[size].type    = $medicationknowledge-characteristic#size
 
 * property[image].type   = $medicationknowledge-characteristic#image
 * property[image].value[x].data ^short = "base64 version of the product image"
