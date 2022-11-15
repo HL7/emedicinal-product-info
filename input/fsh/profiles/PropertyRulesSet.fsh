@@ -3,6 +3,7 @@ RuleSet:  PropertyRulesSet
 * property ^slicing.discriminator[0].type = #value
 * property ^slicing.discriminator[=].path = "type"
 * property ^slicing.rules = #open
+* property ^slicing.ordered = true
 * property contains
     // codeableconcept
     color 0..* and
@@ -29,6 +30,7 @@ RuleSet:  PropertyRulesSet
 // to be checked
 * property[imprint].valueCodeableConcept.coding 0..0 
 * property[imprint].valueCodeableConcept.text 1..1
+* property[imprint].type = $medicationknowledge-characteristic#imprintcd 
 
 * property[color].type  = $medicationknowledge-characteristic#color
 * property[color].value[x] from VsPropertyColor (preferred)
@@ -53,4 +55,3 @@ RuleSet:  PropertyRulesSet
      PropertyOrder named PropertyOrder 0..*
 * property[image].extension[PropertyOrder] 0..1
 
-* property[imprint].type = $medicationknowledge-characteristic#imprintcd 
