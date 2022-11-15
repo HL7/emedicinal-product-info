@@ -20,27 +20,27 @@ Usage: #example
 
 * name
   * productName = "Karvea 75 mg tablet blister x28"
-  * type = $spor-rms#220000000001
+  * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
   * part[0]
     * part = "Karvea"
-    * type = $spor-rms#220000000002
+    * type = $spor-InventedNamepartType-cs#220000000002
     * type.text = "Invented name part"
   
   * part[+]
     * part = "irbesartan"
-    * type = $spor-rms#220000000003
+    * type = $spor-NonproductNamePartType-cs#220000000003
     * type.text = "Scientific name part"
   
   * part[+]
     * part = "75 mg"
-    * type = $spor-rms#220000000004
+    * type = $spor-StrengthPartType-cs#220000000004
     * type.text = "Strength part"
   
   * part[+]
     * part = "tablet"
-    * type = $spor-rms#220000000005
+    * type = $spor-PharmaceuticalDoseFormPart-cs#220000000005
     * type.text = "Pharmaceutical dose form part"
   
   * usage
