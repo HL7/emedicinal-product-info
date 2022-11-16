@@ -43,7 +43,7 @@ Description: """The Composition captures the section headings, sub-section headi
 * custodian 
 
 * relatesTo ^short = "Cross-reference to anotherother ePI compositions or ePI document()s)"
-* relatesTo ^definition = "A cross-reference from this ePI's composition to another related Composition or ePI document."
+* relatesTo ^definition = "A crossreference from this ePI's composition to another related Composition or ePI document."
 
 * section 1..
   * ^short = "Level 1 section heading for the whole ePI"
