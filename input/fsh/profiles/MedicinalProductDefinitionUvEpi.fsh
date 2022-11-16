@@ -48,7 +48,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
     * ^example.label = "general"  
     * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3 ml pre-fill"
   
-  * type from VsProductNamePartType (preferred)
+  * type = $spor-productNamePartType-cs#220000000001
   
 	// * coding 1.. 
   * part ^slicing.discriminator[0].type = #pattern
@@ -65,25 +65,25 @@ Description: "Description of the packaged authorized medicinal product(s) associ
       * ^short = "brand name of this product"
       * ^example.label = "Example brand name"
       * ^example.valueString = "Humalog Mix50"
-    * type from VsProprietaryNamePart (required)
+    * type = $spor-productNamePartType-css#220000000002
   * part[Non-proprietaryNamePart]
     * part
       * ^short = "International Non-proprietary Name (INN) of this product"
       * ^example.label = "Example INN"
       * ^example.valueString = "Insulin lispro"
-    * type from VsNonproprietaryNamePart (required)
+    * type = $spor-productNamePartType-cs#220000000003
   * part[StrengthPart]
     * part
       * ^short = "strength expressed as the quantity of active ingredient"
       * ^example.label = "Example quantity"
       * ^example.valueString = "100 units/ml"
-    * type from VsStrengthPart (required)
+    * type = $spor-productNamePartType-cs#220000000004
   * part[PharmaceuticalDoseFormPart]
     * part
       * ^short = "Physical manifestation of a product as intended to be delivered to the patient."
       * ^example.label = "Example dose form"
       * ^example.valueString = "solution for injection"
-    * type from VsPharmaceuticalDoseFormPart (required)
+    * type = $spor-productNamePartType-cs#220000000005
 
   * usage
     * country from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2
