@@ -25,22 +25,22 @@ Usage: #example
   
   * part[0]
     * part = "Karvea"
-    * type = $spor-InventedNamepartType-cs#220000000002
+    * type = $spor-productNamePartType-css#220000000002
     * type.text = "Invented name part"
   
   * part[+]
     * part = "irbesartan"
-    * type = $spor-NonproductNamePartType-cs#220000000003
+    * type = $spor-productNamePartType-cs#220000000003
     * type.text = "Scientific name part"
   
   * part[+]
     * part = "75 mg"
-    * type = $spor-StrengthPartType-cs#220000000004
+    * type = $spor-productNamePartType-cs#220000000004
     * type.text = "Strength part"
   
   * part[+]
     * part = "tablet"
-    * type = $spor-PharmaceuticalDoseFormPart-cs#220000000005
+    * type = $spor-productNamePartType-cs#220000000005
     * type.text = "Pharmaceutical dose form part"
   
   * usage
