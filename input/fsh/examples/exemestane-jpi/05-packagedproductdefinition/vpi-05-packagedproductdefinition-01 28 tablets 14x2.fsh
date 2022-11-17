@@ -1,4 +1,4 @@
-Instance: bb536b04-39f1-4e0a-a723-e9079fd5e994
+Instance: 28pack
 InstanceOf: PackagedProductDefinitionUvEpi
 Description: "28 tablets [14 tablets (PTP) x 2]"
 Usage: #example

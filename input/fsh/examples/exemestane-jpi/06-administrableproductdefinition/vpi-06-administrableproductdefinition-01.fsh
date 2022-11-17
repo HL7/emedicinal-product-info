@@ -1,4 +1,4 @@
-Instance: d43df7b9-7815-4eb5-8350-945e4b77d46b
+Instance: administrableproduct25mg
 InstanceOf: AdministrableProductDefinitionUvEpi
 Description: "Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
@@ -9,7 +9,7 @@ Usage: #example
 * status = #active
 
 //reference to MedicinalProductDefinition: Aromasin (exemestane) Tablets 25 mg
-* formOf = Reference(117616c7-3bcc-4665-8e12-0e93447e679e)
+* formOf = Reference(medicinalproduct25mg)
 
 * administrableDoseForm = $spor-rms#10219000
 * administrableDoseForm.text = "Tablet"

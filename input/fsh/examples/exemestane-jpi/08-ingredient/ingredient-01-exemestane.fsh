@@ -1,4 +1,4 @@
-Instance: 41089f24-89ce-4fda-a038-70f3cd28ab06
+Instance: exemestane
 InstanceOf: IngredientUvEpi
 Description: "EXEMESTANE"
 Usage: #example
@@ -23,4 +23,4 @@ Usage: #example
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
 // Reference to Organization: Manufaturer API
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

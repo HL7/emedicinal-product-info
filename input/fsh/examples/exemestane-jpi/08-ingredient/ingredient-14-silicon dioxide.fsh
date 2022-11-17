@@ -1,4 +1,4 @@
-Instance: 86746372-3005-4ba0-a2d0-bcd0d55e56a0
+Instance: silicondioxide
 InstanceOf: IngredientUvEpi
 Description: "SILICON DIOXIDE"
 Usage: #example
@@ -18,4 +18,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#ETJ7Z6XBU4 "SILICON DIOXIDE"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

@@ -1,4 +1,4 @@
-Instance: 868c0677-e53b-4f0d-a6aa-a7473756b8e9
+Instance: mannitol
 InstanceOf: IngredientUvEpi
 Description: "MANNITOL"
 Usage: #example
@@ -19,4 +19,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#3OWL53L36A "MANNITOL"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

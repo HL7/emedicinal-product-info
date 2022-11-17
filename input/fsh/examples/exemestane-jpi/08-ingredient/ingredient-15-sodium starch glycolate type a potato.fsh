@@ -1,4 +1,4 @@
-Instance: 8d6832f1-7d1d-483b-a0fd-879d531681fb
+Instance: sodiumstarch
 InstanceOf: IngredientUvEpi
 Description: "SODIUM STARCH GLYCOLATE TYPE A POTATO"
 Usage: #example
@@ -18,4 +18,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#5856J3G2A2 "SODIUM STARCH GLYCOLATE TYPE A POTATO"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

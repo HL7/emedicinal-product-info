@@ -15,7 +15,7 @@ Usage: #example
 * description = "White to yellowish white It is a powder of. N ,N -Slightly soluble in dimethylformamide and tetrahydroflan, slightly soluble in methanol and ethanol (95), sparingly soluble in acetonitrile, and practically insoluble in water."
 
  // Reference to Organization: MAH
-* manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer = Reference(organizationmah)
 
 * structure.molecularFormula = "C20H24O2"
 

@@ -1,4 +1,4 @@
-Instance: cbb53556-9c1f-4fa7-b2af-2eea988dee2d
+Instance: titaniumdioxide2
 InstanceOf: IngredientUvEpi
 Description: "TITANIUM DIOXIDE "
 Usage: #example
@@ -18,4 +18,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#15FIX9V2JP "TITANIUM DIOXIDE "
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

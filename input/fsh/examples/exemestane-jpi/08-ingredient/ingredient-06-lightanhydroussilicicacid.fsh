@@ -1,4 +1,4 @@
-Instance: aba217d4-5bc4-4690-b100-401cae4390ed
+Instance: lightanhydroussilicicacid
 InstanceOf: IngredientUvEpi
 Description: "light anhydrous silicic acid"
 Usage: #example
@@ -19,4 +19,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#ETJ7Z6XBU4 "light anhydrous silicic acid"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

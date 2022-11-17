@@ -1,4 +1,4 @@
-Instance: 65bb58dd-b083-4cd3-892f-60fed75967d5
+Instance: polysorbate
 InstanceOf: IngredientUvEpi
 Description: "POLYSORBATE 80"
 Usage: #example
@@ -19,4 +19,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#6OZP39ZG8H "POLYSORBATE 80"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

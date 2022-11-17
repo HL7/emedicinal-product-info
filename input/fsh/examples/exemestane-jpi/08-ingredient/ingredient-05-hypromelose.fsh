@@ -1,4 +1,4 @@
-Instance: fc31fc43-2825-41c6-8757-e1c0cab29712
+Instance: hypromelose
 InstanceOf: IngredientUvEpi
 Description: "HYPROMELLOSE, UNSPECIFIED "
 Usage: #example
@@ -19,4 +19,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#3NXW29V3WO "HYPROMELLOSE, UNSPECIFIED "
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

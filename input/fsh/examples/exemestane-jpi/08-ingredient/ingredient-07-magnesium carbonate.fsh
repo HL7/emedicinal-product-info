@@ -1,4 +1,4 @@
-Instance: 77f5c3de-eeb4-441f-b37b-f66a4a9bfdc7
+Instance: magnesiumcarbonate
 InstanceOf: IngredientUvEpi
 Description: "MAGNESIUM CARBONATE"
 Usage: #example
@@ -18,4 +18,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#0E53J927NA "MAGNESIUM CARBONATE"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

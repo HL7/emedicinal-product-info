@@ -1,4 +1,4 @@
-Instance: 9df66779-105d-4df6-b920-a3d134cec967
+Instance: polyvinylalcohol
 InstanceOf: IngredientUvEpi
 Description: "POLYVINYL ALCOHOL, UNSPECIFIED"
 Usage: #example
@@ -18,4 +18,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#532B59J990 "POLYVINYL ALCOHOL, UNSPECIFIED"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

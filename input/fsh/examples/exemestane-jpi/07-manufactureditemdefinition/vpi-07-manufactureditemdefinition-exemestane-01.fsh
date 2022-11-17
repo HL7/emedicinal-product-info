@@ -1,4 +1,4 @@
-Instance: 7460b712-82ad-4cce-a756-90b0fa04896c
+Instance: manufactureditem25mg
 InstanceOf: ManufacturedItemDefinitionUvEpi
 Description: "Manufactured Item - Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
@@ -16,4 +16,4 @@ Usage: #example
 * unitOfPresentation.text = "Tablet"
 
  // Reference to Organization: Manufacturer
-* manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer = Reference(organizationmah)

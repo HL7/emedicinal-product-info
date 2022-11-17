@@ -1,4 +1,4 @@
-Instance: b3773440-614c-4007-bc1c-2fec305b6b81
+Instance: carnubawax
 InstanceOf: IngredientUvEpi
 Description: "Carnauba wax"
 Usage: #example
@@ -19,4 +19,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#R12CBM0EIZ "Carnauba wax"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

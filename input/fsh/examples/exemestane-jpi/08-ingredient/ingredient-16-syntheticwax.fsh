@@ -1,4 +1,4 @@
-Instance: 13beb88f-1df3-499d-9c74-4f5925a6f206
+Instance: syntehticwax
 InstanceOf: IngredientUvEpi
 Description: "synthetic wax"
 Usage: #example
@@ -19,4 +19,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#5M631N9V0S "synthetic wax"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

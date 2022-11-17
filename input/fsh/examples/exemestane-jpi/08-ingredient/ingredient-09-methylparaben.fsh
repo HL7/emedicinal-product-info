@@ -1,4 +1,4 @@
-Instance: 570a14b4-3e58-4afc-9cc1-4d4b38bcd485
+Instance: methylparaben
 InstanceOf: IngredientUvEpi
 Description: "METHYLPARABEN"
 Usage: #example
@@ -18,4 +18,4 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#A2I8C7HI9T "METHYLPARABEN"
 
 // Reference to Organization: Manufacturer
-* manufacturer.manufacturer = Reference(7f257409-3b65-401d-a246-7ae51e298fbb)
+* manufacturer.manufacturer = Reference(organizationmah)

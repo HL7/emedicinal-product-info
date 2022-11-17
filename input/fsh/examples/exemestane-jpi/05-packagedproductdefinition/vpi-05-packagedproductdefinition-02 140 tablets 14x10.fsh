@@ -1,4 +1,4 @@
-Instance: 39307d03-7ff4-4c0d-9326-36de7beb7cad
+Instance: 140pack
 InstanceOf: PackagedProductDefinitionUvEpi
 Description: "140 tablets [14 tablets (PTP) x 10]"
 Usage: #example

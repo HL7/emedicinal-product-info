@@ -1,4 +1,4 @@
-Instance: 15c6f86f-8665-4bd6-86da-a3a61fe16084
+Instance: authorisation1
 InstanceOf: RegulatedAuthorizationUvEpi
 Description: "Regulated Authorization"
 Usage: #example
