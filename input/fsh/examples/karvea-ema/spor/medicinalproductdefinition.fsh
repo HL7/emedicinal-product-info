@@ -25,7 +25,7 @@ Usage: #example
   
   * part[0]
     * part = "Karvea"
-    * type = $spor-productNamePartType-css#220000000002
+    * type = $spor-productNamePartType-cs#220000000002
     * type.text = "Invented name part"
   
   * part[+]

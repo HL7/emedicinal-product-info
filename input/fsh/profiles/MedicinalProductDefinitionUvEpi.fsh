@@ -65,7 +65,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
       * ^short = "brand name of this product"
       * ^example.label = "Example brand name"
       * ^example.valueString = "Humalog Mix50"
-    * type = $spor-productNamePartType-css#220000000002
+    * type = $spor-productNamePartType-cs#220000000002
   * part[Non-proprietaryNamePart]
     * part
       * ^short = "International Non-proprietary Name (INN) of this product"

@@ -398,7 +398,7 @@ Id: proprietaryNamePart
 Title: "Proprietary Name of the medicinal product"
 Description: "Proprietary Name of the medicinal product"
 * ^experimental = false
-* codes from system $spor-ProprietaryNamePartType-cs
+* codes from system https://spor.ema.europa.eu/rmswi
 
 //==========================
 ValueSet: VsNonproprietaryNamePart
@@ -406,7 +406,7 @@ Id: nonproprietaryNamePart
 Title: "Non-proprietary Name of the active ingredient(s)"
 Description: "Non-proprietary Name of the active ingredient(s)"
 * ^experimental = false
-* codes from system $spor-NonProprietaryNamePartType-cs
+* codes from system https://spor.ema.europa.eu/rmswi
 
 //==========================
 ValueSet: VsStrengthPart
@@ -415,7 +415,7 @@ Title: "Strength of the medicinal product name"
 Description: "Strength of the medicinal product name"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed
-* codes from system $spor-StrengthPartType-cs
+* codes from system https://spor.ema.europa.eu/rmswi
 
 //==========================
 ValueSet: VsPharmaceuticalDoseFormPart
@@ -423,4 +423,4 @@ Id: pharmaceuticalDoseFormPart
 Title: "Pharmaceutical Dose Form of the medicinal product"
 Description: "Pharmaceutical Dose Form of the medicinal product"
 * ^experimental = false
-* codes from system $spor-PharmaceuticalDoseFormPartType-cs
+* codes from system https://spor.ema.europa.eu/rmswi

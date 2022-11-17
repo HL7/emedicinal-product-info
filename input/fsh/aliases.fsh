@@ -32,6 +32,7 @@ Alias: $spor-pediatricUseIndicator-cs = http://example.org // TO BE FIXED
 Alias: $spor-marketingStatus-cs = https://spor.ema.europa.eu/rmswi/100000072052
 Alias: $spor-productNamePartType-cs = https://spor.ema.europa.eu/rmswi/220000000000 // Medicinal Product Name Part Type
 
+
 // $edqm = http://standardterms.edqm.eu
 
 // --- Substances
