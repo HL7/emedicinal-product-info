@@ -11,11 +11,9 @@ Usage: #example
 
 // Composition
 * entry[0].resource = compositionkarvea75
-* entry[=].fullUrl = "compositionkarvea75"
 
 // Organizations
 * entry[+].resource = sanofiaventisgroupe
-* entry[=].fullUrl = "sanofiaventisgroupe"
 
 // authorizations
 * entry[+].resource = authorizationkarvea75
