@@ -10,10 +10,12 @@ Usage: #example
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-* entry[0].resource = compositionkarvea75
+* entry[0].resource = CompositionUvEpi
+* entry[=].fullUrl = "compositionkarvea75"
 
 // Organizations
-* entry[+].resource = sanofiaventisgroupe
+* entry[+].resource = OrganizationUvEpi
+* entry[=].fullUrl = "sanofiaventisgroupe"
 
 // authorizations
 * entry[+].resource = authorizationkarvea75
