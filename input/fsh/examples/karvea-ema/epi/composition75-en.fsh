@@ -12,7 +12,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(karvea75mgblisterx28) //reference to the authorization
+* subject = Reference(karvea75mgblisterx28) //reference to the medicinal product
 
 * date = "2022-02-16T13:28:17Z"
 
