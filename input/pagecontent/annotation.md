@@ -67,47 +67,6 @@ Blank Field	Enter the options regarding pregnancy, breast-feeding and fertility 
 If no focus in the text regarding pregnancy, breast-feeding and fertility, enter ‘All’. 
 
 ##### Life-style
-        <table frame="border" align="left">
-            <colgroup>
-                <col/>
-                <col/>
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>Field</th>
-                    <th>When to Use</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Blank Field</td>
-                    <td><p class="MsoNormal">Enter the life-style focus that is applicable. This is
-                            a free text field; however, be as consistent as possible when filling
-                            this in to allow for easier filtering. </p><p class="MsoNormal">Life-style includes:</p><ul>
-                            <li>
-                                <p>Smoking </p>
-                            </li>
-                            <li>
-                                <p>Drinking </p>
-                            </li>
-                            <li>
-                                <p>Driving/using machines </p>
-                            </li>
-                            <li>
-                                <p>Exercising</p>
-                            </li>
-                            <li>
-                                <p>Risky behaviours </p>
-                            </li>
-                            <li>
-                                <p>Food</p>
-                            </li>
-                            <li>
-                                <p>Weight/BMI</p>
-                            </li>
-                        </ul> If no focus in the text regarding life-style, enter ‘All’. </td>
-                </tr>
-            </tbody>
-        </table>
+
 
 
