@@ -18,56 +18,56 @@ Usage: #example
   * insert bundleEntry (OrganizationUvEpi, sanofiaventisgroupe)
 
 // authorizations
-* entry[+].resource = authorizationkarvea75
-* entry[=].fullUrl = "authorizationkarvea75"
+* entry[+]
+  * insert bundleEntry (RegulatedAuthorizationUvEpi,authorizationkarvea75)
 
 // medicinal products
-* entry[+].resource = karvea75mgblisterx28
-* entry[=].fullUrl = "karvea75mgblisterx28"
+* entry[+]
+  * insert bundleEntry (MedicinalProductDefinitionUvEpi,karvea75mgblisterx28)
 
 // packaged product
-* entry[+].resource = packagebottlex28
-* entry[=].fullUrl = "packagebottlex28"
+* entry[+]
+  * insert bundleEntry (PackagedProductDefinitionUvEpi,packagebottlex28)
 
 // administrable product
-* entry[+].resource = adminproductkarvea75
-* entry[=].fullUrl = "adminproductkarvea75"
+* entry[+]
+  * insert bundleEntry (AdministrableProductDefinitionUvEpi,adminproductkarvea75)
 
 // manufactured items
-* entry[+].resource = manitemkarvea75
-* entry[=].fullUrl = "manitemkarvea75"
+* entry[+]
+  * insert bundleEntry (ManufacturedItemDefinitionUvEpi,manitemkarvea75)
 
 // ingredients
-* entry[+].resource = irbesartan
-* entry[=].fullUrl = "irbesartan"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,irbesartan)
 
-* entry[+].resource = carnaubawax
-* entry[=].fullUrl = "carnaubawax"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,carnaubawax)
 
-* entry[+].resource = Croscarmellosesodium
-* entry[=].fullUrl = "Croscarmellosesodium"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,Croscarmellosesodium)
 
-* entry[+].resource = Hypromellose
-* entry[=].fullUrl = "Hypromellose"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,Hypromellose)
 
-* entry[+].resource = lactosemonohydrate
-* entry[=].fullUrl = "lactosemonohydrate"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,lactosemonohydrate)
 
-* entry[+].resource = Macrogol3000
-* entry[=].fullUrl = "Macrogol3000"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,Macrogol3000)
 
-* entry[+].resource = Magnesiumstearate
-* entry[=].fullUrl = "Magnesiumstearate"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,Magnesiumstearate)
 
-* entry[+].resource = Microcrystallinecellulose
-* entry[=].fullUrl = "Microcrystallinecellulose"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,Microcrystallinecellulose)
 
-* entry[+].resource = Silicondioxide
-* entry[=].fullUrl = "Silicondioxide"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,Silicondioxide)
 
-* entry[+].resource = titaniumdioxide
-* entry[=].fullUrl = "titaniumdioxide"
+* entry[+]
+  * insert bundleEntry (IngredientUvEpi,titaniumdioxide)
 
 // Packaged Product
-* entry[+].resource = packagebottlex28
-* entry[=].fullUrl = "packagebottlex28"
+* entry[+]
+  * insert bundleEntry (PackagedProductDefinitionUvEpi,packagebottlex28)
