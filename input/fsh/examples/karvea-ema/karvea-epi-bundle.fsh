@@ -11,7 +11,7 @@ Usage: #example
 
 // Composition
 * entry[+].resource = compositionkarvea75
-* entry[=].fullUrl = "http://example.org/CompositionUvEpi/compositionkarvea75"
+* entry[=].fullUrl = "http://example.org/Composition/compositionkarvea75"
 
 // * entry[0]
 //   * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
