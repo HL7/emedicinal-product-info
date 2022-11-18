@@ -31,12 +31,15 @@ There may be exceptions, such as assigning an Attribute of a Drug Class, rather 
 ##### 1.4.1	Examples
 
 Multiple Values within One Attribute, and Multiple Attributes 
+
 INSERT TABLE
 
 
 No Attribute Text
+
 INSERT TABLE
 
 
 Bullet Points
+
 INSERT TABLE
