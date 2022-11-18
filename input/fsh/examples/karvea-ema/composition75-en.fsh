@@ -20,8 +20,6 @@ Usage: #example
 
 * title = "TEST PURPOSES ONLY - Karvea (irbesartan) 75 mg tablets"
 
-* language = #en
-
 * section[+].
   * title = "B. Package Leaflet"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538

@@ -57,6 +57,8 @@ Description: """The Composition captures the section headings, sub-section headi
   * section 
     *  ^short = "Nested Sections (sub-section headings for level 2, 3, 4 or 5)."
     *  ^definition = "Nested Sections (sub-section headings for level 2, 3, 4 or 5)."
+    * title
+      * ^short = "Section heading"
     * code 1.. 
     * code from VsSectionCode (extensible) 
       * ^short = "unique identifier for this section."
