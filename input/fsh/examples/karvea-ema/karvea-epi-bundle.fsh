@@ -10,8 +10,11 @@ Usage: #example
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-* entry[0]
-  * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
+* entry[+].resource = compositionkarvea75
+* entry[=].fullUrl = "http://example.org/CompositionUvEpi/compositionkarvea75"
+
+// * entry[0]
+//   * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
 
 // Organizations
 * entry[+]
