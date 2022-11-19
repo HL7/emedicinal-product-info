@@ -74,12 +74,12 @@ Usage: #example
 
 // Clinical Use Definition - Indication
 * entry[+]
-  * insert bundleEntry (ClinicalUseDefinition-indication-uv-epi,indication)
+  * insert bundleEntry (ClinicalUseDefinitionIndicationUvEpi,indication)
 
 // Clinical Use Definition - Contraindication
 * entry[+]
-  * insert bundleEntry (ClinicalUseDefinition-contraindication-uv-epi,contraindication)
+  * insert bundleEntry (ClinicalUseDefinitionContraindicationUvEpi,contraindication)
 
 // Clinical Use Definition - Interaction
 * entry[+]
-  * insert bundleEntry (ClinicalUseDefinition-interaction-uv-epi,interactionmethotrexate)
+  * insert bundleEntry (ClinicalUseDefinitionInteractionUvEpi,interactionmethotrexate)
