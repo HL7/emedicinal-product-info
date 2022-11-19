@@ -34,7 +34,7 @@ Usage: #example
 * entry[=].resource = adminproductkarvea75
 
 // manufactured items
-* entry[+].fullUrl = "urn:uuid:0ce0c38a-06b8-4b06-b680-983f957063d7"
+* entry[+].fullUrl = "urn:uuid:manitemkarvea75"
 * entry[=].resource = manitemkarvea75
 
 // ingredients
