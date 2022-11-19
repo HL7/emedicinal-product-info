@@ -16,8 +16,8 @@ Usage: #example
 //  * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
 
 // Organizations
-* entry[1].fullUrl = "urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75"
-* entry[1].resource = sanofiaventisgroupe
+* entry[+].fullUrl = "urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75"
+* entry[=].resource = sanofiaventisgroupe
 
 // * entry[+]
   // * insert bundleEntry (OrganizationUvEpi, sanofiaventisgroupe)
@@ -27,8 +27,8 @@ Usage: #example
   // * insert bundleEntry (RegulatedAuthorizationUvEpi,authorizationkarvea75)
 
 // medicinal products
-* entry[2].fullUrl = "urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837"
-* entry[2].resource = karvea75mgblisterx28
+* entry[+].fullUrl = "urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837"
+* entry[=].resource = karvea75mgblisterx28
 
 
 // * entry[+]
