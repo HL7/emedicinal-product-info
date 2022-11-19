@@ -83,3 +83,7 @@ Usage: #example
 // Clinical Use Definition - Interaction
 * entry[+]
   * insert bundleEntry (ClinicalUseDefinitionInteractionUvEpi,interactionmethotrexate)
+
+// Substance
+* entry[+]
+  * insert bundleEntry (SubstanceDefinitionUvEpi,substanceirbesartan)
