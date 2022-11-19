@@ -35,6 +35,9 @@ Alias: $spor-productNamePartType-cs = https://spor.ema.europa.eu/rmswi/220000000
 
 // $edqm = http://standardterms.edqm.eu
 
+// MedDRA
+Alias: $meddra = https://www.meddra.org
+
 // --- Substances
 Alias: $unii = http://fdasis.nlm.nih.gov
 Alias: $ginas = https://gsrs.ncats.nih.gov/ginas/app/beta

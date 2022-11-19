@@ -71,3 +71,15 @@ Usage: #example
 // Packaged Product
 * entry[+]
   * insert bundleEntry (PackagedProductDefinitionUvEpi,packagebottlex28)
+
+// Clinical Use Definition - Indication
+* entry[+]
+  * insert bundleEntry (ClinicalUseDefinition-indication-uv-epi,indication)
+
+// Clinical Use Definition - Contraindication
+* entry[+]
+  * insert bundleEntry (ClinicalUseDefinition-contraindication-uv-epi,contraindication)
+
+// Clinical Use Definition - Interaction
+* entry[+]
+  * insert bundleEntry (ClinicalUseDefinition-interaction-uv-epi,interactionmethotrexate)

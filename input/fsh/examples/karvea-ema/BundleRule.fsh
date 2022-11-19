@@ -1,3 +1,3 @@
 RuleSet: bundleEntry(type, id)
-* fullUrl = "http://www.gravitatehealth.eu/{type}/{id}"
+* fullUrl = "http://example.org/{type}/{id}"
 * resource = {id}
