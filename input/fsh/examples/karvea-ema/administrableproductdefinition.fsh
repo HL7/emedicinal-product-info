@@ -3,7 +3,7 @@ InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Karvea 75mg tablet administrable product"
 Description: "Karvea 75 mg tablet"
 Usage: #example
-* id = "38f01f4a-316d-4cac-81cb-d8eb6928e18e"
+
 * identifier.system = $phpid
 * identifier.value = "adminproductkarvea75" 
 

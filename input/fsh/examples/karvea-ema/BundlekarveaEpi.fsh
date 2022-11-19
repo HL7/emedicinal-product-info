@@ -30,7 +30,7 @@ Usage: #example
 * entry[=].resource = packagebottlex28
 
 // administrable product
-* entry[+].fullUrl = "urn:uuid:38f01f4a-316d-4cac-81cb-d8eb6928e18e"
+* entry[+].fullUrl = "urn:uuid:adminproductkarvea75"
 * entry[=].resource = adminproductkarvea75
 
 // manufactured items
