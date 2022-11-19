@@ -5,7 +5,7 @@ Description: "Karvea 75 mg tablet"
 Usage: #example
 * id = "38f01f4a-316d-4cac-81cb-d8eb6928e18e"
 * identifier.system = $phpid
-* identifier.value = "38f01f4a-316d-4cac-81cb-d8eb6928e18e" 
+* identifier.value = "adminproductkarvea75" 
 
 * status = #active
 
