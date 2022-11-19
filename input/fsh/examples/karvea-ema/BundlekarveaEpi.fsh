@@ -10,12 +10,15 @@ Usage: #example
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-* entry[0].fullUrl = "urn:uuid:compositionkarvea75"
+* entry[0].fullUrl = "urn:uuid:e63f72b2-993f-48b1-b7cb-539b1ed71571"
 * entry[0].resource = compositionkarvea75
 
 //  * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
 
 // Organizations
+* entry[0].fullUrl = "urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75"
+* entry[0].resource = sanofiaventisgroupe
+
 // * entry[+]
   // * insert bundleEntry (OrganizationUvEpi, sanofiaventisgroupe)
 
@@ -24,6 +27,10 @@ Usage: #example
   // * insert bundleEntry (RegulatedAuthorizationUvEpi,authorizationkarvea75)
 
 // medicinal products
+* entry[0].fullUrl = "urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837"
+* entry[0].resource = karvea75mgblisterx28
+
+
 // * entry[+]
   // * insert bundleEntry (MedicinalProductDefinitionUvEpi,karvea75mgblisterx28)
 
