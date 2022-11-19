@@ -54,7 +54,6 @@ Description: "Medicinal product information is a pivotal source of regulated and
 	binary 0..
 	
 * entry[composition].resource  1..
-* entry[list].resource 1..
 * entry[organization].resource 	1..
 * entry[authorization].resource 		1..
 * entry[medicinalProduct].resource 		1..
@@ -67,7 +66,6 @@ Description: "Medicinal product information is a pivotal source of regulated and
 * entry[binary].resource 1.. 
 	
 * entry[composition].resource only CompositionUvEpi
-* entry[list].resource only ListUvProduct
 * entry[organization].resource only OrganizationUvEpi
 * entry[authorization].resource only RegulatedAuthorizationUvEpi
 * entry[medicinalProduct].resource only MedicinalProductDefinitionUvEpi

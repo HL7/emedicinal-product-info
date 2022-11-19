@@ -51,5 +51,3 @@ RuleSet:  PropertyRulesSet
 
 * property[image].type   = $medicationknowledge-characteristic#image
 * property[image].value[x].data ^short = "base64 version of the product image"
-
-
