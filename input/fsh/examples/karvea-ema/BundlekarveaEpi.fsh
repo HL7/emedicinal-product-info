@@ -10,80 +10,82 @@ Usage: #example
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-* entry[0]
-  * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
+* entry[0].fullUrl = "urn:uuid:compositionkarvea75"
+* entry[0].resource = compositionkarvea75
+
+//  * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
 
 // Organizations
-* entry[+]
-  * insert bundleEntry (OrganizationUvEpi, sanofiaventisgroupe)
+// * entry[+]
+  // * insert bundleEntry (OrganizationUvEpi, sanofiaventisgroupe)
 
 // authorizations
-* entry[+]
-  * insert bundleEntry (RegulatedAuthorizationUvEpi,authorizationkarvea75)
+// * entry[+]
+  // * insert bundleEntry (RegulatedAuthorizationUvEpi,authorizationkarvea75)
 
 // medicinal products
-* entry[+]
-  * insert bundleEntry (MedicinalProductDefinitionUvEpi,karvea75mgblisterx28)
+// * entry[+]
+  // * insert bundleEntry (MedicinalProductDefinitionUvEpi,karvea75mgblisterx28)
 
 // packaged product
-* entry[+]
-  * insert bundleEntry (PackagedProductDefinitionUvEpi,packagebottlex28)
+// * entry[+]
+  // * insert bundleEntry (PackagedProductDefinitionUvEpi,packagebottlex28)
 
 // administrable product
-* entry[+]
-  * insert bundleEntry (AdministrableProductDefinitionUvEpi,adminproductkarvea75)
+// * entry[+]
+  // * insert bundleEntry (AdministrableProductDefinitionUvEpi,adminproductkarvea75)
 
 // manufactured items
-* entry[+]
-  * insert bundleEntry (ManufacturedItemDefinitionUvEpi,manitemkarvea75)
+// * entry[+]
+  // * insert bundleEntry (ManufacturedItemDefinitionUvEpi,manitemkarvea75)
 
 // ingredients
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,irbesartan)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,irbesartan)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,carnaubawax)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,carnaubawax)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,Croscarmellosesodium)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,Croscarmellosesodium)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,Hypromellose)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,Hypromellose)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,lactosemonohydrate)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,lactosemonohydrate)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,Macrogol3000)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,Macrogol3000)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,Magnesiumstearate)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,Magnesiumstearate)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,Microcrystallinecellulose)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,Microcrystallinecellulose)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,Silicondioxide)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,Silicondioxide)
 
-* entry[+]
-  * insert bundleEntry (IngredientUvEpi,titaniumdioxide)
+// * entry[+]
+  // * insert bundleEntry (IngredientUvEpi,titaniumdioxide)
 
 // Packaged Product
-* entry[+]
-  * insert bundleEntry (PackagedProductDefinitionUvEpi,packagebottlex28)
+// * entry[+]
+  // * insert bundleEntry (PackagedProductDefinitionUvEpi,packagebottlex28)
 
 // Clinical Use Definition - Indication
-* entry[+]
-  * insert bundleEntry (ClinicalUseDefinitionIndicationUvEpi,indication)
+// * entry[+]
+  // * insert bundleEntry (ClinicalUseDefinitionIndicationUvEpi,indication)
 
 // Clinical Use Definition - Contraindication
-* entry[+]
-  * insert bundleEntry (ClinicalUseDefinitionContraindicationUvEpi,contraindication)
+// * entry[+]
+  // * insert bundleEntry (ClinicalUseDefinitionContraindicationUvEpi,contraindication)
 
 // Clinical Use Definition - Interaction
-* entry[+]
-  * insert bundleEntry (ClinicalUseDefinitionInteractionUvEpi,interactionmethotrexate)
+// * entry[+]
+  // * insert bundleEntry (ClinicalUseDefinitionInteractionUvEpi,interactionmethotrexate)
 
 // Substance
-* entry[+]
-  * insert bundleEntry (SubstanceDefinitionUvEpi,substanceirbesartan)
+// * entry[+]
+  // * insert bundleEntry (SubstanceDefinitionUvEpi,substanceirbesartan)
