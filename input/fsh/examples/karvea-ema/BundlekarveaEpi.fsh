@@ -13,8 +13,6 @@ Usage: #example
 * entry[0].fullUrl = "urn:uuid:e63f72b2-993f-48b1-b7cb-539b1ed71571"
 * entry[0].resource = compositionkarvea75
 
-//  * insert bundleEntry (CompositionUvEpi, compositionkarvea75)
-
 // Organizations
 * entry[+].fullUrl = "urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75"
 * entry[=].resource = sanofiaventisgroupe
