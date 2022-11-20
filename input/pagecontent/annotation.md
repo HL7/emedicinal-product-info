@@ -1,7 +1,65 @@
 **UNDER CONSTRUCTION**
 #### Technical Section
 
-TBD
+Semantic Annotation should be implemented with the [narrativeLink](http://hl7.org/fhir/2022Sep/extension-narrativelink.html) extension. The [Linking between Data and Narrative](http://hl7.org/fhir/2022Sep/narrative.html#linking) section of the Narrative datatype gives a basic example of use.
+
+The extension has to be declared in the structured resource, and scoped to the Composition using the `fullUrl` in the `valueUrl` of the extension:
+
+    <Ingredient xmlns="http://hl7.org/fhir">
+      <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+        <valueUrl value="http://ema.europa.eu/fhir/Composition/123456#lactoseMonohydrateTag"/>
+      </extension>
+      ...
+      <substance>
+        <code>
+          <concept>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov/ginas/app/beta"/>
+              <code value="EWQ57Q8I5X"/>
+              <display value="Lactose Monohydrate"/>
+            </coding>
+          </concept>
+        </code>
+      </substance>
+    </Ingredient>
+
+The ID part can then be used in the HTML code of the extension to mark a section of text:
+
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Text of the section with <span id="lactoseMonohydrateTag">some information about the ingredient</span>.</p>
+    </div>
+
+The same ID attribute can only be used on one HTML element in the same document. If there are several text sections that should be marked, the extension must be duplicated with a different ID value:
+
+    <Ingredient xmlns="http://hl7.org/fhir">
+      <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+        <valueUrl value="http://ema.europa.eu/fhir/Composition/123456#lactoseMonohydrateTag1"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+        <valueUrl value="http://ema.europa.eu/fhir/Composition/123456#lactoseMonohydrateTag2"/>
+      </extension>
+      ...
+      <substance>
+        <code>
+          <concept>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov/ginas/app/beta"/>
+              <code value="EWQ57Q8I5X"/>
+              <display value="Lactose Monohydrate"/>
+            </coding>
+          </concept>
+        </code>
+      </substance>
+    </Ingredient>
+
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div>
+        <p>Text of the section with <span id="lactoseMonohydrateTag1">some information about the ingredient</span>.</p>
+      </div>
+      <div>
+        <p>Another section that describes <span id="lactoseMonohydrateTag2">some other aspect related to the ingredient</span>.</p>
+      </div>
+    </div>
 
 ### 1.	Focusing Section 
 
