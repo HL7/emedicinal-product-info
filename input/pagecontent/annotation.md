@@ -1,4 +1,3 @@
-**UNDER CONSTRUCTION**
 #### Technical Section
 
 Semantic Annotation should be implemented with the [narrativeLink](http://hl7.org/fhir/2022Sep/extension-narrativelink.html) extension. The [Linking between Data and Narrative](http://hl7.org/fhir/2022Sep/narrative.html#linking) section of the Narrative datatype gives a basic example of use.
@@ -88,16 +87,40 @@ There may be exceptions, such as assigning an Attribute of a Drug Class, rather 
 
 ##### 1.4.1	Examples
 
-Multiple Values within One Attribute, and Multiple Attributes 
+**Multiple Values within One Attribute, and Multiple Attributes **
 
 INSERT TABLE
 
+| Text | Focus Attribute |
+|--|--|
+| Pregnancy, breast-feeding and fertility | Age = Adult or Adolescent |
+| You should not use PRODUCT X if you are pregnant. You should avoid becoming pregnant while taking PRODUCT X.  | Age = Adult or Adolescent, and Gender = Female |
+| Discuss contraception with your doctor if there is any possibility that you or your partner may become pregnant.   | Age = Adult or Adolescent |
+| If you are pregnant or breast-feeding, think you may be pregnant, or are planning to have a baby, ask your doctor or pharmacist for advice before taking this medicine.  | Age = Adult or Adolescent, and Gender = Female |
+| Women of childbearing potential who are receiving this medicinal product, or their male partners should use adequate contraceptive methods (e.g., double-barrier contraception such as condom and diaphragm).  | Age = Adult or Adolescent |
+| These methods should be used during therapy and for at least 3 weeks after completing therapy for females.  | Age = Adult or Adolescent, and Gender = Female |
+| These methods should be used during therapy and for at least 14 weeks for males.  | Age = Adult or Adolescent, and Gender = Male |
+| Breast-feeding<br/>You should not breast-feed while taking PRODUCT X. It is not known if PRODUCT X is excreted in breast milk. | Age = Adult or Adolescent, and Gender = Female, and Breastfeeding = Breastfeeding |
+| Fertility<br/>ACTIVE INGREDIENT X may decrease fertility in men. Therefore, men may consider sperm preservation before taking PRODUCT X. | Age = Adult or Adolescent, and Gender = Male |
 
-No Attribute Text
+**No Attribute Text**
 
-INSERT TABLE
+| Text | Focus Attribute |
+|--|--|
+| Posology<br/> The recommended dose is 125 mg of ACTIVE INGREDIENT X once daily for 21 consecutive days followed by 7 days off treatment (Schedule 3/1) to comprise a complete cycle of 28 days. The treatment with PRODUCT X should be continued as long as the patient is deriving clinical benefit from therapy or until unacceptable toxicity occurs.| (Since this applies to everyone, the focus attribute is left blank) | (Since this applies to everyone, the focus attribute is left blank) |
+| When coadministered with ACTIVE INGREDIENT X, the aromatase inhibitor should be administered according to the dose schedule reported in the Summary of Product Characteristics.  | Concomitant Medicines/Contraindications = Aromatase inhibitor |
+| When coadministered with ACTIVE INGREDIENT X, the recommended dose of ACTIVE INGREDIENT Y is 500 mg administered intramuscularly. Please refer to the Summary of Product Characteristics of ACTIVE INGREDIENT Y.  | Concomitant Medicines/Contraindications = ACTIVE INGREDIENT Y |
+| Patients should be encouraged to take their dose at approximately the same time each day. If the patient vomits or misses a dose, an additional dose should not be taken that day. The next prescribed dose should be taken at the usual time. | (Since this applies to everyone, the focus attribute is left blank) |
+
+**Bullet Points**
+
+| Text | Focus Attribute |
+|--|--|
+| PRODUCT X may increase side effects associated with the following medicines: |  |
+| •	Alfentanil and other short acting opiates such as fentanyl (painkillers used for surgical procedures). | Concomitant Medicines/Contraindications = Short acting opiates |
+| •	Medicines for high blood pressure called beta-blockers such as atenolol, propranolol, labetolol. | Concomitant Medicines/Contraindications = Beta-blockers  |
+| •	Metformin, used to treat diabetes. | Concomitant Medicines/Contraindications = Metformin |
+| •	Ciclosporin, sirolimus and tacrolimus used in transplant patients. | Concomitant Medicines/Contraindications = Ciclosporin, sirolimus, tacrolimus |
 
 
-Bullet Points
 
-INSERT TABLE
