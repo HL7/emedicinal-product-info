@@ -16,7 +16,7 @@ Usage: #example
 
 * date = "2022-02-16T13:28:17Z"
 
-* author = Reference(Organization/sanofiaventisgroupe) // Reference to Organization: Marketing Authorization Holder
+* author = Reference(urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75) // Reference to Organization: Marketing Authorization Holder
 
 * title = "TEST PURPOSES ONLY - Karvea (irbesartan) 75 mg tablets"
 
