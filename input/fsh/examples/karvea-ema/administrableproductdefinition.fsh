@@ -10,7 +10,7 @@ Usage: #example
 * status = #active
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* formOf = Reference(karvea75mgblisterx28)
+* formOf = Reference(MedicinalProductDefinition/karvea75mgblisterx28)
 
 * administrableDoseForm = $spor-rms#200000002152
 * administrableDoseForm.text = "Tablet"
