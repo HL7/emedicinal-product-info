@@ -18,8 +18,8 @@ Usage: #example
 * unitOfPresentation = $spor-rms#200000002152
 * unitOfPresentation.text = "Tablet"
 
- // Reference to ManufacturedItemDefinition: Manufactured Item
-* producedFrom = Reference(manitemkarvea75)
+ // Reference to ManufacturedItemDefinition: Manufactured Item (manitemkarvea75)
+* producedFrom = Reference(3214f286-b8ec-4ef5-bc8d-0aec39d97468)
 
 * routeOfAdministration.code = $spor-rms#100000073619
 * routeOfAdministration.code.text = "Oral use"
