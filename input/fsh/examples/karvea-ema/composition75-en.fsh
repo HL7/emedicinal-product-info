@@ -3,7 +3,7 @@ InstanceOf: CompositionUvEpi
 Title: "Composition for Karvea 75 mg Package Leaflet"
 Description: "Package Leaflet"
 Usage: #example
-* id = "e63f72b2-993f-48b1-b7cb-539b1ed71571"
+
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -16,7 +16,7 @@ Usage: #example
 
 * date = "2022-02-16T13:28:17Z"
 
-* author = Reference(sanofiaventisgroupe) // Reference to Organization: Marketing Authorization Holder
+* author = Reference(Organization/sanofiaventisgroupe) // Reference to Organization: Marketing Authorization Holder
 
 * title = "TEST PURPOSES ONLY - Karvea (irbesartan) 75 mg tablets"
 
