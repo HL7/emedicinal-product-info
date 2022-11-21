@@ -19,7 +19,7 @@ Usage: #example
 * unitOfPresentation.text = "Tablet"
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
-* producedFrom = Reference(manitemkarvea75)
+* producedFrom = Reference(ManufacturedItemDefinition/manitemkarvea75)
 
 * routeOfAdministration.code = $spor-rms#100000073619
 * routeOfAdministration.code.text = "Oral use"
