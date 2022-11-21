@@ -9,7 +9,7 @@ Usage: #example
 * identifier.use = #official
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* subject = Reference(karvea75mgblisterx28)
+* subject = Reference(MedicinalProductDefinition/karvea75mgblisterx28)
 
 * type = $spor-rms#100000072062
 * type.text = "Marketing Authorisation"
