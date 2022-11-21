@@ -10,7 +10,7 @@ Usage: #example
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-* entry[0].fullUrl = "urn:uuid:e63f72b2-993f-48b1-b7cb-539b1ed71571"
+* entry[0].fullUrl = "MedicinalProductDefinition/karvea75mgblisterx28"
 * entry[0].resource = compositionkarvea75
 
 // Organizations
