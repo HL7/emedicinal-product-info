@@ -9,7 +9,7 @@ Usage: #example
 * type = #document
 * timestamp = "2018-06-23T08:38:00+02:00"
 
-// Composition
+// Composition 0
 * entry[0].fullUrl = "urn:uuid:e63f72b2-993f-48b1-b7cb-539b1ed71571"
 * entry[0].resource = compositionkarvea75
 
@@ -21,61 +21,62 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:297e405a-b6f9-4273-bc01-ae031efe47f8"
 * entry[=].resource = authorizationkarvea75
 
-// medicinal products
+// medicinal products 3
 * entry[+].fullUrl = "urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837"
 * entry[=].resource = karvea75mgblisterx28
 
-// packaged product
+// packaged product 4
 * entry[+].fullUrl = "urn:uuid:eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d"
 * entry[=].resource = packagebottlex28
 
-// administrable product
-* entry[+].fullUrl = "urn:uuid:adminproductkarvea75"
+// administrable product 5
+* entry[+].fullUrl = "urn:uuid:373b9bf3-1fae-47a1-a7cd-230106def069"
 * entry[=].resource = adminproductkarvea75
 
-// manufactured items
-* entry[+].fullUrl = "urn:uuid:manitemkarvea75"
+// manufactured items 6
+* entry[+].fullUrl = "urn:uuid:1bde8832-2158-4ebb-a0c1-388e89bb1238"
 * entry[=].resource = manitemkarvea75
 
-// ingredients
+// ingredients 7
 * entry[+].fullUrl = "urn:uuid:09c13040-8fd5-4818-972d-f01d4ee169b6"
 * entry[=].resource = Silicondioxide
 
+// 8
 * entry[+].fullUrl = "urn:uuid:745c01bc-936e-45ca-9880-57e97608f43e"
 * entry[=].resource = irbesartan
-
+// 9
 * entry[+].fullUrl = "urn:uuid:a4b7b60c-998f-4f93-89c7-860396af0fe3"
 * entry[=].resource = carnaubawax
-
+//10
 * entry[+].fullUrl = "urn:uuid:fbf58407-83d3-42db-be3d-506b2006d431"
 * entry[=].resource = Croscarmellosesodium
-
+// 11
 * entry[+].fullUrl = "urn:uuid:1c10b441-6bd3-40b8-b14b-514e7c2f79d0"
 * entry[=].resource = Hypromellose
-
+// 12
 * entry[+].fullUrl = "urn:uuid:7a3c0b14-2473-4541-9e45-a24d24cceddf"
 * entry[=].resource = lactosemonohydrate
-
+// 13
 * entry[+].fullUrl = "urn:uuid:ceba5cd1-321f-4bc3-b203-92d97fcf472e"
 * entry[=].resource = Macrogol3000
-
+// 14
 * entry[+].fullUrl = "urn:uuid:eee155e8-e442-491d-9a82-7af3cefac57f"
 * entry[=].resource = Magnesiumstearate
-
+// 15
 * entry[+].fullUrl = "urn:uuid:1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd"
 * entry[=].resource = Microcrystallinecellulose
-
+// 16
 * entry[+].fullUrl = "urn:uuid:a88891dc-7e9e-4d84-b462-95e53de3b6a6"
 * entry[=].resource = titaniumdioxide
-
+// 17
 // Packaged Product
 * entry[+].fullUrl = "urn:uuid:50621bdc-6174-4c27-85a0-02fb008435d3"
 * entry[=].resource = packagebottlex28
-
+// 18
 // Clinical Use Definition - Indication
 * entry[+].fullUrl = "urn:uuid:4e922ec1-a398-4a78-8381-3729422b7602"
 * entry[=].resource = indication
-
+// 19
 // Clinical Use Definition - Contraindication
 * entry[+].fullUrl = "urn:uuid:83f4a22f-9e5e-4941-9fdb-339a0f1f2055"
 * entry[=].resource = contraindication

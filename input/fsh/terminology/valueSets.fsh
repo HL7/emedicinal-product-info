@@ -342,7 +342,7 @@ Id: substance
 Title: "Substances"
 Description: "Substances"
 * ^experimental = false
-* $uri#https://gsrs.ncats.nih.gov/ginas/app/beta // to be reviewed
+* include codes from system https://gsrs.ncats.nih.gov/ginas/app/beta
 
 //==========================
 ValueSet: VsRoleClassIngredientEntity

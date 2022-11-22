@@ -1,5 +1,5 @@
 Instance: interactionmethotrexate
-InstanceOf: ClinicalUseDefinition-interaction-uv-epi
+InstanceOf: ClinicalUseDefinitionInteractionUvEpi
 Description: "Interaction - METHOTREXATE"
 Usage: #example
 

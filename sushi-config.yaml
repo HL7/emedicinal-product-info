@@ -103,22 +103,19 @@ menu:
   Appendices: appendicies.html
 
 
-# --- original 
-# menu:
-#   Introduction: index.html
-#   Table of Contents: toc.html
-#   Contextual information:
-#     Connections: connections.html
-#     ePI structure: ePI-structure.html
-#     Use Case: use-case-example.html
-#   Artifact Index: artifacts.html
-#   Support:
-#     FHIR Spec: http://hl7.org/fhir/R4/index.html
-#     Downloads: downloads.html
-#   Copyright: copyright.html
-
-#  Capability Statements:
-#    SmPC / PL: CapabilityStatement-capability-statement-ema.html
+instanceOptions:
+  # Determines for which types of Instances SUSHI will automatically set meta.profile
+  # if InstanceOf references a profile. Options are:
+  # - always: Set meta.profile for all Instances of profiles (default)
+  # - never: Do not set meta.profile on any Instances
+  # - inline-only: Set meta.profile for only Instances of profiles with Usage set to #inline
+  # - standalone-only: Set meta.profile for only Instances of profiles where Usage is any value other than #inline
+  setMetaProfile: never
+  # Determines for which types of Instances SUSHI will automatically set id
+  # if InstanceOf references a profile. Options are:
+  # - always: Set id for all Instances (default)
+  # - standalone-only: Set id for only Instances where Usage is any value other than #inline
+  setId: always
 
 
 FSHOnly: false
