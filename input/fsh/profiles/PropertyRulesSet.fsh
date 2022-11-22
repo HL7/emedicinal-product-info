@@ -3,7 +3,7 @@ RuleSet:  PropertyRulesSet
 * property ^slicing.discriminator[0].type = #value
 * property ^slicing.discriminator[=].path = "type"
 * property ^slicing.rules = #open
-* property ^slicing.ordered = true
+* property ^slicing.ordered = false
 * property contains
     // codeableconcept
     color 0..* and
@@ -27,7 +27,6 @@ RuleSet:  PropertyRulesSet
 * property[image].value[x]     only Attachment
 * property[imprint].value[x]     only CodeableConcept or Attachment
 
-// to be checked
 * property[imprint].valueCodeableConcept.coding 0..0 
 * property[imprint].valueCodeableConcept.text 1..1
 * property[imprint].type = $medicationknowledge-characteristic#imprintcd 
