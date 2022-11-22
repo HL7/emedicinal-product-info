@@ -34,7 +34,7 @@ Usage: #example
 * entry[=].resource = adminproductkarvea75
 
 // manufactured items 6
-* entry[+].fullUrl = "urn:uuid:1bde8832-2158-4ebb-a0c1-388e89bb1238"
+* entry[+].fullUrl = "urn:uuid:3214f286-b8ec-4ef5-bc8d-0aec39d97468"
 * entry[=].resource = manitemkarvea75
 
 // ingredients 7
@@ -68,10 +68,13 @@ Usage: #example
 // 16
 * entry[+].fullUrl = "urn:uuid:a88891dc-7e9e-4d84-b462-95e53de3b6a6"
 * entry[=].resource = titaniumdioxide
-// 17
+
+/* // 17 commented for the time being, waiting for a decision on what to do with this duplicated entry 
 // Packaged Product
 * entry[+].fullUrl = "urn:uuid:50621bdc-6174-4c27-85a0-02fb008435d3"
-* entry[=].resource = packagebottlex28
+* entry[=].resource = packagebottlex28 */
+
+
 // 18
 // Clinical Use Definition - Indication
 * entry[+].fullUrl = "urn:uuid:4e922ec1-a398-4a78-8381-3729422b7602"
@@ -84,6 +87,10 @@ Usage: #example
 // Clinical Use Definition - Interaction
 * entry[+].fullUrl = "urn:uuid:e60575aa-e7b3-4461-a456-d310514f4041"
 * entry[=].resource = interactionmethotrexate
+
+// Clinical Use Definition - Warning
+* entry[+].fullUrl = "urn:uuid:ac21a804-cafa-41ff-b644-a14c8003edeb"
+* entry[=].resource = warninghypotension
 
 // Substance
 * entry[+].fullUrl = "urn:uuid:da33bd51-a726-4232-aaa0-4168b9bfe249"

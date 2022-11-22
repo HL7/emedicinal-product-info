@@ -2,7 +2,9 @@ Instance: indication
 InstanceOf: ClinicalUseDefinition-indication-uv-epi
 Description: "Indication"
 Usage: #example
- 
+
+* id = "4e922ec1-a398-4a78-8381-3729422b7602"
+
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "Psoriasis"
 * identifier.use = #official

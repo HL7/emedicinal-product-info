@@ -6,7 +6,8 @@ Description: """The Composition captures the section headings, sub-section headi
 * ^status = #active
 * ^purpose = "This profile represents the constraints applied to the Composition resource used in an Electronic Product Information (ePI) document."
 * . ^short = "Electronic Product Information composition"
-* . ^definition = "Electronic Product Information composition. \r\nA composition is a set of source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. \r\nWhile a Composition defines the structure and content of the ePI's narrative text, it does not contain the full content of an ePI document. The Bundle, of which the Composition is the first resource contained, is the container for the full  content of an ePI."
+* . ^definition = "Electronic Product Information composition.\r\n
+A composition is a set of source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use.While a Composition defines the structure and content of the ePI's narrative text, it does not contain the full content of an ePI document. The Bundle, of which the Composition is the first resource contained, is the container for the full  content of an ePI."
 // * text 
 
 * identifier 1..

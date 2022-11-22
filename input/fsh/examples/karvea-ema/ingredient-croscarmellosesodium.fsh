@@ -4,6 +4,7 @@ Title: "Ingredient-excipient Croscarmellose sodium"
 Description: "Croscarmellose sodium"
 Usage: #example
 
+* id = "fbf58407-83d3-42db-be3d-506b2006d431"
 * identifier.system = $ginas
 * identifier.value = "M28OL1HH48"
 * identifier.use = #official

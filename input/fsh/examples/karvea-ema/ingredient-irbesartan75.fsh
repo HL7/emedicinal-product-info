@@ -4,6 +4,7 @@ Title: "Ingredient-active irbesartan"
 Description: "irbesartan"
 Usage: #example
 
+* id = "745c01bc-936e-45ca-9880-57e97608f43e"
 * identifier.system = $ginas
 * identifier.value = "J0E2756Z7N"
 * identifier.use = #official

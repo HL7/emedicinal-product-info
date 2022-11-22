@@ -4,6 +4,7 @@ Title: "Packaging Blister x28 75 mg tablets"
 Description: "Blister x28 tablets"
 Usage: #example
 
+* id = "eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d"
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/97/049/001"
 * identifier.use = #official

@@ -8,6 +8,7 @@ Usage: #example
 * identifier.value = "EU/1/96/007/035"
 * identifier.use = #official
 
+* id = "297e405a-b6f9-4273-bc01-ae031efe47f8"
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * subject = Reference(karvea75mgblisterx28)
 
