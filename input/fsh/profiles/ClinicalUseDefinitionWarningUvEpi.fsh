@@ -5,7 +5,7 @@ Title: "ClinicalUseDefinition Warning (ePI)"
 Description: "ClinicalUseDefinition Warning (ePI)"
 
 * insert ClinicalUseDefinitionCommonRules
-* type = #undesirableEffect
+* type = #warning
 
 *  contraindication 0..0
 *  indication 0..0

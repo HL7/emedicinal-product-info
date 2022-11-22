@@ -84,6 +84,10 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:e60575aa-e7b3-4461-a456-d310514f4041"
 * entry[=].resource = interactionmethotrexate
 
+// Clinical Use Definition - Warning
+* entry[+].fullUrl = "urn:uuid:ac21a804-cafa-41ff-b644-a14c8003edeb"
+* entry[=].resource = warninghypotension
+
 // Substance
 * entry[+].fullUrl = "urn:uuid:da33bd51-a726-4232-aaa0-4168b9bfe249"
 * entry[=].resource = substanceirbesartan
