@@ -7,7 +7,7 @@ Description: "ClinicalUseDefinition Undesirable Effect (ePI)"
 
 * insert ClinicalUseDefinitionCommonRules
 
-* type = #undesirableEffect
+* type = #undesirable-effect
 
 *  contraindication 0..0
 *  indication 0..0

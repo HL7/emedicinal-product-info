@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "anemia"
 * identifier.use = #official
 
-* type = #undesirableEffect
+* type = #undesirable-effect
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
 * subject = Reference(urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837)
