@@ -29,6 +29,7 @@ Usage: #example
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
   * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 
+
 * section[+].
   * title = "B. Package Leaflet"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
@@ -70,6 +71,19 @@ Usage: #example
                 <li>Contents of the pack and other information</li>
             </ul>
         </div>"""
+  * entry[+] = Reference ( authorizationkarvea75)
+  * entry[+] = Reference (adminproductkarvea75)
+  * entry[+] = Reference (Silicondioxide)
+  * entry[+] = Reference ( irbesartan)
+  * entry[+] = Reference (carnaubawax)
+  * entry[+] = Reference (Croscarmellosesodium)
+  * entry[+] = Reference ( Hypromellose )
+  * entry[+] = Reference (lactosemonohydrate)
+  * entry[+] = Reference (Macrogol3000)
+  * entry[+] = Reference (Magnesiumstearate)
+  * entry[+] = Reference (Microcrystallinecellulose)
+  * entry[+] = Reference (titaniumdioxide)
+  * entry[+] = Reference (substanceirbesartan)
         
 * section[=].section[+]
   * title = "1. What Karvea is and what it is used for"
@@ -87,7 +101,9 @@ Usage: #example
                     evidence of impaired kidney function.</li>
             </ul>
         </div>"""
-        
+  * entry[+] = Reference (packagebottlex28)
+  * entry[+] = Reference (indication)
+
 * section[=].section[+]
   * title = "2. What you need to know before you take Karvea"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
@@ -220,7 +236,8 @@ Usage: #example
             <p>If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. You can also report side effects directly via the national reporting system listed in Appendix V. By reporting side effects you can help provide more information on the safety of this medicine.
             </p>
         </div>"""
-        
+  * entry[+] = Reference (warninghypotension)
+
 * section[=].section[+]
   * title = "5. How to store Karvea"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
@@ -465,3 +482,5 @@ Usage: #example
             <p>This leaflet was last revised in</p>
             <p>Detailed information on this medicine is available on the European Medicines Agency web site: http://www.ema.europa.eu/</p>            
         </div>"""
+  * entry[+] = Reference( interactionmethotrexate)
+  * entry[+] = Reference( contraindication)

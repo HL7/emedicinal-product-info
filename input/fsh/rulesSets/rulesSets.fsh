@@ -8,3 +8,8 @@ RuleSet: AdditionalBinding ( purpose, valueSetAlias, documentation, description)
 * ^binding.extension.extension[=].valueMarkdown = """{documentation}"""
 * ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * ^binding.description = "{description}"
+
+RuleSet: BundleEntry (sliceName, card, profile )
+
+* entry contains {sliceName} {card}
+* entry[{sliceName}].resource only {profile}

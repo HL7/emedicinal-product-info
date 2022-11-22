@@ -69,17 +69,11 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:a88891dc-7e9e-4d84-b462-95e53de3b6a6"
 * entry[=].resource = titaniumdioxide
 
-/* // 17 commented for the time being, waiting for a decision on what to do with this duplicated entry 
-// Packaged Product
-* entry[+].fullUrl = "urn:uuid:50621bdc-6174-4c27-85a0-02fb008435d3"
-* entry[=].resource = packagebottlex28 */
-
-
-// 18
+// 17
 // Clinical Use Definition - Indication
 * entry[+].fullUrl = "urn:uuid:4e922ec1-a398-4a78-8381-3729422b7602"
 * entry[=].resource = indication
-// 19
+// 18
 // Clinical Use Definition - Contraindication
 * entry[+].fullUrl = "urn:uuid:83f4a22f-9e5e-4941-9fdb-339a0f1f2055"
 * entry[=].resource = contraindication

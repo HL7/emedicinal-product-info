@@ -1,5 +1,5 @@
 Instance: indication
-InstanceOf: ClinicalUseDefinition-indication-uv-epi
+InstanceOf: ClinicalUseDefinitionIndicationUvEpi
 Description: "Indication"
 Usage: #example
 

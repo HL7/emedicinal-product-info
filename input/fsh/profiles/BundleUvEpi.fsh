@@ -23,11 +23,9 @@ Description: "Medicinal product information is a pivotal source of regulated and
 
 * entry 1.. // 
 * entry ^slicing.discriminator[0].type = #type
-* entry ^slicing.discriminator[=].path = "resource"
-
-
-//* entry ^slicing.discriminator[+].type = #profile
-//* entry ^slicing.discriminator[=].path = "resource"
+* entry ^slicing.discriminator[=].path = "$this.resource"
+/* * entry ^slicing.discriminator[+].type = #profile
+* entry ^slicing.discriminator[=].path = "$this.resource" */
 
 
 * entry ^slicing.rules = #open
@@ -49,7 +47,7 @@ Description: "Medicinal product information is a pivotal source of regulated and
 	manItem 0.. and
 	ingredient 0.. and
 	packagedProduct 0.. and
-	clinicalUse 0.. and
+	// clinicalUse 0.. and
 	substanceDefinition 0.. and
 	binary 0..
 	
@@ -61,7 +59,6 @@ Description: "Medicinal product information is a pivotal source of regulated and
 * entry[administrableProduct].resource 	1..
 * entry[manItem].resource 				1..
 * entry[ingredient].resource 			1..
-* entry[clinicalUse].resource 	1..
 * entry[substanceDefinition].resource 1..
 * entry[binary].resource 1.. 
 	
@@ -73,7 +70,15 @@ Description: "Medicinal product information is a pivotal source of regulated and
 * entry[administrableProduct].resource only AdministrableProductDefinitionUvEpi
 * entry[manItem].resource only ManufacturedItemDefinitionUvEpi
 * entry[ingredient].resource only IngredientUvEpi
-* entry[clinicalUse].resource only ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionInteractionUvEpi  or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi
+
+* insert BundleEntry (clinicalUse, 0.., ClinicalUseDefinition )
+/* * insert BundleEntry (clinicalUseDefinitionContraindicationUvEpi, 0.., ClinicalUseDefinitionContraindicationUvEpi )
+* insert BundleEntry (clinicalUseDefinitionIndicationUvEpi, 0.., ClinicalUseDefinitionIndicationUvEpi )
+* insert BundleEntry (clinicalUseDefinitionInteractionUvEpi, 0.., ClinicalUseDefinitionInteractionUvEpi )
+* insert BundleEntry (clinicalUseDefinitionUndesirableEffectUvEpi, 0.., ClinicalUseDefinitionUndesirableEffectUvEpi )
+* insert BundleEntry (clinicalUseDefinitionWarningUvEpi, 0.., ClinicalUseDefinitionWarningUvEpi ) */
+
+
 * entry[substanceDefinition].resource only SubstanceDefinitionUvEpi
 * entry[binary].resource only Binary
 * signature 

@@ -8,7 +8,7 @@ Description: "ClinicalUseDefinition Interaction (ePI)"
 * insert ClinicalUseDefinitionCommonRules
 * type = #interaction
 
-* interaction.interactant.itemCodeableConcept from VsAtcClassification
+* interaction.interactant.itemCodeableConcept from VsAtcClassification (preferred)
 
 
 
