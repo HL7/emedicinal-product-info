@@ -4,6 +4,7 @@ Title: "Ingredient-excipient carnauba wax"
 Description: "Carnauba wax"
 Usage: #example
 
+* id = "a4b7b60c-998f-4f93-89c7-860396af0fe3"
 * identifier.system = $ginas
 * identifier.value = "R12CBM0EIZ"
 * identifier.use = #official
