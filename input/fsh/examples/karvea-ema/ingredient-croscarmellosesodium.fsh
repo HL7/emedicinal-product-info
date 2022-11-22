@@ -16,7 +16,7 @@ Usage: #example
 * substance.code.concept.coding = $ginas#M28OL1HH48 "Croscarmellose sodium"
 
 // Reference to manufactured item
-* for = Reference(manitemkarvea75)
+* for = Reference(urn:uuid:3214f286-b8ec-4ef5-bc8d-0aec39d97468)
 
 // Reference to Organization:  Reference to MAH
-* manufacturer.manufacturer = Reference(sanofiaventisgroupe)
+* manufacturer.manufacturer = Reference(urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75)

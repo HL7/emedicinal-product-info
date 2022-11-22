@@ -9,7 +9,7 @@ Usage: #example
 * identifier.use = #official
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* subject = Reference(MedicinalProductDefinition/karvea75mgblisterx28)
+* subject = Reference(urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837)
 
 * type = $spor-rms#100000072062
 * type.text = "Marketing Authorisation"
@@ -23,4 +23,4 @@ Usage: #example
 * statusDate = "2015-02-07T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
-* holder = Reference(sanofiaventisgroupe)
+* holder = Reference(urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75)

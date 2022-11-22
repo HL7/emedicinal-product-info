@@ -27,7 +27,7 @@ Usage: #example
   * material = $spor-rms#200000003222 "PolyVinyl Chloride"
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(karvea75mgblisterx28)
+* packageFor = Reference(urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837)
 
  // Reference to Organization: MAH
-* manufacturer = Reference(sanofiaventisgroupe)
+* manufacturer = Reference(urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75)

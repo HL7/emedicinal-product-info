@@ -15,7 +15,7 @@ Usage: #example
 * description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
 
  // Reference to Organization: MAH
-* manufacturer = Reference(Organization/sanofiaventisgroupe)
+* manufacturer = Reference(urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75)
 
 * molecularWeight.type.text = "exact"
 * molecularWeight.amount.value = 428.53

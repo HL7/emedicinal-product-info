@@ -10,7 +10,7 @@ Usage: #example
 * type = #indication
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
-* subject = Reference(karvea75mgblisterx28)
+* subject = Reference(urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837)
 
 * indication
   * diseaseSymptomProcedure.concept.coding = $meddra#10020772 "Hypertension"

@@ -17,4 +17,4 @@ Usage: #example
 * unitOfPresentation.text = "Tablet"
 
  // Reference to Organization: Manufacturer
-* manufacturer = Reference(sanofiaventisgroupe)
+* manufacturer = Reference(urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75)
