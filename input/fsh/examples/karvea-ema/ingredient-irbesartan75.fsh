@@ -11,8 +11,8 @@ Usage: #example
 
 * status = #active
 
-* role = $spor-rms#00000072072
-* role.text = "active"
+* role = $roleclass#ACTIB
+* role.text = "active ingredient - basis of strength"
 
 * substance.code.concept.coding = $ginas#J0E2756Z7N "irbesartan"
 * substance.strength.presentationQuantity.value = 75

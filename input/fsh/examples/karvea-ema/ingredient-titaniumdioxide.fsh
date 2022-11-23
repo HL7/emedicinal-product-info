@@ -9,8 +9,8 @@ Usage: #example
 * identifier.value = "15FIX9V2JP"
 * identifier.use = #official
 
-* role = $spor-rms#100000072082
-* role.text = "Excipient"
+* role = $roleclass#IACT
+* role.text = "inactive ingredient"
 
 * status = #active
 

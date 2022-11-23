@@ -10,7 +10,7 @@ Usage: #example
 * identifier.use = #official
 
 * role = $roleclass#IACT
-* role.text = "Excipient"
+* role.text = "inactive ingredient"
 
 * status = #active
 
