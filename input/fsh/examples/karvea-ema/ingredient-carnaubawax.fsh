@@ -9,7 +9,7 @@ Usage: #example
 * identifier.value = "R12CBM0EIZ"
 * identifier.use = #official
 
-* role = $spor-rms#100000072082
+* role = $roleclass#IACT
 * role.text = "Excipient"
 
 * status = #active

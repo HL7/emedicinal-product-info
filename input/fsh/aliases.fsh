@@ -50,6 +50,7 @@ Alias: $gs1 = https://www.gs1.org/gtin
 Alias: $publication-status = http://hl7.org/fhir/publication-status
 Alias: $composition-attestation-mode = http://hl7.org/fhir/composition-attestation-mode
 
+Alias: $roleclass = http://terminology.hl7.org/CodeSystem/v3-RoleClass
 
 
 Alias: $medicinal-product-name-part-type = http://hl7.org/fhir/medicinal-product-name-part-type
