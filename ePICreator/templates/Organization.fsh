@@ -1,0 +1,31 @@
+{% for index,row in data["data"].iterrows() %}
+{% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
+
+
+Instance: {{ row["name"] | lower | replace(' ','')  }}
+InstanceOf: OrganizationUvEpi
+Title: "{{ row["name"]  }} as {{ row["type"]  }}"
+Description: "{{ row["type"]  }}"
+Usage: #example
+* id = "{{row['id']}}" 
+* identifier.system = $spor-org
+* identifier.value = "{{ row["identifier"]  }}"
+* identifier.use = #official
+
+* active = {{ row["active"]|lower  }}
+
+* type = $spor-rms#{{row["typeID"]}}  "{{ row["type"]  }}"
+* type.text = "{{ row["type"]  }}"
+* name = "{{ row["name"]  }}"
+
+* contact
+  * address
+    * text = "{{ row["address_text"]  }}"
+    * use = #{{ row["address_use"]  }}
+    * type = #{{ row["address_type"]  }}
+    * line = "{{ row["address_line"]  }}"
+    * city = "{{ row["address_city"]  }}"
+    * country = "{{ row["address_country"]  }}"
+
+{%- endif %}
+{%- endfor %}
