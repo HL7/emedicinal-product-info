@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Hypromellose"
 Description: "Hypromellose"
 Usage: #example
 
-* id = "07c15d46-2578-4736-a8cf-b83b435a1fa3" 
+* id = "9278143f-513c-4965-8ed6-12789e13a3fb" 
 
 * identifier.system = $ginas
 * identifier.value = "3NXW29V3WO"
@@ -30,7 +30,7 @@ Title: "Ingredient-excipient Macrogol 3000"
 Description: "Macrogol 3000"
 Usage: #example
 
-* id = "ed7ea65a-6dc9-4b0f-a575-f3560fbaf63f" 
+* id = "324cd066-b593-4b32-aae3-26986e2f8e2b" 
 
 * identifier.system = $ginas
 * identifier.value = "SA1B764746"
@@ -55,7 +55,7 @@ Title: "Ingredient-excipient Lactose Monohydrate"
 Description: "Lactose Monohydrate"
 Usage: #example
 
-* id = "4cd40543-963b-435b-ab5a-89048bd310fb" 
+* id = "793af3f5-edec-4a56-9584-cda6ad3fb8fc" 
 
 * identifier.system = $ginas
 * identifier.value = "EWQ57Q8I5X"
@@ -80,7 +80,7 @@ Title: "Ingredient-excipient Silicon dioxide"
 Description: "Silicon dioxide"
 Usage: #example
 
-* id = "65011e42-b2b8-4fe3-b37d-1986739a981f" 
+* id = "cfdd3877-9af7-48fe-9b15-a41614368a76" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -105,7 +105,7 @@ Title: "Ingredient-excipient Titanium Dioxide"
 Description: "Titanium Dioxide"
 Usage: #example
 
-* id = "93a5c65e-675c-45d0-8d88-2ba89bbdf2ea" 
+* id = "4660d47b-f1d3-4007-bc72-1e7ad77fb541" 
 
 * identifier.system = $ginas
 * identifier.value = "15FIX9V2JP"
@@ -130,7 +130,7 @@ Title: "Ingredient-active irbesartan"
 Description: "irbesartan"
 Usage: #example
 
-* id = "67e947b1-c66a-4fa8-b1e1-7a25eedddc7a" 
+* id = "4f8b256b-2285-486c-8a03-24b972898aa8" 
 
 * identifier.system = $ginas
 * identifier.value = "J0E2756Z7N"
@@ -159,7 +159,7 @@ Title: "Ingredient-excipient Croscarmellose sodium"
 Description: "Croscarmellose sodium"
 Usage: #example
 
-* id = "d1871cef-1bcc-4b1e-88c0-20ed254368ec" 
+* id = "ea2a8032-336a-4c0f-be2a-3084e9acbbcc" 
 
 * identifier.system = $ginas
 * identifier.value = "M28OL1HH48"
@@ -184,7 +184,7 @@ Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"
 Usage: #example
 
-* id = "6c563825-914c-4fb1-ae69-d60fea59f22a" 
+* id = "23307304-5469-4897-b676-e8202fd25afc" 
 
 * identifier.system = $ginas
 * identifier.value = "OP1R32D61U"
@@ -209,7 +209,7 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "e7b474a8-4eb2-482c-8aa9-e7da4dab85a9" 
+* id = "3a8b6287-50e6-42cf-91d9-1bb83bd57103" 
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
@@ -234,7 +234,7 @@ Title: "Ingredient-excipient Carnauba wax"
 Description: "Carnauba wax"
 Usage: #example
 
-* id = "daeb3840-5639-4bd7-9038-91694a367707" 
+* id = "878e7eb5-4023-4102-9aa5-f5ae596511ea" 
 
 * identifier.system = $ginas
 * identifier.value = "R12CBM0EIZ"

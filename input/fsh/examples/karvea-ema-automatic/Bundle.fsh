@@ -5,14 +5,14 @@ Title: "ePI document Bundle for Karvea 75 mg Package Leaflet"
 Description: "Bundle for Karvea 75 mg Package Leaflet ePI document"
 Usage: #example
 
-* id = "66847d8d-7ebf-4e23-8838-92e3f5a25622" 
+* id = "479b02e1-cb8c-450d-988e-2bf225ff9413" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-* entry[0].fullUrl = "f46a3ecf-fc6c-46e2-abd1-1e65d8c7854b"
+* entry[0].fullUrl = "8e41a79c-274e-4f52-984e-e2dc2174bbdf"
 * entry[0].resource = compositionKarvea
 
  
@@ -21,26 +21,26 @@ Usage: #example
 * entry[=].resource = contraindication-gastrointestinaldisorders 
  
 // Ingredient
-* entry[+].fullUrl = "07c15d46-2578-4736-a8cf-b83b435a1fa3"
+* entry[+].fullUrl = "9278143f-513c-4965-8ed6-12789e13a3fb"
 * entry[=].resource = ingredienthypromellose 
 // Substance
-* entry[+].fullUrl = "6fe1bab5-bf55-402f-849f-1f8881bc11f9"
+* entry[+].fullUrl = "79524c84-b17b-4c17-a69e-a9b9b9f1fe5f"
 * entry[=].resource = substance-irbesartan 
 // AdministrableProductDefinition
 * entry[+].fullUrl = "xx"
 * entry[=].resource = adminproductkarvea75mgtablet 
 // RegulatedAuthorization
-* entry[+].fullUrl = "b2ad138a-1b90-4cb5-b5cb-5e95b5046e1a"
+* entry[+].fullUrl = "d9901302-451f-4902-839a-5f4375895066"
 * entry[=].resource = authorizationkarvea75mgtablet 
 // Organization
-* entry[+].fullUrl = "1e7c5e9e-8cbf-4fbd-ba1c-db52b4a5d39d"
+* entry[+].fullUrl = "961e5052-6a8a-403a-b6ac-5e585c89de8e"
 * entry[=].resource = sanofi-aventisgroupe 
 // PackagedProductDefinition
-* entry[+].fullUrl = "ecb515bf-4e5d-404e-8993-4d9780f67cf7"
+* entry[+].fullUrl = "f556130a-9d5d-40d2-84a0-dbf2c92afbe4"
 * entry[=].resource = karvea75mgtabletblisterx28tablets 
 // MedicinalProductDefinition
-* entry[+].fullUrl = "3c964484-4beb-48f9-96b6-bd90b5d5a704"
+* entry[+].fullUrl = "d2bbeade-13e5-445d-8ec0-ae25cae09680"
 * entry[=].resource = Karvea75mgtabletblisterx28 
 // ManufacturedItemDefinition
-* entry[+].fullUrl = "16a29d3d-bf8c-4be3-a443-8b2998b6f5aa"
+* entry[+].fullUrl = "1e8963b2-896e-4ad7-a162-85e07cdd272f"
 * entry[=].resource = karvea75mgtablet 

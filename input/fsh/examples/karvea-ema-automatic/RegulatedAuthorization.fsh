@@ -6,7 +6,7 @@ Description: "Regulated Authorization for karvea 75 mg tablet"
 Usage: #example
 
 
-* id = "b2ad138a-1b90-4cb5-b5cb-5e95b5046e1a" 
+* id = "d9901302-451f-4902-839a-5f4375895066" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"

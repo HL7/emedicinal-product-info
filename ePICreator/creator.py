@@ -42,7 +42,6 @@ if OUTPUT_FOLDER[-1] != "/":
 temp_folder = getcwd() + "/temp/"
 
 if not exists(temp_folder):
-
     mkdir(temp_folder)
 
 for sheet in elements:
@@ -55,7 +54,7 @@ for sheet in elements:
     #   print(df)
     df.to_csv(temp_folder + sheet + ".csv", index=True)
 
-data_dict = {} #if needed
+data_dict = {}  # if needed
 data = {"dictionary": data_dict, "turn": "1"}
 
 # multiple elementsa
@@ -92,10 +91,10 @@ for file in listdir(OUTPUT_FOLDER):
                 list_ids.append(line.replace("* id = ", "").strip())
         object_ids[file.split(".")[0]] = list_ids
 
-print(object_ids)
+# print(object_ids)
 data["references"] = object_ids
 
-
+print("newline" + " ---" * 30)
 # multiple elementsa
 for file in listdir(temp_folder):
     print(file)
