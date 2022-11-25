@@ -254,17 +254,7 @@ Usage: #example
             <p>cava 75 mg tablets are supplied in blister packs of 14, 28, 56 or 98 tablets. Unidose blister packs of 56 x 1 tablet for delivery in hospitals are also available.</p>
             <p>Not all pack sizes may be marketed.</p>
             <b>Marketing Authorisation Holder:</b>
-            <p>sanofi-aventis groupe</p>
-            <p>54, rue La Boétie</p>
-            <p>F-75008 Paris - France</p>
-            <p>Manufacturer:</p>
-            <p>SANOFI WINTHROP INDUSTRIE</p>
-            <p>1, rue de la Vierge</p>
-            <p>Ambarès and Lagrave</p>
-            <p>F-33565 Carbon Blanc Cedex - France</p>
-            <p>SANOFI WINTHROP INDUSTRIE</p>
-            <p>30-36 Avenue Gustave Eiffel, BP 7166</p>
-            <p>F-37071 Tours Cedex 2 - France</p>
+            <p>Acme inc</p>
             <p>For any information about this medicinal product, please contact the local representative of the Marketing Authorisation Holder.</p>
             <table>
                 <colgroup>
@@ -281,7 +271,7 @@ Usage: #example
                     <tr>
                         <td>
                             <p><b>België/Belgique/Belgien </b></p>
-                            <p>Sanofi Belgium</p>
+                            <p>Acme Belgium</p>
                             <p> Tél/Tel: +32 (0)2 710 54 00 </p>
                         </td>
                         <td>
@@ -297,42 +287,42 @@ Usage: #example
                         </td>
                         <td>
                             <p><b>Luxembourg/Luxemburg </b></p>
-                            <p>Sanofi Belgium</p>
+                            <p>Acme Belgium</p>
                             <p> Tél/Tel: +32 (0)2 710 54 00 (Belgique/Belgien) </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p><b>Česká republika </b></p>
-                            <p>sanofi-aventis, s.r.o. Tel: +420 233 086 111 </p>
+                            <p>Acme inc, s.r.o. Tel: +420 233 086 111 </p>
                         </td>
                         <td>
                             <p><b>Magyarország </b></p>
-                            <p>SANOFI-A VENTIS Zrt. Tel.: +36 1 505 0050 </p>
+                            <p>Acme-A VENTIS Zrt. Tel.: +36 1 505 0050 </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p><b>Danmark </b></p>
-                            <p>Sanofi A/S</p>
+                            <p>Acme A/S</p>
                             <p> Tlf: +45 45 16 70 00 </p>
                         </td>
                         <td>
                             <p><b>Malta </b></p>
-                            <p>Sanofi S.r.l.</p>
+                            <p>Acme S.r.l.</p>
                             <p> Tel: +39 02 39394275 </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p><b>Deutschland </b></p>
-                            <p>Sanofi-Aventis Deutschland GmbH</p>
+                            <p>Acme inc Deutschland GmbH</p>
                             <p> Tel: 0800 52 52 010</p>
                             <p> Tel. aus dem Ausland: +49 69 305 21 131 </p>
                         </td>
                         <td>
                             <p><b>Norge </b></p>
-                            <p>sanofi-aventis Norge AS Tlf: +47 67 10 71 00 </p>
+                            <p>Acme inc Norge AS Tlf: +47 67 10 71 00 </p>
                         </td>
                     </tr>
                     <tr>
@@ -342,36 +332,36 @@ Usage: #example
                         </td>
                         <td>
                             <p><b>Österreich </b></p>
-                            <p>sanofi-aventis GmbH Tel: +43 1 80 185 - 0 </p>
+                            <p>Acme inc GmbH Tel: +43 1 80 185 - 0 </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p><b>Ελλάδα </b></p>
-                            <p>sanofi-aventis AEBE Τηλ: +30 210 900 16 00 </p>
+                            <p>Acme inc AEBE Τηλ: +30 210 900 16 00 </p>
                         </td>
                         <td>
                             <p><b>Polska </b></p>
-                            <p>sanofi-aventis Sp. z o.o. Tel.: +48 22 280 00 00 </p>
+                            <p>Acme inc Sp. z o.o. Tel.: +48 22 280 00 00 </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p><b>España </b></p>
-                            <p>sanofi-aventis, S.A. Tel: +34 93 485 94 00 </p>
+                            <p>Acme inc, S.A. Tel: +34 93 485 94 00 </p>
                         </td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>
                             <p><b>France </b></p>
-                            <p>sanofi-aventis France</p>
+                            <p>Acme inc France</p>
                             <p> Tél: 0 800 222 555</p>
                             <p>Appel depuis l'étranger : +33 1 57 63 23 23 </p>
                         </td>
                         <td>
                             <p><b>Portugal </b></p>
-                            <p>Sanofi - Produtos Farmacêuticos, Lda Tel: +351 21 35 89 400 </p>
+                            <p>Acme - Produtos Farmacêuticos, Lda Tel: +351 21 35 89 400 </p>
                         </td>
                     </tr>
                     <tr>
@@ -381,13 +371,13 @@ Usage: #example
                         </td>
                         <td>
                             <p><b>România </b></p>
-                            <p>Sanofi Romania SRL Tel: +40 (0) 21 317 31 36 </p>
+                            <p>Acme Romania SRL Tel: +40 (0) 21 317 31 36 </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p><b>Ireland </b></p>
-                            <p>sanofi-aventis Ireland Ltd. T/A SANOFI Tel: +353 (0) 1 403 56 00 </p>
+                            <p>Acme inc Ireland Ltd. T/A Acme Tel: +353 (0) 1 403 56 00 </p>
                         </td>
                         <td>
                             <p><b>Slovenija </b></p>
@@ -408,11 +398,11 @@ Usage: #example
                     <tr>
                         <td>
                             <p><b>Italia </b></p>
-                            <p>Sanofi S.r.l. Tel: 800 536389 </p>
+                            <p>Acme S.r.l. Tel: 800 536389 </p>
                         </td>
                         <td>
                             <p><b>Suomi/Finland </b></p>
-                            <p>Sanofi Oy</p>
+                            <p>Acme Oy</p>
                             <p> Puh/Tel: +358 (0) 201 200 300 </p>
                         </td>
                     </tr>
@@ -423,7 +413,7 @@ Usage: #example
                         </td>
                         <td>
                             <p><b>Sverige </b></p>
-                            <p>Sanofi AB</p>
+                            <p>Acme AB</p>
                             <p> Tel: +46 (0)8 634 50 00 </p>
                         </td>
                     </tr>
@@ -434,7 +424,7 @@ Usage: #example
                         </td>
                         <td>
                             <p><b>United Kingdom (Northern Ireland) </b></p>
-                            <p>sanofi-aventis Ireland Ltd. T/A SANOFI Tel: +44 (0) 800 035 2525 </p>
+                            <p>Acme inc Ireland Ltd. T/A Acme Tel: +44 (0) 800 035 2525 </p>
                         </td>
                     </tr>
                     <tr>
