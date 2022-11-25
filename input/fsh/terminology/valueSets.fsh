@@ -33,20 +33,18 @@ Description: "Medicinal Product Type"
 //=========================
 ValueSet: VsPharmaceuticalDoseForm
 Id: PharmaceuticalDoseForm
-Title: "EDQM Pharmaceutical Dose Form"
-Description: "European Directorate for the Quality of Medicines and Healthcare (EDQM) Combined Pharmaceutical Dose Form"
+Title: "Combined Pharmaceutical Dose Form"
+Description: "Combined Pharmaceutical Dose Form"
 * ^experimental = false
-* codes from system http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform //"Pharmaceutical Dose Form" // to be reviewed
-* ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database"
+* codes from system $spor-combinedPharmaceuticalDoseForm-cs
 
 //=========================
 ValueSet: VsRouteOfAdministration
 Id: routeOfAdministration
-Title: "EDQM Route Of Administration"
-Description:  "European Directorate for the Quality of Medicines and Healthcare (EDQM) Route Of Administration"
+Title: "Route Of Administration"
+Description:  "Route Of Administration"
 * ^experimental = false
-* codes from system $edqm-route-cs
-* ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database"
+* codes from system $spor-route-cs
 
 //=========================
 ValueSet: VsPackagedProductIdSystems

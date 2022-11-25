@@ -11,7 +11,7 @@ Usage: #example
 
 * status = #active
 
-* manufacturedDoseForm = $edqm-combinedPharmaceuticalDoseForm-cs#10219000
+* manufacturedDoseForm = $spor-combinedPharmaceuticalDoseForm-cs#10219000
 * manufacturedDoseForm.text = "tablet"
 
 * unitOfPresentation = $spor-rms#200000002152

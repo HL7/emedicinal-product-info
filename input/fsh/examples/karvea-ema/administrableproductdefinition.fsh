@@ -14,7 +14,7 @@ Usage: #example
 //reference to MedicinalProductDefinition: EU/1/97/049/001 cava 75 mg tablet
 * formOf = Reference(cava75mgblisterx28)
 
-* administrableDoseForm = $edqm-combinedPharmaceuticalDoseForm-cs#200000002152
+* administrableDoseForm = $spor-combinedPharmaceuticalDoseForm-cs#200000002152
 * administrableDoseForm.text = "Tablet"
 
 * unitOfPresentation = $spor-rms#200000002152
@@ -23,7 +23,7 @@ Usage: #example
  // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(manitemcava75)
 
-* routeOfAdministration.code = $edqm-route-cs#20053000
+* routeOfAdministration.code = $spor-route-cs#100000073619
 * routeOfAdministration.code.text = "Oral use"
 * routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
 * routeOfAdministration.targetSpecies.code.text = "Human"
