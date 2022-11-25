@@ -7,7 +7,11 @@ Description: "ClinicalUseDefinition Indication (ePI)"
 * insert ClinicalUseDefinitionCommonRules
 * type = #indication
 
-*  interaction ..0
+* contraindication 0..0
+// * indication 0..0
+* interaction 0..0
+* warning 0..0
+* undesirableEffect 0..0
 *  indication 1..
   * diseaseSymptomProcedure from VsMeddra (preferred)
 
