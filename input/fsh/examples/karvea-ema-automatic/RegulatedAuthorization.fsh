@@ -6,7 +6,7 @@ Description: "Regulated Authorization for karvea 75 mg tablet"
 Usage: #example
 
 
-* id = "d9901302-451f-4902-839a-5f4375895066" 
+* id = "28d93e3e-ce89-4f68-b797-c77858c85170" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
@@ -23,7 +23,7 @@ Usage: #example
 * region = urn:iso:std:iso:3166#DK "Denmark"
 
 
-* status = http://hl7.org/fhir/publication-status#Active "Active"
+* status = http://hl7.org/fhir/publication-status#active "Active"
 
 
 * statusDate = "2015-02-07T13:28:17Z"

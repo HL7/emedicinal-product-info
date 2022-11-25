@@ -27,7 +27,7 @@ Usage: #example
 * region = urn:iso:std:iso:3166#{{ row["regionID"] }} "{{ row["region"] }}"
 
 
-* status = http://hl7.org/fhir/publication-status#{{ row["status"] }} "{{ row["status"] }}"
+* status = http://hl7.org/fhir/publication-status#{{ row["statusID"] }} "{{ row["status"] }}"
 
 
 * statusDate = "{{ row["statusDate"] }}"
