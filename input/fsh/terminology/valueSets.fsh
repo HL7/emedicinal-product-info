@@ -90,7 +90,7 @@ Description: "ePI document types"
 * $spor-rms#100000155538 "Package Leaflet"
 * $loinc#34390-5	"HUMAN OTC DRUG LABEL"
 * $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
-* ^copyright = "Per the LOINC License “Permission is hereby granted in perpetuity, without payment of license fees or royalties, to use, copy, or distribute the Licensed Materials for any commercial or non-commercial purpose, subject to the following terms and conditions” Please also note that some content (for example some of the assessment scale content) within LOINC is subject to copyright from third parties and is present in LOINC with permission or under the applicable terms of use from the third party. Some included third party content requires attribution specific to a particular LOINC code or codes. Such third party content is identified in the LOINC Table and LOINC Table Core by the applicable copyright notice stored in the EXTERNAL_COPYRIGHT_NOTICE field. For further information and for details of how implementers should manage use of third party content (including license obligations) please see https://loinc.org/kb/license/"
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 
 //==========================
 ValueSet: VsOrganizationType
