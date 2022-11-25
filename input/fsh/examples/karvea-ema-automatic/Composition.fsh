@@ -5,7 +5,7 @@ Title: "Composition for Karvea Package Leaflet"
 Description:  "Composition for Karvea Package Leaflet"
 Usage: #example
 
-* id = "cca0194f-50f8-4e71-b7a0-a561b3d77cf5" 
+* id = "abadfd0b-0fa1-421e-b517-bd3255e147b9" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -26,32 +26,32 @@ Usage: #example
 
  
   // ClinicalUseDefinition
-//  * entry[+].fullUrl = "ii"
+//  * entry[+].fullUrl = ii
   * entry[+] = Reference(contraindication-gastrointestinaldisorders) 
  
   // Ingredient
-//  * entry[+].fullUrl = "6dd755a3-20e3-4b93-b31f-7fbc6ea3fc84"
+//  * entry[+].fullUrl = 25dd4001-fdfd-4c6f-870b-b2ff00610312
   * entry[+] = Reference(ingredienthypromellose) 
   // Substance
-//  * entry[+].fullUrl = "37e8b13f-27d0-4fb2-8621-e23881b9b699"
+//  * entry[+].fullUrl = baa3f934-67dd-437c-9001-7cdac7864fe7
   * entry[+] = Reference(substance-irbesartan) 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = "xx"
+//  * entry[+].fullUrl = xx
   * entry[+] = Reference(adminproductkarvea75mgtablet) 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = "4ce9dc07-9eab-498c-89fb-e68447570cb2"
+//  * entry[+].fullUrl = b5aaa57a-581e-4e2d-8b1e-ea795eb6d8e5
   * entry[+] = Reference(authorizationkarvea75mgtablet) 
   // Organization
-//  * entry[+].fullUrl = "ab412c85-b8af-463b-ab20-4605091fe702"
+//  * entry[+].fullUrl = 506d4d7c-794e-4483-98f8-8d3c0a6e136e
   * entry[+] = Reference(sanofi-aventisgroupe) 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = "578d2778-e67e-45d6-933c-5b48dae595d1"
+//  * entry[+].fullUrl = e6ebfe41-8862-49f3-a17d-b05c42d0dba2
   * entry[+] = Reference(karvea75mgtabletblisterx28tablets) 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = "7cd8930e-f989-433b-b26e-a06e00d31fd1"
+//  * entry[+].fullUrl = 0c7c4767-29d5-494d-aa24-3d852707f07a
   * entry[+] = Reference(Karvea75mgtabletblisterx28) 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = "8eb4188d-8948-4db7-8a31-5c906e0b92c5"
+//  * entry[+].fullUrl = db028fa6-4f10-4dc8-8025-9f65b599bc7b
   * entry[+] = Reference(karvea75mgtablet) 
    
 

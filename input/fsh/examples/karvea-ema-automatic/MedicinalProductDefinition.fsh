@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
 Usage: #example
 
 
-* id = "7cd8930e-f989-433b-b26e-a06e00d31fd1" 
+* id = "0c7c4767-29d5-494d-aa24-3d852707f07a" 
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 

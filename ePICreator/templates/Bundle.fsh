@@ -21,7 +21,7 @@ Usage: #example
 {% for key,value in data["references"].items() %} 
 {% if key != "Composition" and key !="Bundle" %}
 // {{key}}
-* entry[+].fullUrl = {{value[1]}}
+* entry[+].fullUrl = "{{key}}/{{value[1]}}"
 * entry[=].resource = {{value[0]}}
 {%- endif %}   
 {%- endfor %}

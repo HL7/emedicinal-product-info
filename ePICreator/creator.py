@@ -88,7 +88,7 @@ for file in listdir(OUTPUT_FOLDER):
                 list_ids.append(line.replace("Instance: ", "").strip())
             if "* id = " in line:
                 # print(line)
-                list_ids.append(line.replace("* id = ", "").strip())
+                list_ids.append(line.replace("* id = ", "").replace('"', "").strip())
         object_ids[file.split(".")[0]] = list_ids
 
 # print(object_ids)
