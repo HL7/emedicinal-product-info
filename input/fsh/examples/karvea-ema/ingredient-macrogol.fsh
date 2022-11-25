@@ -17,7 +17,7 @@ Usage: #example
 * substance.code.concept.coding = $ginas#SA1B764746 "Macrogol 3000"
 
 // Reference to manufactured item
-* for = Reference(manitemkarvea75)
+* for = Reference(manitemcava75)
 
 // Reference to Organization:  Reference to MAH
-* manufacturer.manufacturer = Reference(sanofiaventisgroupe)
+* manufacturer.manufacturer = Reference(acmeinc)

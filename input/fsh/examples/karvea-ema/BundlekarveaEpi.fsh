@@ -1,7 +1,7 @@
 Instance: bundlepackageleaflet75
 InstanceOf: BundleUvEpi
-Title: "ePI document Bundle for Karvea 75 mg Package Leaflet"
-Description: "Bundle for Karvea Package Leaflet ePI document"
+Title: "ePI document Bundle for cava 75 mg Package Leaflet"
+Description: "Bundle for cava Package Leaflet ePI document"
 Usage: #example
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
@@ -11,19 +11,19 @@ Usage: #example
 
 // Composition 0
 * entry[0].fullUrl = "urn:uuid:e63f72b2-993f-48b1-b7cb-539b1ed71571"
-* entry[0].resource = compositionkarvea75
+* entry[0].resource = compositioncava75
 
 // Organizations
 * entry[+].fullUrl = "urn:uuid:d71bf884-90eb-47f9-81b7-fa81ecec7e75"
-* entry[=].resource = sanofiaventisgroupe
+* entry[=].resource = acmeinc
 
 // authorizations
 * entry[+].fullUrl = "urn:uuid:297e405a-b6f9-4273-bc01-ae031efe47f8"
-* entry[=].resource = authorizationkarvea75
+* entry[=].resource = authorizationcava75
 
 // medicinal products 3
 * entry[+].fullUrl = "urn:uuid:800a51a2-d81d-49a4-a4eb-f2417d301837"
-* entry[=].resource = karvea75mgblisterx28
+* entry[=].resource = cava75mgblisterx28
 
 // packaged product 4
 * entry[+].fullUrl = "urn:uuid:eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d"
@@ -31,11 +31,11 @@ Usage: #example
 
 // administrable product 5
 * entry[+].fullUrl = "urn:uuid:373b9bf3-1fae-47a1-a7cd-230106def069"
-* entry[=].resource = adminproductkarvea75
+* entry[=].resource = adminproductcava75
 
 // manufactured items 6
 * entry[+].fullUrl = "urn:uuid:3214f286-b8ec-4ef5-bc8d-0aec39d97468"
-* entry[=].resource = manitemkarvea75
+* entry[=].resource = manitemcava75
 
 // ingredients 7
 * entry[+].fullUrl = "urn:uuid:09c13040-8fd5-4818-972d-f01d4ee169b6"

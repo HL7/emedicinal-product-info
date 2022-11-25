@@ -22,7 +22,7 @@ Usage: #example
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
 // Reference to manufactured item
-* for = Reference(manitemkarvea75)
+* for = Reference(manitemcava75)
 
 // Reference to Organization:  Reference to MAH
-* manufacturer.manufacturer = Reference(sanofiaventisgroupe)
+* manufacturer.manufacturer = Reference(acmeinc)

@@ -13,10 +13,10 @@ Usage: #example
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1
 * status.text = "Validated (UNII)"
 
-* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
+* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 1234 engraved on the other side."
 
  // Reference to Organization: MAH
-* manufacturer = Reference(sanofiaventisgroupe)
+* manufacturer = Reference(acmeinc)
 
 * molecularWeight.type.text = "exact"
 * molecularWeight.amount.value = 428.53

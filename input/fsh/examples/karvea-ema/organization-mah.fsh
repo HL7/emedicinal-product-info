@@ -1,6 +1,6 @@
-Instance: sanofiaventisgroupe
+Instance: acmeinc
 InstanceOf: OrganizationUvEpi
-Title: "Sanofi-Aventis Groupe as Marketing Authorization Holder"
+Title: "Acme Inc. as Marketing Authorization Holder"
 Description: "Marketing Authorization Holder"
 Usage: #example
 
@@ -13,13 +13,13 @@ Usage: #example
 
 * type = $spor-rms#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
-* name = "Sanofi-Aventis Groupe"
+* name = "Acme Inc"
 
 * contact
   * address
-    * text = "54, rue La Boétie F-75008 Paris - France"
+    * text = "60, rue La Boétie F-75008 Paris - France"
     * use = #work
     * type = #physical
-    * line = "54, rue La Boétie F-75008"
-    * city = "Paris"
+    * line = "60, rue La Boétie F-75008"
+    * city = "Lion"
     * country = "FR"

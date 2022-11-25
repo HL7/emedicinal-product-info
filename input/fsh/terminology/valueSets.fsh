@@ -33,18 +33,20 @@ Description: "Medicinal Product Type"
 //=========================
 ValueSet: VsPharmaceuticalDoseForm
 Id: PharmaceuticalDoseForm
-Title: "Pharmaceutical Dose Form"
-Description: "Pharmaceutical Dose Form"
+Title: "EDQM Pharmaceutical Dose Form"
+Description: "European Directorate for the Quality of Medicines and Healthcare (EDQM) Combined Pharmaceutical Dose Form"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/pmswi //"Pharmaceutical Dose Form" // to be reviewed
+* codes from system http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform //"Pharmaceutical Dose Form" // to be reviewed
+* ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database"
 
 //=========================
 ValueSet: VsRouteOfAdministration
 Id: routeOfAdministration
-Title: "Route Of Administration"
-Description:  "Route Of Administration"
+Title: "EDQM Route Of Administration"
+Description:  "European Directorate for the Quality of Medicines and Healthcare (EDQM) Route Of Administration"
 * ^experimental = false
-* codes from system $spor-route-cs
+* codes from system $edqm-route-cs
+* ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database"
 
 //=========================
 ValueSet: VsPackagedProductIdSystems
@@ -88,6 +90,7 @@ Description: "ePI document types"
 * $spor-rms#100000155538 "Package Leaflet"
 * $loinc#34390-5	"HUMAN OTC DRUG LABEL"
 * $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
+* ^copyright = "Per the LOINC License “Permission is hereby granted in perpetuity, without payment of license fees or royalties, to use, copy, or distribute the Licensed Materials for any commercial or non-commercial purpose, subject to the following terms and conditions” Please also note that some content (for example some of the assessment scale content) within LOINC is subject to copyright from third parties and is present in LOINC with permission or under the applicable terms of use from the third party. Some included third party content requires attribution specific to a particular LOINC code or codes. Such third party content is identified in the LOINC Table and LOINC Table Core by the applicable copyright notice stored in the EXTERNAL_COPYRIGHT_NOTICE field. For further information and for details of how implementers should manage use of third party content (including license obligations) please see https://loinc.org/kb/license/"
 
 //==========================
 ValueSet: VsOrganizationType
@@ -132,10 +135,11 @@ Description: "Pediatric Use Indicator"
 //==========================
 ValueSet: VsAtcClassification
 Id: atcClassification
-Title: "ATC Classification"
-Description: "ATC Classification"
+Title: "WHO ATC"
+Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system"
 * ^experimental = false
 * codes from system $atc 
+* ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"
 
 //==========================
 ValueSet: VsMarketingStatus

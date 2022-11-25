@@ -1,6 +1,6 @@
-Instance: authorizationkarvea75
+Instance: authorizationcava75
 InstanceOf: RegulatedAuthorizationUvEpi
-Title: "Regulated Authorization for Karvea 75 mg tablets"
+Title: "Regulated Authorization for cava 75 mg tablets"
 Description: "Regulated Authorization"
 Usage: #example
 
@@ -9,8 +9,8 @@ Usage: #example
 * identifier.use = #official
 
 * id = "297e405a-b6f9-4273-bc01-ae031efe47f8"
- // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* subject = Reference(karvea75mgblisterx28)
+ // Reference to MedicinalProductDefinition: EU/1/97/049/001 cava 75 mg tablet
+* subject = Reference(cava75mgblisterx28)
 
 * type = $spor-rms#100000072062
 * type.text = "Marketing Authorisation"
@@ -24,4 +24,4 @@ Usage: #example
 * statusDate = "2015-02-07T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
-* holder = Reference(sanofiaventisgroupe)
+* holder = Reference(acmeinc)
