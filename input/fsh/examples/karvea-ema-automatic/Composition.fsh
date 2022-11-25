@@ -5,7 +5,7 @@ Title: "Composition for Karvea Package Leaflet"
 Description:  "Composition for Karvea Package Leaflet"
 Usage: #example
 
-* id = "abadfd0b-0fa1-421e-b517-bd3255e147b9" 
+* id = "5fef3008-ca68-4f9e-8bea-73a7d2fb657e" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,28 +30,28 @@ Usage: #example
   * entry[+] = Reference(contraindication-gastrointestinaldisorders) 
  
   // Ingredient
-//  * entry[+].fullUrl = 25dd4001-fdfd-4c6f-870b-b2ff00610312
+//  * entry[+].fullUrl = 57e140ed-af10-4e30-a6ca-76a9e8d6a8d7
   * entry[+] = Reference(ingredienthypromellose) 
   // Substance
-//  * entry[+].fullUrl = baa3f934-67dd-437c-9001-7cdac7864fe7
+//  * entry[+].fullUrl = 968027ff-a4cb-4d8f-83ca-2b68d25df7d5
   * entry[+] = Reference(substance-irbesartan) 
   // AdministrableProductDefinition
 //  * entry[+].fullUrl = xx
   * entry[+] = Reference(adminproductkarvea75mgtablet) 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = b5aaa57a-581e-4e2d-8b1e-ea795eb6d8e5
+//  * entry[+].fullUrl = f93760e1-e84e-498a-8251-55d1bf9b7b85
   * entry[+] = Reference(authorizationkarvea75mgtablet) 
   // Organization
-//  * entry[+].fullUrl = 506d4d7c-794e-4483-98f8-8d3c0a6e136e
+//  * entry[+].fullUrl = deca5004-33c1-4d80-a25d-43f83bb71277
   * entry[+] = Reference(sanofi-aventisgroupe) 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = e6ebfe41-8862-49f3-a17d-b05c42d0dba2
+//  * entry[+].fullUrl = 5525ec14-3580-4787-955b-1a332f12ef45
   * entry[+] = Reference(karvea75mgtabletblisterx28tablets) 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 0c7c4767-29d5-494d-aa24-3d852707f07a
+//  * entry[+].fullUrl = e02a86aa-215d-45a7-afca-eda52266f54f
   * entry[+] = Reference(Karvea75mgtabletblisterx28) 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = db028fa6-4f10-4dc8-8025-9f65b599bc7b
+//  * entry[+].fullUrl = ad96f148-121c-41bc-8ba6-1274bb9a94bb
   * entry[+] = Reference(karvea75mgtablet) 
    
 

@@ -15,7 +15,7 @@ Usage: #example
 {% if data["turn"] != "1" %}
 
 // Composition
-* entry[0].fullUrl = {{data["references"]["Composition"][1]}}
+* entry[0].fullUrl = "Composition/{{data["references"]["Composition"][1]}}"
 * entry[0].resource = {{data["references"]["Composition"][0]}}
 
 {% for key,value in data["references"].items() %} 
