@@ -3,7 +3,7 @@
 # No schematrons available for Logical Models
 The link 'StructureDefinition-Patient.sch' for "Schematron" cannot be resolved
 
-# Code systems are external codesystems not expected to be supported by the HL7 Terminology server
+# external value sets/codesystems
 INFORMATION: Bundle/bundlepackageleaflet75: Bundle.entry[0].resource.ofType(Composition).type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Bundle/bundlepackageleaflet75: Bundle.entry[0].resource.ofType(Composition).section[0].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Bundle/bundlepackageleaflet75: Bundle.entry[0].resource.ofType(Composition).section[1].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
@@ -16,6 +16,10 @@ INFORMATION: Bundle/bundlepackageleaflet75: Bundle.entry[0].resource.ofType(Comp
 INFORMATION: Bundle/bundlepackageleaflet75: Bundle.entry[0].resource.ofType(Composition).section[1].section[6].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Bundle/bundlepackageleaflet75: Bundle.entry[0].resource.ofType(Composition).section[1].section[7].code.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/' is unknown so the code cannot be validated
 INFORMATION: Bundle/bundlepackageleaflet75: Bundle.entry[1].resource.ofType(List).code.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi' is unknown so the code cannot be validated
+
+INFORMATION: Code System URI 'https://spor.ema.europa.eu/rmswi/200000000006' is unknown so the code cannot be validated
+
+
 
 INFORMATION: AdministrableProductDefinition/adminproductkarvea75: AdministrableProductDefinition.administrableDoseForm.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi' is unknown so the code cannot be validated
 INFORMATION: AdministrableProductDefinition/adminproductkarvea75: AdministrableProductDefinition.unitOfPresentation.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi' is unknown so the code cannot be validated
@@ -234,7 +238,7 @@ ERROR: CapabilityStatement/epi-server: CapabilityStatement.rest[0].operation[3].
 ERROR: CapabilityStatement/epi-server: CapabilityStatement.rest[0].operation[4].definition: Canonical URL 'http://hl7.org/fhir/OperationDefinition/medicinalproductdefinition-everything' does not resolve
 
 
-# Code systems are external codesystems not expected to be supported by the HL7 Terminology server
+# external value sets/codesystems
 WARNING: ValueSet.where(id = 'PharmaceuticalDoseForm'): Error from server: Unable to provide support for code system https://spor.ema.europa.eu/pmswi
 
 WARNING: ValueSet.where(id = 'VsRegulatedAuthorization'): Error from server: Unable to provide support for code system https://spor.ema.europa.eu/pmswi
@@ -274,3 +278,7 @@ WARNING: ValueSet.where(id = 'sectionCode'): Error from server: Unable to provid
 WARNING: ValueSet.where(id = 'shelfLifeType'): Error from server: Unable to provide support for code system https://spor.ema.europa.eu/omswi
 
 WARNING: ValueSet.where(id = 'specialPrecautionsForStorage'): Error from server: Unable to provide support for code system https://spor.ema.europa.eu/rmswi/100000073344
+
+WARNING: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/uv/vulcan-eproduct-info/ValueSet/PharmaceuticalDoseForm because the value set or a code system it depends on is not known to the validator, Code System URI 'https://spor.ema.europa.eu/rmswi/200000000006' is unknown so the code cannot be validated]
+
+WARNING: Entry 'urn:uuid:297e405a-b6f9-4273-bc01-ae031efe47f8' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere

@@ -17,7 +17,7 @@ Usage: #example
 * substance.code.concept.coding = $ginas#OP1R32D61U "Microcrystalline cellulose"
 
 // Reference to manufactured item
-* for = Reference(manitemkarvea75)
+* for = Reference(manitemcava75)
 
 // Reference to Organization:  Reference to MAH
-* manufacturer.manufacturer = Reference(sanofiaventisgroupe)
+* manufacturer.manufacturer = Reference(acmeinc)

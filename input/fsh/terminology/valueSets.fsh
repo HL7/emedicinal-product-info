@@ -33,10 +33,10 @@ Description: "Medicinal Product Type"
 //=========================
 ValueSet: VsPharmaceuticalDoseForm
 Id: PharmaceuticalDoseForm
-Title: "Pharmaceutical Dose Form"
-Description: "Pharmaceutical Dose Form"
+Title: "Combined Pharmaceutical Dose Form"
+Description: "Combined Pharmaceutical Dose Form"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/pmswi //"Pharmaceutical Dose Form" // to be reviewed
+* codes from system $spor-combinedPharmaceuticalDoseForm-cs
 
 //=========================
 ValueSet: VsRouteOfAdministration
@@ -88,6 +88,7 @@ Description: "ePI document types"
 * $spor-rms#100000155538 "Package Leaflet"
 * $loinc#34390-5	"HUMAN OTC DRUG LABEL"
 * $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 
 //==========================
 ValueSet: VsOrganizationType
@@ -132,10 +133,11 @@ Description: "Pediatric Use Indicator"
 //==========================
 ValueSet: VsAtcClassification
 Id: atcClassification
-Title: "ATC Classification"
-Description: "ATC Classification"
+Title: "WHO ATC"
+Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system"
 * ^experimental = false
 * codes from system $atc 
+* ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"
 
 //==========================
 ValueSet: VsMarketingStatus
@@ -390,7 +392,7 @@ Id: meddra
 Title: "MedDRA Terms for clinical diseases and symptoms"
 Description: "MedDRA Terms for clinical diseases and symptoms"
 * ^experimental = false
-* $uri#https://placeholder.com // to be reviewed
+* codes from system $meddra
 
 //==========================
 ValueSet: VsProprietaryNamePart

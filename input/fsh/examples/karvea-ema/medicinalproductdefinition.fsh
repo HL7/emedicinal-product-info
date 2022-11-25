@@ -1,7 +1,7 @@
-Instance: karvea75mgblisterx28
+Instance: cava75mgblisterx28
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product Karvea 75 mg tablet in blister pack of 28 tablets"
-Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
+Title: "Medicinal Product cava 75 mg tablet in blister pack of 28 tablets"
+Description: "EU/1/97/049/001 cava 75 mg tablet blister x28"
 Usage: #example
 
 * id = "800a51a2-d81d-49a4-a4eb-f2417d301837"
@@ -20,12 +20,12 @@ Usage: #example
 * legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
 
 * name
-  * productName = "Karvea 75 mg tablet blister x28"
+  * productName = "cava 75 mg tablet blister x28"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
   * part[0]
-    * part = "Karvea"
+    * part = "cava"
     * type = $spor-productNamePartType-cs#220000000002
     * type.text = "Invented name part"
   

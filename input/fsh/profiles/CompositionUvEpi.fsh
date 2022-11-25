@@ -2,13 +2,9 @@ Profile: CompositionUvEpi
 Parent: Composition
 Id: Composition-uv-epi
 Title: "Composition (ePI)"
-Description: """The Composition captures the section headings, sub-section headings, and narrative text (For example, paragraphs, bulleted lists, tables) in an ePI."""
+Description: "The Composition captures the section headings, sub-section headings, and narrative text (For example, paragraphs, bulleted lists, tables) in an ePI."
 * ^status = #active
 * ^purpose = "This profile represents the constraints applied to the Composition resource used in an Electronic Product Information (ePI) document."
-* . ^short = "Electronic Product Information composition"
-* . ^definition = "Electronic Product Information composition.\r\n
-A composition is a set of source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use.While a Composition defines the structure and content of the ePI's narrative text, it does not contain the full content of an ePI document. The Bundle, of which the Composition is the first resource contained, is the container for the full  content of an ePI."
-// * text 
 
 * identifier 1..
   * system 1..
@@ -39,9 +35,6 @@ A composition is a set of source of regulated and scientifically validated infor
 * title ^short = "Title of the ePI Document"
 * title ^definition = "A brief summary name describing the ePI. The title should include: Proprietary Name(s) (Non-proprietary Name(s)) Dose Form, Route of Administration."
 
-// USED TO RECORD THE FIRST Authorization TO BE CHECKED
-* attester
-* custodian 
 
 * relatesTo ^short = "Cross-reference to anotherother ePI compositions or ePI document()s)"
 * relatesTo ^definition = "A crossreference from this ePI's composition to another related Composition or ePI document."
