@@ -16,6 +16,3 @@ Usage: #example
 
 * indication
   * diseaseSymptomProcedure.concept.coding = $meddra#10020772 "Hypertension"
-
-
-// * substance.code.concept.coding = $ginas#R12CBM0EIZ "Carnauba wax"
