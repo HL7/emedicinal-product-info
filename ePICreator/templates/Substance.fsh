@@ -36,7 +36,7 @@ Usage: #example
 
 * structure.molecularFormula = "{{ row["molecularFormula"] }}"
 
-* name.name = "{{ row["name.name"] }}"
+* name.name = "{{ row["name_name"] }}"
 * name.type = https://gsrs.ncats.nih.gov/ginas/app/beta/#{{ row["name_typeID"] }} "{{ row["name_type"] }}"
 
 

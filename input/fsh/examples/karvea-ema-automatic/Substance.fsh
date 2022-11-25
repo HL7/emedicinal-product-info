@@ -6,7 +6,7 @@ Usage: #example
 
 
 
-* id = "ddba55b5-4172-4c9c-84c3-a10cf704ce3b" 
+* id = "37e8b13f-27d0-4fb2-8621-e23881b9b699" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "J0E2756Z7N"
@@ -27,5 +27,5 @@ Usage: #example
 * molecularWeight[=].amount.value = 428.53
 * structure.molecularFormula = "C25H28N6O"
 
-* name.name = ""
+* name.name = "(+)-6-methyleneandrosta-1,4-diene-3,17-dione"
 * name.type = https://gsrs.ncats.nih.gov/ginas/app/beta/#x "Chemical Name"

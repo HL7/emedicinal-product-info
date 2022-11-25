@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Description: "Marketing authorisation holder"
 Usage: #example
-* id = "f0a72637-628d-4ed8-8841-b3e6345b1d94" 
+* id = "ab412c85-b8af-463b-ab20-4605091fe702" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official

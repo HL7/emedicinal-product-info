@@ -5,7 +5,7 @@ Title: "Composition for Karvea Package Leaflet"
 Description:  "Composition for Karvea Package Leaflet"
 Usage: #example
 
-* id = "e28f0e80-581b-444a-a7b7-a1782e811cba" 
+* id = "cca0194f-50f8-4e71-b7a0-a561b3d77cf5" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,28 +30,28 @@ Usage: #example
   * entry[+] = Reference(contraindication-gastrointestinaldisorders) 
  
   // Ingredient
-//  * entry[+].fullUrl = "d1e27b75-cca1-4aca-9182-3ccf7783e821"
+//  * entry[+].fullUrl = "6dd755a3-20e3-4b93-b31f-7fbc6ea3fc84"
   * entry[+] = Reference(ingredienthypromellose) 
   // Substance
-//  * entry[+].fullUrl = "ddba55b5-4172-4c9c-84c3-a10cf704ce3b"
+//  * entry[+].fullUrl = "37e8b13f-27d0-4fb2-8621-e23881b9b699"
   * entry[+] = Reference(substance-irbesartan) 
   // AdministrableProductDefinition
 //  * entry[+].fullUrl = "xx"
   * entry[+] = Reference(adminproductkarvea75mgtablet) 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = "28d93e3e-ce89-4f68-b797-c77858c85170"
+//  * entry[+].fullUrl = "4ce9dc07-9eab-498c-89fb-e68447570cb2"
   * entry[+] = Reference(authorizationkarvea75mgtablet) 
   // Organization
-//  * entry[+].fullUrl = "f0a72637-628d-4ed8-8841-b3e6345b1d94"
+//  * entry[+].fullUrl = "ab412c85-b8af-463b-ab20-4605091fe702"
   * entry[+] = Reference(sanofi-aventisgroupe) 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = "d2a70ce1-54a9-43fa-9dd4-4b76e57faf01"
+//  * entry[+].fullUrl = "578d2778-e67e-45d6-933c-5b48dae595d1"
   * entry[+] = Reference(karvea75mgtabletblisterx28tablets) 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = "f0be6f90-48c2-4765-983b-622e7e122a26"
+//  * entry[+].fullUrl = "7cd8930e-f989-433b-b26e-a06e00d31fd1"
   * entry[+] = Reference(Karvea75mgtabletblisterx28) 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = "df3ade98-1aa0-4120-b669-876a73883ec1"
+//  * entry[+].fullUrl = "8eb4188d-8948-4db7-8a31-5c906e0b92c5"
   * entry[+] = Reference(karvea75mgtablet) 
    
 
@@ -283,7 +283,7 @@ Usage: #example
     * code.text = "6. Contents of the pack and other information"
     * text.status = #additional
        
-    * text.div = """"<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
             <b>What Karvea contains</b>
             <ul>
                 <li>The active substance is irbesartan. Each tablet of Karvea 75 mg contains 75 mg irbesartan.</li>

@@ -165,6 +165,7 @@ Usage: #example
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
     * text.div = """{{row['other_info']}}"""
+    
 {%- endif %}   
         
 
