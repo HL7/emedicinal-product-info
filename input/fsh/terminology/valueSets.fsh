@@ -392,7 +392,7 @@ Id: meddra
 Title: "MedDRA Terms for clinical diseases and symptoms"
 Description: "MedDRA Terms for clinical diseases and symptoms"
 * ^experimental = false
-* $uri#https://placeholder.com // to be reviewed
+* codes from system $meddra
 
 //==========================
 ValueSet: VsProprietaryNamePart
