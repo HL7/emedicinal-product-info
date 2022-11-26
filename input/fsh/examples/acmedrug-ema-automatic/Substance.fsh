@@ -1,12 +1,12 @@
 
-Instance: substance-irbesartan
+Instance: substance-acmesub
 InstanceOf: SubstanceDefinitionUvEpi
-Description: "irbesartan"
+Description: "acmesub"
 Usage: #example
 
 
 
-* id = "856336f0-01ab-4b87-9ac0-b6573dd84991" 
+* id = "55e016dd-3819-4d7b-a6f0-4d37f6918d1a" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "J0E2756Z7N"
@@ -20,7 +20,7 @@ Usage: #example
 
  // Reference to Organization: MAH
  
-* manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+* manufacturer = Reference(marketingauthorisationholder-acmeindustry)
  
 
 * molecularWeight[+].type.text = "exact"

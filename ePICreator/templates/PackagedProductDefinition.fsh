@@ -38,13 +38,13 @@ Usage: #example
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  {% if data["turn"] != "1" %}
 //* packageFor = Reference(karvea75mgblisterx28)
-* packageFor = Reference({{data["references"]["MedicinalProductDefinition"][0]}})
+* packageFor = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})
 {% endif %}
 
 // * manufacturer = Reference(sanofiaventisgroupe)
  // Reference to Organization: MAH
 {% if data["turn"] != "1" %}
-* manufacturer = Reference({{data["references"]["Organization"][0]}})
+* manufacturer = Reference({{data["references"]["Organization"][0][0]}})
 {% endif %}
 
 {%- endif %}

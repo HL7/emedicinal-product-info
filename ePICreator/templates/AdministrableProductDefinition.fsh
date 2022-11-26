@@ -14,7 +14,7 @@ Usage: #example
 * status = #{{row['status']}}
 
 {% if data["turn"] != "1" %}
-* formOf = Reference({{data["references"]["MedicinalProductDefinition"][0]}})
+* formOf = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})
 {%- endif %}
 
 * administrableDoseForm = $spor-rms#{{ row["doseFormID"] }} "{{ row["doseForm"] }}"
@@ -25,7 +25,7 @@ Usage: #example
 {% if data["turn"] != "1" %}
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference({{data["references"]["ManufacturedItemDefinition"][0]}})
+* producedFrom = Reference({{data["references"]["ManufacturedItemDefinition"][0][0]}})
 
 {% endif %}
 

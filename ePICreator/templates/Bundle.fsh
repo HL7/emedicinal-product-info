@@ -15,16 +15,20 @@ Usage: #example
 {% if data["turn"] != "1" %}
 
 // Composition
-* entry[0].fullUrl = "Composition/{{data["references"]["Composition"][1]}}"
-* entry[0].resource = {{data["references"]["Composition"][0]}}
+* entry[0].fullUrl = "Composition/{{data["references"]["Composition"][0][1]}}"
+* entry[0].resource = {{data["references"]["Composition"][0][0]}}
 
 {% for key,value in data["references"].items() %} 
+{% for refs in value %} 
+
 {% if key != "Composition" and key !="Bundle" %}
 // {{key}}
-* entry[+].fullUrl = "{{key}}/{{value[1]}}"
-* entry[=].resource = {{value[0]}}
+* entry[+].fullUrl = "{{key}}/{{refs[1]}}"
+* entry[=].resource = {{refs[0]}}
 {%- endif %}   
 {%- endfor %}
+{%- endfor %}
+
 {%- endif %}
 
 

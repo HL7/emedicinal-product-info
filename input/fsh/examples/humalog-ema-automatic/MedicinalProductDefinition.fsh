@@ -1,14 +1,14 @@
 
-Instance: Karvea75mgtabletblisterx28
+Instance: HumalogMix50InsulinKwikPen,3mlpre-fill
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product Karvea 75 mg tablet blister x28"
-Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
+Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+Description: "EU/1/97/049/001 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 
 
-* id = "737815c7-800f-4619-ac08-72adc5ab7adc" 
+* id = "ac456ef5-b0e6-47dc-ad7d-326e4b71893c" 
 * identifier.system = $spor-prod
-* identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
+* identifier.value = "123456"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
@@ -19,31 +19,31 @@ Usage: #example
 * legalStatusOfSupply = $spor-rms#100000072084 "Medicinal product subject to medical prescription"
 
 * name
-  * productName = "Karvea 75 mg tablet blister x28"
+  * productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
   * part[0]
-    * part = "Karvea"
+    * part = "Humalog"
     * type = $spor-productNamePartType-cs#220000000002
     * type.text = "Invented name part"
   
   * part[+]
-    * part = "irbesartan"
+    * part = "insulin lispro"
     * type = $spor-productNamePartType-cs#220000000003
     * type.text = "Scientific name part"
   
   * part[+]
-    * part = "75 mg"
+    * part = "100 U/ml"
     * type = $spor-productNamePartType-cs#220000000004
     * type.text = "Strength part"
   
   * part[+]
-    * part = "tablet"
+    * part = "Suspension for injection"
     * type = $spor-productNamePartType-cs#220000000005
     * type.text = "Pharmaceutical dose form part"
   
   * usage
-    * country = urn:iso:std:iso:3166#DK ""
-    * jurisdiction = urn:iso:std:iso:3166#DK ""
+    * country = urn:iso:std:iso:3166#eu "European Union"
+    * jurisdiction = urn:iso:std:iso:3166#eu "European Union"
     * language = urn:ietf:bcp:47#en  "English"

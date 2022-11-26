@@ -14,105 +14,113 @@ if n < 3:
     raise Exception(
         "Please provide the path to the input file and the path to the output file"
     )
-elements = [
-    "AdministrableProductDefinition",
-    "Substance",
-    "RegulatedAuthorization",
-    "Organization",
-    "ClinicalUseDefinition",
-    "Composition",
-    "Ingredient",
-    "MedicinalProductDefinition",
-    "ManufacturedItemDefinition",
-    "PackagedProductDefinition",
-    "Bundle",
-]
 
 
 DATA_FILE = sys.argv[1]
 TEMPLATE_FOLDER = sys.argv[2]
 OUTPUT_FOLDER = sys.argv[3]
-print(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER)
-if TEMPLATE_FOLDER[-1] != "/":
-    TEMPLATE_FOLDER += "/"
-if OUTPUT_FOLDER[-1] != "/":
-    OUTPUT_FOLDER += "/"
 
-# create temp_folder:
-temp_folder = getcwd() + "/temp/"
 
-if not exists(temp_folder):
-    mkdir(temp_folder)
+def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
+    elements = [
+        "AdministrableProductDefinition",
+        "Substance",
+        "RegulatedAuthorization",
+        "Organization",
+        "ClinicalUseDefinition",
+        "Composition",
+        "Ingredient",
+        "MedicinalProductDefinition",
+        "ManufacturedItemDefinition",
+        "PackagedProductDefinition",
+        "Bundle",
+    ]
 
-for sheet in elements:
-    # read an excel file and convert
-    # into a dataframe object
-    df = pd.DataFrame(pd.read_excel("Karvea.xlsx", sheet_name=sheet))
-    df["id_hash"] = df["id"].apply(lambda x: uuid.uuid4())
-    df["id"].fillna(df["id_hash"], inplace=True)
-    # show the dataframe
-    #   print(df)
-    df.to_csv(temp_folder + sheet + ".csv", index=True)
+    # create temp_folder:
+    print(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER)
 
-data_dict = {}  # if needed
-data = {"dictionary": data_dict, "turn": "1"}
+    if TEMPLATE_FOLDER[-1] != "/":
+        TEMPLATE_FOLDER += "/"
+    if OUTPUT_FOLDER[-1] != "/":
+        OUTPUT_FOLDER += "/"
 
-# multiple elementsa
-for file in listdir(temp_folder):
-    print(file)
-    n_file = file.split(".")[0]
-    with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as file:
-        templateString = file.read()
-    t = Template(templateString, trim_blocks=True)
+    temp_folder = getcwd() + "/temp/"
 
-    df = pd.read_csv(temp_folder + n_file + ".csv", index_col=0)
+    if not exists(temp_folder):
+        mkdir(temp_folder)
+    major_name = DATA_FILE.lower().split("/")[-1].split(".")[0]
+    real_output_folder = OUTPUT_FOLDER + major_name + "-ema-automatic/"
+    print(real_output_folder)
+    if not exists(real_output_folder):
+        mkdir(real_output_folder)
+    for sheet in elements:
+        # read an excel file and convert
+        # into a dataframe object
+        df = pd.DataFrame(pd.read_excel(DATA_FILE, sheet_name=sheet))
+        df["id_hash"] = df["id"].apply(lambda x: uuid.uuid4())
+        df["id"].fillna(df["id_hash"], inplace=True)
+        # show the dataframe
+        #   print(df)
+        df.to_csv(temp_folder + sheet + ".csv", index=True)
 
-    df = df.astype(str)
-    data["data"] = df
-    t.stream(data=data).dump(OUTPUT_FOLDER + n_file + ".fsh")
+    data_dict = {"MajorName": major_name}  # if needed
+    data = {"dictionary": data_dict, "turn": "1"}
 
-    # get ids:
-    ## goes for all, checks for ID and adds to list
-    ## then creates again with references
-object_ids = {}
-for file in listdir(OUTPUT_FOLDER):
-    #  print(file)
-    # n_file = file.split(".")[0]
-    with open(OUTPUT_FOLDER + file, "r") as file1:
-        Lines = file1.readlines()
-        list_ids = []
+    # multiple elementsa
+    for file in listdir(temp_folder):
+        print(file)
+        n_file = file.split(".")[0]
+        with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as file:
+            templateString = file.read()
+        t = Template(templateString, trim_blocks=True)
 
-        for line in Lines:
-            if "Instance: " in line:
-                # print(line)
-                list_ids.append(line.replace("Instance: ", "").strip())
-            if "* id = " in line:
-                # print(line)
-                list_ids.append(line.replace("* id = ", "").replace('"', "").strip())
-        object_ids[file.split(".")[0]] = list_ids
+        df = pd.read_csv(temp_folder + n_file + ".csv", index_col=0)
 
-# print(object_ids)
-data["references"] = object_ids
+        df = df.astype(str)
+        data["data"] = df
+        t.stream(data=data).dump(real_output_folder + n_file + ".fsh")
 
-print("newline" + " ---" * 30)
-# multiple elementsa
-for file in listdir(temp_folder):
-    print(file)
-    n_file = file.split(".")[0]
-    with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as f:
-        templateString = f.read()
-    t = Template(templateString, trim_blocks=True)
+        # get ids:
+        ## goes for all, checks for ID and adds to list
+        ## then creates again with references
+    object_ids = {}
+    for file in listdir(real_output_folder):
+        #  print(file)
+        # n_file = file.split(".")[0]
+        with open(real_output_folder + file, "r") as file1:
+            Lines = file1.readlines()
+            instances = []
+            ids = []
+            for line in Lines:
 
-    df = pd.read_csv(temp_folder + file, index_col=0)
-    # print(df)
-    df = df.astype(str)
-    data["data"] = df
-    data["turn"] = "2"
-    t.stream(data=data).dump(OUTPUT_FOLDER + n_file + ".fsh")
+                if "Instance: " in line:
+                    # print(line)
+                    instances.append(line.replace("Instance: ", "").strip())
+                if "* id = " in line:
+                    # print(line)
+                    ids.append(line.replace("* id = ", "").replace('"', "").strip())
 
-# with open (TEMPLATE_FOLDER + "Bundle.fsh", "r") as file:
-#    templateString = file.read()
-# t = Template(templateString, trim_blocks=True)
-# t.stream(data=data).dump(OUTPUT_FOLDER + "Bundle.fsh")
+            object_ids[file.split(".")[0]] = [(i, j) for i, j in zip(instances, ids)]
 
-# rmdir(temp_folder)
+    print(object_ids)
+    data["references"] = object_ids
+
+    print("newline" + " ---" * 30)
+    # multiple elementsa
+    for file in listdir(temp_folder):
+        # print(file)
+        n_file = file.split(".")[0]
+        with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as f:
+            templateString = f.read()
+        t = Template(templateString, trim_blocks=True)
+
+        df = pd.read_csv(temp_folder + file, index_col=0)
+        # print(df)
+        df = df.astype(str)
+        data["data"] = df
+        data["turn"] = "2"
+        t.stream(data=data).dump(real_output_folder + n_file + ".fsh")
+
+
+if __name__ == "__main__":
+    create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER)

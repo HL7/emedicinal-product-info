@@ -17,12 +17,12 @@ Usage: #example
 * type.text = "Package Leaflet"
 
 {% if data["turn"] != "1" %}
-* subject = Reference({{data["references"]["MedicinalProductDefinition"][0]}})
+* subject = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})
 {%- endif %}
 
 * date = "{{row['date']}}"
 {% if data["turn"] != "1" %}
-* author = Reference({{data["references"]["Organization"][0]}})
+* author = Reference({{data["references"]["Organization"][0][0]}})
 {%- endif %}
 
 
@@ -35,11 +35,15 @@ Usage: #example
 {% if data["turn"] != "1" %}
 {% for key,value in data["references"].items() %} 
 {% if key != "Composition" and key !="Bundle" %}
+{% for refs in value %} 
+
   // {{key}}
-//  * entry[+].fullUrl = {{value[1]}}
-  * entry[+] = Reference({{value[0]}})
+//  * entry[+].fullUrl = {{refs[1]}}
+  * entry[+] = Reference({{refs[0]}})
+{%- endfor %}
 {%- endif %}   
 {%- endfor %}
+
 {%- endif %}   
 
 

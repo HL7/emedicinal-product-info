@@ -1,11 +1,11 @@
 
-Instance: compositionKarvea
+Instance: compositionacmedrug
 InstanceOf: CompositionUvEpi
-Title: "Composition for Karvea Package Leaflet"
-Description:  "Composition for Karvea Package Leaflet"
+Title: "Composition for acmedrug Package Leaflet"
+Description:  "Composition for acmedrug Package Leaflet"
 Usage: #example
 
-* id = "d48a8563-8918-4c29-9eb9-ba7efab94739" 
+* id = "f110b8ad-6d95-414b-af50-a108e3c2df23" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -14,9 +14,9 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(Karvea75mgtabletblisterx28)
+* subject = Reference(acmedrug-man)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+* author = Reference(marketingauthorisationholder-acmeindustry)
 
 * title = "TEST PURPOSES ONLY - Karvea (irbesartan) 75 mg tablets"
 
@@ -26,95 +26,55 @@ Usage: #example
 
  
  
-
-  // ClinicalUseDefinition
-//  * entry[+].fullUrl = ii
-  * entry[+] = Reference(contraindication-gastrointestinaldisorders) 
-
-  // ClinicalUseDefinition
-//  * entry[+].fullUrl = yy
-  * entry[+] = Reference(indication-psoriasis) 
-
-  // ClinicalUseDefinition
-//  * entry[+].fullUrl = zz
-  * entry[+] = Reference(interaction-methotrexate) 
  
  
 
   // Ingredient
-//  * entry[+].fullUrl = a1761e53-7b70-4cc3-8fee-52d47721a935
-  * entry[+] = Reference(ingredient-for-karvea-hypromellose) 
+//  * entry[+].fullUrl = ce7e3ed2-ea4c-45af-bcd8-abdefd82e517
+  * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing3) 
 
   // Ingredient
-//  * entry[+].fullUrl = 2a2f4000-ce6e-4506-a396-9f6972c68de3
-  * entry[+] = Reference(ingredient-for-karvea-macrogol3000) 
+//  * entry[+].fullUrl = cb01f7d2-7208-47e5-96b3-af3b713bb6d3
+  * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing2) 
 
   // Ingredient
-//  * entry[+].fullUrl = 603b8e7c-3a6e-4f87-be86-3e2f040733ea
-  * entry[+] = Reference(ingredient-for-karvea-lactosemonohydrate) 
-
-  // Ingredient
-//  * entry[+].fullUrl = 798e8e36-5bfb-4015-9db7-b71c2ef1d920
-  * entry[+] = Reference(ingredient-for-karvea-silicondioxide) 
-
-  // Ingredient
-//  * entry[+].fullUrl = 77438757-2ca0-440b-847f-311ce77bbfdc
-  * entry[+] = Reference(ingredient-for-karvea-titaniumdioxide) 
-
-  // Ingredient
-//  * entry[+].fullUrl = c0fd49c6-92e7-40c0-b623-70531dabf320
-  * entry[+] = Reference(ingredient-for-karvea-irbesartan) 
-
-  // Ingredient
-//  * entry[+].fullUrl = 149adc34-5481-4dd4-80aa-422fb8143966
-  * entry[+] = Reference(ingredient-for-karvea-croscarmellosesodium) 
-
-  // Ingredient
-//  * entry[+].fullUrl = 0150abcf-932d-43f1-a09f-b3e84c7ebfa3
-  * entry[+] = Reference(ingredient-for-karvea-microcrystallinecellulose) 
-
-  // Ingredient
-//  * entry[+].fullUrl = 4052f5ef-0e2c-43c9-a09d-a9bab86a2761
-  * entry[+] = Reference(ingredient-for-karvea-magnesiumstearate) 
-
-  // Ingredient
-//  * entry[+].fullUrl = 5d97329d-7b6e-42a4-9c0d-8339d9511e55
-  * entry[+] = Reference(ingredient-for-karvea-carnaubawax) 
+//  * entry[+].fullUrl = 50fc0917-4077-4011-a4f3-4c56a527d722
+  * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing1) 
  
 
   // Substance
-//  * entry[+].fullUrl = 856336f0-01ab-4b87-9ac0-b6573dd84991
-  * entry[+] = Reference(substance-irbesartan) 
+//  * entry[+].fullUrl = 55e016dd-3819-4d7b-a6f0-4d37f6918d1a
+  * entry[+] = Reference(substance-acmesub) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = xx
-  * entry[+] = Reference(adminproductkarvea75mgtablet) 
+//  * entry[+].fullUrl = 2c97ad37-a8e3-4f9d-987f-bb62f754fe1d
+  * entry[+] = Reference(adminproductacmedrug) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = dd7ac0a9-53ae-4f7b-9b40-c2e3a0ad8b0e
-  * entry[+] = Reference(authorizationkarvea75mgtablet) 
+//  * entry[+].fullUrl = de0b38ef-1fb8-4271-b786-afcb2bd5d0e9
+  * entry[+] = Reference(authorizationacmedrug) 
  
 
   // Organization
-//  * entry[+].fullUrl = d039892c-e849-4f0b-babc-97a3929055c4
-  * entry[+] = Reference(marketingauthorisationholder-sanofi-aventisgroupe) 
+//  * entry[+].fullUrl = 5df384d3-1203-4cfc-8547-4e56f32956e2
+  * entry[+] = Reference(marketingauthorisationholder-acmeindustry) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 05230760-65af-4ef8-8bef-f086322efc4f
-  * entry[+] = Reference(karvea75mgtabletblisterx28tablets) 
+//  * entry[+].fullUrl = dc1cb42c-164f-41f6-9927-c1304552b98b
+  * entry[+] = Reference(acmedrugblistertabs) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 737815c7-800f-4619-ac08-72adc5ab7adc
-  * entry[+] = Reference(Karvea75mgtabletblisterx28) 
+//  * entry[+].fullUrl = e0219ac4-7203-499f-b77e-bfb6298e9c1e
+  * entry[+] = Reference(acmedrug-man) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = c113da0a-04e0-41c5-aa31-c611ac98f783
-  * entry[+] = Reference(karvea75mgtablet) 
+//  * entry[+].fullUrl = 81ced9f3-9549-4248-8af0-1d82f50cb42d
+  * entry[+] = Reference(acmedrugman) 
    
 
 
@@ -171,9 +131,9 @@ Usage: #example
         </div>"""             
 
   * section[=].section[+]
-    * title = "1. What Karvea is and what it is used for"
+    * title = "1. What acmedrug is and what it is used for"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "1. What Karvea is and what it is used for"
+    * code.text = "1. What acmedrug is and what it is used for"
     * text.status = #additional
        
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -188,9 +148,9 @@ Usage: #example
             </ul>
         </div>"""              
   * section[=].section[+]
-    * title = "2. What you need to know before you take Karvea"
+    * title = "2. What you need to know before you take acmedrug"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "2. What you need to know before you take Karvea"
+    * code.text = "2. What you need to know before you take acmedrug"
     * text.status = #additional
        
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -258,9 +218,9 @@ Usage: #example
             <p>This medicine contains less than 1 mmol sodium (23 mg) per tablet, that is to say essentially ‘sodium-free’.</p>            
         </div>"""              
   * section[=].section[+]
-    * title = "3. How to take Karvea"
+    * title = "3. How to take acmedrug"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "3. How to take Karvea"
+    * code.text = "3. How to take acmedrug"
     * text.status = #additional
           
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -324,9 +284,9 @@ Usage: #example
         </div>"""   
           
   * section[=].section[+]
-    * title = "5. How to store Karvea"
+    * title = "5. How to store acmedrug"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "5. How to store Karvea"
+    * code.text = "5. How to store acmedrug"
     * text.status = #additional
                  
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 

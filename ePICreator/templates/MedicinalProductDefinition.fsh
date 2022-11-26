@@ -46,9 +46,9 @@ Usage: #example
     * type.text = "Pharmaceutical dose form part"
   
   * usage
-    * country = urn:iso:std:iso:3166#{{ row["countryCode"]  }}
-    * jurisdiction = urn:iso:std:iso:3166#{{ row["countryCode"]  }}
-    * language = urn:ietf:bcp:47#{{ row["language"]  }}
+    * country = urn:iso:std:iso:3166#{{ row["countryCode"]  }} "{{ row["country"]  }}"
+    * jurisdiction = urn:iso:std:iso:3166#{{ row["countryCode"]  }} "{{ row["country"]  }}"
+    * language = urn:ietf:bcp:47#{{ row["languageID"]  }}  "{{ row["language"]  }}"
 
 {%- endif %}
 {%- endfor %}

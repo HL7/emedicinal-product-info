@@ -17,7 +17,7 @@ Usage: #example
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  {% if data["turn"] != "1" %}
 //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference({{data["references"]["MedicinalProductDefinition"][0]}})
+* subject = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})
 {% endif %}
 * type = $spor-rms#{{ row["typeID"] }} "{{ row["type"] }}"
 
@@ -31,11 +31,24 @@ Usage: #example
 
 
 * statusDate = "{{ row["statusDate"] }}"
+{% set ns  = namespace(referenced=False) -%}
 
 // * holder = Reference(sanofiaventisgroupe)
 {% if data["turn"] != "1" %}
-* holder = Reference({{data["references"]["Organization"][0]}})
-{% endif %}
+{% for refs in data["references"]["Organization"] %} 
+{% if refs[0].startswith("marketingauthorisationholder") %}
+{% set ns.referenced=True -%}
+
+* holder = Reference({{refs[0]}})
+{%- endif %}
+{%- endfor %}
+
+{% if not ns.referenced  %}
+
+* holder = Reference({{data["references"]["Organization"][0][0]}})
+{%- endif %}
+
+{%- endif %}
 
 {%- endif %}
 {%- endfor %}

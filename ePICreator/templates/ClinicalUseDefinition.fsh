@@ -16,7 +16,7 @@ Usage: #example
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
 {% if data["turn"] != "1" %}
-* subject = Reference({{data["references"]["MedicinalProductDefinition"][0]}})
+* subject = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})
 {% endif %}
 {% if row["type"]|string =="contraindication"  %}
 

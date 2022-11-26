@@ -2,10 +2,10 @@
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
 
-Instance: {{ row["name"] | lower | replace(' ','')  }}
+Instance: {{ row["type"] | lower | replace(' ','')  }}-{{ row["name"] | lower | replace(' ','')  }}
 InstanceOf: OrganizationUvEpi
 Title: "{{ row["name"]  }} as {{ row["type"]  }}"
-Description: "{{ row["type"]  }}"
+Description: "{{ row["name"]  }} as {{ row["type"]  }}"
 Usage: #example
 * id = "{{row['id']}}" 
 * identifier.system = $spor-org

@@ -1,16 +1,16 @@
 
-Instance: karvea75mgtabletblisterx28tablets
+Instance: acmedrugblistertabs
 InstanceOf: PackagedProductDefinitionUvEpi
-Title: "Karvea 75 mg tablet blister x28 tablets"
-Description: "Karvea 75 mg tablet blister x28 tablets"
+Title: "acme drug blister tabs"
+Description: "acme drug blister tabs"
 Usage: #example
-* id = "05230760-65af-4ef8-8bef-f086322efc4f" 
+* id = "dc1cb42c-164f-41f6-9927-c1304552b98b" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/97/049/001"
 * identifier.use = #official
 
-* name = "Karvea 75 mg tablet blister x28 tablets"
+* name = "acme drug blister tabs"
 
 * type = $spor-rms#100000155527 "Chemical Medicinal Prodcut"
 //* type = $spor-rms#100000155527
@@ -33,8 +33,8 @@ Usage: #example
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* packageFor = Reference(karvea75mgblisterx28)
-* packageFor = Reference(Karvea75mgtabletblisterx28)
+* packageFor = Reference(acmedrug-man)
 
 // * manufacturer = Reference(sanofiaventisgroupe)
  // Reference to Organization: MAH
-* manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+* manufacturer = Reference(marketingauthorisationholder-acmeindustry)

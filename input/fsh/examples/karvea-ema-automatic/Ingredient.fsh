@@ -1,11 +1,11 @@
 
-Instance: ingredienthypromellose
+Instance: ingredient-for-karvea-hypromellose
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Hypromellose"
 Description: "Hypromellose"
 Usage: #example
 
-* id = "57e140ed-af10-4e30-a6ca-76a9e8d6a8d7" 
+* id = "a1761e53-7b70-4cc3-8fee-52d47721a935" 
 
 * identifier.system = $ginas
 * identifier.value = "3NXW29V3WO"
@@ -23,14 +23,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientmacrogol3000
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-macrogol3000
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Macrogol 3000"
 Description: "Macrogol 3000"
 Usage: #example
 
-* id = "a1b7dfdc-8862-473d-a86e-398ee7eb98eb" 
+* id = "2a2f4000-ce6e-4506-a396-9f6972c68de3" 
 
 * identifier.system = $ginas
 * identifier.value = "SA1B764746"
@@ -48,14 +51,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientlactosemonohydrate
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-lactosemonohydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Lactose Monohydrate"
 Description: "Lactose Monohydrate"
 Usage: #example
 
-* id = "02853fa4-712d-40af-b6be-741ef9df06f1" 
+* id = "603b8e7c-3a6e-4f87-be86-3e2f040733ea" 
 
 * identifier.system = $ginas
 * identifier.value = "EWQ57Q8I5X"
@@ -73,14 +79,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientsilicondioxide
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-silicondioxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Silicon dioxide"
 Description: "Silicon dioxide"
 Usage: #example
 
-* id = "ee2d4971-4c67-48d7-8745-62014b911748" 
+* id = "798e8e36-5bfb-4015-9db7-b71c2ef1d920" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -98,14 +107,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredienttitaniumdioxide
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-titaniumdioxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Titanium Dioxide"
 Description: "Titanium Dioxide"
 Usage: #example
 
-* id = "92b33acc-6e00-4a7b-9a89-65807df2b361" 
+* id = "77438757-2ca0-440b-847f-311ce77bbfdc" 
 
 * identifier.system = $ginas
 * identifier.value = "15FIX9V2JP"
@@ -123,14 +135,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientirbesartan
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-irbesartan
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active irbesartan"
 Description: "irbesartan"
 Usage: #example
 
-* id = "e5534217-f0de-448c-b17b-a1be5bb2e49d" 
+* id = "c0fd49c6-92e7-40c0-b623-70531dabf320" 
 
 * identifier.system = $ginas
 * identifier.value = "J0E2756Z7N"
@@ -152,14 +167,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientcroscarmellosesodium
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-croscarmellosesodium
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Croscarmellose sodium"
 Description: "Croscarmellose sodium"
 Usage: #example
 
-* id = "272cf588-8c61-46f6-9162-4ae7b427c338" 
+* id = "149adc34-5481-4dd4-80aa-422fb8143966" 
 
 * identifier.system = $ginas
 * identifier.value = "M28OL1HH48"
@@ -177,14 +195,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientmicrocrystallinecellulose
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-microcrystallinecellulose
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"
 Usage: #example
 
-* id = "1130086f-93ea-40f1-90a5-56f84cc8d78c" 
+* id = "0150abcf-932d-43f1-a09f-b3e84c7ebfa3" 
 
 * identifier.system = $ginas
 * identifier.value = "OP1R32D61U"
@@ -202,14 +223,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientmagnesiumstearate
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-magnesiumstearate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "fdd18c4e-5ce2-4d95-b2bb-beac3d366a46" 
+* id = "4052f5ef-0e2c-43c9-a09d-a9bab86a2761" 
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
@@ -227,14 +251,17 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
-Instance: ingredientcarnaubawax
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+Instance: ingredient-for-karvea-carnaubawax
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Carnauba wax"
 Description: "Carnauba wax"
 Usage: #example
 
-* id = "d3c2541a-b2b3-465a-b306-73dea8cd0ade" 
+* id = "5d97329d-7b6e-42a4-9c0d-8339d9511e55" 
 
 * identifier.system = $ginas
 * identifier.value = "R12CBM0EIZ"
@@ -252,4 +279,7 @@ Usage: #example
 * for = Reference(karvea75mgtablet)
 // Reference to Organization:  Reference to MAH
 
-* manufacturer.manufacturer = Reference(sanofi-aventisgroupe)
+ 
+
+
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)

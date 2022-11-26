@@ -23,7 +23,7 @@ Usage: #example
  // Reference to Organization: MAH
  {% if data["turn"] != "1" %}
 
-* manufacturer = Reference({{data["references"]["Organization"][0]}})
+* manufacturer = Reference({{data["references"]["Organization"][0][0]}})
 
 {%- endif %}
 

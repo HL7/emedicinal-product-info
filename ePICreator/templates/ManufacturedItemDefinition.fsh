@@ -18,12 +18,22 @@ Usage: #example
 * unitOfPresentation = $spor-rms#{{row["unit_presentationID"]}} "{{ row["unit_presentation"] }}"
 
 
- // Reference to Organization: Manufacturer
-// * manufacturer = Reference(sanofiaventisgroupe)
-{% if data["turn"] != "1" %}
-* manufacturer = Reference({{data["references"]["Organization"][0]}})
-{% endif %}
+ 
 
+{% set ns  = namespace(referenced=False) -%}
+{% if data["turn"] != "1" %}
+{% for refs in data["references"]["Organization"] %} 
+{% if refs[0].startswith("manufacturer") and "manufacturerapi" not in refs[0]  %}
+{% set ns.referenced=True -%}
+
+* manufacturer = Reference({{refs[0]}})
 {%- endif %}
 {%- endfor %}
 
+{% if not ns.referenced  %}
+
+* manufacturer = Reference({{data["references"]["Organization"][0][0]}})
+{%- endif %}
+{%- endif %}
+{%- endif %}
+{%- endfor %}
