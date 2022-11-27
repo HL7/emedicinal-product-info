@@ -2,7 +2,7 @@
 Create the Core ePI document by creating and then bundling these FHIR resources in the order described below. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step0.png" alt="ePI Resource Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-0.png" alt="ePI Resource Relationships"/>
   <figcaption>Create Substance</figcaption>
 </figure>
 
@@ -15,7 +15,7 @@ Using the Core ePI Profile as a template, complete one Organization resource for
 Refer to the [Organization profile](StructureDefinition-Organization-uv-epi.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step1.png" alt="Organization Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-1.png" alt="Organization Relationships"/>
   <figcaption>Create Organization</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ Create a reference from the SubstanceDefinition to the Organization resource for
 Refer to the [SubstanceDefinition Profile](StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step2.png" alt="Substance Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-2.png" alt="Substance Relationships"/>
   <figcaption>Create Substance</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ Refer to [ManufacturedItemDefinition Profile](StructureDefinition-ManufacturedIt
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step3.png" alt="Manufactured Item Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-3.png" alt="Manufactured Item Relationships"/>
   <figcaption>Create Manufactured Item</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Create a reference from the relevant Ingredient resources to the corresponding S
 Refer to [Ingredient](StructureDefinition-Ingredient-uv-epi.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step4.png" alt="Ingredient Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-4.png" alt="Ingredient Relationships"/>
   <figcaption>Create Ingredient</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ There are no references from the medicinal product to other resources. Instead, 
 Refer to [MedicinalProductDefinition Profile](StructureDefinition-MedicinalProductDefinition-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step5.png" alt="Medicinal Product Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-5.png" alt="Medicinal Product Relationships"/>
   <figcaption>Create Medicinal Product</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ Refer to [AdministrableProductDefinition Profile](StructureDefinition-Administra
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step6.png" alt="Administrable Product Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-6.png" alt="Administrable Product Relationships"/>
   <figcaption>Create Administrable Product</figcaption>
 </figure>
 
@@ -119,7 +119,7 @@ Create a reference from each PackagedProductDefinition resource to the correspon
 Refer to [PackagedProductDefinition Profile](StructureDefinition-PackagedProductDefinition-uv-epi.html) for detail. 
  
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step7.png" alt="Packaging Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-7.png" alt="Packaging Relationships"/>
   <figcaption>Create Packaged Product</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ Create a reference from the ClinicalUseDefinition (contraindication) to the corr
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="Contraindication Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-8-12.png" alt="Contraindication Relationships"/>
   <figcaption>Create Clinical Use</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ Create a reference from each ClinicalUseDefinition (Indication) to the correspon
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="Indication Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-8-12.png" alt="Indication Relationships"/>
   <figcaption>Create Clinical Use - Indication</figcaption>
 </figure>
 
@@ -158,7 +158,7 @@ Create a reference each ClinicalUseDefinition (Interaction) to the corresponding
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="Interaction Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-8-12.png" alt="Interaction Relationships"/>
   <figcaption>Create Clinical Use - Interaction</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ Create a reference from each ClinicalUseDefinition (Undesirable Effect) to the c
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="Undesirable Effect  Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-8-12.png" alt="Undesirable Effect  Relationships"/>
   <figcaption>Create Clinical Use - undesireable effect</figcaption>
 </figure>
 
@@ -184,7 +184,7 @@ Create a reference from each ClinicalUseDefinition (Warning) to the correspondin
 INSERT reference to the Profile page. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step8-12.png" alt="Warning Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-8-12.png" alt="Warning Relationships"/>
   <figcaption>Create Clinical Use - warning</figcaption>
 </figure>
 
@@ -202,7 +202,7 @@ NOTE:
 - Depending on the jurisdiction there will either be (1) one authorization per medicinal product (i.e., resulting in many RegulatedAuthorization resources); or (2) one authorization for all medicinal products (i.e., resulting in one RegulatedAuthorization resource). Refer to the regional profile for confirmation on which approach is required. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step13.png" alt="Authorization Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-13.png" alt="Authorization Relationships"/>
   <figcaption>Create Regulated Authorization</figcaption>
 </figure>
 
@@ -217,7 +217,7 @@ The Binary can also be used to create a cross-reference linking to an outside ob
 Refer to [Binary Profile](http://build.fhir.org/binary.html) for detail. 
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step14.png" alt="Binary Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-14.png" alt="Binary Relationships"/>
   <figcaption>Create Binary</figcaption>
 </figure>
 
@@ -243,7 +243,7 @@ ePI documents are meant to be separate and shall not be combined into one large 
 Refer to [Composition Profile](StructureDefinition-Composition-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step15.png" alt="Composition Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-15.png" alt="Composition Relationships"/>
   <figcaption>Create Composition</figcaption>
 </figure>
 
@@ -262,7 +262,7 @@ NOTE:
 Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step16.png" alt="Bundle Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-16.png" alt="Bundle Relationships"/>
   <figcaption>Create Bundle </figcaption>
 </figure>
 
@@ -271,7 +271,7 @@ Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.
 The List of ePIs is ued to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.
 
 <figure>
-  <img style="padding-top:0;padding-bottom:0" src="step17.png" alt="List Relationships"/>
+  <img style="padding-top:0;padding-bottom:0" src="step-17.png" alt="List Relationships"/>
   <figcaption>Create List</figcaption>
 </figure>
 
