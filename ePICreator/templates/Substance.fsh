@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: substance-{{ row["name"]| lower | replace(' ','') }}
+Instance: substance-{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') }}
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "{{ row["name"] }}"
 Usage: #example

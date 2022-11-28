@@ -1,12 +1,12 @@
 
-Instance: Suliqua100units/ml+50micrograms/mlsolutionforinjectioninapre-filledpen
+Instance: mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"
 Description: "EU/1/97/049/001 Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"
 Usage: #example
 
 
-* id = "5e55623d-87fe-4ac8-872a-97a3be4c7094" 
+* id = "a59f72e1-a5f4-4ce6-a673-5f44f8fe8df8" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 

@@ -3,7 +3,7 @@ Instance: contraindication-hypersensitivityreaction
 InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
 Description: "contraindication - Hypersensitivity reaction"
 Usage: #example
-* id = "3f59a272-23f3-4e78-a4eb-56ecdba0f770" 
+* id = "7ecb17f8-84a2-4a04-9ef5-a8e18a184bf8" 
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "Hypersensitivity reaction"
@@ -13,7 +13,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(Suliqua100units/ml+50micrograms/mlsolutionforinjectioninapre-filledpen)
+* subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
 
 * contraindication
   * diseaseSymptomProcedure.concept.coding = $meddra#nan "Contraindication"
@@ -24,7 +24,7 @@ Instance: indication-hypertension
 InstanceOf: ClinicalUseDefinition-indication-uv-epi
 Description: "indication - Hypertension"
 Usage: #example
-* id = "de27d445-8b4d-474b-8acf-cfb1107b0f74" 
+* id = "6324ddbf-17cb-4658-98a8-d500c57f11ca" 
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "Type 2 diabetes mellitus"
@@ -34,7 +34,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(Suliqua100units/ml+50micrograms/mlsolutionforinjectioninapre-filledpen)
+* subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
 
 
 * indication
@@ -46,7 +46,7 @@ Instance: interaction-bezafibrat
 InstanceOf: ClinicalUseDefinition-interaction-uv-epi
 Description: "interaction - Bezafibrat"
 Usage: #example
-* id = "b0f4d667-bc1d-463b-87f3-81eb2c1ee6ce" 
+* id = "c453790d-bba6-400e-ad52-ee5c9c600c60" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "Y9449Q51XH"
@@ -56,7 +56,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(Suliqua100units/ml+50micrograms/mlsolutionforinjectioninapre-filledpen)
+* subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
 
 
 

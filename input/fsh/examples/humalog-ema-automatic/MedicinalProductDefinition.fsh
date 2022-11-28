@@ -1,12 +1,12 @@
 
-Instance: HumalogMix50InsulinKwikPen,3mlpre-fill
+Instance: mpHumalogMix50InsulinKwikPen3mlprefill
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Description: "EU/1/97/049/001 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 
 
-* id = "bf57ee08-4e88-4b54-84c3-09c54bf672f2" 
+* id = "92b74b89-f4e9-408f-939a-283cb1dfb574" 
 * identifier.system = $spor-prod
 * identifier.value = "123456"
 

@@ -1,10 +1,10 @@
 
-Instance: acmedrugman
+Instance: mid-acmedrugman
 InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item acmedrugman"
 Description: "acmedrugman"
 Usage: #example
-* id = "d93b5a15-58f4-483a-9218-c5ddd7e0fb00" 
+* id = "25fbd641-f8cb-4f22-9de1-1e9220922ec4" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/96/007/035"
@@ -21,4 +21,4 @@ Usage: #example
  
 
 
-* manufacturer = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
+* manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)

@@ -2,7 +2,7 @@
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
 
-Instance: {{ row["type"] | lower | replace(' ','')  }}-{{ row["name"] | lower | replace(' ','')  }}-{{ data["dictionary"]["MajorName"]|lower}}
+Instance: org-{{ row["type"] | lower | regex_replace('[^A-Za-z0-9]+', '') }}-{{ row["name"] | lower | regex_replace('[^A-Za-z0-9]+', '') }}-{{ data["dictionary"]["MajorName"]|lower}}
 InstanceOf: OrganizationUvEpi
 Title: "{{ row["name"]  }} as {{ row["type"]  }}"
 Description: "{{ row["name"]  }} as {{ row["type"]  }}"

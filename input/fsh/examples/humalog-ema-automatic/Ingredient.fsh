@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Glycerol"
 Description: "Glycerol"
 Usage: #example
 
-* id = "31cfd78c-1e9a-4f4b-aa0d-afe63630ec88" 
+* id = "d123eae5-741f-4a32-8e1e-e4db5bc0a410" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
@@ -20,21 +20,22 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
 
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
 Instance: ingredient-for-humalog-hydrochloricacid
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Hydrochloric acid"
 Description: "Hydrochloric acid"
 Usage: #example
 
-* id = "7a982640-cf19-4a7d-83dd-7ab5188e15c8" 
+* id = "ee6096d8-b5c0-4b15-95ca-4d704c6842eb" 
 
 * identifier.system = $ginas
 * identifier.value = "QTT17582CB"
@@ -49,21 +50,22 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
 
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
 Instance: ingredient-for-humalog-sodiumhydroxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sodium Hydroxide"
 Description: "Sodium Hydroxide"
 Usage: #example
 
-* id = "a751569d-13ff-495c-80c3-0ee91b1a36e6" 
+* id = "fd6a6a38-98d6-4cad-b69a-fdd8d35c7485" 
 
 * identifier.system = $ginas
 * identifier.value = "55X04QC32I"
@@ -78,21 +80,22 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
 
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
 Instance: ingredient-for-humalog-waterforinjections
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Water for injections"
 Description: "Water for injections"
 Usage: #example
 
-* id = "9cb845e8-fa9d-4552-b4e9-cea43e7b1716" 
+* id = "6d394361-ea99-4b55-a0d6-0efef203dfea" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -107,21 +110,22 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
 
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
 Instance: ingredient-for-humalog-insulinlispro
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Insulin Lispro"
 Description: "Insulin Lispro"
 Usage: #example
 
-* id = "3b772d7a-88fc-4fb3-a838-137e003d1b6a" 
+* id = "daa40ae6-d2d2-407b-81ee-cdb2f2fb4b1b" 
 
 * identifier.system = $ginas
 * identifier.value = "GFX7QIS1II"
@@ -140,21 +144,22 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
 
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
 Instance: ingredient-for-humalog-zincoxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Zinc Oxide"
 Description: "Zinc Oxide"
 Usage: #example
 
-* id = "fd47943b-44c7-44a0-bf72-73b2f20e1b62" 
+* id = "b33a3f01-1e7e-4f64-8ab7-ff62edbbc151" 
 
 * identifier.system = $ginas
 * identifier.value = "SOI2LOH54Z"
@@ -169,21 +174,22 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
 
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
 Instance: ingredient-for-humalog-metacresol
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
 Usage: #example
 
-* id = "49272e37-fca8-433b-97d9-be3f6446c78c" 
+* id = "ec72d410-6b04-42e9-9a74-3024f7a117ba" 
 
 * identifier.system = $ginas
 * identifier.value = "GGO4Y809LO"
@@ -198,21 +204,22 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
 
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
 Instance: ingredient-for-humalog-trometamol
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Trometamol"
 Description: "Trometamol"
 Usage: #example
 
-* id = "9dd7a42a-fd76-4797-9bd2-b64b6ba3b12a" 
+* id = "b4fea749-0c4a-490d-88e7-3fa410da9cfe" 
 
 * identifier.system = $ginas
 * identifier.value = "023C2WHX2V"
@@ -227,10 +234,12 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(humalog100u/ml5pre-filledpen)
+* for = Reference(mid-humalog100uml5prefilledpen)
 // Reference to Organization:  Reference to MAH
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
+ 
 
+
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)

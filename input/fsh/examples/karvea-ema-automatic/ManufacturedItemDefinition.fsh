@@ -1,10 +1,10 @@
 
-Instance: karvea75mgtablet
+Instance: mid-karvea75mgtablet
 InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item karvea 75 mg tablet"
 Description: "karvea 75 mg tablet"
 Usage: #example
-* id = "c50eef2b-2519-4e73-82e5-f1830332d29c" 
+* id = "adaa0c2b-d6bc-4243-a660-6e29dfb4c605" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/96/007/035"
@@ -21,4 +21,4 @@ Usage: #example
  
 
 
-* manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe-karvea)
+* manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)

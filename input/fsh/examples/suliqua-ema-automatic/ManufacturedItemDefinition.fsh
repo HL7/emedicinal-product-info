@@ -1,10 +1,10 @@
 
-Instance: suliqua100units/ml+33micrograms/mlsolutionforinjectioninx3pre-filledpens
+Instance: mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens
 InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens"
 Description: "Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens"
 Usage: #example
-* id = "0c8100d9-2901-4d2b-aaa6-0e9c6f0079d8" 
+* id = "2f7c703e-98f8-46ae-afeb-42a729fd1a30" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/16/1157/003"
@@ -21,5 +21,7 @@ Usage: #example
  
  
  
-* manufacturer = Reference(manufacturerbatchrelease-sanofi-aventisdeutschlandgmbh-suliqua) 
+ 
 
+
+* manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)

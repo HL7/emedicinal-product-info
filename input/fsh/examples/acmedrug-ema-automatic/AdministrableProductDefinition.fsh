@@ -1,17 +1,17 @@
 
-Instance: adminproductacmedrug
+Instance: ap-acmedrug
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product acmedrug"
 Description: "acmedrug"
 Usage: #example
 
-* id = "ae157154-5933-4408-9d70-a2b8aaac0f2f" 
+* id = "6e7ab932-7ec7-4792-a9ad-60765295b770" 
 * identifier.system = $phpid
 * identifier.value = "identifier" 
 
 * status = #active
 
-* formOf = Reference(acmedrug-man)
+* formOf = Reference(mpacmedrugman)
 * administrableDoseForm = $spor-rms#200000002152 "tablet"
 * unitOfPresentation = $spor-rms#200000002152 "tablet"
 
@@ -19,7 +19,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(acmedrugman)
+* producedFrom = Reference(mid-acmedrugman)
 
 
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"

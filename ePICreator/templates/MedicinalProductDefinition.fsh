@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: {{ row["productname"]| replace(' ','')  }}
+Instance: mp{{ row["productname"]| regex_replace('[^A-Za-z0-9]+', '')  }}
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product {{ row["productname"]}}"
 Description: "EU/1/97/049/001 {{ row["productname"]}}"

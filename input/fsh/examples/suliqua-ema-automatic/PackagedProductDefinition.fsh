@@ -1,10 +1,10 @@
 
-Instance: 3mlcartridge(glass)inapre-filledpen
+Instance: ppd-3mlcartridgeglassinaprefilledpen
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "3 ml cartridge (glass) in a pre-filled pen"
 Description: "3 ml cartridge (glass) in a pre-filled pen"
 Usage: #example
-* id = "b1690558-c82c-4c3d-b918-98978c113f0d" 
+* id = "7cbd14d1-7cb4-4785-83fe-a9d909be7ec8" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
@@ -33,6 +33,6 @@ Usage: #example
   * quantity = 5
   * material = $spor-rms#200000003204 "Glass type 1"
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(Suliqua100units/ml+50micrograms/mlsolutionforinjectioninapre-filledpen)
+* packageFor = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
  // Reference to Organization: MAH
-* manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe-suliqua)
+* manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)

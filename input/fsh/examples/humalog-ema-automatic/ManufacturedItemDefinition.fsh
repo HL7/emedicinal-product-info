@@ -1,10 +1,10 @@
 
-Instance: humalog100u/ml5pre-filledpen
+Instance: mid-humalog100uml5prefilledpen
 InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Humalog 100 U/ml 5 pre-filled pen"
 Description: "Humalog 100 U/ml 5 pre-filled pen"
 Usage: #example
-* id = "03bd1911-aa03-439e-8bf7-a2e5b515e9be" 
+* id = "ad309584-9018-49f9-b2ee-1af7eb2ff544" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/96/007/035"
@@ -21,4 +21,6 @@ Usage: #example
  
  
  
-* manufacturer = Reference(manufacturer-lillys.a.-humalog)
+
+
+* manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)

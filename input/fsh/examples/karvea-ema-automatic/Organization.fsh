@@ -1,11 +1,11 @@
 
 
-Instance: marketingauthorisationholder-sanofi-aventisgroupe-karvea
+Instance: org-marketingauthorisationholder-sanofiaventisgroupe-karvea
 InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Description: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Usage: #example
-* id = "384661f5-4fd7-4279-ac96-5342c961b499" 
+* id = "ca306644-074f-40e7-b5dd-bb9206506591" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official

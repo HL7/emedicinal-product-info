@@ -6,7 +6,7 @@ Usage: #example
 
 
 
-* id = "2897d5e8-eaa3-469f-86a5-d5d45a00004f" 
+* id = "e9fa9b75-c539-4286-ade3-814cd69ac2fb" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "J0E2756Z7N"
@@ -20,7 +20,7 @@ Usage: #example
 
  // Reference to Organization: MAH
  
-* manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe-karvea)
+* manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
  
 
 * molecularWeight[+].type.text = "exact"

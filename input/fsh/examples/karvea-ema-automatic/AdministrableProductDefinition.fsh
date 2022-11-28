@@ -1,5 +1,5 @@
 
-Instance: adminproductkarvea75mgtablet
+Instance: ap-karvea75mgtablet
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product Karvea 75mg tablet"
 Description: "Karvea 75mg tablet"
@@ -11,7 +11,7 @@ Usage: #example
 
 * status = #active
 
-* formOf = Reference(Karvea75mgtabletblisterx28)
+* formOf = Reference(mpKarvea75mgtabletblisterx28)
 * administrableDoseForm = $spor-rms#200000002152 "tablet"
 * unitOfPresentation = $spor-rms#200000002152 "tablet"
 
@@ -19,7 +19,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(karvea75mgtablet)
+* producedFrom = Reference(mid-karvea75mgtablet)
 
 
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"

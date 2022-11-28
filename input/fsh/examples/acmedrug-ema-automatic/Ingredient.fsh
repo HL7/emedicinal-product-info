@@ -5,7 +5,7 @@ Title: "Ingredient-excipient acmedrug-ing3"
 Description: "acmedrug-ing3"
 Usage: #example
 
-* id = "fad4f151-c7af-4a72-a5ec-ca937a0f6a94" 
+* id = "a15e0b81-c040-47c9-9276-9068dee22ad9" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -20,20 +20,20 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(acmedrugman)
+* for = Reference(mid-acmedrugman)
 // Reference to Organization:  Reference to MAH
 
  
 
 
-* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
 Instance: ingredient-for-acmedrug-acmedruging2
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient acmedrug-ing2"
 Description: "acmedrug-ing2"
 Usage: #example
 
-* id = "b2e0c516-0aeb-4091-aaeb-f04186b32ec3" 
+* id = "8488a092-a0c2-4cc9-a23e-521224825f33" 
 
 * identifier.system = $ginas
 * identifier.value = "15FIX9V2JP"
@@ -48,20 +48,20 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(acmedrugman)
+* for = Reference(mid-acmedrugman)
 // Reference to Organization:  Reference to MAH
 
  
 
 
-* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
 Instance: ingredient-for-acmedrug-acmedruging1
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active acmedrug-ing1"
 Description: "acmedrug-ing1"
 Usage: #example
 
-* id = "c4ea3e78-4d5b-41ad-84e8-e3181dd0a161" 
+* id = "39e6d50f-ecb4-424c-95b1-63bc40db32c4" 
 
 * identifier.system = $ginas
 * identifier.value = "J0E2756Z7N"
@@ -80,10 +80,10 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(acmedrugman)
+* for = Reference(mid-acmedrugman)
 // Reference to Organization:  Reference to MAH
 
  
 
 
-* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)

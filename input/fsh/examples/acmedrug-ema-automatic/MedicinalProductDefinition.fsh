@@ -1,12 +1,12 @@
 
-Instance: acmedrug-man
+Instance: mpacmedrugman
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product acmedrug-man"
 Description: "EU/1/97/049/001 acmedrug-man"
 Usage: #example
 
 
-* id = "0800df10-5b3b-4102-ace1-1e14b05f8112" 
+* id = "23f26b3d-1f5a-49a2-a133-48a198c5ffda" 
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 
