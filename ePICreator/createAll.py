@@ -17,7 +17,7 @@ OUTPUT_FOLDER = sys.argv[3]
 
 for file in listdir(DATA_FOLDER):
 
-    if file.endswith(".xlsx"):
+    if file.endswith(".xlsx") and not file.startswith("~$"):
         print(file)
         print("**" * 50)
         create_from_template(file, TEMPLATE_FOLDER, OUTPUT_FOLDER)

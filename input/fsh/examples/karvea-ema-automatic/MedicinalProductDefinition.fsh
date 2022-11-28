@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
 Usage: #example
 
 
-* id = "2e1419a6-7a34-46a9-bc8b-62a6adae3e60" 
+* id = "af27560a-6ad5-43b5-8df0-21b13de10f7a" 
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 
@@ -16,7 +16,11 @@ Usage: #example
 
 * status = http://hl7.org/fhir/publication-status#active "active"
 
+
+
+
 * legalStatusOfSupply = $spor-rms#100000072084 "Medicinal product subject to medical prescription"
+
 
 * name
   * productName = "Karvea 75 mg tablet blister x28"
@@ -44,6 +48,6 @@ Usage: #example
     * type.text = "Pharmaceutical dose form part"
   
   * usage
-    * country = urn:iso:std:iso:3166#DK ""
-    * jurisdiction = urn:iso:std:iso:3166#DK ""
+    * country = urn:iso:std:iso:3166#DK "Denmark"
+    * jurisdiction = urn:iso:std:iso:3166#DK "Denmark"
     * language = urn:ietf:bcp:47#en  "English"

@@ -6,7 +6,7 @@ Description: "Regulated Authorization for karvea 75 mg tablet"
 Usage: #example
 
 
-* id = "4de48799-ce2c-4865-9ab6-a2614b0534b0" 
+* id = "db00497d-d9de-478c-a0ca-aa3d605e83f1" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
@@ -29,4 +29,9 @@ Usage: #example
 * statusDate = "2015-02-07T13:28:17Z"
 // * holder = Reference(sanofiaventisgroupe)
  
-* holder = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+* holder = Reference(marketingauthorisationholder-sanofi-aventisgroupe-karvea)
+
+
+
+ 
+

@@ -1,11 +1,11 @@
 
-Instance: ingredient-for-acmedrug-acmedrug-ing3
+Instance: ingredient-for-acmedrug-acmedruging3
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient acmedrug-ing3"
 Description: "acmedrug-ing3"
 Usage: #example
 
-* id = "2253beea-3b62-4bd6-b1ca-810b178a8c76" 
+* id = "fad4f151-c7af-4a72-a5ec-ca937a0f6a94" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -26,14 +26,14 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry)
-Instance: ingredient-for-acmedrug-acmedrug-ing2
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
+Instance: ingredient-for-acmedrug-acmedruging2
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient acmedrug-ing2"
 Description: "acmedrug-ing2"
 Usage: #example
 
-* id = "32cbe673-db54-4e01-ad15-9ec5af4d4f8d" 
+* id = "b2e0c516-0aeb-4091-aaeb-f04186b32ec3" 
 
 * identifier.system = $ginas
 * identifier.value = "15FIX9V2JP"
@@ -54,14 +54,14 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry)
-Instance: ingredient-for-acmedrug-acmedrug-ing1
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
+Instance: ingredient-for-acmedrug-acmedruging1
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active acmedrug-ing1"
 Description: "acmedrug-ing1"
 Usage: #example
 
-* id = "4d2d647b-3992-47c3-9dc9-c54d11ca104f" 
+* id = "c4ea3e78-4d5b-41ad-84e8-e3181dd0a161" 
 
 * identifier.system = $ginas
 * identifier.value = "J0E2756Z7N"
@@ -86,4 +86,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry)
+* manufacturer.manufacturer = Reference(marketingauthorisationholder-acmeindustry-acmedrug)

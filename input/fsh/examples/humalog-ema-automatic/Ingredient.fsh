@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Glycerol"
 Description: "Glycerol"
 Usage: #example
 
-* id = "45e26190-08dc-48ef-97d7-a6d540e01a48" 
+* id = "31cfd78c-1e9a-4f4b-aa0d-afe63630ec88" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
@@ -25,7 +25,7 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 
 
 Instance: ingredient-for-humalog-hydrochloricacid
@@ -34,7 +34,7 @@ Title: "Ingredient-excipient Hydrochloric acid"
 Description: "Hydrochloric acid"
 Usage: #example
 
-* id = "f0ff2f51-65ab-4b6e-b35c-5b3fe08ace89" 
+* id = "7a982640-cf19-4a7d-83dd-7ab5188e15c8" 
 
 * identifier.system = $ginas
 * identifier.value = "QTT17582CB"
@@ -54,7 +54,7 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 
 
 Instance: ingredient-for-humalog-sodiumhydroxide
@@ -63,7 +63,7 @@ Title: "Ingredient-excipient Sodium Hydroxide"
 Description: "Sodium Hydroxide"
 Usage: #example
 
-* id = "6ab9fca4-4497-4f7f-b6bd-a2010957ff03" 
+* id = "a751569d-13ff-495c-80c3-0ee91b1a36e6" 
 
 * identifier.system = $ginas
 * identifier.value = "55X04QC32I"
@@ -83,7 +83,7 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 
 
 Instance: ingredient-for-humalog-waterforinjections
@@ -92,7 +92,7 @@ Title: "Ingredient-excipient Water for injections"
 Description: "Water for injections"
 Usage: #example
 
-* id = "0b01147e-1ee6-4009-936b-22ddded71f23" 
+* id = "9cb845e8-fa9d-4552-b4e9-cea43e7b1716" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -112,7 +112,7 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 
 
 Instance: ingredient-for-humalog-insulinlispro
@@ -121,7 +121,7 @@ Title: "Ingredient-active Insulin Lispro"
 Description: "Insulin Lispro"
 Usage: #example
 
-* id = "6d9b16e9-4823-4a7a-982a-1f4df119d19a" 
+* id = "3b772d7a-88fc-4fb3-a838-137e003d1b6a" 
 
 * identifier.system = $ginas
 * identifier.value = "GFX7QIS1II"
@@ -145,7 +145,7 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 
 
 Instance: ingredient-for-humalog-zincoxide
@@ -154,7 +154,7 @@ Title: "Ingredient-excipient Zinc Oxide"
 Description: "Zinc Oxide"
 Usage: #example
 
-* id = "c094c43d-68c3-48e6-9b09-98199814514a" 
+* id = "fd47943b-44c7-44a0-bf72-73b2f20e1b62" 
 
 * identifier.system = $ginas
 * identifier.value = "SOI2LOH54Z"
@@ -174,7 +174,7 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 
 
 Instance: ingredient-for-humalog-metacresol
@@ -183,7 +183,7 @@ Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
 Usage: #example
 
-* id = "9b93fcf1-34f4-4976-878d-8da5403d6c22" 
+* id = "49272e37-fca8-433b-97d9-be3f6446c78c" 
 
 * identifier.system = $ginas
 * identifier.value = "GGO4Y809LO"
@@ -203,7 +203,7 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 
 
 Instance: ingredient-for-humalog-trometamol
@@ -212,7 +212,7 @@ Title: "Ingredient-excipient Trometamol"
 Description: "Trometamol"
 Usage: #example
 
-* id = "0c6c9337-797f-4d94-9edc-2181ac283783" 
+* id = "9dd7a42a-fd76-4797-9bd2-b64b6ba3b12a" 
 
 * identifier.system = $ginas
 * identifier.value = "023C2WHX2V"
@@ -232,5 +232,5 @@ Usage: #example
 
  
  
-* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany) 
+* manufacturer.manufacturer  = Reference(manufacturerapi-elilillyandcompany-humalog) 
 

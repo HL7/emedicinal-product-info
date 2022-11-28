@@ -5,7 +5,7 @@ Title: "Administrable product acmedrug"
 Description: "acmedrug"
 Usage: #example
 
-* id = "82986f93-9d02-42b6-a801-23d62fcb3a52" 
+* id = "ae157154-5933-4408-9d70-a2b8aaac0f2f" 
 * identifier.system = $phpid
 * identifier.value = "identifier" 
 

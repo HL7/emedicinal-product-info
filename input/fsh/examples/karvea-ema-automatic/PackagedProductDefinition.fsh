@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Karvea 75 mg tablet blister x28 tablets"
 Description: "Karvea 75 mg tablet blister x28 tablets"
 Usage: #example
-* id = "11cc94b2-aad1-4e35-868a-55514d7ed9c9" 
+* id = "0adafec9-9dc7-40e1-8be9-5b4a4d8af4dd" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/97/049/001"
@@ -22,19 +22,17 @@ Usage: #example
 
 * containedItemQuantity = 75 'mg'
 
+
+
+
+
 * packaging
   * identifier.system = $spor-prod
   * identifier.value = "123456"
   * type = $spor-rms#100000073496 "Blister"
- // * type = $spor-rms#100000073496 "Blister"
   * quantity = 28
   * material = $spor-rms#200000003222 "PolyVinyl Chloride"
-  //* material = $spor-rms#200000003222 "PolyVinyl Chloride"
-
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
- //* packageFor = Reference(karvea75mgblisterx28)
 * packageFor = Reference(Karvea75mgtabletblisterx28)
-
-// * manufacturer = Reference(sanofiaventisgroupe)
  // Reference to Organization: MAH
-* manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe)
+* manufacturer = Reference(marketingauthorisationholder-sanofi-aventisgroupe-karvea)

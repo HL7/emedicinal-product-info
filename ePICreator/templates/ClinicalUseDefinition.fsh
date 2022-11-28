@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: {{row['type']}}-{{row["name"]|lower | replace(' ','')}}
+Instance: {{row['type']}}-{{row["name"]|lower | regex_replace('[^A-Za-z0-9]+', '')}}
 InstanceOf: ClinicalUseDefinition-{{row['type']}}-uv-epi
 Description: "{{row['type']}} - {{row['name']}}"
 Usage: #example

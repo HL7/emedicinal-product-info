@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 acmedrug-man"
 Usage: #example
 
 
-* id = "dcc5b6db-b516-4350-893a-feb6647894fb" 
+* id = "0800df10-5b3b-4102-ace1-1e14b05f8112" 
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 
@@ -16,7 +16,11 @@ Usage: #example
 
 * status = http://hl7.org/fhir/publication-status#active "active"
 
+
+
+
 * legalStatusOfSupply = $spor-rms#100000000000 "Medicinal product subject to medical prescription"
+
 
 * name
   * productName = "acmedrug-man"

@@ -6,7 +6,7 @@ Description: "Regulated Authorization for acme drug"
 Usage: #example
 
 
-* id = "4f9c2c04-6651-419d-933e-fc01b0988afe" 
+* id = "35399ca8-d5da-453e-b170-e5e6a2d48b67" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
@@ -29,4 +29,9 @@ Usage: #example
 * statusDate = "2015-02-07T13:28:17Z"
 // * holder = Reference(sanofiaventisgroupe)
  
-* holder = Reference(marketingauthorisationholder-acmeindustry)
+* holder = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
+
+
+
+ 
+

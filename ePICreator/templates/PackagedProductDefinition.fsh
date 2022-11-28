@@ -26,22 +26,20 @@ Usage: #example
 * containedItemQuantity = {{ row["quantity"].split(' ')[0] }} '{{ row["quantity"].split(' ')[1] }}'
 {% endif %}
 
+{{ "* description = \"{}\"".format(row.description) if row.description|string !="nan"}}
+{{ "* copackagedIndicator = {}".format(row.copackagedIndicator|lower) if row.copackagedIndicator|string !="nan"}}
+
+
 * packaging
   * identifier.system = $spor-prod
   * identifier.value = "{{ row["packaging_identifier"] }}"
   * type = $spor-rms#{{ row["Packaging_typeID"] }} "{{ row["Packaging_type"] }}"
- // * type = $spor-rms#100000073496 "Blister"
   * quantity = {{ row["packaging.quantity"] }}
   * material = $spor-rms#{{ row["packaging_materialID"] }} "{{ row["packaging_material"] }}"
-  //* material = $spor-rms#200000003222 "PolyVinyl Chloride"
-
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
- {% if data["turn"] != "1" %}
-//* packageFor = Reference(karvea75mgblisterx28)
+{% if data["turn"] != "1" %}
 * packageFor = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})
 {% endif %}
-
-// * manufacturer = Reference(sanofiaventisgroupe)
  // Reference to Organization: MAH
 {% if data["turn"] != "1" %}
 * manufacturer = Reference({{data["references"]["Organization"][0][0]}})

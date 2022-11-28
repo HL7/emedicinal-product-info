@@ -53,3 +53,15 @@ Usage: #example
 {%- endif %}
 {%- endfor %}
 
+
+
+{% if data["turn"] != "1" %}
+{% for refs in data["references"]["Organization"] %} 
+{% if refs[0].startswith("medicinesregulatoryauthority") %}
+ // Reference to Organization: EMA
+* regulator = Reference({{refs[0]}})
+{%- endif %}
+{%- endfor %}
+{%- endif %}
+
+

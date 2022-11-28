@@ -5,7 +5,7 @@ Title: "Composition for acmedrug Package Leaflet"
 Description:  "Composition for acmedrug Package Leaflet"
 Usage: #example
 
-* id = "0958e7b6-736c-41d4-9642-462466eb8090" 
+* id = "8d1ede1e-2dea-4090-9911-28614afbbe4d" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -16,7 +16,7 @@ Usage: #example
 
 * subject = Reference(acmedrug-man)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(marketingauthorisationholder-acmeindustry)
+* author = Reference(marketingauthorisationholder-acmeindustry-acmedrug)
 
 * title = "TEST PURPOSES ONLY - Karvea (irbesartan) 75 mg tablets"
 
@@ -30,50 +30,50 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 2253beea-3b62-4bd6-b1ca-810b178a8c76
-  * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing3) 
+//  * entry[+].fullUrl = fad4f151-c7af-4a72-a5ec-ca937a0f6a94
+  * entry[+] = Reference(ingredient-for-acmedrug-acmedruging3) 
 
   // Ingredient
-//  * entry[+].fullUrl = 32cbe673-db54-4e01-ad15-9ec5af4d4f8d
-  * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing2) 
+//  * entry[+].fullUrl = b2e0c516-0aeb-4091-aaeb-f04186b32ec3
+  * entry[+] = Reference(ingredient-for-acmedrug-acmedruging2) 
 
   // Ingredient
-//  * entry[+].fullUrl = 4d2d647b-3992-47c3-9dc9-c54d11ca104f
-  * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing1) 
+//  * entry[+].fullUrl = c4ea3e78-4d5b-41ad-84e8-e3181dd0a161
+  * entry[+] = Reference(ingredient-for-acmedrug-acmedruging1) 
  
 
   // Substance
-//  * entry[+].fullUrl = 36f24df3-e646-4245-b8e0-9b39f8f683b0
+//  * entry[+].fullUrl = 82ef491b-ce4b-4f12-9f46-d8bc7da0afeb
   * entry[+] = Reference(substance-acmesub) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 82986f93-9d02-42b6-a801-23d62fcb3a52
+//  * entry[+].fullUrl = ae157154-5933-4408-9d70-a2b8aaac0f2f
   * entry[+] = Reference(adminproductacmedrug) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 4f9c2c04-6651-419d-933e-fc01b0988afe
+//  * entry[+].fullUrl = 35399ca8-d5da-453e-b170-e5e6a2d48b67
   * entry[+] = Reference(authorizationacmedrug) 
  
 
   // Organization
-//  * entry[+].fullUrl = 5b5e860e-1563-46da-b528-ce1e36849c96
-  * entry[+] = Reference(marketingauthorisationholder-acmeindustry) 
+//  * entry[+].fullUrl = 49404199-a1cc-490d-aa45-78a56c4e8f4d
+  * entry[+] = Reference(marketingauthorisationholder-acmeindustry-acmedrug) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 479a5c43-b020-4a05-a9db-f5a85a3e00c1
+//  * entry[+].fullUrl = 0a32589b-d8c9-4bd3-9b08-824a3648e006
   * entry[+] = Reference(acmedrugblistertabs) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = dcc5b6db-b516-4350-893a-feb6647894fb
+//  * entry[+].fullUrl = 0800df10-5b3b-4102-ace1-1e14b05f8112
   * entry[+] = Reference(acmedrug-man) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = d8a79128-2b4c-4019-b9a9-dd62e6829a56
+//  * entry[+].fullUrl = d93b5a15-58f4-483a-9218-c5ddd7e0fb00
   * entry[+] = Reference(acmedrugman) 
    
 

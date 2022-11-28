@@ -1,11 +1,11 @@
 
 
-Instance: marketingauthorisationholder-acmeindustry
+Instance: marketingauthorisationholder-acmeindustry-acmedrug
 InstanceOf: OrganizationUvEpi
 Title: "ACME industry as Marketing authorisation holder"
 Description: "ACME industry as Marketing authorisation holder"
 Usage: #example
-* id = "5b5e860e-1563-46da-b528-ce1e36849c96" 
+* id = "49404199-a1cc-490d-aa45-78a56c4e8f4d" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -24,3 +24,4 @@ Usage: #example
     * line = "street x and y "
     * city = "Paris"
     * country = "FR"
+    * postalCode = ""

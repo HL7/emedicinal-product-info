@@ -1,11 +1,11 @@
 
 
-Instance: marketingauthorisationholder-sanofi-aventisgroupe
+Instance: marketingauthorisationholder-sanofi-aventisgroupe-karvea
 InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Description: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Usage: #example
-* id = "712497f3-fbc0-48b0-9e34-574972ce4580" 
+* id = "384661f5-4fd7-4279-ac96-5342c961b499" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -24,3 +24,4 @@ Usage: #example
     * line = "54, rue La Boétie F-75008"
     * city = "Paris"
     * country = "FR"
+    * postalCode = ""

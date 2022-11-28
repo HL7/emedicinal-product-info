@@ -2,7 +2,7 @@
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
 
-Instance: {{ row["type"] | lower | replace(' ','')  }}-{{ row["name"] | lower | replace(' ','')  }}
+Instance: {{ row["type"] | lower | replace(' ','')  }}-{{ row["name"] | lower | replace(' ','')  }}-{{ data["dictionary"]["MajorName"]|lower}}
 InstanceOf: OrganizationUvEpi
 Title: "{{ row["name"]  }} as {{ row["type"]  }}"
 Description: "{{ row["name"]  }} as {{ row["type"]  }}"
@@ -26,6 +26,8 @@ Usage: #example
     * line = "{{ row["address_line"]  }}"
     * city = "{{ row["address_city"]  }}"
     * country = "{{ row["address_country"]  }}"
+    {{ "* postalCode = \"{}\"".format(row.address_postalCode) if row.address_postalCode|string !="nan"}}
+
 
 {%- endif %}
 {%- endfor %}

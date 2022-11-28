@@ -6,7 +6,7 @@ Description: "Regulated Authorization for Humalog "
 Usage: #example
 
 
-* id = "3241ef64-12d0-4948-8108-a8f65a214f38" 
+* id = "9496d90e-abed-4763-8699-f09ddd5f956f" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
@@ -29,6 +29,13 @@ Usage: #example
 * statusDate = "2015-02-07T13:28:17Z"
 // * holder = Reference(sanofiaventisgroupe)
  
-* holder = Reference(marketingauthorisationholder-elilillynederlandb.v.) 
+* holder = Reference(marketingauthorisationholder-elilillynederlandb.v.-humalog) 
+ 
+
+
+
+
+ 
+ 
  
 

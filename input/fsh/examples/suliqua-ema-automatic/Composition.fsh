@@ -1,11 +1,11 @@
 
-Instance: compositionHumalog
+Instance: compositionSuliqua
 InstanceOf: CompositionUvEpi
-Title: "Composition for Humalog Package Leaflet"
-Description:  "Composition for Humalog Package Leaflet"
+Title: "Composition for Suliqua Package Leaflet"
+Description:  "Composition for Suliqua Package Leaflet"
 Usage: #example
 
-* id = "4ce6b9e7-66b2-4462-a008-66cea2105b02" 
+* id = "2fc7e6d1-f7e3-4223-acd2-f6232e1e6d54" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -14,11 +14,11 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(HumalogMix50InsulinKwikPen,3mlpre-fill)
+* subject = Reference(Suliqua100units/ml+50micrograms/mlsolutionforinjectioninapre-filledpen)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(marketingauthorisationholder-elilillynederlandb.v.-humalog)
+* author = Reference(marketingauthorisationholder-sanofi-aventisgroupe-suliqua)
 
-* title = "TEST PURPOSES ONLY - Humalog Vulcan ePI v1"
+* title = "TEST PURPOSES ONLY - Suliqua Vulcan ePI"
 
 * section[+].
   * title = "Product Information"
@@ -26,79 +26,99 @@ Usage: #example
 
  
  
+
+  // ClinicalUseDefinition
+//  * entry[+].fullUrl = 3f59a272-23f3-4e78-a4eb-56ecdba0f770
+  * entry[+] = Reference(contraindication-hypersensitivityreaction) 
+
+  // ClinicalUseDefinition
+//  * entry[+].fullUrl = de27d445-8b4d-474b-8acf-cfb1107b0f74
+  * entry[+] = Reference(indication-hypertension) 
+
+  // ClinicalUseDefinition
+//  * entry[+].fullUrl = b0f4d667-bc1d-463b-87f3-81eb2c1ee6ce
+  * entry[+] = Reference(interaction-bezafibrat) 
  
  
 
   // Ingredient
-//  * entry[+].fullUrl = 31cfd78c-1e9a-4f4b-aa0d-afe63630ec88
-  * entry[+] = Reference(ingredient-for-humalog-glycerol) 
+//  * entry[+].fullUrl = c9953c00-0a59-47ed-99fc-626bcac49c70
+  * entry[+] = Reference(ingredient-for-suliqua-insulinglargine) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7a982640-cf19-4a7d-83dd-7ab5188e15c8
-  * entry[+] = Reference(ingredient-for-humalog-hydrochloricacid) 
+//  * entry[+].fullUrl = c65d829d-0142-45f0-8fc2-954f266b8f0f
+  * entry[+] = Reference(ingredient-for-suliqua-lixisenatide) 
 
   // Ingredient
-//  * entry[+].fullUrl = a751569d-13ff-495c-80c3-0ee91b1a36e6
-  * entry[+] = Reference(ingredient-for-humalog-sodiumhydroxide) 
+//  * entry[+].fullUrl = c72c0b2e-b9bd-4512-a8a1-6160cf2ef072
+  * entry[+] = Reference(ingredient-for-suliqua-glycerol85) 
 
   // Ingredient
-//  * entry[+].fullUrl = 9cb845e8-fa9d-4552-b4e9-cea43e7b1716
-  * entry[+] = Reference(ingredient-for-humalog-waterforinjections) 
+//  * entry[+].fullUrl = bae53c28-c126-4886-be49-0c12db852e85
+  * entry[+] = Reference(ingredient-for-suliqua-methionine) 
 
   // Ingredient
-//  * entry[+].fullUrl = 3b772d7a-88fc-4fb3-a838-137e003d1b6a
-  * entry[+] = Reference(ingredient-for-humalog-insulinlispro) 
+//  * entry[+].fullUrl = f64c14b9-fe07-42d2-b7e9-dbf57d47e32f
+  * entry[+] = Reference(ingredient-for-suliqua-metacresol) 
 
   // Ingredient
-//  * entry[+].fullUrl = fd47943b-44c7-44a0-bf72-73b2f20e1b62
-  * entry[+] = Reference(ingredient-for-humalog-zincoxide) 
+//  * entry[+].fullUrl = 25a5957a-ed23-44a7-b5bd-8dca58e6de78
+  * entry[+] = Reference(ingredient-for-suliqua-zincchloride) 
 
   // Ingredient
-//  * entry[+].fullUrl = 49272e37-fca8-433b-97d9-be3f6446c78c
-  * entry[+] = Reference(ingredient-for-humalog-metacresol) 
+//  * entry[+].fullUrl = 2c2f1842-84e4-4e18-b6d7-dd3264fb1150
+  * entry[+] = Reference(ingredient-for-suliqua-concentratedhydrochloricacid) 
 
   // Ingredient
-//  * entry[+].fullUrl = 9dd7a42a-fd76-4797-9bd2-b64b6ba3b12a
-  * entry[+] = Reference(ingredient-for-humalog-trometamol) 
+//  * entry[+].fullUrl = 6690053a-fecc-4fc2-a247-10399b22753f
+  * entry[+] = Reference(ingredient-for-suliqua-waterforinjections) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 02c66837-4d05-425e-853d-e28c063a1ae3
+  * entry[+] = Reference(ingredient-for-suliqua-sodiumhydroxide) 
  
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = xxxxx
-  * entry[+] = Reference(adminproducthumalog100uml5prefilledpen) 
+//  * entry[+].fullUrl = cc81f083-40fb-4de3-8950-aeb3d4cf4606
+  * entry[+] = Reference(adminproductsuliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 9496d90e-abed-4763-8699-f09ddd5f956f
-  * entry[+] = Reference(authorizationhumalog) 
+//  * entry[+].fullUrl = a842129e-7b89-4082-b245-6a2466f85e73
+  * entry[+] = Reference(authorizationsuliqua100units/ml+50microgram/mlsolutionforinjectioninapre-filledpen) 
  
 
   // Organization
-//  * entry[+].fullUrl = cfb5470b-ccb4-4430-9ec2-5d07ce2f64a6
-  * entry[+] = Reference(marketingauthorisationholder-elilillynederlandb.v.-humalog) 
+//  * entry[+].fullUrl = dcd39619-37ba-43b4-97f9-3219653315c4
+  * entry[+] = Reference(marketingauthorisationholder-sanofi-aventisgroupe-suliqua) 
 
   // Organization
-//  * entry[+].fullUrl = 13495019-60f5-4ea2-83e8-32cca6b85816
-  * entry[+] = Reference(manufacturerapi-elilillyandcompany-humalog) 
+//  * entry[+].fullUrl = 8c88a2fb-e8cb-4e04-af62-b7b38d7f4560
+  * entry[+] = Reference(manufacturerapi-sanofi-aventisdeutschlandgmbh-suliqua) 
 
   // Organization
-//  * entry[+].fullUrl = 3dccb574-9202-4fbc-8a86-77b31b45372f
-  * entry[+] = Reference(manufacturer-lillys.a.-humalog) 
+//  * entry[+].fullUrl = cb740756-c762-43ae-8e7a-d296e4d447a7
+  * entry[+] = Reference(manufacturerbatchrelease-sanofi-aventisdeutschlandgmbh-suliqua) 
+
+  // Organization
+//  * entry[+].fullUrl = 3c3cf920-92be-4506-b599-bb9d0bdcfc2b
+  * entry[+] = Reference(medicinesregulatoryauthority-europeanmedicinesagency-suliqua) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 0d92a800-adf6-4961-b450-5f36e9690054
-  * entry[+] = Reference(humalog100units/mlkwikpensolutionforinjectioninapre-filledpen) 
+//  * entry[+].fullUrl = b1690558-c82c-4c3d-b918-98978c113f0d
+  * entry[+] = Reference(3mlcartridge(glass)inapre-filledpen) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = bf57ee08-4e88-4b54-84c3-09c54bf672f2
-  * entry[+] = Reference(HumalogMix50InsulinKwikPen,3mlpre-fill) 
+//  * entry[+].fullUrl = 5e55623d-87fe-4ac8-872a-97a3be4c7094
+  * entry[+] = Reference(Suliqua100units/ml+50micrograms/mlsolutionforinjectioninapre-filledpen) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 03bd1911-aa03-439e-8bf7-a2e5b515e9be
-  * entry[+] = Reference(humalog100u/ml5pre-filledpen) 
+//  * entry[+].fullUrl = 0c8100d9-2901-4d2b-aaa6-0e9c6f0079d8
+  * entry[+] = Reference(suliqua100units/ml+33micrograms/mlsolutionforinjectioninx3pre-filledpens) 
    
 
 
@@ -157,17 +177,17 @@ What in this leaflet
 </div>"""             
 
   * section[=].section[+]
-    * title = "1. What Humalog is and what it is used for"
+    * title = "1. What Suliqua is and what it is used for"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "1. What Humalog is and what it is used for"
+    * code.text = "1. What Suliqua is and what it is used for"
     * text.status = #additional
     
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable              
   * section[=].section[+]
-    * title = "2. What you need to know before you take Humalog"
+    * title = "2. What you need to know before you take Suliqua"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "2. What you need to know before you take Humalog"
+    * code.text = "2. What you need to know before you take Suliqua"
     * text.status = #additional
        
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
@@ -175,9 +195,9 @@ What in this leaflet
 Do NOT use Humalog Mix50 if you
 </div>"""              
   * section[=].section[+]
-    * title = "3. How to take Humalog"
+    * title = "3. How to take Suliqua"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "3. How to take Humalog"
+    * code.text = "3. How to take Suliqua"
     * text.status = #additional
           
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
@@ -201,9 +221,9 @@ you only, even if the needle on the delivery device is changed.</p>
 </div>"""   
           
   * section[=].section[+]
-    * title = "5. How to store Humalog"
+    * title = "5. How to store Suliqua"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "5. How to store Humalog"
+    * code.text = "5. How to store Suliqua"
     * text.status = #additional
                  
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 

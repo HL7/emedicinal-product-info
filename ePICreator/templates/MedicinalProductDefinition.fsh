@@ -18,7 +18,18 @@ Usage: #example
 
 * status = http://hl7.org/fhir/publication-status#{{ row["status"]  }} "{{ row["status"]  }}"
 
+{{ "* indication = \"{}\"".format(row.indication) if row.indication|string !="nan"}}
+
+
 * legalStatusOfSupply = $spor-rms#{{row['statusSuplyID']}} "{{row['statusSuply']}}"
+
+{% if row["classification_ids"]|string != 'nan' %}
+{% for idx in range(0,row["classification_ids"].count("|")+1) %} 
+
+* classification[+] = {{ row["classification_ids"].split("|")[idx]}} "{{ row["classification_texts"].split("|")[idx]}}"
+
+{%- endfor %}
+{%- endif %}
 
 * name
   * productName = "{{ row["productname"]  }}"

@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: composition{{row["name"]}}
+Instance: composition{{row["name"]| regex_replace('[^A-Za-z0-9]+', '')}}
 InstanceOf: CompositionUvEpi
 Title: "Composition for {{row['name']}} Package Leaflet"
 Description:  "Composition for {{row['name']}} Package Leaflet"
