@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Glycerol"
 Description: "Glycerol"
 Usage: #example
 
-* id = "d18d564a-01d2-4e0d-a673-0c7e336df152" 
+* id = "45e26190-08dc-48ef-97d7-a6d540e01a48" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
@@ -34,7 +34,7 @@ Title: "Ingredient-excipient Hydrochloric acid"
 Description: "Hydrochloric acid"
 Usage: #example
 
-* id = "f7fb22b8-26be-4229-9118-85e82491c72b" 
+* id = "f0ff2f51-65ab-4b6e-b35c-5b3fe08ace89" 
 
 * identifier.system = $ginas
 * identifier.value = "QTT17582CB"
@@ -63,7 +63,7 @@ Title: "Ingredient-excipient Sodium Hydroxide"
 Description: "Sodium Hydroxide"
 Usage: #example
 
-* id = "6b74defc-348f-4a74-953e-6264081ad272" 
+* id = "6ab9fca4-4497-4f7f-b6bd-a2010957ff03" 
 
 * identifier.system = $ginas
 * identifier.value = "55X04QC32I"
@@ -92,7 +92,7 @@ Title: "Ingredient-excipient Water for injections"
 Description: "Water for injections"
 Usage: #example
 
-* id = "0cca7d64-ff25-4de0-8500-91fed616733f" 
+* id = "0b01147e-1ee6-4009-936b-22ddded71f23" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -121,7 +121,7 @@ Title: "Ingredient-active Insulin Lispro"
 Description: "Insulin Lispro"
 Usage: #example
 
-* id = "ac74d4f3-ec9b-499d-bca4-86ee25647a21" 
+* id = "6d9b16e9-4823-4a7a-982a-1f4df119d19a" 
 
 * identifier.system = $ginas
 * identifier.value = "GFX7QIS1II"
@@ -134,7 +134,7 @@ Usage: #example
 * substance.code.concept.coding = $ginas#GFX7QIS1II "Insulin Lispro"
 
 
-* substance.strength.presentationQuantity = 100.0 'units/ml'
+* substance.strength.presentationQuantity = 100.0 'U/ml'
 
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength "
 
@@ -154,7 +154,7 @@ Title: "Ingredient-excipient Zinc Oxide"
 Description: "Zinc Oxide"
 Usage: #example
 
-* id = "82d2f93b-9e3c-4ce8-aa91-bd081056a896" 
+* id = "c094c43d-68c3-48e6-9b09-98199814514a" 
 
 * identifier.system = $ginas
 * identifier.value = "SOI2LOH54Z"
@@ -183,7 +183,7 @@ Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
 Usage: #example
 
-* id = "aed218f0-e174-452c-9d07-a8f4fd79bc73" 
+* id = "9b93fcf1-34f4-4976-878d-8da5403d6c22" 
 
 * identifier.system = $ginas
 * identifier.value = "GGO4Y809LO"
@@ -212,7 +212,7 @@ Title: "Ingredient-excipient Trometamol"
 Description: "Trometamol"
 Usage: #example
 
-* id = "7134e4c7-8d10-475d-88fa-a6a2b4d3ed11" 
+* id = "0c6c9337-797f-4d94-9edc-2181ac283783" 
 
 * identifier.system = $ginas
 * identifier.value = "023C2WHX2V"

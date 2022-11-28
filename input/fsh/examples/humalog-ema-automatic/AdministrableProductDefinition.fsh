@@ -1,5 +1,5 @@
 
-Instance: adminproducthumalog100u/ml5pre-filledpen
+Instance: adminproducthumalog100uml5prefilledpen
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product Humalog 100 U/ml 5 pre-filled pen"
 Description: "Humalog 100 U/ml 5 pre-filled pen"

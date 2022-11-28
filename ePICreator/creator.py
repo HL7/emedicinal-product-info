@@ -1,12 +1,14 @@
 from os import listdir, getcwd, mkdir, rmdir
 from os.path import isfile, join, exists
 import glob
-from jinja2 import Template
+from jinja2 import Template, Environment, FileSystemLoader
+
 import pandas as pd
 from pathlib import Path
 import numpy as np
 import sys
 import uuid
+import re
 
 # total arguments
 n = len(sys.argv)
@@ -16,9 +18,18 @@ if n < 3:
     )
 
 
+# Custom filter method
+def regex_replace(s, find, replace):
+    """A non-optimal implementation of a regex filter"""
+    return re.sub(find, replace, s)
+
+
 DATA_FILE = sys.argv[1]
 TEMPLATE_FOLDER = sys.argv[2]
 OUTPUT_FOLDER = sys.argv[3]
+
+env = Environment(loader=FileSystemLoader(TEMPLATE_FOLDER), trim_blocks=True)
+env.filters["regex_replace"] = regex_replace
 
 
 def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
@@ -70,9 +81,12 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
     for file in listdir(temp_folder):
         print(file)
         n_file = file.split(".")[0]
-        with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as file:
-            templateString = file.read()
-        t = Template(templateString, trim_blocks=True)
+        # with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as file:
+
+        # templateString = env.get_template(file.read())
+
+        t = env.get_template(n_file + ".fsh")
+        # t = Template(templateString, trim_blocks=True)
 
         df = pd.read_csv(temp_folder + n_file + ".csv", index_col=0)
 
@@ -110,9 +124,10 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
     for file in listdir(temp_folder):
         # print(file)
         n_file = file.split(".")[0]
-        with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as f:
-            templateString = f.read()
-        t = Template(templateString, trim_blocks=True)
+        # with open(TEMPLATE_FOLDER + n_file + ".fsh", "r") as f:
+        #     templateString = f.read()
+        # t = Template(templateString, trim_blocks=True)
+        t = env.get_template(n_file + ".fsh")
 
         df = pd.read_csv(temp_folder + file, index_col=0)
         # print(df)

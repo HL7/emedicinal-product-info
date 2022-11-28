@@ -5,7 +5,7 @@ Title: "Composition for acmedrug Package Leaflet"
 Description:  "Composition for acmedrug Package Leaflet"
 Usage: #example
 
-* id = "f110b8ad-6d95-414b-af50-a108e3c2df23" 
+* id = "0958e7b6-736c-41d4-9642-462466eb8090" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,50 +30,50 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = ce7e3ed2-ea4c-45af-bcd8-abdefd82e517
+//  * entry[+].fullUrl = 2253beea-3b62-4bd6-b1ca-810b178a8c76
   * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing3) 
 
   // Ingredient
-//  * entry[+].fullUrl = cb01f7d2-7208-47e5-96b3-af3b713bb6d3
+//  * entry[+].fullUrl = 32cbe673-db54-4e01-ad15-9ec5af4d4f8d
   * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing2) 
 
   // Ingredient
-//  * entry[+].fullUrl = 50fc0917-4077-4011-a4f3-4c56a527d722
+//  * entry[+].fullUrl = 4d2d647b-3992-47c3-9dc9-c54d11ca104f
   * entry[+] = Reference(ingredient-for-acmedrug-acmedrug-ing1) 
  
 
   // Substance
-//  * entry[+].fullUrl = 55e016dd-3819-4d7b-a6f0-4d37f6918d1a
+//  * entry[+].fullUrl = 36f24df3-e646-4245-b8e0-9b39f8f683b0
   * entry[+] = Reference(substance-acmesub) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 2c97ad37-a8e3-4f9d-987f-bb62f754fe1d
+//  * entry[+].fullUrl = 82986f93-9d02-42b6-a801-23d62fcb3a52
   * entry[+] = Reference(adminproductacmedrug) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = de0b38ef-1fb8-4271-b786-afcb2bd5d0e9
+//  * entry[+].fullUrl = 4f9c2c04-6651-419d-933e-fc01b0988afe
   * entry[+] = Reference(authorizationacmedrug) 
  
 
   // Organization
-//  * entry[+].fullUrl = 5df384d3-1203-4cfc-8547-4e56f32956e2
+//  * entry[+].fullUrl = 5b5e860e-1563-46da-b528-ce1e36849c96
   * entry[+] = Reference(marketingauthorisationholder-acmeindustry) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = dc1cb42c-164f-41f6-9927-c1304552b98b
+//  * entry[+].fullUrl = 479a5c43-b020-4a05-a9db-f5a85a3e00c1
   * entry[+] = Reference(acmedrugblistertabs) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = e0219ac4-7203-499f-b77e-bfb6298e9c1e
+//  * entry[+].fullUrl = dcc5b6db-b516-4350-893a-feb6647894fb
   * entry[+] = Reference(acmedrug-man) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 81ced9f3-9549-4248-8af0-1d82f50cb42d
+//  * entry[+].fullUrl = d8a79128-2b4c-4019-b9a9-dd62e6829a56
   * entry[+] = Reference(acmedrugman) 
    
 

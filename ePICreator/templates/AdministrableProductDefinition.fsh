@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: adminproduct{{row['name']|lower|replace(' ','')}}
+Instance: adminproduct{{row['name']|lower|regex_replace('[^A-Za-z0-9]+', '')}}
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product {{row['name']}}"
 Description: "{{row['name']}}"
