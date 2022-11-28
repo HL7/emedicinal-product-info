@@ -6,7 +6,7 @@ Description: "Regulated Authorization for Suliqua 100 units/ml + 50 microgram/ml
 Usage: #example
 
 
-* id = "208a1f78-5347-400b-8c27-e809b7c81dbe" 
+* id = "4cb80895-d470-4fce-83dc-4b11158c1006" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"

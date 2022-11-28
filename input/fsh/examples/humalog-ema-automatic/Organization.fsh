@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Eli Lilly Nederland B.V. as Marketing authorisation holder"
 Description: "Eli Lilly Nederland B.V. as Marketing authorisation holder"
 Usage: #example
-* id = "3bd7e482-d239-4b59-9fed-986d570c5a23" 
+* id = "4128611d-15a4-47c3-8bec-cde2fae84429" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000426"
 * identifier.use = #official
@@ -24,14 +24,14 @@ Usage: #example
     * line = "Papendorpseweg 83, 3528 BJ"
     * city = "Utrecht"
     * country = "NL"
-    * postalCode = ""
+    
 
 Instance: org-manufacturerapi-elilillyandcompany-humalog
 InstanceOf: OrganizationUvEpi
 Title: "Eli Lilly and Company as Manufacturer API"
 Description: "Eli Lilly and Company as Manufacturer API"
 Usage: #example
-* id = "831bbbb4-0976-44a4-899d-1b13717fc147" 
+* id = "fe78f030-27a4-4a1c-a5c7-4ba1fedc4b2f" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000156"
 * identifier.use = #official
@@ -50,14 +50,14 @@ Usage: #example
     * line = "Lilly Technology Center Building 333 and 324, Indianapolis, Indiana, USA"
     * city = "Indianapolis"
     * country = "US"
-    * postalCode = ""
+    
 
 Instance: org-manufacturer-lillysa-humalog
 InstanceOf: OrganizationUvEpi
 Title: "Lilly S.A. as Manufacturer"
 Description: "Lilly S.A. as Manufacturer"
 Usage: #example
-* id = "7cb3034f-3619-45c5-a794-8f1cf858ccd1" 
+* id = "98b6dc4f-c2bb-4888-bb78-3abc7af95f4d" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100003996"
 * identifier.use = #official
@@ -76,4 +76,4 @@ Usage: #example
     * line = "Avenida de la Industria 30, 28108 Alcobendas, Madrid, Spain"
     * city = "Alcobendas"
     * country = "ES"
-    * postalCode = ""
+    

@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens"
 Description: "Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens"
 Usage: #example
-* id = "2f7c703e-98f8-46ae-afeb-42a729fd1a30" 
+* id = "8e0c87f0-4409-4b70-8f5f-837746a89de5" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/16/1157/003"

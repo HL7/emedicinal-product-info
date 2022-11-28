@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Description: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Usage: #example
-* id = "ca306644-074f-40e7-b5dd-bb9206506591" 
+* id = "5eaeea10-382e-4765-a30c-9cea53e0d83e" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -24,4 +24,4 @@ Usage: #example
     * line = "54, rue La Boétie F-75008"
     * city = "Paris"
     * country = "FR"
-    * postalCode = ""
+    
