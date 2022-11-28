@@ -5,7 +5,7 @@ Description: "Package Leaflet"
 Usage: #example
 
 * id = "e63f72b2-993f-48b1-b7cb-539b1ed71571"
-* identifier.system = "https://spor.ema.europa.eu/rmswi/"
+* identifier.system = "https://spor.ema.europa.eu/rmswi"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
 * status = #final
