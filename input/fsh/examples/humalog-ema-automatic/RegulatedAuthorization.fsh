@@ -6,7 +6,7 @@ Description: "Regulated Authorization for Humalog "
 Usage: #example
 
 
-* id = "cfaef28d-506d-410d-b689-8796b7a4d8c3" 
+* id = "0de57933-1ad6-429f-9507-461ebea37790" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
@@ -20,7 +20,7 @@ Usage: #example
 //* type = $spor-rms#100000072062
 //* type.text = "Marketing Authorisation"
 
-* region = urn:iso:std:iso:3166#eu "European Union"
+* region = urn:iso:std:iso:3166#DK "Denmark"
 
 
 * status = http://hl7.org/fhir/publication-status#active "Active"

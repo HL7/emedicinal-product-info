@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Karvea 75 mg tablet blister x28 tablets"
 Description: "Karvea 75 mg tablet blister x28 tablets"
 Usage: #example
-* id = "aa0614ce-c6c4-4347-ab01-e74863a62af3" 
+* id = "2a1300ff-712f-4adf-9d97-68079e1ea81b" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/97/049/001"

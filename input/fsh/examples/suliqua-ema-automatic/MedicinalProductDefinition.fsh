@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Suliqua 100 units/ml + 50 micrograms/ml solution f
 Usage: #example
 
 
-* id = "dcccd62b-c857-4504-ab19-7c8928d4a7a7" 
+* id = "fb2a80e7-b5cb-4035-ac9c-2e655a9bb298" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 
@@ -52,6 +52,6 @@ Usage: #example
     * type.text = "Pharmaceutical dose form part"
   
   * usage
-    * country = urn:iso:std:iso:3166#eu "European Union"
-    * jurisdiction = urn:iso:std:iso:3166#eu "European Union"
+    * country = urn:iso:std:iso:3166#DK "Denmark"
+    * jurisdiction = urn:iso:std:iso:3166#DK "Denmark"
     * language = urn:ietf:bcp:47#en  "English"
