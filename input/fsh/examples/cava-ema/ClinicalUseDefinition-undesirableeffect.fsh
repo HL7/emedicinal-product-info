@@ -3,7 +3,7 @@ InstanceOf: ClinicalUseDefinition-undesirableEffect-uv-epi
 Description: "Undesirable Effect - anemia"
 Usage: #example
 
-* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.system = "https://spor.ema.europa.eu/rmswi#"
 * identifier.value = "anemia"
 * identifier.use = #official
 

@@ -5,12 +5,12 @@ Description: "Package Leaflet"
 Usage: #example
 
 * id = "e63f72b2-993f-48b1-b7cb-539b1ed71571"
-* identifier.system = "https://spor.ema.europa.eu/rmswi/"
+* identifier.system = "https://spor.ema.europa.eu/rmswi"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
 * status = #final
 
-* type = https://spor.ema.europa.eu/rmswi/#100000155538
+* type = https://spor.ema.europa.eu/rmswi#100000155538
 * type.text = "Package Leaflet"
 
 * subject = Reference(cava75mgblisterx28) //reference to the medicinal product
@@ -23,7 +23,7 @@ Usage: #example
 
 * section[+].
   * title = "B. Package Leaflet"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
@@ -32,7 +32,7 @@ Usage: #example
 
 * section[+].
   * title = "B. Package Leaflet"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
@@ -41,7 +41,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "Package leaflet: Information for the user"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "Package leaflet: Information for the user"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -58,7 +58,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "What is in this leaflet"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "What is in this leaflet"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -74,7 +74,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "1. What cava is and what it is used for"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "1. What cava is and what it is used for"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -91,7 +91,7 @@ Usage: #example
 
 * section[=].section[+]
   * title = "2. What you need to know before you take cava"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "2. What you need to know before you take cava"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -161,7 +161,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "3. How to take cava"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "3. How to take cava"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -197,7 +197,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "4. Possible side effects"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "4. Possible side effects"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -224,7 +224,7 @@ Usage: #example
 
 * section[=].section[+]
   * title = "5. How to store cava"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "5. How to store cava"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -239,7 +239,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "6. Contents of the pack and other information"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "6. Contents of the pack and other information"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 

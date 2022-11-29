@@ -5,7 +5,7 @@ Usage: #example
 
 * id = "83f4a22f-9e5e-4941-9fdb-339a0f1f2055"
 
-* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.system = "https://spor.ema.europa.eu/rmswi#"
 * identifier.value = "Gastrointestinal disorders"
 * identifier.use = #official
 

@@ -4,7 +4,7 @@ Description: "Interaction - GRAPEFRUIT JUICE"
 Usage: #example
 
 * id = "f7d8f2a0-27eb-4e37-8036-58f3d5aa6537"
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta"
 * identifier.value = "JQ9EK2H6BG"
 * identifier.use = #official
 
