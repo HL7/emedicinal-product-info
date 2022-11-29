@@ -2,7 +2,7 @@
 RuleSet: ClinicalUseDefinitionCommonRules
 
 /* --- NOT SURE ABOUT THE USAGE OF IDENTIFIER IN THE  EXAMPLES
-* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.system = "https://spor.ema.europa.eu/rmswi#/"
 * identifier.value = "Hypersensitivity reaction"
 * identifier.use = #official
 --- */
