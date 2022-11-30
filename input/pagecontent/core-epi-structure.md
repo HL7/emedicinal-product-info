@@ -5,12 +5,11 @@ FHIR profile is a customized and more specific version of the base FHIR resource
 
 FHIR documents are a collection of resources bound together, and are transferred between systems as a Bundle resource. 
 
-INSERT reference to the FHIR Documents page 
+Refer to the [FHIR Documents page](http://www.hl7.org/fhir/documents.html) for further detail.
 
 ### Overview of the FHIR Resources that make up the Core ePI Profile 
-Refer to Core ePI Profile for a description of each resource. 
+Refer to [Core ePI Profiles](http://build.fhir.org/ig/HL7/emedicinal-product-info/branches/master/artifacts.html#2) for a description of each resource. 
 
-Refer to Annex for national ePI profiles for a description of each resource. 
 - List
 - Bundle
 - Composition
@@ -22,12 +21,7 @@ Refer to Annex for national ePI profiles for a description of each resource.
 - Ingredient
 - Substance Definition
 - Packaged Product Definition
-- Clinical Use Definition
-    - Clinical Use Definition Contraindication
-    - Clinical Use Definition Indication
-    - Clinical Use Definition Interaction
-    - Clinical Use Definition Undesirable Effect
-    - Clinical Use Definition Warning
+- Clinical Use Definition (which includes Contraindication, Indication, Interaction, Undesirable Effect, Warning)
 - Binary
 
 **Figure 1	Resource relationship hierarchy for the Core ePI Profile**     
