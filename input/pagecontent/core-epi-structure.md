@@ -8,7 +8,7 @@ FHIR documents are a collection of resources bound together, and are transferred
 Refer to the [FHIR Documents page](http://www.hl7.org/fhir/documents.html) for further detail.
 
 ### Overview of the FHIR Resources that make up the Core ePI Profile 
-Refer to [Core ePI Profiles](http://build.fhir.org/ig/HL7/emedicinal-product-info/branches/master/artifacts.html#2) for a description of each resource. 
+Refer to [Core ePI Profiles](http://build.fhir.org/ig/HL7/emedicinal-product-info/branches/master/artifacts.html#structures-resource-profiles) for a description of each resource. 
 
 - List
 - Bundle
