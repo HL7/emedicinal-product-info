@@ -24,7 +24,7 @@ Refer to the [Organization profile](StructureDefinition-Organization-uv-epi.html
 #### Create Substance Definition resource(s) 
 Using the Core ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient associated with the authorized product(s) in this ePI.
 
-Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder that was created in the [Step 5.1.1 Create Organization resource(s)](http://build.fhir.org/ig/HL7/emedicinal-product-info/branches/master/steps-to-create-core-epi.html#create-organization-resources). 
+Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder that was created in the Step 5.1.1 Create Organization resource(s)]. 
 
 Refer to the [SubstanceDefinition Profile](StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
 
