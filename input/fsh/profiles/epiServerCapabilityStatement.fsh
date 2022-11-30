@@ -1,7 +1,7 @@
 Instance: epi-server
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://hl7.org/fhir/uv/vulcan-eproduct-info/CapabilityStatement/epi-server"
+* url = "http://hl7.org/fhir/uv/emedicinal-product-info/CapabilityStatement/epi-server"
 * version = "5.0.0-cibuild"
 * name = "ePI FHIR Capability Statement (draft 1)"
 * status = #draft
@@ -20,7 +20,7 @@ Usage: #definition
 * format[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * format[=].extension.valueCode = #SHALL
 
-* implementationGuide[0] = "http://hl7.org/fhir/uv/vulcan-eproduct-info/ImplementationGuide/hl7.fhir.uv.vulcan-eproduct-info"
+* implementationGuide[0] = "http://build.fhir.org/ig/HL7/emedicinal-product-info/toc.html"
 * implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * implementationGuide[=].extension.valueCode = #SHOULD
 
@@ -36,7 +36,7 @@ Usage: #definition
 * rest.resource[0].type = #AdministrableProductDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/AdministrableProductDefinition-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -108,7 +108,7 @@ Usage: #definition
 * rest.resource[+].type = #Bundle
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Bundle"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/Bundle-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -287,19 +287,19 @@ Usage: #definition
 * rest.resource[+].type = #ClinicalUseDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition"
 
-* rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"
+* rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"
 * rest.resource[=].supportedProfile[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile[=].extension.valueCode = #SHALL
-* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"
 * rest.resource[=].supportedProfile[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile[=].extension.valueCode = #SHALL
-* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"
 * rest.resource[=].supportedProfile[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile[=].extension.valueCode = #SHALL
-* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"
 * rest.resource[=].supportedProfile[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile[=].extension.valueCode = #SHALL
-* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi"
 * rest.resource[=].supportedProfile[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile[=].extension.valueCode = #SHALL
 
@@ -384,7 +384,7 @@ Usage: #definition
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Composition"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/Composition-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -504,7 +504,7 @@ Usage: #definition
 * rest.resource[+].type = #Ingredient
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Ingredient"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/Ingredient-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -578,7 +578,7 @@ Usage: #definition
 * rest.resource[+].type = #ManufacturedItemDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -634,7 +634,7 @@ Usage: #definition
 * rest.resource[+].type = #MedicinalProductDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -723,7 +723,7 @@ Usage: #definition
 * rest.resource[+].type = #Organization
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Organization"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/Organization-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -948,7 +948,7 @@ Usage: #definition
 * rest.resource[+].type = #PackagedProductDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -1033,7 +1033,7 @@ Usage: #definition
 * rest.resource[+].type = #RegulatedAuthorization
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/RegulatedAuthorization"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/RegulatedAuthorization-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
@@ -1095,7 +1095,7 @@ Usage: #definition
 * rest.resource[+].type = #SubstanceDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/SubstanceDefinition"
 
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/vulcan-eproduct-info/StructureDefinition/SubstanceDefinition-uv-epi"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-uv-epi"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHALL
 
