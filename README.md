@@ -1,9 +1,10 @@
 # gravitate-health
 Gravitate Health Project
 
-See Latest successful build on http://build.fhir.org/ig/HL7/vulcan-eproduct-info/toc.html
+See Latest successful build on http://build.fhir.org/ig/HL7/emedicinal-product-info/toc.html
 
 Old
+- http://build.fhir.org/ig/HL7/vulcan-eproduct-info/toc.html
 - https://hl7-eu.github.io/gravitate-health/
 - http://build.fhir.org/ig/hl7-eu/gravitate-health/
 
