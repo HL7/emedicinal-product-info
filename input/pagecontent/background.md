@@ -11,9 +11,9 @@ ePI goes by different names depending on the region of the world. For example,
 - Europe - Summary of Product Characteristics (SmPC) or Package Leaflet
 - Japan - Package Insert (JPI)
 
-Since these documents are often based on PDF, they are unstructured electronic paper. As a result, they are difficult to search, difficult to find, and the content does not meet patient needs (e.g., larger fonts, accessibility support, multimedia, multiple languages, always current). 
+Since these documents are often represented as a PDF, they are unstructured electronic paper. As a result, they are difficult to search, and the content does not meet patient needs (e.g., larger fonts, accessibility support, multimedia, multiple languages). 
 
-It is known that current procedures based on PDF are not adequate to support electronic initiatives. To support new programs, the international community is adopting a new technology for exchanging medicinal product information between computer systems based on FHIR.  
+It is known that current procedures based on content represented as a PDF are not adequate to support electronic initiatives. To support new programs, the international community is adopting a new technology for exchanging medicinal product information between computer systems based on FHIR.  
 
 FHIR is a next generation standards framework created by HL7. FHIR combines the best features of HL7's previous product lines while leveraging the latest web standards and applying a tight focus on implementation. 
 

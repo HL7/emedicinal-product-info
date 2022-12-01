@@ -1,10 +1,10 @@
 CodeSystem: CodeSystemGravitate
 Id: gravitate
-Title: "Gravitate Health Project Code System"
-Description: "Gravitate Health Project Code System. Coded concepts defined for internal project use."
+Title: "eMedicinal Product Information Code System"
+Description: "eMedicinal Product Information Code System. Coded concepts defined for internal project use."
 * ^experimental = false
 * ^caseSensitive = false
-//* ^url = http://hl7.eu/fhir/ig/gravitate-health/CodeSystem/gravitate
+
 
 * #flavor "Flavor" "Placeholder for the Flavor concept"
 * #surfaceform "Surface form" "Placeholder for the Surface form concept"

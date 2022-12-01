@@ -1,13 +1,14 @@
+NOTE: 
+- This model is meant as a demonstration. Refer to national or regional guidance for local rules about what resources are in or out of scope.
+
 ### Step 1: Create foundation resources  
-Create the Core ePI document by creating and then bundling these FHIR resources in the order described below. 
+Create the Core ePI document by completing and then bundling these FHIR resources in the order described below. 
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="step-0.png" alt="ePI Resource Relationships"/>
   <figcaption>Create Substance</figcaption>
 </figure>
 
-NOTE: 
-- This model is meant as a demonstration. Refer to national or regional guidance for local rules about what resources are in or out of scope.
 
 #### Create Organization resource(s) 
 Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with ePIs: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
@@ -23,7 +24,7 @@ Refer to the [Organization profile](StructureDefinition-Organization-uv-epi.html
 #### Create Substance Definition resource(s) 
 Using the Core ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient associated with the authorized product(s) in this ePI.
 
-Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder. 
+Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder that was created in the Step 5.1.1 Create Organization resource(s)]. 
 
 Refer to the [SubstanceDefinition Profile](StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
 

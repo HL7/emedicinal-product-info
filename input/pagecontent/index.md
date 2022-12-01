@@ -1,10 +1,8 @@
 ### Purpose
-To provide guidance on the technical and business conformance rules needed to create and exchange electronic Product Information (ePI) using FHIR and standard terminologies; 
-and 
-To create a common global approach for structuring medicinal product information and medicinal product labelling that is based on HL7 International standards. 
+To provide guidance on the technical and business conformance rules needed to create and exchange electronic Product Information (ePI) using FHIR and standard terminologies; and, as well as to create a common global approach for structuring medicinal product information and medicinal product labelling that is based on HL7 International standards. 
 
 ### Goals
-The immediate goal of this specification is to expose ePI consumers and vendor community to a set of profiles that identify the data elements, code systems and value sets commonly used in ePIs regardless of the jurisdiction. 
+The immediate goal of this specification is to expose ePI consumers and the vendor community to a set of profiles that identify the data elements, code systems and value sets commonly used in ePIs regardless of the jurisdiction. 
 
 The strategic goal is to offer a better route for patients to access trustworthy, up-to-date medicinal product information that better meets their individual needs. 
 

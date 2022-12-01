@@ -7,11 +7,8 @@ Managing the resources as a document in a Bundle.
 
 Managing the document as a static Bundle versions that are manually updated vs managing a dynamic Bundle that is automatically updated anytime one of its leaf resources is updated. 
 
-### Acceptable file formats 
-Only use the file formats accepted by FHIR: XML, JSON, and RDF 
-
 ### Case sensitivity 
-All data elements associated with controlled vocabularies are case sensitive. There are no other case sensitivity rules aside from what is described in the FHIR schema or FHIR specification. 
+All data elements associated with controlled vocabularies are case sensitive. Refer to local guidance for case sensitivity rules.
 
 ### Display names 
 All display names are language specific and shall match the language of the document. French display name for French documents and English display names for English documents. 
@@ -179,7 +176,6 @@ And a link to the sample text:
 To create hypertext links from text to content outside of the ePI document use the following format: 
 <A href="http://www.w3.org/">W3C Web site</A> 
 ```
-
 
 ### Linking between data and narrative text 
 In some contexts, it is useful to link between the two representations of the same content: structured data, and human readable narrative. This can be used to assert that the text is a representation of the data, or specifically that the data is derived from some particular text. This specification defines the extensions narrativeLink and originalText to establish these links. 
