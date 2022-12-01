@@ -21,7 +21,7 @@ Refer to ePI Profiles in the Artifacts Index for a description of each resource.
 - Ingredient
 - Substance Definition
 - Packaged Product Definition
-- Clinical Use Definition (which includes Contraindication, Indication, Interaction, Undesirable Effect, Warning)
+- Clinical Use Definition
 - Binary
 
 **Figure 1	Resource relationship hierarchy for the Core ePI Profile**     
