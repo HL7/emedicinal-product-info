@@ -46,7 +46,8 @@ The Core ePI Profile defines the minimum set of rules to create a compliant FHIR
 
 #### National ePI Profiles 
 National profiles define the minimum mandatory elements, extensions and terminology requirements to create a compliant FHIR ePI for a given jurisdiction.  
-Conformance to a national ePI profiles is tied to the regulatory mandates of the health authority for that jurisdiction. ####
+
+Conformance to a national ePI profiles is tied to the regulatory mandates of the health authority for that jurisdiction.
 
 ### Status 
 This implementation guide is based on FHIR v5.0.0-snapshot1: R5 Snapshot #1 and is intended to be a balloted draft standard for trial use. It is subject to a formal review and approval process. 
