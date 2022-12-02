@@ -24,7 +24,9 @@ Refer to ePI Profiles in the Artifacts Index for a description of each resource.
 - Clinical Use Definition
 - Binary
 
-**Figure 1	Resource relationship hierarchy for the Core ePI Profile**     
+
+
+**Figure 1 - Resource relationship hierarchy for the Core ePI Profile**     
 
 <figure>
   <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
