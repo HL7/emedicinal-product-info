@@ -27,6 +27,8 @@ Error from server: Unable to provide support for code system https://gsrs.ncats.
 [Code System URI 'https://spor.ema.europa.eu/rmswi' is unknown so the code cannot be validated]
 The code 100000155538 is not valid in the system https://spor.ema.europa.eu/rmswi
 The code sectionCode is not valid in the system http://example.org
+WARNING: ValueSet/sectionCode: ValueSet.compose[0].include[0]: Unknown System 'http://example.org' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://example.org. Server Error: The code system 'http://example.org' is not known (encountered paired with code = 'sectionCode'); The code provided (http://example.org#sectionCode) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/epiType: ValueSet.compose[0].include[0]: Unknown System 'https://spor.ema.europa.eu/rmswi' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://spor.ema.europa.eu/rmswi. Server Error: The code system 'https://spor.ema.europa.eu/rmswi' is not known (encountered paired with code = '100000155538'); The code provided (https://spor.ema.europa.eu/rmswi#100000155538) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 
 # In EU is a reserved code is ISO 3166 "Extended for any application needing to represent the name European Union in August 1999, the current HTA server does not support it. HTA request is being made.
  The code EU is not valid in the system urn:iso:std:iso:3166
