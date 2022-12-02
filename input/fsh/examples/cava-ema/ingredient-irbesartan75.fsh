@@ -1,6 +1,6 @@
 Instance: irbesartan
 InstanceOf: IngredientUvEpi
-Title: "Ingredient-active irbesartan"
+Title: "Irbesartan – Example of Ingredient with basis for strength"
 Description: "irbesartan"
 Usage: #example
 

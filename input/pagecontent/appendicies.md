@@ -4,7 +4,7 @@ To be added at a later time.
 ### Copyrights 
 This guide, as well the artifacts developed by HL7® including terminologies, is produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions. 
 
-This document is licensed under Creative Commons “No Rights Reserved” (CC0). 
+This document is licensed under Creative Commons “No Rights Reserved” (CCO). 
 
 HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR ® are trademarks owned by Health Level Seven International, registered with the United States Patent and Trademark Office. 
 
