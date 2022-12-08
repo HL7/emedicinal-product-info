@@ -1156,7 +1156,7 @@ Usage: #definition
 * rest.interaction[=].documentation = "Implemented per the specification (or Insert other doco here)"
 
 * rest.searchParam[+].name = "_id"
-* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/id"
+* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.searchParam[=].type = #string
 * rest.searchParam[=].documentation = "Searches on the server assigned id"
 
@@ -1165,10 +1165,10 @@ Usage: #definition
 * rest.searchParam[=].type = #token
 * rest.searchParam[=].documentation = "Retrieval of resources that are referenced by a List resource"
 
-* rest.searchParam[+].name = "_has"
-* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-has"
-* rest.searchParam[=].type = #composite
-* rest.searchParam[=].documentation = "Provides support for reverse chaining"
+//* rest.searchParam[+].name = "_has"
+//* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-has"
+//* rest.searchParam[=].type = #composite
+//* rest.searchParam[=].documentation = "Provides support for reverse chaining"
 
 * rest.searchParam[+].name = "_type"
 * rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-type"
@@ -1180,26 +1180,26 @@ Usage: #definition
 * rest.searchParam[=].type = #token
 * rest.searchParam[=].documentation = "How to sort the resources when returning"
 
-* rest.searchParam[+].name = "_count"
-* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-count"
-* rest.searchParam[=].type = #number
-* rest.searchParam[=].documentation = "How many resources to return"
+//* rest.searchParam[+].name = "_count"
+//* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-count"
+//* rest.searchParam[=].type = #number
+//* rest.searchParam[=].documentation = "How many resources to return"
 
-* rest.searchParam[+].name = "_include"
-* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-include"
-* rest.searchParam[=].type = #token
-* rest.searchParam[=].documentation = "Control over returning additional resources (see spec)"
+//* rest.searchParam[+].name = "_include"
+//* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-include"
+//* rest.searchParam[=].type = #token
+//* rest.searchParam[=].documentation = "Control over returning additional resources (see spec)"
 
-* rest.searchParam[+].name = "_revinclude"
-* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-revinclude"
-* rest.searchParam[=].type = #token
-* rest.searchParam[=].documentation = "Control over returning additional resources (see spec)"
+//* rest.searchParam[+].name = "_revinclude"
+//* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-revinclude"
+//* rest.searchParam[=].type = #token
+//* rest.searchParam[=].documentation = "Control over returning additional resources (see spec)"
 
 
-* rest.searchParam[+].name = "_elements"
-* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-elements"
-* rest.searchParam[=].type = #string
-* rest.searchParam[=].documentation = "What kind of information to return"
+//* rest.searchParam[+].name = "_elements"
+//* rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-elements"
+//* rest.searchParam[=].type = #string
+//* rest.searchParam[=].documentation = "What kind of information to return"
 
 * rest.searchParam[+].name = "_language"
 * rest.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-language"
@@ -1223,16 +1223,16 @@ Usage: #definition
 
 
 * rest.operation[+].name = "meta"
-* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/resource-meta"
+* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/Resource-meta"
 
 * rest.operation[+].name = "filter"
-* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/resource-filter"
+* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/Resource-filter"
 
 * rest.operation[+].name = "document"
-* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/composition-document"
+* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/Composition-document"
 
 * rest.operation[+].name = "find"
-* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/list-find"
+* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/List-find"
 
 * rest.operation[+].name = "everything"
-* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/medicinalproductdefinition-everything"
+* rest.operation[=].definition = "http://hl7.org/fhir/OperationDefinition/MedicinalProductDefinition-everything"
