@@ -63,7 +63,7 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['package_leaflet']}}"""
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['package_leaflet']}}         </div>"""
 {%- endif %}   
 
 
@@ -78,7 +78,8 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['information_user']}}"""
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['information_user']}}         </div>"""
+
 {%- endif %}   
 
   * section[=].section[+]
@@ -91,7 +92,8 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['what_in_leaflet']}}"""
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['what_in_leaflet']}}         </div>"""
+
 {%- endif %}             
 
   * section[=].section[+]
@@ -104,7 +106,8 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['what_product_is']}}"""
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['what_product_is']}}         </div>"""
+
 {%- endif %}              
   * section[=].section[+]
     * title = "2. What you need to know before you take {{row['name']}}"
@@ -116,7 +119,9 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['before_take']}}"""
+
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['before_take']}}         </div>"""
+
 {%- endif %}              
   * section[=].section[+]
     * title = "3. How to take {{row['name']}}"
@@ -128,7 +133,8 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['how_to_take']}}"""
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['how_to_take']}}         </div>"""
+
 {%- endif %}          
 
           
@@ -142,7 +148,8 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['side_effects']}}"""
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['side_effects']}}         </div>"""
+
 {%- endif %}   
           
   * section[=].section[+]
@@ -155,7 +162,8 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['how_to_store']}}"""
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['how_to_store']}}         </div>"""
+
 {%- endif %}   
           
   * section[=].section[+]
@@ -168,8 +176,8 @@ Usage: #example
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
     {%- else %}   
-    * text.div = """{{row['other_info']}}"""
-    
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['other_info']}}         </div>"""
+
 {%- endif %}   
         
 
