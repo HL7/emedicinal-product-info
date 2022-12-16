@@ -34,8 +34,21 @@ Usage: #example
   * identifier.system = $spor-prod
   * identifier.value = "{{ row["packaging_identifier"] }}"
   * type = $spor-rms#{{ row["Packaging_typeID"] }} "{{ row["Packaging_type"] }}"
-  * quantity = {{ row["packaging.quantity"] }}
+  * quantity = {{ row["packaging_quantity"] }}
   * material = $spor-rms#{{ row["packaging_materialID"] }} "{{ row["packaging_material"] }}"
+
+{% if row["inside_packaging_type"]|string != "nan" %}
+
+  * packaging.type = $spor-rms#{{ row["inside_packaging_typeID"] }} "{{ row["inside_packaging_type"] }}"
+  * packaging.quantity = {{ row["inside_packaging_quantity"] }}
+{% for idx in range(0,row["inside_packaging_materialID"].count("|")+1) %} 
+
+  * packaging.material[+] = $spor-rms#{{ row["inside_packaging_materialID"].split("|")[idx] }} "{{ row["inside_packaging_material"].split("|")[idx] }}"
+
+{%- endfor %}
+{%- endif %}
+
+
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 {% if data["turn"] != "1" %}
 * packageFor = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})

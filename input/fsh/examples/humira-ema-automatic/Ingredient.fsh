@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Mannitol"
 Description: "Mannitol"
 Usage: #example
 
-* id = "07c746e5-ca65-4646-b4af-48a23d454f30" 
+* id = "27a9bf77-3521-4928-855d-c71d492ea11b" 
 
 * identifier.system = $ginas
 * identifier.value = "3OWL53L36A"
@@ -33,7 +33,7 @@ Title: "Ingredient-excipient Polysorbate 80"
 Description: "Polysorbate 80"
 Usage: #example
 
-* id = "024196e7-a36f-4b63-ac35-af98ed3e67f6" 
+* id = "602fc486-24f0-4295-b214-a8bc160c8aeb" 
 
 * identifier.system = $ginas
 * identifier.value = "6OZP39ZG8H"
@@ -61,7 +61,7 @@ Title: "Ingredient-active adalimumab"
 Description: "adalimumab"
 Usage: #example
 
-* id = "7e6a312d-e0c2-4d0d-b3c0-9e337d9627fa" 
+* id = "e8b7cfcd-e36e-4711-a8d8-a3de88263718" 
 
 * identifier.system = $ginas
 * identifier.value = "FYS6T7F842"
@@ -93,7 +93,7 @@ Title: "Ingredient-excipient Water for injections"
 Description: "Water for injections"
 Usage: #example
 
-* id = "9ad9a0f3-8244-4aee-809b-16a8490cd837" 
+* id = "6d8392ff-76b3-4225-8581-cdcc00445100" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
