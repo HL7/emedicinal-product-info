@@ -31,7 +31,6 @@ Usage: #example
 
 * routeOfAdministration.code = $spor-rms#{{row["routeID"]}} "{{ row["route"] }}"
 
-* routeOfAdministration.targetSpecies.code = $spor-rms#{{row["target_speciesID"]}} "{{ row["target_species"] }}"
-
+* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093 "Human"
 {%- endif %}
 {%- endfor %}

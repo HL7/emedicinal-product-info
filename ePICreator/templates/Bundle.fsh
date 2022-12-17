@@ -11,7 +11,7 @@ Usage: #example
 * identifier.system = "{{row['identifier_system']}}" 
 * identifier.value = "{{row["identifier_value"]}}"
 * type = #document
-* timestamp = "{{row["timestamp"]}}"
+* timestamp = "{{ now }}"
 {% if data["turn"] != "1" %}
 
 // Composition

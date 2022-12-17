@@ -20,7 +20,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "{{ row["address_text"]  }}"
+    * text = "{{ row["address_line"]  }} {{ row["address_city"]  }} {{ row["address_country"]  }} "
     * use = #{{ row["address_use"]  }}
     * type = #{{ row["address_type"]  }}
     * line = "{{ row["address_line"]  }}"

@@ -26,7 +26,7 @@ Usage: #example
 {%- endif %}
 
 
-* title = "{{row['title']}}"
+* title = "TEST PURPOSES ONLY - {{row['name']}}"
 
 * section[+].
   * title = "Product Information"

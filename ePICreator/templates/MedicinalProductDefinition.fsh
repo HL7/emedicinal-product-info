@@ -12,11 +12,12 @@ Usage: #example
 * identifier.system = $spor-prod
 * identifier.value = "{{row['identifier']}}"
 
-* type = http://hl7.org/fhir/medicinal-product-type#{{row['typeID']}} "{{row['type']}}"
+* type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
-* domain = http://hl7.org/fhir/medicinal-product-domain#{{row['domainID']}} "{{row['domain']}}"
+* domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
 
-* status = http://hl7.org/fhir/publication-status#{{ row["status"]  }} "{{ row["status"]  }}"
+* status = http://hl7.org/fhir/publication-status#active "active"
+
 
 {{ "* indication = \"{}\"".format(row.indication) if row.indication|string !="nan"}}
 

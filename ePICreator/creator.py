@@ -9,6 +9,10 @@ import numpy as np
 import sys
 import uuid
 import re
+from datetime import datetime
+
+context = {"now": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")}
+
 
 # total arguments
 n = len(sys.argv)
@@ -92,7 +96,7 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
 
         df = df.astype(str)
         data["data"] = df
-        t.stream(data=data).dump(real_output_folder + n_file + ".fsh")
+        t.stream(data=data, **context).dump(real_output_folder + n_file + ".fsh")
 
         # get ids:
         ## goes for all, checks for ID and adds to list
@@ -134,7 +138,7 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
         df = df.astype(str)
         data["data"] = df
         data["turn"] = "2"
-        t.stream(data=data).dump(real_output_folder + n_file + ".fsh")
+        t.stream(data=data, **context).dump(real_output_folder + n_file + ".fsh")
 
 
 if __name__ == "__main__":
