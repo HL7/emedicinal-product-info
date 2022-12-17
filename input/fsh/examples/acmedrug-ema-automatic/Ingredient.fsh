@@ -5,7 +5,7 @@ Title: "Ingredient-excipient acmedrug-ing3"
 Description: "acmedrug-ing3"
 Usage: #example
 
-* id = "388ecd24-ca23-406a-a014-08c1bd18a14a" 
+* id = "4e303767-ef0f-4486-b4d2-889fe826c517" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -33,7 +33,7 @@ Title: "Ingredient-excipient acmedrug-ing2"
 Description: "acmedrug-ing2"
 Usage: #example
 
-* id = "de7df0fc-9425-4f26-9179-89ba64db4d6e" 
+* id = "027e6d7f-3fb2-4a4d-ba9e-2f4344e5c88a" 
 
 * identifier.system = $ginas
 * identifier.value = "15FIX9V2JP"
@@ -61,7 +61,7 @@ Title: "Ingredient-active acmedrug-ing1"
 Description: "acmedrug-ing1"
 Usage: #example
 
-* id = "dc63ac4f-4460-4e7a-afba-296e240335f3" 
+* id = "36022b75-fdb4-4629-9d48-4be6d034db51" 
 
 * identifier.system = $ginas
 * identifier.value = "J0E2756Z7N"

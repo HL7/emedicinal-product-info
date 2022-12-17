@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Pentasa Slow Release Tablets 1g"
 Description: "Pentasa Slow Release Tablets 1g"
 Usage: #example
-* id = "f8ae9a23-8840-43f5-98e3-a10f45a5b02c" 
+* id = "36cace03-0f87-4e5a-8c93-4ae9cbdb0c76" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/96/007/035"

@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 
 
-* id = "bdf843db-3035-4cab-9768-dfd67a78a0e1" 
+* id = "bbb0e905-112e-45ac-8a84-c5dcc42b97c5" 
 * identifier.system = $spor-prod
 * identifier.value = "123456"
 
@@ -19,9 +19,14 @@ Usage: #example
 
 
 
+
 * legalStatusOfSupply = $spor-rms#100000072084 "Medicinal product subject to medical prescription"
 
+ 
 
+* classification[+] = $atc#ATCxxx "TEXxxx" 
+
+* classification[+] = $atc#ATCyyy "texyyy"
 * name
   * productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
   * type = $spor-productNamePartType-cs#220000000001

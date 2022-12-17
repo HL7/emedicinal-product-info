@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Eli Lilly Nederland B.V. as Marketing authorisation holder"
 Description: "Eli Lilly Nederland B.V. as Marketing authorisation holder"
 Usage: #example
-* id = "dd023079-84ba-4e53-9e94-39e74de02793" 
+* id = "07e1e5d6-0f65-4c18-a8e5-902ecee4ac6d" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000426"
 * identifier.use = #official
@@ -18,7 +18,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "Papendorpseweg 83, 3528 BJ Utrecht The Netherlands"
+    * text = "Papendorpseweg 83, 3528 BJ Utrecht NL "
     * use = #work
     * type = #physical
     * line = "Papendorpseweg 83, 3528 BJ"
@@ -31,7 +31,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Eli Lilly and Company as Manufacturer API"
 Description: "Eli Lilly and Company as Manufacturer API"
 Usage: #example
-* id = "7569e92a-c5b5-44af-a965-4f760aebbd66" 
+* id = "3b287ca1-fc56-4693-a686-158564044971" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000156"
 * identifier.use = #official
@@ -44,7 +44,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "Lilly Technology Center Building 333 and 324"
+    * text = "Lilly Technology Center Building 333 and 324, Indianapolis, Indiana, USA Indianapolis US "
     * use = #work
     * type = #physical
     * line = "Lilly Technology Center Building 333 and 324, Indianapolis, Indiana, USA"
@@ -57,7 +57,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Lilly S.A. as Manufacturer"
 Description: "Lilly S.A. as Manufacturer"
 Usage: #example
-* id = "b71cd809-191a-418d-961f-e733c698bcae" 
+* id = "79a38659-c480-49e1-96c3-5435604f16f2" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100003996"
 * identifier.use = #official
@@ -70,7 +70,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "Avenida de la Industria 30"
+    * text = "Avenida de la Industria 30, 28108 Alcobendas, Madrid, Spain Alcobendas ES "
     * use = #work
     * type = #physical
     * line = "Avenida de la Industria 30, 28108 Alcobendas, Madrid, Spain"

@@ -5,14 +5,14 @@ Title: "ePI document Bundle for Pentasa Package Leaflet"
 Description: "Bundle for Pentasa Package Leaflet ePI document"
 Usage: #example
 
-* id = "a7c54631-a072-4ef5-8187-13b017dd551e" 
+* id = "81be6919-f4de-4d12-a98e-c83e98a3b738" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2018-06-23T08:38:00+02:00"
+* timestamp = "2022-12-17T12:23:28Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/0314ccee-d7e2-4fd5-942c-8f0cf3536bb6"
+* entry[0].fullUrl = "Composition/78980818-3c09-4ab7-bd94-16da891dd9af"
 * entry[0].resource = compositionPentasaSlowReleaseTablets1g
 
  
@@ -23,62 +23,62 @@ Usage: #example
  
 
 // Ingredient
-* entry[+].fullUrl = "Ingredient/8f251b0a-1423-4d8b-a3ef-9b146a6fe01c"
+* entry[+].fullUrl = "Ingredient/3b34fe86-7d25-4f92-8c79-55bd8aadfd20"
 * entry[=].resource = ingredient-for-pentasa-mesalazine 
 
 // Ingredient
-* entry[+].fullUrl = "Ingredient/5401aa24-0831-4468-a38b-5574ccacf2ce"
+* entry[+].fullUrl = "Ingredient/cbb57f83-587a-4797-bb8a-9748cddbfffd"
 * entry[=].resource = ingredient-for-pentasa-povidone 
 
 // Ingredient
-* entry[+].fullUrl = "Ingredient/92bd7c1e-26ca-49a5-8eb0-d70b05d03b44"
+* entry[+].fullUrl = "Ingredient/6861f367-f707-4287-bfa3-f58a309036c0"
 * entry[=].resource = ingredient-for-pentasa-ethylcellulose 
 
 // Ingredient
-* entry[+].fullUrl = "Ingredient/c33c5f43-4449-4cef-a306-ff4628c84d1e"
+* entry[+].fullUrl = "Ingredient/54dab96f-b341-46ce-ac8c-48ff235205d9"
 * entry[=].resource = ingredient-for-pentasa-magnesiumstearate 
 
 // Ingredient
-* entry[+].fullUrl = "Ingredient/b80d7261-777f-4b5e-8d44-0e13071edd7f"
+* entry[+].fullUrl = "Ingredient/229d5602-933d-4251-a2c7-a2d45b40173a"
 * entry[=].resource = ingredient-for-pentasa-talc 
 
 // Ingredient
-* entry[+].fullUrl = "Ingredient/de2dd6f2-98b1-4fc9-b7e4-1cd379ffd22d"
+* entry[+].fullUrl = "Ingredient/63d8c5ad-9b85-429c-8086-807aa61db15c"
 * entry[=].resource = ingredient-for-pentasa-microcrystallinecellulose 
  
 
 // Substance
-* entry[+].fullUrl = "Substance/ffb0f429-e115-4395-a3c3-da00cf611182"
+* entry[+].fullUrl = "Substance/4b6ff6a6-0191-42ad-8f10-a58238edcb36"
 * entry[=].resource = substance-mesalamine 
  
 
 // AdministrableProductDefinition
-* entry[+].fullUrl = "AdministrableProductDefinition/d869a593-3dfb-49c4-a79c-52f4ca959e8c"
+* entry[+].fullUrl = "AdministrableProductDefinition/e4fd1684-4798-4195-85fc-5ff1b93f8165"
 * entry[=].resource = ap-pentasaslowreleasetablets1g 
  
 
 // RegulatedAuthorization
-* entry[+].fullUrl = "RegulatedAuthorization/d64d7407-e79f-424c-b33b-29a24e4a302c"
+* entry[+].fullUrl = "RegulatedAuthorization/6277f88f-a855-451d-ad4c-4493b2f45ca0"
 * entry[=].resource = authorizationpentasa1gprolongedreleasetablet 
  
 
 // Organization
-* entry[+].fullUrl = "Organization/3d5adfac-80d1-433a-a3e7-197e780ac68e"
+* entry[+].fullUrl = "Organization/cbad4846-33b0-4e0f-ab68-09edb4e57ff4"
 * entry[=].resource = org-marketingauthorisationholder-ferringsau-pentasa 
  
 
 // PackagedProductDefinition
-* entry[+].fullUrl = "PackagedProductDefinition/30c7a595-10ce-4270-8dfa-37db9d2c8613"
+* entry[+].fullUrl = "PackagedProductDefinition/2017d5e2-0e29-4cc4-bf16-1ba1d9a2f124"
 * entry[=].resource = ppd-pentasaslowreleasetablets1g 
  
 
 // MedicinalProductDefinition
-* entry[+].fullUrl = "MedicinalProductDefinition/7d2f8e3a-4618-4cb3-b296-e224070c2bc0"
+* entry[+].fullUrl = "MedicinalProductDefinition/ed3acdf5-f58c-4ccb-86c7-50eb2c2883a4"
 * entry[=].resource = mpPentasaSlowReleaseTablets1g 
  
 
 // ManufacturedItemDefinition
-* entry[+].fullUrl = "ManufacturedItemDefinition/f8ae9a23-8840-43f5-98e3-a10f45a5b02c"
+* entry[+].fullUrl = "ManufacturedItemDefinition/36cace03-0f87-4e5a-8c93-4ae9cbdb0c76"
 * entry[=].resource = mid-pentasaslowreleasetablets1g 
  
 

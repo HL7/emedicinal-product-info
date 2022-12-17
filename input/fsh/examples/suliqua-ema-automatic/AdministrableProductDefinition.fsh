@@ -5,7 +5,7 @@ Title: "Administrable product Suliqua 100 units/ml + 33 micrograms/ml solution f
 Description: "Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens"
 Usage: #example
 
-* id = "2da7e0de-e567-4bd9-8211-6bbc72ccf649" 
+* id = "861aa724-eaf2-4c13-8f46-42732aefb868" 
 * identifier.system = $phpid
 * identifier.value = "TBD" 
 

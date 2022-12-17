@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
 Description: "Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
 Usage: #example
-* id = "7026194c-eb59-4740-9aed-c5c6375ffd4b" 
+* id = "635a58da-37e4-4e1e-be33-9666c9812849" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/03/256/022"

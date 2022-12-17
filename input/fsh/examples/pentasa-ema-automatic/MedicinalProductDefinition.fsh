@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Pentasa Slow Release Tablets 1g"
 Usage: #example
 
 
-* id = "7d2f8e3a-4618-4cb3-b296-e224070c2bc0" 
+* id = "ed3acdf5-f58c-4ccb-86c7-50eb2c2883a4" 
 * identifier.system = $spor-prod
 * identifier.value = "xx"
 
@@ -15,6 +15,7 @@ Usage: #example
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
 
 * status = http://hl7.org/fhir/publication-status#active "active"
+
 
 
 

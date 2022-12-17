@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 Description: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 Usage: #example
-* id = "9f1d9c2d-eb18-4524-8611-b478975190e6" 
+* id = "f254d107-ef95-4a3f-af8d-a21ea303a8e4" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
@@ -32,6 +32,9 @@ Usage: #example
   * type = $spor-rms#100000073543 "Pre-filled pen"
   * quantity = 5
   * material = $spor-rms#200000003204 "Glass type 1"
+
+
+
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
  // Reference to Organization: MAH

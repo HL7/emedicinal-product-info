@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Humira 20 mg Solution for injection Subcutaneous u
 Usage: #example
 
 
-* id = "113679d3-7966-4144-ac8f-a0a767f8c94f" 
+* id = "3da3d2f7-5e9f-4ff3-a86a-e5c756c53b04" 
 * identifier.system = $spor-prod
 * identifier.value = "nan"
 
@@ -15,6 +15,7 @@ Usage: #example
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
 
 * status = http://hl7.org/fhir/publication-status#active "active"
+
 
 
 

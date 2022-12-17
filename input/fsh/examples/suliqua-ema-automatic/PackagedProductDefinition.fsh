@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "3 ml cartridge (glass) in a pre-filled pen"
 Description: "3 ml cartridge (glass) in a pre-filled pen"
 Usage: #example
-* id = "ba66035b-96a3-414d-8274-7640b5af8148" 
+* id = "f2e50d50-4810-4ac6-b35f-5f5d1019bd41" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
@@ -32,6 +32,9 @@ Usage: #example
   * type = $spor-rms#100000073543 "Pre-filled pen"
   * quantity = 5
   * material = $spor-rms#200000003204 "Glass type 1"
+
+
+
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
  // Reference to Organization: MAH

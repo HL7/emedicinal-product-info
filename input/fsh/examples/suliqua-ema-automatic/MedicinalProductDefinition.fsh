@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Suliqua 100 units/ml + 50 micrograms/ml solution f
 Usage: #example
 
 
-* id = "fb2a80e7-b5cb-4035-ac9c-2e655a9bb298" 
+* id = "5b6590d5-acfa-4ca2-9b4e-e750106a50f6" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 
@@ -16,6 +16,7 @@ Usage: #example
 
 * status = http://hl7.org/fhir/publication-status#active "active"
 
+
 * indication = "Suliqua is indicated for the treatment of adults with insufficiently controlled type 2 diabetes mellitus to improve glycaemic control as an adjunct to diet and exercise in addition to metformin with or without SGLT-2 inhibitors."
 
 
@@ -23,9 +24,9 @@ Usage: #example
 
  
 
-* classification[+] = https://www.whocc.no/atc_ddd_index/#A10AE54 "insulin glargine and lixisenatide" 
+* classification[+] = $atc#https://www.whocc.no/atc_ddd_index/#A10AE54 "insulin glargine and lixisenatide" 
 
-* classification[+] = https://spor.ema.europa.eu/rmswi/#/#100000019249 "Diabetes mellitus inadequate control"
+* classification[+] = $atc#https://spor.ema.europa.eu/rmswi/#/#100000019249 "Diabetes mellitus inadequate control"
 * name
   * productName = "Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"
   * type = $spor-productNamePartType-cs#220000000001

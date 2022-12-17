@@ -5,7 +5,7 @@ Title: "Administrable product Humira 20 mg Solution for injection Subcutaneous u
 Description: "Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
 Usage: #example
 
-* id = "56b1bd0e-c906-4e2f-8f96-463bef79c7e2" 
+* id = "4d9783f1-27ba-4f9b-a427-ceb0d73f2b39" 
 * identifier.system = $phpid
 * identifier.value = "nan" 
 

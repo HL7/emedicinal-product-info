@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "acme drug blister tabs"
 Description: "acme drug blister tabs"
 Usage: #example
-* id = "7a0c05d7-e40e-4f33-b2cb-02beb61ca790" 
+* id = "3d25ed84-b86a-4211-bd14-24dfbf968a32" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/97/049/001"
@@ -32,6 +32,9 @@ Usage: #example
   * type = $spor-rms#100000073496 "Blister"
   * quantity = 28
   * material = $spor-rms#200000003222 "PolyVinyl Chloride"
+
+
+
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(mpacmedrugman)
  // Reference to Organization: MAH

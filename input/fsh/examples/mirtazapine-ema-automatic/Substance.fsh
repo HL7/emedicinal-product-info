@@ -3,7 +3,7 @@ Instance: substance-mirtazapine
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "Mirtazapine"
 Usage: #example
-* id = "e6b601d3-cb31-474d-bc08-79b81f2f7312" 
+* id = "e9362640-0975-4674-a1ed-340e5cf1b865" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "A051Q2099Q"

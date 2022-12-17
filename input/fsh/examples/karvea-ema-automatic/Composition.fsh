@@ -5,7 +5,7 @@ Title: "Composition for Karvea Package Leaflet"
 Description:  "Composition for Karvea Package Leaflet"
 Usage: #example
 
-* id = "8fc84937-c7b4-45f1-a5c6-3ec19b5674d7" 
+* id = "7fbc7ae9-4a9f-4f75-835b-e2b3dbc48d00" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -18,7 +18,7 @@ Usage: #example
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
 
-* title = "TEST PURPOSES ONLY - Karvea (irbesartan) 75 mg tablets"
+* title = "TEST PURPOSES ONLY - Karvea"
 
 * section[+].
   * title = "Product Information"
@@ -42,48 +42,48 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 5338e475-548e-49eb-a8c4-3ec129029242
+//  * entry[+].fullUrl = fca95693-b7bf-48dd-aa2b-eddb7c208eb6
   * entry[+] = Reference(ingredient-for-karvea-hypromellose) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7c7fe6a6-3628-41b7-84c1-7f182dd0dc9f
+//  * entry[+].fullUrl = c653939f-d513-4233-a4c9-439d5c899eb8
   * entry[+] = Reference(ingredient-for-karvea-macrogol3000) 
 
   // Ingredient
-//  * entry[+].fullUrl = cfc9d211-e9c2-47b2-a693-10e580c160c9
+//  * entry[+].fullUrl = 68263ae7-bf95-4d18-8431-a0664ab27227
   * entry[+] = Reference(ingredient-for-karvea-lactosemonohydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = bcedce7d-07ac-461e-955f-60e33589ff19
+//  * entry[+].fullUrl = aa714cb8-d344-41a6-a042-909831ffa1cb
   * entry[+] = Reference(ingredient-for-karvea-silicondioxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 8ca81fcb-bc37-428f-90d8-93464193fea2
+//  * entry[+].fullUrl = 1775c83d-a0d6-42c1-a350-c36dcb8165ee
   * entry[+] = Reference(ingredient-for-karvea-titaniumdioxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 6d7916dc-e367-47cf-b39d-a5aa38b059cb
+//  * entry[+].fullUrl = 0ad73ba2-afc1-4ac2-94b9-d7bf0659835a
   * entry[+] = Reference(ingredient-for-karvea-irbesartan) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7717bb68-373b-4549-adc6-080a961f44a8
+//  * entry[+].fullUrl = 459c3ebc-8e2d-47d4-8333-efec1aee9ec8
   * entry[+] = Reference(ingredient-for-karvea-croscarmellosesodium) 
 
   // Ingredient
-//  * entry[+].fullUrl = 49ad9cf6-c57a-4885-bc98-be91c5ffabb7
+//  * entry[+].fullUrl = 7a7f2d94-bbba-4961-af25-1aaef523e8eb
   * entry[+] = Reference(ingredient-for-karvea-microcrystallinecellulose) 
 
   // Ingredient
-//  * entry[+].fullUrl = c2483786-0526-4f40-b22b-83faeda5361e
+//  * entry[+].fullUrl = 9c3ecacc-6c3d-4347-8752-0a093f01253b
   * entry[+] = Reference(ingredient-for-karvea-magnesiumstearate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 452a09f8-379f-4866-9e60-a3bb49354c60
+//  * entry[+].fullUrl = c398d96a-6938-4603-8e64-b8b2ed8c57d2
   * entry[+] = Reference(ingredient-for-karvea-carnaubawax) 
  
 
   // Substance
-//  * entry[+].fullUrl = 09e2fc38-0c24-41f3-8cf6-5110640f519f
+//  * entry[+].fullUrl = 57971f6a-319c-40fc-b062-affa49e14200
   * entry[+] = Reference(substance-irbesartan) 
  
 
@@ -93,27 +93,27 @@ Usage: #example
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 177536ed-754a-4e64-8d19-b7e873b6f688
+//  * entry[+].fullUrl = 2e869aa3-ac06-4caa-a076-f67ddcbbcd34
   * entry[+] = Reference(authorizationkarvea75mgtablet) 
  
 
   // Organization
-//  * entry[+].fullUrl = 38676041-1bb2-43e9-9bf7-0b02de0e3b97
+//  * entry[+].fullUrl = bb4dd1b7-5193-4ee0-a11a-81581a3612a9
   * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 2a1300ff-712f-4adf-9d97-68079e1ea81b
+//  * entry[+].fullUrl = 414da45e-399f-4ca0-9ae5-b3c072a283a6
   * entry[+] = Reference(ppd-karvea75mgtabletblisterx28tablets) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 53d36464-e1de-42c2-aa91-9cf2c7af7515
+//  * entry[+].fullUrl = 54b3f464-d390-4772-b521-92e7669cd5aa
   * entry[+] = Reference(mpKarvea75mgtabletblisterx28) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 0b7ba5da-f189-4c27-9ac9-50236d6532f7
+//  * entry[+].fullUrl = 5cbcb5b5-7e20-4133-a315-4284513a001c
   * entry[+] = Reference(mid-karvea75mgtablet) 
    
 
@@ -141,7 +141,7 @@ Usage: #example
     * code.text = "Package leaflet: Information for the user"
     * text.status = #additional
        
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Karvea 75 mg tablets</p>
             <p>irbesartan</p>
             <b>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</b>
@@ -151,7 +151,7 @@ Usage: #example
                 <li>This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours.</li>
                 <li>If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4.</li>
             </ul>
-        </div>"""   
+        </div>         </div>"""   
 
   * section[=].section[+]
     * title = "What is in this leaflet"
@@ -159,7 +159,7 @@ Usage: #example
     * code.text = "What is in this leaflet"
     * text.status = #additional
        
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <ul>
                 <li>What Karvea is and what it is used for</li>
                 <li>What you need to know before you take Karvea</li>
@@ -168,7 +168,7 @@ Usage: #example
                 <li>How to store Karvea</li>
                 <li>Contents of the pack and other information</li>
             </ul>
-        </div>"""             
+        </div>         </div>"""             
 
   * section[=].section[+]
     * title = "1. What Karvea is and what it is used for"
@@ -176,7 +176,7 @@ Usage: #example
     * code.text = "1. What Karvea is and what it is used for"
     * text.status = #additional
        
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>
                 Karvea belongs to a group of medicines known as angiotensin-II receptor antagonists. Angiotensin-II is a substance produced in the body which binds to receptors in blood vessels causing them to tighten. This results in an increase in blood pressure. Karvea prevents the binding of angiotensin-II to these receptors, causing the blood vessels to relax and the blood pressure to lower. Karvea slows the decrease of kidney function in patients with high blood pressure and type 2 diabetes.
             </p>
@@ -186,14 +186,15 @@ Usage: #example
                 <li>to protect the kidney in patients with high blood pressure, type 2 diabetes and laboratory
                     evidence of impaired kidney function.</li>
             </ul>
-        </div>"""              
+        </div>         </div>"""              
   * section[=].section[+]
     * title = "2. What you need to know before you take Karvea"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
     * code.text = "2. What you need to know before you take Karvea"
     * text.status = #additional
        
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <b>Do not take Karvea</b>
             <ul>
                 <li>if you are allergic to irbesartan or any other ingredients of this medicine (listed in section 6)</li>
@@ -256,14 +257,14 @@ Usage: #example
             
             <b>Karvea contains sodium.</b>
             <p>This medicine contains less than 1 mmol sodium (23 mg) per tablet, that is to say essentially ‘sodium-free’.</p>            
-        </div>"""              
+        </div>         </div>"""              
   * section[=].section[+]
     * title = "3. How to take Karvea"
     * code = https://spor.ema.europa.eu/rmswi/#100000155538
     * code.text = "3. How to take Karvea"
     * text.status = #additional
           
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <b>Always take this medicine exactly as your doctor has told you. Check with your doctor or pharmacist if you are not sure.</b>
             
             <b>Method of administration</b>
@@ -292,7 +293,7 @@ Usage: #example
             <b>If you forget to take Karvea</b>
             <p>If you accidentally miss a daily dose, just take the next dose as normal. Do not take a double dose to make up for a forgotten dose.</p>
             <p>If you have any further questions on the use of this medicine, ask your doctor or pharmacist.</p>     
-        </div>"""          
+        </div>         </div>"""          
 
           
   * section[=].section[+]
@@ -301,7 +302,7 @@ Usage: #example
     * code.text = "4. Possible side effects"
     * text.status = #additional
                 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Like all medicines, this medicine can cause side effects, although not everybody gets them. Some of these effects may be serious and may require medical attention.</p>
             <p>As with similar medicines, rare cases of allergic skin reactions (rash, urticaria), as well as localised swelling of the face, lips and/or tongue have been reported in patients taking irbesartan. If you get any of these symptoms or get short of breath, stop taking Karvea and contact your doctor immediately.</p>
             <p>The frequency of the side effects listed below is defined using the following convention:</p>
@@ -321,7 +322,7 @@ Usage: #example
             <b>Reporting of side effects</b>
             <p>If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. You can also report side effects directly via the national reporting system listed in Appendix V. By reporting side effects you can help provide more information on the safety of this medicine.
             </p>
-        </div>"""   
+        </div>         </div>"""   
           
   * section[=].section[+]
     * title = "5. How to store Karvea"
@@ -329,7 +330,7 @@ Usage: #example
     * code.text = "5. How to store Karvea"
     * text.status = #additional
                  
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Keep this medicine out of the sight and reach of children.</p>
             <p>
                 Do not use this medicine after the expiry date which is stated on the carton and on the blister after EXP. The expiry date refers to the last day of that month.
@@ -337,7 +338,7 @@ Usage: #example
             <p>Do not store above 30°C.</p>
             <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away of medicines you no longer use. These measures will help protect the environment.
             </p>
-        </div>"""   
+        </div>         </div>"""   
           
   * section[=].section[+]
     * title = "6. Contents of the pack and other information"
@@ -345,7 +346,7 @@ Usage: #example
     * code.text = "6. Contents of the pack and other information"
     * text.status = #additional
        
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <b>What Karvea contains</b>
             <ul>
                 <li>The active substance is irbesartan. Each tablet of Karvea 75 mg contains 75 mg irbesartan.</li>
@@ -568,4 +569,4 @@ Usage: #example
             </table>
             <p>This leaflet was last revised in</p>
             <p>Detailed information on this medicine is available on the European Medicines Agency web site: http://www.ema.europa.eu/</p>            
-        </div>"""
+        </div>         </div>"""

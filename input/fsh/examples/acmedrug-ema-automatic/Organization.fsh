@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "ACME industry as Marketing authorisation holder"
 Description: "ACME industry as Marketing authorisation holder"
 Usage: #example
-* id = "e8501a78-f0bc-4453-b2ca-617a340c10e0" 
+* id = "2d45157a-fa8f-4bfe-8baf-5a39dc887c5f" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -18,7 +18,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "street tal e tal"
+    * text = "street x and y  Paris FR "
     * use = #work
     * type = #physical
     * line = "street x and y "

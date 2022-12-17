@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 acmedrug-man"
 Usage: #example
 
 
-* id = "3a873a1c-ecf5-4ce1-b5cd-cbfcc633f367" 
+* id = "dc1c1f15-c169-419c-a4b2-d4895a8cc4f9" 
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 
@@ -15,6 +15,7 @@ Usage: #example
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
 
 * status = http://hl7.org/fhir/publication-status#active "active"
+
 
 
 

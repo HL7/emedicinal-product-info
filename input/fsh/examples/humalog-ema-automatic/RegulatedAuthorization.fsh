@@ -6,7 +6,7 @@ Description: "Regulated Authorization for Humalog "
 Usage: #example
 
 
-* id = "0de57933-1ad6-429f-9507-461ebea37790" 
+* id = "3b47ef8b-ee04-43c4-be51-ebfbc376a1e7" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"

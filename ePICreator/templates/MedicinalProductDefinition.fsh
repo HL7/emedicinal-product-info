@@ -27,7 +27,7 @@ Usage: #example
 {% if row["classification_ids"]|string != 'nan' %}
 {% for idx in range(0,row["classification_ids"].count("|")+1) %} 
 
-* classification[+] = {{ row["classification_ids"].split("|")[idx]}} "{{ row["classification_texts"].split("|")[idx]}}"
+* classification[+] = $atc#{{ row["classification_ids"].split("|")[idx]}} "{{ row["classification_texts"].split("|")[idx]}}"
 
 {%- endfor %}
 {%- endif %}

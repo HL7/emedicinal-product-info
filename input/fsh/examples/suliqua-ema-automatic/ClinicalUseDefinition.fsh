@@ -3,7 +3,7 @@ Instance: contraindication-hypersensitivityreaction
 InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
 Description: "contraindication - Hypersensitivity reaction"
 Usage: #example
-* id = "5e371f8f-48f2-43a1-b8c4-279d1986891f" 
+* id = "8c8788fb-663e-4754-aba1-82a98e7b668f" 
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "Hypersensitivity reaction"
@@ -24,7 +24,7 @@ Instance: indication-hypertension
 InstanceOf: ClinicalUseDefinition-indication-uv-epi
 Description: "indication - Hypertension"
 Usage: #example
-* id = "9483a182-2054-4b25-b896-3ff631520525" 
+* id = "0cef397b-7b77-4148-ac10-51bdb15b001e" 
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "Type 2 diabetes mellitus"
@@ -46,7 +46,7 @@ Instance: interaction-bezafibrat
 InstanceOf: ClinicalUseDefinition-interaction-uv-epi
 Description: "interaction - Bezafibrat"
 Usage: #example
-* id = "fbcad1f7-7563-446e-83e0-a72b898cb7ce" 
+* id = "9ba2e7fa-8a80-4c46-a473-821ad72bee2d" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "Y9449Q51XH"

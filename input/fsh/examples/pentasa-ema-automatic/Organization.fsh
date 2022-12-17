@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "FERRING S.A.U. as Marketing authorisation holder"
 Description: "FERRING S.A.U. as Marketing authorisation holder"
 Usage: #example
-* id = "3d5adfac-80d1-433a-a3e7-197e780ac68e" 
+* id = "cbad4846-33b0-4e0f-ab68-09edb4e57ff4" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000621"
 * identifier.use = #official
@@ -18,7 +18,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "C/ del Arquitecto Sánchez Arcas nº 3, 1º	Madrid"
+    * text = "C/ del Arquitecto Sánchez Arcas nº 3, 1º Madrid ES "
     * use = #work
     * type = #physical
     * line = "C/ del Arquitecto Sánchez Arcas nº 3, 1º"

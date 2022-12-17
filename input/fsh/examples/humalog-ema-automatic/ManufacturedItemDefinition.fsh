@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Humalog 100 U/ml 5 pre-filled pen"
 Description: "Humalog 100 U/ml 5 pre-filled pen"
 Usage: #example
-* id = "8b38e3ab-9e27-48e5-aef9-65a470c78b8d" 
+* id = "66d36196-76d2-457e-91c7-51e99ec883c6" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/96/007/035"
