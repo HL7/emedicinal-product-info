@@ -5,7 +5,7 @@ Title: "Composition for Karvea Package Leaflet"
 Description:  "Composition for Karvea Package Leaflet"
 Usage: #example
 
-* id = "7fbc7ae9-4a9f-4f75-835b-e2b3dbc48d00" 
+* id = "b36efa6e-2d0b-4ded-ae9d-4363cdc2861d" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -42,48 +42,48 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = fca95693-b7bf-48dd-aa2b-eddb7c208eb6
+//  * entry[+].fullUrl = b8011f38-5ed8-413d-91ae-2e5c5fecb961
   * entry[+] = Reference(ingredient-for-karvea-hypromellose) 
 
   // Ingredient
-//  * entry[+].fullUrl = c653939f-d513-4233-a4c9-439d5c899eb8
+//  * entry[+].fullUrl = 7dbe4200-4a54-4071-8682-4a25b7f59bae
   * entry[+] = Reference(ingredient-for-karvea-macrogol3000) 
 
   // Ingredient
-//  * entry[+].fullUrl = 68263ae7-bf95-4d18-8431-a0664ab27227
+//  * entry[+].fullUrl = 03bd2d5b-aaab-4e43-9feb-7e29e33e0671
   * entry[+] = Reference(ingredient-for-karvea-lactosemonohydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = aa714cb8-d344-41a6-a042-909831ffa1cb
+//  * entry[+].fullUrl = 7209fe09-1075-4b21-b5c0-c23ab335186d
   * entry[+] = Reference(ingredient-for-karvea-silicondioxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 1775c83d-a0d6-42c1-a350-c36dcb8165ee
+//  * entry[+].fullUrl = dd7bb0d9-b895-42ec-b209-8b308ee0f6f0
   * entry[+] = Reference(ingredient-for-karvea-titaniumdioxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 0ad73ba2-afc1-4ac2-94b9-d7bf0659835a
+//  * entry[+].fullUrl = af5afca8-ae8b-4e94-b320-28169e450808
   * entry[+] = Reference(ingredient-for-karvea-irbesartan) 
 
   // Ingredient
-//  * entry[+].fullUrl = 459c3ebc-8e2d-47d4-8333-efec1aee9ec8
+//  * entry[+].fullUrl = b302b97b-8a6a-45e0-8c10-b34399f695fe
   * entry[+] = Reference(ingredient-for-karvea-croscarmellosesodium) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7a7f2d94-bbba-4961-af25-1aaef523e8eb
+//  * entry[+].fullUrl = 043576d0-7295-4ba2-af1a-4e1d1500fd15
   * entry[+] = Reference(ingredient-for-karvea-microcrystallinecellulose) 
 
   // Ingredient
-//  * entry[+].fullUrl = 9c3ecacc-6c3d-4347-8752-0a093f01253b
+//  * entry[+].fullUrl = 8e157774-1280-4048-bd2a-e6e0bb452707
   * entry[+] = Reference(ingredient-for-karvea-magnesiumstearate) 
 
   // Ingredient
-//  * entry[+].fullUrl = c398d96a-6938-4603-8e64-b8b2ed8c57d2
+//  * entry[+].fullUrl = 055a3eb3-f16b-49f8-8c6c-305fa03e8526
   * entry[+] = Reference(ingredient-for-karvea-carnaubawax) 
  
 
   // Substance
-//  * entry[+].fullUrl = 57971f6a-319c-40fc-b062-affa49e14200
+//  * entry[+].fullUrl = 343f80bb-2710-4d58-8450-2b9476c16e9a
   * entry[+] = Reference(substance-irbesartan) 
  
 
@@ -93,27 +93,27 @@ Usage: #example
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 2e869aa3-ac06-4caa-a076-f67ddcbbcd34
+//  * entry[+].fullUrl = 5db7e73a-75b8-43ef-b2da-9138d72b55b7
   * entry[+] = Reference(authorizationkarvea75mgtablet) 
  
 
   // Organization
-//  * entry[+].fullUrl = bb4dd1b7-5193-4ee0-a11a-81581a3612a9
+//  * entry[+].fullUrl = edc2dc59-5e79-4486-a7f4-ab2d73c76230
   * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 414da45e-399f-4ca0-9ae5-b3c072a283a6
+//  * entry[+].fullUrl = f1bce7a1-4ad9-4268-932a-d2025793182e
   * entry[+] = Reference(ppd-karvea75mgtabletblisterx28tablets) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 54b3f464-d390-4772-b521-92e7669cd5aa
+//  * entry[+].fullUrl = 3eebcfec-8f3e-450b-b348-68e12e7cde87
   * entry[+] = Reference(mpKarvea75mgtabletblisterx28) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 5cbcb5b5-7e20-4133-a315-4284513a001c
+//  * entry[+].fullUrl = 2c1a500a-c4a2-4f4b-9836-b4661b89f882
   * entry[+] = Reference(mid-karvea75mgtablet) 
    
 

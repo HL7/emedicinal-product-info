@@ -3,7 +3,7 @@ Instance: substance-mesalamine
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "MESALAMINE"
 Usage: #example
-* id = "4b6ff6a6-0191-42ad-8f10-a58238edcb36" 
+* id = "b2f3f32e-6920-47d3-ae9d-a606e4bd55de" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "4Q81I59GXC"

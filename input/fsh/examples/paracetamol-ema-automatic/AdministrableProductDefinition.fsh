@@ -1,17 +1,17 @@
 
-Instance: ap-paracetamol
+Instance: ap-dolocatil1gtablets
 InstanceOf: AdministrableProductDefinitionUvEpi
-Title: "Administrable product paracetamol"
-Description: "paracetamol"
+Title: "Administrable product DOLOCATIL 1 g tablets "
+Description: "DOLOCATIL 1 g tablets "
 Usage: #example
 
-* id = "ca719992-e779-49e7-bcce-b37dde82709f" 
+* id = "4a8d535c-4d15-4153-b24d-12c7e0e783c5" 
 * identifier.system = $phpid
-* identifier.value = "identifier" 
+* identifier.value = "xx" 
 
 * status = #active
 
-* formOf = Reference(mpparecetamolamn)
+* formOf = Reference(mpDOLOCATIL1gtablets)
 * administrableDoseForm = $spor-rms#200000002152 "tablet"
 * unitOfPresentation = $spor-rms#200000002152 "tablet"
 
@@ -19,7 +19,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-paracetamol)
+* producedFrom = Reference(mid-dolocatil1gtablets)
 
 
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"

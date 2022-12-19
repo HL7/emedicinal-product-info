@@ -23,8 +23,15 @@ Usage: #example
 
 {% if key != "Composition" and key !="Bundle" %}
 // {{key}}
+{% if "Substance" not in key  %}
+
 * entry[+].fullUrl = "{{key}}/{{refs[1]}}"
 * entry[=].resource = {{refs[0]}}
+{%- else %}   
+* entry[+].fullUrl = "{{key}}Definition/{{refs[1]}}"
+* entry[=].resource = {{refs[0]}}
+{%- endif %}   
+
 {%- endif %}   
 {%- endfor %}
 {%- endfor %}

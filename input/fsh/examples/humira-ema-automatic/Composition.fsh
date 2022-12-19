@@ -5,7 +5,7 @@ Title: "Composition for humira Package Leaflet"
 Description:  "Composition for humira Package Leaflet"
 Usage: #example
 
-* id = "83ddff58-5514-4366-9dd4-9ad90e6b1282" 
+* id = "2639cdf2-1d09-420d-93d5-ff5002e93bd5" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "nan"
 
@@ -14,7 +14,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpHumira20mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
+* subject = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
 
@@ -30,55 +30,75 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = c534a592-68e2-4e85-8554-d79305601a83
+//  * entry[+].fullUrl = e4cd6b02-ce03-4a35-98cc-83e062140eed
   * entry[+] = Reference(ingredient-for-humira-mannitol) 
 
   // Ingredient
-//  * entry[+].fullUrl = 26bdd383-cda0-4631-a76d-54aebeea1f3a
+//  * entry[+].fullUrl = c64eb42f-94e8-4677-af30-9b44302f37b7
   * entry[+] = Reference(ingredient-for-humira-polysorbate80) 
 
   // Ingredient
-//  * entry[+].fullUrl = 0e819ad1-1c8c-4bf7-afcd-e20dc0f4c0d2
+//  * entry[+].fullUrl = 66f42147-7abc-484a-9683-83d5b71bf47d
   * entry[+] = Reference(ingredient-for-humira-adalimumab) 
 
   // Ingredient
-//  * entry[+].fullUrl = 864e188c-c315-4804-ade5-7fa042503843
-  * entry[+] = Reference(ingredient-for-humira-waterforinjections) 
+//  * entry[+].fullUrl = 2480c27b-936d-43f5-854a-a3f4c92ee4bd
+  * entry[+] = Reference(ingredient-for-humira-sterilewaterforinjection) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 895f5533-2dfa-4230-966e-58733fe58ff3
+  * entry[+] = Reference(ingredient-for-humira-citricacidmonohydrate) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 2adaf64a-f9d9-47cb-93ab-67d2c67e5681
+  * entry[+] = Reference(ingredient-for-humira-sodiumcitrateunspecifiedform) 
+
+  // Ingredient
+//  * entry[+].fullUrl = c4563dc3-5594-404c-9d35-d844f6cd3c5e
+  * entry[+] = Reference(ingredient-for-humira-sodiumphosphatemonobasicdihydrate) 
+
+  // Ingredient
+//  * entry[+].fullUrl = c26782b4-5e80-4eb5-be9b-f1bd413c1a57
+  * entry[+] = Reference(ingredient-for-humira-sodiumphosphatedibasicdihydrate) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 339a50c5-6b36-4429-87b3-25c9d8e0ed09
+  * entry[+] = Reference(ingredient-for-humira-sodiumchloride) 
  
 
   // Substance
-//  * entry[+].fullUrl = 3142ee09-645e-42ef-b4bf-3f8365387276
+//  * entry[+].fullUrl = fe0f2c34-ca4a-4a73-aaf4-b65d0f02d1fc
   * entry[+] = Reference(substance-adalimumab) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 4d9783f1-27ba-4f9b-a427-ceb0d73f2b39
-  * entry[+] = Reference(ap-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
+//  * entry[+].fullUrl = 0eeb7689-35ca-4e3e-ab7f-c903eb77e421
+  * entry[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = fe414747-a028-448c-9848-e2efbcdefd63
+//  * entry[+].fullUrl = 7b265e7f-7e14-4ebe-b291-b846c0c389a8
   * entry[+] = Reference(authorizationhumira20mgsolutionforinjectioninprefilledsyringe) 
  
 
   // Organization
-//  * entry[+].fullUrl = c25563d0-7a0d-4cfc-8717-b575da737ab3
+//  * entry[+].fullUrl = fe05963e-eb22-4d71-a2f0-f937787ca79b
   * entry[+] = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = c8d43dc8-7c6c-436a-a8f0-1f5ed4b879a0
-  * entry[+] = Reference(ppd-humira20mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads) 
+//  * entry[+].fullUrl = c02e8a42-3ace-45b4-b316-66f3238072db
+  * entry[+] = Reference(ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 3da3d2f7-5e9f-4ff3-a86a-e5c756c53b04
-  * entry[+] = Reference(mpHumira20mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass) 
+//  * entry[+].fullUrl = c98b73a6-65be-439b-81d7-4b86b2846031
+  * entry[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 635a58da-37e4-4e1e-be33-9666c9812849
-  * entry[+] = Reference(mid-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
+//  * entry[+].fullUrl = 8b33c52b-40d2-45df-89e6-16a09832fabb
+  * entry[+] = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
    
 
 
@@ -105,7 +125,7 @@ Usage: #example
     * code.text = "Package leaflet: Information for the user"
     * text.status = #additional
        
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Humira 20 mg solution for injection in pre-filled syringe
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Humira 40 mg solution for injection in pre-filled syringe
 adalimumab</p>
 <p>Read all of this leaflet carefully before your child starts using this medicine because it contains important information.</p>
 <ul>

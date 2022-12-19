@@ -1,11 +1,11 @@
 
 
-Instance: org-marketingauthorisationholder-acmeindustry-cinitrapide
+Instance: org-marketingauthorisationholder-lacersaboters5-cinitrapide
 InstanceOf: OrganizationUvEpi
-Title: "ACME industry as Marketing authorisation holder"
-Description: "ACME industry as Marketing authorisation holder"
+Title: "Lacer, S.A. - Boters, 5 as Marketing authorisation holder"
+Description: "Lacer, S.A. - Boters, 5 as Marketing authorisation holder"
 Usage: #example
-* id = "cde90934-fd1d-49c3-83ad-ecb2e6fbe341" 
+* id = "9743e79b-32f2-4340-9f29-2f1995c4a147" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -14,14 +14,14 @@ Usage: #example
 
 * type = $spor-rms#220000000034  "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
-* name = "ACME industry"
+* name = "Lacer, S.A. - Boters, 5"
 
 * contact
   * address
-    * text = "street x and y  Paris FR "
+    * text = "Cerdanyola del Vallès Barcelona ES"
     * use = #work
     * type = #physical
-    * line = "street x and y "
-    * city = "Paris"
-    * country = "FR"
-    
+    * line = "Cerdanyola del Vallès"
+    * city = "Barcelona"
+    * country = "ES"
+    * postalCode = "8290"

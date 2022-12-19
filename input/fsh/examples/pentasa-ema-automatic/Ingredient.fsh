@@ -5,7 +5,7 @@ Title: "Ingredient-active mesalazine"
 Description: "mesalazine"
 Usage: #example
 
-* id = "3b34fe86-7d25-4f92-8c79-55bd8aadfd20" 
+* id = "375b4bdb-3fb0-451b-9ae8-0b8ab1ea1913" 
 
 * identifier.system = $ginas
 * identifier.value = "4Q81I59GXC"
@@ -20,7 +20,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity = 1.0 'g'
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength "
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
 // Reference to manufactured item
@@ -37,7 +37,7 @@ Title: "Ingredient-excipient Povidone"
 Description: "Povidone"
 Usage: #example
 
-* id = "cbb57f83-587a-4797-bb8a-9748cddbfffd" 
+* id = "d70e7361-0219-4f85-a456-1a0e6f2b62b4" 
 
 * identifier.system = $ginas
 * identifier.value = "FZ989GH94E"
@@ -65,7 +65,7 @@ Title: "Ingredient-excipient Ethylcellulose"
 Description: "Ethylcellulose"
 Usage: #example
 
-* id = "6861f367-f707-4287-bfa3-f58a309036c0" 
+* id = "47304b03-b02e-4f42-94fa-ea5b6726aef9" 
 
 * identifier.system = $ginas
 * identifier.value = "7Z8S9VYZ4B"
@@ -73,7 +73,7 @@ Usage: #example
 
 * role = $spor-rms#100000072082 "Excipient"
 
-* status = #nan
+* status = #active
 
 * substance.code.concept.coding = $ginas#7Z8S9VYZ4B "Ethylcellulose"
 
@@ -93,7 +93,7 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "54dab96f-b341-46ce-ac8c-48ff235205d9" 
+* id = "74266063-1898-4b8e-b0cc-1e5de68e47bc" 
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
@@ -101,7 +101,7 @@ Usage: #example
 
 * role = $spor-rms#100000072082 "Excipient"
 
-* status = #nan
+* status = #active
 
 * substance.code.concept.coding = $ginas#70097M6I30 "Magnesium stearate"
 
@@ -121,7 +121,7 @@ Title: "Ingredient-excipient Talc"
 Description: "Talc"
 Usage: #example
 
-* id = "229d5602-933d-4251-a2c7-a2d45b40173a" 
+* id = "edf038a3-f4b5-43a0-91a9-d645b9c1b78d" 
 
 * identifier.system = $ginas
 * identifier.value = "7SEV7J4R1U"
@@ -129,7 +129,7 @@ Usage: #example
 
 * role = $spor-rms#100000072082 "Excipient"
 
-* status = #nan
+* status = #active
 
 * substance.code.concept.coding = $ginas#7SEV7J4R1U "Talc"
 
@@ -149,7 +149,7 @@ Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"
 Usage: #example
 
-* id = "63d8c5ad-9b85-429c-8086-807aa61db15c" 
+* id = "e5dc185a-5bb6-41f3-aae9-2eadb0290acd" 
 
 * identifier.system = $ginas
 * identifier.value = "OP1R32D61U"
@@ -157,7 +157,7 @@ Usage: #example
 
 * role = $spor-rms#100000072082 "Excipient"
 
-* status = #nan
+* status = #active
 
 * substance.code.concept.coding = $ginas#OP1R32D61U "Microcrystalline cellulose"
 

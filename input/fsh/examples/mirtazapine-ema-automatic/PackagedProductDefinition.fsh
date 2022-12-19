@@ -1,22 +1,22 @@
 
-Instance: ppd-mirtazapinacinfa30mgcoatedtablet
+Instance: ppd-mirtazapinacinfa30mgcoatedtablet30tablets
 InstanceOf: PackagedProductDefinitionUvEpi
-Title: "MIRTAZAPINA CINFA 30 mg Coated Tablet"
-Description: "MIRTAZAPINA CINFA 30 mg Coated Tablet"
+Title: "MIRTAZAPINA CINFA 30 mg Coated Tablet, 30 tablets"
+Description: "MIRTAZAPINA CINFA 30 mg Coated Tablet, 30 tablets"
 Usage: #example
-* id = "f2fa3ec0-7f85-4804-b995-6999a354e138" 
+* id = "2d577e19-b88f-45ac-8dcf-a0572e5b639a" 
 
 * identifier.system = $spor-prod
 * identifier.value = "nan"
 * identifier.use = #official
 
-* name = "MIRTAZAPINA CINFA 30 mg Coated Tablet"
+* name = "MIRTAZAPINA CINFA 30 mg Coated Tablet, 30 tablets"
 
 * type = $spor-rms#100000155527 "Chemical Medicinal Prodcut"
 //* type = $spor-rms#100000155527
 
 
-* status = #active
+* status = http://hl7.org/fhir/publication-status#active "Active"
 * statusDate = "2021-09-01"
 
 
@@ -30,7 +30,7 @@ Usage: #example
   * identifier.system = $spor-prod
   * identifier.value = "123456"
   * type = $spor-rms#100000073496 "Blister"
-  * quantity = 28
+  * quantity = 30
   * material = $spor-rms#200000003222 "PolyVinyl Chloride"
 
 

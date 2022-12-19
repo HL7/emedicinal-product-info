@@ -20,13 +20,13 @@ Usage: #example
 
 * contact
   * address
-    * text = "{{ row["address_line"]  }} {{ row["address_city"]  }} {{ row["address_country"]  }} "
+    * text = "{{ row["address_line"]  }} {{ row["address_city"]  }} {{ row["address_country"]  }}"
     * use = #{{ row["address_use"]  }}
     * type = #{{ row["address_type"]  }}
-    * line = "{{ row["address_line"]  }}"
-    * city = "{{ row["address_city"]  }}"
-    * country = "{{ row["address_country"]  }}"
-    {{ "* postalCode = \"{}\"".format(row.address_postalCode) if row.address_postalCode|string !="nan"}}
+    * line = "{{ row["address_line"]|trim  }}"
+    * city = "{{ row["address_city"]|trim  }}"
+    * country = "{{ row["address_country"]|trim  }}"
+    {{ "* postalCode = \"{}\"".format(row.address_postalCode|trim) if row.address_postalCode|string !="nan"}}
 
 
 {%- endif %}

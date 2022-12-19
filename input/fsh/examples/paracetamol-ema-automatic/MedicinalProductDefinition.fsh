@@ -1,12 +1,12 @@
 
-Instance: mpparecetamolamn
+Instance: mpDOLOCATIL1gtablets
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product parecetamol-amn"
-Description: "EU/1/97/049/001 parecetamol-amn"
+Title: "Medicinal Product DOLOCATIL 1 g tablets"
+Description: "EU/1/97/049/001 DOLOCATIL 1 g tablets"
 Usage: #example
 
 
-* id = "abdafe81-3319-4f71-a2da-173c4ebbd832" 
+* id = "22a966c1-7ccf-4697-814d-8c5c861e936e" 
 * identifier.system = $spor-prod
 * identifier.value = "cc"
 
@@ -24,22 +24,22 @@ Usage: #example
 
 
 * name
-  * productName = "parecetamol-amn"
+  * productName = "DOLOCATIL 1 g tablets"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
   * part[0]
-    * part = "Karvea"
+    * part = "Dolocatil"
     * type = $spor-productNamePartType-cs#220000000002
     * type.text = "Invented name part"
   
   * part[+]
-    * part = "irbesartan"
+    * part = "paracetamol"
     * type = $spor-productNamePartType-cs#220000000003
     * type.text = "Scientific name part"
   
   * part[+]
-    * part = "75 mg"
+    * part = "1000 mg"
     * type = $spor-productNamePartType-cs#220000000004
     * type.text = "Strength part"
   
@@ -49,6 +49,6 @@ Usage: #example
     * type.text = "Pharmaceutical dose form part"
   
   * usage
-    * country = urn:iso:std:iso:3166#DK ""
-    * jurisdiction = urn:iso:std:iso:3166#DK ""
+    * country = urn:iso:std:iso:3166#ES ""
+    * jurisdiction = urn:iso:std:iso:3166#ES ""
     * language = urn:ietf:bcp:47#en  "English"

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/emedicinal-product-info/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/emedicinal-product-info" defaultVersion="1.0.0-ballot" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/emedicinal-product-info" url="http://hl7.org/fhir/uv/emedicinal-product-info">
+<version code="current" url="http://build.fhir.org/ig/HL7/emedicinal-product-info"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/emedicinal-product-info/2023Jan"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="PackagedProductDefinition/9df19a62-bf14-41e5-a38b-e2db9c96d3ca" key="PackagedProductDefinition-9df19a62-bf14-41e5-a38b-e2db9c96d3ca" name="3 ml cartridge (glass) in a pre-filled pen"/>
+<artifact id="Organization/fe05963e-eb22-4d71-a2f0-f937787ca79b" key="Organization-fe05963e-eb22-4d71-a2f0-f937787ca79b" name="AbbVie Deutschland GmbH Co. KG as Marketing authorisation holder"/>
+<artifact id="PackagedProductDefinition/0dd7b3d0-5b52-438c-99c6-9103beb0c8b0" key="PackagedProductDefinition-0dd7b3d0-5b52-438c-99c6-9103beb0c8b0" name="acme drug blister tabs"/>
+<artifact id="Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75" key="Organization-d71bf884-90eb-47f9-81b7-fa81ecec7e75" name="Acme Inc. as Marketing Authorization Holder"/>
+<artifact id="Organization/f8311055-9dd6-4b11-a954-60979578fb89" key="Organization-f8311055-9dd6-4b11-a954-60979578fb89" name="ACME industry as Marketing authorisation holder"/>
+<artifact id="PackagedProductDefinition/560639ae-8c6a-4f98-9a5b-455534b1b16a" key="PackagedProductDefinition-560639ae-8c6a-4f98-9a5b-455534b1b16a" name="adalimumab"/>
+<artifact id="ValueSet/additionalMonitoringIndicator" key="ValueSet-additionalMonitoringIndicator" name="Additional Monitoring Indicator"/>
+<artifact id="AdministrableProductDefinition/2f18f09a-7299-4b3f-8291-5a4cf862b7d7" key="AdministrableProductDefinition-2f18f09a-7299-4b3f-8291-5a4cf862b7d7" name="Administrable product acmedrug"/>
+<artifact id="AdministrableProductDefinition/88272368-f0bf-4222-aec0-4829b44b6d0b" key="AdministrableProductDefinition-88272368-f0bf-4222-aec0-4829b44b6d0b" name="Administrable product adalimumab"/>
+<artifact id="AdministrableProductDefinition/702309aa-2383-4116-9f1f-541e48c9026e" key="AdministrableProductDefinition-702309aa-2383-4116-9f1f-541e48c9026e" name="Administrable product BLASTON 1 mg tablets"/>
+<artifact id="StructureDefinition/AdministrableProductDefinition-uv-epi" key="StructureDefinition-AdministrableProductDefinition-uv-epi" name="AdministrableProductDefinition (ePI)"/>
+<artifact id="ValueSet/admProductIdSystems" key="ValueSet-admProductIdSystems" name="AdministrableProductDefinition identifier systems"/>
+<artifact id="AdministrableProductDefinition/4a8d535c-4d15-4153-b24d-12c7e0e783c5" key="AdministrableProductDefinition-4a8d535c-4d15-4153-b24d-12c7e0e783c5" name="Administrable product DOLOCATIL 1 g tablets"/>
+<artifact id="AdministrableProductDefinition/xxxxx" key="AdministrableProductDefinition-xxxxx" name="Administrable product Humalog 100 U/ml 5 pre-filled pen"/>
+<artifact id="AdministrableProductDefinition/0eeb7689-35ca-4e3e-ab7f-c903eb77e421" key="AdministrableProductDefinition-0eeb7689-35ca-4e3e-ab7f-c903eb77e421" name="Administrable product Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"/>
+<artifact id="AdministrableProductDefinition/xx" key="AdministrableProductDefinition-xx" name="Administrable product Karvea 75mg tablet"/>
+<artifact id="AdministrableProductDefinition/b2fed079-5aac-4465-adbc-dd96b2591420" key="AdministrableProductDefinition-b2fed079-5aac-4465-adbc-dd96b2591420" name="Administrable product MIRTAZAPINA CINFA 30 mg Coated Tablet"/>
+<artifact id="AdministrableProductDefinition/775165d2-759c-46d3-a342-efb135ff438d" key="AdministrableProductDefinition-775165d2-759c-46d3-a342-efb135ff438d" name="Administrable product Pentasa Slow Release Tablets 1g"/>
+<artifact id="AdministrableProductDefinition/fad19480-fc72-41a5-a926-acf15ca0b803" key="AdministrableProductDefinition-fad19480-fc72-41a5-a926-acf15ca0b803" name="Administrable product Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens"/>
+<artifact id="ValueSet/authorizationStatus" key="ValueSet-authorizationStatus" name="Authorization Status"/>
+<artifact id="PackagedProductDefinition/8d3c46db-8576-4286-b7fc-7137535b83ab" key="PackagedProductDefinition-8d3c46db-8576-4286-b7fc-7137535b83ab" name="BLASTON 1 mg tablets, 50 tablets"/>
+<artifact id="StructureDefinition/Bundle-uv-epi" key="StructureDefinition-Bundle-uv-epi" name="Bundle - ePI"/>
+<artifact id="ValueSet/caseIdSystem" key="ValueSet-caseIdSystem" name="Case System Identifiers"/>
+<artifact id="AdministrableProductDefinition/373b9bf3-1fae-47a1-a7cd-230106def069" key="AdministrableProductDefinition-373b9bf3-1fae-47a1-a7cd-230106def069" name="cava 75mg tablet administrable product"/>
+<artifact id="MedicinalProductDefinition/cfsb1650904258324" key="MedicinalProductDefinition-cfsb1650904258324" name="cfsb1650904258324"/>
+<artifact id="PackagedProductDefinition/cfsb1650995718524" key="PackagedProductDefinition-cfsb1650995718524" name="cfsb1650995718524"/>
+<artifact id="Organization/cfsb1650997423990" key="Organization-cfsb1650997423990" name="cfsb1650997423990"/>
+<artifact id="ManufacturedItemDefinition/cfsb1650998521654" key="ManufacturedItemDefinition-cfsb1650998521654" name="cfsb1650998521654"/>
+<artifact id="AdministrableProductDefinition/cfsb1650999516847" key="AdministrableProductDefinition-cfsb1650999516847" name="cfsb1650999516847"/>
+<artifact id="RegulatedAuthorization/cfsb1651148079894" key="RegulatedAuthorization-cfsb1651148079894" name="cfsb1651148079894"/>
+<artifact id="Organization/cfsb1651149636159" key="Organization-cfsb1651149636159" name="cfsb1651149636159"/>
+<artifact id="Organization/cfsb1651152112409" key="Organization-cfsb1651152112409" name="cfsb1651152112409"/>
+<artifact id="Ingredient/cfsb1651162710491" key="Ingredient-cfsb1651162710491" name="cfsb1651162710491"/>
+<artifact id="Ingredient/cfsb1651164758053" key="Ingredient-cfsb1651164758053" name="cfsb1651164758053"/>
+<artifact id="Ingredient/cfsb1651170791283" key="Ingredient-cfsb1651170791283" name="cfsb1651170791283"/>
+<artifact id="Ingredient/cfsb1651229974487" key="Ingredient-cfsb1651229974487" name="cfsb1651229974487"/>
+<artifact id="Ingredient/cfsb1651230170831" key="Ingredient-cfsb1651230170831" name="cfsb1651230170831"/>
+<artifact id="Ingredient/cfsb1651230330246" key="Ingredient-cfsb1651230330246" name="cfsb1651230330246"/>
+<artifact id="Composition/cfsb1651231019151" key="Composition-cfsb1651231019151" name="cfsb1651231019151"/>
+<artifact id="Composition/cfsb1651234995610" key="Composition-cfsb1651234995610" name="cfsb1651234995610"/>
+<artifact id="RegulatedAuthorization/cfsb1665505019066" key="RegulatedAuthorization-cfsb1665505019066" name="cfsb1665505019066"/>
+<artifact id="Organization/cfsb1665505132093" key="Organization-cfsb1665505132093" name="cfsb1665505132093"/>
+<artifact id="Organization/cfsb1665505181936" key="Organization-cfsb1665505181936" name="cfsb1665505181936"/>
+<artifact id="Ingredient/cfsb1665505232916" key="Ingredient-cfsb1665505232916" name="cfsb1665505232916"/>
+<artifact id="Ingredient/cfsb1665505279685" key="Ingredient-cfsb1665505279685" name="cfsb1665505279685"/>
+<artifact id="MedicinalProductDefinition/cfsb1665505881364" key="MedicinalProductDefinition-cfsb1665505881364" name="cfsb1665505881364"/>
+<artifact id="MedicinalProductDefinition/cfsb1665505991728" key="MedicinalProductDefinition-cfsb1665505991728" name="cfsb1665505991728"/>
+<artifact id="AdministrableProductDefinition/cfsb1665507846505" key="AdministrableProductDefinition-cfsb1665507846505" name="cfsb1665507846505"/>
+<artifact id="AdministrableProductDefinition/cfsb1665507849181" key="AdministrableProductDefinition-cfsb1665507849181" name="cfsb1665507849181"/>
+<artifact id="Ingredient/cfsb1666195249780" key="Ingredient-cfsb1666195249780" name="cfsb1666195249780"/>
+<artifact id="Ingredient/cfsb1666195266647" key="Ingredient-cfsb1666195266647" name="cfsb1666195266647"/>
+<artifact id="Ingredient/cfsb1666197203511" key="Ingredient-cfsb1666197203511" name="cfsb1666197203511"/>
+<artifact id="Ingredient/cfsb1666197397224" key="Ingredient-cfsb1666197397224" name="cfsb1666197397224"/>
+<artifact id="Ingredient/cfsb1666197441225" key="Ingredient-cfsb1666197441225" name="cfsb1666197441225"/>
+<artifact id="Ingredient/cfsb1666197470356" key="Ingredient-cfsb1666197470356" name="cfsb1666197470356"/>
+<artifact id="Ingredient/cfsb1666197552249" key="Ingredient-cfsb1666197552249" name="cfsb1666197552249"/>
+<artifact id="Ingredient/cfsb1666197990155" key="Ingredient-cfsb1666197990155" name="cfsb1666197990155"/>
+<artifact id="Ingredient/cfsb1666198119118" key="Ingredient-cfsb1666198119118" name="cfsb1666198119118"/>
+<artifact id="ManufacturedItemDefinition/cfsb1667576615115" key="ManufacturedItemDefinition-cfsb1667576615115" name="cfsb1667576615115"/>
+<artifact id="ManufacturedItemDefinition/cfsb1667576759979" key="ManufacturedItemDefinition-cfsb1667576759979" name="cfsb1667576759979"/>
+<artifact id="Organization/cfsb1667578264482" key="Organization-cfsb1667578264482" name="cfsb1667578264482"/>
+<artifact id="Organization/cfsb1667579389819" key="Organization-cfsb1667579389819" name="cfsb1667579389819"/>
+<artifact id="PackagedProductDefinition/cfsb1667580052450" key="PackagedProductDefinition-cfsb1667580052450" name="cfsb1667580052450"/>
+<artifact id="PackagedProductDefinition/cfsb1667580056388" key="PackagedProductDefinition-cfsb1667580056388" name="cfsb1667580056388"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi" key="StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi" name="ClinicalUseDefinition Contraindication (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-indication-uv-epi" key="StructureDefinition-ClinicalUseDefinition-indication-uv-epi" name="ClinicalUseDefinition Indication (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" key="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi" name="ClinicalUseDefinition Interaction (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi" key="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi" name="ClinicalUseDefinition Undesirable Effect (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-warning-uv-epi" key="StructureDefinition-ClinicalUseDefinition-warning-uv-epi" name="ClinicalUseDefinition Warning (ePI)"/>
+<artifact id="ValueSet/propertyColor" key="ValueSet-propertyColor" name="Color of the product"/>
+<artifact id="ValueSet/PharmaceuticalDoseForm" key="ValueSet-PharmaceuticalDoseForm" name="Combined Pharmaceutical Dose Form"/>
+<artifact id="StructureDefinition/Composition-uv-epi" key="StructureDefinition-Composition-uv-epi" name="Composition (ePI)"/>
+<artifact id="Composition/f9510ce2-4c65-4b21-9c12-59883b902742" key="Composition-f9510ce2-4c65-4b21-9c12-59883b902742" name="Composition for acmedrug Package Leaflet"/>
+<artifact id="Composition/69be4041-e893-4621-b41b-4f12236e30ed" key="Composition-69be4041-e893-4621-b41b-4f12236e30ed" name="Composition for adalimumab Package Leaflet"/>
+<artifact id="Composition/e63f72b2-993f-48b1-b7cb-539b1ed71571" key="Composition-e63f72b2-993f-48b1-b7cb-539b1ed71571" name="Composition for cava 75 mg Package Leaflet"/>
+<artifact id="Composition/dc9ec1f2-f8df-4f6a-86aa-c1275f238c64" key="Composition-dc9ec1f2-f8df-4f6a-86aa-c1275f238c64" name="Composition for cinitrapide Package Leaflet"/>
+<artifact id="Composition/e0d9c141-06d9-4851-84e2-776f4691ab3d" key="Composition-e0d9c141-06d9-4851-84e2-776f4691ab3d" name="Composition for Humalog Package Leaflet"/>
+<artifact id="Composition/2639cdf2-1d09-420d-93d5-ff5002e93bd5" key="Composition-2639cdf2-1d09-420d-93d5-ff5002e93bd5" name="Composition for humira Package Leaflet"/>
+<artifact id="Composition/b36efa6e-2d0b-4ded-ae9d-4363cdc2861d" key="Composition-b36efa6e-2d0b-4ded-ae9d-4363cdc2861d" name="Composition for Karvea Package Leaflet"/>
+<artifact id="Composition/fe5525b3-2105-49ae-8a04-dd6d76837f3d" key="Composition-fe5525b3-2105-49ae-8a04-dd6d76837f3d" name="Composition for MIRTAZAPINA CINFA 30 mg Coated Tablet Package Leaflet"/>
+<artifact id="Composition/feca0c82-5761-48b4-966b-77f6f5930a8d" key="Composition-feca0c82-5761-48b4-966b-77f6f5930a8d" name="Composition for paracetamol Package Leaflet"/>
+<artifact id="Composition/6b7a16be-f094-41fd-9372-8c1aad90ddfc" key="Composition-6b7a16be-f094-41fd-9372-8c1aad90ddfc" name="Composition for Pentasa Slow Release Tablets 1g Package Leaflet"/>
+<artifact id="Composition/3e07109f-49b1-47e3-928d-49c817a851de" key="Composition-3e07109f-49b1-47e3-928d-49c817a851de" name="Composition for Suliqua Package Leaflet"/>
+<artifact id="ClinicalUseDefinition/83f4a22f-9e5e-4941-9fdb-339a0f1f2055" key="ClinicalUseDefinition-83f4a22f-9e5e-4941-9fdb-339a0f1f2055" name="contraindication"/>
+<artifact id="ClinicalUseDefinition/ii" key="ClinicalUseDefinition-ii" name="contraindication-gastrointestinaldisorders"/>
+<artifact id="ClinicalUseDefinition/541ff1c0-dd74-407c-8ca4-294ef97cfc05" key="ClinicalUseDefinition-541ff1c0-dd74-407c-8ca4-294ef97cfc05" name="contraindication-hypersensitivityreaction"/>
+<artifact id="ValueSet/dataCarrierIdSystem" key="ValueSet-dataCarrierIdSystem" name="Data Carrier Identifiers"/>
+<artifact id="PackagedProductDefinition/e712c359-b81f-4feb-81d8-3922fac42f3a" key="PackagedProductDefinition-e712c359-b81f-4feb-81d8-3922fac42f3a" name="DOLOCATIL 1 g tablets, 20 tablets"/>
+<artifact id="Organization/b3db62de-c2f5-4541-8303-285dc36c4d64" key="Organization-b3db62de-c2f5-4541-8303-285dc36c4d64" name="Eli Lilly and Company as Manufacturer API"/>
+<artifact id="Organization/631e8d02-c540-41d6-963e-8fcf2acb7a13" key="Organization-631e8d02-c540-41d6-963e-8fcf2acb7a13" name="Eli Lilly Nederland B.V. as Marketing authorisation holder"/>
+<artifact id="CodeSystem/gravitate" key="CodeSystem-gravitate" name="eMedicinal Product Information Code System"/>
+<artifact id="Bundle/7f7f97cc-1e06-4890-b3b8-af1ea98e1ed7" key="Bundle-7f7f97cc-1e06-4890-b3b8-af1ea98e1ed7" name="ePI document Bundle for acmedrug Package Leaflet"/>
+<artifact id="Bundle/f8ab1cce-d654-4e2e-b9b6-bee927a3e0e3" key="Bundle-f8ab1cce-d654-4e2e-b9b6-bee927a3e0e3" name="ePI document Bundle for adalimumab Package Leaflet"/>
+<artifact id="Bundle/bundlepackageleaflet75" key="Bundle-bundlepackageleaflet75" name="ePI document Bundle for cava 75 mg Package Leaflet"/>
+<artifact id="Bundle/34dc9670-5c6d-4dc2-940d-b89d12c1fda4" key="Bundle-34dc9670-5c6d-4dc2-940d-b89d12c1fda4" name="ePI document Bundle for cinitrapide Package Leaflet"/>
+<artifact id="Bundle/9a99eb24-e75c-4486-848a-b1ef27ef0e5e" key="Bundle-9a99eb24-e75c-4486-848a-b1ef27ef0e5e" name="ePI document Bundle for dolocatil Package Leaflet"/>
+<artifact id="Bundle/e80000d5-fc34-46f4-ad3b-18ebba4ae8f8" key="Bundle-e80000d5-fc34-46f4-ad3b-18ebba4ae8f8" name="ePI document Bundle for Humalog Insulin Lispro 100u/ml Package Leaflet"/>
+<artifact id="Bundle/d8b1e23b-643e-4ce5-a35f-502c6c39d5e6" key="Bundle-d8b1e23b-643e-4ce5-a35f-502c6c39d5e6" name="ePI document Bundle for humira Package Leaflet"/>
+<artifact id="Bundle/3fd23bc1-ac5c-488d-b68b-255167169578" key="Bundle-3fd23bc1-ac5c-488d-b68b-255167169578" name="ePI document Bundle for Karvea 75 mg Package Leaflet"/>
+<artifact id="Bundle/3b9928a8-04cd-4907-8505-9bf69a5bdc46" key="Bundle-3b9928a8-04cd-4907-8505-9bf69a5bdc46" name="ePI document Bundle for mirtazapine-cinfa Package Leaflet"/>
+<artifact id="Bundle/b75a6db6-6b5b-42c9-8c01-77c33a274c95" key="Bundle-b75a6db6-6b5b-42c9-8c01-77c33a274c95" name="ePI document Bundle for Pentasa Package Leaflet"/>
+<artifact id="Bundle/dd610bbb-9767-492c-a659-8d0be8619979" key="Bundle-dd610bbb-9767-492c-a659-8d0be8619979" name="ePI document Bundle for Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen Package Leaflet"/>
+<artifact id="ValueSet/epiType" key="ValueSet-epiType" name="ePI document types"/>
+<artifact id="CapabilityStatement/epi-server" key="CapabilityStatement-epi-server" name="epi-server"/>
+<artifact id="Organization/9695e0ac-f393-4c5a-9ebb-35bdd9c2d76b" key="Organization-9695e0ac-f393-4c5a-9ebb-35bdd9c2d76b" name="European Medicines Agency as Medicines Regulatory Authority"/>
+<artifact id="Organization/dbeccd59-b7ba-4640-a617-ad9d910e71bf" key="Organization-dbeccd59-b7ba-4640-a617-ad9d910e71bf" name="European Medicines Agency as Medicines Regulatory Authority"/>
+<artifact id="Organization/1bee16d1-407b-483b-a78d-79d06f460cdd" key="Organization-1bee16d1-407b-483b-a78d-79d06f460cdd" name="FERRER INTERNACIONAL, S.A. as Marketing authorisation holder"/>
+<artifact id="Organization/af8eadb6-8f58-40a9-9c39-c369824fb09e" key="Organization-af8eadb6-8f58-40a9-9c39-c369824fb09e" name="FERRING S.A.U. as Marketing authorisation holder"/>
+<artifact id="ValueSet/propertyFlavor" key="ValueSet-propertyFlavor" name="Flavor of the product"/>
+<artifact id="ValueSet/generalStatus" key="ValueSet-generalStatus" name="General Status used across ePI resources"/>
+<artifact id="ValueSet/packageType" key="ValueSet-packageType" name="High level Pack Type"/>
+<artifact id="PackagedProductDefinition/3ad17550-7a45-4a2f-a623-0933c7051b54" key="PackagedProductDefinition-3ad17550-7a45-4a2f-a623-0933c7051b54" name="Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"/>
+<artifact id="PackagedProductDefinition/c02e8a42-3ace-45b4-b316-66f3238072db" key="PackagedProductDefinition-c02e8a42-3ace-45b4-b316-66f3238072db" name="Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"/>
+<artifact id="ClinicalUseDefinition/4e922ec1-a398-4a78-8381-3729422b7602" key="ClinicalUseDefinition-4e922ec1-a398-4a78-8381-3729422b7602" name="indication"/>
+<artifact id="ClinicalUseDefinition/ac395582-c8ce-4de8-86c4-c3376c5fa47a" key="ClinicalUseDefinition-ac395582-c8ce-4de8-86c4-c3376c5fa47a" name="indication-hypertension"/>
+<artifact id="ClinicalUseDefinition/yy" key="ClinicalUseDefinition-yy" name="indication-psoriasis"/>
+<artifact id="StructureDefinition/Ingredient-uv-epi" key="StructureDefinition-Ingredient-uv-epi" name="Ingredient (ePI)"/>
+<artifact id="Ingredient/400d4ca6-7538-4dca-8233-2d5a52610c01" key="Ingredient-400d4ca6-7538-4dca-8233-2d5a52610c01" name="Ingredient-active acmedrug-ing1"/>
+<artifact id="Ingredient/66f42147-7abc-484a-9683-83d5b71bf47d" key="Ingredient-66f42147-7abc-484a-9683-83d5b71bf47d" name="Ingredient-active adalimumab"/>
+<artifact id="Ingredient/cacf0960-e141-44df-8ee8-8965d5531243" key="Ingredient-cacf0960-e141-44df-8ee8-8965d5531243" name="Ingredient-active CINITAPRIDE"/>
+<artifact id="Ingredient/3b879f4b-5382-4595-aff1-67b9d87093de" key="Ingredient-3b879f4b-5382-4595-aff1-67b9d87093de" name="Ingredient-active Insulin glargine"/>
+<artifact id="Ingredient/f5eba89a-53bf-41cc-a00f-a81330062946" key="Ingredient-f5eba89a-53bf-41cc-a00f-a81330062946" name="Ingredient-active Insulin glargine"/>
+<artifact id="Ingredient/9533d7d7-0359-449e-8a12-35ed5be36d38" key="Ingredient-9533d7d7-0359-449e-8a12-35ed5be36d38" name="Ingredient-active Insulin Lispro"/>
+<artifact id="Ingredient/af5afca8-ae8b-4e94-b320-28169e450808" key="Ingredient-af5afca8-ae8b-4e94-b320-28169e450808" name="Ingredient-active irbesartan"/>
+<artifact id="Ingredient/34734d5b-c7cf-4a3e-bf87-1412db87476e" key="Ingredient-34734d5b-c7cf-4a3e-bf87-1412db87476e" name="Ingredient-active Lixisenatide"/>
+<artifact id="Ingredient/fa0a9608-1ccd-4b9c-8a8d-f43bfd966b39" key="Ingredient-fa0a9608-1ccd-4b9c-8a8d-f43bfd966b39" name="Ingredient-active Lixisenatide"/>
+<artifact id="Ingredient/375b4bdb-3fb0-451b-9ae8-0b8ab1ea1913" key="Ingredient-375b4bdb-3fb0-451b-9ae8-0b8ab1ea1913" name="Ingredient-active mesalazine"/>
+<artifact id="Ingredient/0436bbe6-578d-48bf-a7dd-2ba84f99013d" key="Ingredient-0436bbe6-578d-48bf-a7dd-2ba84f99013d" name="Ingredient-active Mirtazapine"/>
+<artifact id="Ingredient/3031c208-7cc8-4e58-911a-4a9d1bbe4d27" key="Ingredient-3031c208-7cc8-4e58-911a-4a9d1bbe4d27" name="Ingredient-active paracetamol"/>
+<artifact id="Ingredient/a1f0de5b-a07a-4011-b7b1-e1f10db89684" key="Ingredient-a1f0de5b-a07a-4011-b7b1-e1f10db89684" name="Ingredient-excipient acmedrug-ing2"/>
+<artifact id="Ingredient/3a54fdc9-67dc-416a-9eb2-60a3047958e2" key="Ingredient-3a54fdc9-67dc-416a-9eb2-60a3047958e2" name="Ingredient-excipient acmedrug-ing3"/>
+<artifact id="Ingredient/a4b7b60c-998f-4f93-89c7-860396af0fe3" key="Ingredient-a4b7b60c-998f-4f93-89c7-860396af0fe3" name="Ingredient-excipient carnauba wax"/>
+<artifact id="Ingredient/055a3eb3-f16b-49f8-8c6c-305fa03e8526" key="Ingredient-055a3eb3-f16b-49f8-8c6c-305fa03e8526" name="Ingredient-excipient Carnauba wax"/>
+<artifact id="Ingredient/895f5533-2dfa-4230-966e-58733fe58ff3" key="Ingredient-895f5533-2dfa-4230-966e-58733fe58ff3" name="Ingredient-excipient CITRIC ACID MONOHYDRATE"/>
+<artifact id="Ingredient/59832700-73d6-46c4-aebc-91fb66fd687d" key="Ingredient-59832700-73d6-46c4-aebc-91fb66fd687d" name="Ingredient-excipient Concentrated hydrochloric acid"/>
+<artifact id="Ingredient/00434417-29fd-4da0-b947-03bd8f6a13fa" key="Ingredient-00434417-29fd-4da0-b947-03bd8f6a13fa" name="Ingredient-excipient CORN STARCH"/>
+<artifact id="Ingredient/b302b97b-8a6a-45e0-8c10-b34399f695fe" key="Ingredient-fbf58407-83d3-42db-be3d-506b2006d431" name="Ingredient-excipient Croscarmellose sodium"/>
+<artifact id="Ingredient/fbf58407-83d3-42db-be3d-506b2006d431" key="Ingredient-fbf58407-83d3-42db-be3d-506b2006d431" name="Ingredient-excipient Croscarmellose sodium"/>
+<artifact id="Ingredient/47304b03-b02e-4f42-94fa-ea5b6726aef9" key="Ingredient-47304b03-b02e-4f42-94fa-ea5b6726aef9" name="Ingredient-excipient Ethylcellulose"/>
+<artifact id="Ingredient/452f5372-b3e1-481f-bacf-f89641f38435" key="Ingredient-452f5372-b3e1-481f-bacf-f89641f38435" name="Ingredient-excipient Glycerol"/>
+<artifact id="Ingredient/06d11577-dc08-4fe4-b9f3-3b98f8e4159b" key="Ingredient-06d11577-dc08-4fe4-b9f3-3b98f8e4159b" name="Ingredient-excipient Glycerol 85%"/>
+<artifact id="Ingredient/de5f3414-6068-4389-bdb7-584099dfdc8f" key="Ingredient-de5f3414-6068-4389-bdb7-584099dfdc8f" name="Ingredient-excipient Glycerol 85%"/>
+<artifact id="Ingredient/51d77634-ef0f-4230-a610-b52a05e5746e" key="Ingredient-51d77634-ef0f-4230-a610-b52a05e5746e" name="Ingredient-excipient Hydrochloric acid"/>
+<artifact id="Ingredient/0aabde9b-9eba-4bb0-bfb1-3c9fb50a22bc" key="Ingredient-0aabde9b-9eba-4bb0-bfb1-3c9fb50a22bc" name="Ingredient-excipient HYDROXYPROPYL CELLULOSE, UNSPECIFIED"/>
+<artifact id="Ingredient/1c10b441-6bd3-40b8-b14b-514e7c2f79d0" key="Ingredient-1c10b441-6bd3-40b8-b14b-514e7c2f79d0" name="Ingredient-excipient Hypromellose"/>
+<artifact id="Ingredient/b8011f38-5ed8-413d-91ae-2e5c5fecb961" key="Ingredient-1c10b441-6bd3-40b8-b14b-514e7c2f79d0" name="Ingredient-excipient Hypromellose"/>
+<artifact id="Ingredient/03bd2d5b-aaab-4e43-9feb-7e29e33e0671" key="Ingredient-7a3c0b14-2473-4541-9e45-a24d24cceddf" name="Ingredient-excipient Lactose Monohydrate"/>
+<artifact id="Ingredient/7a3c0b14-2473-4541-9e45-a24d24cceddf" key="Ingredient-7a3c0b14-2473-4541-9e45-a24d24cceddf" name="Ingredient-excipient Lactose Monohydrate"/>
+<artifact id="Ingredient/735988f6-6264-4a82-9258-ffc8f84970ae" key="Ingredient-735988f6-6264-4a82-9258-ffc8f84970ae" name="Ingredient-excipient LACTOSE MONOHYDRATE"/>
+<artifact id="Ingredient/7dbe4200-4a54-4071-8682-4a25b7f59bae" key="Ingredient-ceba5cd1-321f-4bc3-b203-92d97fcf472e" name="Ingredient-excipient Macrogol 3000"/>
+<artifact id="Ingredient/ceba5cd1-321f-4bc3-b203-92d97fcf472e" key="Ingredient-ceba5cd1-321f-4bc3-b203-92d97fcf472e" name="Ingredient-excipient Macrogol 3000"/>
+<artifact id="Ingredient/28fa5cd0-d4e6-4e04-a3ff-016b48237343" key="Ingredient-eee155e8-e442-491d-9a82-7af3cefac57f" name="Ingredient-excipient Magnesium stearate"/>
+<artifact id="Ingredient/2cb5307b-e1d4-4907-b347-6c9234d8c1c8" key="Ingredient-eee155e8-e442-491d-9a82-7af3cefac57f" name="Ingredient-excipient Magnesium stearate"/>
+<artifact id="Ingredient/30f86b23-ca9b-43fe-a9a0-6109bac91d91" key="Ingredient-eee155e8-e442-491d-9a82-7af3cefac57f" name="Ingredient-excipient Magnesium stearate"/>
+<artifact id="Ingredient/74266063-1898-4b8e-b0cc-1e5de68e47bc" key="Ingredient-eee155e8-e442-491d-9a82-7af3cefac57f" name="Ingredient-excipient Magnesium stearate"/>
+<artifact id="Ingredient/8e157774-1280-4048-bd2a-e6e0bb452707" key="Ingredient-eee155e8-e442-491d-9a82-7af3cefac57f" name="Ingredient-excipient Magnesium stearate"/>
+<artifact id="Ingredient/eee155e8-e442-491d-9a82-7af3cefac57f" key="Ingredient-eee155e8-e442-491d-9a82-7af3cefac57f" name="Ingredient-excipient Magnesium stearate"/>
+<artifact id="Ingredient/e4cd6b02-ce03-4a35-98cc-83e062140eed" key="Ingredient-e4cd6b02-ce03-4a35-98cc-83e062140eed" name="Ingredient-excipient Mannitol"/>
+<artifact id="Ingredient/ab0ce28c-d0cc-4965-974a-25fb092cfd6f" key="Ingredient-ab0ce28c-d0cc-4965-974a-25fb092cfd6f" name="Ingredient-excipient Metacresol"/>
+<artifact id="Ingredient/c1caa847-d129-4571-b708-2e74cfb2fdd4" key="Ingredient-c1caa847-d129-4571-b708-2e74cfb2fdd4" name="Ingredient-excipient Metacresol"/>
+<artifact id="Ingredient/02be13c0-edb9-417e-8b85-a55361738276" key="Ingredient-02be13c0-edb9-417e-8b85-a55361738276" name="Ingredient-excipient Methionine"/>
+<artifact id="Ingredient/043576d0-7295-4ba2-af1a-4e1d1500fd15" key="Ingredient-1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" name="Ingredient-excipient Microcrystalline cellulose"/>
+<artifact id="Ingredient/1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" key="Ingredient-1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" name="Ingredient-excipient Microcrystalline cellulose"/>
+<artifact id="Ingredient/e5dc185a-5bb6-41f3-aae9-2eadb0290acd" key="Ingredient-1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" name="Ingredient-excipient Microcrystalline cellulose"/>
+<artifact id="Ingredient/c64eb42f-94e8-4677-af30-9b44302f37b7" key="Ingredient-c64eb42f-94e8-4677-af30-9b44302f37b7" name="Ingredient-excipient Polysorbate 80"/>
+<artifact id="Ingredient/d70e7361-0219-4f85-a456-1a0e6f2b62b4" key="Ingredient-d70e7361-0219-4f85-a456-1a0e6f2b62b4" name="Ingredient-excipient Povidone"/>
+<artifact id="Ingredient/606ca3c2-b603-469a-907d-3b7fa7a9020c" key="Ingredient-606ca3c2-b603-469a-907d-3b7fa7a9020c" name="Ingredient-excipient POVIDONE, UNSPECIFIED"/>
+<artifact id="Ingredient/c4506aef-d52b-4411-9295-d63bc3ba650b" key="Ingredient-c4506aef-d52b-4411-9295-d63bc3ba650b" name="Ingredient-excipient POVIDONE, UNSPECIFIED"/>
+<artifact id="Ingredient/747bb62f-2291-4290-a1ec-da7ea2141f0d" key="Ingredient-747bb62f-2291-4290-a1ec-da7ea2141f0d" name="Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"/>
+<artifact id="Ingredient/b31599fa-671f-41af-afa5-af513de82843" key="Ingredient-b31599fa-671f-41af-afa5-af513de82843" name="Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"/>
+<artifact id="Ingredient/dc32dab6-4daa-48c0-9ded-578d62641d64" key="Ingredient-dc32dab6-4daa-48c0-9ded-578d62641d64" name="Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"/>
+<artifact id="Ingredient/09c13040-8fd5-4818-972d-f01d4ee169b6" key="Ingredient-09c13040-8fd5-4818-972d-f01d4ee169b6" name="Ingredient-excipient Silicon dioxide"/>
+<artifact id="Ingredient/7209fe09-1075-4b21-b5c0-c23ab335186d" key="Ingredient-09c13040-8fd5-4818-972d-f01d4ee169b6" name="Ingredient-excipient Silicon dioxide"/>
+<artifact id="Ingredient/339a50c5-6b36-4429-87b3-25c9d8e0ed09" key="Ingredient-339a50c5-6b36-4429-87b3-25c9d8e0ed09" name="Ingredient-excipient Sodium chloride"/>
+<artifact id="Ingredient/2adaf64a-f9d9-47cb-93ab-67d2c67e5681" key="Ingredient-2adaf64a-f9d9-47cb-93ab-67d2c67e5681" name="Ingredient-excipient SODIUM CITRATE, UNSPECIFIED FORM"/>
+<artifact id="Ingredient/353df2d2-6e5b-41fe-97b8-0b281b0c8957" key="Ingredient-353df2d2-6e5b-41fe-97b8-0b281b0c8957" name="Ingredient-excipient Sodium hydroxide"/>
+<artifact id="Ingredient/dfdd2d9f-4b62-4f55-96d8-7c11efee8048" key="Ingredient-dfdd2d9f-4b62-4f55-96d8-7c11efee8048" name="Ingredient-excipient Sodium Hydroxide"/>
+<artifact id="Ingredient/c26782b4-5e80-4eb5-be9b-f1bd413c1a57" key="Ingredient-c26782b4-5e80-4eb5-be9b-f1bd413c1a57" name="Ingredient-excipient SODIUM PHOSPHATE, DIBASIC, DIHYDRATE"/>
+<artifact id="Ingredient/c4563dc3-5594-404c-9d35-d844f6cd3c5e" key="Ingredient-c4563dc3-5594-404c-9d35-d844f6cd3c5e" name="Ingredient-excipient SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE"/>
+<artifact id="Ingredient/660746d0-8de9-410e-9ab8-7d3da7c2ee41" key="Ingredient-660746d0-8de9-410e-9ab8-7d3da7c2ee41" name="Ingredient-excipient STARCH, CORN"/>
+<artifact id="Ingredient/ec5ef20f-9050-4f03-9b38-a53f40ed8921" key="Ingredient-ec5ef20f-9050-4f03-9b38-a53f40ed8921" name="Ingredient-excipient STARCH, CORN"/>
+<artifact id="Ingredient/21256ca7-9954-40e9-bf74-c055a3953cd3" key="Ingredient-21256ca7-9954-40e9-bf74-c055a3953cd3" name="Ingredient-excipient STARCH, POTATO"/>
+<artifact id="Ingredient/bd92407c-482f-4279-ba37-cf66b8af02f5" key="Ingredient-bd92407c-482f-4279-ba37-cf66b8af02f5" name="Ingredient-excipient STARCH, POTATO"/>
+<artifact id="Ingredient/2480c27b-936d-43f5-854a-a3f4c92ee4bd" key="Ingredient-2480c27b-936d-43f5-854a-a3f4c92ee4bd" name="Ingredient-excipient STERILE WATER FOR INJECTION'"/>
+<artifact id="Ingredient/2db99531-1ebc-409c-9941-387d800cc8e9" key="Ingredient-2db99531-1ebc-409c-9941-387d800cc8e9" name="Ingredient-excipient STERILE WATER FOR INJECTION'"/>
+<artifact id="Ingredient/edf038a3-f4b5-43a0-91a9-d645b9c1b78d" key="Ingredient-edf038a3-f4b5-43a0-91a9-d645b9c1b78d" name="Ingredient-excipient Talc"/>
+<artifact id="Ingredient/a88891dc-7e9e-4d84-b462-95e53de3b6a6" key="Ingredient-a88891dc-7e9e-4d84-b462-95e53de3b6a6" name="Ingredient-excipient Titanium Dioxide"/>
+<artifact id="Ingredient/dd7bb0d9-b895-42ec-b209-8b308ee0f6f0" key="Ingredient-a88891dc-7e9e-4d84-b462-95e53de3b6a6" name="Ingredient-excipient Titanium Dioxide"/>
+<artifact id="Ingredient/58d764f4-a7b6-4155-b85f-af5d76005aa0" key="Ingredient-58d764f4-a7b6-4155-b85f-af5d76005aa0" name="Ingredient-excipient Trometamol"/>
+<artifact id="Ingredient/0991765f-2cfa-4383-a31d-68ea1b3a669e" key="Ingredient-0991765f-2cfa-4383-a31d-68ea1b3a669e" name="Ingredient-excipient Water for injections"/>
+<artifact id="Ingredient/c186c08e-84a1-4d8c-a781-8b98635cb665" key="Ingredient-c186c08e-84a1-4d8c-a781-8b98635cb665" name="Ingredient-excipient Zinc chloride"/>
+<artifact id="Ingredient/f5b919cb-2f5a-4e8a-a97e-4153d2d2cf52" key="Ingredient-f5b919cb-2f5a-4e8a-a97e-4153d2d2cf52" name="Ingredient-excipient Zinc Oxide"/>
+<artifact id="ValueSet/roleClassIngredientEntity" key="ValueSet-roleClassIngredientEntity" name="Ingredient Role; e.g., inactive, active base, active moiety"/>
+<artifact id="ClinicalUseDefinition/97cc04f8-5959-4700-9fe1-163cbdeab723" key="ClinicalUseDefinition-97cc04f8-5959-4700-9fe1-163cbdeab723" name="interaction-bezafibrat"/>
+<artifact id="ClinicalUseDefinition/f7d8f2a0-27eb-4e37-8036-58f3d5aa6537" key="ClinicalUseDefinition-f7d8f2a0-27eb-4e37-8036-58f3d5aa6537" name="interactiongrapefruitjuice"/>
+<artifact id="ClinicalUseDefinition/e60575aa-e7b3-4461-a456-d310514f4041" key="ClinicalUseDefinition-e60575aa-e7b3-4461-a456-d310514f4041" name="interactionmethotrexate"/>
+<artifact id="ClinicalUseDefinition/zz" key="ClinicalUseDefinition-zz" name="interaction-methotrexate"/>
+<artifact id="Ingredient/745c01bc-936e-45ca-9880-57e97608f43e" key="Ingredient-745c01bc-936e-45ca-9880-57e97608f43e" name="Irbesartan – Example of Ingredient with basis for strength"/>
+<artifact id="ValueSet/country" key="ValueSet-country" name="ISO Country two letter code"/>
+<artifact id="PackagedProductDefinition/f1bce7a1-4ad9-4268-932a-d2025793182e" key="PackagedProductDefinition-f1bce7a1-4ad9-4268-932a-d2025793182e" name="Karvea 75 mg tablet blister x28 tablets"/>
+<artifact id="Organization/1115f2ae-4569-4aab-8f1d-a48a2f91511c" key="Organization-1115f2ae-4569-4aab-8f1d-a48a2f91511c" name="LABORATORIOS CINFA, S.A. as Marketing authorisation holder"/>
+<artifact id="Organization/9743e79b-32f2-4340-9f29-2f1995c4a147" key="Organization-9743e79b-32f2-4340-9f29-2f1995c4a147" name="Lacer, S.A. - Boters, 5 as Marketing authorisation holder"/>
+<artifact id="ValueSet/legalStatusOfSupply" key="ValueSet-legalStatusOfSupply" name="Legal Status for the Supply"/>
+<artifact id="Organization/66010582-61f3-48c5-979b-e0a488430150" key="Organization-66010582-61f3-48c5-979b-e0a488430150" name="Lilly S.A. as Manufacturer"/>
+<artifact id="ManufacturedItemDefinition/e68562e6-e1b7-4f19-932f-03d864b27ed4" key="ManufacturedItemDefinition-e68562e6-e1b7-4f19-932f-03d864b27ed4" name="Manufactured item acmedrugman"/>
+<artifact id="ManufacturedItemDefinition/3cc3914b-e0f5-43f4-b4fc-c02e7c70ecf7" key="ManufacturedItemDefinition-3cc3914b-e0f5-43f4-b4fc-c02e7c70ecf7" name="Manufactured item adalimumab"/>
+<artifact id="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468" key="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468" name="Manufactured item cava 75 mg tabelt"/>
+<artifact id="ManufacturedItemDefinition/7e6920cb-c95e-4251-961e-bfd59f1269bb" key="ManufacturedItemDefinition-7e6920cb-c95e-4251-961e-bfd59f1269bb" name="Manufactured item cinitrapide"/>
+<artifact id="StructureDefinition/ManufacturedItemDefinition-uv-epi" key="StructureDefinition-ManufacturedItemDefinition-uv-epi" name="ManufacturedItemDefinition (ePI)"/>
+<artifact id="ValueSet/manufacturedItemIdSystems" key="ValueSet-manufacturedItemIdSystems" name="ManufacturedItemDefinition identifier systems"/>
+<artifact id="ManufacturedItemDefinition/4e7c7e78-701b-4786-a6f4-b80e7af22531" key="ManufacturedItemDefinition-4e7c7e78-701b-4786-a6f4-b80e7af22531" name="Manufactured item DOLOCATIL 1 g tablets"/>
+<artifact id="ManufacturedItemDefinition/4478e098-80bb-481a-ac3f-24c64014fff9" key="ManufacturedItemDefinition-4478e098-80bb-481a-ac3f-24c64014fff9" name="Manufactured item Humalog 100 U/ml 5 pre-filled pen"/>
+<artifact id="ManufacturedItemDefinition/8b33c52b-40d2-45df-89e6-16a09832fabb" key="ManufacturedItemDefinition-8b33c52b-40d2-45df-89e6-16a09832fabb" name="Manufactured item Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"/>
+<artifact id="ManufacturedItemDefinition/2c1a500a-c4a2-4f4b-9836-b4661b89f882" key="ManufacturedItemDefinition-2c1a500a-c4a2-4f4b-9836-b4661b89f882" name="Manufactured item karvea 75 mg tablet"/>
+<artifact id="ManufacturedItemDefinition/8cb8f57f-aa9f-47da-83fd-a099ab0bea71" key="ManufacturedItemDefinition-8cb8f57f-aa9f-47da-83fd-a099ab0bea71" name="Manufactured item MIRTAZAPINA CINFA 30 mg Coated Tablet"/>
+<artifact id="ManufacturedItemDefinition/c4f9748d-4e95-4556-bb1f-ba99ff5e2a94" key="ManufacturedItemDefinition-c4f9748d-4e95-4556-bb1f-ba99ff5e2a94" name="Manufactured item Pentasa Slow Release Tablets 1g"/>
+<artifact id="ManufacturedItemDefinition/c31e4605-bb1a-41b9-b716-4dd869c27fa4" key="ManufacturedItemDefinition-c31e4605-bb1a-41b9-b716-4dd869c27fa4" name="Manufactured item Suliqua 100 units/ml + 33 micrograms/ml solution for injection in x3 pre-filled pens"/>
+<artifact id="ValueSet/marketingStatus" key="ValueSet-marketingStatus" name="Marketing Status"/>
+<artifact id="ValueSet/meddra" key="ValueSet-meddra" name="MedDRA Terms for clinical diseases and symptoms"/>
+<artifact id="MedicinalProductDefinition/dc96ec55-de69-4d2c-8ec9-5ef63ec30a9d" key="MedicinalProductDefinition-dc96ec55-de69-4d2c-8ec9-5ef63ec30a9d" name="Medicinal Product acmedrug-man"/>
+<artifact id="MedicinalProductDefinition/8e4f1fbf-70e9-470a-9694-e0168320b56c" key="MedicinalProductDefinition-8e4f1fbf-70e9-470a-9694-e0168320b56c" name="Medicinal Product adalimumab"/>
+<artifact id="MedicinalProductDefinition/c86f891a-a25c-431b-a229-a0e17e3815c5" key="MedicinalProductDefinition-c86f891a-a25c-431b-a229-a0e17e3815c5" name="Medicinal Product BLASTON 1 mg tablets"/>
+<artifact id="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837" key="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837" name="Medicinal Product cava 75 mg tablet in blister pack of 28 tablets"/>
+<artifact id="StructureDefinition/MedicinalProductDefinition-uv-epi" key="StructureDefinition-MedicinalProductDefinition-uv-epi" name="MedicinalProductDefinition (ePI)"/>
+<artifact id="ValueSet/VsMedProductIdSystems" key="ValueSet-VsMedProductIdSystems" name="MedicinalProductDefinition identifier systems"/>
+<artifact id="MedicinalProductDefinition/22a966c1-7ccf-4697-814d-8c5c861e936e" key="MedicinalProductDefinition-22a966c1-7ccf-4697-814d-8c5c861e936e" name="Medicinal Product DOLOCATIL 1 g tablets"/>
+<artifact id="MedicinalProductDefinition/c931b18e-c12d-4215-9700-f5491d6c765a" key="MedicinalProductDefinition-c931b18e-c12d-4215-9700-f5491d6c765a" name="Medicinal Product Humalog Mix50 Insulin KwikPen, 3ml pre-fill"/>
+<artifact id="MedicinalProductDefinition/c98b73a6-65be-439b-81d7-4b86b2846031" key="MedicinalProductDefinition-c98b73a6-65be-439b-81d7-4b86b2846031" name="Medicinal Product Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"/>
+<artifact id="MedicinalProductDefinition/3eebcfec-8f3e-450b-b348-68e12e7cde87" key="MedicinalProductDefinition-3eebcfec-8f3e-450b-b348-68e12e7cde87" name="Medicinal Product Karvea 75 mg tablet blister x28"/>
+<artifact id="MedicinalProductDefinition/9d461f6f-18d1-4594-83c2-219fd63cb9b7" key="MedicinalProductDefinition-9d461f6f-18d1-4594-83c2-219fd63cb9b7" name="Medicinal Product MIRTAZAPINe CINFA 30 mg Coated Tablet"/>
+<artifact id="MedicinalProductDefinition/d2b4e8da-15b3-4132-8600-09ede8546895" key="MedicinalProductDefinition-d2b4e8da-15b3-4132-8600-09ede8546895" name="Medicinal Product Pentasa Slow Release Tablets 1g"/>
+<artifact id="MedicinalProductDefinition/c05aadd3-d40a-460f-b63f-4e994b00b7ef" key="MedicinalProductDefinition-c05aadd3-d40a-460f-b63f-4e994b00b7ef" name="Medicinal Product Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"/>
+<artifact id="ValueSet/medProductType" key="ValueSet-medProductType" name="Medicinal Product Type"/>
+<artifact id="PackagedProductDefinition/2d577e19-b88f-45ac-8dcf-a0572e5b639a" key="PackagedProductDefinition-2d577e19-b88f-45ac-8dcf-a0572e5b639a" name="MIRTAZAPINA CINFA 30 mg Coated Tablet, 30 tablets"/>
+<artifact id="ValueSet/nonproprietaryNamePart" key="ValueSet-nonproprietaryNamePart" name="Non-proprietary Name of the active ingredient(s)"/>
+<artifact id="StructureDefinition/Organization-uv-epi" key="StructureDefinition-Organization-uv-epi" name="Organization (ePI)"/>
+<artifact id="ValueSet/organizationIdSystems" key="ValueSet-organizationIdSystems" name="Organization identifier systems"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRomswi" key="CodeSystem-CodeSystemUvEPIRomswi" name="Organization Management Services CodeSystem"/>
+<artifact id="StructureDefinition/PackagedProductDefinition-uv-epi" key="StructureDefinition-PackagedProductDefinition-uv-epi" name="PackagedProductDefinition (ePI)"/>
+<artifact id="ValueSet/packagedProductIdSystems" key="ValueSet-packagedProductIdSystems" name="PackagedProductDefinition identifier systems"/>
+<artifact id="ValueSet/packageMaterial" key="ValueSet-packageMaterial" name="Package Material"/>
+<artifact id="PackagedProductDefinition/eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" key="PackagedProductDefinition-eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" name="Packaging Blister x28 75 mg tablets"/>
+<artifact id="ValueSet/secondaryPrimaryPackType" key="ValueSet-secondaryPrimaryPackType" name="Pack Type"/>
+<artifact id="ValueSet/partType" key="ValueSet-partType" name="Part Type"/>
+<artifact id="ValueSet/pediatricUseIndicator" key="ValueSet-pediatricUseIndicator" name="Pediatric Use Indicator"/>
+<artifact id="PackagedProductDefinition/dc59893c-2ad7-4366-95e2-18fb2e8eceb8" key="PackagedProductDefinition-dc59893c-2ad7-4366-95e2-18fb2e8eceb8" name="Pentasa Slow Release Tablets 1g"/>
+<artifact id="ValueSet/pharmaceuticalDoseFormPart" key="ValueSet-pharmaceuticalDoseFormPart" name="Pharmaceutical Dose Form of the medicinal product"/>
+<artifact id="ValueSet/productConfidentialityIdSystems" key="ValueSet-productConfidentialityIdSystems" name="Product Confidentiality"/>
+<artifact id="ValueSet/productNamePartType" key="ValueSet-productNamePartType" name="Product Name Part Type"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRpmswi" key="CodeSystem-CodeSystemUvEPIRpmswi" name="Products Management Services CodeSystem"/>
+<artifact id="ValueSet/proprietaryNamePart" key="ValueSet-proprietaryNamePart" name="Proprietary Name of the medicinal product"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRrmswi" key="CodeSystem-CodeSystemUvEPIRrmswi" name="Referentials Management Services CodeSystem"/>
+<artifact id="StructureDefinition/RegulatedAuthorization-uv-epi" key="StructureDefinition-RegulatedAuthorization-uv-epi" name="RegulatedAuthorization (ePI)"/>
+<artifact id="RegulatedAuthorization/7887f5ee-5060-408b-afe1-a865343c9792" key="RegulatedAuthorization-7887f5ee-5060-408b-afe1-a865343c9792" name="Regulated Authorization for acme drug"/>
+<artifact id="RegulatedAuthorization/36aab683-567b-42c5-a65c-b3c2749b4660" key="RegulatedAuthorization-36aab683-567b-42c5-a65c-b3c2749b4660" name="Regulated Authorization for adalimumab"/>
+<artifact id="RegulatedAuthorization/562e0c11-a756-41a6-b234-1769678255ac" key="RegulatedAuthorization-562e0c11-a756-41a6-b234-1769678255ac" name="Regulated Authorization for BLASTON 1 mg tablets"/>
+<artifact id="RegulatedAuthorization/297e405a-b6f9-4273-bc01-ae031efe47f8" key="RegulatedAuthorization-297e405a-b6f9-4273-bc01-ae031efe47f8" name="Regulated Authorization for cava 75 mg tablets"/>
+<artifact id="RegulatedAuthorization/86d3a696-f521-4209-bb67-4982833bc6e8" key="RegulatedAuthorization-86d3a696-f521-4209-bb67-4982833bc6e8" name="Regulated Authorization for DOLOCATIL 1 g tablets"/>
+<artifact id="RegulatedAuthorization/8a0d9232-126c-4b05-897b-ef71e6cac927" key="RegulatedAuthorization-8a0d9232-126c-4b05-897b-ef71e6cac927" name="Regulated Authorization for Humalog"/>
+<artifact id="RegulatedAuthorization/7b265e7f-7e14-4ebe-b291-b846c0c389a8" key="RegulatedAuthorization-7b265e7f-7e14-4ebe-b291-b846c0c389a8" name="Regulated Authorization for Humira 20 mg solution for injection in pre-filled syringe"/>
+<artifact id="RegulatedAuthorization/5db7e73a-75b8-43ef-b2da-9138d72b55b7" key="RegulatedAuthorization-5db7e73a-75b8-43ef-b2da-9138d72b55b7" name="Regulated Authorization for karvea 75 mg tablet"/>
+<artifact id="RegulatedAuthorization/cac31790-f40a-4296-8366-6574b1cbeedd" key="RegulatedAuthorization-cac31790-f40a-4296-8366-6574b1cbeedd" name="Regulated Authorization for MIRTAZAPINA CINFA 30 mg Coated Tablet"/>
+<artifact id="RegulatedAuthorization/81fabf64-8ceb-4983-a96e-02dafa296ed2" key="RegulatedAuthorization-81fabf64-8ceb-4983-a96e-02dafa296ed2" name="Regulated Authorization for PENTASA 1g Prolonged-release tablet"/>
+<artifact id="RegulatedAuthorization/34cb6e8c-d558-4c0d-87f8-2327b59aa365" key="RegulatedAuthorization-34cb6e8c-d558-4c0d-87f8-2327b59aa365" name="Regulated Authorization for Suliqua 100 units/ml + 50 microgram/ml solution for injection in a pre-filled pen"/>
+<artifact id="ValueSet/RegulatedAuthorizationTypeIdSystems" key="ValueSet-RegulatedAuthorizationTypeIdSystems" name="Regulated Authorization Type identifier systems"/>
+<artifact id="ValueSet/regulatoryActivityType" key="ValueSet-regulatoryActivityType" name="Regulatory Activity Type"/>
+<artifact id="ValueSet/routeOfAdministration" key="ValueSet-routeOfAdministration" name="Route Of Administration"/>
+<artifact id="Organization/a86857b5-0210-4df3-b550-e326ab3e2101" key="Organization-a86857b5-0210-4df3-b550-e326ab3e2101" name="Sanofi-Aventis Deutschland GmbH as Manufacturer API"/>
+<artifact id="Organization/c88429b4-62d6-4f17-b06c-263ecddb07e9" key="Organization-c88429b4-62d6-4f17-b06c-263ecddb07e9" name="Sanofi-Aventis Deutschland GmbH as Manufacturer API"/>
+<artifact id="Organization/6f34afc3-66a7-4410-99ad-53604ea211f4" key="Organization-6f34afc3-66a7-4410-99ad-53604ea211f4" name="Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"/>
+<artifact id="Organization/a46e3dd8-f360-478b-a9ae-50aeda754911" key="Organization-a46e3dd8-f360-478b-a9ae-50aeda754911" name="Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"/>
+<artifact id="Organization/688f4906-a6b5-4241-b734-72a5ea7acce6" key="Organization-688f4906-a6b5-4241-b734-72a5ea7acce6" name="Sanofi-Aventis Groupe as Marketing authorisation holder"/>
+<artifact id="Organization/9986b39a-e820-49a9-9b65-de34d6079331" key="Organization-9986b39a-e820-49a9-9b65-de34d6079331" name="Sanofi-Aventis Groupe as Marketing authorisation holder"/>
+<artifact id="Organization/edc2dc59-5e79-4486-a7f4-ab2d73c76230" key="Organization-edc2dc59-5e79-4486-a7f4-ab2d73c76230" name="Sanofi-Aventis Groupe as Marketing authorisation holder"/>
+<artifact id="ValueSet/propertyScore" key="ValueSet-propertyScore" name="Score on the product"/>
+<artifact id="ValueSet/sectionCode" key="ValueSet-sectionCode" name="Section Codes"/>
+<artifact id="ValueSet/propertyShape" key="ValueSet-propertyShape" name="Shape of the product"/>
+<artifact id="ValueSet/shelfLifeType" key="ValueSet-shelfLifeType" name="Shelf Life Type"/>
+<artifact id="ValueSet/specialPrecautionsForStorage" key="ValueSet-specialPrecautionsForStorage" name="Special Precautions For Storage"/>
+<artifact id="ValueSet/strengthPart" key="ValueSet-strengthPart" name="Strength of the medicinal product name"/>
+<artifact id="SubstanceDefinition/a2fb1a02-2c8f-4328-ae84-15e774611d4c" key="SubstanceDefinition-a2fb1a02-2c8f-4328-ae84-15e774611d4c" name="substance-acmesub"/>
+<artifact id="SubstanceDefinition/fe0f2c34-ca4a-4a73-aaf4-b65d0f02d1fc" key="SubstanceDefinition-fe0f2c34-ca4a-4a73-aaf4-b65d0f02d1fc" name="substance-adalimumab"/>
+<artifact id="SubstanceDefinition/ec097245-1843-4113-801f-d8c3574ab7e3" key="SubstanceDefinition-ec097245-1843-4113-801f-d8c3574ab7e3" name="substance-cinitapride"/>
+<artifact id="StructureDefinition/SubstanceDefinition-uv-epi" key="StructureDefinition-SubstanceDefinition-uv-epi" name="SubstanceDefinition (ePI)"/>
+<artifact id="SubstanceDefinition/da33bd51-a726-4232-aaa0-4168b9bfe249" key="SubstanceDefinition-da33bd51-a726-4232-aaa0-4168b9bfe249" name="substanceirbesartan"/>
+<artifact id="SubstanceDefinition/343f80bb-2710-4d58-8450-2b9476c16e9a" key="SubstanceDefinition-343f80bb-2710-4d58-8450-2b9476c16e9a" name="substance-irbesartan"/>
+<artifact id="SubstanceDefinition/b2f3f32e-6920-47d3-ae9d-a606e4bd55de" key="SubstanceDefinition-b2f3f32e-6920-47d3-ae9d-a606e4bd55de" name="substance-mesalamine"/>
+<artifact id="SubstanceDefinition/b0d4c505-b717-443c-a12b-e03c4ffece6d" key="SubstanceDefinition-b0d4c505-b717-443c-a12b-e03c4ffece6d" name="substance-mirtazapine"/>
+<artifact id="SubstanceDefinition/7964ca6b-3411-4905-9c3c-20154b9bb37c" key="SubstanceDefinition-7964ca6b-3411-4905-9c3c-20154b9bb37c" name="substance-paracetamol"/>
+<artifact id="ValueSet/substance" key="ValueSet-substance" name="Substances"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRsmswi" key="CodeSystem-CodeSystemUvEPIRsmswi" name="Substances Management Services CodeSystem"/>
+<artifact id="ValueSet/VsPropertySurfaceForm" key="ValueSet-VsPropertySurfaceForm" name="Surface form of the product"/>
+<artifact id="ValueSet/exampleUseCodesForList" key="ValueSet-exampleUseCodesForList" name="The topic of this list"/>
+<artifact id="ValueSet/operationType" key="ValueSet-operationType" name="Type of operation"/>
+<artifact id="ValueSet/organizationType" key="ValueSet-organizationType" name="Type of organization"/>
+<artifact id="ValueSet/VsRegulatedAuthorization" key="ValueSet-VsRegulatedAuthorization" name="Type of Regulated Authorization"/>
+<artifact id="ClinicalUseDefinition/undesirableEffectanemia" key="ClinicalUseDefinition-undesirableEffectanemia" name="undesirableEffectanemia"/>
+<artifact id="ValueSet/unitofMeasure" key="ValueSet-unitofMeasure" name="Units of Measure"/>
+<artifact id="ValueSet/unitofPresentation" key="ValueSet-unitofPresentation" name="Units of Presentation"/>
+<artifact id="Bundle/cfsb1651596479132" key="Bundle-cfsb1651596479132" name="Vulcan Dovato FHIR Package Insert EMA"/>
+<artifact id="Bundle/cfsb1651597532341" key="Bundle-cfsb1651597532341" name="Vulcan Dovato FHIR Package Insert EMA ESP"/>
+<artifact id="ClinicalUseDefinition/ac21a804-cafa-41ff-b644-a14c8003edeb" key="ClinicalUseDefinition-ac21a804-cafa-41ff-b644-a14c8003edeb" name="warninghypotension"/>
+<artifact id="ValueSet/atcClassification" key="ValueSet-atcClassification" name="WHO ATC"/>
+<page key="many" name="(many)"/>
+<page key="NA" name="(NA)"/>
+<page key="appendicies" name="Appendix"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="capability" name="Capability"/>
+<page key="core-epi-structure" name="Core ePI Profile"/>
+<page key="downloads" name="Downloads"/>
+<page key="general-technical-conformance-requirements" name="General Technical Conformance Requirements"/>
+<page key="index" name="Introduction"/>
+<page key="annotation" name="Semantic Annotation"/>
+<page key="steps-to-create-core-epi" name="Steps to create a Core FHIR ePI"/>
+<page key="toc" name="Table of Contents"/>
+</specification>

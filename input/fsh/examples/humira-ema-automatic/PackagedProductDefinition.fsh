@@ -1,26 +1,26 @@
 
-Instance: ppd-humira20mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads
+Instance: ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads
 InstanceOf: PackagedProductDefinitionUvEpi
-Title: "Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
-Description: "Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
+Title: "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
+Description: "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
 Usage: #example
-* id = "c8d43dc8-7c6c-436a-a8f0-1f5ed4b879a0" 
+* id = "c02e8a42-3ace-45b4-b316-66f3238072db" 
 
 * identifier.system = $spor-prod
 * identifier.value = "nan"
 * identifier.use = #official
 
-* name = "Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
+* name = "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
 
 * type = $spor-rms#100000155527 ""
 //* type = $spor-rms#100000155527
 
 
-* status = #active
+* status = http://hl7.org/fhir/publication-status#active "Active"
 * statusDate = "2008-09-08"
 
 
-* containedItemQuantity = 20 'mg'
+* containedItemQuantity = 40 'mg'
 
 
 * copackagedIndicator = true
@@ -41,6 +41,6 @@ Usage: #example
   * packaging.material[+] = $spor-rms#200000003204 "Glass type I"
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpHumira20mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
+* packageFor = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)

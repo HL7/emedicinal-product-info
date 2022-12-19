@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Description: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Usage: #example
-* id = "c3b3b264-b964-484e-8dd8-a58903d437af" 
+* id = "9986b39a-e820-49a9-9b65-de34d6079331" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -18,7 +18,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "54, rue La Boétie F-75008 Paris FR "
+    * text = "54, rue La Boétie F-75008 Paris FR"
     * use = #work
     * type = #physical
     * line = "54, rue La Boétie F-75008"
@@ -31,7 +31,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Deutschland GmbH as Manufacturer API"
 Description: "Sanofi-Aventis Deutschland GmbH as Manufacturer API"
 Usage: #example
-* id = "99e29dbe-a15a-4a33-8420-a8886c589bc8" 
+* id = "a86857b5-0210-4df3-b550-e326ab3e2101" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100001175"
 * identifier.use = #official
@@ -44,7 +44,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "Brueningstrasse 50, Industriepark Höchst Frankfurt am Main de "
+    * text = "Brueningstrasse 50, Industriepark Höchst Frankfurt am Main de"
     * use = #work
     * type = #physical
     * line = "Brueningstrasse 50, Industriepark Höchst"
@@ -57,7 +57,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"
 Description: "Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"
 Usage: #example
-* id = "dd1286db-5a61-4285-98b2-fc585876ce7d" 
+* id = "6f34afc3-66a7-4410-99ad-53604ea211f4" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100001175"
 * identifier.use = #official
@@ -70,7 +70,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "Brueningstrasse 50, Industriepark Höchst Frankfurt am Main de "
+    * text = "Brueningstrasse 50, Industriepark Höchst Frankfurt am Main de"
     * use = #work
     * type = #physical
     * line = "Brueningstrasse 50, Industriepark Höchst"
@@ -83,7 +83,7 @@ InstanceOf: OrganizationUvEpi
 Title: "European Medicines Agency as Medicines Regulatory Authority"
 Description: "European Medicines Agency as Medicines Regulatory Authority"
 Usage: #example
-* id = "afacd2ff-936b-4281-81d6-ef4dd38d5e7f" 
+* id = "dbeccd59-b7ba-4640-a617-ad9d910e71bf" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100013412"
 * identifier.use = #official
@@ -96,7 +96,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "Carretera De Martorell 41 61, Poligono Industrial Nord-Est Amsterdam nl "
+    * text = "Carretera De Martorell 41 61, Poligono Industrial Nord-Est Amsterdam nl"
     * use = #work
     * type = #physical
     * line = "Carretera De Martorell 41 61, Poligono Industrial Nord-Est"

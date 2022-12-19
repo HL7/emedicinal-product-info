@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Mannitol"
 Description: "Mannitol"
 Usage: #example
 
-* id = "c534a592-68e2-4e85-8554-d79305601a83" 
+* id = "e4cd6b02-ce03-4a35-98cc-83e062140eed" 
 
 * identifier.system = $ginas
 * identifier.value = "3OWL53L36A"
@@ -20,7 +20,7 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(mid-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
 // Reference to Organization:  Reference to MAH
 
  
@@ -33,7 +33,7 @@ Title: "Ingredient-excipient Polysorbate 80"
 Description: "Polysorbate 80"
 Usage: #example
 
-* id = "26bdd383-cda0-4631-a76d-54aebeea1f3a" 
+* id = "c64eb42f-94e8-4677-af30-9b44302f37b7" 
 
 * identifier.system = $ginas
 * identifier.value = "6OZP39ZG8H"
@@ -48,7 +48,7 @@ Usage: #example
 
 
 // Reference to manufactured item
-* for = Reference(mid-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
 // Reference to Organization:  Reference to MAH
 
  
@@ -61,7 +61,7 @@ Title: "Ingredient-active adalimumab"
 Description: "adalimumab"
 Usage: #example
 
-* id = "0e819ad1-1c8c-4bf7-afcd-e20dc0f4c0d2" 
+* id = "66f42147-7abc-484a-9683-83d5b71bf47d" 
 
 * identifier.system = $ginas
 * identifier.value = "FYS6T7F842"
@@ -74,26 +74,26 @@ Usage: #example
 * substance.code.concept.coding = $ginas#FYS6T7F842 "adalimumab"
 
 
-* substance.strength.presentationQuantity = 20.0 'mg'
+* substance.strength.presentationQuantity = 40.0 'mg'
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength "
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
 // Reference to manufactured item
-* for = Reference(mid-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
 // Reference to Organization:  Reference to MAH
 
  
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
-Instance: ingredient-for-humira-waterforinjections
+Instance: ingredient-for-humira-sterilewaterforinjection
 InstanceOf: IngredientUvEpi
-Title: "Ingredient-excipient Water for injections"
-Description: "Water for injections"
+Title: "Ingredient-excipient STERILE WATER FOR INJECTION'"
+Description: "STERILE WATER FOR INJECTION'"
 Usage: #example
 
-* id = "864e188c-c315-4804-ade5-7fa042503843" 
+* id = "2480c27b-936d-43f5-854a-a3f4c92ee4bd" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -101,14 +101,154 @@ Usage: #example
 
 * role = $spor-rms#100000072082 "Excipient"
 
-* status = #nan
+* status = #active
 
-* substance.code.concept.coding = $ginas#059QF0KO0R "Water for injections"
+* substance.code.concept.coding = $ginas#059QF0KO0R "STERILE WATER FOR INJECTION'"
 
 
 
 // Reference to manufactured item
-* for = Reference(mid-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+// Reference to Organization:  Reference to MAH
+
+ 
+
+
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+Instance: ingredient-for-humira-citricacidmonohydrate
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient CITRIC ACID MONOHYDRATE"
+Description: "CITRIC ACID MONOHYDRATE"
+Usage: #example
+
+* id = "895f5533-2dfa-4230-966e-58733fe58ff3" 
+
+* identifier.system = $ginas
+* identifier.value = "2968PHW8QP"
+* identifier.use = #official
+
+* role = $spor-rms#100000072082 "Excipient"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#2968PHW8QP "CITRIC ACID MONOHYDRATE"
+
+
+
+// Reference to manufactured item
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+// Reference to Organization:  Reference to MAH
+
+ 
+
+
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+Instance: ingredient-for-humira-sodiumcitrateunspecifiedform
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient SODIUM CITRATE, UNSPECIFIED FORM"
+Description: "SODIUM CITRATE, UNSPECIFIED FORM"
+Usage: #example
+
+* id = "2adaf64a-f9d9-47cb-93ab-67d2c67e5681" 
+
+* identifier.system = $ginas
+* identifier.value = "1Q73Q2JULR"
+* identifier.use = #official
+
+* role = $spor-rms#100000072082 "Excipient"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#1Q73Q2JULR "SODIUM CITRATE, UNSPECIFIED FORM"
+
+
+
+// Reference to manufactured item
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+// Reference to Organization:  Reference to MAH
+
+ 
+
+
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+Instance: ingredient-for-humira-sodiumphosphatemonobasicdihydrate
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE"
+Description: "SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE"
+Usage: #example
+
+* id = "c4563dc3-5594-404c-9d35-d844f6cd3c5e" 
+
+* identifier.system = $ginas
+* identifier.value = "5QWK665956"
+* identifier.use = #official
+
+* role = $spor-rms#100000072082 "Excipient"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#5QWK665956 "SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE"
+
+
+
+// Reference to manufactured item
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+// Reference to Organization:  Reference to MAH
+
+ 
+
+
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+Instance: ingredient-for-humira-sodiumphosphatedibasicdihydrate
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient SODIUM PHOSPHATE, DIBASIC, DIHYDRATE"
+Description: "SODIUM PHOSPHATE, DIBASIC, DIHYDRATE"
+Usage: #example
+
+* id = "c26782b4-5e80-4eb5-be9b-f1bd413c1a57" 
+
+* identifier.system = $ginas
+* identifier.value = "94255I6E2T"
+* identifier.use = #official
+
+* role = $spor-rms#100000072082 "Excipient"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#94255I6E2T "SODIUM PHOSPHATE, DIBASIC, DIHYDRATE"
+
+
+
+// Reference to manufactured item
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+// Reference to Organization:  Reference to MAH
+
+ 
+
+
+* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+Instance: ingredient-for-humira-sodiumchloride
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient Sodium chloride"
+Description: "Sodium chloride"
+Usage: #example
+
+* id = "339a50c5-6b36-4429-87b3-25c9d8e0ed09" 
+
+* identifier.system = $ginas
+* identifier.value = "451W47IQ8X"
+* identifier.use = #official
+
+* role = $spor-rms#100000072082 "Excipient"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#451W47IQ8X "Sodium chloride"
+
+
+
+// Reference to manufactured item
+* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
 // Reference to Organization:  Reference to MAH
 
  

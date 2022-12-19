@@ -23,7 +23,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity = {{ row["quantity"]  }} '{{ row["quantity unit"]  }}'
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#{{row["StrengthBasis"]}} "{{row["StrengthBasisText"]}} "
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#{{row["StrengthBasis"]}} "{{row["StrengthBasisText"]|trim }}"
 {% endif %}
 
 

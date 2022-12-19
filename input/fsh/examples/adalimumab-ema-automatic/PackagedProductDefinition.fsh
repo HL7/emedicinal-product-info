@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "adalimumab"
 Description: "adalimumab"
 Usage: #example
-* id = "55195839-ce29-465e-81bf-8ccb866f7974" 
+* id = "560639ae-8c6a-4f98-9a5b-455534b1b16a" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
@@ -16,7 +16,7 @@ Usage: #example
 //* type = $spor-rms#100000155527
 
 
-* status = #active
+* status = http://hl7.org/fhir/publication-status#active "Active"
 * statusDate = "2015-02-07T13:28:17Z"
 
 

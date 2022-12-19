@@ -6,7 +6,7 @@ Description: "Regulated Authorization for Humira 20 mg solution for injection in
 Usage: #example
 
 
-* id = "fe414747-a028-448c-9848-e2efbcdefd63" 
+* id = "7b265e7f-7e14-4ebe-b291-b846c0c389a8" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/03/256/022"
@@ -14,7 +14,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpHumira20mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
+* subject = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

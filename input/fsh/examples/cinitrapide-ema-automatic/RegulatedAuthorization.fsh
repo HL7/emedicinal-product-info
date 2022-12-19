@@ -1,37 +1,37 @@
 
-Instance: authorizationcinitrapide
+Instance: authorizationblaston1mgtablets
 InstanceOf: RegulatedAuthorizationUvEpi
-Title: "Regulated Authorization for cinitrapide"
-Description: "Regulated Authorization for cinitrapide"
+Title: "Regulated Authorization for BLASTON 1 mg tablets"
+Description: "Regulated Authorization for BLASTON 1 mg tablets"
 Usage: #example
 
 
-* id = "da336578-fdb8-45d5-bc78-04a3022032f2" 
+* id = "562e0c11-a756-41a6-b234-1769678255ac" 
 
 * identifier.system = $spor-prod
-* identifier.value = "EU/1/96/007/035"
+* identifier.value = "59.032"
 * identifier.use = #official
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpcinitrapide)
+* subject = Reference(mpBLASTON1mgtablets)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062
 //* type.text = "Marketing Authorisation"
 
-* region = urn:iso:std:iso:3166#DK "Denmark"
+* region = urn:iso:std:iso:3166#ES "Spain"
 
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
 
 
-* statusDate = "2015-02-07T13:28:17Z"
+* statusDate = "2007-09-27"
 // * holder = Reference(sanofiaventisgroupe)
  
 
 
-* holder = Reference(org-marketingauthorisationholder-acmeindustry-cinitrapide)
+* holder = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
 
 
  

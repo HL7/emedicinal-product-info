@@ -1,11 +1,11 @@
 
 
-Instance: org-marketingauthorisationholder-acmeindustry-paracetamol
+Instance: org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol
 InstanceOf: OrganizationUvEpi
-Title: "ACME industry as Marketing authorisation holder"
-Description: "ACME industry as Marketing authorisation holder"
+Title: "FERRER INTERNACIONAL, S.A. as Marketing authorisation holder"
+Description: "FERRER INTERNACIONAL, S.A. as Marketing authorisation holder"
 Usage: #example
-* id = "e3b6f94b-3aab-4dba-8156-c70f3810f3b2" 
+* id = "1bee16d1-407b-483b-a78d-79d06f460cdd" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -14,14 +14,14 @@ Usage: #example
 
 * type = $spor-rms#220000000034  "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
-* name = "ACME industry"
+* name = "FERRER INTERNACIONAL, S.A."
 
 * contact
   * address
-    * text = "street x and y  Paris FR "
+    * text = "Gran Vía Carlos III, 94 Barcelona ES"
     * use = #work
     * type = #physical
-    * line = "street x and y "
-    * city = "Paris"
-    * country = "FR"
-    
+    * line = "Gran Vía Carlos III, 94"
+    * city = "Barcelona"
+    * country = "ES"
+    * postalCode = "8028"

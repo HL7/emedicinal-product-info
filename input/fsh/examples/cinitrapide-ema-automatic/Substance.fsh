@@ -1,33 +1,33 @@
 
-Instance: substance-cinitrapide
+Instance: substance-cinitapride
 InstanceOf: SubstanceDefinitionUvEpi
-Description: "cinitrapide"
+Description: "CINITAPRIDE"
 Usage: #example
-* id = "f496509d-6aba-4d03-a48a-77fca2caec32" 
+* id = "ec097245-1843-4113-801f-d8c3574ab7e3" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "J0E2756Z7N"
+* identifier.value = "R8I97I2L24"
 * identifier.use = #official
 
 * version = "1"
 
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1 "Validated (UNII)"
 
-* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
-* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
+* description = "nan"
+
 
  // Reference to Organization: MAH
  
-* manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-cinitrapide)
+* manufacturer = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
 
  
 
 * molecularWeight[+].type.text = "exact"
-* molecularWeight[=].amount.value = 428.53
-* structure.molecularFormula = "C25H28N6O"
+* molecularWeight[=].amount.value = 402.49
+* structure.molecularFormula = "C21H30N4O4"
 
-//* name.name = "(+)-6-methyleneandrosta-1,4-diene-3,17-dione"
-* name.name = "(+)-6-methyleneandrosta-1,4-diene-3,17-dione"
+//* name.name = "4-amino-N-{1-[(cyclohex-3-en-1-yl)methyl]piperidin-4-yl}-2-ethoxy-5-nitrobenzamide"
+* name.name = "4-amino-N-{1-[(cyclohex-3-en-1-yl)methyl]piperidin-4-yl}-2-ethoxy-5-nitrobenzamide"
 
 //* name.type = https://gsrs.ncats.nih.gov/ginas/app/beta/#x "Chemical Name"
 * name.type = https://gsrs.ncats.nih.gov/ginas/app/beta/#x "Chemical Name"

@@ -4,10 +4,10 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item cinitrapide"
 Description: "cinitrapide"
 Usage: #example
-* id = "a2f9ce05-904f-4bb4-a5b1-6f32aaab3329" 
+* id = "7e6920cb-c95e-4251-961e-bfd59f1269bb" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
-* identifier.value = "EU/1/96/007/035"
+* identifier.value = "x"
 * identifier.use = #official
 
 * status = #active
@@ -21,4 +21,4 @@ Usage: #example
  
 
 
-* manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-cinitrapide)
+* manufacturer = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)

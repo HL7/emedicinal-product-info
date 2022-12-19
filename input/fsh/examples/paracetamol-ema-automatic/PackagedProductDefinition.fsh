@@ -1,26 +1,26 @@
 
-Instance: ppd-parecatamoltabs
+Instance: ppd-dolocatil1gtablets20tablets
 InstanceOf: PackagedProductDefinitionUvEpi
-Title: "parecatamol tabs"
-Description: "parecatamol tabs"
+Title: "DOLOCATIL 1 g tablets, 20 tablets"
+Description: "DOLOCATIL 1 g tablets, 20 tablets"
 Usage: #example
-* id = "57288a81-67b6-4aea-8ec7-147f0f770aaf" 
+* id = "e712c359-b81f-4feb-81d8-3922fac42f3a" 
 
 * identifier.system = $spor-prod
-* identifier.value = "EU/1/97/049/001"
+* identifier.value = "672669"
 * identifier.use = #official
 
-* name = "parecatamol tabs"
+* name = "DOLOCATIL 1 g tablets, 20 tablets"
 
 * type = $spor-rms#100000155527 "Chemical Medicinal Prodcut"
 //* type = $spor-rms#100000155527
 
 
-* status = #active
-* statusDate = "2015-02-07T13:28:17Z"
+* status = http://hl7.org/fhir/publication-status#active "Active"
+* statusDate = "2010-10-13"
 
 
-* containedItemQuantity = 75 'mg'
+* containedItemQuantity = 1000 'mg'
 
 
 
@@ -30,12 +30,12 @@ Usage: #example
   * identifier.system = $spor-prod
   * identifier.value = "123456"
   * type = $spor-rms#100000073496 "Blister"
-  * quantity = 28
+  * quantity = 20
   * material = $spor-rms#200000003222 "PolyVinyl Chloride"
 
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpparecetamolamn)
+* packageFor = Reference(mpDOLOCATIL1gtablets)
  // Reference to Organization: MAH
-* manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-paracetamol)
+* manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)

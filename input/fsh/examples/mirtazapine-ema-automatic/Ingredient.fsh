@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "7fa3596d-bc10-4aa0-896f-8230288dfa39" 
+* id = "30f86b23-ca9b-43fe-a9a0-6109bac91d91" 
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
@@ -33,7 +33,7 @@ Title: "Ingredient-excipient LACTOSE MONOHYDRATE"
 Description: "LACTOSE MONOHYDRATE"
 Usage: #example
 
-* id = "2552575e-c5a6-41cd-81bf-de2a68c7fb19" 
+* id = "735988f6-6264-4a82-9258-ffc8f84970ae" 
 
 * identifier.system = $ginas
 * identifier.value = "EWQ57Q8I5X"
@@ -61,7 +61,7 @@ Title: "Ingredient-active Mirtazapine"
 Description: "Mirtazapine"
 Usage: #example
 
-* id = "51e9a4a2-40ae-4037-a0d4-88fb95cf4e77" 
+* id = "0436bbe6-578d-48bf-a7dd-2ba84f99013d" 
 
 * identifier.system = $ginas
 * identifier.value = "A051Q2099Q"
@@ -76,7 +76,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity = 30.0 'mg'
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength "
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
 // Reference to manufactured item
@@ -93,7 +93,7 @@ Title: "Ingredient-excipient HYDROXYPROPYL CELLULOSE, UNSPECIFIED"
 Description: "HYDROXYPROPYL CELLULOSE, UNSPECIFIED"
 Usage: #example
 
-* id = "16133671-220b-4e73-bb3d-eb357cb5589a" 
+* id = "0aabde9b-9eba-4bb0-bfb1-3c9fb50a22bc" 
 
 * identifier.system = $ginas
 * identifier.value = "9XZ8H6N6OH"
@@ -121,7 +121,7 @@ Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
 Description: "SILICA, COLLOIDAL ANHYDROUS"
 Usage: #example
 
-* id = "fbedf4af-8d78-4f81-b406-48b16194bde0" 
+* id = "dc32dab6-4daa-48c0-9ded-578d62641d64" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -149,7 +149,7 @@ Title: "Ingredient-excipient CORN STARCH"
 Description: "CORN STARCH"
 Usage: #example
 
-* id = "80fd5023-552d-40f1-8fa3-abe2d6e5ed62" 
+* id = "00434417-29fd-4da0-b947-03bd8f6a13fa" 
 
 * identifier.system = $ginas
 * identifier.value = "O8232NY3SJ"

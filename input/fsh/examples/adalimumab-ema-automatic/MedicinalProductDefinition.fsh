@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 adalimumab"
 Usage: #example
 
 
-* id = "a546a331-cb16-4baa-8be5-0bc1579e1bb2" 
+* id = "8e4f1fbf-70e9-470a-9694-e0168320b56c" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 
@@ -24,9 +24,7 @@ Usage: #example
 
  
 
-* classification[+] = $atc#https://www.whocc.no/atc_ddd_index/#A10AE54 "insulin glargine and lixisenatide" 
-
-* classification[+] = $atc#https://spor.ema.europa.eu/rmswi/#/#100000019249 "Diabetes mellitus inadequate control"
+* classification[+] = $atc#A10AE54 "insulin glargine and lixisenatide"
 * name
   * productName = "adalimumab"
   * type = $spor-productNamePartType-cs#220000000001

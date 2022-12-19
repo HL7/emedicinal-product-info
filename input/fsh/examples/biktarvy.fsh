@@ -55,11 +55,11 @@ InstanceOf: Organization
 Description: "Regulator"
 Usage: #example
 
-* identifier.system = "$spor-org"
+* identifier.system = $spor-org
 * identifier.value = "ORG-100013412"
 * identifier.use = #official
 
-* identifier[1].system = "$spor-org"
+* identifier[1].system = $spor-org
 * identifier[1].value = "LOC-100020264"
 * identifier[1].use = #official
 
@@ -102,7 +102,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity.unit = "mg"
 
-* substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity##ACTIB
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass##ACTIB
 
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
@@ -125,11 +125,8 @@ Usage: #example
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#G70B4ETF4S "Emtricitabine"
 
-* substance.strength.presentationQuantity.value = 200
-
-* substance.strength.presentationQuantity.unit = "mg"
-
-* substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity##ACTIB
+* substance.strength.presentationQuantity = 200 'mg'
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass##ACTIB
 
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
@@ -223,7 +220,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity.unit = "mg"
 
-* substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity##ACTIB
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass##ACTIB
 
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
@@ -312,11 +309,7 @@ Usage: #example
 * manufacturer = Reference(cfsb1665505132093)
 
 
-Instance: cfsb1667578279099
-InstanceOf: Organization
-Description: "Manufacturer"
-Usage: #example
- 
+
 
 Instance: cfsb1667580052450
 InstanceOf: PackagedProductDefinition

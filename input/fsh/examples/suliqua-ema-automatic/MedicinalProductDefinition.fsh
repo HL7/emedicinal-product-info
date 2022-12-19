@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Suliqua 100 units/ml + 50 micrograms/ml solution f
 Usage: #example
 
 
-* id = "5b6590d5-acfa-4ca2-9b4e-e750106a50f6" 
+* id = "c05aadd3-d40a-460f-b63f-4e994b00b7ef" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 
@@ -24,9 +24,7 @@ Usage: #example
 
  
 
-* classification[+] = $atc#https://www.whocc.no/atc_ddd_index/#A10AE54 "insulin glargine and lixisenatide" 
-
-* classification[+] = $atc#https://spor.ema.europa.eu/rmswi/#/#100000019249 "Diabetes mellitus inadequate control"
+* classification[+] = $atc#A10AE54 "insulin glargine and lixisenatide"
 * name
   * productName = "Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"
   * type = $spor-productNamePartType-cs#220000000001

@@ -1,17 +1,17 @@
 
-Instance: ap-cinitrapide
+Instance: ap-blaston1mgtablets
 InstanceOf: AdministrableProductDefinitionUvEpi
-Title: "Administrable product cinitrapide"
-Description: "cinitrapide"
+Title: "Administrable product BLASTON 1 mg tablets"
+Description: "BLASTON 1 mg tablets"
 Usage: #example
 
-* id = "0a67b2fb-3f7a-4129-a1c4-ba794e461d05" 
+* id = "702309aa-2383-4116-9f1f-541e48c9026e" 
 * identifier.system = $phpid
-* identifier.value = "identifier" 
+* identifier.value = "xx" 
 
 * status = #active
 
-* formOf = Reference(mpcinitrapide)
+* formOf = Reference(mpBLASTON1mgtablets)
 * administrableDoseForm = $spor-rms#200000002152 "tablet"
 * unitOfPresentation = $spor-rms#200000002152 "tablet"
 

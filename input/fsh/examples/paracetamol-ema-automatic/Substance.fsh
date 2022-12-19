@@ -3,31 +3,31 @@ Instance: substance-paracetamol
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "paracetamol"
 Usage: #example
-* id = "7e8468ff-c848-4cc4-91fe-306c079feac3" 
+* id = "7964ca6b-3411-4905-9c3c-20154b9bb37c" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "J0E2756Z7N"
+* identifier.value = "362O9ITL9D"
 * identifier.use = #official
 
 * version = "1"
 
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1 "Validated (UNII)"
 
-* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
-* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
+* description = "nan"
+
 
  // Reference to Organization: MAH
  
-* manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-paracetamol)
+* manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
 
  
 
 * molecularWeight[+].type.text = "exact"
-* molecularWeight[=].amount.value = 428.53
-* structure.molecularFormula = "C25H28N6O"
+* molecularWeight[=].amount.value = 151.16
+* structure.molecularFormula = "C8H9NO2"
 
-//* name.name = "(+)-6-methyleneandrosta-1,4-diene-3,17-dione"
-* name.name = "(+)-6-methyleneandrosta-1,4-diene-3,17-dione"
+//* name.name = "4'-HYDROXYACETANILIDE"
+* name.name = "4'-HYDROXYACETANILIDE"
 
 //* name.type = https://gsrs.ncats.nih.gov/ginas/app/beta/#x "Chemical Name"
 * name.type = https://gsrs.ncats.nih.gov/ginas/app/beta/#x "Chemical Name"

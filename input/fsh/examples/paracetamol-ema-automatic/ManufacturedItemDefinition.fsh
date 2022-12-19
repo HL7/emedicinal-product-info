@@ -1,13 +1,13 @@
 
-Instance: mid-paracetamol
+Instance: mid-dolocatil1gtablets
 InstanceOf: ManufacturedItemDefinitionUvEpi
-Title: "Manufactured item paracetamol"
-Description: "paracetamol"
+Title: "Manufactured item DOLOCATIL 1 g tablets "
+Description: "DOLOCATIL 1 g tablets "
 Usage: #example
-* id = "df08f8ed-f66c-4445-8783-84bb22dc1ffa" 
+* id = "4e7c7e78-701b-4786-a6f4-b80e7af22531" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
-* identifier.value = "EU/1/96/007/035"
+* identifier.value = "xx"
 * identifier.use = #official
 
 * status = #active
@@ -21,4 +21,4 @@ Usage: #example
  
 
 
-* manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-paracetamol)
+* manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)

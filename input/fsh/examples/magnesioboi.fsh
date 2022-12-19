@@ -195,15 +195,6 @@ Usage: #example
 * manufacturer = Reference(cfsb1667579389819)
 
 
-
-
-
-Instance: cfsb1667578239500
-InstanceOf: Organization
-Description: "Organization1"
-Usage: #example
- 
-
 Instance: cfsb1667578264482
 InstanceOf: Organization
 Description: "Marketing Authorization Holder"

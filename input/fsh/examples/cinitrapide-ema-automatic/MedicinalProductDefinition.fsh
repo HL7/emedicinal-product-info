@@ -1,14 +1,14 @@
 
-Instance: mpcinitrapide
+Instance: mpBLASTON1mgtablets
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product cinitrapide"
-Description: "EU/1/97/049/001 cinitrapide"
+Title: "Medicinal Product BLASTON 1 mg tablets"
+Description: "EU/1/97/049/001 BLASTON 1 mg tablets"
 Usage: #example
 
 
-* id = "4cbacded-0169-4537-b2a7-71b73285ac40" 
+* id = "c86f891a-a25c-431b-a229-a0e17e3815c5" 
 * identifier.system = $spor-prod
-* identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
+* identifier.value = "ss"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
@@ -24,22 +24,22 @@ Usage: #example
 
 
 * name
-  * productName = "cinitrapide"
+  * productName = "BLASTON 1 mg tablets"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
   * part[0]
-    * part = "Karvea"
+    * part = "Blaston"
     * type = $spor-productNamePartType-cs#220000000002
     * type.text = "Invented name part"
   
   * part[+]
-    * part = "irbesartan"
+    * part = "Cinitapride"
     * type = $spor-productNamePartType-cs#220000000003
     * type.text = "Scientific name part"
   
   * part[+]
-    * part = "75 mg"
+    * part = "1 mg"
     * type = $spor-productNamePartType-cs#220000000004
     * type.text = "Strength part"
   
@@ -49,6 +49,6 @@ Usage: #example
     * type.text = "Pharmaceutical dose form part"
   
   * usage
-    * country = urn:iso:std:iso:3166#DK ""
-    * jurisdiction = urn:iso:std:iso:3166#DK ""
+    * country = urn:iso:std:iso:3166#ES ""
+    * jurisdiction = urn:iso:std:iso:3166#ES ""
     * language = urn:ietf:bcp:47#en  "English"

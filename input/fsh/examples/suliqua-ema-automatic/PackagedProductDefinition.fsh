@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "3 ml cartridge (glass) in a pre-filled pen"
 Description: "3 ml cartridge (glass) in a pre-filled pen"
 Usage: #example
-* id = "f2e50d50-4810-4ac6-b35f-5f5d1019bd41" 
+* id = "9df19a62-bf14-41e5-a38b-e2db9c96d3ca" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
@@ -16,7 +16,7 @@ Usage: #example
 //* type = $spor-rms#100000155527
 
 
-* status = #active
+* status = http://hl7.org/fhir/publication-status#active "Active"
 * statusDate = "2015-02-07T13:28:17Z"
 
 

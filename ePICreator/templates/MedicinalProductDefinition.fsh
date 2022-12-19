@@ -33,27 +33,27 @@ Usage: #example
 {%- endif %}
 
 * name
-  * productName = "{{ row["productname"]  }}"
+  * productName = "{{ row["productname"]|trim  }}"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
   * part[0]
-    * part = "{{ row["inventedNamePart"]  }}"
+    * part = "{{ row["inventedNamePart"]|trim  }}"
     * type = $spor-productNamePartType-cs#220000000002
     * type.text = "Invented name part"
   
   * part[+]
-    * part = "{{ row["ScientificNamePart"]  }}"
+    * part = "{{ row["ScientificNamePart"] |trim }}"
     * type = $spor-productNamePartType-cs#220000000003
     * type.text = "Scientific name part"
   
   * part[+]
-    * part = "{{ row["StrengthPart"]  }}"
+    * part = "{{ row["StrengthPart"] |trim }}"
     * type = $spor-productNamePartType-cs#220000000004
     * type.text = "Strength part"
   
   * part[+]
-    * part = "{{ row["PharmaceuticalDosePart"]  }}"
+    * part = "{{ row["PharmaceuticalDosePart"]|trim  }}"
     * type = $spor-productNamePartType-cs#220000000005
     * type.text = "Pharmaceutical dose form part"
   

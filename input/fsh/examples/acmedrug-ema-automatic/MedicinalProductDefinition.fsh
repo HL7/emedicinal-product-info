@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 acmedrug-man"
 Usage: #example
 
 
-* id = "dc1c1f15-c169-419c-a4b2-d4895a8cc4f9" 
+* id = "dc96ec55-de69-4d2c-8ec9-5ef63ec30a9d" 
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 

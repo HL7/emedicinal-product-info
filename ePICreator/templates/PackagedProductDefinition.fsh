@@ -18,7 +18,7 @@ Usage: #example
 //* type = $spor-rms#100000155527
 
 
-* status = #{{ row["status"]|lower }}
+* status = http://hl7.org/fhir/publication-status#active "Active"
 * statusDate = "{{ row["statusDate"]}}"
 
 {% if row["quantity"]|string !="nan"  %}

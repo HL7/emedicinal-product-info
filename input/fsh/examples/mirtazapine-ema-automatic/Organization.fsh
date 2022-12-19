@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "LABORATORIOS CINFA, S.A. as Marketing authorisation holder"
 Description: "LABORATORIOS CINFA, S.A. as Marketing authorisation holder"
 Usage: #example
-* id = "e8e0cf0e-f68a-4e5f-86c6-3c8e448b00a7" 
+* id = "1115f2ae-4569-4aab-8f1d-a48a2f91511c" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100003791"
 * identifier.use = #official
@@ -18,7 +18,7 @@ Usage: #example
 
 * contact
   * address
-    * text = "Carretera Olaz-Chipi, 10. Polígono Industrial Areta Huarte ES "
+    * text = "Carretera Olaz-Chipi, 10. Polígono Industrial Areta Huarte ES"
     * use = #work
     * type = #physical
     * line = "Carretera Olaz-Chipi, 10. Polígono Industrial Areta"

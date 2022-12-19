@@ -1,12 +1,12 @@
 
-Instance: mpHumira20mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass
+Instance: mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
-Description: "EU/1/97/049/001 Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
+Title: "Medicinal Product Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
+Description: "EU/1/97/049/001 Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
 Usage: #example
 
 
-* id = "3da3d2f7-5e9f-4ff3-a86a-e5c756c53b04" 
+* id = "c98b73a6-65be-439b-81d7-4b86b2846031" 
 * identifier.system = $spor-prod
 * identifier.value = "nan"
 
@@ -24,7 +24,7 @@ Usage: #example
 
 
 * name
-  * productName = "Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
+  * productName = "Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   

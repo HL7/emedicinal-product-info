@@ -1,17 +1,17 @@
 
-Instance: ap-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass
+Instance: ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass
 InstanceOf: AdministrableProductDefinitionUvEpi
-Title: "Administrable product Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
-Description: "Humira 20 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
+Title: "Administrable product Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
+Description: "Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
 Usage: #example
 
-* id = "4d9783f1-27ba-4f9b-a427-ceb0d73f2b39" 
+* id = "0eeb7689-35ca-4e3e-ab7f-c903eb77e421" 
 * identifier.system = $phpid
 * identifier.value = "nan" 
 
 * status = #active
 
-* formOf = Reference(mpHumira20mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
+* formOf = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
 * administrableDoseForm = $spor-rms#11201000 "Solution for injection"
 * unitOfPresentation = $spor-rms#15052000 "Syringe"
 
@@ -19,7 +19,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-humira20mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* producedFrom = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
 
 
 * routeOfAdministration.code = $spor-rms#20066000 "Subcutaneous use"

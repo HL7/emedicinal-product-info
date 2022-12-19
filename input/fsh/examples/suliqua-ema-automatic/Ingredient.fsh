@@ -5,7 +5,7 @@ Title: "Ingredient-active Insulin glargine"
 Description: "Insulin glargine"
 Usage: #example
 
-* id = "ef5a4ee6-2413-40f8-9589-3ffc4a0ab6e6" 
+* id = "3b879f4b-5382-4595-aff1-67b9d87093de" 
 
 * identifier.system = $ginas
 * identifier.value = "2ZM8CX04RZ"
@@ -20,7 +20,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity = 100.0 'U/ml'
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength "
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
 // Reference to manufactured item
@@ -40,7 +40,7 @@ Title: "Ingredient-active Lixisenatide"
 Description: "Lixisenatide"
 Usage: #example
 
-* id = "b56c0598-9e06-4809-b18b-e580fd8e3dda" 
+* id = "fa0a9608-1ccd-4b9c-8a8d-f43bfd966b39" 
 
 * identifier.system = $ginas
 * identifier.value = "74O62BB01U"
@@ -55,7 +55,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity = 50.0 'ug/ml'
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength "
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
 // Reference to manufactured item
@@ -75,7 +75,7 @@ Title: "Ingredient-excipient Glycerol 85%"
 Description: "Glycerol 85%"
 Usage: #example
 
-* id = "cbeee570-2b77-4a93-b142-790489dd33ae" 
+* id = "de5f3414-6068-4389-bdb7-584099dfdc8f" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
@@ -106,7 +106,7 @@ Title: "Ingredient-excipient Methionine"
 Description: "Methionine"
 Usage: #example
 
-* id = "45cef56f-a5ae-41f2-8247-b8ae6e33c2eb" 
+* id = "02be13c0-edb9-417e-8b85-a55361738276" 
 
 * identifier.system = $ginas
 * identifier.value = "AE28F7PNPL"
@@ -137,7 +137,7 @@ Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
 Usage: #example
 
-* id = "13bcf2c4-b69e-48a0-8d4d-efbfad2bbf52" 
+* id = "ab0ce28c-d0cc-4965-974a-25fb092cfd6f" 
 
 * identifier.system = $ginas
 * identifier.value = "GGO4Y809LO"
@@ -168,7 +168,7 @@ Title: "Ingredient-excipient Zinc chloride"
 Description: "Zinc chloride"
 Usage: #example
 
-* id = "0040119e-2409-4d2c-9a38-95fd72441022" 
+* id = "c186c08e-84a1-4d8c-a781-8b98635cb665" 
 
 * identifier.system = $ginas
 * identifier.value = "86Q357L16B"
@@ -199,7 +199,7 @@ Title: "Ingredient-excipient Concentrated hydrochloric acid"
 Description: "Concentrated hydrochloric acid"
 Usage: #example
 
-* id = "f74a3efb-44c0-46f7-85e8-5988781d38f3" 
+* id = "59832700-73d6-46c4-aebc-91fb66fd687d" 
 
 * identifier.system = $ginas
 * identifier.value = "QTT17582CB"
@@ -230,7 +230,7 @@ Title: "Ingredient-excipient Water for injections"
 Description: "Water for injections"
 Usage: #example
 
-* id = "8c33ff3e-977a-4ff9-8fdc-40be399af1b2" 
+* id = "0991765f-2cfa-4383-a31d-68ea1b3a669e" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -261,7 +261,7 @@ Title: "Ingredient-excipient Sodium hydroxide"
 Description: "Sodium hydroxide"
 Usage: #example
 
-* id = "a4cc7fe9-b25a-411d-b17a-122a2c2bcf66" 
+* id = "353df2d2-6e5b-41fe-97b8-0b281b0c8957" 
 
 * identifier.system = $ginas
 * identifier.value = "55X04QC32I"
