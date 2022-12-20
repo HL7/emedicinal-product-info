@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "adalimumab"
 Description: "adalimumab"
 Usage: #example
-* id = "560639ae-8c6a-4f98-9a5b-455534b1b16a" 
+* id = "49cf3f40-7984-47a5-8e30-4af3ca59d52b" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"

@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "acme drug blister tabs"
 Description: "acme drug blister tabs"
 Usage: #example
-* id = "0dd7b3d0-5b52-438c-99c6-9103beb0c8b0" 
+* id = "7ca85a3a-b87e-444a-ab13-942c2de37e3e" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/97/049/001"

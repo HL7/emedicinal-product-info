@@ -6,7 +6,7 @@ Description: "Regulated Authorization for PENTASA 1g Prolonged-release tablet"
 Usage: #example
 
 
-* id = "81fabf64-8ceb-4983-a96e-02dafa296ed2" 
+* id = "bcfa018a-0f57-434f-a13e-c6b259b15dda" 
 
 * identifier.system = $spor-prod
 * identifier.value = "77022"

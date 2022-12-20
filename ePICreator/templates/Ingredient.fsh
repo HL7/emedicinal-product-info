@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: ingredient-for-{{ data["dictionary"]["MajorName"]|lower}}-{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') }}
+Instance: ingredient-for-{{ data["dictionary"]["MajorName"]|lower|regex_replace('[^A-Za-z0-9]+', '')}}-{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') }}
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-{{row["role"]| lower}} {{ row["name"]  }}"
 Description: "{{ row["name"]  }}"
@@ -21,7 +21,7 @@ Usage: #example
 
 {% if row["quantity"]|string !="nan" %}
 
-* substance.strength.presentationQuantity = {{ row["quantity"]  }} '{{ row["quantity unit"]  }}'
+* substance.strength.presentationQuantity = {{ row["quantity"] | replace (",",".")  }} '{{ row["quantity unit"]  }}'
 
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#{{row["StrengthBasis"]}} "{{row["StrengthBasisText"]|trim }}"
 {% endif %}

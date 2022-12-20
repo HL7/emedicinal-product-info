@@ -3,7 +3,7 @@ Instance: substance-cinitapride
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "CINITAPRIDE"
 Usage: #example
-* id = "ec097245-1843-4113-801f-d8c3574ab7e3" 
+* id = "c041ec46-1f47-4144-b586-e550ed90c3a0" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "R8I97I2L24"

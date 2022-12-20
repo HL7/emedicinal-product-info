@@ -5,7 +5,7 @@ Title: "Ingredient-active Insulin glargine"
 Description: "Insulin glargine"
 Usage: #example
 
-* id = "f5eba89a-53bf-41cc-a00f-a81330062946" 
+* id = "2e1e0304-d4de-4135-ab5d-72bb4859d2ca" 
 
 * identifier.system = $ginas
 * identifier.value = "2ZM8CX04RZ"
@@ -40,7 +40,7 @@ Title: "Ingredient-active Lixisenatide"
 Description: "Lixisenatide"
 Usage: #example
 
-* id = "34734d5b-c7cf-4a3e-bf87-1412db87476e" 
+* id = "a48971df-c269-4bd7-af02-cdbc446fef40" 
 
 * identifier.system = $ginas
 * identifier.value = "74O62BB01U"
@@ -69,13 +69,13 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab)
-Instance: ingredient-for-adalimumab-glycerol85
+Instance: ingredient-for-adalimumab-glycerol85whodd
 InstanceOf: IngredientUvEpi
-Title: "Ingredient-excipient Glycerol 85%"
-Description: "Glycerol 85%"
+Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
+Description: "GLYCEROL 85% [WHO-DD]"
 Usage: #example
 
-* id = "06d11577-dc08-4fe4-b9f3-3b98f8e4159b" 
+* id = "313668a0-e923-48fe-ae04-49f8fcd5451e" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
@@ -85,7 +85,7 @@ Usage: #example
 
 * status = #active
 
-* substance.code.concept.coding = $ginas#PDC6A3C0OX "Glycerol 85%"
+* substance.code.concept.coding = $ginas#PDC6A3C0OX "GLYCEROL 85% [WHO-DD]"
 
 
 

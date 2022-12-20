@@ -5,7 +5,7 @@ Title: "Composition for Suliqua Package Leaflet"
 Description:  "Composition for Suliqua Package Leaflet"
 Usage: #example
 
-* id = "3e07109f-49b1-47e3-928d-49c817a851de" 
+* id = "7601aaa3-5629-40ed-a8e0-e4c8d6be27d7" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -28,96 +28,96 @@ Usage: #example
  
 
   // ClinicalUseDefinition
-//  * entry[+].fullUrl = 541ff1c0-dd74-407c-8ca4-294ef97cfc05
+//  * entry[+].fullUrl = 9294b7b0-15d8-4ff1-b036-57a9b0b84eaa
   * entry[+] = Reference(contraindication-hypersensitivityreaction) 
 
   // ClinicalUseDefinition
-//  * entry[+].fullUrl = ac395582-c8ce-4de8-86c4-c3376c5fa47a
+//  * entry[+].fullUrl = 6adc51c7-c775-4331-bef4-c14f409e281a
   * entry[+] = Reference(indication-hypertension) 
 
   // ClinicalUseDefinition
-//  * entry[+].fullUrl = 97cc04f8-5959-4700-9fe1-163cbdeab723
+//  * entry[+].fullUrl = a8ff539e-baf7-41bd-8e19-7161a4ab20e6
   * entry[+] = Reference(interaction-bezafibrat) 
  
  
 
   // Ingredient
-//  * entry[+].fullUrl = 3b879f4b-5382-4595-aff1-67b9d87093de
+//  * entry[+].fullUrl = 46aea244-d651-496c-8b10-a8d389e7df83
   * entry[+] = Reference(ingredient-for-suliqua-insulinglargine) 
 
   // Ingredient
-//  * entry[+].fullUrl = fa0a9608-1ccd-4b9c-8a8d-f43bfd966b39
+//  * entry[+].fullUrl = 244effda-fba0-4fed-8e77-52cac0136f22
   * entry[+] = Reference(ingredient-for-suliqua-lixisenatide) 
 
   // Ingredient
-//  * entry[+].fullUrl = de5f3414-6068-4389-bdb7-584099dfdc8f
-  * entry[+] = Reference(ingredient-for-suliqua-glycerol85) 
+//  * entry[+].fullUrl = f42b037f-07b3-4322-96fa-06083cc41716
+  * entry[+] = Reference(ingredient-for-suliqua-glycerol85whodd) 
 
   // Ingredient
-//  * entry[+].fullUrl = 02be13c0-edb9-417e-8b85-a55361738276
+//  * entry[+].fullUrl = 857e40a2-07b8-4a12-a6d0-cb37a447d012
   * entry[+] = Reference(ingredient-for-suliqua-methionine) 
 
   // Ingredient
-//  * entry[+].fullUrl = ab0ce28c-d0cc-4965-974a-25fb092cfd6f
+//  * entry[+].fullUrl = 665a56b3-ecb0-42a2-a979-d6297b9dccdc
   * entry[+] = Reference(ingredient-for-suliqua-metacresol) 
 
   // Ingredient
-//  * entry[+].fullUrl = c186c08e-84a1-4d8c-a781-8b98635cb665
+//  * entry[+].fullUrl = cc1482a0-a1e9-4cdd-a0c6-07d9fbe1029c
   * entry[+] = Reference(ingredient-for-suliqua-zincchloride) 
 
   // Ingredient
-//  * entry[+].fullUrl = 59832700-73d6-46c4-aebc-91fb66fd687d
-  * entry[+] = Reference(ingredient-for-suliqua-concentratedhydrochloricacid) 
+//  * entry[+].fullUrl = 948fa135-3aa1-40b9-a657-f83fe8abaadd
+  * entry[+] = Reference(ingredient-for-suliqua-hydrochloricacidiarc) 
 
   // Ingredient
-//  * entry[+].fullUrl = 0991765f-2cfa-4383-a31d-68ea1b3a669e
-  * entry[+] = Reference(ingredient-for-suliqua-waterforinjections) 
+//  * entry[+].fullUrl = 7298d284-1449-47be-bd6b-268cae0dc5b9
+  * entry[+] = Reference(ingredient-for-suliqua-sterilewaterforinjection) 
 
   // Ingredient
-//  * entry[+].fullUrl = 353df2d2-6e5b-41fe-97b8-0b281b0c8957
+//  * entry[+].fullUrl = 32d70d75-7f4f-4f43-934a-45388d195be8
   * entry[+] = Reference(ingredient-for-suliqua-sodiumhydroxide) 
  
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = fad19480-fc72-41a5-a926-acf15ca0b803
+//  * entry[+].fullUrl = 3f8e1330-debd-4acb-be26-dc83f38c4951
   * entry[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 34cb6e8c-d558-4c0d-87f8-2327b59aa365
+//  * entry[+].fullUrl = 0774ccd5-c428-4693-86c5-932f3a94cf83
   * entry[+] = Reference(authorizationsuliqua100unitsml50microgrammlsolutionforinjectioninaprefilledpen) 
  
 
   // Organization
-//  * entry[+].fullUrl = 688f4906-a6b5-4241-b734-72a5ea7acce6
+//  * entry[+].fullUrl = 2185b7b7-3e74-4db7-9b0e-4a3e226d1c77
   * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua) 
 
   // Organization
-//  * entry[+].fullUrl = c88429b4-62d6-4f17-b06c-263ecddb07e9
+//  * entry[+].fullUrl = 6860f877-c64c-49aa-a29c-5fa71db04f30
   * entry[+] = Reference(org-manufacturerapi-sanofiaventisdeutschlandgmbh-suliqua) 
 
   // Organization
-//  * entry[+].fullUrl = a46e3dd8-f360-478b-a9ae-50aeda754911
+//  * entry[+].fullUrl = 2f5a1ef3-534b-439c-966f-9fb45f446fbe
   * entry[+] = Reference(org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-suliqua) 
 
   // Organization
-//  * entry[+].fullUrl = 9695e0ac-f393-4c5a-9ebb-35bdd9c2d76b
+//  * entry[+].fullUrl = e96c3299-81d8-4708-afb2-e40a401189c3
   * entry[+] = Reference(org-medicinesregulatoryauthority-europeanmedicinesagency-suliqua) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 9df19a62-bf14-41e5-a38b-e2db9c96d3ca
+//  * entry[+].fullUrl = 5f379971-fe92-46a8-8c6f-52656b80541a
   * entry[+] = Reference(ppd-3mlcartridgeglassinaprefilledpen) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = c05aadd3-d40a-460f-b63f-4e994b00b7ef
+//  * entry[+].fullUrl = 15aa8e1a-d4fb-4f08-b919-5987addc06e8
   * entry[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = c31e4605-bb1a-41b9-b716-4dd869c27fa4
+//  * entry[+].fullUrl = fa26d5af-9d02-4a74-8f68-5341250aeee3
   * entry[+] = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens) 
    
 

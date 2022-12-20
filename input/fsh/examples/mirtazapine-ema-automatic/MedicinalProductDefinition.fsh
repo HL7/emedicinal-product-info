@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 MIRTAZAPINe CINFA 30 mg Coated Tablet"
 Usage: #example
 
 
-* id = "9d461f6f-18d1-4594-83c2-219fd63cb9b7" 
+* id = "f5505418-c7d5-435f-9e55-ac5f03fc6f7f" 
 * identifier.system = $spor-prod
 * identifier.value = "cc"
 

@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Description: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Usage: #example
-* id = "688f4906-a6b5-4241-b734-72a5ea7acce6" 
+* id = "2185b7b7-3e74-4db7-9b0e-4a3e226d1c77" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -31,7 +31,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Deutschland GmbH as Manufacturer API"
 Description: "Sanofi-Aventis Deutschland GmbH as Manufacturer API"
 Usage: #example
-* id = "c88429b4-62d6-4f17-b06c-263ecddb07e9" 
+* id = "6860f877-c64c-49aa-a29c-5fa71db04f30" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100001175"
 * identifier.use = #official
@@ -57,7 +57,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"
 Description: "Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"
 Usage: #example
-* id = "a46e3dd8-f360-478b-a9ae-50aeda754911" 
+* id = "2f5a1ef3-534b-439c-966f-9fb45f446fbe" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100001175"
 * identifier.use = #official
@@ -83,7 +83,7 @@ InstanceOf: OrganizationUvEpi
 Title: "European Medicines Agency as Medicines Regulatory Authority"
 Description: "European Medicines Agency as Medicines Regulatory Authority"
 Usage: #example
-* id = "9695e0ac-f393-4c5a-9ebb-35bdd9c2d76b" 
+* id = "e96c3299-81d8-4708-afb2-e40a401189c3" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100013412"
 * identifier.use = #official

@@ -5,14 +5,14 @@ Title: "ePI document Bundle for cinitrapide Package Leaflet"
 Description: "Bundle for cinitrapide Package Leaflet ePI document"
 Usage: #example
 
-* id = "34dc9670-5c6d-4dc2-940d-b89d12c1fda4" 
+* id = "b6f56e1a-0fb5-4f5c-acca-af8ea80bd718" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2022-12-19T16:57:21Z"
+* timestamp = "2022-12-20T14:55:58Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/dc9ec1f2-f8df-4f6a-86aa-c1275f238c64"
+* entry[0].fullUrl = "Composition/75252f24-83b5-48f2-bc70-660e8544ba60"
 * entry[0].resource = compositioncinitrapide
 
  
@@ -24,74 +24,74 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/2cb5307b-e1d4-4907-b347-6c9234d8c1c8"
+* entry[+].fullUrl = "Ingredient/1bf02eee-32e6-4f54-824c-8d6d7f40519a"
 * entry[=].resource = ingredient-for-cinitrapide-magnesiumstearate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/606ca3c2-b603-469a-907d-3b7fa7a9020c"
+* entry[+].fullUrl = "Ingredient/5cc76188-4979-4652-8f81-5bd19aeec836"
 * entry[=].resource = ingredient-for-cinitrapide-povidoneunspecified 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/cacf0960-e141-44df-8ee8-8965d5531243"
+* entry[+].fullUrl = "Ingredient/7cd4fc3c-a887-4094-a030-8f2ba90be0f7"
 * entry[=].resource = ingredient-for-cinitrapide-cinitapride 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/b31599fa-671f-41af-afa5-af513de82843"
+* entry[+].fullUrl = "Ingredient/352c2da8-0014-4c47-b989-5b3e6c8e00c0"
 * entry[=].resource = ingredient-for-cinitrapide-silicacolloidalanhydrous 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/bd92407c-482f-4279-ba37-cf66b8af02f5"
+* entry[+].fullUrl = "Ingredient/4feb15e0-7760-4a86-bd82-46799c6561c4"
 * entry[=].resource = ingredient-for-cinitrapide-starchpotato 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/660746d0-8de9-410e-9ab8-7d3da7c2ee41"
+* entry[+].fullUrl = "Ingredient/ee4c3213-2d8e-49e1-ae8f-3edd228de29e"
 * entry[=].resource = ingredient-for-cinitrapide-starchcorn 
  
 
 // Substance
    
-* entry[+].fullUrl = "SubstanceDefinition/ec097245-1843-4113-801f-d8c3574ab7e3"
+* entry[+].fullUrl = "SubstanceDefinition/c041ec46-1f47-4144-b586-e550ed90c3a0"
 * entry[=].resource = substance-cinitapride 
  
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/702309aa-2383-4116-9f1f-541e48c9026e"
+* entry[+].fullUrl = "AdministrableProductDefinition/11d0b626-cfeb-41d3-9402-1b0300425360"
 * entry[=].resource = ap-blaston1mgtablets 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/562e0c11-a756-41a6-b234-1769678255ac"
+* entry[+].fullUrl = "RegulatedAuthorization/cc6ce0bc-7476-4d61-8d39-b19a351236ab"
 * entry[=].resource = authorizationblaston1mgtablets 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/9743e79b-32f2-4340-9f29-2f1995c4a147"
+* entry[+].fullUrl = "Organization/713a560c-7403-4dae-86ab-e9e86b162b79"
 * entry[=].resource = org-marketingauthorisationholder-lacersaboters5-cinitrapide 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/8d3c46db-8576-4286-b7fc-7137535b83ab"
+* entry[+].fullUrl = "PackagedProductDefinition/e9c42678-0ac0-4b1a-afec-caedff7eeba7"
 * entry[=].resource = ppd-blaston1mgtablets50tablets 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/c86f891a-a25c-431b-a229-a0e17e3815c5"
+* entry[+].fullUrl = "MedicinalProductDefinition/90e3463a-5106-43c1-8483-a72df2922dc5"
 * entry[=].resource = mpBLASTON1mgtablets 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/7e6920cb-c95e-4251-961e-bfd59f1269bb"
+* entry[+].fullUrl = "ManufacturedItemDefinition/59c19c68-5b5f-44eb-ac5a-90bafae189ba"
 * entry[=].resource = mid-cinitrapide 
  
 

@@ -5,7 +5,7 @@ Title: "Ingredient-active mesalazine"
 Description: "mesalazine"
 Usage: #example
 
-* id = "375b4bdb-3fb0-451b-9ae8-0b8ab1ea1913" 
+* id = "27ead25f-653b-4d58-9fa4-e020a54cf6f7" 
 
 * identifier.system = $ginas
 * identifier.value = "4Q81I59GXC"
@@ -37,7 +37,7 @@ Title: "Ingredient-excipient Povidone"
 Description: "Povidone"
 Usage: #example
 
-* id = "d70e7361-0219-4f85-a456-1a0e6f2b62b4" 
+* id = "48484cfa-1919-4de5-b4d3-6a14a4ea963c" 
 
 * identifier.system = $ginas
 * identifier.value = "FZ989GH94E"
@@ -65,7 +65,7 @@ Title: "Ingredient-excipient Ethylcellulose"
 Description: "Ethylcellulose"
 Usage: #example
 
-* id = "47304b03-b02e-4f42-94fa-ea5b6726aef9" 
+* id = "0cc2f6b1-9a62-4adf-acae-fa15f4bbee75" 
 
 * identifier.system = $ginas
 * identifier.value = "7Z8S9VYZ4B"
@@ -93,7 +93,7 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "74266063-1898-4b8e-b0cc-1e5de68e47bc" 
+* id = "94e3cbeb-5f0b-430c-9f7b-cb28e568efa8" 
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
@@ -121,7 +121,7 @@ Title: "Ingredient-excipient Talc"
 Description: "Talc"
 Usage: #example
 
-* id = "edf038a3-f4b5-43a0-91a9-d645b9c1b78d" 
+* id = "9db1f131-44ac-42f9-979a-02ceb4460c15" 
 
 * identifier.system = $ginas
 * identifier.value = "7SEV7J4R1U"
@@ -149,7 +149,7 @@ Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"
 Usage: #example
 
-* id = "e5dc185a-5bb6-41f3-aae9-2eadb0290acd" 
+* id = "b742f4e2-cf22-4948-9227-a90336b7e5a2" 
 
 * identifier.system = $ginas
 * identifier.value = "OP1R32D61U"

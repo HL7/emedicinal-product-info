@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item adalimumab"
 Description: "adalimumab"
 Usage: #example
-* id = "3cc3914b-e0f5-43f4-b4fc-c02e7c70ecf7" 
+* id = "70bfdb2f-dd59-4883-9c2b-0df0d8986f13" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/16/1157/003"

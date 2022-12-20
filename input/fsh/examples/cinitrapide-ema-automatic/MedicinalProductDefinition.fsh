@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 BLASTON 1 mg tablets"
 Usage: #example
 
 
-* id = "c86f891a-a25c-431b-a229-a0e17e3815c5" 
+* id = "90e3463a-5106-43c1-8483-a72df2922dc5" 
 * identifier.system = $spor-prod
 * identifier.value = "ss"
 

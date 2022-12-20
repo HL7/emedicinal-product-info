@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "3 ml cartridge (glass) in a pre-filled pen"
 Description: "3 ml cartridge (glass) in a pre-filled pen"
 Usage: #example
-* id = "9df19a62-bf14-41e5-a38b-e2db9c96d3ca" 
+* id = "5f379971-fe92-46a8-8c6f-52656b80541a" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"

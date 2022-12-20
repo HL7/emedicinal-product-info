@@ -62,7 +62,10 @@ Usage: #example
 
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
     * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
-    {%- else %}   
+    {%- elif row["package_leaflet"]|string|startswith("<div xmlns=\"http://www.w3.org/1999/xhtml\">")  %}   
+    * text.div = """{{row['package_leaflet']}}"""
+
+    {% else %}
     * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  {{row['package_leaflet']}}         </div>"""
 {%- endif %}   
 

@@ -5,7 +5,7 @@ Title: "Composition for Humalog Package Leaflet"
 Description:  "Composition for Humalog Package Leaflet"
 Usage: #example
 
-* id = "e0d9c141-06d9-4851-84e2-776f4691ab3d" 
+* id = "cf9854cc-fa77-4318-a565-d6f744addb25" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,35 +30,35 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 452f5372-b3e1-481f-bacf-f89641f38435
+//  * entry[+].fullUrl = 344ec685-46ab-4f37-a0ba-f7fe72a16f63
   * entry[+] = Reference(ingredient-for-humalog-glycerol) 
 
   // Ingredient
-//  * entry[+].fullUrl = 51d77634-ef0f-4230-a610-b52a05e5746e
+//  * entry[+].fullUrl = 8005bb4f-c260-43f1-a919-032185d99492
   * entry[+] = Reference(ingredient-for-humalog-hydrochloricacid) 
 
   // Ingredient
-//  * entry[+].fullUrl = dfdd2d9f-4b62-4f55-96d8-7c11efee8048
+//  * entry[+].fullUrl = 5c3f4fe7-d091-4480-b0ca-07404b03d374
   * entry[+] = Reference(ingredient-for-humalog-sodiumhydroxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 2db99531-1ebc-409c-9941-387d800cc8e9
+//  * entry[+].fullUrl = 909923f7-772c-4bbe-aeb5-3995afc16131
   * entry[+] = Reference(ingredient-for-humalog-sterilewaterforinjection) 
 
   // Ingredient
-//  * entry[+].fullUrl = 9533d7d7-0359-449e-8a12-35ed5be36d38
+//  * entry[+].fullUrl = c80c67df-9de9-4dfd-b609-5bb59c9d1b61
   * entry[+] = Reference(ingredient-for-humalog-insulinlispro) 
 
   // Ingredient
-//  * entry[+].fullUrl = f5b919cb-2f5a-4e8a-a97e-4153d2d2cf52
+//  * entry[+].fullUrl = 46a12e95-0764-4625-b2c1-2d594e999028
   * entry[+] = Reference(ingredient-for-humalog-zincoxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = c1caa847-d129-4571-b708-2e74cfb2fdd4
+//  * entry[+].fullUrl = bdb3800c-2813-47b9-8144-386abcf452dc
   * entry[+] = Reference(ingredient-for-humalog-metacresol) 
 
   // Ingredient
-//  * entry[+].fullUrl = 58d764f4-a7b6-4155-b85f-af5d76005aa0
+//  * entry[+].fullUrl = 244c29f5-ae44-49ad-96f2-e0c365779a0e
   * entry[+] = Reference(ingredient-for-humalog-trometamol) 
  
  
@@ -69,35 +69,35 @@ Usage: #example
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 8a0d9232-126c-4b05-897b-ef71e6cac927
+//  * entry[+].fullUrl = 383cc389-8f7a-48d4-9870-65d44d73f84a
   * entry[+] = Reference(authorizationhumalog) 
  
 
   // Organization
-//  * entry[+].fullUrl = 631e8d02-c540-41d6-963e-8fcf2acb7a13
+//  * entry[+].fullUrl = 3b0b32f5-0bf1-4e1f-8c64-63d0907c9cff
   * entry[+] = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog) 
 
   // Organization
-//  * entry[+].fullUrl = b3db62de-c2f5-4541-8303-285dc36c4d64
+//  * entry[+].fullUrl = 724b50e7-68e7-4fc3-a31b-3e3960d1dd93
   * entry[+] = Reference(org-manufacturerapi-elilillyandcompany-humalog) 
 
   // Organization
-//  * entry[+].fullUrl = 66010582-61f3-48c5-979b-e0a488430150
+//  * entry[+].fullUrl = 94e8011e-2a38-4bdf-8693-0ed96b25084a
   * entry[+] = Reference(org-manufacturer-lillysa-humalog) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 3ad17550-7a45-4a2f-a623-0933c7051b54
+//  * entry[+].fullUrl = d21474b5-361a-47ba-a039-ea2e640def1c
   * entry[+] = Reference(ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = c931b18e-c12d-4215-9700-f5491d6c765a
+//  * entry[+].fullUrl = 5b19f7ba-b52f-4df4-86b6-90e1e9936fd9
   * entry[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 4478e098-80bb-481a-ac3f-24c64014fff9
+//  * entry[+].fullUrl = a26fc18e-0b9f-44cb-b8cf-572b758fcf7b
   * entry[+] = Reference(mid-humalog100uml5prefilledpen) 
    
 

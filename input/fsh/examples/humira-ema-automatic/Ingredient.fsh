@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Mannitol"
 Description: "Mannitol"
 Usage: #example
 
-* id = "e4cd6b02-ce03-4a35-98cc-83e062140eed" 
+* id = "1f77b3ee-3e7b-439c-8f18-b3e9b6a23fa2" 
 
 * identifier.system = $ginas
 * identifier.value = "3OWL53L36A"
@@ -33,7 +33,7 @@ Title: "Ingredient-excipient Polysorbate 80"
 Description: "Polysorbate 80"
 Usage: #example
 
-* id = "c64eb42f-94e8-4677-af30-9b44302f37b7" 
+* id = "a4e8bb6c-6c19-40b9-a39f-776e5859a9b2" 
 
 * identifier.system = $ginas
 * identifier.value = "6OZP39ZG8H"
@@ -61,7 +61,7 @@ Title: "Ingredient-active adalimumab"
 Description: "adalimumab"
 Usage: #example
 
-* id = "66f42147-7abc-484a-9683-83d5b71bf47d" 
+* id = "df71372b-c51e-47b3-9f0d-9b2fe8b549ac" 
 
 * identifier.system = $ginas
 * identifier.value = "FYS6T7F842"
@@ -89,11 +89,11 @@ Usage: #example
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
 Instance: ingredient-for-humira-sterilewaterforinjection
 InstanceOf: IngredientUvEpi
-Title: "Ingredient-excipient STERILE WATER FOR INJECTION'"
-Description: "STERILE WATER FOR INJECTION'"
+Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
+Description: "STERILE WATER FOR INJECTION"
 Usage: #example
 
-* id = "2480c27b-936d-43f5-854a-a3f4c92ee4bd" 
+* id = "ef2258aa-17d8-49aa-881f-b255924870c4" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -103,7 +103,7 @@ Usage: #example
 
 * status = #active
 
-* substance.code.concept.coding = $ginas#059QF0KO0R "STERILE WATER FOR INJECTION'"
+* substance.code.concept.coding = $ginas#059QF0KO0R "STERILE WATER FOR INJECTION"
 
 
 
@@ -121,7 +121,7 @@ Title: "Ingredient-excipient CITRIC ACID MONOHYDRATE"
 Description: "CITRIC ACID MONOHYDRATE"
 Usage: #example
 
-* id = "895f5533-2dfa-4230-966e-58733fe58ff3" 
+* id = "08101e4b-2f90-41cb-944b-8c51eb2bb6ab" 
 
 * identifier.system = $ginas
 * identifier.value = "2968PHW8QP"
@@ -149,7 +149,7 @@ Title: "Ingredient-excipient SODIUM CITRATE, UNSPECIFIED FORM"
 Description: "SODIUM CITRATE, UNSPECIFIED FORM"
 Usage: #example
 
-* id = "2adaf64a-f9d9-47cb-93ab-67d2c67e5681" 
+* id = "e53fe219-3436-4930-a8cf-376027a622d3" 
 
 * identifier.system = $ginas
 * identifier.value = "1Q73Q2JULR"
@@ -177,7 +177,7 @@ Title: "Ingredient-excipient SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE"
 Description: "SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE"
 Usage: #example
 
-* id = "c4563dc3-5594-404c-9d35-d844f6cd3c5e" 
+* id = "d6280bdc-4d0a-414e-abed-427336658280" 
 
 * identifier.system = $ginas
 * identifier.value = "5QWK665956"
@@ -205,7 +205,7 @@ Title: "Ingredient-excipient SODIUM PHOSPHATE, DIBASIC, DIHYDRATE"
 Description: "SODIUM PHOSPHATE, DIBASIC, DIHYDRATE"
 Usage: #example
 
-* id = "c26782b4-5e80-4eb5-be9b-f1bd413c1a57" 
+* id = "7e1dc100-d6ac-4e58-a605-f29418f58d5d" 
 
 * identifier.system = $ginas
 * identifier.value = "94255I6E2T"
@@ -233,7 +233,7 @@ Title: "Ingredient-excipient Sodium chloride"
 Description: "Sodium chloride"
 Usage: #example
 
-* id = "339a50c5-6b36-4429-87b3-25c9d8e0ed09" 
+* id = "a9ab00ce-f7a7-4e41-8531-4528a0a107ec" 
 
 * identifier.system = $ginas
 * identifier.value = "451W47IQ8X"

@@ -3,7 +3,7 @@ Instance: substance-paracetamol
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "paracetamol"
 Usage: #example
-* id = "7964ca6b-3411-4905-9c3c-20154b9bb37c" 
+* id = "8eaaec3c-93e7-41c3-b228-bc67c6533962" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "362O9ITL9D"

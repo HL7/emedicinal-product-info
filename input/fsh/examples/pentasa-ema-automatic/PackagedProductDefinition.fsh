@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Pentasa Slow Release Tablets 1g"
 Description: "Pentasa Slow Release Tablets 1g"
 Usage: #example
-* id = "dc59893c-2ad7-4366-95e2-18fb2e8eceb8" 
+* id = "cdb16d20-21d6-4e39-8a40-c487e64b9e76" 
 
 * identifier.system = $spor-prod
 * identifier.value = "x"

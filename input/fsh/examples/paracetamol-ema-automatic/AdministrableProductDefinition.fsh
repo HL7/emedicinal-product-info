@@ -5,7 +5,7 @@ Title: "Administrable product DOLOCATIL 1 g tablets "
 Description: "DOLOCATIL 1 g tablets "
 Usage: #example
 
-* id = "4a8d535c-4d15-4153-b24d-12c7e0e783c5" 
+* id = "eeba1a0e-dc22-4e3c-b9ae-e8f0730a6845" 
 * identifier.system = $phpid
 * identifier.value = "xx" 
 

@@ -63,7 +63,7 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
 
     if not exists(temp_folder):
         mkdir(temp_folder)
-    major_name = DATA_FILE.lower().split("/")[-1].split(".")[0]
+    major_name = DATA_FILE.lower().split("/")[-1].split(".")[0].replace(" ", "_")
     real_output_folder = OUTPUT_FOLDER + major_name + "-ema-automatic/"
     print(real_output_folder)
     if not exists(real_output_folder):

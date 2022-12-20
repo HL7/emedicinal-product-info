@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "DOLOCATIL 1 g tablets, 20 tablets"
 Description: "DOLOCATIL 1 g tablets, 20 tablets"
 Usage: #example
-* id = "e712c359-b81f-4feb-81d8-3922fac42f3a" 
+* id = "5727f3a0-3d0c-489b-89db-503e36e2addc" 
 
 * identifier.system = $spor-prod
 * identifier.value = "672669"

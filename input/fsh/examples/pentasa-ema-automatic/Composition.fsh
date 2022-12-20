@@ -5,7 +5,7 @@ Title: "Composition for Pentasa Slow Release Tablets 1g Package Leaflet"
 Description:  "Composition for Pentasa Slow Release Tablets 1g Package Leaflet"
 Usage: #example
 
-* id = "6b7a16be-f094-41fd-9372-8c1aad90ddfc" 
+* id = "9492deba-6b11-4aa8-9319-110ef0c237b3" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "cc"
 
@@ -30,62 +30,62 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 375b4bdb-3fb0-451b-9ae8-0b8ab1ea1913
+//  * entry[+].fullUrl = 27ead25f-653b-4d58-9fa4-e020a54cf6f7
   * entry[+] = Reference(ingredient-for-pentasa-mesalazine) 
 
   // Ingredient
-//  * entry[+].fullUrl = d70e7361-0219-4f85-a456-1a0e6f2b62b4
+//  * entry[+].fullUrl = 48484cfa-1919-4de5-b4d3-6a14a4ea963c
   * entry[+] = Reference(ingredient-for-pentasa-povidone) 
 
   // Ingredient
-//  * entry[+].fullUrl = 47304b03-b02e-4f42-94fa-ea5b6726aef9
+//  * entry[+].fullUrl = 0cc2f6b1-9a62-4adf-acae-fa15f4bbee75
   * entry[+] = Reference(ingredient-for-pentasa-ethylcellulose) 
 
   // Ingredient
-//  * entry[+].fullUrl = 74266063-1898-4b8e-b0cc-1e5de68e47bc
+//  * entry[+].fullUrl = 94e3cbeb-5f0b-430c-9f7b-cb28e568efa8
   * entry[+] = Reference(ingredient-for-pentasa-magnesiumstearate) 
 
   // Ingredient
-//  * entry[+].fullUrl = edf038a3-f4b5-43a0-91a9-d645b9c1b78d
+//  * entry[+].fullUrl = 9db1f131-44ac-42f9-979a-02ceb4460c15
   * entry[+] = Reference(ingredient-for-pentasa-talc) 
 
   // Ingredient
-//  * entry[+].fullUrl = e5dc185a-5bb6-41f3-aae9-2eadb0290acd
+//  * entry[+].fullUrl = b742f4e2-cf22-4948-9227-a90336b7e5a2
   * entry[+] = Reference(ingredient-for-pentasa-microcrystallinecellulose) 
  
 
   // Substance
-//  * entry[+].fullUrl = b2f3f32e-6920-47d3-ae9d-a606e4bd55de
+//  * entry[+].fullUrl = ccc761c2-88d3-49fa-9b74-629804d7575a
   * entry[+] = Reference(substance-mesalamine) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 775165d2-759c-46d3-a342-efb135ff438d
+//  * entry[+].fullUrl = 91c4c365-a299-492b-811d-248260ef15d9
   * entry[+] = Reference(ap-pentasaslowreleasetablets1g) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 81fabf64-8ceb-4983-a96e-02dafa296ed2
+//  * entry[+].fullUrl = bcfa018a-0f57-434f-a13e-c6b259b15dda
   * entry[+] = Reference(authorizationpentasa1gprolongedreleasetablet) 
  
 
   // Organization
-//  * entry[+].fullUrl = af8eadb6-8f58-40a9-9c39-c369824fb09e
+//  * entry[+].fullUrl = 780ed50c-1396-42ea-9f3e-53aae36b09ff
   * entry[+] = Reference(org-marketingauthorisationholder-ferringsau-pentasa) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = dc59893c-2ad7-4366-95e2-18fb2e8eceb8
+//  * entry[+].fullUrl = cdb16d20-21d6-4e39-8a40-c487e64b9e76
   * entry[+] = Reference(ppd-pentasaslowreleasetablets1g) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = d2b4e8da-15b3-4132-8600-09ede8546895
+//  * entry[+].fullUrl = 74df859c-7c4d-450d-8f0e-98db8a47d46f
   * entry[+] = Reference(mpPentasaSlowReleaseTablets1g) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = c4f9748d-4e95-4556-bb1f-ba99ff5e2a94
+//  * entry[+].fullUrl = 092d8ae5-e08b-49a0-9f78-8041187617a2
   * entry[+] = Reference(mid-pentasaslowreleasetablets1g) 
    
 
