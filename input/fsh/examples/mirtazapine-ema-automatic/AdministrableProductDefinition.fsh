@@ -5,7 +5,7 @@ Title: "Administrable product MIRTAZAPINA CINFA 30 mg Coated Tablet"
 Description: "MIRTAZAPINA CINFA 30 mg Coated Tablet"
 Usage: #example
 
-* id = "a9084b64-cfb9-4e6c-a6f0-5c653e1e06b4" 
+* id = "ca29342e-8dc5-4831-ad64-1015c3dc9145" 
 * identifier.system = $phpid
 * identifier.value = "identifier" 
 

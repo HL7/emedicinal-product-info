@@ -6,7 +6,7 @@ Description: "Regulated Authorization for acme drug"
 Usage: #example
 
 
-* id = "94dd19da-6256-4365-ace6-3bcdbf75a76b" 
+* id = "67f4d272-ebfc-4253-80ed-4cdea21f76fb" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"

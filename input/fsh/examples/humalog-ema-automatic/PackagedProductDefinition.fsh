@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 Description: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 Usage: #example
-* id = "cbb04f33-e239-4e7c-bd8a-6f2096e186e3" 
+* id = "006f33c5-94a6-4bb5-b1b0-457e6d91bdc5" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"

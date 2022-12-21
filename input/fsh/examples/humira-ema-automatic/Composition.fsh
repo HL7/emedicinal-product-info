@@ -5,7 +5,7 @@ Title: "Composition for humira Package Leaflet"
 Description:  "Composition for humira Package Leaflet"
 Usage: #example
 
-* id = "84ef61ac-2045-4008-99ff-5a8fb68d9f41" 
+* id = "a84cce44-b045-49bd-9988-b82dba0bdf99" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "nan"
 
@@ -30,74 +30,74 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 83dc182a-2845-4e30-a356-9bf0e91fbb05
+//  * entry[+].fullUrl = 3ed73f46-3872-418b-9c79-cb669d3964e2
   * entry[+] = Reference(ingredient-for-humira-mannitol) 
 
   // Ingredient
-//  * entry[+].fullUrl = 471510e9-ac7e-4cd1-be69-150fdd87a3b7
+//  * entry[+].fullUrl = bd88e626-db3d-41b9-87ab-9ee01fc97708
   * entry[+] = Reference(ingredient-for-humira-polysorbate80) 
 
   // Ingredient
-//  * entry[+].fullUrl = 8a669943-33f8-402a-94e7-14972198ddb9
+//  * entry[+].fullUrl = badc1242-cce7-4370-ab63-480689ecb321
   * entry[+] = Reference(ingredient-for-humira-adalimumab) 
 
   // Ingredient
-//  * entry[+].fullUrl = a50ad31a-a57d-4c63-9d67-7cb48634052f
+//  * entry[+].fullUrl = f8b854d4-94ed-4b8a-b238-dfe219f947e8
   * entry[+] = Reference(ingredient-for-humira-sterilewaterforinjection) 
 
   // Ingredient
-//  * entry[+].fullUrl = 56cb5ace-32ba-415c-83be-916353a1a24c
+//  * entry[+].fullUrl = 90f09bad-b077-4741-a8d9-c897a7b09b6a
   * entry[+] = Reference(ingredient-for-humira-citricacidmonohydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = c12fd5f7-e1a3-4d6a-a488-1c4b9531fca4
+//  * entry[+].fullUrl = b122e1c0-2a9a-4a91-bf2d-ad89ad821980
   * entry[+] = Reference(ingredient-for-humira-sodiumcitrateunspecifiedform) 
 
   // Ingredient
-//  * entry[+].fullUrl = 5ea84332-705b-4fe2-9ea5-3e4fee75f7f9
+//  * entry[+].fullUrl = d31e32cd-688c-4e68-9c59-82d66e3af8b1
   * entry[+] = Reference(ingredient-for-humira-sodiumphosphatemonobasicdihydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 90d9c786-b3a9-40a1-b1cd-4638ca2dbced
+//  * entry[+].fullUrl = a08d7cb1-84c0-46ff-967e-f5bd7bdb49f8
   * entry[+] = Reference(ingredient-for-humira-sodiumphosphatedibasicdihydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = c755aa89-0071-4e45-9828-0d7455f716f0
+//  * entry[+].fullUrl = 58474c8c-ab77-488e-80f5-cd9fea73913d
   * entry[+] = Reference(ingredient-for-humira-sodiumchloride) 
  
 
   // Substance
-//  * entry[+].fullUrl = d0321a71-fce9-45be-90ed-f72ab8399969
+//  * entry[+].fullUrl = 53016b15-c203-414f-87c2-5be9b521642b
   * entry[+] = Reference(substance-adalimumab) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = e9373bed-7b73-4ff5-95e8-dd77c417f0fe
+//  * entry[+].fullUrl = 04695093-da2f-491f-a568-b7899cc574d1
   * entry[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 82c835a9-711a-4d2c-a9af-7e7cb465d920
+//  * entry[+].fullUrl = abbcc5c3-efc8-48bb-a86e-ba4fc1b4daf9
   * entry[+] = Reference(authorizationhumira20mgsolutionforinjectioninprefilledsyringe) 
  
 
   // Organization
-//  * entry[+].fullUrl = 0832fe5e-7a92-4bfe-981f-485e089de6d7
+//  * entry[+].fullUrl = f344b32a-58f5-46a3-8898-f1099ff7d9b8
   * entry[+] = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 263cdeb7-02d6-4822-bcb1-3e869649387a
+//  * entry[+].fullUrl = b7b3c00d-32ea-49e5-b15d-edb7cd0ce622
   * entry[+] = Reference(ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 249e972f-cffb-4878-bc98-f1b619fcb528
+//  * entry[+].fullUrl = cdfb1b2c-7b2f-4ab9-bfe4-e92a263aa23f
   * entry[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 7bdc1153-37b8-486f-8886-a9d4f101f125
+//  * entry[+].fullUrl = 1eac8896-5598-4ec8-89b6-1e8a30252d78
   * entry[+] = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
    
 

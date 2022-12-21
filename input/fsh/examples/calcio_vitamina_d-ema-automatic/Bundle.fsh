@@ -5,14 +5,14 @@ Title: "ePI document Bundle for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMID
 Description: "Bundle for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES Package Leaflet ePI document"
 Usage: #example
 
-* id = "988227b7-c90a-4e08-81b1-33af9f22518d" 
+* id = "5b7321da-c841-4398-a23b-7d1fbf683e84" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2022-12-21T14:58:02Z"
+* timestamp = "2022-12-21T16:16:31Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/5ae09232-58b6-4eb1-912c-1a22c1d21f7a"
+* entry[0].fullUrl = "Composition/8b953048-c4d7-453e-94b4-c3055258355b"
 * entry[0].resource = compositionCALCIOVITAMINAD3ROVI1000mg880UICOMPRIMIDOSEFERVESCENTES
 
  
@@ -24,104 +24,104 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/105d0ac1-92f5-4c10-b18d-5ce3167e7402"
+* entry[+].fullUrl = "Ingredient/85266ef6-5385-409c-8c52-702e8993df5b"
 * entry[=].resource = ingredient-for-calciovitaminad-calciumcarbonate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/b4d13234-20be-40a2-8c04-f29493c37772"
+* entry[+].fullUrl = "Ingredient/e0ab6766-b2b5-4352-88fb-4e095569a79b"
 * entry[=].resource = ingredient-for-calciovitaminad-cholecalciferol 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/780e0827-c2ae-495c-8ee5-04cc1ef8f416"
+* entry[+].fullUrl = "Ingredient/2e086134-3fae-49fc-8add-0a13bcd426cb"
 * entry[=].resource = ingredient-for-calciovitaminad-sodium 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/3b06d40a-1d30-4645-8522-b5c59feee71b"
+* entry[+].fullUrl = "Ingredient/6fb49bd8-8358-4d48-bbab-4aaf710df463"
 * entry[=].resource = ingredient-for-calciovitaminad-lactosemonohydrate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/d98befcb-622b-4e7c-8208-7822ba2b9049"
+* entry[+].fullUrl = "Ingredient/b1ec699c-c015-4541-8976-d120f40b3350"
 * entry[=].resource = ingredient-for-calciovitaminad-sucrose 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/4bac5ab1-44f0-47b3-a34f-8d33b0677377"
-* entry[=].resource = ingredient-for-calciovitaminad-hydrogenatedsoybeanoila2m91m918c 
+* entry[+].fullUrl = "Ingredient/5c1c8b45-b3b8-4fa3-9386-9646170c7313"
+* entry[=].resource = ingredient-for-calciovitaminad-hydrogenatedsoybeanoil 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/4920b08e-c367-466f-a765-5236ae73a871"
+* entry[+].fullUrl = "Ingredient/ee3ea51e-79df-4f79-86a4-f21442f26e2f"
 * entry[=].resource = ingredient-for-calciovitaminad-anhydrouscitricacid 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/b7276435-6762-427d-a14b-d1bf944a1622"
+* entry[+].fullUrl = "Ingredient/0d1d1eca-1551-40ea-a833-fc6495fc1515"
 * entry[=].resource = ingredient-for-calciovitaminad-sodiumbicarbonate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/53bdcb58-2ba0-4460-9d89-491fd707bc32"
+* entry[+].fullUrl = "Ingredient/44d1b15f-39c0-4337-84b5-65916adbb118"
 * entry[=].resource = ingredient-for-calciovitaminad-povidone 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/1efdb2fe-d2b4-4497-ae83-d8ae1762e953"
+* entry[+].fullUrl = "Ingredient/8f5bf812-f5fc-4d60-92d1-25bb44d7e879"
 * entry[=].resource = ingredient-for-calciovitaminad-saccharinsodium 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/f79c42fc-a632-416c-a27e-4213c74b8e69"
+* entry[+].fullUrl = "Ingredient/47d22846-1001-4acb-8d84-c5dabd43bcd0"
 * entry[=].resource = ingredient-for-calciovitaminad-sodiumcyclamate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/c3c2c99b-84a7-4b78-9ff1-b3d02d0a7ba6"
+* entry[+].fullUrl = "Ingredient/6a0c1ac2-05b2-4fee-ba22-62fee66e966f"
 * entry[=].resource = ingredient-for-calciovitaminad-macrogol6000 
  
 
 // Substance
    
-* entry[+].fullUrl = "SubstanceDefinition/29b21cbe-f31d-48c5-b8ed-d903c893e93e"
+* entry[+].fullUrl = "SubstanceDefinition/3b35de10-7a2e-4d14-a964-8a4c3b09a904"
 * entry[=].resource = substance-calciumcarbonate 
  
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/d5550238-b072-4092-abb7-eb96db8185a7"
+* entry[+].fullUrl = "AdministrableProductDefinition/a4f57a11-0cb8-4100-8cfd-e3289992699d"
 * entry[=].resource = ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/d5de6902-0ce1-4d42-95c8-e98805fd45af"
+* entry[+].fullUrl = "RegulatedAuthorization/3ca16aa2-422e-4260-bd8d-5740419ec663"
 * entry[=].resource = authorizationcalciovitaminad3rovi1000mg880uicomprimidosefervescentes 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/5ebe6ed2-7162-4da8-b749-43a7e48300b5"
+* entry[+].fullUrl = "Organization/55b12cfb-4dae-43d8-abf8-3279df2ee2e1"
 * entry[=].resource = org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/b01ef0bb-cc7d-43b3-918e-736462612c4d"
+* entry[+].fullUrl = "PackagedProductDefinition/79fa11d3-3c16-41ec-a243-66cb2d79e9be"
 * entry[=].resource = ppd-calciovitaminad3rovi1000mg880uicomprimidosefervescentes 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/091df3cf-4635-4094-9bf6-61a12711f332"
+* entry[+].fullUrl = "MedicinalProductDefinition/094c056c-27bd-47ff-a6b9-b20fd6ca8040"
 * entry[=].resource = mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/fa3ec927-1272-478f-adbb-04257b1d3afe"
+* entry[+].fullUrl = "ManufacturedItemDefinition/a7936f01-bf5f-4beb-92f1-ac451062a758"
 * entry[=].resource = mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes 
  
 

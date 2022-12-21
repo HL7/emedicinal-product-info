@@ -3,7 +3,7 @@ Instance: substance-paracetamol
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "paracetamol"
 Usage: #example
-* id = "6119ecc1-c93c-472f-816c-068040889d75" 
+* id = "e78cbb33-8c78-4f46-88a9-1f0df761f88e" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "362O9ITL9D"
@@ -13,7 +13,7 @@ Usage: #example
 
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1 "Validated (UNII)"
 
-* description = "nan"
+//* description = "nan"
 
 
  // Reference to Organization: MAH

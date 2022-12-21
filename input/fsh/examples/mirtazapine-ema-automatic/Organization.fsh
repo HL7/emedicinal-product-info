@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "LABORATORIOS CINFA, S.A. as Marketing authorisation holder"
 Description: "LABORATORIOS CINFA, S.A. as Marketing authorisation holder"
 Usage: #example
-* id = "6dd8c3dd-a60f-4f90-955f-392d1540e0ea" 
+* id = "90f4c2e6-b927-4995-9aa0-3e70d5e96132" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100003791"
 * identifier.use = #official

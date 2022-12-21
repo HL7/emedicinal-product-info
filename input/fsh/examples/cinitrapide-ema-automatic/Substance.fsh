@@ -3,7 +3,7 @@ Instance: substance-cinitapride
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "CINITAPRIDE"
 Usage: #example
-* id = "c41f534e-0522-4eae-b68f-a12920386086" 
+* id = "8bc132b8-063e-42d9-9c9c-1b5443c728f7" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "R8I97I2L24"
@@ -13,7 +13,7 @@ Usage: #example
 
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1 "Validated (UNII)"
 
-* description = "nan"
+//* description = "nan"
 
 
  // Reference to Organization: MAH

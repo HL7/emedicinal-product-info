@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Suliqua 100 units/ml + 50 micrograms/ml solution f
 Usage: #example
 
 
-* id = "5d78ea38-eec3-41d7-9a6a-a36d598ace02" 
+* id = "3c5f668f-e469-4c59-b52e-b4daaee58642" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 

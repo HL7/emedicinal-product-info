@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "c2d9e919-9686-42b1-80b9-d46552f583c5" 
+* id = "b3a36db8-057f-4bdb-b186-056afb269b74" 
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
@@ -33,7 +33,7 @@ Title: "Ingredient-excipient POVIDONE, UNSPECIFIED"
 Description: "POVIDONE, UNSPECIFIED"
 Usage: #example
 
-* id = "17746812-43ae-437e-90ee-dc32e22fa2fc" 
+* id = "d2a16c0e-e7c6-429c-879e-cdf3d2aaff2d" 
 
 * identifier.system = $ginas
 * identifier.value = "FZ989GH94E"
@@ -61,7 +61,7 @@ Title: "Ingredient-active CINITAPRIDE"
 Description: "CINITAPRIDE"
 Usage: #example
 
-* id = "3789fa03-a6f0-4b99-a640-309d80106c56" 
+* id = "53c44a0b-0920-4eeb-b49d-b38e2a8e098b" 
 
 * identifier.system = $ginas
 * identifier.value = "R8I97I2L24"
@@ -93,7 +93,7 @@ Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
 Description: "SILICA, COLLOIDAL ANHYDROUS"
 Usage: #example
 
-* id = "313ef4a9-ed11-47c3-beb3-68e3becec446" 
+* id = "362909c1-ebaf-47f9-8aae-b672d2f9d3c3" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -121,7 +121,7 @@ Title: "Ingredient-excipient STARCH, POTATO"
 Description: "STARCH, POTATO"
 Usage: #example
 
-* id = "d4c634c6-8c35-4ae0-8929-28d8648ee719" 
+* id = "b3f633ea-65d4-4c5d-9f5a-05db980bf39e" 
 
 * identifier.system = $ginas
 * identifier.value = "8I089SAH3T"
@@ -149,7 +149,7 @@ Title: "Ingredient-excipient STARCH, CORN"
 Description: "STARCH, CORN"
 Usage: #example
 
-* id = "af53712a-f122-41d3-a29c-6c96be1765f5" 
+* id = "336f7b1a-324b-41e6-a486-0924183e3a0c" 
 
 * identifier.system = $ginas
 * identifier.value = "O8232NY3SJ"

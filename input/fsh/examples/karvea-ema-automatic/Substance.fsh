@@ -3,7 +3,7 @@ Instance: substance-irbesartan
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "irbesartan"
 Usage: #example
-* id = "8bc59d0d-6f16-40cc-941f-c8098a7d0438" 
+* id = "561c91cd-a107-4a94-a9fd-5499295de87b" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "J0E2756Z7N"
@@ -13,7 +13,7 @@ Usage: #example
 
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1 "Validated (UNII)"
 
-* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
+//* description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
 * description = "White to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side."
 
  // Reference to Organization: MAH

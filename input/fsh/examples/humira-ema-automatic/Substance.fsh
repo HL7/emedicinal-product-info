@@ -3,7 +3,7 @@ Instance: substance-adalimumab
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "ADALIMUMAB"
 Usage: #example
-* id = "d0321a71-fce9-45be-90ed-f72ab8399969" 
+* id = "53016b15-c203-414f-87c2-5be9b521642b" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "FYS6T7F842"
@@ -13,7 +13,7 @@ Usage: #example
 
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1 "Validated (UNII)"
 
-* description = "nan"
+//* description = "nan"
 
 
  // Reference to Organization: MAH

@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 DOLOCATIL 1 g tablets"
 Usage: #example
 
 
-* id = "aeddca62-fe92-46b0-bf8f-5434776372d6" 
+* id = "2f227b0a-e19c-4bfb-89e6-25e99105f6a6" 
 * identifier.system = $spor-prod
 * identifier.value = "cc"
 

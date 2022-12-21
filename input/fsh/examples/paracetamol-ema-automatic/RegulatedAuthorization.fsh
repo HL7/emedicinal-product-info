@@ -6,7 +6,7 @@ Description: "Regulated Authorization for DOLOCATIL 1 g tablets "
 Usage: #example
 
 
-* id = "5104de49-6b9f-43a6-810a-3dc19514819e" 
+* id = "52d80d0c-4857-4861-a244-e0ac514938ac" 
 
 * identifier.system = $spor-prod
 * identifier.value = "72.741"

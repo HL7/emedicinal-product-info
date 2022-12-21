@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Glycerol"
 Description: "Glycerol"
 Usage: #example
 
-* id = "aad82e53-7081-4ec7-8096-1bc040c1d808" 
+* id = "f18cdb98-9bdc-4a8a-8e06-05080b562066" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
@@ -35,7 +35,7 @@ Title: "Ingredient-excipient Hydrochloric acid"
 Description: "Hydrochloric acid"
 Usage: #example
 
-* id = "d6d618e1-d8ed-4079-a9b5-8910787a31aa" 
+* id = "11f16088-b402-4044-889d-880f6bbc552c" 
 
 * identifier.system = $ginas
 * identifier.value = "QTT17582CB"
@@ -65,7 +65,7 @@ Title: "Ingredient-excipient Sodium Hydroxide"
 Description: "Sodium Hydroxide"
 Usage: #example
 
-* id = "d92435f8-9e46-4f47-af4d-3d2b074fb974" 
+* id = "d9a1da63-dc2b-409d-8ce1-5de1e2a7248d" 
 
 * identifier.system = $ginas
 * identifier.value = "55X04QC32I"
@@ -95,7 +95,7 @@ Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
 Description: "STERILE WATER FOR INJECTION"
 Usage: #example
 
-* id = "6369e5c7-87f5-4dd8-bd21-83b16d2ad613" 
+* id = "aace9a3c-7eb5-431d-9996-e3e380322333" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -125,7 +125,7 @@ Title: "Ingredient-active Insulin Lispro"
 Description: "Insulin Lispro"
 Usage: #example
 
-* id = "a64fd38c-210c-4026-a862-9e78f6437f88" 
+* id = "94ab72e8-e644-4b93-bd2b-76efe0829949" 
 
 * identifier.system = $ginas
 * identifier.value = "GFX7QIS1II"
@@ -159,7 +159,7 @@ Title: "Ingredient-excipient Zinc Oxide"
 Description: "Zinc Oxide"
 Usage: #example
 
-* id = "8509f125-247c-415d-bbd0-4653fbcb4b34" 
+* id = "a850eb8e-f014-497b-9018-069834e5c00f" 
 
 * identifier.system = $ginas
 * identifier.value = "SOI2LOH54Z"
@@ -189,7 +189,7 @@ Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
 Usage: #example
 
-* id = "b445b1f3-600f-4ab1-804d-d27bdb1ac888" 
+* id = "fb5a6d09-ead0-42eb-bec0-b333176eee78" 
 
 * identifier.system = $ginas
 * identifier.value = "GGO4Y809LO"
@@ -219,7 +219,7 @@ Title: "Ingredient-excipient Trometamol"
 Description: "Trometamol"
 Usage: #example
 
-* id = "9a0ecb7a-322f-40c7-a419-c32bae02020a" 
+* id = "68d04a97-d397-4343-b4c2-cdb5705caf81" 
 
 * identifier.system = $ginas
 * identifier.value = "023C2WHX2V"

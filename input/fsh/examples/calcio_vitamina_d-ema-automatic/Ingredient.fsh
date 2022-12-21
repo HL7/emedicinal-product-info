@@ -5,7 +5,7 @@ Title: "Ingredient-active Calcium Carbonate"
 Description: "Calcium Carbonate"
 Usage: #example
 
-* id = "105d0ac1-92f5-4c10-b18d-5ce3167e7402" 
+* id = "85266ef6-5385-409c-8c52-702e8993df5b" 
 
 * identifier.system = $ginas
 * identifier.value = "H0G9379FGK"
@@ -37,7 +37,7 @@ Title: "Ingredient-active cholecalciferol"
 Description: "cholecalciferol"
 Usage: #example
 
-* id = "b4d13234-20be-40a2-8c04-f29493c37772" 
+* id = "e0ab6766-b2b5-4352-88fb-4e095569a79b" 
 
 * identifier.system = $ginas
 * identifier.value = "1C6V77QF41"
@@ -69,7 +69,7 @@ Title: "Ingredient-active Sodium"
 Description: "Sodium"
 Usage: #example
 
-* id = "780e0827-c2ae-495c-8ee5-04cc1ef8f416" 
+* id = "2e086134-3fae-49fc-8add-0a13bcd426cb" 
 
 * identifier.system = $ginas
 * identifier.value = "9NEZ333N27"
@@ -101,7 +101,7 @@ Title: "Ingredient-active lactose monohydrate"
 Description: "lactose monohydrate"
 Usage: #example
 
-* id = "3b06d40a-1d30-4645-8522-b5c59feee71b" 
+* id = "6fb49bd8-8358-4d48-bbab-4aaf710df463" 
 
 * identifier.system = $ginas
 * identifier.value = "EWQ57Q8I5X"
@@ -133,7 +133,7 @@ Title: "Ingredient-active sucrose"
 Description: "sucrose"
 Usage: #example
 
-* id = "d98befcb-622b-4e7c-8208-7822ba2b9049" 
+* id = "b1ec699c-c015-4541-8976-d120f40b3350" 
 
 * identifier.system = $ginas
 * identifier.value = "C151H8M554"
@@ -159,23 +159,23 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
-Instance: ingredient-for-calciovitaminad-hydrogenatedsoybeanoila2m91m918c
+Instance: ingredient-for-calciovitaminad-hydrogenatedsoybeanoil
 InstanceOf: IngredientUvEpi
-Title: "Ingredient-active hydrogenated soybean oilA2M91M918C "
-Description: "hydrogenated soybean oilA2M91M918C "
+Title: "Ingredient-active hydrogenated soybean oil"
+Description: "hydrogenated soybean oil"
 Usage: #example
 
-* id = "4bac5ab1-44f0-47b3-a34f-8d33b0677377" 
+* id = "5c1c8b45-b3b8-4fa3-9386-9646170c7313" 
 
 * identifier.system = $ginas
-* identifier.value = "nan"
+* identifier.value = "A2M91M918C "
 * identifier.use = #official
 
 * role = $spor-rms#72072 "active"
 
 * status = #active
 
-* substance.code.concept.coding = $ginas#nan "hydrogenated soybean oilA2M91M918C "
+* substance.code.concept.coding = $ginas#A2M91M918C  "hydrogenated soybean oil"
 
 
 * substance.strength.presentationQuantity = 0.73 'mg'
@@ -197,7 +197,7 @@ Title: "Ingredient-excipient Anhydrous citric acid"
 Description: "Anhydrous citric acid"
 Usage: #example
 
-* id = "4920b08e-c367-466f-a765-5236ae73a871" 
+* id = "ee3ea51e-79df-4f79-86a4-f21442f26e2f" 
 
 * identifier.system = $ginas
 * identifier.value = "XF417D3PSL"
@@ -225,7 +225,7 @@ Title: "Ingredient-excipient sodium bicarbonate"
 Description: "sodium bicarbonate"
 Usage: #example
 
-* id = "b7276435-6762-427d-a14b-d1bf944a1622" 
+* id = "0d1d1eca-1551-40ea-a833-fc6495fc1515" 
 
 * identifier.system = $ginas
 * identifier.value = "8MDF5V39QO"
@@ -253,7 +253,7 @@ Title: "Ingredient-excipient povidone"
 Description: "povidone"
 Usage: #example
 
-* id = "53bdcb58-2ba0-4460-9d89-491fd707bc32" 
+* id = "44d1b15f-39c0-4337-84b5-65916adbb118" 
 
 * identifier.system = $ginas
 * identifier.value = "FZ989GH94E"
@@ -281,7 +281,7 @@ Title: "Ingredient-excipient saccharin sodium"
 Description: "saccharin sodium"
 Usage: #example
 
-* id = "1efdb2fe-d2b4-4497-ae83-d8ae1762e953" 
+* id = "8f5bf812-f5fc-4d60-92d1-25bb44d7e879" 
 
 * identifier.system = $ginas
 * identifier.value = "SB8ZUX40TY"
@@ -309,7 +309,7 @@ Title: "Ingredient-excipient sodium cyclamate"
 Description: "sodium cyclamate"
 Usage: #example
 
-* id = "f79c42fc-a632-416c-a27e-4213c74b8e69" 
+* id = "47d22846-1001-4acb-8d84-c5dabd43bcd0" 
 
 * identifier.system = $ginas
 * identifier.value = "1I6F42RME1"
@@ -337,7 +337,7 @@ Title: "Ingredient-excipient macrogol 6000"
 Description: "macrogol 6000"
 Usage: #example
 
-* id = "c3c2c99b-84a7-4b78-9ff1-b3d02d0a7ba6" 
+* id = "6a0c1ac2-05b2-4fee-ba22-62fee66e966f" 
 
 * identifier.system = $ginas
 * identifier.value = "30IQX730WE"

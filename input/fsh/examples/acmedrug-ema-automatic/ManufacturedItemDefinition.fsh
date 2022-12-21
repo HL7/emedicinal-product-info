@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item acmedrugman"
 Description: "acmedrugman"
 Usage: #example
-* id = "8a80ae06-7820-4ae3-87fc-996097c3c52c" 
+* id = "df6f1fc9-98ee-4ed7-96fa-8d43e1a1d8c5" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/96/007/035"

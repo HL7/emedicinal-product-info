@@ -5,14 +5,14 @@ Title: "ePI document Bundle for Karvea 75 mg Package Leaflet"
 Description: "Bundle for Karvea 75 mg Package Leaflet ePI document"
 Usage: #example
 
-* id = "3c41afb5-2f2b-47c2-a44c-b981c51c1e6b" 
+* id = "c6a49dce-3b9d-46a3-bb43-86daccddecad" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2022-12-21T14:58:02Z"
+* timestamp = "2022-12-21T16:16:31Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/dd7fbe89-5f1e-4249-9b7a-1e9516626d35"
+* entry[0].fullUrl = "Composition/27c23ed5-551a-4d68-aa74-60993a728973"
 * entry[0].resource = compositionKarvea
 
  
@@ -39,58 +39,58 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/8a100868-eda9-4025-87cb-dfff69e335fd"
+* entry[+].fullUrl = "Ingredient/ca626f81-c251-4b1a-8354-1ec449a7236c"
 * entry[=].resource = ingredient-for-karvea-hypromellose 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/bd77687d-abbc-489d-8fc7-7911b4087044"
+* entry[+].fullUrl = "Ingredient/a340f876-dfb2-49b7-9734-df0be629739a"
 * entry[=].resource = ingredient-for-karvea-macrogol3000 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/73debec9-ad84-43ef-8861-a4e69672669b"
+* entry[+].fullUrl = "Ingredient/7ec26d13-1d0b-463e-bd6f-fe41733d451b"
 * entry[=].resource = ingredient-for-karvea-lactosemonohydrate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/5ff2e084-aabc-4137-9bf1-bd00170b9c93"
+* entry[+].fullUrl = "Ingredient/75ca0bf6-4c4a-4b7e-92f3-cf54b17b1c5d"
 * entry[=].resource = ingredient-for-karvea-silicondioxide 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/7e11e812-9bba-458f-93dc-59858c5a8e22"
+* entry[+].fullUrl = "Ingredient/ad724572-92b5-48c0-b0a1-c5c58c71db28"
 * entry[=].resource = ingredient-for-karvea-titaniumdioxide 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/19ee147e-83ee-402e-b5b2-b4bceee0c9ef"
+* entry[+].fullUrl = "Ingredient/0d6debc6-768f-4408-9a7a-54bb15f3d2cc"
 * entry[=].resource = ingredient-for-karvea-irbesartan 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/6c85a010-e8db-422c-8c2d-733286096ac8"
+* entry[+].fullUrl = "Ingredient/456b42e8-b240-4f8e-ac7b-998e3db5c1fc"
 * entry[=].resource = ingredient-for-karvea-croscarmellosesodium 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/95bbfdd8-3c4e-425b-bc63-4b81c2d45b27"
+* entry[+].fullUrl = "Ingredient/a87b6dd5-63f5-4935-bcd6-bbce43967208"
 * entry[=].resource = ingredient-for-karvea-microcrystallinecellulose 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/08541ea9-c050-4108-b22b-5a85b90ac999"
+* entry[+].fullUrl = "Ingredient/d673d112-2a37-4b30-b2b4-3fbf2e4601e9"
 * entry[=].resource = ingredient-for-karvea-magnesiumstearate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/0f9cde82-4460-4d6b-bfb7-53f39f49679f"
+* entry[+].fullUrl = "Ingredient/236a3c7d-815e-456c-9dfb-8b4f3c74db73"
 * entry[=].resource = ingredient-for-karvea-carnaubawax 
  
 
 // Substance
    
-* entry[+].fullUrl = "SubstanceDefinition/8bc59d0d-6f16-40cc-941f-c8098a7d0438"
+* entry[+].fullUrl = "SubstanceDefinition/561c91cd-a107-4a94-a9fd-5499295de87b"
 * entry[=].resource = substance-irbesartan 
  
 
@@ -102,31 +102,31 @@ Usage: #example
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/39d1e4e1-995d-4bcd-8557-3ebb2cc4ec8c"
+* entry[+].fullUrl = "RegulatedAuthorization/da5f0f13-fa8b-4bae-80f0-079bdbff49f0"
 * entry[=].resource = authorizationkarvea75mgtablet 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/9b4caa46-51ab-4931-b51c-e28bd93d8fac"
+* entry[+].fullUrl = "Organization/597c80a0-8e3f-42d1-a253-70c29ed85ba7"
 * entry[=].resource = org-marketingauthorisationholder-sanofiaventisgroupe-karvea 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/2d23c1cf-8862-4282-9c44-9a1365d5d508"
+* entry[+].fullUrl = "PackagedProductDefinition/207acbe0-fa9f-4abb-877a-898e217be558"
 * entry[=].resource = ppd-karvea75mgtabletblisterx28tablets 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/e9e8505b-5f85-413d-933a-397ea01a5e73"
+* entry[+].fullUrl = "MedicinalProductDefinition/3ef1016c-e13a-426d-be3c-3e0af73ebb05"
 * entry[=].resource = mpKarvea75mgtabletblisterx28 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/2e87e789-2075-4d24-b9aa-161c904415be"
+* entry[+].fullUrl = "ManufacturedItemDefinition/a0b07754-10c3-4b1b-b437-11e3b8e02747"
 * entry[=].resource = mid-karvea75mgtablet 
  
 

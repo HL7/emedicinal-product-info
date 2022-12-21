@@ -5,14 +5,14 @@ Title: "ePI document Bundle for humira Package Leaflet"
 Description: "Bundle for humira Package Leaflet ePI document"
 Usage: #example
 
-* id = "4b52f0c2-c2e0-4c4b-af17-211f7214f3ce" 
+* id = "f18fb0e7-2bbb-4590-9959-3c5e57cc1296" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "nan"
 * type = #document
-* timestamp = "2022-12-21T14:58:02Z"
+* timestamp = "2022-12-21T16:16:31Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/84ef61ac-2045-4008-99ff-5a8fb68d9f41"
+* entry[0].fullUrl = "Composition/a84cce44-b045-49bd-9988-b82dba0bdf99"
 * entry[0].resource = compositionhumira
 
  
@@ -24,89 +24,89 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/83dc182a-2845-4e30-a356-9bf0e91fbb05"
+* entry[+].fullUrl = "Ingredient/3ed73f46-3872-418b-9c79-cb669d3964e2"
 * entry[=].resource = ingredient-for-humira-mannitol 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/471510e9-ac7e-4cd1-be69-150fdd87a3b7"
+* entry[+].fullUrl = "Ingredient/bd88e626-db3d-41b9-87ab-9ee01fc97708"
 * entry[=].resource = ingredient-for-humira-polysorbate80 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/8a669943-33f8-402a-94e7-14972198ddb9"
+* entry[+].fullUrl = "Ingredient/badc1242-cce7-4370-ab63-480689ecb321"
 * entry[=].resource = ingredient-for-humira-adalimumab 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/a50ad31a-a57d-4c63-9d67-7cb48634052f"
+* entry[+].fullUrl = "Ingredient/f8b854d4-94ed-4b8a-b238-dfe219f947e8"
 * entry[=].resource = ingredient-for-humira-sterilewaterforinjection 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/56cb5ace-32ba-415c-83be-916353a1a24c"
+* entry[+].fullUrl = "Ingredient/90f09bad-b077-4741-a8d9-c897a7b09b6a"
 * entry[=].resource = ingredient-for-humira-citricacidmonohydrate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/c12fd5f7-e1a3-4d6a-a488-1c4b9531fca4"
+* entry[+].fullUrl = "Ingredient/b122e1c0-2a9a-4a91-bf2d-ad89ad821980"
 * entry[=].resource = ingredient-for-humira-sodiumcitrateunspecifiedform 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/5ea84332-705b-4fe2-9ea5-3e4fee75f7f9"
+* entry[+].fullUrl = "Ingredient/d31e32cd-688c-4e68-9c59-82d66e3af8b1"
 * entry[=].resource = ingredient-for-humira-sodiumphosphatemonobasicdihydrate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/90d9c786-b3a9-40a1-b1cd-4638ca2dbced"
+* entry[+].fullUrl = "Ingredient/a08d7cb1-84c0-46ff-967e-f5bd7bdb49f8"
 * entry[=].resource = ingredient-for-humira-sodiumphosphatedibasicdihydrate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/c755aa89-0071-4e45-9828-0d7455f716f0"
+* entry[+].fullUrl = "Ingredient/58474c8c-ab77-488e-80f5-cd9fea73913d"
 * entry[=].resource = ingredient-for-humira-sodiumchloride 
  
 
 // Substance
    
-* entry[+].fullUrl = "SubstanceDefinition/d0321a71-fce9-45be-90ed-f72ab8399969"
+* entry[+].fullUrl = "SubstanceDefinition/53016b15-c203-414f-87c2-5be9b521642b"
 * entry[=].resource = substance-adalimumab 
  
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/e9373bed-7b73-4ff5-95e8-dd77c417f0fe"
+* entry[+].fullUrl = "AdministrableProductDefinition/04695093-da2f-491f-a568-b7899cc574d1"
 * entry[=].resource = ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/82c835a9-711a-4d2c-a9af-7e7cb465d920"
+* entry[+].fullUrl = "RegulatedAuthorization/abbcc5c3-efc8-48bb-a86e-ba4fc1b4daf9"
 * entry[=].resource = authorizationhumira20mgsolutionforinjectioninprefilledsyringe 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/0832fe5e-7a92-4bfe-981f-485e089de6d7"
+* entry[+].fullUrl = "Organization/f344b32a-58f5-46a3-8898-f1099ff7d9b8"
 * entry[=].resource = org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/263cdeb7-02d6-4822-bcb1-3e869649387a"
+* entry[+].fullUrl = "PackagedProductDefinition/b7b3c00d-32ea-49e5-b15d-edb7cd0ce622"
 * entry[=].resource = ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/249e972f-cffb-4878-bc98-f1b619fcb528"
+* entry[+].fullUrl = "MedicinalProductDefinition/cdfb1b2c-7b2f-4ab9-bfe4-e92a263aa23f"
 * entry[=].resource = mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/7bdc1153-37b8-486f-8886-a9d4f101f125"
+* entry[+].fullUrl = "ManufacturedItemDefinition/1eac8896-5598-4ec8-89b6-1e8a30252d78"
 * entry[=].resource = mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass 
  
 

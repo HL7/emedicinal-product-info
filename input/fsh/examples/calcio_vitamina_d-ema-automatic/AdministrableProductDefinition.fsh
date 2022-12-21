@@ -5,7 +5,7 @@ Title: "Administrable product CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS
 Description: "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
 Usage: #example
 
-* id = "d5550238-b072-4092-abb7-eb96db8185a7" 
+* id = "a4f57a11-0cb8-4100-8cfd-e3289992699d" 
 * identifier.system = $phpid
 * identifier.value = "xx" 
 

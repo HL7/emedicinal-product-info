@@ -5,14 +5,14 @@ Title: "ePI document Bundle for acmedrug Package Leaflet"
 Description: "Bundle for acmedrug Package Leaflet ePI document"
 Usage: #example
 
-* id = "c54eed34-5898-45c3-9d65-d8846bfc3204" 
+* id = "de4b6529-78cb-41cf-9927-d18f3e85a0a0" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2022-12-21T14:58:02Z"
+* timestamp = "2022-12-21T16:16:31Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/5e661d94-2ee6-4bc7-abdb-7ff85d4b386e"
+* entry[0].fullUrl = "Composition/72f817a1-5d74-461d-a32f-318826a33ea3"
 * entry[0].resource = compositionacmedrug
 
  
@@ -24,59 +24,59 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/c8efb579-0af3-43a0-ab94-1e83214df199"
+* entry[+].fullUrl = "Ingredient/9c7c50e3-da95-40d0-9306-b015bb4348cd"
 * entry[=].resource = ingredient-for-acmedrug-acmedruging3 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/15373d68-a339-4a4e-a028-f32239c51336"
+* entry[+].fullUrl = "Ingredient/44ef399f-b8fe-49a3-a9de-a969df3a3bde"
 * entry[=].resource = ingredient-for-acmedrug-acmedruging2 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/cf7ba7c4-d47d-4076-b0f2-4586bd2c1e01"
+* entry[+].fullUrl = "Ingredient/e9d37278-9710-49ab-beaa-5030847be97c"
 * entry[=].resource = ingredient-for-acmedrug-acmedruging1 
  
 
 // Substance
    
-* entry[+].fullUrl = "SubstanceDefinition/45dbeaea-74ea-4c4f-b51d-0aa543f6471b"
+* entry[+].fullUrl = "SubstanceDefinition/e030d094-f124-47b4-bf8e-3e16533947d8"
 * entry[=].resource = substance-acmesub 
  
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/bd350f96-6eae-42d0-ad53-25189168df15"
+* entry[+].fullUrl = "AdministrableProductDefinition/7b59f1bf-5f23-4a4d-bec5-5c73979f7905"
 * entry[=].resource = ap-acmedrug 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/94dd19da-6256-4365-ace6-3bcdbf75a76b"
+* entry[+].fullUrl = "RegulatedAuthorization/67f4d272-ebfc-4253-80ed-4cdea21f76fb"
 * entry[=].resource = authorizationacmedrug 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/ace9e45c-ce7c-4a6f-a375-43094a233eb5"
+* entry[+].fullUrl = "Organization/7f5b79d7-9ec8-4b46-a9ab-79fe27f24aaf"
 * entry[=].resource = org-marketingauthorisationholder-acmeindustry-acmedrug 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/dfbad9a6-90fd-4da9-807e-ab64fba772f2"
+* entry[+].fullUrl = "PackagedProductDefinition/c2f900ce-aba6-45d8-8c30-ad4f4f53a830"
 * entry[=].resource = ppd-acmedrugblistertabs 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/5b750537-995f-4ebd-aebf-034a6f3ae376"
+* entry[+].fullUrl = "MedicinalProductDefinition/97017a42-ee70-4af0-a33a-652bf861552f"
 * entry[=].resource = mpacmedrugman 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/8a80ae06-7820-4ae3-87fc-996097c3c52c"
+* entry[+].fullUrl = "ManufacturedItemDefinition/df6f1fc9-98ee-4ed7-96fa-8d43e1a1d8c5"
 * entry[=].resource = mid-acmedrugman 
  
 

@@ -6,7 +6,7 @@ Description: "Regulated Authorization for adalimumab"
 Usage: #example
 
 
-* id = "b0d302df-0809-45f2-9046-c9c6fe23ce9a" 
+* id = "778aa1de-69d4-417c-8933-78ffce374016" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
