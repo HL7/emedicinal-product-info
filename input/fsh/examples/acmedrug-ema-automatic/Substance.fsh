@@ -3,7 +3,7 @@ Instance: substance-acmesub
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "acmesub"
 Usage: #example
-* id = "c12f939f-5061-43f3-8b40-28a59664f35a" 
+* id = "45dbeaea-74ea-4c4f-b51d-0aa543f6471b" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "J0E2756Z7N"

@@ -5,7 +5,7 @@ Title: "Composition for MIRTAZAPINA CINFA 30 mg Coated Tablet Package Leaflet"
 Description:  "Composition for MIRTAZAPINA CINFA 30 mg Coated Tablet Package Leaflet"
 Usage: #example
 
-* id = "b05b7f5d-a1d8-4965-97a4-67808784bc56" 
+* id = "ea7b7fe3-8e08-441f-ab77-b5d95b18bffe" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,62 +30,62 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = db664e32-e776-4750-b2d8-0bf4a456becb
+//  * entry[+].fullUrl = 2b192918-e9b5-440c-bf1e-e75a5b78aac8
   * entry[+] = Reference(ingredient-for-mirtazapine-magnesiumstearate) 
 
   // Ingredient
-//  * entry[+].fullUrl = be462665-dedb-452a-b221-d1d6f3983bd1
+//  * entry[+].fullUrl = e4ac3b9a-eccc-4125-b5c7-def45b470def
   * entry[+] = Reference(ingredient-for-mirtazapine-lactosemonohydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 34ffeda4-4306-4043-aff7-d74ea7cf6f89
+//  * entry[+].fullUrl = 8b7e3fd6-2f9e-4ea2-b936-d9e9f2ba9d2d
   * entry[+] = Reference(ingredient-for-mirtazapine-mirtazapine) 
 
   // Ingredient
-//  * entry[+].fullUrl = 2a341c9c-8db7-40d1-9c32-fcbb10b0dd3d
+//  * entry[+].fullUrl = a97f6325-e13a-4139-ba25-b124c4d37f74
   * entry[+] = Reference(ingredient-for-mirtazapine-hydroxypropylcelluloseunspecified) 
 
   // Ingredient
-//  * entry[+].fullUrl = ead5c392-9d8f-4111-b43c-6d46b0d9265f
+//  * entry[+].fullUrl = ead8cb78-9b39-4f74-a4e4-8b88ea2a5cca
   * entry[+] = Reference(ingredient-for-mirtazapine-silicacolloidalanhydrous) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7909626e-02bc-4f29-a431-f5259b588eaf
+//  * entry[+].fullUrl = ebd2a300-8a74-4f20-b9dd-20d1281a3f25
   * entry[+] = Reference(ingredient-for-mirtazapine-cornstarch) 
  
 
   // Substance
-//  * entry[+].fullUrl = e560931c-4214-4e73-9724-79ddafc96117
+//  * entry[+].fullUrl = 2e8a3861-74c8-46b2-a26d-b0dfa6fe09b0
   * entry[+] = Reference(substance-mirtazapine) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 024ebe10-692d-4fd3-b40e-4b112990c67e
+//  * entry[+].fullUrl = a9084b64-cfb9-4e6c-a6f0-5c653e1e06b4
   * entry[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = c477c8b3-3418-4619-a620-3fba6d51d430
+//  * entry[+].fullUrl = 34053745-ef43-45ce-ae3c-db4d9624dbc8
   * entry[+] = Reference(authorizationmirtazapinacinfa30mgcoatedtablet) 
  
 
   // Organization
-//  * entry[+].fullUrl = d298ea2e-3daa-4d96-94f9-14101207bf85
+//  * entry[+].fullUrl = 6dd8c3dd-a60f-4f90-955f-392d1540e0ea
   * entry[+] = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = b3340906-1d1e-4a28-8a33-8955624e2860
+//  * entry[+].fullUrl = 328372e5-d77d-4065-b9ea-8a84c307b22a
   * entry[+] = Reference(ppd-mirtazapinacinfa30mgcoatedtablet30tablets) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = f5505418-c7d5-435f-9e55-ac5f03fc6f7f
+//  * entry[+].fullUrl = 4f9f6932-f57a-4815-884b-6c193b7e37c7
   * entry[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 71af0163-c45f-42d2-ad69-2ab9f1a1df98
+//  * entry[+].fullUrl = 0f3127b1-9536-4c99-ada8-f404bfd59808
   * entry[+] = Reference(mid-mirtazapinacinfa30mgcoatedtablet) 
    
 

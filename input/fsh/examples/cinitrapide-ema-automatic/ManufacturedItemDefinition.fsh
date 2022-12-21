@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item cinitrapide"
 Description: "cinitrapide"
 Usage: #example
-* id = "59c19c68-5b5f-44eb-ac5a-90bafae189ba" 
+* id = "6ee0effd-8dc0-4fb2-abc2-fa48d327dfb0" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "x"

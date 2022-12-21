@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item karvea 75 mg tablet"
 Description: "karvea 75 mg tablet"
 Usage: #example
-* id = "857329cb-801a-403e-bcec-d7b17d2c8b1f" 
+* id = "2e87e789-2075-4d24-b9aa-161c904415be" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "EU/1/96/007/035"

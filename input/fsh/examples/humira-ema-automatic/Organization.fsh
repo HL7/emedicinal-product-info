@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "AbbVie Deutschland GmbH Co. KG as Marketing authorisation holder"
 Description: "AbbVie Deutschland GmbH Co. KG as Marketing authorisation holder"
 Usage: #example
-* id = "b71c0e27-4515-4eb1-b9f3-92c3ef3c6961" 
+* id = "0832fe5e-7a92-4bfe-981f-485e089de6d7" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100008684"
 * identifier.use = #official

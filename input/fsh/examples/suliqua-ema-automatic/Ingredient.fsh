@@ -5,7 +5,7 @@ Title: "Ingredient-active Insulin glargine"
 Description: "Insulin glargine"
 Usage: #example
 
-* id = "46aea244-d651-496c-8b10-a8d389e7df83" 
+* id = "7466bfe5-274e-4676-9679-990d68e906e5" 
 
 * identifier.system = $ginas
 * identifier.value = "2ZM8CX04RZ"
@@ -40,7 +40,7 @@ Title: "Ingredient-active Lixisenatide"
 Description: "Lixisenatide"
 Usage: #example
 
-* id = "244effda-fba0-4fed-8e77-52cac0136f22" 
+* id = "90756eae-5e2e-46b1-a448-43584e7d7b36" 
 
 * identifier.system = $ginas
 * identifier.value = "74O62BB01U"
@@ -75,7 +75,7 @@ Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
 Description: "GLYCEROL 85% [WHO-DD]"
 Usage: #example
 
-* id = "f42b037f-07b3-4322-96fa-06083cc41716" 
+* id = "a650699a-70ba-419f-a833-fd00745592fc" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
@@ -106,7 +106,7 @@ Title: "Ingredient-excipient Methionine"
 Description: "Methionine"
 Usage: #example
 
-* id = "857e40a2-07b8-4a12-a6d0-cb37a447d012" 
+* id = "c3523833-f7f9-49f5-8436-88c2e73fcc95" 
 
 * identifier.system = $ginas
 * identifier.value = "AE28F7PNPL"
@@ -137,7 +137,7 @@ Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
 Usage: #example
 
-* id = "665a56b3-ecb0-42a2-a979-d6297b9dccdc" 
+* id = "46b1d753-0e86-4a73-be0c-3f2be6c834d3" 
 
 * identifier.system = $ginas
 * identifier.value = "GGO4Y809LO"
@@ -168,7 +168,7 @@ Title: "Ingredient-excipient Zinc chloride"
 Description: "Zinc chloride"
 Usage: #example
 
-* id = "cc1482a0-a1e9-4cdd-a0c6-07d9fbe1029c" 
+* id = "b4a3f78f-8a2c-4a37-b01d-b61b9f717aed" 
 
 * identifier.system = $ginas
 * identifier.value = "86Q357L16B"
@@ -199,7 +199,7 @@ Title: "Ingredient-excipient HYDROCHLORIC ACID [IARC]"
 Description: "HYDROCHLORIC ACID [IARC]"
 Usage: #example
 
-* id = "948fa135-3aa1-40b9-a657-f83fe8abaadd" 
+* id = "f68342bb-a7dd-49a3-bbcc-849c28244113" 
 
 * identifier.system = $ginas
 * identifier.value = "QTT17582CB"
@@ -230,7 +230,7 @@ Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
 Description: "STERILE WATER FOR INJECTION"
 Usage: #example
 
-* id = "7298d284-1449-47be-bd6b-268cae0dc5b9" 
+* id = "08dc9e9f-597c-4b95-b6f5-46bbc8a34da2" 
 
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
@@ -261,7 +261,7 @@ Title: "Ingredient-excipient Sodium hydroxide"
 Description: "Sodium hydroxide"
 Usage: #example
 
-* id = "32d70d75-7f4f-4f43-934a-45388d195be8" 
+* id = "4b69b9d1-018c-4a1a-9270-56737a76de95" 
 
 * identifier.system = $ginas
 * identifier.value = "55X04QC32I"

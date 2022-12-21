@@ -5,7 +5,7 @@ Title: "Composition for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERV
 Description:  "Composition for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES Package Leaflet"
 Usage: #example
 
-* id = "fdb8b388-d1c3-4e48-8505-77432b614cb3" 
+* id = "5ae09232-58b6-4eb1-912c-1a22c1d21f7a" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "cc"
 
@@ -30,86 +30,86 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 229e0ae6-72f5-4ffe-84a2-b2fda154ae11
+//  * entry[+].fullUrl = 105d0ac1-92f5-4c10-b18d-5ce3167e7402
   * entry[+] = Reference(ingredient-for-calciovitaminad-calciumcarbonate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 96d18b37-cad8-4922-8b96-2713b25d371c
+//  * entry[+].fullUrl = b4d13234-20be-40a2-8c04-f29493c37772
   * entry[+] = Reference(ingredient-for-calciovitaminad-cholecalciferol) 
 
   // Ingredient
-//  * entry[+].fullUrl = a29a3646-9c07-4904-b9e2-4b1bc805e03d
+//  * entry[+].fullUrl = 780e0827-c2ae-495c-8ee5-04cc1ef8f416
   * entry[+] = Reference(ingredient-for-calciovitaminad-sodium) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7f6d2e9c-b3f2-4129-8b0c-067350974702
+//  * entry[+].fullUrl = 3b06d40a-1d30-4645-8522-b5c59feee71b
   * entry[+] = Reference(ingredient-for-calciovitaminad-lactosemonohydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 450a4f01-7959-4962-b534-81fbc373487b
+//  * entry[+].fullUrl = d98befcb-622b-4e7c-8208-7822ba2b9049
   * entry[+] = Reference(ingredient-for-calciovitaminad-sucrose) 
 
   // Ingredient
-//  * entry[+].fullUrl = cf95c618-937c-44b1-ad6d-8b407135b6f3
+//  * entry[+].fullUrl = 4bac5ab1-44f0-47b3-a34f-8d33b0677377
   * entry[+] = Reference(ingredient-for-calciovitaminad-hydrogenatedsoybeanoila2m91m918c) 
 
   // Ingredient
-//  * entry[+].fullUrl = a4266b6a-ab21-48e7-aa6e-5c527c0c3bec
+//  * entry[+].fullUrl = 4920b08e-c367-466f-a765-5236ae73a871
   * entry[+] = Reference(ingredient-for-calciovitaminad-anhydrouscitricacid) 
 
   // Ingredient
-//  * entry[+].fullUrl = 0d40a304-b32b-4205-963c-55b5f5bbd3f0
+//  * entry[+].fullUrl = b7276435-6762-427d-a14b-d1bf944a1622
   * entry[+] = Reference(ingredient-for-calciovitaminad-sodiumbicarbonate) 
 
   // Ingredient
-//  * entry[+].fullUrl = e0a1298f-2a78-4bcd-baf4-acfbd8dd644e
+//  * entry[+].fullUrl = 53bdcb58-2ba0-4460-9d89-491fd707bc32
   * entry[+] = Reference(ingredient-for-calciovitaminad-povidone) 
 
   // Ingredient
-//  * entry[+].fullUrl = c9b7d8ea-88fb-4d25-8364-05af289b7de3
+//  * entry[+].fullUrl = 1efdb2fe-d2b4-4497-ae83-d8ae1762e953
   * entry[+] = Reference(ingredient-for-calciovitaminad-saccharinsodium) 
 
   // Ingredient
-//  * entry[+].fullUrl = 0d7fcdce-e6e7-4a91-abe4-a4ce6cd85e31
+//  * entry[+].fullUrl = f79c42fc-a632-416c-a27e-4213c74b8e69
   * entry[+] = Reference(ingredient-for-calciovitaminad-sodiumcyclamate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 9da5ff39-97b2-4dd0-a8a4-2c43413f9a9d
+//  * entry[+].fullUrl = c3c2c99b-84a7-4b78-9ff1-b3d02d0a7ba6
   * entry[+] = Reference(ingredient-for-calciovitaminad-macrogol6000) 
  
 
   // Substance
-//  * entry[+].fullUrl = b386aa9b-e11e-4d03-ae3e-8a88bc0d173e
+//  * entry[+].fullUrl = 29b21cbe-f31d-48c5-b8ed-d903c893e93e
   * entry[+] = Reference(substance-calciumcarbonate) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 0ce0c21e-f377-43fa-8788-34fe915a466b
+//  * entry[+].fullUrl = d5550238-b072-4092-abb7-eb96db8185a7
   * entry[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = eedeb180-4d41-4cfa-98f4-298550fbe10e
+//  * entry[+].fullUrl = d5de6902-0ce1-4d42-95c8-e98805fd45af
   * entry[+] = Reference(authorizationcalciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
  
 
   // Organization
-//  * entry[+].fullUrl = 999a6757-7465-4936-8055-e336523e87f3
+//  * entry[+].fullUrl = 5ebe6ed2-7162-4da8-b749-43a7e48300b5
   * entry[+] = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 165c321d-2f98-41fd-ba51-fe9124e8f84a
+//  * entry[+].fullUrl = b01ef0bb-cc7d-43b3-918e-736462612c4d
   * entry[+] = Reference(ppd-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = ba59007a-47a8-4fc0-884b-78288357356b
+//  * entry[+].fullUrl = 091df3cf-4635-4094-9bf6-61a12711f332
   * entry[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 4f7115da-0859-41c8-997e-c2f7d8a3cdc1
+//  * entry[+].fullUrl = fa3ec927-1272-478f-adbb-04257b1d3afe
   * entry[+] = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
    
 

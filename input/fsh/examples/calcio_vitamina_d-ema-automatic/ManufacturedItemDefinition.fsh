@@ -4,7 +4,7 @@ InstanceOf: ManufacturedItemDefinitionUvEpi
 Title: "Manufactured item Calcio/Vitamina D3 ROVI 1000 mg/880 UI comprimidos efervescentes"
 Description: "Calcio/Vitamina D3 ROVI 1000 mg/880 UI comprimidos efervescentes"
 Usage: #example
-* id = "4f7115da-0859-41c8-997e-c2f7d8a3cdc1" 
+* id = "fa3ec927-1272-478f-adbb-04257b1d3afe" 
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
 * identifier.value = "68290"

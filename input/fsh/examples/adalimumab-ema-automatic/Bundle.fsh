@@ -5,14 +5,14 @@ Title: "ePI document Bundle for adalimumab Package Leaflet"
 Description: "Bundle for adalimumab Package Leaflet ePI document"
 Usage: #example
 
-* id = "704bd806-78e6-44a4-a527-09705e95f7f9" 
+* id = "32fd8f58-3157-4f6f-b573-ef503733865d" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/16/1157/003"
 * type = #document
-* timestamp = "2022-12-20T14:55:58Z"
+* timestamp = "2022-12-21T14:58:02Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/511275a5-08b5-4d30-8b5c-e3188b34db71"
+* entry[0].fullUrl = "Composition/b36a5546-37ff-401a-8900-c4c17468c3eb"
 * entry[0].resource = compositionadalimumab
 
  
@@ -24,69 +24,69 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/2e1e0304-d4de-4135-ab5d-72bb4859d2ca"
+* entry[+].fullUrl = "Ingredient/83f4c3b1-3869-4510-a1ca-4bbfe8380534"
 * entry[=].resource = ingredient-for-adalimumab-insulinglargine 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/a48971df-c269-4bd7-af02-cdbc446fef40"
+* entry[+].fullUrl = "Ingredient/df12e171-dff8-411a-af99-c010c9303e37"
 * entry[=].resource = ingredient-for-adalimumab-lixisenatide 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/313668a0-e923-48fe-ae04-49f8fcd5451e"
+* entry[+].fullUrl = "Ingredient/a78806e8-85d0-4487-8729-01bf5647010d"
 * entry[=].resource = ingredient-for-adalimumab-glycerol85whodd 
  
  
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/6f67c299-ba54-4757-b6d2-0321023cbf10"
+* entry[+].fullUrl = "AdministrableProductDefinition/e0c15229-dd83-4b70-8506-4b8361530b73"
 * entry[=].resource = ap-adalimumab 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/76e9f06d-24e7-49ff-815c-90f3b4c2c58f"
+* entry[+].fullUrl = "RegulatedAuthorization/b0d302df-0809-45f2-9046-c9c6fe23ce9a"
 * entry[=].resource = authorizationadalimumab 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/cf627b16-7e19-40ff-8244-f5002055577a"
+* entry[+].fullUrl = "Organization/7d62454e-974b-42a7-b5c2-7027375e186d"
 * entry[=].resource = org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/32b215ad-10bd-431d-9e02-99c4c7840ad6"
+* entry[+].fullUrl = "Organization/c5ef5176-707b-4da0-b53b-b6c8feb165f9"
 * entry[=].resource = org-manufacturerapi-sanofiaventisdeutschlandgmbh-adalimumab 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/24fd1d2f-c037-49cc-8d1f-6a7a439eab99"
+* entry[+].fullUrl = "Organization/bd40ac9a-18f4-45dd-a437-3c411f05daf7"
 * entry[=].resource = org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-adalimumab 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/455cd805-47cb-428a-8e76-33c969cf0f0a"
+* entry[+].fullUrl = "Organization/921154a1-350c-489d-9667-54d18cb4a972"
 * entry[=].resource = org-medicinesregulatoryauthority-europeanmedicinesagency-adalimumab 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/49cf3f40-7984-47a5-8e30-4af3ca59d52b"
+* entry[+].fullUrl = "PackagedProductDefinition/7b386aaf-1f03-46d4-a961-9583d174f9f6"
 * entry[=].resource = ppd-adalimumab 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/0dc20039-5dcf-46c7-a4d9-b5b72172a2ba"
+* entry[+].fullUrl = "MedicinalProductDefinition/60ec6463-a0c6-472c-8ed2-ea4caee231bb"
 * entry[=].resource = mpadalimumab 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/70bfdb2f-dd59-4883-9c2b-0df0d8986f13"
+* entry[+].fullUrl = "ManufacturedItemDefinition/981d6b33-5dbb-4760-85ee-02824e7000bd"
 * entry[=].resource = mid-adalimumab 
  
 

@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
 Description: "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
 Usage: #example
-* id = "d5e7e418-0f4a-4d8f-9fde-02571528a841" 
+* id = "263cdeb7-02d6-4822-bcb1-3e869649387a" 
 
 * identifier.system = $spor-prod
 * identifier.value = "nan"

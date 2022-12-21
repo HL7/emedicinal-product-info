@@ -4,7 +4,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "BLASTON 1 mg tablets, 50 tablets"
 Description: "BLASTON 1 mg tablets, 50 tablets"
 Usage: #example
-* id = "e9c42678-0ac0-4b1a-afec-caedff7eeba7" 
+* id = "c6b102b9-333d-4b30-a040-377a13699d76" 
 
 * identifier.system = $spor-prod
 * identifier.value = "ss"

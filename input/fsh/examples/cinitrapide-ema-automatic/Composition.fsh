@@ -5,7 +5,7 @@ Title: "Composition for cinitrapide Package Leaflet"
 Description:  "Composition for cinitrapide Package Leaflet"
 Usage: #example
 
-* id = "75252f24-83b5-48f2-bc70-660e8544ba60" 
+* id = "de858c89-a772-4aa0-967e-6110092536ad" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "xx"
 
@@ -30,62 +30,62 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 1bf02eee-32e6-4f54-824c-8d6d7f40519a
+//  * entry[+].fullUrl = c2d9e919-9686-42b1-80b9-d46552f583c5
   * entry[+] = Reference(ingredient-for-cinitrapide-magnesiumstearate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 5cc76188-4979-4652-8f81-5bd19aeec836
+//  * entry[+].fullUrl = 17746812-43ae-437e-90ee-dc32e22fa2fc
   * entry[+] = Reference(ingredient-for-cinitrapide-povidoneunspecified) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7cd4fc3c-a887-4094-a030-8f2ba90be0f7
+//  * entry[+].fullUrl = 3789fa03-a6f0-4b99-a640-309d80106c56
   * entry[+] = Reference(ingredient-for-cinitrapide-cinitapride) 
 
   // Ingredient
-//  * entry[+].fullUrl = 352c2da8-0014-4c47-b989-5b3e6c8e00c0
+//  * entry[+].fullUrl = 313ef4a9-ed11-47c3-beb3-68e3becec446
   * entry[+] = Reference(ingredient-for-cinitrapide-silicacolloidalanhydrous) 
 
   // Ingredient
-//  * entry[+].fullUrl = 4feb15e0-7760-4a86-bd82-46799c6561c4
+//  * entry[+].fullUrl = d4c634c6-8c35-4ae0-8929-28d8648ee719
   * entry[+] = Reference(ingredient-for-cinitrapide-starchpotato) 
 
   // Ingredient
-//  * entry[+].fullUrl = ee4c3213-2d8e-49e1-ae8f-3edd228de29e
+//  * entry[+].fullUrl = af53712a-f122-41d3-a29c-6c96be1765f5
   * entry[+] = Reference(ingredient-for-cinitrapide-starchcorn) 
  
 
   // Substance
-//  * entry[+].fullUrl = c041ec46-1f47-4144-b586-e550ed90c3a0
+//  * entry[+].fullUrl = c41f534e-0522-4eae-b68f-a12920386086
   * entry[+] = Reference(substance-cinitapride) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 11d0b626-cfeb-41d3-9402-1b0300425360
+//  * entry[+].fullUrl = 970f18ef-b561-47b4-b645-8e7ac4985039
   * entry[+] = Reference(ap-blaston1mgtablets) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = cc6ce0bc-7476-4d61-8d39-b19a351236ab
+//  * entry[+].fullUrl = d3dc7e51-aaa2-404d-9b3a-c7fb38af8010
   * entry[+] = Reference(authorizationblaston1mgtablets) 
  
 
   // Organization
-//  * entry[+].fullUrl = 713a560c-7403-4dae-86ab-e9e86b162b79
+//  * entry[+].fullUrl = f604adfa-69c6-468f-8a8e-f721ddacf8ea
   * entry[+] = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = e9c42678-0ac0-4b1a-afec-caedff7eeba7
+//  * entry[+].fullUrl = c6b102b9-333d-4b30-a040-377a13699d76
   * entry[+] = Reference(ppd-blaston1mgtablets50tablets) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 90e3463a-5106-43c1-8483-a72df2922dc5
+//  * entry[+].fullUrl = 8665d25b-96cd-4d5f-9aec-bbcefe9dca3b
   * entry[+] = Reference(mpBLASTON1mgtablets) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 59c19c68-5b5f-44eb-ac5a-90bafae189ba
+//  * entry[+].fullUrl = 6ee0effd-8dc0-4fb2-abc2-fa48d327dfb0
   * entry[+] = Reference(mid-cinitrapide) 
    
 

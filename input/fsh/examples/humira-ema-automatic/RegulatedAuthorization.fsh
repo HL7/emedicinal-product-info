@@ -6,7 +6,7 @@ Description: "Regulated Authorization for Humira 20 mg solution for injection in
 Usage: #example
 
 
-* id = "e826f0b1-c3f0-4e90-a02d-b571dfb033af" 
+* id = "82c835a9-711a-4d2c-a9af-7e7cb465d920" 
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/03/256/022"

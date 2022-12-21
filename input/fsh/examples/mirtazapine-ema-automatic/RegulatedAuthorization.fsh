@@ -6,7 +6,7 @@ Description: "Regulated Authorization for MIRTAZAPINA CINFA 30 mg Coated Tablet"
 Usage: #example
 
 
-* id = "c477c8b3-3418-4619-a620-3fba6d51d430" 
+* id = "34053745-ef43-45ce-ae3c-db4d9624dbc8" 
 
 * identifier.system = $spor-prod
 * identifier.value = "67.068"

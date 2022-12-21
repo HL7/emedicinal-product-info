@@ -5,7 +5,7 @@ Title: "Composition for adalimumab Package Leaflet"
 Description:  "Composition for adalimumab Package Leaflet"
 Usage: #example
 
-* id = "511275a5-08b5-4d30-8b5c-e3188b34db71" 
+* id = "b36a5546-37ff-401a-8900-c4c17468c3eb" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,58 +30,58 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 2e1e0304-d4de-4135-ab5d-72bb4859d2ca
+//  * entry[+].fullUrl = 83f4c3b1-3869-4510-a1ca-4bbfe8380534
   * entry[+] = Reference(ingredient-for-adalimumab-insulinglargine) 
 
   // Ingredient
-//  * entry[+].fullUrl = a48971df-c269-4bd7-af02-cdbc446fef40
+//  * entry[+].fullUrl = df12e171-dff8-411a-af99-c010c9303e37
   * entry[+] = Reference(ingredient-for-adalimumab-lixisenatide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 313668a0-e923-48fe-ae04-49f8fcd5451e
+//  * entry[+].fullUrl = a78806e8-85d0-4487-8729-01bf5647010d
   * entry[+] = Reference(ingredient-for-adalimumab-glycerol85whodd) 
  
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 6f67c299-ba54-4757-b6d2-0321023cbf10
+//  * entry[+].fullUrl = e0c15229-dd83-4b70-8506-4b8361530b73
   * entry[+] = Reference(ap-adalimumab) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 76e9f06d-24e7-49ff-815c-90f3b4c2c58f
+//  * entry[+].fullUrl = b0d302df-0809-45f2-9046-c9c6fe23ce9a
   * entry[+] = Reference(authorizationadalimumab) 
  
 
   // Organization
-//  * entry[+].fullUrl = cf627b16-7e19-40ff-8244-f5002055577a
+//  * entry[+].fullUrl = 7d62454e-974b-42a7-b5c2-7027375e186d
   * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab) 
 
   // Organization
-//  * entry[+].fullUrl = 32b215ad-10bd-431d-9e02-99c4c7840ad6
+//  * entry[+].fullUrl = c5ef5176-707b-4da0-b53b-b6c8feb165f9
   * entry[+] = Reference(org-manufacturerapi-sanofiaventisdeutschlandgmbh-adalimumab) 
 
   // Organization
-//  * entry[+].fullUrl = 24fd1d2f-c037-49cc-8d1f-6a7a439eab99
+//  * entry[+].fullUrl = bd40ac9a-18f4-45dd-a437-3c411f05daf7
   * entry[+] = Reference(org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-adalimumab) 
 
   // Organization
-//  * entry[+].fullUrl = 455cd805-47cb-428a-8e76-33c969cf0f0a
+//  * entry[+].fullUrl = 921154a1-350c-489d-9667-54d18cb4a972
   * entry[+] = Reference(org-medicinesregulatoryauthority-europeanmedicinesagency-adalimumab) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 49cf3f40-7984-47a5-8e30-4af3ca59d52b
+//  * entry[+].fullUrl = 7b386aaf-1f03-46d4-a961-9583d174f9f6
   * entry[+] = Reference(ppd-adalimumab) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 0dc20039-5dcf-46c7-a4d9-b5b72172a2ba
+//  * entry[+].fullUrl = 60ec6463-a0c6-472c-8ed2-ea4caee231bb
   * entry[+] = Reference(mpadalimumab) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 70bfdb2f-dd59-4883-9c2b-0df0d8986f13
+//  * entry[+].fullUrl = 981d6b33-5dbb-4760-85ee-02824e7000bd
   * entry[+] = Reference(mid-adalimumab) 
    
 

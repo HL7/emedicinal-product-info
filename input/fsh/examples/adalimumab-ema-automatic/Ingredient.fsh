@@ -5,7 +5,7 @@ Title: "Ingredient-active Insulin glargine"
 Description: "Insulin glargine"
 Usage: #example
 
-* id = "2e1e0304-d4de-4135-ab5d-72bb4859d2ca" 
+* id = "83f4c3b1-3869-4510-a1ca-4bbfe8380534" 
 
 * identifier.system = $ginas
 * identifier.value = "2ZM8CX04RZ"
@@ -40,7 +40,7 @@ Title: "Ingredient-active Lixisenatide"
 Description: "Lixisenatide"
 Usage: #example
 
-* id = "a48971df-c269-4bd7-af02-cdbc446fef40" 
+* id = "df12e171-dff8-411a-af99-c010c9303e37" 
 
 * identifier.system = $ginas
 * identifier.value = "74O62BB01U"
@@ -75,7 +75,7 @@ Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
 Description: "GLYCEROL 85% [WHO-DD]"
 Usage: #example
 
-* id = "313668a0-e923-48fe-ae04-49f8fcd5451e" 
+* id = "a78806e8-85d0-4487-8729-01bf5647010d" 
 
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"

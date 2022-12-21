@@ -15,7 +15,7 @@ Usage: #example
 
 * status = https://gsrs.ncats.nih.gov/ginas/app/beta/#{{ row["statusID"] }} "{{ row["status"] }}"
 
-* description = "{{ row["description"] }}"
+//* description = "{{ row["description"] }}"
 {{ "* description = \"{}\"".format(row.description) if row.description|string !="nan"}}
 
  // Reference to Organization: MAH
@@ -29,8 +29,8 @@ Usage: #example
 
 {% for idx in range(0,row["moleclularWeigth"].count("|")+1) %} 
 
-* molecularWeight[+].type.text = "{{ row["moleclularWeigthType"].split("|")[idx]}}"
-* molecularWeight[=].amount.value = {{ row["moleclularWeigth"].split("|")[idx]}}
+* molecularWeight[+].type.text = "{{ row["moleclularWeigthType"].split("|")[idx] }}"
+* molecularWeight[=].amount.value = {{ row["moleclularWeigth"].split("|")[idx] | replace (",",".")}}
 
 {%- endfor %}
 {%- endif %}
