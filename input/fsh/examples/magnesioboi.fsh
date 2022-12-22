@@ -7,7 +7,7 @@ InstanceOf: MedicinalProductDefinition
 Description: "54347 MAGNESIOBOI 48,62 mg COMPRIMIDOS"
 Usage: #example
  
-* identifier.system = "$spor-prod"
+* identifier.system = $spor-prod
 * identifier.value = "498163"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
@@ -22,10 +22,10 @@ Usage: #example
 * name.type = $spor-rms#220000000001
 * name.type.text = "Full name"
 
-* name.usage.country = urn:iso:std:iso:3166#es  "Spanish"
-* name.usage.jurisdiction = urn:iso:std:iso:3166#es  "Kingdom of Spain"
+* name.usage.country = urn:iso:std:iso:3166#ES  "Spanish"
+* name.usage.jurisdiction = urn:iso:std:iso:3166#ES  "Kingdom of Spain"
 
-* name.usage.language = urn:ietf:bcp:47#es "Spanish"
+* name.usage.language = urn:ietf:bcp:47#ES "Spanish"
 * name.part[+].part = "MAGNESIOBOI"
 * name.part[=].type = $spor-rms#220000000002 "Invented name part"
 
@@ -81,7 +81,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity.unit = "mg"
 
-* substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity##ACTIB "active ingredient - basis of strength"
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 //reference to 54347 MAGNESIOBOI 48,62 mg COMPRIMIDOS
 * for = Reference(cfsb1665505881364)

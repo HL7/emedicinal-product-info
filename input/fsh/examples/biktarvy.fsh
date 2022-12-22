@@ -102,7 +102,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity.unit = "mg"
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass##ACTIB
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB
 
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
@@ -126,7 +126,7 @@ Usage: #example
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#G70B4ETF4S "Emtricitabine"
 
 * substance.strength.presentationQuantity = 200 'mg'
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass##ACTIB
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB
 
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
@@ -220,7 +220,7 @@ Usage: #example
 
 * substance.strength.presentationQuantity.unit = "mg"
 
-* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass##ACTIB
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB
 
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
@@ -316,7 +316,7 @@ InstanceOf: PackagedProductDefinition
 Description: "90 (3 bottles of 30) film-coated tablets"
 Usage: #example
 
-* identifier.system = "$spor-prod"
+* identifier.system = $spor-prod
 * identifier.value = "EU/1/18/1289/001"
 * identifier.use = #official
 

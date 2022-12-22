@@ -2,7 +2,6 @@ from os import listdir, getcwd, mkdir, rmdir
 from os.path import isfile, join, exists
 import glob
 from jinja2 import Template, Environment, FileSystemLoader
-
 import pandas as pd
 from pathlib import Path
 import numpy as np
@@ -10,6 +9,7 @@ import sys
 import uuid
 import re
 from datetime import datetime
+from validator import pre_validation
 
 context = {"now": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")}
 
@@ -72,6 +72,7 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
         # read an excel file and convert
         # into a dataframe object
         df = pd.DataFrame(pd.read_excel(DATA_FILE, sheet_name=sheet))
+        pre_validation(df, sheet)
         df["id_hash"] = df["id"].apply(lambda x: uuid.uuid4())
         df["id"].fillna(df["id_hash"], inplace=True)
         # show the dataframe

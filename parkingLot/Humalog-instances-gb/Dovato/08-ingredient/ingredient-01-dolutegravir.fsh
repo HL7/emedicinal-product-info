@@ -31,6 +31,6 @@ Usage: #example
 
 * substance.strength.presentationQuantity.unit = "mg"
 
-* substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity##ACTIB
+* substance.strength.basis = http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity#ACTIB
 
 * substance.strength.basis.text = "active ingredient - basis of strength"
