@@ -5,14 +5,14 @@ Title: "ePI document Bundle for mirtazapine-cinfa Package Leaflet"
 Description: "Bundle for mirtazapine-cinfa Package Leaflet ePI document"
 Usage: #example
 
-* id = "60ec7983-3b19-4f88-962c-bb0ebf5c4390" 
+* id = "8118fe17-484c-4783-9b34-09edc7f6d357" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "x"
 * type = #document
-* timestamp = "2022-12-21T16:16:31Z"
+* timestamp = "2023-01-14T06:51:01Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/90cc3211-db70-4a6b-82af-13963ed8e8bc"
+* entry[0].fullUrl = "Composition/18f9d633-45e0-430c-a2c3-bfb2ae0e40de"
 * entry[0].resource = compositionMIRTAZAPINACINFA30mgCoatedTablet
 
  
@@ -24,74 +24,74 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/9ce51635-d636-4ace-84c4-5f17f5e7efef"
+* entry[+].fullUrl = "Ingredient/0f14e194-e812-451a-9719-c9c99695489e"
 * entry[=].resource = ingredient-for-mirtazapine-magnesiumstearate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/90deb226-e110-4ae8-9473-1738d206ae06"
+* entry[+].fullUrl = "Ingredient/77de0626-e052-4703-95ed-0a33a054998f"
 * entry[=].resource = ingredient-for-mirtazapine-lactosemonohydrate 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/c898cdee-328a-466f-b815-95ae198b5c88"
+* entry[+].fullUrl = "Ingredient/1199a3fd-9783-4e57-9075-20facc04758e"
 * entry[=].resource = ingredient-for-mirtazapine-mirtazapine 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/7d0125b3-1791-49c6-a8da-c08d1636d0a1"
+* entry[+].fullUrl = "Ingredient/a5c0c836-4ec6-4a60-afca-453ed78d3e59"
 * entry[=].resource = ingredient-for-mirtazapine-hydroxypropylcelluloseunspecified 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/f20131d0-a96c-4ab6-ab36-369746a193be"
+* entry[+].fullUrl = "Ingredient/6bf9998f-af6b-49b5-9a79-ef4f28ad150f"
 * entry[=].resource = ingredient-for-mirtazapine-silicacolloidalanhydrous 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/6600c003-c62b-43ca-8873-5033a2abea8c"
+* entry[+].fullUrl = "Ingredient/bb6402ac-8604-4070-89bc-5c5984465466"
 * entry[=].resource = ingredient-for-mirtazapine-cornstarch 
  
 
 // Substance
    
-* entry[+].fullUrl = "SubstanceDefinition/2eb29791-b719-4f22-9574-5a3c9b2b26c0"
+* entry[+].fullUrl = "SubstanceDefinition/78c70620-6f9a-410f-8e85-0354459747a4"
 * entry[=].resource = substance-mirtazapine 
  
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ca29342e-8dc5-4831-ad64-1015c3dc9145"
+* entry[+].fullUrl = "AdministrableProductDefinition/ac399a4a-3c2c-4878-b212-634aac9c26c8"
 * entry[=].resource = ap-mirtazapinacinfa30mgcoatedtablet 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/e5b79f7c-79f2-47ba-b77d-ffba7c219d3d"
+* entry[+].fullUrl = "RegulatedAuthorization/7e35877f-361d-4a6b-9622-59b7e1d81b0e"
 * entry[=].resource = authorizationmirtazapinacinfa30mgcoatedtablet 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/90f4c2e6-b927-4995-9aa0-3e70d5e96132"
+* entry[+].fullUrl = "Organization/9835f393-1fba-4e59-be17-e28b41390372"
 * entry[=].resource = org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ff25c58d-c4ec-4760-8987-54616ee5cffb"
+* entry[+].fullUrl = "PackagedProductDefinition/77a84a01-56b3-4c0a-90c4-9d67a6871966"
 * entry[=].resource = ppd-mirtazapinacinfa30mgcoatedtablet30tablets 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/99bbe90e-27c6-4540-ab50-84da6d807256"
+* entry[+].fullUrl = "MedicinalProductDefinition/3e1fafc0-91d9-4f97-8ca1-6d6f1612d45e"
 * entry[=].resource = mpMIRTAZAPINeCINFA30mgCoatedTablet 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/6c0166a5-10aa-4f73-afe5-5253dd55e22b"
+* entry[+].fullUrl = "ManufacturedItemDefinition/6f9227d6-9c08-402b-8687-264699101e92"
 * entry[=].resource = mid-mirtazapinacinfa30mgcoatedtablet 
  
 

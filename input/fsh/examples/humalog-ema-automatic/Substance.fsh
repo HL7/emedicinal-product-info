@@ -3,7 +3,7 @@ Instance: substance-insulinlispro
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "INSULIN LISPRO"
 Usage: #example
-* id = "5297284f-b16d-4dab-be18-be2d6fce49a4" 
+* id = "6ec114b1-928a-4711-9f28-0999c31ab95f" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "GFX7QIS1II"

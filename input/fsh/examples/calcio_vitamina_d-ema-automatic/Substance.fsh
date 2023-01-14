@@ -3,7 +3,7 @@ Instance: substance-calciumcarbonate
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "Calcium Carbonate"
 Usage: #example
-* id = "3b35de10-7a2e-4d14-a964-8a4c3b09a904" 
+* id = "7250931e-d7a9-4265-9c4e-c2e6282c1e22" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "H0G9379FGK"

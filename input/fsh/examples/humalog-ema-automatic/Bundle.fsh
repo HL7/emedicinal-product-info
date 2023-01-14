@@ -5,14 +5,14 @@ Title: "ePI document Bundle for Humalog Insulin Lispro 100u/ml Package Leaflet"
 Description: "Bundle for Humalog Insulin Lispro 100u/ml Package Leaflet ePI document"
 Usage: #example
 
-* id = "3319b7fc-947d-4b44-a552-94e465905b4f" 
+* id = "09180d11-550e-48ef-bea6-0dce8915345d" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2022-12-21T16:16:31Z"
+* timestamp = "2023-01-14T06:51:01Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/83d96cda-aad9-4c0c-b842-fae7bdb01acd"
+* entry[0].fullUrl = "Composition/787f6fe4-51fa-40c1-9dbe-7875f7cf7800"
 * entry[0].resource = compositionHumalog
 
  
@@ -24,48 +24,48 @@ Usage: #example
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/f18cdb98-9bdc-4a8a-8e06-05080b562066"
+* entry[+].fullUrl = "Ingredient/d7dd47d9-f91b-40f5-8685-ace0a56e6e3e"
 * entry[=].resource = ingredient-for-humalog-glycerol 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/11f16088-b402-4044-889d-880f6bbc552c"
+* entry[+].fullUrl = "Ingredient/7eac3069-4e0c-4614-9a3d-78c4999c3c0f"
 * entry[=].resource = ingredient-for-humalog-hydrochloricacid 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/d9a1da63-dc2b-409d-8ce1-5de1e2a7248d"
+* entry[+].fullUrl = "Ingredient/3f5ba404-b673-48f5-add5-29ce19d5d9cf"
 * entry[=].resource = ingredient-for-humalog-sodiumhydroxide 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/aace9a3c-7eb5-431d-9996-e3e380322333"
+* entry[+].fullUrl = "Ingredient/01c3a3dc-8572-4789-b4dc-c6251262ebe0"
 * entry[=].resource = ingredient-for-humalog-sterilewaterforinjection 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/94ab72e8-e644-4b93-bd2b-76efe0829949"
+* entry[+].fullUrl = "Ingredient/29c2e07f-ca58-448a-98bc-f9debbeb9860"
 * entry[=].resource = ingredient-for-humalog-insulinlispro 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/a850eb8e-f014-497b-9018-069834e5c00f"
+* entry[+].fullUrl = "Ingredient/6fbd3320-7e72-4887-84d0-e9383c9a80da"
 * entry[=].resource = ingredient-for-humalog-zincoxide 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/fb5a6d09-ead0-42eb-bec0-b333176eee78"
+* entry[+].fullUrl = "Ingredient/6f3e928c-faf0-403b-ad5f-a368f00da970"
 * entry[=].resource = ingredient-for-humalog-metacresol 
 
 // Ingredient
 
-* entry[+].fullUrl = "Ingredient/68d04a97-d397-4343-b4c2-cdb5705caf81"
+* entry[+].fullUrl = "Ingredient/2c04eddf-8aa1-41c1-94d7-fc2c31831594"
 * entry[=].resource = ingredient-for-humalog-trometamol 
  
 
 // Substance
    
-* entry[+].fullUrl = "SubstanceDefinition/5297284f-b16d-4dab-be18-be2d6fce49a4"
+* entry[+].fullUrl = "SubstanceDefinition/6ec114b1-928a-4711-9f28-0999c31ab95f"
 * entry[=].resource = substance-insulinlispro 
  
 
@@ -77,41 +77,41 @@ Usage: #example
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/bfcc9fc1-936b-42ed-b352-b66ab3b6c0e9"
+* entry[+].fullUrl = "RegulatedAuthorization/8a5770c0-b02c-4e45-9dad-73934a7b3fcc"
 * entry[=].resource = authorizationhumalog 
  
 
 // Organization
 
-* entry[+].fullUrl = "Organization/5645bec4-7fdb-47f8-9c3f-72ef925027a9"
+* entry[+].fullUrl = "Organization/8dcc93c6-edbc-4532-a076-ebafab97efe2"
 * entry[=].resource = org-marketingauthorisationholder-elilillynederlandbv-humalog 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/6bebca67-4b35-4fd7-b7a4-df25e59a27f0"
+* entry[+].fullUrl = "Organization/2de8c733-650f-4b80-b6ad-b37b08cd2fbf"
 * entry[=].resource = org-manufacturerapi-elilillyandcompany-humalog 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/4108aeae-28ce-4669-a89e-825d6ee43560"
+* entry[+].fullUrl = "Organization/0d99e992-8977-4908-bcd8-e910d5c4d82c"
 * entry[=].resource = org-manufacturer-lillysa-humalog 
  
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/006f33c5-94a6-4bb5-b1b0-457e6d91bdc5"
+* entry[+].fullUrl = "PackagedProductDefinition/a2146cce-7c3b-457c-97ec-feac9120ca2d"
 * entry[=].resource = ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/fba3c2e8-e5f3-4de0-ae3c-d6687dffc690"
+* entry[+].fullUrl = "MedicinalProductDefinition/0543565c-93c8-40ad-8268-d368e0bda4bd"
 * entry[=].resource = mpHumalogMix50InsulinKwikPen3mlprefill 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/b43eff6e-56bc-4904-918b-830b8c40a0ba"
+* entry[+].fullUrl = "ManufacturedItemDefinition/02dc706d-f79a-4e0a-91ec-c4fdef75b5e3"
 * entry[=].resource = mid-humalog100uml5prefilledpen 
  
 

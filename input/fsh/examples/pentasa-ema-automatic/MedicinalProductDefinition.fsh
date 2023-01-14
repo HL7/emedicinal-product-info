@@ -6,7 +6,7 @@ Description: "EU/1/97/049/001 Pentasa Slow Release Tablets 1g"
 Usage: #example
 
 
-* id = "0d1da9fc-0eac-48da-b62b-4ea041b1b8c6" 
+* id = "e54437f8-2b25-454d-ac72-80d28bfedab3" 
 * identifier.system = $spor-prod
 * identifier.value = "xx"
 

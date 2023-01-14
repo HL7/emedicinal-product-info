@@ -5,7 +5,7 @@ Title: "Ingredient-active Calcium Carbonate"
 Description: "Calcium Carbonate"
 Usage: #example
 
-* id = "85266ef6-5385-409c-8c52-702e8993df5b" 
+* id = "d2f0a516-43df-4afc-a790-2f78fa1db8d8" 
 
 * identifier.system = $ginas
 * identifier.value = "H0G9379FGK"
@@ -37,7 +37,7 @@ Title: "Ingredient-active cholecalciferol"
 Description: "cholecalciferol"
 Usage: #example
 
-* id = "e0ab6766-b2b5-4352-88fb-4e095569a79b" 
+* id = "83b4c13e-b2a1-4b36-887d-2ddfc35f0ebc" 
 
 * identifier.system = $ginas
 * identifier.value = "1C6V77QF41"
@@ -69,7 +69,7 @@ Title: "Ingredient-active Sodium"
 Description: "Sodium"
 Usage: #example
 
-* id = "2e086134-3fae-49fc-8add-0a13bcd426cb" 
+* id = "d2d8eaec-b0a8-41d6-bc7a-d257a66e1c3c" 
 
 * identifier.system = $ginas
 * identifier.value = "9NEZ333N27"
@@ -101,7 +101,7 @@ Title: "Ingredient-active lactose monohydrate"
 Description: "lactose monohydrate"
 Usage: #example
 
-* id = "6fb49bd8-8358-4d48-bbab-4aaf710df463" 
+* id = "a62e5e74-9cbc-4343-9514-aa69a11ec7c7" 
 
 * identifier.system = $ginas
 * identifier.value = "EWQ57Q8I5X"
@@ -133,7 +133,7 @@ Title: "Ingredient-active sucrose"
 Description: "sucrose"
 Usage: #example
 
-* id = "b1ec699c-c015-4541-8976-d120f40b3350" 
+* id = "bc34b228-a51a-4def-b9f5-08e531f05a93" 
 
 * identifier.system = $ginas
 * identifier.value = "C151H8M554"
@@ -165,7 +165,7 @@ Title: "Ingredient-active hydrogenated soybean oil"
 Description: "hydrogenated soybean oil"
 Usage: #example
 
-* id = "5c1c8b45-b3b8-4fa3-9386-9646170c7313" 
+* id = "72d1672a-0196-4a4b-b055-3325f16b5f2f" 
 
 * identifier.system = $ginas
 * identifier.value = "A2M91M918C "
@@ -197,7 +197,7 @@ Title: "Ingredient-excipient Anhydrous citric acid"
 Description: "Anhydrous citric acid"
 Usage: #example
 
-* id = "ee3ea51e-79df-4f79-86a4-f21442f26e2f" 
+* id = "84d7c803-42cb-48c5-8946-bb1d4c97a3b8" 
 
 * identifier.system = $ginas
 * identifier.value = "XF417D3PSL"
@@ -225,7 +225,7 @@ Title: "Ingredient-excipient sodium bicarbonate"
 Description: "sodium bicarbonate"
 Usage: #example
 
-* id = "0d1d1eca-1551-40ea-a833-fc6495fc1515" 
+* id = "19ab3c81-48ef-412f-8542-92d5ab887c90" 
 
 * identifier.system = $ginas
 * identifier.value = "8MDF5V39QO"
@@ -253,7 +253,7 @@ Title: "Ingredient-excipient povidone"
 Description: "povidone"
 Usage: #example
 
-* id = "44d1b15f-39c0-4337-84b5-65916adbb118" 
+* id = "33250f0a-59c6-42f8-964a-46699e74e1e1" 
 
 * identifier.system = $ginas
 * identifier.value = "FZ989GH94E"
@@ -281,7 +281,7 @@ Title: "Ingredient-excipient saccharin sodium"
 Description: "saccharin sodium"
 Usage: #example
 
-* id = "8f5bf812-f5fc-4d60-92d1-25bb44d7e879" 
+* id = "2bbd28a2-f99d-47ac-a781-9ceec4e1678f" 
 
 * identifier.system = $ginas
 * identifier.value = "SB8ZUX40TY"
@@ -309,7 +309,7 @@ Title: "Ingredient-excipient sodium cyclamate"
 Description: "sodium cyclamate"
 Usage: #example
 
-* id = "47d22846-1001-4acb-8d84-c5dabd43bcd0" 
+* id = "bfc170e2-c8f1-4ae6-b411-fe6c898896a1" 
 
 * identifier.system = $ginas
 * identifier.value = "1I6F42RME1"
@@ -337,7 +337,7 @@ Title: "Ingredient-excipient macrogol 6000"
 Description: "macrogol 6000"
 Usage: #example
 
-* id = "6a0c1ac2-05b2-4fee-ba22-62fee66e966f" 
+* id = "aae14c95-8327-49e6-9a43-9cf48851b1b5" 
 
 * identifier.system = $ginas
 * identifier.value = "30IQX730WE"

@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Description: "Sanofi-Aventis Groupe as Marketing authorisation holder"
 Usage: #example
-* id = "2b574902-ec65-4e5e-acb6-179a79108a04" 
+* id = "d8447d68-ada8-41a3-98b1-e293e1aba60c" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
@@ -31,7 +31,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Deutschland GmbH as Manufacturer API"
 Description: "Sanofi-Aventis Deutschland GmbH as Manufacturer API"
 Usage: #example
-* id = "b69a6514-2412-48d5-a22f-59a7ae0725f9" 
+* id = "63582eca-86b6-44cd-99c7-29178f19c21a" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100001175"
 * identifier.use = #official
@@ -50,14 +50,14 @@ Usage: #example
     * line = "Brueningstrasse 50, Industriepark Höchst"
     * city = "Frankfurt am Main"
     * country = "de"
-    * postalCode = "65926"
+    * postalCode = "65926.0"
 
 Instance: org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-suliqua
 InstanceOf: OrganizationUvEpi
 Title: "Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"
 Description: "Sanofi-Aventis Deutschland GmbH as Manufacturer Batch release"
 Usage: #example
-* id = "97b16302-ca8b-4ae9-adc4-b3ec5e31c942" 
+* id = "74b9a6e4-27e9-4a5f-843a-ced79084dbd3" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100001175"
 * identifier.use = #official
@@ -76,14 +76,14 @@ Usage: #example
     * line = "Brueningstrasse 50, Industriepark Höchst"
     * city = "Frankfurt am Main"
     * country = "de"
-    * postalCode = "65927"
+    * postalCode = "65927.0"
 
 Instance: org-medicinesregulatoryauthority-europeanmedicinesagency-suliqua
 InstanceOf: OrganizationUvEpi
 Title: "European Medicines Agency as Medicines Regulatory Authority"
 Description: "European Medicines Agency as Medicines Regulatory Authority"
 Usage: #example
-* id = "582fdd19-1c62-4c2d-994d-eda18abab2b3" 
+* id = "aebfb470-de6e-4e92-a660-f11d5b3ff663" 
 * identifier.system = $spor-org
 * identifier.value = "ORG-100013412"
 * identifier.use = #official
@@ -102,4 +102,4 @@ Usage: #example
     * line = "Carretera De Martorell 41 61, Poligono Industrial Nord-Est"
     * city = "Amsterdam"
     * country = "nl"
-    * postalCode = "1083 HS"
+    * postalCode = "1083.0"

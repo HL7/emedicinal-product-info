@@ -72,7 +72,7 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
         # read an excel file and convert
         # into a dataframe object
         df = pd.DataFrame(pd.read_excel(DATA_FILE, sheet_name=sheet))
-        pre_validation(df, sheet)
+        #   pre_validation(df, sheet)
         df["id_hash"] = df["id"].apply(lambda x: uuid.uuid4())
         df["id"].fillna(df["id_hash"], inplace=True)
         # show the dataframe

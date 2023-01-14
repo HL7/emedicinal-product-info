@@ -5,7 +5,7 @@ Title: "Composition for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERV
 Description:  "Composition for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES Package Leaflet"
 Usage: #example
 
-* id = "8b953048-c4d7-453e-94b4-c3055258355b" 
+* id = "1cc65d74-1796-4796-9544-2b8d353f308c" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "cc"
 
@@ -20,25 +20,124 @@ Usage: #example
 
 * title = "TEST PURPOSES ONLY - CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
 
+* section[+].
+  * title = "Product Information"
+  * code.text = "Product Info"
+
+ 
+ 
+ 
+ 
+
+  // Ingredient
+//  * entry[+].fullUrl = d2f0a516-43df-4afc-a790-2f78fa1db8d8
+  * entry[+] = Reference(ingredient-for-calciovitaminad-calciumcarbonate) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 83b4c13e-b2a1-4b36-887d-2ddfc35f0ebc
+  * entry[+] = Reference(ingredient-for-calciovitaminad-cholecalciferol) 
+
+  // Ingredient
+//  * entry[+].fullUrl = d2d8eaec-b0a8-41d6-bc7a-d257a66e1c3c
+  * entry[+] = Reference(ingredient-for-calciovitaminad-sodium) 
+
+  // Ingredient
+//  * entry[+].fullUrl = a62e5e74-9cbc-4343-9514-aa69a11ec7c7
+  * entry[+] = Reference(ingredient-for-calciovitaminad-lactosemonohydrate) 
+
+  // Ingredient
+//  * entry[+].fullUrl = bc34b228-a51a-4def-b9f5-08e531f05a93
+  * entry[+] = Reference(ingredient-for-calciovitaminad-sucrose) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 72d1672a-0196-4a4b-b055-3325f16b5f2f
+  * entry[+] = Reference(ingredient-for-calciovitaminad-hydrogenatedsoybeanoil) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 84d7c803-42cb-48c5-8946-bb1d4c97a3b8
+  * entry[+] = Reference(ingredient-for-calciovitaminad-anhydrouscitricacid) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 19ab3c81-48ef-412f-8542-92d5ab887c90
+  * entry[+] = Reference(ingredient-for-calciovitaminad-sodiumbicarbonate) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 33250f0a-59c6-42f8-964a-46699e74e1e1
+  * entry[+] = Reference(ingredient-for-calciovitaminad-povidone) 
+
+  // Ingredient
+//  * entry[+].fullUrl = 2bbd28a2-f99d-47ac-a781-9ceec4e1678f
+  * entry[+] = Reference(ingredient-for-calciovitaminad-saccharinsodium) 
+
+  // Ingredient
+//  * entry[+].fullUrl = bfc170e2-c8f1-4ae6-b411-fe6c898896a1
+  * entry[+] = Reference(ingredient-for-calciovitaminad-sodiumcyclamate) 
+
+  // Ingredient
+//  * entry[+].fullUrl = aae14c95-8327-49e6-9a43-9cf48851b1b5
+  * entry[+] = Reference(ingredient-for-calciovitaminad-macrogol6000) 
+ 
+
+  // Substance
+//  * entry[+].fullUrl = 7250931e-d7a9-4265-9c4e-c2e6282c1e22
+  * entry[+] = Reference(substance-calciumcarbonate) 
+ 
+
+  // AdministrableProductDefinition
+//  * entry[+].fullUrl = 3d7aba62-865c-4345-918d-3c88e43dfa13
+  * entry[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+ 
+
+  // RegulatedAuthorization
+//  * entry[+].fullUrl = 045eb1ab-783b-4935-991b-21f6327ab71a
+  * entry[+] = Reference(authorizationcalciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+ 
+
+  // Organization
+//  * entry[+].fullUrl = 3542710d-724a-4bf5-8492-7c519e83ecb1
+  * entry[+] = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d) 
+ 
+
+  // PackagedProductDefinition
+//  * entry[+].fullUrl = 4dd403bf-bee9-40e6-9077-5968cb15a7ca
+  * entry[+] = Reference(ppd-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+ 
+
+  // MedicinalProductDefinition
+//  * entry[+].fullUrl = 21dfe8d8-820c-4059-b495-1995c7e0ac6e
+  * entry[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes) 
+ 
+
+  // ManufacturedItemDefinition
+//  * entry[+].fullUrl = 19ec5287-f359-4485-9690-2074b7e72256
+  * entry[+] = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+   
+
+
+
 
 * section[+].
-  * title = "B. Package Leaflet"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "B. PACKAGE LEAFLET"
-  * text.status = #additional
-  
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
+  * title = "Narrative Text"
+  * code.text = "Narrative"
+
+  * section[+].
+    * title = "B. Package Leaflet"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "B. PACKAGE LEAFLET"
+    * text.status = #additional
+    
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
 
 
-      
-* section[=].section[+]
-  * title = "Package leaflet: Information for the user"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "Package leaflet: Information for the user"
-  * text.status = #additional
-      
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+        
+  * section[=].section[+]
+    * title = "Package leaflet: Information for the user"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "Package leaflet: Information for the user"
+    * text.status = #additional
+       
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
 <p><strong>Prospecto: informaci&oacute;n para el usuario</strong></p>
 <p>&nbsp;</p>
 <p><strong>Calcio/Vitamina D</strong><strong>3</strong> <strong>ROVI 1000 mg / 880 UI comprimidos efervescentes</strong></p>
@@ -50,16 +149,16 @@ Usage: #example
 <p>-Si tiene alguna duda, consulte a su m&eacute;dico o farmac&eacute;utico.</p>
 <p>-Este medicamento se le ha recetado solamente a usted, y no debe d&aacute;rselo a otras personas aunque tengan los mismos s&iacute;ntomas que usted, ya que puede perjudicarles.</p>
 <p>-Si experimenta efectos adversos, consulte a su m&eacute;dico o farmac&eacute;utico, incluso si se trata de efectos adversos que no aparecen en este prospecto. Ver secci&oacute;n 4.</p>
-      </div>         </div>"""   
+        </div>         </div>"""   
 
-* section[=].section[+]
-  * title = "What is in this leaflet"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "What is in this leaflet"
-  * text.status = #additional
-      
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
-      <p><strong>Contenido del prospecto</strong></p>
+  * section[=].section[+]
+    * title = "What is in this leaflet"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "What is in this leaflet"
+    * text.status = #additional
+       
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+        <p><strong>Contenido del prospecto</strong></p>
 <ol type="1">
 <li>Qu&eacute; es Calcio/Vitamina D3 ROVI y para qu&eacute; se utiliza</li>
 <li>Qu&eacute; necesita saber antes de empezar a tomar Calcio/Vitamina D3 ROVI</li>
@@ -68,26 +167,26 @@ Usage: #example
 <li>Conservaci&oacute;n de Calcio/Vitamina D3 ROVI</li>
 <li>Contenido del envase e informaci&oacute;n adicional</li>
 </ol>
-      </div>         </div>"""             
+        </div>         </div>"""             
 
-* section[=].section[+]
-  * title = "1. What CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES is and what it is used for"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "1. What CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES is and what it is used for"
-  * text.status = #additional
-      
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+  * section[=].section[+]
+    * title = "1. What CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES is and what it is used for"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "1. What CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES is and what it is used for"
+    * text.status = #additional
+       
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
 <p>Calcio/Vitamina D3 ROVI son comprimidos efervescentes. Se presentan en envases con 30 comprimidos.</p>
 <p>Este medicamento es una asociaci&oacute;n de calcio y vitamina D que est&aacute; indicada para la correcci&oacute;n de la deficiencia combinada de vitamina D y calcio en pacientes de edad avanzada as&iacute; como suplemento de vitamina D y calcio como coadyuvante a la terapia espec&iacute;fica para el tratamiento de la osteoporosis en pacientes con deficiencia o con alto riesgo de deficiencia combinada de vitamina D y calcio.</p>
-      </div>         </div>"""              
-* section[=].section[+]
-  * title = "2. What you need to know before you take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "2. What you need to know before you take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-  * text.status = #additional
-      
+        </div>         </div>"""              
+  * section[=].section[+]
+    * title = "2. What you need to know before you take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "2. What you need to know before you take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+    * text.status = #additional
+       
 
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>  <p><strong>No tome Calcio/Vitamina D</strong><strong>3</strong> <strong>ROVI:</strong></p>
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>  <p><strong>No tome Calcio/Vitamina D</strong><strong>3</strong> <strong>ROVI:</strong></p>
 <p>&nbsp;</p>
 <div>
 <ul type="circle">
@@ -151,15 +250,15 @@ Usage: #example
 <p>Este medicamento contiene lactosa. Si su m&eacute;dico le ha indicado que padece una intolerancia a ciertos az&uacute;cares, consulte con &eacute;l antes de tomar este medicamento.</p>
 <p>&nbsp;</p>
 <p>Este medicamento contiene glucosa (en maltodextrina procedente de ma&iacute;z). Si su m&eacute;dico le ha indicado que padece una intolerancia a ciertos az&uacute;cares, consulte con &eacute;l antes de tomar este medicamento.</p>
-      </div>         </div>"""              
-* section[=].section[+]
-  * title = "3. How to take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "3. How to take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-  * text.status = #additional
-        
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
-          <p>Siga exactamente las instrucciones de administraci&oacute;n de este medicamento&nbsp; indicadas por su m&eacute;dico o farmac&eacute;utico. En caso de duda, consulte de nuevo a su m&eacute;dico o farmac&eacute;utico.</p>
+        </div>         </div>"""              
+  * section[=].section[+]
+    * title = "3. How to take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "3. How to take CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+    * text.status = #additional
+          
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+            <p>Siga exactamente las instrucciones de administraci&oacute;n de este medicamento&nbsp; indicadas por su m&eacute;dico o farmac&eacute;utico. En caso de duda, consulte de nuevo a su m&eacute;dico o farmac&eacute;utico.</p>
 <p>&nbsp;</p>
 <p><span style="text-decoration: underline;">Dosis</span></p>
 <p><em>Adultos</em></p>
@@ -190,17 +289,17 @@ Usage: #example
 <p><strong>Si interrumpe el tratamiento con Calcio/Vitamina D</strong><strong>3</strong> <strong>ROVI</strong></p>
 <p><strong>&nbsp;</strong></p>
 <p>Si tiene cualquier otra duda sobre el uso de este medicamento, pregunte a su m&eacute;dico o farmac&eacute;utico.</p>     
-      </div>         </div>"""          
+        </div>         </div>"""          
 
-        
-* section[=].section[+]
-  * title = "4. Possible side effects"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "4. Possible side effects"
-  * text.status = #additional
-              
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
-          <p>Al igual que todos los medicamentos, este medicamento puede producir efectos adversos, aunque no todas las personas los sufran.</p>
+          
+  * section[=].section[+]
+    * title = "4. Possible side effects"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "4. Possible side effects"
+    * text.status = #additional
+                
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+           <p>Al igual que todos los medicamentos, este medicamento puede producir efectos adversos, aunque no todas las personas los sufran.</p>
 <p>&nbsp;</p>
 <p><strong>-Poco frecuente</strong>s (pueden afectar a entre 1 y 10 de cada 1.000 pacientes ):</p>
 <ul type="disc">
@@ -226,32 +325,32 @@ Usage: #example
 <p>&nbsp;</p>
 <p><strong>Comunicaci&oacute;n de efectos adversos</strong></p>
 <p>Si experimenta cualquier tipo de efecto adverso, consulte a su m&eacute;dico o farmac&eacute;utico, incluso si se trata de posibles efectos adversos que no aparecen en este prospecto. Tambi&eacute;n puede comunicarlos directamente a trav&eacute;s Sistema Espa&ntilde;ol de Farmacovigilancia de Medicamentos de Uso Humano: <a href="https://www.notificaram.es">https://www.notificaram.es</a>. Mediante la comunicaci&oacute;n de efectos adversos usted puede contribuir a proporcionar m&aacute;s informaci&oacute;n sobre la seguridad de este medicamento.</p>
-      </div>         </div>"""   
-        
-* section[=].section[+]
-  * title = "5. How to store CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "5. How to store CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-  * text.status = #additional
-                
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
-          <p>Mantener este medicamento fuera de la vista y del alcance de los ni&ntilde;os.</p>
+        </div>         </div>"""   
+          
+  * section[=].section[+]
+    * title = "5. How to store CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "5. How to store CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+    * text.status = #additional
+                 
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+           <p>Mantener este medicamento fuera de la vista y del alcance de los ni&ntilde;os.</p>
 <p>&nbsp;</p>
 <p>Conservar en el envase original para protegerlo de la humedad.</p>
 <p>&nbsp;</p>
 <p>No utilice este medicamento despu&eacute;s de la fecha de caducidad que aparece en el envase despu&eacute;s de CAD. La fecha de caducidad es el &uacute;ltimo d&iacute;a del mes que se indica.</p>
 <p>&nbsp;</p>
 <p>Los medicamentos no se deben tirar por los desag&uuml;es ni a la basura. Deposite los envases y los medicamentos que no necesita en el Punto SIGRE  de la farmacia. En caso de duda pregunte a su farmac&eacute;utico c&oacute;mo deshacerse de los envases y de los medicamentos que no necesita. De esta forma, ayudar&aacute; a proteger el medio ambiente</p>
-      </div>         </div>"""   
-        
-* section[=].section[+]
-  * title = "6. Contents of the pack and other information"
-  * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "6. Contents of the pack and other information"
-  * text.status = #additional
-      
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
-          <p><strong>Composici&oacute;n de Calcio/Vitamina D</strong><strong>3</strong> <strong>ROVI</strong></p>
+        </div>         </div>"""   
+          
+  * section[=].section[+]
+    * title = "6. Contents of the pack and other information"
+    * code = https://spor.ema.europa.eu/rmswi/#100000155538
+    * code.text = "6. Contents of the pack and other information"
+    * text.status = #additional
+       
+    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+           <p><strong>Composici&oacute;n de Calcio/Vitamina D</strong><strong>3</strong> <strong>ROVI</strong></p>
 <p><strong>&nbsp;</strong></p>
 <p>-Los principios activos son: carbonato de calcio y concentrado de colecalciferol (en forma de polvo). Cada comprimido contiene 2500 mg de carbonato de calcio (equivalente a 1.000 mg de calcio) y 22 microgramos de concentrado de colecalciferol en forma de polvo (equivalente a 880 UI de colecalciferol = vitamina D3).</p>
 <p>&nbsp;</p>
@@ -277,6 +376,6 @@ Usage: #example
 <p><strong><em>&nbsp;</em></strong></p>
 <p><strong>Fecha de la &uacute;ltima revisi&oacute;n de este prospecto:</strong> julio 2019</p>
 <p>La informaci&oacute;n detallada de este medicamento est&aacute; disponible en la p&aacute;gina web de la Agencia Espa&ntilde;ola de Medicamentos y Productos Sanitarios (AEMPS) (<a href="https://www.aemps.gob.es/"><span style="text-decoration: underline;">https://www.aemps.gob.es/</span></a>)</p>
-                          
-                                
-      </div>         </div>"""
+                            
+                                  
+        </div>         </div>"""

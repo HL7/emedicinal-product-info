@@ -6,7 +6,7 @@ Description: "Regulated Authorization for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI
 Usage: #example
 
 
-* id = "3ca16aa2-422e-4260-bd8d-5740419ec663" 
+* id = "045eb1ab-783b-4935-991b-21f6327ab71a" 
 
 * identifier.system = $spor-prod
 * identifier.value = "68290"

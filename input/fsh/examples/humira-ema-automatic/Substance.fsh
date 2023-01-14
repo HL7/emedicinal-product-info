@@ -3,7 +3,7 @@ Instance: substance-adalimumab
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "ADALIMUMAB"
 Usage: #example
-* id = "53016b15-c203-414f-87c2-5be9b521642b" 
+* id = "8c3026bb-ea10-4ea3-a515-c0b3aff128b1" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "FYS6T7F842"

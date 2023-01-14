@@ -5,7 +5,7 @@ InstanceOf: OrganizationUvEpi
 Title: "Laboratorios Farmacéuticos ROVI, S.A. as Marketing authorisation holder"
 Description: "Laboratorios Farmacéuticos ROVI, S.A. as Marketing authorisation holder"
 Usage: #example
-* id = "55b12cfb-4dae-43d8-abf8-3279df2ee2e1" 
+* id = "3542710d-724a-4bf5-8492-7c519e83ecb1" 
 * identifier.system = $spor-org
 * identifier.value = "xx"
 * identifier.use = #official

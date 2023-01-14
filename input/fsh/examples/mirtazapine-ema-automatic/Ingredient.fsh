@@ -5,7 +5,7 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "9ce51635-d636-4ace-84c4-5f17f5e7efef" 
+* id = "0f14e194-e812-451a-9719-c9c99695489e" 
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
@@ -33,7 +33,7 @@ Title: "Ingredient-excipient LACTOSE MONOHYDRATE"
 Description: "LACTOSE MONOHYDRATE"
 Usage: #example
 
-* id = "90deb226-e110-4ae8-9473-1738d206ae06" 
+* id = "77de0626-e052-4703-95ed-0a33a054998f" 
 
 * identifier.system = $ginas
 * identifier.value = "EWQ57Q8I5X"
@@ -61,7 +61,7 @@ Title: "Ingredient-active Mirtazapine"
 Description: "Mirtazapine"
 Usage: #example
 
-* id = "c898cdee-328a-466f-b815-95ae198b5c88" 
+* id = "1199a3fd-9783-4e57-9075-20facc04758e" 
 
 * identifier.system = $ginas
 * identifier.value = "A051Q2099Q"
@@ -93,7 +93,7 @@ Title: "Ingredient-excipient HYDROXYPROPYL CELLULOSE, UNSPECIFIED"
 Description: "HYDROXYPROPYL CELLULOSE, UNSPECIFIED"
 Usage: #example
 
-* id = "7d0125b3-1791-49c6-a8da-c08d1636d0a1" 
+* id = "a5c0c836-4ec6-4a60-afca-453ed78d3e59" 
 
 * identifier.system = $ginas
 * identifier.value = "9XZ8H6N6OH"
@@ -121,7 +121,7 @@ Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
 Description: "SILICA, COLLOIDAL ANHYDROUS"
 Usage: #example
 
-* id = "f20131d0-a96c-4ab6-ab36-369746a193be" 
+* id = "6bf9998f-af6b-49b5-9a79-ef4f28ad150f" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -149,7 +149,7 @@ Title: "Ingredient-excipient CORN STARCH"
 Description: "CORN STARCH"
 Usage: #example
 
-* id = "6600c003-c62b-43ca-8873-5033a2abea8c" 
+* id = "bb6402ac-8604-4070-89bc-5c5984465466" 
 
 * identifier.system = $ginas
 * identifier.value = "O8232NY3SJ"
