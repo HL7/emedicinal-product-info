@@ -275,7 +275,6 @@
 
       {% for apdr in apds %}
         {% assign apd = apdr.resource %}
-        {{ apd | inspect }}
 
         {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
         {% comment %}Do this only if the APD-formOf links to the MPD {% endcomment %}
@@ -322,7 +321,6 @@
                       {% assign midings = resource.entry | where: "resource.resourceType", "Ingredient" %}
                       {% for midingr in midings %}
                         {% assign miding = midingr.resource %}
-                        {{miding|inspect}}
                         {% assign midting = miding.id | prepend: 'ManufacturedItemDefinition/' %}
                         {% if mid.for[1].reference == midingtid %}
                           <div class="container   rcorners miding">
