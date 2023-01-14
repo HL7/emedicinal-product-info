@@ -3,7 +3,6 @@ Instance: bundlepackageleaflet-pentasa
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for Pentasa Package Leaflet"
 Description: "Bundle for Pentasa Package Leaflet ePI document"
-Usage: #example
 
 * id = "0af167a0-0bc4-484d-9621-17de764568da" 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
