@@ -22,9 +22,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -58,9 +58,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -90,9 +90,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -122,9 +122,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -154,9 +154,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -186,9 +186,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -218,9 +218,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -250,9 +250,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  
@@ -282,9 +282,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
-* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
-* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34)
+* for[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
+* for[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34)
 // Reference to Organization:  Reference to MAH
 
  

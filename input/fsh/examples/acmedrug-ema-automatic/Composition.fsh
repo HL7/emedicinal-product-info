@@ -1,5 +1,5 @@
 
-Instance: compositionacmedrug
+Instance: composition5aa8042f9b2bea12d814ccaf27f6d64e
 InstanceOf: CompositionUvEpi
 Title: "Composition for acmedrug Package Leaflet"
 Description:  "Composition for acmedrug Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpacmedrugman)
+* subject = Reference(mp534e209eb0a3ff60437639cb2015316f)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-2aff7154a8d952c895e8a03849a25108)
 
@@ -47,13 +47,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-acmedrug
-  * entry[+] = Reference(ap-acmedrug) 
+//  * entry[+].fullUrl = ap-5aa8042f9b2bea12d814ccaf27f6d64e
+  * entry[+] = Reference(ap-5aa8042f9b2bea12d814ccaf27f6d64e) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationacmedrug
-  * entry[+] = Reference(authorizationacmedrug) 
+//  * entry[+].fullUrl = authorization5aa8042f9b2bea12d814ccaf27f6d64e
+  * entry[+] = Reference(authorization5aa8042f9b2bea12d814ccaf27f6d64e) 
  
 
   // Organization
@@ -62,18 +62,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-acmedrugblistertabs
-  * entry[+] = Reference(ppd-acmedrugblistertabs) 
+//  * entry[+].fullUrl = ppd-8799ff87933460485b763ad9b52f8276
+  * entry[+] = Reference(ppd-8799ff87933460485b763ad9b52f8276) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpacmedrugman
-  * entry[+] = Reference(mpacmedrugman) 
+//  * entry[+].fullUrl = mp534e209eb0a3ff60437639cb2015316f
+  * entry[+] = Reference(mp534e209eb0a3ff60437639cb2015316f) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-acmedrugman
-  * entry[+] = Reference(mid-acmedrugman) 
+//  * entry[+].fullUrl = mid-534e209eb0a3ff60437639cb2015316f
+  * entry[+] = Reference(mid-534e209eb0a3ff60437639cb2015316f) 
    
 
 

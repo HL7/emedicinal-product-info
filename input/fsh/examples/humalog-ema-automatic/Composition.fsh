@@ -1,5 +1,5 @@
 
-Instance: compositionHumalog
+Instance: composition45f3604d61f93f5f026bea5d5824af10
 InstanceOf: CompositionUvEpi
 Title: "Composition for Humalog Package Leaflet"
 Description:  "Composition for Humalog Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
+* subject = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
@@ -67,13 +67,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-humalog100uml5prefilledpen
-  * entry[+] = Reference(ap-humalog100uml5prefilledpen) 
+//  * entry[+].fullUrl = ap-fa2090b7ce9bdf87e24a9d05bbb51677
+  * entry[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationhumalog
-  * entry[+] = Reference(authorizationhumalog) 
+//  * entry[+].fullUrl = authorization35570a7ffa4ad1ddf8a920b1728d4cd2
+  * entry[+] = Reference(authorization35570a7ffa4ad1ddf8a920b1728d4cd2) 
  
 
   // Organization
@@ -90,18 +90,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen
-  * entry[+] = Reference(ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen) 
+//  * entry[+].fullUrl = ppd-a9955d128989ce310e64a9fb99c8a9ac
+  * entry[+] = Reference(ppd-a9955d128989ce310e64a9fb99c8a9ac) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpHumalogMix50InsulinKwikPen3mlprefill
-  * entry[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill) 
+//  * entry[+].fullUrl = mpf6b4fcaaf21ddd70f011f383780f7bf3
+  * entry[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-humalog100uml5prefilledpen
-  * entry[+] = Reference(mid-humalog100uml5prefilledpen) 
+//  * entry[+].fullUrl = mid-fa2090b7ce9bdf87e24a9d05bbb51677
+  * entry[+] = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677) 
    
 
 

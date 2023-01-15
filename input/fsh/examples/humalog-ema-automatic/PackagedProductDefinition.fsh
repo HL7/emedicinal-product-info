@@ -1,5 +1,5 @@
 
-Instance: ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen
+Instance: ppd-a9955d128989ce310e64a9fb99c8a9ac
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
 Description: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
+* packageFor = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)

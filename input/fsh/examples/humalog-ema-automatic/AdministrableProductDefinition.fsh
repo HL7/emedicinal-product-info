@@ -1,5 +1,5 @@
 
-Instance: ap-humalog100uml5prefilledpen
+Instance: ap-fa2090b7ce9bdf87e24a9d05bbb51677
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product Humalog 100 U/ml 5 pre-filled pen"
 Description: "Humalog 100 U/ml 5 pre-filled pen"
@@ -10,7 +10,7 @@ Usage: #example
 
 * status = #active
 
-* formOf = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
+* formOf = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
 * administrableDoseForm = $spor-rms#100000073864 "Suspension for injection"
 * unitOfPresentation = $spor-rms#200000002135 "Pen"
 
@@ -18,7 +18,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-humalog100uml5prefilledpen)
+* producedFrom = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
 
 
 * routeOfAdministration.code = $spor-rms#100000073633 "Subcutaneous use"

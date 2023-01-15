@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-calciovitaminad3rovi1000mg880uicomprimidosefervescentes
+Instance: bundlepackageleaflet-925dad38f0afbba36223a82b3a766438
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES Package Leaflet"
 Description: "Bundle for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionCALCIOVITAMINAD3ROVI1000mg880UICOMPRIMIDOSEFERVESCENTES"
-* entry[0].resource = compositionCALCIOVITAMINAD3ROVI1000mg880UICOMPRIMIDOSEFERVESCENTES
+* entry[0].fullUrl = "Composition/composition02e928f15b7b861b4b44915d9f1330ec"
+* entry[0].resource = composition02e928f15b7b861b4b44915d9f1330ec
 
  
  
@@ -90,14 +90,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes"
-* entry[=].resource = ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-925dad38f0afbba36223a82b3a766438"
+* entry[=].resource = ap-925dad38f0afbba36223a82b3a766438 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationcalciovitaminad3rovi1000mg880uicomprimidosefervescentes"
-* entry[=].resource = authorizationcalciovitaminad3rovi1000mg880uicomprimidosefervescentes 
+* entry[+].fullUrl = "RegulatedAuthorization/authorization925dad38f0afbba36223a82b3a766438"
+* entry[=].resource = authorization925dad38f0afbba36223a82b3a766438 
  
 
 // Organization
@@ -108,19 +108,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-calciovitaminad3rovi1000mg880uicomprimidosefervescentes"
-* entry[=].resource = ppd-calciovitaminad3rovi1000mg880uicomprimidosefervescentes 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-925dad38f0afbba36223a82b3a766438"
+* entry[=].resource = ppd-925dad38f0afbba36223a82b3a766438 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes"
-* entry[=].resource = mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes 
+* entry[+].fullUrl = "MedicinalProductDefinition/mpd4bcbbaec04bf6aceb2f71162205967e"
+* entry[=].resource = mpd4bcbbaec04bf6aceb2f71162205967e 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes"
-* entry[=].resource = mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-925dad38f0afbba36223a82b3a766438"
+* entry[=].resource = mid-925dad38f0afbba36223a82b3a766438 
  
 

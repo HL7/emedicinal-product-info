@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-humira
+Instance: bundlepackageleaflet-3a3583227b4c5b0887f1e0d38269b469
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for humira Package Leaflet"
 Description: "Bundle for humira Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "nan"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionhumira"
-* entry[0].resource = compositionhumira
+* entry[0].fullUrl = "Composition/composition3a3583227b4c5b0887f1e0d38269b469"
+* entry[0].resource = composition3a3583227b4c5b0887f1e0d38269b469
 
  
  
@@ -75,14 +75,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass"
-* entry[=].resource = ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-9b5b17469311c2ea4d1d08419748b4fb"
+* entry[=].resource = ap-9b5b17469311c2ea4d1d08419748b4fb 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationhumira20mgsolutionforinjectioninprefilledsyringe"
-* entry[=].resource = authorizationhumira20mgsolutionforinjectioninprefilledsyringe 
+* entry[+].fullUrl = "RegulatedAuthorization/authorization816b7da4abc60b3e9ae3b37146463f8a"
+* entry[=].resource = authorization816b7da4abc60b3e9ae3b37146463f8a 
  
 
 // Organization
@@ -93,19 +93,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads"
-* entry[=].resource = ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-8ff6c02459d9a66f4d9a3db864bd78f6"
+* entry[=].resource = ppd-8ff6c02459d9a66f4d9a3db864bd78f6 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass"
-* entry[=].resource = mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass 
+* entry[+].fullUrl = "MedicinalProductDefinition/mpf97db27e6330f77484eb8425ad2913cd"
+* entry[=].resource = mpf97db27e6330f77484eb8425ad2913cd 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass"
-* entry[=].resource = mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-9b5b17469311c2ea4d1d08419748b4fb"
+* entry[=].resource = mid-9b5b17469311c2ea4d1d08419748b4fb 
  
 

@@ -1,5 +1,5 @@
 
-Instance: ppd-3mlcartridgeglassinaprefilledpen
+Instance: ppd-8c4132a54faf3c7e493f1831dcb0425d
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "3 ml cartridge (glass) in a pre-filled pen"
 Description: "3 ml cartridge (glass) in a pre-filled pen"
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* packageFor = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)

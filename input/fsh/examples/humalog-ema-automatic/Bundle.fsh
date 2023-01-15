@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-humaloginsulinlispro100uml
+Instance: bundlepackageleaflet-31887cbcd4c018e35f958e5f8547dd66
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for Humalog Insulin Lispro 100u/ml Package Leaflet"
 Description: "Bundle for Humalog Insulin Lispro 100u/ml Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionHumalog"
-* entry[0].resource = compositionHumalog
+* entry[0].fullUrl = "Composition/composition45f3604d61f93f5f026bea5d5824af10"
+* entry[0].resource = composition45f3604d61f93f5f026bea5d5824af10
 
  
  
@@ -70,14 +70,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-humalog100uml5prefilledpen"
-* entry[=].resource = ap-humalog100uml5prefilledpen 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-fa2090b7ce9bdf87e24a9d05bbb51677"
+* entry[=].resource = ap-fa2090b7ce9bdf87e24a9d05bbb51677 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationhumalog"
-* entry[=].resource = authorizationhumalog 
+* entry[+].fullUrl = "RegulatedAuthorization/authorization35570a7ffa4ad1ddf8a920b1728d4cd2"
+* entry[=].resource = authorization35570a7ffa4ad1ddf8a920b1728d4cd2 
  
 
 // Organization
@@ -98,19 +98,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen"
-* entry[=].resource = ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-a9955d128989ce310e64a9fb99c8a9ac"
+* entry[=].resource = ppd-a9955d128989ce310e64a9fb99c8a9ac 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpHumalogMix50InsulinKwikPen3mlprefill"
-* entry[=].resource = mpHumalogMix50InsulinKwikPen3mlprefill 
+* entry[+].fullUrl = "MedicinalProductDefinition/mpf6b4fcaaf21ddd70f011f383780f7bf3"
+* entry[=].resource = mpf6b4fcaaf21ddd70f011f383780f7bf3 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-humalog100uml5prefilledpen"
-* entry[=].resource = mid-humalog100uml5prefilledpen 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-fa2090b7ce9bdf87e24a9d05bbb51677"
+* entry[=].resource = mid-fa2090b7ce9bdf87e24a9d05bbb51677 
  
 

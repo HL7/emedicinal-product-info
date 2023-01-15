@@ -1,5 +1,5 @@
 
-Instance: ppd-acmedrugblistertabs
+Instance: ppd-8799ff87933460485b763ad9b52f8276
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "acme drug blister tabs"
 Description: "acme drug blister tabs"
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpacmedrugman)
+* packageFor = Reference(mp534e209eb0a3ff60437639cb2015316f)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-2aff7154a8d952c895e8a03849a25108)

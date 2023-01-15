@@ -18,9 +18,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-acmedrugman)
-* for[+] = Reference(mpacmedrugman)
-* for[+] = Reference(ap-acmedrug)
+* for = Reference(mid-534e209eb0a3ff60437639cb2015316f)
+* for[+] = Reference(mp534e209eb0a3ff60437639cb2015316f)
+* for[+] = Reference(ap-5aa8042f9b2bea12d814ccaf27f6d64e)
 // Reference to Organization:  Reference to MAH
 
  
@@ -47,9 +47,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-acmedrugman)
-* for[+] = Reference(mpacmedrugman)
-* for[+] = Reference(ap-acmedrug)
+* for = Reference(mid-534e209eb0a3ff60437639cb2015316f)
+* for[+] = Reference(mp534e209eb0a3ff60437639cb2015316f)
+* for[+] = Reference(ap-5aa8042f9b2bea12d814ccaf27f6d64e)
 // Reference to Organization:  Reference to MAH
 
  
@@ -80,9 +80,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-acmedrugman)
-* for[+] = Reference(mpacmedrugman)
-* for[+] = Reference(ap-acmedrug)
+* for = Reference(mid-534e209eb0a3ff60437639cb2015316f)
+* for[+] = Reference(mp534e209eb0a3ff60437639cb2015316f)
+* for[+] = Reference(ap-5aa8042f9b2bea12d814ccaf27f6d64e)
 // Reference to Organization:  Reference to MAH
 
  

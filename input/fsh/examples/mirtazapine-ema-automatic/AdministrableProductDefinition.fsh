@@ -1,5 +1,5 @@
 
-Instance: ap-mirtazapinacinfa30mgcoatedtablet
+Instance: ap-e762a2f54b0b24fca4744b1bb7524a5b
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product MIRTAZAPINA CINFA 30 mg Coated Tablet"
 Description: "MIRTAZAPINA CINFA 30 mg Coated Tablet"
@@ -10,7 +10,7 @@ Usage: #example
 
 * status = #active
 
-* formOf = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
+* formOf = Reference(mp817d49420419b04e8145f2f4031392d3)
 * administrableDoseForm = $spor-rms#100000073380 "Coated tablet"
 * unitOfPresentation = $spor-rms#200000002152 "tablet"
 
@@ -18,7 +18,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-mirtazapinacinfa30mgcoatedtablet)
+* producedFrom = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
 
 
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"

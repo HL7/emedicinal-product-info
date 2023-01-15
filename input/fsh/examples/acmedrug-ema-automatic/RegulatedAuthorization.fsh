@@ -1,5 +1,5 @@
 
-Instance: authorizationacmedrug
+Instance: authorization5aa8042f9b2bea12d814ccaf27f6d64e
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for acme drug"
 Description: "Regulated Authorization for acme drug"
@@ -11,7 +11,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpacmedrugman)
+* subject = Reference(mp534e209eb0a3ff60437639cb2015316f)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

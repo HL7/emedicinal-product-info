@@ -1,5 +1,5 @@
 
-Instance: ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes
+Instance: ap-925dad38f0afbba36223a82b3a766438
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
 Description: "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
@@ -10,7 +10,7 @@ Usage: #example
 
 * status = #active
 
-* formOf = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
+* formOf = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
 * administrableDoseForm = $spor-rms#100000073681 "Effervescent tablet"
 * unitOfPresentation = $spor-rms#200000002152 "tablet"
 
@@ -18,7 +18,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* producedFrom = Reference(mid-925dad38f0afbba36223a82b3a766438)
 
 
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"

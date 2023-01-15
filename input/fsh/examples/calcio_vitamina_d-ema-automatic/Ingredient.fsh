@@ -22,9 +22,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -55,9 +55,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -88,9 +88,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -121,9 +121,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -154,9 +154,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -187,9 +187,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -216,9 +216,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -245,9 +245,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -274,9 +274,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -303,9 +303,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -332,9 +332,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  
@@ -361,9 +361,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
-* for[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
-* for[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes)
+* for = Reference(mid-925dad38f0afbba36223a82b3a766438)
+* for[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
+* for[+] = Reference(ap-925dad38f0afbba36223a82b3a766438)
 // Reference to Organization:  Reference to MAH
 
  

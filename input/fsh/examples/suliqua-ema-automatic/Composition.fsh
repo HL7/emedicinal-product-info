@@ -1,5 +1,5 @@
 
-Instance: compositionSuliqua
+Instance: compositionb4adca48035e7857c0e645892ad2c66e
 InstanceOf: CompositionUvEpi
 Title: "Composition for Suliqua Package Leaflet"
 Description:  "Composition for Suliqua Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* subject = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
@@ -79,13 +79,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens
-  * entry[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens) 
+//  * entry[+].fullUrl = ap-66d97ddf0e95a23a3c0f4f2102139f34
+  * entry[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationsuliqua100unitsml50microgrammlsolutionforinjectioninaprefilledpen
-  * entry[+] = Reference(authorizationsuliqua100unitsml50microgrammlsolutionforinjectioninaprefilledpen) 
+//  * entry[+].fullUrl = authorizationa9517814b36bf7381b0a946a09cda2e4
+  * entry[+] = Reference(authorizationa9517814b36bf7381b0a946a09cda2e4) 
  
 
   // Organization
@@ -106,18 +106,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-3mlcartridgeglassinaprefilledpen
-  * entry[+] = Reference(ppd-3mlcartridgeglassinaprefilledpen) 
+//  * entry[+].fullUrl = ppd-8c4132a54faf3c7e493f1831dcb0425d
+  * entry[+] = Reference(ppd-8c4132a54faf3c7e493f1831dcb0425d) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen
-  * entry[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen) 
+//  * entry[+].fullUrl = mp367b9089c0743a2330f4c6e82b40ee41
+  * entry[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens
-  * entry[+] = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens) 
+//  * entry[+].fullUrl = mid-66d97ddf0e95a23a3c0f4f2102139f34
+  * entry[+] = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34) 
    
 
 

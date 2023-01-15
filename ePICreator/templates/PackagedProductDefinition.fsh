@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: ppd-{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '')}}
+Instance: ppd-{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') | create_hash_id}}
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "{{ row["name"] }}"
 Description: "{{ row["name"] }}"

@@ -1,5 +1,5 @@
 
-Instance: compositionPentasaSlowReleaseTablets1g
+Instance: compositionb3a8d58c709a2281d8ad2a590fe81663
 InstanceOf: CompositionUvEpi
 Title: "Composition for Pentasa Slow Release Tablets 1g Package Leaflet"
 Description:  "Composition for Pentasa Slow Release Tablets 1g Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpPentasaSlowReleaseTablets1g)
+* subject = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
@@ -59,13 +59,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-pentasaslowreleasetablets1g
-  * entry[+] = Reference(ap-pentasaslowreleasetablets1g) 
+//  * entry[+].fullUrl = ap-1a7318638ddbbeb084ef416e717b6fdb
+  * entry[+] = Reference(ap-1a7318638ddbbeb084ef416e717b6fdb) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationpentasa1gprolongedreleasetablet
-  * entry[+] = Reference(authorizationpentasa1gprolongedreleasetablet) 
+//  * entry[+].fullUrl = authorization4c6fd7bcbb34ab6e64e45a5035e4e5f4
+  * entry[+] = Reference(authorization4c6fd7bcbb34ab6e64e45a5035e4e5f4) 
  
 
   // Organization
@@ -74,18 +74,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-pentasaslowreleasetablets1g
-  * entry[+] = Reference(ppd-pentasaslowreleasetablets1g) 
+//  * entry[+].fullUrl = ppd-1a7318638ddbbeb084ef416e717b6fdb
+  * entry[+] = Reference(ppd-1a7318638ddbbeb084ef416e717b6fdb) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpPentasaSlowReleaseTablets1g
-  * entry[+] = Reference(mpPentasaSlowReleaseTablets1g) 
+//  * entry[+].fullUrl = mpb3a8d58c709a2281d8ad2a590fe81663
+  * entry[+] = Reference(mpb3a8d58c709a2281d8ad2a590fe81663) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-pentasaslowreleasetablets1g
-  * entry[+] = Reference(mid-pentasaslowreleasetablets1g) 
+//  * entry[+].fullUrl = mid-1a7318638ddbbeb084ef416e717b6fdb
+  * entry[+] = Reference(mid-1a7318638ddbbeb084ef416e717b6fdb) 
    
 
 

@@ -1,5 +1,5 @@
 
-Instance: compositionadalimumab
+Instance: composition2e8a8b1c9142de3ac8de0723812d3fef
 InstanceOf: CompositionUvEpi
 Title: "Composition for adalimumab Package Leaflet"
 Description:  "Composition for adalimumab Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpadalimumab)
+* subject = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-b4249a5180d23ad521b23e06e99b7afd)
 
@@ -43,13 +43,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-adalimumab
-  * entry[+] = Reference(ap-adalimumab) 
+//  * entry[+].fullUrl = ap-2e8a8b1c9142de3ac8de0723812d3fef
+  * entry[+] = Reference(ap-2e8a8b1c9142de3ac8de0723812d3fef) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationadalimumab
-  * entry[+] = Reference(authorizationadalimumab) 
+//  * entry[+].fullUrl = authorization2e8a8b1c9142de3ac8de0723812d3fef
+  * entry[+] = Reference(authorization2e8a8b1c9142de3ac8de0723812d3fef) 
  
 
   // Organization
@@ -70,18 +70,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-adalimumab
-  * entry[+] = Reference(ppd-adalimumab) 
+//  * entry[+].fullUrl = ppd-2e8a8b1c9142de3ac8de0723812d3fef
+  * entry[+] = Reference(ppd-2e8a8b1c9142de3ac8de0723812d3fef) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpadalimumab
-  * entry[+] = Reference(mpadalimumab) 
+//  * entry[+].fullUrl = mp2e8a8b1c9142de3ac8de0723812d3fef
+  * entry[+] = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-adalimumab
-  * entry[+] = Reference(mid-adalimumab) 
+//  * entry[+].fullUrl = mid-2e8a8b1c9142de3ac8de0723812d3fef
+  * entry[+] = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef) 
    
 
 

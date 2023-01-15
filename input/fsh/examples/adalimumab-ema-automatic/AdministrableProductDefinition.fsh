@@ -1,5 +1,5 @@
 
-Instance: ap-adalimumab
+Instance: ap-2e8a8b1c9142de3ac8de0723812d3fef
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product adalimumab"
 Description: "adalimumab"
@@ -10,7 +10,7 @@ Usage: #example
 
 * status = #active
 
-* formOf = Reference(mpadalimumab)
+* formOf = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
 * administrableDoseForm = $spor-rms#100000073863 "Solution for injection"
 * unitOfPresentation = $spor-rms#200000002135 "Pen"
 
@@ -18,7 +18,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-adalimumab)
+* producedFrom = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef)
 
 
 * routeOfAdministration.code = $spor-rms#100000073633 "Subcutaneous use"

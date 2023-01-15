@@ -18,9 +18,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -47,9 +47,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -80,9 +80,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -109,9 +109,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -138,9 +138,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -167,9 +167,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -196,9 +196,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -225,9 +225,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -254,9 +254,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
-* for[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* for = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
+* for[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd)
+* for[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb)
 // Reference to Organization:  Reference to MAH
 
  

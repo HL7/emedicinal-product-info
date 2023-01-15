@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-mirtazapinecinfa
+Instance: bundlepackageleaflet-dbd5a91e4cf6998bdbd8827ab1854e65
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for mirtazapine-cinfa Package Leaflet"
 Description: "Bundle for mirtazapine-cinfa Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "x"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionMIRTAZAPINACINFA30mgCoatedTablet"
-* entry[0].resource = compositionMIRTAZAPINACINFA30mgCoatedTablet
+* entry[0].fullUrl = "Composition/composition7a7ff0f4e1993c2fdabba6c8d9931a52"
+* entry[0].resource = composition7a7ff0f4e1993c2fdabba6c8d9931a52
 
  
  
@@ -60,14 +60,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-mirtazapinacinfa30mgcoatedtablet"
-* entry[=].resource = ap-mirtazapinacinfa30mgcoatedtablet 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-e762a2f54b0b24fca4744b1bb7524a5b"
+* entry[=].resource = ap-e762a2f54b0b24fca4744b1bb7524a5b 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationmirtazapinacinfa30mgcoatedtablet"
-* entry[=].resource = authorizationmirtazapinacinfa30mgcoatedtablet 
+* entry[+].fullUrl = "RegulatedAuthorization/authorizatione762a2f54b0b24fca4744b1bb7524a5b"
+* entry[=].resource = authorizatione762a2f54b0b24fca4744b1bb7524a5b 
  
 
 // Organization
@@ -78,19 +78,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-mirtazapinacinfa30mgcoatedtablet30tablets"
-* entry[=].resource = ppd-mirtazapinacinfa30mgcoatedtablet30tablets 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-0c848f16e413619f64703ded9343d866"
+* entry[=].resource = ppd-0c848f16e413619f64703ded9343d866 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpMIRTAZAPINeCINFA30mgCoatedTablet"
-* entry[=].resource = mpMIRTAZAPINeCINFA30mgCoatedTablet 
+* entry[+].fullUrl = "MedicinalProductDefinition/mp817d49420419b04e8145f2f4031392d3"
+* entry[=].resource = mp817d49420419b04e8145f2f4031392d3 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-mirtazapinacinfa30mgcoatedtablet"
-* entry[=].resource = mid-mirtazapinacinfa30mgcoatedtablet 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-e762a2f54b0b24fca4744b1bb7524a5b"
+* entry[=].resource = mid-e762a2f54b0b24fca4744b1bb7524a5b 
  
 

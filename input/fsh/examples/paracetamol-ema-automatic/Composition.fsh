@@ -1,5 +1,5 @@
 
-Instance: compositionparacetamol
+Instance: composition34060417eeae4622c4674a9c4100d2ed
 InstanceOf: CompositionUvEpi
 Title: "Composition for paracetamol Package Leaflet"
 Description:  "Composition for paracetamol Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpDOLOCATIL1gtablets)
+* subject = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
@@ -59,13 +59,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-dolocatil1gtablets
-  * entry[+] = Reference(ap-dolocatil1gtablets) 
+//  * entry[+].fullUrl = ap-08ac066220d4d68a3933a9c94bef32ff
+  * entry[+] = Reference(ap-08ac066220d4d68a3933a9c94bef32ff) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationdolocatil1gtablets
-  * entry[+] = Reference(authorizationdolocatil1gtablets) 
+//  * entry[+].fullUrl = authorization08ac066220d4d68a3933a9c94bef32ff
+  * entry[+] = Reference(authorization08ac066220d4d68a3933a9c94bef32ff) 
  
 
   // Organization
@@ -74,18 +74,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-dolocatil1gtablets20tablets
-  * entry[+] = Reference(ppd-dolocatil1gtablets20tablets) 
+//  * entry[+].fullUrl = ppd-1fba151ccf2a68d419f373375e997036
+  * entry[+] = Reference(ppd-1fba151ccf2a68d419f373375e997036) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpDOLOCATIL1gtablets
-  * entry[+] = Reference(mpDOLOCATIL1gtablets) 
+//  * entry[+].fullUrl = mpa975b7e209ea5c4c3bf8040a42b86fbd
+  * entry[+] = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-dolocatil1gtablets
-  * entry[+] = Reference(mid-dolocatil1gtablets) 
+//  * entry[+].fullUrl = mid-08ac066220d4d68a3933a9c94bef32ff
+  * entry[+] = Reference(mid-08ac066220d4d68a3933a9c94bef32ff) 
    
 
 

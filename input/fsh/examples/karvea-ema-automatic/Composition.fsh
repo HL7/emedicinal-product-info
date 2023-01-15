@@ -1,5 +1,5 @@
 
-Instance: compositionKarvea
+Instance: compositionf4d45353edcb21af3718d3a0df94a4d8
 InstanceOf: CompositionUvEpi
 Title: "Composition for Karvea Package Leaflet"
 Description:  "Composition for Karvea Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpKarvea75mgtabletblisterx28)
+* subject = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
@@ -87,13 +87,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-karvea75mgtablet
-  * entry[+] = Reference(ap-karvea75mgtablet) 
+//  * entry[+].fullUrl = ap-dcaa4d32aa6658a8df831551503e52ee
+  * entry[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationkarvea75mgtablet
-  * entry[+] = Reference(authorizationkarvea75mgtablet) 
+//  * entry[+].fullUrl = authorizationdcaa4d32aa6658a8df831551503e52ee
+  * entry[+] = Reference(authorizationdcaa4d32aa6658a8df831551503e52ee) 
  
 
   // Organization
@@ -102,18 +102,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-karvea75mgtabletblisterx28tablets
-  * entry[+] = Reference(ppd-karvea75mgtabletblisterx28tablets) 
+//  * entry[+].fullUrl = ppd-a223062bf3faf7acb3e6e80760fa4e91
+  * entry[+] = Reference(ppd-a223062bf3faf7acb3e6e80760fa4e91) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpKarvea75mgtabletblisterx28
-  * entry[+] = Reference(mpKarvea75mgtabletblisterx28) 
+//  * entry[+].fullUrl = mpa2bd0171a7654dc24f7eb7e9338e1acc
+  * entry[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-karvea75mgtablet
-  * entry[+] = Reference(mid-karvea75mgtablet) 
+//  * entry[+].fullUrl = mid-dcaa4d32aa6658a8df831551503e52ee
+  * entry[+] = Reference(mid-dcaa4d32aa6658a8df831551503e52ee) 
    
 
 

@@ -1,5 +1,5 @@
 
-Instance: authorizationadalimumab
+Instance: authorization2e8a8b1c9142de3ac8de0723812d3fef
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for adalimumab"
 Description: "Regulated Authorization for adalimumab"
@@ -11,7 +11,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpadalimumab)
+* subject = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

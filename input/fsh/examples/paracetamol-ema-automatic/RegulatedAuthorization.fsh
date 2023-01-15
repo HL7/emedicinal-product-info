@@ -1,5 +1,5 @@
 
-Instance: authorizationdolocatil1gtablets
+Instance: authorization08ac066220d4d68a3933a9c94bef32ff
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for DOLOCATIL 1 g tablets "
 Description: "Regulated Authorization for DOLOCATIL 1 g tablets "
@@ -11,7 +11,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpDOLOCATIL1gtablets)
+* subject = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

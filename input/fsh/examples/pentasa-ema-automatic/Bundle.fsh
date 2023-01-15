@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-pentasa
+Instance: bundlepackageleaflet-87263ad77afb6e39aa59e421ea0b6b37
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for Pentasa Package Leaflet"
 Description: "Bundle for Pentasa Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionPentasaSlowReleaseTablets1g"
-* entry[0].resource = compositionPentasaSlowReleaseTablets1g
+* entry[0].fullUrl = "Composition/compositionb3a8d58c709a2281d8ad2a590fe81663"
+* entry[0].resource = compositionb3a8d58c709a2281d8ad2a590fe81663
 
  
  
@@ -60,14 +60,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-pentasaslowreleasetablets1g"
-* entry[=].resource = ap-pentasaslowreleasetablets1g 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-1a7318638ddbbeb084ef416e717b6fdb"
+* entry[=].resource = ap-1a7318638ddbbeb084ef416e717b6fdb 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationpentasa1gprolongedreleasetablet"
-* entry[=].resource = authorizationpentasa1gprolongedreleasetablet 
+* entry[+].fullUrl = "RegulatedAuthorization/authorization4c6fd7bcbb34ab6e64e45a5035e4e5f4"
+* entry[=].resource = authorization4c6fd7bcbb34ab6e64e45a5035e4e5f4 
  
 
 // Organization
@@ -78,19 +78,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-pentasaslowreleasetablets1g"
-* entry[=].resource = ppd-pentasaslowreleasetablets1g 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-1a7318638ddbbeb084ef416e717b6fdb"
+* entry[=].resource = ppd-1a7318638ddbbeb084ef416e717b6fdb 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpPentasaSlowReleaseTablets1g"
-* entry[=].resource = mpPentasaSlowReleaseTablets1g 
+* entry[+].fullUrl = "MedicinalProductDefinition/mpb3a8d58c709a2281d8ad2a590fe81663"
+* entry[=].resource = mpb3a8d58c709a2281d8ad2a590fe81663 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-pentasaslowreleasetablets1g"
-* entry[=].resource = mid-pentasaslowreleasetablets1g 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-1a7318638ddbbeb084ef416e717b6fdb"
+* entry[=].resource = mid-1a7318638ddbbeb084ef416e717b6fdb 
  
 

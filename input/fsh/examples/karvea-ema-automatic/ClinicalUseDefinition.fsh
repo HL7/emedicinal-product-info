@@ -12,7 +12,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(mpKarvea75mgtabletblisterx28)
+* subject = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
 
 * contraindication
   * diseaseSymptomProcedure.concept.coding = $meddra#10012601 "Diabetis Mellitus"
@@ -32,7 +32,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(mpKarvea75mgtabletblisterx28)
+* subject = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
 
 
 * indication
@@ -53,7 +53,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(mpKarvea75mgtabletblisterx28)
+* subject = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
 
 
 

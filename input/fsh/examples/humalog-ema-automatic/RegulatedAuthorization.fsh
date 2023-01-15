@@ -1,5 +1,5 @@
 
-Instance: authorizationhumalog
+Instance: authorization35570a7ffa4ad1ddf8a920b1728d4cd2
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for Humalog "
 Description: "Regulated Authorization for Humalog "
@@ -11,7 +11,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
+* subject = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-acmedrug
+Instance: bundlepackageleaflet-5aa8042f9b2bea12d814ccaf27f6d64e
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for acmedrug Package Leaflet"
 Description: "Bundle for acmedrug Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionacmedrug"
-* entry[0].resource = compositionacmedrug
+* entry[0].fullUrl = "Composition/composition5aa8042f9b2bea12d814ccaf27f6d64e"
+* entry[0].resource = composition5aa8042f9b2bea12d814ccaf27f6d64e
 
  
  
@@ -45,14 +45,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-acmedrug"
-* entry[=].resource = ap-acmedrug 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-5aa8042f9b2bea12d814ccaf27f6d64e"
+* entry[=].resource = ap-5aa8042f9b2bea12d814ccaf27f6d64e 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationacmedrug"
-* entry[=].resource = authorizationacmedrug 
+* entry[+].fullUrl = "RegulatedAuthorization/authorization5aa8042f9b2bea12d814ccaf27f6d64e"
+* entry[=].resource = authorization5aa8042f9b2bea12d814ccaf27f6d64e 
  
 
 // Organization
@@ -63,19 +63,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-acmedrugblistertabs"
-* entry[=].resource = ppd-acmedrugblistertabs 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-8799ff87933460485b763ad9b52f8276"
+* entry[=].resource = ppd-8799ff87933460485b763ad9b52f8276 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpacmedrugman"
-* entry[=].resource = mpacmedrugman 
+* entry[+].fullUrl = "MedicinalProductDefinition/mp534e209eb0a3ff60437639cb2015316f"
+* entry[=].resource = mp534e209eb0a3ff60437639cb2015316f 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-acmedrugman"
-* entry[=].resource = mid-acmedrugman 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-534e209eb0a3ff60437639cb2015316f"
+* entry[=].resource = mid-534e209eb0a3ff60437639cb2015316f 
  
 

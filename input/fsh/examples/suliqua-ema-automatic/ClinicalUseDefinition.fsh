@@ -12,7 +12,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* subject = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
 
 * contraindication
   * diseaseSymptomProcedure.concept.coding = $meddra#nan "Contraindication"
@@ -32,7 +32,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* subject = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
 
 
 * indication
@@ -53,7 +53,7 @@ Usage: #example
 
 // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
  
-* subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* subject = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
 
 
 

@@ -1,5 +1,5 @@
 
-Instance: authorizationblaston1mgtablets
+Instance: authorizationda0fc2395ce219262dfd4f0c9a9f72e1
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for BLASTON 1 mg tablets"
 Description: "Regulated Authorization for BLASTON 1 mg tablets"
@@ -11,7 +11,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpBLASTON1mgtablets)
+* subject = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

@@ -1,5 +1,5 @@
 
-Instance: mpDOLOCATIL1gtablets
+Instance: mpa975b7e209ea5c4c3bf8040a42b86fbd
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product DOLOCATIL 1 g tablets"
 Description: "EU/1/97/049/001 DOLOCATIL 1 g tablets"

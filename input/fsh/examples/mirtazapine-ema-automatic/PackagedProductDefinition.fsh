@@ -1,5 +1,5 @@
 
-Instance: ppd-mirtazapinacinfa30mgcoatedtablet30tablets
+Instance: ppd-0c848f16e413619f64703ded9343d866
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "MIRTAZAPINA CINFA 30 mg Coated Tablet, 30 tablets"
 Description: "MIRTAZAPINA CINFA 30 mg Coated Tablet, 30 tablets"
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
+* packageFor = Reference(mp817d49420419b04e8145f2f4031392d3)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)

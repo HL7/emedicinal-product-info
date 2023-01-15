@@ -18,9 +18,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  
@@ -49,9 +49,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  
@@ -80,9 +80,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  
@@ -111,9 +111,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  
@@ -146,9 +146,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  
@@ -177,9 +177,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  
@@ -208,9 +208,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  
@@ -239,9 +239,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-humalog100uml5prefilledpen)
-* for[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
-* for[+] = Reference(ap-humalog100uml5prefilledpen)
+* for = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677)
+* for[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* for[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677)
 // Reference to Organization:  Reference to MAH
 
  

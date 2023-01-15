@@ -1,5 +1,5 @@
 
-Instance: mpMIRTAZAPINeCINFA30mgCoatedTablet
+Instance: mp817d49420419b04e8145f2f4031392d3
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product MIRTAZAPINe CINFA 30 mg Coated Tablet"
 Description: "EU/1/97/049/001 MIRTAZAPINe CINFA 30 mg Coated Tablet"

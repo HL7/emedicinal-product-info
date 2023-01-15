@@ -1,5 +1,5 @@
 
-Instance: mpacmedrugman
+Instance: mp534e209eb0a3ff60437639cb2015316f
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product acmedrug-man"
 Description: "EU/1/97/049/001 acmedrug-man"

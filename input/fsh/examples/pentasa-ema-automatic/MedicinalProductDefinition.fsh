@@ -1,5 +1,5 @@
 
-Instance: mpPentasaSlowReleaseTablets1g
+Instance: mpb3a8d58c709a2281d8ad2a590fe81663
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Pentasa Slow Release Tablets 1g"
 Description: "EU/1/97/049/001 Pentasa Slow Release Tablets 1g"

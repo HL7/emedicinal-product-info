@@ -1,5 +1,5 @@
 
-Instance: authorizationmirtazapinacinfa30mgcoatedtablet
+Instance: authorizatione762a2f54b0b24fca4744b1bb7524a5b
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for MIRTAZAPINA CINFA 30 mg Coated Tablet"
 Description: "Regulated Authorization for MIRTAZAPINA CINFA 30 mg Coated Tablet"
@@ -11,7 +11,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
+* subject = Reference(mp817d49420419b04e8145f2f4031392d3)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

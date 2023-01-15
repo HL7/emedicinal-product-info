@@ -1,5 +1,5 @@
 
-Instance: compositionMIRTAZAPINACINFA30mgCoatedTablet
+Instance: composition7a7ff0f4e1993c2fdabba6c8d9931a52
 InstanceOf: CompositionUvEpi
 Title: "Composition for MIRTAZAPINA CINFA 30 mg Coated Tablet Package Leaflet"
 Description:  "Composition for MIRTAZAPINA CINFA 30 mg Coated Tablet Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
+* subject = Reference(mp817d49420419b04e8145f2f4031392d3)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
@@ -59,13 +59,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-mirtazapinacinfa30mgcoatedtablet
-  * entry[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet) 
+//  * entry[+].fullUrl = ap-e762a2f54b0b24fca4744b1bb7524a5b
+  * entry[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationmirtazapinacinfa30mgcoatedtablet
-  * entry[+] = Reference(authorizationmirtazapinacinfa30mgcoatedtablet) 
+//  * entry[+].fullUrl = authorizatione762a2f54b0b24fca4744b1bb7524a5b
+  * entry[+] = Reference(authorizatione762a2f54b0b24fca4744b1bb7524a5b) 
  
 
   // Organization
@@ -74,18 +74,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-mirtazapinacinfa30mgcoatedtablet30tablets
-  * entry[+] = Reference(ppd-mirtazapinacinfa30mgcoatedtablet30tablets) 
+//  * entry[+].fullUrl = ppd-0c848f16e413619f64703ded9343d866
+  * entry[+] = Reference(ppd-0c848f16e413619f64703ded9343d866) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpMIRTAZAPINeCINFA30mgCoatedTablet
-  * entry[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet) 
+//  * entry[+].fullUrl = mp817d49420419b04e8145f2f4031392d3
+  * entry[+] = Reference(mp817d49420419b04e8145f2f4031392d3) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-mirtazapinacinfa30mgcoatedtablet
-  * entry[+] = Reference(mid-mirtazapinacinfa30mgcoatedtablet) 
+//  * entry[+].fullUrl = mid-e762a2f54b0b24fca4744b1bb7524a5b
+  * entry[+] = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b) 
    
 
 

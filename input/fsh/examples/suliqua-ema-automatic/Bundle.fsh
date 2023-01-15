@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-suliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen
+Instance: bundlepackageleaflet-e2464a7d3d627b9df9bef5bc3b263fb4
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen Package Leaflet"
 Description: "Bundle for Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/16/1157/003"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionSuliqua"
-* entry[0].resource = compositionSuliqua
+* entry[0].fullUrl = "Composition/compositionb4adca48035e7857c0e645892ad2c66e"
+* entry[0].resource = compositionb4adca48035e7857c0e645892ad2c66e
 
  
  
@@ -85,14 +85,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens"
-* entry[=].resource = ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-66d97ddf0e95a23a3c0f4f2102139f34"
+* entry[=].resource = ap-66d97ddf0e95a23a3c0f4f2102139f34 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationsuliqua100unitsml50microgrammlsolutionforinjectioninaprefilledpen"
-* entry[=].resource = authorizationsuliqua100unitsml50microgrammlsolutionforinjectioninaprefilledpen 
+* entry[+].fullUrl = "RegulatedAuthorization/authorizationa9517814b36bf7381b0a946a09cda2e4"
+* entry[=].resource = authorizationa9517814b36bf7381b0a946a09cda2e4 
  
 
 // Organization
@@ -118,19 +118,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-3mlcartridgeglassinaprefilledpen"
-* entry[=].resource = ppd-3mlcartridgeglassinaprefilledpen 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-8c4132a54faf3c7e493f1831dcb0425d"
+* entry[=].resource = ppd-8c4132a54faf3c7e493f1831dcb0425d 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen"
-* entry[=].resource = mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen 
+* entry[+].fullUrl = "MedicinalProductDefinition/mp367b9089c0743a2330f4c6e82b40ee41"
+* entry[=].resource = mp367b9089c0743a2330f4c6e82b40ee41 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens"
-* entry[=].resource = mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-66d97ddf0e95a23a3c0f4f2102139f34"
+* entry[=].resource = mid-66d97ddf0e95a23a3c0f4f2102139f34 
  
 

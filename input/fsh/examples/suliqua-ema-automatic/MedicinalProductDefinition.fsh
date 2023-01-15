@@ -1,5 +1,5 @@
 
-Instance: mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen
+Instance: mp367b9089c0743a2330f4c6e82b40ee41
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"
 Description: "EU/1/97/049/001 Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"

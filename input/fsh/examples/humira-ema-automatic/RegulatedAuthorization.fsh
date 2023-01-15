@@ -1,5 +1,5 @@
 
-Instance: authorizationhumira20mgsolutionforinjectioninprefilledsyringe
+Instance: authorization816b7da4abc60b3e9ae3b37146463f8a
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for Humira 20 mg solution for injection in pre-filled syringe"
 Description: "Regulated Authorization for Humira 20 mg solution for injection in pre-filled syringe"
@@ -11,7 +11,7 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
  //* subject = Reference(karvea75mgblisterx28)
-* subject = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
+* subject = Reference(mpf97db27e6330f77484eb8425ad2913cd)
 * type = $spor-rms#100000072062 "Marketing Authorisation"
 
 //* type = $spor-rms#100000072062

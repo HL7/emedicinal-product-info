@@ -1,5 +1,5 @@
 
-Instance: compositionCALCIOVITAMINAD3ROVI1000mg880UICOMPRIMIDOSEFERVESCENTES
+Instance: composition02e928f15b7b861b4b44915d9f1330ec
 InstanceOf: CompositionUvEpi
 Title: "Composition for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES Package Leaflet"
 Description:  "Composition for CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
+* subject = Reference(mpd4bcbbaec04bf6aceb2f71162205967e)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
@@ -83,13 +83,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes
-  * entry[+] = Reference(ap-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+//  * entry[+].fullUrl = ap-925dad38f0afbba36223a82b3a766438
+  * entry[+] = Reference(ap-925dad38f0afbba36223a82b3a766438) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationcalciovitaminad3rovi1000mg880uicomprimidosefervescentes
-  * entry[+] = Reference(authorizationcalciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+//  * entry[+].fullUrl = authorization925dad38f0afbba36223a82b3a766438
+  * entry[+] = Reference(authorization925dad38f0afbba36223a82b3a766438) 
  
 
   // Organization
@@ -98,18 +98,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-calciovitaminad3rovi1000mg880uicomprimidosefervescentes
-  * entry[+] = Reference(ppd-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+//  * entry[+].fullUrl = ppd-925dad38f0afbba36223a82b3a766438
+  * entry[+] = Reference(ppd-925dad38f0afbba36223a82b3a766438) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes
-  * entry[+] = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes) 
+//  * entry[+].fullUrl = mpd4bcbbaec04bf6aceb2f71162205967e
+  * entry[+] = Reference(mpd4bcbbaec04bf6aceb2f71162205967e) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes
-  * entry[+] = Reference(mid-calciovitaminad3rovi1000mg880uicomprimidosefervescentes) 
+//  * entry[+].fullUrl = mid-925dad38f0afbba36223a82b3a766438
+  * entry[+] = Reference(mid-925dad38f0afbba36223a82b3a766438) 
    
 
 

@@ -1,7 +1,7 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
-Instance: authorization{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') }}
+Instance: authorization{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') | create_hash_id }}
 InstanceOf: RegulatedAuthorizationUvEpi
 Title: "Regulated Authorization for {{ row["name"] }}"
 Description: "Regulated Authorization for {{ row["name"] }}"

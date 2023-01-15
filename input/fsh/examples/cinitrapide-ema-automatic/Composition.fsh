@@ -1,5 +1,5 @@
 
-Instance: compositioncinitrapide
+Instance: compositionaf8224f8c853d17daf5ea6782cb5a097
 InstanceOf: CompositionUvEpi
 Title: "Composition for cinitrapide Package Leaflet"
 Description:  "Composition for cinitrapide Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpBLASTON1mgtablets)
+* subject = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-94f8082c22713e050c3f2b55ea9d53ff)
 
@@ -59,13 +59,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-blaston1mgtablets
-  * entry[+] = Reference(ap-blaston1mgtablets) 
+//  * entry[+].fullUrl = ap-da0fc2395ce219262dfd4f0c9a9f72e1
+  * entry[+] = Reference(ap-da0fc2395ce219262dfd4f0c9a9f72e1) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationblaston1mgtablets
-  * entry[+] = Reference(authorizationblaston1mgtablets) 
+//  * entry[+].fullUrl = authorizationda0fc2395ce219262dfd4f0c9a9f72e1
+  * entry[+] = Reference(authorizationda0fc2395ce219262dfd4f0c9a9f72e1) 
  
 
   // Organization
@@ -74,18 +74,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-blaston1mgtablets50tablets
-  * entry[+] = Reference(ppd-blaston1mgtablets50tablets) 
+//  * entry[+].fullUrl = ppd-4c852ef40521d2a0f394aaaec09654a7
+  * entry[+] = Reference(ppd-4c852ef40521d2a0f394aaaec09654a7) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpBLASTON1mgtablets
-  * entry[+] = Reference(mpBLASTON1mgtablets) 
+//  * entry[+].fullUrl = mp1453e0f16ff6c1d3106ed737a7857578
+  * entry[+] = Reference(mp1453e0f16ff6c1d3106ed737a7857578) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-cinitrapide
-  * entry[+] = Reference(mid-cinitrapide) 
+//  * entry[+].fullUrl = mid-af8224f8c853d17daf5ea6782cb5a097
+  * entry[+] = Reference(mid-af8224f8c853d17daf5ea6782cb5a097) 
    
 
 

@@ -1,5 +1,5 @@
 
-Instance: ppd-blaston1mgtablets50tablets
+Instance: ppd-4c852ef40521d2a0f394aaaec09654a7
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "BLASTON 1 mg tablets, 50 tablets"
 Description: "BLASTON 1 mg tablets, 50 tablets"
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpBLASTON1mgtablets)
+* packageFor = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-94f8082c22713e050c3f2b55ea9d53ff)

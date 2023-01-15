@@ -18,9 +18,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-dolocatil1gtablets)
-* for[+] = Reference(mpDOLOCATIL1gtablets)
-* for[+] = Reference(ap-dolocatil1gtablets)
+* for = Reference(mid-08ac066220d4d68a3933a9c94bef32ff)
+* for[+] = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
+* for[+] = Reference(ap-08ac066220d4d68a3933a9c94bef32ff)
 // Reference to Organization:  Reference to MAH
 
  
@@ -47,9 +47,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-dolocatil1gtablets)
-* for[+] = Reference(mpDOLOCATIL1gtablets)
-* for[+] = Reference(ap-dolocatil1gtablets)
+* for = Reference(mid-08ac066220d4d68a3933a9c94bef32ff)
+* for[+] = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
+* for[+] = Reference(ap-08ac066220d4d68a3933a9c94bef32ff)
 // Reference to Organization:  Reference to MAH
 
  
@@ -80,9 +80,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-dolocatil1gtablets)
-* for[+] = Reference(mpDOLOCATIL1gtablets)
-* for[+] = Reference(ap-dolocatil1gtablets)
+* for = Reference(mid-08ac066220d4d68a3933a9c94bef32ff)
+* for[+] = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
+* for[+] = Reference(ap-08ac066220d4d68a3933a9c94bef32ff)
 // Reference to Organization:  Reference to MAH
 
  
@@ -109,9 +109,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-dolocatil1gtablets)
-* for[+] = Reference(mpDOLOCATIL1gtablets)
-* for[+] = Reference(ap-dolocatil1gtablets)
+* for = Reference(mid-08ac066220d4d68a3933a9c94bef32ff)
+* for[+] = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
+* for[+] = Reference(ap-08ac066220d4d68a3933a9c94bef32ff)
 // Reference to Organization:  Reference to MAH
 
  
@@ -138,9 +138,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-dolocatil1gtablets)
-* for[+] = Reference(mpDOLOCATIL1gtablets)
-* for[+] = Reference(ap-dolocatil1gtablets)
+* for = Reference(mid-08ac066220d4d68a3933a9c94bef32ff)
+* for[+] = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
+* for[+] = Reference(ap-08ac066220d4d68a3933a9c94bef32ff)
 // Reference to Organization:  Reference to MAH
 
  
@@ -167,9 +167,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-dolocatil1gtablets)
-* for[+] = Reference(mpDOLOCATIL1gtablets)
-* for[+] = Reference(ap-dolocatil1gtablets)
+* for = Reference(mid-08ac066220d4d68a3933a9c94bef32ff)
+* for[+] = Reference(mpa975b7e209ea5c4c3bf8040a42b86fbd)
+* for[+] = Reference(ap-08ac066220d4d68a3933a9c94bef32ff)
 // Reference to Organization:  Reference to MAH
 
  

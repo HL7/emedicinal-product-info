@@ -22,9 +22,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-adalimumab)
-* for[+] = Reference(mpadalimumab)
-* for[+] = Reference(ap-adalimumab)
+* for = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(ap-2e8a8b1c9142de3ac8de0723812d3fef)
 // Reference to Organization:  Reference to MAH
 
  
@@ -58,9 +58,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-adalimumab)
-* for[+] = Reference(mpadalimumab)
-* for[+] = Reference(ap-adalimumab)
+* for = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(ap-2e8a8b1c9142de3ac8de0723812d3fef)
 // Reference to Organization:  Reference to MAH
 
  
@@ -90,9 +90,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-adalimumab)
-* for[+] = Reference(mpadalimumab)
-* for[+] = Reference(ap-adalimumab)
+* for = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(ap-2e8a8b1c9142de3ac8de0723812d3fef)
 // Reference to Organization:  Reference to MAH
 
  

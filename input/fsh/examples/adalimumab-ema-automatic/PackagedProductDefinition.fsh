@@ -1,5 +1,5 @@
 
-Instance: ppd-adalimumab
+Instance: ppd-2e8a8b1c9142de3ac8de0723812d3fef
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "adalimumab"
 Description: "adalimumab"
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpadalimumab)
+* packageFor = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-b4249a5180d23ad521b23e06e99b7afd)

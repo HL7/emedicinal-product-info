@@ -18,9 +18,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-mirtazapinacinfa30mgcoatedtablet)
-* for[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
-* for[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet)
+* for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
+* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
  
@@ -47,9 +47,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-mirtazapinacinfa30mgcoatedtablet)
-* for[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
-* for[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet)
+* for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
+* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
  
@@ -80,9 +80,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-mirtazapinacinfa30mgcoatedtablet)
-* for[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
-* for[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet)
+* for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
+* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
  
@@ -109,9 +109,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-mirtazapinacinfa30mgcoatedtablet)
-* for[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
-* for[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet)
+* for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
+* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
  
@@ -138,9 +138,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-mirtazapinacinfa30mgcoatedtablet)
-* for[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
-* for[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet)
+* for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
+* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
  
@@ -167,9 +167,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-mirtazapinacinfa30mgcoatedtablet)
-* for[+] = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
-* for[+] = Reference(ap-mirtazapinacinfa30mgcoatedtablet)
+* for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
+* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
  

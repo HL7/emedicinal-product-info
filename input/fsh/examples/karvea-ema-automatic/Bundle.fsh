@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-karvea75mg
+Instance: bundlepackageleaflet-2d49ae46735143c1323423b7aea24165
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for Karvea 75 mg Package Leaflet"
 Description: "Bundle for Karvea 75 mg Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionKarvea"
-* entry[0].resource = compositionKarvea
+* entry[0].fullUrl = "Composition/compositionf4d45353edcb21af3718d3a0df94a4d8"
+* entry[0].resource = compositionf4d45353edcb21af3718d3a0df94a4d8
 
  
  
@@ -95,14 +95,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-karvea75mgtablet"
-* entry[=].resource = ap-karvea75mgtablet 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-dcaa4d32aa6658a8df831551503e52ee"
+* entry[=].resource = ap-dcaa4d32aa6658a8df831551503e52ee 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationkarvea75mgtablet"
-* entry[=].resource = authorizationkarvea75mgtablet 
+* entry[+].fullUrl = "RegulatedAuthorization/authorizationdcaa4d32aa6658a8df831551503e52ee"
+* entry[=].resource = authorizationdcaa4d32aa6658a8df831551503e52ee 
  
 
 // Organization
@@ -113,19 +113,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-karvea75mgtabletblisterx28tablets"
-* entry[=].resource = ppd-karvea75mgtabletblisterx28tablets 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-a223062bf3faf7acb3e6e80760fa4e91"
+* entry[=].resource = ppd-a223062bf3faf7acb3e6e80760fa4e91 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpKarvea75mgtabletblisterx28"
-* entry[=].resource = mpKarvea75mgtabletblisterx28 
+* entry[+].fullUrl = "MedicinalProductDefinition/mpa2bd0171a7654dc24f7eb7e9338e1acc"
+* entry[=].resource = mpa2bd0171a7654dc24f7eb7e9338e1acc 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-karvea75mgtablet"
-* entry[=].resource = mid-karvea75mgtablet 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-dcaa4d32aa6658a8df831551503e52ee"
+* entry[=].resource = mid-dcaa4d32aa6658a8df831551503e52ee 
  
 

@@ -1,5 +1,5 @@
 
-Instance: compositionhumira
+Instance: composition3a3583227b4c5b0887f1e0d38269b469
 InstanceOf: CompositionUvEpi
 Title: "Composition for humira Package Leaflet"
 Description:  "Composition for humira Package Leaflet"
@@ -13,7 +13,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
+* subject = Reference(mpf97db27e6330f77484eb8425ad2913cd)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
@@ -71,13 +71,13 @@ Usage: #example
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass
-  * entry[+] = Reference(ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
+//  * entry[+].fullUrl = ap-9b5b17469311c2ea4d1d08419748b4fb
+  * entry[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationhumira20mgsolutionforinjectioninprefilledsyringe
-  * entry[+] = Reference(authorizationhumira20mgsolutionforinjectioninprefilledsyringe) 
+//  * entry[+].fullUrl = authorization816b7da4abc60b3e9ae3b37146463f8a
+  * entry[+] = Reference(authorization816b7da4abc60b3e9ae3b37146463f8a) 
  
 
   // Organization
@@ -86,18 +86,18 @@ Usage: #example
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads
-  * entry[+] = Reference(ppd-humira40mgsolutionforinjectioninprefilledsyringe2prefilledsyringes2alcoholpads) 
+//  * entry[+].fullUrl = ppd-8ff6c02459d9a66f4d9a3db864bd78f6
+  * entry[+] = Reference(ppd-8ff6c02459d9a66f4d9a3db864bd78f6) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass
-  * entry[+] = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass) 
+//  * entry[+].fullUrl = mpf97db27e6330f77484eb8425ad2913cd
+  * entry[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass
-  * entry[+] = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass) 
+//  * entry[+].fullUrl = mid-9b5b17469311c2ea4d1d08419748b4fb
+  * entry[+] = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb) 
    
 
 

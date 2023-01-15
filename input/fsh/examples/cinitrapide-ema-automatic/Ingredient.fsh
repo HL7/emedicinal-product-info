@@ -18,9 +18,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-cinitrapide)
-* for[+] = Reference(mpBLASTON1mgtablets)
-* for[+] = Reference(ap-blaston1mgtablets)
+* for = Reference(mid-af8224f8c853d17daf5ea6782cb5a097)
+* for[+] = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
+* for[+] = Reference(ap-da0fc2395ce219262dfd4f0c9a9f72e1)
 // Reference to Organization:  Reference to MAH
 
  
@@ -47,9 +47,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-cinitrapide)
-* for[+] = Reference(mpBLASTON1mgtablets)
-* for[+] = Reference(ap-blaston1mgtablets)
+* for = Reference(mid-af8224f8c853d17daf5ea6782cb5a097)
+* for[+] = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
+* for[+] = Reference(ap-da0fc2395ce219262dfd4f0c9a9f72e1)
 // Reference to Organization:  Reference to MAH
 
  
@@ -80,9 +80,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-cinitrapide)
-* for[+] = Reference(mpBLASTON1mgtablets)
-* for[+] = Reference(ap-blaston1mgtablets)
+* for = Reference(mid-af8224f8c853d17daf5ea6782cb5a097)
+* for[+] = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
+* for[+] = Reference(ap-da0fc2395ce219262dfd4f0c9a9f72e1)
 // Reference to Organization:  Reference to MAH
 
  
@@ -109,9 +109,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-cinitrapide)
-* for[+] = Reference(mpBLASTON1mgtablets)
-* for[+] = Reference(ap-blaston1mgtablets)
+* for = Reference(mid-af8224f8c853d17daf5ea6782cb5a097)
+* for[+] = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
+* for[+] = Reference(ap-da0fc2395ce219262dfd4f0c9a9f72e1)
 // Reference to Organization:  Reference to MAH
 
  
@@ -138,9 +138,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-cinitrapide)
-* for[+] = Reference(mpBLASTON1mgtablets)
-* for[+] = Reference(ap-blaston1mgtablets)
+* for = Reference(mid-af8224f8c853d17daf5ea6782cb5a097)
+* for[+] = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
+* for[+] = Reference(ap-da0fc2395ce219262dfd4f0c9a9f72e1)
 // Reference to Organization:  Reference to MAH
 
  
@@ -167,9 +167,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-cinitrapide)
-* for[+] = Reference(mpBLASTON1mgtablets)
-* for[+] = Reference(ap-blaston1mgtablets)
+* for = Reference(mid-af8224f8c853d17daf5ea6782cb5a097)
+* for[+] = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
+* for[+] = Reference(ap-da0fc2395ce219262dfd4f0c9a9f72e1)
 // Reference to Organization:  Reference to MAH
 
  

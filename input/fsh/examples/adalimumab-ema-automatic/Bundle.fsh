@@ -1,5 +1,5 @@
 
-Instance: bundlepackageleaflet-adalimumab
+Instance: bundlepackageleaflet-2e8a8b1c9142de3ac8de0723812d3fef
 InstanceOf: BundleUvEpi
 Title: "ePI document Bundle for adalimumab Package Leaflet"
 Description: "Bundle for adalimumab Package Leaflet ePI document"
@@ -8,11 +8,11 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/16/1157/003"
 * type = #document
-* timestamp = "2023-01-14T16:28:14Z"
+* timestamp = "2023-01-14T16:33:59Z"
 
 // Composition
-* entry[0].fullUrl = "Composition/compositionadalimumab"
-* entry[0].resource = compositionadalimumab
+* entry[0].fullUrl = "Composition/composition2e8a8b1c9142de3ac8de0723812d3fef"
+* entry[0].resource = composition2e8a8b1c9142de3ac8de0723812d3fef
 
  
  
@@ -40,14 +40,14 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-adalimumab"
-* entry[=].resource = ap-adalimumab 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-2e8a8b1c9142de3ac8de0723812d3fef"
+* entry[=].resource = ap-2e8a8b1c9142de3ac8de0723812d3fef 
  
 
 // RegulatedAuthorization
 
-* entry[+].fullUrl = "RegulatedAuthorization/authorizationadalimumab"
-* entry[=].resource = authorizationadalimumab 
+* entry[+].fullUrl = "RegulatedAuthorization/authorization2e8a8b1c9142de3ac8de0723812d3fef"
+* entry[=].resource = authorization2e8a8b1c9142de3ac8de0723812d3fef 
  
 
 // Organization
@@ -73,19 +73,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-adalimumab"
-* entry[=].resource = ppd-adalimumab 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-2e8a8b1c9142de3ac8de0723812d3fef"
+* entry[=].resource = ppd-2e8a8b1c9142de3ac8de0723812d3fef 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpadalimumab"
-* entry[=].resource = mpadalimumab 
+* entry[+].fullUrl = "MedicinalProductDefinition/mp2e8a8b1c9142de3ac8de0723812d3fef"
+* entry[=].resource = mp2e8a8b1c9142de3ac8de0723812d3fef 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-adalimumab"
-* entry[=].resource = mid-adalimumab 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-2e8a8b1c9142de3ac8de0723812d3fef"
+* entry[=].resource = mid-2e8a8b1c9142de3ac8de0723812d3fef 
  
 

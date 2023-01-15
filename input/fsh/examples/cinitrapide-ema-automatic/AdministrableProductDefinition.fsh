@@ -1,5 +1,5 @@
 
-Instance: ap-blaston1mgtablets
+Instance: ap-da0fc2395ce219262dfd4f0c9a9f72e1
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product BLASTON 1 mg tablets"
 Description: "BLASTON 1 mg tablets"
@@ -10,7 +10,7 @@ Usage: #example
 
 * status = #active
 
-* formOf = Reference(mpBLASTON1mgtablets)
+* formOf = Reference(mp1453e0f16ff6c1d3106ed737a7857578)
 * administrableDoseForm = $spor-rms#200000002152 "tablet"
 * unitOfPresentation = $spor-rms#200000002152 "tablet"
 
@@ -18,7 +18,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-cinitrapide)
+* producedFrom = Reference(mid-af8224f8c853d17daf5ea6782cb5a097)
 
 
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"

@@ -22,9 +22,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-pentasaslowreleasetablets1g)
-* for[+] = Reference(mpPentasaSlowReleaseTablets1g)
-* for[+] = Reference(ap-pentasaslowreleasetablets1g)
+* for = Reference(mid-1a7318638ddbbeb084ef416e717b6fdb)
+* for[+] = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
+* for[+] = Reference(ap-1a7318638ddbbeb084ef416e717b6fdb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -51,9 +51,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-pentasaslowreleasetablets1g)
-* for[+] = Reference(mpPentasaSlowReleaseTablets1g)
-* for[+] = Reference(ap-pentasaslowreleasetablets1g)
+* for = Reference(mid-1a7318638ddbbeb084ef416e717b6fdb)
+* for[+] = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
+* for[+] = Reference(ap-1a7318638ddbbeb084ef416e717b6fdb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -80,9 +80,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-pentasaslowreleasetablets1g)
-* for[+] = Reference(mpPentasaSlowReleaseTablets1g)
-* for[+] = Reference(ap-pentasaslowreleasetablets1g)
+* for = Reference(mid-1a7318638ddbbeb084ef416e717b6fdb)
+* for[+] = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
+* for[+] = Reference(ap-1a7318638ddbbeb084ef416e717b6fdb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -109,9 +109,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-pentasaslowreleasetablets1g)
-* for[+] = Reference(mpPentasaSlowReleaseTablets1g)
-* for[+] = Reference(ap-pentasaslowreleasetablets1g)
+* for = Reference(mid-1a7318638ddbbeb084ef416e717b6fdb)
+* for[+] = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
+* for[+] = Reference(ap-1a7318638ddbbeb084ef416e717b6fdb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -138,9 +138,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-pentasaslowreleasetablets1g)
-* for[+] = Reference(mpPentasaSlowReleaseTablets1g)
-* for[+] = Reference(ap-pentasaslowreleasetablets1g)
+* for = Reference(mid-1a7318638ddbbeb084ef416e717b6fdb)
+* for[+] = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
+* for[+] = Reference(ap-1a7318638ddbbeb084ef416e717b6fdb)
 // Reference to Organization:  Reference to MAH
 
  
@@ -167,9 +167,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-pentasaslowreleasetablets1g)
-* for[+] = Reference(mpPentasaSlowReleaseTablets1g)
-* for[+] = Reference(ap-pentasaslowreleasetablets1g)
+* for = Reference(mid-1a7318638ddbbeb084ef416e717b6fdb)
+* for[+] = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
+* for[+] = Reference(ap-1a7318638ddbbeb084ef416e717b6fdb)
 // Reference to Organization:  Reference to MAH
 
  

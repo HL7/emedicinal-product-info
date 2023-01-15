@@ -1,5 +1,5 @@
 
-Instance: ap-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass
+Instance: ap-9b5b17469311c2ea4d1d08419748b4fb
 InstanceOf: AdministrableProductDefinitionUvEpi
 Title: "Administrable product Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
 Description: "Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
@@ -10,7 +10,7 @@ Usage: #example
 
 * status = #active
 
-* formOf = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
+* formOf = Reference(mpf97db27e6330f77484eb8425ad2913cd)
 * administrableDoseForm = $spor-rms#11201000 "Solution for injection"
 * unitOfPresentation = $spor-rms#15052000 "Syringe"
 
@@ -18,7 +18,7 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* producedFrom = Reference(mid-humira40mgsolutionforinjectionsubcutaneoususeprefilledsyringeglass)
+* producedFrom = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb)
 
 
 * routeOfAdministration.code = $spor-rms#20066000 "Subcutaneous use"

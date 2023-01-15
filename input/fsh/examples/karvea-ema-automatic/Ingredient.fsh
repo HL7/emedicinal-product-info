@@ -18,9 +18,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -47,9 +47,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -76,9 +76,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -105,9 +105,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -134,9 +134,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -167,9 +167,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -196,9 +196,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -225,9 +225,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -254,9 +254,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  
@@ -283,9 +283,9 @@ Usage: #example
 
 
 // Reference to products
-* for = Reference(mid-karvea75mgtablet)
-* for[+] = Reference(mpKarvea75mgtabletblisterx28)
-* for[+] = Reference(ap-karvea75mgtablet)
+* for = Reference(mid-dcaa4d32aa6658a8df831551503e52ee)
+* for[+] = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+* for[+] = Reference(ap-dcaa4d32aa6658a8df831551503e52ee)
 // Reference to Organization:  Reference to MAH
 
  

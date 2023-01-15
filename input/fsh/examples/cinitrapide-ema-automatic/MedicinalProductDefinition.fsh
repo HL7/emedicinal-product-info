@@ -1,5 +1,5 @@
 
-Instance: mpBLASTON1mgtablets
+Instance: mp1453e0f16ff6c1d3106ed737a7857578
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product BLASTON 1 mg tablets"
 Description: "EU/1/97/049/001 BLASTON 1 mg tablets"

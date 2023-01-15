@@ -1,5 +1,5 @@
 
-Instance: ppd-pentasaslowreleasetablets1g
+Instance: ppd-1a7318638ddbbeb084ef416e717b6fdb
 InstanceOf: PackagedProductDefinitionUvEpi
 Title: "Pentasa Slow Release Tablets 1g"
 Description: "Pentasa Slow Release Tablets 1g"
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpPentasaSlowReleaseTablets1g)
+* packageFor = Reference(mpb3a8d58c709a2281d8ad2a590fe81663)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
