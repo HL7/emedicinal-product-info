@@ -29,6 +29,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+
 Instance: ingredient-for-humalog-hydrochloricacid
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Hydrochloric acid"
@@ -59,6 +60,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+
 Instance: ingredient-for-humalog-sodiumhydroxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sodium Hydroxide"
@@ -89,6 +91,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+
 Instance: ingredient-for-humalog-sterilewaterforinjection
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
@@ -119,6 +122,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+
 Instance: ingredient-for-humalog-insulinlispro
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Insulin Lispro"
@@ -153,6 +157,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+
 Instance: ingredient-for-humalog-zincoxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Zinc Oxide"
@@ -183,6 +188,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+
 Instance: ingredient-for-humalog-metacresol
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Metacresol"
@@ -213,6 +219,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+
 Instance: ingredient-for-humalog-trometamol
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Trometamol"

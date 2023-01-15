@@ -31,6 +31,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+
 Instance: ingredient-for-pentasa-povidone
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Povidone"
@@ -59,6 +60,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+
 Instance: ingredient-for-pentasa-ethylcellulose
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Ethylcellulose"
@@ -87,6 +89,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+
 Instance: ingredient-for-pentasa-magnesiumstearate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
@@ -115,6 +118,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+
 Instance: ingredient-for-pentasa-talc
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Talc"
@@ -143,6 +147,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+
 Instance: ingredient-for-pentasa-microcrystallinecellulose
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Microcrystalline cellulose"

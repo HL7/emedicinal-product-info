@@ -27,6 +27,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-macrogol3000
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Macrogol 3000"
@@ -55,6 +56,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-lactosemonohydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Lactose Monohydrate"
@@ -83,6 +85,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-silicondioxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Silicon dioxide"
@@ -111,6 +114,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-titaniumdioxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Titanium Dioxide"
@@ -139,6 +143,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-irbesartan
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active irbesartan"
@@ -171,6 +176,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-croscarmellosesodium
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Croscarmellose sodium"
@@ -199,6 +205,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-microcrystallinecellulose
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Microcrystalline cellulose"
@@ -227,6 +234,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-magnesiumstearate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
@@ -255,6 +263,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+
 Instance: ingredient-for-karvea-carnaubawax
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Carnauba wax"

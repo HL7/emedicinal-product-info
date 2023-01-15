@@ -27,6 +27,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
+
 Instance: ingredient-for-cinitrapide-povidoneunspecified
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient POVIDONE, UNSPECIFIED"
@@ -55,6 +56,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
+
 Instance: ingredient-for-cinitrapide-cinitapride
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active CINITAPRIDE"
@@ -87,6 +89,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
+
 Instance: ingredient-for-cinitrapide-silicacolloidalanhydrous
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
@@ -115,6 +118,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
+
 Instance: ingredient-for-cinitrapide-starchpotato
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, POTATO"
@@ -143,6 +147,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
+
 Instance: ingredient-for-cinitrapide-starchcorn
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, CORN"

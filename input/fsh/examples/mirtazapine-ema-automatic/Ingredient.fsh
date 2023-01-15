@@ -27,6 +27,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+
 Instance: ingredient-for-mirtazapine-lactosemonohydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient LACTOSE MONOHYDRATE"
@@ -55,6 +56,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+
 Instance: ingredient-for-mirtazapine-mirtazapine
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Mirtazapine"
@@ -87,6 +89,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+
 Instance: ingredient-for-mirtazapine-hydroxypropylcelluloseunspecified
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient HYDROXYPROPYL CELLULOSE, UNSPECIFIED"
@@ -115,6 +118,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+
 Instance: ingredient-for-mirtazapine-silicacolloidalanhydrous
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
@@ -143,6 +147,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+
 Instance: ingredient-for-mirtazapine-cornstarch
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient CORN STARCH"

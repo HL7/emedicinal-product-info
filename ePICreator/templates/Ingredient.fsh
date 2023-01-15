@@ -48,7 +48,7 @@ Usage: #example
 {% if not ns.referenced  %}
 
 * manufacturer.manufacturer = Reference({{data["references"]["Organization"][0][0]}})
-{%- endif %}
-{%- endif %}
-{%- endif %}
-{%- endfor %}
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}

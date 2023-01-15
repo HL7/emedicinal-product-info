@@ -34,6 +34,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab)
+
 Instance: ingredient-for-adalimumab-lixisenatide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Lixisenatide"
@@ -69,6 +70,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab)
+
 Instance: ingredient-for-adalimumab-glycerol85whodd
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"

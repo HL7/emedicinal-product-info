@@ -27,6 +27,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
+
 Instance: ingredient-for-acmedrug-acmedruging2
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient acmedrug-ing2"
@@ -55,6 +56,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
+
 Instance: ingredient-for-acmedrug-acmedruging1
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active acmedrug-ing1"

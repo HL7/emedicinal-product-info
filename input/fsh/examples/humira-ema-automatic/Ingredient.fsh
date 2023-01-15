@@ -27,6 +27,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-polysorbate80
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Polysorbate 80"
@@ -55,6 +56,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-adalimumab
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active adalimumab"
@@ -87,6 +89,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-sterilewaterforinjection
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
@@ -115,6 +118,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-citricacidmonohydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient CITRIC ACID MONOHYDRATE"
@@ -143,6 +147,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-sodiumcitrateunspecifiedform
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SODIUM CITRATE, UNSPECIFIED FORM"
@@ -171,6 +176,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-sodiumphosphatemonobasicdihydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE"
@@ -199,6 +205,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-sodiumphosphatedibasicdihydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SODIUM PHOSPHATE, DIBASIC, DIHYDRATE"
@@ -227,6 +234,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+
 Instance: ingredient-for-humira-sodiumchloride
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sodium chloride"

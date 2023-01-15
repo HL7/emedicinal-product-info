@@ -31,6 +31,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-cholecalciferol
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active cholecalciferol"
@@ -63,6 +64,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-sodium
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Sodium"
@@ -95,6 +97,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-lactosemonohydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active lactose monohydrate"
@@ -127,6 +130,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-sucrose
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active sucrose"
@@ -159,6 +163,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-hydrogenatedsoybeanoil
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active hydrogenated soybean oil"
@@ -191,6 +196,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-anhydrouscitricacid
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Anhydrous citric acid"
@@ -219,6 +225,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-sodiumbicarbonate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient sodium bicarbonate"
@@ -247,6 +254,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-povidone
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient povidone"
@@ -275,6 +283,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-saccharinsodium
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient saccharin sodium"
@@ -303,6 +312,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-sodiumcyclamate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient sodium cyclamate"
@@ -331,6 +341,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+
 Instance: ingredient-for-calciovitaminad-macrogol6000
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient macrogol 6000"

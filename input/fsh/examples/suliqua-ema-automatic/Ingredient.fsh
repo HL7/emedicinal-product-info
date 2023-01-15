@@ -34,6 +34,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-lixisenatide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Lixisenatide"
@@ -69,6 +70,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-glycerol85whodd
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
@@ -100,6 +102,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-methionine
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Methionine"
@@ -131,6 +134,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-metacresol
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Metacresol"
@@ -162,6 +166,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-zincchloride
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Zinc chloride"
@@ -193,6 +198,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-hydrochloricacidiarc
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient HYDROCHLORIC ACID [IARC]"
@@ -224,6 +230,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-sterilewaterforinjection
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
@@ -255,6 +262,7 @@ Usage: #example
 
 
 * manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+
 Instance: ingredient-for-suliqua-sodiumhydroxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sodium hydroxide"
