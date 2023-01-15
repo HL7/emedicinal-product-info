@@ -115,13 +115,13 @@ def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):
                 if "Instance: " in line:
                     # print(line)
                     instances.append(line.replace("Instance: ", "").strip())
-                if "* id = " in line:
+                    # if "* id = " in line:
                     # print(line)
-                    ids.append(line.replace("* id = ", "").replace('"', "").strip())
+                    ids.append(line.replace("Instance: ", "").strip())
 
             object_ids[file.split(".")[0]] = [(i, j) for i, j in zip(instances, ids)]
 
-    print(object_ids)
+    print("ob", object_ids)
     data["references"] = object_ids
 
     print("newline" + " ---" * 30)

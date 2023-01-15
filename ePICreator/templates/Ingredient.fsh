@@ -7,8 +7,6 @@ Title: "Ingredient-{{row["role"]| lower}} {{ row["name"]  }}"
 Description: "{{ row["name"]  }}"
 Usage: #example
 
-* id = "{{row['id']}}" 
-
 * identifier.system = $ginas
 * identifier.value = "{{ row["identifier"]  }}"
 * identifier.use = #official
@@ -28,8 +26,10 @@ Usage: #example
 
 
 {% if data["turn"] != "1" %}
-// Reference to manufactured item
+// Reference to products
 * for = Reference({{data["references"]["ManufacturedItemDefinition"][0][0]}})
+* for[+] = Reference({{data["references"]["MedicinalProductDefinition"][0][0]}})
+* for[+] = Reference({{data["references"]["AdministrableProductDefinition"][0][0]}})
 
 {%- endif %}
 

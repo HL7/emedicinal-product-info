@@ -7,7 +7,6 @@ Title: "Administrable product {{row['name']}}"
 Description: "{{row['name']}}"
 Usage: #example
 
-* id = "{{row['id']}}" 
 * identifier.system = $phpid
 * identifier.value = "{{row['identifier']}}" 
 

@@ -5,9 +5,6 @@ Title: "Regulated Authorization for Suliqua 100 units/ml + 50 microgram/ml solut
 Description: "Regulated Authorization for Suliqua 100 units/ml + 50 microgram/ml solution for injection in a pre-filled pen"
 Usage: #example
 
-
-* id = "3c315e73-ef58-4d11-9fce-7c45d0889cdf" 
-
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 * identifier.use = #official

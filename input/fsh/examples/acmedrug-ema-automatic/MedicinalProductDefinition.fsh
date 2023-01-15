@@ -5,8 +5,6 @@ Title: "Medicinal Product acmedrug-man"
 Description: "EU/1/97/049/001 acmedrug-man"
 Usage: #example
 
-
-* id = "698e26d5-14dc-4e90-9092-399fe112cc4f" 
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 

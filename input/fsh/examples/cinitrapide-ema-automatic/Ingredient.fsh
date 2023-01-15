@@ -5,8 +5,6 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "7185b1a2-dba8-4182-b5c0-a675dd35667e" 
-
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
 * identifier.use = #official
@@ -19,8 +17,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-cinitrapide)
+* for[+] = Reference(mpBLASTON1mgtablets)
+* for[+] = Reference(ap-blaston1mgtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -32,8 +32,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient POVIDONE, UNSPECIFIED"
 Description: "POVIDONE, UNSPECIFIED"
 Usage: #example
-
-* id = "306c7a67-4f99-4e5a-bf65-dfe918bc744e" 
 
 * identifier.system = $ginas
 * identifier.value = "FZ989GH94E"
@@ -47,8 +45,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-cinitrapide)
+* for[+] = Reference(mpBLASTON1mgtablets)
+* for[+] = Reference(ap-blaston1mgtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -60,8 +60,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-active CINITAPRIDE"
 Description: "CINITAPRIDE"
 Usage: #example
-
-* id = "1276b984-759a-4dae-9dbc-5a548564ade3" 
 
 * identifier.system = $ginas
 * identifier.value = "R8I97I2L24"
@@ -79,8 +77,10 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-cinitrapide)
+* for[+] = Reference(mpBLASTON1mgtablets)
+* for[+] = Reference(ap-blaston1mgtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -92,8 +92,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
 Description: "SILICA, COLLOIDAL ANHYDROUS"
 Usage: #example
-
-* id = "28035192-1f17-4c0c-8273-bcc74e397a8a" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -107,8 +105,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-cinitrapide)
+* for[+] = Reference(mpBLASTON1mgtablets)
+* for[+] = Reference(ap-blaston1mgtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -120,8 +120,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, POTATO"
 Description: "STARCH, POTATO"
 Usage: #example
-
-* id = "2009f1eb-01fb-4b38-90ff-0369e19fd150" 
 
 * identifier.system = $ginas
 * identifier.value = "8I089SAH3T"
@@ -135,8 +133,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-cinitrapide)
+* for[+] = Reference(mpBLASTON1mgtablets)
+* for[+] = Reference(ap-blaston1mgtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -148,8 +148,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, CORN"
 Description: "STARCH, CORN"
 Usage: #example
-
-* id = "fa831f7c-50cd-4942-8369-f9562d0b0c83" 
 
 * identifier.system = $ginas
 * identifier.value = "O8232NY3SJ"
@@ -163,8 +161,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-cinitrapide)
+* for[+] = Reference(mpBLASTON1mgtablets)
+* for[+] = Reference(ap-blaston1mgtablets)
 // Reference to Organization:  Reference to MAH
 
  

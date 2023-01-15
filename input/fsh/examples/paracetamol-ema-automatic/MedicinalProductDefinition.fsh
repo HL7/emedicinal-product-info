@@ -5,8 +5,6 @@ Title: "Medicinal Product DOLOCATIL 1 g tablets"
 Description: "EU/1/97/049/001 DOLOCATIL 1 g tablets"
 Usage: #example
 
-
-* id = "30a7a8bc-5674-406a-9cbe-abb1093ec1e9" 
 * identifier.system = $spor-prod
 * identifier.value = "cc"
 

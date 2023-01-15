@@ -5,8 +5,6 @@ Title: "Ingredient-active Insulin glargine"
 Description: "Insulin glargine"
 Usage: #example
 
-* id = "9eb7ab81-5a42-4389-a793-d0e1fdfbdd6d" 
-
 * identifier.system = $ginas
 * identifier.value = "2ZM8CX04RZ"
 * identifier.use = #official
@@ -23,8 +21,10 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-adalimumab)
+* for[+] = Reference(mpadalimumab)
+* for[+] = Reference(ap-adalimumab)
 // Reference to Organization:  Reference to MAH
 
  
@@ -39,8 +39,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Lixisenatide"
 Description: "Lixisenatide"
 Usage: #example
-
-* id = "83c226d2-1be2-41b5-954c-0bca9202f489" 
 
 * identifier.system = $ginas
 * identifier.value = "74O62BB01U"
@@ -58,8 +56,10 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-adalimumab)
+* for[+] = Reference(mpadalimumab)
+* for[+] = Reference(ap-adalimumab)
 // Reference to Organization:  Reference to MAH
 
  
@@ -75,8 +75,6 @@ Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
 Description: "GLYCEROL 85% [WHO-DD]"
 Usage: #example
 
-* id = "1a7ce3fb-9c8c-402d-b130-7934034da6b5" 
-
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
 * identifier.use = #official
@@ -89,8 +87,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-adalimumab)
+* for[+] = Reference(mpadalimumab)
+* for[+] = Reference(ap-adalimumab)
 // Reference to Organization:  Reference to MAH
 
  

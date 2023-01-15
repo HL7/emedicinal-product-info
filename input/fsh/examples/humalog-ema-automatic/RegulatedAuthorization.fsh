@@ -5,9 +5,6 @@ Title: "Regulated Authorization for Humalog "
 Description: "Regulated Authorization for Humalog "
 Usage: #example
 
-
-* id = "8a5770c0-b02c-4e45-9dad-73934a7b3fcc" 
-
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
 * identifier.use = #official

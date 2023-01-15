@@ -7,9 +7,6 @@ Title: "Regulated Authorization for {{ row["name"] }}"
 Description: "Regulated Authorization for {{ row["name"] }}"
 Usage: #example
 
-
-* id = "{{row['id']}}" 
-
 * identifier.system = $spor-prod
 * identifier.value = "{{ row["identifier"] }}"
 * identifier.use = #official

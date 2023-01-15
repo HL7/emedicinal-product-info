@@ -5,7 +5,6 @@ Title: "Composition for acmedrug Package Leaflet"
 Description:  "Composition for acmedrug Package Leaflet"
 Usage: #example
 
-* id = "632051cb-e386-4de9-a8c5-dd87f988a949" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,50 +29,50 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 01835ddf-bbda-4ea9-8f6a-b5b61d7f5001
+//  * entry[+].fullUrl = ingredient-for-acmedrug-acmedruging3
   * entry[+] = Reference(ingredient-for-acmedrug-acmedruging3) 
 
   // Ingredient
-//  * entry[+].fullUrl = eec30466-070b-48a3-8b03-1133862a7bbe
+//  * entry[+].fullUrl = ingredient-for-acmedrug-acmedruging2
   * entry[+] = Reference(ingredient-for-acmedrug-acmedruging2) 
 
   // Ingredient
-//  * entry[+].fullUrl = 9e29382d-0d20-4716-b99f-b2cf9748c7d8
+//  * entry[+].fullUrl = ingredient-for-acmedrug-acmedruging1
   * entry[+] = Reference(ingredient-for-acmedrug-acmedruging1) 
  
 
   // Substance
-//  * entry[+].fullUrl = 52d77ee0-55ff-4ff9-a51f-04b5f471f3e8
+//  * entry[+].fullUrl = substance-acmesub
   * entry[+] = Reference(substance-acmesub) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 951b2c0b-f276-4111-9b1f-324fe6eb4dc0
+//  * entry[+].fullUrl = ap-acmedrug
   * entry[+] = Reference(ap-acmedrug) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 3d9beb0f-a730-421a-aed3-c27a21de96ec
+//  * entry[+].fullUrl = authorizationacmedrug
   * entry[+] = Reference(authorizationacmedrug) 
  
 
   // Organization
-//  * entry[+].fullUrl = 0529fe1a-5535-42e8-b433-fabfba4aa15d
+//  * entry[+].fullUrl = org-marketingauthorisationholder-acmeindustry-acmedrug
   * entry[+] = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 2efcffec-fdd7-4bd9-8128-40b4c1ffd209
+//  * entry[+].fullUrl = ppd-acmedrugblistertabs
   * entry[+] = Reference(ppd-acmedrugblistertabs) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 698e26d5-14dc-4e90-9092-399fe112cc4f
+//  * entry[+].fullUrl = mpacmedrugman
   * entry[+] = Reference(mpacmedrugman) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 566f3244-87c7-4e84-9c35-7109759bf345
+//  * entry[+].fullUrl = mid-acmedrugman
   * entry[+] = Reference(mid-acmedrugman) 
    
 

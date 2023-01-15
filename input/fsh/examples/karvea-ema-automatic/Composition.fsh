@@ -5,7 +5,6 @@ Title: "Composition for Karvea Package Leaflet"
 Description:  "Composition for Karvea Package Leaflet"
 Usage: #example
 
-* id = "7aec0b5f-39c6-4eb8-85f8-c3d8c78fcbcf" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -28,92 +27,92 @@ Usage: #example
  
 
   // ClinicalUseDefinition
-//  * entry[+].fullUrl = ii
+//  * entry[+].fullUrl = contraindication-gastrointestinaldisorders
   * entry[+] = Reference(contraindication-gastrointestinaldisorders) 
 
   // ClinicalUseDefinition
-//  * entry[+].fullUrl = yy
+//  * entry[+].fullUrl = indication-psoriasis
   * entry[+] = Reference(indication-psoriasis) 
 
   // ClinicalUseDefinition
-//  * entry[+].fullUrl = zz
+//  * entry[+].fullUrl = interaction-methotrexate
   * entry[+] = Reference(interaction-methotrexate) 
  
  
 
   // Ingredient
-//  * entry[+].fullUrl = fe4b8422-2a2c-4930-88d6-53bee5fbbbbb
+//  * entry[+].fullUrl = ingredient-for-karvea-hypromellose
   * entry[+] = Reference(ingredient-for-karvea-hypromellose) 
 
   // Ingredient
-//  * entry[+].fullUrl = 6449e6e3-a964-41f7-9213-ee92abe273d3
+//  * entry[+].fullUrl = ingredient-for-karvea-macrogol3000
   * entry[+] = Reference(ingredient-for-karvea-macrogol3000) 
 
   // Ingredient
-//  * entry[+].fullUrl = d2bcc8da-b16d-448a-aec4-0cfae52c8faa
+//  * entry[+].fullUrl = ingredient-for-karvea-lactosemonohydrate
   * entry[+] = Reference(ingredient-for-karvea-lactosemonohydrate) 
 
   // Ingredient
-//  * entry[+].fullUrl = c2ea18c6-01ef-4f5d-8c94-f485ccf7dec7
+//  * entry[+].fullUrl = ingredient-for-karvea-silicondioxide
   * entry[+] = Reference(ingredient-for-karvea-silicondioxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 9a1bfc0e-1968-4c98-8a0a-b8bb87f802fb
+//  * entry[+].fullUrl = ingredient-for-karvea-titaniumdioxide
   * entry[+] = Reference(ingredient-for-karvea-titaniumdioxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = b4409851-3939-4dbf-a73f-e2ad7608ad62
+//  * entry[+].fullUrl = ingredient-for-karvea-irbesartan
   * entry[+] = Reference(ingredient-for-karvea-irbesartan) 
 
   // Ingredient
-//  * entry[+].fullUrl = e343ef56-769c-4b18-954a-5e2fcd86e6d5
+//  * entry[+].fullUrl = ingredient-for-karvea-croscarmellosesodium
   * entry[+] = Reference(ingredient-for-karvea-croscarmellosesodium) 
 
   // Ingredient
-//  * entry[+].fullUrl = f0b40d3e-3ade-4d93-a1ca-b4a10d0200e6
+//  * entry[+].fullUrl = ingredient-for-karvea-microcrystallinecellulose
   * entry[+] = Reference(ingredient-for-karvea-microcrystallinecellulose) 
 
   // Ingredient
-//  * entry[+].fullUrl = dd43f787-c61f-4609-afbc-3926f9c49a14
+//  * entry[+].fullUrl = ingredient-for-karvea-magnesiumstearate
   * entry[+] = Reference(ingredient-for-karvea-magnesiumstearate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 5fca1a5b-a9d8-401c-af27-41205235017e
+//  * entry[+].fullUrl = ingredient-for-karvea-carnaubawax
   * entry[+] = Reference(ingredient-for-karvea-carnaubawax) 
  
 
   // Substance
-//  * entry[+].fullUrl = 9ba497b0-9b9c-4b1f-8f5e-71523fcd947d
+//  * entry[+].fullUrl = substance-irbesartan
   * entry[+] = Reference(substance-irbesartan) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = xx
+//  * entry[+].fullUrl = ap-karvea75mgtablet
   * entry[+] = Reference(ap-karvea75mgtablet) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 21ab79f0-0405-47b2-b154-63c991532580
+//  * entry[+].fullUrl = authorizationkarvea75mgtablet
   * entry[+] = Reference(authorizationkarvea75mgtablet) 
  
 
   // Organization
-//  * entry[+].fullUrl = 495da7c2-76b1-44c7-b975-dfb094a97cc8
+//  * entry[+].fullUrl = org-marketingauthorisationholder-sanofiaventisgroupe-karvea
   * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 90221008-a883-4674-852c-82ccb9144bc1
+//  * entry[+].fullUrl = ppd-karvea75mgtabletblisterx28tablets
   * entry[+] = Reference(ppd-karvea75mgtabletblisterx28tablets) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = dc93224c-21f5-4e15-82c6-a7debfde7e09
+//  * entry[+].fullUrl = mpKarvea75mgtabletblisterx28
   * entry[+] = Reference(mpKarvea75mgtabletblisterx28) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = d47a8d50-6474-4177-a77f-d455a6f3c641
+//  * entry[+].fullUrl = mid-karvea75mgtablet
   * entry[+] = Reference(mid-karvea75mgtablet) 
    
 

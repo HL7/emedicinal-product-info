@@ -5,8 +5,6 @@ Title: "Medicinal Product adalimumab"
 Description: "EU/1/97/049/001 adalimumab"
 Usage: #example
 
-
-* id = "0f90da05-e68d-458a-8e46-414c53a70031" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 

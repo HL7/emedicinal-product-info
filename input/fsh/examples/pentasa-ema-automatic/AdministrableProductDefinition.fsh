@@ -5,7 +5,6 @@ Title: "Administrable product Pentasa Slow Release Tablets 1g"
 Description: "Pentasa Slow Release Tablets 1g"
 Usage: #example
 
-* id = "85e3245d-73ba-42dd-bf8d-baacdf0dd9f2" 
 * identifier.system = $phpid
 * identifier.value = "xx" 
 

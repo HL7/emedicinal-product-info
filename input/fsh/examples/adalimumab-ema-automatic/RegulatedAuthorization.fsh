@@ -5,9 +5,6 @@ Title: "Regulated Authorization for adalimumab"
 Description: "Regulated Authorization for adalimumab"
 Usage: #example
 
-
-* id = "e5efca83-74ee-4b74-a8ee-ead5f2f1708f" 
-
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 * identifier.use = #official

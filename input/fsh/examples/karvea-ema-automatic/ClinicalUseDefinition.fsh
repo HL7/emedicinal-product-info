@@ -3,7 +3,6 @@ Instance: contraindication-gastrointestinaldisorders
 InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
 Description: "contraindication - Gastrointestinal disorders"
 Usage: #example
-* id = "ii" 
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "xx"
@@ -24,7 +23,6 @@ Instance: indication-psoriasis
 InstanceOf: ClinicalUseDefinition-indication-uv-epi
 Description: "indication - Psoriasis"
 Usage: #example
-* id = "yy" 
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "xx"
@@ -46,7 +44,6 @@ Instance: interaction-methotrexate
 InstanceOf: ClinicalUseDefinition-interaction-uv-epi
 Description: "interaction - METHOTREXATE"
 Usage: #example
-* id = "zz" 
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
 * identifier.value = "xx"

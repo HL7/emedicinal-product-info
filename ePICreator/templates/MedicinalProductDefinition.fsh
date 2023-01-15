@@ -7,8 +7,6 @@ Title: "Medicinal Product {{ row["productname"]}}"
 Description: "EU/1/97/049/001 {{ row["productname"]}}"
 Usage: #example
 
-
-* id = "{{row['id']}}" 
 * identifier.system = $spor-prod
 * identifier.value = "{{row['identifier']}}"
 

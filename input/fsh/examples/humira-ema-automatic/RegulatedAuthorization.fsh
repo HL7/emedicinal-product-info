@@ -5,9 +5,6 @@ Title: "Regulated Authorization for Humira 20 mg solution for injection in pre-f
 Description: "Regulated Authorization for Humira 20 mg solution for injection in pre-filled syringe"
 Usage: #example
 
-
-* id = "1ebd9cd6-2345-452b-8e79-33632c992074" 
-
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/03/256/022"
 * identifier.use = #official

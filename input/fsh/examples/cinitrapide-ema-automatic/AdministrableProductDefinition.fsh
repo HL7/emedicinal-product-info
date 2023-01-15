@@ -5,7 +5,6 @@ Title: "Administrable product BLASTON 1 mg tablets"
 Description: "BLASTON 1 mg tablets"
 Usage: #example
 
-* id = "f173033e-d039-42fa-b723-3ff4c12dcbc4" 
 * identifier.system = $phpid
 * identifier.value = "xx" 
 

@@ -5,7 +5,6 @@ Title: "Administrable product adalimumab"
 Description: "adalimumab"
 Usage: #example
 
-* id = "69d6a412-c519-4527-a691-fe343daa7a3f" 
 * identifier.system = $phpid
 * identifier.value = "TBD" 
 

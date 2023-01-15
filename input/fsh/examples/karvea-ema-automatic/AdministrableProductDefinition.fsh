@@ -5,7 +5,6 @@ Title: "Administrable product Karvea 75mg tablet"
 Description: "Karvea 75mg tablet"
 Usage: #example
 
-* id = "xx" 
 * identifier.system = $phpid
 * identifier.value = "identifier" 
 

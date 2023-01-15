@@ -5,7 +5,6 @@ Title: "Composition for paracetamol Package Leaflet"
 Description:  "Composition for paracetamol Package Leaflet"
 Usage: #example
 
-* id = "e2e140fb-68bd-4c5e-a7ca-c02fc6ad6acf" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "xx"
 
@@ -30,62 +29,62 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = 5b07f405-9ba1-4eec-a3cc-6307512c3b66
+//  * entry[+].fullUrl = ingredient-for-paracetamol-magnesiumstearate
   * entry[+] = Reference(ingredient-for-paracetamol-magnesiumstearate) 
 
   // Ingredient
-//  * entry[+].fullUrl = 792384ec-1da3-4757-b140-87cf3018d364
+//  * entry[+].fullUrl = ingredient-for-paracetamol-povidoneunspecified
   * entry[+] = Reference(ingredient-for-paracetamol-povidoneunspecified) 
 
   // Ingredient
-//  * entry[+].fullUrl = da77f7a3-38d2-4e02-8ad6-31873d6e210c
+//  * entry[+].fullUrl = ingredient-for-paracetamol-paracetamol
   * entry[+] = Reference(ingredient-for-paracetamol-paracetamol) 
 
   // Ingredient
-//  * entry[+].fullUrl = 8f0450df-78dd-4ec4-93f5-22edb8819691
+//  * entry[+].fullUrl = ingredient-for-paracetamol-silicacolloidalanhydrous
   * entry[+] = Reference(ingredient-for-paracetamol-silicacolloidalanhydrous) 
 
   // Ingredient
-//  * entry[+].fullUrl = ce8573c1-d70d-4cef-ab8c-383242a6ef95
+//  * entry[+].fullUrl = ingredient-for-paracetamol-starchcorn
   * entry[+] = Reference(ingredient-for-paracetamol-starchcorn) 
 
   // Ingredient
-//  * entry[+].fullUrl = 49493ac6-59ca-4460-bf7d-01820880fb9c
+//  * entry[+].fullUrl = ingredient-for-paracetamol-starchpotato
   * entry[+] = Reference(ingredient-for-paracetamol-starchpotato) 
  
 
   // Substance
-//  * entry[+].fullUrl = 699de038-f3bb-4463-b081-3949c9b314a4
+//  * entry[+].fullUrl = substance-paracetamol
   * entry[+] = Reference(substance-paracetamol) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = 04337632-d655-4f71-aa72-cfa93bc3e8aa
+//  * entry[+].fullUrl = ap-dolocatil1gtablets
   * entry[+] = Reference(ap-dolocatil1gtablets) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 06f140d3-244e-4c48-8053-0a2411502364
+//  * entry[+].fullUrl = authorizationdolocatil1gtablets
   * entry[+] = Reference(authorizationdolocatil1gtablets) 
  
 
   // Organization
-//  * entry[+].fullUrl = 4c3ac9a8-114a-4efd-bdd1-dce243364b48
+//  * entry[+].fullUrl = org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol
   * entry[+] = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = 8db34f51-0b0e-4ca3-96bc-3a7db05eb763
+//  * entry[+].fullUrl = ppd-dolocatil1gtablets20tablets
   * entry[+] = Reference(ppd-dolocatil1gtablets20tablets) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 30a7a8bc-5674-406a-9cbe-abb1093ec1e9
+//  * entry[+].fullUrl = mpDOLOCATIL1gtablets
   * entry[+] = Reference(mpDOLOCATIL1gtablets) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = fa0fa3e9-c9e8-4715-8a43-27db2ac777db
+//  * entry[+].fullUrl = mid-dolocatil1gtablets
   * entry[+] = Reference(mid-dolocatil1gtablets) 
    
 

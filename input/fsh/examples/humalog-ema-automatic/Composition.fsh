@@ -5,7 +5,6 @@ Title: "Composition for Humalog Package Leaflet"
 Description:  "Composition for Humalog Package Leaflet"
 Usage: #example
 
-* id = "787f6fe4-51fa-40c1-9dbe-7875f7cf7800" 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 
@@ -30,78 +29,78 @@ Usage: #example
  
 
   // Ingredient
-//  * entry[+].fullUrl = d7dd47d9-f91b-40f5-8685-ace0a56e6e3e
+//  * entry[+].fullUrl = ingredient-for-humalog-glycerol
   * entry[+] = Reference(ingredient-for-humalog-glycerol) 
 
   // Ingredient
-//  * entry[+].fullUrl = 7eac3069-4e0c-4614-9a3d-78c4999c3c0f
+//  * entry[+].fullUrl = ingredient-for-humalog-hydrochloricacid
   * entry[+] = Reference(ingredient-for-humalog-hydrochloricacid) 
 
   // Ingredient
-//  * entry[+].fullUrl = 3f5ba404-b673-48f5-add5-29ce19d5d9cf
+//  * entry[+].fullUrl = ingredient-for-humalog-sodiumhydroxide
   * entry[+] = Reference(ingredient-for-humalog-sodiumhydroxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 01c3a3dc-8572-4789-b4dc-c6251262ebe0
+//  * entry[+].fullUrl = ingredient-for-humalog-sterilewaterforinjection
   * entry[+] = Reference(ingredient-for-humalog-sterilewaterforinjection) 
 
   // Ingredient
-//  * entry[+].fullUrl = 29c2e07f-ca58-448a-98bc-f9debbeb9860
+//  * entry[+].fullUrl = ingredient-for-humalog-insulinlispro
   * entry[+] = Reference(ingredient-for-humalog-insulinlispro) 
 
   // Ingredient
-//  * entry[+].fullUrl = 6fbd3320-7e72-4887-84d0-e9383c9a80da
+//  * entry[+].fullUrl = ingredient-for-humalog-zincoxide
   * entry[+] = Reference(ingredient-for-humalog-zincoxide) 
 
   // Ingredient
-//  * entry[+].fullUrl = 6f3e928c-faf0-403b-ad5f-a368f00da970
+//  * entry[+].fullUrl = ingredient-for-humalog-metacresol
   * entry[+] = Reference(ingredient-for-humalog-metacresol) 
 
   // Ingredient
-//  * entry[+].fullUrl = 2c04eddf-8aa1-41c1-94d7-fc2c31831594
+//  * entry[+].fullUrl = ingredient-for-humalog-trometamol
   * entry[+] = Reference(ingredient-for-humalog-trometamol) 
  
 
   // Substance
-//  * entry[+].fullUrl = 6ec114b1-928a-4711-9f28-0999c31ab95f
+//  * entry[+].fullUrl = substance-insulinlispro
   * entry[+] = Reference(substance-insulinlispro) 
  
 
   // AdministrableProductDefinition
-//  * entry[+].fullUrl = xxxxx
+//  * entry[+].fullUrl = ap-humalog100uml5prefilledpen
   * entry[+] = Reference(ap-humalog100uml5prefilledpen) 
  
 
   // RegulatedAuthorization
-//  * entry[+].fullUrl = 8a5770c0-b02c-4e45-9dad-73934a7b3fcc
+//  * entry[+].fullUrl = authorizationhumalog
   * entry[+] = Reference(authorizationhumalog) 
  
 
   // Organization
-//  * entry[+].fullUrl = 8dcc93c6-edbc-4532-a076-ebafab97efe2
+//  * entry[+].fullUrl = org-marketingauthorisationholder-elilillynederlandbv-humalog
   * entry[+] = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog) 
 
   // Organization
-//  * entry[+].fullUrl = 2de8c733-650f-4b80-b6ad-b37b08cd2fbf
+//  * entry[+].fullUrl = org-manufacturerapi-elilillyandcompany-humalog
   * entry[+] = Reference(org-manufacturerapi-elilillyandcompany-humalog) 
 
   // Organization
-//  * entry[+].fullUrl = 0d99e992-8977-4908-bcd8-e910d5c4d82c
+//  * entry[+].fullUrl = org-manufacturer-lillysa-humalog
   * entry[+] = Reference(org-manufacturer-lillysa-humalog) 
  
 
   // PackagedProductDefinition
-//  * entry[+].fullUrl = a2146cce-7c3b-457c-97ec-feac9120ca2d
+//  * entry[+].fullUrl = ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen
   * entry[+] = Reference(ppd-humalog100unitsmlkwikpensolutionforinjectioninaprefilledpen) 
  
 
   // MedicinalProductDefinition
-//  * entry[+].fullUrl = 0543565c-93c8-40ad-8268-d368e0bda4bd
+//  * entry[+].fullUrl = mpHumalogMix50InsulinKwikPen3mlprefill
   * entry[+] = Reference(mpHumalogMix50InsulinKwikPen3mlprefill) 
  
 
   // ManufacturedItemDefinition
-//  * entry[+].fullUrl = 02dc706d-f79a-4e0a-91ec-c4fdef75b5e3
+//  * entry[+].fullUrl = mid-humalog100uml5prefilledpen
   * entry[+] = Reference(mid-humalog100uml5prefilledpen) 
    
 

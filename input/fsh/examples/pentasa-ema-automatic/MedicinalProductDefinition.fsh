@@ -5,8 +5,6 @@ Title: "Medicinal Product Pentasa Slow Release Tablets 1g"
 Description: "EU/1/97/049/001 Pentasa Slow Release Tablets 1g"
 Usage: #example
 
-
-* id = "e54437f8-2b25-454d-ac72-80d28bfedab3" 
 * identifier.system = $spor-prod
 * identifier.value = "xx"
 

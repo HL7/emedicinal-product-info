@@ -5,7 +5,6 @@ Instance: substance-{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') }
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "{{ row["name"] }}"
 Usage: #example
-* id = "{{row['id']}}" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "{{ row["identifier"] }}"

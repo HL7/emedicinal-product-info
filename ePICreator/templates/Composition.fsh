@@ -7,7 +7,6 @@ Title: "Composition for {{row['name']}} Package Leaflet"
 Description:  "Composition for {{row['name']}} Package Leaflet"
 Usage: #example
 
-* id = "{{row['id']}}" 
 * identifier.system = "{{row['identifier_system']}}"
 * identifier.value = "{{row['identifier']}}"
 

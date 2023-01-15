@@ -5,8 +5,6 @@ Title: "Ingredient-excipient acmedrug-ing3"
 Description: "acmedrug-ing3"
 Usage: #example
 
-* id = "01835ddf-bbda-4ea9-8f6a-b5b61d7f5001" 
-
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
 * identifier.use = #official
@@ -19,8 +17,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-acmedrugman)
+* for[+] = Reference(mpacmedrugman)
+* for[+] = Reference(ap-acmedrug)
 // Reference to Organization:  Reference to MAH
 
  
@@ -32,8 +32,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient acmedrug-ing2"
 Description: "acmedrug-ing2"
 Usage: #example
-
-* id = "eec30466-070b-48a3-8b03-1133862a7bbe" 
 
 * identifier.system = $ginas
 * identifier.value = "15FIX9V2JP"
@@ -47,8 +45,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-acmedrugman)
+* for[+] = Reference(mpacmedrugman)
+* for[+] = Reference(ap-acmedrug)
 // Reference to Organization:  Reference to MAH
 
  
@@ -60,8 +60,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-active acmedrug-ing1"
 Description: "acmedrug-ing1"
 Usage: #example
-
-* id = "9e29382d-0d20-4716-b99f-b2cf9748c7d8" 
 
 * identifier.system = $ginas
 * identifier.value = "J0E2756Z7N"
@@ -79,8 +77,10 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-acmedrugman)
+* for[+] = Reference(mpacmedrugman)
+* for[+] = Reference(ap-acmedrug)
 // Reference to Organization:  Reference to MAH
 
  

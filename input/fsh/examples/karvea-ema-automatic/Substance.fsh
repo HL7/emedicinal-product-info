@@ -3,7 +3,6 @@ Instance: substance-irbesartan
 InstanceOf: SubstanceDefinitionUvEpi
 Description: "irbesartan"
 Usage: #example
-* id = "9ba497b0-9b9c-4b1f-8f5e-71523fcd947d" 
 
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
 * identifier.value = "J0E2756Z7N"

@@ -6,7 +6,6 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Title: "{{ row["name"] }}"
 Description: "{{ row["name"] }}"
 Usage: #example
-* id = "{{row['id']}}" 
 
 * identifier.system = $spor-prod
 * identifier.value = "{{ row["identifier"] }}"

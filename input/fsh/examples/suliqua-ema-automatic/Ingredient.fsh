@@ -5,8 +5,6 @@ Title: "Ingredient-active Insulin glargine"
 Description: "Insulin glargine"
 Usage: #example
 
-* id = "9db4bee7-36c1-4343-b29a-75bde76d06be" 
-
 * identifier.system = $ginas
 * identifier.value = "2ZM8CX04RZ"
 * identifier.use = #official
@@ -23,8 +21,10 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -39,8 +39,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Lixisenatide"
 Description: "Lixisenatide"
 Usage: #example
-
-* id = "e5f93f62-c074-4023-95ba-894f4f840184" 
 
 * identifier.system = $ginas
 * identifier.value = "74O62BB01U"
@@ -58,8 +56,10 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -75,8 +75,6 @@ Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
 Description: "GLYCEROL 85% [WHO-DD]"
 Usage: #example
 
-* id = "2b46bc1a-d61c-442c-a81f-95b2a6e021b0" 
-
 * identifier.system = $ginas
 * identifier.value = "PDC6A3C0OX"
 * identifier.use = #official
@@ -89,8 +87,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -106,8 +106,6 @@ Title: "Ingredient-excipient Methionine"
 Description: "Methionine"
 Usage: #example
 
-* id = "6ee8bce3-72b6-4b2d-8b42-a876439867a2" 
-
 * identifier.system = $ginas
 * identifier.value = "AE28F7PNPL"
 * identifier.use = #official
@@ -120,8 +118,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -137,8 +137,6 @@ Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
 Usage: #example
 
-* id = "6b09c5d4-5f52-4bd4-a348-5a16555a8091" 
-
 * identifier.system = $ginas
 * identifier.value = "GGO4Y809LO"
 * identifier.use = #official
@@ -151,8 +149,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -168,8 +168,6 @@ Title: "Ingredient-excipient Zinc chloride"
 Description: "Zinc chloride"
 Usage: #example
 
-* id = "93d5be78-9214-47be-bdcc-858630d69bf7" 
-
 * identifier.system = $ginas
 * identifier.value = "86Q357L16B"
 * identifier.use = #official
@@ -182,8 +180,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -199,8 +199,6 @@ Title: "Ingredient-excipient HYDROCHLORIC ACID [IARC]"
 Description: "HYDROCHLORIC ACID [IARC]"
 Usage: #example
 
-* id = "0e02d6fb-cc1a-4c53-b26b-29d465065638" 
-
 * identifier.system = $ginas
 * identifier.value = "QTT17582CB"
 * identifier.use = #official
@@ -213,8 +211,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -230,8 +230,6 @@ Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
 Description: "STERILE WATER FOR INJECTION"
 Usage: #example
 
-* id = "82cc2f0c-1ea2-468d-8976-345a3da8c051" 
-
 * identifier.system = $ginas
 * identifier.value = "059QF0KO0R"
 * identifier.use = #official
@@ -244,8 +242,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  
@@ -261,8 +261,6 @@ Title: "Ingredient-excipient Sodium hydroxide"
 Description: "Sodium hydroxide"
 Usage: #example
 
-* id = "7e704300-a941-4285-8f54-e638bcfa9ccd" 
-
 * identifier.system = $ginas
 * identifier.value = "55X04QC32I"
 * identifier.use = #official
@@ -275,8 +273,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
+* for[+] = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
+* for[+] = Reference(ap-suliqua100unitsml33microgramsmlsolutionforinjectioninx3prefilledpens)
 // Reference to Organization:  Reference to MAH
 
  

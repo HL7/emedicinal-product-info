@@ -5,8 +5,6 @@ Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
 Usage: #example
 
-* id = "5b07f405-9ba1-4eec-a3cc-6307512c3b66" 
-
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"
 * identifier.use = #official
@@ -19,8 +17,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-dolocatil1gtablets)
+* for[+] = Reference(mpDOLOCATIL1gtablets)
+* for[+] = Reference(ap-dolocatil1gtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -32,8 +32,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient POVIDONE, UNSPECIFIED"
 Description: "POVIDONE, UNSPECIFIED"
 Usage: #example
-
-* id = "792384ec-1da3-4757-b140-87cf3018d364" 
 
 * identifier.system = $ginas
 * identifier.value = "FZ989GH94E"
@@ -47,8 +45,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-dolocatil1gtablets)
+* for[+] = Reference(mpDOLOCATIL1gtablets)
+* for[+] = Reference(ap-dolocatil1gtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -60,8 +60,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-active paracetamol"
 Description: "paracetamol"
 Usage: #example
-
-* id = "da77f7a3-38d2-4e02-8ad6-31873d6e210c" 
 
 * identifier.system = $ginas
 * identifier.value = "362O9ITL9D"
@@ -79,8 +77,10 @@ Usage: #example
 * substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-dolocatil1gtablets)
+* for[+] = Reference(mpDOLOCATIL1gtablets)
+* for[+] = Reference(ap-dolocatil1gtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -92,8 +92,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
 Description: "SILICA, COLLOIDAL ANHYDROUS"
 Usage: #example
-
-* id = "8f0450df-78dd-4ec4-93f5-22edb8819691" 
 
 * identifier.system = $ginas
 * identifier.value = "ETJ7Z6XBU4"
@@ -107,8 +105,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-dolocatil1gtablets)
+* for[+] = Reference(mpDOLOCATIL1gtablets)
+* for[+] = Reference(ap-dolocatil1gtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -120,8 +120,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, CORN"
 Description: "STARCH, CORN"
 Usage: #example
-
-* id = "ce8573c1-d70d-4cef-ab8c-383242a6ef95" 
 
 * identifier.system = $ginas
 * identifier.value = "O8232NY3SJ"
@@ -135,8 +133,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-dolocatil1gtablets)
+* for[+] = Reference(mpDOLOCATIL1gtablets)
+* for[+] = Reference(ap-dolocatil1gtablets)
 // Reference to Organization:  Reference to MAH
 
  
@@ -148,8 +148,6 @@ InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, POTATO"
 Description: "STARCH, POTATO"
 Usage: #example
-
-* id = "49493ac6-59ca-4460-bf7d-01820880fb9c" 
 
 * identifier.system = $ginas
 * identifier.value = "8I089SAH3T"
@@ -163,8 +161,10 @@ Usage: #example
 
 
 
-// Reference to manufactured item
+// Reference to products
 * for = Reference(mid-dolocatil1gtablets)
+* for[+] = Reference(mpDOLOCATIL1gtablets)
+* for[+] = Reference(ap-dolocatil1gtablets)
 // Reference to Organization:  Reference to MAH
 
  

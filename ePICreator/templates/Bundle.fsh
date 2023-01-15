@@ -7,7 +7,6 @@ Title: "ePI document Bundle for {{row["name"]}} Package Leaflet"
 Description: "Bundle for {{row["name"]}} Package Leaflet ePI document"
 Usage: #example
 
-* id = "{{row['id']}}" 
 * identifier.system = "{{row['identifier_system']}}" 
 * identifier.value = "{{row["identifier_value"]}}"
 * type = #document

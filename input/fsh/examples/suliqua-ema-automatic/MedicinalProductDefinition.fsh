@@ -5,8 +5,6 @@ Title: "Medicinal Product Suliqua 100 units/ml + 50 micrograms/ml solution for i
 Description: "EU/1/97/049/001 Suliqua 100 units/ml + 50 micrograms/ml solution for injection in a pre-filled pen"
 Usage: #example
 
-
-* id = "4b89556b-60fb-4ba2-b793-b7d5ba41efcf" 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/16/1157/002"
 

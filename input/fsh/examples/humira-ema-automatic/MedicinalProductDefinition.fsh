@@ -5,8 +5,6 @@ Title: "Medicinal Product Humira 40 mg Solution for injection Subcutaneous use p
 Description: "EU/1/97/049/001 Humira 40 mg Solution for injection Subcutaneous use pre-filled syringe (glass)"
 Usage: #example
 
-
-* id = "bf0ee3f3-ba40-486a-a3f4-61699e17f5f0" 
 * identifier.system = $spor-prod
 * identifier.value = "nan"
 

@@ -7,7 +7,7 @@ InstanceOf: OrganizationUvEpi
 Title: "{{ row["name"]  }} as {{ row["type"]  }}"
 Description: "{{ row["name"]  }} as {{ row["type"]  }}"
 Usage: #example
-* id = "{{row['id']}}" 
+
 * identifier.system = $spor-org
 * identifier.value = "{{ row["identifier"]  }}"
 * identifier.use = #official

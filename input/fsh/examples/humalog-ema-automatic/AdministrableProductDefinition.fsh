@@ -5,7 +5,6 @@ Title: "Administrable product Humalog 100 U/ml 5 pre-filled pen"
 Description: "Humalog 100 U/ml 5 pre-filled pen"
 Usage: #example
 
-* id = "xxxxx" 
 * identifier.system = $phpid
 * identifier.value = "0x073AF2E5B92AE19E8B67635AFFB3D6CA" 
 

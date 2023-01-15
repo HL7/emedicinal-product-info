@@ -5,9 +5,6 @@ Title: "Regulated Authorization for BLASTON 1 mg tablets"
 Description: "Regulated Authorization for BLASTON 1 mg tablets"
 Usage: #example
 
-
-* id = "f157ece4-f180-4eb4-bb62-8f944c4f894d" 
-
 * identifier.system = $spor-prod
 * identifier.value = "59.032"
 * identifier.use = #official
