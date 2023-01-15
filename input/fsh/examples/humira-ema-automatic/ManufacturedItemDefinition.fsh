@@ -20,4 +20,4 @@ Usage: #example
  
 
 
-* manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)

@@ -17,7 +17,7 @@ Usage: #example
 
  // Reference to Organization: MAH
  
-* manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
  
 

@@ -37,4 +37,4 @@ Usage: #example
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
  // Reference to Organization: MAH
-* manufacturer = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+* manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)

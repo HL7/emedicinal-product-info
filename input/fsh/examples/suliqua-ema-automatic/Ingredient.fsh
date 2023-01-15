@@ -33,7 +33,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-lixisenatide
 InstanceOf: IngredientUvEpi
@@ -69,7 +69,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-glycerol85whodd
 InstanceOf: IngredientUvEpi
@@ -101,7 +101,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-methionine
 InstanceOf: IngredientUvEpi
@@ -133,7 +133,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-metacresol
 InstanceOf: IngredientUvEpi
@@ -165,7 +165,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-zincchloride
 InstanceOf: IngredientUvEpi
@@ -197,7 +197,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-hydrochloricacidiarc
 InstanceOf: IngredientUvEpi
@@ -229,7 +229,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-sterilewaterforinjection
 InstanceOf: IngredientUvEpi
@@ -261,7 +261,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 Instance: ingredient-for-suliqua-sodiumhydroxide
 InstanceOf: IngredientUvEpi
@@ -293,4 +293,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)

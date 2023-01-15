@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2023-01-14T16:12:19Z"
+* timestamp = "2023-01-14T16:28:14Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionCALCIOVITAMINAD3ROVI1000mg880UICOMPRIMIDOSEFERVESCENTES"
@@ -102,8 +102,8 @@ Usage: #example
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d"
-* entry[=].resource = org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d 
+* entry[+].fullUrl = "Organization/org-b7afabe350ac415f70e662ba6c703030"
+* entry[=].resource = org-b7afabe350ac415f70e662ba6c703030 
  
 
 // PackagedProductDefinition

@@ -17,7 +17,7 @@ Usage: #example
 
  // Reference to Organization: MAH
  
-* manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 * structure.molecularFormula = "C6448H10026O2016N1732S42"
 

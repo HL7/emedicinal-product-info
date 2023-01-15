@@ -42,4 +42,4 @@ Usage: #example
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
  // Reference to Organization: MAH
-* manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)

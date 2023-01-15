@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpHumira40mgSolutionforinjectionSubcutaneoususeprefilledsyringeglass)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* author = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 * title = "TEST PURPOSES ONLY - humira"
 
@@ -81,8 +81,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira
-  * entry[+] = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira) 
+//  * entry[+].fullUrl = org-fda7514c0dcb7b5f0176cb5af274235f
+  * entry[+] = Reference(org-fda7514c0dcb7b5f0176cb5af274235f) 
  
 
   // PackagedProductDefinition

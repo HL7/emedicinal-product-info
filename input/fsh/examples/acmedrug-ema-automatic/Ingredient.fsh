@@ -26,7 +26,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
+* manufacturer.manufacturer = Reference(org-2aff7154a8d952c895e8a03849a25108)
 
 Instance: ingredient-for-acmedrug-acmedruging2
 InstanceOf: IngredientUvEpi
@@ -55,7 +55,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
+* manufacturer.manufacturer = Reference(org-2aff7154a8d952c895e8a03849a25108)
 
 Instance: ingredient-for-acmedrug-acmedruging1
 InstanceOf: IngredientUvEpi
@@ -88,4 +88,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
+* manufacturer.manufacturer = Reference(org-2aff7154a8d952c895e8a03849a25108)

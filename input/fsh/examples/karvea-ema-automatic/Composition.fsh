@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpKarvea75mgtabletblisterx28)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* author = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 * title = "TEST PURPOSES ONLY - Karvea"
 
@@ -97,8 +97,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-sanofiaventisgroupe-karvea
-  * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea) 
+//  * entry[+].fullUrl = org-fe4fee458a4f24fccb770d311350f67c
+  * entry[+] = Reference(org-fe4fee458a4f24fccb770d311350f67c) 
  
 
   // PackagedProductDefinition

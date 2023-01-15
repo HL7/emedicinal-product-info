@@ -10,6 +10,7 @@ import uuid
 import re
 from datetime import datetime
 from validator import pre_validation
+import hashlib
 
 context = {"now": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")}
 
@@ -34,6 +35,14 @@ OUTPUT_FOLDER = sys.argv[3]
 
 env = Environment(loader=FileSystemLoader(TEMPLATE_FOLDER), trim_blocks=True)
 env.filters["regex_replace"] = regex_replace
+
+
+def hash_id(string):
+    hash_object = hashlib.md5(bytes(string, "utf-8"))
+    return str(hash_object.hexdigest())
+
+
+env.filters["create_hash_id"] = hash_id
 
 
 def create_from_template(DATA_FILE, TEMPLATE_FOLDER, OUTPUT_FOLDER):

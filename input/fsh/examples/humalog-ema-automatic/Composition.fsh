@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpHumalogMix50InsulinKwikPen3mlprefill)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog)
+* author = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
 * title = "TEST PURPOSES ONLY - Humalog"
 
@@ -77,16 +77,16 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-elilillynederlandbv-humalog
-  * entry[+] = Reference(org-marketingauthorisationholder-elilillynederlandbv-humalog) 
+//  * entry[+].fullUrl = org-3fdc76794516d7826890ab9f893e99c1
+  * entry[+] = Reference(org-3fdc76794516d7826890ab9f893e99c1) 
 
   // Organization
-//  * entry[+].fullUrl = org-manufacturerapi-elilillyandcompany-humalog
-  * entry[+] = Reference(org-manufacturerapi-elilillyandcompany-humalog) 
+//  * entry[+].fullUrl = org-6f4987de7be1bbfa4ee92c07de7e94d4
+  * entry[+] = Reference(org-6f4987de7be1bbfa4ee92c07de7e94d4) 
 
   // Organization
-//  * entry[+].fullUrl = org-manufacturer-lillysa-humalog
-  * entry[+] = Reference(org-manufacturer-lillysa-humalog) 
+//  * entry[+].fullUrl = org-e3ef26dd2c7a0847d92d3bb1a64855b9
+  * entry[+] = Reference(org-e3ef26dd2c7a0847d92d3bb1a64855b9) 
  
 
   // PackagedProductDefinition

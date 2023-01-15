@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpDOLOCATIL1gtablets)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* author = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
 * title = "TEST PURPOSES ONLY - paracetamol"
 
@@ -69,8 +69,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol
-  * entry[+] = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol) 
+//  * entry[+].fullUrl = org-65db33d6be47a433e6e9e9c2980ea7a4
+  * entry[+] = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4) 
  
 
   // PackagedProductDefinition

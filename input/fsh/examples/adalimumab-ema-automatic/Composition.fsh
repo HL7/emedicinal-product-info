@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpadalimumab)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab)
+* author = Reference(org-b4249a5180d23ad521b23e06e99b7afd)
 
 * title = "TEST PURPOSES ONLY - adalimumab"
 
@@ -53,20 +53,20 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab
-  * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-adalimumab) 
+//  * entry[+].fullUrl = org-b4249a5180d23ad521b23e06e99b7afd
+  * entry[+] = Reference(org-b4249a5180d23ad521b23e06e99b7afd) 
 
   // Organization
-//  * entry[+].fullUrl = org-manufacturerapi-sanofiaventisdeutschlandgmbh-adalimumab
-  * entry[+] = Reference(org-manufacturerapi-sanofiaventisdeutschlandgmbh-adalimumab) 
+//  * entry[+].fullUrl = org-90385ec6a39a5d293a77ef9f7095bd30
+  * entry[+] = Reference(org-90385ec6a39a5d293a77ef9f7095bd30) 
 
   // Organization
-//  * entry[+].fullUrl = org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-adalimumab
-  * entry[+] = Reference(org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-adalimumab) 
+//  * entry[+].fullUrl = org-591fe9c5de748b22eace6d084f2f041a
+  * entry[+] = Reference(org-591fe9c5de748b22eace6d084f2f041a) 
 
   // Organization
-//  * entry[+].fullUrl = org-medicinesregulatoryauthority-europeanmedicinesagency-adalimumab
-  * entry[+] = Reference(org-medicinesregulatoryauthority-europeanmedicinesagency-adalimumab) 
+//  * entry[+].fullUrl = org-bcc70233ff79453d8ddfc13faa4dfb4e
+  * entry[+] = Reference(org-bcc70233ff79453d8ddfc13faa4dfb4e) 
  
 
   // PackagedProductDefinition

@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2023-01-14T16:12:19Z"
+* timestamp = "2023-01-14T16:28:14Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositioncinitrapide"
@@ -72,8 +72,8 @@ Usage: #example
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-marketingauthorisationholder-lacersaboters5-cinitrapide"
-* entry[=].resource = org-marketingauthorisationholder-lacersaboters5-cinitrapide 
+* entry[+].fullUrl = "Organization/org-94f8082c22713e050c3f2b55ea9d53ff"
+* entry[=].resource = org-94f8082c22713e050c3f2b55ea9d53ff 
  
 
 // PackagedProductDefinition

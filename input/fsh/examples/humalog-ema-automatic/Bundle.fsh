@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2023-01-14T16:12:19Z"
+* timestamp = "2023-01-14T16:28:14Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionHumalog"
@@ -82,18 +82,18 @@ Usage: #example
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-marketingauthorisationholder-elilillynederlandbv-humalog"
-* entry[=].resource = org-marketingauthorisationholder-elilillynederlandbv-humalog 
+* entry[+].fullUrl = "Organization/org-3fdc76794516d7826890ab9f893e99c1"
+* entry[=].resource = org-3fdc76794516d7826890ab9f893e99c1 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-manufacturerapi-elilillyandcompany-humalog"
-* entry[=].resource = org-manufacturerapi-elilillyandcompany-humalog 
+* entry[+].fullUrl = "Organization/org-6f4987de7be1bbfa4ee92c07de7e94d4"
+* entry[=].resource = org-6f4987de7be1bbfa4ee92c07de7e94d4 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-manufacturer-lillysa-humalog"
-* entry[=].resource = org-manufacturer-lillysa-humalog 
+* entry[+].fullUrl = "Organization/org-e3ef26dd2c7a0847d92d3bb1a64855b9"
+* entry[=].resource = org-e3ef26dd2c7a0847d92d3bb1a64855b9 
  
 
 // PackagedProductDefinition

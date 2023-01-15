@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* author = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
 * title = "TEST PURPOSES ONLY - MIRTAZAPINA CINFA 30 mg Coated Tablet"
 
@@ -69,8 +69,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine
-  * entry[+] = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine) 
+//  * entry[+].fullUrl = org-dbf32c7ed470ffbeb6060201f32edb29
+  * entry[+] = Reference(org-dbf32c7ed470ffbeb6060201f32edb29) 
  
 
   // PackagedProductDefinition

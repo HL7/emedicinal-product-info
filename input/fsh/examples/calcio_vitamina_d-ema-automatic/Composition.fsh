@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpCalcioVitaminaD3ROVI1000mg880UIcomprimidosefervescentes)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d)
+* author = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
 * title = "TEST PURPOSES ONLY - CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
 
@@ -93,8 +93,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d
-  * entry[+] = Reference(org-marketingauthorisationholder-laboratoriosfarmacuticosrovisa-calcio_vitamina_d) 
+//  * entry[+].fullUrl = org-b7afabe350ac415f70e662ba6c703030
+  * entry[+] = Reference(org-b7afabe350ac415f70e662ba6c703030) 
  
 
   // PackagedProductDefinition

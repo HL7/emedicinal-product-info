@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2023-01-14T16:12:19Z"
+* timestamp = "2023-01-14T16:28:14Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionacmedrug"
@@ -57,8 +57,8 @@ Usage: #example
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-marketingauthorisationholder-acmeindustry-acmedrug"
-* entry[=].resource = org-marketingauthorisationholder-acmeindustry-acmedrug 
+* entry[+].fullUrl = "Organization/org-2aff7154a8d952c895e8a03849a25108"
+* entry[=].resource = org-2aff7154a8d952c895e8a03849a25108 
  
 
 // PackagedProductDefinition

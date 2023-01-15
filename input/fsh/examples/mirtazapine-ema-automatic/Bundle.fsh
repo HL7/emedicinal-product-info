@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "x"
 * type = #document
-* timestamp = "2023-01-14T16:12:19Z"
+* timestamp = "2023-01-14T16:28:14Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionMIRTAZAPINACINFA30mgCoatedTablet"
@@ -72,8 +72,8 @@ Usage: #example
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine"
-* entry[=].resource = org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine 
+* entry[+].fullUrl = "Organization/org-dbf32c7ed470ffbeb6060201f32edb29"
+* entry[=].resource = org-dbf32c7ed470ffbeb6060201f32edb29 
  
 
 // PackagedProductDefinition

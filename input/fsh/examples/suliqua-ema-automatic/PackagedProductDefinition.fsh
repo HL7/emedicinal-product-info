@@ -37,4 +37,4 @@ Usage: #example
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
  // Reference to Organization: MAH
-* manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)

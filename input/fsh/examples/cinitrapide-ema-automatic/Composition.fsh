@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpBLASTON1mgtablets)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide)
+* author = Reference(org-94f8082c22713e050c3f2b55ea9d53ff)
 
 * title = "TEST PURPOSES ONLY - cinitrapide"
 
@@ -69,8 +69,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-lacersaboters5-cinitrapide
-  * entry[+] = Reference(org-marketingauthorisationholder-lacersaboters5-cinitrapide) 
+//  * entry[+].fullUrl = org-94f8082c22713e050c3f2b55ea9d53ff
+  * entry[+] = Reference(org-94f8082c22713e050c3f2b55ea9d53ff) 
  
 
   // PackagedProductDefinition

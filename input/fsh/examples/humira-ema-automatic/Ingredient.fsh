@@ -26,7 +26,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-polysorbate80
 InstanceOf: IngredientUvEpi
@@ -55,7 +55,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-adalimumab
 InstanceOf: IngredientUvEpi
@@ -88,7 +88,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-sterilewaterforinjection
 InstanceOf: IngredientUvEpi
@@ -117,7 +117,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-citricacidmonohydrate
 InstanceOf: IngredientUvEpi
@@ -146,7 +146,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-sodiumcitrateunspecifiedform
 InstanceOf: IngredientUvEpi
@@ -175,7 +175,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-sodiumphosphatemonobasicdihydrate
 InstanceOf: IngredientUvEpi
@@ -204,7 +204,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-sodiumphosphatedibasicdihydrate
 InstanceOf: IngredientUvEpi
@@ -233,7 +233,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 Instance: ingredient-for-humira-sodiumchloride
 InstanceOf: IngredientUvEpi
@@ -262,4 +262,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-abbviedeutschlandgmbhcokg-humira)
+* manufacturer.manufacturer = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)

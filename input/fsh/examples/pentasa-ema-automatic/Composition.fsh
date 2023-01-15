@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpPentasaSlowReleaseTablets1g)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+* author = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
 * title = "TEST PURPOSES ONLY - Pentasa Slow Release Tablets 1g"
 
@@ -69,8 +69,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-ferringsau-pentasa
-  * entry[+] = Reference(org-marketingauthorisationholder-ferringsau-pentasa) 
+//  * entry[+].fullUrl = org-6ade044addd6563de0baefebb1cceb8e
+  * entry[+] = Reference(org-6ade044addd6563de0baefebb1cceb8e) 
  
 
   // PackagedProductDefinition

@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/16/1157/003"
 * type = #document
-* timestamp = "2023-01-14T16:12:19Z"
+* timestamp = "2023-01-14T16:28:14Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionSuliqua"
@@ -97,23 +97,23 @@ Usage: #example
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-marketingauthorisationholder-sanofiaventisgroupe-suliqua"
-* entry[=].resource = org-marketingauthorisationholder-sanofiaventisgroupe-suliqua 
+* entry[+].fullUrl = "Organization/org-16019cea3a857659d2c5a2018c2260df"
+* entry[=].resource = org-16019cea3a857659d2c5a2018c2260df 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-manufacturerapi-sanofiaventisdeutschlandgmbh-suliqua"
-* entry[=].resource = org-manufacturerapi-sanofiaventisdeutschlandgmbh-suliqua 
+* entry[+].fullUrl = "Organization/org-ab61fc2db513f79636782643b3407aa5"
+* entry[=].resource = org-ab61fc2db513f79636782643b3407aa5 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-suliqua"
-* entry[=].resource = org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-suliqua 
+* entry[+].fullUrl = "Organization/org-b9c6316075799071b2706c402f9fa388"
+* entry[=].resource = org-b9c6316075799071b2706c402f9fa388 
 
 // Organization
 
-* entry[+].fullUrl = "Organization/org-medicinesregulatoryauthority-europeanmedicinesagency-suliqua"
-* entry[=].resource = org-medicinesregulatoryauthority-europeanmedicinesagency-suliqua 
+* entry[+].fullUrl = "Organization/org-ff74c5498eb163c2fb470e9fd175a0c1"
+* entry[=].resource = org-ff74c5498eb163c2fb470e9fd175a0c1 
  
 
 // PackagedProductDefinition

@@ -37,4 +37,4 @@ Usage: #example
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
 * packageFor = Reference(mpMIRTAZAPINeCINFA30mgCoatedTablet)
  // Reference to Organization: MAH
-* manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)

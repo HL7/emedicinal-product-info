@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpacmedrugman)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug)
+* author = Reference(org-2aff7154a8d952c895e8a03849a25108)
 
 * title = "TEST PURPOSES ONLY - acmedrug"
 
@@ -57,8 +57,8 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-acmeindustry-acmedrug
-  * entry[+] = Reference(org-marketingauthorisationholder-acmeindustry-acmedrug) 
+//  * entry[+].fullUrl = org-2aff7154a8d952c895e8a03849a25108
+  * entry[+] = Reference(org-2aff7154a8d952c895e8a03849a25108) 
  
 
   // PackagedProductDefinition

@@ -30,7 +30,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+* manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
 Instance: ingredient-for-pentasa-povidone
 InstanceOf: IngredientUvEpi
@@ -59,7 +59,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+* manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
 Instance: ingredient-for-pentasa-ethylcellulose
 InstanceOf: IngredientUvEpi
@@ -88,7 +88,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+* manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
 Instance: ingredient-for-pentasa-magnesiumstearate
 InstanceOf: IngredientUvEpi
@@ -117,7 +117,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+* manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
 Instance: ingredient-for-pentasa-talc
 InstanceOf: IngredientUvEpi
@@ -146,7 +146,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+* manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
 Instance: ingredient-for-pentasa-microcrystallinecellulose
 InstanceOf: IngredientUvEpi
@@ -175,4 +175,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferringsau-pentasa)
+* manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)

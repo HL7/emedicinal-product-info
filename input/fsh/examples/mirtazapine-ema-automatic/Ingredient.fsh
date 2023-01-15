@@ -26,7 +26,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
 Instance: ingredient-for-mirtazapine-lactosemonohydrate
 InstanceOf: IngredientUvEpi
@@ -55,7 +55,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
 Instance: ingredient-for-mirtazapine-mirtazapine
 InstanceOf: IngredientUvEpi
@@ -88,7 +88,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
 Instance: ingredient-for-mirtazapine-hydroxypropylcelluloseunspecified
 InstanceOf: IngredientUvEpi
@@ -117,7 +117,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
 Instance: ingredient-for-mirtazapine-silicacolloidalanhydrous
 InstanceOf: IngredientUvEpi
@@ -146,7 +146,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
 Instance: ingredient-for-mirtazapine-cornstarch
 InstanceOf: IngredientUvEpi
@@ -175,4 +175,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-laboratorioscinfasa-mirtazapine)
+* manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)

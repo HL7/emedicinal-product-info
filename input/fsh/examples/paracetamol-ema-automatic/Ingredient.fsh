@@ -26,7 +26,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
 Instance: ingredient-for-paracetamol-povidoneunspecified
 InstanceOf: IngredientUvEpi
@@ -55,7 +55,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
 Instance: ingredient-for-paracetamol-paracetamol
 InstanceOf: IngredientUvEpi
@@ -88,7 +88,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
 Instance: ingredient-for-paracetamol-silicacolloidalanhydrous
 InstanceOf: IngredientUvEpi
@@ -117,7 +117,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
 Instance: ingredient-for-paracetamol-starchcorn
 InstanceOf: IngredientUvEpi
@@ -146,7 +146,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
 Instance: ingredient-for-paracetamol-starchpotato
 InstanceOf: IngredientUvEpi
@@ -175,4 +175,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-ferrerinternacionalsa-paracetamol)
+* manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)

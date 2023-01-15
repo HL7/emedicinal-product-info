@@ -1,8 +1,16 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
+{% set ns = namespace() %}
+{% set ns.one = row['type'] %}
+{% set ns.two = row['name'] %}
+{% set ns.three= data["dictionary"]["MajorName"] %}
+{% set ns.name_to_has= ns.one ~ ns.two ~ns.three  %}
 
-Instance: org-{{ row["type"] | lower | regex_replace('[^A-Za-z0-9]+', '') }}-{{ row["name"] | lower | regex_replace('[^A-Za-z0-9]+', '') }}-{{ data["dictionary"]["MajorName"]|lower}}
+
+
+Instance: org-{{ns.name_to_has| create_hash_id}}
+
 InstanceOf: OrganizationUvEpi
 Title: "{{ row["name"]  }} as {{ row["type"]  }}"
 Description: "{{ row["name"]  }} as {{ row["type"]  }}"

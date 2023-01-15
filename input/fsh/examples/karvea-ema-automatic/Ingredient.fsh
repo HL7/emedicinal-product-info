@@ -26,7 +26,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-macrogol3000
 InstanceOf: IngredientUvEpi
@@ -55,7 +55,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-lactosemonohydrate
 InstanceOf: IngredientUvEpi
@@ -84,7 +84,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-silicondioxide
 InstanceOf: IngredientUvEpi
@@ -113,7 +113,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-titaniumdioxide
 InstanceOf: IngredientUvEpi
@@ -142,7 +142,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-irbesartan
 InstanceOf: IngredientUvEpi
@@ -175,7 +175,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-croscarmellosesodium
 InstanceOf: IngredientUvEpi
@@ -204,7 +204,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-microcrystallinecellulose
 InstanceOf: IngredientUvEpi
@@ -233,7 +233,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-magnesiumstearate
 InstanceOf: IngredientUvEpi
@@ -262,7 +262,7 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
 Instance: ingredient-for-karvea-carnaubawax
 InstanceOf: IngredientUvEpi
@@ -291,4 +291,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-karvea)
+* manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)

@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(mpSuliqua100unitsml50microgramsmlsolutionforinjectioninaprefilledpen)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua)
+* author = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
 * title = "TEST PURPOSES ONLY - Suliqua"
 
@@ -89,20 +89,20 @@ Usage: #example
  
 
   // Organization
-//  * entry[+].fullUrl = org-marketingauthorisationholder-sanofiaventisgroupe-suliqua
-  * entry[+] = Reference(org-marketingauthorisationholder-sanofiaventisgroupe-suliqua) 
+//  * entry[+].fullUrl = org-16019cea3a857659d2c5a2018c2260df
+  * entry[+] = Reference(org-16019cea3a857659d2c5a2018c2260df) 
 
   // Organization
-//  * entry[+].fullUrl = org-manufacturerapi-sanofiaventisdeutschlandgmbh-suliqua
-  * entry[+] = Reference(org-manufacturerapi-sanofiaventisdeutschlandgmbh-suliqua) 
+//  * entry[+].fullUrl = org-ab61fc2db513f79636782643b3407aa5
+  * entry[+] = Reference(org-ab61fc2db513f79636782643b3407aa5) 
 
   // Organization
-//  * entry[+].fullUrl = org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-suliqua
-  * entry[+] = Reference(org-manufacturerbatchrelease-sanofiaventisdeutschlandgmbh-suliqua) 
+//  * entry[+].fullUrl = org-b9c6316075799071b2706c402f9fa388
+  * entry[+] = Reference(org-b9c6316075799071b2706c402f9fa388) 
 
   // Organization
-//  * entry[+].fullUrl = org-medicinesregulatoryauthority-europeanmedicinesagency-suliqua
-  * entry[+] = Reference(org-medicinesregulatoryauthority-europeanmedicinesagency-suliqua) 
+//  * entry[+].fullUrl = org-ff74c5498eb163c2fb470e9fd175a0c1
+  * entry[+] = Reference(org-ff74c5498eb163c2fb470e9fd175a0c1) 
  
 
   // PackagedProductDefinition
