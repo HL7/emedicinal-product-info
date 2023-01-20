@@ -19,116 +19,31 @@ Usage: #example
 
 * title = "TEST PURPOSES ONLY - Humalog"
 
-* section[+].
-  * title = "Product Information"
-  * code.text = "Product Info"
 
- 
- 
- 
- 
 
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-glycerol
-  * entry[+] = Reference(ingredient-for-humalog-glycerol) 
 
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-hydrochloricacid
-  * entry[+] = Reference(ingredient-for-humalog-hydrochloricacid) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-sodiumhydroxide
-  * entry[+] = Reference(ingredient-for-humalog-sodiumhydroxide) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-sterilewaterforinjection
-  * entry[+] = Reference(ingredient-for-humalog-sterilewaterforinjection) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-insulinlispro
-  * entry[+] = Reference(ingredient-for-humalog-insulinlispro) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-zincoxide
-  * entry[+] = Reference(ingredient-for-humalog-zincoxide) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-metacresol
-  * entry[+] = Reference(ingredient-for-humalog-metacresol) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humalog-trometamol
-  * entry[+] = Reference(ingredient-for-humalog-trometamol) 
- 
-
-  // Substance
-//  * entry[+].fullUrl = substance-insulinlispro
-  * entry[+] = Reference(substance-insulinlispro) 
- 
-
-  // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-fa2090b7ce9bdf87e24a9d05bbb51677
-  * entry[+] = Reference(ap-fa2090b7ce9bdf87e24a9d05bbb51677) 
- 
-
-  // RegulatedAuthorization
-//  * entry[+].fullUrl = authorization35570a7ffa4ad1ddf8a920b1728d4cd2
-  * entry[+] = Reference(authorization35570a7ffa4ad1ddf8a920b1728d4cd2) 
- 
-
-  // Organization
-//  * entry[+].fullUrl = org-3fdc76794516d7826890ab9f893e99c1
-  * entry[+] = Reference(org-3fdc76794516d7826890ab9f893e99c1) 
-
-  // Organization
-//  * entry[+].fullUrl = org-6f4987de7be1bbfa4ee92c07de7e94d4
-  * entry[+] = Reference(org-6f4987de7be1bbfa4ee92c07de7e94d4) 
-
-  // Organization
-//  * entry[+].fullUrl = org-e3ef26dd2c7a0847d92d3bb1a64855b9
-  * entry[+] = Reference(org-e3ef26dd2c7a0847d92d3bb1a64855b9) 
- 
-
-  // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-a9955d128989ce310e64a9fb99c8a9ac
-  * entry[+] = Reference(ppd-a9955d128989ce310e64a9fb99c8a9ac) 
- 
-
-  // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpf6b4fcaaf21ddd70f011f383780f7bf3
-  * entry[+] = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3) 
- 
-
-  // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-fa2090b7ce9bdf87e24a9d05bbb51677
-  * entry[+] = Reference(mid-fa2090b7ce9bdf87e24a9d05bbb51677) 
-   
 
 
 
 
 * section[+].
-  * title = "Narrative Text"
-  * code.text = "Narrative"
-
-  * section[+].
-    * title = "B. Package Leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "B. PACKAGE LEAFLET"
-    * text.status = #additional
-    
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
+  * title = "B. Package Leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "B. PACKAGE LEAFLET"
+  * text.status = #additional
+  
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
 
 
-        
-  * section[=].section[+]
-    * title = "Package leaflet: Information for the user"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "Package leaflet: Information for the user"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+      
+* section[=].section[+]
+  * title = "Package leaflet: Information for the user"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "Package leaflet: Information for the user"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 PACKAGE LEAFLET: INFORMATION FOR THE USER
 Humalog Mix50 100 units/ml suspension for injection in cartridge
 insulin lispro
@@ -141,13 +56,13 @@ Read all of this leaflet carefully before you start taking this medicine because
 </ul>
 </div>         </div>"""   
 
-  * section[=].section[+]
-    * title = "What is in this leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "What is in this leaflet"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+* section[=].section[+]
+  * title = "What is in this leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "What is in this leaflet"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 What in this leaflet
 <ol>
   <li>What Humalog Mix50 is and what it is used for</li>
@@ -159,32 +74,32 @@ What in this leaflet
 </ol>
 </div>         </div>"""             
 
-  * section[=].section[+]
-    * title = "1. What Humalog is and what it is used for"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "1. What Humalog is and what it is used for"
-    * text.status = #additional
-    
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable              
-  * section[=].section[+]
-    * title = "2. What you need to know before you take Humalog"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "2. What you need to know before you take Humalog"
-    * text.status = #additional
-       
+* section[=].section[+]
+  * title = "1. What Humalog is and what it is used for"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "1. What Humalog is and what it is used for"
+  * text.status = #additional
+  
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable              
+* section[=].section[+]
+  * title = "2. What you need to know before you take Humalog"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "2. What you need to know before you take Humalog"
+  * text.status = #additional
+     
 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <b>2. What you need to know before you use Humalog Mix50</b>
 Do NOT use Humalog Mix50 if you
 </div>         </div>"""              
-  * section[=].section[+]
-    * title = "3. How to take Humalog"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "3. How to take Humalog"
-    * text.status = #additional
-          
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+* section[=].section[+]
+  * title = "3. How to take Humalog"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "3. How to take Humalog"
+  * text.status = #additional
+         
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <b>3. How to use Humalog Mix50</b>
 <b>The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.</b>
 <p>Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor
@@ -192,25 +107,25 @@ if you are not sure. To prevent the possible transmission of disease, each cartr
 you only, even if the needle on the delivery device is changed.</p>
 </div>         </div>"""          
 
-          
-  * section[=].section[+]
-    * title = "4. Possible side effects"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "4. Possible side effects"
-    * text.status = #additional
-                
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+        
+* section[=].section[+]
+  * title = "4. Possible side effects"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "4. Possible side effects"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <p><b>4. Possible side effects</b></p>
 <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
 </div>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "5. How to store Humalog"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "5. How to store Humalog"
-    * text.status = #additional
-                 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+        
+* section[=].section[+]
+  * title = "5. How to store Humalog"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "5. How to store Humalog"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Keep this medicine out of the sight and reach of children.</p>
             <p>
                 Do not use this medicine after the expiry date which is stated on the carton and on the blister after EXP. The expiry date refers to the last day of that month.
@@ -219,14 +134,14 @@ you only, even if the needle on the delivery device is changed.</p>
             <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away of medicines you no longer use. These measures will help protect the environment.
             </p>
         </div>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "6. Contents of the pack and other information"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "6. Contents of the pack and other information"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+        
+* section[=].section[+]
+  * title = "6. Contents of the pack and other information"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "6. Contents of the pack and other information"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <b>6. Contents of the pack and other information</b>
 <b>What Humalog Mix50 100 units/ml suspension for injection in cartridge contains</b>
 <p>The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant

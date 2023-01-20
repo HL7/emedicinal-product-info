@@ -19,100 +19,31 @@ Usage: #example
 
 * title = "TEST PURPOSES ONLY - MIRTAZAPINA CINFA 30 mg Coated Tablet"
 
-* section[+].
-  * title = "Product Information"
-  * code.text = "Product Info"
 
- 
- 
- 
- 
 
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-mirtazapine-magnesiumstearate
-  * entry[+] = Reference(ingredient-for-mirtazapine-magnesiumstearate) 
 
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-mirtazapine-lactosemonohydrate
-  * entry[+] = Reference(ingredient-for-mirtazapine-lactosemonohydrate) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-mirtazapine-mirtazapine
-  * entry[+] = Reference(ingredient-for-mirtazapine-mirtazapine) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-mirtazapine-hydroxypropylcelluloseunspecified
-  * entry[+] = Reference(ingredient-for-mirtazapine-hydroxypropylcelluloseunspecified) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-mirtazapine-silicacolloidalanhydrous
-  * entry[+] = Reference(ingredient-for-mirtazapine-silicacolloidalanhydrous) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-mirtazapine-cornstarch
-  * entry[+] = Reference(ingredient-for-mirtazapine-cornstarch) 
- 
-
-  // Substance
-//  * entry[+].fullUrl = substance-mirtazapine
-  * entry[+] = Reference(substance-mirtazapine) 
- 
-
-  // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-e762a2f54b0b24fca4744b1bb7524a5b
-  * entry[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b) 
- 
-
-  // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizatione762a2f54b0b24fca4744b1bb7524a5b
-  * entry[+] = Reference(authorizatione762a2f54b0b24fca4744b1bb7524a5b) 
- 
-
-  // Organization
-//  * entry[+].fullUrl = org-dbf32c7ed470ffbeb6060201f32edb29
-  * entry[+] = Reference(org-dbf32c7ed470ffbeb6060201f32edb29) 
- 
-
-  // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-0c848f16e413619f64703ded9343d866
-  * entry[+] = Reference(ppd-0c848f16e413619f64703ded9343d866) 
- 
-
-  // MedicinalProductDefinition
-//  * entry[+].fullUrl = mp817d49420419b04e8145f2f4031392d3
-  * entry[+] = Reference(mp817d49420419b04e8145f2f4031392d3) 
- 
-
-  // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-e762a2f54b0b24fca4744b1bb7524a5b
-  * entry[+] = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b) 
-   
 
 
 
 
 * section[+].
-  * title = "Narrative Text"
-  * code.text = "Narrative"
-
-  * section[+].
-    * title = "B. Package Leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "B. PACKAGE LEAFLET"
-    * text.status = #additional
-    
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
+  * title = "B. Package Leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "B. PACKAGE LEAFLET"
+  * text.status = #additional
+  
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
 
 
-        
-  * section[=].section[+]
-    * title = "Package leaflet: Information for the user"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "Package leaflet: Information for the user"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+      
+* section[=].section[+]
+  * title = "Package leaflet: Information for the user"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "Package leaflet: Information for the user"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Karvea 75 mg tablets</p>
             <p>irbesartan</p>
             <b>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</b>
@@ -124,13 +55,13 @@ Usage: #example
             </ul>
         </div>         </div>"""   
 
-  * section[=].section[+]
-    * title = "What is in this leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "What is in this leaflet"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+* section[=].section[+]
+  * title = "What is in this leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "What is in this leaflet"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <ul>
                 <li>What Karvea is and what it is used for</li>
                 <li>What you need to know before you take Karvea</li>
@@ -141,13 +72,13 @@ Usage: #example
             </ul>
         </div>         </div>"""             
 
-  * section[=].section[+]
-    * title = "1. What MIRTAZAPINA CINFA 30 mg Coated Tablet is and what it is used for"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "1. What MIRTAZAPINA CINFA 30 mg Coated Tablet is and what it is used for"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+* section[=].section[+]
+  * title = "1. What MIRTAZAPINA CINFA 30 mg Coated Tablet is and what it is used for"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "1. What MIRTAZAPINA CINFA 30 mg Coated Tablet is and what it is used for"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>
                 Karvea belongs to a group of medicines known as angiotensin-II receptor antagonists. Angiotensin-II is a substance produced in the body which binds to receptors in blood vessels causing them to tighten. This results in an increase in blood pressure. Karvea prevents the binding of angiotensin-II to these receptors, causing the blood vessels to relax and the blood pressure to lower. Karvea slows the decrease of kidney function in patients with high blood pressure and type 2 diabetes.
             </p>
@@ -158,14 +89,14 @@ Usage: #example
                     evidence of impaired kidney function.</li>
             </ul>
         </div>         </div>"""              
-  * section[=].section[+]
-    * title = "2. What you need to know before you take MIRTAZAPINA CINFA 30 mg Coated Tablet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "2. What you need to know before you take MIRTAZAPINA CINFA 30 mg Coated Tablet"
-    * text.status = #additional
-       
+* section[=].section[+]
+  * title = "2. What you need to know before you take MIRTAZAPINA CINFA 30 mg Coated Tablet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "2. What you need to know before you take MIRTAZAPINA CINFA 30 mg Coated Tablet"
+  * text.status = #additional
+     
 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <b>Do not take Karvea</b>
             <ul>
                 <li>if you are allergic to irbesartan or any other ingredients of this medicine (listed in section 6)</li>
@@ -229,13 +160,13 @@ Usage: #example
             <b>Karvea contains sodium.</b>
             <p>This medicine contains less than 1 mmol sodium (23 mg) per tablet, that is to say essentially ‘sodium-free’.</p>            
         </div>         </div>"""              
-  * section[=].section[+]
-    * title = "3. How to take MIRTAZAPINA CINFA 30 mg Coated Tablet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "3. How to take MIRTAZAPINA CINFA 30 mg Coated Tablet"
-    * text.status = #additional
-          
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+* section[=].section[+]
+  * title = "3. How to take MIRTAZAPINA CINFA 30 mg Coated Tablet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "3. How to take MIRTAZAPINA CINFA 30 mg Coated Tablet"
+  * text.status = #additional
+         
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <b>Always take this medicine exactly as your doctor has told you. Check with your doctor or pharmacist if you are not sure.</b>
             
             <b>Method of administration</b>
@@ -266,14 +197,14 @@ Usage: #example
             <p>If you have any further questions on the use of this medicine, ask your doctor or pharmacist.</p>     
         </div>         </div>"""          
 
-          
-  * section[=].section[+]
-    * title = "4. Possible side effects"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "4. Possible side effects"
-    * text.status = #additional
-                
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+        
+* section[=].section[+]
+  * title = "4. Possible side effects"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "4. Possible side effects"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Like all medicines, this medicine can cause side effects, although not everybody gets them. Some of these effects may be serious and may require medical attention.</p>
             <p>As with similar medicines, rare cases of allergic skin reactions (rash, urticaria), as well as localised swelling of the face, lips and/or tongue have been reported in patients taking irbesartan. If you get any of these symptoms or get short of breath, stop taking Karvea and contact your doctor immediately.</p>
             <p>The frequency of the side effects listed below is defined using the following convention:</p>
@@ -294,14 +225,14 @@ Usage: #example
             <p>If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. You can also report side effects directly via the national reporting system listed in Appendix V. By reporting side effects you can help provide more information on the safety of this medicine.
             </p>
         </div>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "5. How to store MIRTAZAPINA CINFA 30 mg Coated Tablet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "5. How to store MIRTAZAPINA CINFA 30 mg Coated Tablet"
-    * text.status = #additional
-                 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+        
+* section[=].section[+]
+  * title = "5. How to store MIRTAZAPINA CINFA 30 mg Coated Tablet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "5. How to store MIRTAZAPINA CINFA 30 mg Coated Tablet"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Keep this medicine out of the sight and reach of children.</p>
             <p>
                 Do not use this medicine after the expiry date which is stated on the carton and on the blister after EXP. The expiry date refers to the last day of that month.
@@ -310,14 +241,14 @@ Usage: #example
             <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away of medicines you no longer use. These measures will help protect the environment.
             </p>
         </div>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "6. Contents of the pack and other information"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "6. Contents of the pack and other information"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+        
+* section[=].section[+]
+  * title = "6. Contents of the pack and other information"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "6. Contents of the pack and other information"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <b>What Karvea contains</b>
             <ul>
                 <li>The active substance is irbesartan. Each tablet of Karvea 75 mg contains 75 mg irbesartan.</li>

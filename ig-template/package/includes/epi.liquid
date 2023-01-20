@@ -43,6 +43,7 @@
   <h4 class="nonumbers">
     {{ mpd.name[0].productName }}
   </h4>
+
   {% comment %}and name parts{% endcomment %}
   {% for namepart in mpd.name[0].namePart %}
     <p>
@@ -104,20 +105,15 @@
     </p>
   </div>
 
-  {% comment %}print mpd classification{% endcomment %}
-  <div class="container rcorners classif listcontainer">
-    <div class="container rcorners classif">
-      {% for classif in mpd.classification %}
-        {% for class in classif.coding %}
-          {{ class.display }} ({{ class.code }}) <br/>
-        {% endfor %}
-      {% endfor %}
-    </div>
-  </div>
+  {% for classif in mpd.classification %}
+    {% for class in classif.coding %}
+      {{ class.display }} ({{ class.code }}) <br/>
+    {% endfor %}
+  {% endfor %}
+
 
   {% comment %}Get all RAs (RegAuthorization) from the Bundle{% endcomment %}
   {% assign ras = bundle.entry | where: "resource.resourceType", "RegulatedAuthorization" %}
-
     {% for rar in ras %}
     {% comment %}get the RA resource{% endcomment %}
     {% assign ra = rar.resource %}
@@ -126,6 +122,7 @@
     {% comment %}if the current looped RA points to the MPD as subject{% endcomment %}
     {% if ra.subject[0].reference == mpdtid %}
       <div class="container rcorners ra listcontainer" title="Authorisation">
+
         <p class="divtitle">Authorisation {{ forloop.index }} of {{ ras | size }}</p>
         Auth id:
         <b>
@@ -148,102 +145,108 @@
             {{ ra.type.coding[0].display }}
           </b>
         </p>
-      
-          {% assign holderorg = ra.holder.reference | split: '/' | last %}
-        </p>
 
-        {% comment %}Get Orgs from Bundle {% endcomment %}
-        {% assign orgentries = bundle.entry | where: "resource.resourceType", "Organization" %}
+        {% assign holderorg = ra.holder.reference | split: '/' | last %}
+      </p>
 
-          {% for orgentry in orgentries %}
-          {% assign org = orgentry.resource %}
-          {% assign orgid = org.id %}
-          {% assign orgrefid = org.id | prepend: 'Organization/' %}
+      {% comment %}Get Orgs from Bundle {% endcomment %}
+      {% assign orgentries = bundle.entry | where: "resource.resourceType", "Organization" %}
+
+        {% for orgentry in orgentries %}
+        {% assign org = orgentry.resource %}
+        {% assign orgid = org.id %}
+        {% assign orgrefid = org.id | prepend: 'Organization/' %}
 
 
-          {% comment %}See which of the Orgs is referenced from the RA{% endcomment %}
-          {% if ra.holder.reference == orgrefid %}
+        {% comment %}See which of the Orgs is referenced from the RA{% endcomment %}
+        {% if ra.holder.reference == orgrefid %}
           <p>
             Holder:
             <b>{{ org.name }} ({{ org.identifier[0].value }})</b>
 
-            </p>
-            <p></p>
-          {% endif %}
-        {% endfor %}
+          </p>
+          <p></p>
+        {% endif %}
+      {% endfor %}
 
+
+
+      <p>
+        Status:
+        <b>
+          {{ ra.status.coding[0].display }} ({{ ra.statusDate }})
+        </b>
+      </p>
+
+    </div>
+
+  {% endif %}
+{% endfor %}
+
+{% comment %}
+Generic way to iterate a linked structure
+{% assign ras = entry | where: "resource.resourceType","RegulatedAuthorization"%}
+{% assign rasf = ras | where: "subject[0].reference", mpd.id | prepend: 'MedicinalProductDefinition/' %}
+{% for rar in rasf %}
+{% assign ra = rar.resource %}
+
+{% endfor %}
+{% endcomment %}
+
+{% comment %}Get PPDs from Bundle {% endcomment %}
+{% assign ppds = bundle.entry | where: "resource.resourceType", "PackagedProductDefinition" %}
+
+  <div class="container  rcorners bleft listcontainer">
+  [PackagedProductDefinition]
+  {% for ppdr in ppds %}
+    {% assign ppd = ppdr.resource %}
+    {% comment %}Get PPDs that link to MPD, via packagefor[0] {% endcomment %}
+    {% comment %}SHOULD FIX: Currently only packageFor[0], but should be any package {% endcomment %}
+      <p class="divtitle"> Package {{ forloop.index }} of {{ ppds | size }}</p>
+    {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
+    {% comment %}FIX{% endcomment %}
+
+
+    {% if ppd.packageFor[0].reference == mpdtid %}
+      <div class="container rcorners ppd">
+
+        {% for ppid in ppd.identifier %}
+          {{ ppid.system | split: '/' | last | upcase }}:
+          <b>
+            {{ ppid.value }}
+          </b>
+        {% endfor %}
+        <p>
+          Description:
+          <b>
+            {{ ppd.description }}
+          </b>
+        </p>
+        Marketing Status:
+        <b>
+          {{ ppd.status.coding[0].code }}</b>
+
+        <p>
+          Contained Quantity:
+          <ul>
+            {% for quant in ppd.containedItemQuantity %}
+              <li>
+                {{ quant.value }} {{ quant.code | pluralize: quant.code }}</li>
+            {% endfor %}
+          </ul>
+        </p>
 
 
         <p>
-          Status:
-          <b>
-            {{ ra.status.coding[0].display }} ({{ ra.statusDate }})
-          </b>
-        </p>
-
-      </div>
-
-    {% endif %}
-  {% endfor %}
-
-  {% comment %}
-  Generic way to iterate a linked structure
-  {% assign ras = entry | where: "resource.resourceType","RegulatedAuthorization"%}
-  {% assign rasf = ras | where: "subject[0].reference", mpd.id | prepend: 'MedicinalProductDefinition/' %}
-  {% for rar in rasf %}
-  {% assign ra = rar.resource %}
-
-  {% endfor %}
-  {% endcomment %}
-
-  {% comment %}Get PPDs from Bundle {% endcomment %}
-  {% assign ppds = bundle.entry | where: "resource.resourceType", "PackagedProductDefinition" %}
-
-  <div class="container  rcorners bleft listcontainer">
-    {% for ppdr in ppds %}
-      {% assign ppd = ppdr.resource %}
-      {% comment %}Get PPDs that link to MPD, via packagefor[0] {% endcomment %}
-      {% comment %}SHOULD FIX: Currently only packageFor[0], but should be any package {% endcomment %}
-        <p class="divtitle"> Package {{ forloop.index }} of {{ ppds | size }}</p>
-      {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
-      {% comment %}FIX{% endcomment %}
-
-
-      {% if ppd.packageFor[0].reference == mpdtid %}
-        <div class="container rcorners ppd">
-
-          {% for ppid in ppd.identifier %}
-            {{ ppid.system | split: '/' | last | upcase }}:
-            <b>
-              {{ ppid.value }}
-            </b>
-          {% endfor %}
-          <p>
-            Description:
-            <b>
-              {{ ppd.description }}
-            </b>
-          </p>
-          Marketing Status: <b> {{ppd.status.coding[0].code}}</b>
-    
-          <p>
-            Contained items:
-            <ul>
-              {% for quant in ppd.containedItemQuantity %}
-                <li>
-                  {{ quant.value }} {{ quant.code | pluralize: quant.code }}</li>
-              {% endfor %}
-            </ul>
-          </p>
-
-
-          <p>
-            {% assign pckg = ppd.package %}
+          {% assign pckg = ppd.packaging %}
+          {% if pckg.quantity % %}
             <br/>
             <div class="container rcorners pack bleft">
-                <p>Package: {{ pckg.quantity }} {{ pckg.type.coding[0].display }} [{{ pckg.material[0].coding[0].display }}]</p>
+              <p>Package: {{ pckg.quantity }} {{ pckg.type.coding[0].display }} [{{ pckg.material[0].coding[0].display }}]</p>
 
             </div>
+          {% endif %}
+
           </p>
 
 
@@ -272,7 +275,6 @@
 
   {% if apds %}
     <div class="container rcorners apd listcontainer">
-
       {% for apdr in apds %}
         {% assign apd = apdr.resource %}
 
@@ -304,7 +306,6 @@
 
                 {% assign midtid = midr.resource.id | prepend: 'ManufacturedItemDefinition/' %}
 
-                {{ apd.producedFrom[1].reference }}
                 {% if apd.producedFrom[0].reference == midtid %}
                   <div class="container   rcorners mid">
                     <b>{{ mid.id }}</b>
@@ -316,13 +317,18 @@
                       Presentation unit:
                       <b>{{ mid.unitOfPresentation.coding[0].display }}</b>
                     </p>
+                    <p>
+                      Manufactured Dose Form:
+                      <b>{{ mid.manufacturedDoseForm.coding[0].display }}</b>
+                    </p>
                     Ingredients:
                     <ul>
-                      {% assign midings = resource.entry | where: "resource.resourceType", "Ingredient" %}
+                      {% assign midings = bundle.entry | where: "resource.resourceType", "Ingredient" %}
                       {% for midingr in midings %}
                         {% assign miding = midingr.resource %}
-                        {% assign midting = miding.id | prepend: 'ManufacturedItemDefinition/' %}
-                        {% if mid.for[1].reference == midingtid %}
+                        {% assign midting = mid.id | prepend: 'ManufacturedItemDefinition/' %}
+
+                        {% if miding.for[0].reference == midting %}
                           <div class="container   rcorners miding">
                             <b>
                               {{ miding.id }}</b>

@@ -19,132 +19,31 @@ Usage: #example
 
 * title = "TEST PURPOSES ONLY - Suliqua"
 
-* section[+].
-  * title = "Product Information"
-  * code.text = "Product Info"
 
- 
- 
 
-  // ClinicalUseDefinition
-//  * entry[+].fullUrl = contraindication-hypersensitivityreaction
-  * entry[+] = Reference(contraindication-hypersensitivityreaction) 
 
-  // ClinicalUseDefinition
-//  * entry[+].fullUrl = indication-hypertension
-  * entry[+] = Reference(indication-hypertension) 
-
-  // ClinicalUseDefinition
-//  * entry[+].fullUrl = interaction-bezafibrat
-  * entry[+] = Reference(interaction-bezafibrat) 
- 
- 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-insulinglargine
-  * entry[+] = Reference(ingredient-for-suliqua-insulinglargine) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-lixisenatide
-  * entry[+] = Reference(ingredient-for-suliqua-lixisenatide) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-glycerol85whodd
-  * entry[+] = Reference(ingredient-for-suliqua-glycerol85whodd) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-methionine
-  * entry[+] = Reference(ingredient-for-suliqua-methionine) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-metacresol
-  * entry[+] = Reference(ingredient-for-suliqua-metacresol) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-zincchloride
-  * entry[+] = Reference(ingredient-for-suliqua-zincchloride) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-hydrochloricacidiarc
-  * entry[+] = Reference(ingredient-for-suliqua-hydrochloricacidiarc) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-sterilewaterforinjection
-  * entry[+] = Reference(ingredient-for-suliqua-sterilewaterforinjection) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-suliqua-sodiumhydroxide
-  * entry[+] = Reference(ingredient-for-suliqua-sodiumhydroxide) 
- 
- 
-
-  // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-66d97ddf0e95a23a3c0f4f2102139f34
-  * entry[+] = Reference(ap-66d97ddf0e95a23a3c0f4f2102139f34) 
- 
-
-  // RegulatedAuthorization
-//  * entry[+].fullUrl = authorizationa9517814b36bf7381b0a946a09cda2e4
-  * entry[+] = Reference(authorizationa9517814b36bf7381b0a946a09cda2e4) 
- 
-
-  // Organization
-//  * entry[+].fullUrl = org-16019cea3a857659d2c5a2018c2260df
-  * entry[+] = Reference(org-16019cea3a857659d2c5a2018c2260df) 
-
-  // Organization
-//  * entry[+].fullUrl = org-ab61fc2db513f79636782643b3407aa5
-  * entry[+] = Reference(org-ab61fc2db513f79636782643b3407aa5) 
-
-  // Organization
-//  * entry[+].fullUrl = org-b9c6316075799071b2706c402f9fa388
-  * entry[+] = Reference(org-b9c6316075799071b2706c402f9fa388) 
-
-  // Organization
-//  * entry[+].fullUrl = org-ff74c5498eb163c2fb470e9fd175a0c1
-  * entry[+] = Reference(org-ff74c5498eb163c2fb470e9fd175a0c1) 
- 
-
-  // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-8c4132a54faf3c7e493f1831dcb0425d
-  * entry[+] = Reference(ppd-8c4132a54faf3c7e493f1831dcb0425d) 
- 
-
-  // MedicinalProductDefinition
-//  * entry[+].fullUrl = mp367b9089c0743a2330f4c6e82b40ee41
-  * entry[+] = Reference(mp367b9089c0743a2330f4c6e82b40ee41) 
- 
-
-  // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-66d97ddf0e95a23a3c0f4f2102139f34
-  * entry[+] = Reference(mid-66d97ddf0e95a23a3c0f4f2102139f34) 
-   
 
 
 
 
 * section[+].
-  * title = "Narrative Text"
-  * code.text = "Narrative"
-
-  * section[+].
-    * title = "B. Package Leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "B. PACKAGE LEAFLET"
-    * text.status = #additional
-    
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
+  * title = "B. Package Leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "B. PACKAGE LEAFLET"
+  * text.status = #additional
+  
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
 
 
-        
-  * section[=].section[+]
-    * title = "Package leaflet: Information for the user"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "Package leaflet: Information for the user"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+      
+* section[=].section[+]
+  * title = "Package leaflet: Information for the user"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "Package leaflet: Information for the user"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 PACKAGE LEAFLET: INFORMATION FOR THE USER
 Humalog Mix50 100 units/ml suspension for injection in cartridge
 insulin lispro
@@ -157,13 +56,13 @@ Read all of this leaflet carefully before you start taking this medicine because
 </ul>
 </div>         </div>"""   
 
-  * section[=].section[+]
-    * title = "What is in this leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "What is in this leaflet"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+* section[=].section[+]
+  * title = "What is in this leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "What is in this leaflet"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 What in this leaflet
 <ol>
   <li>What Humalog Mix50 is and what it is used for</li>
@@ -175,32 +74,32 @@ What in this leaflet
 </ol>
 </div>         </div>"""             
 
-  * section[=].section[+]
-    * title = "1. What Suliqua is and what it is used for"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "1. What Suliqua is and what it is used for"
-    * text.status = #additional
-    
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable              
-  * section[=].section[+]
-    * title = "2. What you need to know before you take Suliqua"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "2. What you need to know before you take Suliqua"
-    * text.status = #additional
-       
+* section[=].section[+]
+  * title = "1. What Suliqua is and what it is used for"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "1. What Suliqua is and what it is used for"
+  * text.status = #additional
+  
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable              
+* section[=].section[+]
+  * title = "2. What you need to know before you take Suliqua"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "2. What you need to know before you take Suliqua"
+  * text.status = #additional
+     
 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <b>2. What you need to know before you use Humalog Mix50</b>
 Do NOT use Humalog Mix50 if you
 </div>         </div>"""              
-  * section[=].section[+]
-    * title = "3. How to take Suliqua"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "3. How to take Suliqua"
-    * text.status = #additional
-          
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+* section[=].section[+]
+  * title = "3. How to take Suliqua"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "3. How to take Suliqua"
+  * text.status = #additional
+         
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <b>3. How to use Humalog Mix50</b>
 <b>The 3 ml cartridge is only for use in Lilly 3 ml pens. It is not for use in 1.5 ml pens.</b>
 <p>Always use Humalog Mix50 exactly as your doctor has told you. You should check with your doctor
@@ -208,25 +107,25 @@ if you are not sure. To prevent the possible transmission of disease, each cartr
 you only, even if the needle on the delivery device is changed.</p>
 </div>         </div>"""          
 
-          
-  * section[=].section[+]
-    * title = "4. Possible side effects"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "4. Possible side effects"
-    * text.status = #additional
-                
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+        
+* section[=].section[+]
+  * title = "4. Possible side effects"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "4. Possible side effects"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <p><b>4. Possible side effects</b></p>
 <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
 </div>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "5. How to store Suliqua"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "5. How to store Suliqua"
-    * text.status = #additional
-                 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
+        
+* section[=].section[+]
+  * title = "5. How to store Suliqua"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "5. How to store Suliqua"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Keep this medicine out of the sight and reach of children.</p>
             <p>
                 Do not use this medicine after the expiry date which is stated on the carton and on the blister after EXP. The expiry date refers to the last day of that month.
@@ -235,14 +134,14 @@ you only, even if the needle on the delivery device is changed.</p>
             <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away of medicines you no longer use. These measures will help protect the environment.
             </p>
         </div>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "6. Contents of the pack and other information"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "6. Contents of the pack and other information"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+        
+* section[=].section[+]
+  * title = "6. Contents of the pack and other information"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "6. Contents of the pack and other information"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
 <b>6. Contents of the pack and other information</b>
 <b>What Humalog Mix50 100 units/ml suspension for injection in cartridge contains</b>
 <p>The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant

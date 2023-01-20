@@ -19,112 +19,31 @@ Usage: #example
 
 * title = "TEST PURPOSES ONLY - humira"
 
-* section[+].
-  * title = "Product Information"
-  * code.text = "Product Info"
 
- 
- 
- 
- 
 
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-mannitol
-  * entry[+] = Reference(ingredient-for-humira-mannitol) 
 
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-polysorbate80
-  * entry[+] = Reference(ingredient-for-humira-polysorbate80) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-adalimumab
-  * entry[+] = Reference(ingredient-for-humira-adalimumab) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-sterilewaterforinjection
-  * entry[+] = Reference(ingredient-for-humira-sterilewaterforinjection) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-citricacidmonohydrate
-  * entry[+] = Reference(ingredient-for-humira-citricacidmonohydrate) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-sodiumcitrateunspecifiedform
-  * entry[+] = Reference(ingredient-for-humira-sodiumcitrateunspecifiedform) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-sodiumphosphatemonobasicdihydrate
-  * entry[+] = Reference(ingredient-for-humira-sodiumphosphatemonobasicdihydrate) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-sodiumphosphatedibasicdihydrate
-  * entry[+] = Reference(ingredient-for-humira-sodiumphosphatedibasicdihydrate) 
-
-  // Ingredient
-//  * entry[+].fullUrl = ingredient-for-humira-sodiumchloride
-  * entry[+] = Reference(ingredient-for-humira-sodiumchloride) 
- 
-
-  // Substance
-//  * entry[+].fullUrl = substance-adalimumab
-  * entry[+] = Reference(substance-adalimumab) 
- 
-
-  // AdministrableProductDefinition
-//  * entry[+].fullUrl = ap-9b5b17469311c2ea4d1d08419748b4fb
-  * entry[+] = Reference(ap-9b5b17469311c2ea4d1d08419748b4fb) 
- 
-
-  // RegulatedAuthorization
-//  * entry[+].fullUrl = authorization816b7da4abc60b3e9ae3b37146463f8a
-  * entry[+] = Reference(authorization816b7da4abc60b3e9ae3b37146463f8a) 
- 
-
-  // Organization
-//  * entry[+].fullUrl = org-fda7514c0dcb7b5f0176cb5af274235f
-  * entry[+] = Reference(org-fda7514c0dcb7b5f0176cb5af274235f) 
- 
-
-  // PackagedProductDefinition
-//  * entry[+].fullUrl = ppd-8ff6c02459d9a66f4d9a3db864bd78f6
-  * entry[+] = Reference(ppd-8ff6c02459d9a66f4d9a3db864bd78f6) 
- 
-
-  // MedicinalProductDefinition
-//  * entry[+].fullUrl = mpf97db27e6330f77484eb8425ad2913cd
-  * entry[+] = Reference(mpf97db27e6330f77484eb8425ad2913cd) 
- 
-
-  // ManufacturedItemDefinition
-//  * entry[+].fullUrl = mid-9b5b17469311c2ea4d1d08419748b4fb
-  * entry[+] = Reference(mid-9b5b17469311c2ea4d1d08419748b4fb) 
-   
 
 
 
 
 * section[+].
-  * title = "Narrative Text"
-  * code.text = "Narrative"
-
-  * section[+].
-    * title = "B. Package Leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "B. PACKAGE LEAFLET"
-    * text.status = #additional
-    
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
+  * title = "B. Package Leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "B. PACKAGE LEAFLET"
+  * text.status = #additional
+  
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
 
 
-        
-  * section[=].section[+]
-    * title = "Package leaflet: Information for the user"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "Package leaflet: Information for the user"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Humira 40 mg solution for injection in pre-filled syringe
+      
+* section[=].section[+]
+  * title = "Package leaflet: Information for the user"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "Package leaflet: Information for the user"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Humira 40 mg solution for injection in pre-filled syringe
 adalimumab</p>
 <p>Read all of this leaflet carefully before your child starts using this medicine because it contains important information.</p>
 <ul>
@@ -136,13 +55,13 @@ adalimumab</p>
 </ul>
          </div>"""   
 
-  * section[=].section[+]
-    * title = "What is in this leaflet"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "What is in this leaflet"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>What is in this leaflet</p>
+* section[=].section[+]
+  * title = "What is in this leaflet"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "What is in this leaflet"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>What is in this leaflet</p>
 <ol>
 <li>What Humira is and what it is used for</li>
 <li>What you need to know before your child uses Humira</li>
@@ -153,13 +72,13 @@ adalimumab</p>
 <li>Injecting Humira</li>
 </ol>         </div>"""             
 
-  * section[=].section[+]
-    * title = "1. What humira is and what it is used for"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "1. What humira is and what it is used for"
-    * text.status = #additional
-       
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>What Humira is and what it is used for
+* section[=].section[+]
+  * title = "1. What humira is and what it is used for"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "1. What humira is and what it is used for"
+  * text.status = #additional
+     
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>What Humira is and what it is used for
 Humira contains the active substance adalimumab.
 Humira is intended for the treatment of the inflammatory diseases described below:</p>
 <ul>
@@ -207,14 +126,14 @@ This inflammation may lead to a decrease of vision and/or the presence of floate
 wispy lines that move across the field of vision). Humira works by reducing this inflammation.
 Your child may first be given other medicines. If these medicines do not work well enough, your child
 will be given Humira to reduce the signs and symptoms of his/her disease.</p>         </div>"""              
-  * section[=].section[+]
-    * title = "2. What you need to know before you take humira"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "2. What you need to know before you take humira"
-    * text.status = #additional
-       
+* section[=].section[+]
+  * title = "2. What you need to know before you take humira"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "2. What you need to know before you take humira"
+  * text.status = #additional
+     
 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="warnings-and-precautions">Warnings and precautions</h2>
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="warnings-and-precautions">Warnings and precautions</h2>
 <p>Talk to your doctor or pharmacist before using Humira.
 <strong>Allergic reactions</strong></p>
 <ul>
@@ -326,13 +245,13 @@ treatment with a TNF blocker is appropriate for your child.
 <li>On rare occasions, treatment with Humira could result in lupus-like syndrome. Contact your
 doctor if symptoms such as persistent unexplained rash, fever, joint pain or tiredness occur.</li>
 </ul>         </div>"""              
-  * section[=].section[+]
-    * title = "3. How to take humira"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "3. How to take humira"
-    * text.status = #additional
-          
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="how-to-use-humira">How to use Humira</h2>
+* section[=].section[+]
+  * title = "3. How to take humira"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "3. How to take humira"
+  * text.status = #additional
+         
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="how-to-use-humira">How to use Humira</h2>
 <p>Always use this medicine exactly as your doctor or pharmacist has told you. Check with your doctor or
 pharmacist if you are not sure.
 The recommended doses for Humira in each of the approved uses are shown in the following table. Your
@@ -353,14 +272,14 @@ The decision to stop using Humira should be discussed with your doctor. Your chi
 return if you stop using Humira.
 If you have any further questions on the use of this medicine, ask your doctor or pharmacist.</p>         </div>"""          
 
-          
-  * section[=].section[+]
-    * title = "4. Possible side effects"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "4. Possible side effects"
-    * text.status = #additional
-                
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="possible-side-effects">Possible side effects</h2>
+        
+* section[=].section[+]
+  * title = "4. Possible side effects"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "4. Possible side effects"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="possible-side-effects">Possible side effects</h2>
 <p>Like all medicines, this medicine can cause side effects, although not everybody gets them. Most side
 effects are mild to moderate. However, some may be serious and require treatment. Side effects may occur
 at least up to 4 months after the last Humira injection. </p>
@@ -543,14 +462,14 @@ If your child gets any side effects, talk to your doctor or pharmacist. This inc
 effects not listed in this leaflet. You can also report side effects directly via the national reporting system
 listed in Appendix V. By reporting side effects, you can help provide more information on the safety of
 this medicine. </p>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "5. How to store humira"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "5. How to store humira"
-    * text.status = #additional
-                 
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="how-to-store-humira">How to store Humira</h2>
+        
+* section[=].section[+]
+  * title = "5. How to store humira"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "5. How to store humira"
+  * text.status = #additional
+               
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="how-to-store-humira">How to store Humira</h2>
 <p>Keep this medicine out of the sight and reach of children.
 Do not use this medicine after the expiry date stated on the label/blister/carton after EXP.
 Store in a refrigerator (2ºC – 8ºC). Do not freeze. 
@@ -564,12 +483,12 @@ You should record the date when the syringe is first removed from refrigerator a
 should be discarded.
 Do not throw away any medicines via wastewater or household waste. Ask your doctor or pharmacist how
 to throw away medicines you no longer use. These measures will help protect the environment.</p>         </div>"""   
-          
-  * section[=].section[+]
-    * title = "6. Contents of the pack and other information"
-    * code = https://spor.ema.europa.eu/rmswi/#100000155538
-    * code.text = "6. Contents of the pack and other information"
-    * text.status = #additional
-    
-    * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-    * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
+        
+* section[=].section[+]
+  * title = "6. Contents of the pack and other information"
+  * code = https://spor.ema.europa.eu/rmswi/#100000155538
+  * code.text = "6. Contents of the pack and other information"
+  * text.status = #additional
+  
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
