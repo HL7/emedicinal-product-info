@@ -6,11 +6,11 @@
 
 
   {% if composition.status %}
-    <b>status:</b>
+    <b>Composition status:</b>
     {{ composition.status }}{% endif %}
   <br/>
   {% if composition.type %}
-    <b>Type:</b>
+    <b>Composition type:</b>
     {{ composition.type.coding[0].display }}{% endif %}
   <br/>
   <br/>
@@ -197,7 +197,6 @@ Generic way to iterate a linked structure
 {% assign ppds = bundle.entry | where: "resource.resourceType", "PackagedProductDefinition" %}
 
   <div class="container  rcorners bleft listcontainer">
-  [PackagedProductDefinition]
   {% for ppdr in ppds %}
     {% assign ppd = ppdr.resource %}
     {% comment %}Get PPDs that link to MPD, via packagefor[0] {% endcomment %}
