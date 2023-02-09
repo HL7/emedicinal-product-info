@@ -1,64 +1,52 @@
-#### Technical Section
+### The purpose of semantic annotation
 
-Semantic Annotation should be implemented with the [narrativeLink](http://hl7.org/fhir/2022Sep/extension-narrativelink.html) extension. The [Linking between Data and Narrative](http://hl7.org/fhir/2022Sep/narrative.html#linking) section of the Narrative datatype gives a basic example of use.
+This section describes the way in which sections of the Composition's text can be marked as being about or related to a certain coded concept. This concept may be represented by a resource in the ePI bundle, but the definition of the target concept does not assume this.
 
-The extension has to be declared in the structured resource, and scoped to the Composition using the `fullUrl` in the `valueUrl` of the extension:
+Applications may use this marking to provide additional functionality. The G-Lens from the [Gravitate Health](https://www.gravitatehealth.eu/) project for example might highlight or suppress marked sections based on the patient's health record, if it contains information related to the linked concepts.
 
-    <Ingredient xmlns="http://hl7.org/fhir">
-      <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-        <valueUrl value="http://ema.europa.eu/fhir/Composition/123456#lactoseMonohydrateTag"/>
-      </extension>
-      ...
-      <substance>
-        <code>
-          <concept>
+The annotation is similar to the [narrativeLink](http://hl7.org/fhir/2022Sep/extension-narrativelink.html) extension but is different in that the text is not a single, direct representation of the structured resource.
+
+### Linking structured resources to text with the htmlElementLink extension
+
+The semantic anotation should be implemented with the htmlElementLink extension described below.
+
+The example defines a single concept with an ICD-10 and a SNOMED CT code (for the purpose of the example it is assumed that the codes point to the same real-world concept in the two code systems). This gives the definition the flexibility to be used directly in systems that have access to any of the two code systems.
+
+The concept is associated with the string value 'theConcept', which is used in class attributes on some elements in the HTML text of the section. The meaning of the extension is that the HTML elements marked with this class contain text that is relevant for the coded concept.
+
+    <Composition xmlns="http://hl7.org/fhir">
+      <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/htmlElementLink">
+        <extension url="elementClass">
+          <valueString value="theConcept"/>
+        </extension>
+        <extension url="concept">
+          <valueCodeableConcept>
             <coding>
-              <system value="https://gsrs.ncats.nih.gov/ginas/app/beta"/>
-              <code value="EWQ57Q8I5X"/>
-              <display value="Lactose Monohydrate"/>
+              <system value="http://hl7.org/fhir/sid/icd-10"/>
+              <code value="X13.7"/>
             </coding>
-          </concept>
-        </code>
-      </substance>
-    </Ingredient>
-
-The ID part can then be used in the HTML code of the extension to mark a section of text:
-
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>Text of the section with <span id="lactoseMonohydrateTag">some information about the ingredient</span>.</p>
-    </div>
-
-The same ID attribute can only be used on one HTML element in the same document. If there are several text sections that should be marked, the extension must be duplicated with a different ID value:
-
-    <Ingredient xmlns="http://hl7.org/fhir">
-      <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-        <valueUrl value="http://ema.europa.eu/fhir/Composition/123456#lactoseMonohydrateTag1"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-        <valueUrl value="http://ema.europa.eu/fhir/Composition/123456#lactoseMonohydrateTag2"/>
-      </extension>
-      ...
-      <substance>
-        <code>
-          <concept>
             <coding>
-              <system value="https://gsrs.ncats.nih.gov/ginas/app/beta"/>
-              <code value="EWQ57Q8I5X"/>
-              <display value="Lactose Monohydrate"/>
+              <system value="http://snomed.info/sct"/>
+              <code value="1290023401004"/>
             </coding>
-          </concept>
-        </code>
-      </substance>
-    </Ingredient>
-
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <div>
-        <p>Text of the section with <span id="lactoseMonohydrateTag1">some information about the ingredient</span>.</p>
-      </div>
-      <div>
-        <p>Another section that describes <span id="lactoseMonohydrateTag2">some other aspect related to the ingredient</span>.</p>
-      </div>
-    </div>
+          </valueCodeableConcept>
+        </extension>
+      </extension>
+      <section>
+        <text>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div class="theConcept">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+              <p>Nulla ac ex vitae velit commodo sodales. Nam viverra efficitur porta.</p>
+            </div>
+            <div>
+              <p>Praesent condimentum dolor in molestie malesuada. Sed molestie nisi sed</p>
+              <p class="theConcept">Quisque suscipit porttitor purus, at sagittis risus pulvinar vel. Nulla a mollis arcu. Nam nec</p>
+            </div>
+          </div>
+        </text>
+      </section>
+    </Composition>
 
 ### Focusing Section 
 
