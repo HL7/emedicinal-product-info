@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/emedicinal-product-info/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/emedicinal-product-info" defaultVersion="1.0.0-ballot" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/emedicinal-product-info" url="http://hl7.org/fhir/uv/emedicinal-product-info">
+<version code="current" url="http://build.fhir.org/ig/HL7/emedicinal-product-info"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/emedicinal-product-info/2023Jan"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75" key="Organization-d71bf884-90eb-47f9-81b7-fa81ecec7e75" name="Acme Inc. as Marketing Authorization Holder"/>
+<artifact id="ValueSet/additionalMonitoringIndicator" key="ValueSet-additionalMonitoringIndicator" name="Additional Monitoring Indicator"/>
+<artifact id="StructureDefinition/AdministrableProductDefinition-uv-epi" key="StructureDefinition-AdministrableProductDefinition-uv-epi" name="AdministrableProductDefinition (ePI)"/>
+<artifact id="ValueSet/admProductIdSystems" key="ValueSet-admProductIdSystems" name="AdministrableProductDefinition identifier systems"/>
+<artifact id="ValueSet/authorizationStatus" key="ValueSet-authorizationStatus" name="Authorization Status"/>
+<artifact id="StructureDefinition/Bundle-uv-epi" key="StructureDefinition-Bundle-uv-epi" name="Bundle - ePI"/>
+<artifact id="ValueSet/caseIdSystem" key="ValueSet-caseIdSystem" name="Case System Identifiers"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi" key="StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi" name="ClinicalUseDefinition Contraindication (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-indication-uv-epi" key="StructureDefinition-ClinicalUseDefinition-indication-uv-epi" name="ClinicalUseDefinition Indication (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" key="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi" name="ClinicalUseDefinition Interaction (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi" key="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi" name="ClinicalUseDefinition Undesirable Effect (ePI)"/>
+<artifact id="StructureDefinition/ClinicalUseDefinition-warning-uv-epi" key="StructureDefinition-ClinicalUseDefinition-warning-uv-epi" name="ClinicalUseDefinition Warning (ePI)"/>
+<artifact id="ValueSet/propertyColor" key="ValueSet-propertyColor" name="Color of the product"/>
+<artifact id="ValueSet/PharmaceuticalDoseForm" key="ValueSet-PharmaceuticalDoseForm" name="Combined Pharmaceutical Dose Form"/>
+<artifact id="StructureDefinition/Composition-uv-epi" key="StructureDefinition-Composition-uv-epi" name="Composition (ePI)"/>
+<artifact id="Composition/e63f72b2-993f-48b1-b7cb-539b1ed71571" key="Composition-e63f72b2-993f-48b1-b7cb-539b1ed71571" name="Composition for cava 75 mg Package Leaflet"/>
+<artifact id="ValueSet/dataCarrierIdSystem" key="ValueSet-dataCarrierIdSystem" name="Data Carrier Identifiers"/>
+<artifact id="ValueSet/propertyFlavor" key="ValueSet-propertyFlavor" name="Flavor of the product"/>
+<artifact id="ValueSet/generalStatus" key="ValueSet-generalStatus" name="General Status used across ePI resources"/>
+<artifact id="ValueSet/packageType" key="ValueSet-packageType" name="High level Pack Type"/>
+<artifact id="ValueSet/country" key="ValueSet-country" name="ISO Country two letter code"/>
+<artifact id="StructureDefinition/Ingredient-uv-epi" key="StructureDefinition-Ingredient-uv-epi" name="Ingredient (ePI)"/>
+<artifact id="ValueSet/roleClassIngredientEntity" key="ValueSet-roleClassIngredientEntity" name="Ingredient Role; e.g., inactive, active base, active moiety"/>
+<artifact id="Ingredient/fbf58407-83d3-42db-be3d-506b2006d431" key="Ingredient-fbf58407-83d3-42db-be3d-506b2006d431" name="Ingredient-excipient Croscarmellose sodium"/>
+<artifact id="Ingredient/1c10b441-6bd3-40b8-b14b-514e7c2f79d0" key="Ingredient-1c10b441-6bd3-40b8-b14b-514e7c2f79d0" name="Ingredient-excipient Hypromellose"/>
+<artifact id="Ingredient/7a3c0b14-2473-4541-9e45-a24d24cceddf" key="Ingredient-7a3c0b14-2473-4541-9e45-a24d24cceddf" name="Ingredient-excipient Lactose Monohydrate"/>
+<artifact id="Ingredient/ceba5cd1-321f-4bc3-b203-92d97fcf472e" key="Ingredient-ceba5cd1-321f-4bc3-b203-92d97fcf472e" name="Ingredient-excipient Macrogol 3000"/>
+<artifact id="Ingredient/eee155e8-e442-491d-9a82-7af3cefac57f" key="Ingredient-eee155e8-e442-491d-9a82-7af3cefac57f" name="Ingredient-excipient Magnesium stearate"/>
+<artifact id="Ingredient/1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" key="Ingredient-1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" name="Ingredient-excipient Microcrystalline cellulose"/>
+<artifact id="Ingredient/09c13040-8fd5-4818-972d-f01d4ee169b6" key="Ingredient-09c13040-8fd5-4818-972d-f01d4ee169b6" name="Ingredient-excipient Silicon dioxide"/>
+<artifact id="Ingredient/a88891dc-7e9e-4d84-b462-95e53de3b6a6" key="Ingredient-a88891dc-7e9e-4d84-b462-95e53de3b6a6" name="Ingredient-excipient Titanium Dioxide"/>
+<artifact id="Ingredient/a4b7b60c-998f-4f93-89c7-860396af0fe3" key="Ingredient-a4b7b60c-998f-4f93-89c7-860396af0fe3" name="Ingredient-excipient carnauba wax"/>
+<artifact id="Ingredient/745c01bc-936e-45ca-9880-57e97608f43e" key="Ingredient-745c01bc-936e-45ca-9880-57e97608f43e" name="Irbesartan – Example of Ingredient with basis for strength"/>
+<artifact id="ValueSet/legalStatusOfSupply" key="ValueSet-legalStatusOfSupply" name="Legal Status for the Supply"/>
+<artifact id="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468" key="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468" name="Manufactured item cava 75 mg tabelt"/>
+<artifact id="StructureDefinition/ManufacturedItemDefinition-uv-epi" key="StructureDefinition-ManufacturedItemDefinition-uv-epi" name="ManufacturedItemDefinition (ePI)"/>
+<artifact id="ValueSet/manufacturedItemIdSystems" key="ValueSet-manufacturedItemIdSystems" name="ManufacturedItemDefinition identifier systems"/>
+<artifact id="ValueSet/marketingStatus" key="ValueSet-marketingStatus" name="Marketing Status"/>
+<artifact id="ValueSet/meddra" key="ValueSet-meddra" name="MedDRA Terms for clinical diseases and symptoms"/>
+<artifact id="ValueSet/medProductType" key="ValueSet-medProductType" name="Medicinal Product Type"/>
+<artifact id="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837" key="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837" name="Medicinal Product cava 75 mg tablet in blister pack of 28 tablets"/>
+<artifact id="StructureDefinition/MedicinalProductDefinition-uv-epi" key="StructureDefinition-MedicinalProductDefinition-uv-epi" name="MedicinalProductDefinition (ePI)"/>
+<artifact id="ValueSet/VsMedProductIdSystems" key="ValueSet-VsMedProductIdSystems" name="MedicinalProductDefinition identifier systems"/>
+<artifact id="ValueSet/nonproprietaryNamePart" key="ValueSet-nonproprietaryNamePart" name="Non-proprietary Name of the active ingredient(s)"/>
+<artifact id="StructureDefinition/Organization-uv-epi" key="StructureDefinition-Organization-uv-epi" name="Organization (ePI)"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRomswi" key="CodeSystem-CodeSystemUvEPIRomswi" name="Organization Management Services CodeSystem"/>
+<artifact id="ValueSet/organizationIdSystems" key="ValueSet-organizationIdSystems" name="Organization identifier systems"/>
+<artifact id="ValueSet/secondaryPrimaryPackType" key="ValueSet-secondaryPrimaryPackType" name="Pack Type"/>
+<artifact id="ValueSet/packageMaterial" key="ValueSet-packageMaterial" name="Package Material"/>
+<artifact id="StructureDefinition/PackagedProductDefinition-uv-epi" key="StructureDefinition-PackagedProductDefinition-uv-epi" name="PackagedProductDefinition (ePI)"/>
+<artifact id="ValueSet/packagedProductIdSystems" key="ValueSet-packagedProductIdSystems" name="PackagedProductDefinition identifier systems"/>
+<artifact id="PackagedProductDefinition/eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" key="PackagedProductDefinition-eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" name="Packaging Blister x28 75 mg tablets"/>
+<artifact id="ValueSet/partType" key="ValueSet-partType" name="Part Type"/>
+<artifact id="ValueSet/pediatricUseIndicator" key="ValueSet-pediatricUseIndicator" name="Pediatric Use Indicator"/>
+<artifact id="ValueSet/pharmaceuticalDoseFormPart" key="ValueSet-pharmaceuticalDoseFormPart" name="Pharmaceutical Dose Form of the medicinal product"/>
+<artifact id="ValueSet/productConfidentialityIdSystems" key="ValueSet-productConfidentialityIdSystems" name="Product Confidentiality"/>
+<artifact id="ValueSet/productNamePartType" key="ValueSet-productNamePartType" name="Product Name Part Type"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRpmswi" key="CodeSystem-CodeSystemUvEPIRpmswi" name="Products Management Services CodeSystem"/>
+<artifact id="ValueSet/proprietaryNamePart" key="ValueSet-proprietaryNamePart" name="Proprietary Name of the medicinal product"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRrmswi" key="CodeSystem-CodeSystemUvEPIRrmswi" name="Referentials Management Services CodeSystem"/>
+<artifact id="ValueSet/RegulatedAuthorizationTypeIdSystems" key="ValueSet-RegulatedAuthorizationTypeIdSystems" name="Regulated Authorization Type identifier systems"/>
+<artifact id="RegulatedAuthorization/297e405a-b6f9-4273-bc01-ae031efe47f8" key="RegulatedAuthorization-297e405a-b6f9-4273-bc01-ae031efe47f8" name="Regulated Authorization for cava 75 mg tablets"/>
+<artifact id="StructureDefinition/RegulatedAuthorization-uv-epi" key="StructureDefinition-RegulatedAuthorization-uv-epi" name="RegulatedAuthorization (ePI)"/>
+<artifact id="ValueSet/regulatoryActivityType" key="ValueSet-regulatoryActivityType" name="Regulatory Activity Type"/>
+<artifact id="ValueSet/routeOfAdministration" key="ValueSet-routeOfAdministration" name="Route Of Administration"/>
+<artifact id="ValueSet/propertyScore" key="ValueSet-propertyScore" name="Score on the product"/>
+<artifact id="ValueSet/sectionCode" key="ValueSet-sectionCode" name="Section Codes"/>
+<artifact id="ValueSet/propertyShape" key="ValueSet-propertyShape" name="Shape of the product"/>
+<artifact id="ValueSet/shelfLifeType" key="ValueSet-shelfLifeType" name="Shelf Life Type"/>
+<artifact id="ValueSet/specialPrecautionsForStorage" key="ValueSet-specialPrecautionsForStorage" name="Special Precautions For Storage"/>
+<artifact id="ValueSet/strengthPart" key="ValueSet-strengthPart" name="Strength of the medicinal product name"/>
+<artifact id="StructureDefinition/SubstanceDefinition-uv-epi" key="StructureDefinition-SubstanceDefinition-uv-epi" name="SubstanceDefinition (ePI)"/>
+<artifact id="ValueSet/substance" key="ValueSet-substance" name="Substances"/>
+<artifact id="CodeSystem/CodeSystemUvEPIRsmswi" key="CodeSystem-CodeSystemUvEPIRsmswi" name="Substances Management Services CodeSystem"/>
+<artifact id="ValueSet/VsPropertySurfaceForm" key="ValueSet-VsPropertySurfaceForm" name="Surface form of the product"/>
+<artifact id="ValueSet/exampleUseCodesForList" key="ValueSet-exampleUseCodesForList" name="The topic of this list"/>
+<artifact id="ValueSet/VsRegulatedAuthorization" key="ValueSet-VsRegulatedAuthorization" name="Type of Regulated Authorization"/>
+<artifact id="ValueSet/operationType" key="ValueSet-operationType" name="Type of operation"/>
+<artifact id="ValueSet/organizationType" key="ValueSet-organizationType" name="Type of organization"/>
+<artifact id="ValueSet/unitofMeasure" key="ValueSet-unitofMeasure" name="Units of Measure"/>
+<artifact id="ValueSet/unitofPresentation" key="ValueSet-unitofPresentation" name="Units of Presentation"/>
+<artifact id="ValueSet/atcClassification" key="ValueSet-atcClassification" name="WHO ATC"/>
+<artifact id="AdministrableProductDefinition/373b9bf3-1fae-47a1-a7cd-230106def069" key="AdministrableProductDefinition-373b9bf3-1fae-47a1-a7cd-230106def069" name="cava 75mg tablet administrable product"/>
+<artifact id="ClinicalUseDefinition/83f4a22f-9e5e-4941-9fdb-339a0f1f2055" key="ClinicalUseDefinition-83f4a22f-9e5e-4941-9fdb-339a0f1f2055" name="contraindication"/>
+<artifact id="CodeSystem/gravitate" key="CodeSystem-gravitate" name="eMedicinal Product Information Code System"/>
+<artifact id="Bundle/bundlepackageleaflet75" key="Bundle-bundlepackageleaflet75" name="ePI document Bundle for cava 75 mg Package Leaflet"/>
+<artifact id="ValueSet/epiType" key="ValueSet-epiType" name="ePI document types"/>
+<artifact id="CapabilityStatement/epi-server" key="CapabilityStatement-epi-server" name="epi-server"/>
+<artifact id="ClinicalUseDefinition/4e922ec1-a398-4a78-8381-3729422b7602" key="ClinicalUseDefinition-4e922ec1-a398-4a78-8381-3729422b7602" name="indication"/>
+<artifact id="ClinicalUseDefinition/f7d8f2a0-27eb-4e37-8036-58f3d5aa6537" key="ClinicalUseDefinition-f7d8f2a0-27eb-4e37-8036-58f3d5aa6537" name="interactiongrapefruitjuice"/>
+<artifact id="ClinicalUseDefinition/e60575aa-e7b3-4461-a456-d310514f4041" key="ClinicalUseDefinition-e60575aa-e7b3-4461-a456-d310514f4041" name="interactionmethotrexate"/>
+<artifact id="SubstanceDefinition/da33bd51-a726-4232-aaa0-4168b9bfe249" key="SubstanceDefinition-da33bd51-a726-4232-aaa0-4168b9bfe249" name="substanceirbesartan"/>
+<artifact id="ClinicalUseDefinition/undesirableEffectanemia" key="ClinicalUseDefinition-undesirableEffectanemia" name="undesirableEffectanemia"/>
+<artifact id="ClinicalUseDefinition/ac21a804-cafa-41ff-b644-a14c8003edeb" key="ClinicalUseDefinition-ac21a804-cafa-41ff-b644-a14c8003edeb" name="warninghypotension"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="appendicies" name="Appendix"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="capability" name="Capability"/>
+<page key="core-epi-structure" name="Core ePI Profile"/>
+<page key="downloads" name="Downloads"/>
+<page key="general-technical-conformance-requirements" name="General Technical Conformance Requirements"/>
+<page key="index" name="Introduction"/>
+<page key="annotation" name="Semantic Annotation"/>
+<page key="steps-to-create-core-epi" name="Steps to create a Core FHIR ePI"/>
+<page key="toc" name="Table of Contents"/>
+</specification>
