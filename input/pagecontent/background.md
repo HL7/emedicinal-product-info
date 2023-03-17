@@ -35,16 +35,4 @@ Vulcan’s goal is to create an ecosystem where research stakeholders collaborat
 BR&R creates and promotes standards to facilitate biomedical research and any subsequent regulatory evaluation of the safety, efficacy and quality of medical products that may arise from research. 
 
 The BR&R workgroup areas of interest encompass clinical and translational research, both regulated and non-regulated, and the subsequent regulatory submissions and information exchanges to bring new products to market and to ensure safe use throughout the product lifecycle.  
-This Work Group facilitates the development of common standards and the maintenance and enhancement of the research-focused domain analysis model for clinical research information management across a variety of organizations, including national and international government agencies and regulatory bodies, private researchers and research organizations, sponsored research, CROs and other interested entities.  
-
-
-### Conformance and Validation 
-The ePI shall conform to this implementation guide. 
-
-Validation is the process of checking the XML or JSON version of the ePI to make sure it meets the established requirements prescribed in the schema.  
-
-For example, 
-- The XML is considered well-formed if it conforms to the W3C’s XML standard.
-- The XML is considered valid if it conforms to the associated schema’s rules.
-
-NOTE: for further details on validation with FHIR refer to the FHIR Validation page. 
+This Work Group facilitates the development of common standards and the maintenance and enhancement of the research-focused domain analysis model for clinical research information management across a variety of organizations, including national and international government agencies and regulatory bodies, private researchers and research organizations, sponsored research, CROs and other interested entities. 
