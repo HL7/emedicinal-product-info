@@ -181,54 +181,7 @@ Description: "ISO Country two letter code"
 //* https://www.iso.org/obp/ui/#iso:code:3166:EU
 * urn:iso:std:iso:3166#EU "European Union"
 
-//==========================
-//ValueSet: VsJurisdiction
-//Id: VsJurisdiction
-//Title: "Two letter country code"
-//Description: "Two letter country code"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/jurisdiction "JurisdictionValueSet" // FHIR terminology
 
-//==========================
-//ValueSet: VsLanguage
-//Id: VsLanguage
-//Title: "Languages"
-//Description: "Languages"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
-
-//==========================
-ValueSet: VsProductNamePartType
-Id: productNamePartType
-Title: "Product Name Part Type"
-Description: "Product Name Part Type"
-* ^experimental = false
-* codes from system $spor-productNamePartType-cs
-
-//==========================
-ValueSet: VsPartType
-Id: partType
-Title: "Part Type"
-Description: "Part Type"
-* ^experimental = false
-* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
-
-//==========================
-//ValueSet: VsMedicinalProductCrossReferenceType
-//Id: VsMedicinalProductCrossReferenceType
-//Title: "Product Cross Reference Type"
-//Description: "Product Cross Reference Type"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
-//* codes from system http://hl7.org/fhir/medicinal-product-cross-reference-type
-
-//==========================
-ValueSet: VsProductConfidentialityIdSystems
-Id: productConfidentialityIdSystems
-Title: "Product Confidentiality"
-Description: "Product Confidentiality"
-* ^experimental = false
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
 
 //==========================
 ValueSet: VsPackageMaterial
@@ -256,22 +209,7 @@ Description: "Special Precautions For Storage"
 // add fda codes
 // add PMDA
 
-//==========================
-//ValueSet: VsListOrderCodesIdSystems
-//Id: VsListOrderCodesIdSystems
-//Title: "Order Codes for List"
-//Description: "Order Codes for List"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
-//* codes from system http://terminology.hl7.org/CodeSystem/list-order
 
-//==========================
-ValueSet: VsExampleUseCodesForList
-Id: exampleUseCodesForList
-Title: "The topic of this list"
-Description: "The topic of this list"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes"
 
 //==========================
 ValueSet: VsSectionCode
@@ -393,35 +331,101 @@ Description: "MedDRA Terms for clinical diseases and symptoms"
 * ^experimental = false
 * codes from system $meddra
 
-//==========================
+/* //==========================
 ValueSet: VsProprietaryNamePart
 Id: proprietaryNamePart
 Title: "Proprietary Name of the medicinal product"
 Description: "Proprietary Name of the medicinal product"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/rmswi
+* codes from system https://spor.ema.europa.eu/rmswi */
 
-//==========================
+/* //==========================
 ValueSet: VsNonproprietaryNamePart
 Id: nonproprietaryNamePart
 Title: "Non-proprietary Name of the active ingredient(s)"
 Description: "Non-proprietary Name of the active ingredient(s)"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/rmswi
+* codes from system https://spor.ema.europa.eu/rmswi */
 
-//==========================
+/* //==========================
 ValueSet: VsStrengthPart
 Id: strengthPart
 Title: "Strength of the medicinal product name"
 Description: "Strength of the medicinal product name"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed
-* codes from system https://spor.ema.europa.eu/rmswi
+* codes from system https://spor.ema.europa.eu/rmswi */
 
-//==========================
+/* //==========================
 ValueSet: VsPharmaceuticalDoseFormPart
 Id: pharmaceuticalDoseFormPart
 Title: "Pharmaceutical Dose Form of the medicinal product"
 Description: "Pharmaceutical Dose Form of the medicinal product"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/rmswi
+* codes from system https://spor.ema.europa.eu/rmswi */
+
+//==========================
+//ValueSet: VsListOrderCodesIdSystems
+//Id: VsListOrderCodesIdSystems
+//Title: "Order Codes for List"
+//Description: "Order Codes for List"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
+//* codes from system http://terminology.hl7.org/CodeSystem/list-order
+
+/* //==========================
+ValueSet: VsExampleUseCodesForList
+Id: exampleUseCodesForList
+Title: "The topic of this list"
+Description: "The topic of this list"
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes" */
+
+//==========================
+//ValueSet: VsJurisdiction
+//Id: VsJurisdiction
+//Title: "Two letter country code"
+//Description: "Two letter country code"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/jurisdiction "JurisdictionValueSet" // FHIR terminology
+
+//==========================
+//ValueSet: VsLanguage
+//Id: VsLanguage
+//Title: "Languages"
+//Description: "Languages"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
+
+/* //==========================
+ValueSet: VsProductNamePartType
+Id: productNamePartType
+Title: "Product Name Part Type"
+Description: "Product Name Part Type"
+* ^experimental = false
+* codes from system $spor-productNamePartType-cs
+
+//==========================
+ValueSet: VsPartType
+Id: partType
+Title: "Part Type"
+Description: "Part Type"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed */
+
+//==========================
+//ValueSet: VsMedicinalProductCrossReferenceType
+//Id: VsMedicinalProductCrossReferenceType
+//Title: "Product Cross Reference Type"
+//Description: "Product Cross Reference Type"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
+//* codes from system http://hl7.org/fhir/medicinal-product-cross-reference-type
+
+/* //==========================
+ValueSet: VsProductConfidentialityIdSystems
+Id: productConfidentialityIdSystems
+Title: "Product Confidentiality"
+Description: "Product Confidentiality"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed */
