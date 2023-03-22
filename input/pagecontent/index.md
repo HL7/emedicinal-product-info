@@ -60,18 +60,16 @@ Additional changes by HL7 are expected because FHIR is an evolving standard. Dev
 The Core FHIR ePI Profile was defined by representatives from Gravitate Health, HL7’s Vulcan Accelerator, the European Medicines Agency (EMA), the US Food and Drug Administration (FDA), and the Pharmaceuticals and Medical Devices Agency (PMDA).  
 
 The national FHIR ePI profiles were defined by representatives from the health authority for the corresponding jurisdiction, representatives from Gravitate Health, and HL7’s Vulcan Accelerator. 
-On behalf of the international community and health authorities, this guide is maintained by HL7’s Biomedical Research and Regulation (BR&R) Working Group.  
-
-This guide will be reviewed annually for active use, obsolescence, and potential need for change. When a change is identified, HL7’s BR&R will make efforts to communicate to stakeholders or potential users in advance of any action.  
+On behalf of the international community and health authorities, this guide is maintained by HL7’s Biomedical Research and Regulation (BR&R) Working Group. 
 
 ### Authors and Contributors
 
 | Role | Name | Organization |
 |:--------|:-------|:--------|:--------|
-| Co-Lead   | Craig Anderson | Pfizer |
-| Co-Lead   | Catherine Chronaki | HL7 Europe |
-| Technical Lead  |Jens Kristian Villadsen | Trifork |
-| Technical Leads | Giorgio Cangioli | HL7 Europe |
+| Co-Lead | Craig Anderson | Pfizer |
+| Co-Lead | Catherine Chronaki | HL7 Europe |
+| Technical Lead | Jens Kristian Villadsen | Trifork |
+| Technical Lead | Giorgio Cangioli | HL7 Europe |
 | Gravitate Health Contributors | | |
 | HL7 Vulcan Contributors | | |
 {: rules="groups"}
