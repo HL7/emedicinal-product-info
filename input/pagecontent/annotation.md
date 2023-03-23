@@ -6,16 +6,16 @@ Applications may use this marking to provide additional functionality. The G-Len
 
 The annotation is similar to the [narrativeLink](http://hl7.org/fhir/2022Sep/extension-narrativelink.html) extension but is different in that the text is not a single, direct representation of the structured resource.
 
-### Linking structured resources to text with the htmlElementLink extension
+### Linking structured resources to text with the HtmlElementLink extension
 
-The semantic anotation should be implemented with the htmlElementLink extension described below.
+The semantic anotation should be implemented with the HtmlElementLink extension described below.
 
 The example defines a single concept with an ICD-10 and a SNOMED CT code (for the purpose of the example it is assumed that the codes point to the same real-world concept in the two code systems). This gives the definition the flexibility to be used directly in systems that have access to any of the two code systems.
 
 The concept is associated with the string value 'theConcept', which is used in class attributes on some elements in the HTML text of the section. The meaning of the extension is that the HTML elements marked with this class contain text that is relevant for the coded concept.
 
     <Composition xmlns="http://hl7.org/fhir">
-      <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/htmlElementLink">
+      <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/HtmlElementLink">
         <extension url="elementClass">
           <valueString value="theConcept"/>
         </extension>
