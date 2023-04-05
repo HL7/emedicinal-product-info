@@ -4,11 +4,13 @@ Id: SubstanceDefinition-uv-epi
 Title: "SubstanceDefinition (ePI)"
 Description: "SubstanceDefinition (ePI)"
 
-* identifier ^short = "An identifier or code by which the SubstanceDefinition can be referenced."
+* identifier 1..
+  * system 1..
+  * value 1..
 
 * status ^short =	"draft|active|retired|unknown"
 
-* domain from $VS-medicinal-product-domain (preferred)
+* domain from $VS-medicinal-product-domain (example)
 
 * description ^short = "Textual description of the substance."
 * manufacturer only Reference ( OrganizationUvEpi )
@@ -24,7 +26,7 @@ Description: "SubstanceDefinition (ePI)"
 
 * code 
   * ^short = "Codes associated with the substance." // Clarify when use codes and when identifiers
-  * code from VsSubstance (preferred)
+  * code from VsSubstance (example)
 
 * name ^short = "Names applicable to this substance."
   * name ^short = "International Non-Proprietary Name (INN) of the substance."
