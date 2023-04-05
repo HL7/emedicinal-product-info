@@ -5,7 +5,7 @@ Title: "Organization (ePI)"
 Description: "Organization (ePI)"
 
 * identifier 1..
-  * system from VsOrganizationIdSystems (extensible)
+  // * system from VsOrganizationIdSystems (extensible)
   * system 1..
   * value 1..
 
@@ -14,7 +14,7 @@ Description: "Organization (ePI)"
 // * type = https://spor.ema.europa.eu/rmswi/#/#220000000033
 // * type.text = "Manufacturer API"
 
-* type from VsOrganizationType (extensible)
+* type from VsOrganizationType (example)
   * ^short = "Type of organization"
   * ^definition = "Organization type clarifies what purpose or busines operation this organization performs in relation to the ePI and the associated authorized medicinal products mentioned."
 

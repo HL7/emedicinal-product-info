@@ -72,12 +72,12 @@ Description: "ManufacturedItemDefinition Identifier systems (uri)"
 * $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
 
 //=========================
-ValueSet: VsOrganizationIdSystems
+/* ValueSet: VsOrganizationIdSystems
 Id: organizationIdSystems
 Title: "Organization identifier systems"
 Description: "Organization Identifier systems (uri)"
 * ^experimental = false
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed */
 
 //=========================
 ValueSet: VsEpiType
