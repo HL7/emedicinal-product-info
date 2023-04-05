@@ -269,7 +269,7 @@ Description: "Shape of the product"
 
 //==========================
 ValueSet: VsPropertySurfaceForm
-Id: VsPropertySurfaceForm
+Id: propertySurfaceForm
 Title: "Surface form of the product"
 Description: "Surface form of the product"
 * ^experimental = false
@@ -281,7 +281,7 @@ Id: substance
 Title: "Substances"
 Description: "Substances"
 * ^experimental = false
-* include codes from system https://gsrs.ncats.nih.gov/ginas/app/beta
+* include codes from system http://fdasis.nlm.nih.gov
 
 //==========================
 ValueSet: VsRoleClassIngredientEntity
