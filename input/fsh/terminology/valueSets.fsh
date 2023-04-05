@@ -1,18 +1,18 @@
 //=========================
-ValueSet: VsRegulatedAuthorization
-Id: VsRegulatedAuthorization
+ValueSet: VsRegulatedAuthorizationType
+Id: regulatedAuthorizationType
 Title: "Type of Regulated Authorization"
 Description: "Type of Regulated Authorization"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/pmswi // to be reviewed
+* codes from system $spor-regulatoryEntitlementType-cs // to be reviewed
 
-//=========================
+/* //=========================
 ValueSet: VsRegulatedAuthorizationTypeIdSystems
 Id: RegulatedAuthorizationTypeIdSystems
 Title: "Regulated Authorization Type identifier systems"
 Description: "Regulated Authorization Type Identifier systems (uri)"
 * ^experimental = false
-* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed */
 
 //=========================
 ValueSet: VsMedProductIdSystems
@@ -152,7 +152,7 @@ Id: authorizationStatus
 Title: "Authorization Status"
 Description: "Authorization Status"
 * ^experimental = false
-* codes from system $spor-marketingStatus-cs // to be reviewed
+* codes from system $spor-regulatoryEntitlementStatus-cs // to be reviewed
 
 //==========================
 ValueSet: VsSecondaryPrimaryPackType

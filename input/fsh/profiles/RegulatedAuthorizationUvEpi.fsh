@@ -5,7 +5,7 @@ Title: "RegulatedAuthorization (ePI)"
 Description: "RegulatedAuthorization (ePI)"
 
 * identifier 1..
-  * system from VsRegulatedAuthorization (extensible)
+  // * system from VsRegulatedAuthorizationTypeIdSystems (extensible)
   * system 1..
   * value 1..
   * ^short = "Identifier assigned by the health authority to a single medicinal product"
@@ -14,14 +14,14 @@ Description: "RegulatedAuthorization (ePI)"
 * subject 1..
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 
-* type from VsRegulatedAuthorizationTypeIdSystems (extensible)
+* type from VsRegulatedAuthorizationType  (example)
 
 * description ^short = "Brief description of the authorization"
 
 * region from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2 
   * ^short = "The jusrisdiction in which the authorization has been granted"
 
-* status from VsAuthorizationStatus (preferred)
+* status from VsAuthorizationStatus (example)
   * ^short = "The current status of this authorization"
 
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
