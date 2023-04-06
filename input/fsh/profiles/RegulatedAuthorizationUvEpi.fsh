@@ -21,7 +21,7 @@ Description: "RegulatedAuthorization (ePI)"
 * region from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2 
   * ^short = "The jusrisdiction in which the authorization has been granted"
 
-* status from VsAuthorizationStatus (example)
+* status from VsAuthorizationStatus (preferred)
   * ^short = "The current status of this authorization"
 
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
