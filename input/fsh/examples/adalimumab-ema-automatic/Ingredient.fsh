@@ -1,0 +1,104 @@
+
+Instance: ingredient-for-adalimumab-insulinglargine
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-active Insulin glargine"
+Description: "Insulin glargine"
+Usage: #example
+
+* identifier.system = $ginas
+* identifier.value = "2ZM8CX04RZ"
+* identifier.use = #official
+
+* role = $spor-rms#72072 "active"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#2ZM8CX04RZ "Insulin glargine"
+
+
+* substance.strength.presentationQuantity = 100.0 'U/ml'
+
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
+
+
+// Reference to products
+* for = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(ap-2e8a8b1c9142de3ac8de0723812d3fef)
+// Reference to Organization:  Reference to MAH
+
+ 
+ 
+ 
+ 
+
+
+* manufacturer.manufacturer = Reference(org-b4249a5180d23ad521b23e06e99b7afd)
+
+Instance: ingredient-for-adalimumab-lixisenatide
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-active Lixisenatide"
+Description: "Lixisenatide"
+Usage: #example
+
+* identifier.system = $ginas
+* identifier.value = "74O62BB01U"
+* identifier.use = #official
+
+* role = $spor-rms#72072 "active"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#74O62BB01U "Lixisenatide"
+
+
+* substance.strength.presentationQuantity = 50.0 'ug/ml'
+
+* substance.strength.basis = http://terminology.hl7.org/CodeSystem/v3-RoleClass#ACTIB "active ingredient - basis of strength"
+
+
+// Reference to products
+* for = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(ap-2e8a8b1c9142de3ac8de0723812d3fef)
+// Reference to Organization:  Reference to MAH
+
+ 
+ 
+ 
+ 
+
+
+* manufacturer.manufacturer = Reference(org-b4249a5180d23ad521b23e06e99b7afd)
+
+Instance: ingredient-for-adalimumab-glycerol85whodd
+InstanceOf: IngredientUvEpi
+Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
+Description: "GLYCEROL 85% [WHO-DD]"
+Usage: #example
+
+* identifier.system = $ginas
+* identifier.value = "PDC6A3C0OX"
+* identifier.use = #official
+
+* role = $spor-rms#100000072082 "Excipient"
+
+* status = #active
+
+* substance.code.concept.coding = $ginas#PDC6A3C0OX "GLYCEROL 85% [WHO-DD]"
+
+
+
+// Reference to products
+* for = Reference(mid-2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(mp2e8a8b1c9142de3ac8de0723812d3fef)
+* for[+] = Reference(ap-2e8a8b1c9142de3ac8de0723812d3fef)
+// Reference to Organization:  Reference to MAH
+
+ 
+ 
+ 
+ 
+
+
+* manufacturer.manufacturer = Reference(org-b4249a5180d23ad521b23e06e99b7afd)
