@@ -6,9 +6,9 @@ Description: "Bundle for remsima Package Leaflet ePI document"
 Usage: #example
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
-* identifier.value = "EU/1/19/1370/001"
+* identifier.value = "EU/1/13/853/001"
 * type = #document
-* timestamp = "2023-04-15T19:56:26Z"
+* timestamp = "2023-04-16T10:58:41Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionbe76bdf784deea6950583b234f789db2"

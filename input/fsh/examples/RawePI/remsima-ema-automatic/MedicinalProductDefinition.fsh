@@ -5,9 +5,11 @@ Title: "Medicinal Product Remsima 100 mg powder for concentrate for solution for
 Description: "EU/1/97/049/001 Remsima 100 mg powder for concentrate for solution for infusion"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "nan"
-
+ 
+* identifier[+].system = "https://spor.ema.europa.eu/pmswi"
+* identifier[=].value = "EU/1/13/853/001" 
+* identifier[+].system = "https://www.who-umc.org/phpid"
+* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E82718"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

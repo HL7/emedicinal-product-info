@@ -6,7 +6,7 @@ Description:  "Composition for Remsima 100 mg powder for concentrate for solutio
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
-* identifier.value = "xx"
+* identifier.value = "EU/1/13/853/001"
 
 * status = #final
 
@@ -92,9 +92,9 @@ Remsima belongs to a group of medicines called ‘TNF blockers’. It is used in
 <li>Crohn’s disease</li>
 <li>Ulcerative colitis.</li>
 </ul>
-   <p>Remsima works by selectively attaching to TNF alpha and blocking its action. TNF alpha is involved
+<p>Remsima works by selectively attaching to TNF alpha and blocking its action. TNF alpha is involved
 in inflammatory processes of the body so blocking it can reduce the inflammation in your body.</p>
-<p><b>Rheumatoid arthritis</b>Rheumatoid arthritis is an inflammatory disease of the joints. 
+<p><strong>Rheumatoid arthritis</strong>Rheumatoid arthritis is an inflammatory disease of the joints. 
 If you have active rheumatoid arthritis
 you will first be given other medicines. If these medicines do not work well enough, you will be given
 Remsima which you will take with another medicine called methotrexate to:</p>
@@ -122,7 +122,7 @@ Remsima to:</p>
 will first be given other medicines or treatments, such as phototherapy. If these medicines or
 treatments do not work well enough, you will be given Remsima to reduce the signs and symptoms of
 your disease.
-  Ulcerative colitis
+Ulcerative colitis
 Ulcerative colitis is an inflammatory disease of the bowel. If you have ulcerative colitis you will first
 be given other medicines. If these medicines do not work well enough, you will be given Remsima to
 treat your disease.</p>
@@ -132,8 +132,7 @@ given other medicines. If these medicines do not work well enough, you will be g
 <ul>
 <li>treat active Crohn’s disease,</li>
 <li>reduce the number of abnormal openings (fistulae) between your bowel and your skin that have not been controlled by other medicines or surgery</li>
-</ul>    
-</div>"""
+</ul>         </div>"""
 
    
           

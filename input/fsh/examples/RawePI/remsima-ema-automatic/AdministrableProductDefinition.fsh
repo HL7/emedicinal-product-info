@@ -6,7 +6,7 @@ Description: "Remsima 100 mg powder for concentrate for solution for infusion"
 Usage: #example
 
 * identifier.system = $phpid
-* identifier.value = "x" 
+* identifier.value = "EU/1/13/853/001" 
 
 * status = #active
 

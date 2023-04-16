@@ -6,7 +6,7 @@ Description: "Remsima 100 mg powder for concentrate for solution for infusion"
 Usage: #example
 
 * identifier.system = $spor-prod
-* identifier.value = "EU/1/19/1370/001"
+* identifier.value = "EU/1/13/853/001"
 * identifier.use = #official
 
 * name = "Remsima 100 mg powder for concentrate for solution for infusion"
