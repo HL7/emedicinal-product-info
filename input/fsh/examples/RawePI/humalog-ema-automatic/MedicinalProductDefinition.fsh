@@ -5,9 +5,11 @@ Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Description: "EU/1/97/049/001 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "EU/1/96/007/035"
-
+ 
+* identifier[+].system = "https://spor.ema.europa.eu/pmswi"
+* identifier[=].value = "EU/1/96/007/035" 
+* identifier[+].system = "https://www.who-umc.org/phpid"
+* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E82717"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
