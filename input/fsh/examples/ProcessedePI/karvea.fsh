@@ -37,10 +37,34 @@ Usage: #example
 * extension[=].extension[0].url = "elementClass"
 * extension[=].extension[=].valueString = "indication"
 * extension[=].extension[+].url = "concept"
-* extension[=].extension[=].valueCodeableReference.reference.reference = "ClinicalUseDefinition/indication-Hypertension"
+* extension[=].extension[=].valueCodeableReference.reference = Reference(indication-Hypertension)
+
+* extension[0].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
+* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[=].valueString = "contraindication"
+* extension[=].extension[+].url = "concept"
+* extension[=].extension[=].valueCodeableReference.concept.coding[+] = http://snomed.info/sct#410536001 "Contraindicated (qualifier value)"
 
 
 
+* extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
+* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[=].valueString = "contra-indication-pregancy"
+* extension[=].extension[+].url = "concept"
+* extension[=].extension[=].valueCodeableReference.reference = Reference(contraindication-pregancy)
+
+* extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
+* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[=].valueString = "contra-indication-kidney"
+* extension[=].extension[+].url = "concept"
+* extension[=].extension[=].valueCodeableReference.reference = Reference(contraindication-kidney)
+
+
+* extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
+* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[=].valueString = "contra-indication-diabetes-mellitus"
+* extension[=].extension[+].url = "concept"
+* extension[=].extension[=].valueCodeableReference.reference = Reference(contraindication-diabetes-mellitus)
 
 
 
@@ -113,14 +137,14 @@ Usage: #example
   * code.text = "2. What you need to know before you take Karvea"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
-            <b>Do not take Karvea</b>
+           <span class="contraindication"> <b>Do not take Karvea</b>
             <ul>
                 <li>if you are allergic to irbesartan or any other ingredients of this medicine (listed in section 6)</li>
-                <li>if you are more than 3 months pregnant. (It is also better to avoid Karvea in early pregnancy –
-                    see pregnancy section)</li>
-                <li><b>if you have diabetes or impaired kidney function</b> and you are treated with a blood pressure
+                <span class="contra-indication-pregancy"> <li>if you are more than 3 months pregnant. (It is also better to avoid Karvea in early pregnancy –
+                    see pregnancy section)</li></span>
+                <li><b><span class="contra-indication-diabetes-mellitus">if you have diabetes </span> or <span class="contra-indication-kidney">impaired kidney function</span></b> and you are treated with a blood pressure
                     lowering medicine containing aliskiren.</li>
-            </ul>
+            </ul></span>
             <b>Warning and precautions</b>
             <p>Talk to your doctor before taking Karvea and <b>if any of the following apply to you:</b></p>
             <ul>
@@ -491,3 +515,56 @@ Usage: #example
             <p>This leaflet was last revised in</p>
             <p>Detailed information on this medicine is available on the European Medicines Agency web site: http://www.ema.europa.eu/</p>            
         </div>         </div>"""
+
+
+
+Instance: contraindication-pregancy
+InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
+Description: "contraindication - pregancy"
+Usage: #example
+
+* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.value = "pregancy"
+* identifier.use = #official
+
+* type = #contraindication
+
+* subject = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+
+* contraindication
+  * diseaseSymptomProcedure.concept.coding = $snomed#289908002 "Pregnancy, function (observable entity)"
+
+Instance: contraindication-diabetes-mellitus
+InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
+Description: "contraindication -    Diabetes mellitus (disorder)"
+Usage: #example
+
+* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.value = "diabetes-mellitus"
+* identifier.use = #official
+
+* type = #contraindication
+
+* subject = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+
+* contraindication
+  * diseaseSymptomProcedure.concept.coding = $snomed#73211009 "Diabetes mellitus (disorder)"
+
+
+Instance: contraindication-kidney
+InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
+Description: "contraindication - kidney function"
+Usage: #example
+
+* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
+* identifier.value = "kidney function"
+* identifier.use = #official
+
+* type = #contraindication
+
+* subject = Reference(mpa2bd0171a7654dc24f7eb7e9338e1acc)
+
+* contraindication
+  * diseaseSymptomProcedure.concept.coding = $snomed#76114004 "Decreased renal function (finding)"
+
+  

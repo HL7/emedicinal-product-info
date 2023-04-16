@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/96/007/035"
 * type = #document
-* timestamp = "2023-04-15T19:56:26Z"
+* timestamp = "2023-04-16T11:17:59Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionf4d45353edcb21af3718d3a0df94a4d8"
@@ -19,13 +19,13 @@ Usage: #example
 
 // ClinicalUseDefinition
 
-* entry[+].fullUrl = "ClinicalUseDefinition/contraindication-gastrointestinaldisorders"
-* entry[=].resource = contraindication-gastrointestinaldisorders 
+* entry[+].fullUrl = "ClinicalUseDefinition/contraindication-diabetismellitus"
+* entry[=].resource = contraindication-diabetismellitus 
 
 // ClinicalUseDefinition
 
-* entry[+].fullUrl = "ClinicalUseDefinition/indication-psoriasis"
-* entry[=].resource = indication-psoriasis 
+* entry[+].fullUrl = "ClinicalUseDefinition/indication-hypertension"
+* entry[=].resource = indication-hypertension 
 
 // ClinicalUseDefinition
 
