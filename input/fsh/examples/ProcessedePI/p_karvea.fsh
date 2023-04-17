@@ -20,48 +20,48 @@ Usage: #example
 
 * title = "TEST PURPOSES ONLY - Karvea"
 
-* extension[0].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
-* extension[=].extension[0].url = "elementClass"
+* extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
+* extension[=].extension[+].url = "elementClass"
 * extension[=].extension[=].valueString = "pregancyCategory"
 * extension[=].extension[+].url = "concept"
-* extension[=].extension[=].valueCodeableReference.concept.coding[+] = http://snomed.info/sct#77386006 "Pregnancy"
+* extension[=].extension[=].valueCodeableReference.concept.coding = http://snomed.info/sct#77386006 "Pregnancy"
 
-* extension[0].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
-* extension[=].extension[0].url = "elementClass"
+* extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
+* extension[=].extension[+].url = "elementClass"
 * extension[=].extension[=].valueString = "breastfeedingCategory"
 * extension[=].extension[+].url = "concept"
-* extension[=].extension[=].valueCodeableReference.concept.coding[+] = http://snomed.info/sct#69840006 "Normal breast feeding (finding)"
+* extension[=].extension[=].valueCodeableReference.concept.coding = http://snomed.info/sct#69840006 "Normal breast feeding (finding)"
 
 
 * extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
-* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[+].url = "elementClass"
 * extension[=].extension[=].valueString = "indication"
 * extension[=].extension[+].url = "concept"
 * extension[=].extension[=].valueCodeableReference.reference = Reference(indication-Hypertension)
 
-* extension[0].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
-* extension[=].extension[0].url = "elementClass"
+* extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
+* extension[=].extension[+].url = "elementClass"
 * extension[=].extension[=].valueString = "contraindication"
 * extension[=].extension[+].url = "concept"
-* extension[=].extension[=].valueCodeableReference.concept.coding[+] = http://snomed.info/sct#410536001 "Contraindicated (qualifier value)"
+* extension[=].extension[=].valueCodeableReference.concept.coding = http://snomed.info/sct#410536001 "Contraindicated (qualifier value)"
 
 
 
 * extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
-* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[+].url = "elementClass"
 * extension[=].extension[=].valueString = "contra-indication-pregancy"
 * extension[=].extension[+].url = "concept"
 * extension[=].extension[=].valueCodeableReference.reference = Reference(contraindication-pregancy)
 
 * extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
-* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[+].url = "elementClass"
 * extension[=].extension[=].valueString = "contra-indication-kidney"
 * extension[=].extension[+].url = "concept"
 * extension[=].extension[=].valueCodeableReference.reference = Reference(contraindication-kidney)
 
 
 * extension[+].url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/HtmlElementLink"
-* extension[=].extension[0].url = "elementClass"
+* extension[=].extension[+].url = "elementClass"
 * extension[=].extension[=].valueString = "contra-indication-diabetes-mellitus"
 * extension[=].extension[+].url = "concept"
 * extension[=].extension[=].valueCodeableReference.reference = Reference(contraindication-diabetes-mellitus)

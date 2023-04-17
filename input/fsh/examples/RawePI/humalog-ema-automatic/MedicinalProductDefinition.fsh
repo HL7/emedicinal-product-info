@@ -2,7 +2,7 @@
 Instance: mpf6b4fcaaf21ddd70f011f383780f7bf3
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-Description: "EU/1/97/049/001 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+Description: "EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 
  
