@@ -4,7 +4,7 @@
 Instance: mp{{ row["productname"]| regex_replace('[^A-Za-z0-9]+', '') | create_hash_id }}
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product {{ row["productname"]}}"
-Description: "EU/1/97/049/001 {{ row["productname"]}}"
+Description: "{{ row["productname"]}}"
 Usage: #example
 
 {% if row["identifier_system"]|string != 'nan' %}

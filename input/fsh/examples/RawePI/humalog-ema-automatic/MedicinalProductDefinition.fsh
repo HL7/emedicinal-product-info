@@ -1,8 +1,8 @@
 
-Instance: mpf6b4fcaaf21ddd70f011f383780f7bf3
+Instance: mpd33868162d255ced115cecbbf188aab4
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-Description: "EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
+Description: "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
 Usage: #example
 
  
@@ -26,7 +26,7 @@ Usage: #example
 
 * classification[+] = $atc#A10AB04 "insulin lispro"
 * name
-  * productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+  * productName = "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
