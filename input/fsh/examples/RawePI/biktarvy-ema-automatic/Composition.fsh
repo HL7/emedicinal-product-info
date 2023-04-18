@@ -32,9 +32,18 @@ Usage: #example
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
-
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p><strong>Read all of this leaflet carefully before you start taking this medicine because it contains
+important information for you.</strong></p>
+<ul>
+<li>Keep this leaflet. You may need to read it again.</li>
+<li>If you have any further questions, ask your doctor or pharmacist.</li>
+<li>This medicine has been prescribed for you only. Do not pass it on to others. It may harm them,
+even if their signs of illness are the same as yours.</li>
+<li>If you get any side effects, talk to your doctor or pharmacist. This includes any possible side
+effects not listed in this leaflet. See section 4.</li>
+</ul>
+<p><strong>If Biktarvy has been prescribed for your child, please note that all the information in this leaflet
+is addressed to your child (in this case please read “your child” instead of “you”).</strong></p>         </div>"""   
 
 
       
@@ -403,8 +412,8 @@ throw away medicines you no longer use. These measures will help protect the env
 <p>The active substances are bictegravir, emtricitabine and tenofovir alafenamide. Each Biktarvy tablet
 contains bictegravir sodium equivalent to 30 mg of bictegravir, 120 mg of emtricitabine and tenofovir
 alafenamide fumarate equivalent to 15 mg of tenofovir alafenamide.</p>
-<p><strong>The other ingredients are</strong><br><em>Tablet core</em><br>Microcrystalline cellulose (E460), croscarmellose sodium (E468), magnesium stearate (E470b).</p>
-<p><em>Film-coating</em><br>Polyvinyl alcohol (E203), titanium dioxide (E171), macrogol (E1521), talc (E553b), iron oxide red
+<p><strong>The other ingredients are</strong><em>Tablet core</em>Microcrystalline cellulose (E460), croscarmellose sodium (E468), magnesium stearate (E470b).</p>
+<p><em>Film-coating</em>Polyvinyl alcohol (E203), titanium dioxide (E171), macrogol (E1521), talc (E553b), iron oxide red
 (E172), iron oxide black (E172).</p>
 <p><strong>What Biktarvy looks like and contents of the pack</strong>  </p>
 <p>Biktarvy 30 mg/120 mg/15 mg film-coated tablets are pink, capsule-shaped, film-coated tablets,
@@ -412,5 +421,5 @@ debossed with “BVY” on one side and a score line on the other side of the ta
 <p>The tablets are supplied in a bottle. Not all pack sizes may be marketed.</p>
 <p>Biktarvy comes in bottles of 30 tablets and in packs made up of 3 bottles, each containing 30 tablets.
 Each bottle contains a silica gel desiccant that must be kept in the bottle to help protect your tablets.
-The silica gel desiccant is contained in a separate sachet or canister and should not be swallowed.</p>         </div>"""      
+The silica gel desiccant is contained in a separate sachet or canister and should not be swallowed.</p>             </div>"""      
 
