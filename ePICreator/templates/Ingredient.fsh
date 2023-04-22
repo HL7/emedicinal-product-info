@@ -1,7 +1,24 @@
 {% for index,row in data["data"].iterrows() %}
 {% if row["skip"] not in ['y', 'Y', 'x', 'X'] %}
 
+{% set ns = namespace() %}
+{% set ns.one = data["dictionary"]["MajorName"]|lower|regex_replace('[^A-Za-z0-9]+', '') %}
+{% set ns.two = row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '')  %}
+{% set ns.name_to_has= ns.one ~ ns.two  %}
+
+
+
+{% if ns.name_to_has|length > 48 %}
+
+Instance: ingredient-for-{{ns.name_to_has| create_hash_id}}
+
+
+{% else %}
+
 Instance: ingredient-for-{{ data["dictionary"]["MajorName"]|lower|regex_replace('[^A-Za-z0-9]+', '')}}-{{ row["name"]| lower | regex_replace('[^A-Za-z0-9]+', '') }}
+
+{% endif %}
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-{{row["role"]| lower}} {{ row["name"]  }}"
 Description: "{{ row["name"]  }}"
