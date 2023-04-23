@@ -1,15 +1,15 @@
 
-Instance: ppd-a9955d128989ce310e64a9fb99c8a9ac
+Instance: ppd-a38f06714db0c27b2ba704652e3f08c5
 InstanceOf: PackagedProductDefinitionUvEpi
-Title: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
-Description: "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
+Title: "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
+Description: "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
 Usage: #example
 
 * identifier.system = $spor-prod
 * identifier.value = "EU/1/96/007/035"
 * identifier.use = #official
 
-* name = "Humalog 100 units/ml KwikPen solution for injection in a pre-filled pen"
+* name = "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
 
 * type = $spor-rms#100000155527 "Chemical Medicinal Prodcut"
 //* type = $spor-rms#100000155527
@@ -35,6 +35,6 @@ Usage: #example
 
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* packageFor = Reference(mpd33868162d255ced115cecbbf188aab4)
  // Reference to Organization: MAH
 * manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)

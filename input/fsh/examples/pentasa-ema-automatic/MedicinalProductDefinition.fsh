@@ -5,12 +5,11 @@ Title: "Medicinal Product Pentasa Slow Release Tablets 1g"
 Description: "EU/1/97/049/001 Pentasa Slow Release Tablets 1g"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "EU/1/97/049/001"
-* identifier[+].system = $phpid
-* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E82717"
-
-
+ 
+* identifier[+].system = "https://spor.ema.europa.eu/pmswi"
+* identifier[=].value = "xx" 
+* identifier[+].system = "https://www.who-umc.org/phpid"
+* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E8271xx"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

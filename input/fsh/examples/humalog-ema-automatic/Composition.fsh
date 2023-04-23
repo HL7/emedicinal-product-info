@@ -10,20 +10,21 @@ Usage: #example
 
 * status = #final
 
+
+
+
+
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
 
-* subject = Reference(mpf6b4fcaaf21ddd70f011f383780f7bf3)
+* subject = Reference(mpd33868162d255ced115cecbbf188aab4)
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
 * title = "TEST PURPOSES ONLY - Humalog"
-
-
-
-
-
-
+* attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
+* attester.time =  "2022-02-16T13:28:17Z"
+* language = #en
 
 
 * section[+].
@@ -31,7 +32,7 @@ Usage: #example
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
-  
+
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
   * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
 
@@ -42,8 +43,8 @@ Usage: #example
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "Package leaflet: Information for the user"
   * text.status = #additional
-     
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
 PACKAGE LEAFLET: INFORMATION FOR THE USER
 Humalog Mix50 100 units/ml suspension for injection in cartridge
 insulin lispro
@@ -54,15 +55,19 @@ Read all of this leaflet carefully before you start taking this medicine because
   <li> This medicine has been prescribed for you only. Do not pass it on to others. It may harm them, even if their signs of illness are the same as yours. </li>
   <li> If you get any side effects talk to your doctor or pharmacist. This includes any possible side effects not listed in this leaflet. See section 4. </li>
 </ul>
-</div>         </div>"""   
+</div>"""
+
+   
+
+
 
 * section[=].section[+]
   * title = "What is in this leaflet"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "What is in this leaflet"
   * text.status = #additional
-     
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
 What in this leaflet
 <ol>
   <li>What Humalog Mix50 is and what it is used for</li>
@@ -72,38 +77,36 @@ What in this leaflet
   <li>How to store Humalog Mix50</li>
   <li>Contents of the pack and other information</li>
 </ol>
-</div>         </div>"""             
+</div>"""
+
+   
+          
 
 * section[=].section[+]
   * title = "1. What Humalog is and what it is used for"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "1. What Humalog is and what it is used for"
   * text.status = #additional
-     
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
-<b>1.What Humalog Mix50 is and what it is used for</b>
-Humalog Mix50 is used to treat diabetes. Humalog Mix50 is a premixed suspension. Its active
-substance is insulin lispro. 50% of the insulin lispro in Humalog Mix50 is dissolved in water and it
-works more quickly than normal human insulin because the insulin molecule has been changed
-slightly. 50% of the insulin lispro in Humalog Mix50 is available in a suspension together with
-protamine sulphate, so that its action is prolonged.
-You get diabetes if your pancreas does not make enough insulin to control the level of glucose in
-your blood. Humalog Mix50 is a substitute for your own insulin and is used to control glucose in the
-long term. Humalog Mix50 works very quickly and longer than soluble insulin. You should
-normally use Humalog Mix50 within 15 minutes of a meal.
-Your doctor may tell you to use Humalog Mix50 as well as a longer-acting insulin. Each kind of
-insulin comes with another patient information leaflet to tell you about it. Do not change your
-insulin unless your doctor tells you to. Be very careful if you do change insulin.
-</div>         </div>"""              
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Humalog is used to treat diabetes. Humalog works more quickly than normal human insulin because
+the insulin molecule has been changed slightly.</p>
+<p>You get diabetes if your pancreas does not make enough insulin to control the level of glucose in your
+blood. Humalog is a substitute for your own insulin and is used to control glucose in the long term. It
+works very quickly and lasts a shorter time than soluble insulin (2 to 5 hours). You should normally
+use Humalog within 15 minutes of a meal.</p>
+<p>Your doctor may tell you to use Humalog as well as a longer-acting insulin. Each kind of insulin
+comes with another patient information leaflet to tell you about it. Do not change your insulin unless
+your doctor tells you to. Be very careful if you do change insulin.</p>
+<p>Humalog is suitable for use in adults and children.</p>         </div>"""   
+          
+
+             
 * section[=].section[+]
   * title = "2. What you need to know before you take Humalog"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "2. What you need to know before you take Humalog"
   * text.status = #additional
-     
-
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
-<b>2. What you need to know before you use Humalog Mix50</b>
+   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
 <p><strong>Do NOT use Humalog Mix50</strong></p>
 <ul>
 <li>if you think hypoglycaemia (low blood sugar) is starting. Further in this leaflet it tells you how to
@@ -179,14 +182,17 @@ have: </p>
 Humalog Mix50 contains sodium
 This medicine contains less than 1 mmol sodium (23 mg) per dose, that is to say essentially ‘sodium-free’.</li>
 </ul>
-</div>         </div>"""              
+</div>"""
+
+   
+                    
 * section[=].section[+]
   * title = "3. How to take Humalog"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "3. How to take Humalog"
   * text.status = #additional
-         
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
+   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>3. How to use Humalog Mix50</b>
 <p><strong>Dose</strong></p>
 <ul>
@@ -271,7 +277,9 @@ damaged.</li>
 <p><strong>If you stop using Humalog Mix50.</strong></p>
 <p>If you take less Humalog Mix50 than you need, a high blood sugar may occur. Do not change your
 insulin unless your doctor tells you to.</p>
-<p>If you have any further questions on the use of this product, ask your doctor or pharmacist</p></div>         </div>"""          
+<p>If you have any further questions on the use of this product, ask your doctor or pharmacist</p></div>"""
+
+         
 
         
 * section[=].section[+]
@@ -279,20 +287,85 @@ insulin unless your doctor tells you to.</p>
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "4. Possible side effects"
   * text.status = #additional
-               
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
-<p><b>4. Possible side effects</b></p>
-<p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
-</div>         </div>"""   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.
+Systemic allergy is rare (≥ 1/10,000 to &lt;1/1,000). The symptoms are as follows:</p>
+<ul>
+<li>rash over the whole body</li>
+<li>blood pressure dropping</li>
+<li>difficulty in breathing </li>
+<li>heart beating fast</li>
+<li>wheezing </li>
+<li>sweating</li>
+</ul>
+<p>If you think you are having this sort of insulin allergy with Humalog, tell your doctor at once.</p>
+<p>Local allergy is common (≥ 1/100 to &lt;1/10). Some people get redness, swelling or itching around the
+area of the insulin injection. This usually clears up in anything from a few days to a few weeks. If this
+happens to you, tell your doctor.</p>
+<p>Lipodystrophy is uncommon (≥ 1/1,000 to &lt;1/100). If you inject insulin too often at the same place,
+the fatty tissue may either shrink (lipoatrophy) or thicken (lipohypertrophy). Lumps under the skin
+may also be caused by build-up of a protein called amyloid (cutaneous amyloidosis). The insulin may
+not work very well if you inject into a lumpy area. Change the injection site with each injection to help
+prevent these skin changes.</p>
+<p>Oedema (e.g. swelling in arms, ankles; fluid retention) has been reported, particularly at the start of
+insulin therapy or during a change in therapy to improve control of your blood glucose.</p>
+<p><strong>Reporting of side effects</strong></p>
+<p>If you get any side effects, talk to your doctor or pharmacist. This includes any possible side effects
+not listed in this leaflet. You can also report side effects directly via the national reporting system
+listed in Appendix V. By reporting side effects you can help provide more information on the safety of
+this medicine.</p>
+<p><strong>Common problems of diabetes</strong></p>
+<p><strong>A. Hypoglycaemia</strong></p>
+<p>Hypoglycaemia (low blood sugar) means there is not enough sugar in the blood. This can be caused if:</p>
+<ul>
+<li>you take too much Humalog or other insulin;</li>
+<li>you miss or delay meals or change your diet;</li>
+<li>you exercise or work too hard just before or after a meal;</li>
+<li>you have an infection or illness (especially diarrhoea or vomiting);</li>
+<li>there is a change in your need for insulin; or</li>
+<li>you have trouble with your kidneys or liver which gets worse.
+Alcohol and some medicines can affect your blood sugar levels.
+The first symptoms of low blood sugar usually come on quickly and include the following:</li>
+<li>tiredness </li>
+<li>rapid heartbeat</li>
+<li>nervousness or shakiness</li>
+<li>feeling sick</li>
+<li>headache</li>
+<li>cold sweat.
+While you are not confident about recognising your warning symptoms, avoid situations, e.g. driving a
+car, in which you or others would be put at risk by hypoglycaemia.</li>
+</ul>
+<p><strong>B. Hyperglycaemia and diabetic ketoacidosis</strong></p>
+<p>Hyperglycaemia (too much sugar in the blood) means that your body does not have enough insulin.
+Hyperglycaemia can be brought about by:</p>
+<ul>
+<li>not taking your Humalog or other insulin;</li>
+<li>taking less insulin than your doctor tells you to;</li>
+<li>eating a lot more than your diet allows; or</li>
+<li>fever, infection or emotional stress.</li>
+</ul>
+<p>Hyperglycaemia can lead to diabetic ketoacidosis. The first symptoms come on slowly over many
+hours or days. The symptoms include the following:</p>
+<ul>
+<li>feeling sleepy </li>
+<li>no appetite</li>
+<li>flushed face</li>
+<li>fruity smell on the breath</li>
+<li>thirst</li>
+<li>feeling or being sick
+Severe symptoms are heavy breathing and a rapid pulse. <strong>Get medical help immediately.</strong></li>
+</ul>
+<p><strong>C. Illness</strong></p>
+<p>If you are ill, especially if you feel sick or are sick, the amount of insulin you need may change. Even
+when you are not eating normally, you still need insulin. Test your urine or blood, follow your
+‘sick rules’, and tell your doctor.</p>         </div>"""      
         
 * section[=].section[+]
   * title = "5. How to store Humalog"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "5. How to store Humalog"
   * text.status = #additional
-               
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'> 
-<p><strong>5. How to store Humalog Mix50</strong></p>
+   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
 <p>Before the first use store your Humalog Mix50 in a refrigerator (2°C – 8°C). Do not freeze.
 Keep your cartridge in use at room temperature (below 30°C) and discard after 28 days. Do not put it
 near heat or in the sun. Do not keep your pen or the cartridges you are using in the fridge. The pen
@@ -303,16 +376,18 @@ date refers to the last day of that month.
 Do not use this medicine if you notice clumps of material are present or if solid white particles stick to
 the bottom or wall of the cartridge, giving it a frosted appearance. Check each time you inject yourself.
 Medicines should not be disposed of via wastewater or household waste. Ask your pharmacist how to
-dispose of medicines no longer required. These measures will help to protect the environment.</p>        </div>         </div>"""   
+dispose of medicines no longer required. These measures will help to protect the environment.</p>        </div>"""
+
+      
+        
         
 * section[=].section[+]
   * title = "6. Contents of the pack and other information"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "6. Contents of the pack and other information"
   * text.status = #additional
-     
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <div xmlns='http://www.w3.org/1999/xhtml'>
-<b>6. Contents of the pack and other information</b>
+   
+  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
 <b>What Humalog Mix50 100 units/ml suspension for injection in cartridge contains</b>
 <p>The active substance is insulin lispro. Insulin lispro is made in the laboratory by a ‘recombinant
 DNA technology’ process. It is a changed form of human insulin and so is different from other
@@ -321,4 +396,7 @@ hormone made by the pancreas.
 The other ingredients are protamine sulphate, m-cresol, phenol, glycerol, dibasic sodium
 phosphate 7H2O, zinc oxide and water for injection. Sodium hydroxide or hydrochloric acid
 may have been used to adjust the acidity.</p>
-</div>         </div>"""
+</div>"""
+
+      
+

@@ -6,10 +6,7 @@ Description: "EU/1/97/049/001 BLASTON 1 mg tablets"
 Usage: #example
 
 * identifier.system = $spor-prod
-* identifier.value = "59.032"
-
-* identifier[+].system = $phpid
-* identifier[=].value = "0x9982CA8A825D4561506CE808982E3B9E"
+* identifier.value = "ss"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 

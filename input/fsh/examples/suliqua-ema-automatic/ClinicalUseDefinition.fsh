@@ -19,9 +19,9 @@ Usage: #example
 
 
 
-Instance: indication-hypertension
+Instance: indication-diabetes
 InstanceOf: ClinicalUseDefinition-indication-uv-epi
-Description: "indication - Hypertension"
+Description: "indication - Diabetes"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"

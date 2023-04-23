@@ -1,7 +1,7 @@
 
-Instance: contraindication-gastrointestinaldisorders
+Instance: contraindication-diabetismellitus
 InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
-Description: "contraindication - Gastrointestinal disorders"
+Description: "contraindication - Diabetis Mellitus"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
@@ -19,9 +19,9 @@ Usage: #example
 
 
 
-Instance: indication-psoriasis
+Instance: indication-hypertension
 InstanceOf: ClinicalUseDefinition-indication-uv-epi
-Description: "indication - Psoriasis"
+Description: "indication - Hypertension"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"

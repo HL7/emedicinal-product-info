@@ -6,9 +6,7 @@ Description: "EU/1/97/049/001 Humira 40 mg Solution for injection Subcutaneous u
 Usage: #example
 
 * identifier.system = $spor-prod
-* identifier.value = "EU/1/03/256/022"
-* identifier[+].system = $phpid
-* identifier[=].value = "0x9982CA8A825D4561506CE808982E3B9E"
+* identifier.value = "nan"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
