@@ -1,8 +1,8 @@
 
-Instance: mid-a38f06714db0c27b2ba704652e3f08c5
+Instance: mid-fa2090b7ce9bdf87e24a9d05bbb51677
 InstanceOf: ManufacturedItemDefinitionUvEpi
-Title: "Manufactured item Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
-Description: "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
+Title: "Manufactured item Humalog 100 U/ml 5 pre-filled pen"
+Description: "Humalog 100 U/ml 5 pre-filled pen"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"

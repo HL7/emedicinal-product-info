@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "xx"
 * type = #document
-* timestamp = "2023-04-17T13:20:24Z"
+* timestamp = "2023-04-05T10:36:35Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/composition45f3604d61f93f5f026bea5d5824af10"
@@ -70,8 +70,8 @@ Usage: #example
 
 // AdministrableProductDefinition
 
-* entry[+].fullUrl = "AdministrableProductDefinition/ap-a38f06714db0c27b2ba704652e3f08c5"
-* entry[=].resource = ap-a38f06714db0c27b2ba704652e3f08c5 
+* entry[+].fullUrl = "AdministrableProductDefinition/ap-fa2090b7ce9bdf87e24a9d05bbb51677"
+* entry[=].resource = ap-fa2090b7ce9bdf87e24a9d05bbb51677 
  
 
 // RegulatedAuthorization
@@ -98,19 +98,19 @@ Usage: #example
 
 // PackagedProductDefinition
 
-* entry[+].fullUrl = "PackagedProductDefinition/ppd-a38f06714db0c27b2ba704652e3f08c5"
-* entry[=].resource = ppd-a38f06714db0c27b2ba704652e3f08c5 
+* entry[+].fullUrl = "PackagedProductDefinition/ppd-a9955d128989ce310e64a9fb99c8a9ac"
+* entry[=].resource = ppd-a9955d128989ce310e64a9fb99c8a9ac 
  
 
 // MedicinalProductDefinition
 
-* entry[+].fullUrl = "MedicinalProductDefinition/mpd33868162d255ced115cecbbf188aab4"
-* entry[=].resource = mpd33868162d255ced115cecbbf188aab4 
+* entry[+].fullUrl = "MedicinalProductDefinition/mpf6b4fcaaf21ddd70f011f383780f7bf3"
+* entry[=].resource = mpf6b4fcaaf21ddd70f011f383780f7bf3 
  
 
 // ManufacturedItemDefinition
 
-* entry[+].fullUrl = "ManufacturedItemDefinition/mid-a38f06714db0c27b2ba704652e3f08c5"
-* entry[=].resource = mid-a38f06714db0c27b2ba704652e3f08c5 
+* entry[+].fullUrl = "ManufacturedItemDefinition/mid-fa2090b7ce9bdf87e24a9d05bbb51677"
+* entry[=].resource = mid-fa2090b7ce9bdf87e24a9d05bbb51677 
  
 

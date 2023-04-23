@@ -1,15 +1,13 @@
 
-Instance: mpd33868162d255ced115cecbbf188aab4
+Instance: mpf6b4fcaaf21ddd70f011f383780f7bf3
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
-Description: "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
+Title: "Medicinal Product Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+Description: "EU/1/97/049/001 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 
- 
-* identifier[+].system = "https://spor.ema.europa.eu/pmswi"
-* identifier[=].value = "EU/1/96/007/035" 
-* identifier[+].system = "https://www.who-umc.org/phpid"
-* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E82717"
+* identifier.system = $spor-prod
+* identifier.value = "EU/1/96/007/035"
+
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
@@ -26,7 +24,7 @@ Usage: #example
 
 * classification[+] = $atc#A10AB04 "insulin lispro"
 * name
-  * productName = "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 3ml pre-fill"
+  * productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   

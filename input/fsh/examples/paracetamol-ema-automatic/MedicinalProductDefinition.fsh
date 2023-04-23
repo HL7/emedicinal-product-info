@@ -5,9 +5,11 @@ Title: "Medicinal Product DOLOCATIL 1 g tablets"
 Description: "EU/1/97/049/001 DOLOCATIL 1 g tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "cc"
 
+* identifier.system = $spor-prod
+* identifier.value = "EMEA/H/C/000142"
+* identifier[+].system = $phpid
+* identifier[=].value = "0x8DFB446EDB3B8AE508AE493827A704E4"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

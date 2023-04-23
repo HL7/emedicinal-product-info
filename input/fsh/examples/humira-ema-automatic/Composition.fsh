@@ -6,13 +6,9 @@ Description:  "Composition for humira Package Leaflet"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
-* identifier.value = "nan"
+* identifier.value = "EU/1/96/007/035"
 
 * status = #final
-
-
-
-
 
 * type = https://spor.ema.europa.eu/rmswi/#100000155538
 * type.text = "Package Leaflet"
@@ -22,9 +18,12 @@ Usage: #example
 * author = Reference(org-fda7514c0dcb7b5f0176cb5af274235f)
 
 * title = "TEST PURPOSES ONLY - humira"
-* attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
-* attester.time =  "2022-02-16T13:28:17Z"
-* language = #en
+
+
+
+
+
+
 
 
 * section[+].
@@ -32,7 +31,7 @@ Usage: #example
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
-
+  
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
   * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable   
 
@@ -43,6 +42,7 @@ Usage: #example
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "Package leaflet: Information for the user"
   * text.status = #additional
+     
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Humira 40 mg solution for injection in pre-filled syringe
 adalimumab</p>
 <p>Read all of this leaflet carefully before your child starts using this medicine because it contains important information.</p>
@@ -55,13 +55,12 @@ adalimumab</p>
 </ul>
          </div>"""   
 
-
-
 * section[=].section[+]
   * title = "What is in this leaflet"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "What is in this leaflet"
   * text.status = #additional
+     
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>What is in this leaflet</p>
 <ol>
 <li>What Humira is and what it is used for</li>
@@ -71,14 +70,14 @@ adalimumab</p>
 <li>How to store Humira</li>
 <li>Contents of the pack and other information</li>
 <li>Injecting Humira</li>
-</ol>         </div>"""   
-          
+</ol>         </div>"""             
 
 * section[=].section[+]
   * title = "1. What humira is and what it is used for"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "1. What humira is and what it is used for"
   * text.status = #additional
+     
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>What Humira is and what it is used for
 Humira contains the active substance adalimumab.
 Humira is intended for the treatment of the inflammatory diseases described below:</p>
@@ -126,15 +125,14 @@ affecting the front of the eye
 This inflammation may lead to a decrease of vision and/or the presence of floaters in the eye (black dots or
 wispy lines that move across the field of vision). Humira works by reducing this inflammation.
 Your child may first be given other medicines. If these medicines do not work well enough, your child
-will be given Humira to reduce the signs and symptoms of his/her disease.</p>         </div>"""   
-          
-
-             
+will be given Humira to reduce the signs and symptoms of his/her disease.</p>         </div>"""              
 * section[=].section[+]
   * title = "2. What you need to know before you take humira"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "2. What you need to know before you take humira"
   * text.status = #additional
+     
+
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="warnings-and-precautions">Warnings and precautions</h2>
 <p>Talk to your doctor or pharmacist before using Humira.
 <strong>Allergic reactions</strong></p>
@@ -246,13 +244,13 @@ treatment with a TNF blocker is appropriate for your child.
 </li>
 <li>On rare occasions, treatment with Humira could result in lupus-like syndrome. Contact your
 doctor if symptoms such as persistent unexplained rash, fever, joint pain or tiredness occur.</li>
-</ul>         </div>"""   
-                    
+</ul>         </div>"""              
 * section[=].section[+]
   * title = "3. How to take humira"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "3. How to take humira"
   * text.status = #additional
+         
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="how-to-use-humira">How to use Humira</h2>
 <p>Always use this medicine exactly as your doctor or pharmacist has told you. Check with your doctor or
 pharmacist if you are not sure.
@@ -272,7 +270,7 @@ not forgotten a dose.
 <strong>If you stop using Humira</strong>
 The decision to stop using Humira should be discussed with your doctor. Your child’s symptoms may
 return if you stop using Humira.
-If you have any further questions on the use of this medicine, ask your doctor or pharmacist.</p>         </div>"""         
+If you have any further questions on the use of this medicine, ask your doctor or pharmacist.</p>         </div>"""          
 
         
 * section[=].section[+]
@@ -280,6 +278,7 @@ If you have any further questions on the use of this medicine, ask your doctor o
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "4. Possible side effects"
   * text.status = #additional
+               
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="possible-side-effects">Possible side effects</h2>
 <p>Like all medicines, this medicine can cause side effects, although not everybody gets them. Most side
 effects are mild to moderate. However, some may be serious and require treatment. Side effects may occur
@@ -462,13 +461,14 @@ blood tests. These include:
 If your child gets any side effects, talk to your doctor or pharmacist. This includes any possible side
 effects not listed in this leaflet. You can also report side effects directly via the national reporting system
 listed in Appendix V. By reporting side effects, you can help provide more information on the safety of
-this medicine. </p>         </div>"""      
+this medicine. </p>         </div>"""   
         
 * section[=].section[+]
   * title = "5. How to store humira"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "5. How to store humira"
   * text.status = #additional
+               
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <h2 id="how-to-store-humira">How to store Humira</h2>
 <p>Keep this medicine out of the sight and reach of children.
 Do not use this medicine after the expiry date stated on the label/blister/carton after EXP.
@@ -482,15 +482,13 @@ discarded</strong>, even if it is returned to the refrigerator.
 You should record the date when the syringe is first removed from refrigerator and the date after which it
 should be discarded.
 Do not throw away any medicines via wastewater or household waste. Ask your doctor or pharmacist how
-to throw away medicines you no longer use. These measures will help protect the environment.</p>         </div>"""      
-        
+to throw away medicines you no longer use. These measures will help protect the environment.</p>         </div>"""   
         
 * section[=].section[+]
   * title = "6. Contents of the pack and other information"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
   * code.text = "6. Contents of the pack and other information"
   * text.status = #additional
-
+  
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>unavailable</div>"""
-  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable      
-
+  * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable

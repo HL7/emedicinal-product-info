@@ -5,10 +5,12 @@ Title: "Medicinal Product Karvea 75 mg tablet blister x28"
 Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
 Usage: #example
 
-* identifier[+].system = "https://spor.ema.europa.eu/pmswi"
-* identifier[=].value = "EU/1/97/049/001" 
-* identifier[+].system = "https://www.who-umc.org/phpid"
-* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E82719"
+* identifier.system = $spor-prod
+* identifier.value = "EMEA/H/C/000142"
+* identifier[+].system = $phpid
+* identifier[=].value = "0x8DFB446EDB3B8AE508AE493827A704E4"
+
+
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
