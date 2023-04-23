@@ -374,7 +374,7 @@ Usage: #example
 
 * role = $spor-rms#100000072082 "Excipient"
 
-* status = #nan
+* status = #active
 
 * substance.code.concept.coding = $ginas#059QF0KO0R "Water for injections"
 
