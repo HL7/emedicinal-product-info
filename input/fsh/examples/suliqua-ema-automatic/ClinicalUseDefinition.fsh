@@ -1,31 +1,13 @@
 
-Instance: contraindication-hypersensitivityreaction
-InstanceOf: ClinicalUseDefinition-contraindication-uv-epi
-Description: "contraindication - Hypersensitivity reaction"
-Usage: #example
-
-* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Hypersensitivity reaction"
-* identifier.use = #official
-
-* type = #contraindication
-
-// Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet blister x28
- 
-* subject = Reference(mp367b9089c0743a2330f4c6e82b40ee41)
-
-* contraindication
-  * diseaseSymptomProcedure.concept.coding = $meddra#nan "Contraindication"
 
 
-
-Instance: indication-diabetes
+Instance: cud-42659cd40ce761bcf6d15bd28423e45f
 InstanceOf: ClinicalUseDefinition-indication-uv-epi
-Description: "indication - Diabetes"
+Description: "indication - Hypertension"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Type 2 diabetes mellitus"
+* identifier.value = "Hypertension"
 * identifier.use = #official
 
 * type = #indication
@@ -40,7 +22,9 @@ Usage: #example
 
 
 
-Instance: interaction-bezafibrat
+
+
+Instance: cud-7b1263be67675b61a6b6e6f0a5c35389
 InstanceOf: ClinicalUseDefinition-interaction-uv-epi
 Description: "interaction - Bezafibrat"
 Usage: #example

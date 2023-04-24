@@ -2,12 +2,12 @@
 Instance: mpa975b7e209ea5c4c3bf8040a42b86fbd
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product DOLOCATIL 1 g tablets"
-Description: "EU/1/97/049/001 DOLOCATIL 1 g tablets"
+Description: "DOLOCATIL 1 g tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "cc"
-
+ 
+* identifier[+].system = "https://cima.aemps.es/ids"
+* identifier[=].value = "72.741"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

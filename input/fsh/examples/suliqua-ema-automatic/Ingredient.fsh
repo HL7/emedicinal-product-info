@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-suliqua-insulinglargine
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Insulin glargine"
 Description: "Insulin glargine"
@@ -35,7 +41,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-lixisenatide
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Lixisenatide"
 Description: "Lixisenatide"
@@ -71,7 +83,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-glycerol85whodd
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient GLYCEROL 85% [WHO-DD]"
 Description: "GLYCEROL 85% [WHO-DD]"
@@ -103,7 +121,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-methionine
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Methionine"
 Description: "Methionine"
@@ -135,7 +159,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-metacresol
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
@@ -167,7 +197,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-zincchloride
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Zinc chloride"
 Description: "Zinc chloride"
@@ -199,7 +235,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-hydrochloricacidiarc
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient HYDROCHLORIC ACID [IARC]"
 Description: "HYDROCHLORIC ACID [IARC]"
@@ -231,7 +273,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-sterilewaterforinjection
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
 Description: "STERILE WATER FOR INJECTION"
@@ -263,7 +311,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-16019cea3a857659d2c5a2018c2260df)
 
+
+
+
+
 Instance: ingredient-for-suliqua-sodiumhydroxide
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sodium hydroxide"
 Description: "Sodium hydroxide"

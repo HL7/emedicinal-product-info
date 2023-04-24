@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "EU/1/16/1157/003"
 * type = #document
-* timestamp = "2023-04-15T19:56:26Z"
+* timestamp = "2023-04-24T10:42:55Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionb4adca48035e7857c0e645892ad2c66e"
@@ -19,18 +19,13 @@ Usage: #example
 
 // ClinicalUseDefinition
 
-* entry[+].fullUrl = "ClinicalUseDefinition/contraindication-hypersensitivityreaction"
-* entry[=].resource = contraindication-hypersensitivityreaction 
+* entry[+].fullUrl = "ClinicalUseDefinition/cud-42659cd40ce761bcf6d15bd28423e45f"
+* entry[=].resource = cud-42659cd40ce761bcf6d15bd28423e45f 
 
 // ClinicalUseDefinition
 
-* entry[+].fullUrl = "ClinicalUseDefinition/indication-hypertension"
-* entry[=].resource = indication-hypertension 
-
-// ClinicalUseDefinition
-
-* entry[+].fullUrl = "ClinicalUseDefinition/interaction-bezafibrat"
-* entry[=].resource = interaction-bezafibrat 
+* entry[+].fullUrl = "ClinicalUseDefinition/cud-7b1263be67675b61a6b6e6f0a5c35389"
+* entry[=].resource = cud-7b1263be67675b61a6b6e6f0a5c35389 
  
 
  

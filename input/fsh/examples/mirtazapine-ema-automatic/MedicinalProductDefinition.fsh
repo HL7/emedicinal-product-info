@@ -1,13 +1,13 @@
 
-Instance: mp817d49420419b04e8145f2f4031392d3
+Instance: mp7a7ff0f4e1993c2fdabba6c8d9931a52
 InstanceOf: MedicinalProductDefinitionUvEpi
-Title: "Medicinal Product MIRTAZAPINe CINFA 30 mg Coated Tablet"
-Description: "EU/1/97/049/001 MIRTAZAPINe CINFA 30 mg Coated Tablet"
+Title: "Medicinal Product MIRTAZAPINA CINFA 30 mg Coated Tablet"
+Description: "MIRTAZAPINA CINFA 30 mg Coated Tablet"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "cc"
-
+ 
+* identifier[+].system = "https://cima.aemps.es/ids"
+* identifier[=].value = "67.068"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"
@@ -22,7 +22,7 @@ Usage: #example
 
 
 * name
-  * productName = "MIRTAZAPINe CINFA 30 mg Coated Tablet"
+  * productName = "MIRTAZAPINA CINFA 30 mg Coated Tablet"
   * type = $spor-productNamePartType-cs#220000000001
     * text = "Full name"
   
