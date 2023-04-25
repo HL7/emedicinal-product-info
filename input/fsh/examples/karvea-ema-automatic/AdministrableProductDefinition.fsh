@@ -6,7 +6,7 @@ Description: "Karvea 75mg tablet"
 Usage: #example
 
 * identifier.system = $phpid
-* identifier.value = "identifier" 
+* identifier.value = "EU/1/97/049/001" 
 
 * status = #active
 

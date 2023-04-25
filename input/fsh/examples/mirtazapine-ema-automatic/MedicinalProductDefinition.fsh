@@ -7,7 +7,9 @@ Usage: #example
 
  
 * identifier[+].system = "https://cima.aemps.es/ids"
-* identifier[=].value = "67.068"
+* identifier[=].value = "67.068" 
+* identifier[+].system = "https://www.who-umc.org/phpid"
+* identifier[=].value = "0x6c47381b040e5b588db23b2272f28eec"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

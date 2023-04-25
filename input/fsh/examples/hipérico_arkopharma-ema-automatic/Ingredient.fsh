@@ -3,7 +3,7 @@
 
 
 
-Instance: ingredient-for-hipricoarkopharma-hypericumperforatuml
+Instance: ingredient-for-hipericoarkopharma-hypericumperforatuml
 
 
 InstanceOf: IngredientUvEpi
@@ -36,13 +36,13 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-c2a5378488511eaedce26dde272c2290)
+* manufacturer.manufacturer = Reference(org-e0c4304ad134de29cff6bfff6e3a9ad7)
 
 
 
 
 
-Instance: ingredient-for-hipricoarkopharma-microcrystallinecellulose
+Instance: ingredient-for-hipericoarkopharma-microcrystallinecellulose
 
 
 InstanceOf: IngredientUvEpi
@@ -75,13 +75,13 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-c2a5378488511eaedce26dde272c2290)
+* manufacturer.manufacturer = Reference(org-e0c4304ad134de29cff6bfff6e3a9ad7)
 
 
 
 
 
-Instance: ingredient-for-hipricoarkopharma-magnesiumstearate
+Instance: ingredient-for-hipericoarkopharma-magnesiumstearate
 
 
 InstanceOf: IngredientUvEpi
@@ -114,13 +114,13 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-c2a5378488511eaedce26dde272c2290)
+* manufacturer.manufacturer = Reference(org-e0c4304ad134de29cff6bfff6e3a9ad7)
 
 
 
 
 
-Instance: ingredient-for-hipricoarkopharma-colloidalhydrophobicsilica
+Instance: ingredient-for-hipericoarkopharma-colloidalhydrophobicsilica
 
 
 InstanceOf: IngredientUvEpi
@@ -153,13 +153,13 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-c2a5378488511eaedce26dde272c2290)
+* manufacturer.manufacturer = Reference(org-e0c4304ad134de29cff6bfff6e3a9ad7)
 
 
 
 
 
-Instance: ingredient-for-hipricoarkopharma-maltodextrin
+Instance: ingredient-for-hipericoarkopharma-maltodextrin
 
 
 InstanceOf: IngredientUvEpi
@@ -192,4 +192,4 @@ Usage: #example
  
 
 
-* manufacturer.manufacturer = Reference(org-c2a5378488511eaedce26dde272c2290)
+* manufacturer.manufacturer = Reference(org-e0c4304ad134de29cff6bfff6e3a9ad7)

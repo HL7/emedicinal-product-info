@@ -2,12 +2,14 @@
 Instance: mp16598f252d07b4784b82ba43cf9e847e
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Dovato 50 mg/300 mg film-coated tablets"
-Description: "EU/1/97/049/001 Dovato 50 mg/300 mg film-coated tablets"
+Description: "Dovato 50 mg/300 mg film-coated tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "498163"
-
+ 
+* identifier[+].system = "EU/1/19/1370/001"
+* identifier[=].value = "https://spor.ema.europa.eu/pmswi" 
+* identifier[+].system = "0x073AF2E5B92AE19E8B67635AFFB3D6CA"
+* identifier[=].value = "https://www.who-umc.org/phpid"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

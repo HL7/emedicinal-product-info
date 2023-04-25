@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-dovato-dolutegravirsodium
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active DOLUTEGRAVIR SODIUM"
 Description: "DOLUTEGRAVIR SODIUM"
@@ -34,7 +40,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-173fde4cb6b1018cb7ec8ab708d3961c)
 
+
+
+
+
 Instance: ingredient-for-dovato-lamivudine
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active lamivudine"
 Description: "lamivudine"
@@ -69,7 +81,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-173fde4cb6b1018cb7ec8ab708d3961c)
 
+
+
+
+
 Instance: ingredient-for-dovato-microcrystallinecellulose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient microcrystalline cellulose"
 Description: "microcrystalline cellulose"
@@ -100,7 +118,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-173fde4cb6b1018cb7ec8ab708d3961c)
 
+
+
+
+
 Instance: ingredient-for-dovato-sodiumstarchglycolate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient sodium starch glycolate"
 Description: "sodium starch glycolate"
@@ -131,7 +155,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-173fde4cb6b1018cb7ec8ab708d3961c)
 
+
+
+
+
 Instance: ingredient-for-dovato-magnesiumstearate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient magnesium stearate"
 Description: "magnesium stearate"
@@ -162,7 +192,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-173fde4cb6b1018cb7ec8ab708d3961c)
 
+
+
+
+
 Instance: ingredient-for-dovato-mannitol
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient mannitol"
 Description: "mannitol"

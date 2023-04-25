@@ -8,7 +8,7 @@ Usage: #example
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
 * identifier.value = "flucelvax-1"
 * type = #document
-* timestamp = "2023-04-23T14:44:35Z"
+* timestamp = "2023-04-25T11:55:27Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/composition056f32ee5cf49404607e368bd8d3f2af"

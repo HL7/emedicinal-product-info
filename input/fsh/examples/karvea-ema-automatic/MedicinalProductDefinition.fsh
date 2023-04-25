@@ -2,9 +2,10 @@
 Instance: mpa2bd0171a7654dc24f7eb7e9338e1acc
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Karvea 75 mg tablet blister x28"
-Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
+Description: "Karvea 75 mg tablet blister x28"
 Usage: #example
 
+ 
 * identifier[+].system = "https://spor.ema.europa.eu/pmswi"
 * identifier[=].value = "EU/1/97/049/001" 
 * identifier[+].system = "https://www.who-umc.org/phpid"

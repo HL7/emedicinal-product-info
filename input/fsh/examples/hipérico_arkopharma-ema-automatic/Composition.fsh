@@ -19,7 +19,7 @@ Usage: #example
 
 * subject = Reference(mpaf8d2f6e4772c29a8ef9fbb165e80d28)
 * date = "2022-02-16T13:28:17Z"
-* author = Reference(org-c2a5378488511eaedce26dde272c2290)
+* author = Reference(org-e0c4304ad134de29cff6bfff6e3a9ad7)
 
 * title = "TEST PURPOSES ONLY - HIPÉRICO ARKOPHARMA cápsulas duras"
 * attester.mode = http://hl7.org/fhir/composition-attestation-mode#official

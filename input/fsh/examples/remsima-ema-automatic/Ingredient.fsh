@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-remsima-infliximab
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active INFLIXIMAB"
 Description: "INFLIXIMAB"
@@ -33,7 +39,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3c850a69e5187931f2198c5e63f933fe)
 
+
+
+
+
 Instance: ingredient-for-remsima-disodiumphosphatedihydrate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Disodium phosphate dihydrate"
 Description: "Disodium phosphate dihydrate"
@@ -63,7 +75,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3c850a69e5187931f2198c5e63f933fe)
 
+
+
+
+
 Instance: ingredient-for-remsima-sodiumdihydrogenphosphatemonohydrate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sodium dihydrogen phosphate monohydrate"
 Description: "Sodium dihydrogen phosphate monohydrate"
@@ -93,7 +111,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3c850a69e5187931f2198c5e63f933fe)
 
+
+
+
+
 Instance: ingredient-for-remsima-polysorbate80
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient POLYSORBATE 80"
 Description: "POLYSORBATE 80"
@@ -123,7 +147,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3c850a69e5187931f2198c5e63f933fe)
 
+
+
+
+
 Instance: ingredient-for-remsima-sucrose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sucrose"
 Description: "Sucrose"
