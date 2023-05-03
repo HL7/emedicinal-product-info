@@ -6,7 +6,7 @@ Description: "Pentasa Slow Release Tablets 1g"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/pmswi/#/"
-* identifier.value = "EU/1/96/007/035"
+* identifier.value = "77022"
 * identifier.use = #official
 
 * status = #active

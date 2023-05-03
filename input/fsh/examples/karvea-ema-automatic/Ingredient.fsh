@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-karvea-hypromellose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Hypromellose"
 Description: "Hypromellose"
@@ -28,7 +34,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-macrogol3000
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Macrogol 3000"
 Description: "Macrogol 3000"
@@ -57,7 +69,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-lactosemonohydrate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Lactose Monohydrate"
 Description: "Lactose Monohydrate"
@@ -86,7 +104,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-silicondioxide
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Silicon dioxide"
 Description: "Silicon dioxide"
@@ -115,7 +139,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-titaniumdioxide
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Titanium Dioxide"
 Description: "Titanium Dioxide"
@@ -144,7 +174,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-irbesartan
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active irbesartan"
 Description: "irbesartan"
@@ -177,7 +213,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-croscarmellosesodium
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Croscarmellose sodium"
 Description: "Croscarmellose sodium"
@@ -206,7 +248,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-microcrystallinecellulose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"
@@ -235,7 +283,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-magnesiumstearate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
@@ -264,7 +318,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-fe4fee458a4f24fccb770d311350f67c)
 
+
+
+
+
 Instance: ingredient-for-karvea-carnaubawax
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Carnauba wax"
 Description: "Carnauba wax"

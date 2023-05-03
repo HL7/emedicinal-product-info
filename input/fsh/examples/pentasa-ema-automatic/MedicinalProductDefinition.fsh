@@ -2,14 +2,14 @@
 Instance: mpb3a8d58c709a2281d8ad2a590fe81663
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product Pentasa Slow Release Tablets 1g"
-Description: "EU/1/97/049/001 Pentasa Slow Release Tablets 1g"
+Description: "Pentasa Slow Release Tablets 1g"
 Usage: #example
 
  
-* identifier[+].system = "https://spor.ema.europa.eu/pmswi"
-* identifier[=].value = "xx" 
+* identifier[+].system = "https://cima.aemps.es/ids"
+* identifier[=].value = "77022" 
 * identifier[+].system = "https://www.who-umc.org/phpid"
-* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E8271xx"
+* identifier[=].value = "0xF79CABF272B6A7EEF104DDDA44E827xx"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-calciumcarbonate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Calcium Carbonate"
 Description: "Calcium Carbonate"
@@ -32,7 +38,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-cholecalciferol
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active cholecalciferol"
 Description: "cholecalciferol"
@@ -65,7 +77,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-sodium
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Sodium"
 Description: "Sodium"
@@ -98,7 +116,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-lactosemonohydrate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active lactose monohydrate"
 Description: "lactose monohydrate"
@@ -131,7 +155,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-sucrose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active sucrose"
 Description: "sucrose"
@@ -164,7 +194,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-hydrogenatedsoybeanoil
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active hydrogenated soybean oil"
 Description: "hydrogenated soybean oil"
@@ -197,7 +233,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-anhydrouscitricacid
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Anhydrous citric acid"
 Description: "Anhydrous citric acid"
@@ -226,7 +268,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-sodiumbicarbonate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient sodium bicarbonate"
 Description: "sodium bicarbonate"
@@ -255,7 +303,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-povidone
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient povidone"
 Description: "povidone"
@@ -284,7 +338,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-saccharinsodium
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient saccharin sodium"
 Description: "saccharin sodium"
@@ -313,7 +373,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-sodiumcyclamate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient sodium cyclamate"
 Description: "sodium cyclamate"
@@ -342,7 +408,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-b7afabe350ac415f70e662ba6c703030)
 
+
+
+
+
 Instance: ingredient-for-calciovitaminad-macrogol6000
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient macrogol 6000"
 Description: "macrogol 6000"

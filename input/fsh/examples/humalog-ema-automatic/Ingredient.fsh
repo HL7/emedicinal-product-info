@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-humalog-glycerol
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Glycerol"
 Description: "Glycerol"
@@ -30,7 +36,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
+
+
+
+
 Instance: ingredient-for-humalog-hydrochloricacid
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Hydrochloric acid"
 Description: "Hydrochloric acid"
@@ -61,7 +73,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
+
+
+
+
 Instance: ingredient-for-humalog-sodiumhydroxide
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Sodium Hydroxide"
 Description: "Sodium Hydroxide"
@@ -92,7 +110,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
+
+
+
+
 Instance: ingredient-for-humalog-sterilewaterforinjection
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STERILE WATER FOR INJECTION"
 Description: "STERILE WATER FOR INJECTION"
@@ -123,7 +147,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
+
+
+
+
 Instance: ingredient-for-humalog-insulinlispro
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Insulin Lispro"
 Description: "Insulin Lispro"
@@ -158,7 +188,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
+
+
+
+
 Instance: ingredient-for-humalog-zincoxide
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Zinc Oxide"
 Description: "Zinc Oxide"
@@ -189,7 +225,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
+
+
+
+
 Instance: ingredient-for-humalog-metacresol
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Metacresol"
 Description: "Metacresol"
@@ -220,7 +262,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-3fdc76794516d7826890ab9f893e99c1)
 
+
+
+
+
 Instance: ingredient-for-humalog-trometamol
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Trometamol"
 Description: "Trometamol"

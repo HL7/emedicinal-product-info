@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-biktarvy-bictegravirsodium
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active BICTEGRAVIR SODIUM"
 Description: "BICTEGRAVIR SODIUM"
@@ -33,7 +39,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-715f8a161ed438d0584510e5b4512caa)
 
+
+
+
+
 Instance: ingredient-for-biktarvy-emtricitabine
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Emtricitabine"
 Description: "Emtricitabine"
@@ -67,7 +79,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-715f8a161ed438d0584510e5b4512caa)
 
+
+
+
+
 Instance: ingredient-for-biktarvy-tenofoviralafenamide
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active tenofovir alafenamide"
 Description: "tenofovir alafenamide"
@@ -101,7 +119,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-715f8a161ed438d0584510e5b4512caa)
 
+
+
+
+
 Instance: ingredient-for-biktarvy-microcrystallinecellulose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"
@@ -131,7 +155,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-715f8a161ed438d0584510e5b4512caa)
 
+
+
+
+
 Instance: ingredient-for-biktarvy-croscarmellosesodium
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Croscarmellose sodium"
 Description: "Croscarmellose sodium"
@@ -161,7 +191,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-715f8a161ed438d0584510e5b4512caa)
 
+
+
+
+
 Instance: ingredient-for-biktarvy-magnesiumstearate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"

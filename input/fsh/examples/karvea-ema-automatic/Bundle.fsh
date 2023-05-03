@@ -6,9 +6,9 @@ Description: "Bundle for Karvea 75 mg Package Leaflet ePI document"
 Usage: #example
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc" 
-* identifier.value = "EU/1/96/007/035"
+* identifier.value = "EU/1/97/049/001"
 * type = #document
-* timestamp = "2023-04-16T11:17:59Z"
+* timestamp = "2023-04-25T11:55:27Z"
 
 // Composition
 * entry[0].fullUrl = "Composition/compositionf4d45353edcb21af3718d3a0df94a4d8"
@@ -19,18 +19,18 @@ Usage: #example
 
 // ClinicalUseDefinition
 
-* entry[+].fullUrl = "ClinicalUseDefinition/contraindication-diabetismellitus"
-* entry[=].resource = contraindication-diabetismellitus 
+* entry[+].fullUrl = "ClinicalUseDefinition/cud-a40c2367ed3c1c715eacd432105752a0"
+* entry[=].resource = cud-a40c2367ed3c1c715eacd432105752a0 
 
 // ClinicalUseDefinition
 
-* entry[+].fullUrl = "ClinicalUseDefinition/indication-hypertension"
-* entry[=].resource = indication-hypertension 
+* entry[+].fullUrl = "ClinicalUseDefinition/cud-585e364c14debe29f6c6b564138aa400"
+* entry[=].resource = cud-585e364c14debe29f6c6b564138aa400 
 
 // ClinicalUseDefinition
 
-* entry[+].fullUrl = "ClinicalUseDefinition/interaction-methotrexate"
-* entry[=].resource = interaction-methotrexate 
+* entry[+].fullUrl = "ClinicalUseDefinition/cud-4fce9d5258f70f7d605059f97c24efa8"
+* entry[=].resource = cud-4fce9d5258f70f7d605059f97c24efa8 
  
 
  

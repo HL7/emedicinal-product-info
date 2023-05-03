@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-paracetamol-magnesiumstearate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
@@ -28,7 +34,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
+
+
+
+
 Instance: ingredient-for-paracetamol-povidoneunspecified
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient POVIDONE, UNSPECIFIED"
 Description: "POVIDONE, UNSPECIFIED"
@@ -57,7 +69,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
+
+
+
+
 Instance: ingredient-for-paracetamol-paracetamol
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active paracetamol"
 Description: "paracetamol"
@@ -90,7 +108,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
+
+
+
+
 Instance: ingredient-for-paracetamol-silicacolloidalanhydrous
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
 Description: "SILICA, COLLOIDAL ANHYDROUS"
@@ -119,7 +143,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
+
+
+
+
 Instance: ingredient-for-paracetamol-starchcorn
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, CORN"
 Description: "STARCH, CORN"
@@ -148,7 +178,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-65db33d6be47a433e6e9e9c2980ea7a4)
 
+
+
+
+
 Instance: ingredient-for-paracetamol-starchpotato
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient STARCH, POTATO"
 Description: "STARCH, POTATO"

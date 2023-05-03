@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-acmedrug-acmedruging3
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient acmedrug-ing3"
 Description: "acmedrug-ing3"
@@ -28,7 +34,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-2aff7154a8d952c895e8a03849a25108)
 
+
+
+
+
 Instance: ingredient-for-acmedrug-acmedruging2
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient acmedrug-ing2"
 Description: "acmedrug-ing2"
@@ -57,7 +69,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-2aff7154a8d952c895e8a03849a25108)
 
+
+
+
+
 Instance: ingredient-for-acmedrug-acmedruging1
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active acmedrug-ing1"
 Description: "acmedrug-ing1"

@@ -102,7 +102,7 @@ Usage: #example
 
 * active = true
 
-* type = $spor-rms#220000000033  "Medicines Regulatory Authority"
+* type = $spor-rms#220000000032  "Medicines Regulatory Authority"
 * type.text = "Medicines Regulatory Authority"
 * name = "European Medicines Agency"
 

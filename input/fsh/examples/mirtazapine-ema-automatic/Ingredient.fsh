@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-mirtazapine-magnesiumstearate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
@@ -19,7 +25,7 @@ Usage: #example
 
 // Reference to products
 * for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
-* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(mp7a7ff0f4e1993c2fdabba6c8d9931a52)
 * for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
@@ -28,7 +34,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
+
+
+
+
 Instance: ingredient-for-mirtazapine-lactosemonohydrate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient LACTOSE MONOHYDRATE"
 Description: "LACTOSE MONOHYDRATE"
@@ -48,7 +60,7 @@ Usage: #example
 
 // Reference to products
 * for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
-* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(mp7a7ff0f4e1993c2fdabba6c8d9931a52)
 * for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
@@ -57,7 +69,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
+
+
+
+
 Instance: ingredient-for-mirtazapine-mirtazapine
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active Mirtazapine"
 Description: "Mirtazapine"
@@ -81,7 +99,7 @@ Usage: #example
 
 // Reference to products
 * for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
-* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(mp7a7ff0f4e1993c2fdabba6c8d9931a52)
 * for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
@@ -90,7 +108,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
+
+
+
+
 Instance: ingredient-for-mirtazapine-hydroxypropylcelluloseunspecified
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient HYDROXYPROPYL CELLULOSE, UNSPECIFIED"
 Description: "HYDROXYPROPYL CELLULOSE, UNSPECIFIED"
@@ -110,7 +134,7 @@ Usage: #example
 
 // Reference to products
 * for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
-* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(mp7a7ff0f4e1993c2fdabba6c8d9931a52)
 * for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
@@ -119,7 +143,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
+
+
+
+
 Instance: ingredient-for-mirtazapine-silicacolloidalanhydrous
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient SILICA, COLLOIDAL ANHYDROUS"
 Description: "SILICA, COLLOIDAL ANHYDROUS"
@@ -139,7 +169,7 @@ Usage: #example
 
 // Reference to products
 * for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
-* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(mp7a7ff0f4e1993c2fdabba6c8d9931a52)
 * for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 
@@ -148,7 +178,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-dbf32c7ed470ffbeb6060201f32edb29)
 
+
+
+
+
 Instance: ingredient-for-mirtazapine-cornstarch
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient CORN STARCH"
 Description: "CORN STARCH"
@@ -168,7 +204,7 @@ Usage: #example
 
 // Reference to products
 * for = Reference(mid-e762a2f54b0b24fca4744b1bb7524a5b)
-* for[+] = Reference(mp817d49420419b04e8145f2f4031392d3)
+* for[+] = Reference(mp7a7ff0f4e1993c2fdabba6c8d9931a52)
 * for[+] = Reference(ap-e762a2f54b0b24fca4744b1bb7524a5b)
 // Reference to Organization:  Reference to MAH
 

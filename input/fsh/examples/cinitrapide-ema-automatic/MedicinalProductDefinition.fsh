@@ -2,12 +2,14 @@
 Instance: mp1453e0f16ff6c1d3106ed737a7857578
 InstanceOf: MedicinalProductDefinitionUvEpi
 Title: "Medicinal Product BLASTON 1 mg tablets"
-Description: "EU/1/97/049/001 BLASTON 1 mg tablets"
+Description: "BLASTON 1 mg tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
-* identifier.value = "ss"
-
+ 
+* identifier[+].system = "https:://cima.aemps.es/ids"
+* identifier[=].value = "59.032" 
+* identifier[+].system = "https://www.who-umc.org/phpid"
+* identifier[=].value = "0xbb82cd10ab2add752b2b9224931077b2"
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct "Medicinal Product"
 
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human "Human use"

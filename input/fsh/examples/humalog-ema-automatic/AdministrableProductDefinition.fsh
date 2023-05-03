@@ -6,7 +6,7 @@ Description: "Humalog Mix50 Insulin KwikPen, 100 U/ml, Suspension for injection 
 Usage: #example
 
 * identifier.system = $phpid
-* identifier.value = "0x073AF2E5B92AE19E8B67635AFFB3D6CA" 
+* identifier.value = "humalog-id" 
 
 * status = #active
 

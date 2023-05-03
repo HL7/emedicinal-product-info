@@ -1,5 +1,11 @@
 
+
+
+
+
 Instance: ingredient-for-pentasa-mesalazine
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-active mesalazine"
 Description: "mesalazine"
@@ -32,7 +38,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
+
+
+
+
 Instance: ingredient-for-pentasa-povidone
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Povidone"
 Description: "Povidone"
@@ -61,7 +73,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
+
+
+
+
 Instance: ingredient-for-pentasa-ethylcellulose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Ethylcellulose"
 Description: "Ethylcellulose"
@@ -90,7 +108,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
+
+
+
+
 Instance: ingredient-for-pentasa-magnesiumstearate
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Magnesium stearate"
 Description: "Magnesium stearate"
@@ -119,7 +143,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
+
+
+
+
 Instance: ingredient-for-pentasa-talc
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Talc"
 Description: "Talc"
@@ -148,7 +178,13 @@ Usage: #example
 
 * manufacturer.manufacturer = Reference(org-6ade044addd6563de0baefebb1cceb8e)
 
+
+
+
+
 Instance: ingredient-for-pentasa-microcrystallinecellulose
+
+
 InstanceOf: IngredientUvEpi
 Title: "Ingredient-excipient Microcrystalline cellulose"
 Description: "Microcrystalline cellulose"

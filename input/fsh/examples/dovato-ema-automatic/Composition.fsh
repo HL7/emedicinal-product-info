@@ -1,8 +1,8 @@
 
 Instance: composition16598f252d07b4784b82ba43cf9e847e
 InstanceOf: CompositionUvEpi
-Title: "Composition for  Dovato 50 mg/300 mg film-coated tablets Package Leaflet"
-Description:  "Composition for  Dovato 50 mg/300 mg film-coated tablets Package Leaflet"
+Title: "Composition for Dovato 50 mg/300 mg film-coated tablets Package Leaflet"
+Description:  "Composition for Dovato 50 mg/300 mg film-coated tablets Package Leaflet"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
@@ -21,7 +21,7 @@ Usage: #example
 * date = "2022-02-16T13:28:17Z"
 * author = Reference(org-173fde4cb6b1018cb7ec8ab708d3961c)
 
-* title = "TEST PURPOSES ONLY -  Dovato 50 mg/300 mg film-coated tablets"
+* title = "TEST PURPOSES ONLY - Dovato 50 mg/300 mg film-coated tablets"
 * attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
 * attester.time =  "2022-02-16T13:28:17Z"
 * language = #en
@@ -92,9 +92,9 @@ not listed in this leaflet. See section 4.</li>
           
 
 * section[=].section[+]
-  * title = "1. What  Dovato 50 mg/300 mg film-coated tablets is and what it is used for"
+  * title = "1. What Dovato 50 mg/300 mg film-coated tablets is and what it is used for"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "1. What  Dovato 50 mg/300 mg film-coated tablets is and what it is used for"
+  * code.text = "1. What Dovato 50 mg/300 mg film-coated tablets is and what it is used for"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Dovato is a medicine that contains two active ingredients used to treat human immunodeficiency virus (HIV)
 infection: dolutegravir and lamivudine. Dolutegravir belongs to a group of anti-retroviral medicines called
@@ -110,9 +110,9 @@ of your treatment.</p>         </div>"""
 
              
 * section[=].section[+]
-  * title = "2. What you need to know before you take  Dovato 50 mg/300 mg film-coated tablets"
+  * title = "2. What you need to know before you take Dovato 50 mg/300 mg film-coated tablets"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "2. What you need to know before you take  Dovato 50 mg/300 mg film-coated tablets"
+  * code.text = "2. What you need to know before you take Dovato 50 mg/300 mg film-coated tablets"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Do not take Dovato</p>
 <ul>
@@ -204,9 +204,9 @@ as possible.</p>
 </ul>         </div>"""   
                     
 * section[=].section[+]
-  * title = "3. How to take  Dovato 50 mg/300 mg film-coated tablets"
+  * title = "3. How to take Dovato 50 mg/300 mg film-coated tablets"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "3. How to take  Dovato 50 mg/300 mg film-coated tablets"
+  * code.text = "3. How to take Dovato 50 mg/300 mg film-coated tablets"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Always take this medicine exactly as your doctor has told you. Check with your doctor or pharmacist if you
 are not sure.</p>
@@ -394,9 +394,9 @@ in this leaflet. You can also report side effects directly via the national repo
 Appendix V. By reporting side effects you can help provide more information on the safety of this medicine.</p>         </div>"""      
         
 * section[=].section[+]
-  * title = "5. How to store  Dovato 50 mg/300 mg film-coated tablets"
+  * title = "5. How to store Dovato 50 mg/300 mg film-coated tablets"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "5. How to store  Dovato 50 mg/300 mg film-coated tablets"
+  * code.text = "5. How to store Dovato 50 mg/300 mg film-coated tablets"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>  <p>Keep this medicine out of the sight and reach of children.</p>
 <p>Do not use this medicine after the expiry date which is stated on the carton and bottle after EXP. The expiry
@@ -430,10 +430,10 @@ Not all pack sizes may be available in your c
 ountry</p>         </div>"""      
 
 
-Instance: composition50a5afca79d8be359ec08791f767639f
+Instance: compositione722f6782d3f34f86982e14386c8811d
 InstanceOf: CompositionUvEpi
-Title: "Composition for Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película Package Leaflet"
-Description:  "Composition for Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película Package Leaflet"
+Title: "Composition for Dovato 50 mg/300 mg comprimidos recubiertos con película Package Leaflet"
+Description:  "Composition for Dovato 50 mg/300 mg comprimidos recubiertos con película Package Leaflet"
 Usage: #example
 
 * identifier.system = "https://spor.ema.europa.eu/rmswi/"
@@ -452,7 +452,7 @@ Usage: #example
 * date = "2022-04-29T13:28:17Z"
 * author = Reference(org-173fde4cb6b1018cb7ec8ab708d3961c)
 
-* title = "TEST PURPOSES ONLY - Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"
+* title = "TEST PURPOSES ONLY - Dovato 50 mg/300 mg comprimidos recubiertos con película"
 * attester.mode = http://hl7.org/fhir/composition-attestation-mode#official
 * attester.time =  "2022-04-29T13:28:17Z"
 * language = #es
@@ -517,9 +517,9 @@ Usage: #example
           
 
 * section[=].section[+]
-  * title = "1. What Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película is and what it is used for"
+  * title = "1. What Dovato 50 mg/300 mg comprimidos recubiertos con película is and what it is used for"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "1. What Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película is and what it is used for"
+  * code.text = "1. What Dovato 50 mg/300 mg comprimidos recubiertos con película is and what it is used for"
   * text.status = #additional
    
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
@@ -536,9 +536,9 @@ Usage: #example
 
              
 * section[=].section[+]
-  * title = "2. What you need to know before you take Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"
+  * title = "2. What you need to know before you take Dovato 50 mg/300 mg comprimidos recubiertos con película"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "2. What you need to know before you take Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"
+  * code.text = "2. What you need to know before you take Dovato 50 mg/300 mg comprimidos recubiertos con película"
   * text.status = #additional
    
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
@@ -555,9 +555,9 @@ Usage: #example
    
                     
 * section[=].section[+]
-  * title = "3. How to take Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"
+  * title = "3. How to take Dovato 50 mg/300 mg comprimidos recubiertos con película"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "3. How to take Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"
+  * code.text = "3. How to take Dovato 50 mg/300 mg comprimidos recubiertos con película"
   * text.status = #additional
    
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
@@ -589,9 +589,9 @@ Usage: #example
       
         
 * section[=].section[+]
-  * title = "5. How to store Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"
+  * title = "5. How to store Dovato 50 mg/300 mg comprimidos recubiertos con película"
   * code = https://spor.ema.europa.eu/rmswi/#100000155538
-  * code.text = "5. How to store Prospecto Dovato 50 mg/300 mg comprimidos recubiertos con película"
+  * code.text = "5. How to store Dovato 50 mg/300 mg comprimidos recubiertos con película"
   * text.status = #additional
    
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'>
