@@ -1,0 +1,469 @@
+{% assign compositionResource = bundle.entry | where: "resource.resourceType", "Composition" | first %}
+{% assign composition = compositionResource.resource %}
+
+
+<div>
+
+
+  {% if composition.status %}
+    <b>Composition status:</b>
+    {{ composition.status }}{% endif %}
+  <br/>
+  {% if composition.type %}
+    <b>Composition type:</b>
+    {{ composition.type.coding[0].display }}{% endif %}
+  <br/>
+  <br/>
+
+  <h2>Narrative Text</h2>
+  <br/>
+
+  {% for sec in composition.section %}
+    <h3>{{ sec.title }}</h3>
+    <p>
+      {{ sec.text.div }}</p>
+    {% if sec.section %}
+      {% for sec2 in sec.section %}
+
+        <h4>{{ sec2.title }}</h4>
+        <p>
+          {{ sec2.text.div }}</p>
+
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+</div>
+
+<h2>Product Information</h2>
+{% assign mpdr = bundle.entry | where: "resource.resourceType", "MedicinalProductDefinition" | first %}
+{% assign mpd = mpdr.resource %}
+  <div class="container rcorners mpd">
+  {% comment %}print the name - current name[0], should be all names{% endcomment %}
+  <h4 class="nonumbers">
+    {{ mpd.name[0].productName }}
+  </h4>
+
+  {% comment %}and name parts{% endcomment %}
+  {% for namepart in mpd.name[0].namePart %}
+    <p>
+      {{ namepart.type.coding[0].display }}:
+      <b>
+        {{ namepart.part }}
+      </b>
+    </p>
+  {% endfor %}
+  {% comment %}and MPD identifiers{% endcomment %}
+  {% for pid in mpd.identifier %}
+    {{ pid.system | split: '/' | last | upcase }}:
+    <b>
+      {{ pid.value }}
+    </b>
+  {% endfor %}
+
+  {% comment %}for each name (currently [0] but should be all) print the languages{% endcomment %}
+  {% comment %}FIX{% endcomment %}
+  {% if mpd.name[0].countryLanguage %}
+    <div>
+      {% for lang in mpd.name[0].countryLanguage %}
+        <p>
+          Country:
+          <b>
+            {{ lang.country.coding[0].display }}
+          </b>
+        </p>
+        <p>
+          Language:
+          <b>
+            {{ lang.language.coding[0].display }}
+          </b>
+        </p>
+
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% comment %}print status and domain{% endcomment %}
+  <div>
+    <p>
+      status: {{ mpd.status.coding[0].display }}
+    </p>
+  </div>
+  <div>
+    <p>
+      Domain: {{ mpd.domain.coding[0].display }}
+    </p>
+  </div>
+  {% comment %}print combined dose form - if there's many, this should be adjusted{% endcomment %}
+  <div>
+    <p>
+      Combined pharmaceutical dose form: {{ mpd.combinedPharmaceuticalDoseForm.coding[0].display }}
+    </p>
+  </div>
+  <div>
+    <p>
+      Legal Status of Supply: {{ mpd.legalStatusOfSupply.coding[0].display }}
+    </p>
+  </div>
+
+  {% for classif in mpd.classification %}
+    {% for class in classif.coding %}
+      {{ class.display }} ({{ class.code }}) <br/>
+    {% endfor %}
+  {% endfor %}
+
+
+  {% comment %}Get all RAs (RegAuthorization) from the Bundle{% endcomment %}
+  {% assign ras = bundle.entry | where: "resource.resourceType", "RegulatedAuthorization" %}
+    {% for rar in ras %}
+    {% comment %}get the RA resource{% endcomment %}
+    {% assign ra = rar.resource %}
+    {% comment %}mpdtid = mpd prepended ID - will be "MedicinalProductDefinition/<id>" identifiers{% endcomment %}
+    {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
+    {% comment %}if the current looped RA points to the MPD as subject{% endcomment %}
+    {% if ra.subject[0].reference == mpdtid %}
+      <div class="container rcorners ra listcontainer" title="Authorisation">
+
+        <p class="divtitle">Authorisation {{ forloop.index }} of {{ ras | size }}</p>
+        Auth id:
+        <b>
+          {% for raid in ra.identifier %}
+            {{ raid.value | join: ", " }}
+          {% endfor %}
+        </b>
+
+        <p>
+          Region:
+          <b>
+            {% for rareg in ra.region %}
+              {{ rareg.coding[0].display }}
+            {% endfor %}
+          </b>
+        </p>
+        <p>
+          Type:
+          <b>
+            {{ ra.type.coding[0].display }}
+          </b>
+        </p>
+
+        {% assign holderorg = ra.holder.reference | split: '/' | last %}
+      </p>
+
+      {% comment %}Get Orgs from Bundle {% endcomment %}
+      {% assign orgentries = bundle.entry | where: "resource.resourceType", "Organization" %}
+
+        {% for orgentry in orgentries %}
+        {% assign org = orgentry.resource %}
+        {% assign orgid = org.id %}
+        {% assign orgrefid = org.id | prepend: 'Organization/' %}
+
+
+        {% comment %}See which of the Orgs is referenced from the RA{% endcomment %}
+        {% if ra.holder.reference == orgrefid %}
+          <p>
+            Holder:
+            <b>{{ org.name }} ({{ org.identifier[0].value }})</b>
+
+          </p>
+          <p></p>
+        {% endif %}
+      {% endfor %}
+
+
+
+      <p>
+        Status:
+        <b>
+          {{ ra.status.coding[0].display }} ({{ ra.statusDate }})
+        </b>
+      </p>
+
+    </div>
+
+  {% endif %}
+{% endfor %}
+
+{% comment %}
+Generic way to iterate a linked structure
+{% assign ras = entry | where: "resource.resourceType","RegulatedAuthorization"%}
+{% assign rasf = ras | where: "subject[0].reference", mpd.id | prepend: 'MedicinalProductDefinition/' %}
+{% for rar in rasf %}
+{% assign ra = rar.resource %}
+
+{% endfor %}
+{% endcomment %}
+
+{% comment %}Get PPDs from Bundle {% endcomment %}
+{% assign ppds = bundle.entry | where: "resource.resourceType", "PackagedProductDefinition" %}
+
+  <div class="container  rcorners bleft listcontainer">
+  {% for ppdr in ppds %}
+    {% assign ppd = ppdr.resource %}
+    {% comment %}Get PPDs that link to MPD, via packagefor[0] {% endcomment %}
+    {% comment %}SHOULD FIX: Currently only packageFor[0], but should be any package {% endcomment %}
+      <p class="divtitle"> Package {{ forloop.index }} of {{ ppds | size }}</p>
+    {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
+    {% comment %}FIX{% endcomment %}
+
+
+    {% if ppd.packageFor[0].reference == mpdtid %}
+      <div class="container rcorners ppd">
+
+        {% for ppid in ppd.identifier %}
+          {{ ppid.system | split: '/' | last | upcase }}:
+          <b>
+            {{ ppid.value }}
+          </b>
+        {% endfor %}
+        <p>
+          Description:
+          <b>
+            {{ ppd.description }}
+          </b>
+        </p>
+        Marketing Status:
+        <b>
+          {{ ppd.status.coding[0].code }}</b>
+
+        <p>
+          Contained Quantity:
+          <ul>
+            {% for quant in ppd.containedItemQuantity %}
+              <li>
+                {{ quant.value }} {{ quant.code | pluralize: quant.code }}</li>
+            {% endfor %}
+          </ul>
+        </p>
+
+
+        <p>
+          {% assign pckg = ppd.packaging %}
+          {% if pckg.quantity % %}
+            <br/>
+            <div class="container rcorners pack bleft">
+              <p>Package: {{ pckg.quantity }} {{ pckg.type.coding[0].display }} [{{ pckg.material[0].coding[0].display }}]</p>
+
+            </div>
+          {% endif %}
+
+          </p>
+
+
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% comment %}
+  {% assign ppds = entry | where: "resource.resourceType","PackagedProductDefinition"%}
+
+  {% for ppdr in ppds %}
+  {% assign ppd = ppdr.resource %}
+
+  Package {{forloop.index}} of {{ ppds | size }}
+  {% assign mpdfullid= mpd.id | prepend: 'MedicinalProductDefinition/' %}
+  {% if ppd.packageFor[0].reference == mpdfullid %}
+  <div
+  class="container   rcorners ppd">
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endcomment %}{% comment %}Get AdminProdDefs from Bundle {% endcomment %}
+
+  {% assign apds = bundle.entry | where: "resource.resourceType", "AdministrableProductDefinition" %}
+
+  {% if apds %}
+    <div class="container rcorners apd listcontainer">
+      {% for apdr in apds %}
+        {% assign apd = apdr.resource %}
+
+        {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
+        {% comment %}Do this only if the APD-formOf links to the MPD {% endcomment %}
+        {% comment %}FIX - currently only [0], should be  any{% endcomment %}
+          {% if apd.formOf[0].reference == mpdtid %}
+            <div class="container bleft rcorners apd"> <p class="divtitle">Administrable Product ({{ forloop.index }} of {{ apds | size }})</p>
+            <p>
+              Dose form:
+              <b>
+                {{ apd.administrableDoseForm.coding[0].display }}
+              </b>
+            </p>
+
+            <p>
+              Presentation unit:
+              <b>
+                {{ apd.unitOfPresentation.coding[0].display }}
+              </b>
+            </p>
+
+            Contents (Manuf. Items):
+            <ul>
+              {% assign mids = bundle.entry | where: "resource.resourceType", "ManufacturedItemDefinition" %}
+              {% for midr in mids %}
+
+                {% assign mid = midr.resource %}
+
+                {% assign midtid = midr.resource.id | prepend: 'ManufacturedItemDefinition/' %}
+
+                {% if apd.producedFrom[0].reference == midtid %}
+                  <div class="container   rcorners mid">
+                    <b>{{ mid.id }}</b>
+                    <p>
+                      Dose form:
+                      <b>{{ mid.manufacturedDoseForm.coding[0].display }}</b>
+                    </p>
+                    <p>
+                      Presentation unit:
+                      <b>{{ mid.unitOfPresentation.coding[0].display }}</b>
+                    </p>
+                    <p>
+                      Manufactured Dose Form:
+                      <b>{{ mid.manufacturedDoseForm.coding[0].display }}</b>
+                    </p>
+                    Ingredients:
+                    <ul>
+                      {% assign midings = bundle.entry | where: "resource.resourceType", "Ingredient" %}
+                      {% for midingr in midings %}
+                        {% assign miding = midingr.resource %}
+                        {% assign midting = mid.id | prepend: 'ManufacturedItemDefinition/' %}
+
+                        {% if miding.for[0].reference == midting %}
+                          <div class="container   rcorners miding">
+                            <b>
+                              {{ miding.id }}</b>
+                            <p>
+                              Status:
+                              <b>
+                                {{ miding.status | capitalize }}
+                              </b>
+                            </p>
+
+                            <p>
+                              Role:
+                              <b>
+                                {{ miding.role.coding[0].display }}
+                              </b>
+                            </p>
+
+                            <p>
+                              Substance:
+                              <b>
+                                {{ miding.substance.code.concept.coding[0].display }}
+                              </b>
+                            </p>
+
+                            {% for strn in miding.substance.strength %}
+                              {% if strn.concentrationRatio %}
+                                <p>
+                                  Concentration strength:
+                                  <b>
+                                    {{ strn.concentrationRatio.numerator.value }}{{ strn.concentrationRatio.numerator.unit }} /
+                                    {{ strn.concentrationRatio.denominator.value }}{{ strn.concentrationRatio.denominator.unit }}
+                                  </b>
+                                </p>
+                              {% endif %}
+                            {% endfor %}
+
+                            {% for strn in miding.substance.strength %}
+                              {% if strn.presentationRatio %}
+                                <p>
+                                  Presentation strength:
+                                  <b>
+                                    {{ strn.presentationRatio.numerator.value }} {{ strn.presentationRatio.numerator.unit }} /
+
+                                    {{ strn.presentationRatio.denominator.value }} {{ strn.presentationRatio.denominator.unit }}
+                                  </b>
+                                </p>
+                              {% endif %}
+                            {% endfor %}
+
+
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </ul>
+            {% comment %}Get Ings from Bundle {% endcomment %}
+            {% assign apdings = resource.entry | where: "resource.resourceType", "Ingredient" %}
+              {% for apdingr in apdings %}
+              {% assign apding = apdingr.resource %}
+              >
+              {% assign apdingtid = apding.id | prepend: 'AdministrableProductDefinition/' %}
+              {% assign apdtid = apd.id | prepend: 'AdministrableProductDefinition/' %}
+
+              {% comment %}if the ingredient's SECOND (TO FIX) .for is the current APD, {% endcomment %}
+              {% if apding.for[2].reference == apdtid %}
+                <div class="container   rcorners apding">
+                  Ingredients:
+
+                  <b>
+                    {{ apding.id }}</b>
+                  <p>
+                    Status:
+                    <b>
+                      {{ apding.status | capitalize }}
+                    </b>
+                  </p>
+
+                  <p>
+                    Role:
+                    <b>
+                      {{ apding.role.coding[0].display }}
+                    </b>
+                  </p>
+
+                  <p>
+                    Substance:
+                    <b>
+                      {{ apding.substance.code.concept.coding[0].display }}
+                    </b>
+                  </p>
+
+                  {% for strn in apding.substance.strength %}
+                    {% if strn.concentrationRatio %}
+                      <p>
+                        Concentration strength:
+                        <b>
+                          {{ strn.concentrationRatio.numerator.value }}{{ strn.concentrationRatio.numerator.unit }} /
+                          {{ strn.concentrationRatio.denominator.value }}{{ strn.concentrationRatio.denominator.unit }}
+                        </b>
+                      </p>
+                    {% endif %}
+                  {% endfor %}
+
+                  {% for strn in apding.substance.strength %}
+                    {% if strn.presentationRatio %}
+                      <p>
+                        Presentation strength:
+                        <b>
+                          {{ strn.presentationRatio.numerator.value }} {{ strn.presentationRatio.numerator.unit }} /
+
+                          {{ strn.presentationRatio.denominator.value }} {{ strn.presentationRatio.denominator.unit }}
+                        </b>
+                      </p>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            {% endfor %}
+            Route of administration:
+            <ul>
+              {% for roas in apd.routeOfAdministration %}
+                <li>
+                  <b>
+                    {{ roas.code.coding[0].display }}
+                  </b>
+                </li>
+              {% endfor %}
+            </ul>
+
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

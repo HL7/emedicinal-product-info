@@ -16,7 +16,7 @@ Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $list-order  = http://terminology.hl7.org/CodeSystem/list-order 
 Alias: $example-org = http://example.org
-
+Alias: $snomed = http://snomed.info/sct
 // SPOR Code systems (lists)
 	
 Alias: $spor-precautionsForStorage-cs  = https://spor.ema.europa.eu/lists/100000073344
