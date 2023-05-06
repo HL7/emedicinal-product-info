@@ -146,13 +146,13 @@ Description: "Marketing Status"
 * ^experimental = false
 * codes from system $spor-marketingStatus-cs
 
-//==========================
+/* //==========================
 ValueSet: VsAuthorizationStatus
 Id: authorizationStatus
 Title: "Authorization Status"
 Description: "Authorization Status"
 * ^experimental = false
-* codes from system $spor-regulatoryEntitlementStatus-cs // to be reviewed
+* codes from system $spor-regulatoryEntitlementStatus-cs // to be reviewed */
 
 //==========================
 ValueSet: VsSecondaryPrimaryPackType
