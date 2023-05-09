@@ -12,7 +12,7 @@ Description: "PackagedProductDefinition (ePI)"
 * name ^example.valueString = "3 ml cartridge (glass) in a pre-filled pen"
 * name ^example.label = "name"
 
-* type from VsPackageType (preferred)
+* type // from VsPackageType (preferred)
   * ^short = "A high level category e.g., medicinal product pack, sample pack, shipping container."
 
 * packageFor only Reference(MedicinalProductDefinitionUvEpi)
@@ -27,12 +27,12 @@ Description: "PackagedProductDefinition (ePI)"
 * description ^short = "Narrative description of the overall pack; e.g., description of a sample pack"
 
 * legalStatusOfSupply ^short = "The legal status of supply of the packaged item as classified by the regulator."
-  * code from VsLegalStatusOfSupply (preferred)
+  * code from VsLegalStatusOfSupply (example)
   * jurisdiction from http://terminology.hl7.org/ValueSet/v3-Country2 (preferred) //VsCountry
 
 * marketingStatus ^short = "Allows specifying that an item is on the market for sale, or that it is not available, and the dates and locations associated."
   * country from http://terminology.hl7.org/ValueSet/v3-Country2 (preferred) //VsCountry
-  * status from VsMarketingStatus (preferred)
+  * status from VsMarketingStatus (example)
   * dateRange.start
   * dateRange.end
   * restoreDate
@@ -44,15 +44,15 @@ Description: "PackagedProductDefinition (ePI)"
 
 * packaging
   * identifier 1..
-    * system from VsDataCarrierIdSystem (preferred)
+    * system from VsDataCarrierIdSystem (example)
     * system 1..
     * value 1..
-  * type from VsSecondaryPrimaryPackType (preferred)
+  * type from VsContainerType (example)
   * quantity 
-  * material from VsPackageMaterial (preferred)
+  * material from VsPackageMaterial (example)
   * shelfLifeStorage 
     * ^short = "Shelf Life and storage information."
-    * type from VsShelfLifeType (preferred)
+    * type from VsShelfLifeType (example)
     * periodDuration
       * value
       * unit

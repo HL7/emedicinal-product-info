@@ -39,7 +39,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * ^short = "Marketing status of the medicinal product in contrast to marketing authorization"
   * status from VsMarketingStatus (preferred)
 
-* packagedMedicinalProduct from VsPackageType (preferred)
+* packagedMedicinalProduct // from VsPackageType (preferred)
   * ^short = "High level package type for this product. E.g., sample pack" 
 
 * name 1..

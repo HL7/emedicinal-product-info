@@ -35,7 +35,7 @@ Alias: $spor-regulatoryEntitlementType-cs = https://spor.ema.europa.eu/lists/220
 Alias: $spor-regulatoryEntitlementStatus-cs = https://spor.ema.europa.eu/lists/100000072049
 
 
-// $edqm = http://standardterms.edqm.eu
+Alias: $edqm = http://standardterms.edqm.eu
 
 // MedDRA
 Alias: $meddra = http://terminology.hl7.org/CodeSystem/mdr

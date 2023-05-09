@@ -155,20 +155,63 @@ Description: "Authorization Status"
 * codes from system $spor-regulatoryEntitlementStatus-cs // to be reviewed */
 
 //==========================
-ValueSet: VsSecondaryPrimaryPackType
+/* ValueSet: VsPackagingType
 Id: secondaryPrimaryPackType
 Title: "Pack Type"
 Description: "Pack Type"
 * ^experimental = false
-* codes from system $spor-packType-cs
+* codes from system $spor-packType-cs */
 
 //==========================
-ValueSet: VsPackageType
-Id: packageType
-Title: "High level Pack Type"
-Description: "High level type of pack; e.g., medicinal product pack, sample pack, shipping container."
+ValueSet: VsContainerType
+Id: containerType
+Title: "Container Type"
+Description: "Type of container"
 * ^experimental = false
-* codes from system http://hl7.org/fhir/package-type //http://hl7.org/fhir/ValueSet/package-type // FHIR terminology
+* $edqm#30001000 "Ampoule"
+* $edqm#30004000 "Bag"
+* $edqm#30006000 "Barrel"
+* $edqm#30007000 "Blister"
+* $edqm#30008000 "Bottle"
+* $edqm#30009000 "Box"
+* $edqm#30014000 "Cartridge"
+* $edqm#30015500 "Container"
+* $edqm#30018000 "Dart"
+* $edqm#30018300 "Dose-dispenser cartridge"
+* $edqm#30020000 "Dredging container"
+* $edqm#30023000 "Dropper container"
+* $edqm#30023005 "Fixed cryogenic vessel"
+* $edqm#30024000 "Gas cylinder"
+* $edqm#13156000 "Gas cylinder bundle"
+* $edqm#30032000 "Jar"
+* $edqm#30036005 "Mobile cryogenic vessel"
+* $edqm#30038000 "Multidose container"
+* $edqm#30039000 "Multidose container with airless pump"
+* $edqm#30039400 "Multidose container with metering pump"
+* $edqm#30039500 "Multidose container with pump"
+* $edqm#13142000 "Pouch"
+* $edqm#30048000 "Pour-on container"
+* $edqm#30049000 "Pre-filled gastroenteral tube"
+* $edqm#13063000 "Pre-filled injector"
+* $edqm#13074000 "Pre-filled oral applicator"
+* $edqm#13073000 "Pre-filled oral syringe"
+* $edqm#30050000 "Pre-filled pen"
+* $edqm#30051000 "Pre-filled syringe"
+* $edqm#30052000 "Pressurised container"
+* $edqm#30053500 "Roll-on container"
+* $edqm#30054000 "Sachet"
+* $edqm#30057000 "Single-dose container"
+* $edqm#30060000 "Spray container"
+* $edqm#30064500 "Straw"
+* $edqm#30065000 "Strip"
+* $edqm#30066000 "Tablet container"
+* $edqm#13151000 "Tablet tube"
+* $edqm#30067000 "Tube"
+* $edqm#13059000 "Unit-dose blister"
+* $edqm#30069000 "Vial"
+* $edqm#13125000 "Wrapper"
+
+
 
 //==========================
 ValueSet: VsCountry
@@ -297,7 +340,7 @@ Id: dataCarrierIdSystem
 Title: "Data Carrier Identifiers"
 Description: "Listing of identifiers for Data Carriers"
 * ^experimental = false
-* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // FHIR terminology to be reviewed
+* $uri#https://www.gs1.org/gtin // 
 
 //==========================
 ValueSet: VsCaseIdSystem
