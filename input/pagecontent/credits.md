@@ -14,7 +14,7 @@ Project Team Members:
 * **Evinn Drusys** - AEMPS
 * **Adam Kover** - Felleskatalogen
 * **Bente Jansen** - Felleskatalogen
-* **Arif Govani** -  - DataPharm
+* **Arif Govani** - DataPharm
 * **Philippe Michiels** - DataPharm
 * **Michael Loewe** - Rote Liste
 * **Carina Bachman** - Rote Liste
