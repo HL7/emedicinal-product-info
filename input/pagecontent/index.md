@@ -62,14 +62,4 @@ The Core FHIR ePI Profile was defined by representatives from Gravitate Health, 
 The national FHIR ePI profiles were defined by representatives from the health authority for the corresponding jurisdiction, representatives from Gravitate Health, and HL7’s Vulcan Accelerator. 
 On behalf of the international community and health authorities, this guide is maintained by HL7’s Biomedical Research and Regulation (BR&R) Working Group. 
 
-### Authors and Contributors
 
-| Role | Name | Organization |
-|:--------|:-------|:--------|:--------|
-| Co-Lead | Craig Anderson | Pfizer |
-| Co-Lead | Catherine Chronaki | HL7 Europe |
-| Technical Lead | Jens Kristian Villadsen | Trifork |
-| Technical Lead | Giorgio Cangioli | HL7 Europe |
-| Gravitate Health Contributors | | |
-| HL7 Vulcan Contributors | | |
-{: rules="groups"}

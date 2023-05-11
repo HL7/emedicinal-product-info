@@ -1,0 +1,34 @@
+### Credits 
+This Implementation Guide was developed under the auspices of the HL7 Vulcan Electronic Product Information project team. 
+
+Contributing individuals and organisations are:
+
+Current ePI project Co-Chairs:
+* **Craig Anderson** - Pfizer
+* **Catherine Chronaki** - HL7 Europe
+
+Project Team Members (in no particular order):
+* **Jens Kristian Villadsen** - Trifork
+* **Giorgio Cangioli** - HL7 Europe 
+* **Evinn Drusys** - AEMPS
+* **Adam Kover** - Felleskatalogen
+* **Bente Jansen** - Felleskatalogen
+* **Petter Hurlen** - Akershus University Hospital
+* **Arif Govani** -  - DataPharm
+* **Philippe Michiels** - DataPharm
+* **Adam Stiling** - Roche
+* **Martin Ingvar** - Karolinska Institute
+* **Michael Loewe** - Rote Liste
+* **Carina Bachman** - Rote Liste
+* **Josephine Bergman** - Rote Liste
+* **Joseph Mundi** - Pfizer
+* **Beverly Buckta** - Pfizer
+
+Vulcan Program Management
+* **Hugh Glover** - Bluewave Informatics/HL7 BR&R/Vulcan
+* **Michael Van Campen** Vulcan
+* **Shani Sampson** Vulcan
+
+With contributions from other members who have from time to time, or quietly, participated in meetings, attended conference calls, and supported the core team during the development process.
+
+If you are interested in participating in the Vulcan ePI project, further information can be found on HL7 Vulcan's Confluence pages [here](https://confluence.hl7.org/pages/viewpage.action?pageId=79515543).
