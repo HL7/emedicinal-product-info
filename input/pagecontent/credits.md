@@ -22,6 +22,7 @@ Project Team Members:
 * **Michael Loewe** - Rote Liste
 * **Carina Bachman** - Rote Liste
 * **Josephine Bergman** - Rote Liste
+* **Niklas Jänich** - Boehringer Ingelheim
 * **Joseph Mundi** - Pfizer
 * **Beverly Buckta** - Pfizer
 
