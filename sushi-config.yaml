@@ -12,19 +12,20 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.emedicinal-product-info
 canonical: http://hl7.org/fhir/uv/emedicinal-product-info 
-version: 1.1.0
 name: EpiIG
 title: Electronic Medicinal Product Information (ePI) FHIR Implementation Guide
-status: active
-publisher: HL7
-contact:
-  - name: HL7 BR&R
-    telecom:
-      - system: url
-        value: http://www.hl7.org/Special/committees/rcrim
 description: BR&R creates and promotes standards to facilitate biomedical research and any subsequent regulatory evaluation of the safety, efficacy and quality of medical products that may arise from research.
-license: CC0-1.0
+status: active
+version: 1.0.0
 fhirVersion: 5.0.0
+copyrightYear: 2022+
+releaseLabel: trial-use
+license: CC0-1.0
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+publisher:
+  name: HL7 International - Biomedical Research & Regulation Work Group
+  url: http://hl7.org/Special/committees/rcrim
+
 #dependencies:
 #  hl7.fhir.uv.ips: current
 parameters:
@@ -36,9 +37,6 @@ parameters:
   autoload-resources: true
   jira-code: uv-emedicinal-product-info
   produce-jekyll-data: true
-copyrightYear: 2021+
-releaseLabel: CI Build
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # resources:
   
     
