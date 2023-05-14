@@ -13,7 +13,7 @@ ePI documents are made up of the following five components:
 - Clinical use data - Contraindication, indications, warnings and precautions  
 
 
-### Overview of the FHIR Resources that make up the Core ePI Profile 
+### Overview of the FHIR Resources that make up the common ePI Profile 
 This Implementation Guide recommends the use of the following thirteen resources to support the creation and exchange of ePIs:
 - List
 - Bundle
@@ -34,6 +34,8 @@ It is not mandatory for any implementers to use all thirteen resources for all e
 - **Type 2 ePI documents** support creating the narrative content and now includes product information. However, it does not include structured clinical use information. 
 - **Type 3 ePI documents** support creating the narrative, product information, and structured clinical use information.  
 
+
+**Table 1 Overview of resources, ePI use cases for each resource, and ePI document types**     
 **FHIR Resource**|**ePI Use Case**|**Type 1**|**Type 2**|**Type 3**
 :-----:|:-----:|:-----:|:-----:|:-----:
 List|List of related ePI documents; e.g., list of Summary of Product Characteristics (SmPC), Package Leaflet, package artwork/mockups, and Annexes for a given medicinal product.|x|x|x
@@ -49,14 +51,3 @@ Ingredient|Ingredients (active, inactive, adjuvants) in which the manufactured i
 Substance Definition|Substances assocated with the ingredients.| |x|x
 Packaged Product Definition|Describes the unit for sale or supply (e.g., container closure system; primary and secondary packaging; items in the pack)| |x|x
 Clinical Use Definition|Structured information about indication, contraindication, interactions (drug:drug, drug:food; drug:lab); undesireable effect; warning)| | |x  
-
-
-**Figure 1 Resource relationship hierarchy for Type 1 ePI documents**     
-![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/step-0.png)   
-
-**Figure 2 Resource relationship hierarchy for Type 2 ePI documents**
-![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/step-1.png)   
-
-**Figure 3 Resource relationship hierarchy for Type 3 ePI documents**
-![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/step-2.png)   
-
