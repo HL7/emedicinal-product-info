@@ -29,10 +29,12 @@ This Implementation Guide recommends the use of the following thirteen resources
 - Packaged Product Definition
 - Clinical Use Definition  
 
+It is not mandatory for any implementers to use all thirteen resources for all ePIs. Dependent on the region, or dependent on the use case, implementers may choose to use all or some of the thirteen resources. For example, health authorities are encouraged to use combinations of these resources to recreate their national ePI templates with these resources. Thus, allowing them to reap the benefits of FHIR while still maintaining compliance with local regulations and local ePI templates with regulated section and sub-section headings. Although optional, this IG recommends adopting one of the following three general approaches to encourage consistency.
+- **Type 1 ePI documents** support creating the narrative content (e.g., document type, document identifier, section headings, paragraphs, and tables) and only a basic list of medicinal products.
+- **Type 2 ePI documents** support creating the narrative content and now includes product information. However, it does not include structured clinical use information. 
+- **Type 3 ePI documents** support creating the narrative, product information, and structured clinical use information.  
 
-It is not mandatory for any implementers to use all thirteen resources for all ePIs. Dependent on the region, or dependent on the use case, implementers may choose to use all or some of the thirteen resources. For example, health authorities are encouraged to use combinations of these resources to recreate their national ePI templates with these resources. Thus, allowing them to reap the benefits of FHIR while still maintaining compliance with local regulations and local ePI templates with regulated section and sub-section headings. Although optional, this IG does recommends adopting one of the three general approaches described below to encourage consistency.
-
-**FHIR Resource**|**ePI Use Case.**|**Level 1**|**Level 2**|**Level 3**
+**FHIR Resource**|**ePI Use Case**|**Type 1**|**Type 2**|**Type 3**
 :-----:|:-----:|:-----:|:-----:|:-----:
 List|List of authorized product presentations referenced in the ePI.|x|x|x
 Bundle|Container for a collection of resources and forms a FHIR document.|x|x|x
@@ -48,54 +50,13 @@ Substance Definition|Substances assocated with the ingredients.| |x|x
 Packaged Product Definition|Describes the unit for sale or supply (e.g., container closure system; primary and secondary packaging; items in the pack)| |x|x
 Clinical Use Definition|Structured information about indication, contraindication, interactions (drug:drug, drug:food; drug:lab); undesireable effect; warning)| | |x  
 
-The **simplified ePI approach** supports the narrative and only a list of medicinal product. However, it does not include any product details beyond name and identifiers:
-- List
-- Bundle
-- Composition
-- Binary
 
-**Figure 1 Resource relationship hierarchy for a simplified ePI**   
+**Figure 1 Resource relationship hierarchy for Type 1 ePI documents**     
+![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/step-0.png)   
 
+**Figure 2 Resource relationship hierarchy for Type 2 ePI documents**
+![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/step-1.png)   
 
-
-The **intermediate ePI approach** supports the narrative and product information. However, it does not include structured clinical use information:
-- List
-- Bundle
-- Composition
-- Organization
-- Regulated Authorization
-- Medicinal Product Definition
-- Administrable Product Definition
-- Manufactured Item Definition
-- Ingredient
-- Substance Definition
-- Packaged Product Definition
-- Binary  
-
-
-**Figure 3 Resource relationship hierarchy for an intermediate ePI**   
-
-
-The **advanced ePI approach** supports the narrative, product information, and structured clinical use information:
-- List
-- Bundle
-- Composition
-- Organization
-- Regulated Authorization
-- Medicinal Product Definition
-- Administrable Product Definition
-- Manufactured Item Definition
-- Ingredient
-- Substance Definition
-- Packaged Product Definition
-- Clinical Use Definition
-- Binary
-
-
-**Figure 3 Resource relationship hierarchy for an advanced ePI**     
-
-<figure>
-  <img style="padding-top:0;padding-bottom:0" src="figure1-epi-resource-relationship.png" alt="ePI Resource Relationship"/>
-  <figcaption>Core ePI resource relationship diagram</figcaption>
-</figure>
+**Figure 3 Resource relationship hierarchy for Type 3 ePI documents**
+![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/step-2.png)   
 
