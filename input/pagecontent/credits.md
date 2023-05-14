@@ -14,14 +14,15 @@ Project Team Members:
 * **Evinn Drusys** - AEMPS
 * **Adam Kover** - Felleskatalogen
 * **Bente Jansen** - Felleskatalogen
-* **Petter Hurlen** - Akershus University Hospital
-* **Arif Govani** -  - DataPharm
+* **Arif Govani** - DataPharm
 * **Philippe Michiels** - DataPharm
-* **Adam Stiling** - Roche
-* **Martin Ingvar** - Karolinska Institute
 * **Michael Loewe** - Rote Liste
 * **Carina Bachman** - Rote Liste
 * **Josephine Bergman** - Rote Liste
+* **Petter Hurlen** - Akershus University Hospital
+* **Martin Ingvar** - Karolinska Institute
+* **Adam Stiling** - Roche
+* **Niklas Jänich** - Boehringer Ingelheim
 * **Joseph Mundi** - Pfizer
 * **Beverly Buckta** - Pfizer  
 
