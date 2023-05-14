@@ -36,7 +36,7 @@ It is not mandatory for any implementers to use all thirteen resources for all e
 
 **FHIR Resource**|**ePI Use Case**|**Type 1**|**Type 2**|**Type 3**
 :-----:|:-----:|:-----:|:-----:|:-----:
-List|List of related ePI documents; e.g., list of Summary of Product Characteristics (SmPC), Package Leaflet, package artwork/mockups, Annexes for a given medicinal product.|x|x|x
+List|List of related ePI documents; e.g., list of Summary of Product Characteristics (SmPC), Package Leaflet, package artwork/mockups, and Annexes for a given medicinal product.|x|x|x
 Bundle|Container for a collection of resources and forms a FHIR document.|x|x|x
 Composition|Basic structure and narrative content for a document (e.g., section headings, paragraphs, tablets, bulleted lists).|x|x|x
 Binary|Encoded images.|x|x|x
