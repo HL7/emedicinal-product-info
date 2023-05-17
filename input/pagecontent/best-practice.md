@@ -140,18 +140,18 @@ NOTE:
 To create hypertext links from text to text within the ePI’s Composition resource: 
 
 Add an id to a block of text or table: 
-
 ```
 <div id="a1"> 
 <p>sample text</p> 
 </div> 
 ```  
-
-And a link to the sample text: 
-
+And then add a link to the sample text: 
 ```
 <p><a href="#a1">refer to sample text</a></p> 
+```  
+
 To create hypertext links from text to content outside of the ePI document use the following format: 
+```
 <A href="http://www.w3.org/">W3C Web site</A>
 ```  
 
