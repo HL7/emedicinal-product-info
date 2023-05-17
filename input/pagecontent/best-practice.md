@@ -54,7 +54,7 @@ NOTE:
 - The XHTML content SHALL NOT contain a head, a bodyelement, external stylesheet references, deprecated elements, scripts, forms, base/link/xlink, frames, iframes, objects or event related attributes (e.g. onClick).   This is to ensure that the content of the narrative is contained within the resource and that there is no active content. Such content would introduce security issues. 
 
 #### Additional Monitoring Indicators
-The black triangle is used to denote a medicine subject to additional monitoring. The black down pointing triangle should be represented using unicode 'U+25BC' or using the decimal HTML entity '&#9660;'.  
+The black triangle is used to denote a medicine subject to additional monitoring. The black down pointing triangle should be represented using the decimal HTML entity `&#9660;` which will be rendered as &#9660;.  
 
 #### Paragraphs 
 The P element is used to define paragraphs. 
