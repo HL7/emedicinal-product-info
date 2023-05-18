@@ -4,14 +4,12 @@ As noted in the background, ePIs take three forms:
 2. Information for patients
 3. Information on the package label
 
-
 ePI documents are made up of the following five components: 
 - Narrative - Section headings, paragraphs, bulleted lists, tables
 - Document data - Date of approval, date of last update, unique identifiers
 - Medicinal Product data - dosage form, strength, route of adminisation, ingredients, packaging
 - Organization data - Name, address, unique identifiers, and contact information
 - Clinical use data - Contraindication, indications, warnings and precautions  
-
 
 ### Overview of the FHIR Resources that make up the common ePI Profile 
 This Implementation Guide recommends the use of the following thirteen resources to support the creation and exchange of ePIs:
@@ -33,7 +31,6 @@ It is not mandatory for any implementers to use all thirteen resources for all e
 - **Type 1 ePI documents** support creating the narrative content (e.g., document type, document identifier, section headings, paragraphs, and tables) and only a basic list of medicinal products.
 - **Type 2 ePI documents** support creating the narrative content and now includes product information. However, it does not include structured clinical use information. 
 - **Type 3 ePI documents** support creating the narrative, product information, and structured clinical use information.  
-
 
 **Table 1 Overview of resources, ePI use cases for each resource, and ePI document types**     
 **FHIR Resource**|**ePI Use Case**|**Type 1**|**Type 2**|**Type 3**
