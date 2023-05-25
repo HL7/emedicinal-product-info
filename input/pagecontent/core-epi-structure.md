@@ -2,7 +2,7 @@
 As noted in the background, ePIs take three forms:
 1. Information for healthcare professionals
 2. Information for patients
-3. Information on the package label
+3. Information on the package label  
 
 ePI documents are made up of the following five components: 
 - Narrative - Section headings, paragraphs, bulleted lists, tables
