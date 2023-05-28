@@ -8,47 +8,45 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * system from VsMedProductIdSystems (extensible)
   * system 1..
   * value 1..
-  * ^short = "Unique identifier assigned to this medicinal product by the health authority. Could be the ISO IDMP Medicinal Product Identifier (MPID)."
 
-* type from VsMedProductType (preferred)
+* type
 
 * domain from $VS-medicinal-product-domain  (preferred)
 
 * indication ^short = "Narrative text of the authorized indication(s) for this product."
 
-* version ^short = "Business version of this product"
-* status from  $VS-publication-status (preferred)
+* version
+* status
 * statusDate ^short = "The date at which this status became applicable." 
 * description ^short = "General description of the medicinal product referred by the ePI"
 
-* combinedPharmaceuticalDoseForm from VsPharmaceuticalDoseForm (preferred)
-* route from VsRouteOfAdministration (preferred)
+* combinedPharmaceuticalDoseForm
+* route
 
-* legalStatusOfSupply from VsLegalStatusOfSupply (preferred)
+* legalStatusOfSupply
 
-* additionalMonitoringIndicator from VsAdditionalMonitoringIndicator (preferred)
- // additionalMonitoringIndicator ^short = "Additional monitoring this Medicinal Product is subject to (for regulatory reasons)" // ==> add voc binding 
+* additionalMonitoringIndicator
 
-* pediatricUseIndicator from VsPediatricUseIndicator (preferred)
-// * pediatricUseIndicator ^short = "Authorised for pediatric use"
+* specialMeasures
 
-* classification from VsAtcClassification (preferred)
-// * classification ^short = "Classifications used for this product" // ==> add voc binding and slices
+* pediatricUseIndicator
+
+* classification
 
 * marketingStatus 0..
   * ^short = "Marketing status of the medicinal product in contrast to marketing authorization"
   * status from VsMarketingStatus (preferred)
 
-* packagedMedicinalProduct // from VsPackageType (preferred)
-  * ^short = "High level package type for this product. E.g., sample pack" 
+* packagedMedicinalProduct
+
+* contact
+  * type
+  * contact
 
 * name 1..
   * productName 1..1
-    * ^short = "The full name of this product"
-    * ^example.label = "general"  
-    * ^example.valueString = "Humalog Mix50 Insulin KwikPen, 3 ml pre-fill"
   
-  * type = $spor-productNamePartType-cs#220000000001
+  * type 1..
   
 	// * coding 1.. 
   * part ^slicing.discriminator[0].type = #pattern
@@ -62,42 +60,27 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   
   * part[ProprietaryNamePart]
     * part
-      * ^short = "brand name of this product"
-      * ^example.label = "Example brand name"
-      * ^example.valueString = "Humalog Mix50"
-    * type = $spor-productNamePartType-cs#220000000002
+    * type
   * part[Non-proprietaryNamePart]
     * part
-      * ^short = "International Non-proprietary Name (INN) of this product"
-      * ^example.label = "Example INN"
-      * ^example.valueString = "Insulin lispro"
-    * type = $spor-productNamePartType-cs#220000000003
+    * type
   * part[StrengthPart]
     * part
-      * ^short = "strength expressed as the quantity of active ingredient"
-      * ^example.label = "Example quantity"
-      * ^example.valueString = "100 units/ml"
-    * type = $spor-productNamePartType-cs#220000000004
+    * type
   * part[PharmaceuticalDoseFormPart]
     * part
-      * ^short = "Physical manifestation of a product as intended to be delivered to the patient."
-      * ^example.label = "Example dose form"
-      * ^example.valueString = "solution for injection"
-    * type = $spor-productNamePartType-cs#220000000005
+    * type
 
   * usage
-    * country from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2
-    * jurisdiction from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2
-//    * language from VsLanguage (preferred)
+    * country
+    * jurisdiction
 
 * crossReference
-  * product only Reference(MedicinalProductDefinition)
-//  * type from VsMedicinalProductCrossReferenceType (extensible) //http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type
-  * type from http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type (extensible)
+  * product
+  * type
 
 * operation
-  * type from VsOperationType (preferred)
+  * type
   * type.concept 1..
   * effectiveDate
-  * organization only Reference(OrganizationUvEpi)
-  // * confidentialityIndicator from ProductConfidentiality (extensible)
+  * organization
