@@ -19,7 +19,9 @@ Description: "Medicinal product information is a pivotal source of regulated and
   * ^short = "Persistent original date of approval"
   * ^definition = "Original date in which this ePI document received its first authorization. As with the identifier, this date persists across versions. "
 
-* link ..0
+* meta
+  * versionId
+  * lastUpdated
 
 * entry 1.. // 
 * entry ^slicing.discriminator[0].type = #type
@@ -33,9 +35,6 @@ Description: "Medicinal product information is a pivotal source of regulated and
 * entry ^definition = "An entry resource included in the ePI document bundle resource."
 * entry ^comment = "Must contain the ePI Composition as the first entry (only a single Composition resource instance may be included).  Additional constraints are specified in the ePI Composition profile."
 * entry
-  * search ..0
-  * request ..0
-  * response ..0
   * resource 1..
 
 

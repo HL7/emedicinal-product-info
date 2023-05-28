@@ -12,6 +12,8 @@ Description: "The Composition captures the section headings, sub-section heading
   * ^short = "Unique identifier only for this version of the Composition"
   * ^definition = "Unlike the Bundle identifier which persists, the Composition identifier does not persist across versions. Each new version of the Composition receives a new identifier."
 
+* version
+
 * status ^short = "preliminary|final|amended|entered-in-error|deprecated"
 
 * type from VsEpiType (extensible)
@@ -35,18 +37,17 @@ Description: "The Composition captures the section headings, sub-section heading
 * title ^short = "Title of the ePI Document"
 * title ^definition = "A brief summary name describing the ePI. The title should include: Proprietary Name(s) (Non-proprietary Name(s)) Dose Form, Route of Administration."
 
-
 * relatesTo ^short = "Cross-reference to anotherother ePI compositions or ePI document()s)"
 * relatesTo ^definition = "A crossreference from this ePI's composition to another related Composition or ePI document."
 
 * section 1..
   * ^short = "Level 1 section heading for the whole ePI"
   * ^definition = "This is the root or level 1 section heading in the ePI. All other section headings are sub-sections, or children, of this section heading"
+  * title 1..
   * code 1.. 
   * code from VsSectionCode (extensible) 
     * ^short = "unique identifier for this section."
   * text ^short = "Narrative text for this section."
-  * orderedBy ^short = "Order of section entries."
   * emptyReason ^short = "Reason the section is empty."
   * section 
     *  ^short = "Nested Sections (sub-section headings for level 2, 3, 4 or 5)."
@@ -57,7 +58,6 @@ Description: "The Composition captures the section headings, sub-section heading
     * code from VsSectionCode (extensible) 
       * ^short = "unique identifier for this section."
     * text ^short = "Narrative text for this section."
-    * orderedBy ^short = "Order of section entries."
     * emptyReason ^short = "Reason the section is empty."
 
 

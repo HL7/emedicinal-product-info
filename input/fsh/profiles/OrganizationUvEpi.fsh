@@ -49,19 +49,10 @@ Description: "Organization (ePI)"
   * address 1..
     * use ^short = "home | work | temp | old | billing" // = #work
     * use = #work
-    * text ^example.label = "Address example"
-    * text ^example.valueString = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" // = "Brueningstrasse 50, Industriepark Höchst, 65926 Frankfurt am Main, GERMANY" 
-    * type ^short = "postal|physical|both" // = #physical
-    * type = #physical
+    * text
+    * type ^short = "postal|physical|both"
     * line 1..
-    * line ^example.label = "Address example line 1"
-    * line ^example.valueString = "Brueningstrasse 50, Industriepark Höchst" // = "Brueningstrasse 50, Industriepark Höchst"
-    * postalCode ^example.valueString = "65926"
-    * postalCode ^example.label = "Example postcode"
-    * city ^example.label = "Address example City"
-    * city ^example.valueString = "Frankfurt am Main"
+    * postalCode
     * city 1..
-    * country ^example.label = "Address example Country"
-    * country ^example.valueString = "DE"
     * country from $VS-country (preferred)
     * country 1..
