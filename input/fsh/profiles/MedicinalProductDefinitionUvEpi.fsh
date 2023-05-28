@@ -48,32 +48,16 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   
   * type 1..
   
-	// * coding 1.. 
-  * part ^slicing.discriminator[0].type = #pattern
-  * part ^slicing.discriminator[=].path = "type"
-  * part ^slicing.rules = #open
-  * part contains
-    ProprietaryNamePart 0.. and
-  Non-proprietaryNamePart 0.. and
-  StrengthPart 0.. and
-  PharmaceuticalDoseFormPart 0..
-  
-  * part[ProprietaryNamePart]
+* name
+  * productName
+  * type
+  * part
     * part
     * type
-  * part[Non-proprietaryNamePart]
-    * part
-    * type
-  * part[StrengthPart]
-    * part
-    * type
-  * part[PharmaceuticalDoseFormPart]
-    * part
-    * type
-
   * usage
     * country
-    * jurisdiction
+    * jusrisdiction
+    * language
 
 * crossReference
   * product
