@@ -1,10 +1,3 @@
-# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
-# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
-# │                                                                                                │
-# │  This file was generated from your existing project files and will be used for SUSHI           │
-# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-
 # ╭──────────────────────────────ImplementationGuide-gh.json───────────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see:                                                                    │
@@ -20,14 +13,12 @@ version: 1.0.0
 fhirVersion: 5.0.0
 copyrightYear: 2022+
 releaseLabel: trial-use
-license: CC0-1.0
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 International - Biomedical Research & Regulation Work Group
   url: http://hl7.org/Special/committees/rcrim
 
-#dependencies:
-#  hl7.fhir.uv.ips: current
 parameters:
   show-inherited-invariants: false
   path-resource: !!seq
@@ -37,44 +28,11 @@ parameters:
   autoload-resources: true
   jira-code: uv-emedicinal-product-info
   produce-jekyll-data: true
-# resources:
-  
-    
-    
-#   Bundle/36773c03-3040-45e2-82c2-bc3fc968b6a6:
-#     name: Irbesartan PIL (Greek)
-#     description: Example of Greek Product information leaflet for Irbesartan    
-#     exampleBoolean: true
-#   Bundle/910d1748-674b-430c-b4ab-3665b266a31f:
-#     name: Irbesartan PIL (English)
-#     description: Example of English Product information leaflet for Irbesartan   
-#     exampleBoolean: true
-#   Bundle/995d3971-b899-43bf-857d-98c26634796d:
-#     name: Irbesartan PIL (Norwegian)
-#     description: Example of Norwegian Product information leaflet for Irbesartan   
-#     exampleBoolean: true
-    
-#   Bundle/8f7eede7-0aac-41ca-8552-8f1f1c059e6a:
-#     name: Oxymetazoline-hydrochloride  PIL (Greek)
-#     description: Example of Greek Product information leaflet for Oxymetazoline-hydrochloride    
-#     exampleBoolean: true
-#   Bundle/69b66755-94ef-4ff6-a794-43a74e16ff00:
-#     name: Oxymetazoline-hydrochloride PIL (English)
-#     description: Example of English Product information leaflet for Oxymetazoline-hydrochloride   
-#     exampleBoolean: true
-#   Bundle/d1a125cf-b46c-40cf-82cf-5b754eb0f19e:
-#     name: Oxymetazoline-hydrochloride PIL (Norwegian)
-#     description: Example of Norwegian Product information leaflet for Oxymetazoline-hydrochloride   
-#     exampleBoolean: true
-
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 pages:
-  introduction.md:
+  index.md:
       title: Introduction
-  core-epi-structure.md:
+  epi-structure.md:
       title: Core ePI Profile
   steps-to-create-epi.md:
       title: Steps to create ePI
@@ -88,9 +46,9 @@ pages:
       title: Credits
 
 menu:
-  Table of Contents: toc.html
+  Table of Contents: index.html
   Introduction: introduction.html
-  Use Case: core-epi-structure.html
+  Use Case: epi-structure.html
   ePI Creation: 
     ePI Type 1: steps-to-create-epi.html
     ePI Type 2: steps-to-create-epi.html
