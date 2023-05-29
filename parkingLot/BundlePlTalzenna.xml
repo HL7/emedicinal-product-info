@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
+    <id value="bundle-epi-talzenna"/>
+    <url
+        value="https://github.com/HL7/emedicinal-product-info/blob/master/input/resources/BundlePlTalzenna"/>
     <identifier>
         <system value="https://www.gravitatehealth.eu/sid/doc"/>
         <value value="EMEA/H/C/004674"/>
@@ -46,15 +49,21 @@
                     <text>
                         <status value="additional"/>
                         <div xmlns="http://www.w3.org/1999/xhtml">
-                            <p>Talzenna 0.25 mg hard capsules</p>
-                            <p>Talzenna 1 mg hard capsules</p>
+                            <p>
+                                <b>Talzenna 0.25 mg hard capsules</b>
+                            </p>
+                            <p>
+                                <b>Talzenna 1 mg hard capsules</b>
+                            </p>
                             <p>talazoparib</p>
-                            <p>&#9660; This medicine is subject to additional
-                                monitoring. This will allow quick identification of new safety
-                                information. You can help by reporting any side effects you may get.
-                                See the end of section 4 for how to report side effects.</p>
-                            <p>Read all of this leaflet carefully before you start taking this
-                                medicine because it contains important information for you.</p>
+                            <p>&#9660; This medicine is subject to additional monitoring. This will
+                                allow quick identification of new safety information. You can help
+                                by reporting any side effects you may get. See the end of section 4
+                                for how to report side effects.</p>
+                            <p>
+                                <b>Read all of this leaflet carefully before you start taking this
+                                    medicine because it contains important information for you.</b>
+                            </p>
                             <ul>
                                 <li>Keep this leaflet. You may need to read it again.</li>
                                 <li>If you have any further questions, ask your doctor or
@@ -81,7 +90,7 @@
                     </text>
                 </section>
                 <section>
-                    <title value="1. What X is and what it is used for"/>
+                    <title value="1. What Talzenna is and what it is used for"/>
                     <code>
                         <coding>
                             <system value="https://spor.ema.europa.eu/v1/200000029659"/>
@@ -214,7 +223,7 @@
                         </text>
                     </section>
                     <section>
-                        <title value="Children {and adolescents}"/>
+                        <title value="Children and adolescents"/>
                         <code>
                             <coding>
                                 <system value="https://spor.ema.europa.eu/v1/200000029659"/>
@@ -397,26 +406,6 @@
                             </div>
                         </text>
                     </section>
-                    <section>
-                        <title value="X contains {name the excipient(s)}"/>
-                        <code>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/200000029659"/>
-                                <code value="200000029904"/>
-                                <display value="X contains {name the excipient(s)}"/>
-                            </coding>
-                        </code>
-                        <text>
-                            <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
-                        </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
-                    </section>
                 </section>
                 <section>
                     <title value="3. How to take Talzenna"/>
@@ -446,49 +435,10 @@
                                 the capsules. You can take Talzenna with food or between meals. Do
                                 not open the capsules. Contact with the capsule content should be
                                 avoided. </p>
-                            <p>
-                                <b>If you take more Talzenna than you should </b>
-                            </p>
-                            <p>If you have taken more Talzenna than your normal dose, contact your
-                                doctor or nearest hospital right away. Urgent treatment may be
-                                necessary. </p>
-                            <p>Take the carton and this leaflet so that the doctor knows what you
-                                have been taking. </p>
-                            <p>
-                                <b>If you forget to take Talzenna </b>
-                            </p>
-                            <p>If you miss a dose or vomit, take your next dose as scheduled. Do not
-                                take a double dose to make up for the forgotten or vomited capsules. </p>
-                            <p>
-                                <b>If you stop taking Talzenna </b>
-                            </p>
-                            <p>Do not stop taking Talzenna unless your doctor tells you to.</p>
-                            <p>If you have any further questions on the use of this medicine, ask
-                                your doctor or pharmacist or nurse. </p>
                         </div>
                     </text>
                     <section>
-                        <title value="Use in children {and adolescents}"/>
-                        <code>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/200000029659"/>
-                                <code value="200000029906"/>
-                                <display value="Use in children {and adolescents}"/>
-                            </coding>
-                        </code>
-                        <text>
-                            <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
-                        </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
-                    </section>
-                    <section>
-                        <title value="If you {take} {use} more X than you should"/>
+                        <title value="If you take more Talzenna than you should"/>
                         <code>
                             <coding>
                                 <system value="https://spor.ema.europa.eu/v1/200000029659"/>
@@ -498,17 +448,17 @@
                         </code>
                         <text>
                             <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <p>If you have taken more Talzenna than your normal dose, contact
+                                    your doctor or nearest hospital right away. Urgent treatment may
+                                    be necessary. </p>
+                                <p>Take the carton and this leaflet so that the doctor knows what
+                                    you have been taking. </p>
+                            </div>
                         </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
                     </section>
                     <section>
-                        <title value="If you forget to {take} {use} X"/>
+                        <title value="If you forget to take Talzenna"/>
                         <code>
                             <coding>
                                 <system value="https://spor.ema.europa.eu/v1/200000029659"/>
@@ -518,17 +468,15 @@
                         </code>
                         <text>
                             <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <p>If you miss a dose or vomit, take your next dose as scheduled. Do
+                                    not take a double dose to make up for the forgotten or vomited
+                                    capsules. </p>
+                            </div>
                         </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
                     </section>
                     <section>
-                        <title value="If you stop {taking} {using} X"/>
+                        <title value="If you stop taking Talzenna"/>
                         <code>
                             <coding>
                                 <system value="https://spor.ema.europa.eu/v1/200000029659"/>
@@ -538,29 +486,13 @@
                         </code>
                         <text>
                             <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <p>Do not stop taking Talzenna unless your doctor tells you to.</p>
+                                <p>If you have any further questions on the use of this medicine,
+                                    ask your doctor or pharmacist or nurse. </p>
+                            </div>
                         </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
                     </section>
-                </section>
-                <section>
-                    <title value=""/>
-                    <code>
-                        <coding>
-                            <system value="https://spor.ema.europa.eu/v1/200000029659"/>
-                            <code value=""/>
-                            <display value=""/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="additional"/>
-                        <div xmlns="http://www.w3.org/1999/xhtml"> </div>
-                    </text>
                 </section>
                 <section>
                     <title value="4. Possible side effects"/>
@@ -573,29 +505,43 @@
                     </code>
                     <text>
                         <status value="additional"/>
-                        <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+                        <div xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Like all medicines, this medicine can cause side effects, although
+                                not everybody gets them.</p>
+                            <p>
+                                <b>Tell your doctor straight away if you notice any of the following
+                                    symptoms which could be a sign of serious blood disorder:</b>
+                            </p>
+                            <p><b>Very common</b> (may affect more than 1 in 10 people)</p>
+                            <ul>
+                                <li>Being short of breath, feeling very tired, having pale skin, or fast heartbeat – these may be signs
+                                    of a low red blood cell count (anaemia).</li>
+                                <li>Infection, developing chills or shivering, or fever or feeling hot – these may be signs of a low
+                                    white blood cell count (neutropenia).</li>
+                                <li>Bruising or bleeding for longer than usual if you hurt yourself – these may be signs of a low
+                                    blood platelet count (thrombocytopenia).</li>
+                            </ul>
+                            <p><b>Talk to your doctor if you get any other side effects. These can include:</b></p>
+                            <p><b>Very common</b> (may affect more than 1 in 10 people)</p>
+                            <ul>
+                                <li>Low counts of white blood cells, red blood cells, and blood platelets</li>
+                                <li>Decreased appetite</li>
+                                <li>Feeling dizzy</li>
+                                <li>Headache</li>
+                                <li>Feeling sick (nausea)</li>
+                                <li>Being sick (vomiting)</li>
+                                <li>Diarrhoea</li>
+                                <li>Pain in the abdomen</li>
+                                <li>Hair loss</li>
+                            </ul>
+                            <p><b>Common</b> (may affect up to 1 in 10 people)</p>
+                            <ul>
+                                <li>Alteration in taste (dysgeusia)</li>
+                                <li>Indigestion</li>
+                                <li>Mouth inflammation</li>
+                            </ul>
+                        </div>
                     </text>
-                    <section>
-                        <title value="Additional side effects in children {and adolescents}"/>
-                        <code>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/200000029659"/>
-                                <code value="200000029911"/>
-                                <display
-                                    value="Additional side effects in children {and adolescents}"/>
-                            </coding>
-                        </code>
-                        <text>
-                            <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
-                        </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
-                    </section>
                     <section>
                         <title value="Reporting of side effects"/>
                         <code>
@@ -607,14 +553,15 @@
                         </code>
                         <text>
                             <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <p>If you get any side effects, talk to your doctor or pharmacist or
+                                    nurse. This includes any possible side effects not listed in
+                                    this leaflet. You can also report side effects directly via the
+                                    national reporting system listed in Appendix V. By reporting
+                                    side effects you can help provide more information on the safety
+                                    of this medicine.</p>
+                            </div>
                         </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
                     </section>
                 </section>
                 <section>
@@ -774,166 +721,162 @@
                         <text>
                             <status value="additional"/>
                             <div xmlns="http://www.w3.org/1999/xhtml">
-                                <table frame="all" rowsep="1" colsep="1" id="table_e1c_psc_wwb">
-                                    <title/>
-                                    <tgroup cols="2">
-                                        <colspec colnum="1" colwidth="1*"/>
-                                        <colspec colnum="2" colwidth="1*"/>
+                                <table>
                                         <tbody>
-                                            <row>
-                                                <entry>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>België/Belgique/Belgien Luxembourg/Luxemburg
                                                   </b>
                                                   </p>
                                                   <p>Pfizer NV/SA</p>
                                                   <p>Tél/Tel: +32 (0)2 554 62 11 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Lietuva </b>
                                                   </p>
                                                   <p>Pfizer Luxembourg SARL filialas Lietuvoje </p>
                                                   <p>Tel: + 370 52 51 4000 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>България </b>
                                                   </p>
                                                   <p>Пфайзер Люксембург САРЛ, Клон България </p>
                                                   <p>Тел.: +359 2 970 4333 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Magyarország </b>
                                                   </p>
                                                   <p>Pfizer Kft.</p>
                                                   <p> Tel.: +36-1-488-37-00 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Česká republika </b>
                                                   </p>
                                                   <p>Pfizer, spol. s r.o.</p>
                                                   <p> Tel: +420 283 004 111 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Malta </b>
                                                   </p>
                                                   <p>Vivian Corporation Ltd </p>
                                                   <p>Tel: +356 21344610 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Danmark </b>
                                                   </p>
                                                   <p>Pfizer ApS</p>
                                                   <p> Tlf: +45 44 20 11 00 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Nederland </b>
                                                   </p>
                                                   <p>Pfizer BV</p>
                                                   <p>Tel: +31 (0)10 406 43 01 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Deutschland </b>
                                                   </p>
                                                   <p>PFIZER PHARMA GmbH </p>
                                                   <p>Tel: +49 (0)30 550055-51000 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Norge </b>
                                                   </p>
                                                   <p>Pfizer AS</p>
                                                   <p>Tlf: +47 67 52 61 00 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Eesti </b>
                                                   </p>
                                                   <p>Pfizer Luxembourg SARL Eesti filiaal </p>
                                                   <p>Tel: +372 666 7500 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Österreich </b>
                                                   </p>
                                                   <p>Pfizer Corporation Austria Ges.m.b.H. </p>
                                                   <p>Tel: +43 (0)1 521 15-0 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Ελλάδα </b>
                                                   </p>
                                                   <p>Pfizer Ελλάς A.E.</p>
                                                   <p>Τηλ: +30 210 6785 800 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Polska </b>
                                                   </p>
                                                   <p>Pfizer Polska Sp. z o.o. </p>
                                                   <p>Tel.:+48 22 335 61 00 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>España </b>
                                                   </p>
                                                   <p>Pfizer, S.L.</p>
                                                   <p>Tel: +34 91 490 99 00 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Portugal </b>
                                                   </p>
                                                   <p>Laboratórios Pfizer, Lda. </p>
                                                   <p>Tel: +351 21 423 5500 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>France </b>
                                                   </p>
                                                   <p>Pfizer</p>
                                                   <p>Tél: +33 (0)1 58 07 34 40 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>România </b>
                                                   </p>
                                                   <p>Pfizer Romania S.R.L. </p>
                                                   <p>Tel: +40 (0) 21 207 28 00 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Hrvatska </b>
                                                   </p>
                                                   <p>Pfizer Croatia d.o.o. </p>
                                                   <p>Tel: +385 1 3908 777 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Slovenija </b>
                                                   </p>
@@ -941,85 +884,83 @@
                                                   <p> Pfizer, podružnica za svetovanje s področja
                                                   farmacevtske dejavnosti, Ljubljana</p>
                                                   <p> Tel: + 386 (0)1 52 11 400 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Ireland </b>
                                                   </p>
                                                   <p>Pfizer Healthcare Ireland </p>
                                                   <p>Tel: 1800 633 363 (toll free) +44 (0)1304
                                                   616161 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Slovenská republika </b>
                                                   </p>
                                                   <p>Pfizer Luxembourg SARL, organizačná zložka </p>
                                                   <p>Tel: + 421 2 3355 5500 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Ísland </b>
                                                   </p>
                                                   <p>Icepharma hf.</p>
                                                   <p>Sími: +354 540 8000 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Suomi/Finland </b>
                                                   </p>
                                                   <p>Pfizer Oy</p>
                                                   <p>Puh/Tel: +358 (0)9 43 00 40 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Italia </b>
                                                   </p>
                                                   <p>Pfizer S.r.l.</p>
                                                   <p>Tel: +39 06 33 18 21 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>Sverige </b>
                                                   </p>
                                                   <p>Pfizer AB</p>
                                                   <p>Tel: +46 (0)8 550 520 00 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Kύπρος </b>
                                                   </p>
                                                   <p>Pfizer Ελλάς Α.Ε. (Cyprus Branch) </p>
                                                   <p>Τηλ: +357 22 817690 </p>
-                                                </entry>
-                                                <entry>
+                                                </td>
+                                                <td>
                                                   <p>
                                                   <b>United Kingdom (Northern Ireland) </b>
                                                   </p>
                                                   <p>Pfizer Limited</p>
                                                   <p>Tel: +44 (0) 1304 616161 </p>
-                                                </entry>
-                                            </row>
-                                            <row>
-                                                <entry>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                   <p>
                                                   <b>Latvija </b>
                                                   </p>
                                                   <p>Pfizer Luxembourg SARL filiāle Latvijā </p>
                                                   <p>Tel: + 371 670 35 775 </p>
-                                                </entry>
-                                                <entry/>
-                                            </row>
+                                                </td>
+                                            </tr>
                                         </tbody>
-                                    </tgroup>
                                 </table>
                             </div>
                         </text>
@@ -1057,32 +998,10 @@
                             <status value="additional"/>
                             <div xmlns="http://www.w3.org/1999/xhtml">
                                 <p>Detailed information on this medicine is available on the
-                                    European Medicines Agency web site: <xref
-                                        href="http://www.ema.europa.eu"/>.</p>
+                                    European Medicines Agency web site: <a
+                                        href="http://www.ema.europa.eu">http://www.ema.europa.eu</a>.</p>
                             </div>
                         </text>
-                    </section>
-                    <section>
-                        <title value=""/>
-                        <code>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/200000029659"/>
-                                <code value="200000029921"/>
-                                <display
-                                    value="The following information is intended for healthcare professionals only:"
-                                />
-                            </coding>
-                        </code>
-                        <text>
-                            <status value="additional"/>
-                            <div xmlns="http://www.w3.org/1999/xhtml"/>
-                        </text>
-                        <emptyReason>
-                            <coding>
-                                <system value="https://spor.ema.europa.eu/v1/empty-reason"/>
-                                <code value="Not Applicable"/>
-                            </coding>
-                        </emptyReason>
                     </section>
                 </section>
             </Composition>
