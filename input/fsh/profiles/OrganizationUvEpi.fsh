@@ -50,5 +50,5 @@ Description: "Organization (ePI)"
     * line 1..
     * postalCode
     * city 1..
-    * country from $VS-country (preferred)
+    * country  from VsCountry (preferred)
     * country 1..
