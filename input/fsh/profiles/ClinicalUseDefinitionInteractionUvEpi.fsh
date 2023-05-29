@@ -15,6 +15,6 @@ Description: "ClinicalUseDefinition Interaction (ePI)"
 * undesirableEffect 0..0
 * interaction.interactant.itemCodeableConcept
 * interaction.interactant.itemCodeableConcept
-  * insert AdditionalBinding ( #conformance, VsSubstance, The specific substance that interacts., The specific substance that interacts.)
+  * insert AdditionalBinding (#conformance, VsSubstance, The specific substance that interacts., The specific substance that interacts.)
 
 * interaction.type ^short = "The type of the interaction e.g. drug-drug, drug-food, drug-lab."
