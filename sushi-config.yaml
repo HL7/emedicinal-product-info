@@ -7,7 +7,7 @@ id: hl7.fhir.uv.emedicinal-product-info
 canonical: http://hl7.org/fhir/uv/emedicinal-product-info 
 name: EpiIG
 title: Electronic Medicinal Product Information (ePI) FHIR Implementation Guide
-description: BR&R creates and promotes standards to facilitate biomedical research and any subsequent regulatory evaluation of the safety, efficacy and quality of medical products that may arise from research.
+description: FHIR Implementation Guide representing how to create Electronic Medicinal Product Information.
 status: active
 version: 1.0.0
 fhirVersion: 5.0.0
@@ -34,8 +34,12 @@ pages:
       title: Introduction
   epi-structure.md:
       title: Core ePI Profile
-  steps-to-create-epi.md:
-      title: Steps to create ePI
+  steps-to-create-epi1.md:
+      title: Steps to create ePI Type 1
+  steps-to-create-epi2.md:
+      title: Steps to create ePI Type 2
+  steps-to-create-epi3.md:
+      title: Steps to create ePI Type 3
   best-practice.md:
       title: Best Practice
   artifacts.md:
@@ -46,13 +50,12 @@ pages:
       title: Credits
 
 menu:
-  Table of Contents: intro.html
-  Introduction: introduction.html
+  Home: intro.html
   Use Case: epi-structure.html
   ePI Creation: 
-    ePI Type 1: steps-to-create-epi.html
-    ePI Type 2: steps-to-create-epi.html
-    ePI Type 3: steps-to-create-epi.html
+    ePI Type 1: steps-to-create-epi1.html
+    ePI Type 2: steps-to-create-epi2.html
+    ePI Type 3: steps-to-create-epi3.html
   Best Practice: best-practice.html
   Artifacts: artifacts.html
   Downloads: downloads.html
