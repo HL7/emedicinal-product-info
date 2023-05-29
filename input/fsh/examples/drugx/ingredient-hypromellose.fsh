@@ -18,4 +18,4 @@ Usage: #example
 * for = Reference(manitemDrugX75)
 
 // Reference to Organization:  Reference to MAH
-* manufacturer.manufacturer = Reference(sanofi-aventis-groupe)
+* manufacturer.manufacturer = Reference(acmeinc)

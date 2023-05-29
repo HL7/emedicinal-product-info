@@ -19,4 +19,4 @@ Usage: #example
 * unitOfPresentation.text = "Tablet"
 
  // Reference to Organization: Manufacturer
-* manufacturer = Reference(sanofi-aventis-groupe)
+* manufacturer = Reference(acmeinc)

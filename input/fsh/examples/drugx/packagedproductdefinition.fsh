@@ -29,4 +29,4 @@ Usage: #example
 * packageFor = Reference(DrugX75mgblisterx28)
 
  // Reference to Organization: MAH
-* manufacturer = Reference(sanofi-aventis-groupe)
+* manufacturer = Reference(acmeinc)
