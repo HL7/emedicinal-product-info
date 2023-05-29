@@ -23,7 +23,7 @@ Usage: #example
 
 * section[+].
   * title = "B. Package Leaflet"
-  * code = https://spor.ema.europa.eu/rmswihttps://spor.ema.europa.eu/rmswi#100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'/>"""

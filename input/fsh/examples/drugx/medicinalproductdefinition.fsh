@@ -14,8 +14,6 @@ Usage: #example
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human
 * domain.text = "Human use"
 
-
-
 * legalStatusOfSupply = $spor-rms#100000072084
 * legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
 
@@ -26,8 +24,8 @@ Usage: #example
 * name
   * type.text = "Full name"
   * usage
-    * country = urn:iso:std:iso:3166#eu
-    * jurisdiction = urn:iso:std:iso:3166#eu
+    * country = urn:iso:std:iso:3166#fr
+    * jurisdiction = urn:iso:std:iso:3166#fr
     * language = urn:ietf:bcp:47#en
   * part
     * part = "DrugX"

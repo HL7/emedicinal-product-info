@@ -16,7 +16,7 @@ Usage: #example
 * substance.strength.presentationQuantity.value = 75
 * substance.strength.presentationQuantity.unit = "mg"
 
-* substance.strength.basis = #ACTIB
+* substance.strength.basis = http://fdasis.nlm.nih.gov#ACTIB
 * substance.strength.basis.text = "active ingredient - basis of strength"
 
 // Reference to manufactured item

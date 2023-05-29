@@ -12,10 +12,10 @@ Usage: #example
 
 * status = #active
 
-* manufacturedDoseForm = https://spor.ema.europa.eu/rmswi/#100000073864
+* manufacturedDoseForm = http://hl7.org/fhir/manufactured-dose-form#100000073664
 * manufacturedDoseForm.text = "tablet"
 
-* unitOfPresentation = $spor-rms#200000002152
+* unitOfPresentation = http://hl7.org/fhir/unit-of-presentation#200000002152
 * unitOfPresentation.text = "Tablet"
 
  // Reference to Organization: Manufacturer
