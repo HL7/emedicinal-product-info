@@ -47,4 +47,5 @@ Manufactured Item Definition|Dose form of the medicinal product in its primary p
 Ingredient|Ingredients (active, inactive, adjuvants) in which the manufactured item is composed of.| |x|x
 Substance Definition|Substances assocated with the ingredients.| |x|x
 Packaged Product Definition|Describes the unit for sale or supply (e.g., container closure system; primary and secondary packaging; items in the pack)| |x|x
-Clinical Use Definition|Structured information about indication, contraindication, interactions (drug:drug, drug:food; drug:lab); undesireable effect; warning)| | |x  
+Clinical Use Definition|Structured information about indication, contraindication, interactions (drug:drug, drug:food; drug:lab); undesireable effect; warning| | |x  
+{: .grid }

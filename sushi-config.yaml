@@ -19,21 +19,11 @@ publisher:
   name: HL7 International - Biomedical Research & Regulation Work Group
   url: http://hl7.org/Special/committees/rcrim
 
-parameters:
-  show-inherited-invariants: false
-  path-resource: !!seq
-  - input/resources/irbesartan
-  - input/resources/oxymetazoline-hydrochloride
-  - input/resources/dimethyl-fumarate
-  autoload-resources: true
-  jira-code: uv-emedicinal-product-info
-  produce-jekyll-data: true
-
 pages:
   intro.md:
       title: Home
-  epi-structure.md:
-      title: Core ePI Profile
+  use-case.md:
+      title: Use Case
   steps-to-create-epi1.md:
       title: Steps to create ePI Type 1
   steps-to-create-epi2.md:
@@ -51,7 +41,7 @@ pages:
 
 menu:
   Home: intro.html
-  Use Case: epi-structure.html
+  Use Case: use-case.html
   ePI Creation: 
     ePI Type 1: steps-to-create-epi1.html
     ePI Type 2: steps-to-create-epi2.html
@@ -61,21 +51,5 @@ menu:
   Downloads: downloads.html
   Credits: credits.html
 
-
-instanceOptions:
-  # Determines for which types of Instances SUSHI will automatically set meta.profile
-  # if InstanceOf references a profile. Options are:
-  # - always: Set meta.profile for all Instances of profiles (default)
-  # - never: Do not set meta.profile on any Instances
-  # - inline-only: Set meta.profile for only Instances of profiles with Usage set to #inline
-  # - standalone-only: Set meta.profile for only Instances of profiles where Usage is any value other than #inline
-  setMetaProfile: always
-  # Determines for which types of Instances SUSHI will automatically set id
-  # if InstanceOf references a profile. Options are:
-  # - always: Set id for all Instances (default)
-  # - standalone-only: Set id for only Instances where Usage is any value other than #inline
-  setId: always
-
-
-FSHOnly: false
-
+parameters:
+  jira-code: uv-emedicinal-product-info
