@@ -5,7 +5,7 @@ Title: "AdministrableProductDefinition (ePI)"
 Description: "AdministrableProductDefinition (ePI)"
 
 * identifier 1..*
-  * system from VsAdmProductIdSystems (extensible)
+  * system
   * system 1..1
   * value 1..1
 

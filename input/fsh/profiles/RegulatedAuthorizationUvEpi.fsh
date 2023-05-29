@@ -14,12 +14,11 @@ Description: "RegulatedAuthorization (ePI)"
 * subject 1..
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 
-* type from VsRegulatedAuthorizationType  (example)
+* type
 
 * description ^short = "Brief description of the authorization"
 
-* region from VsCountry (preferred) //http://terminology.hl7.org/ValueSet/v3-Country2 
-  * ^short = "The jusrisdiction in which the authorization has been granted"
+* region from VsCountry (preferred)
 
 * status ^short = "The current status of this authorization"
 * statusDate

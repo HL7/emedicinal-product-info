@@ -4,23 +4,15 @@ Id: Ingredient-uv-epi
 Title: "Ingredient (ePI)"
 Description: "Ingredient (ePI)"
 
-/* ==  this seems to be the id of the substance ...
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
-* identifier.value = "2ZM8CX04RZ"
-* identifier.use = #official
-=== */
-
 * identifier ^short = "An identifier or code by which the ingredient can be referenced."
 
 * status ^short =	"draft|active|retired|unknown"
 
 * for only Reference( MedicinalProductDefinitionUvEpi or AdministrableProductDefinitionUvEpi or ManufacturedItemDefinitionUvEpi)
 
-* role from $VS-RoleClassIngredientEntity (preferred)
+* role
 
 * allergenicIndicator ^short = "If the ingredient is a known or suspected allergen." // = false
-
- // Reference to Organization: Manufacturer
 
 * manufacturer
   * manufacturer only Reference(OrganizationUvEpi)

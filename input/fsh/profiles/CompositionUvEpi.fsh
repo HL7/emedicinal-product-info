@@ -16,7 +16,7 @@ Description: "The Composition captures the section headings, sub-section heading
 
 * status ^short = "preliminary|final|amended|entered-in-error|deprecated"
 
-* type from VsEpiType (extensible)
+* type
 * type ^short = "Type of ePI document template"
 * type ^definition = "Specifies the type of ePI template. For example, Package Insert, Patient Information, Summary of Product Characteristics, Human Prescription, Drug Label."
 
@@ -45,7 +45,7 @@ Description: "The Composition captures the section headings, sub-section heading
   * ^definition = "This is the root or level 1 section heading in the ePI. All other section headings are sub-sections, or children, of this section heading"
   * title 1..
   * code 1.. 
-  * code from VsSectionCode (extensible) 
+  * code
     * ^short = "unique identifier for this section."
   * text ^short = "Narrative text for this section."
   * emptyReason ^short = "Reason the section is empty."
@@ -55,7 +55,7 @@ Description: "The Composition captures the section headings, sub-section heading
     * title
       * ^short = "Section heading"
     * code 1.. 
-    * code from VsSectionCode (extensible) 
+    * code
       * ^short = "unique identifier for this section."
     * text ^short = "Narrative text for this section."
     * emptyReason ^short = "Reason the section is empty."

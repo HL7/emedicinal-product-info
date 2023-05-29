@@ -5,13 +5,13 @@ Title: "MedicinalProductDefinition (ePI)"
 Description: "Description of the packaged authorized medicinal product(s) associated to this ePI document."
 
 * identifier 1..
-  * system from VsMedProductIdSystems (extensible)
+  * system
   * system 1..
   * value 1..
 
 * type
 
-* domain from $VS-medicinal-product-domain  (preferred)
+* domain
 
 * indication ^short = "Narrative text of the authorized indication(s) for this product."
 
@@ -34,8 +34,9 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 * classification
 
 * marketingStatus 0..
-  * ^short = "Marketing status of the medicinal product in contrast to marketing authorization"
-  * status from VsMarketingStatus (preferred)
+  * country  from $VS-country (preferred)
+  * dateRange
+  * status
 
 * packagedMedicinalProduct
 
@@ -44,9 +45,8 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * contact
 
 * name 1..
-  * productName 1..1
-  
-  * type 1..
+  * productName
+  * type
   
 * name
   * productName
