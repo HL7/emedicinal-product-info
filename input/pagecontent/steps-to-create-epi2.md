@@ -1,6 +1,8 @@
 ### How to build an ePI document
 The following is an example of how to build a Summary of Product Characteristics (SmPC) as a Type 1, Type 2, and Type 3 ePI document. This example is meant as a demonstration to encourage a harmonized approach. Refer to national or regional health authority guidance for official rules about how to build an ePI document.  
 
+![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/Type2ePI.drawio.png)  
+
 ### Steps to create Type 2 ePI Dcoument  
 
 #### Create Organization resource(s) 
@@ -123,7 +125,3 @@ Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.
 
 #### Create List (of ePIs)
 The List of ePIs is ued to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  
-
-
-![](https://github.com/HL7/emedicinal-product-info/blob/master/input/images/step-1.png)  
-
