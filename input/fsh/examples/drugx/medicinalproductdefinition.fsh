@@ -1,7 +1,9 @@
 Instance: DrugX75mgblisterx28
-InstanceOf: MedicinalProductDefinition
+InstanceOf: MedicinalProductDefinitionUvEpi
 Description: "Medicinal Product for DrugX 75 mg tablet blister x28"
 Usage: #example
+
+* id = "800a51a2-d81d-49a4-a4eb-f2417d301837"
 
 * identifier.system = $spor-prod
 * identifier.value = "medicinalproduct75"

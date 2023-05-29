@@ -3,6 +3,8 @@ InstanceOf: CompositionUvEpi
 Description: "Package Leaflet"
 Usage: #example
 
+* id = "fe63fd6a-afe8-4b61-a203-0cf4a69ffb60"
+
 * identifier.system = "https://spor.ema.europa.eu"
 * identifier.value = "0d69fdcb-33cf-407f-8209-a6529856ab4f"
 

@@ -43,12 +43,12 @@ Description: "Instance of DrugX package insert for Connectathon testing"
 * entry[=].resource = manitemDrugX75
 
 // ingredients 7
-* entry[+].fullUrl = "urn:uuid:09c13040-8fd5-4818-972d-f01d4ee169b6"
-* entry[=].resource = Silicondioxide
-
-// 8
 * entry[+].fullUrl = "urn:uuid:745c01bc-936e-45ca-9880-57e97608f43e"
 * entry[=].resource = acetaminophen75
+
+// 8
+* entry[+].fullUrl = "urn:uuid:09c13040-8fd5-4818-972d-f01d4ee169b6"
+* entry[=].resource = Silicondioxide
 
 // 9
 * entry[+].fullUrl = "urn:uuid:a4b7b60c-998f-4f93-89c7-860396af0fe3"
@@ -91,6 +91,10 @@ Description: "Instance of DrugX package insert for Connectathon testing"
 // Clinical Use Definition - Contraindication
 * entry[+].fullUrl = "urn:uuid:83f4a22f-9e5e-4941-9fdb-339a0f1f2055"
 * entry[=].resource = contraindication
+
+// Clinical Use Definition - Indication
+* entry[+].fullUrl = "urn:uuid:bac1d528-6430-4310-bde6-b8b3471ce35a"
+* entry[=].resource = indication
 
 // Clinical Use Definition - Interaction
 * entry[+].fullUrl = "urn:uuid:e60575aa-e7b3-4461-a456-d310514f4041"

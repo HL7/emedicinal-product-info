@@ -3,6 +3,8 @@ InstanceOf: IngredientUvEpi
 Description: "Titanium Dioxide"
 Usage: #example
 
+* id = "a88891dc-7e9e-4d84-b462-95e53de3b6a6"
+
 * identifier.system = $ginas
 * identifier.value = "15FIX9V2JP"
 * identifier.use = #official

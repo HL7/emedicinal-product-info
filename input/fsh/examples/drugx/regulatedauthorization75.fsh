@@ -1,7 +1,9 @@
 Instance: authorizationDrugX75
-InstanceOf: RegulatedAuthorization
+InstanceOf: RegulatedAuthorizationUvEpi
 Description: "Regulated Authorization"
 Usage: #example
+
+* id = "297e405a-b6f9-4273-bc01-ae031efe47f8"
 
 * identifier.system = $spor-prod
 * identifier.value = "authorization75mg"

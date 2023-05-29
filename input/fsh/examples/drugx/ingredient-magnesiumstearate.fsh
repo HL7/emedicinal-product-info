@@ -3,6 +3,7 @@ InstanceOf: IngredientUvEpi
 Description: "Magnesium stearate"
 Usage: #example
 
+* id = "eee155e8-e442-491d-9a82-7af3cefac57f"
 
 * identifier.system = $ginas
 * identifier.value = "70097M6I30"

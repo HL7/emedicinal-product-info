@@ -4,6 +4,7 @@ Description: "acetaminophen"
 Usage: #example
 
 * id = "da33bd51-a726-4232-aaa0-4168b9bfe249"
+
 * identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta"
 * identifier.value = "362O9ITL9D"
 * identifier.use = #official

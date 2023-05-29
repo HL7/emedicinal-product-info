@@ -222,7 +222,7 @@ Description: "ISO Country two letter code"
 //* $uri#http://hl7.org/fhir/ValueSet/iso3166-1-2 "Iso 3166 Part 1: 2 Letter Codes" // FHIR terminology
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
 //* https://www.iso.org/obp/ui/#iso:code:3166:EU
-* urn:iso:std:iso:3166#EU "European Union"
+* urn:iso:std:iso:3166#FR "France"
 
 
 
@@ -260,7 +260,7 @@ Id: sectionCode
 Title: "Section Codes"
 Description: "Section Codes"
 * ^experimental = false
-* $example-org#sectionCode "sedtion code placeholder"
+//* $example-org#sectionCode "sedtion code placeholder"
 
 //==========================
 ValueSet: VsUnitofMeasure

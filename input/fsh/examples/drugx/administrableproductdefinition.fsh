@@ -3,6 +3,8 @@ InstanceOf: AdministrableProductDefinitionUvEpi
 Description: "DrugX 75 mg tablet"
 Usage: #example
 
+* id = "373b9bf3-1fae-47a1-a7cd-230106def069"
+
 * identifier.system = $phpid
 * identifier.value = "DrugXphpidplaceholder" 
 

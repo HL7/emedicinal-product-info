@@ -3,6 +3,8 @@ InstanceOf: IngredientUvEpi
 Description: "acetaminophen"
 Usage: #example
 
+* id = "745c01bc-936e-45ca-9880-57e97608f43e"
+
 * identifier.system = $ginas
 * identifier.value = "362O9ITL9D"
 * identifier.use = #official

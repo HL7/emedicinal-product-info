@@ -3,6 +3,8 @@ InstanceOf: IngredientUvEpi
 Description: "Hypromellose"
 Usage: #example
 
+* id = "1c10b441-6bd3-40b8-b14b-514e7c2f79d0"
+
 * identifier.system = $ginas
 * identifier.value = "3NXW29V3WO"
 * identifier.use = #official
