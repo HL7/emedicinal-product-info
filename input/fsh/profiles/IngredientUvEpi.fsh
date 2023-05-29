@@ -45,7 +45,7 @@ Description: "Ingredient (ePI)"
 
   * strength.textPresentation ^short = "Text of either the whole presentation strength or a part of it"
   * strength.textConcentration ^short = "Text of either the whole concentration strength or a part of it"
-  * strength.basis from VsRoleClassIngredientEntity (preferred)
+  * strength.basis
   * strength.referenceStrength ^short = "Strength expressed in terms of a reference substance"
-    * substance from VsSubstance (preferred)
+    * substance
     * strength[x] ^short = "Strength of the reference substance."

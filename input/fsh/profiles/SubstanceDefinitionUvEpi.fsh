@@ -29,4 +29,4 @@ Description: "SubstanceDefinition (ePI)"
   * code from VsSubstance (example)
 
 * name ^short = "Names applicable to this substance."
-  * name ^short = "International Non-Proprietary Name (INN) of the substance."
+  * name ^short = "International Non-Proprietary Name (INN) of the substance; or United States Adopted Name (USAN) if applicable."

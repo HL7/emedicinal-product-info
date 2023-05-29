@@ -9,62 +9,65 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * system 1..
   * value 1..
 
-* type
+* type 0..1
 
-* domain
-
-* indication ^short = "Narrative text of the authorized indication(s) for this product."
+* domain 0..1
 
 * version
-* status
-* statusDate ^short = "The date at which this status became applicable." 
-* description ^short = "General description of the medicinal product referred by the ePI"
 
-* combinedPharmaceuticalDoseForm
-* route
+* status 0..1
 
-* legalStatusOfSupply
+* statusDate 0..1
+  * ^short = "The date at which this status became applicable." 
 
-* additionalMonitoringIndicator
+* description 0..1
+  * ^short = "General description of the medicinal product referred by the ePI"
 
-* specialMeasures
+* combinedPharmaceuticalDoseForm 0..1
 
-* pediatricUseIndicator
+* route 0..*
 
-* classification
+* indication 0..1
+  * ^short = "Narrative text of the authorized indication(s) for this product."
+
+* legalStatusOfSupply 0..1
+
+* additionalMonitoringIndicator 0..1
+
+* specialMeasures 0..*
+
+* pediatricUseIndicator 0..1
+
+* classification 0..* 
 
 * marketingStatus 0..
-  * country  from $VS-country (preferred)
+  * country  from VsCountry (preferred)
   * dateRange
   * status
 
-* packagedMedicinalProduct
+* packagedMedicinalProduct 0..* 
 
-* contact
-  * type
-  * contact
+* contact 0..*
+  * type 0..1
+  * contact 1..1
 
 * name 1..
-  * productName
-  * type
-  
-* name
-  * productName
-  * type
-  * part
-    * part
-    * type
-  * usage
-    * country
-    * jusrisdiction
-    * language
+  * productName 1..1
+  * type 0..1
+  * part 0..*
+    * part 1..1
+    * type 1..1
+  * usage 0..* 
+    * country 1..1
+    * jurisdiction 0..1
+    * language 1..1
 
-* crossReference
-  * product
-  * type
+* crossReference 0..*
+  * product 1..1
+  * type 0..1
 
-* operation
-  * type
+* operation 0..*
+  * type 0..1
   * type.concept 1..
-  * effectiveDate
-  * organization
+  * effectiveDate 0..1
+  * organization 0..*
