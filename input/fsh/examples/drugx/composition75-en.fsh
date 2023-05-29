@@ -8,7 +8,7 @@ Usage: #example
 
 * status = #final
 
-* type = #100000155538
+* type = https://spor.ema.europa.eu/rmswi#100000155538
 * type.text = "Package Leaflet"
 
 * subject = Reference(DrugX75mgblisterx28) //reference to the medicinal product
@@ -23,14 +23,14 @@ Usage: #example
 
 * section[+].
   * title = "B. Package Leaflet"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswihttps://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "B. PACKAGE LEAFLET"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'/>"""
         
 * section[=].section[+]
   * title = "Package leaflet: Information for the user"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "Package leaflet: Information for the user"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -47,7 +47,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "What is in this leaflet"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "What is in this leaflet"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -63,7 +63,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "1. What DrugX is and what it is used for"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "1. What DrugX is and what it is used for"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -74,7 +74,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "2. What you need to know before you take DrugX"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "2. What you need to know before you take DrugX"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -83,7 +83,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "3. How to take DrugX"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "3. How to take DrugX"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -92,7 +92,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "4. Possible side effects"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "4. Possible side effects"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -101,7 +101,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "5. How to store DrugX"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "5. How to store DrugX"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -110,7 +110,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "6. Contents of the pack and other information"
-  * code = #100000155538
+  * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "6. Contents of the pack and other information"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
