@@ -5,6 +5,8 @@ The following is an example of how to build a Summary of Product Characteristics
 
 ![](Type3ePI.drawio.png)  
 
+
+
 #### Create Organization resource(s) 
 Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with ePIs: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
 
