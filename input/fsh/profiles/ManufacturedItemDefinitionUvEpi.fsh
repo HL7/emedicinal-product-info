@@ -11,7 +11,7 @@ Description: "ManufacturedItemDefinition (ePI)"
 
 * status ^short = "draft|active|retired|unknown"
 
-* manufacturedDoseForm from VsPharmaceuticalDoseForm (preferred)
+* manufacturedDoseForm from VsAdministrableDoseForm (preferred)
 
 * unitOfPresentation from VsUnitofPresentation (preferred)
 

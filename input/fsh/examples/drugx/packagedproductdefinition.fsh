@@ -15,7 +15,7 @@ Usage: #example
 * type.text = "Chemical Medicinal Prodcut"
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
-* statusDate = "2015-02-07T13:28:17Z"
+* statusDate = "2018-06-23T08:38:00+02:00"
 
 * containedItemQuantity.value = 75
 * containedItemQuantity.unit = "mg"

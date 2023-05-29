@@ -9,6 +9,7 @@ Usage: #example
 * identifier.value = "medicinalproduct75"
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
+* statusDate = "2018-06-23T08:38:00+02:00"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
 * type.text = "Medicinal Product"
@@ -24,7 +25,8 @@ Usage: #example
 * name.type = $spor-rms#220000000001
 
 * name
-  * type.text = "Full name"
+  * productName = "DrugX"
+  * type.text = "DrugX 75 mg tablets"
   * usage
     * country = urn:iso:std:iso:3166#FR
     * jurisdiction = urn:iso:std:iso:3166#FR
@@ -33,7 +35,7 @@ Usage: #example
     * part = "DrugX"
     * type = $spor-rms#220000000002
     * type.text = "Invented name part"
-    * part = "irbesartan"
+    * part = "acetaminophen"
     * type = $spor-rms#220000000003
     * type.text = "Scientific name part"
     * part = "75 mg"
@@ -41,4 +43,4 @@ Usage: #example
     * type.text = "Strength part"
     * part = "tablet"
     * type = $spor-rms#220000000005
-    * type.text = "Pharmaceutical dose form part"
+    * type.text = "Administrable dose form part"

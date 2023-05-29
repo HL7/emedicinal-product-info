@@ -27,8 +27,6 @@ Usage: #example
   * title = "B. Package Leaflet"
   * code = https://spor.ema.europa.eu/rmswi#100000155538
   * code.text = "B. PACKAGE LEAFLET"
-  * text.status = #additional
-  * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'/>"""
         
 * section[=].section[+]
   * title = "Package leaflet: Information for the user"

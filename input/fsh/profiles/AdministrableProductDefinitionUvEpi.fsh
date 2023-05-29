@@ -13,13 +13,13 @@ Description: "AdministrableProductDefinition (ePI)"
 
 * formOf only Reference(MedicinalProductDefinitionUvEpi)
 
-* administrableDoseForm from VsPharmaceuticalDoseForm (preferred)
+* administrableDoseForm from VsAdministrableDoseForm (example)
 
-* unitOfPresentation from VsUnitofPresentation (preferred)
+* unitOfPresentation from VsUnitofPresentation (example)
 
 * producedFrom only Reference(ManufacturedItemDefinitionUvEpi)
 
 * routeOfAdministration 
-  * code from VsRouteOfAdministration (preferred)
+  * code from VsRouteOfAdministration (example)
 
 * insert PropertyRulesSet

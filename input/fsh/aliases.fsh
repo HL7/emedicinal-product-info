@@ -1,10 +1,23 @@
 //============== ALIAS ===============
-
 // =========== Code Systems =======
+
+// TO BE KEPT
+Alias: $AdministrableDoseForm = http://hl7.org/fhir/administrable-dose-form
+Alias: $unitOfPresentation = http://hl7.org/fhir/unit-of-presentation
+Alias: $routeOfAdministration = http://snomed.info/sct
+
+Alias: $meddra = http://terminology.hl7.org/CodeSystem/mdr
+Alias: $iso3166 = urn:iso:std:iso:3166
+
+
+
+
+
+// TO BE DELETED
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $loinc = http://loinc.org
-Alias: $iso3166 = urn:iso:std:iso:3166
+
 Alias: $sct = http://snomed.info/sct
 Alias: $phenxtoolkit = https://www.phenxtoolkit.org
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
@@ -37,8 +50,6 @@ Alias: $spor-regulatoryEntitlementStatus-cs = https://spor.ema.europa.eu/lists/1
 
 Alias: $edqm = http://standardterms.edqm.eu
 
-// MedDRA
-Alias: $meddra = http://terminology.hl7.org/CodeSystem/mdr
 
 // --- Substances
 Alias: $unii = http://fdasis.nlm.nih.gov

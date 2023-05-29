@@ -13,10 +13,9 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 
 * domain 0..1
 
-* version
+* version 0..1
 
 * status 0..1
-
 * statusDate 0..1
   * ^short = "The date at which this status became applicable." 
 
@@ -61,13 +60,3 @@ Description: "Description of the packaged authorized medicinal product(s) associ
     * country 1..1
     * jurisdiction 0..1
     * language 1..1
-
-* crossReference 0..*
-  * product 1..1
-  * type 0..1
-
-* operation 0..*
-  * type 0..1
-  * type.concept 1..
-  * effectiveDate 0..1
-  * organization 0..*
