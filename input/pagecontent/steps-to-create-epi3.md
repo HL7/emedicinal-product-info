@@ -3,9 +3,7 @@ The following is an example of how to build a Summary of Product Characteristics
 
 ### Steps to create Type 3 ePI Dcoument  
 
-![](Type3ePI.drawio.png)  
-
-
+<img src="Type3ePI.drawio.png" usemap="#image-map" style="float:none; margin: 0px 0px 0px 0px;" width="650px">  
 
 #### Create Organization resource(s) 
 Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with ePIs: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
