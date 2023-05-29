@@ -28,5 +28,6 @@ Description: "SubstanceDefinition (ePI)"
   * ^short = "Codes associated with the substance." // Clarify when use codes and when identifiers
   * code from VsSubstance (example)
 
-* name ^short = "Names applicable to this substance."
-  * name ^short = "International Non-Proprietary Name (INN) of the substance; or United States Adopted Name (USAN) if applicable."
+* name 0..*
+  * ^short = "International Non-Proprietary Name (INN) of the substance; or United States Adopted Name (USAN) if applicable."
+  * type 0..1
