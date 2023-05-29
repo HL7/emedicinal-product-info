@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RegulatedAuthorization xmlns="http://hl7.org/fhir">
+  <id value="297e405a-b6f9-4273-bc01-ae031efe47f8"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RegulatedAuthorization</b><a name="297e405a-b6f9-4273-bc01-ae031efe47f8"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RegulatedAuthorization &quot;297e405a-b6f9-4273-bc01-ae031efe47f8&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RegulatedAuthorization-uv-epi.html">RegulatedAuthorization (ePI)</a></p></div><p><b>identifier</b>: id: EU/1/96/007/035 (use: OFFICIAL)</p><p><b>subject</b>: <a href="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837.html">MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837</a></p><p><b>type</b>: Marketing Authorisation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (rmswi#100000072062)</span></p><p><b>region</b>: Denmark <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#DK)</span></p><p><b>status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://build.fhir.org/codesystem-publication-status.html">PublicationStatus</a>#active)</span></p><p><b>statusDate</b>: 2015-02-07 13:28:17+0000</p><p><b>holder</b>: <a href="Organization-d71bf884-90eb-47f9-81b7-fa81ecec7e75.html">Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75</a> &quot;Acme Inc&quot;</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://spor.ema.europa.eu/pmswi"/>
+    <value value="EU/1/96/007/035"/>
+  </identifier>
+  <subject>
+    <reference value="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837"/>
+  </subject>
+  <type>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi"/>
+      <code value="100000072062"/>
+    </coding>
+    <text value="Marketing Authorisation"/>
+  </type>
+  <region>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+    </coding>
+    <text value="Denmark"/>
+  </region>
+  <status>
+    <coding>
+      <system value="http://hl7.org/fhir/publication-status"/>
+      <code value="active"/>
+    </coding>
+    <text value="Active"/>
+  </status>
+  <statusDate value="2015-02-07T13:28:17Z"/>
+  <holder>
+    <reference value="Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75"/>
+  </holder>
+</RegulatedAuthorization>

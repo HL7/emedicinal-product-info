@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AdministrableProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="373b9bf3-1fae-47a1-a7cd-230106def069"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AdministrableProductDefinition</b><a name="373b9bf3-1fae-47a1-a7cd-230106def069"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AdministrableProductDefinition &quot;373b9bf3-1fae-47a1-a7cd-230106def069&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AdministrableProductDefinition-uv-epi.html">AdministrableProductDefinition (ePI)</a></p></div><p><b>identifier</b>: id: adminproductcava75</p><p><b>status</b>: active</p><p><b>formOf</b>: <a href="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837.html">MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837</a></p><p><b>administrableDoseForm</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (200000000006#200000002152)</span></p><p><b>unitOfPresentation</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (rmswi#200000002152)</span></p><p><b>producedFrom</b>: <a href="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468.html">ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468</a></p><blockquote><p><b>routeOfAdministration</b></p><p><b>code</b>: Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (100000073345#100000073619)</span></p><h3>TargetSpecies</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Human <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (rmswi#100000109093)</span></td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <system value="https://www.who-umc.org/phpid"/>
+    <value value="adminproductcava75"/>
+  </identifier>
+  <status value="active"/>
+  <formOf>
+    <reference value="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837"/>
+  </formOf>
+  <administrableDoseForm>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi/200000000006"/>
+      <code value="200000002152"/>
+    </coding>
+    <text value="Tablet"/>
+  </administrableDoseForm>
+  <unitOfPresentation>
+    <coding>
+      <system value="https://spor.ema.europa.eu/rmswi"/>
+      <code value="200000002152"/>
+    </coding>
+    <text value="Tablet"/>
+  </unitOfPresentation>
+  <producedFrom>
+    <reference value="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468"/>
+  </producedFrom>
+  <routeOfAdministration>
+    <code>
+      <coding>
+        <system value="https://spor.ema.europa.eu/rmswi/100000073345"/>
+        <code value="100000073619"/>
+      </coding>
+      <text value="Oral use"/>
+    </code>
+    <targetSpecies>
+      <code>
+        <coding>
+          <system value="https://spor.ema.europa.eu/rmswi"/>
+          <code value="100000109093"/>
+        </coding>
+        <text value="Human"/>
+      </code>
+    </targetSpecies>
+  </routeOfAdministration>
+</AdministrableProductDefinition>

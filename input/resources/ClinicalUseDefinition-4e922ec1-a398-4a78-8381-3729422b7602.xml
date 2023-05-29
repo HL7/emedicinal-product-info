@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir">
+  <id value="4e922ec1-a398-4a78-8381-3729422b7602"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ClinicalUseDefinition</b><a name="4e922ec1-a398-4a78-8381-3729422b7602"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ClinicalUseDefinition &quot;4e922ec1-a398-4a78-8381-3729422b7602&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ClinicalUseDefinition-indication-uv-epi.html">ClinicalUseDefinition Indication (ePI)</a></p></div><p><b>identifier</b>: id: Psoriasis (use: OFFICIAL)</p><p><b>type</b>: indication</p><p><b>subject</b>: <a href="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837.html">MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837</a></p><blockquote><p><b>indication</b></p><h3>DiseaseSymptomProcedures</h3><table class="grid"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Hypertension <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-mdr.html">MedDRA</a>#10020772)</span></td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://spor.ema.europa.eu/rmswi#"/>
+    <value value="Psoriasis"/>
+  </identifier>
+  <type value="indication"/>
+  <subject>
+    <reference value="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837"/>
+  </subject>
+  <indication>
+    <diseaseSymptomProcedure>
+      <concept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+          <code value="10020772"/>
+          <display value="Hypertension"/>
+        </coding>
+      </concept>
+    </diseaseSymptomProcedure>
+  </indication>
+</ClinicalUseDefinition>

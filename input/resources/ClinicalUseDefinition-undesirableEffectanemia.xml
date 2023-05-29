@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir">
+  <id value="undesirableEffectanemia"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ClinicalUseDefinition</b><a name="undesirableEffectanemia"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ClinicalUseDefinition &quot;undesirableEffectanemia&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi.html">ClinicalUseDefinition Undesirable Effect (ePI)</a></p></div><p><b>identifier</b>: id: anemia (use: OFFICIAL)</p><p><b>type</b>: undesirable-effect</p><p><b>subject</b>: <a href="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837.html">MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837</a></p><blockquote><p><b>undesirableEffect</b></p><h3>SymptomConditionEffects</h3><table class="grid"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Anemia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-mdr.html">MedDRA</a>#10002272)</span></td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://spor.ema.europa.eu/rmswi#"/>
+    <value value="anemia"/>
+  </identifier>
+  <type value="undesirable-effect"/>
+  <subject>
+    <reference value="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837"/>
+  </subject>
+  <undesirableEffect>
+    <symptomConditionEffect>
+      <concept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+          <code value="10002272"/>
+          <display value="Anemia"/>
+        </coding>
+      </concept>
+    </symptomConditionEffect>
+  </undesirableEffect>
+</ClinicalUseDefinition>

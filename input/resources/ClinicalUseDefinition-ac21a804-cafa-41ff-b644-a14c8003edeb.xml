@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir">
+  <id value="ac21a804-cafa-41ff-b644-a14c8003edeb"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ClinicalUseDefinition</b><a name="ac21a804-cafa-41ff-b644-a14c8003edeb"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ClinicalUseDefinition &quot;ac21a804-cafa-41ff-b644-a14c8003edeb&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ClinicalUseDefinition-warning-uv-epi.html">ClinicalUseDefinition Warning (ePI)</a></p></div><p><b>identifier</b>: id: hypotension (use: OFFICIAL)</p><p><b>type</b>: warning</p><p><b>subject</b>: <a href="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837.html">MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837</a></p><h3>Warnings</h3><table class="grid"><tr><td>-</td><td><b>Description</b></td></tr><tr><td>*</td><td>Intravascular volume depletion: symptomatic hypotension, especially after the first dose, may occur in patients who are volume and/or sodium depleted by vigorous diuretic therapy, dietary salt restriction, diarrhoea or vomiting. Such conditions should be corrected before the administration of cava.</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://spor.ema.europa.eu/rmswi#"/>
+    <value value="hypotension"/>
+  </identifier>
+  <type value="warning"/>
+  <subject>
+    <reference value="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837"/>
+  </subject>
+  <warning>
+    <description value="Intravascular volume depletion: symptomatic hypotension, especially after the first dose, may occur in patients who are volume and/or sodium depleted by vigorous diuretic therapy, dietary salt restriction, diarrhoea or vomiting. Such conditions should be corrected before the administration of cava."/>
+  </warning>
+</ClinicalUseDefinition>

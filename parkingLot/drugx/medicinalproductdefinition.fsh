@@ -24,8 +24,8 @@ Usage: #example
 * name
   * type.text = "Full name"
   * usage
-    * country = urn:iso:std:iso:3166#fr
-    * jurisdiction = urn:iso:std:iso:3166#fr
+    * country = urn:iso:std:iso:3166#FR
+    * jurisdiction = urn:iso:std:iso:3166#FR
     * language = urn:ietf:bcp:47#en
   * part
     * part = "DrugX"

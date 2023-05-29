@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Ingredient xmlns="http://hl7.org/fhir">
+  <id value="eee155e8-e442-491d-9a82-7af3cefac57f"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Ingredient</b><a name="eee155e8-e442-491d-9a82-7af3cefac57f"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Ingredient &quot;eee155e8-e442-491d-9a82-7af3cefac57f&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Ingredient-uv-epi.html">Ingredient (ePI)</a></p></div><p><b>identifier</b>: id: 70097M6I30 (use: OFFICIAL)</p><p><b>status</b>: active</p><p><b>for</b>: <a href="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468.html">ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468</a></p><p><b>role</b>: inactive ingredient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleClass.html">RoleClass</a>#IACT)</span></p><h3>Manufacturers</h3><table class="grid"><tr><td>-</td><td><b>Manufacturer</b></td></tr><tr><td>*</td><td><a href="Organization-d71bf884-90eb-47f9-81b7-fa81ecec7e75.html">Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75</a> &quot;Acme Inc&quot;</td></tr></table><blockquote><p><b>substance</b></p><h3>Codes</h3><table class="grid"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Magnesium stearate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#70097M6I30)</span></td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://fdasis.nlm.nih.gov"/>
+    <value value="70097M6I30"/>
+  </identifier>
+  <status value="active"/>
+  <for>
+    <reference value="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468"/>
+  </for>
+  <role>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+      <code value="IACT"/>
+    </coding>
+    <text value="inactive ingredient"/>
+  </role>
+  <manufacturer>
+    <manufacturer>
+      <reference value="Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75"/>
+    </manufacturer>
+  </manufacturer>
+  <substance>
+    <code>
+      <concept>
+        <coding>
+          <system value="http://fdasis.nlm.nih.gov"/>
+          <code value="70097M6I30"/>
+          <display value="Magnesium stearate"/>
+        </coding>
+      </concept>
+    </code>
+  </substance>
+</Ingredient>
