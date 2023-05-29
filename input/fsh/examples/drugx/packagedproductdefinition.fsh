@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "EU/1/97/049/001"
 * identifier.use = #official
 
-* name = "Karvea 75 mg tablet blister x28 tablets"
+* name = "DrugX 75 mg tablet blister x28 tablets"
 
 * type = $spor-rms#100000155527
 * type.text = "Chemical Medicinal Prodcut"
@@ -25,8 +25,8 @@ Usage: #example
   * quantity = 28
   * material = $spor-rms#200000003222 "PolyVinyl Chloride"
 
-//reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* packageFor = Reference(karvea75mgblisterx28)
+//reference to MedicinalProductDefinition: EU/1/97/049/001 DrugX 75 mg tablet
+* packageFor = Reference(DrugX75mgblisterx28)
 
  // Reference to Organization: MAH
 * manufacturer = Reference(sanofi-aventis-groupe)

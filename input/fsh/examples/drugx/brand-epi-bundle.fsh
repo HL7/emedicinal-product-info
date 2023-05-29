@@ -6,12 +6,13 @@ Description: "Instance of Humalog package insert for Connectathon testing"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier.value = "EU/1/96/007/035"
+
+* meta
+  * versionId = "1"
+  * lastUpdated = "2018-06-23T08:38:00+02:00"
+
 * type = #document
 * timestamp = "2018-06-23T08:38:00+02:00"
 
 // Composition
-* entry[+].resource = composition-karvea-75
-
-// List of Products
-* entry[+].resource = listofproducts
-
+* entry[+].resource = compositionDrugX75

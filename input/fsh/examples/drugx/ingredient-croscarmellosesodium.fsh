@@ -1,10 +1,10 @@
-Instance: Macrogol3000
+Instance: Croscarmellosesodium
 InstanceOf: IngredientUvEpi
-Description: "Macrogol 3000"
+Description: "Croscarmellose sodium"
 Usage: #example
 
 * identifier.system = $ginas
-* identifier.value = "SA1B764746"
+* identifier.value = "M28OL1HH48"
 * identifier.use = #official
 
 * role = $spor-rms#100000072082
@@ -12,10 +12,10 @@ Usage: #example
 
 * status = #active
 
-* substance.code.concept.coding = $ginas#SA1B764746 "Macrogol 3000"
+* substance.code.concept.coding = $ginas#M28OL1HH48 "Croscarmellose sodium"
 
 // Reference to manufactured item
-* for = Reference(manitemkarvea75)
+* for = Reference(manitemDrugX75)
 
 // Reference to Organization:  Reference to MAH
 * manufacturer.manufacturer = Reference(sanofi-aventis-groupe)

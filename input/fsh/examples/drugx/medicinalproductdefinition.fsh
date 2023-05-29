@@ -1,10 +1,12 @@
-Instance: karvea75mgblisterx28
+Instance: DrugX75mgblisterx28
 InstanceOf: MedicinalProductDefinition
-Description: "EU/1/97/049/001 Karvea 75 mg tablet blister x28"
+Description: "Medicinal Product for DrugX 75 mg tablet blister x28"
 Usage: #example
 
 * identifier.system = $spor-prod
-* identifier.value = "123456"
+* identifier.value = "medicinalproduct75"
+
+* status = http://hl7.org/fhir/publication-status#active "Active"
 
 * type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
 * type.text = "Medicinal Product"
@@ -12,12 +14,12 @@ Usage: #example
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human
 * domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+
 
 * legalStatusOfSupply = $spor-rms#100000072084
 * legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
 
-* name.productName = "Karvea 75 mg tablet blister x28"
+* name.productName = "DrugX 75 mg tablet blister x28"
 
 * name.type = $spor-rms#220000000001
 
@@ -28,7 +30,7 @@ Usage: #example
     * jurisdiction = urn:iso:std:iso:3166#eu
     * language = urn:ietf:bcp:47#en
   * part
-    * part = "Karvea"
+    * part = "DrugX"
     * type = $spor-rms#220000000002
     * type.text = "Invented name part"
     * part = "irbesartan"

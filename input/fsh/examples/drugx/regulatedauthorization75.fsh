@@ -1,14 +1,14 @@
-Instance: authorizationkarvea75
+Instance: authorizationDrugX75
 InstanceOf: RegulatedAuthorization
 Description: "Regulated Authorization"
 Usage: #example
 
 * identifier.system = $spor-prod
-* identifier.value = "EU/1/96/007/035"
+* identifier.value = "authorization75mg"
 * identifier.use = #official
 
- // Reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* subject = Reference(karvea75mgblisterx28)
+ // Reference to MedicinalProductDefinition: DrugX 75 mg tablet
+* subject = Reference(DrugX75mgblisterx28)
 
 * type = $spor-rms#100000072062
 * type.text = "Marketing Authorisation"
@@ -22,4 +22,4 @@ Usage: #example
 * statusDate = "2015-02-07T13:28:17Z"
 
  // Reference to Organization: Marketing Authorization Holder
-* holder = Reference(sanofi-aventis-groupe)
+* holder = Reference(acmeinc)

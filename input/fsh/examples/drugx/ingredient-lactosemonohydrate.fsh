@@ -1,10 +1,11 @@
-Instance: Microcrystallinecellulose
+Instance: lactosemonohydrate
 InstanceOf: IngredientUvEpi
-Description: "Microcrystalline cellulose"
+Description: "Lactose Monohydrate"
 Usage: #example
 
+
 * identifier.system = $ginas
-* identifier.value = "OP1R32D61U"
+* identifier.value = "EWQ57Q8I5X"
 * identifier.use = #official
 
 * role = $spor-rms#100000072082
@@ -12,10 +13,10 @@ Usage: #example
 
 * status = #active
 
-* substance.code.concept.coding = $ginas#OP1R32D61U "Microcrystalline cellulose"
+* substance.code.concept.coding = $ginas#EWQ57Q8I5X "Lactose Monohydrate"
 
 // Reference to manufactured item
-* for = Reference(manitemkarvea75)
+* for = Reference(manitemDrugX75)
 
 // Reference to Organization:  Reference to MAH
 * manufacturer.manufacturer = Reference(sanofi-aventis-groupe)

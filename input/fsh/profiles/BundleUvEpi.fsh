@@ -20,8 +20,8 @@ Description: "Medicinal product information is a pivotal source of regulated and
   * ^definition = "Original date in which this ePI document received its first authorization. As with the identifier, this date persists across versions. "
 
 * meta
-  * versionId 1..1
-  * lastUpdated 1..1
+  * versionId 0..1
+  * lastUpdated 0..1
 
 * entry 1.. // 
 * entry ^slicing.discriminator[0].type = #type

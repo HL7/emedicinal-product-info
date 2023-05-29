@@ -15,7 +15,7 @@ Usage: #example
 * substance.code.concept.coding = $ginas#15FIX9V2JP "Titanium Dioxide"
 
 // Reference to manufactured item
-* for = Reference(manitemkarvea75)
+* for = Reference(manitemDrugX75)
 
 // Reference to Organization:  Reference to MAH
 * manufacturer.manufacturer = Reference(sanofi-aventis-groupe)

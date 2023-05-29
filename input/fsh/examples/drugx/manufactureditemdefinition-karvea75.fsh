@@ -1,6 +1,6 @@
-Instance: manitemkarvea75
+Instance: manitemDrugX75
 InstanceOf: ManufacturedItemDefinition
-Description: "karvea t5 mg tablet"
+Description: "DrugX t5 mg tablet"
 Usage: #example
 
 * id = "3214f286-b8ec-4ef5-bc8d-0aec39d97468"

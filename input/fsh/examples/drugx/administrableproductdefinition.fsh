@@ -1,15 +1,15 @@
-Instance: adminproductkarvea75
+Instance: adminproductDrugX75
 InstanceOf: AdministrableProductDefinition
-Description: "Karvea 75 mg tablet"
+Description: "DrugX 75 mg tablet"
 Usage: #example
 
 * identifier.system = $phpid
-* identifier.value = "karveaphpidplaceholder" 
+* identifier.value = "DrugXphpidplaceholder" 
 
 * status = #active
 
-//reference to MedicinalProductDefinition: EU/1/97/049/001 Karvea 75 mg tablet
-* formOf = Reference(karvea75mgblisterx28)
+//reference to MedicinalProductDefinition: EU/1/97/049/001 DrugX 75 mg tablet
+* formOf = Reference(DrugX75mgblisterx28)
 
 * administrableDoseForm = $spor-rms#200000002152
 * administrableDoseForm.text = "Tablet"
@@ -18,7 +18,7 @@ Usage: #example
 * unitOfPresentation.text = "Tablet"
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
-* producedFrom = Reference(manitemkarvea75)
+* producedFrom = Reference(manitemDrugX75)
 
 * routeOfAdministration.code = $spor-rms#100000073619
 * routeOfAdministration.code.text = "Oral use"

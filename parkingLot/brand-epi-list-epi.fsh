@@ -1,17 +1,17 @@
 Instance: listofepi
 InstanceOf: ListUvEpi
 Usage: #example
-Title: "Vulcan Karvea FHIR Package Insert List"
-Description: "List of Karvea package inserts for Connectathon testing"
+Title: "Vulcan brand FHIR Package Insert List"
+Description: "List of brand package inserts for Connectathon testing"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier.value = "karveaepi"
+* identifier.value = "brandepi"
 
 * status = #current
 
 * mode = #working
 
-* title = "List of all authorized Karvea ePIs"
+* title = "List of all authorized brand ePIs"
 
 * code = #epi
 
@@ -20,7 +20,7 @@ Description: "List of Karvea package inserts for Connectathon testing"
 * orderedBy = #entry-date
 
 * note
-  * text = "no special notes for Karvea ePIs"
+  * text = "no special notes for brand ePIs"
 
 // Bundle v1
 * entry[+].item = Reference(bundlepackageleaflet75)
