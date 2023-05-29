@@ -1,5 +1,5 @@
 Instance: adminproductDrugX75
-InstanceOf: AdministrableProductDefinition
+InstanceOf: AdministrableProductDefinitionUvEpi
 Description: "DrugX 75 mg tablet"
 Usage: #example
 

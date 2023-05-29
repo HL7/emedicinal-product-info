@@ -13,7 +13,7 @@ Usage: #example
 * type = $spor-rms#100000072062
 * type.text = "Marketing Authorisation"
 
-* region = urn:iso:std:iso:3166#fr
+* region = urn:iso:std:iso:3166#FR
 * region.text = "European Union"
 
 * status = http://hl7.org/fhir/publication-status#active
