@@ -32,20 +32,20 @@ Alias: $example-org = http://example.org
 Alias: $snomed = http://snomed.info/sct
 // SPOR Code systems (lists)
 	
-Alias: $spor-precautionsForStorage-cs  = https://spor.ema.europa.eu/lists/100000073344
-Alias: $spor-medicinalProducttype-cs  = https://spor.ema.europa.eu/lists/200000025915
-Alias: $spor-organisationRoleType-cs = https://spor.ema.europa.eu/lists/220000000031
-Alias: $spor-combinedPharmaceuticalDoseForm-cs = https://spor.ema.europa.eu/lists/200000000006 
-Alias: $spor-route-cs = https://spor.ema.europa.eu/lists/100000073345 // Routes and Methods of Administration
-Alias: $spor-legalStatusForSupply-cs = https://spor.ema.europa.eu/lists/100000072051	// Legal Status for the Supply
-Alias: $spor-additionalMonitoringIndicator-cs = http://example.org // TO BE FIXED
-Alias: $spor-packType-cs = http://example.org // TO BE FIXED
-Alias: $spor-operationType-cs  = http://example.org // TO BE FIXED
-Alias: $spor-pediatricUseIndicator-cs = http://example.org // TO BE FIXED
-Alias: $spor-marketingStatus-cs = https://spor.ema.europa.eu/lists/100000072052
-Alias: $spor-productNamePartType-cs = https://spor.ema.europa.eu/lists/220000000000 // Medicinal Product Name Part Type
-Alias: $spor-regulatoryEntitlementType-cs = https://spor.ema.europa.eu/lists/220000000060
-Alias: $spor-regulatoryEntitlementStatus-cs = https://spor.ema.europa.eu/lists/100000072049
+//Alias: $spor-precautionsForStorage-cs  = https://spor.ema.europa.eu/lists/100000073344
+//Alias: $spor-medicinalProducttype-cs  = https://spor.ema.europa.eu/lists/200000025915
+//Alias: $spor-organisationRoleType-cs = https://spor.ema.europa.eu/lists/220000000031
+//Alias: $spor-combinedPharmaceuticalDoseForm-cs = https://spor.ema.europa.eu/lists/200000000006 
+//Alias: $spor-route-cs = https://spor.ema.europa.eu/lists/100000073345 // Routes and Methods of Administration
+//Alias: $spor-legalStatusForSupply-cs = https://spor.ema.europa.eu/lists/100000072051	// Legal Status for the Supply
+//Alias: $spor-additionalMonitoringIndicator-cs = http://example.org // TO BE FIXED
+//Alias: $spor-packType-cs = http://example.org // TO BE FIXED
+//Alias: $spor-operationType-cs  = http://example.org // TO BE FIXED
+//Alias: $spor-pediatricUseIndicator-cs = http://example.org // TO BE FIXED
+//Alias: $spor-marketingStatus-cs = https://spor.ema.europa.eu/lists/100000072052
+//Alias: $spor-productNamePartType-cs = https://spor.ema.europa.eu/lists/220000000000 // Medicinal Product Name Part Type
+//Alias: $spor-regulatoryEntitlementType-cs = https://spor.ema.europa.eu/lists/220000000060
+//Alias: $spor-regulatoryEntitlementStatus-cs = https://spor.ema.europa.eu/lists/100000072049
 
 
 Alias: $edqm = http://standardterms.edqm.eu

@@ -1,10 +1,11 @@
 //=========================
-ValueSet: VsCombinedDoseForm
-Id: PharmaceuticalDoseForm
-Title: "Combined Pharmaceutical Dose Form"
-Description: "Combined Pharmaceutical Dose Form"
-* ^experimental = false
-* codes from system $spor-combinedPharmaceuticalDoseForm-cs
+// not used in IG
+//ValueSet: VsCombinedDoseForm
+//Id: PharmaceuticalDoseForm
+//Title: "Combined Pharmaceutical Dose Form"
+//Description: "Combined Pharmaceutical Dose Form"
+//* ^experimental = false
+//* codes from system $spor-combinedPharmaceuticalDoseForm-cs
 
 //=========================
 ValueSet: VsAdministrableDoseForm
@@ -19,8 +20,9 @@ ValueSet: VsRouteOfAdministration
 Id: routeOfAdministration
 Title: "Route Of Administration"
 Description:  "Route Of Administration"
-* ^experimental = false
-* codes from system $spor-route-cs
+* ^status = #draft
+* ^experimental = true
+* $spor-rms#100000073619
 
 //==========================
 ValueSet: VsUnitofMeasure
