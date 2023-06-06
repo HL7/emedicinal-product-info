@@ -1,8 +1,8 @@
 Instance: bundlepackageleaflet75
 InstanceOf: BundleUvEpi
 Usage: #example
-Title: "Vulcan DrugX FHIR Package Insert EMA v2"
-Description: "Instance of DrugX package insert for Connectathon testing"
+Title: "Bundle Vulcan DrugX FHIR Package Insert"
+Description: "Example Bundle of DrugX Package Insert"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier.value = "EU/0/00/000/000"
