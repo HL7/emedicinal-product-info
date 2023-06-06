@@ -35,13 +35,13 @@ RuleSet:  PropertyRulesSet
 * property[color].value[x] from VsPropertyColor (preferred)
 
 * property[flavor].type = CodeSystemGravitate#flavor
-* property[flavor].value[x] from VsPropertyFlavor (preferred)
+* property[flavor].value[x] from VsPropertyFlavor (example)
 
 * property[score].type   = $medicationknowledge-characteristic#scoring
-* property[score].value[x] from VsPropertyScore (preferred)
+* property[score].value[x] from VsPropertyScore (example)
 
 * property[shape].type   = $medicationknowledge-characteristic#shape
-* property[shape].value[x] from VsPropertyShape (preferred)
+* property[shape].value[x] from VsPropertyShape (example)
 
 * property[surfaceform].type   = CodeSystemGravitate#surfaceform
 * property[surfaceform].value[x] from VsPropertySurfaceForm (preferred)
