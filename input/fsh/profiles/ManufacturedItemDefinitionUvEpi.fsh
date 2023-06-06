@@ -11,9 +11,9 @@ Description: "ManufacturedItemDefinition (ePI)"
 
 * status ^short = "draft|active|retired|unknown"
 
-* manufacturedDoseForm from VsAdministrableDoseForm (preferred)
+* manufacturedDoseForm from VsAdministrableDoseForm (example)
 
-* unitOfPresentation from VsUnitofPresentation (preferred)
+* unitOfPresentation from VsUnitofPresentation (example)
 
 * manufacturer only Reference(OrganizationUvEpi)
 * insert PropertyRulesSet
