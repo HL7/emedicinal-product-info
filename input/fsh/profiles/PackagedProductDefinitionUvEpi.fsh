@@ -18,7 +18,7 @@ Description: "PackagedProductDefinition (ePI)"
 
 * status 0..1
 * statusDate 0..1
-  * ^example.label = "Example"
+  * ^example.label = "General"
   * ^example.valueDateTime = "2015-02-07T13:28:17Z"
 
 * containedItemQuantity 0..* 
