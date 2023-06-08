@@ -111,6 +111,7 @@ Id: containerType
 Title: "Container Type"
 Description: "Type of container"
 * ^experimental = false
+* ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database."
 * $edqm#30001000 "Ampoule"
 * $edqm#30004000 "Bag"
 * $edqm#30006000 "Barrel"
