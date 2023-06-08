@@ -45,7 +45,7 @@ Alias: $snomed = http://snomed.info/sct
 //Alias: $spor-marketingStatus-cs = https://spor.ema.europa.eu/lists/100000072052
 //Alias: $spor-productNamePartType-cs = https://spor.ema.europa.eu/lists/220000000000 // Medicinal Product Name Part Type
 //Alias: $spor-regulatoryEntitlementType-cs = https://spor.ema.europa.eu/lists/220000000060
-//Alias: $spor-regulatoryEntitlementStatus-cs = https://spor.ema.europa.eu/lists/100000072049
+Alias: $spor-regulatoryEntitlementStatus-cs = https://spor.ema.europa.eu/lists/100000072049
 
 
 Alias: $edqm = http://standardterms.edqm.eu
