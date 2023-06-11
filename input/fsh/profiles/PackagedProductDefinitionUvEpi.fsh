@@ -17,6 +17,8 @@ Description: "PackagedProductDefinition (ePI)"
 * packageFor only Reference(MedicinalProductDefinitionUvEpi)
 
 * status 0..1
+  * ^short = "The status within the lifecycle of this item. High level - not intended to duplicate details elsewhere e.g. legal status, or authorization/marketing status"
+
 * statusDate 0..1
   * ^example.label = "General"
   * ^example.valueDateTime = "2015-02-07T13:28:17Z"
@@ -27,7 +29,8 @@ Description: "PackagedProductDefinition (ePI)"
 * description ^short = "Narrative description of the overall pack; e.g., description of a sample pack"
 
 * legalStatusOfSupply ^short = "The legal status of supply of the packaged item as classified by the regulator."
-  * code
+  * code 
+    * ^short = "The actual status of supply. In what situation this package type may be supplied for use"
   * jurisdiction from VsCountry (preferred)
 
 * marketingStatus 0..*
