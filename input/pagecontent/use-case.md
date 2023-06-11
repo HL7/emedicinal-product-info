@@ -42,7 +42,7 @@ List|List of related ePI documents; e.g., list of Summary of Product Characteris
 Bundle|Container for a collection of resources and forms a FHIR document.|x|x|x
 Composition|Basic structure and narrative content for a document (e.g., section headings, paragraphs, tablets, bulleted lists).|x|x|x
 Binary|Encoded images.|x|x|x
-Organization|Name, address, contact information, and idenifiers for referenced companies.| |x|x
+Organization|Name, address, contact information, and idenifiers for referenced companies.|x|x|x
 Regulated Authorization|Regulatory license for each medicinal product.| |x|x
 Medicinal Product Definition|Details for each regulated medicinal product| |x|x
 Administrable Product Definition|Final form of the medicinal product ready for administration to a patient| |x|x
