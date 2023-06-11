@@ -32,10 +32,11 @@ It is not mandatory for any implementers to use all thirteen resources for all e
 - **Type 1 ePI documents** support creating the narrative content (e.g., document type, document identifier, section headings, paragraphs, and tables) and only a basic list of medicinal products.
 - **Type 2 ePI documents** support creating the narrative content and now includes product information. However, it does not include structured clinical use information. 
 - **Type 3 ePI documents** support creating the narrative, product information, and structured clinical use information.  
-
+  
+  
 **Table 1 Overview of resources, ePI use cases for each resource, and ePI document types**  
 
-|**FHIR Resource**|**ePI Use Case**|**Type 1**|**Type 2**|**Type 3**|
+|**FHIR Resource**|**ePI use cases for each resource**|**ePI Type 1**|**ePI Type 2**|**ePI Type 3**|
 |---|---|---|---|---|
 List|List of related ePI documents; e.g., list of Summary of Product Characteristics (SmPC), Package Leaflet, package artwork/mockups, and Annexes for a given medicinal product.|x|x|x
 Bundle|Container for a collection of resources and forms a FHIR document.|x|x|x
