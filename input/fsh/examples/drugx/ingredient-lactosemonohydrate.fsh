@@ -1,7 +1,7 @@
 Instance: lactosemonohydrate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient - Lactose Monohydrate"
-Description: "Example of an excipient ingredient using Lactose Monohydrate"
+Description: "Excipient ingredient using Lactose Monohydrate"
 Usage: #example
 
 * id = "7a3c0b14-2473-4541-9e45-a24d24cceddf"

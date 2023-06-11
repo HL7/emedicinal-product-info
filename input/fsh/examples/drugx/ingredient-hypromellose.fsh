@@ -1,7 +1,7 @@
 Instance: Hypromellose
 InstanceOf: IngredientUvEpi
 Title: "Ingredient - Hypromellose"
-Description: "Example of an excipient ingredient using Hypromellose"
+Description: "Excipient ingredient using Hypromellose"
 Usage: #example
 
 * id = "1c10b441-6bd3-40b8-b14b-514e7c2f79d0"

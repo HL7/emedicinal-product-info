@@ -1,7 +1,7 @@
 Instance: Magnesiumstearate
 InstanceOf: IngredientUvEpi
 Title: "Ingredient - Magnesium stearate"
-Description: "Example of an excipient ingredient using Magnesium stearate"
+Description: "Excipient ingredient using Magnesium stearate"
 Usage: #example
 
 * id = "eee155e8-e442-491d-9a82-7af3cefac57f"

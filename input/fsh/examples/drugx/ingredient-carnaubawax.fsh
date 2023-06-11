@@ -1,7 +1,7 @@
 Instance: carnaubawax
 InstanceOf: IngredientUvEpi
 Title: "Ingredient - Carnauba wax"
-Description: "Example of an excipient ingredient using Carnauba wax"
+Description: "Excipient ingredient using Carnauba wax"
 Usage: #example
 
 * id = "a4b7b60c-998f-4f93-89c7-860396af0fe3"

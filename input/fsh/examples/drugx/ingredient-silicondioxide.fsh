@@ -1,7 +1,7 @@
 Instance: Silicondioxide
 InstanceOf: IngredientUvEpi
 Title: "Ingredient - Silicon dioxide"
-Description: "Example of an excipient ingredient using Silicon dioxide"
+Description: "Excipient ingredient using Silicon dioxide"
 Usage: #example
 
 * id = "09c13040-8fd5-4818-972d-f01d4ee169b6"

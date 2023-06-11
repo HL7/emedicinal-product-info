@@ -1,7 +1,7 @@
 Instance: Macrogol3000
 InstanceOf: IngredientUvEpi
 Title: "Ingredient - Macrogol 3000"
-Description: "Example of an excipient ingredient using Macrogol 3000"
+Description: "Excipient ingredient using Macrogol 3000"
 Usage: #example
 
 * id = "ceba5cd1-321f-4bc3-b203-92d97fcf472e"
