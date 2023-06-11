@@ -19,7 +19,7 @@ Usage: #example
 
 * author = Reference(acmeinc) // Reference to Organization: Marketing Authorization Holder
 
-* title = "TEST PURPOSES ONLY - DrugX (acetaminophen) 75 mg tablets"
+* title = "Example of Type 3 ePI - DrugX (acetaminophen) 75 mg tablets"
 
 * language = #en
 

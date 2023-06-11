@@ -1,11 +1,11 @@
-Instance: bundlepackageleaflet75
+Instance: bundlepackageleaflet75type3
 InstanceOf: BundleUvEpi
 Usage: #example
-Title: "Bundle Vulcan DrugX FHIR Package Insert"
-Description: "Example Bundle of DrugX Package Insert"
+Title: "ePI Bundle Type 3 - DrugX Package Insert"
+Description: "Example of a type 3 ePI Bundle - Package Insert"
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier.value = "EU/0/00/000/000"
+* identifier.value = "EU/3/03/003/003"
 
 * meta
   * versionId = "1"
