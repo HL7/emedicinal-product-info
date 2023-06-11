@@ -1,6 +1,7 @@
 Instance: UndesirableEffect
 InstanceOf: ClinicalUseDefinitionUndesirableEffectUvEpi
-Description: "Undesirable Effect - Psoriasis"
+Title: "Clinical Use - Undesirable Effect"
+Description: "Undesirable Effect example - Psoriasis"
 Usage: #example
 
 * id = "4312f8ec-43b6-4b25-9fca-d61a1188bfea"

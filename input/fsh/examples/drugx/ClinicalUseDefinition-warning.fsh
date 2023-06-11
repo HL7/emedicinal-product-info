@@ -1,5 +1,6 @@
 Instance: warning
 InstanceOf: ClinicalUseDefinitionWarningUvEpi
+Title: "Clinical Use - Warning"
 Description: "Warning - hypotension"
 Usage: #example
 

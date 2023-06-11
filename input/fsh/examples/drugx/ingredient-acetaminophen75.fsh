@@ -1,6 +1,7 @@
 Instance: acetaminophen75
 InstanceOf: IngredientUvEpi
-Description: "acetaminophen"
+Title: "Ingredient - acetaminophen"
+Description: "Example of an active ingredient using acetaminophen"
 Usage: #example
 
 * id = "745c01bc-936e-45ca-9880-57e97608f43e"

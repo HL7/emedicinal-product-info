@@ -1,6 +1,7 @@
 Instance: titaniumdioxide
 InstanceOf: IngredientUvEpi
-Description: "Titanium Dioxide"
+Title: "Ingredient - Titanium Dioxide"
+Description: "Example of an excipient ingredient using Titanium Dioxide"
 Usage: #example
 
 * id = "a88891dc-7e9e-4d84-b462-95e53de3b6a6"

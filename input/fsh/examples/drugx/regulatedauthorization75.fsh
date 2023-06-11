@@ -1,6 +1,7 @@
 Instance: authorizationDrugX75
 InstanceOf: RegulatedAuthorizationUvEpi
-Description: "Regulated Authorization"
+Title: "Regulated Authorization for the 75 mg tablet"
+Description: "Regulated Authorization for the 75 mg tablet"
 Usage: #example
 
 * id = "297e405a-b6f9-4273-bc01-ae031efe47f8"

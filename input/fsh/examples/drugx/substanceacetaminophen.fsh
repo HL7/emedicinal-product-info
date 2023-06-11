@@ -1,6 +1,7 @@
 Instance: substanceacetaminophen
 InstanceOf: SubstanceDefinitionUvEpi
-Description: "acetaminophen"
+Title: "Substance - acetaminophen"
+Description: "Substance details for the active ingredient - acetaminophen"
 Usage: #example
 
 * id = "da33bd51-a726-4232-aaa0-4168b9bfe249"

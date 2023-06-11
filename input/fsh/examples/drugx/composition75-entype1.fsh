@@ -1,6 +1,7 @@
 Instance: compositionDrugX75type1
 InstanceOf: CompositionUvEpi
-Description: "Package Leaflet"
+Title: "Package Leaflet without a medicinal product"
+Description: "Example of a Package Leaflet with no references to a medicinal product (i.e., no subject)"
 Usage: #example
 
 * id = "5467a2fd-2463-4ec7-a6bb-b7322000f867"

@@ -1,6 +1,7 @@
 Instance: contraindication
 InstanceOf: ClinicalUseDefinitionContraindicationUvEpi
-Description: "Contraindication - Gastrointestinal disorders"
+Title: "Clinical Use - Contraindication"
+Description: "Contraindication example - Gastrointestinal disorders"
 Usage: #example
 
 * id = "83f4a22f-9e5e-4941-9fdb-339a0f1f2055"

@@ -1,5 +1,6 @@
 Instance: DrugX75mgblisterx28
 InstanceOf: MedicinalProductDefinitionUvEpi
+Title: "Medicinal Product DrugX 75 tablet in a blister of x28 tablets"
 Description: "Medicinal Product for DrugX 75 mg tablet blister x28"
 Usage: #example
 

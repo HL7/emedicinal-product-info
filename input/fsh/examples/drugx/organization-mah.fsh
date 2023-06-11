@@ -1,5 +1,6 @@
 Instance: acmeinc
 InstanceOf: OrganizationUvEpi
+Title: "Organization - Acme Inc."
 Description: "Marketing Authorization Holder"
 Usage: #example
 

@@ -1,6 +1,7 @@
 Instance: compositionDrugX75
 InstanceOf: CompositionUvEpi
-Description: "Package Leaflet"
+Title: "Package Leaflet with a medicinal product"
+Description: "Example of a Package Leaflet with a reference to a medicinal product as its subject"
 Usage: #example
 
 * id = "fe63fd6a-afe8-4b61-a203-0cf4a69ffb60"

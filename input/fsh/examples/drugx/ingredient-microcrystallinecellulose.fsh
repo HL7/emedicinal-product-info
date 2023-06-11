@@ -1,6 +1,7 @@
 Instance: Microcrystallinecellulose
 InstanceOf: IngredientUvEpi
-Description: "Microcrystalline cellulose"
+Title: "Ingredient - Microcrystalline cellulose"
+Description: "Example of an excipient ingredient using Microcrystalline cellulose"
 Usage: #example
 
 * id = "1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd"

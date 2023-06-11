@@ -1,6 +1,7 @@
 Instance: Croscarmellosesodium
 InstanceOf: IngredientUvEpi
-Description: "Croscarmellose sodium"
+Title: "Ingredient - Croscarmellose sodium"
+Description: "Example of an excipient ingredient using Croscarmellose sodium"
 Usage: #example
 
 * id = "fbf58407-83d3-42db-be3d-506b2006d431"

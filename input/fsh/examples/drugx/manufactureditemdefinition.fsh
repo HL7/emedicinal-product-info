@@ -1,6 +1,7 @@
 Instance: manitemDrugX75
 InstanceOf: ManufacturedItemDefinitionUvEpi
-Description: "DrugX t5 mg tablet"
+Title: "Manufactured Item - 75 mg tablet"
+Description: "DrugX 75 mg tablet"
 Usage: #example
 
 * id = "3214f286-b8ec-4ef5-bc8d-0aec39d97468"

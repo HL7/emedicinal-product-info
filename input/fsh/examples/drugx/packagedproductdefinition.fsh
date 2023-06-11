@@ -1,5 +1,6 @@
 Instance: packagebottlex28
 InstanceOf: PackagedProductDefinitionUvEpi
+Title: "Packaging - Blister"
 Description: "Blister x28 tablets"
 Usage: #example
 

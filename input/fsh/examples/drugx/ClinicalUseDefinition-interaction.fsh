@@ -1,6 +1,7 @@
 Instance: interaction
 InstanceOf: ClinicalUseDefinitionInteractionUvEpi
-Description: "Interaction - METHOTREXATE"
+Title: "Clinical Use - Interaction"
+Description: "Interaction example - METHOTREXATE"
 Usage: #example
 
 * id = "e60575aa-e7b3-4461-a456-d310514f4041"
