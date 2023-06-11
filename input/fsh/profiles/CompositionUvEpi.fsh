@@ -22,7 +22,7 @@ Description: "The Composition captures the section headings, sub-section heading
 
 * category ^short = "Categorization of ePI"
 
-* subject 1..
+* subject 0..*
 * subject only Reference (MedicinalProductDefinitionUvEpi)
 * subject ^short = "The authorized medicinal product(s) that this ePI's composition is about"
 
