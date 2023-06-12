@@ -14,14 +14,14 @@ Description: "RegulatedAuthorization (ePI)"
 * subject 1..
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 
-* type
+* type ^short = "Overall type of this authorization, for example drug marketing approval, orphan drug designation"
 
 * description ^short = "Brief description of the authorization"
 
 * region from VsCountry (preferred)
 
 * status ^short = "The current status of this authorization"
-* statusDate
+* statusDate ^short = "The date at which the current status was assigned"
 
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
 * indication.reference 1..
@@ -35,7 +35,7 @@ Description: "RegulatedAuthorization (ePI)"
 * regulator only Reference(OrganizationUvEpi)
 
 * case 
-  * identifier
-  * type
-  * status
-  * date[x]
+  * identifier ^short = "Identifier by which this case can be referenced."
+  * type ^short = "The defining type of case."
+  * status ^short = "The status associated with the case."
+  * date[x] ^short = "Relevant date for this case."

@@ -36,12 +36,9 @@ Alias: $snomed = http://snomed.info/sct
 //Alias: $spor-medicinalProducttype-cs  = https://spor.ema.europa.eu/lists/200000025915
 //Alias: $spor-organisationRoleType-cs = https://spor.ema.europa.eu/lists/220000000031
 //Alias: $spor-combinedPharmaceuticalDoseForm-cs = https://spor.ema.europa.eu/lists/200000000006 
-//Alias: $spor-route-cs = https://spor.ema.europa.eu/lists/100000073345 // Routes and Methods of Administration
+Alias: $spor-route-cs = https://spor.ema.europa.eu/lists/100000073345 // Routes and Methods of Administration
 //Alias: $spor-legalStatusForSupply-cs = https://spor.ema.europa.eu/lists/100000072051	// Legal Status for the Supply
 //Alias: $spor-additionalMonitoringIndicator-cs = http://example.org // TO BE FIXED
-//Alias: $spor-packType-cs = http://example.org // TO BE FIXED
-//Alias: $spor-operationType-cs  = http://example.org // TO BE FIXED
-//Alias: $spor-pediatricUseIndicator-cs = http://example.org // TO BE FIXED
 //Alias: $spor-marketingStatus-cs = https://spor.ema.europa.eu/lists/100000072052
 //Alias: $spor-productNamePartType-cs = https://spor.ema.europa.eu/lists/220000000000 // Medicinal Product Name Part Type
 //Alias: $spor-regulatoryEntitlementType-cs = https://spor.ema.europa.eu/lists/220000000060
@@ -72,9 +69,11 @@ http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic
 
 
 Alias: $spor-prod = https://spor.ema.europa.eu/pmswi // invented to be updated
-Alias: $spor = https://spor.ema.europa.eu
+// Alias: $spor = https://spor.ema.europa.eu
 Alias: $spor-org = https://spor.ema.europa.eu/omswi
 
+// there is no single rms code system
+// not valid systems to be updated in the examples
 Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
 Alias: $spor-man = http://ema.europa.eu/fhir/marketingAuthorizationNumber
 

@@ -1,11 +1,10 @@
 //=========================
-// not used in IG
-//ValueSet: VsCombinedDoseForm
-//Id: PharmaceuticalDoseForm
-//Title: "Combined Pharmaceutical Dose Form"
-//Description: "Combined Pharmaceutical Dose Form"
-//* ^experimental = false
-//* codes from system $spor-combinedPharmaceuticalDoseForm-cs
+ValueSet: VsMedProductIdSystems
+Id: VsMedProductIdSystems
+Title: "MedicinalProductDefinition identifier systems"
+Description: "MedicinalProductDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "EU MP ID system (placeholder)" // to be reviewed
 
 //=========================
 ValueSet: VsAdministrableDoseForm
@@ -22,7 +21,11 @@ Title: "Route Of Administration"
 Description:  "Route Of Administration"
 * ^status = #draft
 * ^experimental = true
-* $spor-rms#100000073619
+* codes from system $spor-route-cs
+
+// * ^experimental = true
+// * $spor-rms#100000073619
+
 
 //==========================
 ValueSet: VsUnitofMeasure
@@ -55,7 +58,7 @@ Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
 * ^experimental = false
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
-* urn:iso:std:iso:3166#FR "France"
+* urn:iso:std:iso:3166#EU "European Union"
 
 //==========================
 ValueSet: VsPropertyColor
@@ -105,13 +108,99 @@ Description: "Substances"
 * ^experimental = false
 * include codes from system http://fdasis.nlm.nih.gov
 
+//=========================
+ValueSet: VsPackagedProductIdSystems
+Id: packagedProductIdSystems
+Title: "PackagedProductDefinition identifier systems"
+Description: "PackagedProductDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+
+//=========================
+ValueSet: VsAdmProductIdSystems
+Id: admProductIdSystems
+Title: "AdministrableProductDefinition identifier systems"
+Description: "AdministrableProductDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+* $uri#https://www.who-umc.org/phpid "IDMP PhPID" // to be reviewed
+
+//=========================
+ValueSet: VsManufacturedItemIdSystems
+Id: manufacturedItemIdSystems
+Title: "ManufacturedItemDefinition identifier systems"
+Description: "ManufacturedItemDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+
+//=========================
+/* ValueSet: VsOrganizationIdSystems
+Id: organizationIdSystems
+Title: "Organization identifier systems"
+Description: "Organization Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed */
+
+//=========================
+ValueSet: VsEpiType
+Id: epiType
+Title: "ePI document types"
+Description: "ePI document types"
+* ^experimental = false
+* $loinc#34390-5	"HUMAN OTC DRUG LABEL"
+* $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+
+/* //==========================
+ValueSet: VsLegalStatusOfSupply
+Id: legalStatusOfSupply
+Title: "Legal Status for the Supply"
+Description: "Legal Status for the Supply"
+* ^experimental = false
+* codes from system $spor-legalStatusForSupply-cs */
+
+
+
+
+//==========================
+ValueSet: VsAtcClassification
+Id: atcClassification
+Title: "WHO ATC"
+Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system"
+* ^experimental = false
+* codes from system $atc 
+* ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"
+
+/* //==========================
+ValueSet: VsMarketingStatus
+Id: marketingStatus
+Title: "Marketing Status"
+Description: "Marketing Status"
+* ^experimental = false
+* codes from system $spor-marketingStatus-cs */
+
+/* //==========================
+ValueSet: VsAuthorizationStatus
+Id: authorizationStatus
+Title: "Authorization Status"
+Description: "Authorization Status"
+* ^experimental = false
+* codes from system $spor-regulatoryEntitlementStatus-cs // to be reviewed */
+
+//==========================
+/* ValueSet: VsPackagingType
+Id: secondaryPrimaryPackType
+Title: "Pack Type"
+Description: "Pack Type"
+* ^experimental = false
+* codes from system $spor-packType-cs */
+
 //==========================
 ValueSet: VsContainerType
 Id: containerType
 Title: "Container Type"
 Description: "Type of container"
 * ^experimental = false
-* ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database."
 * $edqm#30001000 "Ampoule"
 * $edqm#30004000 "Bag"
 * $edqm#30006000 "Barrel"
@@ -154,3 +243,243 @@ Description: "Type of container"
 * $edqm#13059000 "Unit-dose blister"
 * $edqm#30069000 "Vial"
 * $edqm#13125000 "Wrapper"
+
+
+//==========================
+ValueSet: VsPackageMaterial
+Id: packageMaterial
+Title: "Package Material"
+Description: "Package Material"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsShelfLifeType
+Id: shelfLifeType
+Title: "Shelf Life Type"
+Description: "Shelf Life Type"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
+
+//==========================
+ValueSet: VsSectionCode
+Id: sectionCode
+Title: "Section Codes"
+Description: "Section Codes"
+* ^experimental = false
+* $example-org#sectionCode "sedtion code placeholder"
+
+//==========================
+ValueSet: VsRoleClassIngredientEntity
+Id: roleClassIngredientEntity
+Title: "Ingredient Role; e.g., inactive, active base, active moiety"
+Description: "Ingredient Role; e.g., inactive, active base, active moiety"
+* ^experimental = false
+* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed
+
+//==========================
+ValueSet: VsDataCarrierIdSystem
+Id: dataCarrierIdSystem
+Title: "Data Carrier Identifiers"
+Description: "Listing of identifiers for Data Carriers"
+* ^experimental = false
+* $uri#https://www.gs1.org/gtin "Global Trade Item Number" // 
+
+//==========================
+ValueSet: VsCaseIdSystem
+Id: caseIdSystem
+Title: "Case System Identifiers"
+Description: "Case System Identifiers"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+//==========================
+ValueSet: VsRegulatoryActivityType
+Id: regulatoryActivityType
+Title: "Regulatory Activity Type"
+Description: "Regulatory Activity Type; e.g., MAA"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+//==========================
+ValueSet: VsGeneralStatus
+Id: generalStatus
+Title: "General Status used across ePI resources"
+Description: "General Status used across ePI resources"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+
+
+
+/* //==========================
+ValueSet: VsProprietaryNamePart
+Id: proprietaryNamePart
+Title: "Proprietary Name of the medicinal product"
+Description: "Proprietary Name of the medicinal product"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/rmswi */
+
+/* //==========================
+ValueSet: VsNonproprietaryNamePart
+Id: nonproprietaryNamePart
+Title: "Non-proprietary Name of the active ingredient(s)"
+Description: "Non-proprietary Name of the active ingredient(s)"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/rmswi */
+
+/* //==========================
+ValueSet: VsStrengthPart
+Id: strengthPart
+Title: "Strength of the medicinal product name"
+Description: "Strength of the medicinal product name"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed
+* codes from system https://spor.ema.europa.eu/rmswi */
+
+/* //==========================
+ValueSet: VsPharmaceuticalDoseFormPart
+Id: pharmaceuticalDoseFormPart
+Title: "Pharmaceutical Dose Form of the medicinal product"
+Description: "Pharmaceutical Dose Form of the medicinal product"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/rmswi */
+
+//==========================
+//ValueSet: VsListOrderCodesIdSystems
+//Id: VsListOrderCodesIdSystems
+//Title: "Order Codes for List"
+//Description: "Order Codes for List"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
+//* codes from system http://terminology.hl7.org/CodeSystem/list-order
+
+/* //==========================
+ValueSet: VsExampleUseCodesForList
+Id: exampleUseCodesForList
+Title: "The topic of this list"
+Description: "The topic of this list"
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes" */
+
+//==========================
+//ValueSet: VsJurisdiction
+//Id: VsJurisdiction
+//Title: "Two letter country code"
+//Description: "Two letter country code"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/jurisdiction "JurisdictionValueSet" // FHIR terminology
+
+//==========================
+//ValueSet: VsLanguage
+//Id: VsLanguage
+//Title: "Languages"
+//Description: "Languages"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
+
+/* //==========================
+ValueSet: VsProductNamePartType
+Id: productNamePartType
+Title: "Product Name Part Type"
+Description: "Product Name Part Type"
+* ^experimental = false
+* codes from system $spor-productNamePartType-cs
+
+//==========================
+ValueSet: VsPartType
+Id: partType
+Title: "Part Type"
+Description: "Part Type"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed */
+
+//==========================
+//ValueSet: VsMedicinalProductCrossReferenceType
+//Id: VsMedicinalProductCrossReferenceType
+//Title: "Product Cross Reference Type"
+//Description: "Product Cross Reference Type"
+//* ^experimental = false
+//* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
+//* codes from system http://hl7.org/fhir/medicinal-product-cross-reference-type
+
+/* //==========================
+ValueSet: VsProductConfidentialityIdSystems
+Id: productConfidentialityIdSystems
+Title: "Product Confidentiality"
+Description: "Product Confidentiality"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed */
+
+/* //=========================
+ValueSet: VsRegulatedAuthorizationType
+Id: regulatedAuthorizationType
+Title: "Type of Regulated Authorization"
+Description: "Type of Regulated Authorization"
+* ^experimental = false
+* codes from system $spor-regulatoryEntitlementType-cs // to be reviewed */
+
+/* //=========================
+ValueSet: VsRegulatedAuthorizationTypeIdSystems
+Id: RegulatedAuthorizationTypeIdSystems
+Title: "Regulated Authorization Type identifier systems"
+Description: "Regulated Authorization Type Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed */
+
+/* //=========================
+ValueSet: VsMedProductType
+Id: medProductType
+Title: "Medicinal Product Type"
+Description: "Medicinal Product Type"
+* ^experimental = false
+* codes from system $spor-medicinalProducttype-cs */
+
+/* //=========================
+ValueSet: VsPharmaceuticalDoseForm
+Id: PharmaceuticalDoseForm
+Title: "Combined Pharmaceutical Dose Form"
+Description: "Combined Pharmaceutical Dose Form"
+* ^experimental = false
+* codes from system $spor-combinedPharmaceuticalDoseForm-cs */
+
+/* //==========================
+ValueSet: VsOrganizationType
+Id: organizationType
+Title: "Type of organization"
+Description: "Type of organization"
+* ^experimental = false
+* codes from system $spor-organisationRoleType-cs */
+
+/* //==========================
+ValueSet: VsOperationType
+Id: operationType
+Title: "Type of operation"
+Description: "Type of operation"
+* ^experimental = false
+* codes from system $spor-operationType-cs */
+
+/* //==========================
+ValueSet: VsAdditionalMonitoringIndicator
+Id: additionalMonitoringIndicator
+Title: "Additional Monitoring Indicator"
+Description: "Additional Monitoring Indicator"
+* ^experimental = false
+* codes from system $spor-additionalMonitoringIndicator-cs */
+/* //==========================
+ValueSet: VsSpecialPrecautionsForStorage
+Id: specialPrecautionsForStorage
+Title: "Special Precautions For Storage"
+Description: "Special Precautions For Storage"
+* ^experimental = false
+* codes from system $spor-precautionsForStorage-cs // "SPOR Organization (EU)"  to be reviewed
+// add fda codes
+// add PMDA */
+
+
+/* //==========================
+ValueSet: VsPediatricUseIndicator
+Id: pediatricUseIndicator
+Title: "Pediatric Use Indicator"
+Description: "Pediatric Use Indicator"
+* ^experimental = false
+* codes from system $spor-pediatricUseIndicator-cs */

@@ -9,6 +9,7 @@ RuleSet: AdditionalBinding ( purpose, valueSetAlias, documentation, description)
 RuleSet: BundleEntry (sliceName, card, profile, short, def )
 
 * entry contains {sliceName} {card}
+* entry[{sliceName}].resource 1..
 * entry[{sliceName}].resource only {profile}
 * entry[{sliceName}] ^short = "{short}"
 * entry[{sliceName}] ^definition = """{def}"""
