@@ -34,7 +34,7 @@ RuleSet:  PropertyRulesSet
 * property[color].type  = $medicationknowledge-characteristic#color
 * property[color].value[x] from VsPropertyColor (preferred)
 
-* property[flavor].type = CodeSystemGravitate#flavor
+* property[flavor].type = EpiIg#flavor
 * property[flavor].value[x] from VsPropertyFlavor (example)
 
 * property[score].type   = $medicationknowledge-characteristic#scoring
@@ -43,7 +43,7 @@ RuleSet:  PropertyRulesSet
 * property[shape].type   = $medicationknowledge-characteristic#shape
 * property[shape].value[x] from VsPropertyShape (example)
 
-* property[surfaceform].type   = CodeSystemGravitate#surfaceform
+* property[surfaceform].type   = EpiIg#surfaceform
 * property[surfaceform].value[x] from VsPropertySurfaceForm (preferred)
 
 * property[size].type    = $medicationknowledge-characteristic#size

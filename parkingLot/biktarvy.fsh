@@ -21,8 +21,8 @@ Usage: #example
 
 * routeOfAdministration.code = https://standardterms.edqm.eu/browse/get_concepts/ROA/#20053000
 * routeOfAdministration.code.text = "Oral use"
-* routeOfAdministration.targetSpecies.code = https://spor.ema.europa.eu/rmswi/#/#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
+
 
 
  // Reference to MedicinalProductDefinition: EU/

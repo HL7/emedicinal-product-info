@@ -17,8 +17,8 @@ Usage: #example
 
 * routeOfAdministration.code = $spor-rms#100000073619
 * routeOfAdministration.code.text = "oral use"
-* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
+
 
 // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(emacfsb1639756818482)

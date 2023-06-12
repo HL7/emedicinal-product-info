@@ -25,7 +25,7 @@
 <artifact id="StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" key="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi" name="ClinicalUseDefinition Interaction (ePI)"/>
 <artifact id="StructureDefinition/ClinicalUseDefinition-undesirableEffect-uv-epi" key="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi" name="ClinicalUseDefinition Undesirable Effect (ePI)"/>
 <artifact id="StructureDefinition/ClinicalUseDefinition-warning-uv-epi" key="StructureDefinition-ClinicalUseDefinition-warning-uv-epi" name="ClinicalUseDefinition Warning (ePI)"/>
-<artifact id="CodeSystem/spor" key="CodeSystem-spor" name="Code System example for spor.ema.europa.eu-rmswi"/>
+<artifact deprecated="true" id="CodeSystem/spor" key="CodeSystem-spor" name="Code System example for spor.ema.europa.eu-rmswi"/>
 <artifact id="ValueSet/propertyColor" key="ValueSet-propertyColor" name="Color of the product"/>
 <artifact deprecated="true" id="ValueSet/PharmaceuticalDoseForm" key="ValueSet-PharmaceuticalDoseForm" name="Combined Pharmaceutical Dose Form"/>
 <artifact id="StructureDefinition/Composition-uv-epi" key="StructureDefinition-Composition-uv-epi" name="Composition (ePI)"/>
@@ -47,14 +47,19 @@
 <artifact id="Ingredient/09c13040-8fd5-4818-972d-f01d4ee169b6" key="Ingredient-09c13040-8fd5-4818-972d-f01d4ee169b6" name="Ingredient - Silicon dioxide"/>
 <artifact id="Ingredient/a88891dc-7e9e-4d84-b462-95e53de3b6a6" key="Ingredient-a88891dc-7e9e-4d84-b462-95e53de3b6a6" name="Ingredient - Titanium Dioxide"/>
 <artifact id="Ingredient/745c01bc-936e-45ca-9880-57e97608f43e" key="Ingredient-745c01bc-936e-45ca-9880-57e97608f43e" name="Ingredient - acetaminophen"/>
+<artifact id="CodeSystem/spor-ingredientRole" key="CodeSystem-spor-ingredientRole" name="Ingredient Role EMA SPOR"/>
 <artifact deprecated="true" id="ValueSet/roleClassIngredientEntity" key="ValueSet-roleClassIngredientEntity" name="Ingredient Role; e.g., inactive, active base, active moiety"/>
 <artifact deprecated="true" id="ValueSet/legalStatusOfSupply" key="ValueSet-legalStatusOfSupply" name="Legal Status for the Supply"/>
+<artifact id="CodeSystem/spor-legalStatusForTheSupply" key="CodeSystem-spor-legalStatusForTheSupply" name="Legal Status for the Supply EMA SPOR"/>
 <artifact id="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468" key="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468" name="Manufactured Item - 75 mg tablet"/>
 <artifact id="StructureDefinition/ManufacturedItemDefinition-uv-epi" key="StructureDefinition-ManufacturedItemDefinition-uv-epi" name="ManufacturedItemDefinition (ePI)"/>
 <artifact deprecated="true" id="ValueSet/manufacturedItemIdSystems" key="ValueSet-manufacturedItemIdSystems" name="ManufacturedItemDefinition identifier systems"/>
 <artifact deprecated="true" id="ValueSet/marketingStatus" key="ValueSet-marketingStatus" name="Marketing Status"/>
+<artifact id="CodeSystem/spor-material" key="CodeSystem-spor-material" name="Material EMA SPOR"/>
+<artifact id="CodeSystem/spor-productCategory" key="CodeSystem-spor-productCategory" name="Material EMA SPOR"/>
 <artifact id="ValueSet/meddra" key="ValueSet-meddra" name="MedDRA Terms for clinical diseases and symptoms"/>
 <artifact id="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837" key="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837" name="Medicinal Product DrugX 75 tablet in a blister of x28 tablets"/>
+<artifact id="CodeSystem/spor-namePartType" key="CodeSystem-spor-namePartType" name="Medicinal Product Name Part Type"/>
 <artifact deprecated="true" id="ValueSet/medProductType" key="ValueSet-medProductType" name="Medicinal Product Type"/>
 <artifact id="StructureDefinition/MedicinalProductDefinition-uv-epi" key="StructureDefinition-MedicinalProductDefinition-uv-epi" name="MedicinalProductDefinition (ePI)"/>
 <artifact deprecated="true" id="ValueSet/VsMedProductIdSystems" key="ValueSet-VsMedProductIdSystems" name="MedicinalProductDefinition identifier systems"/>
@@ -70,10 +75,12 @@
 <artifact id="StructureDefinition/PackagedProductDefinition-uv-epi" key="StructureDefinition-PackagedProductDefinition-uv-epi" name="PackagedProductDefinition (ePI)"/>
 <artifact deprecated="true" id="ValueSet/packagedProductIdSystems" key="ValueSet-packagedProductIdSystems" name="PackagedProductDefinition identifier systems"/>
 <artifact id="PackagedProductDefinition/eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" key="PackagedProductDefinition-eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" name="Packaging - Blister"/>
+<artifact id="CodeSystem/spor-packaging" key="CodeSystem-spor-packaging" name="Packaging EMA SPOR"/>
 <artifact deprecated="true" id="ValueSet/partType" key="ValueSet-partType" name="Part Type"/>
 <artifact deprecated="true" id="ValueSet/pediatricUseIndicator" key="ValueSet-pediatricUseIndicator" name="Pediatric Use Indicator"/>
 <artifact deprecated="true" id="ValueSet/pharmaceuticalDoseFormPart" key="ValueSet-pharmaceuticalDoseFormPart" name="Pharmaceutical Dose Form of the medicinal product"/>
 <artifact deprecated="true" id="ValueSet/productConfidentialityIdSystems" key="ValueSet-productConfidentialityIdSystems" name="Product Confidentiality"/>
+<artifact id="CodeSystem/spor-documentType" key="CodeSystem-spor-documentType" name="Product Information Document Type"/>
 <artifact deprecated="true" id="ValueSet/productNamePartType" key="ValueSet-productNamePartType" name="Product Name Part Type"/>
 <artifact deprecated="true" id="CodeSystem/CodeSystemUvEPIRpmswi" key="CodeSystem-CodeSystemUvEPIRpmswi" name="Products Management Services CodeSystem"/>
 <artifact deprecated="true" id="ValueSet/proprietaryNamePart" key="ValueSet-proprietaryNamePart" name="Proprietary Name of the medicinal product"/>
@@ -83,6 +90,9 @@
 <artifact id="StructureDefinition/RegulatedAuthorization-uv-epi" key="StructureDefinition-RegulatedAuthorization-uv-epi" name="RegulatedAuthorization (ePI)"/>
 <artifact deprecated="true" id="ValueSet/regulatoryActivityType" key="ValueSet-regulatoryActivityType" name="Regulatory Activity Type"/>
 <artifact id="ValueSet/routeOfAdministration" key="ValueSet-routeOfAdministration" name="Route Of Administration"/>
+<artifact id="CodeSystem/spor-routeMethodAdm" key="CodeSystem-spor-routeMethodAdm" name="Routes and Methods of Administration EMA SPOR"/>
+<artifact id="CodeSystem/spor-scope" key="CodeSystem-spor-scope" name="Scope EMA SPOR"/>
+<artifact id="CodeSystem/spor-organisationRoleType" key="CodeSystem-spor-organisationRoleType" name="Scope EMA SPOR"/>
 <artifact id="ValueSet/propertyScore" key="ValueSet-propertyScore" name="Score on the product"/>
 <artifact deprecated="true" id="ValueSet/sectionCode" key="ValueSet-sectionCode" name="Section Codes"/>
 <artifact id="ValueSet/propertyShape" key="ValueSet-propertyShape" name="Shape of the product"/>
@@ -98,6 +108,7 @@
 <artifact deprecated="true" id="ValueSet/VsRegulatedAuthorization" key="ValueSet-VsRegulatedAuthorization" name="Type of Regulated Authorization"/>
 <artifact deprecated="true" id="ValueSet/operationType" key="ValueSet-operationType" name="Type of operation"/>
 <artifact deprecated="true" id="ValueSet/organizationType" key="ValueSet-organizationType" name="Type of organization"/>
+<artifact id="CodeSystem/spor-UnitOfPresentation" key="CodeSystem-spor-UnitOfPresentation" name="Unit of Presentation EMA SPOR"/>
 <artifact id="ValueSet/unitofMeasure" key="ValueSet-unitofMeasure" name="Units of Measure"/>
 <artifact id="ValueSet/unitofPresentation" key="ValueSet-unitofPresentation" name="Units of Presentation"/>
 <artifact deprecated="true" id="ValueSet/atcClassification" key="ValueSet-atcClassification" name="WHO ATC"/>

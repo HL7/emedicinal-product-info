@@ -25,5 +25,5 @@ Usage: #example
 
 * routeOfAdministration.code = $spor-route-cs#100000073619
 * routeOfAdministration.code.text = "Oral use"
-* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
+

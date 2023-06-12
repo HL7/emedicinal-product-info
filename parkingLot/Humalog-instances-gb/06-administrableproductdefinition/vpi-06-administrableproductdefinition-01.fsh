@@ -17,7 +17,7 @@ Usage: #example
 * routeOfAdministration.code = $sct#34206005
 * routeOfAdministration.code.text = "Subcutaneous use"
 * routeOfAdministration.targetSpecies.code = $sct#278412004
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(9e08ee95-3a63-4f09-9ada-d0b9773ccc80)
