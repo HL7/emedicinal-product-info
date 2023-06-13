@@ -422,8 +422,8 @@ Description: "Section Codes"
  //==========================
 ValueSet: VsIngredientRole
 Id: ingredientRole
-Title: "Ingredient Role; e.g., inactive, active base, active moiety"
-Description: "Ingredient Role; e.g., inactive, active base, active moiety"
+Title: "Ingredient Role"
+Description: "Ingredient Role; e.g.,active, excipient"
 * ^experimental = false
 * codes from system $ingredient-role
 

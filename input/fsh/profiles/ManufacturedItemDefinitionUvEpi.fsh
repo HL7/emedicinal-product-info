@@ -5,7 +5,6 @@ Title: "ManufacturedItemDefinition (ePI)"
 Description: "ManufacturedItemDefinition (ePI)"
 
 * identifier 1..
-  * system
   * system 1..
   * value 1..
 
