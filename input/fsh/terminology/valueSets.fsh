@@ -1,5 +1,13 @@
 
 //=========================
+ValueSet: VsDoseForm
+Id: doseForm
+Title: "Dose Form"
+Description: "The dose form for a single part product, or combined form of a multiple part product"
+* ^experimental = false
+* codes from system $combined-dose-form
+
+//=========================
 ValueSet: VsAdministrableDoseForm
 Id: administrableDoseForm
 Title: "Administrable Pharmaceutical Dose Form"

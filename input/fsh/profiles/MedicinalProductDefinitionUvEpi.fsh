@@ -5,58 +5,54 @@ Title: "MedicinalProductDefinition (ePI)"
 Description: "Description of the packaged authorized medicinal product(s) associated to this ePI document."
 
 * identifier 1..
-  * system
   * system 1..
   * value 1..
 
-* type 0..1
+* type ^short = "Regulatory type, e.g. Investigational or Authorized."
 
-* domain 0..1
+* domain ^short = "If this medicine applies to human or veterinary uses."
 
-* version 0..1
+* version ^short = "A business identifier relating to a specific version of the product."
 
-* status 0..1
-* statusDate 0..1
-  * ^short = "The date at which this status became applicable." 
+* status ^short = "The status within the lifecycle of this product record."
+* statusDate ^short = "The date at which this status became applicable." 
 
-* description 0..1
-  * ^short = "General description of the medicinal product referred by the ePI"
+* description ^short = "General description of the medicinal product referred by the ePI"
 
-* combinedPharmaceuticalDoseForm 0..1
+* combinedPharmaceuticalDoseForm from VsDoseForm (example)
 
-* route 0..*
+* route from VsRouteOfAdministration (example)
 
-* indication 0..1
-  * ^short = "Narrative text of the authorized indication(s) for this product."
+* indication ^short = "Narrative text of the authorized indication(s) for this product."
 
-* legalStatusOfSupply 0..1
+* legalStatusOfSupply ^short = "The legal status of supply of the medicinal product as classified by the regulator."
 
-* additionalMonitoringIndicator 0..1
+* additionalMonitoringIndicator ^short = "Whether the Medicinal Product is subject to additional monitoring for regulatory reasons."
 
-* specialMeasures 0..*
+* specialMeasures ^short = "Whether the Medicinal Product is subject to special measures for regulatory reasons."
 
-* pediatricUseIndicator 0..1
+* pediatricUseIndicator ^short = "If authorised for pediatric use"
 
-* classification 0..* 
+* classification ^short = "Allows the product to be classified by various systems (e.g. ATC)"
 
 * marketingStatus 0..
   * country  from VsCountry (preferred)
-  * dateRange
-  * status
+  * dateRange ^short = "The date when the Medicinal Product is placed on the market by the Marketing Authorization Holder"
+  * status ^short = "Status of the marketing of the medicinal product."
 
-* packagedMedicinalProduct 0..* 
+* packagedMedicinalProduct ^short = "Package type for the product." 
 
 * contact 0..*
-  * type 0..1
-  * contact 1..1
+  * type ^short = "Allows the contact to be classified, for example QPPV, Pharmacovigilance Enquiry Information."
+  * contact ^short = "A specific contact, person (in a role), or an organization for this product"
 
 * name 1..
-  * productName 1..1
-  * type 0..1
+  * productName ^short = "The full product name."
+  * type ^short = "Type of product name, such as rINN, Proprietary, Non-Proprietary"
   * part 0..*
-    * part 1..1
-    * type 1..1
+    * part ^short = "A fragment of a product name."
+    * type ^short = "Type for this part of the name (e.g. strength part)"
   * usage 0..* 
-    * country 1..1
-    * jurisdiction 0..1
-    * language 1..1
+    * country ^short = "Country where this name applies"
+    * jurisdiction ^short = "Jurisdiction where this name applies"
+    * language ^short = "Language for this name"

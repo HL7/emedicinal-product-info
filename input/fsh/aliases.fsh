@@ -7,6 +7,7 @@ Alias: $manufactured-dose-form = http://hl7.org/fhir/manufactured-dose-form
 Alias: $unit-of-presentation = http://hl7.org/fhir/unit-of-presentation
 Alias: $ncithesaurus =  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl // see https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.html
 Alias: $ingredient-role = http://hl7.org/fhir/ingredient-role
+Alias: $combined-dose-form = http://hl7.org/fhir/combined-dose-form
 
 // Alias: $unit-of-presentation = http://hl7.org/fhir/unit-of-presentation // not used !!
 // Alias: $routeOfAdministration = http://snomed.info/sct // not used !!
