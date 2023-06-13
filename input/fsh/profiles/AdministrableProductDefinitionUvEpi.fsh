@@ -5,7 +5,6 @@ Title: "AdministrableProductDefinition (ePI)"
 Description: "AdministrableProductDefinition (ePI)"
 
 * identifier 1..*
-  * system
   * system 1..1
   * value 1..1
 

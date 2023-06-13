@@ -35,7 +35,7 @@ Description: "PackagedProductDefinition (ePI)"
 
 * marketingStatus 0..*
   * ^short = "Allows specifying that an item is on the market for sale, or that it is not available, and the dates and locations associated."
-  * country from VsCountry (preferred)
+  * jurisdiction from VsCountry (preferred)
   * status 1..1
   * dateRange.start 0..1
   * dateRange.end 0..1
@@ -47,7 +47,6 @@ Description: "PackagedProductDefinition (ePI)"
 
 * packaging
   * identifier 1..
-    * system
     * system 1..
     * value 1..
   * type 0..1

@@ -38,13 +38,13 @@ RuleSet:  PropertyRulesSet
 * property[flavor].value[x] from VsPropertyFlavor (example)
 
 * property[score].type   = $medicationknowledge-characteristic#scoring
-* property[score].value[x] from VsPropertyScore (example)
+// * property[score].value[x] from VsPropertyScore (example)
 
 * property[shape].type   = $medicationknowledge-characteristic#shape
 * property[shape].value[x] from VsPropertyShape (example)
 
 * property[surfaceform].type   = EpiIg#surfaceform
-* property[surfaceform].value[x] from VsPropertySurfaceForm (preferred)
+// * property[surfaceform].value[x] from VsPropertySurfaceForm (preferred)
 
 * property[size].type    = $medicationknowledge-characteristic#size
 

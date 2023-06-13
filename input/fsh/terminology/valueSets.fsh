@@ -1,10 +1,3 @@
-//=========================
-ValueSet: VsMedProductIdSystems
-Id: VsMedProductIdSystems
-Title: "MedicinalProductDefinition identifier systems"
-Description: "MedicinalProductDefinition Identifier systems (uri)"
-* ^experimental = false
-* $uri#https://spor.ema.europa.eu/pmswi "EU MP ID system (placeholder)" // to be reviewed
 
 //=========================
 ValueSet: VsAdministrableDoseForm
@@ -74,8 +67,6 @@ Id: propertyColor
 Title: "Color of the product"
 Description: "Color of the product"
 * ^experimental = false
-* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54453 // to be reviewed
-
 * $ncithesaurus#C48323	"BLACK"
 * $ncithesaurus#C48324	"GRAY"
 * $ncithesaurus#C48325	"WHITE"
@@ -168,13 +159,7 @@ Description: "Flavor of the product"
 * $ncithesaurus#C92709 "CHICKEN"
 * $ncithesaurus#C92710 "MALT"
 
-//==========================
-ValueSet: VsPropertyScore
-Id: propertyScore
-Title: "Score on the product"
-Description: "Score on the product"
-* ^experimental = false
-* $uri#https://placeholder.com // to be reviewed - request HL7 terminology team add this as a valueset
+
 
 //==========================
 ValueSet: VsPropertyShape
@@ -201,14 +186,6 @@ Description: "Shape of the product"
 * $ncithesaurus#C48351	"TEAR"
 * $ncithesaurus#C48352	"TRAPEZOI"
 * $ncithesaurus#C48353	"TRIANGLE"
-
-//==========================
-ValueSet: VsPropertySurfaceForm
-Id: propertySurfaceForm
-Title: "Surface form of the product"
-Description: "Surface form of the product"
-* ^experimental = false
-* $uri#https://placeholder.com // to be reviewed
 
 //==========================
 ValueSet: VsSubstance
@@ -243,13 +220,7 @@ Description: "ManufacturedItemDefinition Identifier systems (uri)"
 * ^experimental = false
 * $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
 
-//=========================
-/* ValueSet: VsOrganizationIdSystems
-Id: organizationIdSystems
-Title: "Organization identifier systems"
-Description: "Organization Identifier systems (uri)"
-* ^experimental = false
-* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed */
+
 
 //=========================
 ValueSet: VsEpiType
@@ -261,16 +232,6 @@ Description: "ePI document types"
 * $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 
-/* //==========================
-ValueSet: VsLegalStatusOfSupply
-Id: legalStatusOfSupply
-Title: "Legal Status for the Supply"
-Description: "Legal Status for the Supply"
-* ^experimental = false
-* codes from system $spor-legalStatusForSupply-cs */
-
-
-
 
 //==========================
 ValueSet: VsAtcClassification
@@ -281,35 +242,14 @@ Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) cl
 * codes from system $atc 
 * ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"
 
-/* //==========================
-ValueSet: VsMarketingStatus
-Id: marketingStatus
-Title: "Marketing Status"
-Description: "Marketing Status"
-* ^experimental = false
-* codes from system $spor-marketingStatus-cs */
 
-/* //==========================
-ValueSet: VsAuthorizationStatus
-Id: authorizationStatus
-Title: "Authorization Status"
-Description: "Authorization Status"
-* ^experimental = false
-* codes from system $spor-regulatoryEntitlementStatus-cs // to be reviewed */
-
-//==========================
-/* ValueSet: VsPackagingType
-Id: secondaryPrimaryPackType
-Title: "Pack Type"
-Description: "Pack Type"
-* ^experimental = false
-* codes from system $spor-packType-cs */
 
 //==========================
 ValueSet: VsContainerType
 Id: containerType
 Title: "Container Type"
 Description: "Type of container"
+* ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database"
 * ^experimental = false
 * $edqm#30001000 "Ampoule"
 * $edqm#30004000 "Bag"
@@ -372,14 +312,6 @@ Description: "Section Codes"
 * codes from system EmaProductInformationTemplate
 
 //==========================
-ValueSet: VsRoleClassIngredientEntity
-Id: roleClassIngredientEntity
-Title: "Ingredient Role; e.g., inactive, active base, active moiety"
-Description: "Ingredient Role; e.g., inactive, active base, active moiety"
-* ^experimental = false
-* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed
-
-//==========================
 ValueSet: VsDataCarrierIdSystem
 Id: dataCarrierIdSystem
 Title: "Data Carrier Identifiers"
@@ -387,22 +319,81 @@ Description: "Listing of identifiers for Data Carriers"
 * ^experimental = false
 * $uri#https://www.gs1.org/gtin "Global Trade Item Number" // 
 
+
+/* //=========================
+ValueSet: VsMedProductIdSystems
+Id: VsMedProductIdSystems
+Title: "MedicinalProductDefinition identifier systems"
+Description: "MedicinalProductDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "EU MP ID system (placeholder)" // to be reviewed
+ */
+//=========================
+/* ValueSet: VsOrganizationIdSystems
+Id: organizationIdSystems
+Title: "Organization identifier systems"
+Description: "Organization Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/omswi "SPOR Organization (EU)" // to be reviewed */
+
+/* //==========================
+ValueSet: VsLegalStatusOfSupply
+Id: legalStatusOfSupply
+Title: "Legal Status for the Supply"
+Description: "Legal Status for the Supply"
+* ^experimental = false
+* codes from system $spor-legalStatusForSupply-cs */
+
+/* //==========================
+ValueSet: VsMarketingStatus
+Id: marketingStatus
+Title: "Marketing Status"
+Description: "Marketing Status"
+* ^experimental = false
+* codes from system $spor-marketingStatus-cs */
+
+/* //==========================
+ValueSet: VsAuthorizationStatus
+Id: authorizationStatus
+Title: "Authorization Status"
+Description: "Authorization Status"
+* ^experimental = false
+* codes from system $spor-regulatoryEntitlementStatus-cs // to be reviewed */
+
 //==========================
+/* ValueSet: VsPackagingType
+Id: secondaryPrimaryPackType
+Title: "Pack Type"
+Description: "Pack Type"
+* ^experimental = false
+* codes from system $spor-packType-cs */
+
+/* //==========================
+ValueSet: VsRoleClassIngredientEntity
+Id: roleClassIngredientEntity
+Title: "Ingredient Role; e.g., inactive, active base, active moiety"
+Description: "Ingredient Role; e.g., inactive, active base, active moiety"
+* ^experimental = false
+* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed */
+
+
+
+/* //==========================
 ValueSet: VsCaseIdSystem
 Id: caseIdSystem
 Title: "Case System Identifiers"
 Description: "Case System Identifiers"
 * ^experimental = false
-* $uri#https://placeholder.com // to be reviewed
+* $uri#https://placeholder.com // to be reviewed */
 
-//==========================
+/* //==========================
 ValueSet: VsRegulatoryActivityType
 Id: regulatoryActivityType
 Title: "Regulatory Activity Type"
 Description: "Regulatory Activity Type; e.g., MAA"
 * ^experimental = false
-* $uri#https://placeholder.com // to be reviewed
-
+* $uri#https://placeholder.com // to be reviewed */
+/* 
 //==========================
 ValueSet: VsGeneralStatus
 Id: generalStatus
@@ -410,8 +401,7 @@ Title: "General Status used across ePI resources"
 Description: "General Status used across ePI resources"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed
-
-
+ */
 
 /* //==========================
 ValueSet: VsProprietaryNamePart
@@ -593,3 +583,19 @@ Title: "Shelf Life Type"
 Description: "Shelf Life Type"
 * ^experimental = false
 * codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed */
+
+/* //==========================
+ValueSet: VsPropertySurfaceForm
+Id: propertySurfaceForm
+Title: "Surface form of the product"
+Description: "Surface form of the product"
+* ^experimental = false
+* $uri#https://placeholder.com // to be reviewed */
+
+/* //==========================
+ValueSet: VsPropertyScore
+Id: propertyScore
+Title: "Score on the product"
+Description: "Score on the product"
+* ^experimental = true
+* $uri#https://placeholder.com // to be reviewed - request HL7 terminology team add this as a valueset */

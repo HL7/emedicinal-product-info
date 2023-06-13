@@ -3,7 +3,7 @@ Id: epi-ig
 Title: "eMedicinal Product Information Code System"
 Description: """eMedicinal Product Information Code System.
 Coded concepts defined for ePI use only."""
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = false
 * #flavor "Flavor" "Placeholder for the Flavor concept"
 * #surfaceform "Surface form" "Placeholder for the Surface form concept"
@@ -207,7 +207,7 @@ CodeSystem: EmaProductInformationTemplate
 Id: spor-productInformationTemplate
 Title: "Product Information Template SPOR"
 Description: "Example (fragment) of the Product Information Template list from the EMA SPOR RMS."
-* ^experimental = false
+* ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/200000029659"
 * ^caseSensitive = true
 * ^status = #draft
@@ -350,7 +350,7 @@ CodeSystem: EmaSporMaterial
 Id: spor-material
 Title: "Material EMA SPOR"
 Description: "Example (fragment) of the Package material list from the EMA SPOR RMS."
-* ^experimental = false
+* ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/200000003199"
 * ^caseSensitive = true
 * ^status = #draft
@@ -400,7 +400,7 @@ CodeSystem: EmaSporProductCategory
 Id: spor-productCategory
 Title: "Material EMA SPOR"
 Description: "Example (fragment) of the Product Category list from the EMA SPOR RMS."
-* ^experimental = false
+* ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000155526"
 * ^caseSensitive = true
 * ^status = #draft
@@ -423,7 +423,7 @@ CodeSystem: EmaSporUnitOfPresentation
 Id: spor-UnitOfPresentation
 Title: "Unit of Presentation EMA SPOR"
 Description: "Example (fragment) of the Unit of presentation list from the EMA SPOR RMS."
-* ^experimental = false
+* ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/200000000014"
 * ^status = #draft
 * ^compositional = false
@@ -489,7 +489,7 @@ CodeSystem: EmaSporScope
 Id: spor-scope
 Title: "Scope EMA SPOR"
 Description: "Example (fragment) of the Scope list from the EMA SPOR RMS."
-* ^experimental = false
+* ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000072055"
 * ^status = #draft
 * ^compositional = false
@@ -505,7 +505,7 @@ CodeSystem: EmaSporOrganisationRoleType
 Id: spor-organisationRoleType
 Title: "Organisation Role Type EMA SPOR"
 Description: "Example of the Organisation Role Type list from the EMA SPOR RMS."
-* ^experimental = false
+* ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/220000000031"
 * ^status = #draft
 * ^compositional = false
