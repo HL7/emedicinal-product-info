@@ -8,8 +8,8 @@ Usage: #example
 * identifier.value = "6OZP39ZG8H"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = EmaSporIngredientRole#100000072082 "Excipient"
+
 
 * status = #active
 

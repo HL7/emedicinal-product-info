@@ -11,7 +11,7 @@ Usage: #example
 * subject = Reference(cfsb1639238291499)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * description = "Skilarence 120 mg gastro-resistant tablets, 40 tablets in PVC/PVDC-aluminium blister packs"
 

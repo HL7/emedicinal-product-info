@@ -18,12 +18,12 @@ Usage: #example
 * domain = http://hl7.org/fhir/medicinal-product-domain#Human
 * domain.text = "Human use"
 
-* legalStatusOfSupply = $spor-rms#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+* legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
+
 
 * name.productName = "DrugX 75 mg tablet blister x28"
 
-* name.type = $spor-rms#220000000001
+* name.type = EmaSporNamePartType#220000000001 "Full name" 
 
 * name
   * productName = "DrugX"
@@ -34,14 +34,11 @@ Usage: #example
     * language = urn:ietf:bcp:47#en
   * part
     * part = "DrugX"
-    * type = $spor-rms#220000000002
+    * type = EmaSporNamePartType#220000000002 "Invented name part"
     * type.text = "Invented name part"
     * part = "acetaminophen"
-    * type = $spor-rms#220000000003
-    * type.text = "Scientific name part"
+    * type = EmaSporNamePartType#220000000003 "Scientific name part"
     * part = "75 mg"
-    * type = $spor-rms#220000000004
-    * type.text = "Strength part"
+    * type = EmaSporNamePartType#220000000004 "Strength part"
     * part = "tablet"
-    * type = $spor-rms#220000000005
-    * type.text = "Administrable dose form part"
+    * type = EmaSporNamePartType#220000000005 "Administrable dose form part"

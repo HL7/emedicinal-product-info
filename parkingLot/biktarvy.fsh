@@ -17,10 +17,10 @@ Usage: #example
 * administrableDoseForm.text = "Tablet"
 
 * unitOfPresentation = https://standardterms.edqm.eu/browse/get_concepts/UOP/#15054000
-* unitOfPresentation.text = "Tablet"
+
 
 * routeOfAdministration.code = https://standardterms.edqm.eu/browse/get_concepts/ROA/#20053000
-* routeOfAdministration.code.text = "Oral use"
+
 
 
 

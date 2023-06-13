@@ -8,11 +8,19 @@ Description: "MedicinalProductDefinition Identifier systems (uri)"
 
 //=========================
 ValueSet: VsAdministrableDoseForm
-Id: AdministrableDoseForm
+Id: administrableDoseForm
 Title: "Administrable Pharmaceutical Dose Form"
 Description: "Administrable Pharmaceutical Dose Form"
 * ^experimental = false
-* codes from system $AdministrableDoseForm
+* codes from system $administrable-dose-form
+
+//=========================
+ValueSet: VsManufacturedDoseForm
+Id: manufacturedDoseForm
+Title: "Manufactured Dose Form"
+Description: "Manufactured Dose Form"
+* ^experimental = false
+* codes from system $manufactured-dose-form
 
 //=========================
 ValueSet: VsRouteOfAdministration
@@ -21,7 +29,7 @@ Title: "Route Of Administration"
 Description:  "Route Of Administration"
 * ^status = #draft
 * ^experimental = true
-* codes from system $spor-route-cs
+* codes from system EmaSporRouteMethodAdm
 
 // * ^experimental = true
 // * $spor-rms#100000073619
@@ -41,7 +49,7 @@ Id: unitofPresentation
 Title: "Units of Presentation"
 Description: "Units of Presentation"
 * ^experimental = false
-* $uri#https://spor.ema.europa.eu/rmswi // to be reviewed
+* codes from system EmaSporUnitOfPresentation // to be reviewed
 
 //==========================
 ValueSet: VsMeddra
@@ -58,7 +66,7 @@ Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
 * ^experimental = false
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
-* urn:iso:std:iso:3166#EU "European Union"
+// * urn:iso:std:iso:3166#EU "European Union"
 
 //==========================
 ValueSet: VsPropertyColor
@@ -68,13 +76,97 @@ Description: "Color of the product"
 * ^experimental = false
 * $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54453 // to be reviewed
 
+* $ncithesaurus#C48323	"BLACK"
+* $ncithesaurus#C48324	"GRAY"
+* $ncithesaurus#C48325	"WHITE"
+* $ncithesaurus#C48326	"RED"
+* $ncithesaurus#C48327	"PURPLE"
+* $ncithesaurus#C48328	"PINK"
+* $ncithesaurus#C48329	"GREEN"
+* $ncithesaurus#C48330	"YELLOW"
+* $ncithesaurus#C48331	"ORANGE"
+* $ncithesaurus#C48332	"BROWN"
+* $ncithesaurus#C48333	"BLUE"
+* $ncithesaurus#C48334	"TURQUOISE"
+
+
 //==========================
 ValueSet: VsPropertyFlavor
 Id: propertyFlavor
 Title: "Flavor of the product"
 Description: "Flavor of the product"
 * ^experimental = false
-* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C73339 // to be reviewed
+* $ncithesaurus#C100097 "GINGER"
+* $ncithesaurus#C73360 "ALMOND"
+* $ncithesaurus#C73361 "ANISE"
+* $ncithesaurus#C73362 "APPLE"
+* $ncithesaurus#C73363 "APRICOT"
+* $ncithesaurus#C73364 "BANANA"
+* $ncithesaurus#C73365 "BERRY"
+* $ncithesaurus#C73366 "BLACKBERRY"
+* $ncithesaurus#C73367 "BLUEBERRY"
+* $ncithesaurus#C73368 "BUBBLE GUM"
+* $ncithesaurus#C73369 "BURGUNDY"
+* $ncithesaurus#C73370 "BUTTER PECAN"
+* $ncithesaurus#C73371 "BUTTERMINT"
+* $ncithesaurus#C73372 "BUTTERSCOTCH"
+* $ncithesaurus#C73373 "CARAMEL"
+* $ncithesaurus#C73374 "CHEESE"
+* $ncithesaurus#C73375 "CHERRY"
+* $ncithesaurus#C73376 "CHOCOLATE"
+* $ncithesaurus#C73377 "CINNAMON"
+* $ncithesaurus#C73378 "CITRUS"
+* $ncithesaurus#C73379 "COCONUT"
+* $ncithesaurus#C73380 "COFFEE"
+* $ncithesaurus#C73381 "COLA"
+* $ncithesaurus#C73382 "COTTON CANDY"
+* $ncithesaurus#C73383 "CRANBERRY"
+* $ncithesaurus#C73384 "CREME DE MENTHE"
+* $ncithesaurus#C73385 "CURACAO"
+* $ncithesaurus#C73386 "CUSTARD"
+* $ncithesaurus#C73387 "EGG NOG"
+* $ncithesaurus#C73388 "FIG"
+* $ncithesaurus#C73389 "FRUIT"
+* $ncithesaurus#C73390 "FRUIT PUNCH"
+* $ncithesaurus#C73391 "GRAPE"
+* $ncithesaurus#C73392 "GRAPEFRUIT"
+* $ncithesaurus#C73393 "GUARANA"
+* $ncithesaurus#C73394 "HONEY"
+* $ncithesaurus#C73395 "KIWI"
+* $ncithesaurus#C73396 "LEMON"
+* $ncithesaurus#C73397 "LICORICE"
+* $ncithesaurus#C73398 "LIME"
+* $ncithesaurus#C73399 "LIVER"
+* $ncithesaurus#C73400 "MANGO"
+* $ncithesaurus#C73402 "MEAT"
+* $ncithesaurus#C73403 "MENTHOL"
+* $ncithesaurus#C73404 "MINT"
+* $ncithesaurus#C73405 "ORANGE BANANA"
+* $ncithesaurus#C73406 "ORANGE"
+* $ncithesaurus#C73407 "PEACH"
+* $ncithesaurus#C73408 "PEPPERMINT"
+* $ncithesaurus#C73409 "PINEAPPLE"
+* $ncithesaurus#C73410 "PLUM"
+* $ncithesaurus#C73411 "POMEGRANATE"
+* $ncithesaurus#C73412 "RAISIN"
+* $ncithesaurus#C73413 "RASPBERRY"
+* $ncithesaurus#C73414 "ROOT BEER"
+* $ncithesaurus#C73415 "RUM"
+* $ncithesaurus#C73416 "SPEARMINT"
+* $ncithesaurus#C73417 "STRAWBERRY"
+* $ncithesaurus#C73418 "TANGERINE"
+* $ncithesaurus#C73419 "TROPICAL FRUIT PUNCH"
+* $ncithesaurus#C73420 "TUTTI FRUTTI"
+* $ncithesaurus#C73421 "VANILLA"
+* $ncithesaurus#C73422 "WALNUT"
+* $ncithesaurus#C73423 "WATERMELON"
+* $ncithesaurus#C73424 "WINTERGREEN"
+* $ncithesaurus#C73433 "MAQUE TREE"
+* $ncithesaurus#C79134 "FISH"
+* $ncithesaurus#C82400 "MARSHMALLOW"
+* $ncithesaurus#C87298 "BOYSENBERRY"
+* $ncithesaurus#C92709 "CHICKEN"
+* $ncithesaurus#C92710 "MALT"
 
 //==========================
 ValueSet: VsPropertyScore
@@ -90,7 +182,25 @@ Id: propertyShape
 Title: "Shape of the product"
 Description: "Shape of the product"
 * ^experimental = false
-* $uri#https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C54454 // to be reviewed
+* $ncithesaurus#C48335	"BULLET"
+* $ncithesaurus#C48336	"CAPSULE"
+* $ncithesaurus#C48337	"CLOVER"
+* $ncithesaurus#C48338	"DIAMOND"
+* $ncithesaurus#C48339	"DOUBLE CIRCLE"	
+* $ncithesaurus#C48340	"FREEFORM"	
+* $ncithesaurus#C48341	"GEAR"
+* $ncithesaurus#C48342	"HEPTAGON (7 sided)"	
+* $ncithesaurus#C48343	"HEXAGON (6 sided)"	
+* $ncithesaurus#C48344	"OCTAGON (8 sided)"	
+* $ncithesaurus#C48345	"OVAL"		
+* $ncithesaurus#C48346	"PENTAGON"		
+* $ncithesaurus#C48347	"RECTANGL"
+* $ncithesaurus#C48348	"ROUND"
+* $ncithesaurus#C48349	"SEMI-CIR"
+* $ncithesaurus#C48350	"SQUARE"
+* $ncithesaurus#C48351	"TEAR"
+* $ncithesaurus#C48352	"TRAPEZOI"
+* $ncithesaurus#C48353	"TRIANGLE"
 
 //==========================
 ValueSet: VsPropertySurfaceForm
@@ -251,23 +361,15 @@ Id: packageMaterial
 Title: "Package Material"
 Description: "Package Material"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
-
-//==========================
-ValueSet: VsShelfLifeType
-Id: shelfLifeType
-Title: "Shelf Life Type"
-Description: "Shelf Life Type"
-* ^experimental = false
-* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed
+* codes from system EmaSporMaterial //"SPOR Organization (EU)" // to be reviewed
 
 //==========================
 ValueSet: VsSectionCode
 Id: sectionCode
 Title: "Section Codes"
 Description: "Section Codes"
-* ^experimental = false
-* $example-org#sectionCode "sedtion code placeholder"
+* ^experimental = true
+* codes from system EmaProductInformationTemplate
 
 //==========================
 ValueSet: VsRoleClassIngredientEntity
@@ -483,3 +585,11 @@ Title: "Pediatric Use Indicator"
 Description: "Pediatric Use Indicator"
 * ^experimental = false
 * codes from system $spor-pediatricUseIndicator-cs */
+
+/* //==========================
+ValueSet: VsShelfLifeType
+Id: shelfLifeType
+Title: "Shelf Life Type"
+Description: "Shelf Life Type"
+* ^experimental = false
+* codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed */

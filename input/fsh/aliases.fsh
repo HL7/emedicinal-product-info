@@ -2,9 +2,12 @@
 // =========== Code Systems =======
 
 // TO BE KEPT
-Alias: $AdministrableDoseForm = http://hl7.org/fhir/administrable-dose-form
-Alias: $unitOfPresentation = http://hl7.org/fhir/unit-of-presentation
-Alias: $routeOfAdministration = http://snomed.info/sct
+Alias: $administrable-dose-form = http://hl7.org/fhir/administrable-dose-form
+Alias: $manufactured-dose-form = http://hl7.org/fhir/manufactured-dose-form
+Alias: $ncithesaurus =  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl // see https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.html
+
+// Alias: $unit-of-presentation = http://hl7.org/fhir/unit-of-presentation // not used !!
+// Alias: $routeOfAdministration = http://snomed.info/sct // not used !!
 
 Alias: $meddra = http://terminology.hl7.org/CodeSystem/mdr
 Alias: $iso3166 = urn:iso:std:iso:3166
@@ -74,7 +77,7 @@ Alias: $spor-org = https://spor.ema.europa.eu/omswi
 
 // there is no single rms code system
 // not valid systems to be updated in the examples
-Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
+// Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
 Alias: $spor-man = http://ema.europa.eu/fhir/marketingAuthorizationNumber
 
 //  VALUE SETS

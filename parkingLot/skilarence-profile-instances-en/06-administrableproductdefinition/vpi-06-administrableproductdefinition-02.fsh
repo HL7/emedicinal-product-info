@@ -17,7 +17,7 @@ Usage: #example
 * administrableDoseForm.text = "Tablet"
 
 * unitOfPresentation = https://spor.ema.europa.eu/rmswi/#200000002152
-* unitOfPresentation.text = "Tablet"
+
 
  // Reference to ManufacturedItemDefinition: 120 mg tablet
 * producedFrom = Reference(cfsb1639191683660)
@@ -38,5 +38,5 @@ Usage: #example
 * property[2].valueCodeableConcept.text = "White"
 
 * routeOfAdministration.code = https://spor.ema.europa.eu/rmswi/#100000073619
-* routeOfAdministration.code.text = "oral use"
+
 

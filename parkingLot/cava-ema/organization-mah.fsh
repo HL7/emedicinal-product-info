@@ -11,7 +11,7 @@ Usage: #example
 
 * active = true
 
-* type = $spor-rms#220000000034 "Marketing authorisation holder"
+* type = EmaSporOrganisationRoleType#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
 * name = "Acme Inc"
 

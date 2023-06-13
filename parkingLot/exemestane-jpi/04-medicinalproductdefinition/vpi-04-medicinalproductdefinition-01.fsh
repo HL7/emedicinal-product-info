@@ -14,8 +14,8 @@ Usage: #example
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
 
-* legalStatusOfSupply = $spor-rms#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+* legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
+
 
 * name
   * productName = "Aromasin (exemestane) Tablets 25 mg"

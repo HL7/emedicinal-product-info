@@ -10,7 +10,7 @@ Usage: #example
  // Reference to MedicinalProductDefinition: Ibrance (palbociclib)
 
 * type = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C73594
-* type.text = "Marketing Authorisation"
+
 
 * region = urn:iso:std:iso:3166#us
 * region.text = "United States"

@@ -11,23 +11,23 @@ Usage: #example
 
 * status = #final
 
-* type = $spor-rms#100000155538
-* type.text = "Package Leaflet"
+* type = EmaSporDocumentType#100000155538 "Package Leaflet"
+
+* subject = Reference(DrugX75mgblisterx28) //reference to the medicinal product
 
 * date = "2022-02-16T13:28:17Z"
 
 * author = Reference(acmeinc) // Reference to Organization: Marketing Authorization Holder
 
-* title = "Example of Type 3 ePI - DrugX (acetaminophen) 75 mg tablets"
+* title = "Example of Type 1 ePI - DrugX (acetaminophen) 75 mg tablets"
 
 * language = #en
 
 * section[+].
   * title = "B. Package Leaflet"
-  * code = $spor-rms#100000155538
-  * code.text = "B. PACKAGE LEAFLET"
+  * code = EmaProductInformationTemplate#200000029894 "PACKAGE LEAFLET"
         
-* section[=].section[+]
+/* * section[=].section[+]
   * title = "Package leaflet: Information for the user"
   * code = $spor-rms#100000155538
   * code.text = "Package leaflet: Information for the user"
@@ -58,12 +58,11 @@ Usage: #example
                 <li>How to store DrugX</li>
                 <li>Contents of the pack and other information</li>
             </ul>
-        </div>"""
+        </div>""" */
         
 * section[=].section[+]
   * title = "1. What DrugX is and what it is used for"
-  * code = $spor-rms#100000155538
-  * code.text = "1. What DrugX is and what it is used for"
+  * code = EmaProductInformationTemplate#200000029895 "1. What X is and what it is used for"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>
@@ -73,8 +72,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "2. What you need to know before you take DrugX"
-  * code = $spor-rms#100000155538
-  * code.text = "2. What you need to know before you take DrugX"
+  * code = EmaProductInformationTemplate#200000029896 "2. What you need to know before you <take> <use> X"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>            
@@ -82,8 +80,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "3. How to take DrugX"
-  * code = $spor-rms#100000155538
-  * code.text = "3. How to take DrugX"
+  * code = EmaProductInformationTemplate#200000029905 "3. How to <take> <use> X"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -91,7 +88,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "4. Possible side effects"
-  * code = $spor-rms#100000155538
+  * code = EmaProductInformationTemplate#200000029910 "4. Possible side effects"
   * code.text = "4. Possible side effects"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
@@ -100,8 +97,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "5. How to store DrugX"
-  * code = $spor-rms#100000155538
-  * code.text = "5. How to store DrugX"
+  * code = EmaProductInformationTemplate#200000029913 "5. How to store X"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -109,8 +105,7 @@ Usage: #example
         
 * section[=].section[+]
   * title = "6. Contents of the pack and other information"
-  * code = $spor-rms#100000155538
-  * code.text = "6. Contents of the pack and other information"
+  * code = EmaProductInformationTemplate#200000029914 "6. Contents of the pack and other information"
   * text.status = #additional
   * text.div = """<div xmlns='http://www.w3.org/1999/xhtml'> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    

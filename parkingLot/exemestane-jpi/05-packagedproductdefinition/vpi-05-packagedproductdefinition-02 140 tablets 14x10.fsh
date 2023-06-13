@@ -21,9 +21,9 @@ Usage: #example
 * packaging
   * identifier.system = $spor-prod
   * identifier.value = "123456"
-  * type = $spor-rms#100000073496 "Blister"
+  * type = EmaSporPackaging#100000073496 "Blister"
   * quantity = 28
-  * material = $spor-rms#200000003222 "PolyVinyl Chloride"
+  * material = EmaSporMaterial#200000003222 "PolyVinyl Chloride"
 
 //reference to MedicinalProductDefinition
 * packageFor = Reference(medicinalproduct25mg)

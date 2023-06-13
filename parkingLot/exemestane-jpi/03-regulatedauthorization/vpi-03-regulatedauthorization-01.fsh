@@ -11,7 +11,7 @@ Usage: #example
 * subject[+] = Reference(117616c7-3bcc-4665-8e12-0e93447e679e)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * region = urn:iso:std:iso:3166#jp
 * region.text = "Japan"

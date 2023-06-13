@@ -10,7 +10,7 @@ Usage: #example
 * status = #active
 
 * role = https://spor.ema.europa.eu/rmswi/#100000072072
-* role.text = "active"
+
 
 //reference to Manufactured Item: Dovato 50 mg/300 mg film-coated tablets
 * for = Reference(cfsb1650998521654)

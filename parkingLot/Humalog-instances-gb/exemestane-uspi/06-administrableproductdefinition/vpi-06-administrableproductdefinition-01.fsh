@@ -15,10 +15,10 @@ Usage: #example
 * administrableDoseForm.text = "Tablet"
 
 * unitOfPresentation = $spor-rms#15054000
-* unitOfPresentation.text = "Tablet"
+
 
 * routeOfAdministration.code = $spor-rms#20053000
-* routeOfAdministration.code.text = "Oral use"
+
 
 
 

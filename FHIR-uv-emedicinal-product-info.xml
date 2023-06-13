@@ -7,7 +7,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact deprecated="true" id="ValueSet/additionalMonitoringIndicator" key="ValueSet-additionalMonitoringIndicator" name="Additional Monitoring Indicator"/>
-<artifact id="ValueSet/AdministrableDoseForm" key="ValueSet-AdministrableDoseForm" name="Administrable Pharmaceutical Dose Form"/>
+<artifact id="ValueSet/administrableDoseForm" key="ValueSet-AdministrableDoseForm" name="Administrable Pharmaceutical Dose Form"/>
 <artifact id="AdministrableProductDefinition/373b9bf3-1fae-47a1-a7cd-230106def069" key="AdministrableProductDefinition-373b9bf3-1fae-47a1-a7cd-230106def069" name="Administrable Product for DrugX 75 mg tablets"/>
 <artifact id="StructureDefinition/AdministrableProductDefinition-uv-epi" key="StructureDefinition-AdministrableProductDefinition-uv-epi" name="AdministrableProductDefinition (ePI)"/>
 <artifact deprecated="true" id="ValueSet/admProductIdSystems" key="ValueSet-admProductIdSystems" name="AdministrableProductDefinition identifier systems"/>
@@ -51,6 +51,7 @@
 <artifact deprecated="true" id="ValueSet/roleClassIngredientEntity" key="ValueSet-roleClassIngredientEntity" name="Ingredient Role; e.g., inactive, active base, active moiety"/>
 <artifact deprecated="true" id="ValueSet/legalStatusOfSupply" key="ValueSet-legalStatusOfSupply" name="Legal Status for the Supply"/>
 <artifact id="CodeSystem/spor-legalStatusForTheSupply" key="CodeSystem-spor-legalStatusForTheSupply" name="Legal Status for the Supply EMA SPOR"/>
+<artifact id="ValueSet/manufacturedDoseForm" key="ValueSet-manufacturedDoseForm" name="Manufactured Dose Form"/>
 <artifact id="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468" key="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468" name="Manufactured Item - 75 mg tablet"/>
 <artifact id="StructureDefinition/ManufacturedItemDefinition-uv-epi" key="StructureDefinition-ManufacturedItemDefinition-uv-epi" name="ManufacturedItemDefinition (ePI)"/>
 <artifact deprecated="true" id="ValueSet/manufacturedItemIdSystems" key="ValueSet-manufacturedItemIdSystems" name="ManufacturedItemDefinition identifier systems"/>
@@ -64,6 +65,7 @@
 <artifact id="StructureDefinition/MedicinalProductDefinition-uv-epi" key="StructureDefinition-MedicinalProductDefinition-uv-epi" name="MedicinalProductDefinition (ePI)"/>
 <artifact deprecated="true" id="ValueSet/VsMedProductIdSystems" key="ValueSet-VsMedProductIdSystems" name="MedicinalProductDefinition identifier systems"/>
 <artifact deprecated="true" id="ValueSet/nonproprietaryNamePart" key="ValueSet-nonproprietaryNamePart" name="Non-proprietary Name of the active ingredient(s)"/>
+<artifact id="CodeSystem/spor-organisationRoleType" key="CodeSystem-spor-organisationRoleType" name="Organisation Role Type EMA SPOR"/>
 <artifact id="StructureDefinition/Organization-uv-epi" key="StructureDefinition-Organization-uv-epi" name="Organization (ePI)"/>
 <artifact id="Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75" key="Organization-d71bf884-90eb-47f9-81b7-fa81ecec7e75" name="Organization - Acme Inc."/>
 <artifact deprecated="true" id="CodeSystem/CodeSystemUvEPIRomswi" key="CodeSystem-CodeSystemUvEPIRomswi" name="Organization Management Services CodeSystem"/>
@@ -81,6 +83,7 @@
 <artifact deprecated="true" id="ValueSet/pharmaceuticalDoseFormPart" key="ValueSet-pharmaceuticalDoseFormPart" name="Pharmaceutical Dose Form of the medicinal product"/>
 <artifact deprecated="true" id="ValueSet/productConfidentialityIdSystems" key="ValueSet-productConfidentialityIdSystems" name="Product Confidentiality"/>
 <artifact id="CodeSystem/spor-documentType" key="CodeSystem-spor-documentType" name="Product Information Document Type"/>
+<artifact id="CodeSystem/spor-productInformationTemplate" key="CodeSystem-spor-productInformationTemplate" name="Product Information Template SPOR"/>
 <artifact deprecated="true" id="ValueSet/productNamePartType" key="ValueSet-productNamePartType" name="Product Name Part Type"/>
 <artifact deprecated="true" id="CodeSystem/CodeSystemUvEPIRpmswi" key="CodeSystem-CodeSystemUvEPIRpmswi" name="Products Management Services CodeSystem"/>
 <artifact deprecated="true" id="ValueSet/proprietaryNamePart" key="ValueSet-proprietaryNamePart" name="Proprietary Name of the medicinal product"/>
@@ -92,7 +95,6 @@
 <artifact id="ValueSet/routeOfAdministration" key="ValueSet-routeOfAdministration" name="Route Of Administration"/>
 <artifact id="CodeSystem/spor-routeMethodAdm" key="CodeSystem-spor-routeMethodAdm" name="Routes and Methods of Administration EMA SPOR"/>
 <artifact id="CodeSystem/spor-scope" key="CodeSystem-spor-scope" name="Scope EMA SPOR"/>
-<artifact id="CodeSystem/spor-organisationRoleType" key="CodeSystem-spor-organisationRoleType" name="Scope EMA SPOR"/>
 <artifact id="ValueSet/propertyScore" key="ValueSet-propertyScore" name="Score on the product"/>
 <artifact deprecated="true" id="ValueSet/sectionCode" key="ValueSet-sectionCode" name="Section Codes"/>
 <artifact id="ValueSet/propertyShape" key="ValueSet-propertyShape" name="Shape of the product"/>
@@ -127,7 +129,7 @@
 <page deprecated="true" key="background" name="Background"/>
 <page key="best-practice" name="Best Practice"/>
 <page deprecated="true" key="capability" name="Capability"/>
-<page deprecated="true" key="core-epi-structure" name="Core ePI Profile"/>
+<page deprecated="true" key="core-epi-structure" name="Base ePI Profile"/>
 <page key="credits" name="Credits"/>
 <page key="downloads" name="Downloads"/>
 <page deprecated="true" key="general-technical-conformance-requirements" name="General Technical Conformance Requirements"/>

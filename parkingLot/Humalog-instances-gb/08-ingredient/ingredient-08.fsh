@@ -8,7 +8,7 @@ Usage: #example
 * identifier.use = #official
 
 * role = http://hl7.org/fhir/ingredient-role/#100000072082
-* role.text = "Excipient"
+
 
 * status = #active
 

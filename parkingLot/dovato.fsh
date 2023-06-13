@@ -30,13 +30,13 @@ Usage: #example
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
 
-* legalStatusOfSupply = $spor-rms#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+* legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
+
 
 * name.productName = "Dovato 50 mg/300 mg film-coated tablets"
-* name.type = $spor-rms#220000000001
+* name.type = EmaSporNamePartType#220000000001 "Full name" 
 
-* name.type.text = "Full name"
+ 
 * name.usage.country = urn:iso:std:iso:3166#eu "European Union"
 * name.usage.jurisdiction = urn:iso:std:iso:3166#eu "European Union"
 * name.usage.language = urn:ietf:bcp:47#en  "English"
@@ -45,7 +45,7 @@ Usage: #example
 * name.part[=].type = $spor-rms#220000000002 "Invented name part"
 
 * name.part[+].part = "dolutegravir/lamivudine"
-* name.part[=].type = $spor-rms#220000000003 "Scientific name part"
+* name.part[=].type = EmaSporNamePartType#220000000002 "Invented name part" "Scientific name part"
 
 * name.part[+].part = "50 mg/300 mg"
 * name.part[=].type = $spor-rms#220000000004 "Strength part"
@@ -128,8 +128,8 @@ Usage: #example
 * manufacturedDoseForm = https://spor.ema.europa.eu/rmswi/#100000073665
 * manufacturedDoseForm.text = "Film-coated tablet"
 
-* unitOfPresentation = $spor-rms#200000002152
-* unitOfPresentation.text = "Tablet"
+ * unitOfPresentation = $spor-rms#200000002152 "Tablet"
+
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1650997423990)
@@ -149,10 +149,10 @@ Usage: #example
 * administrableDoseForm.text = "Tablet"
 
 * unitOfPresentation = https://standardterms.edqm.eu/browse/get_concepts/UOP/#15054000
-* unitOfPresentation.text = "Tablet"
+
 
 * routeOfAdministration.code = https://standardterms.edqm.eu/browse/get_concepts/ROA/#20053000
-* routeOfAdministration.code.text = "Oral use"
+
 
 
 
@@ -175,8 +175,8 @@ Usage: #example
  // Reference to MedicinalProductDefinition: EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets
 * subject = Reference(cfsb1650904258324)
 
-* type = $spor-rms#100000072062
-* type.text = "Marketing Authorisation"
+* type = EmaSporScope#100000072062 "Marketing Authorisation"
+
 
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"
@@ -205,7 +205,7 @@ Usage: #example
 
 * active = true
 
-* type = $spor-rms#220000000034 "Marketing authorisation holder"
+* type = EmaSporOrganisationRoleType#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
 * name = "ViiV Healthcare BV"
 
@@ -253,8 +253,8 @@ Usage: #example
 
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#00000072072
-* role.text = "active"
+* role = EmaSporIngredientRole#00000072072 "Active"
+
 
 
 //reference to Manufactured Item: Dovato 50 mg/300 mg film-coated tablets
@@ -295,7 +295,7 @@ Usage: #example
 * status = #active
 
 * role = https://spor.ema.europa.eu/rmswi/#100000072072
-* role.text = "active"
+
 
 //reference to Manufactured Item: Dovato 50 mg/300 mg film-coated tablets
 * for = Reference(cfsb1650998521654)
@@ -320,8 +320,8 @@ Usage: #example
 * identifier.value = "OP1R32D61U"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = EmaSporIngredientRole#100000072082 "Excipient"
+
 
 * status = #active
 
@@ -344,8 +344,8 @@ Usage: #example
 * identifier.value = "H8AV0SQX4D"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = EmaSporIngredientRole#100000072082 "Excipient"
+
 
 * status = #active
 
@@ -369,8 +369,8 @@ Usage: #example
 * identifier.value = "70097M6I30"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = EmaSporIngredientRole#100000072082 "Excipient"
+
 
 * status = #active
 
@@ -394,8 +394,8 @@ Usage: #example
 * identifier.value = "3OWL53L36A"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = EmaSporIngredientRole#100000072082 "Excipient"
+
 
 * status = #active
 

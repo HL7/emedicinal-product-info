@@ -12,8 +12,8 @@ Usage: #example
 // Reference to Manufactured Item
 * for = Reference(cfsb1639756818482)
 
-* role = https://spor.ema.europa.eu/rmswi/#00000072072
-* role.text = "active"
+* role = EmaSporIngredientRole#00000072072 "Active"
+
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#7FXW6U30GY "Fosfomycin Tromethamine"
 * substance.strength.presentationQuantity.value = 5.631

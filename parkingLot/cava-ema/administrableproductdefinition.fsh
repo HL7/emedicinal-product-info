@@ -17,13 +17,13 @@ Usage: #example
 * administrableDoseForm = $spor-combinedPharmaceuticalDoseForm-cs#200000002152
 * administrableDoseForm.text = "Tablet"
 
-* unitOfPresentation = $spor-rms#200000002152
-* unitOfPresentation.text = "Tablet"
+ * unitOfPresentation = $spor-rms#200000002152 "Tablet"
+
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(manitemcava75)
 
 * routeOfAdministration.code = $spor-route-cs#100000073619
-* routeOfAdministration.code.text = "Oral use"
+
 
 

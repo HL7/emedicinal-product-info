@@ -13,8 +13,8 @@ Usage: #example
  // Reference to MedicinalProductDefinition: DrugX 75 mg tablet
 * subject = Reference(DrugX75mgblisterx28)
 
-* type = $spor-rms#100000072062
-* type.text = "Marketing Authorisation"
+* type = EmaSporScope#100000072062 "Marketing Authorisation"
+
 
 * region = urn:iso:std:iso:3166#FR
 * region.text = "European Union"

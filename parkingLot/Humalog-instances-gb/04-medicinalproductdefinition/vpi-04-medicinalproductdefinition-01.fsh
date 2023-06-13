@@ -17,13 +17,13 @@ Usage: #example
 * status = http://hl7.org/fhir/publication-status#active "Active"
 
 * legalStatusOfSupply = $sct#8941601000001108
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+
 
 * name.productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 
 * name.type = $sct#9894401000001107
 
-* name.type.text = "Full name"
+ 
 * name.countryLanguage.country = urn:iso:std:iso:3166#gb
 
 * name.countryLanguage.country.text = "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND"

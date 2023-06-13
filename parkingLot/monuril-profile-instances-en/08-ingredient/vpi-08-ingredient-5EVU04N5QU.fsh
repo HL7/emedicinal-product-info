@@ -5,8 +5,8 @@ Usage: #example
  
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = EmaSporIngredientRole#100000072082 "Excipient"
+
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/home#5EVU04N5QU "Orange"
 

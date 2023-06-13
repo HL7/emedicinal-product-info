@@ -11,7 +11,7 @@ Usage: #example
 * subject = Reference(cfsb1639760186202)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"

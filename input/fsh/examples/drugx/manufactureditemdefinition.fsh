@@ -16,7 +16,7 @@ Usage: #example
 * manufacturedDoseForm.text = "tablet"
 
 * unitOfPresentation = http://hl7.org/fhir/unit-of-presentation#200000002152
-* unitOfPresentation.text = "Tablet"
+
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(acmeinc)

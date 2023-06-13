@@ -15,14 +15,14 @@ Usage: #example
 
 * status = http://hl7.org/fhir/publication-status#active "Active"
 
-* legalStatusOfSupply = $spor-rms#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+* legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
+
 
 * name.productName = "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 
-* name.type = $spor-rms#220000000001
+* name.type = EmaSporNamePartType#220000000001 "Full name" 
 
-* name.type.text = "Full name"
+ 
 * name.countryLanguage.country = urn:iso:std:iso:3166#eu
 
 * name.countryLanguage.country.text = "European Union"
@@ -38,7 +38,7 @@ Usage: #example
 * name.namePart.type = $spor-rms#220000000002
 * name.namePart.type.text = "Invented name part"
 * name.namePart.part = "insulin lispro"
-* name.namePart.type = $spor-rms#220000000003
+* name.namePart.type = EmaSporNamePartType#220000000002 "Invented name part"
 * name.namePart.type.text = "Scientific name part"
 * name.namePart.part = "100 U/ml"
 * name.namePart.type = $spor-rms#220000000004

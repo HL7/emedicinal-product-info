@@ -14,16 +14,16 @@ Usage: #example
 //reference to MedicinalProductDefinition: EU/1/97/049/001 DrugX 75 mg tablet
 * formOf = Reference(DrugX75mgblisterx28)
 
-* administrableDoseForm = $spor-rms#200000002152
-* administrableDoseForm.text = "Tablet"
+* administrableDoseForm = $administrable-dose-form#100000073664 "Tablet"
 
-* unitOfPresentation = $spor-rms#200000002152
-* unitOfPresentation.text = "Tablet"
+
+* unitOfPresentation = EmaSporUnitOfPresentation#200000002152 "Tablet"
+
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(manitemDrugX75)
 
-* routeOfAdministration.code = $spor-rms#100000073619
-* routeOfAdministration.code.text = "Oral use"
+* routeOfAdministration.code = EmaSporRouteMethodAdm#100000073619 "Oral use"
+
 
 
