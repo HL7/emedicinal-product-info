@@ -12,7 +12,7 @@ Using the FHIR ePI Profile as a template, complete one Binary resource for each 
 
 The Binary can also be used to create a cross-reference linking to an outside object like a video. 
 
-Refer to [Binary Profile](http://hl7.org/fhir/binary.html) for detail. 
+Refer to [Binary Resource](http://hl7.org/fhir/binary.html) for detail. 
 
 #### Create Composition resource 
 The composition captures all section headings, sub-section headings and narrative text/narrative content (e.g., paragraphs, tables, bulleted lists) in the ePI.
