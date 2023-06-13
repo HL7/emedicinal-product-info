@@ -50,7 +50,7 @@ Refer to [Bundle Profile](https://build.fhir.org/ig/HL7/emedicinal-product-info/
 #### Create List
 The List of ePIs is used to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  
 
-Complete the List resource by adding a reference to the ePI document Bundle for the ePI document created above.
+Complete the [List resource](http://hl7.org/fhir/list.html) by adding a reference to the ePI document Bundle for the ePI document created above.
 
 
 
