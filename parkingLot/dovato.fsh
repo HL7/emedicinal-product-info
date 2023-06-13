@@ -30,11 +30,11 @@ Usage: #example
 
 * status = $publication-status#active "Active"
 
-* legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
+* legalStatusOfSupply = $legal-status-of-supply#100000072084 "Medicinal product subject to medical prescription"
 
 
 * name.productName = "Dovato 50 mg/300 mg film-coated tablets"
-* name.type = EmaSporNamePartType#220000000001 "Full name" 
+* name.type = $example-cs#220000000001 "Full name" 
 
  
 * name.usage.country = urn:iso:std:iso:3166#eu "European Union"
@@ -45,7 +45,7 @@ Usage: #example
 * name.part[=].type = $spor-rms#220000000002 "Invented name part"
 
 * name.part[+].part = "dolutegravir/lamivudine"
-* name.part[=].type = EmaSporNamePartType#220000000002 "Invented name part" "Scientific name part"
+* name.part[=].type = $example-cs#220000000002 "Invented name part" "Scientific name part"
 
 * name.part[+].part = "50 mg/300 mg"
 * name.part[=].type = $spor-rms#220000000004 "Strength part"
@@ -320,7 +320,7 @@ Usage: #example
 * identifier.value = "OP1R32D61U"
 * identifier.use = #official
 
-* role = EmaSporIngredientRole#100000072082 "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
 
 
 * status = #active
@@ -344,7 +344,7 @@ Usage: #example
 * identifier.value = "H8AV0SQX4D"
 * identifier.use = #official
 
-* role = EmaSporIngredientRole#100000072082 "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
 
 
 * status = #active
@@ -369,7 +369,7 @@ Usage: #example
 * identifier.value = "70097M6I30"
 * identifier.use = #official
 
-* role = EmaSporIngredientRole#100000072082 "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
 
 
 * status = #active
@@ -394,7 +394,7 @@ Usage: #example
 * identifier.value = "3OWL53L36A"
 * identifier.use = #official
 
-* role = EmaSporIngredientRole#100000072082 "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
 
 
 * status = #active

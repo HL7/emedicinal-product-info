@@ -15,12 +15,12 @@ Usage: #example
 
 * status = $publication-status#active "Active"
 
-* legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
+* legalStatusOfSupply = $legal-status-of-supply#100000072084 "Medicinal product subject to medical prescription"
 
 
 * name.productName = "MONURIL 3 g granules for oral solution"
 
-* name.type = EmaSporNamePartType#220000000001 "Full name" 
+* name.type = $example-cs#220000000001 "Full name" 
 
  
 * name.countryLanguage.jurisdiction = urn:iso:std:iso:3166#eu
@@ -35,7 +35,7 @@ Usage: #example
 * name.namePart.type.text = "Invented name part"
 
 * name.namePart.part = "Fosfomycin"
-* name.namePart.type = EmaSporNamePartType#220000000002 "Invented name part"
+* name.namePart.type = $example-cs#220000000002 "Invented name part"
 * name.namePart.type.text = "Scientific name part"
 
 * name.namePart.part = "3 g"

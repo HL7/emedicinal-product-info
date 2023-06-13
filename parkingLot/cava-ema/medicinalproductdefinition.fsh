@@ -16,7 +16,7 @@ Usage: #example
 
 * status = $publication-status#active "Active"
 
-* legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
+* legalStatusOfSupply = $legal-status-of-supply#100000072084 "Medicinal product subject to medical prescription"
 
 
 * name

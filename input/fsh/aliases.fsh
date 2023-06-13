@@ -10,15 +10,10 @@ Alias: $ingredient-role = http://hl7.org/fhir/ingredient-role
 Alias: $combined-dose-form = http://hl7.org/fhir/combined-dose-form
 Alias: $medicinal-product-type = http://hl7.org/fhir/medicinal-product-type
 Alias: $medicinal-product-domain = http://hl7.org/fhir/medicinal-product-domain
-
-// Alias: $unit-of-presentation = http://hl7.org/fhir/unit-of-presentation // not used !!
-// Alias: $routeOfAdministration = http://snomed.info/sct // not used !!
+Alias: $example-cs = http://example.org // used only for missing concepts in examples
 
 Alias: $meddra = http://terminology.hl7.org/CodeSystem/mdr
 Alias: $iso3166 = urn:iso:std:iso:3166
-
-
-
 
 
 // TO BE DELETED

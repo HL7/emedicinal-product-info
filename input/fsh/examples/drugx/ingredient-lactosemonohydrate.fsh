@@ -10,7 +10,7 @@ Usage: #example
 * identifier.value = "EWQ57Q8I5X"
 * identifier.use = #official
 
-* role = EmaSporIngredientRole#100000072082 "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
 
 
 * status = #active
