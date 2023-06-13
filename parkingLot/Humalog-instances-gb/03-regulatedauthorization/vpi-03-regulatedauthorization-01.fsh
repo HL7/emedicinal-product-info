@@ -17,7 +17,7 @@ Usage: #example
 * region = urn:iso:std:iso:3166#gb
 * region.text = "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2022-02-07T13:28:17Z"

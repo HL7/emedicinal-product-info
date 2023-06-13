@@ -14,7 +14,7 @@ Usage: #example
 
 * type = EmaSporProductCategory#100000155527 "Chemical Medicinal Prodcut"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2018-06-23T08:38:00+02:00"
 
 * containedItemQuantity.value = 75

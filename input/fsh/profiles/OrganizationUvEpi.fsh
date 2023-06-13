@@ -3,7 +3,7 @@ Parent: Organization
 Id: Organization-uv-epi
 Title: "Organization (ePI)"
 Description: "Organization (ePI)"
-
+* insert SetFmmandStatusRule ( 1, Trial-use )
 * identifier 1..
   * system 1..
   * value 1..

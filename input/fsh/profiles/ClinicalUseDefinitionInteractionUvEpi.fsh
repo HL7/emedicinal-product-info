@@ -4,7 +4,7 @@ Id: ClinicalUseDefinition-interaction-uv-epi
 Title: "ClinicalUseDefinition Interaction (ePI)"
 Description: "ClinicalUseDefinition Interaction (ePI)"
 
-
+* insert SetFmmandStatusRule ( 1, Trial-use )
 * insert ClinicalUseDefinitionCommonRules
 * type = #interaction
 

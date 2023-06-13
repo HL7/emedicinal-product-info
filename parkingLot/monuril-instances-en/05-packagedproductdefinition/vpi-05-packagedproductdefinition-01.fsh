@@ -12,7 +12,7 @@ Usage: #example
 * type = $spor-rms#100000155527
 * type.text = "Chemical Medicinal Product"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2008-09-19"
 
 * containedItemQuantity.value = 5

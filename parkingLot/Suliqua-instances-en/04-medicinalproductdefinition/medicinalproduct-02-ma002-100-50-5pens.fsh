@@ -11,11 +11,11 @@ Usage: #example
 
 
 * domain = https://spor.ema.europa.eu/rmswi/#/#100000000012
-* domain.text = "Human use"
+
 
 * version = "1"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 
 * statusDate = "2015-02-07T13:28:17Z"
 

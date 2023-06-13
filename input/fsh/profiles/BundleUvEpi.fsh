@@ -5,6 +5,7 @@ Title: "Bundle - ePI"
 Description: "Medicinal product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide."
 * ^purpose = "This profile represents the constraints applied to the Bundle resource used to create an Electronic Product Information (ePI) document."
  
+* insert SetFmmandStatusRule ( 1, Trial-use )
 * obeys bdl-epi-1
 * . ^short = "Electronic Product Information Bundle Document"
 * . ^definition = "Electronic Product Information Bundle Document. A container for the collection of resources that make up the ePI document."

@@ -9,22 +9,13 @@ Usage: #example
 * identifier.system = $spor-prod
 * identifier.value = "medicinalproduct75"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2018-06-23T08:38:00+02:00"
-
-* type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
-* type.text = "Medicinal Product"
-
-* domain = http://hl7.org/fhir/medicinal-product-domain#Human
-* domain.text = "Human use"
-
+* type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"
+* domain = $medicinal-product-domain#Human "Human use"
 * legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
-
-
 * name.productName = "DrugX 75 mg tablet blister x28"
-
 * name.type = EmaSporNamePartType#220000000001 "Full name" 
-
 * name
   * productName = "DrugX"
   * type.text = "DrugX 75 mg tablets"

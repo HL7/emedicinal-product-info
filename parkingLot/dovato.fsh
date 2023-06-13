@@ -22,13 +22,13 @@ Usage: #example
 * identifier.system = $spor-prod
 * identifier.value = "498163"
 
-* type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
-* type.text = "Medicinal Product"
+* type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"
 
-* domain = http://hl7.org/fhir/medicinal-product-domain#Human
-* domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* domain = $medicinal-product-domain#Human "Human use"
+
+
+* status = $publication-status#active "Active"
 
 * legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
 
@@ -70,7 +70,7 @@ Usage: #example
 * type = $spor-rms#100000155527
 * type.text = "Chemical Medicinal Prodcut"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2012-02-07T13:28:17Z"
 
 * containedItemQuantity.value = 30
@@ -181,7 +181,7 @@ Usage: #example
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2019-07-01T13:28:17Z"

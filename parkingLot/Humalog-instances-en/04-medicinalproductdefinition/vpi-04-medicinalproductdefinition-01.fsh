@@ -11,9 +11,9 @@ Usage: #example
 
 
 * domain = $spor-rms#100000000012
-* domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+
+* status = $publication-status#active "Active"
 
 * legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
 

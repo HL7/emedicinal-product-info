@@ -8,13 +8,13 @@ Usage: #example
 * identifier.system = $spor-prod
 * identifier.value = "4471bb15-7f52-4fcd-b615-8674ce6eb91e"
 
-* type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
-* type.text = "Medicinal Product"
+* type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"
 
-* domain = http://hl7.org/fhir/medicinal-product-domain#Human
-* domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* domain = $medicinal-product-domain#Human "Human use"
+
+
+* status = $publication-status#active "Active"
 
 * legalStatusOfSupply = EmaSporLegalStatusForTheSupply#100000072084 "Medicinal product subject to medical prescription"
 

@@ -15,7 +15,7 @@ Usage: #example
 * administrableDoseForm = $spor-rms#100000116155
 * administrableDoseForm.text = "Granules and solvent for oral suspension"
 
-* routeOfAdministration.code = EmaSporRouteMethodAdm#100000073619 "Oral use"
+* routeOfAdministration.code = $sct#26643006 "Oral route"
 
 
 

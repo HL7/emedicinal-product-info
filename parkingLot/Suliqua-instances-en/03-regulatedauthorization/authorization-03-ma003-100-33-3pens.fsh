@@ -18,7 +18,7 @@ Usage: #example
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2017-01-11T13:28:17Z"

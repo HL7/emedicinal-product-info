@@ -12,10 +12,8 @@ Usage: #example
 
 * status = #active
 
-* manufacturedDoseForm = http://hl7.org/fhir/manufactured-dose-form#100000073664
-* manufacturedDoseForm.text = "tablet"
-
-* unitOfPresentation = http://hl7.org/fhir/unit-of-presentation#200000002152
+* manufacturedDoseForm = $manufactured-dose-form#100000073664 "Tablet"
+* unitOfPresentation = $unit-of-presentation#200000002152 "Tablet"
 
 
  // Reference to Organization: Manufacturer

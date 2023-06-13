@@ -14,7 +14,7 @@ Usage: #example
 * domain = $sct#278412004
 * domain.text = "Human"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 
 * legalStatusOfSupply = $sct#8941601000001108
 

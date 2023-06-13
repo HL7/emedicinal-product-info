@@ -11,9 +11,9 @@ Usage: #example
 
 
 * domain = https://spor.ema.europa.eu/rmswi/#/#100000000012
-* domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+
+* status = $publication-status#active "Active"
 
 * legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
 

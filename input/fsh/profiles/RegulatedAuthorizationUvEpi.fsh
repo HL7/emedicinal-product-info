@@ -3,7 +3,7 @@ Parent: RegulatedAuthorization
 Id: RegulatedAuthorization-uv-epi
 Title: "RegulatedAuthorization (ePI)"
 Description: "RegulatedAuthorization (ePI)"
-
+* insert SetFmmandStatusRule ( 1, Trial-use )
 * identifier 1..
   // * system from VsRegulatedAuthorizationTypeIdSystems (extensible)
   * system 1..
@@ -14,14 +14,14 @@ Description: "RegulatedAuthorization (ePI)"
 * subject 1..
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 
-* type ^short = "Overall type of this authorization, for example drug marketing approval, orphan drug designation"
+* type ^short = "Overall type of this authorization, for example drug marketing approval, orphan drug designation."
 
 * description ^short = "Brief description of the authorization"
 
 * region from VsCountry (preferred)
 
 * status ^short = "The current status of this authorization"
-* statusDate ^short = "The date at which the current status was assigned"
+* statusDate ^short = "The date at which the current status was assigned."
 
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
 * indication.reference 1..

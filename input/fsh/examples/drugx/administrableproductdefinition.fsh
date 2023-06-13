@@ -15,15 +15,10 @@ Usage: #example
 * formOf = Reference(DrugX75mgblisterx28)
 
 * administrableDoseForm = $administrable-dose-form#100000073664 "Tablet"
-
-
-* unitOfPresentation = EmaSporUnitOfPresentation#200000002152 "Tablet"
+* unitOfPresentation = $unit-of-presentation#200000002152 "Tablet"
 
 
  // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(manitemDrugX75)
 
-* routeOfAdministration.code = EmaSporRouteMethodAdm#100000073619 "Oral use"
-
-
-
+* routeOfAdministration.code = $sct#26643006 "Oral route"
