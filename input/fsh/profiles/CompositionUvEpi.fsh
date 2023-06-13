@@ -5,7 +5,7 @@ Title: "Composition (ePI)"
 Description: "The Composition captures the section headings, sub-section headings, and narrative text (For example, paragraphs, bulleted lists, tables) in an ePI."
 * ^status = #active
 * ^purpose = "This profile represents the constraints applied to the Composition resource used in an Electronic Product Information (ePI) document."
-* insert SetFmmandStatusRule ( 1, Trial-use )
+* insert SetFmmandStatusRule ( 1, trial-use )
 * identifier 1..
   * system 1..
   * value 1..

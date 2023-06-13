@@ -12,7 +12,7 @@ Usage: #example
 
 * name = "DrugX 75 mg tablet blister x28 tablets"
 
-* type = EmaSporProductCategory#100000155527 "Chemical Medicinal Prodcut"
+* type = $medicinal-product-type#MedicinalProduct	"Medicinal Product"
 
 * status = $publication-status#active "Active"
 * statusDate = "2018-06-23T08:38:00+02:00"
@@ -23,7 +23,10 @@ Usage: #example
 * packaging
   * identifier.system = $spor-prod
   * identifier.value = "123456"
-  * type = EmaSporPackaging#100000073496 "Blister"
+  * type = $medicinal-product-package-type#100000073496 "Blister"
+
+  
+
   * quantity = 28
   * material = EmaSporMaterial#200000003222 "PolyVinyl Chloride"
 

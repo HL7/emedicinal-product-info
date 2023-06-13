@@ -21,7 +21,7 @@ Usage: #example
 * packaging
   * identifier.system = $spor-prod
   * identifier.value = "123456"
-  * type = EmaSporPackaging#100000073496 "Blister"
+  * type = $medicinal-product-package-type#100000073496 "Blister"
   * quantity = 28
   * material = EmaSporMaterial#200000003222 "PolyVinyl Chloride"
 

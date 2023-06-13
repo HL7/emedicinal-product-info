@@ -205,7 +205,7 @@ Usage: #example
 
 * active = true
 
-* type = EmaSporOrganisationRoleType#220000000034 "Marketing authorisation holder"
+* type = $example-cs#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
 * name = "ViiV Healthcare BV"
 
