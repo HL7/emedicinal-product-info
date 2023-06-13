@@ -32,7 +32,7 @@ RuleSet:  PropertyRulesSet
 * property[imprint].type = $medicationknowledge-characteristic#imprintcd 
 
 * property[color].type  = $medicationknowledge-characteristic#color
-* property[color].value[x] from VsPropertyColor (preferred)
+* property[color].value[x] from VsPropertyColor (example)
 
 * property[flavor].type = EpiIg#flavor
 * property[flavor].value[x] from VsPropertyFlavor (example)

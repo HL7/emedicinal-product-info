@@ -22,10 +22,8 @@ Title: "Route Of Administration"
 Description:  "Route Of Administration"
 * ^status = #draft
 * ^experimental = true
-* codes from system EmaSporRouteMethodAdm
-
-// * ^experimental = true
-// * $spor-rms#100000073619
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002 International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
+* include codes from system $sct where concept descendent-of #284009009
 
 
 //==========================
@@ -42,7 +40,7 @@ Id: unitofPresentation
 Title: "Units of Presentation"
 Description: "Units of Presentation"
 * ^experimental = false
-* codes from system EmaSporUnitOfPresentation // to be reviewed
+* codes from system $unit-of-presentation
 
 //==========================
 ValueSet: VsMeddra
@@ -308,16 +306,137 @@ ValueSet: VsSectionCode
 Id: sectionCode
 Title: "Section Codes"
 Description: "Section Codes"
-* ^experimental = true
-* codes from system EmaProductInformationTemplate
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 
-//==========================
+* $loinc#34086-9 "ABUSE SECTION"
+* $loinc#60555-0 "ACCESSORIES"
+* $loinc#34084-4 "ADVERSE REACTIONS SECTION"
+* $loinc#69761-5 "ALARMS"
+* $loinc#34091-9 "ANIMAL PHARMACOLOGY & OR TOXICOLOGY SECTION"
+* $loinc#60556-8 "ASSEMBLY OR INSTALLATION INSTRUCTIONS"
+* $loinc#34066-1 "BOXED WARNING SECTION"
+* $loinc#60557-6 "CALIBRATION INSTRUCTIONS"
+* $loinc#34083-6 "CARCINOGENESIS & MUTAGENESIS & IMPAIRMENT OF FERTILITY SECTION"
+* $loinc#34090-1 "CLINICAL PHARMACOLOGY SECTION"
+* $loinc#60558-4 "CLEANING, DISINFECTING, AND STERILIZATION INSTRUCTIONS"
+* $loinc#34092-7 "CLINICAL STUDIES SECTION"
+* $loinc#90374-0 "CLINICAL TRIALS EXPERIENCE SECTION"
+* $loinc#69760-7 "COMPATIBLE ACCESSORIES"
+* $loinc#60559-2 "COMPONENTS"
+* $loinc#34070-3 "CONTRAINDICATIONS SECTION"
+* $loinc#34085-1 "CONTROLLED SUBSTANCE SECTION"
+* $loinc#34087-7 "DEPENDENCE SECTION"
+* $loinc#34089-3 "DESCRIPTION SECTION"
+* $loinc#69758-1 "DIAGRAM OF DEVICE"
+* $loinc#69763-1 "DISPOSAL AND WASTE HANDLING"
+* $loinc#34068-7 "DOSAGE & ADMINISTRATION SECTION"
+* $loinc#43678-2 "DOSAGE FORMS & STRENGTHS SECTION"
+* $loinc#34074-5 "DRUG & OR LABORATORY TEST INTERACTIONS SECTION"
+* $loinc#42227-9 "DRUG ABUSE AND DEPENDENCE SECTION"
+* $loinc#34073-7 "DRUG INTERACTIONS SECTION"
+* $loinc#50742-6 "ENVIRONMENTAL WARNING SECTION"
+* $loinc#77291-3 "FEMALES & MALES OF REPRODUCTIVE POTENTIAL SECTION"
+* $loinc#50743-4 "FOOD SAFETY WARNING SECTION"
+* $loinc#34072-9 "GENERAL PRECAUTIONS SECTION"
+* $loinc#34082-8 "GERIATRIC USE SECTION"
+* $loinc#50740-0 "GUARANTEED ANALYSIS OF FEED SECTION"
+* $loinc#71744-7 "HEALTH CARE PROVIDER LETTER SECTION"
+* $loinc#69719-3 "HEALTH CLAIM SECTION"
+* $loinc#88829-7 "HEPATIC IMPAIRMENT SUBSECTION"
+* $loinc#34069-5 "HOW SUPPLIED SECTION"
+* $loinc#88830-5 "IMMUNOGENICITY"
+* $loinc#51727-6 "INACTIVE INGREDIENT SECTION"
+* $loinc#34067-9 "INDICATIONS & USAGE SECTION"
+* $loinc#50744-2 "INFORMATION FOR OWNERS/CAREGIVERS SECTION"
+* $loinc#34076-0 "INFORMATION FOR PATIENTS SECTION"
+* $loinc#59845-8 "INSTRUCTIONS FOR USE SECTION"
+* $loinc#60560-0 "INTENDED USE OF THE DEVICE"
+* $loinc#34079-4 "LABOR & DELIVERY SECTION"
+* $loinc#34075-2 "LABORATORY TESTS SECTION"
+* $loinc#77290-5 "LACTATION SECTION"
+* $loinc#43679-0 "MECHANISM OF ACTION SECTION"
+* $loinc#49489-8 "MICROBIOLOGY SECTION"
+* $loinc#43680-8 "NONCLINICAL TOXICOLOGY SECTION"
+* $loinc#34078-6 "NONTERATOGENIC EFFECTS SECTION"
+* $loinc#34080-2 "NURSING MOTHERS SECTION"
+* $loinc#60561-8 "OTHER SAFETY INFORMATION"
+* $loinc#34088-5 "OVERDOSAGE SECTION"
+* $loinc#55106-9 "OTC - ACTIVE INGREDIENT SECTION"
+* $loinc#50569-3 "OTC - ASK DOCTOR SECTION"
+* $loinc#50568-5 "OTC - ASK DOCTOR/PHARMACIST SECTION"
+* $loinc#50570-1 "OTC - DO NOT USE SECTION"
+* $loinc#50565-1 "OTC - KEEP OUT OF REACH OF CHILDREN SECTION"
+* $loinc#53414-9 "OTC - PREGNANCY OR BREAST FEEDING SECTION"
+* $loinc#55105-1 "OTC - PURPOSE SECTION"
+* $loinc#53413-1 "OTC - QUESTIONS SECTION"
+* $loinc#50566-9 "OTC - STOP USE SECTION"
+* $loinc#50567-7 "OTC - WHEN USING SECTION"
+* $loinc#51945-4 "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"
+* $loinc#88436-1 "PATIENT COUNSELING INFORMATION"
+* $loinc#68498-5 "PATIENT MEDICATION INFORMATION SECTION"
+* $loinc#34081-0 "PEDIATRIC USE SECTION"
+* $loinc#43681-6 "PHARMACODYNAMICS SECTION"
+* $loinc#66106-6 "PHARMACOGENOMICS SECTION"
+* $loinc#43682-4 "PHARMACOKINETICS SECTION"
+* $loinc#90375-7 "POSTMARKETING EXPERIENCE SECTION"
+* $loinc#42232-9 "PRECAUTIONS SECTION"
+* $loinc#42228-7 "PREGNANCY SECTION"
+* $loinc#43683-2 "RECENT MAJOR CHANGES SECTION"
+* $loinc#34093-5 "REFERENCES SECTION"
+* $loinc#53412-3 "RESIDUE WARNING SECTION"
+* $loinc#100382-1 "REMS ADDRESSED RISK"
+* $loinc#87523-7 "REMS ADMINISTRATIVE INFORMATION"
+* $loinc#87526-0 "REMS APPLICANT REQUIREMENTS"
+* $loinc#82344-3 "REMS COMMUNICATION"
+* $loinc#82348-4 "REMS ELEMENTS"
+* $loinc#82345-0 "REMS ELEMENTS TO ASSURE SAFE USE"
+* $loinc#82349-2 "REMS GOALS"
+* $loinc#82350-0 "REMS IMPLEMENTATION SYSTEM"
+* $loinc#82346-8 "REMS MATERIAL"
+* $loinc#82598-4 "REMS MEDICATION GUIDE"
+* $loinc#87525-2 "REMS PARTICIPANT REQUIREMENTS"
+* $loinc#87524-5 "REMS REQUIREMENTS"
+* $loinc#82347-6 "REMS SUMMARY"
+* $loinc#82352-6 "REMS TIMETABLE FOR SUBMISSION ASSESSMENTS"
+* $loinc#88828-9 "RENAL IMPAIRMENT SUBSECTION"
+* $loinc#69759-9 "RISKS"
+* $loinc#60562-6 "ROUTE, METHOD AND FREQUENCY OF ADMINISTRATION"
+* $loinc#50741-8 "SAFE HANDLING WARNING SECTION"
+* $loinc#48779-3 "SPL INDEXING DATA ELEMENTS SECTION"
+* $loinc#48780-1 "SPL PRODUCT DATA ELEMENTS SECTION"
+* $loinc#42231-1 "SPL MEDGUIDE SECTION"
+* $loinc#42230-3 "SPL PATIENT PACKAGE INSERT SECTION"
+* $loinc#42229-5 "SPL UNCLASSIFIED SECTION"
+* $loinc#69718-5 "STATEMENT OF IDENTITY SECTION"
+* $loinc#44425-7 "STORAGE AND HANDLING SECTION"
+* $loinc#60563-4 "SUMMARY OF SAFETY AND EFFECTIVENESS"
+* $loinc#34077-8 "TERATOGENIC EFFECTS SECTION"
+* $loinc#69762-3 "TROUBLESHOOTING"
+* $loinc#43684-0 "USE IN SPECIFIC POPULATIONS SECTION"
+* $loinc#54433-8 "USER SAFETY WARNINGS SECTION"
+* $loinc#50745-9 "VETERINARY INDICATIONS SECTION"
+* $loinc#43685-7 "WARNINGS AND PRECAUTIONS SECTION"
+* $loinc#34071-1 "WARNINGS SECTION"
+
+ //==========================
+ValueSet: VsIngredientRole
+Id: ingredientRole
+Title: "Ingredient Role; e.g., inactive, active base, active moiety"
+Description: "Ingredient Role; e.g., inactive, active base, active moiety"
+* ^experimental = false
+* codes from system $ingredient-role
+
+
+
+
+/* //==========================
 ValueSet: VsDataCarrierIdSystem
 Id: dataCarrierIdSystem
 Title: "Data Carrier Identifiers"
 Description: "Listing of identifiers for Data Carriers"
 * ^experimental = false
-* $uri#https://www.gs1.org/gtin "Global Trade Item Number" // 
+* $uri#https://www.gs1.org/gtin "Global Trade Item Number" //  */
 
 
 /* //=========================
@@ -368,13 +487,7 @@ Description: "Pack Type"
 * ^experimental = false
 * codes from system $spor-packType-cs */
 
-/* //==========================
-ValueSet: VsRoleClassIngredientEntity
-Id: roleClassIngredientEntity
-Title: "Ingredient Role; e.g., inactive, active base, active moiety"
-Description: "Ingredient Role; e.g., inactive, active base, active moiety"
-* ^experimental = false
-* $uri#http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity // to be reviewed */
+
 
 
 

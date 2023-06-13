@@ -12,11 +12,11 @@ Description: "The Composition captures the section headings, sub-section heading
   * ^short = "Unique identifier only for this version of the Composition"
   * ^definition = "Unlike the Bundle identifier which persists, the Composition identifier does not persist across versions. Each new version of the Composition receives a new identifier."
 
-* version
+* version ^short = "An explicitly assigned identifer of a variation of the content in the ePI"
 
 * status ^short = "preliminary|final|amended|entered-in-error|deprecated"
 
-* type
+* type // from VsEpiType (preferred)
 * type ^short = "Type of ePI document template"
 * type ^definition = "Specifies the type of ePI template. For example, Package Insert, Patient Information, Summary of Product Characteristics, Human Prescription, Drug Label."
 
@@ -47,15 +47,17 @@ Description: "The Composition captures the section headings, sub-section heading
     * ^short = "Section heading defined by the market authorization holder"
     * ^definition = "This section heading is the counterpart to the coded section heading from the health authority's ePI template. For example, the health authority ePI template may have '1. What X is and what it is used for' as the coded section heading. The market authorization holder modifies this such that 'X' is replaced with the brand name of the drug."
   * code 1.. 
+  * code from VsSectionCode (example)
     * ^short = "Section heading defined by the health authority. Cannot be changed by the market authorization holder"
   * text ^short = "Narrative text for this section (e.g., paragraphs, bulleted lists, tables)."
   * emptyReason ^short = "Reason the section is empty."
   * section 
     *  ^short = "Nested sub-section headings for level 2, 3, 4 or 5."
     *  ^definition = "Nested Sections sub-section headings for level 2, 3, 4 or 5."
-    * title
+    * title 1..
       * ^short = "Section heading defined by the market authorization holder"
     * code 1.. 
+    * code from VsSectionCode (example)
       * ^short = "Coded section heading defined by the health authority."
     * text ^short = "Narrative text for this section."
     * emptyReason ^short = "Reason the section is empty."
