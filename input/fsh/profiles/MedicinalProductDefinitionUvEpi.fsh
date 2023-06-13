@@ -11,6 +11,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 * type ^short = "Regulatory type, e.g. Investigational or Authorized."
 
 * domain ^short = "If this medicine applies to human or veterinary uses."
+* domain from $VS-medicinal-product-domain (example)
 
 * version ^short = "A business identifier relating to a specific version of the product."
 

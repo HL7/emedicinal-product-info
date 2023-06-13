@@ -17,7 +17,7 @@ Description: "Organization (ePI)"
 * name ^short = "Organization's legal name"
 * alias ^short = "A list of alternate names for this organization"
 
-* description 0..
+* description ^short = "Additional details about the Organization"
 
 * contact
   * telecom ^slicing.discriminator[0].type = #value
@@ -45,10 +45,10 @@ Description: "Organization (ePI)"
   * address 1..
     * use ^short = "home | work | temp | old | billing" // = #work
     * use = #work
-    * text
+    * text ^short = "Text representation of the address."
     * type ^short = "postal|physical|both"
     * line 1..
-    * postalCode
+    * postalCode ^short = "Postal code for area"
     * city 1..
     * country  from VsCountry (preferred)
     * country 1..
