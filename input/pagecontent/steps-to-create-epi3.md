@@ -123,7 +123,7 @@ Using the FHIR ePI Profile as a template, complete one Binary resource for each 
 
 The Binary can also be used to create a cross-reference linking to an outside object like a video. 
 
-Refer to [Binary Profile](http://build.fhir.org/binary.html) for detail. 
+Refer to [Binary Resource](http://build.fhir.org/binary.html) for detail. 
 
 #### Create Composition resource 
 The composition captures all section headings, sub-section headings and narrative text/narrative content (e.g., paragraphs, tables, bulleted lists) in the ePI.
@@ -159,4 +159,4 @@ NOTE:
 Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.  
 
 #### Create List (of ePIs)
-The List of ePIs is ued to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  
+The List of ePIs is used to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  

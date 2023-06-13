@@ -253,9 +253,9 @@ Usage: #example
             <p>cava 75 mg tablets are white to off-white, biconvex, and oval-shaped with a heart debossed on one side and the number 2771 engraved on the other side.</p>
             <p>cava 75 mg tablets are supplied in blister packs of 14, 28, 56 or 98 tablets. Unidose blister packs of 56 x 1 tablet for delivery in hospitals are also available.</p>
             <p>Not all pack sizes may be marketed.</p>
-            <b>Marketing Authorisation Holder:</b>
+            <b>Marketing Authorization Holder:</b>
             <p>Acme inc</p>
-            <p>For any information about this medicinal product, please contact the local representative of the Marketing Authorisation Holder.</p>
+            <p>For any information about this medicinal product, please contact the local representative of the Marketing Authorization Holder.</p>
             <table>
                 <colgroup>
                     <col />

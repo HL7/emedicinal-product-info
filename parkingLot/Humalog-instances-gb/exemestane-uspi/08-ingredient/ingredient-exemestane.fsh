@@ -12,7 +12,7 @@ Usage: #example
 // Reference to Manufactured Item
 * for = Reference(23fed712-2d60-461d-83a6-5fb939b2a939)
 
-* role = EmaSporIngredientRole#00000072072 "Active"
+* role = EmaSporIngredientRole#100000072072 "Active"
 
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#NY22HMQ4BX "exemestane"

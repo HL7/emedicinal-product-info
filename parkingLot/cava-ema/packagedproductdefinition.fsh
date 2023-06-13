@@ -25,7 +25,7 @@ Usage: #example
   * identifier.value = "123456"
   * type = $medicinal-product-package-type#100000073496 "Blister"
   * quantity = 28
-  * material = EmaSporMaterial#200000003222 "PolyVinyl Chloride"
+  * material = $package-material#200000003222 "PolyVinyl Chloride"
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 cava 75 mg tablet
 * packageFor = Reference(cava75mgblisterx28)

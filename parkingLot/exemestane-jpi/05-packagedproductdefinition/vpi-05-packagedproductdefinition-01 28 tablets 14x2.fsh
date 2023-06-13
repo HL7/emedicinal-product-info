@@ -23,7 +23,7 @@ Usage: #example
   * identifier.value = "123456"
   * type = $medicinal-product-package-type#100000073496 "Blister"
   * quantity = 28
-  * material = EmaSporMaterial#200000003222 "PolyVinyl Chloride"
+  * material = $package-material#200000003222 "PolyVinyl Chloride"
 
 //reference to MedicinalProductDefinition
 * packageFor = Reference(medicinalproduct25mg)

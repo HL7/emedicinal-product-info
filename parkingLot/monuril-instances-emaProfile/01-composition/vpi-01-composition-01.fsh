@@ -204,8 +204,8 @@ White granules for oral solution in a single dose sachet.
 2 sachets of 8 g of granules (3 g fosfomycin)
 5 sachets of 8 g of granules (3 g fosfomycin).
 Not all pack sizes may be marketed.
-<p><b>Marketing Authorisation Holder and Manufacturer</b></p>
-Marketing Authorisation Holder: Zambon S.p.A.
+<p><b>Marketing Authorization Holder and Manufacturer</b></p>
+Marketing Authorization Holder: Zambon S.p.A.
 Via Lillo del Duca, 10
 20091 Bresso (Milan) - Italy
 Tel: +39 02 665 241

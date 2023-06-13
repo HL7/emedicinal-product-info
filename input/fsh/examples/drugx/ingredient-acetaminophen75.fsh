@@ -12,7 +12,7 @@ Usage: #example
 
 * status = #active
 
-* role = EmaSporIngredientRole#00000072072 "Active"
+* role = $ingredient-role#100000072072 "Active"
 
 * substance.code.concept.coding = $ginas#362O9ITL9D "acetaminophen"
 * substance.strength.presentationQuantity.value = 75

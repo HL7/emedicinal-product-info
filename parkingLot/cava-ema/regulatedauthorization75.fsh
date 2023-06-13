@@ -12,7 +12,7 @@ Usage: #example
  // Reference to MedicinalProductDefinition: EU/1/97/049/001 cava 75 mg tablet
 * subject = Reference(cava75mgblisterx28)
 
-* type = EmaSporScope#100000072062 "Marketing Authorisation"
+* type = EmaSporScope#100000072062 "Marketing Authorization"
 
 
 * region = urn:iso:std:iso:3166#DK

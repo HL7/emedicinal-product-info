@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "http://snomed.info/sct/83821000000107"
 * identifier.value = "13884911000001102"
 
-* type = EmaSporScope#100000072062 "Marketing Authorisation"
+* type = EmaSporScope#100000072062 "Marketing Authorization"
 
 
 * domain = $spor-rms#100000000012

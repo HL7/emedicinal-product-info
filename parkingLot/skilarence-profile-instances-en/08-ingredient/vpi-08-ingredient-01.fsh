@@ -9,7 +9,7 @@ Usage: #example
 
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#/#00000072072
+* role = https://spor.ema.europa.eu/rmswi/#/#100000072072
 
 
 * allergenicIndicator = false

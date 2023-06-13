@@ -28,7 +28,7 @@ Usage: #example
   
 
   * quantity = 28
-  * material = EmaSporMaterial#200000003222 "PolyVinyl Chloride"
+  * material = $package-material#200000003222 "PolyVinyl Chloride"
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 DrugX 75 mg tablet
 * packageFor = Reference(DrugX75mgblisterx28)

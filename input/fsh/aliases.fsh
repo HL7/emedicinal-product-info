@@ -13,6 +13,7 @@ Alias: $medicinal-product-domain = http://hl7.org/fhir/medicinal-product-domain
 Alias: $example-cs = http://example.org // used only for missing concepts in examples
 Alias: $legal-status-of-supply = http://hl7.org/fhir/legal-status-of-supply
 Alias: $medicinal-product-package-type = http://hl7.org/fhir/medicinal-product-package-type
+Alias: $package-material = http://hl7.org/fhir/package-material
 
 Alias: $meddra = http://terminology.hl7.org/CodeSystem/mdr
 Alias: $iso3166 = urn:iso:std:iso:3166

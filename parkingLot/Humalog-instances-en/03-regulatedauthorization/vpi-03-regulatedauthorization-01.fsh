@@ -10,7 +10,7 @@ Usage: #example
  // Reference to MedicinalProductDefinition: EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill
 * subject = Reference(fb3d4c9b-3abe-4ef4-9ef8-73dcd1059258)
 
-* type = EmaSporScope#100000072062 "Marketing Authorisation" "Marketing Authorisation"
+* type = EmaSporScope#100000072062 "Marketing Authorization" "Marketing Authorization"
 
 * region = urn:iso:std:iso:3166#eu "European Union"
 

@@ -13,7 +13,7 @@ Usage: #example
  // Reference to MedicinalProductDefinition: DrugX 75 mg tablet
 * subject = Reference(DrugX75mgblisterx28)
 
-* type = http://hl7.org/fhir/regulated-authorization-type#MarketingAuth "Marketing Authorisation"
+* type = http://hl7.org/fhir/regulated-authorization-type#MarketingAuth "Marketing Authorization"
 
 
 * region = urn:iso:std:iso:3166#FR

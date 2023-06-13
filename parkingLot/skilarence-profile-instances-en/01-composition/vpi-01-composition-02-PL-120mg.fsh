@@ -373,8 +373,8 @@ Usage: #example
             Skilarence 30 mg is available in packs containing 42, 70 and 210 gastro-resistant
             tablets. Not all pack sizes may be marketed. The tablets are packed in
             PVC/PVDC-aluminium blisters.</p>
-        <p><b>Marketing Authorisation Holder and Manufacturer</b></p>
-        <p><b> Marketing Authorisation Holder </b></p>
+        <p><b>Marketing Authorization Holder and Manufacturer</b></p>
+        <p><b> Marketing Authorization Holder </b></p>
         <p> Almirall, S.A. </p>
         <p> Ronda General Mitre, 151 E-08022 Barcelona </p>
         <p> Spain </p>
@@ -383,7 +383,7 @@ Usage: #example
         <p> Industrias Farmacéuticas Almirall, S.A. Ctra. de Martorell 41-61 </p>
         <p> E-08740 Sant Andreu de la Barca, Barcelona Spain </p>
         <p> For any information about this medicine, please contact the local representative of the
-            Marketing Authorisation Holder: </p>
+            Marketing Authorization Holder: </p>
         <p><b> België/Belgique/Belgien/ Luxembourg/Luxemburg </b></p>
         <p> Almirall N.V., Tél/Tel: +32 (0)2 771 86 37 </p>
         <p><b> България/ Česká republika/ Eesti/ España/ Hrvatska/ Κύπρος/ Latvija/ Lietuva/

@@ -306,13 +306,13 @@ Description: "Type of container"
 * $edqm#13125000 "Wrapper"
 
 
-//==========================
+/* //==========================
 ValueSet: VsPackageMaterial
 Id: packageMaterial
 Title: "Package Material"
 Description: "Package Material"
 * ^experimental = false
-* codes from system EmaSporMaterial //"SPOR Organization (EU)" // to be reviewed
+* codes from system EmaSporMaterial //"SPOR Organization (EU)" // to be reviewed */
 
 //==========================
 ValueSet: VsSectionCode
