@@ -1,12 +1,3 @@
-### Lifecycle Management 
-Changing the content of a resource requires both the @date attribute, @last updated, and @version in the parent Bundle containing the changed resource to be updated. No need to update the other resources in the bundle unless they have also been updated. 
-
-Managing the resources discretely. 
-
-Managing the resources as a document in a Bundle. 
-
-Managing the document as a static Bundle versions that are manually updated vs managing a dynamic Bundle that is automatically updated anytime one of its leaf resources is updated. 
-
 ### Display names 
 All display names should be language specific and should match the language of the document. E.g., French display name for French documents and English display names for English documents. 
 
