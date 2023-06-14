@@ -34,217 +34,218 @@
   {% endfor %}
 
 </div>
-
-<h2>Product Information</h2>
 {% assign mpdr = bundle.entry | where: "resource.resourceType", "MedicinalProductDefinition" | first %}
 {% assign mpd = mpdr.resource %}
+  {% if mpd %}
+
+  <h2>Product Information</h2>
   <div class="container rcorners mpd">
-  {% comment %}print the name - current name[0], should be all names{% endcomment %}
-  <h4 class="nonumbers">
-    {{ mpd.name[0].productName }}
-  </h4>
+    {% comment %}print the name - current name[0], should be all names{% endcomment %}
+    <h4 class="nonumbers">
+      {{ mpd.name[0].productName }}
+    </h4>
 
-  {% comment %}and name parts{% endcomment %}
-  {% for namepart in mpd.name[0].namePart %}
-    <p>
-      {{ namepart.type.coding[0].display }}:
-      <b>
-        {{ namepart.part }}
-      </b>
-    </p>
-  {% endfor %}
-  {% comment %}and MPD identifiers{% endcomment %}
-  {% for pid in mpd.identifier %}
-    {{ pid.system | split: '/' | last | upcase }}:
-    <b>
-      {{ pid.value }}
-    </b>
-  {% endfor %}
-
-  {% comment %}for each name (currently [0] but should be all) print the languages{% endcomment %}
-  {% comment %}FIX{% endcomment %}
-  {% if mpd.name[0].countryLanguage %}
-    <div>
-      {% for lang in mpd.name[0].countryLanguage %}
-        <p>
-          Country:
-          <b>
-            {{ lang.country.coding[0].display }}
-          </b>
-        </p>
-        <p>
-          Language:
-          <b>
-            {{ lang.language.coding[0].display }}
-          </b>
-        </p>
-
-      {% endfor %}
-    </div>
-  {% endif %}
-  {% comment %}print status and domain{% endcomment %}
-  <div>
-    <p>
-      status: {{ mpd.status.coding[0].display }}
-    </p>
-  </div>
-  <div>
-    <p>
-      Domain: {{ mpd.domain.coding[0].display }}
-    </p>
-  </div>
-  {% comment %}print combined dose form - if there's many, this should be adjusted{% endcomment %}
-  <div>
-    <p>
-      Combined pharmaceutical dose form: {{ mpd.combinedPharmaceuticalDoseForm.coding[0].display }}
-    </p>
-  </div>
-  <div>
-    <p>
-      Legal Status of Supply: {{ mpd.legalStatusOfSupply.coding[0].display }}
-    </p>
-  </div>
-
-  {% for classif in mpd.classification %}
-    {% for class in classif.coding %}
-      {{ class.display }} ({{ class.code }}) <br/>
-    {% endfor %}
-  {% endfor %}
-
-
-  {% comment %}Get all RAs (RegAuthorization) from the Bundle{% endcomment %}
-  {% assign ras = bundle.entry | where: "resource.resourceType", "RegulatedAuthorization" %}
-    {% for rar in ras %}
-    {% comment %}get the RA resource{% endcomment %}
-    {% assign ra = rar.resource %}
-    {% comment %}mpdtid = mpd prepended ID - will be "MedicinalProductDefinition/<id>" identifiers{% endcomment %}
-    {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
-    {% comment %}if the current looped RA points to the MPD as subject{% endcomment %}
-    {% if ra.subject[0].reference == mpdtid %}
-      <div class="container rcorners ra listcontainer" title="Authorisation">
-
-        <p class="divtitle">Authorisation {{ forloop.index }} of {{ ras | size }}</p>
-        Auth id:
+    {% comment %}and name parts{% endcomment %}
+    {% for namepart in mpd.name[0].namePart %}
+      <p>
+        {{ namepart.type.coding[0].display }}:
         <b>
-          {% for raid in ra.identifier %}
-            {{ raid.value | join: ", " }}
-          {% endfor %}
+          {{ namepart.part }}
         </b>
+      </p>
+    {% endfor %}
+    {% comment %}and MPD identifiers{% endcomment %}
+    {% for pid in mpd.identifier %}
+      {{ pid.system | split: '/' | last | upcase }}:
+      <b>
+        {{ pid.value }}
+      </b>
+    {% endfor %}
 
-        <p>
-          Region:
+    {% comment %}for each name (currently [0] but should be all) print the languages{% endcomment %}
+    {% comment %}FIX{% endcomment %}
+    {% if mpd.name[0].countryLanguage %}
+      <div>
+        {% for lang in mpd.name[0].countryLanguage %}
+          <p>
+            Country:
+            <b>
+              {{ lang.country.coding[0].display }}
+            </b>
+          </p>
+          <p>
+            Language:
+            <b>
+              {{ lang.language.coding[0].display }}
+            </b>
+          </p>
+
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% comment %}print status and domain{% endcomment %}
+    <div>
+      <p>
+        status: {{ mpd.status.coding[0].display }}
+      </p>
+    </div>
+    <div>
+      <p>
+        Domain: {{ mpd.domain.coding[0].display }}
+      </p>
+    </div>
+    {% comment %}print combined dose form - if there's many, this should be adjusted{% endcomment %}
+    <div>
+      <p>
+        Combined pharmaceutical dose form: {{ mpd.combinedPharmaceuticalDoseForm.coding[0].display }}
+      </p>
+    </div>
+    <div>
+      <p>
+        Legal Status of Supply: {{ mpd.legalStatusOfSupply.coding[0].display }}
+      </p>
+    </div>
+
+    {% for classif in mpd.classification %}
+      {% for class in classif.coding %}
+        {{ class.display }} ({{ class.code }}) <br/>
+      {% endfor %}
+    {% endfor %}
+
+
+    {% comment %}Get all RAs (RegAuthorization) from the Bundle{% endcomment %}
+    {% assign ras = bundle.entry | where: "resource.resourceType", "RegulatedAuthorization" %}
+      {% for rar in ras %}
+      {% comment %}get the RA resource{% endcomment %}
+      {% assign ra = rar.resource %}
+      {% comment %}mpdtid = mpd prepended ID - will be "MedicinalProductDefinition/<id>" identifiers{% endcomment %}
+      {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
+      {% comment %}if the current looped RA points to the MPD as subject{% endcomment %}
+      {% if ra.subject[0].reference == mpdtid %}
+        <div class="container rcorners ra listcontainer" title="Authorisation">
+
+          <p class="divtitle">Authorisation {{ forloop.index }} of {{ ras | size }}</p>
+          Auth id:
           <b>
-            {% for rareg in ra.region %}
-              {{ rareg.coding[0].display }}
+            {% for raid in ra.identifier %}
+              {{ raid.value | join: ", " }}
             {% endfor %}
           </b>
+
+          <p>
+            Region:
+            <b>
+              {% for rareg in ra.region %}
+                {{ rareg.coding[0].display }}
+              {% endfor %}
+            </b>
+          </p>
+          <p>
+            Type:
+            <b>
+              {{ ra.type.coding[0].display }}
+            </b>
+          </p>
+
+          {% assign holderorg = ra.holder.reference | split: '/' | last %}
         </p>
+
+        {% comment %}Get Orgs from Bundle {% endcomment %}
+        {% assign orgentries = bundle.entry | where: "resource.resourceType", "Organization" %}
+
+          {% for orgentry in orgentries %}
+          {% assign org = orgentry.resource %}
+          {% assign orgid = org.id %}
+          {% assign orgrefid = org.id | prepend: 'Organization/' %}
+
+
+          {% comment %}See which of the Orgs is referenced from the RA{% endcomment %}
+          {% if ra.holder.reference == orgrefid %}
+            <p>
+              Holder:
+              <b>{{ org.name }} ({{ org.identifier[0].value }})</b>
+
+            </p>
+            <p></p>
+          {% endif %}
+        {% endfor %}
+
+
+
         <p>
-          Type:
+          Status:
           <b>
-            {{ ra.type.coding[0].display }}
+            {{ ra.status.coding[0].display }} ({{ ra.statusDate }})
           </b>
         </p>
 
-        {% assign holderorg = ra.holder.reference | split: '/' | last %}
-      </p>
+      </div>
 
-      {% comment %}Get Orgs from Bundle {% endcomment %}
-      {% assign orgentries = bundle.entry | where: "resource.resourceType", "Organization" %}
+    {% endif %}
+  {% endfor %}
 
-        {% for orgentry in orgentries %}
-        {% assign org = orgentry.resource %}
-        {% assign orgid = org.id %}
-        {% assign orgrefid = org.id | prepend: 'Organization/' %}
+  {% comment %}
+  Generic way to iterate a linked structure
+  {% assign ras = entry | where: "resource.resourceType","RegulatedAuthorization"%}
+  {% assign rasf = ras | where: "subject[0].reference", mpd.id | prepend: 'MedicinalProductDefinition/' %}
+  {% for rar in rasf %}
+  {% assign ra = rar.resource %}
 
+  {% endfor %}
+  {% endcomment %}
 
-        {% comment %}See which of the Orgs is referenced from the RA{% endcomment %}
-        {% if ra.holder.reference == orgrefid %}
-          <p>
-            Holder:
-            <b>{{ org.name }} ({{ org.identifier[0].value }})</b>
-
-          </p>
-          <p></p>
-        {% endif %}
-      {% endfor %}
-
-
-
-      <p>
-        Status:
-        <b>
-          {{ ra.status.coding[0].display }} ({{ ra.statusDate }})
-        </b>
-      </p>
-
-    </div>
-
-  {% endif %}
-{% endfor %}
-
-{% comment %}
-Generic way to iterate a linked structure
-{% assign ras = entry | where: "resource.resourceType","RegulatedAuthorization"%}
-{% assign rasf = ras | where: "subject[0].reference", mpd.id | prepend: 'MedicinalProductDefinition/' %}
-{% for rar in rasf %}
-{% assign ra = rar.resource %}
-
-{% endfor %}
-{% endcomment %}
-
-{% comment %}Get PPDs from Bundle {% endcomment %}
-{% assign ppds = bundle.entry | where: "resource.resourceType", "PackagedProductDefinition" %}
+  {% comment %}Get PPDs from Bundle {% endcomment %}
+  {% assign ppds = bundle.entry | where: "resource.resourceType", "PackagedProductDefinition" %}
 
   <div class="container  rcorners bleft listcontainer">
-  {% for ppdr in ppds %}
-    {% assign ppd = ppdr.resource %}
-    {% comment %}Get PPDs that link to MPD, via packagefor[0] {% endcomment %}
-    {% comment %}SHOULD FIX: Currently only packageFor[0], but should be any package {% endcomment %}
-      <p class="divtitle"> Package {{ forloop.index }} of {{ ppds | size }}</p>
-    {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
-    {% comment %}FIX{% endcomment %}
+    {% for ppdr in ppds %}
+      {% assign ppd = ppdr.resource %}
+      {% comment %}Get PPDs that link to MPD, via packagefor[0] {% endcomment %}
+      {% comment %}SHOULD FIX: Currently only packageFor[0], but should be any package {% endcomment %}
+        <p class="divtitle"> Package {{ forloop.index }} of {{ ppds | size }}</p>
+      {% assign mpdtid = mpd.id | prepend: 'MedicinalProductDefinition/' %}
+      {% comment %}FIX{% endcomment %}
 
 
-    {% if ppd.packageFor[0].reference == mpdtid %}
-      <div class="container rcorners ppd">
+      {% if ppd.packageFor[0].reference == mpdtid %}
+        <div class="container rcorners ppd">
 
-        {% for ppid in ppd.identifier %}
-          {{ ppid.system | split: '/' | last | upcase }}:
+          {% for ppid in ppd.identifier %}
+            {{ ppid.system | split: '/' | last | upcase }}:
+            <b>
+              {{ ppid.value }}
+            </b>
+          {% endfor %}
+          <p>
+            Description:
+            <b>
+              {{ ppd.description }}
+            </b>
+          </p>
+          Marketing Status:
           <b>
-            {{ ppid.value }}
-          </b>
-        {% endfor %}
-        <p>
-          Description:
-          <b>
-            {{ ppd.description }}
-          </b>
-        </p>
-        Marketing Status:
-        <b>
-          {{ ppd.status.coding[0].code }}</b>
+            {{ ppd.status.coding[0].code }}</b>
 
-        <p>
-          Contained Quantity:
-          <ul>
-            {% for quant in ppd.containedItemQuantity %}
-              <li>
-                {{ quant.value }} {{ quant.code | pluralize: quant.code }}</li>
-            {% endfor %}
-          </ul>
-        </p>
+          <p>
+            Contained Quantity:
+            <ul>
+              {% for quant in ppd.containedItemQuantity %}
+                <li>
+                  {{ quant.value }} {{ quant.code | pluralize: quant.code }}</li>
+              {% endfor %}
+            </ul>
+          </p>
 
 
-        <p>
-          {% assign pckg = ppd.packaging %}
-          {% if pckg.quantity % %}
-            <br/>
-            <div class="container rcorners pack bleft">
-              <p>Package: {{ pckg.quantity }} {{ pckg.type.coding[0].display }} [{{ pckg.material[0].coding[0].display }}]</p>
+          <p>
+            {% assign pckg = ppd.packaging %}
+            {% if pckg.quantity % %}
+              <br/>
+              <div class="container rcorners pack bleft">
+                <p>Package: {{ pckg.quantity }} {{ pckg.type.coding[0].display }} [{{ pckg.material[0].coding[0].display }}]</p>
 
-            </div>
-          {% endif %}
+              </div>
+            {% endif %}
 
           </p>
 
@@ -467,3 +468,4 @@ Generic way to iterate a linked structure
     </div>
   {% endif %}
 </div>
+{% endif %}
