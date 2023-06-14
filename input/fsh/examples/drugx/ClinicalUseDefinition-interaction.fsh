@@ -14,3 +14,5 @@ Usage: #example
 
  // Reference to MedicinalProductDefinition: DrugX 75 mg tablet blister x28
 * subject = Reference(DrugX75mgblisterx28)
+
+* interaction.interactant.itemCodeableConcept = https://gsrs.ncats.nih.gov/ginas/app/beta/#YL5FZ2Y5U1 "METHOTREXATE"
