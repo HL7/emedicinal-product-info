@@ -12,11 +12,9 @@ Usage: #example
 
 * status = #active
 
-* manufacturedDoseForm = http://hl7.org/fhir/manufactured-dose-form#100000073664
-* manufacturedDoseForm.text = "tablet"
+* manufacturedDoseForm = $manufactured-dose-form#100000073664 "Tablet"
+* unitOfPresentation = $unit-of-presentation#200000002152 "Tablet"
 
-* unitOfPresentation = http://hl7.org/fhir/unit-of-presentation#200000002152
-* unitOfPresentation.text = "Tablet"
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(acmeinc)

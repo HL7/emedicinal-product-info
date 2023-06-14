@@ -9,8 +9,8 @@ Usage: #example
 
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#00000072072
-* role.text = "active"
+* role = EmaSporIngredientRole#100000072072 "Active"
+
 
 
 //reference to Manufactured Item: Dovato 50 mg/300 mg film-coated tablets

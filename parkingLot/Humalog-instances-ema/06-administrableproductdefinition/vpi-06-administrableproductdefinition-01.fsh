@@ -22,5 +22,5 @@ Usage: #example
 
 * routeOfAdministration.code = $spor-rms#100000073633
 * routeOfAdministration.code.text = "Subcutaneous use"
-* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
+

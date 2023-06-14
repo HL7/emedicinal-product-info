@@ -8,8 +8,8 @@ Usage: #example
 * identifier.value = "55X04QC32I"
 * identifier.use = #official
 
-* role = $spor-rms#100000072082
-* role.text = "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
+
 
 * status = #active
 

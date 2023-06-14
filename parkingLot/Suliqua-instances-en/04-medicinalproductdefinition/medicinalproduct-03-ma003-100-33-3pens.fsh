@@ -8,14 +8,14 @@ Usage: #example
 * identifier.use = #official
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * domain = https://spor.ema.europa.eu/rmswi/#/#100000000012
-* domain.text = "Human use"
+
 
 * version = "1"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 
 * statusDate = "2015-02-07T13:28:17Z"
 
@@ -30,7 +30,7 @@ Each dose step contains 1 unit of insulin glargine and 0.33 micrograms of lixise
 * indication = "Suliqua is indicated for the treatment of adults with insufficiently controlled type 2 diabetes mellitus to improve glycaemic control as an adjunct to diet and exercise in addition to metformin with or without SGLT-2 inhibitors."
 
 * legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+
 
 * classification = https://www.whocc.no/atc_ddd_index/#A10AE54
 * classification.text = "insulin glargine and lixisenatide"
@@ -39,7 +39,7 @@ Each dose step contains 1 unit of insulin glargine and 0.33 micrograms of lixise
 
 * name.productName = "Suliqua 100 units/ml + 33 micrograms/ml solution for injection in a pre-filled pen"
 * name.type = https://spor.ema.europa.eu/rmswi/#/#220000000001
-* name.type.text = "Full name"
+ 
 
 * name.countryLanguage.country = urn:iso:std:iso:3166#eu
 * name.countryLanguage.country.text = "European Union"

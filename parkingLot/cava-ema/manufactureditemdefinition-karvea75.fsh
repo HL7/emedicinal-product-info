@@ -14,8 +14,8 @@ Usage: #example
 * manufacturedDoseForm = $spor-combinedPharmaceuticalDoseForm-cs#10219000
 * manufacturedDoseForm.text = "tablet"
 
-* unitOfPresentation = $spor-rms#200000002152
-* unitOfPresentation.text = "Tablet"
+ * unitOfPresentation = $spor-rms#200000002152 "Tablet"
+
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(acmeinc)

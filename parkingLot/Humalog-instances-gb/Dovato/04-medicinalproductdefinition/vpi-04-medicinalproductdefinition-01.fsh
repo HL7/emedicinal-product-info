@@ -3,24 +3,24 @@ InstanceOf: MedicinalProductDefinition
 Description: "EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "498163"
 
-* type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
-* type.text = "Medicinal Product"
+* type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"
 
-* domain = http://hl7.org/fhir/medicinal-product-domain#Human
-* domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* domain = $medicinal-product-domain#Human "Human use"
 
-* legalStatusOfSupply = $spor-rms#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+
+* status = $publication-status#active "Active"
+
+* legalStatusOfSupply = $legal-status-of-supply#100000072084 "Medicinal product subject to medical prescription"
+
 
 * name.productName = "Dovato 50 mg/300 mg film-coated tablets"
-* name.type = $spor-rms#220000000001
+* name.type = $example-cs#220000000001 "Full name" 
 
-* name.type.text = "Full name"
+ 
 * name.countryLanguage.country = urn:iso:std:iso:3166#eu
 
 * name.countryLanguage.country.text = "European Union"
@@ -37,7 +37,7 @@ Usage: #example
 * name.namePart.type.text = "Invented name part"
 
 * name.namePart.part = "dolutegravir/lamivudine"
-* name.namePart.type = $spor-rms#220000000003
+* name.namePart.type = $example-cs#220000000002 "Invented name part"
 * name.namePart.type.text = "Scientific name part"
 
 * name.namePart.part = "50 mg/300 mg"

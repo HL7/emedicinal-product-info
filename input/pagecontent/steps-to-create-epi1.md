@@ -37,7 +37,7 @@ Refer to [Composition Profile](https://build.fhir.org/ig/HL7/emedicinal-product-
 #### Create Bundle 
 The bundle is used to gather together the resources needed to create a unique ePI document. E.g., one bundle for the health care practitioner ePI; a second bundle for the patient insert ePI; a third bundle for the pack label ePI document.
 
-Using the Core ePI Profile as a template, complete one Bundle resource for each ePI document.  
+Using the Base ePI Profile as a template, complete one Bundle resource for each ePI document.  
 
 Complete the Bundle resource by referencing it to only one Composition plus all other resources completed in Step 1. E.g., reference the Bundle to the patient insert composition and all other resources associated with that patient insert (e.g., the binaries, regulated authorizations, clinical uses, medicinal products,  packaged products, administrable products, manufactured items, organizations, ingredients, substances).
 

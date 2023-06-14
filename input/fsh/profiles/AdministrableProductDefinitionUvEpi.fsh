@@ -4,8 +4,8 @@ Id: AdministrableProductDefinition-uv-epi
 Title: "AdministrableProductDefinition (ePI)"
 Description: "AdministrableProductDefinition (ePI)"
 
+* insert SetFmmandStatusRule ( 1, trial-use )
 * identifier 1..*
-  * system
   * system 1..1
   * value 1..1
 

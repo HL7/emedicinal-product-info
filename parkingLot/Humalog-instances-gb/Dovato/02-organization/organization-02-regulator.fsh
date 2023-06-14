@@ -3,11 +3,11 @@ InstanceOf: Organization
 Description: "Regulator"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100013412"
 * identifier.use = #official
 
-* identifier[1].system = "$spor-org"
+* identifier[1].system = "$example-org"
 * identifier[1].value = "LOC-100020264"
 * identifier[1].use = #official
 

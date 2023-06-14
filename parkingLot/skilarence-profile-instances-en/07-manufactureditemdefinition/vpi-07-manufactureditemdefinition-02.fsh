@@ -13,7 +13,7 @@ Usage: #example
 * manufacturedDoseForm.text = "Tablet"
 
 * unitOfPresentation = https://spor.ema.europa.eu/rmswi/#/#200000002152
-* unitOfPresentation.text = "Tablet"
+
 
 // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1639015344307)

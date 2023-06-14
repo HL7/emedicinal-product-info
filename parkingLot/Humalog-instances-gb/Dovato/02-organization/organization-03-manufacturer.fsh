@@ -3,11 +3,11 @@ InstanceOf: Organization
 Description: "Manufacturer"
 Usage: #example
 
-* identifier.system = "$spor-org"
+* identifier.system = "$example-org"
 * identifier.value = "ORG-100004538"
 * identifier.use = #official
 
-* identifier[1].system = "$spor-org"
+* identifier[1].system = "$example-org"
 * identifier[1].value = "LOC-100000153"
 * identifier[1].use = #official
 

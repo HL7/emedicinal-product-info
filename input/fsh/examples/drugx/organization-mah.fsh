@@ -6,14 +6,13 @@ Usage: #example
 
 * id = "d71bf884-90eb-47f9-81b7-fa81ecec7e75"
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG1"
 * identifier.use = #official
 
 * active = true
 
-* type = $spor-rms#220000000034 "Marketing authorisation holder"
-* type.text = "Marketing authorisation holder"
+* type = $example-cs#220000000034 "Marketing authorisation holder"
 * name = "acme inc"
 
 * contact

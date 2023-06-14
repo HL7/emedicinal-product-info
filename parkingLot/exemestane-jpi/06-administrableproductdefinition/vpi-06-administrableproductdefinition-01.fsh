@@ -15,12 +15,12 @@ Usage: #example
 * administrableDoseForm.text = "Tablet"
 
 * unitOfPresentation = $spor-rms#15054000
-* unitOfPresentation.text = "Tablet"
+
 
 * routeOfAdministration.code = $spor-rms#20053000
-* routeOfAdministration.code.text = "Oral use"
-* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
+
+
 
 // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(7460b712-82ad-4cce-a756-90b0fa04896c)

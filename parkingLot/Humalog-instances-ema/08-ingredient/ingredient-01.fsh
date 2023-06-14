@@ -9,8 +9,8 @@ Usage: #example
 
 * status = #active
 
-* role = $spor-rms#00000072072
-* role.text = "active"
+* role = EmaSporIngredientRole#100000072072 "Active"
+
 
 * substance.code.concept.coding = $ginas#GFX7QIS1II "Insulin lispro"
 * substance.strength.presentationQuantity.value = 100

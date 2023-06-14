@@ -3,7 +3,7 @@ Parent: SubstanceDefinition
 Id: SubstanceDefinition-uv-epi
 Title: "SubstanceDefinition (ePI)"
 Description: "SubstanceDefinition (ePI)"
-
+* insert SetFmmandStatusRule ( 1, trial-use )
 * identifier 1..
   * system 1..
   * value 1..
@@ -30,4 +30,4 @@ Description: "SubstanceDefinition (ePI)"
 
 * name 0..*
   * ^short = "International Non-Proprietary Name (INN) of the substance; or United States Adopted Name (USAN) if applicable."
-  * type 0..1
+  * type ^short = "Name type e.g. 'scientific, 'brand'"

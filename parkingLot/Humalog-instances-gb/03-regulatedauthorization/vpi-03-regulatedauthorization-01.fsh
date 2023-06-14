@@ -11,13 +11,13 @@ Usage: #example
  // Reference to MedicinalProductDefinition: EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill
 * subject = Reference(6200a0a8-2fc1-46d4-aa66-2a98ac0cabc2)
 
-* type = $spor-rms#100000072062
-* type.text = "Marketing Authorisation"
+* type = EmaSporScope#100000072062 "Marketing Authorization"
+
 
 * region = urn:iso:std:iso:3166#gb
 * region.text = "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2022-02-07T13:28:17Z"

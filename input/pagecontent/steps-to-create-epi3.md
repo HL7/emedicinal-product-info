@@ -6,12 +6,12 @@ The following is an example of how to build a Summary of Product Characteristics
 <img src="Type3ePI.drawio.png" usemap="#image-map" style="float:none; margin: 0px 0px 0px 0px;" width="650px">  
 
 #### Create Organization resource(s) 
-Using the Core ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with ePIs: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
+Using the Base ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with ePIs: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
 
 Refer to the [Organization profile](StructureDefinition-Organization-uv-epi.html) for detail. 
 
 #### Create Substance Definition resource(s) 
-Using the Core ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient associated with the authorized product(s) in this ePI.
+Using the Base ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient associated with the authorized product(s) in this ePI.
 
 Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder that was created in the Step 5.1.1 Create Organization resource(s)]. 
 
@@ -29,7 +29,7 @@ Refer to [ManufacturedItemDefinition Profile](StructureDefinition-ManufacturedIt
 (add two examples, one for a product with no transformation (tablet) and one with transformation). 
 
 #### Create Ingredient resource(s) 
-Using the Core ePI Profile as a template, complete one Ingredient resource for each active ingredient and each excipient that make up each manufactured item associated with the authorized product(s) in this ePI. 
+Using the Base ePI Profile as a template, complete one Ingredient resource for each active ingredient and each excipient that make up each manufactured item associated with the authorized product(s) in this ePI. 
 
 Create a reference from the relevant Ingredient resources to the corresponding ManufacturedItemDefinition resource (e.g., reference the ingredients that make up the powder to the powder's manufactured item, and reference the ingredients that make up the diluent to the diluent's manufactured item). 
 
@@ -49,7 +49,7 @@ Refer to [MedicinalProductDefinition Profile](StructureDefinition-MedicinalProdu
 #### Create Administrable Product Definition resource(s) 
 The administrable product describes the medicinal product in the dosage form ready for administration to the patient (after any mixing of multiple components or transformations has been performed). This is different from the manufactured item which described the medicinal product as the dosage form in the primary packaging and before any mixing or transformation. For example, a powder in a vial and a diluent in a vial are packaged together. The combined solution, made by mixing the powder and diluent, is the administrable product since that is the dosage form ready for administration to the patient.  
  
-Using the Core ePI Profile as a template, complete one PharmaceuticalProductDefinition resource for each pharmaceutical product associated with the authorized product(s) in this ePI.  
+Using the Base ePI Profile as a template, complete one PharmaceuticalProductDefinition resource for each pharmaceutical product associated with the authorized product(s) in this ePI.  
  
 Create a reference from each PharmaceuticalProductDefinition resource to the corresponding MedicinalProductDefinition resource. 
 
@@ -61,7 +61,7 @@ Refer to [AdministrableProductDefinition Profile](StructureDefinition-Administra
 
 #### Create Packaged Product Definition resource(s) 
 
-Using the Core ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation associated with the authorized product(s) in this ePI. 
+Using the Base ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation associated with the authorized product(s) in this ePI. 
 
 Create a reference from each PackagedProductDefinition resource to the corresponding MedicinalProductDefinition resource for this package. 
 
@@ -70,42 +70,42 @@ Create a reference from each PackagedProductDefinition resource to the correspon
 Refer to [PackagedProductDefinition Profile](StructureDefinition-PackagedProductDefinition-uv-epi.html) for detail. 
 
 #### Create Clinical Use Definition resource(s) – Contraindication 
-Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each contraindication.  
+Using the Base ePI Profile as a template, complete one ClinicalUseDefinition resource for each contraindication.  
 
 Create a reference from the ClinicalUseDefinition (contraindication) to the corresponding MedicinalProduct. 
 
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail. 
 
 #### Create Clinical Use Definition resource(s) - Indication 
-Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Indication. 
+Using the Base ePI Profile as a template, complete one ClinicalUseDefinition resource for each Indication. 
 
 Create a reference from each ClinicalUseDefinition (Indication) to the corresponding MedicinalProduct. 
 
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.  
 
 #### Create Clinical Use Definition resource - Interaction 
-Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Interaction. 
+Using the Base ePI Profile as a template, complete one ClinicalUseDefinition resource for each Interaction. 
 
 Create a reference each ClinicalUseDefinition (Interaction) to the corresponding MedicinalProduct. 
 
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.  
 
 #### Create Clinical Use Definition resource - Undesirable Effect 
-Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Undesirable Effect. 
+Using the Base ePI Profile as a template, complete one ClinicalUseDefinition resource for each Undesirable Effect. 
 
 Create a reference from each ClinicalUseDefinition (Undesirable Effect) to the corresponding MedicinalProduct. 
 
 Refer to [ClinicalUseDefinition Profile](StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi.html) for detail.  
 
 #### Create Clinical Use Definition resource - Warning 
-Using the Core ePI Profile as a template, complete one ClinicalUseDefinition resource for each Warning. 
+Using the Base ePI Profile as a template, complete one ClinicalUseDefinition resource for each Warning. 
 
 Create a reference from each ClinicalUseDefinition (Warning) to the corresponding MedicinalProduct. 
 
 INSERT reference to the Profile page. 
 
 #### Create Regulated Authorization resource 
-Using the Core ePI Profile as a template, complete one RegulatedAuthorization resource for each medicinal product associated with this ePI. For example, if there are four medicinal products then there will be four RegulatedAuthorization resources. 
+Using the Base ePI Profile as a template, complete one RegulatedAuthorization resource for each medicinal product associated with this ePI. For example, if there are four medicinal products then there will be four RegulatedAuthorization resources. 
 
 Create a reference from each RegulatedAuthorization resource to its corresponding MedicinalProductDefinition.
 
@@ -148,7 +148,7 @@ Refer to [Composition Profile](StructureDefinition-Composition-uv-epi.html) for 
 #### Create Bundle 
 The bundle is used to gather together the resources needed to create a unique ePI document. E.g., one bundle for the health care practitioner ePI; a second bundle for the patient insert ePI; a third bundle for the pack label ePI document.
 
-Using the Core ePI Profile as a template, complete one Bundle resource for each ePI document.  
+Using the Base ePI Profile as a template, complete one Bundle resource for each ePI document.  
 
 Complete the Bundle resource by referencing it to only one Composition plus all other resources completed in Step 1. E.g., reference the Bundle to the patient insert composition and all other resources associated with that patient insert (e.g., the binaries, regulated authorizations, clinical uses, medicinal products,  packaged products, administrable products, manufactured items, organizations, ingredients, substances).
 
@@ -159,6 +159,8 @@ NOTE:
 Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.  
 
 #### Create List (of ePIs)
-The List of ePIs is ued to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  
+
+The List of ePIs is used to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  
 
 Complete the [List resource](http://hl7.org/fhir/list.html) by adding a reference to the ePI document Bundle for the ePI document created above.
+

@@ -11,12 +11,12 @@ Usage: #example
 * subject[+] = Reference(f1b25777-da7a-4a35-98af-ab18d3246d54)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * region = urn:iso:std:iso:3166#us
 * region.text = "United States of America"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2002-08-01T13:28:17Z"

@@ -6,21 +6,20 @@ Usage: #example
 
 * id = "297e405a-b6f9-4273-bc01-ae031efe47f8"
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "authorization75mg"
 * identifier.use = #official
 
  // Reference to MedicinalProductDefinition: DrugX 75 mg tablet
 * subject = Reference(DrugX75mgblisterx28)
 
-* type = $spor-rms#100000072062
-* type.text = "Marketing Authorisation"
+* type = http://hl7.org/fhir/regulated-authorization-type#MarketingAuth "Marketing Authorization"
+
 
 * region = urn:iso:std:iso:3166#FR
 * region.text = "European Union"
 
-* status = http://hl7.org/fhir/publication-status#active
-* status.text = "Active"
+* status = $publication-status#active "Active"
 
 * statusDate = "2015-02-07T13:28:17Z"
 

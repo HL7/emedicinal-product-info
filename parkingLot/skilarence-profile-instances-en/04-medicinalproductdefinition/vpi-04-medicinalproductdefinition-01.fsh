@@ -8,14 +8,14 @@ Usage: #example
 * identifier.use = #official
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * domain = https://spor.ema.europa.eu/rmswi/#/#100000000012
-* domain.text = "Human use"
+
 
 * version = "1"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 
 * statusDate = "2015-02-07T13:28:17Z"
 
@@ -27,7 +27,7 @@ Usage: #example
 * indication = "for the treatment of moderate to severe plaque psoriasis"
 
 * legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+
 
 * classification = https://www.whocc.no/atc_ddd_index/#L04AX07
 * classification.text = "Other immunosuppressants"
@@ -36,7 +36,7 @@ Usage: #example
 
 * name.productName = "Skilarence (dimethyl fumarate) 30 mg gastro-resistant tablet"
 * name.type = https://spor.ema.europa.eu/rmswi/#/#220000000001
-* name.type.text = "Full name"
+ 
 
 * name.countryLanguage.country = urn:iso:std:iso:3166#eu
 * name.countryLanguage.country.text = "European Union"

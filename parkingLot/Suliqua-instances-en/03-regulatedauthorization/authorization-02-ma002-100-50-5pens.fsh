@@ -11,14 +11,14 @@ Usage: #example
 * subject = Reference(cfsb1151803027115)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * description = "Suliqua 100 units/ml + 50 microgram/ml solution for injection in a pre-filled pen"
 
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2017-01-11T13:28:17Z"

@@ -9,9 +9,9 @@ Usage: #example
 
 * status = #active
 
-// * role = https://spor.ema.europa.eu/rmswi/#00000072072
+// * role = EmaSporIngredientRole#100000072072 "Active"
 * role = http://hl7.org/fhir/ingredient-role/#100000072072
-* role.text = "active"
+
 
 
 

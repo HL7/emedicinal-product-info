@@ -19,24 +19,24 @@ InstanceOf: MedicinalProductDefinition
 Description: "EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets"
 Usage: #example
  
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "498163"
 
-* type = http://hl7.org/fhir/medicinal-product-type#MedicinalProduct
-* type.text = "Medicinal Product"
+* type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"
 
-* domain = http://hl7.org/fhir/medicinal-product-domain#Human
-* domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* domain = $medicinal-product-domain#Human "Human use"
 
-* legalStatusOfSupply = $spor-rms#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+
+* status = $publication-status#active "Active"
+
+* legalStatusOfSupply = $legal-status-of-supply#100000072084 "Medicinal product subject to medical prescription"
+
 
 * name.productName = "Dovato 50 mg/300 mg film-coated tablets"
-* name.type = $spor-rms#220000000001
+* name.type = $example-cs#220000000001 "Full name" 
 
-* name.type.text = "Full name"
+ 
 * name.usage.country = urn:iso:std:iso:3166#eu "European Union"
 * name.usage.jurisdiction = urn:iso:std:iso:3166#eu "European Union"
 * name.usage.language = urn:ietf:bcp:47#en  "English"
@@ -45,7 +45,7 @@ Usage: #example
 * name.part[=].type = $spor-rms#220000000002 "Invented name part"
 
 * name.part[+].part = "dolutegravir/lamivudine"
-* name.part[=].type = $spor-rms#220000000003 "Scientific name part"
+* name.part[=].type = $example-cs#220000000002 "Invented name part" "Scientific name part"
 
 * name.part[+].part = "50 mg/300 mg"
 * name.part[=].type = $spor-rms#220000000004 "Strength part"
@@ -61,7 +61,7 @@ InstanceOf: PackagedProductDefinition
 Description: "50 mg/300 mg film-coated tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/19/1370/001"
 * identifier.use = #official
 
@@ -70,13 +70,13 @@ Usage: #example
 * type = $spor-rms#100000155527
 * type.text = "Chemical Medicinal Prodcut"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2012-02-07T13:28:17Z"
 
 * containedItemQuantity.value = 30
 * containedItemQuantity.unit = "tablets"
 
-* packaging.identifier.system = $spor-prod
+* packaging.identifier.system = $example-prod
 * packaging.identifier.value = "654321"
 * packaging.type = $spor-rms#100000073504 "Child-resistant closure"
 * packaging.quantity = 1
@@ -95,11 +95,11 @@ InstanceOf: Organization
 Description: "Manufacturer"
 Usage: #example
  
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100004538"
 * identifier.use = #official
 
-* identifier[1].system = $spor-org
+* identifier[1].system = $example-org
 * identifier[1].value = "LOC-100000153"
 * identifier[1].use = #official
 
@@ -128,8 +128,8 @@ Usage: #example
 * manufacturedDoseForm = https://spor.ema.europa.eu/rmswi/#100000073665
 * manufacturedDoseForm.text = "Film-coated tablet"
 
-* unitOfPresentation = $spor-rms#200000002152
-* unitOfPresentation.text = "Tablet"
+ * unitOfPresentation = $spor-rms#200000002152 "Tablet"
+
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1650997423990)
@@ -149,12 +149,12 @@ Usage: #example
 * administrableDoseForm.text = "Tablet"
 
 * unitOfPresentation = https://standardterms.edqm.eu/browse/get_concepts/UOP/#15054000
-* unitOfPresentation.text = "Tablet"
+
 
 * routeOfAdministration.code = https://standardterms.edqm.eu/browse/get_concepts/ROA/#20053000
-* routeOfAdministration.code.text = "Oral use"
-* routeOfAdministration.targetSpecies.code = https://spor.ema.europa.eu/rmswi/#/#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
+
+
 
 //reference to EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets
 * formOf = Reference(cfsb1650904258324)
@@ -168,20 +168,20 @@ InstanceOf: RegulatedAuthorization
 Description: "Regulated authorization"
 Usage: #example
  
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/19/1370/001"
 * identifier.use = #official
 
  // Reference to MedicinalProductDefinition: EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets
 * subject = Reference(cfsb1650904258324)
 
-* type = $spor-rms#100000072062
-* type.text = "Marketing Authorisation"
+* type = EmaSporScope#100000072062 "Marketing Authorization"
+
 
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2019-07-01T13:28:17Z"
@@ -199,13 +199,13 @@ InstanceOf: Organization
 Description: "Marketing Authorization Holder"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100012958"
 * identifier.use = #official
 
 * active = true
 
-* type = $spor-rms#220000000034 "Marketing authorisation holder"
+* type = $example-cs#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
 * name = "ViiV Healthcare BV"
 
@@ -221,11 +221,11 @@ InstanceOf: Organization
 Description: "Regulator"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100013412"
 * identifier.use = #official
 
-* identifier[1].system = $spor-org
+* identifier[1].system = $example-org
 * identifier[1].value = "LOC-100020264"
 * identifier[1].use = #official
 
@@ -253,8 +253,8 @@ Usage: #example
 
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#00000072072
-* role.text = "active"
+* role = EmaSporIngredientRole#100000072072 "Active"
+
 
 
 //reference to Manufactured Item: Dovato 50 mg/300 mg film-coated tablets
@@ -295,7 +295,7 @@ Usage: #example
 * status = #active
 
 * role = https://spor.ema.europa.eu/rmswi/#100000072072
-* role.text = "active"
+
 
 //reference to Manufactured Item: Dovato 50 mg/300 mg film-coated tablets
 * for = Reference(cfsb1650998521654)
@@ -320,8 +320,8 @@ Usage: #example
 * identifier.value = "OP1R32D61U"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
+
 
 * status = #active
 
@@ -344,8 +344,8 @@ Usage: #example
 * identifier.value = "H8AV0SQX4D"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
+
 
 * status = #active
 
@@ -369,8 +369,8 @@ Usage: #example
 * identifier.value = "70097M6I30"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
+
 
 * status = #active
 
@@ -394,8 +394,8 @@ Usage: #example
 * identifier.value = "3OWL53L36A"
 * identifier.use = #official
 
-* role = https://spor.ema.europa.eu/rmswi/#100000072082
-* role.text = "Excipient"
+* role = $ingredient-role#100000072082 "Excipient"
+
 
 * status = #active
 

@@ -6,27 +6,29 @@ Usage: #example
 
 * id = "eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d"
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/97/049/001"
 * identifier.use = #official
 
 * name = "DrugX 75 mg tablet blister x28 tablets"
 
-* type = $spor-rms#100000155527
-* type.text = "Chemical Medicinal Prodcut"
+* type = $medicinal-product-type#MedicinalProduct	"Medicinal Product"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2018-06-23T08:38:00+02:00"
 
 * containedItemQuantity.value = 75
 * containedItemQuantity.unit = "mg"
 
 * packaging
-  * identifier.system = $spor-prod
+  * identifier.system = $example-prod
   * identifier.value = "123456"
-  * type = $spor-rms#100000073496 "Blister"
+  * type = $medicinal-product-package-type#100000073496 "Blister"
+
+  
+
   * quantity = 28
-  * material = $spor-rms#200000003222 "PolyVinyl Chloride"
+  * material = $package-material#200000003222 "PolyVinyl Chloride"
 
 //reference to MedicinalProductDefinition: EU/1/97/049/001 DrugX 75 mg tablet
 * packageFor = Reference(DrugX75mgblisterx28)

@@ -3,15 +3,14 @@ Parent: ManufacturedItemDefinition
 Id: ManufacturedItemDefinition-uv-epi
 Title: "ManufacturedItemDefinition (ePI)"
 Description: "ManufacturedItemDefinition (ePI)"
-
+* insert SetFmmandStatusRule ( 1, trial-use )
 * identifier 1..
-  * system
   * system 1..
   * value 1..
 
 * status ^short = "draft|active|retired|unknown"
 
-* manufacturedDoseForm from VsAdministrableDoseForm (example)
+* manufacturedDoseForm from VsManufacturedDoseForm (example)
 
 * unitOfPresentation from VsUnitofPresentation (example)
 

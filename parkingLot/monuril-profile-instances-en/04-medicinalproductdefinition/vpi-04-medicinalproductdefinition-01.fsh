@@ -8,19 +8,19 @@ Usage: #example
 * identifier.use = #official
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * domain = https://spor.ema.europa.eu/rmswi/#/#100000000012
-* domain.text = "Human use"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+
+* status = $publication-status#active "Active"
 
 * legalStatusOfSupply = https://spor.ema.europa.eu/rmswi/#/#100000072084
-* legalStatusOfSupply.text = "Medicinal product subject to medical prescription"
+
 
 * name.productName = "MONURIL 3 g granules for oral solution"
 * name.type = https://spor.ema.europa.eu/rmswi/#/#220000000001
-* name.type.text = "Full name"
+ 
 * name.countryLanguage.jurisdiction = urn:iso:std:iso:3166#eu
 * name.countryLanguage.jurisdiction.text = "European Union"
 * name.countryLanguage.language = urn:ietf:bcp:47#en

@@ -9,8 +9,8 @@ Usage: #example
 
 * status = #active
 
-* role = https://spor.ema.europa.eu/rmswi/#00000072072
-* role.text = "active"
+* role = EmaSporIngredientRole#100000072072 "Active"
+
 
 * substance.code.concept.coding = https://gsrs.ncats.nih.gov/ginas/app/beta/#GFX7QIS1II "Insulin lispro"
 * substance.strength.presentationQuantity.value = 100

@@ -13,7 +13,7 @@ Usage: #example
 * manufacturedDoseForm.text = "Tablet"
 
 * unitOfPresentation = https://standardterms.edqm.eu/browse/get_concepts/UOP/#15054000
-* unitOfPresentation.text = "Tablet"
+
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(organizationmah)

@@ -11,14 +11,14 @@ Usage: #example
 * subject = Reference(cfsb1639230697840)
 
 * type = https://spor.ema.europa.eu/rmswi/#/#100000072062
-* type.text = "Marketing Authorisation"
+
 
 * description = "Skilarence 120 mg gastro-resistant tablets, 90 tablets in PVC/PVDC-aluminium blister packs"
 
 * region = urn:iso:std:iso:3166#eu
 * region.text = "European Union"
 
-* status = http://hl7.org/fhir/publication-status#active
+* status = $publication-status#active
 * status.text = "Active"
 
 * statusDate = "2015-02-07T13:28:17Z"

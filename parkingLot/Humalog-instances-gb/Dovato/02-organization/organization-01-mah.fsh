@@ -3,13 +3,13 @@ InstanceOf: Organization
 Description: "Marketing Authorization Holder"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100012958"
 * identifier.use = #official
 
 * active = true
 
-* type = $spor-rms#220000000034 "Marketing authorisation holder"
+* type = $example-cs#220000000034 "Marketing authorisation holder"
 * type.text = "Marketing authorisation holder"
 * name = "ViiV Healthcare BV"
 

@@ -6,9 +6,9 @@ Usage: #example
 
 * id = "bac1d528-6430-4310-bde6-b8b3471ce35a"
 
-* identifier.system = "https://spor.ema.europa.eu/rmswi/#/"
-* identifier.value = "Psoriasis"
-* identifier.use = #official
+* identifier.system = "http://example.org/sid"
+* identifier.value = "indication-example-1"
+
 
 * type = #indication
 

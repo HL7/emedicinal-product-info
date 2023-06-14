@@ -6,7 +6,7 @@ Usage: #example
 * status = #active
 
 * role = https://spor.ema.europa.eu/rmswi/#/#100000072072 // RMS Ingredient Role 100000072050
-* role.text = "active"
+
 
 * manufacturer.manufacturer = Reference(cfsb1639753766266)
 

@@ -4,7 +4,7 @@ Id: ClinicalUseDefinition-undesirableEffect-uv-epi
 Title: "ClinicalUseDefinition Undesirable Effect (ePI)"
 Description: "ClinicalUseDefinition Undesirable Effect (ePI)"
 
-
+* insert SetFmmandStatusRule ( 1, trial-use )
 * insert ClinicalUseDefinitionCommonRules
 * type = #undesirable-effect
 

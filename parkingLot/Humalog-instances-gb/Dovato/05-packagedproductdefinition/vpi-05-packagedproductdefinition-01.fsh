@@ -3,7 +3,7 @@ InstanceOf: PackagedProductDefinition
 Description: "50 mg/300 mg film-coated tablets"
 Usage: #example
 
-* identifier.system = "$spor-prod"
+* identifier.system = "$example-prod"
 * identifier.value = "EU/1/19/1370/001"
 * identifier.use = #official
 
@@ -12,13 +12,13 @@ Usage: #example
 * type = $spor-rms#100000155527
 * type.text = "Chemical Medicinal Prodcut"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2012-02-07T13:28:17Z"
 
 * containedItemQuantity.value = 30
 * containedItemQuantity.unit = "tablets"
 
-* package.identifier.system = $spor-prod
+* package.identifier.system = $example-prod
 * package.identifier.value = "654321"
 * package.type = $spor-rms#100000073504 "Child-resistant closure"
 * package.quantity = 1

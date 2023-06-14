@@ -6,9 +6,9 @@ Usage: #example
 
 * id = "ac21a804-cafa-41ff-b644-a14c8003edeb"
 
-* identifier.system = "https://spor.ema.europa.eu/rmswi#"
-* identifier.value = "hypotension"
-* identifier.use = #official
+* identifier.system = "http://example.org/sid"
+* identifier.value = "warning-example-1"
+
 
 * type = #warning
 

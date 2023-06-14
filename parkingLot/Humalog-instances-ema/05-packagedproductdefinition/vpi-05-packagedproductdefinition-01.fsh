@@ -3,7 +3,7 @@ InstanceOf: PackagedProductDefinition
 Description: "5 pre-filled pens, 3 ml (3.5 mg/ml)"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/96/007/035"
 * identifier.use = #official
 
@@ -12,13 +12,13 @@ Usage: #example
 * type = $spor-rms#100000155527
 * type.text = "Chemical Medicinal Prodcut"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 * statusDate = "2015-02-07T13:28:17Z"
 
 * containedItemQuantity.value = 3
 * containedItemQuantity.unit = "ml"
 
-* package.identifier.system = $spor-prod
+* package.identifier.system = $example-prod
 * package.identifier.value = "123456"
 * package.type = $spor-rms#100000073543 "Pre-filled pen"
 * package.quantity = 5

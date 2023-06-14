@@ -22,5 +22,4 @@ Usage: #example
 
 * routeOfAdministration.code = https://spor.ema.europa.eu/rmswi/#100000073633
 * routeOfAdministration.code.text = "Subcutaneous use"
-* routeOfAdministration.targetSpecies.code = https://spor.ema.europa.eu/rmswi/#/#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+

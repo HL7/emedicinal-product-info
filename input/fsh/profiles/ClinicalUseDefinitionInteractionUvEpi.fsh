@@ -4,7 +4,7 @@ Id: ClinicalUseDefinition-interaction-uv-epi
 Title: "ClinicalUseDefinition Interaction (ePI)"
 Description: "ClinicalUseDefinition Interaction (ePI)"
 
-
+* insert SetFmmandStatusRule ( 1, trial-use )
 * insert ClinicalUseDefinitionCommonRules
 * type = #interaction
 
@@ -14,7 +14,7 @@ Description: "ClinicalUseDefinition Interaction (ePI)"
 * warning 0..0
 * undesirableEffect 0..0
 * interaction.interactant.itemCodeableConcept
-* interaction.interactant.itemCodeableConcept
+* interaction.interactant.itemCodeableConcept from http://hl7.org/fhir/ValueSet/interactant (example)
 //in the value set extensible is the code defined for "Conformance Binding"
   * insert AdditionalBinding (#extensible "Conformance Binding", VsSubstance, The specific substance that interacts., The specific substance that interacts.)
 

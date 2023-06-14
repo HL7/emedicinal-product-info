@@ -12,8 +12,8 @@ Usage: #example
 * manufacturedDoseForm = https://spor.ema.europa.eu/rmswi/#100000073665
 * manufacturedDoseForm.text = "Film-coated tablet"
 
-* unitOfPresentation = $spor-rms#200000002152
-* unitOfPresentation.text = "Tablet"
+ * unitOfPresentation = $spor-rms#200000002152 "Tablet"
+
 
  // Reference to Organization: Manufacturer
 * manufacturer = Reference(cfsb1650997423990)

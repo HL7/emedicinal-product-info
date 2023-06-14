@@ -15,10 +15,10 @@ Usage: #example
 * administrableDoseForm = $spor-rms#100000116155
 * administrableDoseForm.text = "Granules and solvent for oral suspension"
 
-* routeOfAdministration.code = $spor-rms#100000073619
-* routeOfAdministration.code.text = "oral use"
-* routeOfAdministration.targetSpecies.code = $spor-rms#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+* routeOfAdministration.code = $sct#26643006 "Oral route"
+
+
+
 
 // Reference to ManufacturedItemDefinition: Manufactured Item
 * producedFrom = Reference(cfsb1639756818482)

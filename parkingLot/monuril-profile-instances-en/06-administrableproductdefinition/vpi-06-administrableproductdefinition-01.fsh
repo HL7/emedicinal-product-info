@@ -18,6 +18,5 @@ Usage: #example
 * producedFrom = Reference(cfsb1639756818482)
 
 * routeOfAdministration.code = https://spor.ema.europa.eu/rmswi/#100000073619
-* routeOfAdministration.code.text = "oral use"
-* routeOfAdministration.targetSpecies.code = https://spor.ema.europa.eu/rmswi/#/#100000109093
-* routeOfAdministration.targetSpecies.code.text = "Human"
+
+

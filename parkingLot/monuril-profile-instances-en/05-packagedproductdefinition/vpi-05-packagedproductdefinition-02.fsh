@@ -12,7 +12,7 @@ Usage: #example
 * type = https://spor.ema.europa.eu/rmswi/#100000155527 "Chemical Medicinal Product"
 * type.text = "Chemical Medicinal Product"
 
-* status = http://hl7.org/fhir/publication-status#active "Active"
+* status = $publication-status#active "Active"
 
 * containedItemQuantity.value = 2
 * containedItemQuantity.unit = "Sachet"
