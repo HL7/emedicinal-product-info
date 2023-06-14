@@ -84,8 +84,8 @@ Description: "Example of a type 3 ePI Bundle - Package Insert"
 
 // 17
 // Clinical Use Definition - Indication
-* entry[+].fullUrl = "urn:uuid:4e922ec1-a398-4a78-8381-3729422b7602"
-* entry[=].resource = indication
+//* entry[+].fullUrl = "urn:uuid:4e922ec1-a398-4a78-8381-3729422b7602"
+//* entry[=].resource = indication
 
 // 18
 // Clinical Use Definition - Contraindication

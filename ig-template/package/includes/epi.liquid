@@ -162,8 +162,8 @@
           {% comment %}See which of the Orgs is referenced from the RA{% endcomment %}
           {% if ra.holder.reference == orgrefid %}
             <p>
-              Holder:
-              <b>{{ org.name }} ({{ org.identifier[0].value }})</b>
+              Holder (Organization):
+              <b>{{ org.name }} ({{ org.identifier[0].system }}#{{ org.identifier[0].value }})</b>
 
             </p>
             <p></p>
@@ -466,6 +466,45 @@
         {% endif %}
       {% endfor %}
     </div>
-  {% endif %}
-</div>
+    {% assign cudings = bundle.entry | where: "resource.resourceType", "ClinicalUseDefinition" %}
+    <div class="cud container   rcorners">
+      <p> <b>Clinical Information</b></p>
+    {% for cudingr in cudings %}
+      {% assign cuding = cudingr.resource %}
+      {% if cuding %}
+         
+          {% if cuding.indication %}
+            <p>
+              Indication: <b>{{ cuding.indication.diseaseSymptomProcedure.concept.coding[0].display }}</b></p>
+          {% endif %}
+          
+          
+          
+          {% if cuding.contraindication %}
+            <p>
+              Contraindication: <b>{{ cuding.contraindication.diseaseSymptomProcedure.concept.coding[0].display }}</b></p>
+          {% endif %}
+
+          {% if cuding.interaction %}
+            <p>
+              Interaction: <b>{{ cuding.interaction.interactant[0].itemCodeableConcept.coding[0].display }}</b></p>
+          {% endif %}
+
+
+          {% if cuding.undesirableEffect %}
+            <p>
+              Undesirable Effect: <b>{{ cuding.undesirableEffect.symptomConditionEffect.concept.coding[0].display }}</b></p>
+          {% endif %}
+
+
+          {% if cuding.warning %}
+            <p>
+              Warning: <b>{{ cuding.warning.description }}</b></p>
+          {% endif %}
+      
+      {% endif %}
+    {% endfor %}
+    </div>
+    {% endif %}
+  </div>
 {% endif %}
