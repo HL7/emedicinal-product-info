@@ -6,7 +6,7 @@ Usage: #example
 
 * id = "800a51a2-d81d-49a4-a4eb-f2417d301837"
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "medicinalproduct75"
 
 * status = $publication-status#active "Active"

@@ -3,7 +3,7 @@ InstanceOf: OrganizationUvEpi
 Description: "Manufacturer"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100003996"
 * identifier.use = #official
 * active = true

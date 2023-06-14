@@ -3,7 +3,7 @@ InstanceOf: RegulatedAuthorization
 Description: "Regulated authorization"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/19/1370/001"
 * identifier.use = #official
 

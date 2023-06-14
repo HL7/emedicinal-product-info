@@ -5,7 +5,7 @@ Description: "Marketing Authorization Holder"
 Usage: #example
 
 * id = "d71bf884-90eb-47f9-81b7-fa81ecec7e75"
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100000789"
 * identifier.use = #official
 

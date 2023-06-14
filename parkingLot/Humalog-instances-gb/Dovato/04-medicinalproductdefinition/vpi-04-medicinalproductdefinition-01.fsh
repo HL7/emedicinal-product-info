@@ -3,7 +3,7 @@ InstanceOf: MedicinalProductDefinition
 Description: "EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "498163"
 
 * type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"

@@ -4,7 +4,7 @@ Title: "Regulated Authorization for cava 75 mg tablets"
 Description: "Regulated Authorization"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/96/007/035"
 * identifier.use = #official
 

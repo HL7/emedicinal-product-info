@@ -3,7 +3,7 @@ InstanceOf: Organization
 Description: "Marketing Authorization Holder"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100012958"
 * identifier.use = #official
 

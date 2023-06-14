@@ -6,7 +6,7 @@ Usage: #example
 
 * id = "d71bf884-90eb-47f9-81b7-fa81ecec7e75"
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG1"
 * identifier.use = #official
 

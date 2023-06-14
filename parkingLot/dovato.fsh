@@ -19,7 +19,7 @@ InstanceOf: MedicinalProductDefinition
 Description: "EU/1/19/1370/001 Dovato 50 mg/300 mg film-coated tablets"
 Usage: #example
  
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "498163"
 
 * type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"
@@ -61,7 +61,7 @@ InstanceOf: PackagedProductDefinition
 Description: "50 mg/300 mg film-coated tablets"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/19/1370/001"
 * identifier.use = #official
 
@@ -76,7 +76,7 @@ Usage: #example
 * containedItemQuantity.value = 30
 * containedItemQuantity.unit = "tablets"
 
-* packaging.identifier.system = $spor-prod
+* packaging.identifier.system = $example-prod
 * packaging.identifier.value = "654321"
 * packaging.type = $spor-rms#100000073504 "Child-resistant closure"
 * packaging.quantity = 1
@@ -95,11 +95,11 @@ InstanceOf: Organization
 Description: "Manufacturer"
 Usage: #example
  
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100004538"
 * identifier.use = #official
 
-* identifier[1].system = $spor-org
+* identifier[1].system = $example-org
 * identifier[1].value = "LOC-100000153"
 * identifier[1].use = #official
 
@@ -168,7 +168,7 @@ InstanceOf: RegulatedAuthorization
 Description: "Regulated authorization"
 Usage: #example
  
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "EU/1/19/1370/001"
 * identifier.use = #official
 
@@ -199,7 +199,7 @@ InstanceOf: Organization
 Description: "Marketing Authorization Holder"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100012958"
 * identifier.use = #official
 
@@ -221,11 +221,11 @@ InstanceOf: Organization
 Description: "Regulator"
 Usage: #example
 
-* identifier.system = $spor-org
+* identifier.system = $example-org
 * identifier.value = "ORG-100013412"
 * identifier.use = #official
 
-* identifier[1].system = $spor-org
+* identifier[1].system = $example-org
 * identifier[1].value = "LOC-100020264"
 * identifier[1].use = #official
 

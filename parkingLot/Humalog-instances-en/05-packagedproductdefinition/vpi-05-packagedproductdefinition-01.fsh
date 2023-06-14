@@ -4,8 +4,7 @@ Description: "5 pre-filled pens, 3 ml (3.5 mg/ml)"
 Usage: #example
 
 
-* identifier.system = $spor-man
-* identifier.value = "EU/1/96/007/035"
+* identifier.system = $example-man* identifier.value = "EU/1/96/007/035"
 * identifier.use = #official
 
   // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens" AMPP

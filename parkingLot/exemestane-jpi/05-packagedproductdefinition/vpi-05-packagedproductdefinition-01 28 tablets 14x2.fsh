@@ -19,7 +19,7 @@ Usage: #example
 * containedItemQuantity.unit = "mg"
 
 * packaging
-  * identifier.system = $spor-prod
+  * identifier.system = $example-prod
   * identifier.value = "123456"
   * type = $medicinal-product-package-type#100000073496 "Blister"
   * quantity = 28

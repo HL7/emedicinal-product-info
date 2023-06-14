@@ -4,7 +4,7 @@ Description: "EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 Usage: #example
 
 // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "123456"
 
 * type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"

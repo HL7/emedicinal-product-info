@@ -3,7 +3,7 @@ InstanceOf: PackagedProductDefinition
 Description: "Monuril 5 sachets of 8 g of granules (3 g fosfomycin)"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "PL 31654/0006-5"
 * identifier.use = #official
  

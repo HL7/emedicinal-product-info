@@ -14,7 +14,7 @@ Usage: #example
 * type = $example-cs#100000155538 "Package Leaflet"
 
 * subject.identifier
-  * system  =  $spor-prod
+  * system  =  $example-prod
   * value = "medicinalproduct75"
 
 * date = "2022-02-16T13:28:17Z"

@@ -38,15 +38,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 
 * include codes from system $sct where concept descendent-of #284009009
 
-
-//==========================
-ValueSet: VsUnitofMeasure
-Id: unitofMeasure
-Title: "Units of Measure"
-Description: "Units of Measure"
-* ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/ucum-units // FHIR terminology
-
 //==========================
 ValueSet: VsUnitofPresentation
 Id: unitofPresentation
@@ -70,7 +61,6 @@ Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
 * ^experimental = false
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
-// * urn:iso:std:iso:3166#EU "European Union"
 
 //==========================
 ValueSet: VsPropertyColor
@@ -205,33 +195,6 @@ Title: "Substances"
 Description: "Substances"
 * ^experimental = false
 * include codes from system http://fdasis.nlm.nih.gov
-
-//=========================
-ValueSet: VsPackagedProductIdSystems
-Id: packagedProductIdSystems
-Title: "PackagedProductDefinition identifier systems"
-Description: "PackagedProductDefinition Identifier systems (uri)"
-* ^experimental = false
-* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
-
-//=========================
-ValueSet: VsAdmProductIdSystems
-Id: admProductIdSystems
-Title: "AdministrableProductDefinition identifier systems"
-Description: "AdministrableProductDefinition Identifier systems (uri)"
-* ^experimental = false
-* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
-* $uri#https://www.who-umc.org/phpid "IDMP PhPID" // to be reviewed
-
-//=========================
-ValueSet: VsManufacturedItemIdSystems
-Id: manufacturedItemIdSystems
-Title: "ManufacturedItemDefinition identifier systems"
-Description: "ManufacturedItemDefinition Identifier systems (uri)"
-* ^experimental = false
-* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
-
-
 
 //=========================
 ValueSet: VsEpiType
@@ -519,6 +482,7 @@ Title: "Regulatory Activity Type"
 Description: "Regulatory Activity Type; e.g., MAA"
 * ^experimental = false
 * $uri#https://placeholder.com // to be reviewed */
+
 /* 
 //==========================
 ValueSet: VsGeneralStatus
@@ -560,16 +524,17 @@ Id: pharmaceuticalDoseFormPart
 Title: "Pharmaceutical Dose Form of the medicinal product"
 Description: "Pharmaceutical Dose Form of the medicinal product"
 * ^experimental = false
-* codes from system https://spor.ema.europa.eu/rmswi */
+* codes from system https://spor.ema.europa.eu/rmswi 
 
 //==========================
 //ValueSet: VsListOrderCodesIdSystems
 //Id: VsListOrderCodesIdSystems
 //Title: "Order Codes for List"
 //Description: "Order Codes for List"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
-//* codes from system http://terminology.hl7.org/CodeSystem/list-order
+// * ^experimental = false
+// * $uri#http://hl7.org/fhir/ValueSet/list-order "Order Codes for List"
+// * codes from system http://terminology.hl7.org/CodeSystem/list-order
+*/
 
 /* //==========================
 ValueSet: VsExampleUseCodesForList
@@ -577,7 +542,7 @@ Id: exampleUseCodesForList
 Title: "The topic of this list"
 Description: "The topic of this list"
 * ^experimental = false
-* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes" */
+* $uri#http://hl7.org/fhir/ValueSet/list-example-codes "List Order Codes" 
 
 //==========================
 //ValueSet: VsJurisdiction
@@ -592,16 +557,16 @@ Description: "The topic of this list"
 //Id: VsLanguage
 //Title: "Languages"
 //Description: "Languages"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
+// * ^experimental = false
+// * $uri#http://hl7.org/fhir/ValueSet/languages "Languages" // FHIR terminology
 
-/* //==========================
+ //==========================
 ValueSet: VsProductNamePartType
 Id: productNamePartType
 Title: "Product Name Part Type"
 Description: "Product Name Part Type"
 * ^experimental = false
-* codes from system $spor-productNamePartType-cs
+* codes from system $example-productNamePartType-cs
 
 //==========================
 ValueSet: VsPartType
@@ -611,16 +576,17 @@ Description: "Part Type"
 * ^experimental = false
 * codes from system https://spor.ema.europa.eu/omswi //"SPOR Organization (EU)" // to be reviewed */
 
+/*
 //==========================
 //ValueSet: VsMedicinalProductCrossReferenceType
 //Id: VsMedicinalProductCrossReferenceType
 //Title: "Product Cross Reference Type"
 //Description: "Product Cross Reference Type"
-//* ^experimental = false
-//* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
-//* codes from system http://hl7.org/fhir/medicinal-product-cross-reference-type
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type "ProductCrossReferenceType" // FHIR terminology
+* codes from system http://hl7.org/fhir/medicinal-product-cross-reference-type
 
-/* //==========================
+//==========================
 ValueSet: VsProductConfidentialityIdSystems
 Id: productConfidentialityIdSystems
 Title: "Product Confidentiality"
@@ -666,7 +632,7 @@ Id: organizationType
 Title: "Type of organization"
 Description: "Type of organization"
 * ^experimental = false
-* codes from system $spor-organisationRoleType-cs */
+* codes from system $example-organisationRoleType-cs */
 
 /* //==========================
 ValueSet: VsOperationType
@@ -683,6 +649,7 @@ Title: "Additional Monitoring Indicator"
 Description: "Additional Monitoring Indicator"
 * ^experimental = false
 * codes from system $spor-additionalMonitoringIndicator-cs */
+
 /* //==========================
 ValueSet: VsSpecialPrecautionsForStorage
 Id: specialPrecautionsForStorage
@@ -725,3 +692,38 @@ Title: "Score on the product"
 Description: "Score on the product"
 * ^experimental = true
 * $uri#https://placeholder.com // to be reviewed - request HL7 terminology team add this as a valueset */
+
+/* //==========================
+ValueSet: VsUnitofMeasure
+Id: unitofMeasure
+Title: "Units of Measure"
+Description: "Units of Measure"
+* ^experimental = false
+* $uri#http://hl7.org/fhir/ValueSet/ucum-units // FHIR terminology */
+
+/* //=========================
+ValueSet: VsPackagedProductIdSystems
+Id: packagedProductIdSystems
+Title: "PackagedProductDefinition identifier systems"
+Description: "PackagedProductDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+
+//===================== */
+
+/* ====
+ValueSet: VsAdmProductIdSystems
+Id: admProductIdSystems
+Title: "AdministrableProductDefinition identifier systems"
+Description: "AdministrableProductDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed
+* $uri#https://www.who-umc.org/phpid "IDMP PhPID" // to be reviewed
+
+//=========================
+ValueSet: VsManufacturedItemIdSystems
+Id: manufacturedItemIdSystems
+Title: "ManufacturedItemDefinition identifier systems"
+Description: "ManufacturedItemDefinition Identifier systems (uri)"
+* ^experimental = false
+* $uri#https://spor.ema.europa.eu/pmswi "SPOR Product (EU)" // to be reviewed */

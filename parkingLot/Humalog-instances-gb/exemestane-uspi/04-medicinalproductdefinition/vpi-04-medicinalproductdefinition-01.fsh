@@ -3,7 +3,7 @@ InstanceOf: MedicinalProductDefinitionUvEpi
 Description: "Aromasin (exemestane) Tablets 25 mg"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "123456"
 
 * type = $medicinal-product-type#MedicinalProduct  "Medicinal Product"

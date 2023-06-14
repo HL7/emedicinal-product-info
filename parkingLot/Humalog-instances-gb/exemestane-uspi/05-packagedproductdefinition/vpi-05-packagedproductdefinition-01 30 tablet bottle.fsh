@@ -3,7 +3,7 @@ InstanceOf: PackagedProductDefinitionUvEpi
 Description: "30 in 1 BOTTLE; Type 0: Not a Combination Product"
 Usage: #example
 
-* identifier.system = $spor-prod
+* identifier.system = $example-prod
 * identifier.value = "NDC:0009-7663-04"
 * identifier.use = #official
 
@@ -18,7 +18,7 @@ Usage: #example
 * containedItemQuantity.value = 30
 * containedItemQuantity.unit = "tablet"
 
-* package.identifier.system = $spor-prod
+* package.identifier.system = $example-prod
 * package.identifier.value = "0009-7663-04"
 * package.type = $spor-rms#100000073497 "Bottle"
 * package.quantity = 1
