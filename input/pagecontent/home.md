@@ -34,7 +34,7 @@ Human pharmaceutical, radiopharmaceutical and biologic medicinal products (presc
 #### Out of Scope
 Self-care products, natural health products, medical devices, food and veterinary drugs. 
 
-### ePI 
+### ePI Background
 A medicine’s product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals in prescribing and dispensing the medicine and informs consumers about its safe and effective use. 
 
 ePI is presented in three forms:  
