@@ -34,7 +34,8 @@ Description: "Description of the packaged authorized medicinal product(s) associ
 
 * pediatricUseIndicator ^short = "If authorised for pediatric use"
 
-* classification ^short = "Allows the product to be classified by various systems (e.g. ATC)"
+* classification from VsAtcClassification (example)
+  * ^short = "Allows the product to be classified by various systems (e.g. ATC)"
 
 * marketingStatus 0..
   * country  from VsCountry (preferred)
