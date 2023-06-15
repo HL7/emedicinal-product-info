@@ -3,7 +3,7 @@ Parent: ClinicalUseDefinition
 Id: ClinicalUseDefinition-warning-uv-epi
 Title: "ClinicalUseDefinition Warning (ePI)"
 Description: "ClinicalUseDefinition Warning (ePI)"
-* insert SetFmmandStatusRule ( 1, trial-use )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * insert ClinicalUseDefinitionCommonRules
 * type = #warning
 

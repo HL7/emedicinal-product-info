@@ -3,7 +3,7 @@ Parent: ClinicalUseDefinition
 Id: ClinicalUseDefinition-indication-uv-epi
 Title: "ClinicalUseDefinition Indication (ePI)"
 Description: "ClinicalUseDefinition Indication (ePI)"
-* insert SetFmmandStatusRule ( 1, trial-use )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * insert ClinicalUseDefinitionCommonRules
 * type = #indication
 

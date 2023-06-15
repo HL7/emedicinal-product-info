@@ -3,7 +3,7 @@ Parent: MedicinalProductDefinition
 Id: MedicinalProductDefinition-uv-epi
 Title: "MedicinalProductDefinition (ePI)"
 Description: "Description of the packaged authorized medicinal product(s) associated to this ePI document."
-* insert SetFmmandStatusRule ( 1, trial-use )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * identifier 1..
   * system 1..
   * value 1..

@@ -3,7 +3,7 @@ Parent: PackagedProductDefinition
 Id: PackagedProductDefinition-uv-epi
 Title: "PackagedProductDefinition (ePI)"
 Description: "PackagedProductDefinition (ePI)"
-* insert SetFmmandStatusRule ( 1, trial-use )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * identifier 
   * system
   * system 1..

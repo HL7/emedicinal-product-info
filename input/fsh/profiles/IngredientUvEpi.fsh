@@ -3,7 +3,7 @@ Parent: Ingredient
 Id: Ingredient-uv-epi
 Title: "Ingredient (ePI)"
 Description: "Ingredient (ePI)"
-* insert SetFmmandStatusRule ( 1, trial-use )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * identifier ^short = "An identifier or code by which the ingredient can be referenced."
 
 * status ^short =	"draft|active|retired|unknown"

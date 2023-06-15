@@ -3,7 +3,7 @@ Parent: ManufacturedItemDefinition
 Id: ManufacturedItemDefinition-uv-epi
 Title: "ManufacturedItemDefinition (ePI)"
 Description: "ManufacturedItemDefinition (ePI)"
-* insert SetFmmandStatusRule ( 1, trial-use )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * identifier 1..
   * system 1..
   * value 1..

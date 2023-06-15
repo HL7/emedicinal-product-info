@@ -3,7 +3,7 @@ Parent: RegulatedAuthorization
 Id: RegulatedAuthorization-uv-epi
 Title: "RegulatedAuthorization (ePI)"
 Description: "RegulatedAuthorization (ePI)"
-* insert SetFmmandStatusRule ( 1, trial-use )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * identifier 1..
   // * system from VsRegulatedAuthorizationTypeIdSystems (extensible)
   * system 1..
