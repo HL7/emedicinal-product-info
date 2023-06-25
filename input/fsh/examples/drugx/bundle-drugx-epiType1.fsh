@@ -11,6 +11,8 @@ Description: "Example of a type 1 ePI Bundle - Package Insert"
   * versionId = "1"
   * lastUpdated = "2018-06-23T08:38:00+02:00"
 
+* language = #en
+
 * type = #document
 * timestamp = "2018-06-23T08:38:00+02:00"
 

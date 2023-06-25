@@ -24,6 +24,8 @@ Description: "Medicinal product information is a pivotal source of regulated and
   * versionId 0..1
   * lastUpdated 0..1
 
+* language 1..1
+
 * entry 1.. // 
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "$this.resource"
