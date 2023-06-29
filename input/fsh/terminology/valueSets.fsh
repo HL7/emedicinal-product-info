@@ -194,7 +194,7 @@ Id: substance
 Title: "Substances"
 Description: "Substances"
 * ^experimental = false
-* include codes from system http://fdasis.nlm.nih.gov
+* include codes from system $ginas
 
 //=========================
 ValueSet: VsEpiType

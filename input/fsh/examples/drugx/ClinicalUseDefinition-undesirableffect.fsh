@@ -6,7 +6,7 @@ Usage: #example
 
 * id = "4312f8ec-43b6-4b25-9fca-d61a1188bfea"
 
-* identifier.system = "https://gsrs.ncats.nih.gov/ginas/app/beta/"
+* identifier.system = $ginas
 * identifier.value = "YL5FZ2Y5U1" //methotrexate
 * identifier.use = #official
 

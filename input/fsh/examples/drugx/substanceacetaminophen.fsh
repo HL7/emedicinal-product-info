@@ -12,8 +12,11 @@ Usage: #example
 
 * version = "1"
 
-* status = https://gsrs.ncats.nih.gov/ginas/app/beta/#1
-* status.text = "Validated (UNII)"
+* status = $publication-status#active
+
+
+/* * status = $ginas#1
+* status.text = "Validated (UNII)" */
 
 * description = "White to off-white, biconvex, and oval-shaped with the number 1234 engraved on the other side."
 
