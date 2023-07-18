@@ -10,7 +10,8 @@ Current ePI project Co-Chairs:
 Project Team Members:  
 
 * **Jens Kristian Villadsen** - Trifork
-* **Giorgio Cangioli** - HL7 Europe 
+* **Giorgio Cangioli** - HL7 Europe
+* **Amy Cramer** - J&J
 * **Evinn Drusys** - AEMPS
 * **Adam Kover** - Felleskatalogen
 * **Bente Jansen** - Felleskatalogen
@@ -24,8 +25,7 @@ Project Team Members:
 * **Adam Stiling** - Roche
 * **Niklas Jänich** - Boehringer Ingelheim
 * **Joseph Mundi** - Pfizer
-* **Beverly Buckta** - Pfizer  
-
+* **Beverly Buckta** - Pfizer
 
 Vulcan Program Management  
 
