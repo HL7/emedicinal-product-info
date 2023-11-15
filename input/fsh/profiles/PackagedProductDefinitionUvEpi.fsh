@@ -9,7 +9,7 @@ Description: "PackagedProductDefinition (ePI)"
   * system 1..
   * value 1..
 
-* name 1..1
+* name 0..1
 
 * type 0..1
   * ^short = "A high level category e.g., medicinal product pack, sample pack, shipping container."
