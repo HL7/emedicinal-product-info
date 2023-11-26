@@ -61,7 +61,7 @@ Description: "PackagedProductDefinition (ePI)"
       * system 0..1
       * code 0..1
     * period[periodstring].period[x]
-    * specialPrecautionsForStorage 0..1
+    * specialPrecautionsForStorage 0..*
   * manufacturer only Reference (OrganizationUvEpi)
   * containedItem
     * item only Reference (ManufacturedItemDefinitionUvEpi or DeviceDefinition) 
