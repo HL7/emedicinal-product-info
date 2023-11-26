@@ -46,7 +46,7 @@ Description: "PackagedProductDefinition (ePI)"
 * manufacturer only Reference(OrganizationUvEpi)
 
 * packaging
-  * identifier 1..
+  * identifier 0..
     * system 1..
     * value 1..
   * type 0..1
