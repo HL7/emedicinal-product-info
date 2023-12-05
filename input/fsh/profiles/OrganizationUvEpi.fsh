@@ -42,7 +42,7 @@ Description: "Organization (ePI)"
     * ^definition = "Website of the local health authority and market authorization holder website "
     * system = #url
 
-  * address 1..
+  * address 0..
     * use ^short = "home | work | temp | old | billing" // = #work
     * use = #work
     * text ^short = "Text representation of the address."
