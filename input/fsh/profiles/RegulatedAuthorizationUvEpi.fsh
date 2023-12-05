@@ -14,13 +14,15 @@ Description: "RegulatedAuthorization (ePI)"
 * subject 1..
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 
-* type ^short = "Overall type of this authorization, for example drug marketing approval, orphan drug designation."
+* type 1..
+  * ^short = "Overall type of this authorization, for example drug marketing approval, orphan drug designation."
 
 * description ^short = "Brief description of the authorization"
 
 * region from VsCountry (preferred)
 
-* status ^short = "The current status of this authorization"
+* status 1..
+  * ^short = "The current status of this authorization"
 * statusDate ^short = "The date at which the current status was assigned."
 
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
