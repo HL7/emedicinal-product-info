@@ -12,7 +12,7 @@ Description: "RegulatedAuthorization (ePI)"
   
  // Reference to MedicinalProductDefinition: EU/1/96/007/035 Humalog Mix50 Insulin KwikPen, 3ml pre-fill
 * subject 1..
-* subject only Reference(MedicinalProductDefinitionUvEpi)
+* subject only Reference(MedicinalProductDefinitionUvEpi or PackagedProductDefinitionUvEpi)
 
 * type 1..
   * ^short = "Overall type of this authorization, for example drug marketing approval, orphan drug designation."
