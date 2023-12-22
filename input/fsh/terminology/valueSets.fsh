@@ -63,6 +63,14 @@ Description: "ISO Country two letter code"
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
 
 //==========================
+ValueSet: VsLanguage
+Id: language
+Title: "ISO language two letter code"
+Description: "ISO language two letter code"
+* ^experimental = false
+* codes from valueset http://hl7.org/fhir/ValueSet/all-languages
+
+//==========================
 ValueSet: VsPropertyColor
 Id: propertyColor
 Title: "Color of the product"

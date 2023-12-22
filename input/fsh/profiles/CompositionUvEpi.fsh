@@ -22,6 +22,9 @@ Description: "The Composition captures the section headings, sub-section heading
 
 * category ^short = "Categorization of ePI"
 
+* language 1..1
+  * code from VsLanguage (preferred)
+
 * subject 0..*
 * subject only Reference (MedicinalProductDefinitionUvEpi)
 * subject ^short = "The authorized medicinal product(s) that this ePI's composition is about"
@@ -61,4 +64,3 @@ Description: "The Composition captures the section headings, sub-section heading
       * ^short = "Coded section heading defined by the health authority."
     * text ^short = "Narrative text for this section."
     * emptyReason ^short = "Reason the section is empty."
-
