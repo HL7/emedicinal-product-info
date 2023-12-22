@@ -23,7 +23,7 @@ Description: "The Composition captures the section headings, sub-section heading
 * category ^short = "Categorization of ePI"
 
 * language 1..1
-* language ^short = "Language of the ePI's narrative text"
+* language ^short = "The language of the ePI's narrative text"
 
 * subject 0..*
 * subject only Reference (MedicinalProductDefinitionUvEpi)
