@@ -49,11 +49,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * contact ^short = "A specific contact, person (in a role), or an organization for this product"
 
 * name 1..
-  * productName ^short = "The full product name."
-  * type ^short = "Type of product name, such as rINN, Proprietary, Non-Proprietary"
-  * part 0..*
-    * part ^short = "A fragment of a product name."
-    * type ^short = "Type for this part of the name (e.g. strength part)"
+  * productName ^short = "The full product name expressed as Proprietary Name (Non-Proprietary Name) strength dose form"
   * usage 0..* 
     * country ^short = "Country where this name applies"
     * jurisdiction ^short = "Jurisdiction where this name applies"
