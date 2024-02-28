@@ -49,7 +49,7 @@ Description: "The Composition captures the section headings, sub-section heading
   * title 1..
     * ^short = "Section heading defined by the market authorization holder"
     * ^definition = "This section heading is the counterpart to the coded section heading from the health authority's ePI template. For example, the health authority ePI template may have '1. What X is and what it is used for' as the coded section heading. The market authorization holder modifies this such that 'X' is replaced with the brand name of the drug."
-  * code 1.. 
+  * code 0..1 
   * code from VsSectionCode (example)
     * ^short = "Section heading defined by the health authority. Cannot be changed by the market authorization holder"
   * text ^short = "Narrative text for this section (e.g., paragraphs, bulleted lists, tables)."
@@ -59,7 +59,7 @@ Description: "The Composition captures the section headings, sub-section heading
     *  ^definition = "Nested Sections sub-section headings for level 2, 3, 4 or 5."
     * title 1..
       * ^short = "Section heading defined by the market authorization holder"
-    * code 1.. 
+    * code 0..1 
     * code from VsSectionCode (example)
       * ^short = "Coded section heading defined by the health authority."
     * text ^short = "Narrative text for this section."
