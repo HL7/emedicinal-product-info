@@ -1,11 +1,47 @@
-Instance: vulcan-server
+Instance: simple-vulcan-epi-server
 InstanceOf: CapabilityStatement
-Title: "Vulcan Server Capability Statement"
+Title: "Simple Vulcan ePI Server Capability Statement"
+Usage: #definition
+* name = "RestServer"
+* status = #active
+* date = "2024-04-07T09:39:51.216+00:00"
+* publisher = "Gravitate Health"
+* kind = #instance
+* fhirVersion = #5.0.0
+* format[0] = #application/fhir+xml
+* format[+] = #xml
+* format[+] = #application/fhir+json
+* format[+] = #json
+* format[+] = #html/json
+* format[+] = #html/xml
+* rest.mode = #server
+* rest.resource[0].type = #Bundle
+* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Bundle"
+* rest.resource[=].interaction[0].code = #search-type
+* rest.resource[=].interaction[+].code = #vread
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #update
+* rest.resource[=].interaction[+].code = #history-instance
+* rest.resource[=].interaction[+].code = #delete
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].searchInclude = "*"
+* rest.resource[+].type = #List
+* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/List"
+* rest.resource[=].interaction[0].code = #search-type
+* rest.resource[=].interaction[+].code = #vread
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].searchInclude = "*"
+* rest.interaction[0].code = #transaction
+* rest.interaction[+].code = #history-system
+
+Instance: advanced-vulcan-epi-server
+InstanceOf: CapabilityStatement
+Title: "Advanced Vulcan ePI Server Capability Statement"
 Usage: #definition
 * name = "RestServer"
 * status = #active
 * date = "2024-03-07T10:51:50Z"
-* publisher = "Not provided"
+* publisher = "Gravitate Health"
 * kind = #instance
 * fhirVersion = #5.0.0
 * format[0] = #application/fhir+xml
