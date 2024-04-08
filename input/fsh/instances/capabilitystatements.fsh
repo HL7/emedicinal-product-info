@@ -17,20 +17,183 @@ Usage: #definition
 * rest.mode = #server
 * rest.resource[0].type = #Bundle
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Bundle"
+* rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/StructureDefinition/batch-bundle"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/batch-response-bundle"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/document-bundle"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/history-bundle"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/search-set-bundle"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/transaction-bundle"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/transaction-response-bundle"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi"
 * rest.resource[=].interaction[0].code = #search-type
+* rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #vread
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[+].code = #update
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[+].code = #history-type
 * rest.resource[=].interaction[+].code = #history-instance
 * rest.resource[=].interaction[+].code = #delete
 * rest.resource[=].interaction[+].code = #create
-* rest.resource[=].searchInclude = "*"
+* rest.resource[=].versioning = #versioned-update
+* rest.resource[=].conditionalCreate = true
+* rest.resource[=].conditionalUpdate = true
+* rest.resource[=].conditionalDelete = #multiple
+* rest.resource[=].searchInclude[0] = "*"
+* rest.resource[=].searchInclude[+] = "Bundle:composition"
+* rest.resource[=].searchInclude[+] = "Bundle:example-constraint"
+* rest.resource[=].searchInclude[+] = "Bundle:message"
+* rest.resource[=].searchRevInclude[0] = "CodeSystem:derived-from"
+* rest.resource[=].searchRevInclude[+] = "CodeSystem:predecessor"
+* rest.resource[=].searchRevInclude[+] = "Composition:entry"
+* rest.resource[=].searchRevInclude[+] = "Composition:event-reference"
+* rest.resource[=].searchRevInclude[+] = "Composition:related"
+* rest.resource[=].searchRevInclude[+] = "Composition:subject"
+* rest.resource[=].searchRevInclude[+] = "ImplementationGuide:resource"
+* rest.resource[=].searchRevInclude[+] = "List:item"
+* rest.resource[=].searchRevInclude[+] = "List:subject"
+* rest.resource[=].searchRevInclude[+] = "ValueSet:derived-from"
+* rest.resource[=].searchRevInclude[+] = "ValueSet:predecessor"
+* rest.resource[=].searchParam[0].name = "_language"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "The language of the resource"
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Persistent identifier for the bundle"
+* rest.resource[=].searchParam[+].name = "_lastUpdated"
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "Only return resources which were last updated as specified by the given range"
+* rest.resource[=].searchParam[+].name = "_security"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Search for resources which have the given security labels"
+* rest.resource[=].searchParam[+].name = "type"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-type"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection | subscription-notification"
+* rest.resource[=].searchParam[+].name = "_filter"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's data using a filter"
+* rest.resource[=].searchParam[+].name = "_profile"
+* rest.resource[=].searchParam[=].type = #uri
+* rest.resource[=].searchParam[=].documentation = "Search for resources which have the given profile"
+* rest.resource[=].searchParam[+].name = "composition"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-composition"
+* rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[=].documentation = "The first resource in the bundle, if the bundle type is \"document\" - this is a composition, and this parameter provides access to search its contents"
+* rest.resource[=].searchParam[+].name = "_has"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Return resources linked to by the given target"
+* rest.resource[=].searchParam[+].name = "_tag"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Search for resources which have the given tag"
+* rest.resource[=].searchParam[+].name = "_source"
+* rest.resource[=].searchParam[=].type = #uri
+* rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
+* rest.resource[=].searchParam[+].name = "_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-_id"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "The ID of the resource"
+* rest.resource[=].searchParam[+].name = "_content"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's data using a fulltext search"
+* rest.resource[=].searchParam[+].name = "_text"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's narrative using a fulltext search"
+* rest.resource[=].searchParam[+].name = "example-constraint"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-example-constraint"
+* rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[=].documentation = "Search Composition Bundle"
+* rest.resource[=].searchParam[+].name = "timestamp"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-timestamp"
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "When the bundle was assembled"
+* rest.resource[=].operation[0].name = "validate"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-it-validate"
+* rest.resource[=].operation[+].name = "meta-delete"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-i-meta-delete"
+* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
+* rest.resource[=].operation[+].name = "meta-add"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-i-meta-add"
+* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
+* rest.resource[=].operation[+].name = "meta"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-its-meta"
+* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
+* rest.resource[=].operation[+].name = "expunge"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-its-expunge"
 * rest.resource[+].type = #List
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/List"
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #vread
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchInclude = "*"
+* rest.resource[=].searchInclude[+] = "List:item"
+* rest.resource[=].searchInclude[+] = "List:source"
+* rest.resource[=].searchInclude[+] = "List:subject"
+* rest.resource[=].searchRevInclude[+] = "List:item"
+* rest.resource[=].searchRevInclude[+] = "List:subject"
+* rest.resource[=].searchParam[+].name = "_language"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "The language of the resource"
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Account](account.html): Account number\r\n* [AdverseEvent](adverseevent.html): Business identifier for the event\r\n* [AllergyIntolerance](allergyintolerance.html): External ids for this item\r\n* [Appointment](appointment.html): An Identifier of the Appointment\r\n* [AppointmentResponse](appointmentresponse.html): An Identifier in this appointment response\r\n* [Basic](basic.html): Business identifier\r\n* [BodyStructure](bodystructure.html): Bodystructure identifier\r\n* [CarePlan](careplan.html): External Ids for this plan\r\n* [CareTeam](careteam.html): External Ids for this team\r\n* [ChargeItem](chargeitem.html): Business Identifier for item\r\n* [Claim](claim.html): The primary identifier of the financial resource\r\n* [ClaimResponse](claimresponse.html): The identity of the ClaimResponse\r\n* [ClinicalImpression](clinicalimpression.html): Business identifier\r\n* [Communication](communication.html): Unique identifier\r\n* [CommunicationRequest](communicationrequest.html): Unique identifier\r\n* [Composition](composition.html): Version-independent identifier for the Composition\r\n* [Condition](condition.html): A unique identifier of the condition record\r\n* [Consent](consent.html): Identifier for this record (external references)\r\n* [Contract](contract.html): The identity of the contract\r\n* [Coverage](coverage.html): The primary identifier of the insured and the coverage\r\n* [CoverageEligibilityRequest](coverageeligibilityrequest.html): The business identifier of the Eligibility\r\n* [CoverageEligibilityResponse](coverageeligibilityresponse.html): The business identifier\r\n* [DetectedIssue](detectedissue.html): Unique id for the detected issue\r\n* [DeviceRequest](devicerequest.html): Business identifier for request/order\r\n* [DeviceUsage](deviceusage.html): Search by identifier\r\n* [DiagnosticReport](diagnosticreport.html): An identifier for the report\r\n* [DocumentReference](documentreference.html): Identifier of the attachment binary\r\n* [Encounter](encounter.html): Identifier(s) by which this encounter is known\r\n* [EnrollmentRequest](enrollmentrequest.html): The business identifier of the Enrollment\r\n* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare\r\n* [ExplanationOfBenefit](explanationofbenefit.html): The business identifier of the Explanation of Benefit\r\n* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier\r\n* [Flag](flag.html): Business identifier\r\n* [Goal](goal.html): External Ids for this goal\r\n* [GuidanceResponse](guidanceresponse.html): The identifier of the guidance response\r\n* [ImagingSelection](imagingselection.html): Identifiers for the imaging selection\r\n* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID\r\n* [Immunization](immunization.html): Business identifier\r\n* [ImmunizationEvaluation](immunizationevaluation.html): ID of the evaluation\r\n* [ImmunizationRecommendation](immunizationrecommendation.html): Business identifier\r\n* [Invoice](invoice.html): Business Identifier for item\r\n* [List](list.html): Business identifier\r\n* [MeasureReport](measurereport.html): External identifier of the measure report to be returned\r\n* [Medication](medication.html): Returns medications with this external identifier\r\n* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier\r\n* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier\r\n* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier\r\n* [MedicationStatement](medicationstatement.html): Return statements with this external identifier\r\n* [MolecularSequence](molecularsequence.html): The unique identity for a particular sequence\r\n* [NutritionIntake](nutritionintake.html): Return statements with this external identifier\r\n* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier\r\n* [Observation](observation.html): The unique id for a particular observation\r\n* [Person](person.html): A person Identifier\r\n* [Procedure](procedure.html): A unique identifier for a procedure\r\n* [QuestionnaireResponse](questionnaireresponse.html): The unique identifier for the questionnaire response\r\n* [RelatedPerson](relatedperson.html): An Identifier of the RelatedPerson\r\n* [RequestOrchestration](requestorchestration.html): External identifiers for the request orchestration\r\n* [ResearchSubject](researchsubject.html): Business Identifier for research subject in a study\r\n* [RiskAssessment](riskassessment.html): Unique identifier for the assessment\r\n* [ServiceRequest](servicerequest.html): Identifiers assigned to this order\r\n* [Specimen](specimen.html): The unique identifier associated with the specimen\r\n* [SupplyDelivery](supplydelivery.html): External identifier\r\n* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest\r\n* [Task](task.html): Search for a task instance by its business identifier\r\n* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier\r\n"
+* rest.resource[=].searchParam[+].name = "item"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-item"
+* rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[=].documentation = "Actual entry"
+* rest.resource[=].searchParam[+].name = "code"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-code"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [AdverseEvent](adverseevent.html): Event or incident that occurred or was averted\r\n* [AllergyIntolerance](allergyintolerance.html): Code that identifies the allergy or intolerance\r\n* [AuditEvent](auditevent.html): More specific code for the event\r\n* [Basic](basic.html): Kind of Resource\r\n* [ChargeItem](chargeitem.html): A code that identifies the charge, like a billing code\r\n* [Condition](condition.html): Code for the condition\r\n* [DetectedIssue](detectedissue.html): Issue Type, e.g. drug-drug, duplicate therapy, etc.\r\n* [DeviceRequest](devicerequest.html): Code for what is being requested/ordered\r\n* [DiagnosticReport](diagnosticreport.html): The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result\r\n* [FamilyMemberHistory](familymemberhistory.html): A search by a condition code\r\n* [ImagingSelection](imagingselection.html): The imaging selection status\r\n* [List](list.html): What the purpose of this list is\r\n* [Medication](medication.html): Returns medications for a specific code\r\n* [MedicationAdministration](medicationadministration.html): Return administrations of this medication code\r\n* [MedicationDispense](medicationdispense.html): Returns dispenses of this medicine code\r\n* [MedicationRequest](medicationrequest.html): Return prescriptions of this medication code\r\n* [MedicationStatement](medicationstatement.html): Return statements of this medication code\r\n* [NutritionIntake](nutritionintake.html): Returns statements of this code of NutritionIntake\r\n* [Observation](observation.html): The code of the observation type\r\n* [Procedure](procedure.html): A code to identify a  procedure\r\n* [RequestOrchestration](requestorchestration.html): The code of the request orchestration\r\n* [Task](task.html): Search by task code\r\n"
+* rest.resource[=].searchParam[+].name = "_lastUpdated"
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "Only return resources which were last updated as specified by the given range"
+* rest.resource[=].searchParam[+].name = "source"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-source"
+* rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[=].documentation = "Who and/or what defined the list contents (aka Author)"
+* rest.resource[=].searchParam[+].name = "title"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-title"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Descriptive name for the list"
+* rest.resource[=].searchParam[+].name = "_has"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Return resources linked to by the given target"
+* rest.resource[=].searchParam[+].name = "_tag"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Search for resources which have the given tag"
+* rest.resource[=].searchParam[+].name = "_source"
+* rest.resource[=].searchParam[=].type = #uri
+* rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
+* rest.resource[=].searchParam[+].name = "_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-_id"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "The ID of the resource"
+* rest.resource[=].searchParam[+].name = "_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-_text"
+* rest.resource[=].searchParam[=].type = #special
+* rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
+* rest.resource[=].searchParam[+].name = "_content"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's data using a fulltext search"
+* rest.resource[=].searchParam[+].name = "status"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-status"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "current | retired | entered-in-error"
+* rest.resource[=].operation[0].name = "validate"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-it-validate"
+* rest.resource[=].operation[+].name = "meta-delete"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-i-meta-delete"
+* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
+* rest.resource[=].operation[+].name = "meta-add"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-i-meta-add"
+* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
+* rest.resource[=].operation[+].name = "meta"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-its-meta"
+* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
+* rest.resource[=].operation[+].name = "expunge"
+* rest.resource[=].operation[=].definition = "http://localhost:8090/fhir/OperationDefinition/Multi-its-expunge"
 * rest.interaction[0].code = #transaction
 * rest.interaction[+].code = #history-system
 
