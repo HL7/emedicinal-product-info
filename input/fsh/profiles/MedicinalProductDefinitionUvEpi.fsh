@@ -48,7 +48,7 @@ Description: "Description of the packaged authorized medicinal product(s) associ
   * type ^short = "Allows the contact to be classified, for example QPPV, Pharmacovigilance Enquiry Information."
   * contact ^short = "A specific contact, person (in a role), or an organization for this product"
 
-* name 1..
+* name 1..*
   * productName ^short = "The full product name expressed as Proprietary Name (Non-Proprietary Name) strength dose form"
   * type ^short = "Type of product name, such as rINN, Proprietary, Non-Proprietary"
   * part 0..*
