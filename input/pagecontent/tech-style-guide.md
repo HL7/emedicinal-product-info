@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Technical Style Guide Recommendations</title>
 </head>
 <body>
@@ -287,8 +287,8 @@
                     </pre>
                 </td>
                 <td style="border: 1px solid black;">
-                    Bullet text with paragraphs<br>
-                    next paragraph in the bullet<br>
+                    Bullet text with paragraphs<br/>
+                    next paragraph in the bullet<br/>
                     Next bullet
                 </td>
             </tr>
@@ -342,8 +342,8 @@ Bullet text #1
     <p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
 
     <h3>Escape characters</h3>
-    <p>The following characters are reserved in XML for specific purposes and must be escaped. E.g., Within the ePI’s XML, ampersand “&” cannot be used in narrative text. “&amp;” must be used in its place.</p>
-    <p>Web browsers and apps will always convert the escaped form “&amp;” back to the normal form “&”. The escaped form is only reserved for the XML content.</p>
+    <p>The following characters are reserved in XML for specific purposes and must be escaped. E.g., Within the ePI’s XML, ampersand “&amp;” cannot be used in narrative text. “&amp;” must be used in its place.</p>
+    <p>Web browsers and apps will always convert the escaped form “&amp;” back to the normal form “&amp;”. The escaped form is only reserved for the XML content.</p>
     <table style="border: 1px solid black;">
         <thead>
             <tr>
@@ -355,7 +355,7 @@ Bullet text #1
         <tbody>
             <tr>
                 <td style="border: 1px solid black;">Ampersand</td>
-                <td style="border: 1px solid black;">&</td>
+                <td style="border: 1px solid black;">&amp;</td>
                 <td style="border: 1px solid black;">&amp;</td>
             </tr>
             <tr>
