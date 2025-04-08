@@ -1,4 +1,4 @@
-### Credits 
+### Credits - test
 This Implementation Guide was developed under the auspices of the HL7 Vulcan Accelerator's Electronic Product Information project team and the Innovative Medicines Initiative's (IMI) Gravitate-Health project. Contributing individuals and organisations are as follows  (in no particular order):  
 
 Current ePI project Co-Chairs:  
