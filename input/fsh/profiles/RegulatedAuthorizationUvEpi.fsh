@@ -27,7 +27,7 @@ Description: "RegulatedAuthorization (ePI)"
 
 // * indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
 * indication.reference 1..
-* indication only Reference (ClinicalUseDefinitionIndicationUvEpi)
+* indication only CodeableReference (ClinicalUseDefinitionIndicationUvEpi)
 * indication ^short = "Reference to the Clinical Use Definition"
 
  // Reference to Organization: Marketing Authorization Holder
