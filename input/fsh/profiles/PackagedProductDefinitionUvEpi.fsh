@@ -64,7 +64,7 @@ Description: "PackagedProductDefinition (ePI)"
     * specialPrecautionsForStorage 0..*
   * manufacturer only Reference (OrganizationUvEpi)
   * containedItem
-    * item only Reference (ManufacturedItemDefinitionUvEpi or DeviceDefinition) 
+    * item only CodeableReference (ManufacturedItemDefinitionUvEpi or DeviceDefinition) 
   * packaging 0..*
 
 
