@@ -12,6 +12,8 @@ Drug labels have a complex lifecycle, involving an authoritative version (akin t
 
 This versioning approach ensures traceability, reproducibility, and alignment with regulatory processes while leveraging FHIR resources and principles.
 
+See the [Example Workflow](#example-workflow) for JSON samples demonstrating `Provenance` resources stored separately, linking to ePI `Bundle` instances via `Provenance.target` and `Provenance.entity`.
+
 ## Version Control Model
 
 The version control model for ePI document bundles is structured around the following concepts:
