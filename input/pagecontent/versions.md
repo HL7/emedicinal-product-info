@@ -21,14 +21,15 @@ The version control model for ePI document bundles is structured around the foll
 3. **Merging**: Approved drafts are squashed (consolidated into a single set of changes) and merged into the master branch, creating a new approved `Bundle`. Drafts may also be merged with each other to consolidate proposed changes.
 4. **Discarding**: Drafts that are withdrawn or rejected are marked as inactive and not merged into the master branch, preserving the integrity of the approved history.
 
-## FHIR Resource Representation
+### FHIR Resource Representation
 
 The version control model is implemented using the following FHIR resources:
 
-- **Bundle (type: document)**: The ePI document itself, containing the `Composition` and referenced resources. Each version (master or draft) is a distinct `Bundle` instance.
-- **Provenance**: Tracks the history and relationships between versions, including derivation, merging, and status changes (e.g., approval, rejection, withdrawal).
-- **List**: Optionally used to group related versions (e.g., all drafts for a specific submission) for easier tracking.
-- **DocumentReference**: Optionally used to reference ePI `Bundle` instances in external systems or repositories, facilitating version management.
+- **Bundle (type: document)**: The ePI document itself, containing the `Composition` and referenced resources (e.g., `MedicinalProductDefinition`, `Organization`). Each version, whether a master branch (approved) or draft, is a distinct `Bundle` instance stored in a FHIR server.
+- **Provenance**: Tracks the history and relationships between ePI `Bundle` versions, including events such as derivation, merging, approval, rejection, or withdrawal. `Provenance` resources are stored **separately** in the FHIR server, not as entries within the ePI `Bundle`, to maintain the immutability of the document and support complex lifecycle relationships. Each `Provenance` resource links to one or more `Bundle` instances via the `Provenance.target` element (e.g., targeting `Bundle/epi-123`) and may reference source `Bundle` instances via `Provenance.entity` (e.g., for drafts or merges). This separation ensures traceability and auditability without altering the ePI document's content.
+- **List**: Optionally used to group related versions (e.g., all drafts for a specific submission) for easier navigation and tracking within the FHIR server.
+
+**Note on Provenance Separation**: Storing `Provenance` resources separately aligns with FHIR best practices for tracking resource lifecycles and supports the Git-like versioning model described in this guide. For example, a `Provenance` resource documenting the merge of two draft `Bundle` instances (e.g., Draft A and Draft B into Draft C) references both source `Bundle` resources in `Provenance.entity` and targets the resulting `Bundle` in `Provenance.target`. This approach enables querying of lifecycle events (e.g., `GET /Provenance?target=Bundle/epi-123`) and ensures compliance with regulatory requirements for audit trails independent of the approved ePI document.
 
 ### Master Branch
 
@@ -155,3 +156,4 @@ The following illustrates a typical versioning workflow:
 - Restrict access to draft `Bundle` resources to authorized organizations (e.g., the submitting company and regulator).
 - Ensure that master branch `Bundle` resources are accessible to all authorized stakeholders (e.g., healthcare providers, patients) once approved.
 - Use FHIR security labels or `Bundle.meta.security` to enforce access policies.
+
