@@ -150,10 +150,6 @@ The following illustrates a typical versioning workflow:
 - **Constraint**: The master branch `Bundle` resources must have `Composition.status` set to `final`, while drafts must use `preliminary` or `entered-in-error`.
 - **Extension**: Implementers may define an extension on `Bundle` or `Composition` to store regulatory-specific version metadata, such as submission IDs or approval dates.
 - **Profile**: Implementers should define a profile for draft ePI `Bundle` resources (e.g., `http://hl7.org/fhir/StructureDefinition/epi-draft`) to enforce draft-specific constraints.
-
-## Security and Access Control
-
-- Restrict access to draft `Bundle` resources to authorized organizations (e.g., the submitting company and regulator).
 - Ensure that master branch `Bundle` resources are accessible to all authorized stakeholders (e.g., healthcare providers, patients) once approved.
 - Use FHIR security labels or `Bundle.meta.security` to enforce access policies.
 
