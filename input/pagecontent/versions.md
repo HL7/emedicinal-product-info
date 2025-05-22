@@ -1,5 +1,3 @@
-# Version Control of FHIR ePI Document Bundles
-
 ## Overview
 
 Drug labels have a complex lifecycle, involving an authoritative version (akin to a "master branch") approved by health authorities and multiple concurrent draft versions under regulatory review. This page describes how to manage the versioning of ePI document bundles using a version control model inspired by Git, supporting the following lifecycle requirements:
