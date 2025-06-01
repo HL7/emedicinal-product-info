@@ -7,7 +7,7 @@ id: hl7.fhir.uv.emedicinal-product-info
 canonical: http://hl7.org/fhir/uv/emedicinal-product-info 
 name: EpiIG
 title: Electronic Medicinal Product Information (ePI) FHIR Implementation Guide
-description: FHIR Implementation Guide representing how to create Electronic Medicinal Product Information.
+description: FHIR Implementation Guide representing how to create Electronic Medicinal Product Information (also known as drug poduct labels, summary of product characteristics, patient leaflet, and pack artwork).
 status: active
 version: 1.1.0
 fhirVersion: 5.0.0
@@ -24,6 +24,8 @@ pages:
       title: Home
   usecases.md:
       title: Use Cases
+  epi-anatomy.md:
+      title: ePI Anatomy
   types-overview.md:
       title: ePI Types Overview
   steps-to-create-epi1.md:
@@ -34,6 +36,8 @@ pages:
       title: Steps to create ePI Type 3
   steps-to-create-epi4.md:
       title: Steps to create ePI Type 4
+  implementation.md:
+      title: Implementation Options
   tech-style-guide.md:
       title: Technical Style Guide
   versions.md:
@@ -46,14 +50,16 @@ pages:
 menu:
   Home: index.html
   Use Cases: usecases.html
-  ePI Types: 
+  ePI Anatomy: epi-anatomy.html
+  Building ePI Type 1 to 4: 
     Overview: types-overview.md
     ePI Type 1: steps-to-create-epi1.html
     ePI Type 2: steps-to-create-epi2.html
     ePI Type 3: steps-to-create-epi3.html
     ePI Type 4: steps-to-create-epi4.html
-  Verson Control: versions.html
+    Verson Control: versions.html
   Technical Style Guide: tech-style-guide.html
+  Implementation Options: implementation.html
   Artifacts: artifacts.html
   Downloads: downloads.html
   Credits: credits.html
