@@ -1,4 +1,4 @@
-## Overview
+### Overview
 
 Drug labels have a complex lifecycle, involving an authoritative version (akin to a "master branch") approved by health authorities and multiple concurrent draft versions under regulatory review. This page describes how to manage the versioning of ePI document bundles using a version control model inspired by Git, supporting the following lifecycle requirements:
 
@@ -12,7 +12,7 @@ This versioning approach ensures traceability, reproducibility, and alignment wi
 
 See the [Example Workflow](#example-workflow) for JSON samples demonstrating `Provenance` resources stored separately, linking to ePI `Bundle` instances via `Provenance.target` and `Provenance.entity`.
 
-## Version Control Model
+### Version Control Model
 
 The version control model for ePI document bundles is structured around the following concepts:
 
@@ -21,7 +21,7 @@ The version control model for ePI document bundles is structured around the foll
 3. **Merging**: Approved drafts are squashed (consolidated into a single set of changes) and merged into the master branch, creating a new approved `Bundle`. Drafts may also be merged with each other to consolidate proposed changes.
 4. **Discarding**: Drafts that are withdrawn or rejected are marked as inactive and not merged into the master branch, preserving the integrity of the approved history.
 
-### FHIR Resource Representation
+#### FHIR Resource Representation
 
 The version control model is implemented using the following FHIR resources:
 
@@ -31,7 +31,7 @@ The version control model is implemented using the following FHIR resources:
 
 **Note on Provenance Separation**: Storing `Provenance` resources separately aligns with FHIR best practices for tracking resource lifecycles and supports the Git-like versioning model described in this guide. For example, a `Provenance` resource documenting the merge of two draft `Bundle` instances (e.g., Draft A and Draft B into Draft C) references both source `Bundle` resources in `Provenance.entity` and targets the resulting `Bundle` in `Provenance.target`. This approach enables querying of lifecycle events (e.g., `GET /Provenance?target=Bundle/epi-123`) and ensures compliance with regulatory requirements for audit trails independent of the approved ePI document.
 
-### Master Branch
+#### Master Branch
 
 The master branch is a sequence of approved ePI `Bundle` resources, each representing a regulator-authorized version of the drug label. Key attributes include:
 
@@ -41,7 +41,7 @@ The master branch is a sequence of approved ePI `Bundle` resources, each represe
 - **`Bundle.meta.lastUpdated`**: The timestamp of the approval or last update to the version.
 - **`Provenance`**: A `Provenance` resource linked to each `Bundle`, documenting the approval event, the approving authority (e.g., via `Provenance.agent.who`), and the relationship to the previous master branch version (via `Provenance.entity.what` and `Provenance.entity.role` set to "derivation").
 
-### Draft Branches
+#### Draft Branches
 
 Draft versions are represented as separate ePI `Bundle` resources, each derived from an existing master branch version or another draft. Key attributes include:
 
@@ -54,7 +54,7 @@ Draft versions are represented as separate ePI `Bundle` resources, each derived 
   - The organization responsible for the draft (e.g., the pharmaceutical company) via `Provenance.agent.who`.
   - The creation or modification event (e.g., "draft created", "draft submitted") via `Provenance.activity`.
 
-### Merging Drafts into the Master Branch
+#### Merging Drafts into the Master Branch
 
 When a draft is approved by the regulator, it is squashed (consolidated into a single, coherent set of changes) and merged into the master branch as a new approved `Bundle`. The process is as follows:
 
@@ -75,7 +75,7 @@ When a draft is approved by the regulator, it is squashed (consolidated into a s
    - Update the draft `Bundle` to reflect its incorporation into the master branch (e.g., by tagging it as "approved" or linking it to the new master `Bundle` via `Provenance`).
    - Optionally, retain the draft `Bundle` in a read-only state for audit purposes.
 
-### Merging Drafts Together
+#### Merging Drafts Together
 
 Drafts may be merged to consolidate changes before regulatory submission. This is represented as follows:
 
@@ -91,7 +91,7 @@ Drafts may be merged to consolidate changes before regulatory submission. This i
    - Record the merge event via `Provenance.activity` (e.g., "merge drafts").
    - Identify the organization performing the merge via `Provenance.agent.who`.
 
-### Withdrawing or Rejecting Drafts
+#### Withdrawing or Rejecting Drafts
 
 Drafts that are withdrawn by the submitting organization or rejected by the regulator are not merged into the master branch. The process is as follows:
 
@@ -108,7 +108,7 @@ Drafts that are withdrawn by the submitting organization or rejected by the regu
 3. **Retain for Audit**:
    - Retain the draft `Bundle` and its `Provenance` in the system for audit and traceability, ensuring it is not used for further development unless reactivated.
 
-## Implementation Considerations
+### Implementation Considerations
 
 - **Storage and Retrieval**: Store ePI `Bundle` resources in a FHIR server or document repository. Use `Bundle.identifier` and `Bundle.meta.versionId` for retrieval and version tracking. Implementers may use a `List` resource to group related drafts or versions for easier navigation.
 - **Version Identifiers**: Align `Composition.version` with regulatory versioning conventions (e.g., "1.0", "1.1"). Use `Bundle.meta.versionId` for system-managed versioning, ensuring uniqueness within the master branch.
@@ -117,7 +117,7 @@ Drafts that are withdrawn by the submitting organization or rejected by the regu
 - **Concurrency**: Support concurrent draft development by isolating draft `Bundle` instances. Use `Provenance` to track dependencies and merges between drafts.
 - **Auditability**: Retain all `Bundle` and `Provenance` resources, including withdrawn or rejected drafts, to support audits and regulatory inspections.
 
-## Example Workflow
+### Example Workflow
 
 The following illustrates a typical versioning workflow:
 
@@ -144,7 +144,7 @@ The following illustrates a typical versioning workflow:
    - A separate draft (`Bundle` ID: `epi-123`, versionId: `draft-d`) is rejected.
    - The draft's `Composition.status` is set to `entered-in-error`, and a `Provenance` resource records the rejection event.
 
-## Constraints and Extensions
+### Constraints and Extensions
 
 - **Constraint**: All ePI `Bundle` resources must have a consistent `Bundle.identifier` to ensure they pertain to the same drug label.
 - **Constraint**: The master branch `Bundle` resources must have `Composition.status` set to `final`, while drafts must use `preliminary` or `entered-in-error`.
