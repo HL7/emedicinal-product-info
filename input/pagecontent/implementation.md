@@ -47,4 +47,3 @@ Step 7
 		○ Reduce complexity
 		○ Publish communications
 		○ Publish results of each implementation stage
-![image](https://github.com/user-attachments/assets/c574e375-a7c4-4c13-aa36-fab396d74383)
