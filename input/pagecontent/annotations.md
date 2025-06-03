@@ -1,5 +1,5 @@
 ### Annotations (Track Changes & Comments)
-The annotation model for both comments and track changes involves using the HTML anchor tag (<a>) as start and end location markers for each comment, insertion and deletion point within the content of the Composition section. These markers then reference the details of annotation, which are held in a separate Annotations section within the Composition.
+The annotation model for both comments and track changes involves using the HTML anchor tag (''<a>'') as start and end location markers for each comment, insertion and deletion point within the content of the Composition section. These markers then reference the details of annotation, which are held in a separate Annotations section within the Composition.
 
 ### Annotations Section
 The annotation details, such as the author and date, the comment text and comment replies are all held within a “Annotations” section. The text of this section contains a <div class=”comments”> that holds all of the comments and comment replies, and a <div class=”trackChanges”> that holds the track change details.
