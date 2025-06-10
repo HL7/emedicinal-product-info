@@ -1,0 +1,45 @@
+## Examples
+
+### Stability Draft Bundle
+```json
+{
+  "resourceType": "Bundle",
+  "id": "epi-456",
+  "meta": {
+    "versionId": "draft-stability",
+    "lastUpdated": "2025-04-01T10:00:00Z",
+    "profile": ["http://example.com/fhir/StructureDefinition/epi-draft"]
+  },
+  "identifier": [
+    {
+      "system": "http://yourcompany.com/epi",
+      "value": "epi-456"
+    },
+    {
+      "system": "http://yourcompany.com/epi-version",
+      "value": "epi-456-draft-stability"
+    }
+  ],
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "Composition/epi-456-stability-comp",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "epi-456-stability-comp",
+        "status": "preliminary",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34391-3"
+            }
+          ]
+        },
+        "version": "1.1-draft",
+        "title": "Draft Stability Update for ExampleMed",
+        "date": "2025-04-01T10:00:00Z"
+      }
+    }
+  ]
+}
