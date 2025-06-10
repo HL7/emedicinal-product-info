@@ -1,0 +1,37 @@
+{
+  "resourceType": "Provenance",
+  "id": "provenance-ema-import",
+  "target": [
+    {
+      "reference": "Bundle/epi-456/_history/2"
+    }
+  ],
+  "recorded": "2025-03-01T12:00Z",
+  "activity": {
+    "coding": [
+      {
+        "system": "http://example.com/codes",
+        "code": "import",
+        "display": "Imported from EMA"
+      }
+    ]
+  },
+  "agent": [
+    {
+      "who": {
+        "reference": "organization/ema"
+      }
+    }
+  ],
+  "entity": [
+    {
+      "role": "source",
+      "what": {
+        "identifier": {
+          "system": "http://yourcompany.com/epi-version",
+          "value": "epi-456-1"
+        }
+      }
+    }
+  ]
+}
