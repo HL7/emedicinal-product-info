@@ -21,6 +21,5 @@ The electronic Product Information (ePI) implementation leverages 14 FHIR resour
 
 ## Notes
 - Not all resources are required for every ePI use case. They are combined into ePI Types (1, 2, 3, and 4) to address specific needs, as outlined in the [Use Cases documentation](usecases.md).
-- Refer to Appendix XX for recommended elements, attributes, and terminologies for each resource in the ePI context.
 
-This overview is intended to guide implementers in understanding the role of each FHIR resource in supporting ePI-related functionality.
+This overview is intended to guide implementers in understanding the role of each FHIR resource in supporting ePI-related functionality. Refer to the (Artifacts)[https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html] page for more detail on profiles, terminology, and sample data.
