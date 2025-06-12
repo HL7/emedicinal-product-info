@@ -1,44 +1,26 @@
-In development.
+# FHIR Resources for ePI: Overview
 
+The electronic Product Information (ePI) implementation leverages 14 FHIR resources to support various use cases, from reproducing label templates to enabling advanced search and structured data management. Below is an overview of each resource and its role in the ePI context.
 
-### List
+| Resource | Purpose in ePI Context |
+|----------|-----------------------|
+| **List** | Provides a structured collection of references to other resources or items relevant to the ePI, enabling organization and navigation of label content or related data for use cases like advanced search or label presentation. |
+| **Bundle** | Acts as a container to group Composition and other resources, enabling the reproduction of the local label template (e.g., EMA’s QRD template) with structured sections, text, bullets, tables, and images. Essential for ePI Type 1. |
+| **Composition** | Serves as the core resource for structuring the ePI label content, including section headings, text, bullets, tables, and images. Contains Binary resources and is critical for ePI Type 1 to recreate HCP labels, PILs, or artwork. |
+| **Binary** | Contained within the Composition resource to store raw data (e.g., images, tables, or text) needed to reproduce the local label template, such as section headings or artwork for the Healthcare Professional (HCP) label or Patient Information Leaflet (PIL). |
+| **Organization** | Describes details about the company associated with the product, including name, identifier, address, and type. Enables use cases like advanced search by company and distribution tracking. |
+| **Regulated Authorization** | Captures authorization details for the medicinal product, such as approval date and license number. Supports use cases like advanced search, drug shortages, and electronic health records. |
+| **Medicinal Product Definition** | Captures regulatory details about the medicinal product, such as name, route of administration, and legal/marketing status. Supports use cases like advanced search, cross-border travel, and electronic health records. |
+| **Manufactured Item Definition** | Describes the physical properties of the medicinal product in its primary package (e.g., strength, ingredients, size, color, shape). Supports use cases like advanced search, drug shortages, and electronic health records. |
+| **Administrable Product Definition** | Describes the physical properties of the medicinal product in its final form ready for administration to the patient (e.g., after reconstitution, including strength and ingredients). Supports use cases like electronic health records and precise dosing. |
+| **Ingredient** | Defines specific ingredients in the medicinal product, used within Manufactured Item Definition and Administrable Product Definition. Supports use cases like allergen identification (e.g., lactose or aspartame) and advanced search by ingredient. |
+| **Substance Definition** | Provides detailed information about substances used in the product, linked to Ingredient resources within Manufactured Item Definition and Administrable Product Definition. Supports allergen checks and advanced search by substance. |
+| **Packaged Product Definition** | Details the primary and secondary layers of the product’s authorized packaging, including identifiers like GTIN or SKUs. Supports use cases like drug shortages, distribution, and advanced search by packaging details. |
+| **Clinical Use Definition** | Captures structured data for indications, contraindications, interactions, undesirable effects, and warnings. In ePI Type 3, supports personalization (e.g., polypharmacy checks). In ePI Type 4, encodes each indication or effect with terminologies like SNOMED or MedDRA. |
+| **Medication Statement** | Structures dosing instructions in a machine-readable format (e.g., "take two 20 mg tablets once per day for two weeks"). In ePI Type 3, enables automated notifications via mobile devices or eHealth apps. |
 
+## Notes
+- Not all resources are required for every ePI use case. They are combined into ePI Types (1, 2, 3, and 4) to address specific needs, as outlined in the [Use Cases documentation](usecases.md).
+- Refer to Appendix XX for recommended elements, attributes, and terminologies for each resource in the ePI context.
 
-### Bundle
-
-
-### Composition
-
-
-### Binary
-
-
-### Organization
-
-
-### Regulated Authorization
-
-
-### Medicinal Product Definition
-
-
-### Packaged Product Definition
-
-
-### Administrable Product Definition
-
-
-### Manufactured Item Definition
-
-
-### Ingredient
-
-
-### Substance Definition
-
-
-### Clinical Use Definition
-
-
-### Medication Statement
-
+This overview is intended to guide implementers in understanding the role of each FHIR resource in supporting ePI-related functionality.
