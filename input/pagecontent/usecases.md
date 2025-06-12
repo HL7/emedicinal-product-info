@@ -33,7 +33,7 @@ Not all 14 resources are required to support all ePI-related use cases. Differen
 | | a. Clinical Use Definition<br>b. Medication Statement | Describes Indication, contraindication, interactions, undesirable effects, and warnings<br>Describes how to structure dose instructions |
 | ePI Type 4 | Includes Type 1, 2, and 3 plus the narrative label content is now populated by discrete structured elements/components | Describes how to structure narrative content to a degree that the entire label is structured |
 
-Refer to Appendix XX for the recommended list of elements, attributes, and terminologies needed for each resource to support ePI.
+Refer to [ePI Components](https://build.fhir.org/ig/HL7/emedicinal-product-info/epi-components.html) for an overview of the Resources in-scope for use with ePI or the [Artifacts](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html) page for details about profiles, terminologies, and examples.
 
 ## ePI Type 1
 

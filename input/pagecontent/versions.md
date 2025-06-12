@@ -1,5 +1,3 @@
-# Version Control of FHIR ePI Document Bundles
-
 ## Overview
 
 The electronic Product Information (ePI) in FHIR is represented as a `Bundle` resource of type `document`, containing a `Composition` resource as the first entry, along with referenced resources such as `MedicinalProductDefinition`, `Organization`, and others that collectively define the drug label. Drug labels have a sequential lifecycle, with a single branch of versions that includes both authorized (approved) and draft versions under regulatory review. This page describes how to manage the versioning of ePI document bundles, supporting the following lifecycle requirements:

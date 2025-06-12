@@ -1,5 +1,3 @@
-# FHIR Resources for ePI: Overview
-
 The electronic Product Information (ePI) implementation leverages 14 FHIR resources to support various use cases, from reproducing label templates to enabling advanced search and structured data management. Below is an overview of each resource and its role in the ePI context.
 
 | Resource | Purpose in ePI Context |
@@ -19,7 +17,6 @@ The electronic Product Information (ePI) implementation leverages 14 FHIR resour
 | **Clinical Use Definition** | Captures structured data for indications, contraindications, interactions, undesirable effects, and warnings. In ePI Type 3, supports personalization (e.g., polypharmacy checks). In ePI Type 4, encodes each indication or effect with terminologies like SNOMED or MedDRA. |
 | **Medication Statement** | Structures dosing instructions in a machine-readable format (e.g., "take two 20 mg tablets once per day for two weeks"). In ePI Type 3, enables automated notifications via mobile devices or eHealth apps. |
 
-## Notes
-- Not all resources are required for every ePI use case. They are combined into ePI Types (1, 2, 3, and 4) to address specific needs, as outlined in the [Use Cases documentation](usecases.md).
-
-This overview is intended to guide implementers in understanding the role of each FHIR resource in supporting ePI-related functionality. Refer to the (Artifacts)[https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html] page for more detail on profiles, terminology, and sample data.
+**Notes**
+- Not all resources are required for every ePI use case. They are combined into ePI Types (1, 2, 3, and 4) to address specific needs, as outlined in the [Use Cases](https://build.fhir.org/ig/HL7/emedicinal-product-info/usecases.html) page.
+- This overview is intended to guide implementers in understanding the role of each FHIR resource in supporting ePI-related functionality. Refer to the [Artifacts](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html) page for more detail on profiles, terminology, and sample data.
