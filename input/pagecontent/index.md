@@ -24,7 +24,7 @@ This IG can be used for direct implementation or it can serve as a baseline for 
 ## Getting Started
 
 - **Implementers**: Explore the [Use Cases](https://build.fhir.org/ig/HL7/emedicinal-product-info/usecases.html) to understand how ePI Types and resources support specific scenarios, such as cross-border travel or allergen identification.
-- **Developers**: Review the [FHIR Resources Overview](resources.md) for detailed descriptions of each resource’s role in ePI.
+- **Developers**: Review the [FHIR Resources Overview](https://build.fhir.org/ig/HL7/emedicinal-product-info/epi-components.html) for detailed descriptions of each resource’s role in ePI.
 - **Regulators**: Use the Base ePI Profile to develop jurisdiction-specific profiles that comply with local regulations.
 - **Vendors**: Leverage the IG’s profiles and terminologies to build compliant ePI solutions.
 
