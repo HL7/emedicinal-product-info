@@ -1,6 +1,6 @@
 ## Overview
 
-The Electronic Medicinal Product Information (ePI) FHIR Implementation Guide (IG) provides a standardized framework for creating, exchanging, and managing electronic product information for medicinal products using HL7 FHIR R5. Developed as part of the Gravitate Health Project, this IG defines profiles, conformance rules, and terminologies to enable interoperable ePI across jurisdictions, supporting regulators, industry, and vendors in delivering patient-centric solutions.
+The Electronic Medicinal Product Information (ePI) FHIR Implementation Guide (IG) provides a standardized framework for creating, exchanging, and managing electronic product information for medicinal products using HL7 FHIR R5. Developed as a collaboration between the Gravitate Health Project and HL7's Vulcan Accelerator, this IG defines profiles, conformance rules, and terminologies to enable interoperable ePI across jurisdictions, supporting regulators, industry, and vendors in delivering patient-centric solutions.
 
 Unlike traditional DOCX or PDF-based product information, ePI leverages FHIR to structure labeling content for interoperability with national healthcare systems (e.g., Electronic Health Records (EHRs), ePrescriptions, medication management apps). This fosters personalized labeling, advanced search capabilities, and cross-border interoperability, ultimately improving the accessibility of medicinal product information for healthcare proffessionals and patients.
 
