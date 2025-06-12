@@ -43,7 +43,7 @@ To contribute:
 
 ## Acknowledgments
 
-This IG is developed as collaboration between (HL7's Vulcan Accelerator](https://confluence.hl7.org/spaces/VA/pages/66930683/Vulcan+Accelerator+Home) and the [Gravitate Health Project](https://www.gravitatehealth.eu/), with contributions from HL7 Europe, regulators, industry partners, and the vendor community. See [Credits](https://build.fhir.org/ig/HL7/emedicinal-product-info/credits.html) for a list of contributors.
+This IG is developed as collaboration between [HL7's Vulcan Accelerator](https://confluence.hl7.org/spaces/VA/pages/66930683/Vulcan+Accelerator+Home) and the [Gravitate Health Project](https://www.gravitatehealth.eu/), with contributions from HL7 Europe, regulators, industry partners, and the vendor community. See [Credits](https://build.fhir.org/ig/HL7/emedicinal-product-info/credits.html) for a list of contributors.
 
 ---
 
