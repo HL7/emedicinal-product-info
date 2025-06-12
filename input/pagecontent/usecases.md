@@ -1,22 +1,3 @@
-# FHIR Resources for ePI
-
-FHIR solutions are built from a set of modular components called "Resources". Of the 150+ resources available for use, the following 14 are in-scope for ePI:
-
-- List
-- Manufactured Item Definition
-- Bundle
-- Administrable Product Definition
-- Composition
-- Ingredient
-- Binary
-- Substance Definition
-- Organization
-- Packaged Product Definition
-- Regulated Authorization
-- Clinical Use Definition
-- Medicinal Product Definition
-- Medication Statement
-
 Not all 14 resources are required to support all ePI-related use cases. Different resources can be combined to support different use cases. To help implementors decide what resources are needed when, ePI resources are combined into the following four types and sub-types:
 
 | ePI Type | In-Scope Resources | Description |
@@ -35,11 +16,11 @@ Not all 14 resources are required to support all ePI-related use cases. Differen
 
 Refer to [ePI Components](https://build.fhir.org/ig/HL7/emedicinal-product-info/epi-components.html) for an overview of the Resources in-scope for use with ePI or the [Artifacts](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html) page for details about profiles, terminologies, and examples.
 
-## ePI Type 1
+### ePI Type 1
 
 ePI Type 1 represents the minimum requirement to be considered an ePI since it allows for the recreation of the existing label template. It can be used to create the Healthcare professional (HCP) label, Patient Information Leaflet (PIL), or label text for artwork. For example, it can be used to recreate EMA’s QRD template.
 
-## ePI Type 2 (a to f)
+### ePI Type 2 (a to f)
 
 ePI Type 2a to f can be used to support numerous use cases dependent on the product's physical attributes or the companies associated with the product. There is no requirement to use A to F together. For example, these combinations are needed to support the following use cases:
 
@@ -52,7 +33,7 @@ ePI Type 2a to f can be used to support numerous use cases dependent on the prod
 | 5 | Allergens | D is needed to identify ingredients that are known or possible allergens (e.g., lactose or aspartame). |
 | 6 | Electronic Health | A, B, C, and D are needed to support Electronic Medical Records and ePrescription since these resources help to uniquely identify and differentiate between medicinal products and their manufacturers.<br>E can be added if there is a need to differentiate between the manufactured dose form and the administrable dose form of the product; or a need to determine how much of the reconstituted solution for infusion was administered to the patient. |
 
-## ePI Type 3 (a and b)
+### ePI Type 3 (a and b)
 
 ePI Type 3a can be used to support personalization use cases, particularly ones related to polypharmacy. For example:
 
@@ -61,14 +42,14 @@ ePI Type 3a can be used to support personalization use cases, particularly ones 
 
 ePI Type 3b can be used to support the creation of machine-readable dosing instructions. For example, an encoded way of saying "take two 20 mg tablets once per day for two weeks." This structured dosing data can be sent to a mobile device or eHealth app to provide a patient with automated notifications.
 
-## ePI Type 4
+### ePI Type 4
 
 ePI Type 1 to 3 involves associating structured data with semi-structured narrative text. ePI Type 4 is different since all data is presented as discrete, structured data components. Narrative text is still present but only where needed and is always incorporated into the relevant discrete structured data component. For example:
 
 - Each individual indication has a corresponding ClinicalUseDefinition resource with SNOMED, ICD, MED-RT, or MedDRA encoding about the indication; the disease, symptom, or procedure; and comorbidity. The ClinicalUseDefinition resource also includes space for narrative text.
 - Each undesirable effect has a corresponding ClinicalUseDefinition resource with the symptom, condition, effect, classification, and frequency of occurrence. As a result, there is no table of adverse event frequencies. Instead, there is now a series of data objects that contain the same information. Those data objects can be transformed and presented as a traditional table using a style sheet; or they can be presented in different formats if needed.
 
-## Recommendation
+### Recommendation
 
 As a first step, ePI Type 2 is the recommended starting point for most implementers. 
 

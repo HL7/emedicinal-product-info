@@ -1,4 +1,6 @@
-The electronic Product Information (ePI) implementation leverages 14 FHIR resources to support various use cases, from reproducing label templates to enabling advanced search and structured data management. Below is an overview of each resource and its role in the ePI context.
+FHIR solutions are built from a set of modular components called "Resources". Of the 150+ resources available for use, ePI leverages only 14 of them to support various labeling use cases (See the [Use Cases](https://build.fhir.org/ig/HL7/emedicinal-product-info/usecases.html) tab for details). 
+
+The following table lists the in-scope resources and provides a brief description of its role in the ePI context. 
 
 | Resource | Purpose in ePI Context |
 |----------|-----------------------|
