@@ -1,131 +1,117 @@
-### How to build an ePI document
-The following is an example of how to build a Summary of Product Characteristics (SmPC) as a Type 1, Type 2, and Type 3 ePI document. This example is meant as a demonstration to encourage a harmonized approach. Refer to national or regional health authority guidance for official rules about how to build an ePI document.  
+# ePI Type 2 JSON Components Description
 
-<img src="Type2ePI.drawio.png" usemap="#image-map" style="float:none; margin: 0px 0px 0px 0px;" width="650px">  
+This page describes the components used to construct ePI Type 2, enabling implementers to create and validate FHIR-compliant ePI resources for medicinal product information.
 
-### Steps to create Type 2 ePI Dcoument  
+For details on the Bundle, Composition, and Binary resources, refer to the *Build ePI Type 1* guide, as their structure is  identical.
 
-#### Create Organization resource(s) 
-Using the Base ePI Profile as a template, complete one Organization resource for each organization associated with the authorized product(s) in this ePI. The following are examples of the type of organization typically associated with ePIs: Market Authorization Holder; health authority responsible for regulating the ePI content; manufacture, test, analysis, packaging).  
+## Overview of JSON Components
 
-Refer to the [Organization profile](StructureDefinition-Organization-uv-epi.html) for detail. 
+A Type 2 ePI file includes the following core components:
 
-#### Create Substance Definition resource(s) 
-Using the Base ePI Profile as a template, complete one SubstanceDefinition resource for each active ingredient associated with the authorized product(s) in this ePI.
+- **Organization**: Identifies the author or responsible entity (e.g., pharmaceutical company).
+- **MedicinalProductDefinition**: Provides structured data about the medicinal product (e.g., name, ingredients).
+- **RegulatedAuthorization**: Details regulatory approvals for the product.
+- **ManufacturedItemDefinition**: Describes the manufactured product, linked to Ingredient and SubstanceDefinition.
+- **AdministrableProductDefinition**: Specifies the administrable form, linked to Ingredient and SubstanceDefinition.
+- **PackagedProductDefinition**: Defines the packaging details.
 
-Create a reference from the SubstanceDefinition to the Organization resource for the manufacturer or marketing authorization holder that was created in the Step 5.1.1 Create Organization resource(s)]. 
+These components work together to deliver both human-readable and machine-readable medicinal product information in a FHIR-compliant format.
 
-Refer to the [SubstanceDefinition Profile](StructureDefinition-SubstanceDefinition-uv-epi.html) for detail. 
+## Detailed Component Descriptions
 
-#### Create Manufactured Item Definition resource(s) 
-The manufactured item describes the medicinal product as the dosage form contained in its primary package. For example, a powder in a vial and a diluent in another vial are packaged together in a kit. The powder is one manufactured item and the diluent is a second manufactured item.  
- 
-Using the FHIR ePI Profile as a template, complete one ManufacturedItemDefinition resource for each manufactured item associated with the authorized product(s) in this ePI.  
- 
-Create a reference from each ManufacturedItemDefinition resource to the corresponding Organization resource (e.g., reference to the manufacturer; reference to the marketing authorization holder). 
+### 1. Bundle, Composition, and Binary
 
-Refer to [ManufacturedItemDefinition Profile](StructureDefinition-ManufacturedItemDefinition-uv-epi.html) for detail. 
+Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product-info/build-epi1.html) page for details.
 
-(add two examples, one for a product with no transformation (tablet) and one with transformation). 
+### 2. Organization
 
-#### Create Ingredient resource(s) 
-Using the Base ePI Profile as a template, complete one Ingredient resource for each active ingredient and each excipient that make up each manufactured item associated with the authorized product(s) in this ePI. 
+- **Purpose**: The Organization resource identifies the entity responsible for the ePI, such as the pharmaceutical company or marketing authorization holder, replacing the simple author display string used in Type 1.
+- **Key Fields**:
+  - `"resourceType": "Organization"`: Specifies that this is a FHIR Organization resource.
+  - `"id"`: A unique identifier (e.g., “UUID”).
+  - `"meta.profile"`: References the ePI IG’s Organization profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-epi").
+  - `"name"`: The organization’s name (e.g., “Example Pharma Inc.”).
+  - `"contact"`: Optional contact details (e.g., `"address": {"line": ["123 Pharma St"], "city": "Boston"}`).
+- **Role in ePI**: Provides a structured reference for the ePI’s author, linked from the Composition’s `author` field, enabling consistent identification across systems.
 
-Create a reference from the relevant Ingredient resources to the corresponding ManufacturedItemDefinition resource (e.g., reference the ingredients that make up the powder to the powder's manufactured item, and reference the ingredients that make up the diluent to the diluent's manufactured item). 
+### 3. MedicinalProductDefinition
 
-Create a reference from the relevant Ingredient resources to the corresponding Organization resource (e.g., reference to the Organization that manufactures that ingredient). 
+- **Purpose**: Provides structured, machine-readable data about the medicinal product, such as its name, ingredients, and classification, supporting automated processing.
+- **Key Fields**:
+  - `"resourceType": "MedicinalProductDefinition"`: Specifies that this is a FHIR MedicinalProductDefinition resource.
+  - `"id"`: A unique identifier (e.g., “UUID”).
+  - `"meta.profile"`: References the ePI IG’s profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-epi").
+  - `"name"`: The product’s name (e.g., `"namePart": [{"part": "ExampleMed", "type": {"code": "invented-name"}}, {"part": "100 mg", "type": {"code": "strength"}}]`).
+  - `"type.coding"`: Indicates the product type (e.g., `system: "http://hl7.org/fhir/medicinal-product-type"`, `code: "MedicinalProduct"`).
+  - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
+- **Role in ePI**: Central to structured data, linked from the Composition’s structured data section, enabling regulatory and clinical system integration.
 
-Create a reference from the relevant Ingredient resources to the corresponding Substance Definition resource (e.g., reference the active ingredient to the corresponding substance so there is a link to capture molecular structure, molecular formula, and molecular weight.). 
+### 4. RegulatedAuthorization
 
-Refer to [Ingredient](StructureDefinition-Ingredient-uv-epi.html) for detail. 
+- **Purpose**: Details the regulatory approval or marketing authorization for the medicinal product, including authorization numbers and issuing authorities.
+- **Key Fields**:
+  - `"resourceType": "RegulatedAuthorization"`: Specifies that this is a FHIR RegulatedAuthorization resource.
+  - `"id"`: A unique identifier (e.g., “UUID”).
+  - `"meta.profile"`: References the ePI IG’s profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-epi").
+  - `"identifier"`: Authorization number (e.g., `"value": "EU/1/23/1234/001"`).
+  - `"subject"`: References the MedicinalProductDefinition (e.g., `"reference": "MedicinalProductDefinition/epi-product"`).
+  - `"holder"`: References the Organization (e.g., `"reference": "Organization/epi-org"`).
+- **Role in ePI**: Provides regulatory context, ensuring the ePI includes legally required authorization details, linked from the Composition or MedicinalProductDefinition.
 
-#### Create Medicinal Product Definition resource(s) 
-Using the FHIR ePI Profile as a template, complete one MedicinalProductDefinition resource for each presentation of the medicinal product(s) associated with the authorized product(s) in this ePI. 
- 
-There are no references from the medicinal product to other resources. Instead, other resources will refer to the medicinal product.  
+### 5. ManufacturedItemDefinition
 
-Refer to [MedicinalProductDefinition Profile](StructureDefinition-MedicinalProductDefinition-uv-epi.html) for detail.  
+- **Purpose**: Describes the physical manufactured item (e.g., tablet, vial), including its form and characteristics, linked to Ingredient and SubstanceDefinition resources.
+- **Key Fields**:
+  - `"resourceType": "ManufacturedItemDefinition"`: Specifies that this is a FHIR ManufacturedItemDefinition resource.
+  - `"id"`: A unique identifier (e.g., “UUID”).
+  - `"meta.profile"`: References the ePI IG’s profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-epi").
+  - `"manufacturedDoseForm"`: The form (e.g., `"code": "tablet"`).
+  - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
+- **Role in ePI**: Defines the physical attributes of a product in its packaged dose form, linked to the MedicinalProductDefinition or Composition for detailed product description.
 
-#### Create Administrable Product Definition resource(s) 
-The administrable product describes the medicinal product in the dosage form ready for administration to the patient (after any mixing of multiple components or transformations has been performed). This is different from the manufactured item which described the medicinal product as the dosage form in the primary packaging and before any mixing or transformation. For example, a powder in a vial and a diluent in a vial are packaged together. The combined solution, made by mixing the powder and diluent, is the administrable product since that is the dosage form ready for administration to the patient.  
- 
-Using the Base ePI Profile as a template, complete one PharmaceuticalProductDefinition resource for each pharmaceutical product associated with the authorized product(s) in this ePI.  
- 
-Create a reference from each PharmaceuticalProductDefinition resource to the corresponding MedicinalProductDefinition resource. 
+#### a. Ingredient
 
-Create a reference from each PharmaceuticalProductDefinition resource to the corresponding ManufacturedItemDefinition resource. 
+- **Purpose**: Specifies the ingredients (active or inactive) in the manufactured item, linking to SubstanceDefinition for detailed substance data.
+- **Key Fields**:
+  - `"resourceType": "Ingredient"`: Specifies that this is a FHIR Ingredient resource.
+  - `"id"`: A unique identifier (e.g., “UUID”).
+  - `"meta.profile"`: References the ePI IG’s profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-epi").
+  - `"substance"`: References the SubstanceDefinition (e.g., `"reference": "SubstanceDefinition/epi-substance"`).
+  - `"strength"`: Quantity of the ingredient (e.g., `"value": 100, "unit": "mg"`).
+- **Role in ePI**: Provides granular ingredient data, ensuring precise composition details.
 
-Refer to [AdministrableProductDefinition Profile](StructureDefinition-AdministrableProductDefinition-uv-epi.html) for detail. 
+#### b. SubstanceDefinition
 
-(add two examples, one for a product with no transformation (tablet) and one with transformation). 
+- **Purpose**: Defines the chemical or biological substance used in the ingredient, including its identity and properties.
+- **Key Fields**:
+  - `"resourceType": "SubstanceDefinition"`: Specifies that this is a FHIR SubstanceDefinition resource.
+  - `"id"`: A unique identifier (e.g., “UUID”).
+  - `"meta.profile"`: References the ePI IG’s profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-epi").
+  - `"code"`: Substance identifier (e.g., `"code": {"code": "UNII"}`).
+- **Role in ePI**: Provides granular substance attributes and identification, supporting safety and regulatory checks.
 
-#### Create Packaged Product Definition resource(s) 
+### 6. AdministrableProductDefinition
 
-Using the Base ePI Profile as a template, complete one PackagedProductDefinition resource for each presentation associated with the authorized product(s) in this ePI. 
+- **Purpose**: Describes the product in the dose form ready for administration to patients, after any necessary transformation (e.g., powder reconstituted with a diluent to deliver a solution for injection to a patient), including how it is prepared or administered, linked to the manufactured items combined to create it.
+- **Key Fields**:
+  - `"resourceType": "AdministrableProductDefinition"`: Specifies that this is a FHIR AdministrableProductDefinition resource.
+  - `"id"`: A unique identifier (e.g., “epi-administrable”).
+  - `"meta.profile"`: References the ePI IG’s profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-epi").
+  - `"administrableDoseForm"`: The form (e.g., `"code": "tablet"`).
+  - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
+- **Role in ePI**: Specifies how the product is administered to patients, linked to the MedicinalProductDefinition for clinical use cases.
 
-Create a reference from each PackagedProductDefinition resource to the corresponding MedicinalProductDefinition resource for this package. 
+### 7. PackagedProductDefinition
 
-Create a reference from each PackagedProductDefinition resource to the corresponding Organization resource for the manufacturer or marketing authorization holder. 
+- **Purpose**: Describes the product’s packaging (e.g., blister pack, bottle), including package size and materials.
+- **Key Fields**:
+  - `"resourceType": "PackagedProductDefinition"`: Specifies that this is a FHIR PackagedProductDefinition resource.
+  - `"id"`: A unique identifier (e.g., “UUID”).
+  - `"meta.profile"`: References the ePI IG’s profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-epi").
+  - `"package"`: Details packaging (e.g., `"type": {"code": "blister"}, "quantity": 28`).
+  - `"containedItem"`: References the ManufacturedItemDefinition (e.g., `"item": {"reference": "ManufacturedItemDefinition/epi-manufactured-item"}`).
+- **Role in ePI**: Provides packaging details, critical for supply chain and patient instructions, linked to the MedicinalProductDefinition.
 
-Refer to [PackagedProductDefinition Profile](StructureDefinition-PackagedProductDefinition-uv-epi.html) for detail. 
+## Resources for Further Reading
 
-#### Create Regulated Authorization resource 
-Using the Base ePI Profile as a template, complete one RegulatedAuthorization resource for each medicinal product associated with this ePI. For example, if there are four medicinal products then there will be four RegulatedAuthorization resources. 
-
-Create a reference from each RegulatedAuthorization resource to its corresponding MedicinalProductDefinition.
-
-Create a reference from each RegulatedAuthorization resource to to the corresponding Organization resource for the marketing authorization holder and the health authority.
-
-Refer to [RegulatedAuthorization Profile](StructureDefinition-RegulatedAuthorization-uv-epi.html) for detail.
- 
-NOTE:  
-- Depending on the jurisdiction there will either be (1) one authorization per medicinal product (i.e., resulting in many RegulatedAuthorization resources); or (2) one authorization for all medicinal products (i.e., resulting in one RegulatedAuthorization resource). Refer to the regional profile for confirmation on which approach is required. 
-
-#### Create Binary resource 
-Convert each image used in the ePI to Base64 (e.g., images used as figures; the chemical structure of the active ingredient). 
-
-Using the FHIR ePI Profile as a template, complete one Binary resource for each image in the ePI. Add the Base64 version of the image to the Binary resource. 
-
-The Binary can also be used to create a cross-reference linking to an outside object like a video. 
-
-Refer to [Binary Resource](http://build.fhir.org/binary.html) for detail. 
-
-#### Create Composition resource 
-The composition captures all section headings, sub-section headings and narrative text/narrative content (e.g., paragraphs, tables, bulleted lists) in the ePI.
-
-Using the FHIR ePI Profile as a template, complete one Composition resource for each ePI document.
-
-Reference the Composition resource to each Binary. The reference to the Binary is made from the narrative text of the Composition resource’s @text element. 
-
-Reference the Composition resource to each Regulated Authorization from the @subject element. 
-
-The section/@Title is the display text of the section heading and sub-section heading prescribed by the relevant national health authority. For example, ‘2. Qualitative and quantitative composition’ or ‘4.1 Therapeutic indications’ from the EMA’s Quality Review of Document (QRD) template for the SmPC. 
-
-The section/@code is the code for the corresponding section heading or sub-section heading prescribed by the relevant national health authority. 
-
-NOTE:  
-ePI documents are meant to be separate and shall not be combined into one large composition. E.g., 
-- one Composition for the healthcare practitioner document and a separate Composition  for the Patient Insert document;
-- one Composition for each translation (e.g., one Composition for the French version of the ePI document and a separate Composition for the Spanish version of the ePI document).
-
-Refer to [Composition Profile](StructureDefinition-Composition-uv-epi.html) for detail.  
-
-#### Create Bundle 
-The bundle is used to gather together the resources needed to create a unique ePI document. E.g., one bundle for the health care practitioner ePI; a second bundle for the patient insert ePI; a third bundle for the pack label ePI document.
-
-Using the Base ePI Profile as a template, complete one Bundle resource for each ePI document.  
-
-Complete the Bundle resource by referencing it to only one Composition plus all other resources completed in Step 1. E.g., reference the Bundle to the patient insert composition and all other resources associated with that patient insert (e.g., the binaries, regulated authorizations, clinical uses, medicinal products,  packaged products, administrable products, manufactured items, organizations, ingredients, substances).
-
-NOTE: 
-- There is one bundle for each ePI document. E.g., one Bundle resource for each healthcare practitioner document, patient information document and their respective translations.
-- As per the FHIR Document specification, there shall not be any loose resources; i.e., all resources contained in the Bundle must be referenced.
-
-Refer to [Bundle Profile](StructureDefinition-Bundle-uv-epi.html) for detail.  
-
-#### Create List (of ePIs)
-
-The List of ePIs is used to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  
-
-Complete the [List resource](http://hl7.org/fhir/list.html) by adding a reference to the ePI document Bundle for the ePI document created above.
-
+Refer to the profiles on the [Artifacts Page](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2) for a detailed view of elements, attributes, and terminology.
