@@ -1,10 +1,8 @@
-# ePI Type 2 JSON Components Description
-
 This page describes the components used to construct ePI Type 2, enabling implementers to create and validate FHIR-compliant ePI resources for medicinal product information.
 
 For details on the Bundle, Composition, and Binary resources, refer to the *Build ePI Type 1* guide, as their structure is  identical.
 
-## Overview of JSON Components
+### Overview of JSON Components
 
 A Type 2 ePI file includes the following core components:
 
@@ -17,13 +15,13 @@ A Type 2 ePI file includes the following core components:
 
 These components work together to deliver both human-readable and machine-readable medicinal product information in a FHIR-compliant format.
 
-## Detailed Component Descriptions
+### Detailed Component Descriptions
 
-### 1. Bundle, Composition, and Binary
+#### 1. Bundle, Composition, and Binary
 
 Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product-info/build-epi1.html) page for details.
 
-### 2. Organization
+#### 2. Organization
 
 - **Purpose**: The Organization resource identifies the entity responsible for the ePI, such as the pharmaceutical company or marketing authorization holder, replacing the simple author display string used in Type 1.
 - **Key Fields**:
@@ -34,7 +32,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"contact"`: Optional contact details (e.g., `"address": {"line": ["123 Pharma St"], "city": "Boston"}`).
 - **Role in ePI**: Provides a structured reference for the ePI’s author, linked from the Composition’s `author` field, enabling consistent identification across systems.
 
-### 3. MedicinalProductDefinition
+#### 3. MedicinalProductDefinition
 
 - **Purpose**: Provides structured, machine-readable data about the medicinal product, such as its name, ingredients, and classification, supporting automated processing.
 - **Key Fields**:
@@ -46,7 +44,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
 - **Role in ePI**: Central to structured data, linked from the Composition’s structured data section, enabling regulatory and clinical system integration.
 
-### 4. RegulatedAuthorization
+#### 4. RegulatedAuthorization
 
 - **Purpose**: Details the regulatory approval or marketing authorization for the medicinal product, including authorization numbers and issuing authorities.
 - **Key Fields**:
@@ -58,7 +56,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"holder"`: References the Organization (e.g., `"reference": "Organization/epi-org"`).
 - **Role in ePI**: Provides regulatory context, ensuring the ePI includes legally required authorization details, linked from the Composition or MedicinalProductDefinition.
 
-### 5. ManufacturedItemDefinition
+#### 5. ManufacturedItemDefinition
 
 - **Purpose**: Describes the physical manufactured item (e.g., tablet, vial), including its form and characteristics, linked to Ingredient and SubstanceDefinition resources.
 - **Key Fields**:
@@ -69,7 +67,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
 - **Role in ePI**: Defines the physical attributes of a product in its packaged dose form, linked to the MedicinalProductDefinition or Composition for detailed product description.
 
-#### a. Ingredient
+##### a. Ingredient
 
 - **Purpose**: Specifies the ingredients (active or inactive) in the manufactured item, linking to SubstanceDefinition for detailed substance data.
 - **Key Fields**:
@@ -80,7 +78,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"strength"`: Quantity of the ingredient (e.g., `"value": 100, "unit": "mg"`).
 - **Role in ePI**: Provides granular ingredient data, ensuring precise composition details.
 
-#### b. SubstanceDefinition
+##### b. SubstanceDefinition
 
 - **Purpose**: Defines the chemical or biological substance used in the ingredient, including its identity and properties.
 - **Key Fields**:
@@ -90,7 +88,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"code"`: Substance identifier (e.g., `"code": {"code": "UNII"}`).
 - **Role in ePI**: Provides granular substance attributes and identification, supporting safety and regulatory checks.
 
-### 6. AdministrableProductDefinition
+#### 6. AdministrableProductDefinition
 
 - **Purpose**: Describes the product in the dose form ready for administration to patients, after any necessary transformation (e.g., powder reconstituted with a diluent to deliver a solution for injection to a patient), including how it is prepared or administered, linked to the manufactured items combined to create it.
 - **Key Fields**:
@@ -101,7 +99,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
 - **Role in ePI**: Specifies how the product is administered to patients, linked to the MedicinalProductDefinition for clinical use cases.
 
-### 7. PackagedProductDefinition
+#### 7. PackagedProductDefinition
 
 - **Purpose**: Describes the product’s packaging (e.g., blister pack, bottle), including package size and materials.
 - **Key Fields**:
@@ -112,6 +110,6 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"containedItem"`: References the ManufacturedItemDefinition (e.g., `"item": {"reference": "ManufacturedItemDefinition/epi-manufactured-item"}`).
 - **Role in ePI**: Provides packaging details, critical for supply chain and patient instructions, linked to the MedicinalProductDefinition.
 
-## Resources for Further Reading
+### Resources for Further Reading
 
 Refer to the profiles on the [Artifacts Page](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2) for a detailed view of elements, attributes, and terminology.
