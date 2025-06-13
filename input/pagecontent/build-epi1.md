@@ -1,56 +1,84 @@
-### How to build an ePI document
-The following is an example of how to build a Summary of Product Characteristics (SmPC) as a Type 1, Type 2, and Type 3 ePI document. This example is meant as a demonstration to encourage a harmonized approach. Refer to national or regional health authority guidance for official rules about how to build an ePI document.  
+# ePI Type 1 JSON Components Description
 
-<img src="Type1ePI.drawio.png" usemap="#image-map" style="float:none; margin: 0px 0px 0px 0px;" width="350px">  
+This page describes the components used to construct ePI Type 1, enabling implementers to create and validate FHIR-compliant ePI resources for medicinal product information.
 
-### Steps to create Type 1 ePI Dcoument  
+## Overview of Components
 
-#### Create Binary resource 
-Convert each image used in the ePI to Base64 (e.g., images used as figures; the chemical structure of the active ingredient). 
+A Type 1 ePI file consists of three core components:
 
-Using the FHIR ePI Profile as a template, complete one Binary resource for each image in the ePI. Add the Base64 version of the image to the Binary resource. 
+- **Bundle**: A container that packages all resources into a single, self-contained document.
+- **Composition**: The primary resource that defines the ePI’s metadata and narrative, including references to images.
+- **Binary**: A resource that stores the Scalable Vector Graphics (SVG) image as base64-encoded content, referenced by the Composition’s narrative.
 
-The Binary can also be used to create a cross-reference linking to an outside object like a video. 
+These components work together to deliver human-readable medicinal product information, such as a Summary of Prosuct Characteristics, Package Leaflet, or package artwork in a FHIR-compliant format.
 
-Refer to [Binary Resource](http://hl7.org/fhir/binary.html) for detail. 
+## Detailed Component Descriptions
 
-#### Create Composition resource 
-The composition captures all section headings, sub-section headings and narrative text/narrative content (e.g., paragraphs, tables, bulleted lists) in the ePI.
+### 1. Bundle
 
-Using the FHIR ePI Profile as a template, complete one Composition resource for each ePI document.
+- **Purpose**: The Bundle serves as a wrapper that encapsulates the Composition and Binary resources, ensuring a single, interoperable file for regulatory submission or exchange. It is defined as a document type Bundle, meaning it represents a complete, self-contained set of resources.
+- **Key Fields**:
+  - `"resourceType": "Bundle"`: Specifies that this is a FHIR Bundle resource.
+  - `"id"`: A system defined universally unique identifier (UUID) for the Bundle (e.g., “5bc9c283-3f70-4ce7-96c3-99f26f553bd2”).
+  - `"type": "document"`: Indicates the Bundle is a fixed set of resources forming a single document.
+  - `"timestamp"`: Records the date and time the Bundle was created (e.g., “2025-06-12T22:28:00-04:00”).
+  - `"meta.profile"`: References the ePI IG’s Bundle profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-epi") to ensure conformance.
+  - `"entry"`: An array of resource entries, each containing a `fullUrl` (a unique URI, e.g., “urn:uuid:epi-composition”) and a `resource` (e.g., Composition or Binary).
+- **Role in ePI**: The Bundle ensures all components are transmitted together, maintaining their relationships and enabling validation as a single unit. It is the entry point for processing the ePI.
 
-Reference the Composition resource to each Binary. The reference to the Binary is made from the narrative text of the Composition resource’s @text element. 
+### 2. Composition
 
-Reference the Composition resource to each Regulated Authorization from the @subject element. 
+- **Purpose**: The Composition is the core ePI resource, defining the document metadata (e.g., title, author, language) and containing the human-readable narrative in XHTML format. It includes an `<img>` tag to reference an SVG image stored in the Binary resource, allowing visual content to be embedded in the narrative.
+- **Key Fields**:
+  - `"resourceType": "Composition"`: Specifies that this is a FHIR Composition resource.
+  - `"id"`: A system defined universally unique identifier (UUID) for the Bundle (e.g., “749b73da-b585-45c6-ade8-10d1deaa4dcc”).
+  - `"meta.profile"`: References the ePI IG’s Composition profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-epi") for conformance.
+  - `"status": "final"`: Indicates the document is complete and ready for use.
+  - `"type.coding"`: Defines the ePI as a package leaflet, using the ePI IG’s code system (e.g., `system: "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-type"`, `code: "package-leaflet"`).
+  - `"category.coding"`: Classifies the ePI for human medicinal products (e.g., `system: "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-category"`, `code: "human"`).
+  - `"date"`: The creation or publication date (e.g., “2025-06-12”).
+  - `"author"`: For Type 1, a display string identifying the author (e.g., `"display": "Example Pharma Inc."`), as no Organization resource is required.
+  - `"title"`: A human-readable title for the ePI (e.g., “Package Leaflet: ExampleMed 100 mg Tablets”).
+  - `"language"`: The language of the narrative (e.g., “en” for English).
+  - `"section"`: An array of sections containing:
+    - `"title"`: The section  or sub-section headings fromthe local health authority's drug label template (e.g., “4.1. Therapeutic Indications”).
+    - `"code.coding"`: Identifies the section as a package leaflet (e.g., `system: "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-section"`, `code: "leaflet"`).
+    - `"text.status": "additional"`: Indicates the narrative is supplementary content.
+    - `"text.div"`: The XHTML narrative, including an `<img>` tag to display the SVG image (e.g., `<img src="Binary/epi-svg-image" alt="Diagram of ExampleMed tablet packaging" />`).
+    - `"entry"`: A reference to the Binary resource containing the SVG image (e.g., `"reference": "Binary/epi-svg-image"`).
+- **Role in ePI**: The Composition organizes the ePI’s document metadata and narrative, serving as the primary content resource. The `<img>` tag embeds the SVG image in the narrative, enhancing the visual presentation of the package leaflet.
 
-The section/@Title is the display text of the section heading and sub-section heading prescribed by the relevant national health authority. For example, ‘2. Qualitative and quantitative composition’ or ‘4.1 Therapeutic indications’ from the EMA’s Quality Review of Document (QRD) template for the SmPC. 
+### 3. Binary
 
-The section/@code is the code for the corresponding section heading or sub-section heading prescribed by the relevant national health authority. 
+- **Purpose**: The Binary resource stores the SVG image content as a base64-encoded string, referenced by the Composition’s narrative via an `<img>` tag. This allows visual elements, such as diagrams or logos, to be included in the ePI without embedding them directly in the XHTML.
+- **Key Fields**:
+  - `"resourceType": "Binary"`: Specifies that this is a FHIR Binary resource.
+  - `"id"`: A unique identifier for the Binary resource (e.g., “epi-svg-image”).
+  - `"meta.profile"`: References the ePI IG’s Binary profile (e.g., "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Binary-epi") for conformance.
+  - `"contentType": "image/svg+xml"`: Indicates the content is an SVG image, aligning with the XML structure from the provided example.
+  - `"data"`: The base64-encoded SVG content, representing the image (e.g., a diagram of a tablet or packaging).
+- **Role in ePI**: The Binary resource encapsulates the SVG image, enabling it to be referenced and displayed within the Composition’s narrative. When rendered, the SVG image appears inline where the `<img>` tag is placed, enhancing the ePI’s visual communication.
 
-NOTE:  
-ePI documents are meant to be separate and shall not be combined into one large composition. E.g., 
-- one Composition for the healthcare practitioner document and a separate Composition  for the Patient Insert document;
-- one Composition for each translation (e.g., one Composition for the French version of the ePI document and a separate Composition for the Spanish version of the ePI document).
+## Image Reference in the Narrative
 
-Refer to [Composition Profile](https://build.fhir.org/ig/HL7/emedicinal-product-info/StructureDefinition-Composition-uv-epi.html) for detail.  
+The Composition’s narrative (in `section.text.div`) uses an `<img>` tag to display the SVG image stored in the Binary resource. The tag’s attributes are:
 
-#### Create Bundle 
-The bundle is used to gather together the resources needed to create a unique ePI document. E.g., one bundle for the health care practitioner ePI; a second bundle for the patient insert ePI; a third bundle for the pack label ePI document.
+- **src**: References the Binary resource using the format `Binary/{id}`, where `{id}` is the Binary’s id (e.g., `Binary/epi-svg-image`).
+- **alt**: Provides accessibility text describing the image (e.g., “Diagram of ExampleMed tablet packaging”).
+- **Example**:
+  ```html
+  <img src="Binary/epi-svg-image" alt="Diagram of ExampleMed tablet packaging" />
+```
 
-Using the Base ePI Profile as a template, complete one Bundle resource for each ePI document.  
+- **Placement**: The `<img>` tag is embedded in the XHTML narrative where the image should appear (e.g., after a heading or paragraph).
+- **Rendering**: When the ePI is rendered (e.g., in a FHIR viewer or browser), the `<img>` tag resolves to the Binary resource’s base64-encoded SVG data, displaying the image inline.
+- **Validation**: Ensure the `src` value matches the Binary’s id, and verify the `contentType` is `image/svg+xml`. The `alt` text should be descriptive to meet accessibility standards.
 
-Complete the Bundle resource by referencing it to only one Composition plus all other resources completed in Step 1. E.g., reference the Bundle to the patient insert composition and all other resources associated with that patient insert (e.g., the binaries, regulated authorizations, clinical uses, medicinal products,  packaged products, administrable products, manufactured items, organizations, ingredients, substances).
+## Additional Notes
 
-NOTE: 
-- There is one bundle for each ePI document. E.g., one Bundle resource for each healthcare practitioner document, patient information document and their respective translations.
-- As per the FHIR Document specification, there shall not be any loose resources; i.e., all resources contained in the Bundle must be referenced.
+- **Interoperability**: The Bundle ensures all components are self-contained, allowing the ePI to be shared across systems without losing context.
+- **Conformance**: Each resource’s `meta.profile` field links to the ePI IG’s profiles, ensuring compliance with the IG’s constraints and extensions.
+- **SVG Content**: The Binary’s SVG content must be valid XML, including the `<?xml version="1.0" encoding="UTF-8"?>` declaration and `<svg>` root element. Base64 encoding preserves this structure.
 
-Refer to [Bundle Profile](https://build.fhir.org/ig/HL7/emedicinal-product-info/StructureDefinition-Bundle-uv-epi.html) for detail.  
-
-#### Create List
-The List of ePIs is used to keep track of all ePIs for a given medicinal product. E.g., the list will track the SmPC and all its versions; the Package Leaflet and all its versions.  
-
-Complete the [List resource](http://hl7.org/fhir/list.html) by adding a reference to the ePI document Bundle for the ePI document created above.
-
-
-
+## Resources for Further Reading
+Refer to the profiles on the [Artifacts page](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html) for further details about each resource.
