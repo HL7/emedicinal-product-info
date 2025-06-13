@@ -1,18 +1,36 @@
 Not all 14 resources are required to support all ePI-related use cases. Different resources can be combined to support different use cases. To help implementors decide what resources are needed when, ePI resources are combined into the following four types and sub-types:
 
-| ePI Type | In-Scope Resources | Description |
-|----------|--------------------|-------------|
-| ePI Type 1 | Bundle<br>Composition (contained Binary) | Reproduces the local label template; i.e., section headings, text, bullets, tables, images |
-| ePI Type 2 | Includes Type 1 plus the following: | |
-| | a. Organization | Describes company name, identifier, address, and type |
-| | b. Medicinal Product Definition | Describes regulatory details about the product (e.g., name, route of administration, legal/marketing status) |
-| | c. Regulated Authorization | Describes authorization details (e.g., approval date, license number) |
-| | d. Manufactured Item Definition<br>- Ingredient<br>- Substance Definition | Describes the physical properties of the product in its primary package (strength, ingredients, size, colour, shape) |
-| | e. Administrable Product Definition<br>- Ingredient<br>- Substance Definition | Describes the physical properties of the product in its final form ready for administration to the patient (e.g., after reconstitution) |
-| | f. Packaged Product Definition | Describes the primary and second layers of the product’s authorized packaging |
-| ePI Type 3 | Includes Type 1 and 2 plus the following: | |
-| | a. Clinical Use Definition<br>b. Medication Statement | Describes Indication, contraindication, interactions, undesirable effects, and warnings<br>Describes how to structure dose instructions |
-| ePI Type 4 | Includes Type 1, 2, and 3 plus the narrative label content is now populated by discrete structured elements/components | Describes how to structure narrative content to a degree that the entire label is structured |
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">ePI Type</th>
+      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">In-Scope Resources</th>
+      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">ePI Type 1</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Bundle<br>Composition (contained Binary)</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Reproduces the local label template; i.e., section headings, text, bullets, tables, images</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">ePI Type 2</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Includes Type 1 plus the following:<br><br>a. Organization<br>b. Medicinal Product Definition<br>c. Regulated Authorization<br>d. Manufactured Item Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>e. Administrable Product Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>f. Packaged Product Definition</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">a. Describes company name, identifier, address, and type<br>b. Describes regulatory details about the product (e.g., name, route of administration, legal/marketing status)<br>c. Describes authorization details (e.g., approval date, license number)<br>d. Describes the physical properties of the product in its primary package (strength, ingredients, size, colour, shape)<br>e. Describes the physical properties of the product in its final form ready for administration to the patient (e.g., after reconstitution)<br>f. Describes the primary and second layers of the product’s authorized packaging</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">ePI Type 3</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Includes Type 1 and 2 plus the following:<br><br>a. Clinical Use Definition<br>b. Medication Statement</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">a. Describes Indication, contraindication, interactions, undesirable effects, and warnings<br>b. Describes how to structure dose instructions</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">ePI Type 4</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Includes Type 1, 2, and 3 plus the narrative label content is now populated by discrete structured elements/components</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Describes how to structure narrative content to a degree that the entire label is structured</td>
+    </tr>
+  </tbody>
+</table>
 
 Refer to [ePI Components](https://build.fhir.org/ig/HL7/emedicinal-product-info/epi-components.html) for an overview of the Resources in-scope for use with ePI or the [Artifacts](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html) page for details about profiles, terminologies, and examples.
 
@@ -22,16 +40,47 @@ ePI Type 1 represents the minimum requirement to be considered an ePI since it a
 
 ### ePI Type 2 (a to f)
 
-ePI Type 2a to f can be used to support numerous use cases dependent on the product's physical attributes or the companies associated with the product. There is no requirement to use A to F together. For example, these combinations are needed to support the following use cases:
-
-| Use Case | Description | ePI Sub-type Combinations |
-|----------|-------------|---------------------------|
-| 1 | Advanced search | Just A - only need to search by company and not by product details.<br>A and B – Search by company, product name/status.<br>A, B, C, and D – search by company, product name, license, and manufactured form (including ingredients, strength).<br>A, B, C, D, and F - search by company, product name, license, manufactured form, and packaging details.<br>A, B, C, D, E, and F - search by company, product name, license, manufactured dose form, administrable dose form, and packaging details. |
-| 2 | Drug shortages | A, B, C, D, and F are needed to search by company, product name, license status, manufactured form, and pack details across drug classes and categories to find a suitable match to resolve the shortage. |
-| 3 | Cross-border travel | A, B, and D are needed to search by company and product details across international borders to find a suitable match to a patient’s prescription in another country. |
-| 4 | Distribution | A, B, C, and F are needed to facilitate ordering and distribution of packaged products. The Packaged Product Definition (F) carries product and pack identifiers like GTIN, Stock Keeping Unit (SKUs), or other local pack identifiers. |
-| 5 | Allergens | D is needed to identify ingredients that are known or possible allergens (e.g., lactose or aspartame). |
-| 6 | Electronic Health | A, B, C, and D are needed to support Electronic Medical Records and ePrescription since these resources help to uniquely identify and differentiate between medicinal products and their manufacturers.<br>E can be added if there is a need to differentiate between the manufactured dose form and the administrable dose form of the product; or a need to determine how much of the reconstituted solution for infusion was administered to the patient. |
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Use Case</th>
+      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Description</th>
+      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">ePI Sub-type Combinations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">1</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Advanced search</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Just A - only need to search by company and not by product details.<br>A and B – Search by company, product name/status.<br>A, B, C, and D – search by company, product name, license, and manufactured form (including ingredients, strength).<br>A, B, C, D, and F - search by company, product name, license, manufactured form, and packaging details.<br>A, B, C, D, E, and F - search by company, product name, license, manufactured dose form, administrable dose form, and packaging details.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">2</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Drug shortages</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">A, B, C, D, and F are needed to search by company, product name, license status, manufactured form, and pack details across drug classes and categories to find a suitable match to resolve the shortage.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">3</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Cross-border travel</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">A, B, and D are needed to search by company and product details across international borders to find a suitable match to a patient’s prescription in another country.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">4</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Distribution</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">A, B, C, and F are needed to facilitate ordering and distribution of packaged products. The Packaged Product Definition (F) carries product and pack identifiers like GTIN, Stock Keeping Unit (SKUs), or other local pack identifiers.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">5</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Allergens</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">D is needed to identify ingredients that are known or possible allergens (e.g., lactose or aspartame).</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">6</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Electronic Health</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">A, B, C, and D are needed to support Electronic Medical Records and ePrescription since these resources help to uniquely identify and differentiate between medicinal products and their manufacturers.<br>E can be added if there is a need to differentiate between the manufactured dose form and the administrable dose form of the product; or a need to determine how much of the reconstituted solution for infusion was administered to the patient.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### ePI Type 3 (a and b)
 
