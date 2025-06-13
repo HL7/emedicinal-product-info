@@ -66,7 +66,8 @@ The Composition’s narrative (in `section.text.div`) uses an `<img>` tag to dis
 - **src**: References the Binary resource using the format `Binary/{id}`, where `{id}` is the Binary’s id (e.g., `Binary/epi-svg-image`).
 - **alt**: Provides accessibility text describing the image (e.g., “Diagram of ExampleMed tablet packaging”).
 - **Example**:
-  ```html
+
+```html
   <img src="Binary/epi-svg-image" alt="Diagram of ExampleMed tablet packaging" />
 ```
 
