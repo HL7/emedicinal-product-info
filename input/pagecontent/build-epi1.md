@@ -1,8 +1,6 @@
-# ePI Type 1 JSON Components Description
-
 This page describes the components used to construct ePI Type 1, enabling implementers to create and validate FHIR-compliant ePI resources for medicinal product information.
 
-## Overview of Components
+### Overview of Components
 
 A Type 1 ePI file consists of three core components:
 
@@ -12,9 +10,9 @@ A Type 1 ePI file consists of three core components:
 
 These components work together to deliver human-readable medicinal product information, such as a Summary of Prosuct Characteristics, Package Leaflet, or package artwork in a FHIR-compliant format.
 
-## Detailed Component Descriptions
+### Detailed Component Descriptions
 
-### 1. Bundle
+#### 1. Bundle
 
 - **Purpose**: The Bundle serves as a wrapper that encapsulates the Composition and Binary resources, ensuring a single, interoperable file for regulatory submission or exchange. It is defined as a document type Bundle, meaning it represents a complete, self-contained set of resources.
 - **Key Fields**:
@@ -26,7 +24,7 @@ These components work together to deliver human-readable medicinal product infor
   - `"entry"`: An array of resource entries, each containing a `fullUrl` (a unique URI, e.g., “urn:uuid:epi-composition”) and a `resource` (e.g., Composition or Binary).
 - **Role in ePI**: The Bundle ensures all components are transmitted together, maintaining their relationships and enabling validation as a single unit. It is the entry point for processing the ePI.
 
-### 2. Composition
+#### 2. Composition
 
 - **Purpose**: The Composition is the core ePI resource, defining the document metadata (e.g., title, author, language) and containing the human-readable narrative in XHTML format. It includes an `<img>` tag to reference an SVG image stored in the Binary resource, allowing visual content to be embedded in the narrative.
 - **Key Fields**:
@@ -48,7 +46,7 @@ These components work together to deliver human-readable medicinal product infor
     - `"entry"`: A reference to the Binary resource containing the SVG image (e.g., `"reference": "Binary/epi-svg-image"`).
 - **Role in ePI**: The Composition organizes the ePI’s document metadata and narrative, serving as the primary content resource. The `<img>` tag embeds the SVG image in the narrative, enhancing the visual presentation of the package leaflet.
 
-### 3. Binary
+#### 3. Binary
 
 - **Purpose**: The Binary resource stores the SVG image content as a base64-encoded string, referenced by the Composition’s narrative via an `<img>` tag. This allows visual elements, such as diagrams or logos, to be included in the ePI without embedding them directly in the XHTML.
 - **Key Fields**:
@@ -59,7 +57,7 @@ These components work together to deliver human-readable medicinal product infor
   - `"data"`: The base64-encoded SVG content, representing the image (e.g., a diagram of a tablet or packaging).
 - **Role in ePI**: The Binary resource encapsulates the SVG image, enabling it to be referenced and displayed within the Composition’s narrative. When rendered, the SVG image appears inline where the `<img>` tag is placed, enhancing the ePI’s visual communication.
 
-## Image Reference in the Narrative
+### Image Reference in the Narrative
 
 The Composition’s narrative (in `section.text.div`) uses an `<img>` tag to display the SVG image stored in the Binary resource. The tag’s attributes are:
 
@@ -75,11 +73,11 @@ The Composition’s narrative (in `section.text.div`) uses an `<img>` tag to dis
 - **Rendering**: When the ePI is rendered (e.g., in a FHIR viewer or browser), the `<img>` tag resolves to the Binary resource’s base64-encoded SVG data, displaying the image inline.
 - **Validation**: Ensure the `src` value matches the Binary’s id, and verify the `contentType` is `image/svg+xml`. The `alt` text should be descriptive to meet accessibility standards.
 
-## Additional Notes
+### Additional Notes
 
 - **Interoperability**: The Bundle ensures all components are self-contained, allowing the ePI to be shared across systems without losing context.
 - **Conformance**: Each resource’s `meta.profile` field links to the ePI IG’s profiles, ensuring compliance with the IG’s constraints and extensions.
 - **SVG Content**: The Binary’s SVG content must be valid XML, including the `<?xml version="1.0" encoding="UTF-8"?>` declaration and `<svg>` root element. Base64 encoding preserves this structure.
 
-## Resources for Further Reading
+### Resources for Further Reading
 Refer to the profiles on the [Artifacts page](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html) for further details about each resource.
