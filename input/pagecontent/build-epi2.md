@@ -17,11 +17,11 @@ These components work together to deliver both human-readable and machine-readab
 
 ### Detailed Component Descriptions
 
-#### 1. Bundle, Composition, and Binary
+#### Bundle, Composition, and Binary
 
 Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product-info/build-epi1.html) page for details.
 
-#### 2. Organization
+#### Organization
 
 - **Purpose**: The Organization resource identifies the entity responsible for the ePI, such as the pharmaceutical company or marketing authorization holder, replacing the simple author display string used in Type 1.
 - **Key Fields**:
@@ -32,7 +32,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"contact"`: Optional contact details (e.g., `"address": {"line": ["123 Pharma St"], "city": "Boston"}`).
 - **Role in ePI**: Provides a structured reference for the ePI’s author, linked from the Composition’s `author` field, enabling consistent identification across systems.
 
-#### 3. MedicinalProductDefinition
+#### MedicinalProductDefinition
 
 - **Purpose**: Provides structured, machine-readable data about the medicinal product, such as its name, ingredients, and classification, supporting automated processing.
 - **Key Fields**:
@@ -44,7 +44,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
 - **Role in ePI**: Central to structured data, linked from the Composition’s structured data section, enabling regulatory and clinical system integration.
 
-#### 4. RegulatedAuthorization
+#### RegulatedAuthorization
 
 - **Purpose**: Details the regulatory approval or marketing authorization for the medicinal product, including authorization numbers and issuing authorities.
 - **Key Fields**:
@@ -56,7 +56,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"holder"`: References the Organization (e.g., `"reference": "Organization/epi-org"`).
 - **Role in ePI**: Provides regulatory context, ensuring the ePI includes legally required authorization details, linked from the Composition or MedicinalProductDefinition.
 
-#### 5. ManufacturedItemDefinition
+#### ManufacturedItemDefinition
 
 - **Purpose**: Describes the physical manufactured item (e.g., tablet, vial), including its form and characteristics, linked to Ingredient and SubstanceDefinition resources.
 - **Key Fields**:
@@ -67,7 +67,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
 - **Role in ePI**: Defines the physical attributes of a product in its packaged dose form, linked to the MedicinalProductDefinition or Composition for detailed product description.
 
-##### a. Ingredient
+##### Ingredient
 
 - **Purpose**: Specifies the ingredients (active or inactive) in the manufactured item, linking to SubstanceDefinition for detailed substance data.
 - **Key Fields**:
@@ -78,7 +78,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"strength"`: Quantity of the ingredient (e.g., `"value": 100, "unit": "mg"`).
 - **Role in ePI**: Provides granular ingredient data, ensuring precise composition details.
 
-##### b. SubstanceDefinition
+##### SubstanceDefinition
 
 - **Purpose**: Defines the chemical or biological substance used in the ingredient, including its identity and properties.
 - **Key Fields**:
@@ -88,7 +88,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"code"`: Substance identifier (e.g., `"code": {"code": "UNII"}`).
 - **Role in ePI**: Provides granular substance attributes and identification, supporting safety and regulatory checks.
 
-#### 6. AdministrableProductDefinition
+#### AdministrableProductDefinition
 
 - **Purpose**: Describes the product in the dose form ready for administration to patients, after any necessary transformation (e.g., powder reconstituted with a diluent to deliver a solution for injection to a patient), including how it is prepared or administered, linked to the manufactured items combined to create it.
 - **Key Fields**:
@@ -99,7 +99,7 @@ Refer to the [Build ePI Type 1](https://build.fhir.org/ig/HL7/emedicinal-product
   - `"ingredient"`: References Ingredient resources (e.g., `"reference": "Ingredient/epi-ingredient"`).
 - **Role in ePI**: Specifies how the product is administered to patients, linked to the MedicinalProductDefinition for clinical use cases.
 
-#### 7. PackagedProductDefinition
+#### PackagedProductDefinition
 
 - **Purpose**: Describes the product’s packaging (e.g., blister pack, bottle), including package size and materials.
 - **Key Fields**:
