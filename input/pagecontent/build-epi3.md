@@ -1,5 +1,3 @@
-## Build ePI Type 3
-
 This page describes the components used to construct ePI Type 3, enabling implementers to create and validate FHIR-compliant ePI resources for medicinal product information.
 
 Refer to the Build ePI Type 1 and Build ePI Type 2 pages for instructions on how to build those components.
