@@ -62,6 +62,7 @@ Prepare your tools and infrastructure, including component authoring software, t
     - **Structured Authoring**: A business friendly (i.e., not meant for developers) software tool that enables the creation of content using predefined templates and standardized formats, such as XML, JSON, and XHTML, to ensure consistency and compliance with specific schemas or standards. It organizes content into structured elements (e.g., sections, paragraphs) for easy reuse and interoperability, ideal for producing structured regulatory documents like ePI.
     - **Component Authoring**: A business friendly software tool that allows the creation and management of modular content components, which can be assembled into larger documents. It supports reusable, granular content blocks (e.g., individual indications) for efficient multi-channel publishing or generating ePIs with personalized content (e.g., show only indications, strengths, and interactions relevant to a specific patient or patient profile group).
     - Ensure the software supports FHIR compliant XML, JSON, Markdown, and XHTML. XHTML is used for the ePIs narrative in the Composition’s `text.div` field.
+    - Ensure the software supports the use of style sheets to transform the XML or JSON files into user friendly reading format like HTML, DOCX, or PDF. 
 
 - **Test Environment**:
   - Set up a sandbox FHIR server (e.g., [HAPI FHIR Test Server](https://hapi.fhir.org/)) for experimentation.
