@@ -44,42 +44,48 @@ Build a foundation by familiarizing yourself with the ePI IG and FHIR fundamenta
   - **ePI Type 1**: The most simple form of an ePI, reproduces the traditional drug label template (e.g., Summary of Product Characteristics, Patient Leaflet) mandated by many national health authorities. It includes document metadata (e.g., document type, date, language), section and sub-section headings, and the human-readable narrative (e.g., paragraphs, images, tables) in XHTML, stored in a Composition resource and packaged in a Document Bundle resource.
   - **FHIR Resources**: Modular data structures (e.g., Bundle for packaging, Composition for metadata and narrative).
   - **Interoperability**: ePI ensures medicinal product information is structured in a consistent manner and shareable across systems (e.g., regulatory agencies, pharmacies, health apps).
+  - **JSON Knowledge**: Learn basic JSON syntax via [JSON Tutorial](https://www.w3schools.com/js/js_json_intro.asp)
+  - **XML Knowledge**: Learn basic XML syntax via [XML Tutorial](https://www.w3schools.com/xml/)
 
 ### Step 3: Set Up Your Environment
 
 Prepare your tools and infrastructure, including component authoring software, to build an ePI solution.
 
 - **Consider Installing Prerequisites**:
-  - **Text Editor**: Use Visual Studio Code ([download](https://code.visualstudio.com/)) for editing JSON and markdown files.
-  - **JSON Knowledge**: Learn basic JSON syntax via [JSON Tutorial](https://www.w3schools.com/js/js_json_intro.asp) (~30 minutes).
   - **FHIR Server**: Install HAPI FHIR, an open-source FHIR server:
     - Download Java JDK 17+ ([Oracle](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html) or [OpenJDK](https://openjdk.java.net/)).
     - Follow the [HAPI FHIR Quickstart](https://hapifhir.io/hapi-fhir/docs/server_jpa/quickstart.html) to set up a local server.
     - Verify the server runs at `http://localhost:8080/fhir`.
   - **FHIR Validator**: Use the [FHIR Validator CLI](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator) to check ePI compliance.
   - **Authoring Software**: Choose structured or component authoring software for creating ePI content:
-    - **Structured Authoring**: A software tool that enables the creation of content using predefined templates and standardized formats, such as XML, JSON, and XHTML, to ensure consistency and compliance with specific schemas or standards. It organizes content into structured elements (e.g., sections, paragraphs) for easy reuse and interoperability, ideal for producing structured regulatory documents like ePI.
-    - **Component Authoring**: A software tool that allows the creation and management of modular content components, which can be assembled into larger documents. It supports reusable, granular content blocks (e.g., individual indications) for efficient multi-channel publishing or generating ePIs with personalized content (e.g., show only indications, strengths, and interactions relevant to a specific patient or patient profile group).
-    - Ensure the software exports FHIR compliant XML, JSON or XHTML. XHTML is used for the ePIs narrative in the Composition’s `text.div` field.
-- **Clone the ePI IG Repository**:
-  - Install Git ([download](https://git-scm.com/downloads)).
-  - Clone the repository:
-    ```bash
-    git clone https://github.com/HL7/emedicinal-product-info.git
-    cd emedicinal-product-info
-    ```
-  - Explore the `input/examples` folder for sample ePI JSON files.
+    - **Text Editor**: There are many free or commercial developer tools available that support editing XML, JSON, markdown, or XHTML.
+    - **Structured Authoring**: A business friendly (i.e., not meant for developers) software tool that enables the creation of content using predefined templates and standardized formats, such as XML, JSON, and XHTML, to ensure consistency and compliance with specific schemas or standards. It organizes content into structured elements (e.g., sections, paragraphs) for easy reuse and interoperability, ideal for producing structured regulatory documents like ePI.
+    - **Component Authoring**: A business friendly software tool that allows the creation and management of modular content components, which can be assembled into larger documents. It supports reusable, granular content blocks (e.g., individual indications) for efficient multi-channel publishing or generating ePIs with personalized content (e.g., show only indications, strengths, and interactions relevant to a specific patient or patient profile group).
+    - Ensure the software supports FHIR compliant XML, JSON, Markdown, and XHTML. XHTML is used for the ePIs narrative in the Composition’s `text.div` field.
+
 - **Test Environment**:
   - Set up a sandbox FHIR server (e.g., [HAPI FHIR Test Server](https://hapi.fhir.org/)) for experimentation.
   - Use Postman ([download](https://www.postman.com/downloads/)) to send HTTP requests to the FHIR server.
 
 ### Step 4: Use Controlled Terminology
 
-Ensure ePI content uses the standardized code systems for interoperability and compliance as defined by the relevant health authority.
+## Controlled Terminology in ePI
 
-- **Understand Controlled Terminology**:
-  - Controlled terminology refers to standardized code systems (e.g., SNOMED, ICD, MedDRA, EDQM, SPOR) and terminology (e.g., dose form, route of administration, units of measure, pack type) used in ePI resources to ensure data is consistent amd machine-readable.
-  - Refer to the [Terminology]() page for further detail.
+Controlled terminology refers to a standardized set of terms and codes used to consistently structure and describe medicinal product information, such as dosage forms, routes of administration, units of measurement, ingredient names, and packaging types. This standardization ensures that data is accurate, interoperable, and machine-readable across systems and organizations, enabling regulatory compliance, seamless data exchange, and improved accessibility for pharmaceutical companies, health authorities, healthcare professionals, and patients.
+
+In some cases, terminologies are harmonized internationally (e.g., ISO country codes, language codes, or SI units of measurement). However, most jurisdictions maintain local terminology requirements, necessitating careful alignment with regional standards.
+
+When implementing ePI, identify the terminologies required for each jurisdiction and ensure that your ePI authoring tools and associated systems support both international and local terminologies. Key standardized code systems include:
+
+- **SNOMED CT**: For clinical terms and detailed healthcare data.
+- **ICD (International Classification of Diseases)**: For disease and health condition classification.
+- **MedDRA**: For adverse event reporting and pharmacovigilance.
+- **EDQM**: For standard terms related to pharmaceutical dose forms, combined pharmaceutical dose forms, routes of administration, pack types, pack materials.
+- **SPOR**: For substance, product, organization, and referential data in the EU.
+- **ISO**: For country names and languages 
+- **UCUM**: For units of measure
+
+For further details, refer to the [Terminology]() page or consult jurisdiction-specific regulatory guidelines.
 
 ### Step 5: Build an ePI Type 1 Solution
 
