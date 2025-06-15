@@ -1,8 +1,8 @@
-## Implementing Structured Dose Syntax in ePI
+### Implementing Structured Dose Syntax in ePI
 
-This section provides guidance on implementing structured dose syntax within an ePI system using a custom FHIR R5 profile for the `ClinicalUseDefinition` resource, which incorporates the FHIR R5 `Dosage` structure. The implementation ensures interoperability across healthcare systems, supports both product-based and dose-based prescribing. These instructions are based on the [NHS Dose Syntax Implementation Guide](https://developer.nhs.uk/apis/dose-syntax-implementation/).
+This section provides guidance on implementing structured dose syntax within an ePI system using a custom FHIR R5 profile for the `ClinicalUseDefinition` resource, which incorporates the FHIR R5 `Dosage` structure. The implementation ensures interoperability across healthcare systems, supports both product-based and dose-based prescribing. These instructions were adapted from the [NHS Dose Syntax Implementation Guide](https://developer.nhs.uk/apis/dose-syntax-implementation/).
 
-### Overview
+#### Overview
 
 Structured dose syntax in ePI systems enables precise, machine-readable representation of dosage instructions for medicinal products. This is critical for:
 - **Interoperability**: Sharing medication information between primary and secondary care settings (e.g., hospital admissions, discharge summaries).
@@ -14,7 +14,7 @@ The FHIR R5 `Dosage` structure encodes dosage instructions, supporting simple an
 
 **note**: Instructions for product manipulation or transformation (e.g., reconstitution) are Out-of-Scope.
 
-### Prerequisites
+#### Prerequisites
 
 Before implementing structured dose syntax, ensure familiarity with:
 - **FHIR Dosage**: Refer to [Dosage](https://www.hl7.org/fhir/R5/dosage.html) for details on the structure.
@@ -24,7 +24,7 @@ Before implementing structured dose syntax, ensure familiarity with:
 
 The `ClinicalUseDefinition` resource captures clinical particulars (e.g., indications, dosage recommendations) for a medicinal product. By default, it does not include a `Dosage` element. To address this, a custom FHIR R5 profile, `EPIDosageClinicalUseDefinition`, is defined to add a `dosage` element of type `Dosage` (0..*). This profile ensures dosage instructions are a first-class component of the ePI, improving clarity and interoperability compared to using extensions.
 
-### Key Components of FHIR R5 Dosage Structure
+#### Key Components of FHIR R5 Dosage Structure
 
 The FHIR R5 `Dosage` structure includes elements to describe dosage instructions comprehensively. Below are the key components relevant to ePI implementation, with their purpose and usage:
 
@@ -43,7 +43,7 @@ The FHIR R5 `Dosage` structure includes elements to describe dosage instructions
 - **maxDosePerAdministration**: The maximum dose per administration (e.g., "1 g per dose").
 - **maxDosePerLifetime**: The maximum dose over a patient’s lifetime.
 
-### Implementation Steps
+#### Implementation Steps
 
 Follow these steps to integrate structured dose syntax into an ePI system using the custom `EPIDosageClinicalUseDefinition` profile:
 
@@ -83,11 +83,11 @@ Follow these steps to integrate structured dose syntax into an ePI system using 
    - **Infusions**: Use `dosage.doseAndRate.rateQuantity` for continuous administration (e.g., "10 ml/hour").
    - **Variable Dosing**: Use `doseRange` instead of `doseQuantity` for flexible doses (e.g., "1-2 tablets").
 
-### Examples
+#### Examples
 
 Below are examples of a `MedicinalProductDefinition` and a profiled `ClinicalUseDefinition` with an extension (as an interim approach) for "Paracetamol 500mg, take 2 tablets every 6 hours for 3 days, maximum 8 tablets per day". Note that in the custom profile, the `dosage` element would replace the extension, but the extension is included here as an interim example.
 
-#### MedicinalProductDefinition
+##### MedicinalProductDefinition
 ```json
 {
   "resourceType": "MedicinalProductDefinition",
@@ -105,7 +105,7 @@ Below are examples of a `MedicinalProductDefinition` and a profiled `ClinicalUse
 }
 ```
 
-#### ClinicalUseDefinition (with Extension)
+##### ClinicalUseDefinition (with Extension)
 
 ```json
 {
