@@ -69,8 +69,6 @@ Prepare your tools and infrastructure, including component authoring software, t
 
 ### Step 4: Use Controlled Terminology
 
-## Controlled Terminology in ePI
-
 Controlled terminology refers to a standardized set of terms and codes used to consistently structure and describe medicinal product information, such as dosage forms, routes of administration, units of measurement, ingredient names, and packaging types. This standardization ensures that data is accurate, interoperable, and machine-readable across systems and organizations, enabling regulatory compliance, seamless data exchange, and improved accessibility for pharmaceutical companies, health authorities, healthcare professionals, and patients.
 
 In some cases, terminologies are harmonized internationally (e.g., ISO country codes, language codes, or SI units of measurement). However, most jurisdictions maintain local terminology requirements, necessitating careful alignment with regional standards.
