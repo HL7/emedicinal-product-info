@@ -1,5 +1,3 @@
-## Getting Started with ePI Implementation
-
 This page provides end-to-end instructions for beginners to implement a fully operational Electronic Medicinal Product Information (ePI) solution using the HL7 FHIR ePI Implementation Guide (IG). It’s designed for those new to FHIR and ePI, starting with foundational learning and progressing to practical steps for creating, validating, and sharing an ePI, such as a package leaflet. The guide includes the use of controlled terminology, a phased rollout strategy, and system requirements for structured or component authoring software. By the end, you’ll have a working ePI Type 1 solution and understand the people and systems needed to support it.
 
 ### Step 1: Build a Support Structure
