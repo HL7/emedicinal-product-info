@@ -12,22 +12,22 @@ Not all 14 resources are required to support all ePI-related use cases. Differen
     </thead>
     <tbody>
         <tr>
-            <td style="border: 1px solid black; padding: 8px;">ePI Type 1</td>
+            <td style="border: 1px solid black; padding: 8px;">1</td>
             <td style="border: 1px solid black; padding: 8px;">Bundle, Composition (contained Binary)</td>
             <td style="border: 1px solid black; padding: 8px;">Reproduces the local label template, including section headings, text, bullets, tables, and images, in a semi-structured format.</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 8px;">ePI Type 2</td>
+            <td style="border: 1px solid black; padding: 8px;">2</td>
             <td style="border: 1px solid black; padding: 8px;">Includes Type 1 plus: Organization, Medicinal Product Definition, Regulated Product, Manufactured Product Definition (Ingredient, Molecule), Automated Product Description (Ingredient, Description), Packaged Product</td>
             <td style="border: 1px solid black; padding: 8px;">Captures company details (name, identifier, address, type); details regulatory information (product name, category, regulatory status); specifies authorization details (approval date, license number); describes physical properties of the product in its primary package (strength, ingredients, size, color, shape); details the product's final administrable form (e.g., after reconstitution); describes primary and secondary packaging layers.</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 8px;">ePI Type 3</td>
+            <td style="border: 1px solid black; padding: 8px;">3</td>
             <td style="border: 1px solid black; padding: 8px;">Includes Types 1 and 2 plus: Clinical Use Definition, Medication Statement</td>
             <td style="border: 1px solid black; padding: 8px;">Structures clinical particulars (indications, contraindications, interactions, undesirable effects, warnings); provides structured dose instructions for machine-readable use.</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 8px;">ePI Type 4</td>
+            <td style="border: 1px solid black; padding: 8px;">4</td>
             <td style="border: 1px solid black; padding: 8px;">Includes Types 1, 2, and 3, with: fully structured data components replacing semi-structured narrative, Dose Structure for machine-readable dosing, granular clinical particulars for enhanced personalization and computability</td>
             <td style="border: 1px solid black; padding: 8px;">Represents a digital-first, fully structured ePI where all content is encoded as discrete data elements. Narrative text is minimized and embedded within structured components. Supports advanced personalization, computability, and granular control of clinical and dosing information.</td>
         </tr>
