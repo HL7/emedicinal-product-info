@@ -21,7 +21,7 @@ Not all 14 resources are required to support all ePI-related use cases. Differen
     </tr>
     <tr>
       <td style="border: 1px solid black; padding: 8px; text-align: left;">ePI Type 3</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Includes Type 1 and 2 plus the following:<br><br>a. Clinical Use Definition<br>b. Medication Statement</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Includes Type 1 and 2 plus the following:<br><br>a. Clinical Use Definition<br>b. Dose structure</td>
       <td style="border: 1px solid black; padding: 8px; text-align: left;">a. Describes Indication, contraindication, interactions, undesirable effects, and warnings<br>b. Describes how to structure dose instructions</td>
     </tr>
     <tr>
