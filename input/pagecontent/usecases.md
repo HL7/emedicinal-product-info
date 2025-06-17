@@ -2,12 +2,37 @@
 
 Not all 14 resources are required to support all ePI-related use cases. Different resources can be combined to support various scenarios. To assist implementers in selecting the appropriate resources, ePI resources are organized into the following four types and sub-types:
 
-| ePI Type | In-Scope Resources | Description |
-|----------|--------------------|-------------|
-| **ePI Type 1** | Bundle<br>Composition (contained Binary) | Reproduces the local label template, including section headings, text, bullets, tables, and images, in a semi-structured format. |
-| **ePI Type 2** | Includes Type 1 plus:<br>a. Organization<br>b. Medicinal Product Definition<br>c. Regulated Authorization<br>d. Manufactured Item Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>e. Administrable Product Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>f. Packaged Product Definition | a. Captures company details (name, identifier, address, type).<br>b. Details regulatory information (product name, route of administration, legal/marketing status).<br>c. Specifies authorization details (approval date, license number).<br>d. Describes physical properties of the product in its primary package (strength, ingredients, size, color, shape).<br>e. Details the product's final administrable form (e.g., after reconstitution).<br>f. Describes primary and secondary packaging layers. |
-| **ePI Type 3** | Includes Types 1 and 2 plus:<br>a. Clinical Use Definition<br>b. Medication Statement | a. Structures clinical particulars (indications, contraindications, interactions, undesirable effects, warnings).<br>b. Provides structured dose instructions for machine-readable use. |
-| **ePI Type 4** | Includes Types 1, 2, and 3, with:<br>- Fully structured data components replacing semi-structured narrative.<br>- Dose Structure for machine-readable dosing.<br>- Granular clinical particulars for enhanced personalization and computability. | Represents a digital-first, fully structured ePI where all content is encoded as discrete data elements. Narrative text is minimized and embedded within structured components. Supports advanced personalization, computability, and granular control of clinical and dosing information. |
+<table class="grid">
+  <thead>
+    <tr>
+      <th>ePI Type</th>
+      <th>In-Scope Resources</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>ePI Type 1</b></td>
+      <td>Bundle<br>Composition (contained Binary)</td>
+      <td>Reproduces the local label template, including section headings, text, bullets, tables, and images, in a semi-structured format.</td>
+    </tr>
+    <tr>
+      <td><b>ePI Type 2</b></td>
+      <td>Includes Type 1 plus:<br>a. Organization<br>b. Medicinal Product Definition<br>c. Regulated Authorization<br>d. Manufactured Item Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>e. Administrable Product Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>f. Packaged Product Definition</td>
+      <td>a. Captures company details (name, identifier, address, type).<br>b. Details regulatory information (product name, route of administration, legal/marketing status).<br>c. Specifies authorization details (approval date, license number).<br>d. Describes physical properties of the product in its primary package (strength, ingredients, size, color, shape).<br>e. Details the product's final administrable form (e.g., after reconstitution).<br>f. Describes primary and secondary packaging layers.</td>
+    </tr>
+    <tr>
+      <td><b>ePI Type 3</b></td>
+      <td>Includes Types 1 and 2 plus:<br>a. Clinical Use Definition<br>b. Medication Statement</td>
+      <td>a. Structures clinical particulars (indications, contraindications, interactions, undesirable effects, warnings).<br>b. Provides structured dose instructions for machine-readable use.</td>
+    </tr>
+    <tr>
+      <td><b>ePI Type 4</b></td>
+      <td>Includes Types 1, 2, and 3, with:<br>- Fully structured data components replacing semi-structured narrative.<br>- Dose Structure for machine-readable dosing.<br>- Granular clinical particulars for enhanced personalization and computability.</td>
+      <td>Represents a digital-first, fully structured ePI where all content is encoded as discrete data elements. Narrative text is minimized and embedded within structured components. Supports advanced personalization, computability, and granular control of clinical and dosing information.</td>
+    </tr>
+  </tbody>
+</table>
 
 Refer to [ePI Components](components.html) for an overview of in-scope resources or the [Artifacts page](artifacts.html) for details on profiles, terminologies, and examples.
 
@@ -36,16 +61,57 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
 
 **Use Cases**:
 
-| Use Case | Description | ePI Sub-type Combinations |
-|----------|-------------|--------------------------|
-| Advanced Search | Search by company, product name, license, manufactured form, administrable form, or packaging details. | A; A+B; A+B+C+D; A+B+C+D+F; A+B+C+D+E+F |
-| Drug Shortages | Identify alternative products by company, product, license, manufactured form, and packaging to address shortages. | A+B+C+D+F |
-| Cross-border Travel | Match prescriptions across borders using company and product details. | A+B+D |
-| Distribution | Support ordering and distribution with product and pack identifiers (e.g., GTIN, SKUs). | A+B+C+F |
-| Allergens | Identify potential allergens (e.g., lactose, aspartame) in ingredients. | D |
-| Electronic Health | Support Electronic Medical Records (EMR) and ePrescription by uniquely identifying products and manufacturers. Optionally, differentiate manufactured and administrable forms. | A+B+C+D; A+B+C+D+E |
-| Pharmacovigilance | Track products by manufacturer, authorization, and packaging for adverse event reporting. | A+B+C+F |
-| Inventory Management | Optimize stock management using packaging and product details. | A+B+C+F |
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Use Case</th>
+      <th>Description</th>
+      <th>ePI Sub-type Combinations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Advanced Search</td>
+      <td>Search by company, product name, license, manufactured form, administrable form, or packaging details.</td>
+      <td>A; A+B; A+B+C+D; A+B+C+D+F; A+B+C+D+E+F</td>
+    </tr>
+    <tr>
+      <td>Drug Shortages</td>
+      <td>Identify alternative products by company, product, license, manufactured form, and packaging to address shortages.</td>
+      <td>A+B+C+D+F</td>
+    </tr>
+    <tr>
+      <td>Cross-border Travel</td>
+      <td>Match prescriptions across borders using company and product details.</td>
+      <td>A+B+D</td>
+    </tr>
+    <tr>
+      <td>Distribution</td>
+      <td>Support ordering and distribution with product and pack identifiers (e.g., GTIN, SKUs).</td>
+      <td>A+B+C+F</td>
+    </tr>
+    <tr>
+      <td>Allergens</td>
+      <td>Identify potential allergens (e.g., lactose, aspartame) in ingredients.</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>Electronic Health</td>
+      <td>Support Electronic Medical Records (EMR) and ePrescription by uniquely identifying products and manufacturers. Optionally, differentiate manufactured and administrable forms.</td>
+      <td>A+B+C+D; A+B+C+D+E</td>
+    </tr>
+    <tr>
+      <td>Pharmacovigilance</td>
+      <td>Track products by manufacturer, authorization, and packaging for adverse event reporting.</td>
+      <td>A+B+C+F</td>
+    </tr>
+    <tr>
+      <td>Inventory Management</td>
+      <td>Optimize stock management using packaging and product details.</td>
+      <td>A+B+C+F</td>
+    </tr>
+  </tbody>
+</table>
 
 ## ePI Type 3 (a and b)
 
@@ -59,8 +125,8 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
 **Use Cases**:
 1. **Polypharmacy Personalization**: Use structured interaction data to identify drug:drug, drug:food, drug:lab, or drug:other interactions for individual patients.
 2. **Automated Dosing Instructions**: Encode dosing instructions (e.g., "take two 20 mg tablets daily for two weeks") for delivery to mobile apps or eHealth platforms.
-4. **Clinical Decision Support**: Integrate structured clinical particulars into EMR systems to alert healthcare professionals or patients about interactions, contraindications or warnings.
-5. **Patient Adherence**: Send automated reminders or alerts to patients via apps.
+3. **Clinical Decision Support**: Integrate structured clinical particulars into EMR systems to alert healthcare professionals or patients about interactions, contraindications, or warnings.
+4. **Patient Adherence**: Send automated reminders or alerts to patients via apps.
 
 ## ePI Type 4
 
@@ -71,7 +137,7 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
 - **Enhanced Personalization**: Granular clinical and dosing data enables tailored patient care, such as customized dosing regimens or interaction alerts.
 - **Interoperability**: Standardized data facilitates seamless data exchange across global healthcare systems.
 - **Improved Accessibility**: Structured data can be transformed into various formats (e.g., tables, apps, or voice assistants) for diverse user needs.
-- **Regulatory Efficiency**: Structured data simplifies updates,  submissions, and review by health authorities.
+- **Regulatory Efficiency**: Structured data simplifies updates, submissions, and review by health authorities.
 
 **Use Cases**:
 1. **Personalized Medicine**: Use granular clinical particulars (e.g., indications, contraindications) to tailor treatment plans based on patient comorbidities, interactions, or conditions.
