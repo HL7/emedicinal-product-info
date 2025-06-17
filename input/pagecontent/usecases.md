@@ -1,37 +1,37 @@
 # Use Cases
 
-Not all 14 resources are required to support all ePI-related use cases. Different resources can be combined to support various scenarios. To assist implementers in selecting the appropriate resources, ePI resources are organized into the following four types and sub-types:
+Not all 14 resources are required to support all ePI-related use cases. Different resources can be combined to support various scenarios. To assist implementers in selecting the appropriate resources, ePI resources are arranged into the following four types and sub-types:
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th>ePI Type</th>
-      <th>In-Scope Resources</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>ePI Type 1</b></td>
-      <td>Bundle<br>Composition (contained Binary)</td>
-      <td>Reproduces the local label template, including section headings, text, bullets, tables, and images, in a semi-structured format.</td>
-    </tr>
-    <tr>
-      <td><b>ePI Type 2</b></td>
-      <td>Includes Type 1 plus:<br>a. Organization<br>b. Medicinal Product Definition<br>c. Regulated Authorization<br>d. Manufactured Item Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>e. Administrable Product Definition<br>&nbsp;&nbsp;- Ingredient<br>&nbsp;&nbsp;- Substance Definition<br>f. Packaged Product Definition</td>
-      <td>a. Captures company details (name, identifier, address, type).<br>b. Details regulatory information (product name, route of administration, legal/marketing status).<br>c. Specifies authorization details (approval date, license number).<br>d. Describes physical properties of the product in its primary package (strength, ingredients, size, color, shape).<br>e. Details the product's final administrable form (e.g., after reconstitution).<br>f. Describes primary and secondary packaging layers.</td>
-    </tr>
-    <tr>
-      <td><b>ePI Type 3</b></td>
-      <td>Includes Types 1 and 2 plus:<br>a. Clinical Use Definition<br>b. Medication Statement</td>
-      <td>a. Structures clinical particulars (indications, contraindications, interactions, undesirable effects, warnings).<br>b. Provides structured dose instructions for machine-readable use.</td>
-    </tr>
-    <tr>
-      <td><b>ePI Type 4</b></td>
-      <td>Includes Types 1, 2, and 3, with:<br>- Fully structured data components replacing semi-structured narrative.<br>- Dose Structure for machine-readable dosing.<br>- Granular clinical particulars for enhanced personalization and computability.</td>
-      <td>Represents a digital-first, fully structured ePI where all content is encoded as discrete data elements. Narrative text is minimized and embedded within structured components. Supports advanced personalization, computability, and granular control of clinical and dosing information.</td>
-    </tr>
-  </tbody>
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">ePI Type</th>
+            <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Type</th>
+            <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">ePI Type 1</td>
+            <td style="border: 1px solid black; padding: 8px;">Bundle, Composition (contained Binary)</td>
+            <td style="border: 1px solid black; padding: 8px;">Reproduces the local label template, including section headings, text, bullets, tables, and images, in a semi-structured format.</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">ePI Type 2</td>
+            <td style="border: 1px solid black; padding: 8px;">Includes Type 1 plus: Organization, Medicinal Product Definition, Regulated Product, Manufactured Product Definition (Ingredient, Molecule), Automated Product Description (Ingredient, Description), Packaged Product</td>
+            <td style="border: 1px solid black; padding: 8px;">Captures company details (name, identifier, address, type); details regulatory information (product name, category, regulatory status); specifies authorization details (approval date, license number); describes physical properties of the product in its primary package (strength, ingredients, size, color, shape); details the product's final administrable form (e.g., after reconstitution); describes primary and secondary packaging layers.</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">ePI Type 3</td>
+            <td style="border: 1px solid black; padding: 8px;">Includes Types 1 and 2 plus: Clinical Use Definition, Medication Statement</td>
+            <td style="border: 1px solid black; padding: 8px;">Structures clinical particulars (indications, contraindications, interactions, undesirable effects, warnings); provides structured dose instructions for machine-readable use.</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">ePI Type 4</td>
+            <td style="border: 1px solid black; padding: 8px;">Includes Types 1, 2, and 3, with: fully structured data components replacing semi-structured narrative, Dose Structure for machine-readable dosing, granular clinical particulars for enhanced personalization and computability</td>
+            <td style="border: 1px solid black; padding: 8px;">Represents a digital-first, fully structured ePI where all content is encoded as discrete data elements. Narrative text is minimized and embedded within structured components. Supports advanced personalization, computability, and granular control of clinical and dosing information.</td>
+        </tr>
+    </tbody>
 </table>
 
 Refer to [ePI Components](components.html) for an overview of in-scope resources or the [Artifacts page](artifacts.html) for details on profiles, terminologies, and examples.
@@ -59,58 +59,58 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
 - Supports supply chain transparency and traceability.
 - Enables cross-border recognition of medicinal products.
 
-**Use Cases**:
+**Use Cases**: ePI Type 2 uses resources like Organization, Medicinal Product Definition, Regulated Product, Manufactured Product Definition, Automated Product Description, and Packaged Product to support various scenarios. The table below lists key use cases and the specific resources required for each, making it easier to implement targeted functionality.
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Use Case</th>
-      <th>Description</th>
-      <th>ePI Sub-type Combinations</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Advanced Search</td>
-      <td>Search by company, product name, license, manufactured form, administrable form, or packaging details.</td>
-      <td>A; A+B; A+B+C+D; A+B+C+D+F; A+B+C+D+E+F</td>
-    </tr>
-    <tr>
-      <td>Drug Shortages</td>
-      <td>Identify alternative products by company, product, license, manufactured form, and packaging to address shortages.</td>
-      <td>A+B+C+D+F</td>
-    </tr>
-    <tr>
-      <td>Cross-border Travel</td>
-      <td>Match prescriptions across borders using company and product details.</td>
-      <td>A+B+D</td>
-    </tr>
-    <tr>
-      <td>Distribution</td>
-      <td>Support ordering and distribution with product and pack identifiers (e.g., GTIN, SKUs).</td>
-      <td>A+B+C+F</td>
-    </tr>
-    <tr>
-      <td>Allergens</td>
-      <td>Identify potential allergens (e.g., lactose, aspartame) in ingredients.</td>
-      <td>D</td>
-    </tr>
-    <tr>
-      <td>Electronic Health</td>
-      <td>Support Electronic Medical Records (EMR) and ePrescription by uniquely identifying products and manufacturers. Optionally, differentiate manufactured and administrable forms.</td>
-      <td>A+B+C+D; A+B+C+D+E</td>
-    </tr>
-    <tr>
-      <td>Pharmacovigilance</td>
-      <td>Track products by manufacturer, authorization, and packaging for adverse event reporting.</td>
-      <td>A+B+C+F</td>
-    </tr>
-    <tr>
-      <td>Inventory Management</td>
-      <td>Optimize stock management using packaging and product details.</td>
-      <td>A+B+C+F</td>
-    </tr>
-  </tbody>
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Use Case</th>
+            <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Description</th>
+            <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Key Resources</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Advanced Search</td>
+            <td style="border: 1px solid black; padding: 8px;">Search by company, product name, license, manufactured form, administrable form, or packaging details.</td>
+            <td style="border: 1px solid black; padding: 8px;">Organization, Medicinal Product Definition, Regulated Product, Manufactured Product Definition, Automated Product Description, Packaged Product</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Drug Shortages</td>
+            <td style="border: 1px solid black; padding: 8px;">Identify alternative products by company, product, license, manufactured form, and packaging to address shortages.</td>
+            <td style="border: 1px solid black; padding: 8px;">Organization, Medicinal Product Definition, Regulated Product, Manufactured Product Definition, Packaged Product</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Cross-border Travel</td>
+            <td style="border: 1px solid black; padding: 8px;">Match prescriptions across borders using company and product details.</td>
+            <td style="border: 1px solid black; padding: 8px;">Organization, Medicinal Product Definition, Manufactured Product Definition</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Distribution</td>
+            <td style="border: 1px solid black; padding: 8px;">Support ordering and distribution with product and pack identifiers (e.g., GTIN, SKUs).</td>
+            <td style="border: 1px solid black; padding: 8px;">Organization, Medicinal Product Definition, Regulated Product, Packaged Product</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Allergens</td>
+            <td style="border: 1px solid black; padding: 8px;">Identify potential allergens (e.g., lactose, aspartame) in ingredients.</td>
+            <td style="border: 1px solid black; padding: 8px;">Manufactured Product Definition (Ingredient)</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Electronic Health</td>
+            <td style="border: 1px solid black; padding: 8px;">Support Electronic Medical Records (EMR) and ePrescription by uniquely identifying products and manufacturers. Optionally, differentiate manufactured and administrable forms.</td>
+            <td style="border: 1px solid black; padding: 8px;">Organization, Medicinal Product Definition, Regulated Product, Manufactured Product Definition, Automated Product Description</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Pharmacovigilance</td>
+            <td style="border: 1px solid black; padding: 8px;">Track products by manufacturer, authorization, and packaging for adverse event reporting.</td>
+            <td style="border: 1px solid black; padding: 8px;">Organization, Medicinal Product Definition, Regulated Product, Packaged Product</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">Inventory Management</td>
+            <td style="border: 1px solid black; padding: 8px;">Optimize stock management using packaging and product details.</td>
+            <td style="border: 1px solid black; padding: 8px;">Organization, Medicinal Product Definition, Regulated Product, Packaged Product</td>
+        </tr>
+    </tbody>
 </table>
 
 ## ePI Type 3 (a and b)
