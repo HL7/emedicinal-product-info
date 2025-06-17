@@ -1,5 +1,3 @@
-# Use Cases
-
 Not all 14 resources are required to support all ePI-related use cases. Different resources can be combined to support various scenarios. To assist implementers in selecting the appropriate resources, ePI resources are arranged into the following four types and sub-types:
 
 <table style="border-collapse: collapse; width: 100%;">
