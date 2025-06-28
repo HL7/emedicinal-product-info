@@ -21,7 +21,7 @@ Not all 14 resources are required to support all ePI-related use cases. Differen
         </tr>
         <tr>
             <td style="border: 1px solid black; padding: 8px;">3</td>
-            <td style="border: 1px solid black; padding: 8px;">Includes Types 1 and 2 plus: Clinical Use Definition, Medication Statement</td>
+            <td style="border: 1px solid black; padding: 8px;">Includes Types 1 and 2 plus: Clinical Use Definition, Medication Knowledge</td>
             <td style="border: 1px solid black; padding: 8px;">Structures clinical particulars (indications, contraindications, interactions, undesirable effects, warnings); provides structured dose instructions for machine-readable use.</td>
         </tr>
         <tr>
