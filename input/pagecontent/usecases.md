@@ -34,7 +34,7 @@ Not all 14 resources are required to support all ePI-related use cases. Differen
 
 Refer to [ePI Components](components.html) for an overview of in-scope resources or the [Artifacts page](artifacts.html) for details on profiles, terminologies, and examples.
 
-## ePI Type 1
+### ePI Type 1
 
 **Description**: ePI Type 1 is the minimum requirement for an ePI, enabling the recreation of existing label templates in a semi-structured format. It supports the creation of Healthcare Professional (HCP) labels, Patient Information Leaflets (PILs), or label text for artwork, such as EMA’s QRD template.
 
@@ -48,7 +48,7 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
 2. **Patient Education**: Provides accessible, readable PILs for patients via apps or websites.
 3. **Artwork Generation**: Supplies structured text for packaging and labeling design.
 
-## ePI Type 2 (a to f)
+### ePI Type 2 (a to f)
 
 **Description**: Builds on Type 1 by adding resources to describe the company, product, authorization, physical properties, dose form, and packaging, enabling advanced search and interoperability.
 
@@ -111,7 +111,7 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
     </tbody>
 </table>
 
-## ePI Type 3 (a and b)
+### ePI Type 3 (a and b)
 
 **Description**: Extends Types 1 and 2 with structured clinical particulars and dosing instructions, supporting personalization and interoperability with electronic health services.
 
@@ -126,7 +126,7 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
 3. **Clinical Decision Support**: Integrate structured clinical particulars into EMR systems to alert healthcare professionals or patients about interactions, contraindications, or warnings.
 4. **Patient Adherence**: Send automated reminders or alerts to patients via apps.
 
-## ePI Type 4
+### ePI Type 4
 
 **Description**: ePI Type 4 adopts a fully structured, digital-first approach, where all content is encoded as discrete data elements using standardized terminologies (e.g., SNOMED, ICD, MED-RT, MedDRA). Narrative text is minimized and embedded within structured components only where necessary. It incorporates the **Dose Structure** for machine-readable dosing information and provides granular control of clinical particulars, enabling advanced personalization, computability, and interoperability.
 
@@ -147,6 +147,6 @@ Refer to [ePI Components](components.html) for an overview of in-scope resources
 7. **AI-Driven Insights**: Enable AI models to analyze structured ePI data for drug discovery, interaction prediction, or population health trends.
 8. **Accessibility**: Use structured, multilingual data to deliver tailored health information to underserved populations via low-bandwidth apps.
 
-## Recommendation
+### Recommendation
 
 **ePI Type 2** remains the recommended starting point for most implementers, as it enables advanced search, cross-border access, and foundational support for electronic health records, ePrescriptions, and allergen identification. For implementers aiming for advanced personalization, computability, and digital transformation, **ePI Type 4** is the ultimate goal, offering fully structured data, machine-readable dosing, and granular clinical control to support next-generation healthcare applications.

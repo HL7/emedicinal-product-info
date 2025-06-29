@@ -1,13 +1,13 @@
 This page helps you initiate a project or form a team to implement **ePI** using the HL7 FHIR standard within your organization.
 
-## Prerequisites
+### Prerequisites
 
 To begin, ensure your organization has:
 - Basic understanding of **HL7 FHIR R5** (http://hl7.org/fhir/modules.html).
 - Access to **FHIR tools** (e.g., FHIR server like HAPI FHIR, FHIR authoring tool).
 - Basic understanding of how to comply with **regional regulations**.
 
-## Steps to Start an ePI Implementation Project
+### Steps to Start an ePI Implementation Project
 
 The following table outlines recommended steps to establish a project or team for ePI implementation:
 
@@ -108,7 +108,7 @@ The following table outlines recommended steps to establish a project or team fo
   </tbody>
 </table>
 
-## Tips for Success
+### Tips for Success
 - **Start Small**: Begin with a pilot project for one product or region.
 - **Leverage Resources**: Use example ePIs as a starting point [Artifacts/Examples](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#5).
 - **Train the Team**: Provide FHIR and ePI training to address skill gaps.

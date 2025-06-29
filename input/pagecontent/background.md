@@ -1,12 +1,12 @@
 This page introduces drug labels, electronic Product Information (ePI), and the Fast Healthcare Interoperability Resources (FHIR) standard, highlighting their role in the ePI FHIR Implementation Guide (IG). It emphasizes how ePI and FHIR enable global standardization and seamless exchange of drug label information across jurisdictions.
 
-## What is a Drug Label?
+### What is a Drug Label?
 
 A drug label is a regulatory document providing critical information about a medicinal product, tailored for healthcare professionals, patients, and product packaging. These documents are not static; they are continuously updated with new or revised information, such as new safety warnings (e.g., black box warnings for adverse effects), updated indications (e.g., expanded use for a new condition), or revised dosing instructions (e.g., adjusted pediatric doses based on clinical trials). For **healthcare professionals**, documents like Health Canada’s Product Monograph or the EMA’s Summary of Product Characteristics (SmPC) offer detailed scientific and regulatory information on properties, indications, dosage, and safety. For **patients**, documents like the EMA’s package leaflet or FDA’s patient package insert provide accessible guidance on usage, side effects, and precautions. For **packaging**, concise labeling includes dosage and storage instructions directly on the product. 
 
 Current challenges include **fragmentation** in formats: the USA uses Structured Product Labeling (SPL), some regions use custom XML or FHIR, and many rely on DOCX or PDF, leading to interoperability issues, inconsistent standards, and difficulties in updating or sharing data globally. ePI addresses these by unifying formats into a standardized, digital framework.
 
-## Why ePI? The Need for Digital Transformation
+### Why ePI? The Need for Digital Transformation
 
 Electronic Product Information (ePI) transforms drug labels into structured, digital formats using FHIR. Unlike static PDFs, ePI offers:
 - **Enhanced Access**: Available via apps, EHRs, ePrescriptions, or product catalogues.
@@ -17,7 +17,7 @@ Electronic Product Information (ePI) transforms drug labels into structured, dig
 
 The shift to ePI addresses challenges like outdated formats, limited searchability, and inconsistent regional standards, aligning with global digital health strategies.
 
-## FHIR: Enabling ePI
+### FHIR: Enabling ePI
 
 FHIR (Fast Healthcare Interoperability Resources) is an HL7 standard for exchanging healthcare data using modern web technologies (e.g., JSON, XML, RESTful APIs). In ePI, FHIR structures drug label information for interoperability and accessibility. The Base ePI Profile provides a universal template, adaptable to regional needs (e.g., EMA, FDA, PMDA, Jordan FDA).
 
@@ -60,7 +60,7 @@ The table below highlights FHIR’s role in ePI:
   </tbody>
 </table>
 
-## Global Harmonization Through ePI
+### Global Harmonization Through ePI
 
 ePI and FHIR promote international harmonization by providing a unified technical standard for drug labels, addressing regional technical variations. A single ePI document, built on the Base ePI Profile, can be adapted for multiple jurisdictions, reducing redundancy and costs. For example, an ePI Type 1 can unify technical standards across EMA, PMDA, and FDA whil still respecting local regulatory rules, templates, and regulations. 
 

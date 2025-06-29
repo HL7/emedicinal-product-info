@@ -1,6 +1,4 @@
-# Version Control of FHIR ePI Document Bundles
-
-## Overview
+### Overview
 
 Drug labels have a sequential lifecycle, with a single branch of versions that includes both authorized (approved) and draft versions under regulatory review. This page describes how to manage the versioning of electronic Product Information (ePI) document bundles, supporting the following lifecycle requirements:
 
@@ -12,7 +10,7 @@ Drug labels have a sequential lifecycle, with a single branch of versions that i
 
 This versioning approach ensures traceability, reproducibility, and alignment with regulatory processes while leveraging FHIR resources and principles.
 
-## Version Control Model
+### Version Control Model
 
 The version control model for ePI document bundles is structured as a single sequential branch of versions, distinguished by their status:
 
@@ -22,7 +20,7 @@ The version control model for ePI document bundles is structured as a single seq
 4. **Withdrawing Drafts**: Drafts that are withdrawn are marked with `Composition.status` set to `entered-in-error` and retained for audit purposes, without affecting the authorized sequence.
 5. **Version Relationships**: The relationship between a version and its predecessor(s) (e.g., the authorized version a draft is derived from, or the drafts merged into a new version) is tracked using the `Composition.relatesTo` element, referencing predecessor `Composition` resources via their version-specific `Bundle.identifier`.
 
-### FHIR Resource Representation
+#### FHIR Resource Representation
 
 The version control model is implemented using the following FHIR resources:
 
@@ -35,7 +33,7 @@ The version control model is implemented using the following FHIR resources:
 
 **Note on Version Relationships**: To track how a version relates to its predecessors, the `Composition.relatesTo` element references the `Composition` resources in predecessor `Bundle` versions using their version-specific `Bundle.identifier`. For example, a merged draft `Composition` includes `relatesTo` entries for each source draft’s `Bundle.identifier` (e.g., `epi-456-draft-stability`, `epi-456-draft-safety`), with a custom code (`derived-from`) indicating the relationship. This approach ensures traceability without requiring separate resources like `Provenance`.
 
-#### Custom Code System
+##### Custom Code System
 The `Composition.relatesTo.code` uses the following custom code system:
 - **URI**: `http://yourcompany.com/codes`
 - **Codes**:
@@ -44,7 +42,7 @@ The `Composition.relatesTo.code` uses the following custom code system:
 
 Implementers must use this code system for `relatesTo.code` to ensure consistency and support validation.
 
-#### Identifiers for Versioning
+##### Identifiers for Versioning
 
 - **Bundle.id**: A server-specific logical identifier (`id` type) that remains constant across all versions of an ePI document within a single FHIR server (e.g., `epi-456`). It enables resource retrieval (e.g., `GET /Bundle/epi-456`) and versioning (e.g., `GET /Bundle/epi-456/_history/1`). When exchanging a `Bundle` with an external server (e.g., EMA’s FHIR server), the receiving server assigns its own `Bundle.id` (e.g., `ema-epi-12345`), as `Bundle.id` is not preserved across systems.
 - **Bundle.meta.versionId**: A version-specific identifier (`id` type) that uniquely distinguishes each version of the `Bundle` within a server (e.g., `1`, `2`, `3`). The `Bundle.meta.versionId` increments by one each time the `Bundle` changes (e.g., new draft, approval, merge, withdrawal). The combination of `Bundle.id` and `Bundle.meta.versionId` (e.g., `epi-456/1`) is unique per version on a given server. For example, updating `Bundle` metadata without changing the `Composition` increments `Bundle.meta.versionId` (e.g., from `5` to `6`) but not `Composition.version`.
@@ -57,7 +55,7 @@ Implementers must use this code system for `relatesTo.code` to ensure consistenc
   - **Merged Drafts**: Use `epi-<id>-draft-merged` or include a specific description (e.g., `epi-456-draft-merged-stability-safety`).
 - **Implementation Note**: Ensure both `Bundle.identifier` entries are included in every ePI `Bundle` with consistent `system` and `value` conventions. The consistent identifier’s `system` (e.g., `http://yourcompany.com/epi`) defines the namespace for the ePI document, while the version-specific identifier’s `system` (e.g., `http://yourcompany.com/epi-version`) defines the namespace for version tracking. Use conditional updates (e.g., `PUT /Bundle?identifier=http://yourcompany.com/epi|epi-456`) to preserve your `Bundle.id` when storing updated versions from external servers. Multiple `identifier` entries may include manufacturer and regulatory identifiers (e.g., `system: http://ema.europa.eu/epi`). When exchanging with external servers, use the consistent `Bundle.identifier` to match incoming `Bundle` instances to your ePI document and the version-specific `Bundle.identifier` to track specific versions.
 
-### Authorized Versions
+#### Authorized Versions
 
 Authorized versions are regulator-approved ePI `Bundle` resources, forming the official sequence of the drug label. Key attributes include:
 
@@ -68,7 +66,7 @@ Authorized versions are regulator-approved ePI `Bundle` resources, forming the o
 - **`Composition.status`**: Set to `final` to indicate regulatory approval.
 - **`Bundle.meta.lastUpdated`**: The timestamp of the approval or last update to the version.
 
-### Draft Versions
+#### Draft Versions
 
 Draft versions are proposed updates derived from the latest authorized version, each a separate ePI `Bundle` resource. Key attributes include:
 
@@ -79,7 +77,7 @@ Draft versions are proposed updates derived from the latest authorized version, 
 - **`Composition.version`**: A whole-number version (e.g., `2`) that increments by one with each `Composition` change, reflecting the anticipated authorized version number if approved.
 - **`Composition.status`**: Set to `preliminary` to indicate the draft is not yet approved.
 
-### Incorporating Drafts into Authorized Versions
+#### Incorporating Drafts into Authorized Versions
 
 When a draft is approved by the regulator, it is incorporated into the sequential branch as a new authorized `Bundle`. The process is as follows:
 
@@ -96,7 +94,7 @@ When a draft is approved by the regulator, it is incorporated into the sequentia
    - Update the draft `Bundle` to reflect its incorporation (e.g., by tagging it as `approved`).
    - Retain the draft `Bundle` in a read-only state for audit purposes.
 
-### Merging Drafts
+#### Merging Drafts
 
 Two or more drafts may be merged into a single draft `Bundle` for regulatory submission. The process is as follows:
 
@@ -108,7 +106,7 @@ Two or more drafts may be merged into a single draft `Bundle` for regulatory sub
    - Assign the next `Composition.version` (e.g., `2`) to reflect the consolidated content.
    - Set `Composition.status` to `preliminary`.
 
-### Withdrawing Drafts
+#### Withdrawing Drafts
 
 Drafts that are withdrawn by the submitting organization are not incorporated into the authorized sequence. The process is as follows:
 
@@ -121,7 +119,7 @@ Drafts that are withdrawn by the submitting organization are not incorporated in
 2. **Retain for Audit**:
    - Retain the draft `Bundle` in the system for audit and traceability, ensuring it is not used for further development unless reactivated.
 
-### Implementation Considerations
+#### Implementation Considerations
 
 - **Storage and Retrieval**: Store ePI `Bundle` resources in a FHIR server or document repository. Use the consistent `Bundle.identifier` (e.g., `http://yourcompany.com/epi/epi-456`) to retrieve all versions of an ePI document and the version-specific `Bundle.identifier` (e.g., `http://yourcompany.com/epi-version/epi-456-draft-stability`) to retrieve a specific version. Implementers may use a `List` resource to group related drafts or versions for easier navigation.
 - **Version Identifiers**: Use whole numbers for both `Bundle.meta.versionId` (e.g., `1`, `2`, `3`) and `Composition.version` (e.g., `1`, `2`), incrementing by one with each `Bundle` or `Composition` change, respectively. The version-specific `Bundle.identifier` provides a human-readable, cross-system version identifier (e.g., `epi-456-draft-stability`).
@@ -142,7 +140,7 @@ Drafts that are withdrawn by the submitting organization are not incorporated in
   - Coordinate with external systems (e.g., EMA) on `Bundle.identifier` systems to ensure interoperability. Include additional `identifier` entries for regulatory identifiers (e.g., `system: http://ema.europa.eu/epi`, `value: ema-789`) if required. Ensure the `Composition.relatesTo` element is preserved during exchanges.
   - If conditional updates are not supported by your server, map incoming `Bundle` instances to your ePI using the consistent `Bundle.identifier` and create a new version with the next `Bundle.meta.versionId` and version-specific `Bundle.identifier`, retaining the `Composition.relatesTo` element.
 
-## Version Lifecycle Scenario
+### Version Lifecycle Scenario
 
 The following table illustrates a version lifecycle for an ePI document, starting with a draft submitted as part of an original application, followed by its approval, and subsequent draft versions for stability and safety updates, which are merged and approved, with an additional draft withdrawn. The scenario demonstrates the sequential versioning model, with authorized versions (`Composition.status: final`) and draft versions (`Composition.status: preliminary`) in a single branch. The consistent `Bundle.identifier` (`system: http://yourcompany.com/epi`, `value: epi-456`) is implied for all versions but not shown for brevity.
 
@@ -166,21 +164,21 @@ The following table illustrates a version lifecycle for an ePI document, startin
 - The table includes a merge of stability and safety drafts (`draft-merged`) and a withdrawn draft (`draft-safety-2`) to illustrate all lifecycle aspects.
 - Timestamps reflect a realistic regulatory review timeline.
 
-## Constraints and Extensions
+### Constraints and Extensions
 
 - **Constraint**: All ePI `Bundle` resources must have a consistent `Bundle.identifier` to ensure they pertain to the same drug label, plus a version-specific `Bundle.identifier` for each version.
 - **Constraint**: Authorized `Bundle` resources must have `Composition.status` set to `final`, drafts must use `preliminary`, and withdrawn drafts must use `entered-in-error`.
 - **Constraint**: `Bundle.meta.versionId` and `Composition.version` must be whole numbers (e.g., `1`, `2`, `3`), incrementing by one with each `Bundle` or `Composition` change, respectively.
 - **Constraint**: `Composition.relatesTo` must be included in each `Composition` (except the initial version) to reference the version-specific `Bundle.identifier` of the predecessor `Bundle` containing the related `Composition`, using the `derived-from` or `replaces` code.
 
-## Security and Access Control
+### Security and Access Control
 
 - Restrict access to draft `Bundle` resources to authorized organizations (e.g., the submitting company and regulator). Use FHIR’s `Bundle.meta.security` or `Bundle.meta.tag` to label drafts as restricted (e.g., `http://terminology.hl7.org/CodeSystem/v3-Confidentiality|R` for restricted access). Implement OAuth 2.0 or SMART on FHIR for role-based access control, ensuring drafts are accessible only to authorized users until approved.
 - Ensure that authorized `Bundle` resources are accessible to all authorized stakeholders (e.g., healthcare providers, patients) once approved, using appropriate access policies (e.g., public read access for `Composition.status: final`).
 
-## Examples
+### Examples
 
-### Merged Draft Bundle (Stability and Safety)
+#### Merged Draft Bundle (Stability and Safety)
 ```json
 {
   "resourceType": "Bundle",

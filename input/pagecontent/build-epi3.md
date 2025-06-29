@@ -1,12 +1,12 @@
 This guide describes how to create an **ePI Type 3** document.
 
-## What is ePI Type 3?
+### What is ePI Type 3?
 
 ePI Type 3 adds clinical details and structured dose to the ePI.
 
 For a list of all ePI components, see the [ePI components page](./epi-components.md) or the [Artifacts/Profiles](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2).
 
-## Overview of Resources Involved
+### Overview of Resources Involved
 
 ePI Type 3 uses the following FHIR resources to structure the clinical use document:
 - **Bundle**: The container for the ePI document.
@@ -16,7 +16,7 @@ ePI Type 3 uses the following FHIR resources to structure the clinical use docum
 - **ClinicalUseDefinition**: Specifies clinical details (e.g., indications, contraindications).
 - **MedicationKnowledge**: Structures dosage information.
 
-## Detailed Component Descriptions
+### Detailed Component Descriptions
 
 The table below describes each resource’s purpose, key fields, and role in ePI Type 3:
 
@@ -87,7 +87,7 @@ The table below describes each resource’s purpose, key fields, and role in ePI
   </tbody>
 </table>
 
-## Steps to Build an ePI Type 3 Document
+### Steps to Build an ePI Type 3 Document
 
 The following table provides step-by-step instructions to create an ePI Type 3 document:
 
@@ -176,6 +176,6 @@ The following table provides step-by-step instructions to create an ePI Type 3 d
   </tbody>
 </table>
 
-## Additional Resources
+### Additional Resources
 - **ePI Profile**: Refer to the [Profiles]([./epi-components.md](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2)) page for details on FHIR resources.
 - **Technical Style Guide**: Follow the [style guide](./style-guide.md) for structuring narrative content (e.g., paragraphs, tables, bullets) in XHTML.

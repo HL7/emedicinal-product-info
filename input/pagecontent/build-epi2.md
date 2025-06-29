@@ -1,12 +1,12 @@
 This page describes how to create an **ePI Type 2** document.
 
-## What is ePI Type 2?
+### What is ePI Type 2?
 
 ePI Type 2 adds product and organizational details to the ePI.
 
 For a list of all ePI components, see the [ePI components page](./epi-components.md) or the [Artifacts/Profiles](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2).
 
-## Overview of Resources Involved
+### Overview of Resources Involved
 
 ePI Type 2 uses the following FHIR resources:
 - **Bundle**: The container for the ePI document.
@@ -21,7 +21,7 @@ ePI Type 2 uses the following FHIR resources:
 - **Ingredient**: Specifies the product’s ingredients.
 - **Substance**: Details substances in the product.
 
-## Detailed Component Descriptions
+### Detailed Component Descriptions
 
 The table below describes each resource’s purpose, key fields, and role in ePI Type 2:
 
@@ -149,7 +149,7 @@ The table below describes each resource’s purpose, key fields, and role in ePI
   </tbody>
 </table>
 
-## Steps to Build an ePI Type 2 Document
+### Steps to Build an ePI Type 2 Document
 
 The following table provides step-by-step instructions to create an ePI Type 2 document:
 
@@ -274,6 +274,6 @@ The following table provides step-by-step instructions to create an ePI Type 2 d
   </tbody>
 </table>
 
-## Additional Resources
+### Additional Resources
 - **ePI Profile**: Refer to the [Profiles]([./epi-components.md](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2)) page for details on FHIR resources.
 - **Technical Style Guide**: Follow the [style guide](./style-guide.md) for structuring narrative content (e.g., paragraphs, tables, bullets) in XHTML.

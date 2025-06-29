@@ -63,7 +63,7 @@ The following table lists the in-scope resources and provides a brief descriptio
       <td style="border: 1px solid black; padding: 8px; text-align: left;">Captures structured data for indications, contraindications, interactions, undesirable effects, and warnings. In ePI Type 3, supports personalization (e.g., polypharmacy checks). In ePI Type 4, encodes each indication or effect with terminologies like SNOMED or MedDRA.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Medication Statement</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: left;">Medication Knowledge</td>
       <td style="border: 1px solid black; padding: 8px; text-align: left;">Structures dosing instructions in a machine-readable format (e.g., "take two 20 mg tablets once per day for two weeks"). In ePI Type 3, enables automated notifications via mobile devices or eHealth apps.</td>
     </tr>
   </tbody>
