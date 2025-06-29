@@ -1,5 +1,3 @@
-# Building an ePI Type 1 Document
-
 This guide describes how to create an **ePI Type 1** document.
 
 ## What is ePI Type 1?
@@ -126,5 +124,5 @@ The following table provides step-by-step instructions to create an ePI Type 1 d
 </table>
 
 ## Additional Resources
-- **ePI Components**: See the [ePI components page](./epi-components.md) for details on FHIR resources.
+- **ePI Profile**: Refer to the [Profiles]([./epi-components.md](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2)) page for details on FHIR resources.
 - **Technical Style Guide**: Follow the [style guide](./style-guide.md) for structuring narrative content (e.g., paragraphs, tables, bullets) in XHTML.
