@@ -16,6 +16,9 @@ ePI Type 3 uses the following FHIR resources to structure the clinical use docum
 - **ClinicalUseDefinition**: Specifies clinical details (e.g., indications, contraindications).
 - **MedicationKnowledge**: Structures dosage information.
 
+The following figure shows how the ePI Type 3 resources related to each other:
+<img src="epiType3RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 3 resource relationships">
+
 ### Detailed Component Descriptions
 
 The table below describes each resource’s purpose, key fields, and role in ePI Type 3:
