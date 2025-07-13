@@ -22,7 +22,10 @@ ePI Type 2 uses the following FHIR resources:
 - **Substance**: Details substances in the product.
 
 The following figure shows how the ePI Type 2 resources related to each other:
-<img src="epiType2RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 2 resource relationships">
+
+<span style="display: inline-block; vertical-align: middle;">
+  <img src="epiType2RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 2 resource relationships" style="width: 800px; height: auto;" />
+</span>
 
 ### Detailed Component Descriptions
 

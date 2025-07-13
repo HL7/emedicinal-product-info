@@ -14,7 +14,10 @@ ePI Type 1 uses the following FHIR resources:
 - **Binary**: Stores images in Base64 format.
 
 The following figure shows how the ePI Type 1 resources related to each other:
-<img src="epiType1RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 1 resource relationships">
+
+<span style="display: inline-block; vertical-align: middle;">
+  <img src="epiType1RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 1 resource relationships" style="width: 800px; height: auto;" />
+</span>
 
 ### Detailed Component Descriptions
 
