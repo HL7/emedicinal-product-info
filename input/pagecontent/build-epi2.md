@@ -21,7 +21,7 @@ ePI Type 2 uses the following FHIR resources:
 - **Ingredient**: Specifies the product’s ingredients.
 - **Substance**: Details substances in the product.
 
-The following figure shows how the ePI Type 2 resources related to each other:
+The following figure shows how the ePI Type 2 resources relate to each other:
 
 <span style="display: inline-block; vertical-align: middle;">
   <img src="epiType2RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 2 resource relationships" style="width: 800px; height: auto;" />

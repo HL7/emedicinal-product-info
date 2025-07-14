@@ -13,10 +13,10 @@ ePI Type 1 uses the following FHIR resources:
 - **Composition**: Organizes the narrative content (e.g., SmPC section headings and sub-headings).
 - **Binary**: Stores images in Base64 format.
 
-The following figure shows how the ePI Type 1 resources related to each other:
+The following figure shows how the ePI Type 1 resources relate to each other:
 
 <span style="display: inline-block; vertical-align: middle;">
-  <img src="epiType1RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 1 resource relationships" style="width: 800px; height: auto;" />
+  <img src="epiType1RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 1 resource relationships" style="width: 400px; height: auto;" />
 </span>
 
 ### Detailed Component Descriptions
