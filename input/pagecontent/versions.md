@@ -1,5 +1,3 @@
-# Version Control
-
 This page describes the recommended approach for versioning an ePI document throughout its lifecycle. This includes from drafts submitted for review, updates during label assessment, approvals, withdrawals, ePI merges or ePI split.
 
 ## Overview
@@ -102,6 +100,8 @@ The following sections describe how to use the relevant Bundle and Composition e
 1. Both `Bundle.identifier` and `Composition.identifier` allow tracking of the ePI document across systems.
 2. The `Composition.relatesTo` field provides a version history by linking to prior Compositions.
 3. Server-managed fields (`Bundle.id`, `meta.versionId`, `meta.lastUpdated`) ensure compliance with FHIR versioning.
+
+## Viewing ePI Lifecycles
 
 ### Tabular view of an ePI lifecycle
 
@@ -257,18 +257,22 @@ The following sections describe how to use the relevant Bundle and Composition e
 
 ### Graphical view of an ePI lifecycle
 
-The structured version-control metadata in the ePI Bundle/Composition can easily be rendered as a diagram (e.g., using Mermaid, GraphViz, draw.io).
-
-The three figures below illustrate common real-world patterns.
+The version-control metadata in the ePI Bundle/Composition can easily be rendered as a diagram (e.g., using Mermaid, GraphViz, draw.io). See the following figures for examples.
 
 **Figure 1** – From initial draft to first approved ePI
 
-![Initial approval workflow](input/images/ePI-lifecycle-initial-to-approval.png)  
+<span style="display: inline-block; vertical-align: middle;">
+  <img src="ePI-lifecycle-initial-to-approval.png" alt="Initial approval workflow" style="width: 400px; height: auto;" />
+</span>
 
 **Figure 2** – Parallel safety and stability variations with final merge
 
-![Parallel variations and merge](input/images/ePI-lifecycle-branching-and-merge.png)  
+<span style="display: inline-block; vertical-align: middle;">
+  <img src="ePI-lifecycle-branching-and-merge.png" alt="Parallel variations and merge" style="width: 400px; height: auto;" />
+</span>
 
 **Figure 3** – Deprecation / withdrawal of an authorised ePI
 
-![Withdrawal example](input/images/ePI-lifecycle-withdrawal-example.png)  
+<span style="display: inline-block; vertical-align: middle;">
+  <img src="ePI-lifecycle-withdrawal-example.png" alt="Withdrawal example" style="width: 400px; height: auto;" />
+</span>
