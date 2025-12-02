@@ -14,6 +14,7 @@ In addition there are format specific definitions files.
 * [JSON](examples.json.zip)
 * [TTl](examples.ttl.zip)
 
+<!--
 **Cross Version Analysis**
 
 {% include cross-version-analysis.xhtml %}
@@ -29,3 +30,4 @@ In addition there are format specific definitions files.
 **IP Statements**
 
 {% include ip-statements.xhtml %}
+-->
