@@ -13,21 +13,3 @@ In addition there are format specific definitions files.
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
 * [TTl](examples.ttl.zip)
-
-<!--
-**Cross Version Analysis**
-
-{% include cross-version-analysis.xhtml %}
-
-**Dependency Table**
-
-{% include dependency-table.xhtml %}
-
-**Globals Table**
-
-{% include globals-table.xhtml %}
-
-**IP Statements**
-
-{% include ip-statements.xhtml %}
--->
