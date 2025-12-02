@@ -1,50 +1,68 @@
-### Overview
+Electronic Product Information (ePI) is a HL7 FHIR R5 Implementation Guide that defines a global, open standard for structured, digital-first medicinal product information.
 
-The Electronic Medicinal Product Information (ePI) FHIR Implementation Guide (IG) provides a standardized framework for creating, exchanging, and managing electronic product information for medicinal products using HL7 FHIR R5. Developed as a collaboration between the Gravitate Health Project and HL7's Vulcan Accelerator, this IG defines profiles, conformance rules, and terminologies to enable interoperable ePI across jurisdictions, supporting regulators, industry, and vendors in delivering patient-centric solutions.
+## Why Implement ePI?
 
-Unlike traditional DOCX or PDF-based product information, ePI leverages FHIR to structure labeling content for interoperability with national healthcare systems (e.g., Electronic Health Records (EHRs), ePrescriptions, medication management apps). This fosters personalized labeling, advanced search capabilities, and cross-border interoperability, ultimately improving the accessibility of medicinal product information for healthcare proffessionals and patients.
+ePI replaces DOCX or PDF drug labels with fully structured, interoperable, and instantly distributable FHIR documents. The benefits are immediate and transformative:
 
-### Scope and Objectives
+<table style="width:100%; border-collapse:collapse; border:2px solid #d0d0d0;">
+  <thead>
+    <tr style="background-color:#f5f5f5;">
+      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Benefit</th>
+      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">What it means for you</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>One global standard</strong></td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">A single FHIR-based standard built with open-source web standards that are widely supported and easy to implement – no need to develop or maintain custom XML standards per country.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>Advanced Capabilities</strong></td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Enable advanced search, auto-generate comparison tables or pack artwork, facilitate resolving drug shortages.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>Digital Health Interoperability</strong></td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Seamless integration with eHealth systems for ePrescription, eMedical Records, personalization, allergen checking, and regulatory reporting.</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>Future-proof and granular</strong></td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Start with ePI Type 1 or 2 today and evolve to fully structured, personalized leaflets (Type 4) tomorrow without changing the underlying standard.</td>
+    </tr>
+  </tbody>
+</table>
 
-The ePI IG aims to:
-- Define a common global approach for structuring medicinal product information and labeling using HL7 FHIR.
-- Provide technical and business conformance rules for ePI creation and exchange.
-- Support use cases such as structured authoring, component authoring and component reuse, personalized labeling, labels generated with artificial intelligence, advanced search, and automated generation of packaging artwork.
-- Establish a common core ePI Profile as a foundation for region-specific profiles (e.g., USA, EU, Japan) to ensure technical consistency and interoperability.
+## Four Maturity Levels – Choose Your Starting Point
 
-This IG can be used for direct implementation or it can serve as a baseline for deriving jurisdiction-specific profiles that address local requirements.
-
-### Key Features
-
-- **FHIR Resources**: Utilizes 14 FHIR resources (e.g., Bundle, Composition, Medicinal Product Definition) to support ePI use cases. See [FHIR Resources Overview](https://build.fhir.org/ig/HL7/emedicinal-product-info/epi-components.html) for details.
-- **ePI Types**: Organizes resources into four types (1–4) to address varying levels of complexity, from label reproduction to fully structured data. See [Use Cases](https://build.fhir.org/ig/HL7/emedicinal-product-info/usecases.html) for more information.
-- **Terminology**: Leverages standard code systems (e.g., SNOMED, MedDRA) for consistent data encoding.
-- **Interoperability**: Promotes a uniform vendor landscape by aligning with HL7 FHIR standards, enabling integration with EHRs and other healthcare datasets.
-
-### Getting Started
-
-- **Implementers**: Explore the [Use Cases](https://build.fhir.org/ig/HL7/emedicinal-product-info/usecases.html) to understand how ePI Types and resources support specific scenarios, such as cross-border travel or allergen identification.
-- **Developers**: Review the [FHIR Resources Overview](https://build.fhir.org/ig/HL7/emedicinal-product-info/epi-components.html) for detailed descriptions of each resource’s role in ePI.
-- **Regulators**: Use the Base ePI Profile to develop jurisdiction-specific profiles that comply with local regulations.
-- **Vendors**: Leverage the IG’s profiles and terminologies to build compliant ePI solutions.
-
-For technical details, refer to the [Directory of Published Versions](http://build.fhir.org/ig/HL7/emedicinal-product-info/history.html) or the continuous build at [build.fhir.org](http://build.fhir.org/ig/HL7/emedicinal-product-info).
-
-### Contributing
-
-The ePI IG is an open project under HL7' Vulcan Accelerator, Gravitate Health, and HL7's Biomedical Research & Regulation Work Group. We welcome contributions, including:
-- Feedback on profiles and use cases.
-- Pull requests for documentation improvements.
-- Participation in HL7 work group discussions.
-
-To contribute:
-1. Submit pull requests with changes to the team's [Github page](https://github.com/HL7/emedicinal-product-info).
-2. Join discussions on the [FHIR Zulip stream](https://chat.fhir.org/#narrow/stream/296557-Vulcan.2FePI) (requires a free account).
-
-### Acknowledgments
-
-This IG is developed as collaboration between [HL7's Vulcan Accelerator](https://confluence.hl7.org/spaces/VA/pages/66930683/Vulcan+Accelerator+Home) and the [Gravitate Health Project](https://www.gravitatehealth.eu/), with contributions from HL7 Europe, regulators, industry partners, and the vendor community. See [Credits](https://build.fhir.org/ig/HL7/emedicinal-product-info/credits.html) for a list of contributors.
-
----
-
-**License**: © 2022+ HL7 International - Biomedical Research & Regulation Work Group. Licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).  
+<table style="width:100%; border-collapse:collapse; border:2px solid #d0d0d0;">
+  <thead>
+    <tr style="background-color:#f5f5f5;">
+      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Type</th>
+      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Description</th>
+      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Typical Use Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #d0d0d0; padding:12px;">ePI Type 1</td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">FHIR equivalent of authorized DOCX/PDF labels</td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Quick win for industry/regulators to replace existing labels</td>
+    </tr>
+    <tr style="background-color:#e8f5e8; outline: 3px solid #4caf50; outline-offset: -3px;">
+      <td style="border:1px solid #d0d0d0; padding:12px; font-weight:bold; color:#2e7d32;">
+        ePI Type 2 <span style="background:#4caf50; color:white; font-size:0.8em; padding:3px 3px; border-radius:4px; margin-left:1px;">RECOMMENDED STARTING POINT</span>
+      </td>
+      <td style="border:1px solid #d0d0d0; padding:12px; font-weight:500;">Adds structured medicinal product details</td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Advanced search, flag allergens, supply chain traceability, create online product label catalogue</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #d0d0d0; padding:12px;">ePI Type 3</td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Adds structured clinical details</td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Tracking indications, contraindications, interactions (drug:drug, drug:food, drug:device)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #d0d0d0; padding:12px;">ePI Type 4</td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Digital-first, granular, computable components</td>
+      <td style="border:1px solid #d0d0d0; padding:12px;">Personalization, dynamically generated label content, and next-generation apps</td>
+    </tr>
+  </tbody>
+</table>

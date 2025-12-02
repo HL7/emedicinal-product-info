@@ -82,7 +82,7 @@ ePI Type 2 is the recommended starting point for most implementers since it enab
       • MedicinalProductDefinition<br>
       • PharmaceuticalProductDefinition<br>
       • ManufacturedItemDefinition</td>
-      <td>Allows recognition of medicines carried by travelling patients in another jurisdiction.<br><br>Match a prescription or dispensed medicine from another country using manufacturer and product details.</td>
+      <td>Allows recognition of medicines carried by travelling patients in another jurisdiction.</td>
     </tr>
     <tr>
       <td><strong>Type 2d</strong><br>Distribution</td>
@@ -90,17 +90,17 @@ ePI Type 2 is the recommended starting point for most implementers since it enab
       <td>Full end-to-end supply-chain traceability using global identifiers (GTIN, PhPID, PCID).</td>
     </tr>
     <tr>
-      <td><strong>Type 2e</strong><br>Allergens</strong></td>
+      <td><strong>Type 2e</strong><br>Allergens</td>
       <td>• ManufacturedItemDefinition<br>• Ingredient</td>
       <td>Identify and flag allergens or excipients of interest (e.g., lactose, gluten, aspartame, parabens).</td>
     </tr>
     <tr>
-      <td><strong>Type 2f</strong><br>Digital Health &amp; Pharmacovigilance</strong></td>
+      <td><strong>Type 2f</strong><br>Digital Health</td>
       <td>• Organization<br>• MedicinalProductDefinition<br>• RegulatedAuthorization<br>• ManufacturedItemDefinition<br>• AdministrableProductDefinition<br>• Ingredient</td>
       <td>Unique, persistent product linking across clinical and regulatory systems to support ePrescribing and EMR medication lists.</td>
     </tr>
     <tr>
-      <td><strong>Type 3</strong><br>Clinical Guidance &amp; Decision Support</td>
+      <td><strong>Type 3</strong><br>Clinical Guidance</td>
       <td>• ClinicalUseDefinition (Indication, Contraindication, Interaction, Undesirable Effect)<br>• MedicationKnowledge</td>
       <td>Structured clinical details and controlled terminology (SNOMED, ICD, MedDRA) to facilitate interoperability with digital health.<br><br>
         • Interaction alerts (Drug–drug, drug-device, drug-food)<br>
