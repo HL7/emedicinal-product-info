@@ -2,14 +2,26 @@ The following page provides basic tips and recommendations to help implementers 
 
 ## Prerequisites
 
-**Structured/component authoring tool** that can produce compliant FHIR ePI Bundles (**Required**).  
+**Structured/component authoring tool** (**Required**)  
+  
+  These tools are used to create the complete set of FHIR resources that make up a valid ePI document. 
+  
+  They should support full rich text editing, product and document metadata, controlled terminology, component management, lifecycle management (including branched versioning), template management, and style sheet management.
 
-**Style sheet(s)** (XSLT, CSS) that transform the FHIR ePI from XML or JSON into a human-readable HTML (**Required**).  
-  Implementing organizations are free to use the open-source style sheet included in this IG as is, modify it to suit their needs, or develop their own. 
+**Style sheet** (**Required**)
+   
+  Stylesheets (CSS, XSLT) convert the machine-readable FHIR ePIs from XML or JSON into the nicely formatted patient/physician leaflet displayed in browsers or apps.  
+  
+  Implementing organizations are free to use the open-source stylesheet included in this IG as is, modify it, or develop their own.
 
-**FHIR R5-compatible server** with a RESTful API to act as a central ePI repository and enable interoperability with other systems (**optional**, but strongly recommended). For example:  
-- <u>Open-source/self-hosted options</u>: HAPI FHIR, Firely Server, Spark FHIR, LinuxForHealth FHIR Server.  
-- <u>Commercial/managed cloud options</u>: AWS HealthLake, Google Cloud Healthcare API, Microsoft Azure Health Data Services, Smile CDR.
+**FHIR R5-compatible server** (**Optional**, but strongly recommended)
+     
+  A server is a central storage and retrieval system that holds ePIs, allows searching, versioning, and sharing with other systems via standard FHIR operations.  
+  
+  For examples,  
+  Open-source/self-hosted: HAPI FHIR, Firely Server, Spark FHIR, LinuxForHealth FHIR Server  
+  
+  Commercial/managed cloud: AWS HealthLake, Google Cloud Healthcare API, Microsoft Azure Health Data Services, Smile CDR
 
 ## Recommended People Skills
 
@@ -31,14 +43,13 @@ Regulatory / Business staff are recommended to have familiarity with the followi
 
 ## Quick Start Steps
 
-1. **Choose a use case**  
-   e.g., typical human medicinal product, vaccine, advanced therapy product, or a specific national variant.
+1. **Choose a use case and ePI Type**  
+   Review the available use cases and corresponding ePI types here: [Use Cases](https://build.fhir.org/ig/HL7/emedicinal-product-info/branches/master/en/usecases.html). Select the use case most fitting to your organization's needs and note what ePI Type is required to support that use case.
 
-2. **Select an ePI type**
+2. **Review the rendered human-readable ePI examples**  
+   These are styled HTML examples of ePIs. The examples are meant to be simple and can be augmented to incorporate more advanced features if needed. 
    
-
-3. **Review the rendered human-readable ePI examples**  
-   These are styled HTML examples of ePIs. The examples are meant to be simple and can be augmented to incorporate more advanced features where needed.  
+   Review the HTML example that corresponds to your selected use case and ePI Type:  
 
    [ePI Type 1 HTML Example](https://build.fhir.org/ig/HL7/emedicinal-product-info/examples.html)
 
@@ -48,8 +59,8 @@ Regulatory / Business staff are recommended to have familiarity with the followi
 
    [ePI Type 4 HTML Example](https://build.fhir.org/ig/HL7/emedicinal-product-info/examples.html)
 
-4. **Examine the underlying FHIR XML or JSON ePI**  
-  These are examples of the ePI in its raw XML and JSON format. 
+3. **Examine the underlying FHIR XML or JSON ePI**  
+  These are examples of the ePI in its raw XML and JSON format. Review the XML (or JSON) example that corresponds to your selected use case and ePI Type:  
 
    [ePI Type 1 XML example](https://build.fhir.org/ig/HL7/emedicinal-product-info/Bundle-examples.html)
 
@@ -59,7 +70,7 @@ Regulatory / Business staff are recommended to have familiarity with the followi
 
    [ePI Type 4 XML example](https://build.fhir.org/ig/HL7/emedicinal-product-info/Bundle-examples.html)
 
-1. **Study the profiles used for that ePI type**  
+1. **Review the profiles used for that ePI type**  
    Profiles are the rules/constraints that this IG puts on top of core FHIR resources to make them suitable for ePI (e.g., which fields are required, what codes are allowed, cardinalities).  
    Refer to the [Artefacts Summary](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html) page for the ePI Type 1 to 4 profiles.
 
