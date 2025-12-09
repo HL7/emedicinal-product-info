@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "bundle-eu-epi",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-eu-epi",
+  "name": "BundleEuEpi",
+  "title": "Bundle - EU ePI",
+  "status": "active",
+  "description": "This profile represents the constrains applied to the Bundle resource used in the EU Electronic Product Information (ePI) FHIR Implementation Guide.",
+  "purpose": "This profile represents the constraints applied to the Bundle resource used to create an Electronic Product Information (ePI) document.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resource"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Bundle.entry:composition",
+        "path": "Bundle.entry",
+        "sliceName": "composition"
+      },
+      {
+        "id": "Bundle.entry:composition.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-eu-epi"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-epi-type1-example",
+    "meta": {
+        "profile": [
+            "http://ema.europa.eu/fhir/StructureDefinition/EUEpiBundle"
+        ]
+    },
+    "identifier": {
+        "system": "http://ema.europa.eu/fhir/epiDocument",
+        "value": "b99c95f8-bb0b-ef11-9f8a-000d3aa845fb"
+    },
+    "type": "document",
+    "timestamp": "2024-05-08T09:21:26.034+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:fe63fd6a-afe8-4b61-a203-0cf4a69ffb60",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "fe63fd6a-afe8-4b61-a203-0cf4a69ffb60",
+                "meta": {
+                    "profile": [
+                        "http://ema.europa.eu/fhir/StructureDefinition/EUEpiComposition"
+                    ]
+                },
+                "language": "en",
+                "text": {
+                    "status": "additional",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">electronic Product Information (ePI) document</div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/fhir/epiComposition",
+                        "value": "fe63fd6a-afe8-4b61-a203-0cf4a69ffb60"
+                    }
+                ],
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000155531",
+                            "code": "100000155538",
+                            "display": "B. PACKAGE LEAFLET"
+                        }
+                    ]
+                },
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/medprod-example"
+                    }
+                ],
+                "date": "2024-05-08T09:21:26.034+00:00",
+                "author": [
+                    {
+                        "reference": "Organization/mah-example"
+                    }
+                ],
+                "title": "Humira 20 mg solution for injection in pre-filled syringe (market authorization)",
+                "section": [
+                    {
+                        "title": "B. PACKAGE LEAFLET",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/100000155531",
+                                    "code": "100000155538",
+                                    "display": "B. PACKAGE LEAFLET"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Package Leaflet Text</div>"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:d15f2fb1-ca0b-ef11-9f89-7c1e5212dc19",
+            "resource": {
+                "resourceType": "Binary",
+                "id": "d15f2fb1-ca0b-ef11-9f89-7c1e5212dc19",
+                "contentType": "image/png",
+                "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKw66AAAAABJRU5ErkJggg=="
+            }
+        }
+    ]
+}
