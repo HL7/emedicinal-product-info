@@ -50,8 +50,14 @@
                 "min": 1
             },
             {
-                "id": "Organization.telecom",
-                "path": "Organization.telecom",
+                "id": "Organization.contact",
+                "path": "Organization.contact",
+                "short": "Organization contact",
+                "definition": "Organization contact"
+            },
+            {
+                "id": "Organization.contact.telecom",
+                "path": "Organization.contact.telecom",
                 "short": "Organization's contact information",
                 "definition": "Organization's contact information",
                 "slicing": {
@@ -66,8 +72,8 @@
                 "min": 0
             },
             {
-                "id": "Organization.telecom:phone",
-                "path": "Organization.telecom",
+                "id": "Organization.contact.telecom:phone",
+                "path": "Organization.contact.telecom",
                 "sliceName": "phone",
                 "short": "Phone number",
                 "definition": "Phone number",
@@ -75,23 +81,23 @@
                 "max": "1"
             },
             {
-                "id": "Organization.telecom:phone.system",
-                "path": "Organization.telecom.system",
+                "id": "Organization.contact.telecom:phone.system",
+                "path": "Organization.contact.telecom.system",
                 "short": "phone",
                 "definition": "phone",
                 "min": 1,
                 "fixedCode": "phone"
             },
             {
-                "id": "Organization.telecom:phone.value",
-                "path": "Organization.telecom.value",
+                "id": "Organization.contact.telecom:phone.value",
+                "path": "Organization.contact.telecom.value",
                 "short": "Phone number",
                 "definition": "Phone number",
                 "min": 1
             },
             {
-                "id": "Organization.telecom:email",
-                "path": "Organization.telecom",
+                "id": "Organization.contact.telecom:email",
+                "path": "Organization.contact.telecom",
                 "sliceName": "email",
                 "short": "Email address",
                 "definition": "Email address",
@@ -99,23 +105,23 @@
                 "max": "1"
             },
             {
-                "id": "Organization.telecom:email.system",
-                "path": "Organization.telecom.system",
+                "id": "Organization.contact.telecom:email.system",
+                "path": "Organization.contact.telecom.system",
                 "short": "email",
                 "definition": "email",
                 "min": 1,
                 "fixedCode": "email"
             },
             {
-                "id": "Organization.telecom:email.value",
-                "path": "Organization.telecom.value",
+                "id": "Organization.contact.telecom:email.value",
+                "path": "Organization.contact.telecom.value",
                 "short": "Email address",
                 "definition": "Email address",
                 "min": 1
             },
             {
-                "id": "Organization.telecom:url",
-                "path": "Organization.telecom",
+                "id": "Organization.contact.telecom:url",
+                "path": "Organization.contact.telecom",
                 "sliceName": "url",
                 "short": "Website",
                 "definition": "Website",
@@ -123,73 +129,73 @@
                 "max": "1"
             },
             {
-                "id": "Organization.telecom:url.system",
-                "path": "Organization.telecom.system",
+                "id": "Organization.contact.telecom:url.system",
+                "path": "Organization.contact.telecom.system",
                 "short": "url",
                 "definition": "url",
                 "min": 1,
                 "fixedCode": "url"
             },
             {
-                "id": "Organization.telecom:url.value",
-                "path": "Organization.telecom.value",
+                "id": "Organization.contact.telecom:url.value",
+                "path": "Organization.contact.telecom.value",
                 "short": "Website",
                 "definition": "Website",
                 "min": 1
             },
             {
-                "id": "Organization.address",
-                "path": "Organization.address",
+                "id": "Organization.contact.address",
+                "path": "Organization.contact.address",
                 "short": "Organization's address",
                 "definition": "Organization's address",
                 "min": 0,
                 "max": "1"
             },
             {
-                "id": "Organization.address.text",
-                "path": "Organization.address.text",
+                "id": "Organization.contact.address.text",
+                "path": "Organization.contact.address.text",
                 "short": "Address text",
                 "definition": "Address text",
                 "min": 0
             },
             {
-                "id": "Organization.address.line",
-                "path": "Organization.address.line",
+                "id": "Organization.contact.address.line",
+                "path": "Organization.contact.address.line",
                 "short": "Address line",
                 "definition": "Address line",
                 "min": 0
             },
             {
-                "id": "Organization.address.city",
-                "path": "Organization.address.city",
+                "id": "Organization.contact.address.city",
+                "path": "Organization.contact.address.city",
                 "short": "City",
                 "definition": "City",
                 "min": 0
             },
             {
-                "id": "Organization.address.district",
-                "path": "Organization.address.district",
+                "id": "Organization.contact.address.district",
+                "path": "Organization.contact.address.district",
                 "short": "District",
                 "definition": "District",
                 "min": 0
             },
             {
-                "id": "Organization.address.state",
-                "path": "Organization.address.state",
+                "id": "Organization.contact.address.state",
+                "path": "Organization.contact.address.state",
                 "short": "State",
                 "definition": "State",
                 "min": 0
             },
             {
-                "id": "Organization.address.postalCode",
-                "path": "Organization.address.postalCode",
+                "id": "Organization.contact.address.postalCode",
+                "path": "Organization.contact.address.postalCode",
                 "short": "Postal code",
                 "definition": "Postal code",
                 "min": 0
             },
             {
-                "id": "Organization.address.country",
-                "path": "Organization.address.country",
+                "id": "Organization.contact.address.country",
+                "path": "Organization.contact.address.country",
                 "short": "Country",
                 "definition": "Country",
                 "min": 0
