@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "composition-eu-epi2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-eu-epi2",
+  "name": "CompositionEuEpi2",
+  "title": "Composition - EU ePI Type 2",
+  "status": "active",
+  "description": "This profile represents the constraints applied to the Composition resource used in the EU Electronic Product Information (ePI) FHIR Implementation Guide for Type 2.",
+  "purpose": "This profile represents the constraints applied to the Composition resource used in the EU Electronic Product Information (ePI) document.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-uv-epi",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "patternCode": "final"
+      },
+      {
+        "id": "Composition.type.coding.system",
+        "path": "Composition.type.coding.system",
+        "patternUri": "https://spor.ema.europa.eu/v1/lists/100000155531"
+      },
+      {
+        "id": "Composition.type.coding.code",
+        "path": "Composition.type.coding.code",
+        "patternCode": "100000155538"
+      },
+      {
+        "id": "Composition.section.title",
+        "path": "Composition.section.title",
+        "min": 1
+      },
+      {
+        "id": "Composition.section.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section.text",
+        "path": "Composition.section.text",
+        "min": 1
+      }
+    ]
+  }
+}

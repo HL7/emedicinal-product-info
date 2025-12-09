@@ -1,0 +1,179 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-epi-type2-example",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-eu-epi2"
+        ]
+    },
+    "identifier": {
+        "system": "http://ema.europa.eu/fhir/epiDocument",
+        "value": "type2-bundle-uuid"
+    },
+    "type": "document",
+    "timestamp": "2024-05-08T09:21:26.034+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:comp-type2",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "comp-type2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-eu-epi2"
+                    ]
+                },
+                "language": "en",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000155531",
+                            "code": "100000155538",
+                            "display": "B. PACKAGE LEAFLET"
+                        }
+                    ]
+                },
+                "subject": [
+                    {
+                        "reference": "urn:uuid:mpd-type2"
+                    }
+                ],
+                "date": "2024-05-08T09:21:26.034+00:00",
+                "author": [
+                    {
+                        "reference": "urn:uuid:org-type2"
+                    }
+                ],
+                "title": "Humira Type 2 Example",
+                "section": [
+                    {
+                        "title": "B. PACKAGE LEAFLET",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/100000155531",
+                                    "code": "100000155538",
+                                    "display": "B. PACKAGE LEAFLET"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type 2 Content</div>"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:mpd-type2",
+            "resource": {
+                "resourceType": "MedicinalProductDefinition",
+                "id": "mpd-type2",
+                "name": [
+                    {
+                        "productName": "Humira 20 mg solution for injection"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:org-type2",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "org-type2",
+                "name": "AbbVie Ltd"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:auth-type2",
+            "resource": {
+                "resourceType": "RegulatedAuthorization",
+                "id": "auth-type2",
+                "subject": [
+                    {
+                        "reference": "urn:uuid:mpd-type2"
+                    }
+                ],
+                "holder": {
+                    "reference": "urn:uuid:org-type2"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:mid-type2",
+            "resource": {
+                "resourceType": "ManufacturedItemDefinition",
+                "id": "mid-type2",
+                "status": "active",
+                "manufacturedDoseForm": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+                            "code": "100000073863",
+                            "display": "Solution for injection"
+                        }
+                    ]
+                },
+                "unitOfPresentation": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                            "code": "200000002150",
+                            "display": "Syringe"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ing-type2",
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "ing-type2",
+                "status": "active",
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072072",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "reference": {
+                            "reference": "urn:uuid:sub-type2"
+                        }
+                    }
+                },
+                "for": [
+                    {
+                        "reference": "urn:uuid:mpd-type2"
+                    },
+                    {
+                        "reference": "urn:uuid:mid-type2"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:sub-type2",
+            "resource": {
+                "resourceType": "SubstanceReferenceInformation",
+                "id": "sub-type2"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:binary-type2",
+            "resource": {
+                "resourceType": "Binary",
+                "id": "binary-type2",
+                "contentType": "image/png",
+                "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKw66AAAAABJRU5ErkJggg=="
+            }
+        }
+    ]
+}

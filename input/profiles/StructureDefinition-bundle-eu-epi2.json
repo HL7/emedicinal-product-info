@@ -1,0 +1,66 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "bundle-eu-epi2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-eu-epi2",
+  "name": "BundleEuEpi2",
+  "title": "Bundle - EU ePI Type 2",
+  "status": "active",
+  "description": "This profile represents the constraints applied to the Bundle resource used in the EU Electronic Product Information (ePI) FHIR Implementation Guide for Type 2 (Structured Data).",
+  "purpose": "This profile represents the constraints applied to the Bundle resource used to create an Electronic Product Information (ePI) document with structured data.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "min": 3
+      },
+      {
+        "id": "Bundle.entry:composition",
+        "path": "Bundle.entry",
+        "sliceName": "composition",
+        "short": "ePI Composition Type 2",
+        "definition": "ePI Composition Type 2"
+      },
+      {
+        "id": "Bundle.entry:composition.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-eu-epi2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:organization",
+        "path": "Bundle.entry",
+        "sliceName": "organization",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry:medicinalProduct",
+        "path": "Bundle.entry",
+        "sliceName": "medicinalProduct",
+        "min": 1
+      }
+    ]
+  }
+}
