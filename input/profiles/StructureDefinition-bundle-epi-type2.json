@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "bundle-epi-type2",
+  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type2",
+  "name": "BundleEpiType2",
+  "title": "Bundle - ePI Type 2",
+  "description": "This profile represents the constraints applied to the Bundle resource used in the ePI Type 2 (Structured Data) FHIR Implementation Guide.",
+  "status": "active",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "min": 3
+      },
+      {
+        "id": "Bundle.entry:composition",
+        "path": "Bundle.entry",
+        "sliceName": "composition",
+        "short": "ePI Composition Type 2",
+        "definition": "ePI Composition Type 2"
+      },
+      {
+        "id": "Bundle.entry:composition.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:organization",
+        "path": "Bundle.entry",
+        "sliceName": "organization",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry:medicinalProduct",
+        "path": "Bundle.entry",
+        "sliceName": "medicinalProduct",
+        "min": 1
+      }
+    ]
+  }
+}

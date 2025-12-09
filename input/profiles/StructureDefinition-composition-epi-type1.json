@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "composition-epi-type1",
+  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1",
+  "name": "CompositionEpiType1",
+  "title": "Composition - ePI Type 1",
+  "status": "active",
+  "description": "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide.",
+  "purpose": "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) document.",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "patternCode": "final"
+      },
+      {
+        "id": "Composition.contained",
+        "path": "Composition.contained",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.contained:binaryImage",
+        "path": "Composition.contained",
+        "sliceName": "binaryImage",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Binary"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section.title",
+        "path": "Composition.section.title",
+        "min": 1
+      },
+      {
+        "id": "Composition.section.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section.text",
+        "path": "Composition.section.text",
+        "min": 1
+      }
+    ]
+  }
+}

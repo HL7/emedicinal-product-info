@@ -3,7 +3,7 @@
     "id": "bundle-epi-type2-example",
     "meta": {
         "profile": [
-            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-eu-epi2"
+            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type2"
         ]
     },
     "identifier": {
@@ -20,10 +20,18 @@
                 "id": "comp-type2",
                 "meta": {
                     "profile": [
-                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-eu-epi2"
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type2"
                     ]
                 },
                 "language": "en",
+                "contained": [
+                    {
+                        "resourceType": "Binary",
+                        "id": "binary-type2",
+                        "contentType": "image/png",
+                        "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKw66AAAAABJRU5ErkJggg=="
+                    }
+                ],
                 "status": "final",
                 "type": {
                     "coding": [
@@ -164,15 +172,6 @@
             "resource": {
                 "resourceType": "SubstanceReferenceInformation",
                 "id": "sub-type2"
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:binary-type2",
-            "resource": {
-                "resourceType": "Binary",
-                "id": "binary-type2",
-                "contentType": "image/png",
-                "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKw66AAAAABJRU5ErkJggg=="
             }
         }
     ]

@@ -3,7 +3,7 @@
     "id": "bundle-epi-type1-example",
     "meta": {
         "profile": [
-            "http://ema.europa.eu/fhir/StructureDefinition/EUEpiBundle"
+            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type1"
         ]
     },
     "identifier": {
@@ -20,7 +20,7 @@
                 "id": "fe63fd6a-afe8-4b61-a203-0cf4a69ffb60",
                 "meta": {
                     "profile": [
-                        "http://ema.europa.eu/fhir/StructureDefinition/EUEpiComposition"
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
                     ]
                 },
                 "language": "en",
@@ -28,6 +28,14 @@
                     "status": "additional",
                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">electronic Product Information (ePI) document</div>"
                 },
+                "contained": [
+                    {
+                        "resourceType": "Binary",
+                        "id": "d15f2fb1-ca0b-ef11-9f89-7c1e5212dc19",
+                        "contentType": "image/png",
+                        "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKw66AAAAABJRU5ErkJggg=="
+                    }
+                ],
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/fhir/epiComposition",
@@ -74,15 +82,6 @@
                         }
                     }
                 ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:d15f2fb1-ca0b-ef11-9f89-7c1e5212dc19",
-            "resource": {
-                "resourceType": "Binary",
-                "id": "d15f2fb1-ca0b-ef11-9f89-7c1e5212dc19",
-                "contentType": "image/png",
-                "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKw66AAAAABJRU5ErkJggg=="
             }
         }
     ]

@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "bundle-epi-type1",
+  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type1",
+  "name": "BundleEpiType1",
+  "title": "Bundle - ePI Type 1",
+  "status": "active",
+  "description": "This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide.",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.identifier",
+        "path": "Bundle.identifier",
+        "min": 1
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "document"
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry"
+      },
+      {
+        "id": "Bundle.entry:composition",
+        "path": "Bundle.entry",
+        "sliceName": "composition"
+      },
+      {
+        "id": "Bundle.entry:composition.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
