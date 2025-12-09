@@ -1,0 +1,57 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "SubstanceDefinition-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-uv-epi",
+    "version": "1.0.0",
+    "name": "SubstanceDefinitionUvEpi",
+    "title": "SubstanceDefinition (ePI)",
+    "status": "active",
+    "description": "SubstanceDefinition (ePI) - ported from legacy FSH",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "SubstanceDefinition",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SubstanceDefinition",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "SubstanceDefinition.identifier",
+                "path": "SubstanceDefinition.identifier",
+                "min": 1
+            },
+            {
+                "id": "SubstanceDefinition.identifier.system",
+                "path": "SubstanceDefinition.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "SubstanceDefinition.identifier.value",
+                "path": "SubstanceDefinition.identifier.value",
+                "min": 1
+            },
+            {
+                "id": "SubstanceDefinition.status",
+                "path": "SubstanceDefinition.status",
+                "short": "draft|active|retired|unknown"
+            },
+            {
+                "id": "SubstanceDefinition.description",
+                "path": "SubstanceDefinition.description",
+                "short": "Textual description of the substance."
+            },
+            {
+                "id": "SubstanceDefinition.manufacturer",
+                "path": "SubstanceDefinition.manufacturer",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

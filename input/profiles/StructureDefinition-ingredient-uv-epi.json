@@ -1,0 +1,61 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "Ingredient-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi",
+    "version": "1.0.0",
+    "name": "IngredientUvEpi",
+    "title": "Ingredient (ePI)",
+    "status": "active",
+    "description": "Ingredient (ePI) - ported from legacy FSH",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Ingredient",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Ingredient",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Ingredient.identifier",
+                "path": "Ingredient.identifier",
+                "short": "An identifier or code by which the ingredient can be referenced."
+            },
+            {
+                "id": "Ingredient.status",
+                "path": "Ingredient.status",
+                "short": "draft|active|retired|unknown"
+            },
+            {
+                "id": "Ingredient.for",
+                "path": "Ingredient.for",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi",
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi",
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Ingredient.allergenicIndicator",
+                "path": "Ingredient.allergenicIndicator",
+                "short": "If the ingredient is a known or suspected allergen."
+            },
+            {
+                "id": "Ingredient.manufacturer.manufacturer",
+                "path": "Ingredient.manufacturer.manufacturer",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "RegulatedAuthorization-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi",
+    "version": "1.0.0",
+    "name": "RegulatedAuthorizationUvEpi",
+    "title": "RegulatedAuthorization (ePI)",
+    "status": "active",
+    "description": "RegulatedAuthorization (ePI) - ported from legacy FSH",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "RegulatedAuthorization",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RegulatedAuthorization",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "RegulatedAuthorization.identifier",
+                "path": "RegulatedAuthorization.identifier",
+                "min": 1
+            },
+            {
+                "id": "RegulatedAuthorization.identifier.system",
+                "path": "RegulatedAuthorization.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "RegulatedAuthorization.identifier.value",
+                "path": "RegulatedAuthorization.identifier.value",
+                "min": 1
+            },
+            {
+                "id": "RegulatedAuthorization.subject",
+                "path": "RegulatedAuthorization.subject",
+                "min": 1,
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi",
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "RegulatedAuthorization.type",
+                "path": "RegulatedAuthorization.type",
+                "min": 1,
+                "short": "Overall type of this authorization, for example drug marketing approval, orphan drug designation."
+            },
+            {
+                "id": "RegulatedAuthorization.region",
+                "path": "RegulatedAuthorization.region"
+            },
+            {
+                "id": "RegulatedAuthorization.status",
+                "path": "RegulatedAuthorization.status",
+                "min": 1,
+                "short": "The current status of this authorization"
+            },
+            {
+                "id": "RegulatedAuthorization.holder",
+                "path": "RegulatedAuthorization.holder",
+                "min": 1,
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "RegulatedAuthorization.regulator",
+                "path": "RegulatedAuthorization.regulator",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

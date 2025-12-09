@@ -1,0 +1,80 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "MedicinalProductDefinition-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi",
+    "version": "1.0.0",
+    "name": "MedicinalProductDefinitionUvEpi",
+    "title": "MedicinalProductDefinition (ePI)",
+    "status": "active",
+    "description": "MedicinalProductDefinition (ePI) - ported from MedicinalProductDefinitionUvEpi",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "MedicinalProductDefinition",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "MedicinalProductDefinition.identifier",
+                "path": "MedicinalProductDefinition.identifier",
+                "min": 1
+            },
+            {
+                "id": "MedicinalProductDefinition.identifier.system",
+                "path": "MedicinalProductDefinition.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "MedicinalProductDefinition.identifier.value",
+                "path": "MedicinalProductDefinition.identifier.value",
+                "min": 1
+            },
+            {
+                "id": "MedicinalProductDefinition.type",
+                "path": "MedicinalProductDefinition.type",
+                "short": "Regulatory type, e.g. Investigational or Authorized."
+            },
+            {
+                "id": "MedicinalProductDefinition.domain",
+                "path": "MedicinalProductDefinition.domain",
+                "short": "If this medicine applies to human or veterinary uses."
+            },
+            {
+                "id": "MedicinalProductDefinition.version",
+                "path": "MedicinalProductDefinition.version",
+                "short": "A business identifier relating to a specific version of the product."
+            },
+            {
+                "id": "MedicinalProductDefinition.status",
+                "path": "MedicinalProductDefinition.status",
+                "short": "The status within the lifecycle of this product record."
+            },
+            {
+                "id": "MedicinalProductDefinition.description",
+                "path": "MedicinalProductDefinition.description",
+                "short": "General description of the medicinal product referred by the ePI"
+            },
+            {
+                "id": "MedicinalProductDefinition.indication",
+                "path": "MedicinalProductDefinition.indication",
+                "short": "Narrative text of the authorized indication(s) for this product."
+            },
+            {
+                "id": "MedicinalProductDefinition.legalStatusOfSupply",
+                "path": "MedicinalProductDefinition.legalStatusOfSupply",
+                "short": "The legal status of supply of the medicinal product as classified by the regulator."
+            },
+            {
+                "id": "MedicinalProductDefinition.name",
+                "path": "MedicinalProductDefinition.name",
+                "min": 1
+            },
+            {
+                "id": "MedicinalProductDefinition.name.productName",
+                "path": "MedicinalProductDefinition.name.productName",
+                "short": "The full product name expressed as Proprietary Name (Non-Proprietary Name) strength dose form"
+            }
+        ]
+    }
+}

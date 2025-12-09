@@ -1,0 +1,64 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "AdministrableProductDefinition-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi",
+    "version": "1.0.0",
+    "name": "AdministrableProductDefinitionUvEpi",
+    "title": "AdministrableProductDefinition (ePI)",
+    "status": "active",
+    "description": "AdministrableProductDefinition (ePI) - ported from legacy FSH",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "AdministrableProductDefinition",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "AdministrableProductDefinition.identifier",
+                "path": "AdministrableProductDefinition.identifier",
+                "min": 1
+            },
+            {
+                "id": "AdministrableProductDefinition.identifier.system",
+                "path": "AdministrableProductDefinition.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "AdministrableProductDefinition.identifier.value",
+                "path": "AdministrableProductDefinition.identifier.value",
+                "min": 1
+            },
+            {
+                "id": "AdministrableProductDefinition.status",
+                "path": "AdministrableProductDefinition.status",
+                "short": "draft | active | retired | unknown"
+            },
+            {
+                "id": "AdministrableProductDefinition.formOf",
+                "path": "AdministrableProductDefinition.formOf",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.producedFrom",
+                "path": "AdministrableProductDefinition.producedFrom",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

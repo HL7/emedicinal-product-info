@@ -92,7 +92,10 @@
                 "path": "Bundle.entry.resource",
                 "type": [
                     {
-                        "code": "Organization"
+                        "code": "Organization",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
                     }
                 ]
             },
@@ -107,7 +110,10 @@
                 "path": "Bundle.entry.resource",
                 "type": [
                     {
-                        "code": "MedicinalProductDefinition"
+                        "code": "MedicinalProductDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                        ]
                     }
                 ]
             },
@@ -122,7 +128,10 @@
                 "path": "Bundle.entry.resource",
                 "type": [
                     {
-                        "code": "ManufacturedItemDefinition"
+                        "code": "ManufacturedItemDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                        ]
                     }
                 ]
             },
@@ -137,7 +146,10 @@
                 "path": "Bundle.entry.resource",
                 "type": [
                     {
-                        "code": "AdministrableProductDefinition"
+                        "code": "AdministrableProductDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"
+                        ]
                     }
                 ]
             },

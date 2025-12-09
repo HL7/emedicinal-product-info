@@ -1,0 +1,42 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "ClinicalUseDefinition-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-uv-epi",
+    "version": "1.0.0",
+    "name": "ClinicalUseDefinitionUvEpi",
+    "title": "ClinicalUseDefinition (ePI)",
+    "status": "active",
+    "description": "ClinicalUseDefinition (ePI) - generic profile ported from legacy FSH",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "ClinicalUseDefinition",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "ClinicalUseDefinition.identifier",
+                "path": "ClinicalUseDefinition.identifier",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.type",
+                "path": "ClinicalUseDefinition.type",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.subject",
+                "path": "ClinicalUseDefinition.subject",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

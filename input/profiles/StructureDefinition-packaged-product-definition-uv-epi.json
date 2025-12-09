@@ -1,0 +1,91 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "PackagedProductDefinition-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi",
+    "version": "1.0.0",
+    "name": "PackagedProductDefinitionUvEpi",
+    "title": "PackagedProductDefinition (ePI)",
+    "status": "active",
+    "description": "PackagedProductDefinition (ePI) - ported from legacy FSH",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "PackagedProductDefinition",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "PackagedProductDefinition.identifier",
+                "path": "PackagedProductDefinition.identifier",
+                "min": 1
+            },
+            {
+                "id": "PackagedProductDefinition.identifier.system",
+                "path": "PackagedProductDefinition.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "PackagedProductDefinition.identifier.value",
+                "path": "PackagedProductDefinition.identifier.value",
+                "min": 1
+            },
+            {
+                "id": "PackagedProductDefinition.type",
+                "path": "PackagedProductDefinition.type",
+                "short": "A high level category e.g., medicinal product pack, sample pack, shipping container."
+            },
+            {
+                "id": "PackagedProductDefinition.packageFor",
+                "path": "PackagedProductDefinition.packageFor",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "PackagedProductDefinition.description",
+                "path": "PackagedProductDefinition.description",
+                "short": "Narrative description of the overall pack; e.g., description of a sample pack"
+            },
+            {
+                "id": "PackagedProductDefinition.legalStatusOfSupply",
+                "path": "PackagedProductDefinition.legalStatusOfSupply",
+                "short": "The legal status of supply of the packaged item as classified by the regulator."
+            },
+            {
+                "id": "PackagedProductDefinition.marketingStatus",
+                "path": "PackagedProductDefinition.marketingStatus",
+                "short": "Allows specifying that an item is on the market for sale, or that it is not available..."
+            },
+            {
+                "id": "PackagedProductDefinition.manufacturer",
+                "path": "PackagedProductDefinition.manufacturer",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "PackagedProductDefinition.packaging.manufacturer",
+                "path": "PackagedProductDefinition.packaging.manufacturer",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

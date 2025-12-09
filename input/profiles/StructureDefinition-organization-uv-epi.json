@@ -1,0 +1,46 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "Organization-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi",
+    "version": "1.0.0",
+    "name": "OrganizationUvEpi",
+    "title": "Organization (ePI)",
+    "status": "active",
+    "description": "Organization (ePI) - ported from OrganizationUvEpi",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Organization",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Organization.identifier",
+                "path": "Organization.identifier",
+                "min": 1
+            },
+            {
+                "id": "Organization.identifier.system",
+                "path": "Organization.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "Organization.identifier.value",
+                "path": "Organization.identifier.value",
+                "min": 1
+            },
+            {
+                "id": "Organization.type",
+                "path": "Organization.type",
+                "short": "Type of organization",
+                "definition": "Organization type clarifies what purpose or busines operation this organization performs in relation to the ePI and the associated authorized medicinal products mentioned."
+            },
+            {
+                "id": "Organization.name",
+                "path": "Organization.name",
+                "short": "Organization's legal name"
+            }
+        ]
+    }
+}

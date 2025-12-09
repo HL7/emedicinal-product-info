@@ -1,0 +1,37 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "ManufacturedItemDefinition-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi",
+    "version": "1.0.0",
+    "name": "ManufacturedItemDefinitionUvEpi",
+    "title": "ManufacturedItemDefinition (ePI)",
+    "status": "active",
+    "description": "ManufacturedItemDefinition (ePI) - ported from legacy FSH",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "ManufacturedItemDefinition",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "ManufacturedItemDefinition.status",
+                "path": "ManufacturedItemDefinition.status",
+                "short": "draft|active|retired|unknown"
+            },
+            {
+                "id": "ManufacturedItemDefinition.manufacturer",
+                "path": "ManufacturedItemDefinition.manufacturer",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
