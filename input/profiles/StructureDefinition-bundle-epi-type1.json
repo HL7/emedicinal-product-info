@@ -31,7 +31,16 @@
       },
       {
         "id": "Bundle.entry",
-        "path": "Bundle.entry"
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resource"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
         "id": "Bundle.entry:composition",

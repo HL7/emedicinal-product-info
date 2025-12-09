@@ -17,6 +17,15 @@
       {
         "id": "Bundle.entry",
         "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resource"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 3
       },
       {
