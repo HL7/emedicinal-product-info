@@ -1,0 +1,407 @@
+# Confluence Element List
+Extracted from: Business Friendly ePI outline draft
+
+## 1. Bundle
+- Resource Type
+- Id
+- Meta
+    - versionId
+    - lastUpdated
+    - profile
+- Identifier
+    - System
+    - value
+- Type
+- Timestamp
+- Entry
+    - Fullurl
+    - Resource
+
+## 2. Composition
+- ResourceType
+- Id
+- Meta
+    - Profile
+- Language
+- Text
+    - Status
+    - Div
+- Contained
+    - resourceType
+    - id
+    - contentType
+    - data
+- Identifier
+    - System
+    - Value
+- Version
+- Status
+- Type
+    - Coding
+        - System
+        - Code
+        - Display
+- Subject
+    - Reference
+- Date
+- Author
+    - Reference
+- Title
+- Section
+    - Title
+    - Code
+        - Coding
+            - System
+            - Code
+            - Display
+    - Text
+        - Status
+        - Div
+    - Section
+
+## 3. Organization
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- Active
+- Type
+    - coding
+        - system
+        - code
+        - display
+- name
+- alias
+- Contact
+    - Address
+        - Use
+        - Type
+        - Text
+        - Line
+        - City
+        - District
+        - State
+        - postalCode
+        - country
+- Contact
+    - Telecom
+        - System
+        - value
+
+## 4. Ingredient
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- status
+- for
+- Role
+- Function
+- Group
+- Allergenic indicator
+- Manufacturer
+    - Role
+    - manufacturer
+- Substance
+    - Code
+    - Strength
+        - Presentation strength
+        - Concentration strength
+        - Reference strength
+        - Basis
+
+## 5. Substance Definition
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- version
+- status
+- classification
+- domain
+- grade
+- Description
+- Manufacturer
+- Moiety
+    - Identifier
+    - Name
+    - Stereochemistry
+    - Molecular formula
+- Molecular weight
+    - Amount
+- Structure
+    - Stereochemistry
+    - molecularFormula
+    - molecularWeight
+- Code
+    - Coding
+        - System
+        - Code
+        - Display
+- Name
+    - name
+    - type
+    - preferred
+    - language
+
+## 6. Manufactured Item Definition
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- Status
+- Name
+- Manufactured dose form
+- Unit of presentation
+- Manufacturer
+- Property
+    - Colour
+    - Flavour
+    - Score
+    - Shape
+    - Surface form
+    - Size
+    - Image
+    - imprint
+
+## 7. Administrable Product Definition
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- Status
+- Form of
+- Name
+- administrable dose form
+- Unit of presentation
+- Produced from
+- description
+- Property
+    - Colour
+    - Flavour
+    - Score
+    - Shape
+    - Surface form
+    - Size
+    - Image
+    - imprint
+- Route of administration
+
+## 8. Medicinal Product Definition
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- Status
+- Status date
+- Description
+- Combined pharmaceutical dose form
+- Route
+- Indication
+- Additional monitoring indicator
+- Special measures
+- Pediatric use indicator
+- Classification
+- Marketing status
+    - Country
+    - Status
+    - Date range
+- packagedMedicinalProduct
+- Comprised of
+- ingredient
+- Contact
+    - type
+    - contact
+- Name
+    - productName
+    - type
+    - part
+        - part
+        - type
+    - usage
+        - country
+        - jurisdiction
+        - language
+
+## 9. Regulated Authorization
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- subject
+- type
+- description
+- region
+- status
+- statusDate
+- indication
+- basis
+- holder
+- regulator
+- case
+    - identifier
+    - type
+    - status
+
+## 10. Packaged Product Definition
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- Name
+- Type
+- Packaged for
+- Status
+- Status date
+- containedItemQuantity
+- description
+- legalStatusOfSupply
+    - code
+    - jurisdiction
+- marketingStatus
+- copackagedIndicator
+- manufacturer
+- packaging
+    - identifier
+    - type
+    - componentPart
+    - quantity
+    - material
+    - alternateMaterial
+    - shelfLifeStorage
+    - manufacturer
+    - property
+        - type
+        - value[x]
+    - containedItem
+        - item
+        - amount
+        - packaging
+
+## 11. Clinical Use Definition
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- type
+- category
+- subject
+- status
+- contraindication
+    - diseaseSymptomProcedure
+    - diseaseStatus
+    - comorbidity
+    - indication
+    - applicability
+    - otherTherapy
+    - relationshipType
+    - treatment
+- indication
+    - diseaseSymptomProcedure
+    - diseaseStatus
+    - comorbidity
+    - intendedEffect
+    - duration[x]
+    - undesirableEffect
+    - applicability
+    - otherTherapy
+- interaction
+    - interactant
+    - item[x]
+    - type
+    - effect
+    - incidence
+    - management
+- population
+- undesirableEffect
+    - symptomConditionEffect
+    - classification
+    - frequencyOfOccurrence
+- warning
+    - description
+    - code
+
+## 12. Medication Knowledge
+- Resource Type
+- Id
+- Meta
+    - profile
+- Identifier
+    - System
+    - value
+- Code
+- status
+- name
+- indicationGuideline
+    - indication
+    - dosingGuideline
+    - treatmentIntent
+    - dosage
+        - type
+        - dosage
+    - administrationTreatment
+    - patientCharacteristic
+
+## 13. List
+- Resource Type
+- Id
+- Meta
+    - profile
+- text
+- Extensions
+    - authorisationType
+    - marketingAuthorisationHolder
+    - marketingAuthorisationHolderDisplay
+    - medicineDomain
+    - procedureNumber
+    - regulatoryAgency
+    - regulatoryAgencyDisplay
+    - versionNumber
+- Identifier
+    - System
+    - value
+- status
+- mode
+- title
+- Code
+    - Coding
+        - System
+        - Code
+        - Display
+- subject
+- encounter
+- date
+- source
+- note
+- entry
+    - flag
+    - deleted
+    - date
+    - item

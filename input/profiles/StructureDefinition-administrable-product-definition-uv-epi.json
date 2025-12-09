@@ -48,6 +48,16 @@
                 ]
             },
             {
+                "id": "AdministrableProductDefinition.administrableDoseForm",
+                "path": "AdministrableProductDefinition.administrableDoseForm",
+                "short": "The dose form of the final product after necessary reconstitution or processing."
+            },
+            {
+                "id": "AdministrableProductDefinition.unitOfPresentation",
+                "path": "AdministrableProductDefinition.unitOfPresentation",
+                "short": "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff'."
+            },
+            {
                 "id": "AdministrableProductDefinition.producedFrom",
                 "path": "AdministrableProductDefinition.producedFrom",
                 "type": [
@@ -58,6 +68,31 @@
                         ]
                     }
                 ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property",
+                "path": "AdministrableProductDefinition.property",
+                "short": "General characteristics of this item."
+            },
+            {
+                "id": "AdministrableProductDefinition.property.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "short": "Code that specifies the type of characteristic property (e.g. colour, flavour, score, shape, surface form, size, image, imprint)."
+            },
+            {
+                "id": "AdministrableProductDefinition.property.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "short": "Value of the characteristic."
+            },
+            {
+                "id": "AdministrableProductDefinition.routeOfAdministration",
+                "path": "AdministrableProductDefinition.routeOfAdministration",
+                "short": "The path by which the product is taken into or makes contact with the body."
+            },
+            {
+                "id": "AdministrableProductDefinition.routeOfAdministration.code",
+                "path": "AdministrableProductDefinition.routeOfAdministration.code",
+                "short": "Coded expression for the route."
             }
         ]
     }

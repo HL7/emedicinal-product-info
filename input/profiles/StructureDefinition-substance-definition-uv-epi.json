@@ -31,9 +31,29 @@
                 "min": 1
             },
             {
+                "id": "SubstanceDefinition.version",
+                "path": "SubstanceDefinition.version",
+                "short": "A business level version identifier of the substance."
+            },
+            {
                 "id": "SubstanceDefinition.status",
                 "path": "SubstanceDefinition.status",
                 "short": "draft|active|retired|unknown"
+            },
+            {
+                "id": "SubstanceDefinition.classification",
+                "path": "SubstanceDefinition.classification",
+                "short": "A categorization, high level specific type of substance, or similar."
+            },
+            {
+                "id": "SubstanceDefinition.domain",
+                "path": "SubstanceDefinition.domain",
+                "short": "If the substance applies to human or veterinary use."
+            },
+            {
+                "id": "SubstanceDefinition.grade",
+                "path": "SubstanceDefinition.grade",
+                "short": "The quality standard, established by a regulatory body."
             },
             {
                 "id": "SubstanceDefinition.description",
@@ -51,6 +71,91 @@
                         ]
                     }
                 ]
+            },
+            {
+                "id": "SubstanceDefinition.moiety",
+                "path": "SubstanceDefinition.moiety",
+                "short": "Moiety, for structural modifications"
+            },
+            {
+                "id": "SubstanceDefinition.moiety.identifier",
+                "path": "SubstanceDefinition.moiety.identifier",
+                "short": "Identifier of the moiety"
+            },
+            {
+                "id": "SubstanceDefinition.moiety.name",
+                "path": "SubstanceDefinition.moiety.name",
+                "short": "Name of the moiety"
+            },
+            {
+                "id": "SubstanceDefinition.moiety.stereochemistry",
+                "path": "SubstanceDefinition.moiety.stereochemistry",
+                "short": "Stereochemistry of the moiety"
+            },
+            {
+                "id": "SubstanceDefinition.moiety.molecularFormula",
+                "path": "SubstanceDefinition.moiety.molecularFormula",
+                "short": "Molecular formula of the moiety"
+            },
+            {
+                "id": "SubstanceDefinition.molecularWeight",
+                "path": "SubstanceDefinition.molecularWeight",
+                "short": "The molecular weight or weight range"
+            },
+            {
+                "id": "SubstanceDefinition.molecularWeight.amount",
+                "path": "SubstanceDefinition.molecularWeight.amount",
+                "short": "The molecular weight or weight range"
+            },
+            {
+                "id": "SubstanceDefinition.structure",
+                "path": "SubstanceDefinition.structure",
+                "short": "Structural information"
+            },
+            {
+                "id": "SubstanceDefinition.structure.stereochemistry",
+                "path": "SubstanceDefinition.structure.stereochemistry",
+                "short": "Stereochemistry of the substance"
+            },
+            {
+                "id": "SubstanceDefinition.structure.molecularFormula",
+                "path": "SubstanceDefinition.structure.molecularFormula",
+                "short": "Molecular formula"
+            },
+            {
+                "id": "SubstanceDefinition.structure.molecularWeight",
+                "path": "SubstanceDefinition.structure.molecularWeight",
+                "short": "The molecular weight or weight range"
+            },
+            {
+                "id": "SubstanceDefinition.code",
+                "path": "SubstanceDefinition.code",
+                "short": "Codes associated with the substance"
+            },
+            {
+                "id": "SubstanceDefinition.name",
+                "path": "SubstanceDefinition.name",
+                "short": "Names for the substance"
+            },
+            {
+                "id": "SubstanceDefinition.name.name",
+                "path": "SubstanceDefinition.name.name",
+                "short": "The actual name"
+            },
+            {
+                "id": "SubstanceDefinition.name.type",
+                "path": "SubstanceDefinition.name.type",
+                "short": "Name type"
+            },
+            {
+                "id": "SubstanceDefinition.name.preferred",
+                "path": "SubstanceDefinition.name.preferred",
+                "short": "If this is the preferred name for this language"
+            },
+            {
+                "id": "SubstanceDefinition.name.language",
+                "path": "SubstanceDefinition.name.language",
+                "short": "Human language that the name is sold in"
             }
         ]
     }
