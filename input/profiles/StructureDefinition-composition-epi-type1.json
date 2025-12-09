@@ -133,7 +133,15 @@
         "path": "Composition.author",
         "short": "Organization responsible for content",
         "definition": "The organization responsible for the content of this ePI, typically the Marketing Authorization Holder (MAH) or the Regulatory Authority.",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.title",

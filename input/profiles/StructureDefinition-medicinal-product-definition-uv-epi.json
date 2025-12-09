@@ -168,7 +168,106 @@
             {
                 "id": "MedicinalProductDefinition.name.part",
                 "path": "MedicinalProductDefinition.name.part",
-                "short": "Coding words or phrases of the name."
+                "short": "Coding words or phrases of the name.",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "value",
+                            "path": "type.coding.code"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:ScientificNamePart",
+                "path": "MedicinalProductDefinition.name.part",
+                "sliceName": "ScientificNamePart",
+                "short": "Non-proprietary name"
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:ScientificNamePart.type",
+                "path": "MedicinalProductDefinition.name.part.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/medicinal-product-name-part-type",
+                            "code": "ScientificNamePart"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:InventedNamePart",
+                "path": "MedicinalProductDefinition.name.part",
+                "sliceName": "InventedNamePart",
+                "short": "Proprietary name"
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:InventedNamePart.type",
+                "path": "MedicinalProductDefinition.name.part.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/medicinal-product-name-part-type",
+                            "code": "InventedNamePart"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:StrengthPart",
+                "path": "MedicinalProductDefinition.name.part",
+                "sliceName": "StrengthPart",
+                "short": "Strength"
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:StrengthPart.type",
+                "path": "MedicinalProductDefinition.name.part.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/medicinal-product-name-part-type",
+                            "code": "StrengthPart"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:PharmaceuticalDosePart",
+                "path": "MedicinalProductDefinition.name.part",
+                "sliceName": "PharmaceuticalDosePart",
+                "short": "Dose Form"
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:PharmaceuticalDosePart.type",
+                "path": "MedicinalProductDefinition.name.part.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/medicinal-product-name-part-type",
+                            "code": "PharmaceuticalDosePart"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:TrademarkOrOtherSuffixPart",
+                "path": "MedicinalProductDefinition.name.part",
+                "sliceName": "TrademarkOrOtherSuffixPart",
+                "short": "Suffix"
+            },
+            {
+                "id": "MedicinalProductDefinition.name.part:TrademarkOrOtherSuffixPart.type",
+                "path": "MedicinalProductDefinition.name.part.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/medicinal-product-name-part-type",
+                            "code": "TrademarkOrOtherSuffixPart"
+                        }
+                    ]
+                }
             },
             {
                 "id": "MedicinalProductDefinition.name.part.part",

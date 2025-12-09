@@ -28,12 +28,20 @@
             {
                 "id": "ManufacturedItemDefinition.manufacturedDoseForm",
                 "path": "ManufacturedItemDefinition.manufacturedDoseForm",
-                "short": "Dose form as manufactured and before any transformation into the administrable form."
+                "short": "Dose form as manufactured and before any transformation into the administrable form.",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/manufactured-dose-form"
+                }
             },
             {
                 "id": "ManufacturedItemDefinition.unitOfPresentation",
                 "path": "ManufacturedItemDefinition.unitOfPresentation",
-                "short": "The “real world” units in which the quantity of the manufactured item is described."
+                "short": "The “real world” units in which the quantity of the manufactured item is described.",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/unit-of-presentation"
+                }
             },
             {
                 "id": "ManufacturedItemDefinition.manufacturer",
@@ -50,17 +58,235 @@
             {
                 "id": "ManufacturedItemDefinition.property",
                 "path": "ManufacturedItemDefinition.property",
-                "short": "General characteristics of this item."
+                "short": "General characteristics of this item.",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "value",
+                            "path": "type.coding.code"
+                        }
+                    ],
+                    "rules": "open"
+                }
             },
             {
-                "id": "ManufacturedItemDefinition.property.type",
+                "id": "ManufacturedItemDefinition.property:colour",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "colour",
+                "short": "Colour of the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:colour.type",
                 "path": "ManufacturedItemDefinition.property.type",
-                "short": "Code that specifies the type of characteristic property (e.g. colour, flavour, score, shape, surface form, size, image, imprint)."
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "colour"
+                        }
+                    ]
+                }
             },
             {
-                "id": "ManufacturedItemDefinition.property.value[x]",
+                "id": "ManufacturedItemDefinition.property:colour.value[x]",
                 "path": "ManufacturedItemDefinition.property.value[x]",
-                "short": "Value of the characteristic."
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:flavour",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "flavour",
+                "short": "Flavour of the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:flavour.type",
+                "path": "ManufacturedItemDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "flavour"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:flavour.value[x]",
+                "path": "ManufacturedItemDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:score",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "score",
+                "short": "Score of the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:score.type",
+                "path": "ManufacturedItemDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "score"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:score.value[x]",
+                "path": "ManufacturedItemDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:shape",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "shape",
+                "short": "Shape of the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:shape.type",
+                "path": "ManufacturedItemDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "shape"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:shape.value[x]",
+                "path": "ManufacturedItemDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:surfaceForm",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "surfaceForm",
+                "short": "Surface form of the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:surfaceForm.type",
+                "path": "ManufacturedItemDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "surfaceForm"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:surfaceForm.value[x]",
+                "path": "ManufacturedItemDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:size",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "size",
+                "short": "Size of the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:size.type",
+                "path": "ManufacturedItemDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "size"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:size.value[x]",
+                "path": "ManufacturedItemDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:image",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "image",
+                "short": "Image of the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:image.type",
+                "path": "ManufacturedItemDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "image"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:image.value[x]",
+                "path": "ManufacturedItemDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:imprint",
+                "path": "ManufacturedItemDefinition.property",
+                "sliceName": "imprint",
+                "short": "Imprint on the item"
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:imprint.type",
+                "path": "ManufacturedItemDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "imprint"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:imprint.value[x]",
+                "path": "ManufacturedItemDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "string"
+                    },
+                    {
+                        "code": "markdown"
+                    }
+                ]
             }
         ]
     }
