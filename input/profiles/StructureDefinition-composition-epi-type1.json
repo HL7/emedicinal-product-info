@@ -58,6 +58,34 @@
         "min": 1
       },
       {
+        "id": "Composition.contained",
+        "path": "Composition.contained",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.contained:binaryImage",
+        "path": "Composition.contained",
+        "sliceName": "binaryImage",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Binary",
+            "profile": [
+              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/binary-epi"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Composition.identifier",
         "path": "Composition.identifier",
         "short": "Business Identifier (e.g., Reg Number)",
@@ -120,34 +148,6 @@
         "short": "Reference to previous versions",
         "definition": "A reference to a previous version of this ePI or another related composition, used to establish a version history or relationship between documents.",
         "min": 0
-      },
-      {
-        "id": "Composition.contained",
-        "path": "Composition.contained",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Composition.contained:binaryImage",
-        "path": "Composition.contained",
-        "sliceName": "binaryImage",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Binary",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/binary-epi"
-            ]
-          }
-        ]
       },
       {
         "id": "Composition.section",
