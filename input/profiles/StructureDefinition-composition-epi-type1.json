@@ -82,7 +82,15 @@
         "path": "Composition.subject",
         "short": "The Medicinal Product described",
         "definition": "A reference to the Medicinal Product(s) that are described by this ePI. This links the document to the specific product details.",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition"
+            ]
+          }
+        ]
       },
       {
         "id": "Composition.date",
