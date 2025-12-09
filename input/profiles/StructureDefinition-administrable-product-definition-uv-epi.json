@@ -50,12 +50,20 @@
             {
                 "id": "AdministrableProductDefinition.administrableDoseForm",
                 "path": "AdministrableProductDefinition.administrableDoseForm",
-                "short": "The dose form of the final product after necessary reconstitution or processing."
+                "short": "The dose form of the final product after necessary reconstitution or processing.",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/administrable-dose-form"
+                }
             },
             {
                 "id": "AdministrableProductDefinition.unitOfPresentation",
                 "path": "AdministrableProductDefinition.unitOfPresentation",
-                "short": "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff'."
+                "short": "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff'.",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/unit-of-presentation"
+                }
             },
             {
                 "id": "AdministrableProductDefinition.producedFrom",
@@ -72,17 +80,232 @@
             {
                 "id": "AdministrableProductDefinition.property",
                 "path": "AdministrableProductDefinition.property",
-                "short": "General characteristics of this item."
+                "short": "General characteristics of this item.",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "value",
+                            "path": "type.coding.code"
+                        }
+                    ],
+                    "rules": "open"
+                }
             },
             {
-                "id": "AdministrableProductDefinition.property.type",
+                "id": "AdministrableProductDefinition.property:colour",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "colour",
+                "short": "Colour of the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:colour.type",
                 "path": "AdministrableProductDefinition.property.type",
-                "short": "Code that specifies the type of characteristic property (e.g. colour, flavour, score, shape, surface form, size, image, imprint)."
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "colour"
+                        }
+                    ]
+                }
             },
             {
-                "id": "AdministrableProductDefinition.property.value[x]",
+                "id": "AdministrableProductDefinition.property:colour.value[x]",
                 "path": "AdministrableProductDefinition.property.value[x]",
-                "short": "Value of the characteristic."
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property:flavour",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "flavour",
+                "short": "Flavour of the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:flavour.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "flavour"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "AdministrableProductDefinition.property:flavour.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property:score",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "score",
+                "short": "Score of the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:score.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "score"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "AdministrableProductDefinition.property:score.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property:shape",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "shape",
+                "short": "Shape of the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:shape.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "shape"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "AdministrableProductDefinition.property:shape.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property:surfaceForm",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "surfaceForm",
+                "short": "Surface form of the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:surfaceForm.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "surfaceForm"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "AdministrableProductDefinition.property:surfaceForm.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property:size",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "size",
+                "short": "Size of the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:size.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "size"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "AdministrableProductDefinition.property:size.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property:image",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "image",
+                "short": "Image of the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:image.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "image"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "AdministrableProductDefinition.property:image.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "AdministrableProductDefinition.property:imprint",
+                "path": "AdministrableProductDefinition.property",
+                "sliceName": "imprint",
+                "short": "Imprint on the item"
+            },
+            {
+                "id": "AdministrableProductDefinition.property:imprint.type",
+                "path": "AdministrableProductDefinition.property.type",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "code": "imprint"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "AdministrableProductDefinition.property:imprint.value[x]",
+                "path": "AdministrableProductDefinition.property.value[x]",
+                "type": [
+                    {
+                        "code": "markdown"
+                    }
+                ]
             },
             {
                 "id": "AdministrableProductDefinition.routeOfAdministration",
