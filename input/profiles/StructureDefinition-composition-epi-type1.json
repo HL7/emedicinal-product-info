@@ -18,67 +18,100 @@
       {
         "id": "Composition.id",
         "path": "Composition.id",
+        "short": "Unique ID",
+        "definition": "Unique identifier for this particular ePI composition resource.",
         "min": 1
       },
       {
         "id": "Composition.meta.versionId",
         "path": "Composition.meta.versionId",
+        "short": "Version ID",
+        "definition": "Version identifier for this version of the ePI composition.",
         "min": 1
       },
       {
         "id": "Composition.meta.lastUpdated",
         "path": "Composition.meta.lastUpdated",
+        "short": "Last Updated",
+        "definition": "The time when this version of the ePI was last updated.",
         "min": 1
       },
       {
         "id": "Composition.meta.profile",
         "path": "Composition.meta.profile",
+        "short": "Profile",
+        "definition": "The profile that this ePI composition conforms to.",
         "min": 1
       },
       {
         "id": "Composition.language",
         "path": "Composition.language",
+        "short": "Language",
+        "definition": "The language of the ePI text (e.g., en, es, fr).",
         "min": 1
       },
       {
         "id": "Composition.text",
         "path": "Composition.text",
+        "short": "Narrative text",
+        "definition": "Human-readable narrative summary of the ePI.",
         "min": 1
       },
       {
         "id": "Composition.identifier",
         "path": "Composition.identifier",
+        "short": "ePI Identifier",
+        "definition": "Unique identifier for this ePI (e.g., Regulatory number).",
         "min": 1
       },
       {
         "id": "Composition.status",
         "path": "Composition.status",
+        "short": "Status",
+        "definition": "The status of this ePI (e.g., final, preliminary).",
         "patternCode": "final"
       },
       {
         "id": "Composition.type",
         "path": "Composition.type",
+        "short": "ePI Type",
+        "definition": "Type of Product Information (e.g., SmPC, PIL).",
         "min": 1
       },
       {
         "id": "Composition.subject",
         "path": "Composition.subject",
+        "short": "Medicinal Product",
+        "definition": "The medicinal product(s) that this ePI describes.",
         "min": 1
       },
       {
         "id": "Composition.date",
         "path": "Composition.date",
+        "short": "Date",
+        "definition": "Date when the ePI was last changed or authorized.",
         "min": 1
       },
       {
         "id": "Composition.author",
         "path": "Composition.author",
+        "short": "Author",
+        "definition": "The organization (MAH or Regulatory Authority) responsible for the ePI content.",
         "min": 1
       },
       {
         "id": "Composition.title",
         "path": "Composition.title",
+        "short": "Title",
+        "definition": "The title of the ePI document.",
         "min": 1
+      },
+      {
+        "id": "Composition.relatesTo",
+        "path": "Composition.relatesTo",
+        "short": "Version Link",
+        "definition": "Link to previous versions or related ePI compositions (Version Control).",
+        "min": 0
       },
       {
         "id": "Composition.contained",
@@ -106,18 +139,38 @@
         ]
       },
       {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "short": "Parent Header",
+        "definition": "The root section (parent header) under which all other sections are nesting.",
+        "max": "1"
+      },
+      {
         "id": "Composition.section.title",
         "path": "Composition.section.title",
+        "short": "Section Title",
+        "definition": "The title of the specific section in the ePI.",
         "min": 1
       },
       {
         "id": "Composition.section.code",
         "path": "Composition.section.code",
+        "short": "Section Code",
+        "definition": "Code defining the type of section (e.g., from a section list).",
         "min": 1
       },
       {
         "id": "Composition.section.text",
         "path": "Composition.section.text",
+        "short": "Section Text",
+        "definition": "The actual text content of the section.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section.section",
+        "path": "Composition.section.section",
+        "short": "Child Sections",
+        "definition": "Nested sections that contain the actual ePI content.",
         "min": 1
       }
     ]
