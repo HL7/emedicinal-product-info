@@ -315,7 +315,11 @@
             {
                 "id": "AdministrableProductDefinition.routeOfAdministration.code",
                 "path": "AdministrableProductDefinition.routeOfAdministration.code",
-                "short": "Coded expression for the route."
+                "short": "Coded expression for the route.",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/route-codes"
+                }
             }
         ]
     }
