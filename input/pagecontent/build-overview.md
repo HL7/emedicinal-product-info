@@ -1,116 +1,91 @@
-### Purpose of This Tab
+### Purpose
+This section provides guidance, examples, and best practices for creating ePI resources across all types. It covers FHIR resource usage, profiling, tooling, and interoperability.
 
-The "How to Build ePI Type 1 to 4" tab offers detailed guidance, examples, and best practices for creating ePI resources for each type. It covers:
+**Intended Audience:** Developers, regulators, pharmaceutical companies, and healthcare IT professionals.
 
-- **FHIR Resource Usage**: How to use FHIR resources like Composition, Medication, and Bundle to structure ePI data.
-- **Profiling**: Applying the ePI IG profiles to ensure conformance with regulatory requirements.
-- **Examples**: Sample FHIR instances for each ePI type to illustrate implementation.
-- **Tooling**: Guidance on using tools like the FHIR IG Publisher to validate and publish ePI resources.
-- **Interoperability**: Ensuring ePI data aligns with global standards and regional regulations.
-
-Recommend reading the [use cases](usecases.html) to select the appropriate use case and ePI type to suit your needs.
-
-### Who Should Use This Tab?
-
-This tab is intended for:
-- **Developers** building ePI systems or applications.
-- **Regulators** defining ePI requirements for medicinal product submissions.
-- **Pharmaceutical companies** creating compliant ePI for their products.
-- **Healthcare IT professionals** integrating ePI into electronic health record (EHR) systems.
-
-### ePI Resources and Types
-
-FHIR solutions are built from a set of modular components called "Resources". Of the 150+ resources available for use, ePI leverages only 14 of them to support various labeling use cases (See the [Use Cases](usecases.html) tab for details).
-
-The following table lists the in-scope resources and provides a brief description of its role in the ePI context.
+### ePI Resources
+ePI leverages 14 specific FHIR resources to support various labeling use cases. The table below outlines their roles.
 
 <table style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
-      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Resource</th>
-      <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Purpose in ePI Context</th>
+      <th style="border: 1px solid #e0e0e0; padding: 8px; text-align: left; background-color: #f2f2f2;">Resource</th>
+      <th style="border: 1px solid #e0e0e0; padding: 8px; text-align: left; background-color: #f2f2f2;">Purpose in ePI Context</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">List</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Provides a structured collection of references to other resources or items relevant to the ePI, enabling organization and navigation of label content or related data for use cases like advanced search or label presentation.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>List</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Organizes references to other resources, enabling navigation and advanced search.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Bundle</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Acts as a container to group Composition and other resources, enabling the reproduction of the local label template (e.g., EMA’s QRD template) with structured sections, text, bullets, tables, and images. Essential for ePI Type 1.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Bundle</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Container for grouping resources. Essential for reproducing local label templates in Type 1.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Composition</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Serves as the core resource for structuring the ePI label content, including section headings, text, bullets, tables, and images. Contains Binary resources and is critical for ePI Type 1 to recreate HCP labels, PILs, or artwork.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Composition</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Core structure for label content (headings, text, images).</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Binary</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Contained within the Composition resource to store raw data (e.g., images, tables, or text) needed to reproduce the local label template, such as section headings or artwork for the Healthcare Professional (HCP) label or Patient Information Leaflet (PIL).</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Binary</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Stores raw data like images or large text blocks for reproduction.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Organization</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Describes details about the company associated with the product, including name, identifier, address, and type. Enables use cases like advanced search by company and distribution tracking.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Organization</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Details the company (name, id, address) associated with the product.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Regulated Authorization</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Captures authorization details for the medicinal product, such as approval date and license number. Supports use cases like advanced search, drug shortages, and electronic health records.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Regulated Authorization</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Captures approval dates, license numbers, and holder details.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Medicinal Product Definition</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Captures regulatory details about the medicinal product, such as name, route of administration, and legal/marketing status. Supports use cases like advanced search, cross-border travel, and electronic health records.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Medicinal Product Definition</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Regulatory details: name, route, marketing status.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Manufactured Item Definition</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Describes the physical properties of the medicinal product in its primary package (e.g., strength, ingredients, size, color, shape). Supports use cases like advanced search, drug shortages, and electronic health records.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Manufactured Item Definition</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Physical properties in primary packaging (strength, color, shape).</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Administrable Product Definition</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Describes the physical properties of the medicinal product in its final form ready for administration to the patient (e.g., after reconstitution, including strength and ingredients). Supports use cases like electronic health records and precise dosing.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Administrable Product Definition</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Physical properties in final form for administration (e.g. reconstituted).</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Ingredient</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Defines specific ingredients in the medicinal product, used within Manufactured Item Definition and Administrable Product Definition. Supports use cases like allergen identification (e.g., lactose or aspartame) and advanced search by ingredient.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Ingredient</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Defines specific ingredients (active/excipient) and strength.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Substance Definition</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Provides detailed information about substances used in the product, linked to Ingredient resources within Manufactured Item Definition and Administrable Product Definition. Supports allergen checks and advanced search by substance.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Substance Definition</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Detailed substance info, linked to Ingredients.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Packaged Product Definition</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Details the primary and secondary layers of the product’s authorized packaging, including identifiers like GTIN or SKUs. Supports use cases like drug shortages, distribution, and advanced search by packaging details.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Packaged Product Definition</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Packaging layers, identifiers (GTIN/SKU), and quantity.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Clinical Use Definition</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Captures structured data for indications, contraindications, interactions, undesirable effects, and warnings. In ePI Type 3, supports personalization (e.g., polypharmacy checks). In ePI Type 4, encodes each indication or effect with terminologies like SNOMED or MedDRA.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Clinical Use Definition</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Structured indications, contraindications, interactions, and warnings (Type 3/4).</td>
     </tr>
     <tr>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Medication Knowledge</td>
-      <td style="border: 1px solid black; padding: 8px; text-align: left;">Structures dosing instructions in a machine-readable format (e.g., "take two 20 mg tablets once per day for two weeks"). In ePI Type 3, enables automated notifications via mobile devices or eHealth apps.</td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Medication Knowledge</b></td>
+      <td style="border: 1px solid #e0e0e0; padding: 8px;">Machine-readable dosing instructions (Type 3/4).</td>
     </tr>
   </tbody>
 </table>
 
-**Notes**
-- Not all resources are required for every ePI use case. They are combined into ePI Types (1, 2, 3, and 4) to address specific needs, as outlined in the [Use Cases](usecases.html) page.
-- This overview is intended to guide implementers in understanding the role of each FHIR resource in supporting ePI-related functionality. Refer to the [Artifacts](artifacts.html) page for more detail on profiles, terminology, and sample data.
+### ePI Types (Building Instructions)
 
-### Getting Started
+Select the ePI Type below to see specific build instructions:
 
-To begin, explore the sub-sections linked below for each ePI type. 
-
-- **Type 1: Narrative Only**  
-  Reproduces the local health authority's DOCX or PDF-based template. Which includes all human-readable narrative (e.g., paragraphs, tables, bullets, images), section headings, sub-section headings, and document metadata (e.g., Document title, original date of approval, last date of modification, version, language).  
-  [Learn how to build ePI Type 1](build-epi1.html)
-
-- **Type 2: Narrative with Structured Product Data**  
-  Includes structured data about the product (e.g., medication name, ingredients, dosage forms, market authorization holder). This type supports partial machine processing while prioritizing the narrative.  
-  [Learn how to build ePI Type 2](build-epi2.html)
-
-- **Type 3: Narrative with Structured Clinical Data**  
-  Includes structured clinical data (e.g., indications, contraindications, warnings, undesireable  effects). This type enables machine-readable clinical information for personalization, advanced search, and analytics.  
-  [Learn how to build ePI Type 3](build-epi3.html)
-
-- **Type 4: Fully Structured**  
-  Supports full machine processing and prioritizes structure over narrative (e.g., structured dose instructions, structured adverse event tables). Still includes narrative but the narrative is now a child of a structured component. This type is optimized for machine-to-machine exchange and advanced personalization (e.g., autogenerate an ePI for a specific individual or patient profile grouping).  
-  [Learn how to build ePI Type 4](build-epi4.html)
+*   **[Type 1: Narrative Only](build-epi1.html)**
+    *   *Focus*: Digitized document.
+    *   *Content*: Replicates PDF/DOCX templates (headings, text, images, metadata).
+*   **[Type 2: Narrative + Structured Product](build-epi2.html)**
+    *   *Focus*: Product data.
+    *   *Content*: Type 1 + structured ingredients, packaging, and authorization details.
+*   **[Type 3: Narrative + Structured Clinical](build-epi3.html)**
+    *   *Focus*: Clinical data.
+    *   *Content*: Type 2 + structured indications, warnings, and safety info.
+*   **[Type 4: Fully Structured](build-epi4.html)**
+    *   *Focus*: Automation & exchange.
+    *   *Content*: Structure effectively replaces narrative as the primary source. Optimized for machine processing.
