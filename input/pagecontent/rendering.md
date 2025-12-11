@@ -24,58 +24,13 @@ The HTML rendition should map the hierarchical structure of the FHIR Bundle:
 3. **Package Leaflet**: The Narrative content from the `Composition` resource.
 
 ### Example Stylesheet (CSS)
-The following CSS provides the "Modern Visual Grid" look, featuring rounded cards, soft shadows, and color-coded sections for Ingredients (Blue), Regulatory (Green), Packaging (Purple), and Appearance (Orange).
+You can download the standalone stylesheet used in our examples here:
+*   [epi-styles.css](epi-styles.css)
 
-```css
-:root {
-    --background-color: #ffffff;
-    --text-color: #1d1d1f;
-    --secondary-text-color: #86868b;
-    --accent-color: #0071e3;
-    --card-background: #f5f5f7;
-    --card-border-color: #d2d2d7;
-    --card-border-radius: 20px;
-    --section-spacing: 40px;
-}
+This stylesheet provides the "Modern Visual Grid" look, featuring rounded cards, collapsible accordions, and color-coded sections for Ingredients (Blue), Regulatory (Green), Packaging (Purple), Appearance (Orange), and Clinical Knowledge (Teal).
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.47;
-}
+### Rendered Examples
+View the fully rendered HTML examples below to see the stylesheet in action:
 
-.card {
-    background-color: var(--card-background);
-    border-radius: var(--card-border-radius);
-    padding: 30px;
-    margin-bottom: var(--section-spacing);
-}
-
-.inner-card {
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Color Accents for Inner Cards */
-.inner-card::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 6px;
-}
-.card-details::before { background-color: #0071e3; } /* Blue */
-.card-auth::before { background-color: #34c759; }    /* Green */
-.card-pack::before { background-color: #af52de; }    /* Purple */
-.card-phys::before { background-color: #ff9500; }    /* Orange */
-```
-
-### Full Example
-A complete example of a Type 2 ePI rendered with this style can be found in the examples directory: `bundle-epi-type2-example-acetaminophen.html`.
+*   **Type 2 (Acetaminophen)**: [bundle-epi-type2-example-acetaminophen.html](bundle-epi-type2-example-acetaminophen.html)
+*   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](bundle-epi-type3-example-wonderdrug.html)

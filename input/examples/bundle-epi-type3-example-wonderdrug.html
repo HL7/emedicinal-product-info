@@ -89,12 +89,6 @@
             margin-bottom: var(--section-spacing);
         }
 
-        /* Removed hover effect for layout cards to avoid distraction */
-        /* .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        } */
-
         /* Inner Cards (White) */
         .inner-card,
         .leaflet-card {
@@ -105,19 +99,31 @@
             margin-bottom: 20px;
         }
 
+        body ul {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        body li {
+            margin-bottom: 8px;
+        }
+
         /* Color Accents - applied to inner cards now if needed, or mapped differently */
         .inner-card {
             position: relative;
             overflow: hidden;
         }
 
-        .inner-card::before {
+        .inner-card::before,
+        .product-accordion::before {
             content: '';
             position: absolute;
             left: 0;
             top: 0;
             bottom: 0;
             width: 6px;
+            z-index: 1;
+            /* Ensure on top of borders/padding */
         }
 
         .card-details::before {
@@ -136,6 +142,33 @@
             background-color: #ff9500;
         }
 
+        /* Clinical Accents */
+        .card-indication::before {
+            background-color: #34c759;
+        }
+
+        .card-contra::before {
+            background-color: #ff3b30;
+        }
+
+        .card-interact::before {
+            background-color: #af52de;
+        }
+
+        .card-side::before {
+            background-color: #ff9500;
+        }
+
+        .card-warning::before {
+            background-color: #ff3b30;
+        }
+
+        .card-knowledge::before {
+            background-color: #30b0c7;
+        }
+
+        /* Teal for knowledge */
+
 
         .card h3 {
             font-size: 20px;
@@ -148,8 +181,6 @@
             display: flex;
             align-items: center;
         }
-
-        /* .card h3::after removed */
 
         .data-row {
             display: flex;
@@ -232,6 +263,8 @@
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
             /* Subtle shade */
+            position: relative;
+            /* For the colored strip */
         }
 
         .product-summary {
@@ -344,6 +377,84 @@
                 <span class="badge">Prescription Only</span>
             </div>
         </header>
+
+        <!-- Controls -->
+        <div style="text-align: right; margin-bottom: 20px;">
+            <button onclick="toggleDetails(true)" class="pill"
+                style="cursor: pointer; border: none; font-weight: 600;">Expand All</button>
+            <button onclick="toggleDetails(false)" class="pill"
+                style="cursor: pointer; border: none; font-weight: 600; margin-left: 10px;">Collapse All</button>
+        </div>
+
+        <!-- Narrative Section Card (Moved to Top) -->
+        <details class="product-details-wrapper card" open>
+            <summary class="section-title" style="cursor:pointer; list-style:none;">Package Leaflet: Information for the
+                user</summary>
+
+            <div class="narrative-content">
+
+                <div class="leaflet-section leaflet-card">
+                    <h2>1. What WonderDrug is and what it is used for</h2>
+                    <p>WonderDrug contains the active substance paracetamol. It is an analgesic and antipyretic
+                        medicine.
+                    </p>
+                    <p>WonderDrug is used for the symptomatic treatment of mild to moderate pain and/or fever.</p>
+                </div>
+
+                <div class="leaflet-section leaflet-card">
+                    <h2>2. What you need to know before you take WonderDrug</h2>
+                    <p><strong>Do not take WonderDrug:</strong></p>
+                    <ul>
+                        <li>If you are allergic to paracetamol or any of the other ingredients of this medicine.</li>
+                    </ul>
+                    <p><strong>Warnings and precautions:</strong></p>
+                    <p>Talk to your doctor or pharmacist before taking WonderDrug if you have liver or kidney problems.
+                    </p>
+                </div>
+
+                <div class="leaflet-section leaflet-card">
+                    <h2>3. How to take WonderDrug</h2>
+                    <p>Always take this medicine exactly as described in this leaflet or as your doctor or pharmacist
+                        has
+                        told you. Check with your doctor or pharmacist if you are not sure.</p>
+                    <p>The recommended dose is 1 tablet every 4 to 6 hours as needed. Do not exceed 6 tablets in 24
+                        hours.
+                    </p>
+                </div>
+
+                <div class="leaflet-section leaflet-card">
+                    <h2>4. Possible side effects</h2>
+                    <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
+                    <p>Stop taking the medicine and seek immediate medical attention if you experience allergic
+                        reactions
+                        such as skin rash or swelling.</p>
+                </div>
+
+                <div class="leaflet-section leaflet-card">
+                    <h2>5. How to store WonderDrug</h2>
+                    <p>Keep this medicine out of the sight and reach of children.</p>
+                    <p>Do not use this medicine after the expiry date which is stated on the carton.</p>
+                    <p>Store in the original package in order to protect from moisture.</p>
+                </div>
+
+                <div class="leaflet-section leaflet-card">
+                    <h2>6. Contents of the pack and other information</h2>
+                    <p><strong>What WonderDrug contains:</strong></p>
+                    <ul>
+                        <li>The active substance is paracetamol. Each tablet contains 500 mg of paracetamol.</li>
+                        <li>The other ingredients are carnauba wax, silicon dioxide, croscarmellose sodium, glyceryl
+                            dibehenate, hypromellose, polydextrose, polyethylene glycol, corn starch, titanium dioxide,
+                            ferrosoferric oxide, propylene glycol, and sodium lauryl sulfate.</li>
+                    </ul>
+                    <p><strong>What WonderDrug looks like and contents of the pack:</strong></p>
+                    <p>WonderDrug tablets are white, round, and flat. They are available in blister packs containing 30
+                        tablets.</p>
+                    <p><strong>Marketing Authorisation Holder and Manufacturer:</strong></p>
+                    <p>Acme Pharma Inc., 123 Pharma Way, 102 37 Prague, Czech Republic.</p>
+                </div>
+
+            </div>
+        </details>
 
         <!-- Product Accordion Section Card -->
         <details class="product-details-wrapper card" open>
@@ -721,82 +832,110 @@
             </details>
         </details>
 
-        <!-- Narrative Section Card -->
-        <section class="card">
-            <h2 class="section-title">Package Leaflet: Information for the user</h2>
-            <div class="narrative-content">
+        <!-- Clinical Particulars (New for Type 3) -->
+        <details class="product-details-wrapper card" open>
+            <summary class="section-title" style="cursor:pointer; list-style:none;">Clinical Particulars</summary>
 
-                <div class="leaflet-section leaflet-card">
-                    <h2>1. What WonderDrug is and what it is used for</h2>
-                    <p>WonderDrug contains the active substance paracetamol. It is an analgesic and antipyretic
-                        medicine.
-                    </p>
-                    <p>WonderDrug is used for the symptomatic treatment of mild to moderate pain and/or fever.</p>
-                </div>
-
-                <div class="leaflet-section leaflet-card">
-                    <h2>2. What you need to know before you take WonderDrug</h2>
-                    <p><strong>Do not take WonderDrug:</strong></p>
+            <!-- Indications -->
+            <details class="product-accordion card-indication" open>
+                <summary class="product-summary">Indications</summary>
+                <div class="product-details-content">
                     <ul>
-                        <li>If you are allergic to paracetamol or any of the other ingredients of this medicine.</li>
+                        <li>Fever</li>
+                        <li>Pain</li>
                     </ul>
-                    <p><strong>Warnings and precautions:</strong></p>
-                    <p>Talk to your doctor or pharmacist before taking WonderDrug if you have liver or kidney problems.
-                    </p>
                 </div>
+            </details>
 
-                <div class="leaflet-section leaflet-card">
-                    <h2>3. How to take WonderDrug</h2>
-                    <p>Always take this medicine exactly as described in this leaflet or as your doctor or pharmacist
-                        has
-                        told you. Check with your doctor or pharmacist if you are not sure.</p>
-                    <p>The recommended dose is 1 tablet every 4 to 6 hours as needed. Do not exceed 6 tablets in 24
-                        hours.
-                    </p>
-                </div>
-
-                <div class="leaflet-section leaflet-card">
-                    <h2>4. Possible side effects</h2>
-                    <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
-                    <p>Stop taking the medicine and seek immediate medical attention if you experience allergic
-                        reactions
-                        such as skin rash or swelling.</p>
-                </div>
-
-                <div class="leaflet-section leaflet-card">
-                    <h2>5. How to store WonderDrug</h2>
-                    <p>Keep this medicine out of the sight and reach of children.</p>
-                    <p>Do not use this medicine after the expiry date which is stated on the carton.</p>
-                    <p>Store in the original package in order to protect from moisture.</p>
-                </div>
-
-                <div class="leaflet-section leaflet-card">
-                    <h2>6. Contents of the pack and other information</h2>
-                    <p><strong>What WonderDrug contains:</strong></p>
+            <!-- Contraindications -->
+            <details class="product-accordion card-contra">
+                <summary class="product-summary">Contraindications</summary>
+                <div class="product-details-content">
                     <ul>
-                        <li>The active substance is paracetamol. Each tablet contains 500 mg of paracetamol.</li>
-                        <li>The other ingredients are carnauba wax, silicon dioxide, croscarmellose sodium, glyceryl
-                            dibehenate, hypromellose, polydextrose, polyethylene glycol, corn starch, titanium dioxide,
-                            ferrosoferric oxide, propylene glycol, and sodium lauryl sulfate.</li>
+                        <li>Severe hepatic insufficiency</li>
+                        <li>Concomitant use with other medicinal products containing paracetamol</li>
                     </ul>
-                    <p><strong>What WonderDrug looks like and contents of the pack:</strong></p>
-                    <p>WonderDrug tablets are white, round, and flat. They are available in blister packs containing 30
-                        tablets.</p>
-                    <p><strong>Marketing Authorisation Holder and Manufacturer:</strong></p>
-                    <p>Acme Pharma Inc., 123 Pharma Way, 102 37 Prague, Czech Republic.</p>
                 </div>
+            </details>
 
-            </div>
-        </section>
+            <!-- Interactions -->
+            <details class="product-accordion card-interact">
+                <summary class="product-summary">Interactions</summary>
+                <div class="product-details-content">
+                    <ul>
+                        <li><strong>Warfarin:</strong> Enhanced anticoagulant effect</li>
+                        <li><strong>Chloramphenicol:</strong> Potential interaction</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Undesirable Effects -->
+            <details class="product-accordion card-side">
+                <summary class="product-summary">Undesirable Effects</summary>
+                <div class="product-details-content">
+                    <ul>
+                        <li>Thrombocytopenia</li>
+                        <li>Diarrhea</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Warnings -->
+            <details class="product-accordion card-warning">
+                <summary class="product-summary">Warnings & Precautions</summary>
+                <div class="product-details-content">
+                    <ul>
+                        <li>Do not exceed the stated dose.</li>
+                        <li>Keep out of the sight and reach of children.</li>
+                    </ul>
+                </div>
+            </details>
+
+        </details>
+
+        <!-- Medication Knowledge Details -->
+        <details class="product-details-wrapper card" open>
+            <summary class="section-title" style="cursor:pointer; list-style:none;">Medication Knowledge</summary>
+
+            <!-- Dosing Guidelines -->
+            <details class="product-accordion card-knowledge" open>
+                <summary class="product-summary">Dosing Guidelines</summary>
+                <div class="product-details-content">
+                    <div class="data-row">
+                        <span class="data-label">Intent</span>
+                        <span class="data-value">Fever Treatment</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="data-label">Dosage</span>
+                        <span class="data-value">1 tablet every 4 to 6 hours</span>
+                    </div>
+                </div>
+            </details>
+
+        </details>
+
+
 
         <footer
             style="text-align: center; color: var(--secondary-text-color); font-size: 12px; border-top: 1px solid #d2d2d7; padding-top: 20px;">
-            <p>ePI Type 2 Example • Generated from FHIR Bundle</p>
-            <p>Identifier: WONDERDRUG-500MG-BUNDLE • Date: 2023-01-25</p>
+            <p>ePI Type 3 Example • Generated from FHIR Bundle</p>
+            <p>Identifier: WONDERDRUG-500MG-BUNDLE-TYPE3 • Date: 2023-10-27</p>
         </footer>
 
     </div>
 
+    <script>
+        function toggleDetails(shouldOpen) {
+            const detailsElements = document.querySelectorAll('details');
+            detailsElements.forEach(details => {
+                if (shouldOpen) {
+                    details.setAttribute('open', '');
+                } else {
+                    details.removeAttribute('open');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

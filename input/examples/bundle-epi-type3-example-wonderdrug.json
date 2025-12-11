@@ -1,0 +1,875 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-epi-type3-example-wonderdrug",
+    "type": "document",
+    "timestamp": "2023-10-27T10:00:00Z",
+    "identifier": {
+        "system": "http://ema.europa.eu/identifier",
+        "value": "WONDERDRUG-500MG-BUNDLE-TYPE3"
+    },
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-epi-type3-example-wonderdrug",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "composition-epi-type3-example-wonderdrug",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11555-4",
+                            "display": "Patient Information Leaflet"
+                        }
+                    ],
+                    "text": "Package Leaflet"
+                },
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    },
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-acetaminophen-100mg"
+                    },
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-acetaminophen-200mg"
+                    }
+                ],
+                "date": "2023-10-27",
+                "author": [
+                    {
+                        "reference": "Organization/org-epi-type3-example-pharma"
+                    }
+                ],
+                "title": "WonderDrug ePI Type 3 Example",
+                "section": [
+                    {
+                        "title": "Clinical Particulars",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-section-codes",
+                                    "code": "clinical-particulars"
+                                }
+                            ]
+                        },
+                        "entry": [
+                            {
+                                "reference": "ClinicalUseDefinition/cud-indication-1"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-indication-2"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-contraindication-1"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-contraindication-2"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-interaction-1"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-interaction-2"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-undesirable-effect-1"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-undesirable-effect-2"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-warning-1"
+                            },
+                            {
+                                "reference": "ClinicalUseDefinition/cud-warning-2"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "1. What is in this leaflet",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/rmswi/",
+                                    "code": "100000155538"
+                                }
+                            ],
+                            "text": "1. What is in this leaflet"
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type3-example-pharma",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "org-epi-type3-example-pharma",
+                "identifier": [
+                    {
+                        "system": "https://spor.ema.europa.eu/omswi",
+                        "value": "LOC-100000000"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://spor.ema.europa.eu/rmswi",
+                                "code": "220000000034",
+                                "display": "Marketing authorisation holder"
+                            }
+                        ]
+                    }
+                ],
+                "name": "WonderPharma Inc.",
+                "contact": [
+                    {
+                        "address": {
+                            "text": "123 Pharma Way, 102 37 Prague 10, Czech Republic",
+                            "line": [
+                                "123 Pharma Way"
+                            ],
+                            "city": "Prague",
+                            "postalCode": "102 37",
+                            "country": "Czech Republic"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug",
+            "resource": {
+                "resourceType": "MedicinalProductDefinition",
+                "id": "mpd-epi-type3-example-wonderdrug",
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/identifier",
+                        "value": "WONDERDRUG-500MG"
+                    }
+                ],
+                "domain": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/medicinal-product-domain",
+                            "code": "Human",
+                            "display": "Human use"
+                        }
+                    ]
+                },
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "name": [
+                    {
+                        "productName": "WonderDrug 500 mg tablets",
+                        "part": [
+                            {
+                                "part": "WonderDrug",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
+                                            "code": "INV",
+                                            "display": "Invented Name Part"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "part": "500 mg",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
+                                            "code": "STR",
+                                            "display": "Strength part"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "part": "tablets",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
+                                            "code": "FRM",
+                                            "display": "Form part"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "usage": [
+                            {
+                                "country": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/country",
+                                            "code": "EE",
+                                            "display": "Estonia"
+                                        }
+                                    ]
+                                },
+                                "language": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:ietf:bcp:47",
+                                            "code": "et",
+                                            "display": "Estonian"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "contact": [
+                    {
+                        "contact": {
+                            "reference": "Organization/org-epi-type3-example-pharma"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicinalProductDefinition",
+                "id": "mpd-epi-type2-example-acetaminophen-100mg",
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/identifier",
+                        "value": "WONDERDRUG-100MG"
+                    }
+                ],
+                "name": [
+                    {
+                        "productName": "WonderDrug 100 mg tablets"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicinalProductDefinition",
+                "id": "mpd-epi-type2-example-acetaminophen-200mg",
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/identifier",
+                        "value": "WONDERDRUG-200MG"
+                    }
+                ],
+                "name": [
+                    {
+                        "productName": "WonderDrug 200 mg tablets"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-indication-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"
+                    ]
+                },
+                "type": "indication",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "indication": {
+                    "diseaseSymptomProcedure": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "386661006",
+                                    "display": "Fever"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-indication-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"
+                    ]
+                },
+                "type": "indication",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "indication": {
+                    "diseaseSymptomProcedure": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "22253000",
+                                    "display": "Pain"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-contraindication-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"
+                    ]
+                },
+                "type": "contraindication",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "contraindication": {
+                    "diseaseSymptomProcedure": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "297950004",
+                                    "display": "Severe hepatic insufficiency"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-contraindication-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"
+                    ]
+                },
+                "type": "contraindication",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "contraindication": {
+                    "otherTherapy": [
+                        {
+                            "treatment": {
+                                "concept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "763158003",
+                                            "display": "Medicinal product containing paracetamol"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-interaction-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"
+                    ]
+                },
+                "type": "interaction",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "interaction": {
+                    "interactant": [
+                        {
+                            "itemCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "387342005",
+                                        "display": "Warfarin"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "effect": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "72054009",
+                                    "display": "Enhanced anticoagulant effect"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-interaction-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"
+                    ]
+                },
+                "type": "interaction",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "interaction": {
+                    "interactant": [
+                        {
+                            "itemCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "372551000",
+                                        "display": "Chloramphenicol"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-undesirable-effect-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"
+                    ]
+                },
+                "type": "undesirable-effect",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "undesirableEffect": {
+                    "symptomConditionEffect": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "29164005",
+                                    "display": "Thrombocytopenia"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-undesirable-effect-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"
+                    ]
+                },
+                "type": "undesirable-effect",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "undesirableEffect": {
+                    "symptomConditionEffect": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "62315008",
+                                    "display": "Diarrhea"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-warning-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"
+                    ]
+                },
+                "type": "warning",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "warning": {
+                    "description": "Do not exceed the stated dose."
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ClinicalUseDefinition",
+                "id": "cud-warning-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"
+                    ]
+                },
+                "type": "warning",
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "warning": {
+                    "description": "Keep out of the sight and reach of children."
+                }
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-acetaminophen",
+            "resource": {
+                "resourceType": "RegulatedAuthorization",
+                "id": "ra-epi-type2-example-acetaminophen",
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/identifier",
+                        "value": "MA-123456789"
+                    }
+                ],
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/rmswi",
+                            "code": "220000000061",
+                            "display": "Marketing Authorisation"
+                        }
+                    ]
+                },
+                "region": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/country",
+                                "code": "EE",
+                                "display": "Estonia"
+                            }
+                        ]
+                    }
+                ],
+                "holder": {
+                    "reference": "Organization/org-epi-type3-example-pharma"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-epi-type2-example-acetaminophen",
+            "resource": {
+                "resourceType": "PackagedProductDefinition",
+                "id": "ppd-epi-type2-example-acetaminophen",
+                "packageFor": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "packaging": {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "https://spor.ema.europa.eu/rmswi",
+                                "code": "100000073498",
+                                "display": "Box"
+                            }
+                        ]
+                    },
+                    "quantity": 1,
+                    "packaging": [
+                        {
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "https://spor.ema.europa.eu/rmswi",
+                                        "code": "100000073496",
+                                        "display": "Blister"
+                                    }
+                                ]
+                            },
+                            "containedItem": [
+                                {
+                                    "item": {
+                                        "reference": {
+                                            "reference": "ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen"
+                                        }
+                                    },
+                                    "amount": {
+                                        "value": 30,
+                                        "unit": "Tablet",
+                                        "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/unit-of-presentation"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen",
+            "resource": {
+                "resourceType": "ManufacturedItemDefinition",
+                "id": "mid-epi-type2-example-acetaminophen",
+                "status": "active",
+                "manufacturedDoseForm": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/rmswi",
+                            "code": "100000073664",
+                            "display": "Tablet"
+                        }
+                    ]
+                },
+                "unitOfPresentation": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/rmswi",
+                            "code": "200000002152",
+                            "display": "Tablet"
+                        }
+                    ]
+                },
+                "property": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "colour"
+                                }
+                            ]
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/colour",
+                                    "code": "white",
+                                    "display": "White"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-acetaminophen",
+            "resource": {
+                "resourceType": "AdministrableProductDefinition",
+                "id": "apd-epi-type2-example-acetaminophen",
+                "status": "active",
+                "formOf": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "administrableDoseForm": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/rmswi",
+                            "code": "100000073664",
+                            "display": "Tablet"
+                        }
+                    ]
+                },
+                "unitOfPresentation": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/rmswi",
+                            "code": "200000002152",
+                            "display": "Tablet"
+                        }
+                    ]
+                },
+                "producedFrom": [
+                    {
+                        "reference": "ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen"
+                    }
+                ],
+                "routeOfAdministration": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/rmswi",
+                                    "code": "100000073619",
+                                    "display": "Oral use"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-acetaminophen-active",
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "ingredient-epi-type2-example-acetaminophen-active",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/apd-epi-type2-example-acetaminophen"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/rmswi",
+                            "code": "100000072072",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/smswi",
+                                    "code": "100000000000",
+                                    "display": "Paracetamol"
+                                }
+                            ]
+                        }
+                    },
+                    "strength": [
+                        {
+                            "presentationRatio": {
+                                "numerator": {
+                                    "value": 500,
+                                    "unit": "mg",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                },
+                                "denominator": {
+                                    "value": 1,
+                                    "unit": "tablet",
+                                    "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/unit-of-presentation",
+                                    "code": "tablet"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationKnowledge",
+                "id": "medication-knowledge-epi-type3-example",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicationKnowledge-uv-epi"
+                    ]
+                },
+                "status": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "387517004",
+                            "display": "Paracetamol"
+                        }
+                    ]
+                },
+                "indicationGuideline": [
+                    {
+                        "dosingGuideline": [
+                            {
+                                "treatmentIntent": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "386661006",
+                                            "display": "Fever"
+                                        }
+                                    ]
+                                },
+                                "dosage": [
+                                    {
+                                        "dosage": {
+                                            "text": "1 tablet every 4 to 6 hours"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
