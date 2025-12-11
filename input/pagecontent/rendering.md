@@ -38,3 +38,5 @@ View the fully rendered HTML examples below to see the stylesheet in action:
 *   **Type 3 (Morphine)**: [bundle-epi-type3-example-morphine.html](examples/bundle-epi-type3-example-morphine.html)
 *   **Type 2 (WonderMox)**: [bundle-epi-type2-example-wondermox.html](examples/bundle-epi-type2-example-wondermox.html)
 *   **Type 3 (WonderMox)**: [bundle-epi-type3-example-wondermox.html](examples/bundle-epi-type3-example-wondermox.html)
+*   **Type 2 (Aprokam)**: [bundle-epi-type2-example-aprokam.html](examples/bundle-epi-type2-example-aprokam.html)
+*   **Type 3 (Aprokam)**: [bundle-epi-type3-example-aprokam.html](examples/bundle-epi-type3-example-aprokam.html)

@@ -1,0 +1,1275 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-epi-type2-example-aprokam",
+    "type": "document",
+    "timestamp": "2025-12-11T08:03:00.022059",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Composition",
+                "id": "composition-aprokam-type2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type2"
+                    ]
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000155531",
+                            "code": "100000155538",
+                            "display": "Package Leaflet"
+                        }
+                    ]
+                },
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    }
+                ],
+                "date": "2025-12-11",
+                "author": [
+                    {
+                        "reference": "Organization/LOC-100005605"
+                    }
+                ],
+                "title": "Package Leaflet: Information for the user - Aprokam 50 mg Powder",
+                "section": [
+                    {
+                        "title": "1. What Aprokam is and what it is used for",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000029659",
+                                    "code": "200000029895",
+                                    "display": "What X is and what it is used for"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Aprokam contains cefuroxime (as sodium). It is an antibiotic used to prevent eye infections after cataract surgery.</p></div>"
+                        }
+                    },
+                    {
+                        "title": "2. What you need to know before you take Aprokam",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000029659",
+                                    "code": "200000029896",
+                                    "display": "What you need to know before you take X"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Do not be given Aprokam if you are allergic to cefuroxime, or any of the cephalosporin antibiotics.</p></div>"
+                        }
+                    },
+                    {
+                        "title": "3. How to take Aprokam",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000029659",
+                                    "code": "200000029905",
+                                    "display": "How to take X"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Aprokam will be administered by an ophthalmic surgeon.</p></div>"
+                        }
+                    },
+                    {
+                        "title": "4. Possible side effects",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000029659",
+                                    "code": "200000029906",
+                                    "display": "Possible side effects"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Rare side effects include serious allergic reaction.</p></div>"
+                        }
+                    },
+                    {
+                        "title": "5. How to store Aprokam",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000029659",
+                                    "code": "200000029907",
+                                    "display": "How to store X"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Keep this medicine out of the sight and reach of children. Store below 25\u00b0C. Keep vial in the outer carton.</p></div>"
+                        }
+                    },
+                    {
+                        "title": "6. Contents of the pack and other information",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000029659",
+                                    "code": "200000029908",
+                                    "display": "Contents of the pack and other information"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The active substance is cefuroxime (as sodium). Each vial contains 50 mg cefuroxime.</p></div>"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicinalProductDefinition",
+                "id": "Aprokam-50mg-Powder-SE-IS-MPD",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:20:54.081+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/fhir/mpId",
+                        "value": "SE-100001677-00046149"
+                    },
+                    {
+                        "system": "http://ema.europa.eu/fhir/eurdId",
+                        "value": "615"
+                    }
+                ],
+                "domain": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+                            "code": "100000000012",
+                            "display": "Human use"
+                        }
+                    ]
+                },
+                "status": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/200000005003",
+                            "code": "200000005004",
+                            "display": "Current"
+                        }
+                    ]
+                },
+                "combinedPharmaceuticalDoseForm": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+                            "code": "100000073866",
+                            "display": "Powder for solution for injection"
+                        }
+                    ]
+                },
+                "indication": "Antibiotikaprofylax mot postoperativ endoftalmit efter kataraktoperation. Beakta de officiella riktlinjerna g\u00e4llande korrekt anv\u00e4ndning av antibakteriella l\u00e4kemedel, inkluderande riktlinjer f\u00f6r antibiotikaprofylax vid \u00f6gonkirurgi.",
+                "legalStatusOfSupply": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+                            "code": "100000072084",
+                            "display": "Medicinal product subject to medical prescription"
+                        }
+                    ]
+                },
+                "classification": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://spor.ema.europa.eu/v1/lists/100000116677",
+                                "code": "100000093533",
+                                "display": "S01AA27"
+                            }
+                        ]
+                    }
+                ],
+                "name": [
+                    {
+                        "productName": "Aprokam 50 mg Pulver till injektionsv\u00e4tska, l\u00f6sning",
+                        "part": [
+                            {
+                                "part": "Aprokam",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                                            "code": "220000000002",
+                                            "display": "Invented name part"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "part": "50 mg",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                                            "code": "220000000004",
+                                            "display": "Strength part"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "part": "pulver till injektionsv\u00e4tska, l\u00f6sning",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                                            "code": "220000000005",
+                                            "display": "Pharmaceutical dose form part"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "usage": [
+                            {
+                                "country": {
+                                    "coding": [
+                                        {
+                                            "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                                            "code": "100000000535",
+                                            "display": "Kingdom of Sweden"
+                                        }
+                                    ]
+                                },
+                                "language": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:ietf:bcp:47",
+                                            "code": "sv",
+                                            "display": "Swedish"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "RegulatedAuthorization",
+                "id": "Aprokam-50mg-Powder-SE-IS-RA",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:23:04.776+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+                        "value": "46149"
+                    }
+                ],
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+                            "code": "220000000061",
+                            "display": "Marketing Authorisation"
+                        }
+                    ]
+                },
+                "region": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                                "code": "100000000535",
+                                "display": "Kingdom of Sweden"
+                            }
+                        ]
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+                            "code": "100000072099",
+                            "display": "Valid"
+                        }
+                    ]
+                },
+                "statusDate": "2012-07-12",
+                "holder": {
+                    "reference": "Organization/LOC-100005605"
+                },
+                "case": {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "https://ema.europa.eu/fhir/authorisationDateType",
+                                "code": "dateOfFirstAuthorisation",
+                                "display": "First Authorisation"
+                            }
+                        ]
+                    },
+                    "dateDateTime": "2012-07-12"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "AdministrableProductDefinition",
+                "id": "Aprokam-50mg-Powder-SE-IS-APD",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:24:30.740+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"
+                    ]
+                },
+                "status": "active",
+                "formOf": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    }
+                ],
+                "administrableDoseForm": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+                            "code": "100000073863",
+                            "display": "Solution for injection"
+                        }
+                    ]
+                },
+                "producedFrom": [
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    }
+                ],
+                "routeOfAdministration": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
+                                    "code": "100000125763",
+                                    "display": "Intracameral use"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PackagedProductDefinition",
+                "id": "Aprokam-50mg-Powder-SE-IS-PPD02",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:27:10.988+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/example/pcid"
+                    }
+                ],
+                "packageFor": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    }
+                ],
+                "containedItemQuantity": [
+                    {
+                        "value": 10,
+                        "unit": "Vial",
+                        "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                        "code": "200000002158"
+                    }
+                ],
+                "description": "Injektionsflaska, 10 x 50 mg (inkl 10 sterila kanyler)",
+                "marketingStatus": [
+                    {
+                        "country": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                                    "code": "100000000535",
+                                    "display": "Kingdom of Sweden"
+                                }
+                            ]
+                        },
+                        "status": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/100000072052",
+                                    "code": "100000072083",
+                                    "display": "Marketed"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "packaging": {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                                "code": "100000073498",
+                                "display": "Box"
+                            }
+                        ]
+                    },
+                    "quantity": 1,
+                    "material": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                                    "code": "200000003529",
+                                    "display": "Cardboard"
+                                }
+                            ]
+                        }
+                    ],
+                    "packaging": [
+                        {
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                                        "code": "100000073563",
+                                        "display": "Vial"
+                                    }
+                                ]
+                            },
+                            "quantity": 10,
+                            "material": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                                            "code": "200000003203",
+                                            "display": "Glass"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "containedItem": [
+                                {
+                                    "item": {
+                                        "reference": {
+                                            "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                                        }
+                                    },
+                                    "amount": {
+                                        "value": 10,
+                                        "unit": "vial",
+                                        "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                                        "code": "200000002158"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PackagedProductDefinition",
+                "id": "Aprokam-50mg-Powder-SE-IS-PPD01",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:27:47.638+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://ema.europa.eu/example/pcid"
+                    }
+                ],
+                "packageFor": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    }
+                ],
+                "containedItemQuantity": [
+                    {
+                        "value": 10,
+                        "unit": "Vial",
+                        "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                        "code": "200000002158"
+                    }
+                ],
+                "description": "Injektionsflaska, 10 x 50 mg",
+                "marketingStatus": [
+                    {
+                        "country": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                                    "code": "100000000535",
+                                    "display": "Kingdom of Sweden"
+                                }
+                            ]
+                        },
+                        "status": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/100000072052",
+                                    "code": "100000072083",
+                                    "display": "Marketed"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "packaging": {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                                "code": "100000073498",
+                                "display": "Box"
+                            }
+                        ]
+                    },
+                    "quantity": 1,
+                    "material": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                                    "code": "200000003529",
+                                    "display": "Cardboard"
+                                }
+                            ]
+                        }
+                    ],
+                    "packaging": [
+                        {
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                                        "code": "100000073563",
+                                        "display": "Vial"
+                                    }
+                                ]
+                            },
+                            "quantity": 10,
+                            "material": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                                            "code": "200000003529",
+                                            "display": "Cardboard"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "packaging": [
+                                {
+                                    "type": {
+                                        "coding": [
+                                            {
+                                                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                                                "code": "100000073563",
+                                                "display": "Vial"
+                                            }
+                                        ]
+                                    },
+                                    "quantity": 1,
+                                    "material": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                                                    "code": "200000003203",
+                                                    "display": "Glass"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "containedItem": [
+                                        {
+                                            "item": {
+                                                "reference": {
+                                                    "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                                                }
+                                            },
+                                            "amount": {
+                                                "value": 1,
+                                                "unit": "Vial",
+                                                "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                                                "code": "200000002158"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "Aprokam-50mg-Powder-SE-IS-ING",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:26:31.100+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"
+                    ]
+                },
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072072",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "100000091436",
+                                    "display": "cefuroxime sodium"
+                                }
+                            ]
+                        }
+                    },
+                    "strength": [
+                        {
+                            "concentrationRatio": {
+                                "numerator": {
+                                    "value": 52.6,
+                                    "unit": "milligram(s)",
+                                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                                    "code": "100000110655"
+                                },
+                                "denominator": {
+                                    "value": 1,
+                                    "unit": "unit(s)",
+                                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                                    "code": "100000110756"
+                                }
+                            },
+                            "referenceStrength": [
+                                {
+                                    "substance": {
+                                        "concept": {
+                                            "coding": [
+                                                {
+                                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                                    "code": "100000092667",
+                                                    "display": "cefuroxime"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "strengthRatio": {
+                                        "numerator": {
+                                            "value": 50,
+                                            "unit": "milligram(s)",
+                                            "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                                            "code": "100000110655"
+                                        },
+                                        "denominator": {
+                                            "value": 1,
+                                            "unit": "unit(s)",
+                                            "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                                            "code": "100000110756"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ManufacturedItemDefinition",
+                "id": "Aprokam-50mg-Powder-SE-IS-MID",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:22:19.658+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"
+                    ]
+                },
+                "status": "active",
+                "manufacturedDoseForm": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+                            "code": "100000073866",
+                            "display": "Powder for solution for injection"
+                        }
+                    ]
+                },
+                "unitOfPresentation": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                            "code": "200000002158",
+                            "display": "Vial"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "LOC-100005605",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-11-26T09:20:15.753+00:00",
+                    "profile": [
+                        "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://spor.ema.europa.eu/v1/locations",
+                        "value": "LOC-100005605"
+                    }
+                ],
+                "name": "Laboratoires THEA"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-1",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-1",
+                                    "display": "Carnauba Wax"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-2",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-2",
+                                    "display": "Silicon Dioxide"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-3",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-3",
+                                    "display": "Croscarmellose Sodium"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-4",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-4",
+                                    "display": "Glyceryl Dibehenate"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-5",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-5",
+                                    "display": "Hypromellose"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-6",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-6",
+                                    "display": "Polydextrose"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-7",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-7",
+                                    "display": "Polyethylene Glycol"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-8",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-8",
+                                    "display": "Corn Starch"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-9",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-9",
+                                    "display": "Titanium Dioxide"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-10",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-10",
+                                    "display": "Ferrosoferric Oxide"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-11",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-11",
+                                    "display": "Propylene Glycol"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Ingredient",
+                "id": "aprokam-excipient-12",
+                "status": "active",
+                "for": [
+                    {
+                        "reference": "MedicinalProductDefinition/Aprokam-50mg-Powder-SE-IS-MPD"
+                    },
+                    {
+                        "reference": "ManufacturedItemDefinition/Aprokam-50mg-Powder-SE-IS-MID"
+                    },
+                    {
+                        "reference": "AdministrableProductDefinition/Aprokam-50mg-Powder-SE-IS-APD"
+                    }
+                ],
+                "role": {
+                    "coding": [
+                        {
+                            "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+                            "code": "100000072082",
+                            "display": "Excipient"
+                        }
+                    ]
+                },
+                "substance": {
+                    "code": {
+                        "concept": {
+                            "coding": [
+                                {
+                                    "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                                    "code": "E-CODE-12",
+                                    "display": "Sodium Lauryl Sulfate"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
