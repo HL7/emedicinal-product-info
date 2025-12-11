@@ -16,8 +16,33 @@
     "differential": {
         "element": [
             {
+                "id": "ClinicalUseDefinition.id",
+                "path": "ClinicalUseDefinition.id",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.meta",
+                "path": "ClinicalUseDefinition.meta",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.meta.profile",
+                "path": "ClinicalUseDefinition.meta.profile",
+                "min": 1
+            },
+            {
                 "id": "ClinicalUseDefinition.identifier",
                 "path": "ClinicalUseDefinition.identifier",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.identifier.system",
+                "path": "ClinicalUseDefinition.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.identifier.value",
+                "path": "ClinicalUseDefinition.identifier.value",
                 "min": 1
             },
             {
@@ -28,11 +53,13 @@
             {
                 "id": "ClinicalUseDefinition.category",
                 "path": "ClinicalUseDefinition.category",
+                "min": 1,
                 "short": "A categorization of the issue, primarily for searching, sorting and display."
             },
             {
                 "id": "ClinicalUseDefinition.subject",
                 "path": "ClinicalUseDefinition.subject",
+                "min": 1,
                 "type": [
                     {
                         "code": "Reference",
@@ -45,6 +72,7 @@
             {
                 "id": "ClinicalUseDefinition.status",
                 "path": "ClinicalUseDefinition.status",
+                "min": 1,
                 "short": "The status of the clinical use definition."
             },
             {
@@ -81,6 +109,16 @@
                 "id": "ClinicalUseDefinition.contraindication.otherTherapy",
                 "path": "ClinicalUseDefinition.contraindication.otherTherapy",
                 "short": "Information about the use of the medicinal product in relation to other therapies described as part of the contraindication."
+            },
+            {
+                "id": "ClinicalUseDefinition.contraindication.otherTherapy.relationshipType",
+                "path": "ClinicalUseDefinition.contraindication.otherTherapy.relationshipType",
+                "short": "The type of relationship between the medicine and the other therapy."
+            },
+            {
+                "id": "ClinicalUseDefinition.contraindication.otherTherapy.treatment",
+                "path": "ClinicalUseDefinition.contraindication.otherTherapy.treatment",
+                "short": "The therapy being contrasted."
             },
             {
                 "id": "ClinicalUseDefinition.indication",
@@ -165,6 +203,7 @@
             {
                 "id": "ClinicalUseDefinition.population",
                 "path": "ClinicalUseDefinition.population",
+                "min": 1,
                 "short": "The population group to which this applies."
             },
             {
