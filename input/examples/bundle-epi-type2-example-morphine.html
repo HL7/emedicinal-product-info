@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morphine Unimedic 1 mg/ml - ePI</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --text-color: #1d1d1f;
+            --secondary-text-color: #86868b;
+            --accent-color: #0071e3;
+            --card-background: #f5f5f7;
+            --card-border-color: #d2d2d7;
+            --card-border-radius: 20px;
+            --section-spacing: 40px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.47;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            border-radius: var(--card-border-radius);
+            padding: 30px;
+            margin-bottom: var(--section-spacing);
+        }
+
+        .inner-card,
+        .leaflet-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .inner-card::before,
+        .product-accordion::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            z-index: 1;
+        }
+
+        .card-details::before {
+            background-color: #0071e3;
+        }
+
+        .card-auth::before {
+            background-color: #34c759;
+        }
+
+        .card-pack::before {
+            background-color: #af52de;
+        }
+
+        .card-phys::before {
+            background-color: #ff9500;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--secondary-text-color);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            font-size: 15px;
+        }
+
+        .data-label {
+            color: var(--secondary-text-color);
+            font-weight: 500;
+        }
+
+        .data-value {
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .product-details-wrapper>summary {
+            margin-bottom: 20px;
+            cursor: pointer;
+            list-style: none;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .product-details-wrapper>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .product-details-wrapper>summary::after {
+            content: '+';
+            float: right;
+            font-weight: 300;
+            transition: transform 0.2s;
+        }
+
+        .product-details-wrapper[open]>summary::after {
+            transform: rotate(45deg);
+        }
+
+        .product-accordion {
+            background-color: #fff;
+            border: 1px solid #d2d2d7;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-summary {
+            padding: 20px 24px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 20px;
+            background-color: #fbfbfd;
+        }
+
+        .product-accordion[open] .product-summary {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .product-details-content {
+            padding: 24px;
+        }
+
+        .product-summary::after {
+            content: '+';
+            font-size: 28px;
+            font-weight: 200;
+            color: var(--secondary-text-color);
+            transition: transform 0.3s;
+        }
+
+        .product-accordion[open] .product-summary::after {
+            transform: rotate(45deg);
+        }
+
+        button.pill {
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+            background-color: #e8e8ed;
+            color: var(--text-color);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+
+        button.pill:hover {
+            background-color: #d2d2d7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="card">
+            <h1>Morphine Unimedic</h1>
+            <div class="subtitle">1 mg/ml Solution for injection</div>
+            <div style="margin-top: 20px; text-align: center;">
+                <span
+                    style="background-color: #1d1d1f; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600;">Prescription
+                    Only</span>
+            </div>
+        </header>
+
+        <div style="text-align: right; margin-bottom: 20px;">
+            <button onclick="toggleDetails(true)" class="pill">Expand All</button>
+            <button onclick="toggleDetails(false)" class="pill">Collapse All</button>
+        </div>
+
+        <!-- Package Leaflet -->
+        <details class="product-details-wrapper card" open>
+            <summary class="section-title">Package Leaflet: Information for the user</summary>
+            <div class="narrative-content">
+                <div class="leaflet-section leaflet-card">
+                    <h2>1. What Morphine Unimedic is and what it is used for</h2>
+                    <p>Morphine Unimedic contains the active substance morphine hydrochloride. It is an opioid analgesic
+                        used for severe pain.</p>
+                </div>
+                <div class="leaflet-section leaflet-card">
+                    <h2>2. What you need to know before you take Morphine Unimedic</h2>
+                    <p>Do not take if allergic to morphine.</p>
+                </div>
+                <div class="leaflet-section leaflet-card">
+                    <h2>3. How to take Morphine Unimedic</h2>
+                    <p>Use as directed by your doctor.</p>
+                </div>
+                <div class="leaflet-section leaflet-card">
+                    <h2>4. Possible side effects</h2>
+                    <p>May cause nausea, vomiting, or constipation.</p>
+                </div>
+                <div class="leaflet-section leaflet-card">
+                    <h2>5. How to store Morphine Unimedic</h2>
+                    <p>Keep out of reach of children.</p>
+                </div>
+                <div class="leaflet-section leaflet-card">
+                    <h2>6. Contents of the pack and other information</h2>
+                    <p>Content: Morphine hydrochloride 1 mg/ml.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- Product Details -->
+        <details class="product-details-wrapper card" open>
+            <summary class="section-title">Product Details</summary>
+
+            <details class="product-accordion" open>
+                <summary class="product-summary">
+                    <span class="product-name">Morphine Unimedic 1 mg/ml</span>
+                </summary>
+                <div class="product-details-content">
+                    <div class="card-grid">
+                        <div class="inner-card card-details">
+                            <h3>Ingredients</h3>
+                            <div class="data-row"><span class="data-label">Active Substance</span><span
+                                    class="data-value">Morphine Hydrochloride</span></div>
+                            <div class="data-row"><span class="data-label">Strength</span><span class="data-value">1
+                                    mg/ml</span></div>
+                        </div>
+                        <div class="inner-card card-auth">
+                            <h3>Regulatory Data</h3>
+                            <div class="data-row"><span class="data-label">MA Number</span><span
+                                    class="data-value">56117</span></div>
+                            <div class="data-row"><span class="data-label">Region</span><span
+                                    class="data-value">Sweden</span></div>
+                            <div class="data-row"><span class="data-label">Holder</span><span
+                                    class="data-value">Unimedic Pharma AB</span></div>
+                        </div>
+                        <div class="inner-card card-pack">
+                            <h3>Packaging</h3>
+                            <div class="data-row"><span class="data-label">Type</span><span class="data-value">Box /
+                                    Ampoule</span></div>
+                            <div class="data-row"><span class="data-label">Quantity</span><span class="data-value">10 x
+                                    10 ml</span></div>
+                            <div class="data-row"><span class="data-label">Material</span><span
+                                    class="data-value">Glass</span></div>
+                        </div>
+                        <div class="inner-card card-phys">
+                            <h3>Appearance</h3>
+                            <div class="data-row"><span class="data-label">Form</span><span class="data-value">Solution
+                                    for injection</span></div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </details>
+
+        <footer
+            style="text-align: center; color: var(--secondary-text-color); font-size: 12px; border-top: 1px solid #d2d2d7; padding-top: 20px;">
+            <p>ePI Type 2 Example • Generated from FHIR Bundle</p>
+            <p>Identifier: bundle-epi-type2-example-morphine • Date: 2023-11-27</p>
+        </footer>
+    </div>
+    <script>
+        function toggleDetails(shouldOpen) {
+            document.querySelectorAll('details').forEach(d => shouldOpen ? d.setAttribute('open', '') : d.removeAttribute('open'));
+        }
+    </script>
+</body>
+
+</html>

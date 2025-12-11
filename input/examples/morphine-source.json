@@ -1,0 +1,442 @@
+{
+  "resourceType": "Bundle",
+  "id": "da8e3290-e187-4ee7-860f-1397221a20ea",
+  "meta": {
+    "lastUpdated": "2025-12-11T02:08:31.382+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [ {
+    "relation": "self",
+    "url": "http://sandbox.hl7europe.eu/unicom/fhir/MedicinalProductDefinition?_format=json&_id=MorphineUni-1mgml-Solution-SE-BS-MPD&_include%3Aiterate=RegulatedAuthorization%3Aholder&_include%3Aiterate=PackagedProductDefinition%3Amanufactured-item&_include%3Aiterate=Ingredient%3Afor&_revinclude=RegulatedAuthorization%3Asubject&_revinclude=PackagedProductDefinition%3Apackage-for&_revinclude=AdministrableProductDefinition%3Aform-of&_revinclude%3Aiterate=Ingredient%3Afor&_revinclude%3Aiterate=Ingredient%3Afor"
+  } ],
+  "entry": [ {
+    "fullUrl": "http://sandbox.hl7europe.eu/unicom/fhir/MedicinalProductDefinition/MorphineUni-1mgml-Solution-SE-BS-MPD",
+    "resource": {
+      "resourceType": "MedicinalProductDefinition",
+      "id": "MorphineUni-1mgml-Solution-SE-BS-MPD",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-11-26T09:21:19.300+00:00",
+        "profile": [ "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition" ]
+      },
+      "identifier": [ {
+        "system": "http://ema.europa.eu/fhir/mpId",
+        "value": "SE-100001732-00056117"
+      }, {
+        "system": "http://ema.europa.eu/fhir/eurdId",
+        "value": "10549"
+      } ],
+      "domain": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+          "code": "100000000012",
+          "display": "Human use"
+        } ]
+      },
+      "status": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/200000005003",
+          "code": "200000005004",
+          "display": "Current"
+        } ]
+      },
+      "combinedPharmaceuticalDoseForm": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/200000000004~200000000006~200000000007~200000000008",
+          "code": "100000073863",
+          "display": "Solution for injection"
+        } ]
+      },
+      "indication": "Morphine Unimedic är indikerat för behandling av svår postoperativ och posttraumatisk smärta och svår opioidkänslig smärta såsom smärta vid cancer.",
+      "legalStatusOfSupply": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+          "code": "100000072085",
+          "display": "Medicinal product subject to special medical prescription"
+        } ]
+      },
+      "classification": [ {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+          "code": "100000097139",
+          "display": "morphine"
+        } ]
+      } ],
+      "name": [ {
+        "productName": "Morphine Unimedic 1 mg/ml injektionsvätska, lösning",
+        "part": [ {
+          "part": "Morphine Unimedic",
+          "type": {
+            "coding": [ {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+              "code": "220000000003",
+              "display": "Scientific name part"
+            } ]
+          }
+        }, {
+          "part": "1 mg/ml",
+          "type": {
+            "coding": [ {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+              "code": "220000000004",
+              "display": "Strength part"
+            } ]
+          }
+        }, {
+          "part": "Injektionsvätska, lösning",
+          "type": {
+            "coding": [ {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+              "code": "220000000005",
+              "display": "Pharmaceutical dose form part"
+            } ]
+          }
+        } ],
+        "usage": [ {
+          "country": {
+            "coding": [ {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+              "code": "100000000535",
+              "display": "Kingdom of Sweden"
+            } ]
+          },
+          "language": {
+            "coding": [ {
+              "system": "urn:ietf:bcp:47",
+              "code": "sv",
+              "display": "Swedish"
+            } ]
+          }
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "http://sandbox.hl7europe.eu/unicom/fhir/RegulatedAuthorization/MorphineUni-1mgml-Solution-SE-BS-RA",
+    "resource": {
+      "resourceType": "RegulatedAuthorization",
+      "id": "MorphineUni-1mgml-Solution-SE-BS-RA",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-11-26T09:23:15.251+00:00",
+        "profile": [ "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization" ]
+      },
+      "identifier": [ {
+        "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+        "value": "56117"
+      } ],
+      "subject": [ {
+        "reference": "MedicinalProductDefinition/MorphineUni-1mgml-Solution-SE-BS-MPD"
+      } ],
+      "type": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+          "code": "220000000061",
+          "display": "Marketing Authorisation"
+        } ]
+      },
+      "region": [ {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+          "code": "100000000535",
+          "display": "Kingdom of Sweden"
+        } ]
+      } ],
+      "status": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+          "code": "100000072099",
+          "display": "Valid"
+        } ]
+      },
+      "statusDate": "2018-04-06",
+      "holder": {
+        "reference": "Organization/LOC-100001090"
+      },
+      "case": {
+        "type": {
+          "coding": [ {
+            "system": "https://ema.europa.eu/fhir/authorisationDateType",
+            "code": "dateOfFirstAuthorisation",
+            "display": "First Authorisation"
+          } ]
+        },
+        "dateDateTime": "2018-04-06"
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://sandbox.hl7europe.eu/unicom/fhir/AdministrableProductDefinition/MorphineUni-1mgml-Solution-SE-BS-APD",
+    "resource": {
+      "resourceType": "AdministrableProductDefinition",
+      "id": "MorphineUni-1mgml-Solution-SE-BS-APD",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-11-26T09:23:58.134+00:00",
+        "profile": [ "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition" ]
+      },
+      "status": "active",
+      "formOf": [ {
+        "reference": "MedicinalProductDefinition/MorphineUni-1mgml-Solution-SE-BS-MPD"
+      } ],
+      "administrableDoseForm": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+          "code": "100000073863",
+          "display": "Solution for injection"
+        } ]
+      },
+      "producedFrom": [ {
+        "reference": "ManufacturedItemDefinition/MorphineUni-1mgml-Solution-SE-BS-MID"
+      } ],
+      "routeOfAdministration": [ {
+        "code": {
+          "coding": [ {
+            "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
+            "code": "100000073633",
+            "display": "Subcutaneous use"
+          }, {
+            "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
+            "code": "100000073600",
+            "display": "Intramuscular use"
+          }, {
+            "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
+            "code": "100000073611",
+            "display": "Intravenous use"
+          }, {
+            "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
+            "code": "100000073572",
+            "display": "Epidural use"
+          } ]
+        }
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://sandbox.hl7europe.eu/unicom/fhir/PackagedProductDefinition/MorphineUni-1mgml-Solution-SE-BS-PPD",
+    "resource": {
+      "resourceType": "PackagedProductDefinition",
+      "id": "MorphineUni-1mgml-Solution-SE-BS-PPD",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-11-26T09:26:35.272+00:00",
+        "profile": [ "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition" ]
+      },
+      "identifier": [ {
+        "system": "http://ema.europa.eu/example/pcid"
+      } ],
+      "packageFor": [ {
+        "reference": "MedicinalProductDefinition/MorphineUni-1mgml-Solution-SE-BS-MPD"
+      } ],
+      "containedItemQuantity": [ {
+        "value": 10,
+        "unit": "Ampoule",
+        "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+        "code": "200000002164"
+      } ],
+      "description": "Ampull, 10 x 10 ml",
+      "marketingStatus": [ {
+        "country": {
+          "coding": [ {
+            "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+            "code": "100000000535",
+            "display": "Kingdom of Sweden"
+          } ]
+        },
+        "status": {
+          "coding": [ {
+            "system": "https://spor.ema.europa.eu/v1/lists/100000072052",
+            "code": "100000072083",
+            "display": "Marketed"
+          } ]
+        }
+      } ],
+      "packaging": {
+        "type": {
+          "coding": [ {
+            "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+            "code": "100000073498",
+            "display": "Box"
+          } ]
+        },
+        "quantity": 1,
+        "material": [ {
+          "coding": [ {
+            "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+            "code": "200000003529",
+            "display": "Cardboard"
+          } ]
+        } ],
+        "packaging": [ {
+          "type": {
+            "coding": [ {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+              "code": "100000073490",
+              "display": "Ampoule"
+            } ]
+          },
+          "quantity": 10,
+          "material": [ {
+            "coding": [ {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+              "code": "200000003203",
+              "display": "Glass"
+            } ]
+          } ],
+          "containedItem": [ {
+            "item": {
+              "reference": {
+                "reference": "ManufacturedItemDefinition/MorphineUni-1mgml-Solution-SE-BS-MID"
+              }
+            },
+            "amount": {
+              "value": 10,
+              "unit": "millilitre(s)",
+              "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+              "code": "100000110662"
+            }
+          } ]
+        } ]
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://sandbox.hl7europe.eu/unicom/fhir/Ingredient/MorphineUni-1mgml-Solution-SE-BS-ING",
+    "resource": {
+      "resourceType": "Ingredient",
+      "id": "MorphineUni-1mgml-Solution-SE-BS-ING",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-11-26T09:26:27.892+00:00",
+        "profile": [ "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient" ]
+      },
+      "status": "active",
+      "for": [ {
+        "reference": "MedicinalProductDefinition/MorphineUni-1mgml-Solution-SE-BS-MPD"
+      }, {
+        "reference": "ManufacturedItemDefinition/MorphineUni-1mgml-Solution-SE-BS-MID"
+      }, {
+        "reference": "AdministrableProductDefinition/MorphineUni-1mgml-Solution-SE-BS-APD"
+      } ],
+      "role": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+          "code": "100000072072",
+          "display": "Active"
+        } ]
+      },
+      "substance": {
+        "code": {
+          "concept": {
+            "coding": [ {
+              "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+              "code": "100000090494",
+              "display": "Morphine hydrochloride"
+            } ]
+          }
+        },
+        "strength": [ {
+          "concentrationRatio": {
+            "numerator": {
+              "value": 1,
+              "unit": "milligram(s)",
+              "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+              "code": "100000110655"
+            },
+            "denominator": {
+              "value": 1,
+              "unit": "millilitre(s)",
+              "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+              "code": "100000110662"
+            }
+          },
+          "referenceStrength": [ {
+            "substance": {
+              "concept": {
+                "coding": [ {
+                  "system": "https://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000091372",
+                  "display": "Morphine"
+                } ]
+              }
+            },
+            "strengthRatio": {
+              "numerator": {
+                "value": 0.76,
+                "unit": "milligram(s)",
+                "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                "code": "100000110655"
+              },
+              "denominator": {
+                "value": 1,
+                "unit": "millilitre(s)",
+                "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                "code": "100000110662"
+              }
+            }
+          } ]
+        } ]
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://sandbox.hl7europe.eu/unicom/fhir/Organization/LOC-100001090",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "LOC-100001090",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-11-26T09:20:05.357+00:00",
+        "profile": [ "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization" ]
+      },
+      "identifier": [ {
+        "system": "https://spor.ema.europa.eu/v1/locations",
+        "value": "LOC-100001090"
+      } ],
+      "name": "Unimedic Pharma AB"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "http://sandbox.hl7europe.eu/unicom/fhir/ManufacturedItemDefinition/MorphineUni-1mgml-Solution-SE-BS-MID",
+    "resource": {
+      "resourceType": "ManufacturedItemDefinition",
+      "id": "MorphineUni-1mgml-Solution-SE-BS-MID",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2025-11-26T09:22:32.799+00:00",
+        "profile": [ "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition" ]
+      },
+      "status": "active",
+      "manufacturedDoseForm": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+          "code": "100000073863",
+          "display": "Solution for injection"
+        } ]
+      },
+      "unitOfPresentation": {
+        "coding": [ {
+          "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+          "code": "200000002164",
+          "display": "Ampoule"
+        } ]
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  } ]
+}
