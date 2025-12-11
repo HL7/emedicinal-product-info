@@ -32,9 +32,9 @@ This stylesheet provides the "Modern Visual Grid" look, featuring rounded cards,
 ### Rendered Examples
 View the fully rendered HTML examples below to see the stylesheet in action:
 
-*   **Type 2 (Acetaminophen)**: [bundle-epi-type2-example-acetaminophen.html](bundle-epi-type2-example-acetaminophen.html)
-*   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](bundle-epi-type3-example-wonderdrug.html)
-*   **Type 2 (Morphine)**: [bundle-epi-type2-example-morphine.html](bundle-epi-type2-example-morphine.html)
-*   **Type 3 (Morphine)**: [bundle-epi-type3-example-morphine.html](bundle-epi-type3-example-morphine.html)
-*   **Type 2 (Betaklav)**: [bundle-epi-type2-example-betaklav.html](bundle-epi-type2-example-betaklav.html)
-*   **Type 3 (Betaklav)**: [bundle-epi-type3-example-betaklav.html](bundle-epi-type3-example-betaklav.html)
+*   **Type 2 (Acetaminophen)**: [bundle-epi-type2-example-acetaminophen.html](examples/bundle-epi-type2-example-acetaminophen.html)
+*   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](examples/bundle-epi-type3-example-wonderdrug.html)
+*   **Type 2 (Morphine)**: [bundle-epi-type2-example-morphine.html](examples/bundle-epi-type2-example-morphine.html)
+*   **Type 3 (Morphine)**: [bundle-epi-type3-example-morphine.html](examples/bundle-epi-type3-example-morphine.html)
+*   **Type 2 (WonderMox)**: [bundle-epi-type2-example-wondermox.html](examples/bundle-epi-type2-example-wondermox.html)
+*   **Type 3 (WonderMox)**: [bundle-epi-type3-example-wondermox.html](examples/bundle-epi-type3-example-wondermox.html)

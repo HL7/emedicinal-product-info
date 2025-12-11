@@ -10,8 +10,15 @@ resources = {}
 source_entries = []
 for entry in source_bundle["entry"]:
     res = entry["resource"]
+    
+    # Genericise the data
+    res_str = json.dumps(res)
+    res_str = res_str.replace("Betaklav", "WonderMox")
+    res = json.loads(res_str)
+    
     resources[res["resourceType"]] = res
     source_entries.append(res)
+
 
 # Keys - assuming single MPD, Org as in source
 mpd_id = resources["MedicinalProductDefinition"]["id"]
@@ -21,7 +28,7 @@ org_id = resources["Organization"]["id"]
 def create_composition(type_code):
     return {
         "resourceType": "Composition",
-        "id": f"composition-betaklav-type{type_code}",
+        "id": f"composition-wondermox-type{type_code}",
         "meta": {
             "profile": [f"http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type{type_code}"]
         },
@@ -46,10 +53,10 @@ def create_composition(type_code):
                 "reference": f"Organization/{org_id}"
             }
         ],
-        "title": "Package Leaflet: Information for the user - Betaklav 500 mg/125 mg",
+        "title": "Package Leaflet: Information for the user - WonderMox 500 mg/125 mg",
         "section": [
             {
-                "title": "1. What Betaklav is and what it is used for",
+                "title": "1. What WonderMox is and what it is used for",
                 "code": {
                     "coding": [
                         {
@@ -61,11 +68,11 @@ def create_composition(type_code):
                 },
                 "text": {
                     "status": "additional",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Betaklav is an antibiotic and works by killing bacteria that cause infections. It contains two different medicines called amoxicillin and clavulanic acid.</p></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>WonderMox is an antibiotic and works by killing bacteria that cause infections. It contains two different medicines called amoxicillin and clavulanic acid.</p></div>"
                 }
             },
              {
-                "title": "2. What you need to know before you take Betaklav",
+                "title": "2. What you need to know before you take WonderMox",
                 "code": {
                     "coding": [
                         {
@@ -77,11 +84,11 @@ def create_composition(type_code):
                 },
                 "text": {
                     "status": "additional",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Do not take Betaklav if you are allergic to amoxicillin, clavulanic acid, penicillin or any of the other ingredients of this medicine.</p></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Do not take WonderMox if you are allergic to amoxicillin, clavulanic acid, penicillin or any of the other ingredients of this medicine.</p></div>"
                 }
             },
             {
-                "title": "3. How to take Betaklav",
+                "title": "3. How to take WonderMox",
                  "code": {
                     "coding": [
                         {
@@ -113,7 +120,7 @@ def create_composition(type_code):
                 }
             },
              {
-                "title": "5. How to store Betaklav",
+                "title": "5. How to store WonderMox",
                  "code": {
                     "coding": [
                         {
@@ -215,7 +222,7 @@ def create_clinical_resources():
 def create_medication_knowledge():
     return {
         "resourceType": "MedicationKnowledge",
-        "id": "mk-betaklav",
+        "id": "mk-wondermox",
         "status": "active",
         "code": {
             "coding": [{"system": "http://snomed.info/sct", "code": "777067007", "display": "Amoxicillin + Clavulanic Acid"}]
@@ -240,7 +247,7 @@ t2_comp = create_composition(2)
 t2_resources = [t2_comp] + source_entries
 t2_bundle = {
      "resourceType": "Bundle",
-    "id": "bundle-epi-type2-example-betaklav",
+    "id": "bundle-epi-type2-example-wondermox",
     "type": "document",
     "timestamp": datetime.now().isoformat(),
     "entry": [{"resource": r} for r in t2_resources]
@@ -263,16 +270,16 @@ t3_comp["section"][0]["entry"].append({"reference": f"MedicationKnowledge/{med_k
 
 t3_bundle = {
      "resourceType": "Bundle",
-    "id": "bundle-epi-type3-example-betaklav",
+    "id": "bundle-epi-type3-example-wondermox",
     "type": "document",
     "timestamp": datetime.now().isoformat(),
     "entry": [{"resource": r} for r in t3_resources]
 }
 
 # Write files
-with open("input/examples/bundle-epi-type2-example-betaklav.json", "w") as f:
+with open("input/examples/bundle-epi-type2-example-wondermox.json", "w") as f:
     json.dump(t2_bundle, f, indent=4)
-with open("input/examples/bundle-epi-type3-example-betaklav.json", "w") as f:
+with open("input/examples/bundle-epi-type3-example-wondermox.json", "w") as f:
     json.dump(t3_bundle, f, indent=4)
 
 print("Bundles created successfully.")
