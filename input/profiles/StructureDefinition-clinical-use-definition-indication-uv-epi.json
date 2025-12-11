@@ -1,0 +1,121 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "clinical-use-definition-indication-uv-epi",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi",
+    "version": "1.0.0",
+    "name": "ClinicalUseDefinitionIndicationUvEpi",
+    "title": "ClinicalUseDefinition Indication (ePI)",
+    "status": "active",
+    "description": "ClinicalUseDefinition Indication (ePI) - Profile for Indication",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "ClinicalUseDefinition",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "ClinicalUseDefinition.id",
+                "path": "ClinicalUseDefinition.id",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.meta",
+                "path": "ClinicalUseDefinition.meta",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.meta.profile",
+                "path": "ClinicalUseDefinition.meta.profile",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.identifier",
+                "path": "ClinicalUseDefinition.identifier",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.identifier.system",
+                "path": "ClinicalUseDefinition.identifier.system",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.identifier.value",
+                "path": "ClinicalUseDefinition.identifier.value",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.type",
+                "path": "ClinicalUseDefinition.type",
+                "min": 1,
+                "fixedCode": "indication"
+            },
+            {
+                "id": "ClinicalUseDefinition.category",
+                "path": "ClinicalUseDefinition.category",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.subject",
+                "path": "ClinicalUseDefinition.subject",
+                "min": 1,
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ClinicalUseDefinition.status",
+                "path": "ClinicalUseDefinition.status",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.population",
+                "path": "ClinicalUseDefinition.population",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.indication",
+                "path": "ClinicalUseDefinition.indication",
+                "min": 1
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.diseaseSymptomProcedure",
+                "path": "ClinicalUseDefinition.indication.diseaseSymptomProcedure"
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.diseaseStatus",
+                "path": "ClinicalUseDefinition.indication.diseaseStatus"
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.comorbidity",
+                "path": "ClinicalUseDefinition.indication.comorbidity"
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.intendedEffect",
+                "path": "ClinicalUseDefinition.indication.intendedEffect"
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.duration[x]",
+                "path": "ClinicalUseDefinition.indication.duration[x]"
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.undesirableEffect",
+                "path": "ClinicalUseDefinition.indication.undesirableEffect"
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.applicability",
+                "path": "ClinicalUseDefinition.indication.applicability"
+            },
+            {
+                "id": "ClinicalUseDefinition.indication.otherTherapy",
+                "path": "ClinicalUseDefinition.indication.otherTherapy"
+            }
+        ]
+    }
+}
