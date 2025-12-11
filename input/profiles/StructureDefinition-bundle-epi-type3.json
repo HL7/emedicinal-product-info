@@ -244,6 +244,96 @@
                 ]
             },
             {
+                "id": "Bundle.entry:clinicalUseDefinitionIndication",
+                "path": "Bundle.entry",
+                "sliceName": "clinicalUseDefinitionIndication",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionIndication.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "ClinicalUseDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/clinical-use-definition-indication-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionContraindication",
+                "path": "Bundle.entry",
+                "sliceName": "clinicalUseDefinitionContraindication",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionContraindication.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "ClinicalUseDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/clinical-use-definition-contraindication-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionInteraction",
+                "path": "Bundle.entry",
+                "sliceName": "clinicalUseDefinitionInteraction",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionInteraction.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "ClinicalUseDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/clinical-use-definition-interaction-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionUndesirableEffect",
+                "path": "Bundle.entry",
+                "sliceName": "clinicalUseDefinitionUndesirableEffect",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionUndesirableEffect.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "ClinicalUseDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/clinical-use-definition-undesirable-effect-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionWarning",
+                "path": "Bundle.entry",
+                "sliceName": "clinicalUseDefinitionWarning",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:clinicalUseDefinitionWarning.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "ClinicalUseDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/clinical-use-definition-warning-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "Bundle.entry:medicationKnowledge",
                 "path": "Bundle.entry",
                 "sliceName": "medicationKnowledge",
