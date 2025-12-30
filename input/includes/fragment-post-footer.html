@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        var links = document.getElementsByTagName('a');
+        for (var i = 0; i < links.length; i++) {
+            var href = links[i].getAttribute('href');
+            if (href && !href.startsWith('#') && !href.startsWith('mailto:')) {
+                // Check if it's an external link or one of our example links
+                if (href.indexOf('http') === 0 || href.indexOf('examples/') !== -1) {
+                    links[i].setAttribute('target', '_blank');
+                    links[i].setAttribute('rel', 'noopener noreferrer');
+                }
+            }
+        }
+    });
+</script>
