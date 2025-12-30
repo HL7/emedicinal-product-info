@@ -1,0 +1,104 @@
+<style>
+    /* GitHub-style Alerts for ePI IG */
+
+    .markdown-alert {
+        padding: 12px 16px !important;
+        margin-bottom: 20px !important;
+        border-left: 4px solid #d0d7de !important;
+        border-radius: 6px !important;
+        background-color: #f6f8fa !important;
+        color: #1f2328 !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+    }
+
+    .markdown-alert-title {
+        display: flex !important;
+        font-weight: 600 !important;
+        align-items: center !important;
+        line-height: 1 !important;
+        margin-bottom: 8px !important;
+        font-size: 14px !important;
+    }
+
+    /* Note (Blue) */
+    .markdown-alert.markdown-alert-note {
+        border-left-color: #0969da !important;
+        background-color: #f0f7ff !important;
+    }
+
+    .markdown-alert-note .markdown-alert-title {
+        color: #0969da !important;
+    }
+
+    .markdown-alert-note .markdown-alert-title::before {
+        content: 'ⓘ' !important;
+        margin-right: 8px !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+    }
+
+    /* Tip (Green) */
+    .markdown-alert.markdown-alert-tip {
+        border-left-color: #1a7f37 !important;
+        background-color: #f0fff4 !important;
+    }
+
+    .markdown-alert-tip .markdown-alert-title {
+        color: #1a7f37 !important;
+    }
+
+    .markdown-alert-tip .markdown-alert-title::before {
+        content: '💡' !important;
+        margin-right: 8px !important;
+    }
+
+    /* Important (Purple) */
+    .markdown-alert.markdown-alert-important {
+        border-left-color: #8250df !important;
+        background-color: #fbefff !important;
+    }
+
+    .markdown-alert-important .markdown-alert-title {
+        color: #8250df !important;
+    }
+
+    .markdown-alert-important .markdown-alert-title::before {
+        content: '❗' !important;
+        margin-right: 8px !important;
+    }
+
+    /* Warning (Yellow) */
+    .markdown-alert.markdown-alert-warning {
+        border-left-color: #9a6700 !important;
+        background-color: #fff8c5 !important;
+    }
+
+    .markdown-alert-warning .markdown-alert-title {
+        color: #9a6700 !important;
+    }
+
+    .markdown-alert-warning .markdown-alert-title::before {
+        content: '⚠️' !important;
+        margin-right: 8px !important;
+    }
+
+    /* Caution (Red) */
+    .markdown-alert.markdown-alert-caution {
+        border-left-color: #cf222e !important;
+        background-color: #fff1f0 !important;
+    }
+
+    .markdown-alert-caution .markdown-alert-title {
+        color: #cf222e !important;
+    }
+
+    .markdown-alert-caution .markdown-alert-title::before {
+        content: '🚫' !important;
+        margin-right: 8px !important;
+    }
+
+    /* Ensure paragraph spacing inside alerts */
+    .markdown-alert p {
+        margin: 4px 0 !important;
+    }
+</style>

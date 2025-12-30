@@ -4,8 +4,10 @@ Electronic Medicinal Product Information (ePI) is exchangeable as structured FHI
 
 This page provides guidance and examples on transforming ePI Bundles into user-friendly HTML displays using CSS.
 
-> [!NOTE]
-> **Implementation Flexibility:** The style sheet and HTML renderings included in this IG are merely provided as examples. There is no obligation to use this style sheet. Each implementation of ePI is subject to national regulatory rules and best practices. Implementers are free to reuse this style sheet as is, modify the style sheet to suit their needs, or make their own style sheet.
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title">Note</p>
+<p><strong>Implementation Flexibility:</strong> The style sheet and HTML renderings included in this IG are merely provided as examples. There is no obligation to use this style sheet. Each implementation of ePI is subject to national regulatory rules and best practices. Implementers are free to reuse this style sheet as is, modify the style sheet to suit their needs, or make their own style sheet.</p>
+</div>
 
 ### Design Philosophy
 It is best practice to follow **WCAG principles** (accessibility) and **standard web-design principles** (usability, responsiveness).
