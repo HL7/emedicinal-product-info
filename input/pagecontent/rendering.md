@@ -27,18 +27,12 @@ The HTML rendition should map the hierarchical structure of the FHIR Bundle:
 
 ### Example Stylesheet (CSS)
 You can download the standalone stylesheet used in our examples here:
-*   [epi-styles.css](epi-styles.css)
+*   [epi-styles.css](epi-styles.css){:target="_blank"}
 
 This stylesheet provides the "Modern Visual Grid" look, featuring rounded cards, collapsible accordions, and color-coded sections for Ingredients (Blue), Regulatory (Green), Packaging (Purple), Appearance (Orange), and Clinical Knowledge (Teal).
 
 ### Rendered Examples
 View the fully rendered HTML examples below to see the stylesheet in action:
 
-*   **Type 2 (Acetaminophen)**: [bundle-epi-type2-example-acetaminophen.html](examples/bundle-epi-type2-example-acetaminophen.html)
-*   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](examples/bundle-epi-type3-example-wonderdrug.html)
-*   **Type 2 (Morphine)**: [bundle-epi-type2-example-morphine.html](examples/bundle-epi-type2-example-morphine.html)
-*   **Type 3 (Morphine)**: [bundle-epi-type3-example-morphine.html](examples/bundle-epi-type3-example-morphine.html)
-*   **Type 2 (WonderMox)**: [bundle-epi-type2-example-wondermox.html](examples/bundle-epi-type2-example-wondermox.html)
-*   **Type 3 (WonderMox)**: [bundle-epi-type3-example-wondermox.html](examples/bundle-epi-type3-example-wondermox.html)
-*   **Type 2 (Aprokam)**: [bundle-epi-type2-example-aprokam.html](examples/bundle-epi-type2-example-aprokam.html)
-*   **Type 3 (Aprokam)**: [bundle-epi-type3-example-aprokam.html](examples/bundle-epi-type3-example-aprokam.html)
+*   **Type 2 (Paracetamol)**: [bundle-epi-type2-example-paracetamol.html](examples/bundle-epi-type2-example-paracetamol.html){:target="_blank"}
+*   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](examples/bundle-epi-type3-example-wonderdrug.html){:target="_blank"}
