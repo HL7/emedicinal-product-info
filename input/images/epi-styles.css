@@ -1,11 +1,13 @@
 :root {
     --background-color: #f5f5f7;
     --card-background: #ffffff;
+    --card-inner-bg: #fbfbfd;
     --text-color: #1d1d1f;
     --secondary-text-color: #86868b;
     --accent-color: #0071e3;
     --sidebar-width: 260px;
     --card-border-radius: 18px;
+    --card-inner-radius: 14px;
     --section-spacing: 24px;
     --sidebar-bg: #ffffff;
 }
@@ -197,11 +199,40 @@ details.card>.card-content {
 
 .inner-card,
 .leaflet-card {
-    background-color: #fbfbfd;
-    border-radius: 14px;
+    background-color: var(--card-inner-bg);
+    border-radius: var(--card-inner-radius);
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #f2f2f7;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Color Accents for Inner Cards */
+.inner-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    opacity: 0.8;
+}
+
+.card-details::before {
+    background-color: var(--accent-color);
+}
+
+.card-auth::before {
+    background-color: #34c759;
+}
+
+.card-pack::before {
+    background-color: #af52de;
+}
+
+.card-phys::before {
+    background-color: #ff9500;
 }
 
 /* Clinical Details Card */

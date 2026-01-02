@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WonderDrug 500 mg - ePI</title>
     <link rel="stylesheet" href="../epi-styles.css">
+    <style>
+        :root {
+            --background-color: #f5f5f7;
+            --text-color: #1d1d1f;
+        }
+
+        body {
+            background-color: var(--background-color);
+            margin: 0;
+        }
+
+        .layout-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            gap: 32px;
+        }
+
+        @media (max-width: 900px) {
+            .layout-container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
