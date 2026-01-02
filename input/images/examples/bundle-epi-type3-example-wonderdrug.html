@@ -329,6 +329,7 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#document" class="nav-link active">Document</a></li>
                     <li class="nav-item"><a href="#leaflet" class="nav-link">Composition</a></li>
+                    <li class="nav-item"><a href="#organizations" class="nav-link">Organization</a></li>
                     <li class="nav-item"><a href="#products" class="nav-link">Product Details</a></li>
                     <li class="nav-item"><a href="#clinical" class="nav-link">Clinical Details</a></li>
                 </ul>
@@ -366,6 +367,78 @@
 
                 <div style="margin-top: 24px;">
                     <span class="badge">Prescription Only</span>
+                </div>
+            </section>
+
+            <!-- Organization Card - NEW Section -->
+            <section id="organizations" class="card card-organization">
+                <h2 class="section-title">Organization</h2>
+                <div class="card-content">
+                    <!-- MAH Organization -->
+                    <div class="inner-card">
+                        <h3 style="color: var(--accent-color); margin-top:0">Marketing Authorization Holder</h3>
+                        <div class="data-row">
+                            <span class="data-label">Name</span>
+                            <span class="data-value">Acme Pharma Inc.</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Identifier</span>
+                            <span class="data-value">LOC-100000000 (OMS)</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Type</span>
+                            <span class="data-value">Marketing Authorization Holder</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Address</span>
+                            <span class="data-value">123 Pharma Way, 102 37 Prague, Czech Republic</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Email</span>
+                            <span class="data-value">contact@acmepharma.com</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Phone</span>
+                            <span class="data-value">+420 222 333 444</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Website</span>
+                            <span class="data-value">https://www.acmepharma.com</span>
+                        </div>
+                    </div>
+
+                    <!-- Manufacturer Organization -->
+                    <div class="inner-card" style="margin-top: 24px;">
+                        <h3 style="color: #34c759; margin-top:0">Manufacturer</h3>
+                        <div class="data-row">
+                            <span class="data-label">Name</span>
+                            <span class="data-value">Global Manufacturing Solutions Ltd.</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Identifier</span>
+                            <span class="data-value">LOC-200000000 (OMS)</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Type</span>
+                            <span class="data-value">Manufacturer</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Address</span>
+                            <span class="data-value">456 Industry Road, Berlin, Germany</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Email</span>
+                            <span class="data-value">qa@globalman.de</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Phone</span>
+                            <span class="data-value">+49 30 1234567</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Website</span>
+                            <span class="data-value">https://www.globalman.solutions</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -685,6 +758,58 @@
                                     <div class="data-row">
                                         <span class="data-label">Imprint</span>
                                         <span class="data-value">W-100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Product 3: 200 mg - NEW Variant -->
+                    <details class="accordion-item">
+                        <summary class="accordion-summary" style="border-left: 4px solid #34c759;">
+                            <div>
+                                WonderDrug 200 mg tablets
+                                <span class="item-status" style="background-color: #34c759; color: white;">Active</span>
+                            </div>
+                        </summary>
+
+                        <div class="accordion-content">
+                            <div class="clinical-grid">
+                                <div class="inner-card">
+                                    <h3 style="color: #34c759; margin-top:0">Ingredients</h3>
+                                    <div class="data-row">
+                                        <span class="data-label">Active Substance</span>
+                                        <span class="data-value">Paracetamol</span>
+                                    </div>
+                                    <div class="data-row">
+                                        <span class="data-label">Strength</span>
+                                        <span class="data-value">200 mg</span>
+                                    </div>
+                                    <div class="data-row">
+                                        <span class="data-label">Form</span>
+                                        <span class="data-value">Tablet</span>
+                                    </div>
+                                </div>
+
+                                <div class="inner-card">
+                                    <h3 style="color: #34c759; margin-top:0">Appearance</h3>
+                                    <div
+                                        style="display: flex; justify-content: center; margin: 20px 0; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));">
+                                        <img src="paracetamol_200mg_green_hex_pill.png"
+                                            alt="200mg Green Hexagonal Tablet"
+                                            style="width:120px; height:auto; border-radius: 12px;">
+                                    </div>
+                                    <div class="data-row">
+                                        <span class="data-label">Colour</span>
+                                        <span class="data-value">Green</span>
+                                    </div>
+                                    <div class="data-row">
+                                        <span class="data-label">Shape</span>
+                                        <span class="data-value">Hexagonal</span>
+                                    </div>
+                                    <div class="data-row">
+                                        <span class="data-label">Imprint</span>
+                                        <span class="data-value">W-200</span>
                                     </div>
                                 </div>
                             </div>
