@@ -9,25 +9,311 @@
     <style>
         :root {
             --background-color: #f5f5f7;
+            --card-background: #ffffff;
+            --card-inner-bg: #fbfbfd;
             --text-color: #1d1d1f;
+            --secondary-text-color: #86868b;
+            --accent-color: #0071e3;
+            --sidebar-width: 260px;
+            --card-border-radius: 18px;
+            --card-inner-radius: 14px;
+            --section-spacing: 24px;
+            --sidebar-bg: #ffffff;
         }
 
         body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -0.022em;
             margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
         }
 
+        /* Layout Engine */
         .layout-container {
             display: flex;
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
             gap: 32px;
+            align-items: flex-start;
+            /* Required for sticky */
+        }
+
+        /* Locked Sidebar Navigation */
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
+            /* Locked from top */
+            height: auto;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+            background-color: var(--sidebar-bg);
+            border-radius: var(--card-border-radius);
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: var(--secondary-text-color);
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            margin-bottom: 8px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px 14px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .nav-link:hover {
+            background-color: #f2f2f7;
+            color: var(--accent-color);
+        }
+
+        .nav-link.active {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        /* Base Card System */
+        .card {
+            background-color: var(--card-background);
+            border-radius: var(--card-border-radius);
+            padding: 32px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: var(--section-spacing);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        details.card {
+            padding: 0;
+        }
+
+        details.card>summary {
+            padding: 32px;
+            cursor: pointer;
+            list-style: none;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        details.card>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.card>summary::after {
+            content: '+';
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--secondary-text-color);
+            transition: transform 0.3s;
+        }
+
+        details.card[open]>summary::after {
+            transform: rotate(45deg);
+        }
+
+        .card h2.section-title {
+            font-size: 28px;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        details.card>.card-content {
+            padding: 0 32px 32px 32px;
+        }
+
+        /* Color Accents */
+        .card-clinical {
+            border-left: 6px solid #30b0c7;
+        }
+
+        .card-products {
+            background-color: #f5f5f7;
+        }
+
+        /* Inner Cards */
+        .inner-card,
+        .leaflet-card {
+            background-color: var(--card-inner-bg);
+            border-radius: var(--card-inner-radius);
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #f2f2f7;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .inner-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            opacity: 0.8;
+        }
+
+        /* Specific card colors */
+        .card-details::before {
+            background-color: var(--accent-color);
+        }
+
+        .card-auth::before {
+            background-color: #34c759;
+        }
+
+        .card-pack::before {
+            background-color: #af52de;
+        }
+
+        .card-phys::before {
+            background-color: #ff9500;
+        }
+
+        /* Accordions */
+        .accordion-item {
+            background-color: #ffffff;
+            border-radius: 14px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .accordion-summary {
+            padding: 20px 24px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .accordion-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .accordion-summary::after {
+            content: '+';
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--secondary-text-color);
+            transition: transform 0.3s;
+        }
+
+        .accordion-item[open] .accordion-summary::after {
+            transform: rotate(45deg);
+        }
+
+        .accordion-content {
+            padding: 24px;
+            border-top: 1px solid #f2f2f7;
+        }
+
+        /* Metadata & Data Rows */
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #f2f2f7;
+        }
+
+        .metadata-label {
+            font-size: 12px;
+            color: var(--secondary-text-color);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .metadata-value {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .data-label {
+            color: var(--secondary-text-color);
+        }
+
+        .data-value {
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .item-status {
+            font-size: 12px;
+            background: rgba(52, 199, 89, 0.1);
+            color: #248a3d;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-left: 12px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            background-color: var(--text-color);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
         }
 
         @media (max-width: 900px) {
             .layout-container {
                 flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: static;
+                margin-bottom: 24px;
             }
         }
     </style>
