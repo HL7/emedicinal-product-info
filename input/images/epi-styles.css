@@ -1,15 +1,13 @@
 :root {
-    --background-color: #ffffff;
+    --background-color: #f5f5f7;
+    --card-background: #ffffff;
     --text-color: #1d1d1f;
     --secondary-text-color: #86868b;
     --accent-color: #0071e3;
-    --card-background: #f5f5f7;
-    /* Soft gray instead of white */
-    --card-border-color: #d2d2d7;
-    /* Apple system gray 4 equivalent */
-    --card-border-radius: 20px;
-    --section-spacing: 40px;
-    /* Reduced spacing */
+    --sidebar-width: 260px;
+    --card-border-radius: 18px;
+    --section-spacing: 24px;
+    --sidebar-bg: #ffffff;
 }
 
 body {
@@ -24,194 +22,271 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.container {
-    max-width: 980px;
+/* Layout Engine */
+.layout-container {
+    display: flex;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    gap: 32px;
 }
 
-/* Header styles updated for Card look */
-header {
-    text-align: center;
-    /* Removed border and internal spacing that conflates with card padding */
-}
-
-h1 {
-    font-size: 48px;
-    line-height: 1.08349;
-    font-weight: 600;
-    letter-spacing: -0.003em;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-.subtitle {
-    font-size: 24px;
-    line-height: 1.16667;
-    font-weight: 600;
-    letter-spacing: .009em;
-    color: var(--secondary-text-color);
-}
-
-.section-title {
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: .004em;
-    margin-bottom: 30px;
-    margin-top: 0;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-    /* Increased gap */
-}
-
-.card {
-    background-color: var(--card-background);
-    border: none;
-    /* Removed border */
+/* Sidebar Navigation */
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+    background-color: var(--sidebar-bg);
     border-radius: var(--card-border-radius);
-    padding: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    /* overflow: hidden; - Removed to allow nested stickiness if needed, or shadows */
-    margin-bottom: var(--section-spacing);
-}
-
-/* Inner Cards (White) */
-.inner-card,
-.leaflet-card {
-    background-color: #ffffff;
-    border-radius: 16px;
     padding: 24px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-body ul {
-    padding-left: 20px;
+.sidebar h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
     margin-top: 0;
 }
 
-body li {
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
     margin-bottom: 8px;
 }
 
-/* Color Accents - applied to inner cards now if needed, or mapped differently */
-.inner-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.inner-card::before,
-.product-accordion::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 6px;
-    z-index: 1;
-    /* Ensure on top of borders/padding */
-}
-
-.card-details::before {
-    background-color: #0071e3;
-}
-
-.card-auth::before {
-    background-color: #34c759;
-}
-
-.card-pack::before {
-    background-color: #af52de;
-}
-
-.card-phys::before {
-    background-color: #ff9500;
-}
-
-.card-admin::before {
-    background-color: #ff3b30;
-}
-
-/* Clinical Accents */
-.card-indication::before {
-    background-color: #34c759;
-}
-
-.card-contra::before {
-    background-color: #ff3b30;
-}
-
-.card-interact::before {
-    background-color: #af52de;
-}
-
-.card-side::before {
-    background-color: #ff9500;
-}
-
-.card-warning::before {
-    background-color: #ff3b30;
-}
-
-.card-knowledge::before {
-    background-color: #30b0c7;
-}
-
-/* Teal for knowledge */
-
-
-.card h3 {
-    font-size: 20px;
-    /* Slightly smaller, more refined */
-    line-height: 1.2;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 20px;
+.nav-link {
+    display: block;
+    padding: 10px 14px;
     color: var(--text-color);
-    display: flex;
-    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-.data-row {
+.nav-link:hover {
+    background-color: #f2f2f7;
+    color: var(--accent-color);
+}
+
+.nav-link.active {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* Main Content Area */
+.main-content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+/* Base Card System */
+.card {
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: var(--section-spacing);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    /* For collapsible cards */
+}
+
+/* Collapsible Card Header Styling */
+details.card {
+    padding: 0;
+    /* Let summary and content handle padding */
+}
+
+details.card>summary {
+    padding: 32px;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 14px;
-    /* More spacing */
-    font-size: 15px;
-    /* Larger font */
+    align-items: center;
+    transition: background-color 0.2s;
 }
 
+details.card>summary:hover {
+    background-color: #fbfbfd;
+}
 
-.data-label {
+details.card>summary::-webkit-details-marker {
+    display: none;
+}
+
+details.card>summary::after {
+    content: '+';
+    font-size: 28px;
+    font-weight: 300;
     color: var(--secondary-text-color);
-    font-weight: 500;
+    transition: transform 0.3s;
 }
 
-.data-value {
+details.card[open]>summary::after {
+    transform: rotate(45deg);
+}
+
+.card h2.section-title,
+details.card>summary h2.section-title {
+    font-size: 28px;
+    margin: 0;
     font-weight: 600;
-    text-align: right;
-    color: var(--text-color);
 }
 
-.narrative-content {
+/* Card Content Container (for padding when open) */
+details.card>.card-content {
+    padding: 0 32px 32px 32px;
+}
+
+/* Document Card (Header/Metadata) */
+.card-document {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9fb 100%);
+}
+
+.card-document h1 {
+    font-size: 36px;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.metadata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #f2f2f7;
+}
+
+.metadata-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.metadata-label {
+    font-size: 12px;
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.metadata-value {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Composition Card (Narrative) */
+.card-composition .narrative-content {
     font-size: 17px;
-    line-height: 1.5;
-    font-weight: 400;
-    /* margin-bottom: var(--section-spacing); */
+    line-height: 1.6;
 }
 
+.inner-card,
+.leaflet-card {
+    background-color: #fbfbfd;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #f2f2f7;
+}
+
+/* Clinical Details Card */
+.card-clinical {
+    border-left: 6px solid #30b0c7;
+    /* Teal for clinical knowledge */
+}
+
+/* Product Details Card (Accordion Wrapper) */
+.card-products {
+    background-color: #f5f5f7;
+    padding: 24px;
+}
+
+/* Accordion Sub-cards (Used in Product and Clinical Sections) */
+.accordion-item {
+    background-color: #ffffff;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.accordion-summary {
+    padding: 20px 24px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.accordion-summary:hover {
+    background-color: #f9f9fb;
+}
+
+.accordion-summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-summary::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+    transition: transform 0.3s;
+}
+
+.accordion-item[open] .accordion-summary::after {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    padding: 24px;
+    border-top: 1px solid #f2f2f7;
+}
+
+.item-status {
+    font-size: 12px;
+    background: rgba(52, 199, 89, 0.1);
+    color: #248a3d;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+
+/* Grid for Clinical Details inside product content */
+.clinical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Utilities */
 .badge {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    background-color: #1d1d1f;
-    color: #fff;
+    background-color: var(--text-color);
+    color: #ffffff;
     font-size: 13px;
     font-weight: 600;
 }
@@ -219,161 +294,59 @@ body li {
 .pill {
     background-color: #e8e8ed;
     color: var(--text-color);
-    padding: 4px 12px;
+    padding: 6px 16px;
     border-radius: 12px;
-    font-size: 13px;
-    font-weight: 500;
-    display: inline-block;
-}
-
-/* Product Details Wrapper Styles */
-
-.product-details-wrapper>summary {
-    margin-bottom: 20px;
-}
-
-.product-details-wrapper>summary::-webkit-details-marker {
-    display: none;
-}
-
-.product-details-wrapper>summary::after {
-    content: '+';
-    float: right;
-    font-weight: 300;
-    transform: rotate(0deg);
-    transition: transform 0.2s;
-}
-
-.product-details-wrapper[open]>summary::after {
-    transform: rotate(45deg);
-}
-
-/* Accordion Styles (Inner) */
-.product-accordion {
-    background-color: #fff;
-    border: 1px solid #d2d2d7;
-    /* Explicit border */
-    border-radius: 12px;
-    margin-bottom: 20px;
-    /* Spacing between accordions */
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
-    /* Subtle shade */
-    position: relative;
-    /* For the colored strip */
-}
-
-.product-summary {
-    padding: 20px 24px;
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid transparent;
-    /* Hidden by default */
-    font-weight: 600;
-    font-size: 20px;
-    /* Slightly smaller than main header */
-    color: var(--text-color);
-    margin-bottom: 0;
-    /* Reset margin */
-    transition: background-color 0.2s;
-    background-color: #fbfbfd;
-    /* Slight shading for header */
-}
-
-.product-summary:hover {
-    background-color: #f5f5f7;
-}
-
-.product-accordion[open] .product-summary {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.product-summary::-webkit-details-marker {
-    display: none;
-}
-
-.product-summary::after {
-    content: '+';
-    font-size: 28px;
-    font-weight: 200;
-    color: var(--secondary-text-color);
-    transition: transform 0.3s;
-}
-
-.product-accordion[open] .product-summary::after {
-    transform: rotate(45deg);
-}
-
-.product-details-content {
-    padding: 24px;
-    background-color: #fff;
-}
-
-.product-name {
-    color: var(--text-color);
-}
-
-.product-status {
     font-size: 14px;
-    color: #34c759;
-    background: rgba(52, 199, 89, 0.1);
-    padding: 4px 10px;
-    border-radius: 12px;
-    margin-left: 15px;
-    vertical-align: middle;
     font-weight: 600;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-/* Leaflet specific styles */
-
-
-.leaflet-section h2 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: 0;
-    color: #1d1d1f;
+.pill:hover {
+    background-color: #d2d2d7;
 }
 
-.leaflet-section p {
-    margin-bottom: 1em;
-}
-
-.leaflet-section p:last-child {
-    margin-bottom: 0;
-}
-
-/* Tablet Visual in Physics Card */
+/* Tablet visual remains */
 .tablet-visual {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #fff;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
-    margin: 20px auto;
+    margin: 0 auto 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Controls */
-.controls-container {
-    text-align: right;
-    margin-bottom: 20px;
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-button.pill {
-    cursor: pointer;
-    border: none;
+.data-label {
+    color: var(--secondary-text-color);
+}
+
+.data-value {
     font-weight: 600;
-    font-family: inherit;
-    transition: background-color 0.2s;
+    text-align: right;
 }
 
-button.pill:hover {
-    background-color: #d2d2d7;
+/* Responsive Design */
+@media (max-width: 900px) {
+    .layout-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 24px;
+    }
 }
