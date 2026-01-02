@@ -444,19 +444,6 @@
         </main>
     </div>
 
-    <script>
-        const observerOptions = { threshold: 0.5 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    document.querySelectorAll('.nav-link').forEach(link => {
-                        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
-                    });
-                }
-            });
-        }, observerOptions);
-        document.querySelectorAll('section[id], details[id]').forEach(section => observer.observe(section));
-    </script>
 </body>
 
 </html>
