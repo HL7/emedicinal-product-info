@@ -107,6 +107,36 @@
             overflow: hidden;
         }
 
+        details.card {
+            padding: 0;
+        }
+
+        details.card>summary {
+            padding: 32px;
+            cursor: pointer;
+            list-style: none;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        details.card>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.card>summary::after {
+            content: '+';
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--secondary-text-color);
+            transition: transform 0.3s;
+        }
+
+        details.card[open]>summary::after {
+            transform: rotate(45deg);
+        }
+
         .section-title {
             font-size: 28px;
             margin: 0 0 24px 0;
@@ -223,8 +253,10 @@
             </section>
 
             <!-- Composition / Leaflet Card -->
-            <section id="leaflet" class="card card-composition">
-                <h2 class="section-title">Composition</h2>
+            <details id="leaflet" class="card card-composition" open>
+                <summary>
+                    <h2 class="section-title">Composition</h2>
+                </summary>
                 <div class="card-content">
                     <div class="narrative-card">
                         <h3>1. What Paracetamol is and what it is used for</h3>
@@ -273,7 +305,7 @@
                             are white and round. They are available in blister packs of 30 or 50 tablets.</p>
                     </div>
                 </div>
-            </section>
+            </details>
         </main>
     </div>
 
