@@ -28,7 +28,7 @@ Implementers can start simple and evolve as their technical maturity grows:
 *   **ePI Type 3: Clinical Guidance**
     *   Adds structured clinical details (indications, contraindications) to facilitate interaction alerts in digital health apps.
 *   **ePI Type 4: Granular & Personalized Components**
-    *   Fully digital-first, computable components for dynamically generated, personalized label content.
+    *   Fully digital-first, computable components for dynamically generated, personalized label content. **Excludes the Composition resource**, as all narrative content is moved to structured resources.
 
 ### Background
 Drug labels (SmPCs, Product Monographs, and Patient Leaflets) are critical regulatory documents that provide essential safety and usage information. 
