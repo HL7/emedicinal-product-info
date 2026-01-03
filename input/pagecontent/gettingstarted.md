@@ -33,7 +33,7 @@ To successfully implement ePI, your team should have familiarity with:
 1.  **Choose your ePI Type**
     Select the maturity level that fits your organization's needs. Review the [Use Cases](usecases.html) to understand which Type (1-4) is right for you.
 
-2.  **Review the Premium HTML Examples**
+2.  **Review the provided HTML Examples**
     See how raw FHIR data is transformed into a modern, user-friendly interface. Our examples use a "Modern SaaS" 2-pane design:
     *   [**ePI Type 1 (Paracetamol)**](examples/bundle-epi-type1-example-paracetamol.html){:target="_blank"} - Narrative focus.
     *   [**ePI Type 2 (Paracetamol)**](examples/bundle-epi-type2-example-paracetamol.html){:target="_blank"} - Structured product details.

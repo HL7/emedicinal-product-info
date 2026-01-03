@@ -5,7 +5,7 @@ Controlled terminology ensures consistency, interoperability, and regulatory com
 Standardized code systems allow drug label information to be precise and machine-readable. In the ePI IG, these terminologies facilitate integration with systems like Electronic Health Records (EHRs) and ePrescribing apps.
 
 > [!TIP]
-> **Clinical Precision**: **SNOMED CT** and **ICD** are used for indications and contraindications, ensuring that clinical content is universally understood by medical software globally.
+> **Clinical Precision**: **SNOMED CT**, **ICD**, and **MedDRA** are used for indications, contraindications, and adverse reactions, ensuring that clinical content is universally understood by medical software globally.
 
 ### Key Terminologies Used
 

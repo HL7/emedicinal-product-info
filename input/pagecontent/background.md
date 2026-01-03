@@ -35,4 +35,4 @@ FHIR (Fast Healthcare Interoperability Resources) provides the technical standar
 ePI and FHIR promote international alignment by providing a unified technical standard. A single ePI document, built on the Base ePI Profile, can be adapted for multiple jurisdictions, reducing redundancy and ensuring patients receive the most up-to-date information regardless of their location.
 
 > [!NOTE]
-> **Collaborative Standard**: Efforts like the **HL7 Vulcan Accelerator** and the **Gravitate-Health project** ensure that global regulators align on these technical standards to enhance patient safety.
+> **Collaborative Standard**: Efforts like the **HL7 Vulcan Accelerator** and the **Gravitate-Health project** ensure that global regulators align on these technical standards and improve access to medicinal product information.
