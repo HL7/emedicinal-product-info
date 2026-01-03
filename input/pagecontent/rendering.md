@@ -34,5 +34,6 @@ This stylesheet provides the "Modern Visual Grid" look, featuring rounded cards,
 ### Rendered Examples
 View the fully rendered HTML examples below to see the stylesheet in action:
 
+*   **Type 1 (Paracetamol)**: [bundle-epi-type1-example-paracetamol.html](examples/bundle-epi-type1-example-paracetamol.html){:target="_blank"}
 *   **Type 2 (Paracetamol)**: [bundle-epi-type2-example-paracetamol.html](examples/bundle-epi-type2-example-paracetamol.html){:target="_blank"}
 *   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](examples/bundle-epi-type3-example-wonderdrug.html){:target="_blank"}

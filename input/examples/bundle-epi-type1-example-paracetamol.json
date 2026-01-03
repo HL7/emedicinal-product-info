@@ -1,0 +1,100 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-epi-type1-example-paracetamol",
+    "meta": {
+        "versionId": "1.0",
+        "lastUpdated": "2024-03-20T10:00:00Z",
+        "profile": [
+            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type1"
+        ]
+    },
+    "identifier": {
+        "system": "http://example.org/identifier",
+        "value": "epi-paracetamol-t1"
+    },
+    "type": "document",
+    "timestamp": "2024-03-20T10:00:00Z",
+    "entry": [
+        {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-paracetamol-t1",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "composition-paracetamol-t1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
+                    ]
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/composition-type",
+                            "code": "100000155538",
+                            "display": "Package Leaflet"
+                        }
+                    ]
+                },
+                "subject": [
+                    {
+                        "display": "Paracetamol"
+                    }
+                ],
+                "date": "2024-03-20T10:00:00Z",
+                "author": [
+                    {
+                        "display": "Acme Pharma Inc."
+                    }
+                ],
+                "title": "Package Leaflet: Information for the user - Paracetamol 500 mg tablets",
+                "section": [
+                    {
+                        "title": "1. What Paracetamol 500 mg tablets is and what it is used for",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://example.org/composition-section-codes",
+                                    "code": "section-1"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>1. What Paracetamol 500 mg tablets is and what it is used for</h3><p>Paracetamol belongs to a group of medicines called analgesics (painkillers) and antipyretics (medicines to reduce fever).</p></div>"
+                        }
+                    },
+                    {
+                        "title": "2. What you need to know before you take Paracetamol 500 mg tablets",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://example.org/composition-section-codes",
+                                    "code": "section-2"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>2. What you need to know before you take Paracetamol 500 mg tablets</h3><p>Do not take Paracetamol if you are allergic to it.</p></div>"
+                        }
+                    },
+                    {
+                        "title": "3. How to take Paracetamol 500 mg tablets",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://example.org/composition-section-codes",
+                                    "code": "section-3"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>3. How to take Paracetamol 500 mg tablets</h3><p>Take 1-2 tablets every 4-6 hours.</p></div>"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
