@@ -104,6 +104,7 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             margin-bottom: var(--section-spacing);
             border: 1px solid rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
 
         .section-title {
@@ -143,8 +144,9 @@
 
         .narrative-card h3 {
             margin-top: 0;
-            color: var(--accent-color);
+            color: var(--text-color);
             font-size: 20px;
+            font-weight: 600;
         }
 
         .badge {
@@ -165,6 +167,11 @@
             border-radius: 20px;
             margin-left: 12px;
         }
+
+        /* Composition section accent */
+        .card-composition {
+            border-left: 6px solid var(--accent-color);
+        }
     </style>
 </head>
 
@@ -176,7 +183,7 @@
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#document" class="nav-link active">Document</a></li>
-                    <li class="nav-item"><a href="#composition" class="nav-link">Narrative</a></li>
+                    <li class="nav-item"><a href="#leaflet" class="nav-link">Composition</a></li>
                 </ul>
             </nav>
         </aside>
@@ -211,35 +218,59 @@
                 </div>
 
                 <div style="margin-top: 24px;">
-                    <span class="badge">Over-the-Counter</span>
+                    <span class="badge">Prescription Only</span>
                 </div>
             </section>
 
-            <!-- Composition / Narrative Card -->
-            <section id="composition" class="card">
-                <h2 class="section-title">Package Leaflet</h2>
+            <!-- Composition / Leaflet Card -->
+            <section id="leaflet" class="card card-composition">
+                <h2 class="section-title">Composition</h2>
                 <div class="card-content">
                     <div class="narrative-card">
                         <h3>1. What Paracetamol is and what it is used for</h3>
-                        <p>Paracetamol belongs to a group of medicines called analgesics (painkillers) and antipyretics
-                            (medicines to reduce fever).</p>
-                        <p>It is used for the relief of mild to moderate pain and to reduce fever.</p>
+                        <p>Paracetamol contains the active substance paracetamol, which belongs to a group of medicines
+                            called analgesics (painkillers) and antipyretics (medicines to reduce fever).</p>
+                        <p>Paracetamol is used to relieve mild to moderate pain and fever.</p>
                     </div>
 
                     <div class="narrative-card">
                         <h3>2. What you need to know before you take Paracetamol</h3>
                         <p><strong>Do not take Paracetamol:</strong> if you are allergic to paracetamol or any of the
                             other ingredients of this medicine.</p>
-                        <p><strong>Warnings and precautions:</strong> Consult your doctor before taking this medicine if
-                            you have liver or kidney problems.</p>
+                        <p><strong>Warnings and precautions:</strong> Talk to your doctor or pharmacist before taking
+                            Paracetamol if you have liver or kidney problems.</p>
                     </div>
 
                     <div class="narrative-card">
                         <h3>3. How to take Paracetamol</h3>
-                        <p>Always take this medicine exactly as described in this leaflet or as your doctor has told
-                            you.</p>
-                        <p>The standard dose for adults is 1-2 tablets (500mg-1000mg) every 4 to 6 hours. Do not exceed
-                            8 tablets in 24 hours.</p>
+                        <p>Always take this medicine exactly as described in this leaflet or as your doctor or
+                            pharmacist has told you.</p>
+                        <p>The recommended dose is 1 tablet every 4 to 6 hours as needed. Do not take more than 6
+                            tablets in any 24-hour period.</p>
+                    </div>
+
+                    <div class="narrative-card">
+                        <h3>4. Possible side effects</h3>
+                        <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.
+                        </p>
+                        <p>Stop taking the medicine and tell your doctor immediately if you experience allergic
+                            reactions such as skin rash or swelling.</p>
+                    </div>
+
+                    <div class="narrative-card">
+                        <h3>5. How to store Paracetamol</h3>
+                        <p>Keep this medicine out of the sight and reach of children. Do not use this medicine after the
+                            expiry date which is stated on the carton.</p>
+                        <p>This medicine does not require any special storage conditions.</p>
+                    </div>
+
+                    <div class="narrative-card">
+                        <h3>6. Contents of the pack and other information</h3>
+                        <p><strong>What Paracetamol contains:</strong> The active substance is paracetamol. The other
+                            ingredients are pregelatinized starch, povidone, stearic acid, talc, magnesium stearate, and
+                            hypromellose.</p>
+                        <p><strong>What Paracetamol looks like and contents of the pack:</strong> Paracetamol tablets
+                            are white and round. They are available in blister packs of 30 or 50 tablets.</p>
                     </div>
                 </div>
             </section>
