@@ -1,85 +1,51 @@
-Electronic Product Information (ePI) is a HL7 FHIR R5 Implementation Guide that defines a global, open standard for structured, digital-first medicinal product information.
+Electronic Product Information (ePI) is a global, open standard for structured, digital-first medicinal product information, built on HL7 FHIR R5.
 
-### Why Implement ePI?
+> [!IMPORTANT]
+> **Digital Transformation of Drug Labeling**: ePI replaces static DOCX and PDF drug labels with fully structured, interoperable, and machine-readable FHIR documents. 
 
-ePI replaces DOCX or PDF drug labels with fully structured, interoperable, and instantly distributable FHIR documents. The benefits are immediate and transformative:
+### Why ePI?
+The benefits of moving to a structured standard are transformative for regulators, industry, and patients:
 
-<table style="width:100%; border-collapse:collapse; border:2px solid #d0d0d0;">
-  <thead>
-    <tr style="background-color:#f5f5f5;">
-      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Benefit</th>
-      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">What it means for you</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>One global standard</strong></td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">A single FHIR-based standard built with open-source web standards that are widely supported and easy to implement – no need to develop or maintain custom XML standards per country.</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>Advanced Capabilities</strong></td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Enable advanced search, auto-generate comparison tables or pack artwork, facilitate resolving drug shortages.</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>Digital Health Interoperability</strong></td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Seamless integration with eHealth systems for ePrescription, eMedical Records, personalization, allergen checking, and regulatory reporting.</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #d0d0d0; padding:12px;"><strong>Future-proof and granular</strong></td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Start with ePI Type 1 or 2 today and evolve to fully structured, personalized leaflets (Type 4) tomorrow without changing the underlying standard.</td>
-    </tr>
-  </tbody>
-</table>
+> [!TIP]
+> **One Global Standard**
+> A single FHIR-based standard built with open-source web technologies. No need to maintain custom XML standards per country – build once, deploy globally.
 
-### Four Maturity Levels – Choose Your Starting Point
+> [!NOTE]
+> **Advanced Digital Capabilities**
+> Enable advanced search, auto-generate comparison tables, facilitate resolving drug shortages, and streamline pack artwork generation.
 
-<table style="width:100%; border-collapse:collapse; border:2px solid #d0d0d0;">
-  <thead>
-    <tr style="background-color:#f5f5f5;">
-      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Type</th>
-      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Description</th>
-      <th style="border:1px solid #d0d0d0; padding:12px; text-align:left; font-weight:bold;">Typical Use Cases</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border:1px solid #d0d0d0; padding:12px;">ePI Type 1</td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">FHIR equivalent of authorized DOCX/PDF labels</td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Quick win for industry/regulators to replace existing labels</td>
-    </tr>
-    <tr style="background-color:#e8f5e8; outline: 3px solid #4caf50; outline-offset: -3px;">
-      <td style="border:1px solid #d0d0d0; padding:12px; font-weight:bold; color:#2e7d32;">
-        ePI Type 2 <span style="background:#4caf50; color:white; font-size:0.8em; padding:3px 3px; border-radius:4px; margin-left:1px;">RECOMMENDED STARTING POINT</span>
-      </td>
-      <td style="border:1px solid #d0d0d0; padding:12px; font-weight:500;">Adds structured medicinal product details</td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Advanced search, flag allergens, supply chain traceability, create online product label catalogue</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #d0d0d0; padding:12px;">ePI Type 3</td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Adds structured clinical details</td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Tracking indications, contraindications, interactions (drug:drug, drug:food, drug:device)</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #d0d0d0; padding:12px;">ePI Type 4</td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Digital-first, granular, computable components</td>
-      <td style="border:1px solid #d0d0d0; padding:12px;">Personalization, dynamically generated label content, and next-generation apps</td>
-    </tr>
-  </tbody>
-</table>
+> [!IMPORTANT]
+> **Digital Health Interoperability**
+> Seamless integration with eHealth systems for ePrescription, Electronic Medical Records (EMR), allergen checking, and automated regulatory reporting.
+
+### Maturity Levels – Choose Your Starting Point
+Implementers can start simple and evolve as their technical maturity grows:
+
+*   **ePI Type 1: Digital Label Reproduction**
+    *   FHIR equivalent of authorized DOCX/PDF labels. A "quick win" to replace existing labels with narrative FHIR content.
+*   **ePI Type 2: Product Identification & Search**
+    *   **RECOMMENDED STARTING POINT**. Adds structured medicinal product details (ingredients, form, packaging) for advanced lookup and supply chain traceability.
+*   **ePI Type 3: Clinical Guidance**
+    *   Adds structured clinical details (indications, contraindications) to facilitate interaction alerts in digital health apps.
+*   **ePI Type 4: Granular & Personalized Components**
+    *   Fully digital-first, computable components for dynamically generated, personalized label content.
 
 ### Background
-Drug labels (such as SmPCs, Product Monographs, and package leaflets) are frequently updated regulatory documents that provide essential information for healthcare professionals, patients, and product packaging. 
+Drug labels (SmPCs, Product Monographs, and Patient Leaflets) are critical regulatory documents that provide essential safety and usage information. 
 
-They are frequently updated with new indications, safety warnings, or dosing changes. Today, however, most are distributed as DOCX or PDF files in fragmented, region-specific formats (e.g., US SPL, EU custom XML, or simple PDFs), which hinders interoperability, delays updates, and limits digital use in EHRs, ePrescribing systems, and patient apps.
+Currently, these are often distributed as fragmented, region-specific formats (SPL, custom XML, or PDFs), hindering interoperability and delaying updates. ePI solves this by transforming labels into structured HL7 FHIR R5 documents, ensuring that a single source of truth can serve multiple jurisdictions while remaining adaptable to local regulations.
 
-Electronic Product Information (ePI) solves this by transforming drug labels into fully structured, machine-readable HL7 FHIR R5 documents. Using a common base, a single ePI can serve multiple jurisdictions while remaining adaptable to local regulatory requirements. 
+### Scope
 
-FHIR’s modern web-based approach paves the way for global harmonization of medicinal product information.
+> [!NOTE]
+> **In-Scope**
+> - All medicinal drug products (Human use).
+> - Healthcare professional label content (e.g., SmPC), patient label content (e.g., PIL), and pack artwork.
 
-### In-Scope
-- Human medicinal drug products
-- Healthcare professional label content (e.g., SMPC), patient label content (e.g., Pack Insert), pack artwork
+> [!TIP]
+> **Standard Applicability**
+> While this IG focuses on human medicinal products, the underlying FHIR ePI standard is designed to be extensible. Regulatory implementation paths for Over-The-Counter (OTC) vs. Prescription medicines may vary by jurisdiction.
 
-### Out of Scope
-- Medical devices, Veterinary Drugs, Over the Counter Drugs, Natural Health Products
+**Out of Scope**:
+- Medical devices, Veterinary Drugs, and Natural Health Products.
 
