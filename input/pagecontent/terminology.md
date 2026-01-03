@@ -9,13 +9,14 @@ Standardized code systems allow drug label information to be precise and machine
 
 ### Key Terminologies Used
 
-| Standard      | Usage in ePI                                          |
-| :------------ | :---------------------------------------------------- |
-| **LOINC**     | Document and section codes (e.g., SmPC, PIL headings) |
-| **UCUM**      | Standardized units of measure for dosages             |
-| **ISO 639-1** | Two-letter language codes (e.g., "en", "fr")          |
-| **EDQM**      | Dose forms, routes of administration, and packaging   |
-| **MedDRA**    | Adverse event and safety reporting codes              |
+| Standard       | Usage in ePI                                                           |
+| :------------- | :--------------------------------------------------------------------- |
+| **LOINC**      | Document and section codes (e.g., SmPC, PIL headings)                  |
+| **UCUM**       | Standardized units of measure for dosages                              |
+| **ISO 639-1**  | Two-letter language codes (e.g., "en", "fr")                           |
+| **ISO 3166-1** | Two-letter country/jurisdiction codes (alpha-2, e.g., "US", "JP")      |
+| **EDQM**       | Dose forms, administration routes, packaging, and unit of presentation |
+| **MedDRA**     | Adverse event and safety reporting codes                               |
 
 ---
 
