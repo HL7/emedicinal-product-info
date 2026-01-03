@@ -46,6 +46,8 @@ Currently, these are often distributed as fragmented, region-specific formats (S
 > **Standard Applicability**
 > While this IG focuses on human medicinal products, the underlying FHIR ePI standard is designed to be extensible. Regulatory implementation paths for Over-The-Counter (OTC) vs. Prescription medicines may vary by jurisdiction.
 
-**Out of Scope**:
-- Medical devices, Veterinary Drugs, and Natural Health Products.
+> [!NOTE]
+> **Temporarily Out of Scope**
+> While the current focus is on human medicinal products, future phases of this project will account for:
+> - Medical devices, Veterinary Drugs, and Natural Health Products.
 
