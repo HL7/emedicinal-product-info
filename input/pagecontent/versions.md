@@ -1,10 +1,4 @@
-This page describes the recommended approach for versioning an ePI document throughout its lifecycle. This includes from drafts submitted for review, updates during label assessment, approvals, withdrawals, ePI merges or ePI split.
-
-## Overview
-
-The ePI document is represented as a FHIR Document Bundle containing a Composition resource and other related resources. Only the Bundle and Composition resources are needed to support this version control method.
-
-The following sections describe how to use the relevant Bundle and Composition elements to achieve the desired outcomes for version control, audit trails, and traceability.
+This page outlines the recommended lifecycle and version control approach for ePI documents, supporting audit trails and traceability from initial draft through review, approval, withdrawal, and structural changes like splits or merges. By leveraging the `Bundle` and `Composition` resources, this method ensures that a single source of truth remains clear and accessible throughout the medicinal product information's regulatory assessment.
 
 ### Bundle Version Elements
 

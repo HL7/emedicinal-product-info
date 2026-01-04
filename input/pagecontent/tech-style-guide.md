@@ -1,8 +1,4 @@
-## Objective
-Standardize ePI content structure to ensure consistency, quality, and interoperability across jurisdictions. These recommendations supplement local regulatory requirements.
-
-## Introduction
-This guide defines standard formatting for ePI narrative content. Aligning technical structures reduces implementation complexity, lowers costs, and improves accessibility and AI-readiness. It consolidates best practices from HL7, W3C, and modern web standards.
+This guide establishes standard formatting and content structures for ePI narrative content to ensure consistency, quality, and interoperability across jurisdictions. By consolidating best practices from HL7, W3C, and modern web standards, these recommendations reduce implementation complexity, lower costs, and improve both accessibility and AI-readiness, supplementing local regulatory requirements.
 
 <div class="markdown-alert markdown-alert-note">
 <p class="markdown-alert-title">NOTE</p>

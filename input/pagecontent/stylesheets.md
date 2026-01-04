@@ -1,11 +1,11 @@
-
-### Overview
 Electronic Medicinal Product Information (ePI) is exchangeable as structured FHIR Bundles (XML or JSON). Since raw code is not suitable for end-users (patients, healthcare professionals), this data must be rendered into a human-readable format, typically HTML.
 
 This page provides guidance and examples on transforming ePI Bundles into user-friendly HTML displays using CSS.
 
-> [!NOTE]
-> **Implementation Flexibility**: The stylesheet and HTML renderings included in this IG are provided as best-practice examples. Implementers are free to reuse this stylesheet, modify it, or develop their own according to national regulatory rules.
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title">NOTE</p>
+<p><strong>Implementation Flexibility</strong>: The stylesheet and HTML renderings included in this IG are provided as best-practice examples. Implementers are free to reuse this stylesheet, modify it, or develop their own according to national regulatory rules.</p>
+</div>
 
 ### Design Philosophy
 It is best practice to follow **WCAG principles** (accessibility) and **standard web-design principles** (usability, responsiveness).

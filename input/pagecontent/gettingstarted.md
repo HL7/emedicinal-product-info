@@ -6,7 +6,7 @@ The following page provides basic tips and recommendations to help implementers 
 You will need a structured authoring tool to create the FHIR resources. This tool should support rich text, product metadata, and lifecycle management (versioning).
 
 **Style Sheets (Required)**:
-Converting raw FHIR JSON/XML into human-readable views requires CSS. You can use the [provided stylesheet](rendering.html) in this IG as a foundation.
+Converting raw FHIR JSON/XML into human-readable views requires CSS. You can use the [provided stylesheet](stylesheets.html) in this IG as a foundation.
 
 **FHIR R5 Server (Recommended)**:
 A central storage system (e.g., HAPI FHIR, Google Cloud Healthcare API) is recommended for searching, versioning, and sharing ePI documents via standard APIs.
@@ -48,7 +48,7 @@ To successfully implement ePI, your team should have familiarity with:
 ### Quick Start Steps
 
 1.  **Choose your ePI Type**
-    Select the maturity level that fits your organization's needs. Review the [Use Cases](usecases.html) to understand which Type (1-4) is right for you.
+    Select the maturity level that fits your organization's needs. Review the [Use Cases](index.html#epi-maturity--use-cases) to understand which Type (1-4) is right for you.
 
 2.  **Review the provided HTML Examples**
     See how raw FHIR data is transformed into a modern, user-friendly interface. Our examples use a "Modern SaaS" 2-pane design:

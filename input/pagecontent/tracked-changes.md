@@ -1,4 +1,3 @@
-### Annotations (Track Changes & Comments)
 The annotation model for both comments and track changes involves using the HTML anchor tag `<a>` as start and end location markers for each comment, insertion and deletion point within the content of the Composition section. These markers then reference the details of annotation, which are held in a separate Annotations section within the Composition.
 
 ### Annotations Section
@@ -61,6 +60,7 @@ An `<a>` tag is also used to mark the end of the comment. The ending `<a>` tag h
 
 ```xml
 <a href=" comment01" class=" CommentEnd"/>
+```
 
 ### Common Annotation Markers
 
@@ -100,14 +100,12 @@ To visually differentiate track changes in a web-based ePI viewer, the following
     border-bottom: 2px solid #22863a;
     text-decoration: none;
 }
-
 /* Styling for proposed deletions */
 .DeleteStart + * {
     background-color: #ffeef0;
     color: #cb2431;
     text-decoration: line-through;
 }
-
 /* Base style for markers (usually hidden in final view) */
 .InsertStart, .InsertEnd, .DeleteStart, .DeleteEnd, .CommentStart, .CommentEnd {
     display: none;
@@ -120,4 +118,18 @@ While the native XHTML within a FHIR Composition stores the author name as a str
 
 1.  **Identifier Mapping**: Ensure the `title` attribute in the XHTML corresponds to an `identifier` or `name` in a related FHIR resource.
 2.  **Provenance**: Use the `Provenance` resource to track the lifecycle of the Composition, linking specific versions to the individuals responsible for the track changes.
+
+```xml
+<Provenance>
+    <agent>
+        <who>
+            <Practitioner>
+                <identifier>
+                    <system value="http://example.com/practitioners"/>
+                    <value value="12345"/>
+                </identifier>
+            </Practitioner>
+        </who>
+    </agent>
+</Provenance>
 ```
