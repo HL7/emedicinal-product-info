@@ -9,14 +9,40 @@ Standardized code systems allow drug label information to be precise and machine
 
 ### Key Terminologies Used
 
-| Standard       | Usage in ePI                                                           |
-| :------------- | :--------------------------------------------------------------------- |
-| **LOINC**      | Document and section codes (e.g., SmPC, PIL headings)                  |
-| **UCUM**       | Standardized units of measure for dosages                              |
-| **ISO 639-1**  | Two-letter language codes (e.g., "en", "fr")                           |
-| **ISO 3166-1** | Two-letter country/jurisdiction codes (alpha-2, e.g., "US", "JP")      |
-| **EDQM**       | Dose forms, administration routes, packaging, and unit of presentation |
-| **MedDRA**     | Adverse event and safety reporting codes                               |
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #003087; color: #ffffff;">
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 30%;">Standard</th>
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Usage in ePI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>LOINC</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Document and section codes (e.g., SmPC, PIL headings)</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>UCUM</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Standardized units of measure for dosages</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>ISO 639-1</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Two-letter language codes (e.g., "en", "fr")</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>ISO 3166-1</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Two-letter country/jurisdiction codes (alpha-2, e.g., "US", "JP")</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>EDQM</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Dose forms, administration routes, packaging, and unit of presentation</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>MedDRA</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Adverse event and safety reporting codes</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
