@@ -127,5 +127,5 @@ Building a Type 2 ePI requires integrating regulatory Master Data with the narra
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- **[JSON Example: SmPC Type 2 (Structured)](bundle-epi-type2-example-acetaminophen.html)**
-- **[JSON Example: PIL Type 2 (Structured)](bundle-epi-type2-example-pil.html)**
+- **[JSON Example: SmPC Type 2 (Structured)](bundle-epi-type2-example-acetaminophen.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}
+- **[JSON Example: PIL Type 2 (Structured)](bundle-epi-type2-example-acetaminophen.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}

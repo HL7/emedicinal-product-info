@@ -78,5 +78,5 @@ While implementation may vary based on your tech stack, the general flow for bui
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- **[JSON Example: SmPC Type 1](bundle-epi-type1-example.html)**
-- **[JSON Example: PIL Type 1](bundle-epi-type1-example-pil.html)**
+- **[JSON Example: SmPC Type 1](bundle-epi-type1-example-paracetamol.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json)){:target="_blank"}
+- **[JSON Example: PIL Type 1](bundle-epi-type1-example-paracetamol.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json)){:target="_blank"}

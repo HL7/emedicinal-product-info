@@ -75,5 +75,5 @@ Moving to Type 3 requires clinical data extraction and alignment:
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- **[JSON Example: SmPC Type 3 (Clinical)](bundle-epi-type3-example.html)**
-- **[JSON Example: PIL Type 3 (Clinical)](bundle-epi-type3-example-pil.html)**
+- **[JSON Example: SmPC Type 3 (Clinical)](bundle-epi-type3-example-wonderdrug.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}
+- **[JSON Example: PIL Type 3 (Clinical)](bundle-epi-type3-example-wonderdrug.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}

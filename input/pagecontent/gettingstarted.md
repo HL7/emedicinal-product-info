@@ -58,9 +58,9 @@ To successfully implement ePI, your team should have familiarity with:
 
 3.  **Examine the Underlying FHIR JSON**
     Understand the structure of the machine-readable ePI document:
-    *   [**Type 1 JSON**](bundle-epi-type1-example-paracetamol.json.html){:target="_blank"}
-    *   [**Type 2 JSON**](bundle-epi-type2-example-paracetamol.json.html){:target="_blank"}
-    *   [**Type 3 JSON**](bundle-epi-type3-example-wonderdrug.json.html){:target="_blank"}
+    *   [**Type 1 JSON**](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json){:target="_blank"}
+    *   [**Type 2 JSON**](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json){:target="_blank"}
+    *   [**Type 3 JSON**](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json){:target="_blank"}
 
 4.  **Validate your ePI**
     Ensure your Bundle follows the rules defined in this IG. Use the [Official FHIR Validator](https://validator.fhir.org) with the ePI IG package to check for compliance.
