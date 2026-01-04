@@ -139,119 +139,119 @@
     <p>or</p>
     <p>&lt;p&gt;Example of how to &lt;span style="text-decoration: underline"&gt;underline&lt;/span&gt; specific text&lt;/p&gt;</p>
     <p>The following is a list of classes that can be used together with the style attribute:</p>
-    <table style="border: 1px solid black;">
+    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
         <thead>
-            <tr>
-                <th style="border: 1px solid black;">Class</th>
-                <th style="border: 1px solid black;">Description</th>
-                <th style="border: 1px solid black;">Style</th>
+            <tr style="background-color: #003087; color: #ffffff;">
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">Class</th>
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 40%;">Description</th>
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Style</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">bold</td>
-                <td style="border: 1px solid black;">Bold Text</td>
-                <td style="border: 1px solid black;">{ font-weight: bold }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">bold</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Bold Text</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ font-weight: bold }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">italics</td>
-                <td style="border: 1px solid black;">Italics Text</td>
-                <td style="border: 1px solid black;">{ font-style: italic }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">italics</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Italics Text</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ font-style: italic }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">underline</td>
-                <td style="border: 1px solid black;">Underlined Text</td>
-                <td style="border: 1px solid black;">{ text-decoration: underline }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">underline</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Underlined Text</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-decoration: underline }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">strikethrough</td>
-                <td style="border: 1px solid black;">Strikethrough Text</td>
-                <td style="border: 1px solid black;">{ text-decoration: line-through }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">strikethrough</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Strikethrough Text</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-decoration: line-through }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">left</td>
-                <td style="border: 1px solid black;">Left Aligned</td>
-                <td style="border: 1px solid black;">{ text-align : left }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">left</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Left Aligned</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : left }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">right</td>
-                <td style="border: 1px solid black;">Right Aligned</td>
-                <td style="border: 1px solid black;">{ text-align : right }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">right</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Right Aligned</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : right }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">center</td>
-                <td style="border: 1px solid black;">Center Aligned</td>
-                <td style="border: 1px solid black;">{ text-align : center }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">center</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Center Aligned</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : center }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">justify</td>
-                <td style="border: 1px solid black;">Justified</td>
-                <td style="border: 1px solid black;">{ text-align : justify }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">justify</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Justified</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : justify }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">border-left</td>
-                <td style="border: 1px solid black;">Border on the left</td>
-                <td style="border: 1px solid black;">{ border-left: 1px solid grey }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-left</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the left</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-left: 1px solid grey }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">border-right</td>
-                <td style="border: 1px solid black;">Border on the right</td>
-                <td style="border: 1px solid black;">{ border-right: 1px solid grey }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-right</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the right</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-right: 1px solid grey }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">border-top</td>
-                <td style="border: 1px solid black;">Border on the top</td>
-                <td style="border: 1px solid black;">{ border-top: 1px solid grey }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-top</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the top</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-top: 1px solid grey }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">border-bottom</td>
-                <td style="border: 1px solid black;">Border on the bottom</td>
-                <td style="border: 1px solid black;">{ border-bottom: 1px solid grey }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-bottom</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the bottom</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-bottom: 1px solid grey }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">arabic</td>
-                <td style="border: 1px solid black;">List is ordered using Arabic numerals: 1, 2, 3</td>
-                <td style="border: 1px solid black;">{ list-style-type: decimal }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">arabic</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using Arabic numerals: 1, 2, 3</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: decimal }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">little-roman</td>
-                <td style="border: 1px solid black;">List is ordered using little Roman numerals: i, ii, iii</td>
-                <td style="border: 1px solid black;">{ list-style-type: lower-roman }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">little-roman</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using little Roman numerals: i, ii, iii</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: lower-roman }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">big-roman</td>
-                <td style="border: 1px solid black;">List is ordered using big Roman numerals: I, II, III</td>
-                <td style="border: 1px solid black;">{ list-style-type: upper-roman }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">big-roman</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using big Roman numerals: I, II, III</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: upper-roman }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">little-alpha</td>
-                <td style="border: 1px solid black;">List is ordered using little alpha characters: a, b, c</td>
-                <td style="border: 1px solid black;">{ list-style-type: lower-alpha }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">little-alpha</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using little alpha characters: a, b, c</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: lower-alpha }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">big-alpha</td>
-                <td style="border: 1px solid black;">List is ordered using big alpha characters: A, B, C</td>
-                <td style="border: 1px solid black;">{ list-style-type: upper-alpha }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">big-alpha</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using big alpha characters: A, B, C</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: upper-alpha }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">disc</td>
-                <td style="border: 1px solid black;">List bullets are simple solid discs</td>
-                <td style="border: 1px solid black;">{ list-style-type: disc }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">disc</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are simple solid discs</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: disc }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">circle</td>
-                <td style="border: 1px solid black;">List bullets are hollow discs</td>
-                <td style="border: 1px solid black;">{ list-style-type : circle }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">circle</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are hollow discs</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type : circle }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">square</td>
-                <td style="border: 1px solid black;">List bullets are solid squares</td>
-                <td style="border: 1px solid black;">{ list-style-type: square }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">square</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are solid squares</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: square }</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">unlist</td>
-                <td style="border: 1px solid black;">List with no bullets</td>
-                <td style="border: 1px solid black;">{ list-style-type: none }</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">unlist</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">List with no bullets</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: none }</td>
             </tr>
         </tbody>
     </table>
@@ -269,7 +269,7 @@
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">
                     <pre>
 &lt;ul&gt;
 &lt;li&gt;
@@ -282,7 +282,7 @@
 &lt;/ul&gt;
                     </pre>
                 </td>
-                <td style="border: 1px solid black;">
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">
                     Bullet text with paragraphs<br/>
                     next paragraph in the bullet<br/>
                     Next bullet
@@ -301,7 +301,7 @@
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">
                     <pre>
 &lt;ol&gt;
 &lt;li&gt;
@@ -318,7 +318,7 @@ Bullet text #1
 &lt;/ol&gt;
                     </pre>
                 </td>
-                <td style="border: 1px solid black;">
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">
                     <ol>
                         <li>Bullet text #1</li>
                         <li>Bullet text #2
@@ -350,29 +350,29 @@ Bullet text #1
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">Ampersand</td>
-                <td style="border: 1px solid black;">&amp;</td>
-                <td style="border: 1px solid black;">&amp;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ampersand</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">Less-than</td>
-                <td style="border: 1px solid black;">&lt;</td>
-                <td style="border: 1px solid black;">&lt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Less-than</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">Greater-than</td>
-                <td style="border: 1px solid black;">&gt;</td>
-                <td style="border: 1px solid black;">&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Greater-than</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">Quotes</td>
-                <td style="border: 1px solid black;">"</td>
-                <td style="border: 1px solid black;">&quot;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Quotes</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">"</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&quot;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">Apostrophe</td>
-                <td style="border: 1px solid black;">'</td>
-                <td style="border: 1px solid black;">&apos;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Apostrophe</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">'</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&apos;</td>
             </tr>
         </tbody>
     </table>
@@ -391,100 +391,100 @@ Bullet text #1
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">&nbsp;</td>
-                <td style="border: 1px solid black;">non-breaking space</td>
-                <td style="border: 1px solid black;">&nbsp;</td>
-                <td style="border: 1px solid black;">&#160;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&nbsp;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">non-breaking space</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&nbsp;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#160;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;</td>
-                <td style="border: 1px solid black;">less than</td>
-                <td style="border: 1px solid black;">&lt;</td>
-                <td style="border: 1px solid black;">&#60;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">less than</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#60;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&gt;</td>
-                <td style="border: 1px solid black;">greater than</td>
-                <td style="border: 1px solid black;">&gt;</td>
-                <td style="border: 1px solid black;">&#62;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">greater than</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#62;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&le;</td>
-                <td style="border: 1px solid black;">less than or equal to</td>
-                <td style="border: 1px solid black;"></td>
-                <td style="border: 1px solid black;">&#8804;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&le;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">less than or equal to</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8804;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&ge;</td>
-                <td style="border: 1px solid black;">greater than or equal to</td>
-                <td style="border: 1px solid black;"></td>
-                <td style="border: 1px solid black;">&#8806;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&ge;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">greater than or equal to</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8806;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&amp;</td>
-                <td style="border: 1px solid black;">ampersand</td>
-                <td style="border: 1px solid black;">&amp;</td>
-                <td style="border: 1px solid black;">&#38;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">ampersand</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#38;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&quot;</td>
-                <td style="border: 1px solid black;">double quotation mark</td>
-                <td style="border: 1px solid black;">&quot;</td>
-                <td style="border: 1px solid black;">&#34;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&quot;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">double quotation mark</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&quot;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#34;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&apos;</td>
-                <td style="border: 1px solid black;">single quotation mark</td>
-                <td style="border: 1px solid black;">&apos;</td>
-                <td style="border: 1px solid black;">&#39;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&apos;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">single quotation mark</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&apos;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#39;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&cent;</td>
-                <td style="border: 1px solid black;">cent</td>
-                <td style="border: 1px solid black;">&cent;</td>
-                <td style="border: 1px solid black;">&#162;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&cent;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">cent</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&cent;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#162;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&pound;</td>
-                <td style="border: 1px solid black;">pound</td>
-                <td style="border: 1px solid black;">&pound;</td>
-                <td style="border: 1px solid black;">&#163;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&pound;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">pound</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&pound;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#163;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&yen;</td>
-                <td style="border: 1px solid black;">yen</td>
-                <td style="border: 1px solid black;">&yen;</td>
-                <td style="border: 1px solid black;">&#165;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&yen;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">yen</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&yen;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#165;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&euro;</td>
-                <td style="border: 1px solid black;">euro</td>
-                <td style="border: 1px solid black;">&euro;</td>
-                <td style="border: 1px solid black;">&#8364;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&euro;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">euro</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&euro;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8364;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&copy;</td>
-                <td style="border: 1px solid black;">copyright</td>
-                <td style="border: 1px solid black;">&copy;</td>
-                <td style="border: 1px solid black;">&#169;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&copy;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">copyright</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&copy;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#169;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&reg;</td>
-                <td style="border: 1px solid black;">trademark</td>
-                <td style="border: 1px solid black;">&reg;</td>
-                <td style="border: 1px solid black;">&#174;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&reg;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">trademark</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&reg;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#174;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&deg;</td>
-                <td style="border: 1px solid black;">degree sign</td>
-                <td style="border: 1px solid black;">&deg;</td>
-                <td style="border: 1px solid black;">&#176;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&deg;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">degree sign</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&deg;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#176;</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&beta;</td>
-                <td style="border: 1px solid black;">beta</td>
-                <td style="border: 1px solid black;">&beta;</td>
-                <td style="border: 1px solid black;"></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&beta;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">beta</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&beta;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
             </tr>
         </tbody>
     </table>
@@ -502,52 +502,52 @@ Bullet text #1
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">`</td>
-                <td style="border: 1px solid black;">a</td>
-                <td style="border: 1px solid black;">a&#768;</td>
-                <td style="border: 1px solid black;">à</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">`</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#768;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">à</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">´</td>
-                <td style="border: 1px solid black;">a</td>
-                <td style="border: 1px solid black;">a&#769;</td>
-                <td style="border: 1px solid black;">á</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">´</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#769;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">á</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">^</td>
-                <td style="border: 1px solid black;">a</td>
-                <td style="border: 1px solid black;">a&#770;</td>
-                <td style="border: 1px solid black;">â</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">^</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#770;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">â</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">~</td>
-                <td style="border: 1px solid black;">a</td>
-                <td style="border: 1px solid black;">a&#771;</td>
-                <td style="border: 1px solid black;">ã</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">~</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#771;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">ã</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">`</td>
-                <td style="border: 1px solid black;">O</td>
-                <td style="border: 1px solid black;">O&#768;</td>
-                <td style="border: 1px solid black;">Ò</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">`</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#768;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ò</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">´</td>
-                <td style="border: 1px solid black;">O</td>
-                <td style="border: 1px solid black;">O&#769;</td>
-                <td style="border: 1px solid black;">Ó</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">´</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#769;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ó</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">^</td>
-                <td style="border: 1px solid black;">O</td>
-                <td style="border: 1px solid black;">O&#770;</td>
-                <td style="border: 1px solid black;">Ô</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">^</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#770;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ô</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">~</td>
-                <td style="border: 1px solid black;">O</td>
-                <td style="border: 1px solid black;">O&#771;</td>
-                <td style="border: 1px solid black;">Õ</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">~</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#771;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Õ</td>
             </tr>
         </tbody>
     </table>
@@ -557,65 +557,65 @@ Bullet text #1
     <p>Only &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;caption&gt;, and &lt;colgroup&gt; tags are permitted as children of &lt;table&gt;.</p>
     <p>The &lt;th&gt; and &lt;td&gt; tags may contain inline elements, paragraphs, headings, lists, and image tags as children. Only include text or content in &lt;caption&gt;, &lt;th&gt;, &lt;td&gt;, and &lt;tfoot&gt;. All other tags are only used for structure.</p>
     <p><b>Note:</b> Avoid using Tables for formatting and alignment. There are alternative best practice solutions that achieve the same objective in a standardized manner.</p>
-    <table style="border: 1px solid black;">
+    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
         <thead>
-            <tr>
-                <th style="border: 1px solid black;">Tag</th>
-                <th style="border: 1px solid black;">Description</th>
+            <tr style="background-color: #003087; color: #ffffff;">
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">Tag</th>
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Description</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">&lt;table&gt;</td>
-                <td style="border: 1px solid black;">Defines a table</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;table&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a table</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;caption&gt;</td>
-                <td style="border: 1px solid black;">Defines a table caption or table title (Always keep the table title inside the table)</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;caption&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a table caption or table title (Always keep the table title inside the table)</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;th&gt;</td>
-                <td style="border: 1px solid black;">Defines a header cell in a table</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;th&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a header cell in a table</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;tr&gt;</td>
-                <td style="border: 1px solid black;">Defines a row in a table</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tr&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a row in a table</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;td&gt;</td>
-                <td style="border: 1px solid black;">Defines a cell in a table</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;td&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a cell in a table</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;colgroup&gt;</td>
-                <td style="border: 1px solid black;">Specifies a group of one or more columns in a table for formatting</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;colgroup&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Specifies a group of one or more columns in a table for formatting</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;col&gt;</td>
-                <td style="border: 1px solid black;">Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;col&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Specifies column properties for each column within a &lt;colgroup&gt; element</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;thead&gt;</td>
-                <td style="border: 1px solid black;">Groups the header content in a table</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;thead&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the header content in a table</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;tbody&gt;</td>
-                <td style="border: 1px solid black;">Groups the body content in a table</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tbody&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the body content in a table</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;tfoot&gt;</td>
-                <td style="border: 1px solid black;">Groups the footer content in a table (Always keep the table footnotes inside the table)</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tfoot&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the footer content in a table (Always keep the table footnotes inside the table)</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;rowspan&gt;</td>
-                <td style="border: 1px solid black;">Defines how many cells to merge across rows</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;rowspan&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines how many cells to merge across rows</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">&lt;colspan&gt;</td>
-                <td style="border: 1px solid black;">Defines how many cells to merge across columns</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;colspan&gt;</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines how many cells to merge across columns</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">Text alignment</td>
-                <td style="border: 1px solid black;">Attribute applied to define text alignment in a table:<br>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Text alignment</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Attribute applied to define text alignment in a table:<br>
                     style="text-align: left; vertical-align: top;"<br>
                     style="text-align: center; vertical-align: middle;"<br>
                     style="text-align: right; vertical-align: bottom;"
@@ -625,68 +625,68 @@ Bullet text #1
     </table>
 
     <p><b>Example: Simple Table</b></p>
-    <table style="border: 1px solid black;">
+    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
         <thead>
-            <tr>
-                <td style="border: 1px solid black;">Header 1</td>
-                <td style="border: 1px solid black;">Header 2</td>
-                <td style="border: 1px solid black;">Header 3</td>
+            <tr style="background-color: #003087; color: #ffffff;">
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">1</td>
-                <td style="border: 1px solid black;">2</td>
-                <td style="border: 1px solid black;">3</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">1</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">2</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">3</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">4</td>
-                <td style="border: 1px solid black;">5</td>
-                <td style="border: 1px solid black;">6</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">6</td>
             </tr>
         </tbody>
     </table>
 
     <p><b>Example: Merge cells across columns</b></p>
-    <table style="border: 1px solid black;">
+    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
         <thead>
-            <tr>
-                <td style="border: 1px solid black;">Header 1</td>
-                <td style="border: 1px solid black;">Header 2</td>
-                <td style="border: 1px solid black;">Header 3</td>
+            <tr style="background-color: #003087; color: #ffffff;">
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;" colspan="2">12</td>
-                <td style="border: 1px solid black;">3</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;" colspan="2">12</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">3</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">4</td>
-                <td style="border: 1px solid black;">5</td>
-                <td style="border: 1px solid black;">6</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">6</td>
             </tr>
         </tbody>
     </table>
 
     <p><b>Example: Merge cells across rows</b></p>
-    <table style="border: 1px solid black;">
+    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
         <thead>
-            <tr>
-                <td style="border: 1px solid black;">Header 1</td>
-                <td style="border: 1px solid black;">Header 2</td>
-                <td style="border: 1px solid black;">Header 3</td>
+            <tr style="background-color: #003087; color: #ffffff;">
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
+                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid black;">1</td>
-                <td style="border: 1px solid black;">2</td>
-                <td style="border: 1px solid black;" rowspan="2">36</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">1</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">2</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;" rowspan="2">36</td>
             </tr>
             <tr>
-                <td style="border: 1px solid black;">4</td>
-                <td style="border: 1px solid black;">5</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
             </tr>
         </tbody>
     </table>
