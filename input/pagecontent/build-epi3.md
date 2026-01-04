@@ -1,4 +1,3 @@
-## Building ePI Type 3
 ePI Type 3 focusess on **Clinical Guidance**. It builds upon the product identification of Type 2 by adding structured clinical data—such as indications, contraindications, and interaction alerts. This type enables Clinical Decision Support (CDS) in EMRs and mobile apps.
 
 ### Structural Outline

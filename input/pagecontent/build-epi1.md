@@ -1,4 +1,3 @@
-## Building ePI Type 1
 ePI Type 1 focusess on the **Narrative Reproduction** of official label templates (e.g., Summary of Product Characteristics, Patient Information Leaflet). It serves as the digital replacement for traditional DOCX or PDF labels.
 
 ### Structural Outline

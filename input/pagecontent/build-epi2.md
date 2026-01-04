@@ -1,4 +1,3 @@
-## Building ePI Type 2
 ePI Type 2 focusess on **Product Identification**. It extends the narrative reproduction of Type 1 by adding structured resources for organizations, product definitions, and regulatory context. This type enables machine-level lookup in national drug catalogues.
 
 ### Structural Outline
