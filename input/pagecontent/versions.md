@@ -264,17 +264,17 @@ The version-control metadata in the ePI Bundle/Composition can easily be rendere
 **Figure 1** – From initial draft to first approved ePI
 
 <span style="display: inline-block; vertical-align: middle;">
-  <img src="ePI-lifecycle-initial-to-approval.png" alt="Initial approval workflow" style="width: 600px; height: auto;" />
+  <img src="ePI-lifecycle-initial-to-approval1.png" alt="Initial approval workflow" style="width: 600px; height: auto;" />
 </span>
 
 **Figure 2** – Parallel safety and stability variations with final merge
 
 <span style="display: inline-block; vertical-align: middle;">
-  <img src="ePI-lifecycle-branching-and-merge.png" alt="Parallel variations and merge" style="width: 600px; height: auto;" />
+  <img src="ePI-lifecycle-branching-and-merge2.png" alt="Parallel variations and merge" style="width: 600px; height: auto;" />
 </span>
 
 **Figure 3** – Deprecation / withdrawal of an authorised ePI
 
 <span style="display: inline-block; vertical-align: middle;">
-  <img src="ePI-lifecycle-withdrawal-example.png" alt="Withdrawal example" style="width: 600px; height: auto;" />
+  <img src="ePI-lifecycle-withdrawal-example3.png" alt="Withdrawal example" style="width: 600px; height: auto;" />
 </span>

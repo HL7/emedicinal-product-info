@@ -1,60 +1,55 @@
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Technical Style Guide Recommendations</title>
-</head>
-<body>
-    <h2>Objective</h2>
-    <p>To provide standardized instructions for structuring ePI content; and ensure the consistency, clarity and quality of ePIs across organizations, jurisdictions, and regulators. These recommendations are subject to local regulatory rules. Refer to local regulatory guidance for actual requirements.</p>
+## Objective
+Standardize ePI content structure to ensure consistency, quality, and interoperability across jurisdictions. These recommendations supplement local regulatory requirements.
 
-    <h2>Introduction</h2>
-    <p>A Technical Style Guide defines the standard format and structure for writing technical documents within or across organizations. This is of great value to the international ePI project because the associated technologies and standards (e.g., XML, HTML, style sheets) are highly flexible and offer a wide array of options.</p>
-    <p>The risk of divergence is therefore high if all organizations and regulators across jurisdictions chose to structure their ePIs in different ways. Although still compliant with FHIR, the resulting divergence could complicate global implementation and maintenance. This results in an unnecessary increase in software development and maintenance costs and process inefficiencies.</p>
-    <p>Through standardization, we ensure ePI content is more consistent, accessible, easier to maintain, interoperable across systems, is more search engine friendly, and more friendly for artificial intelligence.</p>
-    <p>The content of this guide is not novel. It consolidates a selection of common best practices from Health Level 7 (HL7), web development, and web standards for convenience.</p>
+## Introduction
+This guide defines standard formatting for ePI narrative content. Aligning technical structures reduces implementation complexity, lowers costs, and improves accessibility and AI-readiness. It consolidates best practices from HL7, W3C, and modern web standards.
 
-    <h2>Scope</h2>
-    <h3>In-scope</h3>
-    <ul>
-        <li>XML and JSON structure, formatting, attributes, and elements</li>
-        <li>HTML and XHTML structure, formatting, attributes, and elements</li>
-        <li>Chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard</li>
-        <li>Text, tables, images, and internally contained style attributes</li>
-    </ul>
-    <h3>Out of scope</h3>
-    <ul>
-        <li>Regulatory content requirements</li>
-        <li>Content style (e.g., Font, font colour, font size)</li>
-        <li>External style attributes from a style sheet</li>
-    </ul>
+> [!NOTE]
+> This guide covers technical structure, XHTML compliance, and internal style attributes (e.g., text, tables, images). It does not include regulatory content requirements or external brand-specific styling.
 
-    <h2>Guidance</h2>
-    <h3>ePI Structure (XML, JSON, XHTML)</h3>
-    <p>By default, the structured elements of a FHIR document are based on Extensible Markup Language (XML) or JavaScript Object Notation (JSON).</p>
-    <p>However, there is an exception for Narrative text (E.g., paragraphs, lists, images, tables, hypertext links). Whether the ePI is XML or JSON, the narrative text is captured as EXtensible HyperText Markup Language (XHTML) or Markdown.</p>
-    <p>Markdown is a simplified standard for structuring plain text. In an ePI, Markdown is used in data fields that only require brief, basic text (E.g., Document title, section heading title).</p>
-    <p>XHTML is used in data fields that require full rich narrative text of varying lengths (E.g., paragraphs of text, tables, lists, images in the section content of a drug label).</p>
-    <p>For example, here is an ePI section structured with XML (Red) and narrative as XHTML (Blue):</p>
-    <pre>
-&lt;section id="7c4f5a60-0d4e-ee11-be6e-000d3aaa06fe"&gt;
-    &lt;title value="1. What X is and what it is used for" /&gt;
-    &lt;code&gt;
-      &lt;coding&gt;
-        &lt;system value="https://spor.ema.europa.eu/v1/lists/200000029659/terms/" /&gt;
-        &lt;code value="200000029895" /&gt;
-        &lt;display value="1. What X is and what it is used for" /&gt;
-      &lt;/coding&gt;
-    &lt;/code&gt;
-    &lt;text&gt;
-      &lt;status value="generated" /&gt;
-      &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-        &lt;p&gt;The therapeutic indications in line with section 4.1 of the SmPC should be stated here. It should be stated in which age group the medicine is indicated, specifying the age limits, e.g. “X is used to treat {specify indication} in”.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/text&gt;
-&lt;/section&gt;
-    </pre>
-    <p>For example, here is an ePI section structured with JSON (Red) and the narrative as XHTML (Blue):</p>
-    <pre>
+> [!IMPORTANT]
+> **Do not include inline styling** (e.g., fonts, colors, layouts) within the ePI document. Styling must remain separate from the ePI's XML or JSON structure in a style sheet (i.e., CSS, XSLT). The **only exception** is for basic inline formatting: **bold**, <u>underline</u>, *italics*, and text alignment.
+
+## Guidance
+### Style vs. Formatting vs. Style Sheets
+Separating content from style ensures better maintainability, reusability, and multi-channel delivery (web vs. print).
+
+- **Inline Formatting:** Applied directly within the ePI (e.g., **Bold**, *Italics*, Hyperlinks).
+- **Style Sheets (XSLT/CSS):** Managed externally to handle layout, transformations (XML to PDF), and professional aesthetics (fonts, colors, interactivity).
+
+### ePI Structure (XML, JSON, XHTML)
+By default, the structured elements of a FHIR document are based on Extensible Markup Language (XML) or JavaScript Object Notation (JSON).
+
+However, there is an exception for Narrative text (E.g., paragraphs, lists, images, tables, hypertext links). Whether the ePI is XML or JSON, the narrative text is captured as EXtensible HyperText Markup Language (XHTML) or Markdown.
+
+Markdown is a simplified standard for structuring plain text. In an ePI, Markdown is used in data fields that only require brief, basic text (E.g., Document title, section heading title).
+
+XHTML is used in data fields that require full rich narrative text of varying lengths (E.g., paragraphs of text, tables, lists, images in the section content of a drug label).
+
+For example, here is an ePI section structured with XML and the narrative as XHTML is within the `<div>` tag:
+
+```xml
+<section id="7c4f5a60-0d4e-ee11-be6e-000d3aaa06fe">
+    <title value="1. What X is and what it is used for" />
+    <code>
+      <coding>
+        <system value="https://spor.ema.europa.eu/v1/lists/200000029659/terms/" />
+        <code value="200000029895" />
+        <display value="1. What X is and what it is used for" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>The therapeutic indications in line with section 4.1 of the SmPC should be stated here. It should be stated in which age group the medicine is indicated, specifying the age limits, e.g. “X is used to treat {specify indication} in”.</p>
+      </div>
+    </text>
+</section>
+```
+
+For example, here is an ePI section structured with JSON and the narrative as XHTML is within the `div` tag:
+
+```json
 {
   "title" : "1. What X is and what it is used for",
   "code" : {
@@ -68,246 +63,191 @@
   },
   "text" : {
     "status" : "additional",
-    "div" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;The therapeutic indications in line with section 4.1 of the SmPC should be stated here. It should be stated in which age group the medicine is indicated, specifying the age limits, e.g. “X is used to treat {specify indication} in&lt;/p&gt;&lt;/div&gt;"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The therapeutic indications in line with section 4.1 of the SmPC should be stated here. It should be stated in which age group the medicine is indicated, specifying the age limits, e.g. “X is used to treat {specify indication} in</p></div>"
   }
 }
-    </pre>
+```
 
-    <h3>Style vs. Inline Text Formatting vs. Style Sheet</h3>
-    <p>Text style refers to visual characteristics applied to the whole document to achieve an overall look and feel. E.g., Font type, Font size, Font colour, Table borders, Table cell shading, type of bullets.</p>
-    <p>Inline text formatting refers to visual characteristics applied to specific portions of text within the document. E.g., <b>Bold</b>, <i>italic</i>, superscript, subscript, hypertext link.</p>
-    <p>Inline text lives within a ePI document. Styles are applied from outside the document using a Style Sheet. A style sheet is made up of one or both of the following:</p>
-    <ul>
-        <li>Extensible Stylesheet Language Transformations (XSLT) is used to transform content from one document format to another (e.g., convert XML to user friendly PDF); move content around (e.g., move Section 2 before Section 1); or transform content (e.g., transform this number format from “10000000” to “10,000,000” or “1x10<sup>7</sup>”).</li>
-        <li>Cascading Style Sheet (CSS) is used to style the content after transformation. E.g., make all text in the document Aptos font; font size 11pt; black font colour. The CSS can also be used to add interactive elements like expand/collapse buttons; column filters on large tables.</li>
-    </ul>
-    <p>Keeping style and content separate is a key benefit of structured content. Keeping them separate in an ePI document ensures the following:</p>
-    <ul>
-        <li><b>Maintenance:</b> Easier to update a single central style sheet, that applies a global change to all ePIs across a portfolio, rather than updating each ePI individually.</li>
-        <li><b>Reusability:</b> Style sheets can be reused across multiple document types to apply a consistent appearance across an organization. E.g., reuse a common house table style across labeling, CMC, and Clinical documents.</li>
-        <li><b>Context:</b> Different style sheets can be used to serve different objectives. e.g., transform an ePI into an accessibility friendly webpage with high contrast mode; or use another style sheet to transform the ePI into a print friendly PDF with pagination and page breaks.</li>
-    </ul>
+### Accessibility
+In most jurisdictions WCAG Level AA is recommended for use.
 
-    <h3>Accessibility</h3>
-    <p>In most jurisdictions WCAG Level AA is recommended for use.</p>
+### Mobile-First Responsive Narratives
+Modern ePI should be designed to render efficiently on a variety of devices, from small wearable screens to large desktop monitors. To ensure high readability and visual consistency across all viewports, implementers should follow "Mobile-First" principles:
 
-    <h3>Mobile-First Responsive Narratives</h3>
-    <p>Modern ePI should be designed to render efficiently on a variety of devices, from small wearable screens to large desktop monitors. To ensure high readability and visual consistency across all viewports, implementers should follow "Mobile-First" principles:</p>
-    <ul>
-        <li><b>Fluid Table Widths:</b> Tables should use percentage-based widths (e.g., <code>width: 100%;</code>) rather than fixed pixel widths to prevent horizontal scrolling on mobile devices.</li>
-        <li><b>Relative Font Sizes:</b> Use relative units like <code>em</code> or <code>rem</code> for font sizing to allow for user-scaling and responsive adjustments.</li>
-        <li><b>Scalable Media:</b> All images should be responsive (e.g., <code>max-width: 100%; height: auto;</code>) to fit the container viewport.</li>
-    </ul>
+- **Fluid Table Widths:** Tables should use percentage-based widths (e.g., `width: 100%;`) rather than fixed pixel widths to prevent horizontal scrolling on mobile devices.
+- **Relative Font Sizes:** Use relative units like `em` or `rem` for font sizing to allow for user-scaling and responsive adjustments.
+- **Scalable Media:** All images should be responsive (e.g., `max-width: 100%; height: auto;`) to fit the container viewport.
 
-    <h3>ePI Type Mapping (Maturity Levels)</h3>
-    <p>The following table maps the FHIR ePI Maturity Levels to levels of technical compliance and XHTML richness:</p>
-    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
-        <thead>
-            <tr style="background-color: #003087; color: #ffffff;">
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">ePI Maturity Level</th>
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">XHTML Compliance</th>
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Key Characteristics</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Type 1</strong></td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Rich Narrative</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Primarily focuses on high-fidelity reproduction of the paper leaflet using rich XHTML.</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Type 2</strong></td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Hybrid / Semi-Structured</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Balances rich narrative with increased use of structured data fields for key metadata.</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Type 3</strong></td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Fully Structured</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Highly interoperable; uses semantic tagging and structured fields to drive advanced interactivity.</td>
-            </tr>
-        </tbody>
-    </table>
+### Character set
+The default standard for all content characters is Unicode Transformation Format 8-bit (UTF-8).
 
-    <h3>Character set</h3>
-    <p>The default standard for all content characters is Unicode Transformation Format 8-bit (UTF-8).</p>
-    <p>UTF-8 is a character encoding standard used to ensure text is presented consistently when exchanged across systems.</p>
+UTF-8 is a character encoding standard used to ensure text is presented consistently when exchanged across systems.
 
-    <h2>Content Guidelines</h2>
-    <h3>Narrative Text</h3>
-    <p>All text must be contained within one of the following five tags:</p>
-    <ul>
-        <li>Paragraph &lt;p&gt;</li>
-        <li>Ordered list &lt;ol&gt;</li>
-        <li>Unordered list &lt;ul&gt;</li>
-        <li>Table &lt;table&gt;</li>
-        <li>Footer &lt;footer&gt;</li>
-    </ul>
-    <p>Content Span &lt;span&gt;</p>
+## Content Guidelines
+### Narrative Text
+All text must be contained within one of the following five tags:
 
-    <h3>Paragraphs</h3>
-    <p>The paragraph tag &lt;p&gt; can contain text and inline formatting tags as children. E.g.,</p>
-    <ul>
-        <li>Parse <b>&lt;strong&gt;</b> (instead of Bold &lt;b&gt;)</li>
-        <li>Emphasis <i>&lt;em&gt;</i> (instead of Italics &lt;i&gt;)</li>
-        <li>Superscript &lt;sup&gt;</li>
-        <li>Subscript &lt;sub&gt;</li>
-        <li>Image &lt;img&gt;</li>
-        <li>Content Span &lt;span&gt;</li>
-    </ul>
-    <p>The <b>&lt;strong&gt;</b> and <i>&lt;em&gt;</i> tags are used to give semantic meaning to text.</p>
-    <p><b>&lt;strong&gt;</b> is used to indicate that the text has strong importance or emphasis. It typically renders the text in bold.</p>
-    <p><i>&lt;em&gt;</i> This tag is used to emphasize text, usually rendering it in italics.</p>
-    <p>The bold tag &lt;b&gt; and italics tag &lt;i&gt; are only used to convey the appearance of text and do not convey any semantic meaning.</p>
-    <p>Developers can use the semantic meaning behind <b>&lt;strong&gt;</b> and <i>&lt;em&gt;</i> tags to deliver benefits like the following:</p>
-    <ul>
-        <li><b>Improve Accessibility:</b> Accessibility services, like screen readers, are already designed to understand the structure and importance of content within semantic tags.</li>
-        <li><b>Consistent Styling:</b> Semantic tags can be targeted with style sheets to apply styling consistently across web browsers and devices (mobile, desktop, wearable).</li>
-        <li><b>Better User Experience:</b> Developers can reuse known and effective best practices to create intuitive and user-friendly experiences.</li>
-    </ul>
-    <p><b>Note:</b></p>
-    <ul>
-        <li>The Paragraph tag &lt;p&gt; cannot contain lists or tables as children.</li>
-        <li>Use Paragraph tags instead of Line Break &lt;br&gt; tags. Line Breaks and white space between content blocks (e.g., paragraphs, tables) should be handled by the style sheet as needed.</li>
-    </ul>
+- Paragraph `<p>`
+- Ordered list `<ol>`
+- Unordered list `<ul>`
+- Table `<table>`
+- Footer `<footer>`
 
-    <h3>In-line Style Attribute</h3>
-    <p>The style attribute can be added to tags to apply inline formatting. E.g.,</p>
-    <p>&lt;p style="text-decoration: underline"&gt;Underlined Sub-heading&lt;/p&gt;</p>
-    <p>or</p>
-    <p>&lt;p&gt;Example of how to &lt;span style="text-decoration: underline"&gt;underline&lt;/span&gt; specific text&lt;/p&gt;</p>
-    <p>The following is a list of classes that can be used together with the style attribute:</p>
-    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
-        <thead>
-            <tr style="background-color: #003087; color: #ffffff;">
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">Class</th>
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 40%;">Description</th>
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Style</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">bold</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Bold Text</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ font-weight: bold }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">italics</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Italics Text</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ font-style: italic }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">underline</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Underlined Text</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-decoration: underline }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">strikethrough</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Strikethrough Text</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-decoration: line-through }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">left</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Left Aligned</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : left }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">right</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Right Aligned</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : right }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">center</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Center Aligned</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : center }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">justify</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Justified</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : justify }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-left</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the left</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-left: 1px solid grey }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-right</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the right</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-right: 1px solid grey }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-top</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the top</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-top: 1px solid grey }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">border-bottom</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the bottom</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-bottom: 1px solid grey }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">arabic</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using Arabic numerals: 1, 2, 3</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: decimal }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">little-roman</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using little Roman numerals: i, ii, iii</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: lower-roman }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">big-roman</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using big Roman numerals: I, II, III</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: upper-roman }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">little-alpha</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using little alpha characters: a, b, c</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: lower-alpha }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">big-alpha</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using big alpha characters: A, B, C</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: upper-alpha }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">disc</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are simple solid discs</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: disc }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">circle</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are hollow discs</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type : circle }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">square</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are solid squares</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: square }</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">unlist</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">List with no bullets</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: none }</td>
-            </tr>
-        </tbody>
-    </table>
+Content Span `<span>`
 
-    <h3>Lists</h3>
-    <p>Lists are defined using the Unordered List tag &lt;ul&gt; (i.e., bulleted list) or the Ordered List tag &lt;ol&gt; (i.e., numbered or alphabetical list).</p>
-    <p>&lt;ul&gt; and &lt;ol&gt; tags must only contain List Item &lt;li&gt; tags as children. List Item &lt;li&gt; tags can contain other tags as children; e.g., divider &lt;div&gt;, paragraph &lt;p&gt;, heading &lt;h1&gt; to &lt;h6&gt;, images &lt;img&gt;, and tables &lt;table&gt;.</p>
-    <p>For example, this shows how to multiple paragraphs in a single bullet.</p>
-    <table style="border: 1px solid black;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid black;">XML format</th>
-                <th style="border: 1px solid black;">Display Text Format</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">
-                    <pre>
+### Paragraphs (`<p>`)
+Paragraphs can contain inline tags like `<strong>`, `<em>`, `<sup>`, `<sub>`, and `<img>`. Use **`<strong>`** and *`<em>`* for semantic emphasis (improving accessibility) rather than `<b>` or `<i>`. 
+
+**Note:**
+- Do not nest lists or tables inside `<p>` tags.
+- Use CSS or multiple `<p>` tags for spacing rather than `<br>` tags.
+
+### In-line Style Attribute
+The style attribute can be added to tags to apply inline formatting. E.g.,
+
+`<p style="text-decoration: underline">Underlined Sub-heading</p>`
+
+or
+
+`<p>Example of how to <span style="text-decoration: underline">underline</span> specific text</p>`
+
+The following is a list of classes that can be used together with the style attribute:
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">Class</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 40%;">Description</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Style</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">bold</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Bold Text</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ font-weight: bold }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">italics</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Italics Text</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ font-style: italic }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">underline</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Underlined Text</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-decoration: underline }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">strikethrough</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Strikethrough Text</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-decoration: line-through }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">left</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Left Aligned</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : left }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">right</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Right Aligned</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : right }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">center</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Center Aligned</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : center }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">justify</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Justified</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ text-align : justify }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">border-left</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the left</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-left: 1px solid grey }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">border-right</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the right</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-right: 1px solid grey }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">border-top</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the top</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-top: 1px solid grey }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">border-bottom</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Border on the bottom</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ border-bottom: 1px solid grey }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">arabic</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using Arabic numerals: 1, 2, 3</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: decimal }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">little-roman</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using little Roman numerals: i, ii, iii</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: lower-roman }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">big-roman</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using big Roman numerals: I, II, III</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: upper-roman }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">little-alpha</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using little alpha characters: a, b, c</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: lower-alpha }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">big-alpha</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List is ordered using big alpha characters: A, B, C</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: upper-alpha }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">disc</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are simple solid discs</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: disc }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">circle</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are hollow discs</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type : circle }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">square</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List bullets are solid squares</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: square }</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">unlist</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">List with no bullets</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">{ list-style-type: none }</td>
+        </tr>
+    </tbody>
+</table>
+
+### Lists
+Lists are defined using the Unordered List tag `<ul>` (i.e., bulleted list) or the Ordered List tag `<ol>` (i.e., numbered or alphabetical list).
+
+`<ul>` and `<ol>` tags must only contain List Item `<li>` tags as children. List Item `<li>` tags can contain other tags as children; e.g., divider `<div>`, paragraph `<p>`, heading `<h1>` to `<h6>`, images `<img>`, and tables `<table>`.
+
+For example, this shows how to multiple paragraphs in a single bullet.
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">XML format</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Display Text Format</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">
+                <pre>
 &lt;ul&gt;
 &lt;li&gt;
 &lt;div&gt;    
@@ -317,29 +257,32 @@
 &lt;/li&gt;
 &lt;li&gt;Next bullet&lt;/li&gt;
 &lt;/ul&gt;
-                    </pre>
-                </td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">
-                    Bullet text with paragraphs<br/>
-                    next paragraph in the bullet<br/>
-                    Next bullet
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <p>Nested lists are made by adding another layer of &lt;ul&gt; or &lt;ol&gt; tags as children to a List.</p>
-    <p>For example, this shows how to create a nested list with a leading paragraph.</p>
-    <table style="border: 1px solid black;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid black;">XML format</th>
-                <th style="border: 1px solid black;">Display Text Format</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">
-                    <pre>
+                </pre>
+            </td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">
+                Bullet text with paragraphs<br/>
+                next paragraph in the bullet<br/>
+                Next bullet
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+Nested lists are made by adding another layer of `<ul>` or `<ol>` tags as children to a List.
+
+For example, this shows how to create a nested list with a leading paragraph.
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">XML format</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Display Text Format</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">
+                <pre>
 &lt;ol&gt;
 &lt;li&gt;
 Bullet text #1
@@ -353,438 +296,425 @@ Bullet text #1
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-                    </pre>
-                </td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">
-                    <ol>
-                        <li>Bullet text #1</li>
-                        <li>Bullet text #2
-                            <ul>
-                                <li>Sub-bullet text #1</li>
-                                <li>Sub-bullet text #2</li>
-                            </ul>
-                        </li>
-                    </ol>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                </pre>
+            </td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">
+                <ol>
+                    <li>Bullet text #1</li>
+                    <li>Bullet text #2
+                        <ul>
+                            <li>Sub-bullet text #1</li>
+                            <li>Sub-bullet text #2</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-    <h3>Hyperlinks</h3>
-    <p>The Anchor tag &lt;a&gt; and its attributes are used to represent hypertext links. E.g.,</p>
-    <p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
+### Hyperlinks
+The Anchor tag `<a>` and its attributes are used to represent hypertext links. E.g.,
 
-    <h3>Escape characters</h3>
-    <p>The following characters are reserved in XML for specific purposes and must be escaped. E.g., Within the ePI’s XML, ampersand “&amp;” cannot be used in narrative text. “&amp;” must be used in its place.</p>
-    <p>Web browsers and apps will always convert the escaped form “&amp;” back to the normal form “&amp;”. The escaped form is only reserved for the XML content.</p>
-    <table style="border: 1px solid black;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid black;">Special character</th>
-                <th style="border: 1px solid black;">Must be replaced by the escaped form</th>
-                <th style="border: 1px solid black;">Escaped form required in the XML</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ampersand</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Less-than</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Greater-than</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Quotes</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">"</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&quot;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Apostrophe</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">'</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&apos;</td>
-            </tr>
-        </tbody>
-    </table>
+[Visit W3Schools.com!](https://www.w3schools.com)
 
-    <h3>Common Symbols</h3>
-    <p>Symbols can be added as regular text as long as they are UTF-8 compliant or they can be replaced with named entities. Like the escape characters mentioned in Section 4.4, web browsers or applications convert named entities back to the normal symbol in the display.</p>
-    <p>The following table is a list of commonly use symbols. Refer to the HTML specification or W3C resources for a more comprehensive list.</p>
-    <table style="border: 1px solid black;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid black;">Result</th>
-                <th style="border: 1px solid black;">Description</th>
-                <th style="border: 1px solid black;">Name</th>
-                <th style="border: 1px solid black;">Number</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&nbsp;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">non-breaking space</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&nbsp;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#160;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">less than</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#60;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">greater than</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#62;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&le;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">less than or equal to</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8804;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&ge;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">greater than or equal to</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8806;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">ampersand</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#38;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&quot;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">double quotation mark</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&quot;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#34;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&apos;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">single quotation mark</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&apos;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#39;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&cent;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">cent</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&cent;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#162;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&pound;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">pound</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&pound;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#163;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&yen;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">yen</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&yen;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#165;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&euro;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">euro</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&euro;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8364;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&copy;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">copyright</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&copy;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#169;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&reg;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">trademark</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&reg;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#174;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&deg;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">degree sign</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&deg;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&#176;</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&beta;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">beta</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&beta;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
-            </tr>
-        </tbody>
-    </table>
+### Escape characters
+The following characters are reserved in XML for specific purposes and must be escaped. E.g., Within the ePI’s XML, ampersand “&” cannot be used in narrative text. “&amp;” must be used in its place.
 
-    <h3>Diacritical Marks</h3>
-    <p>Diacritical marks work in a similar manner as symbols with named entities. The following table is a list of commonly use marks. Refer to the HTML specification or W3C resources for a more comprehensive list.</p>
-    <table style="border: 1px solid black;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid black;">Mark</th>
-                <th style="border: 1px solid black;">Character</th>
-                <th style="border: 1px solid black;">Construct</th>
-                <th style="border: 1px solid black;">Result</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">`</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#768;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">à</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">´</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#769;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">á</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">^</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#770;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">â</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">~</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">a&#771;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">ã</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">`</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#768;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ò</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">´</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#769;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ó</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">^</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#770;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Ô</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">~</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">O&#771;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Õ</td>
-            </tr>
-        </tbody>
-    </table>
+Web browsers and apps will always convert the escaped form “&amp;” back to the normal form “&”. The escaped form is only reserved for the XML content.
 
-    <h3>Tables</h3>
-    <p>The table tag &lt;table&gt; and its children (see table below) are used to structure a table.</p>
-    <p>Only &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;caption&gt;, and &lt;colgroup&gt; tags are permitted as children of &lt;table&gt;.</p>
-    <p>The &lt;th&gt; and &lt;td&gt; tags may contain inline elements, paragraphs, headings, lists, and image tags as children. Only include text or content in &lt;caption&gt;, &lt;th&gt;, &lt;td&gt;, and &lt;tfoot&gt;. All other tags are only used for structure.</p>
-    <p><b>Note:</b> Avoid using Tables for formatting and alignment. There are alternative best practice solutions that achieve the same objective in a standardized manner.</p>
-    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
-        <thead>
-            <tr style="background-color: #003087; color: #ffffff;">
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">Tag</th>
-                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;table&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a table</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;caption&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a table caption or table title (Always keep the table title inside the table)</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;th&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a header cell in a table</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tr&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a row in a table</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;td&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a cell in a table</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;colgroup&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Specifies a group of one or more columns in a table for formatting</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;col&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Specifies column properties for each column within a &lt;colgroup&gt; element</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;thead&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the header content in a table</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tbody&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the body content in a table</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tfoot&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the footer content in a table (Always keep the table footnotes inside the table)</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;rowspan&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines how many cells to merge across rows</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;colspan&gt;</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines how many cells to merge across columns</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Text alignment</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">Attribute applied to define text alignment in a table:<br>
-                    style="text-align: left; vertical-align: top;"<br>
-                    style="text-align: center; vertical-align: middle;"<br>
-                    style="text-align: right; vertical-align: bottom;"
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Special character</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Must be replaced by the escaped form</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Escaped form required in the XML</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Ampersand</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;amp;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Less-than</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;lt;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Greater-than</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;gt;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Quotes</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">"</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;quot;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Apostrophe</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">'</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;apos;</td>
+        </tr>
+    </tbody>
+</table>
 
-    <p><b>Example: Simple Table</b></p>
-    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
-        <thead>
-            <tr style="background-color: #003087; color: #ffffff;">
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">1</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">2</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">3</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">6</td>
-            </tr>
-        </tbody>
-    </table>
+### Common Symbols
+Symbols can be added as regular text as long as they are UTF-8 compliant or they can be replaced with named entities. Like the escape characters mentioned in Section 4.4, web browsers or applications convert named entities back to the normal symbol in the display.
 
-    <p><b>Example: Merge cells across columns</b></p>
-    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
-        <thead>
-            <tr style="background-color: #003087; color: #ffffff;">
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;" colspan="2">12</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">3</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">6</td>
-            </tr>
-        </tbody>
-    </table>
+The following table is a list of commonly use symbols. Refer to the HTML specification or W3C resources for a more comprehensive list.
 
-    <p><b>Example: Merge cells across rows</b></p>
-    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
-        <thead>
-            <tr style="background-color: #003087; color: #ffffff;">
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
-                <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">1</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">2</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;" rowspan="2">36</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
-                <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
-            </tr>
-        </tbody>
-    </table>
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Result</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Description</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Name</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&nbsp;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">non-breaking space</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;nbsp;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#160;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">less than</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;lt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#60;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">greater than</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#62;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&le;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">less than or equal to</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8804;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&ge;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">greater than or equal to</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8806;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">ampersand</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;amp;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#38;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&quot;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">double quotation mark</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;quot;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#34;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&apos;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">single quotation mark</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;apos;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#39;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&cent;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">cent</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;cent;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#162;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&pound;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">pound</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;pound;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#163;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&yen;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">yen</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;yen;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#165;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&euro;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">euro</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;euro;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#8364;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&copy;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">copyright</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;copy;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#169;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&reg;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">trademark</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;reg;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#174;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&deg;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">degree sign</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;deg;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&#176;</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&beta;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">beta</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&amp;beta;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;"></td>
+        </tr>
+    </tbody>
+</table>
 
-    <h3>Images</h3>
-    <p>The preferred format for images is Scalable Vector Graphics (SVG). SVG is an XML based format that can be scaled to any size without losing quality. SVG is ideal for graphics that need to look sharp at any size. This is ideal for ePI since graphics need to be resized for different size screens (wearable, mobile, desktop); or resized to suit printed cartons, paper leaflets, and instructions for use.</p>
-    <p>All images must be embedded within the ePI’s XML as Base64 objects. This allows an ePI to be exchanged as a single XML or JSON file. Each image is managed as a single Base64 object in a single Contained Binary resource within the ePI. E.g.,</p>
-    <pre>
-&lt;contained&gt;
- &lt;Binary&gt;
-     &lt;id value="companylogo" /&gt;
-     &lt;contentType value="image/svg+xml" /&gt;
-     &lt;data value="Base64 data goes here" /&gt;
- &lt;/Binary&gt;
-&lt;/contained&gt;
-    </pre>
-    <p>The image tag &lt;img&gt; is then placed in the content to show where the image is supposed to go. E.g.,</p>
-    <pre>
-&lt;text&gt;
-    &lt;status value="generated" /&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
-        &lt;p&gt;&lt;img src="#companylogo" alt="Company logo" /&gt;Product Name&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/text&gt;
-    </pre>
-    <p><b>Note:</b></p>
-    <ul>
-        <li>Include a brief but meaningful description of the image using the “alt” attribute in the image tag &lt;img&gt; to facilitate accessibility features like screen reading.</li>
-        <li>Colours should meet the WCAG Level AA for contrast.</li>
-    </ul>
+### Diacritical Marks
+Diacritical marks work in a similar manner as symbols with named entities. The following table is a list of commonly use marks. Refer to the HTML specification or W3C resources for a more comprehensive list.
 
-    <h3>Audio and Video</h3>
-    <p>It is best practice not to embed audio or video files within an ePI given their large size. Instead, the ePI should link to external copies of audio and video files.</p>
-    <p><b>Note:</b> Check local regulations to confirm if audio and video files are allowed to be used with an ePI.</p>
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Mark</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Character</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Construct</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">`</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a&amp;#768;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">à</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">´</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a&amp;#769;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">á</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">^</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a&amp;#770;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">â</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">~</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">a&amp;#771;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">ã</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">`</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O&amp;#768;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Ò</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">´</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O&amp;#769;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Ó</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">^</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O&amp;#770;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Ô</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">~</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">O&amp;#771;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Õ</td>
+        </tr>
+    </tbody>
+</table>
 
-    <h3>Languages</h3>
-    <p>Each language should be a separate ePI document. E.g., one ePI for English and a separate ePI for its French translation.</p>
-    <p>The style sheet will be used to control the direction of text. E.g., the XML may show Arabic text as left to right but the style sheet will convert the content to correctly show as right to left; Japanese will appear as left to right but the style sheet can convert the content to show as top to bottom or right to left pages.</p>
+### Tables
+The table tag `<table>` and its children (see table below) are used to structure a table.
 
-    <h3>Math formulas</h3>
-    <p>Mathematical Markup Language (MathML) or similar structured mathematical notations are not compliant with the FHIR specification at this time. Simple formulas can be recreated in the narrative. For example, (a + b)<sup>2</sup> could be expressed as:</p>
-    <p>&lt;p&gt;a + b<sup>2</sup>&lt;/p&gt;</p>
-    <p>Complex formulas must be incorporated into the ePI as an image and then referenced in the text using the image tag &lt;img&gt; (Refer to section 5.4 for guidance on images).</p>
+Only `<thead>`, `<tbody>`, `<tfoot>`, `<caption>`, and `<colgroup>` tags are permitted as children of `<table>`.
 
-    <h2>Appendices</h2>
-    <h3>References</h3>
-    <ul>
-        <li><a href="http://hl7.org/fhir/narrative.html">HL7 FHIR XHTML Styling specification - Narrative - FHIR v5.0.0</a></li>
-        <li><a href="https://www.w3schools.com">W3Schools Online Web Tutorials</a></li>
-        <li><a href="https://www.w3.org/TR/html4/">HTML specification v4.0 - HTML 4.0 Specification</a></li>
-        <li><a href="http://hl7.org/fhir/narrative.html">HL7 FHIR narrative text specification - Narrative - FHIR v5.0.0</a></li>
-        <li><a href="https://www.w3.org/TR/MathML/">Mathematical Markup Language (MathML) Version 3.0 2nd Edition</a></li>
-        <li><a href="https://www.w3.org/TR/SVG2/struct.html">Scalable Vector Graphics (SVG) 2 specification</a></li>
-        <li><a href="https://www.w3.org/TR/xhtml1-schema/">XHTML™ 1.0 in XML Schema</a></li>
-        <li><a href="http://www.jfda.jo/EchoBusV3.0/SystemAssets/Leaflet.html">Jordan Food and Drug Administration’s (JFDA) HTML Validator guidance - Leaflet · Debug</a></li>
-    </ul>
+The `<th>` and `<td>` tags may contain inline elements, paragraphs, headings, lists, and image tags as children. Only include text or content in `<caption>`, `<th>`, `<td>`, and `<tfoot>`. All other tags are only used for structure.
 
-    <h3>Named entities</h3>
-    <ul>
-        <li><a href="https://www.w3schools.com/charsets/ref_html_8859.asp">W3C Schools HTML ISO-8859-1 Reference</a></li>
-        <li>ISO/IEC 8859-1:1998 - Information technology — 8-bit single-byte coded graphic character sets — Part 1: Latin alphabet No. 1</li>
-    </ul>
-</body>
-</html>
+**Note:** Avoid using Tables for formatting and alignment. There are alternative best practice solutions that achieve the same objective in a standardized manner.
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">Tag</th>
+            <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;table&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a table</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;caption&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a table caption or table title (Always keep the table title inside the table)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;th&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a header cell in a table</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tr&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a row in a table</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;td&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a cell in a table</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;colgroup&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Specifies a group of one or more columns in a table for formatting</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;col&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;thead&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the header content in a table</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tbody&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the body content in a table</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;tfoot&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Groups the footer content in a table (Always keep the table footnotes inside the table)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;rowspan&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines how many cells to merge across rows</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">&lt;colspan&gt;</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines how many cells to merge across columns</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Text alignment</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">Attribute applied to define text alignment in a table:<br>
+                style="text-align: left; vertical-align: top;"<br>
+                style="text-align: center; vertical-align: middle;"<br>
+                style="text-align: right; vertical-align: bottom;"
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+**Example: Simple Table**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">1</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">2</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">3</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">6</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example: Merge cells across columns**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;" colspan="2">12</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">3</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">6</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example: Merge cells across rows**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+    <thead>
+        <tr style="background-color: #003087; color: #ffffff;">
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 1</th>
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 2</th>
+            <th style="padding: 10px; border: 1px solid #d0d0d0; text-align: left;">Header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">1</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">2</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;" rowspan="2">36</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">4</td>
+            <td style="padding: 10px; border: 1px solid #d0d0d0;">5</td>
+        </tr>
+    </tbody>
+</table>
+
+### Images
+SVG (Scalable Vector Graphics) is the preferred format for ePI images due to its loss-less scalability across devices. JPEG and PNG formats are acceptable for legacy content, but SVG is the standard for all ePIs going forward.
+
+All images must be embedded as Base64 objects within a Contained Binary resource to ensure the ePI is exchanged as a single file.
+
+**Note:**
+- Always include descriptive `alt` text for accessibility.
+- Ensure colors meet WCAG Level AA contrast requirements.
+
+### Audio and Video
+It is best practice not to embed audio or video files within an ePI given their large size. Instead, the ePI should link to external copies of audio and video files.
+
+**Note:** Check local regulations to confirm if audio and video files are allowed to be used with an ePI.
+
+### Languages
+Each language must be a separate ePI document. Text direction (e.g., RTL for Arabic, vertical for Japanese) is managed by the style sheet rather than the underlying content.
+
+### Math Formulas
+MathML is not currently supported in FHIR ePI. Recreate simple formulas using narrative tags (e.g., `a + b<sup>2</sup>`). Complex formulas should be embedded as images (see [Images](#images)).
+
+## Appendices
+### References
+- [HL7 FHIR XHTML Styling specification - Narrative - FHIR v5.0.0](http://hl7.org/fhir/narrative.html)
+- [W3Schools Online Web Tutorials](https://www.w3schools.com)
+- [HTML specification v4.0 - HTML 4.0 Specification](https://www.w3.org/TR/html4/)
+- [HL7 FHIR narrative text specification - Narrative - FHIR v5.0.0](http://hl7.org/fhir/narrative.html)
+- [Mathematical Markup Language (MathML) Version 3.0 2nd Edition](https://www.w3.org/TR/MathML/)
+- [Scalable Vector Graphics (SVG) 2 specification](https://www.w3.org/TR/SVG2/struct.html)
+- [XHTML™ 1.0 in XML Schema](https://www.w3.org/TR/xhtml1-schema/)
+- [Jordan Food and Drug Administration’s (JFDA) HTML Validator guidance - Leaflet · Debug](http://www.jfda.jo/EchoBusV3.0/SystemAssets/Leaflet.html)
+
+### Named entities
+- [W3C Schools HTML ISO-8859-1 Reference](https://www.w3schools.com/charsets/ref_html_8859.asp)
+- ISO/IEC 8859-1:1998 - Information technology — 8-bit single-byte coded graphic character sets — Part 1: Latin alphabet No. 1
