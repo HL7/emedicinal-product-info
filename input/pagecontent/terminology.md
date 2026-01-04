@@ -49,7 +49,7 @@ Standardized code systems allow drug label information to be precise and machine
 
 <div class="markdown-alert markdown-alert-important">
 <p class="markdown-alert-title">IMPORTANT</p>
-<p><strong>Cross-Border Reciprocity</strong>: By using <strong>EDQM</strong> and <strong>SNOMED CT</strong>, a single ePI Type 2 or 3 document can be understood and processed by healthcare systems in multiple jurisdictions with minimal adaptation.</p>
+<p><strong>International Harmonization</strong>: By using <strong>EDQM</strong> and <strong>SNOMED CT</strong>, a single ePI Type 2 or 3 document can be understood and processed by healthcare systems in multiple jurisdictions with minimal adaptation.</p>
 </div>
 
 For a full list of supported terminologies and technical constraints, refer to the [Artifacts Summary](artifacts.html).

@@ -5,20 +5,20 @@ The ePI Type 3 document is a FHIR Bundle containing the narrative, product resou
 
 ```mermaid
 graph TD
-    B[Bundle: document] --> C[Composition]
-    B --> MPD[MedicinalProductDefinition]
-    B --> CUD1[ClinicalUseDefinition: Indication]
-    B --> CUD2[ClinicalUseDefinition: Contraindication]
-    B --> MK[MedicationKnowledge: Dose Form]
-    
-    subgraph "Composition Resource"
-        C --> S1["Section: Clinical Particulars"]
-        C -. "contained" .-> BI["Binary: Side Effect Image"]
-    end
-    
-    CUD1 --> MPD
-    CUD2 --> MPD
-    MK --> MPD
+B[Bundle: document] --> C[Composition]
+B --> MPD[MedicinalProductDefinition]
+B --> CUD1[ClinicalUseDefinition: Indication]
+B --> CUD2[ClinicalUseDefinition: Contraindication]
+B --> MK[MedicationKnowledge: Dose Form]
+
+subgraph "Composition Resource"
+C --> S1["Section: Clinical Particulars"]
+C -. "contained" .-> BI["Binary: Side Effect Image"]
+end
+
+CUD1 --> MPD
+CUD2 --> MPD
+MK --> MPD
 ```
 
 #### Key Elements Checklist
@@ -74,5 +74,5 @@ Moving to Type 3 requires clinical data extraction and alignment:
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- JSON Example: SmPC Type 3 (Clinical) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}
-- JSON Example: PIL Type 3 (Clinical) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}
+- JSON Example: SmPC Type 3 (Clinical) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json))
+- JSON Example: PIL Type 3 (Clinical) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json))

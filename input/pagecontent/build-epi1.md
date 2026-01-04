@@ -5,14 +5,14 @@ The ePI Type 1 document is a FHIR Bundle containing a Composition (the narrative
 
 ```mermaid
 graph TD
-    B[Bundle: document] --> C[Composition]
-    subgraph "Composition Resource"
-        C --> S1["Section: 1. Name"]
-        C --> S2["Section: 2. Strength"]
-        C --> SN["Section: n. ..."]
-        C -. "contained" .-> BI["Binary: Image 1"]
-        C -. "contained" .-> BJ["Binary: Image 2"]
-    end
+B[Bundle: document] --> C[Composition]
+subgraph "Composition Resource"
+C --> S1["Section: 1. Name"]
+C --> S2["Section: 2. Strength"]
+C --> SN["Section: n. ..."]
+C -. "contained" .-> BI["Binary: Image 1"]
+C -. "contained" .-> BJ["Binary: Image 2"]
+end
 ```
 
 #### Key Elements Checklist
@@ -77,5 +77,5 @@ While implementation may vary based on your tech stack, the general flow for bui
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- JSON Example: SmPC Type 1 ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json)){:target="_blank"}
-- JSON Example: PIL Type 1 ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json)){:target="_blank"}
+- JSON Example: SmPC Type 1 ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json))
+- JSON Example: PIL Type 1 ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json))

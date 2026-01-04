@@ -5,29 +5,29 @@ The ePI Type 2 document is a FHIR Bundle that includes the narrative Composition
 
 ```mermaid
 graph TD
-    B[Bundle: document] --> C[Composition]
-    B --> ORG[Organization]
-    B --> MPD[MedicinalProductDefinition]
-    B --> RA[RegulatedAuthorization]
-    B --> PPD[PackagedProductDefinition]
-    B --> MID[ManufacturedItemDefinition]
-    B --> APD[AdministrableProductDefinition]
-    B --> ING[Ingredient]
-    B --> SUB[SubstanceDefinition]
-    
-    subgraph "Composition Resource"
-        C --> S1["Section: ..."]
-        C -. "contained" .-> BI["Binary: Image"]
-    end
-    
-    MPD --> ORG
-    RA --> MPD
-    RA --> ORG
-    PPD --> MPD
-    PPD --> MID
-    MID --> ORG
-    APD --> MID
-    ING --> SUB
+B[Bundle: document] --> C[Composition]
+B --> ORG[Organization]
+B --> MPD[MedicinalProductDefinition]
+B --> RA[RegulatedAuthorization]
+B --> PPD[PackagedProductDefinition]
+B --> MID[ManufacturedItemDefinition]
+B --> APD[AdministrableProductDefinition]
+B --> ING[Ingredient]
+B --> SUB[SubstanceDefinition]
+
+subgraph "Composition Resource"
+C --> S1["Section: ..."]
+C -. "contained" .-> BI["Binary: Image"]
+end
+
+MPD --> ORG
+RA --> MPD
+RA --> ORG
+PPD --> MPD
+PPD --> MID
+MID --> ORG
+APD --> MID
+ING --> SUB
 ```
 
 #### Key Elements Checklist
@@ -126,5 +126,5 @@ Building a Type 2 ePI requires integrating regulatory Master Data with the narra
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- JSON Example: SmPC Type 2 (Structured) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}
-- JSON Example: PIL Type 2 (Structured) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}
+- JSON Example: SmPC Type 2 (Structured) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json))
+- JSON Example: PIL Type 2 (Structured) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json))
