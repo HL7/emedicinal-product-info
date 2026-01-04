@@ -2,29 +2,46 @@ The following page provides basic tips and recommendations to help implementers 
 
 ### Prerequisites
 
-> [!NOTE]
-> **Component Authoring Tool (Required)**
-> You will need a structured authoring tool to create the FHIR resources. This tool should support rich text, product metadata, and lifecycle management (versioning).
+**Component Authoring Tool (Required)**:
+You will need a structured authoring tool to create the FHIR resources. This tool should support rich text, product metadata, and lifecycle management (versioning).
 
-> [!TIP]
-> **Style Sheets (Required)**
-> Converting raw FHIR JSON/XML into human-readable views requires CSS. You can use the [premium stylesheet](rendering.html) provided in this IG as a foundation.
+**Style Sheets (Required)**:
+Converting raw FHIR JSON/XML into human-readable views requires CSS. You can use the [provided stylesheet](rendering.html) in this IG as a foundation.
 
-> [!IMPORTANT]
-> **FHIR R5 Server (Recommended)**
-> A central storage system (e.g., HAPI FHIR, Google Cloud Healthcare API) is recommended for searching, versioning, and sharing ePI documents via standard APIs.
+**FHIR R5 Server (Recommended)**:
+A central storage system (e.g., HAPI FHIR, Google Cloud Healthcare API) is recommended for searching, versioning, and sharing ePI documents via standard APIs.
 
 ---
 
 ### Required Skills
 To successfully implement ePI, your team should have familiarity with:
 
-| Technical Staff            | Regulatory / Business Staff             |
-| :------------------------- | :-------------------------------------- |
-| FHIR R5 Core Specification | National Regulatory Guidance on ePI     |
-| JSON & XML Editing         | Medicinal Product Metadata              |
-| RESTful APIs               | Controlled Terminology (SNOMED, MedDRA) |
-| CSS & XSLT                 | Structured Authoring Workflows          |
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #003087; color: #ffffff;">
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 50%;">Technical Staff</th>
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Regulatory / Business Staff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">FHIR R5 Core Specification</td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">National Regulatory Guidance on ePI</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">JSON & XML Editing</td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Medicinal Product Metadata</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">RESTful APIs</td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Controlled Terminology (SNOMED, MedDRA)</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">CSS & XSLT</td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Structured Authoring Workflows</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
