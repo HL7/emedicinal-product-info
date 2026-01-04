@@ -4,11 +4,15 @@ Standardize ePI content structure to ensure consistency, quality, and interopera
 ## Introduction
 This guide defines standard formatting for ePI narrative content. Aligning technical structures reduces implementation complexity, lowers costs, and improves accessibility and AI-readiness. It consolidates best practices from HL7, W3C, and modern web standards.
 
-> [!NOTE]
-> This guide covers technical structure, XHTML compliance, and internal style attributes (e.g., text, tables, images). It does not include regulatory content requirements or external brand-specific styling.
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title">NOTE</p>
+<p>This guide covers technical structure, XHTML compliance, and internal style attributes (e.g., text, tables, images). It does not include regulatory content requirements or external brand-specific styling.</p>
+</div>
 
-> [!IMPORTANT]
-> **Do not include inline styling** (e.g., fonts, colors, layouts) within the ePI document. Styling must remain separate from the ePI's XML or JSON structure in a style sheet (i.e., CSS, XSLT). The **only exception** is for basic inline formatting: **bold**, <u>underline</u>, *italics*, and text alignment.
+<div class="markdown-alert markdown-alert-important">
+<p class="markdown-alert-title">IMPORTANT</p>
+<p><strong>Do not include inline styling</strong> (e.g., fonts, colors, layouts) within the ePI document. Styling must remain separate from the ePI's XML or JSON structure in a style sheet (i.e., CSS, XSLT). The <strong>only exception</strong> is for basic inline formatting: <strong>bold</strong>, <u>underline</u>, <em>italics</em>, and text alignment.</p>
+</div>
 
 ## Guidance
 ### Style vs. Formatting vs. Style Sheets
