@@ -1,91 +1,78 @@
-### Purpose
-This section provides guidance, examples, and best practices for creating ePI resources across all types. It covers FHIR resource usage, profiling, tooling, and interoperability.
+### Overview
+The **Build ePI** section provides the technical implementation guidance, resource mapping, and step-by-step instructions required to create valid ePI documents.
 
-**Intended Audience:** Developers, regulators, pharmaceutical companies, and healthcare IT professionals.
+ePI is not a single resource but a collection of interlinked FHIR resources. Depending on the **ePI Type** (Maturity Level) being implemented, different resources are required to capture the necessary narrative and structured data.
 
-### ePI Resources
-ePI leverages 14 specific FHIR resources to support various labeling use cases. The table below outlines their roles.
+### Core ePI Resources
+The table below identifies the primary FHIR resources used across the four ePI types and their specific roles in the labeling lifecycle.
 
-<table style="border-collapse: collapse; width: 100%;">
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 24px;">
   <thead>
-    <tr>
-      <th style="border: 1px solid #e0e0e0; padding: 8px; text-align: left; background-color: #f2f2f2;">Resource</th>
-      <th style="border: 1px solid #e0e0e0; padding: 8px; text-align: left; background-color: #f2f2f2;">Purpose in ePI Context</th>
+    <tr style="background-color: #003087; color: #ffffff;">
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">Resource</th>
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Role in ePI Context</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>List</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Organizes references to other resources, enabling navigation and advanced search.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Bundle</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">The 1:1 container for a single ePI document (e.g., an SmPC or PIL).</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Bundle</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Container for grouping resources. Essential for reproducing local label templates in Type 1.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Composition</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">The backbone of the document, organizing headings and narrative (XHTML) sections.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Composition</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Core structure for label content (headings, text, images).</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Binary</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Stores media (SVG/PNG/JPEG) embedded within the ePI as Base64 objects.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Binary</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Stores raw data like images or large text blocks for reproduction.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>List</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Used for cross-document navigation, history tracking, and grouping translated versions.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Organization</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Details the company (name, id, address) associated with the product.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>MedicinalProductDefinition</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Captures high-level product identity, including the name and marketing status.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Regulated Authorization</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Captures approval dates, license numbers, and holder details.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>RegulatedAuthorization</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Details approval dates, license numbers, and legal status.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Medicinal Product Definition</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Regulatory details: name, route, marketing status.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>ManufacturedItemDefinition</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Describes the physical form of the product (e.g., tablet, vial).</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Manufactured Item Definition</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Physical properties in primary packaging (strength, color, shape).</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>AdministrableProductDefinition</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Specifies the product in its final administrable state (e.g., solution).</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Administrable Product Definition</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Physical properties in final form for administration (e.g. reconstituted).</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Ingredient</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines active substances and excipients with clinical-grade precision.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Ingredient</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Defines specific ingredients (active/excipient) and strength.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>SubstanceDefinition</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">The technical chemical definition of the active or inactive ingredients.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Substance Definition</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Detailed substance info, linked to Ingredients.</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Packaged Product Definition</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Packaging layers, identifiers (GTIN/SKU), and quantity.</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Clinical Use Definition</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Structured indications, contraindications, interactions, and warnings (Type 3/4).</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;"><b>Medication Knowledge</b></td>
-      <td style="border: 1px solid #e0e0e0; padding: 8px;">Machine-readable dosing instructions (Type 3/4).</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>ClinicalUseDefinition</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Structures indications, contraindications, and interaction alerts.</td>
     </tr>
   </tbody>
 </table>
 
-### ePI Types (Building Instructions)
+### Select Your Implementation Path
+Implementation guidance is organized by the depth of structured data required:
 
-Select the ePI Type below to see specific build instructions:
-
-*   **[Type 1: Narrative Only](build-epi1.html)**
-    *   *Focus*: Digitized document.
-    *   *Content*: Replicates PDF/DOCX templates (headings, text, images, metadata).
-*   **[Type 2: Narrative + Structured Product](build-epi2.html)**
-    *   *Focus*: Product data.
-    *   *Content*: Type 1 + structured ingredients, packaging, and authorization details.
-*   **[Type 3: Narrative + Structured Clinical](build-epi3.html)**
-    *   *Focus*: Clinical data.
-    *   *Content*: Type 2 + structured indications, warnings, and safety info.
-*   **[Type 4: Fully Structured](build-epi4.html)**
-    *   *Focus*: Automation & exchange.
-    *   *Content*: Structure effectively replaces narrative as the primary source. Optimized for machine processing.
+*   **[Type 1: Narrative Reproduction](build-epi1.html)**
+    *   *Focus*: Digitizing the official label template (SmPC/PIL/Artwork).
+    *   *Key Features*: HTML5/XHTML narrative, embedded images, and document metadata.
+*   **[Type 2: Product Identification](build-epi2.html)**
+    *   *Focus*: Structured supply chain and search capabilities.
+    *   *Key Features*: Type 1 + structured ingredients, form, packaging, and authorization.
+*   **[Type 3: Clinical Guidance](build-epi3.html)**
+    *   *Focus*: Clinical decision support.
+    *   *Key Features*: Type 2 + structured indications, contraindications, and warnings.
+*   **[Type 4: Digital-First Components](build-epi4.html)**
+    *   *Focus*: Advanced automation and personalization.
+    *   *Key Features*: Fully granular, computable components designed for dynamic assembly.

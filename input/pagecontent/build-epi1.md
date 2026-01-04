@@ -1,134 +1,82 @@
-This guide describes how to create an **ePI Type 1** document.
+## Building ePI Type 1
+ePI Type 1 focusess on the **Narrative Reproduction** of official label templates (e.g., Summary of Product Characteristics, Patient Information Leaflet). It serves as the digital replacement for traditional DOCX or PDF labels.
 
-### What is ePI Type 1?
+### Structural Outline
+The ePI Type 1 document is a FHIR Bundle containing a Composition (the narrative backbone). Any necessary images are **contained** within the Composition as Binary resources.
 
-ePI Type 1 is a structured, FHIR-based version of the regulator's label template (e.g., Summary of Product Characteristics, Patient Information Leaflet, Packaging Artwork). This replaces the traditional DOCX or PDF version of the label template.
+```mermaid
+graph TD
+    B[Bundle: document] --> C[Composition]
+    subgraph "Composition Resource"
+        C --> S1["Section: 1. Name"]
+        C --> S2["Section: 2. Strength"]
+        C --> SN["Section: n. ..."]
+        C -. "contained" .-> BI["Binary: Image 1"]
+        C -. "contained" .-> BJ["Binary: Image 2"]
+    end
+```
 
-For a list of all ePI components, see the [ePI components page](./epi-components.md) or the [Artifacts/Profiles](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2).
+#### Key Elements Checklist
+*   **[Bundle]**
+    *   `id`: Unique logical ID for the resource.
+    *   `meta`: Must include `versionId`, `lastUpdated`, and `profile` (e.g., `bundle-epi-type1`).
+    *   `type`: Must be set to `document`.
+    *   `identifier`: Unique business ID for the document instance.
+    *   `timestamp`: The date/time the bundle was assembled.
+    *   `entry`: Reference to the `Composition` resource.
+*   **[Composition]**
+    *   `status`: Workflow state (e.g., `preliminary`, `final`).
+    *   `type`: Identifies the document type (e.g., SmPC, PIL).
+    *   `subject`: Link to the associated medicinal product.
+    *   `date`: The official authorization or revision date.
+    *   `author`: The Organization responsible for the content.
+    *   `title`: The human-readable title of the document.
+    *   `contained`: List of `Binary` image resources.
+    *   `section`: Hierarchical sections containing the XHTML narrative.
+*   **[Binary]**
+    *   `contentType`: The image MIME type (SVG preferred).
+    *   `data`: The Base64-encoded image data.
 
-### Overview of Resources Involved
+### Resource & Element Details
+The following table maps the core resources to their purpose and specific implementation requirements in Type 1.
 
-ePI Type 1 uses the following FHIR resources:
-- **Bundle**: The container for the ePI document.
-- **Composition**: Organizes the narrative content (e.g., SmPC section headings and sub-headings).
-- **Binary**: Stores images in Base64 format.
-
-The following figure shows how the ePI Type 1 resources relate to each other:
-
-<span style="display: inline-block; vertical-align: middle;">
-  <img src="epiType1RelationshipDiagram.drawio.svg" alt="Entity relationship diagram of ePI Type 1 resource relationships" style="width: 400px; height: auto;" />
-</span>
-
-### Detailed Component Descriptions
-
-The table below describes each resource’s purpose, key fields, and role in ePI Type 1:
-
-<table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
-  <thead style="background-color: #f2f2f2;">
-    <tr>
-      <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Resource</th>
-      <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Purpose</th>
-      <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Key Fields</th>
-      <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Role in ePI Type 1</th>
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 24px;">
+  <thead>
+    <tr style="background-color: #003087; color: #ffffff;">
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 20%;">Resource</th>
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 30%;">Purpose</th>
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Key Elements & Notes</th>
     </tr>
   </thead>
   <tbody>
-    <tr style="background-color: #ffffff;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Bundle</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Container for the SmPC, grouping all resources.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - <code>type</code>: Set to <code>document</code>.<br>
-        - <code>entry</code>: References to Composition and Binary.<br>
-        - <code>identifier</code>: Unique ID for the SmPC.
-      </td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Packages all components into a single, interoperable document.</td>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Bundle</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">The physical container for the ePI document.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Must use <code>type: document</code>. The first entry must be the <code>Composition</code>. Any referenced <code>Binary</code> resources must also be included in the entries.</td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Composition</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Organizes the narrative content of the SmPC.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - <code>language</code>: Language code (e.g., <code>en</code>).<br>
-        - <code>section</code>: Structured sections (e.g., indications, dosage, contraindications).<br>
-        - <code>title</code>: SmPC title.<br>
-        - <code>author</code>: Reference to authoring entity.
-      </td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Provides the main narrative content (e.g., paragraphs, tables, bulleted lists) and section headings.</td>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Composition</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Organizes the narrative structure.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Uses <code>section.code</code> to identify standard sections (e.g., dosage). <code>section.text</code> contains the <code>div</code> with XHTML content.</td>
     </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Binary</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Stores media, such as images, in Base64 format.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - <code>contentType</code>: MIME type (e.g., <code>image/png</code>).<br>
-        - <code>data</code>: Base64-encoded content.
-      </td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Includes images (e.g., product images, pack artwork) referenced in the SmPC.</td>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Binary</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Stores embedded media.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Images are stored as Base64. SVG is the preferred format for accessibility and scalability.</td>
     </tr>
   </tbody>
 </table>
 
-### Steps to Build an ePI Type 1 Document
+### Conceptual Workflow
+While implementation may vary based on your tech stack, the general flow for building a Type 1 ePI is:
 
-The following table provides step-by-step instructions to create an ePI Type 1 document:
+1.  **Extract Narrative**: Convert existing label content into clean, semantic XHTML.
+2.  **Prepare Media**: Convert images to SVG and encode as Base64 for the `Binary` resources.
+3.  **Define Structure**: Create the `Composition` resource, mapping narrative sections to the correct regulatory codes.
+4.  **Assemble Bundle**: Package the `Composition` and `Binary` resources into a `Bundle`.
+5.  **Validate**: Verify against the [Type 1 Profile](./profiles.md) to ensure compliance.
 
-<table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
-  <thead style="background-color: #f2f2f2;">
-    <tr>
-      <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Step</th>
-      <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Description</th>
-      <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background-color: #ffffff;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Step 1: Start with the Base ePI Profile</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Use the Base ePI Profile as the foundation.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - Review the [Base ePI Profile](./profiles.md) for mandatory elements.<br>
-        - Ensure compliance with regional labeling requirements.
-      </td>
-    </tr>
-    <tr style="background-color: #f9f9f9;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Step 2: Create SmPC Content</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Develop the narrative content of the SmPC.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - Create a <code>Composition</code> resource.<br>
-        - Set <code>language</code> (e.g., <code>en</code>).<br>
-        - Structure content in <code>section</code> elements using XHTML or Markdown.<br>
-        - Use section codes from the [ePI section code value set](./section-codes.md) (e.g., indications, dosage, contraindications).<br>
-        - Include product details (e.g., name, ingredients) within the narrative.
-      </td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Step 3: Include Media</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Add images or other media to the SmPC.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - Convert images to Base64 format.<br>
-        - Create a <code>Binary</code> resource with <code>contentType</code> (e.g., <code>image/png</code>) and <code>data</code>.<br>
-        - Reference the <code>Binary</code> in the relevant <code>Composition</code> section.
-      </td>
-    </tr>
-    <tr style="background-color: #f9f9f9;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Step 4: Bundle the Resources</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Combine all resources into a single document.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - Create a <code>Bundle</code> resource with <code>type</code> set to <code>document</code>.<br>
-        - Add <code>entry</code> elements for the <code>Composition</code> and <code>Binary</code>.<br>
-        - Assign a unique <code>identifier</code> to the Bundle.
-      </td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: 1px solid #ddd; padding: 8px;">Step 5: Validate and Test</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Ensure the SmPC is compliant and functional.</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">
-        - Validate the Bundle using the FHIR Validator against the Base ePI Profile.<br>
-        - Test with a FHIR server (e.g., HAPI FHIR) to confirm storage and retrieval.<br>
-        - Verify API compatibility (e.g., POST, GET operations).<br>
-        - Check content for regulatory compliance (e.g., EMA SmPC guidelines).
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Additional Resources
-- **ePI Profile**: Refer to the [Profiles]([./epi-components.md](https://build.fhir.org/ig/HL7/emedicinal-product-info/artifacts.html#2)) page for details on FHIR resources.
-- **Technical Style Guide**: Follow the [style guide](./style-guide.md) for structuring narrative content (e.g., paragraphs, tables, bullets) in XHTML.
+### Implementation Examples
+Refer to the following examples for a technical starting point:
+- **[JSON Example: SmPC Type 1](bundle-epi-type1-example.html)**
+- **[JSON Example: PIL Type 1](bundle-epi-type1-example-pil.html)**
