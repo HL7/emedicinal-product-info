@@ -1,10 +1,10 @@
 ### Annotations (Track Changes & Comments)
-The annotation model for both comments and track changes involves using the HTML anchor tag <a> as start and end location markers for each comment, insertion and deletion point within the content of the Composition section. These markers then reference the details of annotation, which are held in a separate Annotations section within the Composition.
+The annotation model for both comments and track changes involves using the HTML anchor tag `<a>` as start and end location markers for each comment, insertion and deletion point within the content of the Composition section. These markers then reference the details of annotation, which are held in a separate Annotations section within the Composition.
 
 ### Annotations Section
-The annotation details, such as the author and date, the comment text and comment replies are all held within a “Annotations” section. The text of this section contains a <div class=”comments”> that holds all of the comments and comment replies, and a <div class=”trackChanges”> that holds the track change details.
+The annotation details, such as the author and date, the comment text and comment replies are all held within a “Annotations” section. The text of this section contains a `<div class=”comments”>` that holds all of the comments and comment replies, and a `<div class=”trackChanges”>` that holds the track change details.
 
-Each track change has a <div> within the div/@class=”trackChanges”.  The @class indicates the type of track change (Insert vs. Delete), and the @title holds the change identifier. <span> tags hold the change details, such as the author and date. The change identifier (div[@class=”delete” or @class=”insert”]/@id) is referenced by the change tag markers in the content. 
+Each track change has a `<div>` within the `div/@class=”trackChanges”`.  The `@class` indicates the type of track change (Insert vs. Delete), and the `@title` holds the change identifier. `<span>` tags hold the change details, such as the author and date. The change identifier (`div[@class=”delete” or @class=”insert”]/@id`) is referenced by the change tag markers in the content. 
 
 ```xml
 <div class="Delete" title="del01">
@@ -20,7 +20,7 @@ Each track change has a <div> within the div/@class=”trackChanges”.  The @cl
 </div>
 ```
 
-The comments are held within the div/@class=”comments” of the “Annotations” section. Each comment is within a div/@class="CommentContent", and the @title holds the comment identifier, which is referenced by the comment start and end markers in the content. <span> tags are used to hold the comment author and date, and the comment text is within HTML tags. 
+The comments are held within the `div/@class=”comments”` of the “Annotations” section. Each comment is within a `div/@class="CommentContent"`, and the `@title` holds the comment identifier, which is referenced by the comment start and end markers in the content. `<span>` tags are used to hold the comment author and date, and the comment text is within HTML tags. 
 
 ```xml
 <div class="CommentContent" title="comment01">
@@ -31,7 +31,7 @@ The comments are held within the div/@class=”comments” of the “Annotations
 ```
 
 ### Track change markers
-The start and end markers of track changes are indicated by the <a> tag that has an id and a class to identify the type of track change anchor it is (insert vs. delete, start vs. end). For example:
+The start and end markers of track changes are indicated by the `<a>` tag that has an id and a class to identify the type of track change anchor it is (insert vs. delete, start vs. end). For example:
 
 ```xml
 <a id="ins01" class="InsertStart"/>
@@ -39,8 +39,8 @@ The start and end markers of track changes are indicated by the <a> tag that has
 <a id="del01" class="DeleteStart"/>
 ```
 
-The @id is a unique identifier that ties together the start tag, the end tag, and the change details. 
-An <a> tag is also used to mark the end of the range. The ending <a> tag has an href attribute that corresponds to the start <a> id value, as well as a class to identify the type of track change tag it is. For example:
+The `@id` is a unique identifier that ties together the start tag, the end tag, and the change details. 
+An `<a>` tag is also used to mark the end of the range. The ending `<a>` tag has an href attribute that corresponds to the start `<a>` id value, as well as a class to identify the type of track change tag it is. For example:
 
 ```xml
 <a href="ins01" class="InsertEnd"/>
@@ -49,15 +49,15 @@ An <a> tag is also used to mark the end of the range. The ending <a> tag has an 
 ```
 
 ### Comment markers
-The start and end markers of comments are indicated by the <a> tag that has an id and a class to identify the type of anchor it is. For example:
+The start and end markers of comments are indicated by the `<a>` tag that has an id and a class to identify the type of anchor it is. For example:
 
 ```xml
 <a id="comment01" class="CommentStart"/>
 ```
 
-The @id is a unique identifier that ties together the start tag, the end tag, and the change details. 
+The `@id` is a unique identifier that ties together the start tag, the end tag, and the change details. 
 
-An <a> tag is also used to mark the end of the comment. The ending <a> tag has an href attribute that corresponds to the start <a> id value, as well as a class to identify the type of track change tag it is. For example:
+An `<a>` tag is also used to mark the end of the comment. The ending `<a>` tag has an href attribute that corresponds to the start `<a>` id value, as well as a class to identify the type of track change tag it is. For example:
 
 ```xml
 <a href=" comment01" class=" CommentEnd"/>
@@ -86,4 +86,38 @@ An <a> tag is also used to mark the end of the comment. The ending <a> tag has a
     </tr>
   </tbody>
 </table>
+
+### Implementation Guidance
+
+#### Visual Rendering (CSS)
+
+To visually differentiate track changes in a web-based ePI viewer, the following CSS selectors can be used to target the HTML markers:
+
+```css
+/* Styling for proposed insertions */
+.InsertStart + * {
+    background-color: #e6ffed;
+    border-bottom: 2px solid #22863a;
+    text-decoration: none;
+}
+
+/* Styling for proposed deletions */
+.DeleteStart + * {
+    background-color: #ffeef0;
+    color: #cb2431;
+    text-decoration: line-through;
+}
+
+/* Base style for markers (usually hidden in final view) */
+.InsertStart, .InsertEnd, .DeleteStart, .DeleteEnd, .CommentStart, .CommentEnd {
+    display: none;
+}
+```
+
+#### Auditability & Practitioner Linking
+
+While the native XHTML within a FHIR Composition stores the author name as a string (e.g., `<span class="Author" title="FDA Reviewer"/>`), implementers SHOULD link these annotations to formal FHIR `Practitioner` or `Organization` resources for a full audit trail.
+
+1.  **Identifier Mapping**: Ensure the `title` attribute in the XHTML corresponds to an `identifier` or `name` in a related FHIR resource.
+2.  **Provenance**: Use the `Provenance` resource to track the lifecycle of the Composition, linking specific versions to the individuals responsible for the track changes.
 ```

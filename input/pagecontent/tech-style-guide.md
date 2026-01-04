@@ -91,6 +91,43 @@
     <h3>Accessibility</h3>
     <p>In most jurisdictions WCAG Level AA is recommended for use.</p>
 
+    <h3>Mobile-First Responsive Narratives</h3>
+    <p>Modern ePI should be designed to render efficiently on a variety of devices, from small wearable screens to large desktop monitors. To ensure high readability and visual consistency across all viewports, implementers should follow "Mobile-First" principles:</p>
+    <ul>
+        <li><b>Fluid Table Widths:</b> Tables should use percentage-based widths (e.g., <code>width: 100%;</code>) rather than fixed pixel widths to prevent horizontal scrolling on mobile devices.</li>
+        <li><b>Relative Font Sizes:</b> Use relative units like <code>em</code> or <code>rem</code> for font sizing to allow for user-scaling and responsive adjustments.</li>
+        <li><b>Scalable Media:</b> All images should be responsive (e.g., <code>max-width: 100%; height: auto;</code>) to fit the container viewport.</li>
+    </ul>
+
+    <h3>ePI Type Mapping (Maturity Levels)</h3>
+    <p>The following table maps the FHIR ePI Maturity Levels to levels of technical compliance and XHTML richness:</p>
+    <table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 20px;">
+        <thead>
+            <tr style="background-color: #003087; color: #ffffff;">
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">ePI Maturity Level</th>
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 25%;">XHTML Compliance</th>
+                <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Key Characteristics</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Type 1</strong></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Rich Narrative</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Primarily focuses on high-fidelity reproduction of the paper leaflet using rich XHTML.</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Type 2</strong></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Hybrid / Semi-Structured</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Balances rich narrative with increased use of structured data fields for key metadata.</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Type 3</strong></td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Fully Structured</td>
+                <td style="padding: 10px; border: 1px solid #d0d0d0;">Highly interoperable; uses semantic tagging and structured fields to drive advanced interactivity.</td>
+            </tr>
+        </tbody>
+    </table>
+
     <h3>Character set</h3>
     <p>The default standard for all content characters is Unicode Transformation Format 8-bit (UTF-8).</p>
     <p>UTF-8 is a character encoding standard used to ensure text is presented consistently when exchanged across systems.</p>
