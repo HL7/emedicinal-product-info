@@ -39,7 +39,7 @@ Electronic Product Information (ePI) is designed to support a wide range of regu
 
 ---
 
-### Detailed Use Case Scenarios
+### Use Case Scenario Examples
 
 **Product Identification (Type 2a)**:
 Enables accurate lookup in hospital systems and national medicine databases.
