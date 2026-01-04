@@ -122,9 +122,9 @@ Building a Type 2 ePI requires integrating regulatory Master Data with the narra
 2.  **Generate Structured Resources**: Create FHIR representations of the Product, Org, Authorization, and Ingredients.
 3.  **Cross-Link Resources**: Ensure the `MedicinalProductDefinition` is correctly linked to the MAH (Organization) and the Authorization.
 4.  **Reference Product in Composition**: Update the `Composition.subject` to point to the `MedicinalProductDefinition`.
-5.  **Assemble and Validate**: Package all resources into a `Bundle` and validate against the [Type 2 Profile](./profiles.md).
+5.  **Assemble and Validate**: Package all resources into a `Bundle` and validate against the [Type 2 Profile](StructureDefinition-bundle-epi-type2.html).
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- **[JSON Example: SmPC Type 2 (Structured)](bundle-epi-type2-example-acetaminophen.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}
-- **[JSON Example: PIL Type 2 (Structured)](bundle-epi-type2-example-acetaminophen.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}
+- JSON Example: SmPC Type 2 (Structured) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}
+- JSON Example: PIL Type 2 (Structured) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json)){:target="_blank"}

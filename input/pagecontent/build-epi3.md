@@ -70,9 +70,9 @@ Moving to Type 3 requires clinical data extraction and alignment:
 2.  **Define Clinical Definitions**: Create a `ClinicalUseDefinition` for each clinical scenario described in the narrative.
 3.  **Link to Product**: Associate all clinical resources with the `MedicinalProductDefinition` via the `subject` field.
 4.  **Align Narrative**: Ensure the `Composition` sections (e.g., Section 4.1) align with the structured data in the `ClinicalUseDefinition` resources.
-5.  **Validate**: Verify against the [Type 3 Profile](./profiles.md).
+5.  **Validate**: Verify against the [Type 3 Profile](StructureDefinition-bundle-epi-type3.html).
 
 ### Implementation Examples
 Refer to the following examples for a technical starting point:
-- **[JSON Example: SmPC Type 3 (Clinical)](bundle-epi-type3-example-wonderdrug.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}
-- **[JSON Example: PIL Type 3 (Clinical)](bundle-epi-type3-example-wonderdrug.html)** ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}
+- JSON Example: SmPC Type 3 (Clinical) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}
+- JSON Example: PIL Type 3 (Clinical) ([Source](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json)){:target="_blank"}

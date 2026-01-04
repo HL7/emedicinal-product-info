@@ -1,4 +1,3 @@
-### Overview
 The **Build ePI** section provides the technical implementation guidance, resource mapping, and step-by-step instructions required to create valid ePI documents.
 
 ePI is not a single resource but a collection of interlinked FHIR resources. Depending on the **ePI Type** (Maturity Level) being implemented, different resources are required to capture the necessary narrative and structured data.
