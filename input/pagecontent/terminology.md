@@ -35,7 +35,7 @@ Standardized code systems allow drug label information to be precise and machine
     </tr>
     <tr>
       <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>EDQM</strong></td>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">Dose forms, administration routes, packaging, and unit of presentation</td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Dose forms, routes of administration, packaging, and unit of presentation</td>
     </tr>
     <tr>
       <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>MedDRA</strong></td>
