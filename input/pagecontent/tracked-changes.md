@@ -61,4 +61,29 @@ An <a> tag is also used to mark the end of the comment. The ending <a> tag has a
 
 ```xml
 <a href=" comment01" class=" CommentEnd"/>
+
+### Common Annotation Markers
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #003087; color: #ffffff;">
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 40%;">Marker Class</th>
+      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>InsertStart / InsertEnd</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Marks the beginning and end of newly proposed content.</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>DeleteStart / DeleteEnd</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Marks content proposed for removal.</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;"><strong>CommentStart / CommentEnd</strong></td>
+      <td style="padding: 12px; border: 1px solid #d0d0d0;">Wraps content associated with a specific reviewer comment or discussion thread.</td>
+    </tr>
+  </tbody>
+</table>
 ```
