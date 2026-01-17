@@ -57,7 +57,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Persistent identifier for the bundle"
 * rest.resource[=].searchParam[+].name = "_lastUpdated"
@@ -90,7 +90,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -100,26 +100,14 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's narrative using a fulltext search"
 * rest.resource[=].searchParam[+].name = "example-constraint"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-example-constraint"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/example-constraint"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Search Composition Bundle"
 * rest.resource[=].searchParam[+].name = "timestamp"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-timestamp"
 * rest.resource[=].searchParam[=].type = #date
 * rest.resource[=].searchParam[=].documentation = "When the bundle was assembled"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #List
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/List"
 * rest.resource[=].interaction[0].code = #search-type
@@ -135,7 +123,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Account](account.html): Account number\r\n* [AdverseEvent](adverseevent.html): Business identifier for the event\r\n* [AllergyIntolerance](allergyintolerance.html): External ids for this item\r\n* [Appointment](appointment.html): An Identifier of the Appointment\r\n* [AppointmentResponse](appointmentresponse.html): An Identifier in this appointment response\r\n* [Basic](basic.html): Business identifier\r\n* [BodyStructure](bodystructure.html): Bodystructure identifier\r\n* [CarePlan](careplan.html): External Ids for this plan\r\n* [CareTeam](careteam.html): External Ids for this team\r\n* [ChargeItem](chargeitem.html): Business Identifier for item\r\n* [Claim](claim.html): The primary identifier of the financial resource\r\n* [ClaimResponse](claimresponse.html): The identity of the ClaimResponse\r\n* [ClinicalImpression](clinicalimpression.html): Business identifier\r\n* [Communication](communication.html): Unique identifier\r\n* [CommunicationRequest](communicationrequest.html): Unique identifier\r\n* [Composition](composition.html): Version-independent identifier for the Composition\r\n* [Condition](condition.html): A unique identifier of the condition record\r\n* [Consent](consent.html): Identifier for this record (external references)\r\n* [Contract](contract.html): The identity of the contract\r\n* [Coverage](coverage.html): The primary identifier of the insured and the coverage\r\n* [CoverageEligibilityRequest](coverageeligibilityrequest.html): The business identifier of the Eligibility\r\n* [CoverageEligibilityResponse](coverageeligibilityresponse.html): The business identifier\r\n* [DetectedIssue](detectedissue.html): Unique id for the detected issue\r\n* [DeviceRequest](devicerequest.html): Business identifier for request/order\r\n* [DeviceUsage](deviceusage.html): Search by identifier\r\n* [DiagnosticReport](diagnosticreport.html): An identifier for the report\r\n* [DocumentReference](documentreference.html): Identifier of the attachment binary\r\n* [Encounter](encounter.html): Identifier(s) by which this encounter is known\r\n* [EnrollmentRequest](enrollmentrequest.html): The business identifier of the Enrollment\r\n* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare\r\n* [ExplanationOfBenefit](explanationofbenefit.html): The business identifier of the Explanation of Benefit\r\n* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier\r\n* [Flag](flag.html): Business identifier\r\n* [Goal](goal.html): External Ids for this goal\r\n* [GuidanceResponse](guidanceresponse.html): The identifier of the guidance response\r\n* [ImagingSelection](imagingselection.html): Identifiers for the imaging selection\r\n* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID\r\n* [Immunization](immunization.html): Business identifier\r\n* [ImmunizationEvaluation](immunizationevaluation.html): ID of the evaluation\r\n* [ImmunizationRecommendation](immunizationrecommendation.html): Business identifier\r\n* [Invoice](invoice.html): Business Identifier for item\r\n* [List](list.html): Business identifier\r\n* [MeasureReport](measurereport.html): External identifier of the measure report to be returned\r\n* [Medication](medication.html): Returns medications with this external identifier\r\n* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier\r\n* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier\r\n* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier\r\n* [MedicationStatement](medicationstatement.html): Return statements with this external identifier\r\n* [MolecularSequence](molecularsequence.html): The unique identity for a particular sequence\r\n* [NutritionIntake](nutritionintake.html): Return statements with this external identifier\r\n* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier\r\n* [Observation](observation.html): The unique id for a particular observation\r\n* [Person](person.html): A person Identifier\r\n* [Procedure](procedure.html): A unique identifier for a procedure\r\n* [QuestionnaireResponse](questionnaireresponse.html): The unique identifier for the questionnaire response\r\n* [RelatedPerson](relatedperson.html): An Identifier of the RelatedPerson\r\n* [RequestOrchestration](requestorchestration.html): External identifiers for the request orchestration\r\n* [ResearchSubject](researchsubject.html): Business Identifier for research subject in a study\r\n* [RiskAssessment](riskassessment.html): Unique identifier for the assessment\r\n* [ServiceRequest](servicerequest.html): Identifiers assigned to this order\r\n* [Specimen](specimen.html): The unique identifier associated with the specimen\r\n* [SupplyDelivery](supplydelivery.html): External identifier\r\n* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest\r\n* [Task](task.html): Search for a task instance by its business identifier\r\n* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier\r\n"
 * rest.resource[=].searchParam[+].name = "item"
@@ -167,11 +155,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -181,19 +169,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "current | retired | entered-in-error"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.interaction[0].code = #transaction
 * rest.interaction[+].code = #history-system
 
@@ -253,7 +229,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/AdministrableProductDefinition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "An identifier for the administrable product"
 * rest.resource[=].searchParam[+].name = "ingredient"
@@ -294,11 +270,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/AdministrableProductDefinition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/AdministrableProductDefinition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -320,19 +296,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/AdministrableProductDefinition-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The status of this administrable product. Enables tracking the life-cycle of the content."
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #Binary
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Binary"
 * rest.resource[=].interaction[0].code = #search-type
@@ -382,7 +346,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Binary-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -394,19 +358,7 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "_filter"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's data using a filter"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #Bundle
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Bundle"
 * rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/StructureDefinition/batch-bundle"
@@ -449,7 +401,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Persistent identifier for the bundle"
 * rest.resource[=].searchParam[+].name = "_lastUpdated"
@@ -486,7 +438,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -496,26 +448,14 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's narrative using a fulltext search"
 * rest.resource[=].searchParam[+].name = "example-constraint"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-example-constraint"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/example-constraint"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Search Composition Bundle"
 * rest.resource[=].searchParam[+].name = "timestamp"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Bundle-timestamp"
 * rest.resource[=].searchParam[=].type = #date
 * rest.resource[=].searchParam[=].documentation = "When the bundle was assembled"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #ClinicalUseDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition"
 * rest.resource[=].interaction[0].code = #search-type
@@ -556,7 +496,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ClinicalUseDefinition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Business identifier for this issue"
 * rest.resource[=].searchParam[+].name = "indication-reference"
@@ -609,7 +549,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ClinicalUseDefinition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "indication"
@@ -617,7 +557,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The situation that is being documented as an indicaton for this item, as a code"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ClinicalUseDefinition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -631,19 +571,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ClinicalUseDefinition-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Whether this is a current issue or one that has been retired etc."
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #CodeSystem
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/CodeSystem"
 * rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/StructureDefinition/publishablecodesystem"
@@ -723,7 +651,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #composite
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): A use context type and quantity- or range-based value assigned to the activity definition\r\n* [ActorDefinition](actordefinition.html): A use context type and quantity- or range-based value assigned to the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): A use context type and quantity- or range-based value assigned to the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): A use context type and quantity- or range-based value assigned to the charge item definition\r\n* [Citation](citation.html): A use context type and quantity- or range-based value assigned to the citation\r\n* [CodeSystem](codesystem.html): A use context type and quantity- or range-based value assigned to the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): A use context type and quantity- or range-based value assigned to the compartment definition\r\n* [ConceptMap](conceptmap.html): A use context type and quantity- or range-based value assigned to the concept map\r\n* [ConditionDefinition](conditiondefinition.html): A use context type and quantity- or range-based value assigned to the condition definition\r\n* [EventDefinition](eventdefinition.html): A use context type and quantity- or range-based value assigned to the event definition\r\n* [Evidence](evidence.html): A use context type and quantity- or range-based value assigned to the evidence\r\n* [EvidenceReport](evidencereport.html): A use context type and quantity- or range-based value assigned to the evidence report\r\n* [EvidenceVariable](evidencevariable.html): A use context type and quantity- or range-based value assigned to the evidence variable\r\n* [ExampleScenario](examplescenario.html): A use context type and quantity- or range-based value assigned to the example scenario\r\n* [GraphDefinition](graphdefinition.html): A use context type and quantity- or range-based value assigned to the graph definition\r\n* [ImplementationGuide](implementationguide.html): A use context type and quantity- or range-based value assigned to the implementation guide\r\n* [Library](library.html): A use context type and quantity- or range-based value assigned to the library\r\n* [Measure](measure.html): A use context type and quantity- or range-based value assigned to the measure\r\n* [MessageDefinition](messagedefinition.html): A use context type and quantity- or range-based value assigned to the message definition\r\n* [NamingSystem](namingsystem.html): A use context type and quantity- or range-based value assigned to the naming system\r\n* [OperationDefinition](operationdefinition.html): A use context type and quantity- or range-based value assigned to the operation definition\r\n* [PlanDefinition](plandefinition.html): A use context type and quantity- or range-based value assigned to the plan definition\r\n* [Questionnaire](questionnaire.html): A use context type and quantity- or range-based value assigned to the questionnaire\r\n* [Requirements](requirements.html): A use context type and quantity- or range-based value assigned to the requirements\r\n* [SearchParameter](searchparameter.html): A use context type and quantity- or range-based value assigned to the search parameter\r\n* [StructureDefinition](structuredefinition.html): A use context type and quantity- or range-based value assigned to the structure definition\r\n* [StructureMap](structuremap.html): A use context type and quantity- or range-based value assigned to the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): A use context type and quantity- or range-based value assigned to the terminology capabilities\r\n* [TestScript](testscript.html): A use context type and quantity- or range-based value assigned to the test script\r\n* [ValueSet](valueset.html): A use context type and quantity- or range-based value assigned to the value set\r\n"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/CodeSystem-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): External identifier for the activity definition\r\n* [ActorDefinition](actordefinition.html): External identifier for the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): External identifier for the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): External identifier for the charge item definition\r\n* [Citation](citation.html): External identifier for the citation\r\n* [CodeSystem](codesystem.html): External identifier for the code system\r\n* [ConceptMap](conceptmap.html): External identifier for the concept map\r\n* [ConditionDefinition](conditiondefinition.html): External identifier for the condition definition\r\n* [EventDefinition](eventdefinition.html): External identifier for the event definition\r\n* [Evidence](evidence.html): External identifier for the evidence\r\n* [EvidenceReport](evidencereport.html): External identifier for the evidence report\r\n* [EvidenceVariable](evidencevariable.html): External identifier for the evidence variable\r\n* [ExampleScenario](examplescenario.html): External identifier for the example scenario\r\n* [GraphDefinition](graphdefinition.html): External identifier for the graph definition\r\n* [ImplementationGuide](implementationguide.html): External identifier for the implementation guide\r\n* [Library](library.html): External identifier for the library\r\n* [Measure](measure.html): External identifier for the measure\r\n* [MedicationKnowledge](medicationknowledge.html): Business identifier for this medication\r\n* [MessageDefinition](messagedefinition.html): External identifier for the message definition\r\n* [NamingSystem](namingsystem.html): External identifier for the naming system\r\n* [ObservationDefinition](observationdefinition.html): The unique identifier associated with the specimen definition\r\n* [OperationDefinition](operationdefinition.html): External identifier for the search parameter\r\n* [PlanDefinition](plandefinition.html): External identifier for the plan definition\r\n* [Questionnaire](questionnaire.html): External identifier for the questionnaire\r\n* [Requirements](requirements.html): External identifier for the requirements\r\n* [SearchParameter](searchparameter.html): External identifier for the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): The unique identifier associated with the SpecimenDefinition\r\n* [StructureDefinition](structuredefinition.html): External identifier for the structure definition\r\n* [StructureMap](structuremap.html): External identifier for the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): Business Identifier for SubscriptionTopic\r\n* [TerminologyCapabilities](terminologycapabilities.html): External identifier for the terminology capabilities\r\n* [TestPlan](testplan.html): An identifier for the test plan\r\n* [TestScript](testscript.html): External identifier for the test script\r\n* [ValueSet](valueset.html): External identifier for the value set\r\n"
 * rest.resource[=].searchParam[+].name = "content-mode"
@@ -759,23 +687,18 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): Topics associated with the module\r\n* [CodeSystem](codesystem.html): Topics associated with the CodeSystem\r\n* [ConceptMap](conceptmap.html): Topics associated with the ConceptMap\r\n* [EventDefinition](eventdefinition.html): Topics associated with the module\r\n* [EvidenceVariable](evidencevariable.html): Topics associated with the EvidenceVariable\r\n* [Library](library.html): Topics associated with the module\r\n* [Measure](measure.html): Topics associated with the measure\r\n* [NamingSystem](namingsystem.html): Topics associated with the NamingSystem\r\n* [PlanDefinition](plandefinition.html): Topics associated with the module\r\n* [ValueSet](valueset.html): Topics associated with the ValueSet\r\n"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/CodeSystem-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/CodeSystem-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "status"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/CodeSystem-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): The current status of the activity definition\r\n* [ActorDefinition](actordefinition.html): The current status of the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): The current status of the charge item definition\r\n* [Citation](citation.html): The current status of the citation\r\n* [CodeSystem](codesystem.html): The current status of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition\r\n* [ConceptMap](conceptmap.html): The current status of the concept map\r\n* [ConditionDefinition](conditiondefinition.html): The current status of the condition definition\r\n* [EventDefinition](eventdefinition.html): The current status of the event definition\r\n* [Evidence](evidence.html): The current status of the evidence\r\n* [EvidenceReport](evidencereport.html): The current status of the evidence report\r\n* [EvidenceVariable](evidencevariable.html): The current status of the evidence variable\r\n* [ExampleScenario](examplescenario.html): The current status of the example scenario\r\n* [GraphDefinition](graphdefinition.html): The current status of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The current status of the implementation guide\r\n* [Library](library.html): The current status of the library\r\n* [Measure](measure.html): The current status of the measure\r\n* [MedicationKnowledge](medicationknowledge.html): active | inactive | entered-in-error\r\n* [MessageDefinition](messagedefinition.html): The current status of the message definition\r\n* [NamingSystem](namingsystem.html): The current status of the naming system\r\n* [ObservationDefinition](observationdefinition.html): Publication status of the ObservationDefinition: draft, active, retired, unknown\r\n* [OperationDefinition](operationdefinition.html): The current status of the operation definition\r\n* [PlanDefinition](plandefinition.html): The current status of the plan definition\r\n* [Questionnaire](questionnaire.html): The current status of the questionnaire\r\n* [Requirements](requirements.html): The current status of the requirements\r\n* [SearchParameter](searchparameter.html): The current status of the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): Publication status of the SpecimenDefinition: draft, active, retired, unknown\r\n* [StructureDefinition](structuredefinition.html): The current status of the structure definition\r\n* [StructureMap](structuremap.html): The current status of the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): draft | active | retired | unknown\r\n* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities\r\n* [TestPlan](testplan.html): The current status of the test plan\r\n* [TestScript](testscript.html): The current status of the test script\r\n* [ValueSet](valueset.html): The current status of the value set\r\n"
-* rest.resource[=].operation[0].name = "upload-external-code-system"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/CodeSystem-t-upload-external-code-system"
-* rest.resource[=].operation[+].name = "apply-codesystem-delta-remove"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/CodeSystem-t-apply-codesystem-delta-remove"
-* rest.resource[=].operation[+].name = "apply-codesystem-delta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/CodeSystem-t-apply-codesystem-delta-add"
+
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Composition"
 * rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/StructureDefinition/catalog"
@@ -860,7 +783,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #composite
 * rest.resource[=].searchParam[=].documentation = "Search on the section narrative of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Composition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Account](account.html): Account number\r\n* [AdverseEvent](adverseevent.html): Business identifier for the event\r\n* [AllergyIntolerance](allergyintolerance.html): External ids for this item\r\n* [Appointment](appointment.html): An Identifier of the Appointment\r\n* [AppointmentResponse](appointmentresponse.html): An Identifier in this appointment response\r\n* [Basic](basic.html): Business identifier\r\n* [BodyStructure](bodystructure.html): Bodystructure identifier\r\n* [CarePlan](careplan.html): External Ids for this plan\r\n* [CareTeam](careteam.html): External Ids for this team\r\n* [ChargeItem](chargeitem.html): Business Identifier for item\r\n* [Claim](claim.html): The primary identifier of the financial resource\r\n* [ClaimResponse](claimresponse.html): The identity of the ClaimResponse\r\n* [ClinicalImpression](clinicalimpression.html): Business identifier\r\n* [Communication](communication.html): Unique identifier\r\n* [CommunicationRequest](communicationrequest.html): Unique identifier\r\n* [Composition](composition.html): Version-independent identifier for the Composition\r\n* [Condition](condition.html): A unique identifier of the condition record\r\n* [Consent](consent.html): Identifier for this record (external references)\r\n* [Contract](contract.html): The identity of the contract\r\n* [Coverage](coverage.html): The primary identifier of the insured and the coverage\r\n* [CoverageEligibilityRequest](coverageeligibilityrequest.html): The business identifier of the Eligibility\r\n* [CoverageEligibilityResponse](coverageeligibilityresponse.html): The business identifier\r\n* [DetectedIssue](detectedissue.html): Unique id for the detected issue\r\n* [DeviceRequest](devicerequest.html): Business identifier for request/order\r\n* [DeviceUsage](deviceusage.html): Search by identifier\r\n* [DiagnosticReport](diagnosticreport.html): An identifier for the report\r\n* [DocumentReference](documentreference.html): Identifier of the attachment binary\r\n* [Encounter](encounter.html): Identifier(s) by which this encounter is known\r\n* [EnrollmentRequest](enrollmentrequest.html): The business identifier of the Enrollment\r\n* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare\r\n* [ExplanationOfBenefit](explanationofbenefit.html): The business identifier of the Explanation of Benefit\r\n* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier\r\n* [Flag](flag.html): Business identifier\r\n* [Goal](goal.html): External Ids for this goal\r\n* [GuidanceResponse](guidanceresponse.html): The identifier of the guidance response\r\n* [ImagingSelection](imagingselection.html): Identifiers for the imaging selection\r\n* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID\r\n* [Immunization](immunization.html): Business identifier\r\n* [ImmunizationEvaluation](immunizationevaluation.html): ID of the evaluation\r\n* [ImmunizationRecommendation](immunizationrecommendation.html): Business identifier\r\n* [Invoice](invoice.html): Business Identifier for item\r\n* [List](list.html): Business identifier\r\n* [MeasureReport](measurereport.html): External identifier of the measure report to be returned\r\n* [Medication](medication.html): Returns medications with this external identifier\r\n* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier\r\n* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier\r\n* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier\r\n* [MedicationStatement](medicationstatement.html): Return statements with this external identifier\r\n* [MolecularSequence](molecularsequence.html): The unique identity for a particular sequence\r\n* [NutritionIntake](nutritionintake.html): Return statements with this external identifier\r\n* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier\r\n* [Observation](observation.html): The unique id for a particular observation\r\n* [Person](person.html): A person Identifier\r\n* [Procedure](procedure.html): A unique identifier for a procedure\r\n* [QuestionnaireResponse](questionnaireresponse.html): The unique identifier for the questionnaire response\r\n* [RelatedPerson](relatedperson.html): An Identifier of the RelatedPerson\r\n* [RequestOrchestration](requestorchestration.html): External identifiers for the request orchestration\r\n* [ResearchSubject](researchsubject.html): Business Identifier for research subject in a study\r\n* [RiskAssessment](riskassessment.html): Unique identifier for the assessment\r\n* [ServiceRequest](servicerequest.html): Identifiers assigned to this order\r\n* [Specimen](specimen.html): The unique identifier associated with the specimen\r\n* [SupplyDelivery](supplydelivery.html): External identifier\r\n* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest\r\n* [Task](task.html): Search for a task instance by its business identifier\r\n* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier\r\n"
 * rest.resource[=].searchParam[+].name = "period"
@@ -918,11 +841,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Composition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Composition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "category"
@@ -936,21 +859,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Composition-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "preliminary | final | amended | entered-in-error"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
-* rest.resource[=].operation[+].name = "document"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Composition-i-document"
+
 * rest.resource[+].type = #ImplementationGuide
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/ImplementationGuide"
 * rest.resource[=].versioning = #versioned-update
@@ -976,7 +885,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #date
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): The activity definition publication date\r\n* [ActorDefinition](actordefinition.html): The Actor Definition publication date\r\n* [CapabilityStatement](capabilitystatement.html): The capability statement publication date\r\n* [ChargeItemDefinition](chargeitemdefinition.html): The charge item definition publication date\r\n* [Citation](citation.html): The citation publication date\r\n* [CodeSystem](codesystem.html): The code system publication date\r\n* [CompartmentDefinition](compartmentdefinition.html): The compartment definition publication date\r\n* [ConceptMap](conceptmap.html): The concept map publication date\r\n* [ConditionDefinition](conditiondefinition.html): The condition definition publication date\r\n* [EventDefinition](eventdefinition.html): The event definition publication date\r\n* [Evidence](evidence.html): The evidence publication date\r\n* [EvidenceVariable](evidencevariable.html): The evidence variable publication date\r\n* [ExampleScenario](examplescenario.html): The example scenario publication date\r\n* [GraphDefinition](graphdefinition.html): The graph definition publication date\r\n* [ImplementationGuide](implementationguide.html): The implementation guide publication date\r\n* [Library](library.html): The library publication date\r\n* [Measure](measure.html): The measure publication date\r\n* [MessageDefinition](messagedefinition.html): The message definition publication date\r\n* [NamingSystem](namingsystem.html): The naming system publication date\r\n* [OperationDefinition](operationdefinition.html): The operation definition publication date\r\n* [PlanDefinition](plandefinition.html): The plan definition publication date\r\n* [Questionnaire](questionnaire.html): The questionnaire publication date\r\n* [Requirements](requirements.html): The requirements publication date\r\n* [SearchParameter](searchparameter.html): The search parameter publication date\r\n* [StructureDefinition](structuredefinition.html): The structure definition publication date\r\n* [StructureMap](structuremap.html): The structure map publication date\r\n* [SubscriptionTopic](subscriptiontopic.html): Date status first applied\r\n* [TerminologyCapabilities](terminologycapabilities.html): The terminology capabilities publication date\r\n* [TestScript](testscript.html): The test script publication date\r\n* [ValueSet](valueset.html): The value set publication date\r\n"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ImplementationGuide-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): External identifier for the activity definition\r\n* [ActorDefinition](actordefinition.html): External identifier for the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): External identifier for the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): External identifier for the charge item definition\r\n* [Citation](citation.html): External identifier for the citation\r\n* [CodeSystem](codesystem.html): External identifier for the code system\r\n* [ConceptMap](conceptmap.html): External identifier for the concept map\r\n* [ConditionDefinition](conditiondefinition.html): External identifier for the condition definition\r\n* [EventDefinition](eventdefinition.html): External identifier for the event definition\r\n* [Evidence](evidence.html): External identifier for the evidence\r\n* [EvidenceReport](evidencereport.html): External identifier for the evidence report\r\n* [EvidenceVariable](evidencevariable.html): External identifier for the evidence variable\r\n* [ExampleScenario](examplescenario.html): External identifier for the example scenario\r\n* [GraphDefinition](graphdefinition.html): External identifier for the graph definition\r\n* [ImplementationGuide](implementationguide.html): External identifier for the implementation guide\r\n* [Library](library.html): External identifier for the library\r\n* [Measure](measure.html): External identifier for the measure\r\n* [MedicationKnowledge](medicationknowledge.html): Business identifier for this medication\r\n* [MessageDefinition](messagedefinition.html): External identifier for the message definition\r\n* [NamingSystem](namingsystem.html): External identifier for the naming system\r\n* [ObservationDefinition](observationdefinition.html): The unique identifier associated with the specimen definition\r\n* [OperationDefinition](operationdefinition.html): External identifier for the search parameter\r\n* [PlanDefinition](plandefinition.html): External identifier for the plan definition\r\n* [Questionnaire](questionnaire.html): External identifier for the questionnaire\r\n* [Requirements](requirements.html): External identifier for the requirements\r\n* [SearchParameter](searchparameter.html): External identifier for the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): The unique identifier associated with the SpecimenDefinition\r\n* [StructureDefinition](structuredefinition.html): External identifier for the structure definition\r\n* [StructureMap](structuremap.html): External identifier for the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): Business Identifier for SubscriptionTopic\r\n* [TerminologyCapabilities](terminologycapabilities.html): External identifier for the terminology capabilities\r\n* [TestPlan](testplan.html): An identifier for the test plan\r\n* [TestScript](testscript.html): External identifier for the test script\r\n* [ValueSet](valueset.html): External identifier for the value set\r\n"
 * rest.resource[=].searchParam[+].name = "context-type-value"
@@ -1040,11 +949,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): Name of the publisher of the activity definition\r\n* [ActorDefinition](actordefinition.html): Name of the publisher of the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): Name of the publisher of the charge item definition\r\n* [Citation](citation.html): Name of the publisher of the citation\r\n* [CodeSystem](codesystem.html): Name of the publisher of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition\r\n* [ConceptMap](conceptmap.html): Name of the publisher of the concept map\r\n* [ConditionDefinition](conditiondefinition.html): Name of the publisher of the condition definition\r\n* [EventDefinition](eventdefinition.html): Name of the publisher of the event definition\r\n* [Evidence](evidence.html): Name of the publisher of the evidence\r\n* [EvidenceReport](evidencereport.html): Name of the publisher of the evidence report\r\n* [EvidenceVariable](evidencevariable.html): Name of the publisher of the evidence variable\r\n* [ExampleScenario](examplescenario.html): Name of the publisher of the example scenario\r\n* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition\r\n* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide\r\n* [Library](library.html): Name of the publisher of the library\r\n* [Measure](measure.html): Name of the publisher of the measure\r\n* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition\r\n* [NamingSystem](namingsystem.html): Name of the publisher of the naming system\r\n* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition\r\n* [PlanDefinition](plandefinition.html): Name of the publisher of the plan definition\r\n* [Questionnaire](questionnaire.html): Name of the publisher of the questionnaire\r\n* [Requirements](requirements.html): Name of the publisher of the requirements\r\n* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter\r\n* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition\r\n* [StructureMap](structuremap.html): Name of the publisher of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities\r\n* [TestScript](testscript.html): Name of the publisher of the test script\r\n* [ValueSet](valueset.html): Name of the publisher of the value set\r\n"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ImplementationGuide-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ImplementationGuide-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "context-type-quantity"
@@ -1055,10 +964,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ImplementationGuide-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): The current status of the activity definition\r\n* [ActorDefinition](actordefinition.html): The current status of the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): The current status of the charge item definition\r\n* [Citation](citation.html): The current status of the citation\r\n* [CodeSystem](codesystem.html): The current status of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition\r\n* [ConceptMap](conceptmap.html): The current status of the concept map\r\n* [ConditionDefinition](conditiondefinition.html): The current status of the condition definition\r\n* [EventDefinition](eventdefinition.html): The current status of the event definition\r\n* [Evidence](evidence.html): The current status of the evidence\r\n* [EvidenceReport](evidencereport.html): The current status of the evidence report\r\n* [EvidenceVariable](evidencevariable.html): The current status of the evidence variable\r\n* [ExampleScenario](examplescenario.html): The current status of the example scenario\r\n* [GraphDefinition](graphdefinition.html): The current status of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The current status of the implementation guide\r\n* [Library](library.html): The current status of the library\r\n* [Measure](measure.html): The current status of the measure\r\n* [MedicationKnowledge](medicationknowledge.html): active | inactive | entered-in-error\r\n* [MessageDefinition](messagedefinition.html): The current status of the message definition\r\n* [NamingSystem](namingsystem.html): The current status of the naming system\r\n* [ObservationDefinition](observationdefinition.html): Publication status of the ObservationDefinition: draft, active, retired, unknown\r\n* [OperationDefinition](operationdefinition.html): The current status of the operation definition\r\n* [PlanDefinition](plandefinition.html): The current status of the plan definition\r\n* [Questionnaire](questionnaire.html): The current status of the questionnaire\r\n* [Requirements](requirements.html): The current status of the requirements\r\n* [SearchParameter](searchparameter.html): The current status of the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): Publication status of the SpecimenDefinition: draft, active, retired, unknown\r\n* [StructureDefinition](structuredefinition.html): The current status of the structure definition\r\n* [StructureMap](structuremap.html): The current status of the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): draft | active | retired | unknown\r\n* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities\r\n* [TestPlan](testplan.html): The current status of the test plan\r\n* [TestScript](testscript.html): The current status of the test script\r\n* [ValueSet](valueset.html): The current status of the value set\r\n"
-* rest.resource[=].operation[0].name = "uninstall"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/ImplementationGuide-t-uninstall"
-* rest.resource[=].operation[+].name = "install"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/ImplementationGuide-t-install"
+
 * rest.resource[+].type = #Ingredient
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Ingredient"
 * rest.resource[=].interaction[0].code = #search-type
@@ -1095,7 +1001,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Ingredient-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "An identifier or code by which the ingredient can be referenced"
 * rest.resource[=].searchParam[+].name = "role"
@@ -1152,11 +1058,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Ingredient-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Ingredient-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -1170,19 +1076,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Ingredient-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The status of this ingredient. Enables tracking the life-cycle of the content"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #List
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/List"
 * rest.resource[=].interaction[0].code = #search-type
@@ -1223,7 +1117,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Account](account.html): Account number\r\n* [AdverseEvent](adverseevent.html): Business identifier for the event\r\n* [AllergyIntolerance](allergyintolerance.html): External ids for this item\r\n* [Appointment](appointment.html): An Identifier of the Appointment\r\n* [AppointmentResponse](appointmentresponse.html): An Identifier in this appointment response\r\n* [Basic](basic.html): Business identifier\r\n* [BodyStructure](bodystructure.html): Bodystructure identifier\r\n* [CarePlan](careplan.html): External Ids for this plan\r\n* [CareTeam](careteam.html): External Ids for this team\r\n* [ChargeItem](chargeitem.html): Business Identifier for item\r\n* [Claim](claim.html): The primary identifier of the financial resource\r\n* [ClaimResponse](claimresponse.html): The identity of the ClaimResponse\r\n* [ClinicalImpression](clinicalimpression.html): Business identifier\r\n* [Communication](communication.html): Unique identifier\r\n* [CommunicationRequest](communicationrequest.html): Unique identifier\r\n* [Composition](composition.html): Version-independent identifier for the Composition\r\n* [Condition](condition.html): A unique identifier of the condition record\r\n* [Consent](consent.html): Identifier for this record (external references)\r\n* [Contract](contract.html): The identity of the contract\r\n* [Coverage](coverage.html): The primary identifier of the insured and the coverage\r\n* [CoverageEligibilityRequest](coverageeligibilityrequest.html): The business identifier of the Eligibility\r\n* [CoverageEligibilityResponse](coverageeligibilityresponse.html): The business identifier\r\n* [DetectedIssue](detectedissue.html): Unique id for the detected issue\r\n* [DeviceRequest](devicerequest.html): Business identifier for request/order\r\n* [DeviceUsage](deviceusage.html): Search by identifier\r\n* [DiagnosticReport](diagnosticreport.html): An identifier for the report\r\n* [DocumentReference](documentreference.html): Identifier of the attachment binary\r\n* [Encounter](encounter.html): Identifier(s) by which this encounter is known\r\n* [EnrollmentRequest](enrollmentrequest.html): The business identifier of the Enrollment\r\n* [EpisodeOfCare](episodeofcare.html): Business Identifier(s) relevant for this EpisodeOfCare\r\n* [ExplanationOfBenefit](explanationofbenefit.html): The business identifier of the Explanation of Benefit\r\n* [FamilyMemberHistory](familymemberhistory.html): A search by a record identifier\r\n* [Flag](flag.html): Business identifier\r\n* [Goal](goal.html): External Ids for this goal\r\n* [GuidanceResponse](guidanceresponse.html): The identifier of the guidance response\r\n* [ImagingSelection](imagingselection.html): Identifiers for the imaging selection\r\n* [ImagingStudy](imagingstudy.html): Identifiers for the Study, such as DICOM Study Instance UID\r\n* [Immunization](immunization.html): Business identifier\r\n* [ImmunizationEvaluation](immunizationevaluation.html): ID of the evaluation\r\n* [ImmunizationRecommendation](immunizationrecommendation.html): Business identifier\r\n* [Invoice](invoice.html): Business Identifier for item\r\n* [List](list.html): Business identifier\r\n* [MeasureReport](measurereport.html): External identifier of the measure report to be returned\r\n* [Medication](medication.html): Returns medications with this external identifier\r\n* [MedicationAdministration](medicationadministration.html): Return administrations with this external identifier\r\n* [MedicationDispense](medicationdispense.html): Returns dispenses with this external identifier\r\n* [MedicationRequest](medicationrequest.html): Return prescriptions with this external identifier\r\n* [MedicationStatement](medicationstatement.html): Return statements with this external identifier\r\n* [MolecularSequence](molecularsequence.html): The unique identity for a particular sequence\r\n* [NutritionIntake](nutritionintake.html): Return statements with this external identifier\r\n* [NutritionOrder](nutritionorder.html): Return nutrition orders with this external identifier\r\n* [Observation](observation.html): The unique id for a particular observation\r\n* [Person](person.html): A person Identifier\r\n* [Procedure](procedure.html): A unique identifier for a procedure\r\n* [QuestionnaireResponse](questionnaireresponse.html): The unique identifier for the questionnaire response\r\n* [RelatedPerson](relatedperson.html): An Identifier of the RelatedPerson\r\n* [RequestOrchestration](requestorchestration.html): External identifiers for the request orchestration\r\n* [ResearchSubject](researchsubject.html): Business Identifier for research subject in a study\r\n* [RiskAssessment](riskassessment.html): Unique identifier for the assessment\r\n* [ServiceRequest](servicerequest.html): Identifiers assigned to this order\r\n* [Specimen](specimen.html): The unique identifier associated with the specimen\r\n* [SupplyDelivery](supplydelivery.html): External identifier\r\n* [SupplyRequest](supplyrequest.html): Business Identifier for SupplyRequest\r\n* [Task](task.html): Search for a task instance by its business identifier\r\n* [VisionPrescription](visionprescription.html): Return prescriptions with this external identifier\r\n"
 * rest.resource[=].searchParam[+].name = "empty-reason"
@@ -1284,11 +1178,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -1298,19 +1192,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/List-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "current | retired | entered-in-error"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #ManufacturedItemDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition"
 * rest.resource[=].interaction[0].code = #search-type
@@ -1352,7 +1234,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ManufacturedItemDefinition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Unique identifier"
 * rest.resource[=].searchParam[+].name = "ingredient"
@@ -1389,11 +1271,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ManufacturedItemDefinition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ManufacturedItemDefinition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -1403,19 +1285,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ManufacturedItemDefinition-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The status of this item. Enables tracking the life-cycle of the content."
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #MedicinalProductDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition"
 * rest.resource[=].interaction[0].code = #search-type
@@ -1455,7 +1325,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicinalProductDefinition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Business identifier for this product. Could be an MPID"
 * rest.resource[=].searchParam[+].name = "ingredient"
@@ -1520,11 +1390,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicinalProductDefinition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicinalProductDefinition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -1534,19 +1404,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicinalProductDefinition-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The status within the lifecycle of this product record. A high-level status, this is not intended to duplicate details carried elsewhere such as legal status, or authorization status"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #OperationDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
 * rest.resource[=].interaction.code = #read
@@ -1621,7 +1479,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #composite
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): A use context type and quantity- or range-based value assigned to the activity definition\r\n* [ActorDefinition](actordefinition.html): A use context type and quantity- or range-based value assigned to the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): A use context type and quantity- or range-based value assigned to the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): A use context type and quantity- or range-based value assigned to the charge item definition\r\n* [Citation](citation.html): A use context type and quantity- or range-based value assigned to the citation\r\n* [CodeSystem](codesystem.html): A use context type and quantity- or range-based value assigned to the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): A use context type and quantity- or range-based value assigned to the compartment definition\r\n* [ConceptMap](conceptmap.html): A use context type and quantity- or range-based value assigned to the concept map\r\n* [ConditionDefinition](conditiondefinition.html): A use context type and quantity- or range-based value assigned to the condition definition\r\n* [EventDefinition](eventdefinition.html): A use context type and quantity- or range-based value assigned to the event definition\r\n* [Evidence](evidence.html): A use context type and quantity- or range-based value assigned to the evidence\r\n* [EvidenceReport](evidencereport.html): A use context type and quantity- or range-based value assigned to the evidence report\r\n* [EvidenceVariable](evidencevariable.html): A use context type and quantity- or range-based value assigned to the evidence variable\r\n* [ExampleScenario](examplescenario.html): A use context type and quantity- or range-based value assigned to the example scenario\r\n* [GraphDefinition](graphdefinition.html): A use context type and quantity- or range-based value assigned to the graph definition\r\n* [ImplementationGuide](implementationguide.html): A use context type and quantity- or range-based value assigned to the implementation guide\r\n* [Library](library.html): A use context type and quantity- or range-based value assigned to the library\r\n* [Measure](measure.html): A use context type and quantity- or range-based value assigned to the measure\r\n* [MessageDefinition](messagedefinition.html): A use context type and quantity- or range-based value assigned to the message definition\r\n* [NamingSystem](namingsystem.html): A use context type and quantity- or range-based value assigned to the naming system\r\n* [OperationDefinition](operationdefinition.html): A use context type and quantity- or range-based value assigned to the operation definition\r\n* [PlanDefinition](plandefinition.html): A use context type and quantity- or range-based value assigned to the plan definition\r\n* [Questionnaire](questionnaire.html): A use context type and quantity- or range-based value assigned to the questionnaire\r\n* [Requirements](requirements.html): A use context type and quantity- or range-based value assigned to the requirements\r\n* [SearchParameter](searchparameter.html): A use context type and quantity- or range-based value assigned to the search parameter\r\n* [StructureDefinition](structuredefinition.html): A use context type and quantity- or range-based value assigned to the structure definition\r\n* [StructureMap](structuremap.html): A use context type and quantity- or range-based value assigned to the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): A use context type and quantity- or range-based value assigned to the terminology capabilities\r\n* [TestScript](testscript.html): A use context type and quantity- or range-based value assigned to the test script\r\n* [ValueSet](valueset.html): A use context type and quantity- or range-based value assigned to the value set\r\n"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/OperationDefinition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): External identifier for the activity definition\r\n* [ActorDefinition](actordefinition.html): External identifier for the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): External identifier for the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): External identifier for the charge item definition\r\n* [Citation](citation.html): External identifier for the citation\r\n* [CodeSystem](codesystem.html): External identifier for the code system\r\n* [ConceptMap](conceptmap.html): External identifier for the concept map\r\n* [ConditionDefinition](conditiondefinition.html): External identifier for the condition definition\r\n* [EventDefinition](eventdefinition.html): External identifier for the event definition\r\n* [Evidence](evidence.html): External identifier for the evidence\r\n* [EvidenceReport](evidencereport.html): External identifier for the evidence report\r\n* [EvidenceVariable](evidencevariable.html): External identifier for the evidence variable\r\n* [ExampleScenario](examplescenario.html): External identifier for the example scenario\r\n* [GraphDefinition](graphdefinition.html): External identifier for the graph definition\r\n* [ImplementationGuide](implementationguide.html): External identifier for the implementation guide\r\n* [Library](library.html): External identifier for the library\r\n* [Measure](measure.html): External identifier for the measure\r\n* [MedicationKnowledge](medicationknowledge.html): Business identifier for this medication\r\n* [MessageDefinition](messagedefinition.html): External identifier for the message definition\r\n* [NamingSystem](namingsystem.html): External identifier for the naming system\r\n* [ObservationDefinition](observationdefinition.html): The unique identifier associated with the specimen definition\r\n* [OperationDefinition](operationdefinition.html): External identifier for the search parameter\r\n* [PlanDefinition](plandefinition.html): External identifier for the plan definition\r\n* [Questionnaire](questionnaire.html): External identifier for the questionnaire\r\n* [Requirements](requirements.html): External identifier for the requirements\r\n* [SearchParameter](searchparameter.html): External identifier for the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): The unique identifier associated with the SpecimenDefinition\r\n* [StructureDefinition](structuredefinition.html): External identifier for the structure definition\r\n* [StructureMap](structuremap.html): External identifier for the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): Business Identifier for SubscriptionTopic\r\n* [TerminologyCapabilities](terminologycapabilities.html): External identifier for the terminology capabilities\r\n* [TestPlan](testplan.html): An identifier for the test plan\r\n* [TestScript](testscript.html): External identifier for the test script\r\n* [ValueSet](valueset.html): External identifier for the value set\r\n"
 * rest.resource[=].searchParam[+].name = "kind"
@@ -1653,11 +1511,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): Name of the publisher of the activity definition\r\n* [ActorDefinition](actordefinition.html): Name of the publisher of the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): Name of the publisher of the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): Name of the publisher of the charge item definition\r\n* [Citation](citation.html): Name of the publisher of the citation\r\n* [CodeSystem](codesystem.html): Name of the publisher of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): Name of the publisher of the compartment definition\r\n* [ConceptMap](conceptmap.html): Name of the publisher of the concept map\r\n* [ConditionDefinition](conditiondefinition.html): Name of the publisher of the condition definition\r\n* [EventDefinition](eventdefinition.html): Name of the publisher of the event definition\r\n* [Evidence](evidence.html): Name of the publisher of the evidence\r\n* [EvidenceReport](evidencereport.html): Name of the publisher of the evidence report\r\n* [EvidenceVariable](evidencevariable.html): Name of the publisher of the evidence variable\r\n* [ExampleScenario](examplescenario.html): Name of the publisher of the example scenario\r\n* [GraphDefinition](graphdefinition.html): Name of the publisher of the graph definition\r\n* [ImplementationGuide](implementationguide.html): Name of the publisher of the implementation guide\r\n* [Library](library.html): Name of the publisher of the library\r\n* [Measure](measure.html): Name of the publisher of the measure\r\n* [MessageDefinition](messagedefinition.html): Name of the publisher of the message definition\r\n* [NamingSystem](namingsystem.html): Name of the publisher of the naming system\r\n* [OperationDefinition](operationdefinition.html): Name of the publisher of the operation definition\r\n* [PlanDefinition](plandefinition.html): Name of the publisher of the plan definition\r\n* [Questionnaire](questionnaire.html): Name of the publisher of the questionnaire\r\n* [Requirements](requirements.html): Name of the publisher of the requirements\r\n* [SearchParameter](searchparameter.html): Name of the publisher of the search parameter\r\n* [StructureDefinition](structuredefinition.html): Name of the publisher of the structure definition\r\n* [StructureMap](structuremap.html): Name of the publisher of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): Name of the publisher of the terminology capabilities\r\n* [TestScript](testscript.html): Name of the publisher of the test script\r\n* [ValueSet](valueset.html): Name of the publisher of the value set\r\n"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/OperationDefinition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/OperationDefinition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "base"
@@ -1710,7 +1568,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Organization-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Any identifier for the organization (not the accreditation issuer's identifier)"
 * rest.resource[=].searchParam[+].name = "partof"
@@ -1779,11 +1637,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Organization-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Organization-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "address-city"
@@ -1793,19 +1651,7 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "_content"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's data using a fulltext search"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #PackagedProductDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition"
 * rest.resource[=].interaction[0].code = #search-type
@@ -1853,7 +1699,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PackagedProductDefinition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Unique identifier"
 * rest.resource[=].searchParam[+].name = "package"
@@ -1910,11 +1756,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PackagedProductDefinition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PackagedProductDefinition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -1928,19 +1774,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PackagedProductDefinition-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The status within the lifecycle of this item. A high level status, this is not intended to duplicate details carried elsewhere such as legal status, or authorization or marketing status"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #RegulatedAuthorization
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/RegulatedAuthorization"
 * rest.resource[=].interaction[0].code = #search-type
@@ -1974,7 +1808,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/RegulatedAuthorization-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Business identifier for the authorization, typically assigned by the authorizing body"
 * rest.resource[=].searchParam[+].name = "subject"
@@ -2011,11 +1845,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/RegulatedAuthorization-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/RegulatedAuthorization-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "region"
@@ -2033,19 +1867,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/RegulatedAuthorization-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The status that is authorised e.g. approved. Intermediate states can be tracked with cases and applications"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #SearchParameter
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/SearchParameter"
 * rest.resource[=].interaction[0].code = #search-type
@@ -2128,7 +1950,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #composite
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): A use context type and quantity- or range-based value assigned to the activity definition\r\n* [ActorDefinition](actordefinition.html): A use context type and quantity- or range-based value assigned to the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): A use context type and quantity- or range-based value assigned to the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): A use context type and quantity- or range-based value assigned to the charge item definition\r\n* [Citation](citation.html): A use context type and quantity- or range-based value assigned to the citation\r\n* [CodeSystem](codesystem.html): A use context type and quantity- or range-based value assigned to the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): A use context type and quantity- or range-based value assigned to the compartment definition\r\n* [ConceptMap](conceptmap.html): A use context type and quantity- or range-based value assigned to the concept map\r\n* [ConditionDefinition](conditiondefinition.html): A use context type and quantity- or range-based value assigned to the condition definition\r\n* [EventDefinition](eventdefinition.html): A use context type and quantity- or range-based value assigned to the event definition\r\n* [Evidence](evidence.html): A use context type and quantity- or range-based value assigned to the evidence\r\n* [EvidenceReport](evidencereport.html): A use context type and quantity- or range-based value assigned to the evidence report\r\n* [EvidenceVariable](evidencevariable.html): A use context type and quantity- or range-based value assigned to the evidence variable\r\n* [ExampleScenario](examplescenario.html): A use context type and quantity- or range-based value assigned to the example scenario\r\n* [GraphDefinition](graphdefinition.html): A use context type and quantity- or range-based value assigned to the graph definition\r\n* [ImplementationGuide](implementationguide.html): A use context type and quantity- or range-based value assigned to the implementation guide\r\n* [Library](library.html): A use context type and quantity- or range-based value assigned to the library\r\n* [Measure](measure.html): A use context type and quantity- or range-based value assigned to the measure\r\n* [MessageDefinition](messagedefinition.html): A use context type and quantity- or range-based value assigned to the message definition\r\n* [NamingSystem](namingsystem.html): A use context type and quantity- or range-based value assigned to the naming system\r\n* [OperationDefinition](operationdefinition.html): A use context type and quantity- or range-based value assigned to the operation definition\r\n* [PlanDefinition](plandefinition.html): A use context type and quantity- or range-based value assigned to the plan definition\r\n* [Questionnaire](questionnaire.html): A use context type and quantity- or range-based value assigned to the questionnaire\r\n* [Requirements](requirements.html): A use context type and quantity- or range-based value assigned to the requirements\r\n* [SearchParameter](searchparameter.html): A use context type and quantity- or range-based value assigned to the search parameter\r\n* [StructureDefinition](structuredefinition.html): A use context type and quantity- or range-based value assigned to the structure definition\r\n* [StructureMap](structuremap.html): A use context type and quantity- or range-based value assigned to the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): A use context type and quantity- or range-based value assigned to the terminology capabilities\r\n* [TestScript](testscript.html): A use context type and quantity- or range-based value assigned to the test script\r\n* [ValueSet](valueset.html): A use context type and quantity- or range-based value assigned to the value set\r\n"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/SearchParameter-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): External identifier for the activity definition\r\n* [ActorDefinition](actordefinition.html): External identifier for the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): External identifier for the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): External identifier for the charge item definition\r\n* [Citation](citation.html): External identifier for the citation\r\n* [CodeSystem](codesystem.html): External identifier for the code system\r\n* [ConceptMap](conceptmap.html): External identifier for the concept map\r\n* [ConditionDefinition](conditiondefinition.html): External identifier for the condition definition\r\n* [EventDefinition](eventdefinition.html): External identifier for the event definition\r\n* [Evidence](evidence.html): External identifier for the evidence\r\n* [EvidenceReport](evidencereport.html): External identifier for the evidence report\r\n* [EvidenceVariable](evidencevariable.html): External identifier for the evidence variable\r\n* [ExampleScenario](examplescenario.html): External identifier for the example scenario\r\n* [GraphDefinition](graphdefinition.html): External identifier for the graph definition\r\n* [ImplementationGuide](implementationguide.html): External identifier for the implementation guide\r\n* [Library](library.html): External identifier for the library\r\n* [Measure](measure.html): External identifier for the measure\r\n* [MedicationKnowledge](medicationknowledge.html): Business identifier for this medication\r\n* [MessageDefinition](messagedefinition.html): External identifier for the message definition\r\n* [NamingSystem](namingsystem.html): External identifier for the naming system\r\n* [ObservationDefinition](observationdefinition.html): The unique identifier associated with the specimen definition\r\n* [OperationDefinition](operationdefinition.html): External identifier for the search parameter\r\n* [PlanDefinition](plandefinition.html): External identifier for the plan definition\r\n* [Questionnaire](questionnaire.html): External identifier for the questionnaire\r\n* [Requirements](requirements.html): External identifier for the requirements\r\n* [SearchParameter](searchparameter.html): External identifier for the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): The unique identifier associated with the SpecimenDefinition\r\n* [StructureDefinition](structuredefinition.html): External identifier for the structure definition\r\n* [StructureMap](structuremap.html): External identifier for the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): Business Identifier for SubscriptionTopic\r\n* [TerminologyCapabilities](terminologycapabilities.html): External identifier for the terminology capabilities\r\n* [TestPlan](testplan.html): An identifier for the test plan\r\n* [TestScript](testscript.html): External identifier for the test script\r\n* [ValueSet](valueset.html): External identifier for the value set\r\n"
 * rest.resource[=].searchParam[+].name = "_security"
@@ -2174,11 +1996,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/SearchParameter-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/SearchParameter-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
@@ -2192,19 +2014,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/SearchParameter-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): The current status of the activity definition\r\n* [ActorDefinition](actordefinition.html): The current status of the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): The current status of the charge item definition\r\n* [Citation](citation.html): The current status of the citation\r\n* [CodeSystem](codesystem.html): The current status of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition\r\n* [ConceptMap](conceptmap.html): The current status of the concept map\r\n* [ConditionDefinition](conditiondefinition.html): The current status of the condition definition\r\n* [EventDefinition](eventdefinition.html): The current status of the event definition\r\n* [Evidence](evidence.html): The current status of the evidence\r\n* [EvidenceReport](evidencereport.html): The current status of the evidence report\r\n* [EvidenceVariable](evidencevariable.html): The current status of the evidence variable\r\n* [ExampleScenario](examplescenario.html): The current status of the example scenario\r\n* [GraphDefinition](graphdefinition.html): The current status of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The current status of the implementation guide\r\n* [Library](library.html): The current status of the library\r\n* [Measure](measure.html): The current status of the measure\r\n* [MedicationKnowledge](medicationknowledge.html): active | inactive | entered-in-error\r\n* [MessageDefinition](messagedefinition.html): The current status of the message definition\r\n* [NamingSystem](namingsystem.html): The current status of the naming system\r\n* [ObservationDefinition](observationdefinition.html): Publication status of the ObservationDefinition: draft, active, retired, unknown\r\n* [OperationDefinition](operationdefinition.html): The current status of the operation definition\r\n* [PlanDefinition](plandefinition.html): The current status of the plan definition\r\n* [Questionnaire](questionnaire.html): The current status of the questionnaire\r\n* [Requirements](requirements.html): The current status of the requirements\r\n* [SearchParameter](searchparameter.html): The current status of the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): Publication status of the SpecimenDefinition: draft, active, retired, unknown\r\n* [StructureDefinition](structuredefinition.html): The current status of the structure definition\r\n* [StructureMap](structuremap.html): The current status of the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): draft | active | retired | unknown\r\n* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities\r\n* [TestPlan](testplan.html): The current status of the test plan\r\n* [TestScript](testscript.html): The current status of the test script\r\n* [ValueSet](valueset.html): The current status of the value set\r\n"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #SubstanceDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/SubstanceDefinition"
 * rest.resource[=].interaction[0].code = #search-type
@@ -2239,7 +2049,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The language of the resource"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/SubstanceDefinition-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Identifier by which this substance is known"
 * rest.resource[=].searchParam[+].name = "code"
@@ -2280,29 +2090,17 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchParam[=].documentation = "Search for resources which have the given source value (Resource.meta.source)"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/SubstanceDefinition-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/SubstanceDefinition-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "_content"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Search the contents of the resource's data using a fulltext search"
-* rest.resource[=].operation[0].name = "validate"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-it-validate"
-* rest.resource[=].operation[+].name = "meta-delete"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-delete"
-* rest.resource[=].operation[=].documentation = "Delete tags, profiles, and/or security labels from a resource"
-* rest.resource[=].operation[+].name = "meta-add"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-i-meta-add"
-* rest.resource[=].operation[=].documentation = "Add tags, profiles, and/or security labels to a resource"
-* rest.resource[=].operation[+].name = "meta"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-meta"
-* rest.resource[=].operation[=].documentation = "Request a list of tags, profiles, and security labels for a specfic resource instance"
-* rest.resource[=].operation[+].name = "expunge"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/Multi-its-expunge"
+
 * rest.resource[+].type = #ValueSet
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/ValueSet"
 * rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/StructureDefinition/computablevalueset"
@@ -2382,7 +2180,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #composite
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): A use context type and quantity- or range-based value assigned to the activity definition\r\n* [ActorDefinition](actordefinition.html): A use context type and quantity- or range-based value assigned to the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): A use context type and quantity- or range-based value assigned to the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): A use context type and quantity- or range-based value assigned to the charge item definition\r\n* [Citation](citation.html): A use context type and quantity- or range-based value assigned to the citation\r\n* [CodeSystem](codesystem.html): A use context type and quantity- or range-based value assigned to the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): A use context type and quantity- or range-based value assigned to the compartment definition\r\n* [ConceptMap](conceptmap.html): A use context type and quantity- or range-based value assigned to the concept map\r\n* [ConditionDefinition](conditiondefinition.html): A use context type and quantity- or range-based value assigned to the condition definition\r\n* [EventDefinition](eventdefinition.html): A use context type and quantity- or range-based value assigned to the event definition\r\n* [Evidence](evidence.html): A use context type and quantity- or range-based value assigned to the evidence\r\n* [EvidenceReport](evidencereport.html): A use context type and quantity- or range-based value assigned to the evidence report\r\n* [EvidenceVariable](evidencevariable.html): A use context type and quantity- or range-based value assigned to the evidence variable\r\n* [ExampleScenario](examplescenario.html): A use context type and quantity- or range-based value assigned to the example scenario\r\n* [GraphDefinition](graphdefinition.html): A use context type and quantity- or range-based value assigned to the graph definition\r\n* [ImplementationGuide](implementationguide.html): A use context type and quantity- or range-based value assigned to the implementation guide\r\n* [Library](library.html): A use context type and quantity- or range-based value assigned to the library\r\n* [Measure](measure.html): A use context type and quantity- or range-based value assigned to the measure\r\n* [MessageDefinition](messagedefinition.html): A use context type and quantity- or range-based value assigned to the message definition\r\n* [NamingSystem](namingsystem.html): A use context type and quantity- or range-based value assigned to the naming system\r\n* [OperationDefinition](operationdefinition.html): A use context type and quantity- or range-based value assigned to the operation definition\r\n* [PlanDefinition](plandefinition.html): A use context type and quantity- or range-based value assigned to the plan definition\r\n* [Questionnaire](questionnaire.html): A use context type and quantity- or range-based value assigned to the questionnaire\r\n* [Requirements](requirements.html): A use context type and quantity- or range-based value assigned to the requirements\r\n* [SearchParameter](searchparameter.html): A use context type and quantity- or range-based value assigned to the search parameter\r\n* [StructureDefinition](structuredefinition.html): A use context type and quantity- or range-based value assigned to the structure definition\r\n* [StructureMap](structuremap.html): A use context type and quantity- or range-based value assigned to the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): A use context type and quantity- or range-based value assigned to the terminology capabilities\r\n* [TestScript](testscript.html): A use context type and quantity- or range-based value assigned to the test script\r\n* [ValueSet](valueset.html): A use context type and quantity- or range-based value assigned to the value set\r\n"
 * rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ValueSet-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): External identifier for the activity definition\r\n* [ActorDefinition](actordefinition.html): External identifier for the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): External identifier for the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): External identifier for the charge item definition\r\n* [Citation](citation.html): External identifier for the citation\r\n* [CodeSystem](codesystem.html): External identifier for the code system\r\n* [ConceptMap](conceptmap.html): External identifier for the concept map\r\n* [ConditionDefinition](conditiondefinition.html): External identifier for the condition definition\r\n* [EventDefinition](eventdefinition.html): External identifier for the event definition\r\n* [Evidence](evidence.html): External identifier for the evidence\r\n* [EvidenceReport](evidencereport.html): External identifier for the evidence report\r\n* [EvidenceVariable](evidencevariable.html): External identifier for the evidence variable\r\n* [ExampleScenario](examplescenario.html): External identifier for the example scenario\r\n* [GraphDefinition](graphdefinition.html): External identifier for the graph definition\r\n* [ImplementationGuide](implementationguide.html): External identifier for the implementation guide\r\n* [Library](library.html): External identifier for the library\r\n* [Measure](measure.html): External identifier for the measure\r\n* [MedicationKnowledge](medicationknowledge.html): Business identifier for this medication\r\n* [MessageDefinition](messagedefinition.html): External identifier for the message definition\r\n* [NamingSystem](namingsystem.html): External identifier for the naming system\r\n* [ObservationDefinition](observationdefinition.html): The unique identifier associated with the specimen definition\r\n* [OperationDefinition](operationdefinition.html): External identifier for the search parameter\r\n* [PlanDefinition](plandefinition.html): External identifier for the plan definition\r\n* [Questionnaire](questionnaire.html): External identifier for the questionnaire\r\n* [Requirements](requirements.html): External identifier for the requirements\r\n* [SearchParameter](searchparameter.html): External identifier for the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): The unique identifier associated with the SpecimenDefinition\r\n* [StructureDefinition](structuredefinition.html): External identifier for the structure definition\r\n* [StructureMap](structuremap.html): External identifier for the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): Business Identifier for SubscriptionTopic\r\n* [TerminologyCapabilities](terminologycapabilities.html): External identifier for the terminology capabilities\r\n* [TestPlan](testplan.html): An identifier for the test plan\r\n* [TestScript](testscript.html): External identifier for the test script\r\n* [ValueSet](valueset.html): External identifier for the value set\r\n"
 * rest.resource[=].searchParam[+].name = "version"
@@ -2410,22 +2208,17 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): Topics associated with the module\r\n* [CodeSystem](codesystem.html): Topics associated with the CodeSystem\r\n* [ConceptMap](conceptmap.html): Topics associated with the ConceptMap\r\n* [EventDefinition](eventdefinition.html): Topics associated with the module\r\n* [EvidenceVariable](evidencevariable.html): Topics associated with the EvidenceVariable\r\n* [Library](library.html): Topics associated with the module\r\n* [Measure](measure.html): Topics associated with the measure\r\n* [NamingSystem](namingsystem.html): Topics associated with the NamingSystem\r\n* [PlanDefinition](plandefinition.html): Topics associated with the module\r\n* [ValueSet](valueset.html): Topics associated with the ValueSet\r\n"
 * rest.resource[=].searchParam[+].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ValueSet-_id"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "The ID of the resource"
 * rest.resource[=].searchParam[+].name = "_text"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ValueSet-_text"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-text"
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Search on the narrative of the resource"
 * rest.resource[=].searchParam[+].name = "status"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ValueSet-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [ActivityDefinition](activitydefinition.html): The current status of the activity definition\r\n* [ActorDefinition](actordefinition.html): The current status of the Actor Definition\r\n* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement\r\n* [ChargeItemDefinition](chargeitemdefinition.html): The current status of the charge item definition\r\n* [Citation](citation.html): The current status of the citation\r\n* [CodeSystem](codesystem.html): The current status of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition\r\n* [ConceptMap](conceptmap.html): The current status of the concept map\r\n* [ConditionDefinition](conditiondefinition.html): The current status of the condition definition\r\n* [EventDefinition](eventdefinition.html): The current status of the event definition\r\n* [Evidence](evidence.html): The current status of the evidence\r\n* [EvidenceReport](evidencereport.html): The current status of the evidence report\r\n* [EvidenceVariable](evidencevariable.html): The current status of the evidence variable\r\n* [ExampleScenario](examplescenario.html): The current status of the example scenario\r\n* [GraphDefinition](graphdefinition.html): The current status of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The current status of the implementation guide\r\n* [Library](library.html): The current status of the library\r\n* [Measure](measure.html): The current status of the measure\r\n* [MedicationKnowledge](medicationknowledge.html): active | inactive | entered-in-error\r\n* [MessageDefinition](messagedefinition.html): The current status of the message definition\r\n* [NamingSystem](namingsystem.html): The current status of the naming system\r\n* [ObservationDefinition](observationdefinition.html): Publication status of the ObservationDefinition: draft, active, retired, unknown\r\n* [OperationDefinition](operationdefinition.html): The current status of the operation definition\r\n* [PlanDefinition](plandefinition.html): The current status of the plan definition\r\n* [Questionnaire](questionnaire.html): The current status of the questionnaire\r\n* [Requirements](requirements.html): The current status of the requirements\r\n* [SearchParameter](searchparameter.html): The current status of the search parameter\r\n* [SpecimenDefinition](specimendefinition.html): Publication status of the SpecimenDefinition: draft, active, retired, unknown\r\n* [StructureDefinition](structuredefinition.html): The current status of the structure definition\r\n* [StructureMap](structuremap.html): The current status of the structure map\r\n* [SubscriptionTopic](subscriptiontopic.html): draft | active | retired | unknown\r\n* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities\r\n* [TestPlan](testplan.html): The current status of the test plan\r\n* [TestScript](testscript.html): The current status of the test script\r\n* [ValueSet](valueset.html): The current status of the value set\r\n"
-* rest.resource[=].operation[0].name = "validate-code"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/ValueSet-it-validate-code"
-* rest.resource[=].operation[+].name = "invalidate-expansion"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/ValueSet-i-invalidate-expansion"
-* rest.resource[=].operation[+].name = "expand"
-* rest.resource[=].operation[=].definition = "http://hl7.org/fhir/uv/emedicinal-product-info/OperationDefinition/ValueSet-it-expand"
+
 * rest.interaction[0].code = #transaction
 * rest.interaction[+].code = #history-system
