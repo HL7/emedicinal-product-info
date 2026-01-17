@@ -88,25 +88,25 @@
                 }
             },
             {
-                "id": "ManufacturedItemDefinition.property:colour",
+                "id": "ManufacturedItemDefinition.property:color",
                 "path": "ManufacturedItemDefinition.property",
-                "sliceName": "colour",
+                "sliceName": "color",
                 "short": "Colour of the item"
             },
             {
-                "id": "ManufacturedItemDefinition.property:colour.type",
+                "id": "ManufacturedItemDefinition.property:color.type",
                 "path": "ManufacturedItemDefinition.property.type",
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
-                            "code": "colour"
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
+                            "code": "color"
                         }
                     ]
                 }
             },
             {
-                "id": "ManufacturedItemDefinition.property:colour.value[x]",
+                "id": "ManufacturedItemDefinition.property:color.value[x]",
                 "path": "ManufacturedItemDefinition.property.value[x]",
                 "type": [
                     {
@@ -115,25 +115,25 @@
                 ]
             },
             {
-                "id": "ManufacturedItemDefinition.property:flavour",
+                "id": "ManufacturedItemDefinition.property:flavor",
                 "path": "ManufacturedItemDefinition.property",
-                "sliceName": "flavour",
+                "sliceName": "flavor",
                 "short": "Flavour of the item"
             },
             {
-                "id": "ManufacturedItemDefinition.property:flavour.type",
+                "id": "ManufacturedItemDefinition.property:flavor.type",
                 "path": "ManufacturedItemDefinition.property.type",
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
-                            "code": "flavour"
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                            "code": "flavor"
                         }
                     ]
                 }
             },
             {
-                "id": "ManufacturedItemDefinition.property:flavour.value[x]",
+                "id": "ManufacturedItemDefinition.property:flavor.value[x]",
                 "path": "ManufacturedItemDefinition.property.value[x]",
                 "type": [
                     {
@@ -153,7 +153,7 @@
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
                             "code": "score"
                         }
                     ]
@@ -180,7 +180,7 @@
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
                             "code": "shape"
                         }
                     ]
@@ -207,7 +207,7 @@
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
                             "code": "surfaceForm"
                         }
                     ]
@@ -234,7 +234,7 @@
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
                             "code": "size"
                         }
                     ]
@@ -261,7 +261,7 @@
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/property-type",
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
                             "code": "image"
                         }
                     ]

@@ -29,10 +29,10 @@
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
                     },
                     {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-acetaminophen-100mg"
+                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
                     },
                     {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-acetaminophen-200mg"
+                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
                     }
                 ],
                 "date": "2023-10-27",
@@ -183,7 +183,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "INV",
+                                            "code": "InventedNamePart",
                                             "display": "Invented Name Part"
                                         }
                                     ]
@@ -195,7 +195,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "STR",
+                                            "code": "StrengthPart",
                                             "display": "Strength part"
                                         }
                                     ]
@@ -207,7 +207,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "FRM",
+                                            "code": "FormPart",
                                             "display": "Form part"
                                         }
                                     ]
@@ -219,7 +219,7 @@
                                 "country": {
                                     "coding": [
                                         {
-                                            "system": "http://hl7.org/fhir/country",
+                                            "system": "urn:iso:std:iso:3166",
                                             "code": "EE",
                                             "display": "Estonia"
                                         }
@@ -248,9 +248,10 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg",
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
-                "id": "mpd-epi-type2-example-acetaminophen-100mg",
+                "id": "mpd-epi-type2-example-paracetamol-100mg",
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
@@ -265,9 +266,10 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg",
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
-                "id": "mpd-epi-type2-example-acetaminophen-200mg",
+                "id": "mpd-epi-type2-example-paracetamol-200mg",
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
@@ -282,6 +284,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-indication-1",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-indication-1",
@@ -312,6 +315,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-indication-2",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-indication-2",
@@ -342,6 +346,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-contraindication-1",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-contraindication-1",
@@ -372,6 +377,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-contraindication-2",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-contraindication-2",
@@ -406,6 +412,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-1",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-interaction-1",
@@ -449,6 +456,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-2",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-interaction-2",
@@ -481,6 +489,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-undesirable-effect-1",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-undesirable-effect-1",
@@ -511,6 +520,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-undesirable-effect-2",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-undesirable-effect-2",
@@ -541,6 +551,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-warning-1",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-warning-1",
@@ -561,6 +572,7 @@
             }
         },
         {
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-warning-2",
             "resource": {
                 "resourceType": "ClinicalUseDefinition",
                 "id": "cud-warning-2",
@@ -581,10 +593,10 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-acetaminophen",
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-paracetamol",
             "resource": {
                 "resourceType": "RegulatedAuthorization",
-                "id": "ra-epi-type2-example-acetaminophen",
+                "id": "ra-epi-type2-example-paracetamol",
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
@@ -609,7 +621,7 @@
                     {
                         "coding": [
                             {
-                                "system": "http://hl7.org/fhir/country",
+                                "system": "urn:iso:std:iso:3166",
                                 "code": "EE",
                                 "display": "Estonia"
                             }
@@ -622,10 +634,10 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-epi-type2-example-acetaminophen",
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-epi-type2-example-paracetamol",
             "resource": {
                 "resourceType": "PackagedProductDefinition",
-                "id": "ppd-epi-type2-example-acetaminophen",
+                "id": "ppd-epi-type2-example-paracetamol",
                 "packageFor": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
@@ -657,7 +669,7 @@
                                 {
                                     "item": {
                                         "reference": {
-                                            "reference": "ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen"
+                                            "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
                                         }
                                     },
                                     "amount": {
@@ -673,10 +685,10 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen",
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-epi-type2-example-paracetamol",
             "resource": {
                 "resourceType": "ManufacturedItemDefinition",
-                "id": "mid-epi-type2-example-acetaminophen",
+                "id": "mid-epi-type2-example-paracetamol",
                 "status": "active",
                 "manufacturedDoseForm": {
                     "coding": [
@@ -701,15 +713,16 @@
                         "type": {
                             "coding": [
                                 {
-                                    "code": "colour"
+                                    "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
+                                    "code": "color"
                                 }
                             ]
                         },
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "http://hl7.org/fhir/colour",
-                                    "code": "white",
+                                    "system": "http://ncithesaurus.nci.nih.gov",
+                                    "code": "C48325",
                                     "display": "White"
                                 }
                             ]
@@ -719,10 +732,10 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-acetaminophen",
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-paracetamol",
             "resource": {
                 "resourceType": "AdministrableProductDefinition",
-                "id": "apd-epi-type2-example-acetaminophen",
+                "id": "apd-epi-type2-example-paracetamol",
                 "status": "active",
                 "formOf": [
                     {
@@ -749,7 +762,7 @@
                 },
                 "producedFrom": [
                     {
-                        "reference": "ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen"
+                        "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
                     }
                 ],
                 "routeOfAdministration": [
@@ -768,20 +781,20 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-acetaminophen-active",
+            "fullUrl": "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-active",
             "resource": {
                 "resourceType": "Ingredient",
-                "id": "ingredient-epi-type2-example-acetaminophen-active",
+                "id": "ingredient-epi-type2-example-paracetamol-active",
                 "status": "active",
                 "for": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
                     },
                     {
-                        "reference": "ManufacturedItemDefinition/mid-epi-type2-example-acetaminophen"
+                        "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
                     },
                     {
-                        "reference": "AdministrableProductDefinition/apd-epi-type2-example-acetaminophen"
+                        "reference": "AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
                     }
                 ],
                 "role": {
