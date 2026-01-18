@@ -27,22 +27,22 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
                     ]
                 },
-                "language": "en",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>WonderDrug ePI Type 3 Example</p></div>"
-                },
                 "identifier": {
                     "system": "http://example.org/identifier",
                     "value": "composition-epi-type3-example-wonderdrug"
                 },
                 "status": "final",
+                "language": "en",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>WonderDrug ePI Type 3 Example</p></div>"
+                },
                 "type": {
                     "coding": [
                         {
                             "system": "http://loinc.org",
-                            "code": "11555-4",
-                            "display": "Patient Information Leaflet"
+                            "code": "34066-1",
+                            "display": "FDA package insert Boxed warning section"
                         }
                     ],
                     "text": "Package Leaflet"
@@ -141,7 +141,11 @@
                                     {
                                         "reference": "MedicationKnowledge/medication-knowledge-epi-type3-example"
                                     }
-                                ]
+                                ],
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Clinical Particulars</div>"
+                                }
                             },
                             {
                                 "title": "1. What is in this leaflet",
@@ -159,7 +163,11 @@
                                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
                                 }
                             }
-                        ]
+                        ],
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Package Leaflet</div>"
+                        }
                     }
                 ]
             }
@@ -169,6 +177,11 @@
             "resource": {
                 "resourceType": "Organization",
                 "id": "org-epi-type3-example-pharma",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "https://spor.ema.europa.eu/omswi",
@@ -208,27 +221,32 @@
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
                 "id": "mpd-epi-type3-example-wonderdrug",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
                         "value": "WONDERDRUG-500MG"
                     }
                 ],
-                "domain": {
-                    "coding": [
-                        {
-                            "system": "http://hl7.org/fhir/medicinal-product-domain",
-                            "code": "Human",
-                            "display": "Human use"
-                        }
-                    ]
-                },
                 "status": {
                     "coding": [
                         {
                             "system": "http://hl7.org/fhir/publication-status",
                             "code": "active",
                             "display": "Active"
+                        }
+                    ]
+                },
+                "domain": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/medicinal-product-domain",
+                            "code": "Human",
+                            "display": "Human use"
                         }
                     ]
                 },
@@ -267,7 +285,7 @@
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
                                             "code": "DoseFormPart",
-                                            "display": "Dose Form Part"
+                                            "display": "Pharmaceutical dose form part"
                                         }
                                     ]
                                 }
@@ -311,6 +329,11 @@
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
                 "id": "mpd-epi-type2-example-paracetamol-100mg",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
@@ -329,6 +352,11 @@
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
                 "id": "mpd-epi-type2-example-paracetamol-200mg",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
@@ -358,26 +386,11 @@
                         "value": "cud-indication-1"
                     }
                 ],
+                "status": "active",
                 "type": "indication",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "indication"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "Adults"
                     }
                 ],
                 "indication": {
@@ -392,7 +405,18 @@
                             ]
                         }
                     }
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "indication",
+                                "display": "Indication"
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -411,26 +435,11 @@
                         "value": "cud-indication-2"
                     }
                 ],
+                "status": "active",
                 "type": "indication",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "indication"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "Children"
                     }
                 ],
                 "indication": {
@@ -445,7 +454,18 @@
                             ]
                         }
                     }
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "indication",
+                                "display": "Indication"
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -464,26 +484,11 @@
                         "value": "cud-contraindication-1"
                     }
                 ],
+                "status": "active",
                 "type": "contraindication",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "contraindication"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "All"
                     }
                 ],
                 "contraindication": {
@@ -492,13 +497,24 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "297950004",
-                                    "display": "Severe hepatic insufficiency"
+                                    "code": "197270009",
+                                    "display": "Acute hepatic failure"
                                 }
                             ]
                         }
                     }
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "contraindication",
+                                "display": "Contraindication"
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -517,26 +533,11 @@
                         "value": "cud-contraindication-2"
                     }
                 ],
+                "status": "active",
                 "type": "contraindication",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "contraindication"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "Elderly"
                     }
                 ],
                 "contraindication": {
@@ -552,10 +553,30 @@
                                         }
                                     ]
                                 }
+                            },
+                            "relationshipType": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/benefit-and-risk-relationship",
+                                        "code": "contraindicated-only-with",
+                                        "display": "Only contraindicated with"
+                                    }
+                                ]
                             }
                         }
                     ]
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "contraindication",
+                                "display": "Contraindication"
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -574,26 +595,11 @@
                         "value": "cud-interaction-1"
                     }
                 ],
+                "status": "active",
                 "type": "interaction",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "interaction"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "All"
                     }
                 ],
                 "interaction": {
@@ -603,7 +609,7 @@
                                 "coding": [
                                     {
                                         "system": "http://snomed.info/sct",
-                                        "code": "387342005",
+                                        "code": "372756006",
                                         "display": "Warfarin"
                                     }
                                 ]
@@ -615,13 +621,24 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "72054009",
+                                    "code": "404684003",
                                     "display": "Enhanced anticoagulant effect"
                                 }
                             ]
                         }
                     }
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "interaction",
+                                "display": "Interaction"
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -640,26 +657,11 @@
                         "value": "cud-interaction-2"
                     }
                 ],
+                "status": "active",
                 "type": "interaction",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "interaction"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "All"
                     }
                 ],
                 "interaction": {
@@ -668,15 +670,26 @@
                             "itemCodeableConcept": {
                                 "coding": [
                                     {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "372551000",
+                                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                        "code": "2341",
                                         "display": "Chloramphenicol"
                                     }
                                 ]
                             }
                         }
                     ]
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "interaction",
+                                "display": "Interaction"
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -695,26 +708,11 @@
                         "value": "cud-undesirable-effect-1"
                     }
                 ],
+                "status": "active",
                 "type": "undesirable-effect",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "undesirable-effect"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "All"
                     }
                 ],
                 "undesirableEffect": {
@@ -723,13 +721,31 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "29164005",
+                                    "code": "302215000",
                                     "display": "Thrombocytopenia"
                                 }
                             ]
                         }
                     }
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "undesirable-effect",
+                                "display": "Undesirable-effect"
+                            }
+                        ]
+                    }
+                ],
+                "population": [
+                    {
+                        "description": {
+                            "text": "General population"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -748,26 +764,11 @@
                         "value": "cud-undesirable-effect-2"
                     }
                 ],
+                "status": "active",
                 "type": "undesirable-effect",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "undesirable-effect"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                    }
-                ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "All"
                     }
                 ],
                 "undesirableEffect": {
@@ -782,7 +783,25 @@
                             ]
                         }
                     }
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "undesirable-effect",
+                                "display": "Undesirable-effect"
+                            }
+                        ]
+                    }
+                ],
+                "population": [
+                    {
+                        "description": {
+                            "text": "General population"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -801,31 +820,34 @@
                         "value": "cud-warning-1"
                     }
                 ],
+                "status": "active",
                 "type": "warning",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "warning"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
                     }
                 ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "All"
-                    }
-                ],
                 "warning": {
                     "description": "Do not exceed the stated dose."
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "warning",
+                                "display": "Warning"
+                            }
+                        ]
+                    }
+                ],
+                "population": [
+                    {
+                        "description": {
+                            "text": "General population"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -844,31 +866,34 @@
                         "value": "cud-warning-2"
                     }
                 ],
+                "status": "active",
                 "type": "warning",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/clinical-use-definition-category",
-                                "code": "warning"
-                            }
-                        ]
-                    }
-                ],
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
                     }
                 ],
-                "status": "active",
-                "population": [
-                    {
-                        "description": "All"
-                    }
-                ],
                 "warning": {
                     "description": "Keep out of the sight and reach of children."
-                }
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                                "code": "warning",
+                                "display": "Warning"
+                            }
+                        ]
+                    }
+                ],
+                "population": [
+                    {
+                        "description": {
+                            "text": "General population"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -876,12 +901,26 @@
             "resource": {
                 "resourceType": "RegulatedAuthorization",
                 "id": "ra-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
                         "value": "MA-123456789"
                     }
                 ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
@@ -917,6 +956,26 @@
             "resource": {
                 "resourceType": "PackagedProductDefinition",
                 "id": "ppd-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ppd-epi-type2-example-paracetamol"
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "packageFor": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
@@ -968,6 +1027,17 @@
             "resource": {
                 "resourceType": "ManufacturedItemDefinition",
                 "id": "mid-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "mid-epi-type2-example-paracetamol"
+                    }
+                ],
                 "status": "active",
                 "manufacturedDoseForm": {
                     "coding": [
@@ -1015,6 +1085,17 @@
             "resource": {
                 "resourceType": "AdministrableProductDefinition",
                 "id": "apd-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "apd-epi-type2-example-paracetamol"
+                    }
+                ],
                 "status": "active",
                 "formOf": [
                     {
@@ -1064,6 +1145,17 @@
             "resource": {
                 "resourceType": "Ingredient",
                 "id": "ingredient-epi-type2-example-paracetamol-active",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ingredient-epi-type2-example-paracetamol-active"
+                    }
+                ],
                 "status": "active",
                 "for": [
                     {
@@ -1108,9 +1200,10 @@
                                 },
                                 "denominator": {
                                     "value": 1,
-                                    "unit": "tablet",
+                                    "unit": "Tablet",
                                     "system": "http://standardterms.edqm.eu",
-                                    "code": "tablet"
+                                    "code": "10219000",
+                                    "display": "Tablet"
                                 }
                             }
                         }
@@ -1157,7 +1250,7 @@
                                             "coding": [
                                                 {
                                                     "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
-                                                    "code": "usual"
+                                                    "code": "ordered"
                                                 }
                                             ]
                                         },

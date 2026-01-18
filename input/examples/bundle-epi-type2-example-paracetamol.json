@@ -20,16 +20,16 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
                     ]
                 },
-                "language": "en",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
-                },
                 "identifier": {
                     "system": "http://example.org/identifier",
                     "value": "composition-epi-type2-example-paracetamol"
                 },
                 "status": "final",
+                "language": "en",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
+                },
                 "type": {
                     "coding": [
                         {
@@ -134,7 +134,11 @@
                                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
                                 }
                             }
-                        ]
+                        ],
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Package Leaflet</div>"
+                        }
                     }
                 ]
             }
@@ -144,6 +148,11 @@
             "resource": {
                 "resourceType": "Organization",
                 "id": "org-epi-type2-example-acme",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "https://spor.ema.europa.eu/omswi",
@@ -183,27 +192,32 @@
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
                 "id": "mpd-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
                         "value": "WONDERDRUG-500MG"
                     }
                 ],
-                "domain": {
-                    "coding": [
-                        {
-                            "system": "http://hl7.org/fhir/medicinal-product-domain",
-                            "code": "Human",
-                            "display": "Human use"
-                        }
-                    ]
-                },
                 "status": {
                     "coding": [
                         {
                             "system": "http://hl7.org/fhir/publication-status",
                             "code": "active",
                             "display": "Active"
+                        }
+                    ]
+                },
+                "domain": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/medicinal-product-domain",
+                            "code": "Human",
+                            "display": "Human use"
                         }
                     ]
                 },
@@ -295,12 +309,26 @@
             "resource": {
                 "resourceType": "RegulatedAuthorization",
                 "id": "ra-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
                         "value": "MA-123456789"
                     }
                 ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "subject": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
@@ -336,6 +364,26 @@
             "resource": {
                 "resourceType": "PackagedProductDefinition",
                 "id": "ppd-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ppd-epi-type2-example-paracetamol"
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "packageFor": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
@@ -387,6 +435,17 @@
             "resource": {
                 "resourceType": "ManufacturedItemDefinition",
                 "id": "mid-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "mid-epi-type2-example-paracetamol"
+                    }
+                ],
                 "status": "active",
                 "manufacturedDoseForm": {
                     "coding": [
@@ -434,6 +493,17 @@
             "resource": {
                 "resourceType": "AdministrableProductDefinition",
                 "id": "apd-epi-type2-example-paracetamol",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "apd-epi-type2-example-paracetamol"
+                    }
+                ],
                 "status": "active",
                 "formOf": [
                     {
@@ -483,6 +553,17 @@
             "resource": {
                 "resourceType": "Ingredient",
                 "id": "ingredient-epi-type2-example-paracetamol-active",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ingredient-epi-type2-example-paracetamol-active"
+                    }
+                ],
                 "status": "active",
                 "for": [
                     {
@@ -529,7 +610,8 @@
                                     "value": 1,
                                     "unit": "tablet",
                                     "system": "http://standardterms.edqm.eu",
-                                    "code": "tablet"
+                                    "code": "10219000",
+                                    "display": "Tablet"
                                 }
                             }
                         }
@@ -542,6 +624,17 @@
             "resource": {
                 "resourceType": "Ingredient",
                 "id": "ingredient-epi-type2-example-paracetamol-excipient-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ingredient-epi-type2-example-paracetamol-excipient-1"
+                    }
+                ],
                 "status": "active",
                 "for": [
                     {
@@ -583,6 +676,17 @@
             "resource": {
                 "resourceType": "Ingredient",
                 "id": "ingredient-epi-type2-example-paracetamol-excipient-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ingredient-epi-type2-example-paracetamol-excipient-2"
+                    }
+                ],
                 "status": "active",
                 "for": [
                     {
@@ -624,6 +728,17 @@
             "resource": {
                 "resourceType": "Ingredient",
                 "id": "ingredient-epi-type2-example-paracetamol-excipient-3",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ingredient-epi-type2-example-paracetamol-excipient-3"
+                    }
+                ],
                 "status": "active",
                 "for": [
                     {
@@ -665,6 +780,11 @@
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
                 "id": "mpd-epi-type2-example-paracetamol-100mg",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
@@ -681,7 +801,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "INV",
+                                            "code": "InventedNamePart",
                                             "display": "Invented Name Part"
                                         }
                                     ]
@@ -693,7 +813,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "STR",
+                                            "code": "StrengthPart",
                                             "display": "Strength part"
                                         }
                                     ]
@@ -705,7 +825,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "FRM",
+                                            "code": "FormPart",
                                             "display": "Form part"
                                         }
                                     ]
@@ -721,6 +841,26 @@
             "resource": {
                 "resourceType": "PackagedProductDefinition",
                 "id": "ppd-epi-type2-example-paracetamol-100mg-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ppd-epi-type2-example-paracetamol-100mg-1"
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "packageFor": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
@@ -773,6 +913,26 @@
             "resource": {
                 "resourceType": "PackagedProductDefinition",
                 "id": "ppd-epi-type2-example-paracetamol-100mg-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ppd-epi-type2-example-paracetamol-100mg-2"
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "packageFor": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
@@ -824,6 +984,11 @@
             "resource": {
                 "resourceType": "MedicinalProductDefinition",
                 "id": "mpd-epi-type2-example-paracetamol-200mg",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                    ]
+                },
                 "identifier": [
                     {
                         "system": "http://ema.europa.eu/identifier",
@@ -840,7 +1005,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "INV",
+                                            "code": "InventedNamePart",
                                             "display": "Invented Name Part"
                                         }
                                     ]
@@ -852,7 +1017,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "STR",
+                                            "code": "StrengthPart",
                                             "display": "Strength part"
                                         }
                                     ]
@@ -864,7 +1029,7 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "FRM",
+                                            "code": "FormPart",
                                             "display": "Form part"
                                         }
                                     ]
@@ -880,6 +1045,26 @@
             "resource": {
                 "resourceType": "PackagedProductDefinition",
                 "id": "ppd-epi-type2-example-paracetamol-200mg-1",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ppd-epi-type2-example-paracetamol-200mg-1"
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "packageFor": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
@@ -932,6 +1117,26 @@
             "resource": {
                 "resourceType": "PackagedProductDefinition",
                 "id": "ppd-epi-type2-example-paracetamol-200mg-2",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "ppd-epi-type2-example-paracetamol-200mg-2"
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "packageFor": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
@@ -983,6 +1188,17 @@
             "resource": {
                 "resourceType": "ManufacturedItemDefinition",
                 "id": "mid-epi-type2-example-paracetamol-100mg",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "mid-epi-type2-example-paracetamol-100mg"
+                    }
+                ],
                 "status": "active",
                 "manufacturedDoseForm": {
                     "coding": [
@@ -1009,6 +1225,17 @@
             "resource": {
                 "resourceType": "ManufacturedItemDefinition",
                 "id": "mid-epi-type2-example-paracetamol-200mg",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "mid-epi-type2-example-paracetamol-200mg"
+                    }
+                ],
                 "status": "active",
                 "manufacturedDoseForm": {
                     "coding": [

@@ -7,3 +7,8 @@ Coded concepts defined for ePI use only."""
 * ^caseSensitive = false
 * #flavor "Flavor" "Placeholder for the Flavor concept"
 * #surfaceform "Surface form" "Placeholder for the Surface form concept"
+* #indication "Indication" "Indication"
+* #contraindication "Contraindication" "Contraindication"
+* #interaction "Interaction" "Interaction"
+* #undesirable-effect "Undesirable effect" "Undesirable effect"
+* #warning "Warning" "Warning"

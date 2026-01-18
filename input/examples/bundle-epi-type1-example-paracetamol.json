@@ -27,16 +27,16 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
                     ]
                 },
-                "language": "en",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Package Leaflet: Information for the user - Paracetamol 500 mg tablets</p></div>"
-                },
                 "identifier": {
                     "system": "http://example.org/identifier",
                     "value": "composition-paracetamol-t1"
                 },
                 "status": "final",
+                "language": "en",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Package Leaflet: Information for the user - Paracetamol 500 mg tablets</p></div>"
+                },
                 "type": {
                     "coding": [
                         {
@@ -162,7 +162,11 @@
                                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>6. Contents of the pack and other information</h3><p><strong>What Paracetamol contains:</strong> The active substance is paracetamol. The other ingredients are pregelatinized starch, povidone, stearic acid, talc, magnesium stearate, and hypromellose.</p><p><strong>What Paracetamol looks like and contents of the pack:</strong> Paracetamol tablets are white and round. They are available in blister packs of 30 or 50 tablets.</p></div>"
                                 }
                             }
-                        ]
+                        ],
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Package Leaflet</div>"
+                        }
                     }
                 ]
             }

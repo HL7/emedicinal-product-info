@@ -55,7 +55,7 @@
             {
                 "id": "ManufacturedItemDefinition.unitOfPresentation",
                 "path": "ManufacturedItemDefinition.unitOfPresentation",
-                "short": "The “real world” units in which the quantity of the manufactured item is described.",
+                "short": "The \u201creal world\u201d units in which the quantity of the manufactured item is described.",
                 "binding": {
                     "strength": "example",
                     "valueSet": "http://hl7.org/fhir/ValueSet/unit-of-presentation"
@@ -106,6 +106,11 @@
                 }
             },
             {
+                "id": "ManufacturedItemDefinition.property:color.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "color"
+            },
+            {
                 "id": "ManufacturedItemDefinition.property:color.value[x]",
                 "path": "ManufacturedItemDefinition.property.value[x]",
                 "type": [
@@ -131,6 +136,11 @@
                         }
                     ]
                 }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:flavor.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "flavor"
             },
             {
                 "id": "ManufacturedItemDefinition.property:flavor.value[x]",
@@ -160,6 +170,11 @@
                 }
             },
             {
+                "id": "ManufacturedItemDefinition.property:score.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "score"
+            },
+            {
                 "id": "ManufacturedItemDefinition.property:score.value[x]",
                 "path": "ManufacturedItemDefinition.property.value[x]",
                 "type": [
@@ -185,6 +200,11 @@
                         }
                     ]
                 }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:shape.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "shape"
             },
             {
                 "id": "ManufacturedItemDefinition.property:shape.value[x]",
@@ -214,6 +234,11 @@
                 }
             },
             {
+                "id": "ManufacturedItemDefinition.property:surfaceForm.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "surfaceForm"
+            },
+            {
                 "id": "ManufacturedItemDefinition.property:surfaceForm.value[x]",
                 "path": "ManufacturedItemDefinition.property.value[x]",
                 "type": [
@@ -239,6 +264,11 @@
                         }
                     ]
                 }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:size.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "size"
             },
             {
                 "id": "ManufacturedItemDefinition.property:size.value[x]",
@@ -268,6 +298,11 @@
                 }
             },
             {
+                "id": "ManufacturedItemDefinition.property:image.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "image"
+            },
+            {
                 "id": "ManufacturedItemDefinition.property:image.value[x]",
                 "path": "ManufacturedItemDefinition.property.value[x]",
                 "type": [
@@ -293,6 +328,11 @@
                         }
                     ]
                 }
+            },
+            {
+                "id": "ManufacturedItemDefinition.property:imprint.type.coding.code",
+                "path": "ManufacturedItemDefinition.property.type.coding.code",
+                "fixedCode": "imprint"
             },
             {
                 "id": "ManufacturedItemDefinition.property:imprint.value[x]",

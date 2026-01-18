@@ -172,8 +172,8 @@
                 "slicing": {
                     "discriminator": [
                         {
-                            "type": "value",
-                            "path": "type.coding.code"
+                            "type": "pattern",
+                            "path": "type"
                         }
                     ],
                     "rules": "open"
@@ -268,11 +268,6 @@
                         }
                     ]
                 }
-            },
-            {
-                "id": "MedicinalProductDefinition.name.part.part",
-                "path": "MedicinalProductDefinition.name.part.part",
-                "short": "A fragment of a product name."
             },
             {
                 "id": "MedicinalProductDefinition.name.usage",

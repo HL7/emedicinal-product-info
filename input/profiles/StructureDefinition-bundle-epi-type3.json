@@ -226,21 +226,6 @@
                 ]
             },
             {
-                "id": "Bundle.entry:clinicalUseDefinition",
-                "path": "Bundle.entry",
-                "sliceName": "clinicalUseDefinition",
-                "min": 0
-            },
-            {
-                "id": "Bundle.entry:clinicalUseDefinition.resource",
-                "path": "Bundle.entry.resource",
-                "type": [
-                    {
-                        "code": "ClinicalUseDefinition"
-                    }
-                ]
-            },
-            {
                 "id": "Bundle.entry:clinicalUseDefinitionIndication",
                 "path": "Bundle.entry",
                 "sliceName": "clinicalUseDefinitionIndication",
@@ -341,7 +326,10 @@
                 "path": "Bundle.entry.resource",
                 "type": [
                     {
-                        "code": "MedicationKnowledge"
+                        "code": "MedicationKnowledge",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicationKnowledge-uv-epi"
+                        ]
                     }
                 ]
             }
