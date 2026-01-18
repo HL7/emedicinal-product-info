@@ -27,11 +27,21 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
                     ]
                 },
-                "identifier": {
-                    "system": "http://example.org/identifier",
-                    "value": "composition-epi-type3-example-wonderdrug"
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "composition-epi-type3-example-wonderdrug"
+                    }
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "final",
+                            "display": "Final"
+                        }
+                    ]
                 },
-                "status": "final",
                 "language": "en",
                 "text": {
                     "status": "generated",
@@ -47,9 +57,11 @@
                     ],
                     "text": "Package Leaflet"
                 },
-                "subject": {
-                    "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
-                },
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                    }
+                ],
                 "date": "2023-10-27",
                 "author": [
                     {
@@ -386,7 +398,15 @@
                         "value": "cud-indication-1"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "indication",
                 "subject": [
                     {
@@ -435,7 +455,15 @@
                         "value": "cud-indication-2"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "indication",
                 "subject": [
                     {
@@ -484,7 +512,15 @@
                         "value": "cud-contraindication-1"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "contraindication",
                 "subject": [
                     {
@@ -533,7 +569,15 @@
                         "value": "cud-contraindication-2"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "contraindication",
                 "subject": [
                     {
@@ -595,7 +639,15 @@
                         "value": "cud-interaction-1"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "interaction",
                 "subject": [
                     {
@@ -657,7 +709,15 @@
                         "value": "cud-interaction-2"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "interaction",
                 "subject": [
                     {
@@ -708,7 +768,15 @@
                         "value": "cud-undesirable-effect-1"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "undesirable-effect",
                 "subject": [
                     {
@@ -726,7 +794,14 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "population": [
+                        {
+                            "description": {
+                                "text": "General population"
+                            }
+                        }
+                    ]
                 },
                 "category": [
                     {
@@ -737,13 +812,6 @@
                                 "display": "Undesirable-effect"
                             }
                         ]
-                    }
-                ],
-                "population": [
-                    {
-                        "description": {
-                            "text": "General population"
-                        }
                     }
                 ]
             }
@@ -764,7 +832,15 @@
                         "value": "cud-undesirable-effect-2"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "undesirable-effect",
                 "subject": [
                     {
@@ -782,7 +858,14 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "population": [
+                        {
+                            "description": {
+                                "text": "General population"
+                            }
+                        }
+                    ]
                 },
                 "category": [
                     {
@@ -793,13 +876,6 @@
                                 "display": "Undesirable-effect"
                             }
                         ]
-                    }
-                ],
-                "population": [
-                    {
-                        "description": {
-                            "text": "General population"
-                        }
                     }
                 ]
             }
@@ -820,7 +896,15 @@
                         "value": "cud-warning-1"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "warning",
                 "subject": [
                     {
@@ -828,7 +912,14 @@
                     }
                 ],
                 "warning": {
-                    "description": "Do not exceed the stated dose."
+                    "description": "Do not exceed the stated dose.",
+                    "population": [
+                        {
+                            "description": {
+                                "text": "General population"
+                            }
+                        }
+                    ]
                 },
                 "category": [
                     {
@@ -839,13 +930,6 @@
                                 "display": "Warning"
                             }
                         ]
-                    }
-                ],
-                "population": [
-                    {
-                        "description": {
-                            "text": "General population"
-                        }
                     }
                 ]
             }
@@ -866,7 +950,15 @@
                         "value": "cud-warning-2"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "type": "warning",
                 "subject": [
                     {
@@ -874,7 +966,14 @@
                     }
                 ],
                 "warning": {
-                    "description": "Keep out of the sight and reach of children."
+                    "description": "Keep out of the sight and reach of children.",
+                    "population": [
+                        {
+                            "description": {
+                                "text": "General population"
+                            }
+                        }
+                    ]
                 },
                 "category": [
                     {
@@ -885,13 +984,6 @@
                                 "display": "Warning"
                             }
                         ]
-                    }
-                ],
-                "population": [
-                    {
-                        "description": {
-                            "text": "General population"
-                        }
                     }
                 ]
             }
@@ -1038,7 +1130,15 @@
                         "value": "mid-epi-type2-example-paracetamol"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "manufacturedDoseForm": {
                     "coding": [
                         {
@@ -1096,7 +1196,15 @@
                         "value": "apd-epi-type2-example-paracetamol"
                     }
                 ],
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "formOf": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
@@ -1150,13 +1258,19 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "http://example.org/identifier",
-                        "value": "ingredient-epi-type2-example-paracetamol-active"
-                    }
-                ],
-                "status": "active",
+                "identifier": {
+                    "system": "http://example.org/identifier",
+                    "value": "ingredient-epi-type2-example-paracetamol-active"
+                },
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "for": [
                     {
                         "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
@@ -1202,8 +1316,7 @@
                                     "value": 1,
                                     "unit": "Tablet",
                                     "system": "http://standardterms.edqm.eu",
-                                    "code": "10219000",
-                                    "display": "Tablet"
+                                    "code": "10219000"
                                 }
                             }
                         }
@@ -1221,7 +1334,15 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicationKnowledge-uv-epi"
                     ]
                 },
-                "status": "active",
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
                 "code": {
                     "coding": [
                         {
@@ -1254,9 +1375,11 @@
                                                 }
                                             ]
                                         },
-                                        "dosage": {
-                                            "text": "1 tablet every 4 to 6 hours"
-                                        }
+                                        "dosage": [
+                                            {
+                                                "text": "1 tablet every 4 to 6 hours"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
