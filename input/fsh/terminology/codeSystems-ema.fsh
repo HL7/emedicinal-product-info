@@ -29,6 +29,7 @@ CodeSystem: EmaSporNamePartType
 Id: spor-namePartType
 Title: "Medicinal Product Name Part Type"
 Description: """Example of the Medicinal Product Name Part Type list from the EMA SPOR RMS"""
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^caseSensitive = false
 * ^content = #example
@@ -55,6 +56,7 @@ CodeSystem: EmaSporPackaging
 Id: spor-packaging
 Title: "Packaging EMA SPOR"
 Description: "Example of the Package typesmlist from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000073346"
 * ^status = #draft
 * ^experimental = true
@@ -146,6 +148,7 @@ CodeSystem: EmaSporRouteMethodAdm
 Id: spor-routeMethodAdm
 Title: "Routes and Methods of Administration  EMA SPOR"
 Description: "Example (fragment) of the Routes and Methods of Administration list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000073345"
 * ^status = #draft
 * ^experimental = true
@@ -166,6 +169,7 @@ CodeSystem: EmaSporIngredientRole
 Id: spor-ingredientRole
 Title: "Ingredient Role EMA SPOR"
 Description: "Example (fragment) of the Ingredient Role list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000072050"
 * ^status = #draft
 * ^experimental = true
@@ -179,6 +183,7 @@ CodeSystem: EmaSporLegalStatusForTheSupply
 Id: spor-legalStatusForTheSupply
 Title: "Legal Status for the Supply EMA SPOR"
 Description: "Example (fragment) of the Legal status of supply list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000072050"
 * ^caseSensitive = false
@@ -200,6 +205,7 @@ CodeSystem: EmaProductInformationTemplate
 Id: spor-productInformationTemplate
 Title: "Product Information Template SPOR"
 Description: "Example (fragment) of the Product Information Template list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/200000029659"
 * ^caseSensitive = true
@@ -343,6 +349,7 @@ CodeSystem: EmaSporMaterial
 Id: spor-material
 Title: "Material EMA SPOR"
 Description: "Example (fragment) of the Package material list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/200000003199"
 * ^caseSensitive = true
@@ -393,6 +400,7 @@ CodeSystem: EmaSporProductCategory
 Id: spor-productCategory
 Title: "Material EMA SPOR"
 Description: "Example (fragment) of the Product Category list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000155526"
 * ^caseSensitive = true
@@ -416,6 +424,7 @@ CodeSystem: EmaSporUnitOfPresentation
 Id: spor-UnitOfPresentation
 Title: "Unit of Presentation EMA SPOR"
 Description: "Example (fragment) of the Unit of presentation list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/200000000014"
 * ^status = #draft
@@ -482,6 +491,7 @@ CodeSystem: EmaSporScope
 Id: spor-scope
 Title: "Scope EMA SPOR"
 Description: "Example (fragment) of the Scope list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/100000072055"
 * ^status = #draft
@@ -498,6 +508,7 @@ CodeSystem: EmaSporOrganisationRoleType
 Id: spor-organisationRoleType
 Title: "Organisation Role Type EMA SPOR"
 Description: "Example of the Organisation Role Type list from the EMA SPOR RMS."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^url = "https://spor.ema.europa.eu/v1/lists/220000000031"
 * ^status = #draft

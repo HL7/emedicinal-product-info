@@ -1,17 +1,23 @@
 {
     "resourceType": "StructureDefinition",
-    "fhirVersion": "5.0.0",
-    "kind": "resource",
-    "abstract": false,
-    "type": "Bundle",
-    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
-    "derivation": "constraint",
     "id": "bundle-epi-type3",
     "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type3",
     "name": "BundleEpiType3",
     "title": "Bundle - ePI Type 3",
     "status": "active",
     "description": "This profile represents the constraints applied to the Bundle resource used in the ePI Type 3 (Clinical/Knowledge) FHIR Implementation Guide.",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+            "valueCode": "brr"
+        }
+    ],
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Bundle",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+    "derivation": "constraint",
     "differential": {
         "element": [
             {

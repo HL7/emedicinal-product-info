@@ -1,230 +1,236 @@
 {
-  "resourceType": "StructureDefinition",
-  "fhirVersion": "5.0.0",
-  "kind": "resource",
-  "abstract": false,
-  "type": "Bundle",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
-  "derivation": "constraint",
-  "id": "bundle-epi-type2",
-  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type2",
-  "name": "BundleEpiType2",
-  "title": "Bundle - ePI Type 2",
-  "description": "This profile represents the constraints applied to the Bundle resource used in the ePI Type 2 (Structured Data) FHIR Implementation Guide.",
-  "status": "active",
-  "differential": {
-    "element": [
-      {
-        "id": "Bundle.id",
-        "path": "Bundle.id",
-        "min": 1
-      },
-      {
-        "id": "Bundle.meta.versionId",
-        "path": "Bundle.meta.versionId",
-        "min": 1
-      },
-      {
-        "id": "Bundle.meta.lastUpdated",
-        "path": "Bundle.meta.lastUpdated",
-        "min": 1
-      },
-      {
-        "id": "Bundle.meta.profile",
-        "path": "Bundle.meta.profile",
-        "min": 1
-      },
-      {
-        "id": "Bundle.identifier",
-        "path": "Bundle.identifier",
-        "min": 1
-      },
-      {
-        "id": "Bundle.type",
-        "path": "Bundle.type",
-        "fixedCode": "document"
-      },
-      {
-        "id": "Bundle.timestamp",
-        "path": "Bundle.timestamp",
-        "min": 1
-      },
-      {
-        "id": "Bundle.entry",
-        "path": "Bundle.entry",
-        "slicing": {
-          "discriminator": [
+    "resourceType": "StructureDefinition",
+    "id": "bundle-epi-type2",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type2",
+    "name": "BundleEpiType2",
+    "title": "Bundle - ePI Type 2",
+    "status": "active",
+    "description": "This profile represents the constraints applied to the Bundle resource used in the ePI Type 2 (Structured Data) FHIR Implementation Guide.",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+            "valueCode": "brr"
+        }
+    ],
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Bundle",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
             {
-              "type": "profile",
-              "path": "$this.resource"
+                "id": "Bundle.id",
+                "path": "Bundle.id",
+                "min": 1
+            },
+            {
+                "id": "Bundle.meta.versionId",
+                "path": "Bundle.meta.versionId",
+                "min": 1
+            },
+            {
+                "id": "Bundle.meta.lastUpdated",
+                "path": "Bundle.meta.lastUpdated",
+                "min": 1
+            },
+            {
+                "id": "Bundle.meta.profile",
+                "path": "Bundle.meta.profile",
+                "min": 1
+            },
+            {
+                "id": "Bundle.identifier",
+                "path": "Bundle.identifier",
+                "min": 1
+            },
+            {
+                "id": "Bundle.type",
+                "path": "Bundle.type",
+                "fixedCode": "document"
+            },
+            {
+                "id": "Bundle.timestamp",
+                "path": "Bundle.timestamp",
+                "min": 1
+            },
+            {
+                "id": "Bundle.entry",
+                "path": "Bundle.entry",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "profile",
+                            "path": "$this.resource"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 1
+            },
+            {
+                "id": "Bundle.entry:composition",
+                "path": "Bundle.entry",
+                "sliceName": "composition",
+                "min": 1
+            },
+            {
+                "id": "Bundle.entry:composition.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "Composition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:organization",
+                "path": "Bundle.entry",
+                "sliceName": "organization",
+                "min": 1
+            },
+            {
+                "id": "Bundle.entry:organization.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "Organization",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:medicinalProduct",
+                "path": "Bundle.entry",
+                "sliceName": "medicinalProduct",
+                "min": 1
+            },
+            {
+                "id": "Bundle.entry:medicinalProduct.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "MedicinalProductDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:manufacturedItem",
+                "path": "Bundle.entry",
+                "sliceName": "manufacturedItem",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:manufacturedItem.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "ManufacturedItemDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:administrableProduct",
+                "path": "Bundle.entry",
+                "sliceName": "administrableProduct",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:administrableProduct.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "AdministrableProductDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:ingredient",
+                "path": "Bundle.entry",
+                "sliceName": "ingredient",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:ingredient.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "Ingredient",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:substance",
+                "path": "Bundle.entry",
+                "sliceName": "substance",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:substance.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "SubstanceDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:regulatedAuthorization",
+                "path": "Bundle.entry",
+                "sliceName": "regulatedAuthorization",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:regulatedAuthorization.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "RegulatedAuthorization",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:packagedProduct",
+                "path": "Bundle.entry",
+                "sliceName": "packagedProduct",
+                "min": 0
+            },
+            {
+                "id": "Bundle.entry:packagedProduct.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "PackagedProductDefinition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
+                        ]
+                    }
+                ]
             }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Bundle.entry:composition",
-        "path": "Bundle.entry",
-        "sliceName": "composition",
-        "min": 1
-      },
-      {
-        "id": "Bundle.entry:composition.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Composition",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
-            ]
-          }
         ]
-      },
-      {
-        "id": "Bundle.entry:organization",
-        "path": "Bundle.entry",
-        "sliceName": "organization",
-        "min": 1
-      },
-      {
-        "id": "Bundle.entry:organization.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Organization",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:medicinalProduct",
-        "path": "Bundle.entry",
-        "sliceName": "medicinalProduct",
-        "min": 1
-      },
-      {
-        "id": "Bundle.entry:medicinalProduct.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "MedicinalProductDefinition",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:manufacturedItem",
-        "path": "Bundle.entry",
-        "sliceName": "manufacturedItem",
-        "min": 0
-      },
-      {
-        "id": "Bundle.entry:manufacturedItem.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "ManufacturedItemDefinition",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:administrableProduct",
-        "path": "Bundle.entry",
-        "sliceName": "administrableProduct",
-        "min": 0
-      },
-      {
-        "id": "Bundle.entry:administrableProduct.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "AdministrableProductDefinition",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:ingredient",
-        "path": "Bundle.entry",
-        "sliceName": "ingredient",
-        "min": 0
-      },
-      {
-        "id": "Bundle.entry:ingredient.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Ingredient",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:substance",
-        "path": "Bundle.entry",
-        "sliceName": "substance",
-        "min": 0
-      },
-      {
-        "id": "Bundle.entry:substance.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "SubstanceDefinition",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-uv-epi"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:regulatedAuthorization",
-        "path": "Bundle.entry",
-        "sliceName": "regulatedAuthorization",
-        "min": 0
-      },
-      {
-        "id": "Bundle.entry:regulatedAuthorization.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "RegulatedAuthorization",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:packagedProduct",
-        "path": "Bundle.entry",
-        "sliceName": "packagedProduct",
-        "min": 0
-      },
-      {
-        "id": "Bundle.entry:packagedProduct.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "PackagedProductDefinition",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"
-            ]
-          }
-        ]
-      }
-    ]
-  }
+    }
 }

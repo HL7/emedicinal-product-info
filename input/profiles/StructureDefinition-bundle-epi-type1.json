@@ -1,84 +1,90 @@
 {
-  "resourceType": "StructureDefinition",
-  "fhirVersion": "5.0.0",
-  "kind": "resource",
-  "abstract": false,
-  "type": "Bundle",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
-  "derivation": "constraint",
-  "id": "bundle-epi-type1",
-  "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type1",
-  "name": "BundleEpiType1",
-  "title": "Bundle - ePI Type 1",
-  "status": "active",
-  "description": "This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide.",
-  "differential": {
-    "element": [
-      {
-        "id": "Bundle.id",
-        "path": "Bundle.id",
-        "min": 1
-      },
-      {
-        "id": "Bundle.meta.versionId",
-        "path": "Bundle.meta.versionId",
-        "min": 1
-      },
-      {
-        "id": "Bundle.meta.lastUpdated",
-        "path": "Bundle.meta.lastUpdated",
-        "min": 1
-      },
-      {
-        "id": "Bundle.meta.profile",
-        "path": "Bundle.meta.profile",
-        "min": 1
-      },
-      {
-        "id": "Bundle.identifier",
-        "path": "Bundle.identifier",
-        "min": 1
-      },
-      {
-        "id": "Bundle.type",
-        "path": "Bundle.type",
-        "fixedCode": "document"
-      },
-      {
-        "id": "Bundle.timestamp",
-        "path": "Bundle.timestamp",
-        "min": 1
-      },
-      {
-        "id": "Bundle.entry",
-        "path": "Bundle.entry",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "profile",
-              "path": "$this.resource"
-            }
-          ],
-          "rules": "closed"
+    "resourceType": "StructureDefinition",
+    "id": "bundle-epi-type1",
+    "url": "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type1",
+    "name": "BundleEpiType1",
+    "title": "Bundle - ePI Type 1",
+    "status": "active",
+    "description": "This profile represents the constraints applied to the Bundle resource used in the Electronic Product Information (ePI) FHIR Implementation Guide.",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+            "valueCode": "brr"
         }
-      },
-      {
-        "id": "Bundle.entry:composition",
-        "path": "Bundle.entry",
-        "sliceName": "composition"
-      },
-      {
-        "id": "Bundle.entry:composition.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Composition",
-            "profile": [
-              "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
-            ]
-          }
+    ],
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Bundle",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Bundle.id",
+                "path": "Bundle.id",
+                "min": 1
+            },
+            {
+                "id": "Bundle.meta.versionId",
+                "path": "Bundle.meta.versionId",
+                "min": 1
+            },
+            {
+                "id": "Bundle.meta.lastUpdated",
+                "path": "Bundle.meta.lastUpdated",
+                "min": 1
+            },
+            {
+                "id": "Bundle.meta.profile",
+                "path": "Bundle.meta.profile",
+                "min": 1
+            },
+            {
+                "id": "Bundle.identifier",
+                "path": "Bundle.identifier",
+                "min": 1
+            },
+            {
+                "id": "Bundle.type",
+                "path": "Bundle.type",
+                "fixedCode": "document"
+            },
+            {
+                "id": "Bundle.timestamp",
+                "path": "Bundle.timestamp",
+                "min": 1
+            },
+            {
+                "id": "Bundle.entry",
+                "path": "Bundle.entry",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "profile",
+                            "path": "$this.resource"
+                        }
+                    ],
+                    "rules": "closed"
+                }
+            },
+            {
+                "id": "Bundle.entry:composition",
+                "path": "Bundle.entry",
+                "sliceName": "composition"
+            },
+            {
+                "id": "Bundle.entry:composition.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "Composition",
+                        "profile": [
+                            "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
+                        ]
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }

@@ -4,6 +4,7 @@ ValueSet: VsDoseForm
 Id: doseForm
 Title: "Dose Form"
 Description: "The dose form for a single part product, or combined form of a multiple part product"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $combined-dose-form
 
@@ -12,6 +13,7 @@ ValueSet: VsAdministrableDoseForm
 Id: administrableDoseForm
 Title: "Administrable Pharmaceutical Dose Form"
 Description: "Administrable Pharmaceutical Dose Form"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $administrable-dose-form
 
@@ -20,6 +22,7 @@ ValueSet: VsManufacturedDoseForm
 Id: manufacturedDoseForm
 Title: "Manufactured Dose Form"
 Description: "Manufactured Dose Form"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $manufactured-dose-form
 
@@ -28,6 +31,7 @@ ValueSet: VsRouteOfAdministration
 Id: routeOfAdministration
 Title: "Route Of Administration"
 Description:  "Route Of Administration"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^status = #draft
 * ^experimental = false
 * ^copyright = """This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
@@ -43,6 +47,7 @@ ValueSet: VsUnitofPresentation
 Id: unitofPresentation
 Title: "Units of Presentation"
 Description: "Units of Presentation"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $unit-of-presentation
 
@@ -51,6 +56,7 @@ ValueSet: VsMeddra
 Id: meddra
 Title: "MedDRA Terms for clinical diseases and symptoms"
 Description: "MedDRA Terms for clinical diseases and symptoms"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $meddra
 
@@ -59,6 +65,7 @@ ValueSet: VsCountry
 Id: country
 Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
 
@@ -67,6 +74,7 @@ ValueSet: VsLanguage
 Id: language
 Title: "ISO language two letter code"
 Description: "ISO language two letter code"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from valueset http://hl7.org/fhir/ValueSet/all-languages
 
@@ -75,6 +83,7 @@ ValueSet: VsPropertyColor
 Id: propertyColor
 Title: "Color of the product"
 Description: "Color of the product"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * $ncithesaurus#C48323	"BLACK"
 * $ncithesaurus#C48324	"GRAY"
@@ -95,6 +104,7 @@ ValueSet: VsPropertyFlavor
 Id: propertyFlavor
 Title: "Flavor of the product"
 Description: "Flavor of the product"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * $ncithesaurus#C100097 "GINGER"
 * $ncithesaurus#C73360 "ALMOND"
@@ -175,6 +185,7 @@ ValueSet: VsPropertyShape
 Id: propertyShape
 Title: "Shape of the product"
 Description: "Shape of the product"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * $ncithesaurus#C48335	"BULLET"
 * $ncithesaurus#C48336	"CAPSULE"
@@ -201,6 +212,7 @@ ValueSet: VsSubstance
 Id: substance
 Title: "Substances"
 Description: "Substances"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * include codes from system $ginas
 
@@ -209,6 +221,7 @@ ValueSet: VsEpiType
 Id: epiType
 Title: "ePI document types"
 Description: "ePI document types"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * $loinc#34390-5	"HUMAN OTC DRUG LABEL"
 * $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
@@ -220,6 +233,7 @@ ValueSet: VsSectionCode
 Id: sectionCode
 Title: "Section Codes"
 Description: "Section Codes"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 
@@ -338,6 +352,7 @@ ValueSet: VsIngredientRole
 Id: ingredientRole
 Title: "Ingredient Role"
 Description: "Ingredient Role; e.g.,active, excipient"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $ingredient-role
 
@@ -347,6 +362,7 @@ ValueSet: VsAtcClassification
 Id: atcClassification
 Title: "WHO ATC"
 Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $atc 
 * ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"

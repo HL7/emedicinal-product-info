@@ -11,8 +11,12 @@ releaseLabel: trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: HL7 International - Biomedical Research & Regulation Work Group
+  name: HL7 International / Biomedical Research and Regulation
   url: http://hl7.org/Special/committees/rcrim
+
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: brr
 
 pages:
   index.md:
