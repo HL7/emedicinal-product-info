@@ -23,17 +23,9 @@
                     ],
                     "text": "Package Leaflet"
                 },
-                "subject": [
-                    {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
-                    },
-                    {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
-                    },
-                    {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
-                    }
-                ],
+                "subject": {
+                    "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
+                },
                 "date": "2023-01-25",
                 "author": [
                     {
@@ -43,7 +35,7 @@
                 "title": "Package Leaflet: Information for the user - WonderDrug 500 mg tablets",
                 "section": [
                     {
-                        "title": "1. What is in this leaflet",
+                        "title": "Package Leaflet",
                         "code": {
                             "coding": [
                                 {
@@ -51,12 +43,52 @@
                                     "code": "100000155538"
                                 }
                             ],
-                            "text": "1. What is in this leaflet"
+                            "text": "Package Leaflet"
                         },
-                        "text": {
-                            "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
-                        }
+                        "entry": [
+                            {
+                                "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
+                            },
+                            {
+                                "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
+                            },
+                            {
+                                "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
+                            },
+                            {
+                                "reference": "RegulatedAuthorization/ra-epi-type2-example-paracetamol"
+                            },
+                            {
+                                "reference": "PackagedProductDefinition/ppd-epi-type2-example-paracetamol"
+                            },
+                            {
+                                "reference": "AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
+                            },
+                            {
+                                "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
+                            },
+                            {
+                                "reference": "Ingredient/ing-epi-type2-example-paracetamol"
+                            }
+                        ],
+                        "section": [
+                            {
+                                "title": "1. What is in this leaflet",
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "https://spor.ema.europa.eu/rmswi/",
+                                            "code": "100000155538"
+                                        }
+                                    ],
+                                    "text": "1. What is in this leaflet"
+                                },
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
+                                }
+                            }
+                        ]
                     }
                 ]
             }
