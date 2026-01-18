@@ -110,6 +110,21 @@
                                     },
                                     {
                                         "reference": "ClinicalUseDefinition/cud-warning-2"
+                                    },
+                                    {
+                                        "reference": "Organization/org-epi-type3-example-pharma"
+                                    },
+                                    {
+                                        "reference": "MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+                                    },
+                                    {
+                                        "reference": "MedicinalProductDefinition/mpd-alt-1"
+                                    },
+                                    {
+                                        "reference": "MedicinalProductDefinition/mpd-alt-2"
+                                    },
+                                    {
+                                        "reference": "MedicationKnowledge/mk-epi-type3-example-wonderdrug"
                                     }
                                 ]
                             },
@@ -924,7 +939,7 @@
                                     "amount": {
                                         "value": 30,
                                         "unit": "Tablet",
-                                        "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/unit-of-presentation"
+                                        "system": "http://standardterms.edqm.eu"
                                     }
                                 }
                             ]
@@ -1079,7 +1094,7 @@
                                 "denominator": {
                                     "value": 1,
                                     "unit": "tablet",
-                                    "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/unit-of-presentation",
+                                    "system": "http://standardterms.edqm.eu",
                                     "code": "tablet"
                                 }
                             }
