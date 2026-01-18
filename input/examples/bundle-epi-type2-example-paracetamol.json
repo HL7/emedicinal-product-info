@@ -20,10 +20,12 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/composition-epi-type1"
                     ]
                 },
-                "identifier": {
-                    "system": "http://example.org/identifier",
-                    "value": "composition-epi-type2-example-paracetamol"
-                },
+                "identifier": [
+                    {
+                        "system": "http://example.org/identifier",
+                        "value": "composition-epi-type2-example-paracetamol"
+                    }
+                ],
                 "status": "final",
                 "language": "en",
                 "text": {
@@ -39,9 +41,11 @@
                     ],
                     "text": "Package Leaflet"
                 },
-                "subject": {
-                    "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
-                },
+                "subject": [
+                    {
+                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
+                    }
+                ],
                 "date": "2023-01-25",
                 "author": [
                     {
@@ -241,7 +245,7 @@
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
                                             "code": "InventedNamePart",
-                                            "display": "Invented Name Part"
+                                            "display": "Invented name part"
                                         }
                                     ]
                                 }
@@ -264,8 +268,8 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "FormPart",
-                                            "display": "Form part"
+                                            "code": "DoseFormPart",
+                                            "display": "Pharmaceutical dose form part"
                                         }
                                     ]
                                 }
@@ -379,8 +383,7 @@
                     "coding": [
                         {
                             "system": "http://hl7.org/fhir/publication-status",
-                            "code": "active",
-                            "display": "Active"
+                            "code": "active"
                         }
                     ]
                 },
@@ -558,22 +561,14 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "http://example.org/identifier",
-                        "value": "ingredient-epi-type2-example-paracetamol-active"
-                    }
-                ],
+                "identifier": {
+                    "system": "http://example.org/identifier",
+                    "value": "ingredient-epi-type2-example-paracetamol-active"
+                },
                 "status": "active",
                 "for": [
                     {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
-                    },
-                    {
                         "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
-                    },
-                    {
-                        "reference": "AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
                     }
                 ],
                 "role": {
@@ -629,22 +624,14 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "http://example.org/identifier",
-                        "value": "ingredient-epi-type2-example-paracetamol-excipient-1"
-                    }
-                ],
+                "identifier": {
+                    "system": "http://example.org/identifier",
+                    "value": "ingredient-epi-type2-example-paracetamol-excipient-1"
+                },
                 "status": "active",
                 "for": [
                     {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
-                    },
-                    {
                         "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
-                    },
-                    {
-                        "reference": "AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
                     }
                 ],
                 "role": {
@@ -681,22 +668,14 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "http://example.org/identifier",
-                        "value": "ingredient-epi-type2-example-paracetamol-excipient-2"
-                    }
-                ],
+                "identifier": {
+                    "system": "http://example.org/identifier",
+                    "value": "ingredient-epi-type2-example-paracetamol-excipient-2"
+                },
                 "status": "active",
                 "for": [
                     {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
-                    },
-                    {
                         "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
-                    },
-                    {
-                        "reference": "AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
                     }
                 ],
                 "role": {
@@ -733,22 +712,14 @@
                         "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "http://example.org/identifier",
-                        "value": "ingredient-epi-type2-example-paracetamol-excipient-3"
-                    }
-                ],
+                "identifier": {
+                    "system": "http://example.org/identifier",
+                    "value": "ingredient-epi-type2-example-paracetamol-excipient-3"
+                },
                 "status": "active",
                 "for": [
                     {
-                        "reference": "MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
-                    },
-                    {
                         "reference": "ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
-                    },
-                    {
-                        "reference": "AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
                     }
                 ],
                 "role": {
@@ -802,7 +773,7 @@
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
                                             "code": "InventedNamePart",
-                                            "display": "Invented Name Part"
+                                            "display": "Invented name part"
                                         }
                                     ]
                                 }
@@ -825,15 +796,23 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "FormPart",
-                                            "display": "Form part"
+                                            "code": "DoseFormPart",
+                                            "display": "Pharmaceutical dose form part"
                                         }
                                     ]
                                 }
                             }
                         ]
                     }
-                ]
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active"
+                        }
+                    ]
+                }
             }
         },
         {
@@ -856,8 +835,7 @@
                     "coding": [
                         {
                             "system": "http://hl7.org/fhir/publication-status",
-                            "code": "active",
-                            "display": "Active"
+                            "code": "active"
                         }
                     ]
                 },
@@ -928,8 +906,7 @@
                     "coding": [
                         {
                             "system": "http://hl7.org/fhir/publication-status",
-                            "code": "active",
-                            "display": "Active"
+                            "code": "active"
                         }
                     ]
                 },
@@ -1006,7 +983,7 @@
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
                                             "code": "InventedNamePart",
-                                            "display": "Invented Name Part"
+                                            "display": "Invented name part"
                                         }
                                     ]
                                 }
@@ -1029,15 +1006,23 @@
                                     "coding": [
                                         {
                                             "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                            "code": "FormPart",
-                                            "display": "Form part"
+                                            "code": "DoseFormPart",
+                                            "display": "Pharmaceutical dose form part"
                                         }
                                     ]
                                 }
                             }
                         ]
                     }
-                ]
+                ],
+                "status": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/publication-status",
+                            "code": "active"
+                        }
+                    ]
+                }
             }
         },
         {
@@ -1060,8 +1045,7 @@
                     "coding": [
                         {
                             "system": "http://hl7.org/fhir/publication-status",
-                            "code": "active",
-                            "display": "Active"
+                            "code": "active"
                         }
                     ]
                 },
@@ -1132,8 +1116,7 @@
                     "coding": [
                         {
                             "system": "http://hl7.org/fhir/publication-status",
-                            "code": "active",
-                            "display": "Active"
+                            "code": "active"
                         }
                     ]
                 },

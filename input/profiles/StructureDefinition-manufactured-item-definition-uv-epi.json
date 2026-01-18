@@ -170,7 +170,7 @@
                     "coding": [
                         {
                             "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
-                            "code": "score"
+                            "code": "scoring"
                         }
                     ]
                 }
@@ -178,7 +178,7 @@
             {
                 "id": "ManufacturedItemDefinition.property:score.type.coding.code",
                 "path": "ManufacturedItemDefinition.property.type.coding.code",
-                "fixedCode": "score"
+                "fixedCode": "scoring"
             },
             {
                 "id": "ManufacturedItemDefinition.property:score.value[x]",
@@ -233,8 +233,8 @@
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
-                            "code": "surfaceForm"
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
+                            "code": "surfaceform"
                         }
                     ]
                 }
@@ -242,7 +242,7 @@
             {
                 "id": "ManufacturedItemDefinition.property:surfaceForm.type.coding.code",
                 "path": "ManufacturedItemDefinition.property.type.coding.code",
-                "fixedCode": "surfaceForm"
+                "fixedCode": "surfaceform"
             },
             {
                 "id": "ManufacturedItemDefinition.property:surfaceForm.value[x]",
@@ -329,7 +329,7 @@
                 "patternCodeableConcept": {
                     "coding": [
                         {
-                            "system": "http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic",
+                            "system": "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig",
                             "code": "imprint"
                         }
                     ]

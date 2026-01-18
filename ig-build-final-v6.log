@@ -1,0 +1,145 @@
+FHIR IG Publisher Version 2.0.29 (Git# 826a7eb003d6). Built 2025-12-17T01:19:30.102Z (32 days old)  
+Detected Java version: 17.0.17 from /usr/local/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home on Mac OS X/x86_64 (64bit). 4096MB available
+dir = /Users/a001/Documents/GitHub/emedicinal-product-info, path = /usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/4.0.0/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/4.0.0/bin:/Library/Frameworks/Python.framework/Versions/3.14/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/Frameworks/Python.framework/Versions/3.14/bin:/Users/a001/.antigravity/extensions/ms-python.debugpy-2025.14.1-darwin-x64/bundled/scripts/noConfigScripts
+Parameters: -ig .                                                                                   
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Sunday, January 18, 2026 at 5:32:15 p.m. Eastern Standard Time (2026-01-18T17:32:15-05:00)
+                                                                                                    
+Build FHIR IG from /Users/a001/Documents/GitHub/emedicinal-product-info/.                            (00:00.034 / 00:00.035, 20Mb)
+API keys loaded from /Users/a001/.fhir/fhir-settings.json                                            (00:00.004 / 00:00.039, 20Mb)
+Package Cache: /Users/a001/.fhir/packages                                                            (00:00.006 / 00:00.045, 20Mb)
+Run Sushi on /Users/a001/Documents/GitHub/emedicinal-product-info                                    (00:00.014 / 00:00.060, 21Mb)
+Sushi: info  Running SUSHI v3.16.5 (implements FHIR Shorthand specification v3.0.0)                  (00:02.026 / 00:02.087, 22Mb)
+Sushi: info  Arguments:                                                                              (00:00.005 / 00:02.092, 22Mb)
+Sushi: info    --out /Users/a001/Documents/GitHub/emedicinal-product-info                            (00:00.002 / 00:02.094, 22Mb)
+Sushi: info    /Users/a001/Documents/GitHub/emedicinal-product-info                                  (00:00.001 / 00:02.096, 22Mb)
+Sushi: info  Using configuration file: /Users/a001/Documents/GitHub/emedicinal-product-info/sushi-config.yaml (00:01.541 / 00:03.637, 22Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.168 / 00:03.806, 22Mb)
+Sushi: info  Preprocessed 7 documents with 31 aliases.                                               (00:00.209 / 00:04.016, 22Mb)
+Sushi: info  Imported 17 definitions and 0 instances.                                                (00:00.020 / 00:04.036, 22Mb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r5#latest to concrete version 0.9.0                          (00:00.704 / 00:04.741, 22Mb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r5#0.9.0 with 112 resources                                    (00:00.157 / 00:04.898, 22Mb)
+Sushi: info  Resolved hl7.terminology.r5#latest to concrete version 7.0.1                            (00:00.116 / 00:05.015, 22Mb)
+Sushi: info  Loaded hl7.terminology.r5#7.0.1 with 4096 resources                                     (00:03.305 / 00:08.320, 22Mb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r5#latest to concrete version 5.2.0                     (00:00.117 / 00:08.437, 22Mb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r5#5.2.0 with 759 resources                               (00:00.931 / 00:09.369, 22Mb)
+Sushi: info  Loaded hl7.fhir.r5.core#5.0.0 with 2968 resources                                       (00:03.411 / 00:12.781, 22Mb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 23 resources                              (00:00.033 / 00:12.814, 22Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.030 / 00:12.844, 22Mb)
+Sushi: info  Converted 1 FHIR CodeSystems.                                                           (00:00.122 / 00:12.967, 22Mb)
+Sushi: info  Converted 16 FHIR ValueSets.                                                            (00:00.954 / 00:13.921, 22Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.001 / 00:13.922, 22Mb)
+Sushi: info  Exported 17 FHIR resources as JSON.                                                     (00:00.014 / 00:13.937, 22Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.002 / 00:13.940, 22Mb)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.uv.emedicinal-product-info.json                  (00:00.029 / 00:13.970, 22Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:13.971, 22Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.002 / 00:13.973, 22Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:13.975, 22Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.001 / 00:13.977, 22Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.002 / 00:13.979, 22Mb)
+Sushi: | |       0       |      0       |      0       |       0       | |                           (00:00.002 / 00:13.981, 22Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.002 / 00:13.984, 22Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.002 / 00:13.986, 22Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.001 / 00:13.988, 22Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.001 / 00:13.990, 22Mb)
+Sushi: | |         16         |         1         |         0          | |                           (00:00.001 / 00:13.991, 22Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:13.993, 22Mb)
+Sushi: |                                                                 |                           (00:00.001 / 00:13.994, 22Mb)
+Sushi: ===================================================================                           (00:00.001 / 00:13.996, 22Mb)
+Sushi: | You're in the swim of things now!      0 Errors      0 Warnings |                           (00:00.001 / 00:13.997, 22Mb)
+Sushi: ===================================================================                           (00:00.002 / 00:14.000, 22Mb)
+Sushi: |    You are using SUSHI version 3.16.5, but the latest stable    |                           (00:00.001 / 00:14.001, 22Mb)
+Sushi: | release is version 3.17.0. To install the latest release, run:  |                           (00:00.001 / 00:14.002, 22Mb)
+Sushi: |                    npm install -g fsh-sushi                     |                           (00:00.001 / 00:14.004, 22Mb)
+Sushi: ===================================================================                           (00:00.001 / 00:14.005, 22Mb)
+Root directory: /Users/a001/Documents/GitHub/emedicinal-product-info                                 (00:00.009 / 00:14.014, 22Mb)
+Load Template from hl7.fhir.template#current                                                         (00:01.166 / 00:15.181, 55Mb)
+ Load Template from hl7.base.template#current                                                        (00:01.360 / 00:16.541, 39Mb)
+  Load Template from fhir2.base.template#current                                                     (00:00.055 / 00:16.596, 39Mb)
+Scanning directory: /Users/a001/Documents/GitHub/emedicinal-product-info/template
+======================================================================
+Terminology Cache is at /Users/a001/Documents/GitHub/emedicinal-product-info/input-cache/txcache. 22 files in cache (00:11.536 / 00:28.134, 69Mb)
+Core Package hl7.fhir.r5.core#5.0.0                                                                  (00:00.003 / 00:28.136, 69Mb)
+Running Terminology Log: /var/folders/6f/5kz5l_yn1_z639d1_lknbdvm0000gn/T/ohfu-fhir-ig-1082972716728593849.html
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:08.891 / 00:37.027, 477Mb)
+[39mLoad Package hl7.fhir.pubpack#0.2.3
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.terminology.r5#7.0.1
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r5#5.2.0
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r5#0.9.0
+[0;39mInitialization complete                                                                              (00:06.059 / 00:43.087, 533Mb)
+Load IG                                                                                              (00:00.002 / 00:43.089, 533Mb)
+Load Translations                                                                                    (00:00.013 / 00:43.103, 535Mb)
+Load Content                                                                                         (00:00.002 / 00:43.105, 535Mb)
+Using en as the default narrative language. (Implementation Guide param i18n-default-lang)           (00:00.189 / 00:43.295, 539Mb)
+Process Loaded Resources                                                                             (00:01.388 / 00:44.683, 645Mb)
+Generating Snapshots                                                                                 (00:00.308 / 00:44.992, 688Mb)
+
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Fetch http://hl7.org/fhir/uv/emedicinal-product-info/package-list.json for version check             (00:03.678 / 00:48.671, 996Mb)
+Checking Language                                                                                    (00:00.088 / 00:48.759, 997Mb)
+Load Dependency Info                                                                                 (00:00.003 / 00:48.762, 998Mb)
+Load Info                                                                                            (00:00.006 / 00:48.768, 998Mb)
+Load Paths                                                                                           (00:00.003 / 00:48.772, 999Mb)
+Check R4 / R4B                                                                                       (00:00.002 / 00:48.774, 999Mb)
+Assign Comparison Ids                                                                                (00:00.066 / 00:48.841, 1005Mb)
+Propagating status                                                                                   (00:00.001 / 00:48.843, 1005Mb)
+Generating Narratives                                                                                (00:00.204 / 00:49.048, 575Mb)
+Validating Conformance Resources                                                                     (00:02.764 / 00:51.812, 735Mb)
+Check profiles & code systems                                                                        (00:18.108 / 01:09.921, 1Gb)
+Check realm rules                                                                                    (00:00.006 / 01:09.927, 1Gb)
+Previous Version Comparison                                                                          (00:00.001 / 01:09.929, 1Gb)
+Checking for Bundles to sign                                                                         (00:15.134 / 01:25.064, 1Gb)
+Validating Resources                                                                                 (00:00.002 / 01:25.066, 1Gb)
+Processing Provenance Records                                                                        (00:02.884 / 01:27.951, 1Gb)
+Generating Translation artifacts                                                                     (00:00.001 / 01:27.953, 1Gb)
+Generating Outputs in /Users/a001/Documents/GitHub/emedicinal-product-info/output                    (00:00.002 / 01:27.956, 1Gb)
+Generate Native Outputs                                                                              (00:01.172 / 01:29.128, 1Gb)
+Run Template                                                                                         (00:25.944 / 01:55.072, 1Gb)
+Generate HTML Outputs                                                                                (00:06.164 / 02:01.236, 1Gb)
+Generate Spreadsheets                                                                                (00:47.709 / 02:48.945, 1Gb)
+Generate Summaries                                                                                   (00:28.580 / 03:17.526, 1Gb)
+Generating Summary Outputs (en)                                                                      (00:00.001 / 03:17.527, 1Gb)
+DB Cumulative Time invested: 00:00:05.993
+Sending Usage Stats to Server                                                                        (00:06.039 / 03:23.566, 1Gb)
+## Memory (MB): Use = 1612, Free = 763, Total = 2376, Max = 4096                                     (00:00.010 / 03:23.576, 1Gb)
+Reclaiming memory...                                                                                 (00:00.003 / 03:23.580, 1Gb)
+## Memory (MB): Use = 1034, Free = 1341, Total = 2376, Max = 4096                                    (00:00.836 / 03:24.416, 1Gb)
+Run jekyll: jekyll build --destination "/Users/a001/Documents/GitHub/emedicinal-product-info/output" (in folder /Users/a001/Documents/GitHub/emedicinal-product-info/temp/pages) (00:00.004 / 03:24.420, 1Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.003 / 03:24.423, 1Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.002 / 03:24.425, 1Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.002 / 03:24.427, 1Gb)
+Jekyll: Source: /Users/a001/Documents/GitHub/emedicinal-product-info/temp/pages                      (00:01.204 / 03:25.632, 1Gb)
+Jekyll: Generating...                                                                                (00:00.001 / 03:25.634, 1Gb)
+Jekyll: done in 10.778 seconds.                                                                      (00:10.776 / 03:36.411, 1Gb)
+[39m
+[0;39m[39mInstalling hl7.fhir.uv.emedicinal-product-info#dev
+[0;39m[39m done.
+[0;39mChecking Output HTML                                                                                 (00:04.172 / 03:40.583, 1Gb)
+AI format for /Users/a001/Documents/GitHub/emedicinal-product-info/output/en - % reduction = 100
+found 2359 files                                                                                     (00:05.420 / 03:46.003, 1Gb)
+........................................
+.............Sending usage stats failed: Operation timed out
+...........................
+  ... 2359 html files, 0 pages invalid xhtml (0%)                                                    (01:15.461 / 05:01.466, 1Gb)
+  ... 488399 links, 12 broken links (0%)                                                             (00:00.002 / 05:01.467, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.001 / 05:01.469, 1Gb)
+Build final .zip                                                                                     (00:00.020 / 05:01.489, 1Gb)
+Final .zip built                                                                                     (00:09.297 / 05:10.786, 1Gb)
+Built. Times: loading: 00:05.656, generate: 04:24.657, propagating status: 00:00.201, narrative generation: 00:02.760, realm-rules: 00:00.001, previous-version: 00:15.073, jekyll: 00:12.071, validation: 00:20.985 (#41), template: 00:06.190 (#3) (00:02.630 / 05:13.417, 1Gb)
+Generating QA                                                                                        (00:00.004 / 05:13.421, 1Gb)
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/en/examples/bundle-epi-type1-example-par', err = 'The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/en/examples/bundle-epi-type1-example-par', err = 'Illegal HTML: Illegal HTML element: aside'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/en/examples/bundle-epi-type2-example-par', err = 'The html source does not contain the publish box'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/en/examples/bundle-epi-type2-example-par', err = 'Illegal HTML: Illegal HTML element: aside'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/en/examples/bundle-epi-type3-example-won', err = 'The html source does not contain the publish box'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/en/examples/bundle-epi-type3-example-won', err = 'Illegal HTML: Illegal HTML element: aside'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/examples/bundle-epi-type1-example-parace', err = 'The html source does not contain the publish box'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/examples/bundle-epi-type1-example-parace', err = 'Illegal HTML: Illegal HTML element: aside'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/examples/bundle-epi-type2-example-parace', err = 'The html source does not contain the publish box'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/examples/bundle-epi-type2-example-parace', err = 'Illegal HTML: Illegal HTML element: aside'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/examples/bundle-epi-type3-example-wonder', err = 'The html source does not contain the publish box'
+Internal error in location for message: 'Error @1, 2: Found / expecting a token name', loc = '/Users/a001/Documents/GitHub/emedicinal-product-info/output/examples/bundle-epi-type3-example-wonder', err = 'Illegal HTML: Illegal HTML element: aside'
+Validation output in /Users/a001/Documents/GitHub/emedicinal-product-info/output/qa.html
+Errors: 57, Warnings: 180, Info: 244, Broken Links: 6 (00:01.330 / 05:14.752, 1Gb)
+Finished @ 1/18/26, 5:37 PM. Max Memory Used = 1Gb. Log file saved in /var/folders/6f/5kz5l_yn1_z639d1_lknbdvm0000gn/T/fhir-ig-publisher-tmp.log (00:00.045 / 05:14.797, 1Gb)
