@@ -39,6 +39,15 @@ Alias: $example-man = http://example.org/marketingAuthorizationNumber
 Alias: $example-org = http://example.org/sid/org
 Alias: $example-prod = http://example.org/sid/product
 
+// New aliases from Phase 2
+Alias: $structuredefinition-wg = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+Alias: $example-id = http://example.org/identifier
+Alias: $ema-id = http://ema.europa.eu/identifier
+Alias: $spor-oms = https://spor.ema.europa.eu/omswi
+Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
+Alias: $spor-sms = https://spor.ema.europa.eu/smswi
+Alias: $epi-ig = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig
+
 // ============= VALUE SETS  ============
 
 Alias: $VS-medicinal-product-domain =
