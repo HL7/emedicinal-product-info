@@ -10,25 +10,42 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * timestamp = "2023-10-27T10:00:00Z"
 * identifier.system = $ema-id
 * identifier.value = "WONDERDRUG-500MG-BUNDLE-TYPE3"
+* entry[composition].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-epi-type3-example-wonderdrug"
 * entry[composition].resource = composition-epi-type3-example-wonderdrug
 * entry[organization].resource = org-epi-type3-example-pharma
+* entry[organization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type3-example-pharma"
 * entry[medicinalProduct].resource = mpd-epi-type3-example-wonderdrug
+* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
 // referenced products
 * entry[medicinalProduct].resource = mpd-epi-type2-example-paracetamol-100mg
+* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
 * entry[medicinalProduct].resource = mpd-epi-type2-example-paracetamol-200mg
+* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
 * entry[regulatedAuthorization].resource = ra-epi-type2-example-paracetamol
+* entry[regulatedAuthorization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-paracetamol"
 * entry[packagedProduct].resource = ppd-epi-type2-example-paracetamol
+* entry[packagedProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-epi-type2-example-paracetamol"
 * entry[manufacturedItem].resource = mid-epi-type2-example-paracetamol
+* entry[manufacturedItem].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
 * entry[administrableProduct].resource = apd-epi-type2-example-paracetamol
+* entry[administrableProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
 * entry[ingredient].resource = ingredient-epi-type2-example-paracetamol-active
+* entry[ingredient].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-active"
 * entry[medicationKnowledge].resource = medication-knowledge-epi-type3-example
+* entry[medicationKnowledge].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicationKnowledge/medication-knowledge-epi-type3-example"
 // Clinical Use Definitions
 * entry[clinicalUseDefinitionIndication][0].resource = cud-indication-1
+* entry[clinicalUseDefinitionIndication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-indication-1"
 * entry[clinicalUseDefinitionIndication][+].resource = cud-indication-2
+* entry[clinicalUseDefinitionIndication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-indication-2"
 * entry[clinicalUseDefinitionContraindication][0].resource = cud-contraindication-1
+* entry[clinicalUseDefinitionContraindication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-contraindication-1"
 * entry[clinicalUseDefinitionContraindication][+].resource = cud-contraindication-2
+* entry[clinicalUseDefinitionContraindication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-contraindication-2"
 * entry[clinicalUseDefinitionInteraction][0].resource = cud-interaction-1
+* entry[clinicalUseDefinitionInteraction][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-1"
 * entry[clinicalUseDefinitionInteraction][+].resource = cud-interaction-2
+* entry[clinicalUseDefinitionInteraction][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-2"
 // * entry[undesirableEffect]... (add if needed, keeping it covering main types)
 
 Instance: composition-epi-type3-example-wonderdrug
@@ -177,7 +194,7 @@ Description: "ClinicalUseDefinition - Interaction Warfarin"
 * type = #interaction
 * subject = Reference(mpd-epi-type3-example-wonderdrug)
 * interaction.interactant.itemCodeableConcept = $sct#372756006 "Warfarin"
-* interaction.effect.concept = $sct#404684003 "Enhanced anticoagulant effect"
+* interaction.effect.concept = $sct#404684003 "Clinical finding (finding)"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction
 Instance: cud-contraindication-2
 InstanceOf: ClinicalUseDefinitionContraindicationUvEpi
@@ -191,8 +208,8 @@ Description: "ClinicalUseDefinition - Contraindication Paracetamol"
 * type = #contraindication
 * subject = Reference(mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
-* contraindication.otherTherapy.treatment.concept = $sct#763158003 "Medicinal product containing paracetamol"
-* contraindication.otherTherapy.relationshipType = http://hl7.org/fhir/benefit-and-risk-relationship#contraindicated-only-with "Only contraindicated with"
+* contraindication.otherTherapy.treatment.concept = $sct#763158003 "Medicinal product (product)"
+* contraindication.otherTherapy.relationshipType = http://hl7.org/fhir/CodeSystem/benefit-and-risk-relationship#contraindicated-only-with "Only contraindicated with"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication
 
 Instance: cud-interaction-2
@@ -206,7 +223,7 @@ Description: "ClinicalUseDefinition - Interaction Other"
 * status = #active
 * type = #interaction
 * subject = Reference(mpd-epi-type3-example-wonderdrug)
-* interaction.interactant.itemCodeableConcept = http://www.nlm.nih.gov/research/umls/rxnorm#2341
+* interaction.interactant.itemCodeableConcept = http://www.nlm.nih.gov/research/umls/rxnorm#11289 "Warfarin"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction
 
 Instance: medication-knowledge-epi-type3-example
