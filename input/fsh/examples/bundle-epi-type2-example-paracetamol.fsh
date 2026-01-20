@@ -85,7 +85,7 @@ Instance: mpd-epi-type2-example-paracetamol
 InstanceOf: MedicinalProductDefinitionUvEpi
 Usage: #example
 Title: "MedicinalProductDefinition - WonderDrug 500 mg tablets Type 2"
-Description: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
+Description: "MedicinalProductDefinition for WonderDrug 500 mg tablets (Type 2 Example)"
 * id = "mpd-epi-type2-example-paracetamol"
 * identifier.system = $ema-id
 * identifier.value = "WONDERDRUG-500MG"
