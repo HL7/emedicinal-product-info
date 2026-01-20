@@ -319,11 +319,11 @@
     </style>
 </head>
 
-<body>
-
+<body><!--ReleaseHeader-->
+    <p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
     <div class="layout-container">
         <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <div class="sidebar">
             <h2>Navigation</h2>
             <nav>
                 <ul class="nav-list">
@@ -334,12 +334,12 @@
                     <li class="nav-item"><a href="#clinical" class="nav-link">Clinical Details</a></li>
                 </ul>
             </nav>
-        </aside>
+        </div>
 
         <!-- Main Content Area -->
-        <main class="main-content">
+        <div class="main-content">
             <!-- Document Card -->
-            <section id="document" class="card card-document">
+            <div id="document" class="card card-document">
                 <h1>WonderDrug</h1>
                 <div style="font-size: 20px; color: var(--secondary-text-color); font-weight: 600;">
                     100 mg, 200 mg and 500 mg tablets
@@ -368,7 +368,7 @@
                 <div style="margin-top: 24px;">
                     <span class="badge">Prescription Only</span>
                 </div>
-            </section>
+            </div>
 
 
             <!-- Leaflet Card (Composition) - Now Collapsible -->
@@ -424,7 +424,7 @@
             </details>
 
             <!-- Organization Card - NEW Section -->
-            <section id="organizations" class="card card-organization">
+            <div id="organizations" class="card card-organization">
                 <h2 class="section-title">Organization</h2>
                 <div class="card-content">
                     <!-- MAH Organization -->
@@ -493,7 +493,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- Product Details Card - Now Collapsible -->
             <details id="products" class="card card-products" open>
@@ -878,7 +878,7 @@
                 <p>ePI Type 3 Example • Generated from FHIR Bundle</p>
                 <p>Identifier: WONDERDRUG-BUNDLE-TYPE3 • Date: 2023-10-27</p>
             </footer>
-        </main>
+        </div>
     </div>
 
     <script src="navigation.js"></script>

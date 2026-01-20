@@ -206,9 +206,11 @@
 </head>
 
 <body>
+    <!--ReleaseHeader-->
+    <p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
     <div class="layout-container">
         <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <div class="sidebar">
             <h2>Navigation</h2>
             <nav>
                 <ul class="nav-list">
@@ -216,12 +218,12 @@
                     <li class="nav-item"><a href="#leaflet" class="nav-link">Composition</a></li>
                 </ul>
             </nav>
-        </aside>
+        </div>
 
         <!-- Main Content Area -->
-        <main class="main-content">
+        <div class="main-content">
             <!-- Document Card -->
-            <section id="document" class="card">
+            <div id="document" class="card">
                 <h1 class="section-title">Paracetamol</h1>
                 <div style="font-size: 18px; color: var(--secondary-text-color); font-weight: 500;">
                     500 mg tablets (ePI Type 1)
@@ -250,7 +252,7 @@
                 <div style="margin-top: 24px;">
                     <span class="badge">Prescription Only</span>
                 </div>
-            </section>
+            </div>
 
             <!-- Composition / Leaflet Card -->
             <details id="leaflet" class="card card-composition" open>
@@ -306,7 +308,7 @@
                     </div>
                 </div>
             </details>
-        </main>
+        </div>
     </div>
 
     <script src="../navigation.js"></script>
