@@ -14,3 +14,14 @@ Coded concepts defined for ePI use only."""
 * #interaction "Interaction" "Interaction"
 * #undesirable-effect "Undesirable effect" "Undesirable effect"
 * #warning "Warning" "Warning"
+
+CodeSystem: BenefitAndRiskRelationship
+Id: benefit-and-risk-relationship
+Title: "Benefit and Risk Relationship"
+Description: "Benefit and Risk Relationship"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* ^caseSensitive = false
+* ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship"
+* #contraindicated-only-with "Only contraindicated with" "Only contraindicated with"
+* #not-recommended-with "Not recommended with" "Not recommended with"

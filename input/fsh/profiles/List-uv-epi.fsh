@@ -4,8 +4,8 @@ Id: List-uv-epi
 Title: "List (ePI)"
 Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * ^status = #active
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension[0].valueCode = #brr
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[=].valueCode = #brr
 * text ^short = "Text summary of the resource, for human interpretation"
 * text ^definition = "Text summary of the resource, for human interpretation"
 * identifier ^short = "Business identifier for this list"

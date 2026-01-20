@@ -4,8 +4,8 @@ Id: SubstanceDefinition-uv-epi
 Title: "SubstanceDefinition (ePI)"
 Description: "SubstanceDefinition (ePI)"
 * ^status = #active
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension[0].valueCode = #brr
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[=].valueCode = #brr
 * identifier 1..
 * identifier.system 1..
 * identifier.value 1..

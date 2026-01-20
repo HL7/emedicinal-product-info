@@ -10,17 +10,28 @@ Description: "Bundle - ePI Type 2 Paracetamol Example"
 * timestamp = "2023-01-25T12:00:00Z"
 * identifier.system = $ema-id
 * identifier.value = "WONDERDRUG-500MG-BUNDLE"
+* entry[composition].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-epi-type2-example-paracetamol"
 * entry[composition].resource = composition-epi-type2-example-paracetamol
+* entry[organization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type2-example-acme"
 * entry[organization].resource = org-epi-type2-example-acme
+* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
 * entry[medicinalProduct].resource = mpd-epi-type2-example-paracetamol
+* entry[regulatedAuthorization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-paracetamol"
 * entry[regulatedAuthorization].resource = ra-epi-type2-example-paracetamol
+* entry[packagedProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-epi-type2-example-paracetamol"
 * entry[packagedProduct].resource = ppd-epi-type2-example-paracetamol
+* entry[manufacturedItem].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
 * entry[manufacturedItem].resource = mid-epi-type2-example-paracetamol
+* entry[administrableProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
 * entry[administrableProduct].resource = apd-epi-type2-example-paracetamol
+* entry[ingredient][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-active"
 * entry[ingredient][0].resource = ingredient-epi-type2-example-paracetamol-active
-* entry[ingredient][+].resource = ingredient-epi-type2-example-paracetamol-excipient-1
-* entry[ingredient][+].resource = ingredient-epi-type2-example-paracetamol-excipient-2
-* entry[ingredient][+].resource = ingredient-epi-type2-example-paracetamol-excipient-3
+* entry[ingredient][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-excipient-1"
+* entry[ingredient][=].resource = ingredient-epi-type2-example-paracetamol-excipient-1
+* entry[ingredient][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-excipient-2"
+* entry[ingredient][=].resource = ingredient-epi-type2-example-paracetamol-excipient-2
+* entry[ingredient][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-excipient-3"
+* entry[ingredient][=].resource = ingredient-epi-type2-example-paracetamol-excipient-3
 
 Instance: composition-epi-type2-example-paracetamol
 InstanceOf: CompositionEpiType1
@@ -37,7 +48,7 @@ Description: "Composition for Type 2 Paracetamol"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
 * type = $spor-rms#100000155538 "Package Leaflet"
-* subject = Reference(mpd-epi-type2-example-paracetamol)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol)
 * date = "2023-01-25"
 * author = Reference(org-epi-type2-example-acme)
 * title = "Package Leaflet: Information for the user - WonderDrug 500 mg tablets"
@@ -73,7 +84,7 @@ Description: "Organization - Acme Pharma Inc."
 Instance: mpd-epi-type2-example-paracetamol
 InstanceOf: MedicinalProductDefinitionUvEpi
 Usage: #example
-Title: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
+Title: "MedicinalProductDefinition - WonderDrug 500 mg tablets Type 2"
 Description: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
 * id = "mpd-epi-type2-example-paracetamol"
 * identifier.system = $ema-id
@@ -87,7 +98,7 @@ Description: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
 * name.part[+].part = "500 mg"
 * name.part[=].type = $medicinal-product-name-part-type#StrengthPart "Strength part"
 * name.part[+].part = "tablets"
-* name.part[=].type = $medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
+* name.part[=].type = http://hl7.org/fhir/medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
 * name.usage.country = $iso3166#EE "Estonia"
 * name.usage.language = urn:ietf:bcp:47#et "Estonian"
 * contact.contact = Reference(org-epi-type2-example-acme)
@@ -101,7 +112,7 @@ Description: "RegulatedAuthorization - WonderDrug 500 mg"
 * identifier.system = $ema-id
 * identifier.value = "MA-123456789"
 * status = $publication-status#active "Active"
-* subject = Reference(mpd-epi-type2-example-paracetamol)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol)
 * type = $spor-rms#220000000061 "Marketing Authorisation"
 * region = $iso3166#EE "Estonia"
 * holder = Reference(org-epi-type2-example-acme)

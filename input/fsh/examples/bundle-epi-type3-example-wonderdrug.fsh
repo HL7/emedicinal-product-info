@@ -14,13 +14,13 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * entry[composition].resource = composition-epi-type3-example-wonderdrug
 * entry[organization].resource = org-epi-type3-example-pharma
 * entry[organization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type3-example-pharma"
-* entry[medicinalProduct].resource = mpd-epi-type3-example-wonderdrug
-* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+* entry[medicinalProduct][0].resource = mpd-epi-type3-example-wonderdrug
+* entry[medicinalProduct][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
 // referenced products
-* entry[medicinalProduct].resource = mpd-epi-type2-example-paracetamol-100mg
-* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
-* entry[medicinalProduct].resource = mpd-epi-type2-example-paracetamol-200mg
-* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
+* entry[medicinalProduct][1].resource = mpd-epi-type2-example-paracetamol-100mg
+* entry[medicinalProduct][1].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
+* entry[medicinalProduct][2].resource = mpd-epi-type2-example-paracetamol-200mg
+* entry[medicinalProduct][2].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
 * entry[regulatedAuthorization].resource = ra-epi-type2-example-paracetamol
 * entry[regulatedAuthorization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-paracetamol"
 * entry[packagedProduct].resource = ppd-epi-type2-example-paracetamol
@@ -63,7 +63,7 @@ Description: "Composition - ePI Type 3 WonderDrug"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WonderDrug ePI Type 3 Example</p></div>"
 * type = $spor-rms#100000155538 "Package Leaflet"
-* subject = Reference(mpd-epi-type3-example-wonderdrug)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * date = "2023-10-27"
 * author = Reference(org-epi-type3-example-pharma)
 * title = "WonderDrug ePI Type 3 Example"
@@ -97,7 +97,7 @@ Description: "Organization - WonderPharma Inc."
 Instance: mpd-epi-type3-example-wonderdrug
 InstanceOf: MedicinalProductDefinitionUvEpi
 Usage: #example
-Title: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
+Title: "MedicinalProductDefinition - WonderDrug 500 mg tablets Type 3"
 Description: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
 * id = "mpd-epi-type3-example-wonderdrug"
 * identifier.system = $ema-id
@@ -110,7 +110,7 @@ Description: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
 * name.part[+].part = "500 mg"
 * name.part[=].type = $medicinal-product-name-part-type#StrengthPart "Strength part"
 * name.part[+].part = "tablets"
-* name.part[=].type = $medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
+* name.part[=].type = http://hl7.org/fhir/medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
 * name.usage.country = $iso3166#EE "Estonia"
 * name.usage.language = urn:ietf:bcp:47#et "Estonian"
 * contact.contact = Reference(org-epi-type3-example-pharma)
@@ -147,7 +147,7 @@ Description: "ClinicalUseDefinition - Indication Fever"
 * identifier.value = "cud-indication-1"
 * status = #active
 * type = #indication
-* subject = Reference(mpd-epi-type3-example-wonderdrug)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * indication.diseaseSymptomProcedure.concept = $sct#386661006 "Fever"
 * category = $epi-ig#indication
@@ -162,7 +162,7 @@ Description: "ClinicalUseDefinition - Indication Pain"
 * identifier.value = "cud-indication-2"
 * status = #active
 * type = #indication
-* subject = Reference(mpd-epi-type3-example-wonderdrug)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * indication.diseaseSymptomProcedure.concept = $sct#22253000 "Pain"
 * category = $epi-ig#indication
@@ -177,7 +177,7 @@ Description: "ClinicalUseDefinition - Contraindication Hepatic Failure"
 * identifier.value = "cud-contraindication-1"
 * status = #active
 * type = #contraindication
-* subject = Reference(mpd-epi-type3-example-wonderdrug)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * contraindication.diseaseSymptomProcedure.concept = $sct#197270009 "Acute hepatic failure"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication
@@ -192,7 +192,7 @@ Description: "ClinicalUseDefinition - Interaction Warfarin"
 * identifier.value = "cud-interaction-1"
 * status = #active
 * type = #interaction
-* subject = Reference(mpd-epi-type3-example-wonderdrug)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * interaction.interactant.itemCodeableConcept = $sct#372756006 "Warfarin"
 * interaction.effect.concept = $sct#404684003 "Clinical finding (finding)"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction
@@ -206,10 +206,10 @@ Description: "ClinicalUseDefinition - Contraindication Paracetamol"
 * identifier.value = "cud-contraindication-2"
 * status = #active
 * type = #contraindication
-* subject = Reference(mpd-epi-type3-example-wonderdrug)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * contraindication.otherTherapy.treatment.concept = $sct#763158003 "Medicinal product (product)"
-* contraindication.otherTherapy.relationshipType = http://hl7.org/fhir/CodeSystem/benefit-and-risk-relationship#contraindicated-only-with "Only contraindicated with"
+* contraindication.otherTherapy.relationshipType = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship#contraindicated-only-with "Only contraindicated with"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication
 
 Instance: cud-interaction-2
@@ -222,7 +222,7 @@ Description: "ClinicalUseDefinition - Interaction Other"
 * identifier.value = "cud-interaction-2"
 * status = #active
 * type = #interaction
-* subject = Reference(mpd-epi-type3-example-wonderdrug)
+* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * interaction.interactant.itemCodeableConcept = http://www.nlm.nih.gov/research/umls/rxnorm#11289 "Warfarin"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction
 

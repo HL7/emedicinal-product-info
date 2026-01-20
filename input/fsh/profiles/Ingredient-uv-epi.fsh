@@ -4,8 +4,8 @@ Id: Ingredient-uv-epi
 Title: "Ingredient (ePI)"
 Description: "Ingredient (ePI)"
 * ^status = #active
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension[0].valueCode = #brr
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[=].valueCode = #brr
 * identifier ^short = "An identifier or code by which the ingredient can be referenced."
 * status 1..
 * status ^short = "draft|active|retired|unknown"
