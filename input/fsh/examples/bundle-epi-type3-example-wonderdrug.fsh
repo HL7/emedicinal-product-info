@@ -60,6 +60,7 @@ Description: "Composition - ePI Type 3 WonderDrug Summary of Product Characteris
 * identifier.value = "composition-epi-type3-example-wonderdrug"
 * status = #final
 * language = #en
+* version = "1.0"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WonderDrug Summary of Product Characteristics</p></div>"
 * type = $spor-rms#100000155532 "Summary of Product Characteristics"
@@ -151,7 +152,7 @@ Description: "Composition - ePI Type 3 WonderDrug Summary of Product Characteris
 * section.section[=].section[+].title = "4.8 Undesirable effects"
 * section.section[=].section[=].code = $spor-rms#200000029816 "4.8 Undesirable effects"
 * section.section[=].section[=].text.status = #generated
-* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Rare: Allergic reactions, skin rash.</p></div>"
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p><p><b>Summary of adverse reactions:</b></p><ul><li>Very common (≥1/10): Nausea, headache</li><li>Common (≥1/100 to &lt;1/10): Dizziness, fatigue</li><li>Uncommon (≥1/1,000 to &lt;1/100): Allergic reactions, skin rash</li><li>Rare (≥1/10,000 to &lt;1/1,000): Hepatotoxicity</li></ul><table border='1'><tr><th>System Organ Class</th><th>Frequency</th><th>Adverse Reaction</th></tr><tr><td>Gastrointestinal</td><td>Very common</td><td>Nausea</td></tr><tr><td>Nervous system</td><td>Very common</td><td>Headache</td></tr><tr><td>Skin</td><td>Uncommon</td><td>Rash, pruritus</td></tr></table><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJyZWQiIC8+PC9zdmc+' alt='Sample SVG Image' /></p></div>"
 // Section 4.9: Overdose
 * section.section[=].section[+].title = "4.9 Overdose"
 * section.section[=].section[=].code = $spor-rms#200000029819 "4.9 Overdose"
@@ -250,9 +251,20 @@ Description: "Organization - WonderPharma Inc."
 * active = true
 * type = $spor-rms#220000000034 "Marketing authorisation holder"
 * name = "WonderPharma Inc."
-* contact.address.text = "123 Pharma Way, 102 37 Prague 10, Czech Republic"
+* contact.telecom[phone].system = #phone
+* contact.telecom[phone].value = "+420 123 456 789"
+* contact.telecom[email].system = #email  
+* contact.telecom[email].value = "info@wonderpharma.example.com"
+* contact.telecom[url].system = #url
+* contact.telecom[url].value = "https://www.wonderpharma.example.com"
+* contact.address.type = #both
+* contact.address.text = "WonderPharma Inc., 123 Pharma Way, Prague 10, 102 37, Czech Republic"
+* contact.address.line = "123 Pharma Way"
 * contact.address.city = "Prague"
-* contact.address.country = "Czech Republic"
+* contact.address.district = "Prague 10"
+* contact.address.state = "Central Bohemia"
+* contact.address.postalCode = "102 37"
+* contact.address.country = "CZ"
 
 Instance: mpd-epi-type3-example-wonderdrug
 InstanceOf: MedicinalProductDefinitionUvEpi
@@ -390,7 +402,41 @@ Instance: medication-knowledge-epi-type3-example
 InstanceOf: MedicationKnowledge
 Usage: #example
 Title: "MedicationKnowledge - WonderDrug"
-Description: "MedicationKnowledge - WonderDrug"
+Description: "MedicationKnowledge - WonderDrug with structured dosing regimen"
 * id = "medication-knowledge-epi-type3-example"
 * status = #active
-* code.text = "WonderDrug"
+* code.text = "WonderDrug 500 mg tablets"
+* code.coding = $sct#763158003 "Medicinal product (product)"
+// Structured dosing regimen: Week 1 - twice daily, Weeks 2-4 - once daily
+* indicationGuideline.dosingGuideline[0].treatmentIntent.text = "Pain relief"
+* indicationGuideline.dosingGuideline[=].dosage[0].type.text = "Initial Treatment (Week 1)"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.sequence = 1
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.text = "Take 1 tablet twice daily for the first week"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.frequency = 2
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.period = 1
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.periodUnit = #d
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.value = 7
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.unit = "days"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.system = $ucum
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.code = #d
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered "Ordered"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.value = 1
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.unit = "tablet"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.system = $edqm
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.code = #10219000
+// Maintenance dosing (Weeks 2-4)
+* indicationGuideline.dosingGuideline[=].dosage[+].type.text = "Maintenance Treatment (Weeks 2-4)"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.sequence = 2
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.text = "Take 1 tablet once daily for three more weeks"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.frequency = 1
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.period = 1
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.periodUnit = #d
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.value = 21
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.unit = "days"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.system = $ucum
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.code = #d
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered "Ordered"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.value = 1
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.unit = "tablet"
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.system = $edqm
+* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.code = #10219000

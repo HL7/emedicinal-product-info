@@ -45,6 +45,7 @@ Description: "Composition for Type 2 Paracetamol"
 * identifier.value = "composition-epi-type2-example-paracetamol"
 * status = #final
 * language = #en
+* version = "1.0"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
 * type = $spor-rms#100000155538 "Package Leaflet"
@@ -146,6 +147,12 @@ Description: "ManufacturedItemDefinition - WonderDrug 500 mg"
 * status = #active
 * manufacturedDoseForm = $spor-rms#100000073664 "Tablet"
 * unitOfPresentation = $spor-rms#200000002152 "Tablet"
+// Physical characteristics using named slices
+* property[shape].valueCodeableConcept = $spor-rms#100000073670 "Round"
+* property[color].valueCodeableConcept = $spor-rms#100000073586 "White"
+* property[size].valueCodeableConcept.text = "10 mm"
+* property[score].valueCodeableConcept.text = "Scored on one side"
+* property[imprint].valueMarkdown = "WD500"
 
 Instance: apd-epi-type2-example-paracetamol
 InstanceOf: AdministrableProductDefinitionUvEpi
@@ -161,6 +168,11 @@ Description: "AdministrableProductDefinition - WonderDrug 500 mg"
 * unitOfPresentation = $spor-rms#200000002152 "Tablet"
 * producedFrom = Reference(mid-epi-type2-example-paracetamol)
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"
+// Physical characteristics using named slices
+* property[shape].valueCodeableConcept = $spor-rms#100000073670 "Round"
+* property[color].valueCodeableConcept = $spor-rms#100000073586 "White"
+* property[flavor].valueCodeableConcept.text = "None"
+* property[image].valueCodeableConcept.text = "Tablet Image (Placeholder)"
 
 Instance: ingredient-epi-type2-example-paracetamol-active
 InstanceOf: IngredientUvEpi
@@ -173,6 +185,8 @@ Description: "Ingredient - Paracetamol"
 * status = #active
 * for = Reference(mid-epi-type2-example-paracetamol)
 * role = $spor-rms#100000072072 "Active"
+* function = $spor-rms#100000136065 "API"
+* group = $spor-rms#100000136179 "Chemical"
 * substance.code.concept = $spor-sms#100000000000 "Paracetamol"
 * substance.strength.presentationRatio.numerator.value = 500
 * substance.strength.presentationRatio.numerator.unit = "mg"
@@ -182,6 +196,22 @@ Description: "Ingredient - Paracetamol"
 * substance.strength.presentationRatio.denominator.unit = "tablet"
 * substance.strength.presentationRatio.denominator.system = $edqm
 * substance.strength.presentationRatio.denominator.code = #10219000
+
+Instance: ingredient-epi-type2-example-paracetamol-lactose
+InstanceOf: IngredientUvEpi
+Usage: #example
+Title: "Ingredient - Lactose monohydrate"
+Description: "Ingredient - Lactose monohydrate (excipient with known allergen effect)"
+* id = "ingredient-epi-type2-example-paracetamol-lactose"
+* identifier.system = $example-id
+* identifier.value = "ingredient-epi-type2-example-paracetamol-lactose"
+* status = #active
+* for = Reference(mid-epi-type2-example-paracetamol)
+* role = $spor-rms#100000072082 "Excipient"
+* function = $spor-rms#100000136066 "Filler/diluent"
+* group = $spor-rms#100000136178 "Carbohydrate"
+* allergenicIndicator = true
+* substance.code.concept = $spor-sms#100000090052 "Lactose monohydrate"
 
 Instance: ingredient-epi-type2-example-paracetamol-excipient-1
 InstanceOf: IngredientUvEpi

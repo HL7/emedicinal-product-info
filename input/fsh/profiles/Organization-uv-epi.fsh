@@ -21,3 +21,19 @@ Description: "Organization (ePI) - ported from OrganizationUvEpi"
 * contact.telecom[url].system = #url
 * contact.telecom[url].value 1..
 * contact.address 0..1
+* contact.address.type 0..1
+* contact.address.type ^short = "Type of address (postal, physical, both)"
+* contact.address.text 0..1
+* contact.address.text ^short = "Full text representation of the address"
+* contact.address.line 0..*
+* contact.address.line ^short = "Street name, number, direction & P.O. Box etc."
+* contact.address.city 0..1
+* contact.address.city ^short = "Name of city, town etc."
+* contact.address.district 0..1
+* contact.address.district ^short = "District name (aka county)"
+* contact.address.state 0..1
+* contact.address.state ^short = "Sub-unit of country (state, region, province)"
+* contact.address.postalCode 0..1
+* contact.address.postalCode ^short = "Postal code for area"
+* contact.address.country 0..1
+* contact.address.country ^short = "Country (e.g., can be ISO 3166 2 or 3 letter code)"

@@ -1,9 +1,10 @@
 Profile: CompositionEpiType1
 Parent: Composition
 Id: composition-epi-type1
-Title: "Composition - ePI Type 1"
-Description: "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide."
+Title: "Composition - ePI Type 1-3"
+Description: "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide. This profile applies to all ePI Types (1, 2, and 3)."
 * ^status = #active
+* ^version = "1.1.0"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * id 1..
@@ -21,6 +22,9 @@ Description: "This profile represents the constraints applied to the Composition
 * language 1..
 * language ^short = "Language of the ePI content"
 * language ^definition = "The code representing the language of the content in this ePI (e.g., 'en' for English, 'es' for Spanish). This ensures the correct language rendering for the user."
+* version 1..
+* version ^short = "Document Version"
+* version ^definition = "The version of the ePI document content, representing the regulatory revision number (e.g., '1.0', '2.1'). This is distinct from meta.versionId which tracks server-side resource versioning."
 * text 1..
 * text ^short = "Narrative Title of the ePI"
 * text ^definition = "The narrative title of the ePI, providing a human-readable summary or identification of the document content."

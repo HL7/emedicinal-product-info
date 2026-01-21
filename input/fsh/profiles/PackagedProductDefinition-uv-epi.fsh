@@ -36,5 +36,6 @@ Description: "PackagedProductDefinition (ePI)"
 * packaging.property.value[x] ^short = "Value of the characteristic."
 * packaging.containedItem ^short = "The item(s) within the packaging."
 * packaging.containedItem.item ^short = "The actual item(s) of medication, as manufactured, or a device, or other medically related item."
+* packaging.containedItem.item only Reference(ManufacturedItemDefinition-uv-epi or PackagedProductDefinition-uv-epi or DeviceDefinition)
 * packaging.containedItem.amount ^short = "The number of this type of item within this packaging."
 * packaging.packaging ^short = "Nested packaging."

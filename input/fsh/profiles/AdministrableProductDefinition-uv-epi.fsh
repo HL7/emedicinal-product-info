@@ -31,27 +31,35 @@ Description: "AdministrableProductDefinition (ePI)"
     imprint 0..*
 * property[color] ^short = "Colour of the item"
 * property[color].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#color
+* property[color].type.coding.code = #color
 * property[color].value[x] only CodeableConcept
 * property[flavor] ^short = "Flavour of the item"
 * property[flavor].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#flavor
+* property[flavor].type.coding.code = #flavor
 * property[flavor].value[x] only CodeableConcept
 * property[score] ^short = "Score of the item"
 * property[score].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#scoring
+* property[score].type.coding.code = #scoring
 * property[score].value[x] only CodeableConcept
 * property[shape] ^short = "Shape of the item"
 * property[shape].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#shape
+* property[shape].type.coding.code = #shape
 * property[shape].value[x] only CodeableConcept
 * property[surfaceForm] ^short = "Surface form of the item"
 * property[surfaceForm].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#surfaceform
+* property[surfaceForm].type.coding.code = #surfaceform
 * property[surfaceForm].value[x] only CodeableConcept
 * property[size] ^short = "Size of the item"
 * property[size].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#size
+* property[size].type.coding.code = #size
 * property[size].value[x] only CodeableConcept
 * property[image] ^short = "Image of the item"
 * property[image].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#image
+* property[image].type.coding.code = #image
 * property[image].value[x] only CodeableConcept
 * property[imprint] ^short = "Imprint on the item"
 * property[imprint].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#imprint
+* property[imprint].type.coding.code = #imprint
 * property[imprint].value[x] only markdown
 * routeOfAdministration ^short = "The path by which the product is taken into or makes contact with the body."
 * routeOfAdministration.code ^short = "Coded expression for the route."

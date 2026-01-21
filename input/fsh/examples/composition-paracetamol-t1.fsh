@@ -10,6 +10,7 @@ Description: "Paracetamol 500 mg tablets Package Leaflet"
 * identifier.value = "composition-paracetamol-t1"
 * status = #final
 * language = #en
+* version = "1.0"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Package Leaflet: Information for the user - Paracetamol 500 mg tablets</p></div>"
 * type = https://spor.ema.europa.eu/rmswi/#100000155538 "Package Leaflet"
