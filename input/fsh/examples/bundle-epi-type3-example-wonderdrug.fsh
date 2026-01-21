@@ -51,8 +51,8 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 Instance: composition-epi-type3-example-wonderdrug
 InstanceOf: CompositionEpiType1
 Usage: #example
-Title: "Composition - ePI Type 3 WonderDrug"
-Description: "Composition - ePI Type 3 WonderDrug"
+Title: "Composition - ePI Type 3 WonderDrug SMPC"
+Description: "Composition - ePI Type 3 WonderDrug Summary of Product Characteristics"
 * id = "composition-epi-type3-example-wonderdrug"
 * meta.versionId = "1"
 * meta.lastUpdated = "2023-10-27T10:00:00Z"
@@ -61,23 +61,183 @@ Description: "Composition - ePI Type 3 WonderDrug"
 * status = #final
 * language = #en
 * text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WonderDrug ePI Type 3 Example</p></div>"
-* type = $spor-rms#100000155538 "Package Leaflet"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WonderDrug Summary of Product Characteristics</p></div>"
+* type = $spor-rms#100000155532 "Summary of Product Characteristics"
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * date = "2023-10-27"
 * author = Reference(org-epi-type3-example-pharma)
-* title = "WonderDrug ePI Type 3 Example"
-* section.title = "Package Leaflet"
-* section.code = $spor-rms#leaflet "Package Leaflet"
+* title = "WonderDrug 500 mg tablets - Summary of Product Characteristics"
+
+// Parent Section: SUMMARY OF PRODUCT CHARACTERISTICS
+* section.title = "SUMMARY OF PRODUCT CHARACTERISTICS"
+* section.code = $spor-rms#200000029791 "SUMMARY OF PRODUCT CHARACTERISTICS"
 * section.text.status = #generated
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Package Leaflet</div>"
-* section.section[0].title = "Clinical Particulars"
-* section.section[=].code = $spor-rms#clinical-particulars "Clinical Particulars"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Summary of Product Characteristics for WonderDrug</div>"
+
+// Section 1: NAME OF THE MEDICINAL PRODUCT
+* section.section[0].title = "1. NAME OF THE MEDICINAL PRODUCT"
+* section.section[=].code = $spor-rms#200000029792 "1. NAME OF THE MEDICINAL PRODUCT"
 * section.section[=].text.status = #generated
-* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Clinical Particulars</div>"
-* section.section[=].entry[0] = Reference(cud-indication-1)
-* section.section[=].entry[+] = Reference(cud-indication-2)
-* section.section[=].entry[+] = Reference(cud-contraindication-1)
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WonderDrug 500 mg tablets</p></div>"
+
+// Section 2: QUALITATIVE AND QUANTITATIVE COMPOSITION
+* section.section[+].title = "2. QUALITATIVE AND QUANTITATIVE COMPOSITION"
+* section.section[=].code = $spor-rms#200000029793 "2. QUALITATIVE AND QUANTITATIVE COMPOSITION"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Each tablet contains 500 mg of paracetamol.</p></div>"
+// Section 2.1: General description
+* section.section[=].section[0].title = "2.1 General description"
+* section.section[=].section[=].code = $spor-rms#200000029794 "2.1 General description"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>White, round, biconvex tablets.</p></div>"
+// Section 2.2: Qualitative and quantitative composition
+* section.section[=].section[+].title = "2.2 Qualitative and quantitative composition"
+* section.section[=].section[=].code = $spor-rms#200000029795 "2.2 Qualitative and quantitative composition"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Each tablet contains 500 mg paracetamol.</p></div>"
+// Excipient(s) with known effect
+* section.section[=].section[+].title = "Excipient(s) with known effect"
+* section.section[=].section[=].code = $spor-rms#200000029796 "Excipient(s) with known effect"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>For the full list of excipients, see section 6.1.</p></div>"
+
+// Section 3: PHARMACEUTICAL FORM
+* section.section[+].title = "3. PHARMACEUTICAL FORM"
+* section.section[=].code = $spor-rms#200000029797 "3. PHARMACEUTICAL FORM"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Tablet. White, round, biconvex tablets.</p></div>"
+
+// Section 4: CLINICAL PARTICULARS
+* section.section[+].title = "4. CLINICAL PARTICULARS"
+* section.section[=].code = $spor-rms#200000029798 "4. CLINICAL PARTICULARS"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Clinical information about WonderDrug.</p></div>"
+// Section 4.1: Therapeutic indications
+* section.section[=].section[0].title = "4.1 Therapeutic indications"
+* section.section[=].section[=].code = $spor-rms#200000029799 "4.1 Therapeutic indications"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Symptomatic treatment of mild to moderate pain and/or fever.</p></div>"
+// Section 4.2: Posology and method of administration
+* section.section[=].section[+].title = "4.2 Posology and method of administration"
+* section.section[=].section[=].code = $spor-rms#200000029800 "4.2 Posology and method of administration"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Adults: 1-2 tablets every 4-6 hours. Maximum 8 tablets in 24 hours.</p></div>"
+// Section 4.3: Contraindications
+* section.section[=].section[+].title = "4.3 Contraindications"
+* section.section[=].section[=].code = $spor-rms#200000029805 "4.3 Contraindications"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Hypersensitivity to paracetamol or any of the excipients.</p></div>"
+// Section 4.4: Special warnings and precautions for use
+* section.section[=].section[+].title = "4.4 Special warnings and precautions for use"
+* section.section[=].section[=].code = $spor-rms#200000029806 "4.4 Special warnings and precautions for use"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Caution in patients with hepatic or renal impairment.</p></div>"
+// Section 4.5: Interaction with other medicinal products
+* section.section[=].section[+].title = "4.5 Interaction with other medicinal products and other forms of interaction"
+* section.section[=].section[=].code = $spor-rms#200000029809 "4.5 Interaction with other medicinal products and other forms of interaction"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Anticoagulants: Enhanced effect of warfarin with prolonged use.</p></div>"
+// Section 4.6: Fertility, pregnancy and lactation
+* section.section[=].section[+].title = "4.6 Fertility, pregnancy and lactation"
+* section.section[=].section[=].code = $spor-rms#200000029811 "4.6 Fertility, pregnancy and lactation"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Can be used during pregnancy and lactation at recommended doses.</p></div>"
+// Section 4.7: Effects on ability to drive and use machines
+* section.section[=].section[+].title = "4.7 Effects on ability to drive and use machines"
+* section.section[=].section[=].code = $spor-rms#200000029815 "4.7 Effects on ability to drive and use machines"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>No known effect.</p></div>"
+// Section 4.8: Undesirable effects
+* section.section[=].section[+].title = "4.8 Undesirable effects"
+* section.section[=].section[=].code = $spor-rms#200000029816 "4.8 Undesirable effects"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Rare: Allergic reactions, skin rash.</p></div>"
+// Section 4.9: Overdose
+* section.section[=].section[+].title = "4.9 Overdose"
+* section.section[=].section[=].code = $spor-rms#200000029819 "4.9 Overdose"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Symptoms: Hepatic damage. Treatment: N-acetylcysteine.</p></div>"
+
+// Section 5: PHARMACOLOGICAL PROPERTIES
+* section.section[+].title = "5. PHARMACOLOGICAL PROPERTIES"
+* section.section[=].code = $spor-rms#200000029821 "5. PHARMACOLOGICAL PROPERTIES"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Pharmacological properties of WonderDrug.</p></div>"
+// Section 5.1: Pharmacodynamic properties
+* section.section[=].section[0].title = "5.1 Pharmacodynamic properties"
+* section.section[=].section[=].code = $spor-rms#200000029822 "5.1 Pharmacodynamic properties"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Pharmacotherapeutic group: Analgesics, ATC code: N02BE01.</p></div>"
+// Section 5.2: Pharmacokinetic properties
+* section.section[=].section[+].title = "5.2 Pharmacokinetic properties"
+* section.section[=].section[=].code = $spor-rms#200000029827 "5.2 Pharmacokinetic properties"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Rapidly absorbed from the GI tract. Peak plasma concentration in 30-60 minutes.</p></div>"
+// Section 5.3: Preclinical safety data
+* section.section[=].section[+].title = "5.3 Preclinical safety data"
+* section.section[=].section[=].code = $spor-rms#200000029834 "5.3 Preclinical safety data"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>No additional data of relevance.</p></div>"
+
+// Section 6: PHARMACEUTICAL PARTICULARS
+* section.section[+].title = "6. PHARMACEUTICAL PARTICULARS"
+* section.section[=].code = $spor-rms#200000029836 "6. PHARMACEUTICAL PARTICULARS"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Pharmaceutical particulars for WonderDrug.</p></div>"
+// Section 6.1: List of excipients
+* section.section[=].section[0].title = "6.1 List of excipients"
+* section.section[=].section[=].code = $spor-rms#200000029837 "6.1 List of excipients"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Pregelatinised starch, maize starch, magnesium stearate.</p></div>"
+// Section 6.2: Incompatibilities
+* section.section[=].section[+].title = "6.2 Incompatibilities"
+* section.section[=].section[=].code = $spor-rms#200000029838 "6.2 Incompatibilities"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Not applicable.</p></div>"
+// Section 6.3: Shelf life
+* section.section[=].section[+].title = "6.3 Shelf life"
+* section.section[=].section[=].code = $spor-rms#200000029839 "6.3 Shelf life"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>3 years.</p></div>"
+// Section 6.4: Special precautions for storage
+* section.section[=].section[+].title = "6.4 Special precautions for storage"
+* section.section[=].section[=].code = $spor-rms#200000029840 "6.4 Special precautions for storage"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Store below 25°C.</p></div>"
+// Section 6.5: Nature and contents of container
+* section.section[=].section[+].title = "6.5 Nature and contents of container"
+* section.section[=].section[=].code = $spor-rms#200000029841 "6.5 Nature and contents of container"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>PVC/Aluminium blisters. Pack sizes: 10, 20, 30 tablets.</p></div>"
+// Section 6.6: Special precautions for disposal
+* section.section[=].section[+].title = "6.6 Special precautions for disposal"
+* section.section[=].section[=].code = $spor-rms#200000029842 "6.6 Special precautions for disposal"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>No special requirements.</p></div>"
+
+// Section 7: MARKETING AUTHORISATION HOLDER
+* section.section[+].title = "7. MARKETING AUTHORISATION HOLDER"
+* section.section[=].code = $spor-rms#200000029844 "7. MARKETING AUTHORISATION HOLDER"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>WonderPharma Inc., 123 Pharma Way, Prague, Czech Republic</p></div>"
+
+// Section 8: MARKETING AUTHORISATION NUMBER(S)
+* section.section[+].title = "8. MARKETING AUTHORISATION NUMBER(S)"
+* section.section[=].code = $spor-rms#200000029845 "8. MARKETING AUTHORISATION NUMBER(S)"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>EU/1/23/1234/001</p></div>"
+
+// Section 9: DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION
+* section.section[+].title = "9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION"
+* section.section[=].code = $spor-rms#200000029846 "9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Date of first authorisation: 15 January 2020</p></div>"
+
+// Section 10: DATE OF REVISION OF THE TEXT
+* section.section[+].title = "10. DATE OF REVISION OF THE TEXT"
+* section.section[=].code = $spor-rms#200000029847 "10. DATE OF REVISION OF THE TEXT"
+* section.section[=].text.status = #generated
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>October 2023</p></div>"
 
 Instance: org-epi-type3-example-pharma
 InstanceOf: OrganizationUvEpi
