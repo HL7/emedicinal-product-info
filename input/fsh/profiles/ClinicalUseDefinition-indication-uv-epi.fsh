@@ -23,23 +23,17 @@ Description: "ClinicalUseDefinition Indication (ePI) - Profile for Indication"
 * indication.diseaseSymptomProcedure.concept.coding.system 1..1
 * indication.diseaseSymptomProcedure.concept.coding.code 1..1
 * indication.diseaseSymptomProcedure.concept.coding.display 1..1
-* indication.diseaseSymptomProcedure.concept.coding 1..1
-* indication.diseaseSymptomProcedure.concept.coding.system 1..1
-* indication.diseaseSymptomProcedure.concept.coding.code 1..1
-* indication.diseaseSymptomProcedure.concept.coding.display 1..1
-* indication.indication.concept.coding 1..1
-* indication.indication.concept.coding.system 1..1
-* indication.indication.concept.coding.code 1..1
-* indication.indication.concept.coding.display 1..1
+
+
 * indication.intendedEffect.concept.coding 1..1
 * indication.intendedEffect.concept.coding.system 1..1
 * indication.intendedEffect.concept.coding.code 1..1
 * indication.intendedEffect.concept.coding.display 1..1
-* indication.otherTherapy.therapyRelationshipType.coding 1..1
-* indication.otherTherapy.therapyRelationshipType.coding.system 1..1
-* indication.otherTherapy.therapyRelationshipType.coding.code 1..1
-* indication.otherTherapy.therapyRelationshipType.coding.display 1..1
-* indication.otherTherapy.indication.concept.coding 1..1
-* indication.otherTherapy.indication.concept.coding.system 1..1
-* indication.otherTherapy.indication.concept.coding.code 1..1
-* indication.otherTherapy.indication.concept.coding.display 1..1
+* indication.otherTherapy.relationshipType.coding 1..1
+* indication.otherTherapy.relationshipType.coding.system 1..1
+* indication.otherTherapy.relationshipType.coding.code 1..1
+* indication.otherTherapy.relationshipType.coding.display 1..1
+* indication.otherTherapy.treatment.concept.coding 1..1
+* indication.otherTherapy.treatment.concept.coding.system 1..1
+* indication.otherTherapy.treatment.concept.coding.code 1..1
+* indication.otherTherapy.treatment.concept.coding.display 1..1

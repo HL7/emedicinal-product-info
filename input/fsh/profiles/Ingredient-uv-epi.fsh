@@ -23,10 +23,10 @@ Description: "Ingredient (ePI)"
 * allergenicIndicator ^short = "If the ingredient is a known or suspected allergen."
 * manufacturer.manufacturer only Reference(Organization-uv-epi)
 * substance ^short = "The substance that comprises this ingredient"
-* substance.code.coding 1..1
-* substance.code.coding.system 1..1
-* substance.code.coding.code 1..1
-* substance.code.coding.display 1..1
+* substance.code.concept.coding 1..1
+* substance.code.concept.coding.system 1..1
+* substance.code.concept.coding.code 1..1
+* substance.code.concept.coding.display 1..1
 * substance.strength ^short = "The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item."
 * substance.strength.presentation[x] ^short = "The quantity of substance in the unit of presentation"
 * substance.strength.concentration[x] ^short = "The strength per unitary volume (or mass)"

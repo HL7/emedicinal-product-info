@@ -23,19 +23,13 @@ Description: "ClinicalUseDefinition Contraindication (ePI) - Profile for Contrai
 * contraindication.diseaseSymptomProcedure.concept.coding.system 1..1
 * contraindication.diseaseSymptomProcedure.concept.coding.code 1..1
 * contraindication.diseaseSymptomProcedure.concept.coding.display 1..1
-* contraindication.diseaseSymptomProcedure.concept.coding 1..1
-* contraindication.diseaseSymptomProcedure.concept.coding.system 1..1
-* contraindication.diseaseSymptomProcedure.concept.coding.code 1..1
-* contraindication.diseaseSymptomProcedure.concept.coding.display 1..1
-* contraindication.indication.concept.coding 1..1
-* contraindication.indication.concept.coding.system 1..1
-* contraindication.indication.concept.coding.code 1..1
-* contraindication.indication.concept.coding.display 1..1
-* contraindication.otherTherapy.therapyRelationshipType.coding 1..1
-* contraindication.otherTherapy.therapyRelationshipType.coding.system 1..1
-* contraindication.otherTherapy.therapyRelationshipType.coding.code 1..1
-* contraindication.otherTherapy.therapyRelationshipType.coding.display 1..1
-* contraindication.otherTherapy.indication.concept.coding 1..1
-* contraindication.otherTherapy.indication.concept.coding.system 1..1
-* contraindication.otherTherapy.indication.concept.coding.code 1..1
-* contraindication.otherTherapy.indication.concept.coding.display 1..1
+
+
+* contraindication.otherTherapy.relationshipType.coding 1..1
+* contraindication.otherTherapy.relationshipType.coding.system 1..1
+* contraindication.otherTherapy.relationshipType.coding.code 1..1
+* contraindication.otherTherapy.relationshipType.coding.display 1..1
+* contraindication.otherTherapy.treatment.concept.coding 1..1
+* contraindication.otherTherapy.treatment.concept.coding.system 1..1
+* contraindication.otherTherapy.treatment.concept.coding.code 1..1
+* contraindication.otherTherapy.treatment.concept.coding.display 1..1

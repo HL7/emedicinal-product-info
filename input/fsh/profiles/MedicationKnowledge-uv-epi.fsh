@@ -18,10 +18,10 @@ Description: "MedicationKnowledge (ePI) - ported from Business Friendly ePI Outl
 * name ^definition = "Common name for the medication"
 * indicationGuideline ^short = "Guidelines for administration of the medication"
 * indicationGuideline ^definition = "Guidelines for administration of the medication"
-* indicationGuideline.indication.coding 1..1
-* indicationGuideline.indication.coding.system 1..1
-* indicationGuideline.indication.coding.code 1..1
-* indicationGuideline.indication.coding.display 1..1
+* indicationGuideline.indication.concept.coding 1..1
+* indicationGuideline.indication.concept.coding.system 1..1
+* indicationGuideline.indication.concept.coding.code 1..1
+* indicationGuideline.indication.concept.coding.display 1..1
 * indicationGuideline.dosingGuideline ^short = "Guidelines for dosage of the medication"
 * indicationGuideline.dosingGuideline ^definition = "Guidelines for dosage of the medication"
 * indicationGuideline.dosingGuideline.treatmentIntent.coding 1..1
@@ -40,7 +40,7 @@ Description: "MedicationKnowledge (ePI) - ported from Business Friendly ePI Outl
 * indicationGuideline.dosingGuideline.administrationTreatment.coding.system 1..1
 * indicationGuideline.dosingGuideline.administrationTreatment.coding.code 1..1
 * indicationGuideline.dosingGuideline.administrationTreatment.coding.display 1..1
-* indicationGuideline.dosingGuideline.patientCharacteristic.coding 1..1
-* indicationGuideline.dosingGuideline.patientCharacteristic.coding.system 1..1
-* indicationGuideline.dosingGuideline.patientCharacteristic.coding.code 1..1
-* indicationGuideline.dosingGuideline.patientCharacteristic.coding.display 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.type.coding 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.system 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.code 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.display 1..1

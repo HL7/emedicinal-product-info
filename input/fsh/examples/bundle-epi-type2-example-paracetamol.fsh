@@ -126,7 +126,7 @@ Description: "PackagedProductDefinition - WonderDrug 500 mg"
 * id = "ppd-epi-type2-example-paracetamol"
 * identifier.system = $example-id
 * identifier.value = "ppd-epi-type2-example-paracetamol"
-* status = $publication-status#active
+* status = $publication-status#active "Active"
 * packageFor = Reference(mpd-epi-type2-example-paracetamol)
 * packaging.type = $spor-rms#100000073498 "Box"
 * packaging.quantity = 1
@@ -148,10 +148,15 @@ Description: "ManufacturedItemDefinition - WonderDrug 500 mg"
 * manufacturedDoseForm = $spor-rms#100000073664 "Tablet"
 * unitOfPresentation = $spor-rms#200000002152 "Tablet"
 // Physical characteristics using named slices
+* property[shape].type = $epi-ig#shape "Shape"
 * property[shape].valueCodeableConcept = $spor-rms#100000073670 "Round"
+* property[color].type = $epi-ig#color "Color"
 * property[color].valueCodeableConcept = $spor-rms#100000073586 "White"
-* property[size].valueCodeableConcept.text = "10 mm"
-* property[score].valueCodeableConcept.text = "Scored on one side"
+* property[size].type = $epi-ig#size "Size"
+* property[size].valueCodeableConcept = $spor-rms#100000000000 "10 mm"
+* property[score].type = $epi-ig#score "Score"
+* property[score].valueCodeableConcept = $spor-rms#100000000000 "Scored"
+* property[imprint].type = $epi-ig#imprint "Imprint"
 * property[imprint].valueMarkdown = "WD500"
 
 Instance: apd-epi-type2-example-paracetamol
@@ -169,10 +174,14 @@ Description: "AdministrableProductDefinition - WonderDrug 500 mg"
 * producedFrom = Reference(mid-epi-type2-example-paracetamol)
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"
 // Physical characteristics using named slices
+* property[shape].type = $epi-ig#shape "Shape"
 * property[shape].valueCodeableConcept = $spor-rms#100000073670 "Round"
+* property[color].type = $epi-ig#color "Color"
 * property[color].valueCodeableConcept = $spor-rms#100000073586 "White"
-* property[flavor].valueCodeableConcept.text = "None"
-* property[image].valueCodeableConcept.text = "Tablet Image (Placeholder)"
+* property[flavor].type = $epi-ig#flavor "Flavor"
+* property[flavor].valueCodeableConcept = $spor-rms#100000000000 "None"
+* property[image].type = $epi-ig#image "Image"
+* property[image].valueCodeableConcept = $spor-rms#100000000000 "Tablet Image"
 
 Instance: ingredient-epi-type2-example-paracetamol-active
 InstanceOf: IngredientUvEpi

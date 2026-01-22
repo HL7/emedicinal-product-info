@@ -317,12 +317,12 @@ Description: "ClinicalUseDefinition - Indication Fever"
 * id = "cud-indication-1"
 * identifier.system = $example-id
 * identifier.value = "cud-indication-1"
-* status = #active
+* status = $publication-status#active "Active"
 * type = #indication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * indication.diseaseSymptomProcedure.concept = $sct#386661006 "Fever"
-* category = $epi-ig#indication
+* category = $epi-ig#indication "Indication"
 
 Instance: cud-indication-2
 InstanceOf: ClinicalUseDefinitionIndicationUvEpi
@@ -332,12 +332,12 @@ Description: "ClinicalUseDefinition - Indication Pain"
 * id = "cud-indication-2"
 * identifier.system = $example-id
 * identifier.value = "cud-indication-2"
-* status = #active
+* status = $publication-status#active "Active"
 * type = #indication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * indication.diseaseSymptomProcedure.concept = $sct#22253000 "Pain"
-* category = $epi-ig#indication
+* category = $epi-ig#indication "Indication"
 
 Instance: cud-contraindication-1
 InstanceOf: ClinicalUseDefinitionContraindicationUvEpi
@@ -347,12 +347,12 @@ Description: "ClinicalUseDefinition - Contraindication Hepatic Failure"
 * id = "cud-contraindication-1"
 * identifier.system = $example-id
 * identifier.value = "cud-contraindication-1"
-* status = #active
+* status = $publication-status#active "Active"
 * type = #contraindication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * contraindication.diseaseSymptomProcedure.concept = $sct#197270009 "Acute hepatic failure"
-* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication
+* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication "Contraindication"
 
 Instance: cud-interaction-1
 InstanceOf: ClinicalUseDefinitionInteractionUvEpi
@@ -362,12 +362,12 @@ Description: "ClinicalUseDefinition - Interaction Warfarin"
 * id = "cud-interaction-1"
 * identifier.system = $example-id
 * identifier.value = "cud-interaction-1"
-* status = #active
+* status = $publication-status#active "Active"
 * type = #interaction
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * interaction.interactant.itemCodeableConcept = $sct#372756006 "Warfarin"
 * interaction.effect.concept = $sct#404684003 "Clinical finding (finding)"
-* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction
+* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction "Interaction"
 Instance: cud-contraindication-2
 InstanceOf: ClinicalUseDefinitionContraindicationUvEpi
 Usage: #example
@@ -376,13 +376,13 @@ Description: "ClinicalUseDefinition - Contraindication Paracetamol"
 * id = "cud-contraindication-2"
 * identifier.system = $example-id
 * identifier.value = "cud-contraindication-2"
-* status = #active
+* status = $publication-status#active "Active"
 * type = #contraindication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * population.display = "Adults"
 * contraindication.otherTherapy.treatment.concept = $sct#763158003 "Medicinal product (product)"
 * contraindication.otherTherapy.relationshipType = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship#contraindicated-only-with "Only contraindicated with"
-* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication
+* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication "Contraindication"
 
 Instance: cud-interaction-2
 InstanceOf: ClinicalUseDefinitionInteractionUvEpi
@@ -392,11 +392,11 @@ Description: "ClinicalUseDefinition - Interaction Other"
 * id = "cud-interaction-2"
 * identifier.system = $example-id
 * identifier.value = "cud-interaction-2"
-* status = #active
+* status = $publication-status#active "Active"
 * type = #interaction
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
 * interaction.interactant.itemCodeableConcept = http://www.nlm.nih.gov/research/umls/rxnorm#11289 "Warfarin"
-* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction
+* category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction "Interaction"
 
 Instance: medication-knowledge-epi-type3-example
 InstanceOf: MedicationKnowledge
