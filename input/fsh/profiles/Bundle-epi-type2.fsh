@@ -10,7 +10,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * meta.versionId 1..
 * meta.lastUpdated 1..
 * meta.profile 1..
-* identifier 1..
+* identifier.system 1..1
+* identifier.value 1..1
 * type = #document
 * timestamp 1..
 * entry ^slicing.discriminator.type = #profile

@@ -33,15 +33,15 @@ Description: "This profile represents the constraints applied to the Composition
 * contained ^slicing.rules = #open
 * contained contains binaryImage 0..*
 * contained[binaryImage] only Binary
-* identifier 1..
-* identifier ^short = "Business Identifier (e.g., Reg Number)"
-* identifier ^definition = "A business identifier assigned to this ePI, such as a regulatory submission number or a unique document tracking ID, which remains constant across versions."
+* identifier.system 1..1
+* identifier.value 1..1
 * status 1..
 * status ^short = "Workflow Status (e.g., preliminary, final)"
 * status ^definition = "The workflow status of this ePI document (e.g., 'preliminary', 'final', 'amended'). This indicates the current state of the document in its lifecycle."
-* type 1..
-* type ^short = "Type of ePI document (e.g., SmPC, PIL)"
-* type ^definition = "A code specifying the type of ePI document, such as a Summary of Product Characteristics (SmPC) or Patient Information Leaflet (PIL)."
+* type.coding 1..1
+* type.coding.system 1..1
+* type.coding.code 1..1
+* type.coding.display 1..1
 * subject 1..
 * subject only Reference(MedicinalProductDefinition)
 * subject ^short = "The Medicinal Product described"
@@ -65,9 +65,10 @@ Description: "This profile represents the constraints applied to the Composition
 * section.title 1..
 * section.title ^short = "Parent Section Title"
 * section.title ^definition = "The title of the specific section in the ePI."
-* section.code 1..
-* section.code ^short = "Parent Section Code"
-* section.code ^definition = "Code defining the type of section (e.g., from a section list)."
+* section.code.coding 1..1
+* section.code.coding.system 1..1
+* section.code.coding.code 1..1
+* section.code.coding.display 1..1
 * section.text 1..
 * section.text ^short = "Parent Section Text"
 * section.text ^definition = "The actual text content of the section."
@@ -77,9 +78,10 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.title 0..
 * section.section.title ^short = "Title of the nested section"
 * section.section.title ^definition = "The title of the child section."
-* section.section.code 0..
-* section.section.code ^short = "Code for the nested section"
-* section.section.code ^definition = "The code for the child section."
+* section.section.code.coding 0..1
+* section.section.code.coding.system 1..1
+* section.section.code.coding.code 1..1
+* section.section.code.coding.display 1..1
 * section.section.text 0..
 * section.section.text ^short = "Text content of the nested section"
 * section.section.text ^definition = "The text content of the child section."

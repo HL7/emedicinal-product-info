@@ -7,8 +7,8 @@ Description: "Organization (ePI) - ported from OrganizationUvEpi"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..
-* identifier.value 1..
+* identifier.system 1..1
+* identifier.value 1..1
 * name 1..
 * contact.telecom ^slicing.discriminator.type = #value
 * contact.telecom ^slicing.discriminator.path = "system"

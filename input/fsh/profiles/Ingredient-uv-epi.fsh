@@ -10,13 +10,23 @@ Description: "Ingredient (ePI)"
 * status 1..
 * status ^short = "draft|active|retired|unknown"
 * for only Reference(ManufacturedItemDefinition-uv-epi)
-* role ^short = "Role of the ingredient in the product"
-* function ^short = "Precise action within the role"
-* group ^short = "A classification of the ingredient according to where in the physical item it tends to be used."
+* identifier.system 1..1
+* identifier.value 1..1
+* role.coding 1..1
+* role.coding.system 1..1
+* role.coding.code 1..1
+* role.coding.display 1..1
+* function.coding 1..1
+* function.coding.system 1..1
+* function.coding.code 1..1
+* function.coding.display 1..1
 * allergenicIndicator ^short = "If the ingredient is a known or suspected allergen."
 * manufacturer.manufacturer only Reference(Organization-uv-epi)
 * substance ^short = "The substance that comprises this ingredient"
-* substance.code ^short = "A code or full resource that represents the ingredient's substance."
+* substance.code.coding 1..1
+* substance.code.coding.system 1..1
+* substance.code.coding.code 1..1
+* substance.code.coding.display 1..1
 * substance.strength ^short = "The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item."
 * substance.strength.presentation[x] ^short = "The quantity of substance in the unit of presentation"
 * substance.strength.concentration[x] ^short = "The strength per unitary volume (or mass)"

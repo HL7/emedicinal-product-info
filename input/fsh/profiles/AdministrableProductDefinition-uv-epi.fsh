@@ -7,14 +7,18 @@ Description: "AdministrableProductDefinition (ePI)"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..
-* identifier.value 1..
+* identifier.system 1..1
+* identifier.value 1..1
 * status ^short = "draft | active | retired | unknown"
 * formOf only Reference(MedicinalProductDefinition-uv-epi)
-* administrableDoseForm ^short = "The dose form of the final product after necessary reconstitution or processing."
-* administrableDoseForm from http://hl7.org/fhir/ValueSet/administrable-dose-form (example)
-* unitOfPresentation ^short = "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff'."
-* unitOfPresentation from http://hl7.org/fhir/ValueSet/unit-of-presentation (example)
+* administrableDoseForm.coding 1..1
+* administrableDoseForm.coding.system 1..1
+* administrableDoseForm.coding.code 1..1
+* administrableDoseForm.coding.display 1..1
+* unitOfPresentation.coding 1..1
+* unitOfPresentation.coding.system 1..1
+* unitOfPresentation.coding.code 1..1
+* unitOfPresentation.coding.display 1..1
 * producedFrom only Reference(ManufacturedItemDefinition-uv-epi)
 * property ^short = "General characteristics of this item."
 * property ^slicing.discriminator.type = #value
@@ -29,38 +33,81 @@ Description: "AdministrableProductDefinition (ePI)"
     size 0..* and
     image 0..* and
     imprint 0..*
-* property[color] ^short = "Colour of the item"
-* property[color].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#color
-* property[color].type.coding.code = #color
+* property[color].type.coding 1..1
+* property[color].type.coding.system 1..1
+* property[color].type.coding.code 1..1
+* property[color].type.coding.display 1..1
 * property[color].value[x] only CodeableConcept
-* property[flavor] ^short = "Flavour of the item"
-* property[flavor].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#flavor
-* property[flavor].type.coding.code = #flavor
+* property[color].valueCodeableConcept.coding 1..1
+* property[color].valueCodeableConcept.coding.system 1..1
+* property[color].valueCodeableConcept.coding.code 1..1
+* property[color].valueCodeableConcept.coding.display 1..1
+
+* property[flavor].type.coding 1..1
+* property[flavor].type.coding.system 1..1
+* property[flavor].type.coding.code 1..1
+* property[flavor].type.coding.display 1..1
 * property[flavor].value[x] only CodeableConcept
-* property[score] ^short = "Score of the item"
-* property[score].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#scoring
-* property[score].type.coding.code = #scoring
+* property[flavor].valueCodeableConcept.coding 1..1
+* property[flavor].valueCodeableConcept.coding.system 1..1
+* property[flavor].valueCodeableConcept.coding.code 1..1
+* property[flavor].valueCodeableConcept.coding.display 1..1
+
+* property[score].type.coding 1..1
+* property[score].type.coding.system 1..1
+* property[score].type.coding.code 1..1
+* property[score].type.coding.display 1..1
 * property[score].value[x] only CodeableConcept
-* property[shape] ^short = "Shape of the item"
-* property[shape].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#shape
-* property[shape].type.coding.code = #shape
+* property[score].valueCodeableConcept.coding 1..1
+* property[score].valueCodeableConcept.coding.system 1..1
+* property[score].valueCodeableConcept.coding.code 1..1
+* property[score].valueCodeableConcept.coding.display 1..1
+
+* property[shape].type.coding 1..1
+* property[shape].type.coding.system 1..1
+* property[shape].type.coding.code 1..1
+* property[shape].type.coding.display 1..1
 * property[shape].value[x] only CodeableConcept
-* property[surfaceForm] ^short = "Surface form of the item"
-* property[surfaceForm].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#surfaceform
-* property[surfaceForm].type.coding.code = #surfaceform
+* property[shape].valueCodeableConcept.coding 1..1
+* property[shape].valueCodeableConcept.coding.system 1..1
+* property[shape].valueCodeableConcept.coding.code 1..1
+* property[shape].valueCodeableConcept.coding.display 1..1
+
+* property[surfaceForm].type.coding 1..1
+* property[surfaceForm].type.coding.system 1..1
+* property[surfaceForm].type.coding.code 1..1
+* property[surfaceForm].type.coding.display 1..1
 * property[surfaceForm].value[x] only CodeableConcept
-* property[size] ^short = "Size of the item"
-* property[size].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#size
-* property[size].type.coding.code = #size
+* property[surfaceForm].valueCodeableConcept.coding 1..1
+* property[surfaceForm].valueCodeableConcept.coding.system 1..1
+* property[surfaceForm].valueCodeableConcept.coding.code 1..1
+* property[surfaceForm].valueCodeableConcept.coding.display 1..1
+
+* property[size].type.coding 1..1
+* property[size].type.coding.system 1..1
+* property[size].type.coding.code 1..1
+* property[size].type.coding.display 1..1
 * property[size].value[x] only CodeableConcept
-* property[image] ^short = "Image of the item"
-* property[image].type = http://terminology.hl7.org/CodeSystem/medicationknowledge-characteristic#image
-* property[image].type.coding.code = #image
+* property[size].valueCodeableConcept.coding 1..1
+* property[size].valueCodeableConcept.coding.system 1..1
+* property[size].valueCodeableConcept.coding.code 1..1
+* property[size].valueCodeableConcept.coding.display 1..1
+
+* property[image].type.coding 1..1
+* property[image].type.coding.system 1..1
+* property[image].type.coding.code 1..1
+* property[image].type.coding.display 1..1
 * property[image].value[x] only CodeableConcept
+* property[image].valueCodeableConcept.coding 1..1
+* property[image].valueCodeableConcept.coding.system 1..1
+* property[image].valueCodeableConcept.coding.code 1..1
+* property[image].valueCodeableConcept.coding.display 1..1
 * property[imprint] ^short = "Imprint on the item"
 * property[imprint].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#imprint
 * property[imprint].type.coding.code = #imprint
 * property[imprint].value[x] only markdown
 * routeOfAdministration ^short = "The path by which the product is taken into or makes contact with the body."
-* routeOfAdministration.code ^short = "Coded expression for the route."
-* routeOfAdministration.code from http://hl7.org/fhir/ValueSet/route-codes (example)
+* routeOfAdministration.code.coding 1..1
+* routeOfAdministration.code.coding.system 1..1
+* routeOfAdministration.code.coding.code 1..1
+* routeOfAdministration.code.coding.display 1..1

@@ -7,8 +7,29 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..
-* identifier.value 1..
+* identifier 1..
+* identifier.system 1..1
+* identifier.value 1..1
+* type.coding 1..1
+* type.coding.system 1..1
+* type.coding.code 1..1
+* type.coding.display 1..1
+* domain.coding 1..1
+* domain.coding.system 1..1
+* domain.coding.code 1..1
+* domain.coding.display 1..1
+* status.coding 1..1
+* status.coding.system 1..1
+* status.coding.code 1..1
+* status.coding.display 1..1
+* combinedPharmaceuticalDoseForm.coding 1..1
+* combinedPharmaceuticalDoseForm.coding.system 1..1
+* combinedPharmaceuticalDoseForm.coding.code 1..1
+* combinedPharmaceuticalDoseForm.coding.display 1..1
+* legalStatusOfSupply.coding 1..1
+* legalStatusOfSupply.coding.system 1..1
+* legalStatusOfSupply.coding.code 1..1
+* legalStatusOfSupply.coding.display 1..1
 * type ^short = "Regulatory type, e.g. Investigational or Authorized."
 * domain ^short = "If this medicine applies to human or veterinary uses."
 * version ^short = "A business identifier relating to a specific version of the product."
@@ -19,24 +40,51 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * route ^short = "The path by which the product is taken into or makes contact with the body."
 * indication ^short = "Narrative text of the authorized indication(s) for this product."
 * legalStatusOfSupply ^short = "The legal status of supply of the medicinal product as classified by the regulator."
-* additionalMonitoringIndicator ^short = "Whether the Medicinal Product is subject to additional monitoring for regulatory reasons."
-* specialMeasures ^short = "Whether the Medicinal Product is subject to special measures for regulatory reasons."
-* pediatricUseIndicator ^short = "If authorized for use in children."
-* classification ^short = "Allows the product to be classified by various systems."
+* additionalMonitoringIndicator.coding 1..1
+* additionalMonitoringIndicator.coding.system 1..1
+* additionalMonitoringIndicator.coding.code 1..1
+* additionalMonitoringIndicator.coding.display 1..1
+* specialMeasures.coding 1..1
+* specialMeasures.coding.system 1..1
+* specialMeasures.coding.code 1..1
+* specialMeasures.coding.display 1..1
+* pediatricUseIndicator.coding 1..1
+* pediatricUseIndicator.coding.system 1..1
+* pediatricUseIndicator.coding.code 1..1
+* pediatricUseIndicator.coding.display 1..1
+* classification.coding 1..1
+* classification.coding.system 1..1
+* classification.coding.code 1..1
+* classification.coding.display 1..1
 * marketingStatus ^short = "Marketing status of the medicinal product, in contrast to marketing authorization."
-* marketingStatus.country ^short = "The country in which the marketing status applies."
-* marketingStatus.status ^short = "The status of the marketing of the medicinal product."
+* marketingStatus.country.coding 1..1
+* marketingStatus.country.coding.system 1..1
+* marketingStatus.country.coding.code 1..1
+* marketingStatus.country.coding.display 1..1
+* marketingStatus.status.coding 1..1
+* marketingStatus.status.coding.system 1..1
+* marketingStatus.status.coding.code 1..1
+* marketingStatus.status.coding.display 1..1
 * marketingStatus.dateRange ^short = "The date when the status became effective."
 * packagedMedicinalProduct ^short = "Package representation for the product."
 * comprisedOf ^short = "Types of manufactured items that are part of this product."
 * ingredient ^short = "The ingredients of this medicinal product - when not detailed in other resources."
 * contact ^short = "A product specific contact, person (in a role), or an organization."
-* contact.type ^short = "Allows the contact to be classified, for example QPPV, Pharmacovigilance Enquiry Information."
+* contact.type.coding 1..1
+* contact.type.coding.system 1..1
+* contact.type.coding.code 1..1
+* contact.type.coding.display 1..1
 * contact.contact ^short = "A product specific contact, person (in a role), or an organization."
 * name 1..
 * name.productName ^short = "The full product name expressed as Proprietary Name (Non-Proprietary Name) strength dose form"
-* name.type ^short = "Type of product name, such as rINN, BAN, Proprietary, Non-Proprietary."
-* name.part ^short = "Coding words or phrases of the name."
+* name.type.coding 1..1
+* name.type.coding.system 1..1
+* name.type.coding.code 1..1
+* name.type.coding.display 1..1
+* name.part.type.coding 1..1
+* name.part.type.coding.system 1..1
+* name.part.type.coding.code 1..1
+* name.part.type.coding.display 1..1
 * name.part ^slicing.discriminator.type = #pattern
 * name.part ^slicing.discriminator.path = "type"
 * name.part ^slicing.rules = #open
@@ -57,6 +105,15 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * name.part[TrademarkOrOtherSuffixPart] ^short = "Suffix"
 * name.part[TrademarkOrOtherSuffixPart].type = http://hl7.org/fhir/medicinal-product-name-part-type#TrademarkOrCompanyPart
 * name.usage ^short = "Country and jurisdiction where the name applies."
-* name.usage.country ^short = "Country where the name applies."
-* name.usage.jurisdiction ^short = "Jurisdiction where the name applies."
-* name.usage.language ^short = "Language of the name."
+* name.usage.country.coding 1..1
+* name.usage.country.coding.system 1..1
+* name.usage.country.coding.code 1..1
+* name.usage.country.coding.display 1..1
+* name.usage.jurisdiction.coding 1..1
+* name.usage.jurisdiction.coding.system 1..1
+* name.usage.jurisdiction.coding.code 1..1
+* name.usage.jurisdiction.coding.display 1..1
+* name.usage.language.coding 1..1
+* name.usage.language.coding.system 1..1
+* name.usage.language.coding.code 1..1
+* name.usage.language.coding.display 1..1

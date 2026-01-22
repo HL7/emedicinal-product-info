@@ -7,22 +7,38 @@ Description: "RegulatedAuthorization (ePI)"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..
-* identifier.value 1..
+* identifier.system 1..1
+* identifier.value 1..1
 * subject 1..
 * subject only Reference(MedicinalProductDefinition-uv-epi or PackagedProductDefinition-uv-epi)
-* type 1..
-* type ^short = "Overall type of this authorization, for example drug marketing approval, orphan drug designation."
-* description ^short = "General textual supporting information."
-* status 1..
-* status ^short = "The current status of this authorization"
+* type.coding 1..1
+* type.coding.system 1..1
+* type.coding.code 1..1
+* type.coding.display 1..1
+* status.coding 1..1
+* status.coding.system 1..1
+* status.coding.code 1..1
+* status.coding.display 1..1
 * statusDate ^short = "The date at which the current status was assigned."
-* indication ^short = "The indication for which the indication is granted."
-* basis ^short = "The legal/regulatory basis."
+* indication.concept.coding 1..1
+* indication.concept.coding.system 1..1
+* indication.concept.coding.code 1..1
+* indication.concept.coding.display 1..1
+* basis.coding 1..1
+* basis.coding.system 1..1
+* basis.coding.code 1..1
+* basis.coding.display 1..1
 * holder 1..
 * holder only Reference(Organization-uv-epi)
 * regulator only Reference(Organization-uv-epi)
 * case ^short = "The case or regulatory procedure for granting or amending a regulated authorization."
-* case.identifier ^short = "Identifier by which this case can be referenced."
-* case.type ^short = "The defining type of case."
-* case.status ^short = "The status associated with the case."
+* case.identifier.system 1..1
+* case.identifier.value 1..1
+* case.type.coding 1..1
+* case.type.coding.system 1..1
+* case.type.coding.code 1..1
+* case.type.coding.display 1..1
+* case.status.coding 1..1
+* case.status.coding.system 1..1
+* case.status.coding.code 1..1
+* case.status.coding.display 1..1

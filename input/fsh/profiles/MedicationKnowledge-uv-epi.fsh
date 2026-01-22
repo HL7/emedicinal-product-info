@@ -6,29 +6,41 @@ Description: "MedicationKnowledge (ePI) - ported from Business Friendly ePI Outl
 * ^status = #active
 // * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 // * ^extension[=].valueCode = #brr
-* identifier ^short = "Business identifier for this medication"
-* identifier ^definition = "Business identifier for this medication"
-* code ^short = "Code that identifies this medication"
-* code ^definition = "Code that identifies this medication"
+* identifier.system 1..1
+* identifier.value 1..1
+* code.coding 1..1
+* code.coding.system 1..1
+* code.coding.code 1..1
+* code.coding.display 1..1
 * status ^short = "active | inactive | entered-in-error"
 * status ^definition = "A code to indicate if the medication is in active use."
 * name ^short = "Common name for the medication"
 * name ^definition = "Common name for the medication"
 * indicationGuideline ^short = "Guidelines for administration of the medication"
 * indicationGuideline ^definition = "Guidelines for administration of the medication"
-* indicationGuideline.indication ^short = "Indication for use"
-* indicationGuideline.indication ^definition = "Indication for use"
+* indicationGuideline.indication.coding 1..1
+* indicationGuideline.indication.coding.system 1..1
+* indicationGuideline.indication.coding.code 1..1
+* indicationGuideline.indication.coding.display 1..1
 * indicationGuideline.dosingGuideline ^short = "Guidelines for dosage of the medication"
 * indicationGuideline.dosingGuideline ^definition = "Guidelines for dosage of the medication"
-* indicationGuideline.dosingGuideline.treatmentIntent ^short = "Intention of treatment"
-* indicationGuideline.dosingGuideline.treatmentIntent ^definition = "Intention of treatment"
+* indicationGuideline.dosingGuideline.treatmentIntent.coding 1..1
+* indicationGuideline.dosingGuideline.treatmentIntent.coding.system 1..1
+* indicationGuideline.dosingGuideline.treatmentIntent.coding.code 1..1
+* indicationGuideline.dosingGuideline.treatmentIntent.coding.display 1..1
 * indicationGuideline.dosingGuideline.dosage ^short = "Dosage for the medication"
 * indicationGuideline.dosingGuideline.dosage ^definition = "Dosage for the medication"
-* indicationGuideline.dosingGuideline.dosage.type ^short = "Category of dosage for a medication"
-* indicationGuideline.dosingGuideline.dosage.type ^definition = "Category of dosage for a medication"
+* indicationGuideline.dosingGuideline.dosage.type.coding 1..1
+* indicationGuideline.dosingGuideline.dosage.type.coding.system 1..1
+* indicationGuideline.dosingGuideline.dosage.type.coding.code 1..1
+* indicationGuideline.dosingGuideline.dosage.type.coding.display 1..1
 * indicationGuideline.dosingGuideline.dosage.dosage ^short = "Dosage for the medication"
 * indicationGuideline.dosingGuideline.dosage.dosage ^definition = "Dosage for the medication"
-* indicationGuideline.dosingGuideline.administrationTreatment ^short = "Type of treatment the guideline applies to"
-* indicationGuideline.dosingGuideline.administrationTreatment ^definition = "Type of treatment the guideline applies to"
-* indicationGuideline.dosingGuideline.patientCharacteristic ^short = "Characteristics of the patient that are relevant to the administration guidelines"
-* indicationGuideline.dosingGuideline.patientCharacteristic ^definition = "Characteristics of the patient that are relevant to the administration guidelines"
+* indicationGuideline.dosingGuideline.administrationTreatment.coding 1..1
+* indicationGuideline.dosingGuideline.administrationTreatment.coding.system 1..1
+* indicationGuideline.dosingGuideline.administrationTreatment.coding.code 1..1
+* indicationGuideline.dosingGuideline.administrationTreatment.coding.display 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.coding 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.coding.system 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.coding.code 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.coding.display 1..1
