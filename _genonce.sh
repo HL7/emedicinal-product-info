@@ -2,7 +2,7 @@
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
 export JAVA_HOME=/usr/local/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
-export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$JAVA_HOME/bin:/Users/a001/.gem/ruby/2.6.0/bin:$PATH
 echo Checking internet connection...
 curl -sSf tx.fhir.org > /dev/null
 
