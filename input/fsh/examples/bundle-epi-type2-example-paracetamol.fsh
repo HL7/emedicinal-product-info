@@ -6,6 +6,7 @@ Description: "Bundle - ePI Type 2 Paracetamol Example"
 * id = "bundle-epi-type2-example-paracetamol"
 * meta.versionId = "1.0"
 * meta.lastUpdated = "2023-01-25T12:00:00Z"
+* meta.profile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type2"
 * type = #document
 * timestamp = "2023-01-25T12:00:00Z"
 * identifier.system = $ema-id

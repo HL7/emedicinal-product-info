@@ -6,6 +6,7 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * id = "bundle-epi-type3-example-wonderdrug"
 * meta.versionId = "1.0"
 * meta.lastUpdated = "2023-10-27T10:00:00Z"
+* meta.profile = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type3"
 * type = #document
 * timestamp = "2023-10-27T10:00:00Z"
 * identifier.system = $ema-id

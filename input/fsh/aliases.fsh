@@ -19,7 +19,7 @@ Alias: $roleclass = http://terminology.hl7.org/CodeSystem/v3-RoleClass
 Alias: $publication-status = http://hl7.org/fhir/publication-status
 
 // External systems
-Alias: $meddra = http://terminology.hl7.org/CodeSystem/mdr
+Alias: $meddra = http://meddra.org
 Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $ncithesaurus =  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl // see https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.html
 Alias: $uri = urn:ietf:rfc:3986
