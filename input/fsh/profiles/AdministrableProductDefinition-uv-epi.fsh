@@ -33,70 +33,56 @@ Description: "AdministrableProductDefinition (ePI)"
     size 0..* and
     image 0..* and
     imprint 0..*
-* property[color].type.coding 1..1
-* property[color].type.coding.system 1..1
-* property[color].type.coding.code 1..1
-* property[color].type.coding.display 1..1
+* property[color].type = $epi-ig#color
+* property[color].type.coding.code = #color
 * property[color].value[x] only CodeableConcept
 * property[color].valueCodeableConcept.coding 1..1
 * property[color].valueCodeableConcept.coding.system 1..1
 * property[color].valueCodeableConcept.coding.code 1..1
 * property[color].valueCodeableConcept.coding.display 1..1
 
-* property[flavor].type.coding 1..1
-* property[flavor].type.coding.system 1..1
-* property[flavor].type.coding.code 1..1
-* property[flavor].type.coding.display 1..1
+* property[flavor].type = $epi-ig#flavor
+* property[flavor].type.coding.code = #flavor
 * property[flavor].value[x] only CodeableConcept
 * property[flavor].valueCodeableConcept.coding 1..1
 * property[flavor].valueCodeableConcept.coding.system 1..1
 * property[flavor].valueCodeableConcept.coding.code 1..1
 * property[flavor].valueCodeableConcept.coding.display 1..1
 
-* property[score].type.coding 1..1
-* property[score].type.coding.system 1..1
-* property[score].type.coding.code 1..1
-* property[score].type.coding.display 1..1
+* property[score].type = $epi-ig#score
+* property[score].type.coding.code = #score
 * property[score].value[x] only CodeableConcept
 * property[score].valueCodeableConcept.coding 1..1
 * property[score].valueCodeableConcept.coding.system 1..1
 * property[score].valueCodeableConcept.coding.code 1..1
 * property[score].valueCodeableConcept.coding.display 1..1
 
-* property[shape].type.coding 1..1
-* property[shape].type.coding.system 1..1
-* property[shape].type.coding.code 1..1
-* property[shape].type.coding.display 1..1
+* property[shape].type = $epi-ig#shape
+* property[shape].type.coding.code = #shape
 * property[shape].value[x] only CodeableConcept
 * property[shape].valueCodeableConcept.coding 1..1
 * property[shape].valueCodeableConcept.coding.system 1..1
 * property[shape].valueCodeableConcept.coding.code 1..1
 * property[shape].valueCodeableConcept.coding.display 1..1
 
-* property[surfaceForm].type.coding 1..1
-* property[surfaceForm].type.coding.system 1..1
-* property[surfaceForm].type.coding.code 1..1
-* property[surfaceForm].type.coding.display 1..1
+* property[surfaceForm].type = $epi-ig#surfaceform
+* property[surfaceForm].type.coding.code = #surfaceform
 * property[surfaceForm].value[x] only CodeableConcept
 * property[surfaceForm].valueCodeableConcept.coding 1..1
 * property[surfaceForm].valueCodeableConcept.coding.system 1..1
 * property[surfaceForm].valueCodeableConcept.coding.code 1..1
 * property[surfaceForm].valueCodeableConcept.coding.display 1..1
 
-* property[size].type.coding 1..1
-* property[size].type.coding.system 1..1
-* property[size].type.coding.code 1..1
-* property[size].type.coding.display 1..1
+* property[size].type = $epi-ig#size
+* property[size].type.coding.code = #size
 * property[size].value[x] only CodeableConcept
 * property[size].valueCodeableConcept.coding 1..1
 * property[size].valueCodeableConcept.coding.system 1..1
 * property[size].valueCodeableConcept.coding.code 1..1
 * property[size].valueCodeableConcept.coding.display 1..1
 
-* property[image].type.coding 1..1
-* property[image].type.coding.system 1..1
-* property[image].type.coding.code 1..1
-* property[image].type.coding.display 1..1
+* property[image].type = $epi-ig#image
+* property[image].type.coding.code = #image
 * property[image].value[x] only CodeableConcept
 * property[image].valueCodeableConcept.coding 1..1
 * property[image].valueCodeableConcept.coding.system 1..1
