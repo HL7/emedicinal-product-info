@@ -47,7 +47,7 @@ Description: "Composition for Type 2 Paracetamol"
 * language = #en
 * version = "1.0"
 * text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
 * type = $spor-rms#100000155538 "Package Leaflet"
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol)
 * date = "2023-01-25"
@@ -56,11 +56,11 @@ Description: "Composition for Type 2 Paracetamol"
 * section.title = "Package Leaflet"
 * section.code = $spor-rms#100000155538 "Package Leaflet"
 * section.text.status = #generated
-* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Package Leaflet</div>"
+* section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>Package Leaflet</div>"
 * section.section[0].title = "1. What is in this leaflet"
 * section.section[=].code = $spor-rms#100000155538 "1. What is in this leaflet"
 * section.section[=].text.status = #generated
-* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
 * section.entry[0] = Reference(org-epi-type2-example-acme)
 * section.entry[+] = Reference(mpd-epi-type2-example-paracetamol)
 // * section.entry[+] matches other resources... keeping it simple for now, can add all 15 if needed for validation
