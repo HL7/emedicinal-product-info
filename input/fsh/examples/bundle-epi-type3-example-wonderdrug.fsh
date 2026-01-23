@@ -22,6 +22,10 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * entry[medicinalProduct][1].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
 * entry[medicinalProduct][2].resource = mpd-epi-type2-example-paracetamol-200mg
 * entry[medicinalProduct][2].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
+* entry[medicinalProduct][+].resource = mpd-epi-type2-example-paracetamol
+* entry[medicinalProduct][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
+* entry[organization][+].resource = org-epi-type2-example-acme
+* entry[organization][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type2-example-acme"
 * entry[regulatedAuthorization].resource = ra-epi-type2-example-paracetamol
 * entry[regulatedAuthorization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-paracetamol"
 * entry[packagedProduct].resource = ppd-epi-type2-example-paracetamol

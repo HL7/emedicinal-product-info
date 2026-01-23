@@ -6,6 +6,7 @@ Description: "MedicationKnowledge (ePI) - ported from Business Friendly ePI Outl
 * ^status = #active
 // * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 // * ^extension[=].valueCode = #brr
+* ^experimental = true
 * identifier.system 1..1
 * identifier.value 1..1
 * code.coding 1..1
