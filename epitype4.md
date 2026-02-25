@@ -1,4 +1,4 @@
-Here is the comprehensive framework for your Type 4 ePI implementation, organized as an editable technical brief. You can copy and paste this directly into a shared document (like Word or a Wiki) or an email body for your team.
+oHere is the comprehensive framework for your Type 4 ePI implementation, organized as an editable technical brief. You can copy and paste this directly into a shared document (like Word or a Wiki) or an email body for your team.
 Technical Framework: Building a FHIR ePI Type 4 (Granular Implementation)
 1. Executive Summary & Business Rationale
 The objective of Type 4 granularity is to transition from "digital paper" to a Digital Twin of the medicinal product. By decomposing text into discrete, coded statements, we enable:
@@ -65,3 +65,18 @@ Example: Section 5.2 (Semantic PK Tagging)
         </div>
     </text>
 </section>
+
+<section>
+    <title value="4.1 Therapeutic indications"/>
+    <section>
+        <title value="Schizophrenia - Adults"/>
+        <text><div xmlns="http://www.w3.org/1999/xhtml">Indicated for schizophrenia in <span class="pop">adults</span>.</div></text>
+        <entry><reference value="ClinicalUseDefinition/cud-adult-schiz"/></entry>
+    </section>
+    <section>
+        <title value="Schizophrenia - Adolescents"/>
+        <text><div xmlns="http://www.w3.org/1999/xhtml">Indicated for schizophrenia in <span class="pop">adolescents (15+)</span>.</div></text>
+        <entry><reference value="ClinicalUseDefinition/cud-adol-schiz"/></entry>
+    </section>
+</section>
+
