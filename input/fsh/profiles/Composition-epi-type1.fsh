@@ -32,7 +32,7 @@ Description: "This profile represents the constraints applied to the Composition
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
 * contained contains binaryImage 0..*
-* contained[binaryImage] only Binary
+* contained[binaryImage] only BinaryEpi
 * identifier.system 1..1
 * identifier.value 1..1
 * status 1..

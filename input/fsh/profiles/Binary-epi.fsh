@@ -1,7 +1,7 @@
 Profile: BinaryEpi
 Parent: Binary
 Id: binary-epi
-Title: "Binary - ePI"
+Title: "binary (ePI)"
 Description: "This profile represents the constraints applied to the Binary resource used in the ePI FHIR Implementation Guide. It enforces usage of contained base64 data."
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
