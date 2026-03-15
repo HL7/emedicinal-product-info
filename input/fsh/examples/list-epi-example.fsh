@@ -1,6 +1,6 @@
 Instance: ListEpiExample
 InstanceOf: ListUvEpi
-Title: "Example List - ePI"
+Title: "List Example"
 Description: "An example of a List resource conforming to the List-uv-epi profile."
 Usage: #example
 

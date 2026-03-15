@@ -7,5 +7,7 @@ Description: "This profile represents the constraints applied to the Binary reso
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * contentType 1..
+* contentType ^short = "MimeType of the binary content (e.g., image/png, image/jpeg, image/svg+xml)"
+* contentType ^definition = "MimeType of the binary content represented as a standard MIME type. This is used to clarify the image type being exchanged (e.g., SVG, PNG, JPEG)."
 * securityContext 0..0
 * data 1..

@@ -1,8 +1,8 @@
 Profile: CompositionEpiType1
 Parent: Composition
 Id: composition-epi-type1
-Title: "Composition - ePI Type 1-3"
-Description: "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide. This profile applies to all ePI Types (1, 2, and 3)."
+Title: "Composition - ePI Type 1 to 4"
+Description: "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide. This profile applies to all ePI Types (1, 2, 3, and 4)."
 * ^status = #active
 * ^version = "1.1.0"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -63,6 +63,8 @@ Description: "This profile represents the constraints applied to the Composition
 * section ^short = "Root / Parent Section"
 * section ^definition = "The root (parent) section of the document hierarchy. In this profile, there is only one top-level section which serves as the main container."
 * section.id 1..
+* section.id ^short = "Section ID (XML: <section id='...'>)"
+* section.id ^definition = "The internal, unique identifier for this specific section element within the resource instance. When represented in XML, this MUST be serialized as an attribute (e.g. <section id=\"my-id\">) and NOT as a child element (<id>my-id</id>)."
 * section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi or MedicationKnowledgeUvEpi)
 * section.title 1..
 * section.title ^short = "Parent Section Title"
@@ -78,6 +80,8 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section ^short = "Nested Content Sections"
 * section.section ^definition = "The nested child sections containing the actual detailed content of the ePI."
 * section.section.id 1..
+* section.section.id ^short = "Nested Section ID (XML: <section id='...'>)"
+* section.section.id ^definition = "The internal, unique identifier for this specific nested section element within the resource instance. When represented in XML, this MUST be serialized as an attribute (e.g. <section id=\"my-id\">) and NOT as a child element (<id>my-id</id>)."
 * section.section.title 0..
 * section.section.title ^short = "Title of the nested section"
 * section.section.title ^definition = "The title of the child section."
@@ -93,6 +97,8 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.section ^short = "Nested Content Sections"
 * section.section.section ^definition = "The nested child sections containing the actual detailed content of the ePI."
 * section.section.section.id 1..
+* section.section.section.id ^short = "Nested Section ID (XML: <section id='...'>)"
+* section.section.section.id ^definition = "The internal, unique identifier for this specific nested section element within the resource instance. When represented in XML, this MUST be serialized as an attribute (e.g. <section id=\"my-id\">) and NOT as a child element (<id>my-id</id>)."
 * section.section.section.title 0..
 * section.section.section.title ^short = "Title of the nested section"
 * section.section.section.title ^definition = "The title of the child section."

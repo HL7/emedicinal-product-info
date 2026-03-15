@@ -9,39 +9,36 @@ Description: "MedicationKnowledge (ePI) - ported from Business Friendly ePI Outl
 * ^experimental = true
 * identifier.system 1..1
 * identifier.value 1..1
-* code.coding 1..1
-* code.coding.system 1..1
-* code.coding.code 1..1
-* code.coding.display 1..1
+* code 0..0
 * status ^short = "active | inactive | entered-in-error"
 * status ^definition = "A code to indicate if the medication is in active use."
 * name ^short = "Common name for the medication"
 * name ^definition = "Common name for the medication"
 * indicationGuideline ^short = "Guidelines for administration of the medication"
 * indicationGuideline ^definition = "Guidelines for administration of the medication"
-* indicationGuideline.indication.concept.coding 1..1
-* indicationGuideline.indication.concept.coding.system 1..1
-* indicationGuideline.indication.concept.coding.code 1..1
-* indicationGuideline.indication.concept.coding.display 1..1
+* indicationGuideline.indication 1..*
+* indicationGuideline.indication only CodeableReference(ClinicalUseDefinitionIndicationUvEpi)
 * indicationGuideline.dosingGuideline ^short = "Guidelines for dosage of the medication"
 * indicationGuideline.dosingGuideline ^definition = "Guidelines for dosage of the medication"
 * indicationGuideline.dosingGuideline.treatmentIntent.coding 1..1
 * indicationGuideline.dosingGuideline.treatmentIntent.coding.system 1..1
 * indicationGuideline.dosingGuideline.treatmentIntent.coding.code 1..1
 * indicationGuideline.dosingGuideline.treatmentIntent.coding.display 1..1
+* indicationGuideline.dosingGuideline.dosage 1..*
 * indicationGuideline.dosingGuideline.dosage ^short = "Dosage for the medication"
 * indicationGuideline.dosingGuideline.dosage ^definition = "Dosage for the medication"
 * indicationGuideline.dosingGuideline.dosage.type.coding 1..1
 * indicationGuideline.dosingGuideline.dosage.type.coding.system 1..1
 * indicationGuideline.dosingGuideline.dosage.type.coding.code 1..1
 * indicationGuideline.dosingGuideline.dosage.type.coding.display 1..1
+* indicationGuideline.dosingGuideline.dosage.type ^short = "Category of dosage (e.g., Target, Maximum, Minimum)"
+* indicationGuideline.dosingGuideline.dosage.type ^definition = "The kind of dosage being defined, such as the intended target dose, or a maximum or minimum boundary. This allows differentiation between standard therapeutic doses and limit thresholds."
 * indicationGuideline.dosingGuideline.dosage.dosage ^short = "Dosage for the medication"
 * indicationGuideline.dosingGuideline.dosage.dosage ^definition = "Dosage for the medication"
-* indicationGuideline.dosingGuideline.administrationTreatment.coding 1..1
-* indicationGuideline.dosingGuideline.administrationTreatment.coding.system 1..1
-* indicationGuideline.dosingGuideline.administrationTreatment.coding.code 1..1
-* indicationGuideline.dosingGuideline.administrationTreatment.coding.display 1..1
+* indicationGuideline.dosingGuideline.administrationTreatment 0..0
+* indicationGuideline.dosingGuideline.patientCharacteristic 0..*
 * indicationGuideline.dosingGuideline.patientCharacteristic.type.coding 1..1
 * indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.system 1..1
 * indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.code 1..1
 * indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.display 1..1
+* indicationGuideline.dosingGuideline.patientCharacteristic.type from PatientCharacteristicType (extensible)
