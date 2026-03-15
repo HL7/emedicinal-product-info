@@ -47,7 +47,7 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * code.coding.code 1..1
 * code.coding.display 1..1
 
-* subject 1..1
+* subject 1..*
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 * subject ^short = "If all resources have the same subject"
 * subject ^definition = "The common subject (or patient) of the resources that are in the list if there is one."
@@ -70,10 +70,8 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * entry 1..
 * entry ^short = "Entries in the list"
 * entry ^definition = "Entries in the list."
-* entry.flag ^short = "Status/Workflow information about this item"
-* entry.flag ^definition = "The flag allows the system constructing the list to indicate the role the item plays."
-* entry.deleted ^short = "If this item is actually marked as deleted"
-* entry.deleted ^definition = "True if the item is marked as deleted in the list."
+* entry.flag 0..0
+* entry.deleted 0..0
 * entry.date ^short = "When item added to list"
 * entry.date ^definition = "When this item was added to the list."
 * entry.item 1..1
