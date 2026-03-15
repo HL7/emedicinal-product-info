@@ -59,9 +59,11 @@ Description: "This profile represents the constraints applied to the Composition
 * relatesTo 0..
 * relatesTo ^short = "Reference to previous versions"
 * relatesTo ^definition = "A reference to a previous version of this ePI or another related composition, used to establish a version history or relationship between documents."
-* section 0..1
+* section 1..1
 * section ^short = "Root / Parent Section"
 * section ^definition = "The root (parent) section of the document hierarchy. In this profile, there is only one top-level section which serves as the main container."
+* section.id 1..
+* section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi or MedicationKnowledgeUvEpi)
 * section.title 1..
 * section.title ^short = "Parent Section Title"
 * section.title ^definition = "The title of the specific section in the ePI."
@@ -75,6 +77,7 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section 1..
 * section.section ^short = "Nested Content Sections"
 * section.section ^definition = "The nested child sections containing the actual detailed content of the ePI."
+* section.section.id 1..
 * section.section.title 0..
 * section.section.title ^short = "Title of the nested section"
 * section.section.title ^definition = "The title of the child section."
@@ -85,3 +88,20 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.text 0..
 * section.section.text ^short = "Text content of the nested section"
 * section.section.text ^definition = "The text content of the child section."
+* section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi or MedicationKnowledgeUvEpi)
+* section.section.section 0..
+* section.section.section ^short = "Nested Content Sections"
+* section.section.section ^definition = "The nested child sections containing the actual detailed content of the ePI."
+* section.section.section.id 1..
+* section.section.section.title 0..
+* section.section.section.title ^short = "Title of the nested section"
+* section.section.section.title ^definition = "The title of the child section."
+* section.section.section.code.coding 0..1
+* section.section.section.code.coding.system 1..1
+* section.section.section.code.coding.code 1..1
+* section.section.section.code.coding.display 1..1
+* section.section.section.text 0..
+* section.section.section.text ^short = "Text content of the nested section"
+* section.section.section.text ^definition = "The text content of the child section."
+* section.section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi or MedicationKnowledgeUvEpi)
+

@@ -14,6 +14,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * identifier.value 1..1
 * type = #document
 * timestamp 1..
+* language 0..0
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed

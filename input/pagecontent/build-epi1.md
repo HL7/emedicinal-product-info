@@ -32,6 +32,8 @@ end
     *   `title`: The human-readable title of the document.
     *   `contained`: List of `Binary` image resources.
     *   `section`: Hierarchical sections containing the XHTML narrative.
+        *   `id`: Each section must have a unique `id` attribute (e.g., a UUID) to serve as an anchor for hypertext linking.
+        *   `entry`: Can be used to reference related structured ePI resources (e.g., MedicinalProductDefinition, Ingredient).
 *   **[Binary]**
     *   `contentType`: The image MIME type (SVG preferred).
     *   `data`: The Base64-encoded image data.

@@ -47,6 +47,7 @@ Description: "Composition for Type 2 Paracetamol"
 * status = #final
 * language = #en
 * version = "1.0"
+* contained[0] = binaryImage-t2
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
 * type = $spor-rms#100000155538 "Package Leaflet"
@@ -54,10 +55,12 @@ Description: "Composition for Type 2 Paracetamol"
 * date = "2023-01-25"
 * author = Reference(org-epi-type2-example-acme)
 * title = "Package Leaflet: Information for the user - WonderDrug 500 mg tablets"
+* section.id = "root-section"
 * section.title = "Package Leaflet"
 * section.code = $spor-rms#100000155538 "Package Leaflet"
 * section.text.status = #generated
 * section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>Package Leaflet</div>"
+* section.section[0].id = "section-1"
 * section.section[0].title = "1. What is in this leaflet"
 * section.section[=].code = $spor-rms#100000155538 "1. What is in this leaflet"
 * section.section[=].text.status = #generated
@@ -65,6 +68,13 @@ Description: "Composition for Type 2 Paracetamol"
 * section.entry[0] = Reference(org-epi-type2-example-acme)
 * section.entry[+] = Reference(mpd-epi-type2-example-paracetamol)
 // * section.entry[+] matches other resources... keeping it simple for now, can add all 15 if needed for validation
+
+Instance: binaryImage-t2
+InstanceOf: Binary
+Usage: #inline
+* id = "binaryImage-t2"
+* contentType = #image/png
+* data = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
 
 Instance: org-epi-type2-example-acme
 InstanceOf: OrganizationUvEpi
