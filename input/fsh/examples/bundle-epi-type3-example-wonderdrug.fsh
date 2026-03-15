@@ -443,9 +443,10 @@ Title: "MedicationKnowledge - WonderDrug"
 Description: "MedicationKnowledge - WonderDrug with structured dosing regimen"
 * id = "medication-knowledge-epi-type3-example"
 * status = #active
-* code.text = "WonderDrug 500 mg tablets"
-* code.coding = $sct#763158003 "Medicinal product (product)"
+* indicationGuideline.indication[0].concept = $sct#386661006 "Fever"
+* indicationGuideline.indication[1].concept = $sct#22253000 "Pain"
 // Structured dosing regimen: Week 1 - twice daily, Weeks 2-4 - once daily
+* indicationGuideline.dosingGuideline[0].treatmentIntent.coding = $sct#384812002 "To relieve pain"
 * indicationGuideline.dosingGuideline[0].treatmentIntent.text = "Pain relief"
 * indicationGuideline.dosingGuideline[=].dosage[0].type.text = "Initial Treatment (Week 1)"
 * indicationGuideline.dosingGuideline[=].dosage[=].dosage.sequence = 1
@@ -480,7 +481,7 @@ Description: "MedicationKnowledge - WonderDrug with structured dosing regimen"
 * indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.code = #10219000
 
 Instance: binaryImage-t3
-InstanceOf: Binary
+InstanceOf: BinaryEpi
 Usage: #inline
 * id = "binaryImage-t3"
 * contentType = #image/png

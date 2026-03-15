@@ -14,12 +14,15 @@ Description: "MedicationKnowledge (ePI) - ported from Business Friendly ePI Outl
 * status ^definition = "A code to indicate if the medication is in active use."
 * name ^short = "Common name for the medication"
 * name ^definition = "Common name for the medication"
+* indicationGuideline 1..*
 * indicationGuideline ^short = "Guidelines for administration of the medication"
 * indicationGuideline ^definition = "Guidelines for administration of the medication"
 * indicationGuideline.indication 1..*
 * indicationGuideline.indication only CodeableReference(ClinicalUseDefinitionIndicationUvEpi)
+* indicationGuideline.dosingGuideline 1..*
 * indicationGuideline.dosingGuideline ^short = "Guidelines for dosage of the medication"
 * indicationGuideline.dosingGuideline ^definition = "Guidelines for dosage of the medication"
+* indicationGuideline.dosingGuideline.treatmentIntent 0..1
 * indicationGuideline.dosingGuideline.treatmentIntent.coding 1..1
 * indicationGuideline.dosingGuideline.treatmentIntent.coding.system 1..1
 * indicationGuideline.dosingGuideline.treatmentIntent.coding.code 1..1
@@ -41,4 +44,4 @@ Description: "MedicationKnowledge (ePI) - ported from Business Friendly ePI Outl
 * indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.system 1..1
 * indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.code 1..1
 * indicationGuideline.dosingGuideline.patientCharacteristic.type.coding.display 1..1
-* indicationGuideline.dosingGuideline.patientCharacteristic.type from PatientCharacteristicType (extensible)
+* indicationGuideline.dosingGuideline.patientCharacteristic.type from PatientCharacteristicType (example)

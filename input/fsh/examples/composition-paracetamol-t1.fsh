@@ -56,7 +56,7 @@ Description: "Paracetamol 500 mg tablets Package Leaflet"
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><h3>6. Contents of the pack and other information</h3><p><strong>What Paracetamol contains:</strong> The active substance is paracetamol. The other ingredients are pregelatinized starch, povidone, stearic acid, talc, magnesium stearate, and hypromellose.</p><p><strong>What Paracetamol looks like and contents of the pack:</strong> Paracetamol tablets are white and round. They are available in blister packs of 30 or 50 tablets.</p></div>"
 
 Instance: binaryImage-t1
-InstanceOf: Binary
+InstanceOf: BinaryEpi
 Usage: #inline
 * id = "binaryImage-t1"
 * contentType = #image/png

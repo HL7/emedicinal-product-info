@@ -70,7 +70,7 @@ Description: "Composition for Type 2 Paracetamol"
 // * section.entry[+] matches other resources... keeping it simple for now, can add all 15 if needed for validation
 
 Instance: binaryImage-t2
-InstanceOf: Binary
+InstanceOf: BinaryEpi
 Usage: #inline
 * id = "binaryImage-t2"
 * contentType = #image/png
