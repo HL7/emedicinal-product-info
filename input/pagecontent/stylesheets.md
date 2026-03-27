@@ -40,6 +40,6 @@ View the fully rendered HTML examples below to see the stylesheets in action:
 *   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](examples/bundle-epi-type3-example-wonderdrug.html){:target="_blank"}
 
 **ePI Tracking Lists (`List` resource):**
-*   **Single-Product Language Tracker**: [epi-list-showcase-1.html](epi-list-showcase-1.html){:target="_blank"}
-*   **Cross-Jurisdiction Tracker**: [epi-list-showcase-2.html](epi-list-showcase-2.html){:target="_blank"}
-*   **Drug Category Tracker**: [epi-list-showcase-3.html](epi-list-showcase-3.html){:target="_blank"}
+*   **Single-Product Language Tracker**: [epi-list-showcase-1.html](examples/epi-list-showcase-1.html){:target="_blank"}
+*   **Cross-Jurisdiction Tracker**: [epi-list-showcase-2.html](examples/epi-list-showcase-2.html){:target="_blank"}
+*   **Drug Category Tracker**: [epi-list-showcase-3.html](examples/epi-list-showcase-3.html){:target="_blank"}
