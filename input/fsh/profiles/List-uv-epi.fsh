@@ -17,8 +17,8 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
     VersionNumber named versionNumber 0..1
 
 * text 1..
-* text ^short = "Text summary of the resource, for human interpretation"
-* text ^definition = "Text summary of the resource, for human interpretation"
+* text ^short = "This is a narrative description of the List and its content"
+* text ^definition = "This is a narrative description of the List and its content"
 
 * identifier 1..1
 * identifier ^short = "Business identifier for this list"
@@ -26,7 +26,7 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * identifier.system 1..1
 * identifier.value 1..1
 
-* status 1..1
+* status 1..1 MS
 * status ^short = "current | retired | entered-in-error"
 * status ^definition = "Indicates the current state of this list."
 
@@ -36,8 +36,8 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * mode ^definition = "How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted."
 
 * title 1..1
-* title ^short = "Descriptive name for the list"
-* title ^definition = "A label for the list assigned by the author."
+* title ^short = "This is a simple title for the List"
+* title ^definition = "This is a simple title for the List"
 
 * code 1..1
 * code ^short = "What the purpose of this list is"
@@ -72,9 +72,15 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * entry ^definition = "Entries in the list."
 * entry.flag 0..0
 * entry.deleted 0..0
+* entry.date 1..1
+* entry.date MS
 * entry.date ^short = "When item added to list"
 * entry.date ^definition = "When this item was added to the list."
 * entry.item 1..1
 * entry.item only Reference(Bundle)
 * entry.item ^short = "Actual entry"
 * entry.item ^definition = "A reference to the actual resource from which data was derived."
+* entry.item.reference MS
+* entry.item.type MS
+* entry.item.identifier MS
+* entry.item.display MS

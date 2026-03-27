@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ePI Tracking List — Vulcan FHIR IG</title>
+  <meta name="description" content="FHIR R5 List resource showcasing tracked electronic Product Information (ePI) documents." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ── Root Design Tokens ─────────────────────── */
+    :root {
+      --bg:          #0f1117;
+      --surface:     #1a1d2e;
+      --surface-2:   #222638;
+      --border:      #2d3155;
+      --border-2:    #3a4070;
+      --accent:      #4f8ef7;
+      --accent-glow: rgba(79,142,247,0.15);
+      --teal:        #2dd4bf;
+      --teal-glow:   rgba(45,212,191,0.15);
+      --purple:      #a78bfa;
+      --purple-glow: rgba(167,139,250,0.15);
+      --amber:       #fbbf24;
+      --amber-glow:  rgba(251,191,36,0.12);
+      --rose:        #f87171;
+      --rose-glow:   rgba(248,113,113,0.12);
+      --green:       #4ade80;
+      --green-glow:  rgba(74,222,128,0.12);
+      --text:        #e2e8f0;
+      --muted:       #8892b0;
+      --faint:       #4a5568;
+      --radius:      10px;
+      --radius-lg:   16px;
+      --transition:  0.2s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Top Banner ───────────────────────────── */
+    .top-banner {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .top-banner .ig-name {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .top-banner .breadcrumb-sep { color: var(--faint); }
+
+    .top-banner .hl7-chip {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(79,142,247,0.25);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 3px 10px;
+      border-radius: 99px;
+    }
+
+    /* ── Hero ─────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, #0f1117 0%, #141828 50%, #0f1525 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 32px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 30% 60%, rgba(79,142,247,0.07) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 70% 40%, rgba(167,139,250,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .fhir-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(79,142,247,0.3);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      background: linear-gradient(135deg, #e2e8f0 30%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .hero p code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85em;
+      background: rgba(255,255,255,0.08);
+      padding: 2px 8px;
+      border-radius: 5px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .meta-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .meta-chip strong { color: var(--text); font-weight: 600; }
+
+    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+    /* ── Main ─────────────────────────────────── */
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 44px 24px 80px;
+    }
+
+    /* ── Section Header ───────────────────────── */
+    .sec-hdr {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .sec-hdr .icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .sec-hdr h2 {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    .sec-hdr .line { flex: 1; height: 1px; background: var(--border); }
+
+    /* ── Stats ────────────────────────────────── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .stat:hover { border-color: var(--border-2); transform: translateY(-2px); }
+
+    .stat .val {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat .lbl {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+    }
+
+    .c-accent { color: var(--accent); }
+    .c-teal   { color: var(--teal);   }
+    .c-purple { color: var(--purple); }
+    .c-green  { color: var(--green);  }
+    .c-amber  { color: var(--amber);  }
+    .c-rose   { color: var(--rose);   }
+
+    /* ── List Header Card ─────────────────────── */
+    .list-hdr {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 36px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    }
+
+    .list-hdr::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--purple));
+    }
+
+    .hdr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 22px;
+    }
+
+    .hdr-field label {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--faint);
+      margin-bottom: 5px;
+    }
+
+    .hdr-field .v {
+      font-size: 0.88rem;
+      color: var(--text);
+    }
+
+    .hdr-field code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.77rem;
+      color: var(--teal);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    /* Status / Mode chips */
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .chip.current    { background: var(--green-glow);  border: 1px solid rgba(74,222,128,0.3);  color: var(--green);  }
+    .chip.retired    { background: var(--rose-glow);   border: 1px solid rgba(248,113,113,0.3); color: var(--rose);   }
+    .chip.superseded { background: var(--amber-glow);  border: 1px solid rgba(251,191,36,0.3);  color: var(--amber);  }
+    .chip.mode       { background: var(--accent-glow); border: 1px solid rgba(79,142,247,0.25); color: var(--accent); }
+
+    /* ── Entry Cards ──────────────────────────── */
+    .entries { display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; }
+
+    .entry {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .entry:hover {
+      border-color: var(--border-2);
+      box-shadow: 0 0 28px rgba(79,142,247,0.07);
+    }
+
+    .entry.deleted {
+      opacity: 0.6;
+      border-style: dashed;
+    }
+
+    .entry-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .entry-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--surface-2);
+      border: 1px solid var(--border-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .entry-title { flex: 1 }
+    .entry-title .name { font-size: 0.93rem; font-weight: 600; color: var(--text); }
+    .entry-title .inn  { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
+
+    .entry-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; align-items: center; }
+
+    .type-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 5px;
+    }
+
+    .t1 { background: var(--teal-glow);   border: 1px solid rgba(45,212,191,0.25);  color: var(--teal);   }
+    .t2 { background: var(--purple-glow); border: 1px solid rgba(167,139,250,0.25); color: var(--purple); }
+    .t3 { background: var(--accent-glow); border: 1px solid rgba(79,142,247,0.25);  color: var(--accent); }
+
+    .entry-body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .ef {
+      padding: 13px 20px;
+      border-right: 1px solid var(--border);
+    }
+    .ef:last-child { border-right: none; }
+
+    .ef label {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--faint);
+      margin-bottom: 5px;
+    }
+
+    .ef .v {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .ef code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.73rem;
+      color: var(--teal);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 1px 6px;
+      border-radius: 4px;
+      word-break: break-all;
+    }
+
+    .del-flag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      color: var(--rose);
+      background: var(--rose-glow);
+      border: 1px solid rgba(248,113,113,0.2);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* ── JSON Accordion ───────────────────────── */
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+
+    details summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 20px;
+      cursor: pointer;
+      list-style: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--text);
+      user-select: none;
+      transition: background var(--transition);
+    }
+
+    details summary:hover { background: var(--surface-2); }
+    details summary::marker,
+    details summary::-webkit-details-marker { display: none; }
+
+    .chevron { margin-left: auto; font-size: 11px; color: var(--faint); transition: transform var(--transition); }
+    details[open] summary .chevron { transform: rotate(180deg); }
+    details[open] summary { border-bottom: 1px solid var(--border); }
+
+    details pre {
+      margin: 0;
+      padding: 22px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      line-height: 1.7;
+      background: #080b12;
+      color: #a9b7d6;
+    }
+
+    .k  { color: #7dd3fc; }
+    .s  { color: #86efac; }
+    .nb { color: #fbbf24; }
+    .bb { color: #f87171; }
+
+    /* ── Field Summary Table ──────────────────── */
+    .field-table-wrap {
+      background: rgba(79,142,247,0.06);
+      border: 1px solid rgba(79,142,247,0.18);
+      border-radius: var(--radius-lg);
+      padding: 26px 28px;
+      margin-top: 40px;
+    }
+
+    .field-table-wrap h3 {
+      font-size: 0.93rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.81rem; }
+
+    thead tr { border-bottom: 1px solid var(--border); }
+
+    th {
+      text-align: left;
+      padding: 8px 12px;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    td { padding: 9px 12px; border-bottom: 1px solid rgba(45,49,85,0.5); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+
+    td:first-child { font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; color: #7dd3fc; }
+    td:nth-child(2) { font-size: 0.79rem; }
+    td:last-child  { color: var(--muted); }
+
+    /* ── Responsive ───────────────────────────── */
+    @media (max-width: 640px) {
+      .hero { padding: 36px 18px 30px; }
+      main  { padding: 24px 14px 60px; }
+      .entry-body { grid-template-columns: 1fr 1fr; }
+      .ef { border-right: none; border-bottom: 1px solid var(--border); }
+      .ef:last-child { border-bottom: none; }
+      .entry-badges { display: none; }
+      .hdr-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    <span class="ig-name">Vulcan eMedicinal Product Information IG</span>
+    <span class="breadcrumb-sep">›</span>
+    <span>ePI List</span>
+    <span class="hl7-chip">HL7 FHIR R5</span>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="fhir-badge">
+      <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+      FHIR R5 · List Resource
+    </div>
+    <h1>ePI List Use Cases</h1>
+    <p>The FHIR <code>List</code> resource is incredibly versatile. In the ePI ecosystem, it serves two primary tracking paradigms: monitoring various products across different jurisdictions, and managing all language instances for a single product within one jurisdiction.</p>
+  </header>
+
+  <main>
+
+    <!-- ==============================================
+         USE CASE 2
+         ============================================== -->
+    <div style="margin-bottom: 24px;">
+      <span class="chip mode" style="background:rgba(79,142,247,0.15); border:1px solid rgba(79,142,247,0.3); color:#8cb4f8; font-size:10px; padding: 4px 12px; margin-bottom: 14px; display:inline-block;">USE CASE 2</span>
+      <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 8px;">Cross-Jurisdiction Tracker</h2>
+      <p style="color: var(--muted); max-width: 800px; font-size: 0.95rem; margin-bottom: 32px;">Tracking multiple approved ePI documents across an entire region (e.g. ASEAN member states).</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat"><div class="val c-accent">6</div><div class="lbl">Total ePIs</div></div>
+      <div class="stat"><div class="val c-teal">2</div><div class="lbl">Type 1 · PDF</div></div>
+      <div class="stat"><div class="val c-purple">2</div><div class="lbl">Type 2 · Structured</div></div>
+      <div class="stat"><div class="val c-accent">2</div><div class="lbl">Type 3 · Granular</div></div>
+      <div class="stat"><div class="val c-green">5</div><div class="lbl">Active</div></div>
+      <div class="stat"><div class="val c-rose">1</div><div class="lbl">Deleted</div></div>
+    </div>
+
+    <!-- List Header -->
+    <div class="sec-hdr">
+      <span class="icon" style="background:rgba(79,142,247,0.1)">📋</span>
+      <h2>List Header</h2>
+      <span class="line"></span>
+    </div>
+
+    <div class="list-hdr">
+      <div class="hdr-grid">
+        <div class="hdr-field">
+          <label>Resource ID</label>
+          <div class="v"><code>epi-tracking-list-asean-001</code></div>
+        </div>
+        <div class="hdr-field">
+          <label>Status</label>
+          <div class="v"><span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span></div>
+        </div>
+        <div class="hdr-field">
+          <label>Title</label>
+          <div class="v">ASEAN ePI Tracking List</div>
+        </div>
+        <div class="hdr-field">
+          <label>Date</label>
+          <div class="v">2025-06-15</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entries -->
+    <div class="entries">
+
+      <!-- 1 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">1</div>
+          <div class="entry-title">
+            <div class="name">Paracetamol 500mg Tablets (PIL)</div>
+            <div class="inn">INN: Paracetamol · MAH: PT Pharma Indonesia</div>
+          </div>
+          <div class="entry-badges">
+            <span class="type-badge t1">Type 1</span>
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference (Bundle)</label><div class="v"><code>Bundle/bundle-epi-paracetamol-idn-v2</code></div></div>
+          <div class="ef"><label>Jurisdiction</label><div class="v">Indonesia 🇮🇩</div></div>
+          <div class="ef"><label>Language</label><div class="v">id-ID (Bahasa Indonesia)</div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">PIL approved</span></div></div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">2</div>
+          <div class="entry-title">
+            <div class="name">Amoxicillin 250mg/5mL Oral Suspension (SmPC + PIL)</div>
+            <div class="inn">INN: Amoxicillin · MAH: Duopharma (Malaysia) Bhd</div>
+          </div>
+          <div class="entry-badges">
+            <span class="type-badge t2">Type 2</span>
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference (Bundle)</label><div class="v"><code>Bundle/bundle-epi-amoxicillin-mys-v1</code></div></div>
+          <div class="ef"><label>Jurisdiction</label><div class="v">Malaysia 🇲🇾</div></div>
+          <div class="ef"><label>Language</label><div class="v">en / ms-MY</div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">SmPC + PIL</span></div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Field Table -->
+    <div class="field-table-wrap">
+      <h3>📌 Key FHIR List Fields Used</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Value(s)</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>List.status</td>
+            <td><span class="chip current" style="font-size:10px">current</span></td>
+            <td>Indicates this list is actively maintained</td>
+          </tr>
+          <tr>
+            <td>List.mode</td>
+            <td><span class="chip mode" style="font-size:10px">working</span></td>
+            <td>A live working list that changes over time</td>
+          </tr>
+          <tr>
+            <td>List.code</td>
+            <td><code style="font-family:monospace;font-size:0.78rem;background:var(--surface-2);padding:2px 6px;border-radius:4px;border:1px solid var(--border);color:var(--teal)">LOINC 34390-5</code></td>
+            <td>Classifies list as a Human Pharmacy Label catalogue</td>
+          </tr>
+          <tr>
+            <td>List.entry.item</td>
+            <td style="color:#86efac">Bundle reference</td>
+            <td>Points to the ePI Bundle (the actual document)</td>
+          </tr>
+          <tr>
+            <td>List.entry.flag</td>
+            <td style="color:#86efac">Free text / coded</td>
+            <td>Approval status, template type, or Master vs Translation</td>
+          </tr>
+          <tr>
+            <td>List.entry.deleted</td>
+            <td style="color:#f87171">true / false</td>
+            <td>Marks withdrawn ePIs (requires <code style="font-size:0.74rem">mode=working</code>)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>
