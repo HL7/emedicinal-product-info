@@ -26,4 +26,5 @@ Usage: #example
 * source = Reference(organization-mah-paracetamol)
 
 // entry needs to reference a Bundle
+* entry[0].date = "2026-03-27"
 * entry[0].item = Reference(bundle-epi-type2-example-paracetamol)
