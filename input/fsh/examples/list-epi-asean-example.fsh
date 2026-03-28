@@ -13,7 +13,7 @@ Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">ASEAN Cross-Jurisdictional ePI Tracking List Example</div>"
 
-* code = http://loinc.org#34390-5 "Human prescription drug label"
+* code = epi-list-type-cs#jurisdiction-group "Jurisdiction Group"
 
 * date = "2025-06-15"
 

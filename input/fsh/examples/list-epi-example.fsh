@@ -13,9 +13,7 @@ Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">ePI List Example</div>"
 
-* code.coding[0].system = "http://hl7.org/fhir/list-example-use-codes"
-* code.coding[0].code = #medications
-* code.coding[0].display = "Medication List"
+* code = epi-list-type-cs#medicinal-product "Medicinal Product"
 
 * date = "2026-03-15"
 
@@ -27,5 +25,8 @@ Usage: #example
 
 // entry needs to reference a Bundle
 * entry[0].date = "2026-03-27"
+* entry[0].flag = epi-list-entry-flag-cs#smpc "Summary of Product Characteristics"
 * entry[0].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
-* entry[0].item = Reference(bundle-epi-type2-example-paracetamol)
+* entry[0].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[0].item.identifier.value = "urn:uuid:2088b90a-1158-45ad-ac19-0f47e3a96887"
+* entry[0].item.display = "SmPC Paracetamol"

@@ -511,6 +511,14 @@
           <label>Jurisdiction</label>
           <div class="v">European Union 🇪🇺</div>
         </div>
+        <div class="hdr-field">
+          <label>Reg. Agency</label>
+          <div class="v">EMA</div>
+        </div>
+        <div class="hdr-field">
+          <label>Version</label>
+          <div class="v">1.0</div>
+        </div>
         <div class="hdr-field" style="grid-column: 1 / -1">
           <label>Note</label>
           <div class="v">Tracks all approved language instances (SmPC & PIL) for FictionalMed A within the EU Centralised Procedure.</div>
@@ -541,7 +549,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">Master</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">SmPC</span></div></div>
         </div>
       </div>
       <!-- EN PIL -->
@@ -561,7 +569,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">Master</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">PIL</span></div></div>
         </div>
       </div>
       <!-- FR SmPC -->
@@ -581,7 +589,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">fr (French)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">SmPC</span></div></div>
         </div>
       </div>
       <!-- FR PIL -->
@@ -601,7 +609,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">fr (French)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">PIL</span></div></div>
         </div>
       </div>
       <!-- DE SmPC -->
@@ -621,7 +629,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">de (German)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">SmPC</span></div></div>
         </div>
       </div>
       <!-- DE PIL -->
@@ -641,7 +649,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">de (German)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">PIL</span></div></div>
         </div>
       </div>
       <!-- ES SmPC -->
@@ -661,7 +669,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">es (Spanish)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">SmPC</span></div></div>
         </div>
       </div>
       <!-- ES PIL -->
@@ -681,7 +689,7 @@
           <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">es (Spanish)</div></div>
           
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">PIL</span></div></div>
         </div>
       </div>
     </div>
@@ -705,9 +713,9 @@
   <span class="k">"title"</span>:  <span class="s">"FictionalMed A ePI Language Tracker — EU"</span>,
   <span class="k">"code"</span>: {
     <span class="k">"coding"</span>: [{
-      <span class="k">"system"</span>:  <span class="s">"http://loinc.org"</span>,
-      <span class="k">"code"</span>:    <span class="s">"34390-5"</span>,
-      <span class="k">"display"</span>: <span class="s">"Human Pharmacy Label"</span>
+      <span class="k">"system"</span>:  <span class="s">"http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-list-type-cs"</span>,
+      <span class="k">"code"</span>:    <span class="s">"medicinal-product"</span>,
+      <span class="k">"display"</span>: <span class="s">"Medicinal Product"</span>
     }]
   },
   <span class="k">"subject"</span>: { <span class="k">"reference"</span>: <span class="s">"Organization/acme"</span> },

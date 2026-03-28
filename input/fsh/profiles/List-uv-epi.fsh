@@ -15,13 +15,14 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
     MedicineDomain named medicineDomain 0..1 and
     ProcedureNumber named procedureNumber 0..1 and
     VersionNumber named versionNumber 0..1 and
-    Jurisdiction named jurisdiction 0..1
+    Jurisdiction named jurisdiction 0..1 and
+    RegulatoryAgency named regulatoryAgency 0..1
 
 * text 1..
 * text ^short = "This is a narrative description of the List and its content"
 * text ^definition = "This is a narrative description of the List and its content"
 
-* identifier 1..1
+* identifier 1..*
 * identifier ^short = "Business identifier for this list"
 * identifier ^definition = "Business identifier for this list"
 * identifier.system 1..1
@@ -41,6 +42,7 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * title ^definition = "This is a simple title for the List"
 
 * code 1..1
+* code from epi-list-type-vs (required)
 * code ^short = "What the purpose of this list is"
 * code ^definition = "This code defines the purpose of the list - why it was created."
 * code.coding 1..1
@@ -48,7 +50,7 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * code.coding.code 1..1
 * code.coding.display 1..1
 
-* subject 1..*
+* subject 0..*
 * subject only Reference(MedicinalProductDefinitionUvEpi)
 * subject ^short = "If all resources have the same subject"
 * subject ^definition = "The common subject (or patient) of the resources that are in the list if there is one."

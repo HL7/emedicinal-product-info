@@ -9,6 +9,9 @@ Description: "Codes to classify the component type or lifecycle status of an ePI
 * #smpc "Summary of Product Characteristics" "The entry is a Summary of Product Characteristics."
 * #pil "Patient Information Leaflet" "The entry is a Patient Information Leaflet."
 * #combined "SmPC + PIL" "The entry is a combination of an SmPC and PIL."
+* #ifu "Instructions for Use" "The entry is an Instructions for Use document."
+* #pack-artwork "Pack Artwork" "The entry is Pack Artwork."
+* #dhcp "Dear Healthcare Professional Letter" "The entry is a Dear Healthcare Professional Letter."
 
 // Lifecycle / Status Types
 * #master "Master" "The entry is the master or reference version."

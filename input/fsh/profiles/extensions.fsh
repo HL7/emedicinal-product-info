@@ -39,3 +39,10 @@ Title: "Language"
 Description: "Language of the document referenced in this entry"
 * value[x] only CodeableConcept
 * ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-entry-language"
+
+Extension: RegulatoryAgency
+Id: ext-epi-regulatory-agency
+Title: "Regulatory Agency"
+Description: "The organization describing the regulator that authorized the ePIs in the list."
+* value[x] only Reference(OrganizationUvEpi)
+* ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-regulatory-agency"
