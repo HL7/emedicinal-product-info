@@ -25,3 +25,10 @@ Title: "Version Number"
 Description: "Version number for this list"
 * value[x] only string
 * ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-version-number"
+
+Extension: Jurisdiction
+Id: ext-epi-jurisdiction
+Title: "Jurisdiction"
+Description: "Jurisdiction for this list"
+* value[x] only CodeableConcept
+* ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-jurisdiction"

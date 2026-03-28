@@ -14,7 +14,8 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
     AuthorisationType named authorisationType 0..1 and
     MedicineDomain named medicineDomain 0..1 and
     ProcedureNumber named procedureNumber 0..1 and
-    VersionNumber named versionNumber 0..1
+    VersionNumber named versionNumber 0..1 and
+    Jurisdiction named jurisdiction 0..1
 
 * text 1..
 * text ^short = "This is a narrative description of the List and its content"
