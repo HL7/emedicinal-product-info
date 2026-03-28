@@ -71,8 +71,9 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * entry 1..
 * entry ^short = "Entries in the list"
 * entry ^definition = "Entries in the list."
-* entry.flag 0..0
-* entry.deleted 0..0
+* entry.flag MS
+* entry.flag from epi-list-entry-flag-vs (example)
+* entry.deleted MS
 * entry.date 1..1
 * entry.date MS
 * entry.date ^short = "When item added to list"
@@ -85,3 +86,8 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * entry.item.type MS
 * entry.item.identifier MS
 * entry.item.display MS
+
+* entry.extension ^slicing.discriminator.type = #value
+* entry.extension ^slicing.discriminator.path = "url"
+* entry.extension ^slicing.rules = #open
+* entry.extension contains EntryLanguage named language 0..1 MS

@@ -32,3 +32,10 @@ Title: "Jurisdiction"
 Description: "Jurisdiction for this list"
 * value[x] only CodeableConcept
 * ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-jurisdiction"
+
+Extension: EntryLanguage
+Id: ext-epi-entry-language
+Title: "Language"
+Description: "Language of the document referenced in this entry"
+* value[x] only CodeableConcept
+* ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-entry-language"

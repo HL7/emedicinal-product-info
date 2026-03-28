@@ -27,4 +27,5 @@ Usage: #example
 
 // entry needs to reference a Bundle
 * entry[0].date = "2026-03-27"
+* entry[0].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[0].item = Reference(bundle-epi-type2-example-paracetamol)

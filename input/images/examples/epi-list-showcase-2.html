@@ -35,9 +35,7 @@
       --radius-lg:   16px;
       --transition:  0.2s ease;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
@@ -45,7 +43,6 @@
       line-height: 1.6;
       min-height: 100vh;
     }
-
     /* ── Top Banner ───────────────────────────── */
     .top-banner {
       background: var(--surface);
@@ -57,14 +54,11 @@
       font-size: 12px;
       color: var(--muted);
     }
-
     .top-banner .ig-name {
       font-weight: 600;
       color: var(--text);
     }
-
     .top-banner .breadcrumb-sep { color: var(--faint); }
-
     .top-banner .hl7-chip {
       margin-left: auto;
       display: inline-flex;
@@ -80,7 +74,6 @@
       padding: 3px 10px;
       border-radius: 99px;
     }
-
     /* ── Hero ─────────────────────────────────── */
     .hero {
       background: linear-gradient(135deg, #0f1117 0%, #141828 50%, #0f1525 100%);
@@ -90,7 +83,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: '';
       position: absolute;
@@ -100,7 +92,6 @@
         radial-gradient(ellipse 50% 40% at 70% 40%, rgba(167,139,250,0.06) 0%, transparent 70%);
       pointer-events: none;
     }
-
     .fhir-badge {
       display: inline-flex;
       align-items: center;
@@ -116,7 +107,6 @@
       border-radius: 99px;
       margin-bottom: 20px;
     }
-
     .hero h1 {
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700;
@@ -127,14 +117,12 @@
       background-clip: text;
       margin-bottom: 14px;
     }
-
     .hero p {
       font-size: 1rem;
       color: var(--muted);
       max-width: 800px;
       margin: 0 auto 30px;
     }
-
     .hero p code {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.85em;
@@ -142,7 +130,6 @@
       padding: 2px 8px;
       border-radius: 5px;
     }
-
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
@@ -150,7 +137,6 @@
       justify-content: center;
       gap: 10px;
     }
-
     .meta-chip {
       display: inline-flex;
       align-items: center;
@@ -162,18 +148,14 @@
       font-size: 12px;
       color: var(--muted);
     }
-
     .meta-chip strong { color: var(--text); font-weight: 600; }
-
     .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
-
     /* ── Main ─────────────────────────────────── */
     main {
       max-width: 1080px;
       margin: 0 auto;
       padding: 44px 24px 80px;
     }
-
     /* ── Section Header ───────────────────────── */
     .sec-hdr {
       display: flex;
@@ -181,7 +163,6 @@
       gap: 10px;
       margin-bottom: 20px;
     }
-
     .sec-hdr .icon {
       width: 30px;
       height: 30px;
@@ -191,7 +172,6 @@
       justify-content: center;
       font-size: 15px;
     }
-
     .sec-hdr h2 {
       font-size: 10px;
       font-weight: 700;
@@ -199,9 +179,7 @@
       letter-spacing: 0.1em;
       color: var(--muted);
     }
-
     .sec-hdr .line { flex: 1; height: 1px; background: var(--border); }
-
     /* ── Stats ────────────────────────────────── */
     .stats {
       display: grid;
@@ -209,7 +187,6 @@
       gap: 14px;
       margin-bottom: 40px;
     }
-
     .stat {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -218,16 +195,13 @@
       text-align: center;
       transition: border-color var(--transition), transform var(--transition);
     }
-
     .stat:hover { border-color: var(--border-2); transform: translateY(-2px); }
-
     .stat .val {
       font-size: 2.2rem;
       font-weight: 700;
       line-height: 1;
       margin-bottom: 4px;
     }
-
     .stat .lbl {
       font-size: 10px;
       font-weight: 600;
@@ -235,14 +209,12 @@
       letter-spacing: 0.09em;
       color: var(--muted);
     }
-
     .c-accent { color: var(--accent); }
     .c-teal   { color: var(--teal);   }
     .c-purple { color: var(--purple); }
     .c-green  { color: var(--green);  }
     .c-amber  { color: var(--amber);  }
     .c-rose   { color: var(--rose);   }
-
     /* ── List Header Card ─────────────────────── */
     .list-hdr {
       background: var(--surface);
@@ -254,7 +226,6 @@
       overflow: hidden;
       box-shadow: 0 4px 24px rgba(0,0,0,0.35);
     }
-
     .list-hdr::before {
       content: '';
       position: absolute;
@@ -262,13 +233,11 @@
       height: 3px;
       background: linear-gradient(90deg, var(--accent), var(--purple));
     }
-
     .hdr-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
       gap: 22px;
     }
-
     .hdr-field label {
       display: block;
       font-size: 9px;
@@ -278,12 +247,10 @@
       color: var(--faint);
       margin-bottom: 5px;
     }
-
     .hdr-field .v {
       font-size: 0.88rem;
       color: var(--text);
     }
-
     .hdr-field code {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.77rem;
@@ -293,7 +260,6 @@
       padding: 2px 7px;
       border-radius: 4px;
     }
-
     /* Status / Mode chips */
     .chip {
       display: inline-flex;
@@ -306,15 +272,12 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-
     .chip.current    { background: var(--green-glow);  border: 1px solid rgba(74,222,128,0.3);  color: var(--green);  }
     .chip.retired    { background: var(--rose-glow);   border: 1px solid rgba(248,113,113,0.3); color: var(--rose);   }
     .chip.superseded { background: var(--amber-glow);  border: 1px solid rgba(251,191,36,0.3);  color: var(--amber);  }
     .chip.mode       { background: var(--accent-glow); border: 1px solid rgba(79,142,247,0.25); color: var(--accent); }
-
     /* ── Entry Cards ──────────────────────────── */
     .entries { display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; }
-
     .entry {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -322,17 +285,14 @@
       overflow: hidden;
       transition: border-color var(--transition), box-shadow var(--transition);
     }
-
     .entry:hover {
       border-color: var(--border-2);
       box-shadow: 0 0 28px rgba(79,142,247,0.07);
     }
-
     .entry.deleted {
       opacity: 0.6;
       border-style: dashed;
     }
-
     .entry-top {
       display: flex;
       align-items: center;
@@ -340,7 +300,6 @@
       padding: 16px 20px;
       border-bottom: 1px solid var(--border);
     }
-
     .entry-num {
       width: 28px;
       height: 28px;
@@ -355,13 +314,10 @@
       color: var(--muted);
       flex-shrink: 0;
     }
-
     .entry-title { flex: 1 }
     .entry-title .name { font-size: 0.93rem; font-weight: 600; color: var(--text); }
     .entry-title .inn  { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
-
     .entry-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; align-items: center; }
-
     .type-badge {
       display: inline-flex;
       align-items: center;
@@ -372,22 +328,18 @@
       padding: 3px 9px;
       border-radius: 5px;
     }
-
     .t1 { background: var(--teal-glow);   border: 1px solid rgba(45,212,191,0.25);  color: var(--teal);   }
     .t2 { background: var(--purple-glow); border: 1px solid rgba(167,139,250,0.25); color: var(--purple); }
     .t3 { background: var(--accent-glow); border: 1px solid rgba(79,142,247,0.25);  color: var(--accent); }
-
     .entry-body {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
-
     .ef {
       padding: 13px 20px;
       border-right: 1px solid var(--border);
     }
     .ef:last-child { border-right: none; }
-
     .ef label {
       display: block;
       font-size: 9px;
@@ -397,12 +349,10 @@
       color: var(--faint);
       margin-bottom: 5px;
     }
-
     .ef .v {
       font-size: 0.8rem;
       color: var(--muted);
     }
-
     .ef code {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.73rem;
@@ -413,7 +363,6 @@
       border-radius: 4px;
       word-break: break-all;
     }
-
     .del-flag {
       display: inline-flex;
       align-items: center;
@@ -425,7 +374,6 @@
       padding: 2px 8px;
       border-radius: 4px;
     }
-
     /* ── JSON Accordion ───────────────────────── */
     details {
       background: var(--surface);
@@ -434,7 +382,6 @@
       overflow: hidden;
       margin-bottom: 40px;
     }
-
     details summary {
       display: flex;
       align-items: center;
@@ -448,15 +395,12 @@
       user-select: none;
       transition: background var(--transition);
     }
-
     details summary:hover { background: var(--surface-2); }
     details summary::marker,
     details summary::-webkit-details-marker { display: none; }
-
     .chevron { margin-left: auto; font-size: 11px; color: var(--faint); transition: transform var(--transition); }
     details[open] summary .chevron { transform: rotate(180deg); }
     details[open] summary { border-bottom: 1px solid var(--border); }
-
     details pre {
       margin: 0;
       padding: 22px;
@@ -467,12 +411,10 @@
       background: #080b12;
       color: #a9b7d6;
     }
-
     .k  { color: #7dd3fc; }
     .s  { color: #86efac; }
     .nb { color: #fbbf24; }
     .bb { color: #f87171; }
-
     /* ── Field Summary Table ──────────────────── */
     .field-table-wrap {
       background: rgba(79,142,247,0.06);
@@ -481,18 +423,14 @@
       padding: 26px 28px;
       margin-top: 40px;
     }
-
     .field-table-wrap h3 {
       font-size: 0.93rem;
       font-weight: 600;
       margin-bottom: 16px;
       color: var(--text);
     }
-
     table { width: 100%; border-collapse: collapse; font-size: 0.81rem; }
-
     thead tr { border-bottom: 1px solid var(--border); }
-
     th {
       text-align: left;
       padding: 8px 12px;
@@ -502,14 +440,11 @@
       letter-spacing: 0.1em;
       color: var(--muted);
     }
-
     td { padding: 9px 12px; border-bottom: 1px solid rgba(45,49,85,0.5); vertical-align: top; }
     tr:last-child td { border-bottom: none; }
-
     td:first-child { font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; color: #7dd3fc; }
     td:nth-child(2) { font-size: 0.79rem; }
     td:last-child  { color: var(--muted); }
-
     /* ── Responsive ───────────────────────────── */
     @media (max-width: 640px) {
       .hero { padding: 36px 18px 30px; }
@@ -523,7 +458,6 @@
   </style>
 </head>
 <body>
-
   <!-- Top Banner -->
   <div class="top-banner">
     <span class="ig-name">Vulcan eMedicinal Product Information IG</span>
@@ -531,7 +465,6 @@
     <span>ePI List</span>
     <span class="hl7-chip">HL7 FHIR R5</span>
   </div>
-
   <!-- Hero -->
   <header class="hero">
     <div class="fhir-badge">
@@ -541,9 +474,7 @@
     <h1>ePI List Use Cases</h1>
     <p>The FHIR <code>List</code> resource is incredibly versatile. In the ePI ecosystem, it serves two primary tracking paradigms: monitoring various products across different jurisdictions, and managing all language instances for a single product within one jurisdiction.</p>
   </header>
-
   <main>
-
     <!-- ==============================================
          USE CASE 2
          ============================================== -->
@@ -552,24 +483,19 @@
       <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 8px;">Cross-Jurisdiction Tracker</h2>
       <p style="color: var(--muted); max-width: 800px; font-size: 0.95rem; margin-bottom: 32px;">Tracking multiple approved ePI documents across an entire region (e.g. ASEAN member states).</p>
     </div>
-
     <!-- Stats -->
     <div class="stats">
-      <div class="stat"><div class="val c-accent">6</div><div class="lbl">Total ePIs</div></div>
-      <div class="stat"><div class="val c-teal">2</div><div class="lbl">Type 1 · PDF</div></div>
-      <div class="stat"><div class="val c-purple">2</div><div class="lbl">Type 2 · Structured</div></div>
-      <div class="stat"><div class="val c-accent">2</div><div class="lbl">Type 3 · Granular</div></div>
-      <div class="stat"><div class="val c-green">5</div><div class="lbl">Active</div></div>
-      <div class="stat"><div class="val c-rose">1</div><div class="lbl">Deleted</div></div>
-    </div>
+      <div class="stat"><div class="val c-accent">10</div><div class="lbl">Total ePIs</div></div>
 
+      <div class="stat"><div class="val c-green">10</div><div class="lbl">Active</div></div>
+      <div class="stat"><div class="val c-rose">0</div><div class="lbl">Deleted</div></div>
+    </div>
     <!-- List Header -->
     <div class="sec-hdr">
       <span class="icon" style="background:rgba(79,142,247,0.1)">📋</span>
       <h2>List Header</h2>
       <span class="line"></span>
     </div>
-
     <div class="list-hdr">
       <div class="hdr-grid">
         <div class="hdr-field">
@@ -590,7 +516,6 @@
         </div>
       </div>
     </div>
-
     <!-- Entries -->
     <div class="entries">
 
@@ -599,92 +524,203 @@
         <div class="entry-top">
           <div class="entry-num">1</div>
           <div class="entry-title">
-            <div class="name">Paracetamol 500mg Tablets (PIL)</div>
-            <div class="inn">INN: Paracetamol · MAH: PT Pharma Indonesia</div>
+            <div class="name">ActiveIngredient X 500mg Tablets (Brunei)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Brunei Ltd.</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t1">Type 1</span>
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference (Bundle)</label><div class="v"><code>Bundle/bundle-epi-paracetamol-idn-v2</code></div></div>
-          <div class="ef"><label>Jurisdiction</label><div class="v">Indonesia 🇮🇩</div></div>
-          <div class="ef"><label>Language</label><div class="v">id-ID (Bahasa Indonesia)</div></div>
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">PIL approved</span></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:2088b90a-1158-45ad-ac19-0f47e3a96887</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Brunei)</span></div></div>
         </div>
       </div>
-
       <!-- 2 -->
       <div class="entry">
         <div class="entry-top">
           <div class="entry-num">2</div>
           <div class="entry-title">
-            <div class="name">Amoxicillin 250mg/5mL Oral Suspension (SmPC + PIL)</div>
-            <div class="inn">INN: Amoxicillin · MAH: Duopharma (Malaysia) Bhd</div>
+            <div class="name">ActiveIngredient X 500mg Tablets (Cambodia)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Cambodia Ltd.</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t2">Type 2</span>
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference (Bundle)</label><div class="v"><code>Bundle/bundle-epi-amoxicillin-mys-v1</code></div></div>
-          <div class="ef"><label>Jurisdiction</label><div class="v">Malaysia 🇲🇾</div></div>
-          <div class="ef"><label>Language</label><div class="v">en / ms-MY</div></div>
-          <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">SmPC + PIL</span></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:48c2ae46-ceaa-4ea1-b998-ab885ca6eb65</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Cambodia)</span></div></div>
         </div>
       </div>
-
-    </div>
-
-    <!-- Field Table -->
-    <div class="field-table-wrap">
-      <h3>📌 Key FHIR List Fields Used</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Field</th>
-            <th>Value(s)</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>List.status</td>
-            <td><span class="chip current" style="font-size:10px">current</span></td>
-            <td>Indicates this list is actively maintained</td>
-          </tr>
-          <tr>
-            <td>List.mode</td>
-            <td><span class="chip mode" style="font-size:10px">working</span></td>
-            <td>A live working list that changes over time</td>
-          </tr>
-          <tr>
-            <td>List.code</td>
-            <td><code style="font-family:monospace;font-size:0.78rem;background:var(--surface-2);padding:2px 6px;border-radius:4px;border:1px solid var(--border);color:var(--teal)">LOINC 34390-5</code></td>
-            <td>Classifies list as a Human Pharmacy Label catalogue</td>
-          </tr>
-          <tr>
-            <td>List.entry.item</td>
-            <td style="color:#86efac">Bundle reference</td>
-            <td>Points to the ePI Bundle (the actual document)</td>
-          </tr>
-          <tr>
-            <td>List.entry.flag</td>
-            <td style="color:#86efac">Free text / coded</td>
-            <td>Approval status, template type, or Master vs Translation</td>
-          </tr>
-          <tr>
-            <td>List.entry.deleted</td>
-            <td style="color:#f87171">true / false</td>
-            <td>Marks withdrawn ePIs (requires <code style="font-size:0.74rem">mode=working</code>)</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- 3 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">3</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Indonesia)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Indonesia Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:c22141d8-0e86-4f40-8b09-cfad45a90710</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Indonesia)</span></div></div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">4</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Laos)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Laos Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:a1b2c3d4-b4a1-4191-88fc-8f64da2f518e</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Laos)</span></div></div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">5</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Malaysia)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Malaysia Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:abfa5222-3832-4977-bcbd-5509ba19cd75</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Malaysia)</span></div></div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">6</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Myanmar)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Myanmar Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:7f5f90c3-fba0-4be6-8c46-1e96d7fb1178</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Myanmar)</span></div></div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">7</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Philippines)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Philippines Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:df35b80a-5c21-432a-bc90-953bc8682827</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Philippines)</span></div></div>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">8</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Singapore)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Singapore Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:1d624a9a-efaf-4c33-87ea-25aa8cfcd9bd</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Singapore)</span></div></div>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">9</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Thailand)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Thailand Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:5d8a9ea8-2287-4d7a-b286-9ac747ef9ec2</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Thailand)</span></div></div>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="entry">
+        <div class="entry-top">
+          <div class="entry-num">10</div>
+          <div class="entry-title">
+            <div class="name">ActiveIngredient X 500mg Tablets (Vietnam)</div>
+            <div class="inn">INN: Generic substance · MAH: Pharma Vietnam Ltd.</div>
+          </div>
+          <div class="entry-badges">
+            <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:96e8ba7a-6415-46aa-bcd0-63ceaaac8149</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
+          <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
+          
+          <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">National (Vietnam)</span></div></div>
+        </div>
+      </div>
     </div>
 
   </main>
-
 </body>
 </html>

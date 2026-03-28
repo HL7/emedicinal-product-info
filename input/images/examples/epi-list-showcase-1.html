@@ -35,9 +35,7 @@
       --radius-lg:   16px;
       --transition:  0.2s ease;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
@@ -45,7 +43,6 @@
       line-height: 1.6;
       min-height: 100vh;
     }
-
     /* ── Top Banner ───────────────────────────── */
     .top-banner {
       background: var(--surface);
@@ -57,14 +54,11 @@
       font-size: 12px;
       color: var(--muted);
     }
-
     .top-banner .ig-name {
       font-weight: 600;
       color: var(--text);
     }
-
     .top-banner .breadcrumb-sep { color: var(--faint); }
-
     .top-banner .hl7-chip {
       margin-left: auto;
       display: inline-flex;
@@ -80,7 +74,6 @@
       padding: 3px 10px;
       border-radius: 99px;
     }
-
     /* ── Hero ─────────────────────────────────── */
     .hero {
       background: linear-gradient(135deg, #0f1117 0%, #141828 50%, #0f1525 100%);
@@ -90,7 +83,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: '';
       position: absolute;
@@ -100,7 +92,6 @@
         radial-gradient(ellipse 50% 40% at 70% 40%, rgba(167,139,250,0.06) 0%, transparent 70%);
       pointer-events: none;
     }
-
     .fhir-badge {
       display: inline-flex;
       align-items: center;
@@ -116,7 +107,6 @@
       border-radius: 99px;
       margin-bottom: 20px;
     }
-
     .hero h1 {
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700;
@@ -127,14 +117,12 @@
       background-clip: text;
       margin-bottom: 14px;
     }
-
     .hero p {
       font-size: 1rem;
       color: var(--muted);
       max-width: 800px;
       margin: 0 auto 30px;
     }
-
     .hero p code {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.85em;
@@ -142,7 +130,6 @@
       padding: 2px 8px;
       border-radius: 5px;
     }
-
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
@@ -150,7 +137,6 @@
       justify-content: center;
       gap: 10px;
     }
-
     .meta-chip {
       display: inline-flex;
       align-items: center;
@@ -162,18 +148,14 @@
       font-size: 12px;
       color: var(--muted);
     }
-
     .meta-chip strong { color: var(--text); font-weight: 600; }
-
     .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
-
     /* ── Main ─────────────────────────────────── */
     main {
       max-width: 1080px;
       margin: 0 auto;
       padding: 44px 24px 80px;
     }
-
     /* ── Section Header ───────────────────────── */
     .sec-hdr {
       display: flex;
@@ -181,7 +163,6 @@
       gap: 10px;
       margin-bottom: 20px;
     }
-
     .sec-hdr .icon {
       width: 30px;
       height: 30px;
@@ -191,7 +172,6 @@
       justify-content: center;
       font-size: 15px;
     }
-
     .sec-hdr h2 {
       font-size: 10px;
       font-weight: 700;
@@ -199,9 +179,7 @@
       letter-spacing: 0.1em;
       color: var(--muted);
     }
-
     .sec-hdr .line { flex: 1; height: 1px; background: var(--border); }
-
     /* ── Stats ────────────────────────────────── */
     .stats {
       display: grid;
@@ -209,7 +187,6 @@
       gap: 14px;
       margin-bottom: 40px;
     }
-
     .stat {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -218,16 +195,13 @@
       text-align: center;
       transition: border-color var(--transition), transform var(--transition);
     }
-
     .stat:hover { border-color: var(--border-2); transform: translateY(-2px); }
-
     .stat .val {
       font-size: 2.2rem;
       font-weight: 700;
       line-height: 1;
       margin-bottom: 4px;
     }
-
     .stat .lbl {
       font-size: 10px;
       font-weight: 600;
@@ -235,14 +209,12 @@
       letter-spacing: 0.09em;
       color: var(--muted);
     }
-
     .c-accent { color: var(--accent); }
     .c-teal   { color: var(--teal);   }
     .c-purple { color: var(--purple); }
     .c-green  { color: var(--green);  }
     .c-amber  { color: var(--amber);  }
     .c-rose   { color: var(--rose);   }
-
     /* ── List Header Card ─────────────────────── */
     .list-hdr {
       background: var(--surface);
@@ -254,7 +226,6 @@
       overflow: hidden;
       box-shadow: 0 4px 24px rgba(0,0,0,0.35);
     }
-
     .list-hdr::before {
       content: '';
       position: absolute;
@@ -262,13 +233,11 @@
       height: 3px;
       background: linear-gradient(90deg, var(--accent), var(--purple));
     }
-
     .hdr-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
       gap: 22px;
     }
-
     .hdr-field label {
       display: block;
       font-size: 9px;
@@ -278,12 +247,10 @@
       color: var(--faint);
       margin-bottom: 5px;
     }
-
     .hdr-field .v {
       font-size: 0.88rem;
       color: var(--text);
     }
-
     .hdr-field code {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.77rem;
@@ -293,7 +260,6 @@
       padding: 2px 7px;
       border-radius: 4px;
     }
-
     /* Status / Mode chips */
     .chip {
       display: inline-flex;
@@ -306,15 +272,12 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-
     .chip.current    { background: var(--green-glow);  border: 1px solid rgba(74,222,128,0.3);  color: var(--green);  }
     .chip.retired    { background: var(--rose-glow);   border: 1px solid rgba(248,113,113,0.3); color: var(--rose);   }
     .chip.superseded { background: var(--amber-glow);  border: 1px solid rgba(251,191,36,0.3);  color: var(--amber);  }
     .chip.mode       { background: var(--accent-glow); border: 1px solid rgba(79,142,247,0.25); color: var(--accent); }
-
     /* ── Entry Cards ──────────────────────────── */
     .entries { display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; }
-
     .entry {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -322,17 +285,14 @@
       overflow: hidden;
       transition: border-color var(--transition), box-shadow var(--transition);
     }
-
     .entry:hover {
       border-color: var(--border-2);
       box-shadow: 0 0 28px rgba(79,142,247,0.07);
     }
-
     .entry.deleted {
       opacity: 0.6;
       border-style: dashed;
     }
-
     .entry-top {
       display: flex;
       align-items: center;
@@ -340,7 +300,6 @@
       padding: 16px 20px;
       border-bottom: 1px solid var(--border);
     }
-
     .entry-num {
       width: 28px;
       height: 28px;
@@ -355,13 +314,10 @@
       color: var(--muted);
       flex-shrink: 0;
     }
-
     .entry-title { flex: 1 }
     .entry-title .name { font-size: 0.93rem; font-weight: 600; color: var(--text); }
     .entry-title .inn  { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
-
     .entry-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; align-items: center; }
-
     .type-badge {
       display: inline-flex;
       align-items: center;
@@ -372,22 +328,18 @@
       padding: 3px 9px;
       border-radius: 5px;
     }
-
     .t1 { background: var(--teal-glow);   border: 1px solid rgba(45,212,191,0.25);  color: var(--teal);   }
     .t2 { background: var(--purple-glow); border: 1px solid rgba(167,139,250,0.25); color: var(--purple); }
     .t3 { background: var(--accent-glow); border: 1px solid rgba(79,142,247,0.25);  color: var(--accent); }
-
     .entry-body {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
-
     .ef {
       padding: 13px 20px;
       border-right: 1px solid var(--border);
     }
     .ef:last-child { border-right: none; }
-
     .ef label {
       display: block;
       font-size: 9px;
@@ -397,12 +349,10 @@
       color: var(--faint);
       margin-bottom: 5px;
     }
-
     .ef .v {
       font-size: 0.8rem;
       color: var(--muted);
     }
-
     .ef code {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.73rem;
@@ -413,7 +363,6 @@
       border-radius: 4px;
       word-break: break-all;
     }
-
     .del-flag {
       display: inline-flex;
       align-items: center;
@@ -425,7 +374,6 @@
       padding: 2px 8px;
       border-radius: 4px;
     }
-
     /* ── JSON Accordion ───────────────────────── */
     details {
       background: var(--surface);
@@ -434,7 +382,6 @@
       overflow: hidden;
       margin-bottom: 40px;
     }
-
     details summary {
       display: flex;
       align-items: center;
@@ -448,15 +395,12 @@
       user-select: none;
       transition: background var(--transition);
     }
-
     details summary:hover { background: var(--surface-2); }
     details summary::marker,
     details summary::-webkit-details-marker { display: none; }
-
     .chevron { margin-left: auto; font-size: 11px; color: var(--faint); transition: transform var(--transition); }
     details[open] summary .chevron { transform: rotate(180deg); }
     details[open] summary { border-bottom: 1px solid var(--border); }
-
     details pre {
       margin: 0;
       padding: 22px;
@@ -467,12 +411,10 @@
       background: #080b12;
       color: #a9b7d6;
     }
-
     .k  { color: #7dd3fc; }
     .s  { color: #86efac; }
     .nb { color: #fbbf24; }
     .bb { color: #f87171; }
-
     /* ── Field Summary Table ──────────────────── */
     .field-table-wrap {
       background: rgba(79,142,247,0.06);
@@ -481,18 +423,14 @@
       padding: 26px 28px;
       margin-top: 40px;
     }
-
     .field-table-wrap h3 {
       font-size: 0.93rem;
       font-weight: 600;
       margin-bottom: 16px;
       color: var(--text);
     }
-
     table { width: 100%; border-collapse: collapse; font-size: 0.81rem; }
-
     thead tr { border-bottom: 1px solid var(--border); }
-
     th {
       text-align: left;
       padding: 8px 12px;
@@ -502,14 +440,11 @@
       letter-spacing: 0.1em;
       color: var(--muted);
     }
-
     td { padding: 9px 12px; border-bottom: 1px solid rgba(45,49,85,0.5); vertical-align: top; }
     tr:last-child td { border-bottom: none; }
-
     td:first-child { font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; color: #7dd3fc; }
     td:nth-child(2) { font-size: 0.79rem; }
     td:last-child  { color: var(--muted); }
-
     /* ── Responsive ───────────────────────────── */
     @media (max-width: 640px) {
       .hero { padding: 36px 18px 30px; }
@@ -523,7 +458,6 @@
   </style>
 </head>
 <body>
-
   <!-- Top Banner -->
   <div class="top-banner">
     <span class="ig-name">Vulcan eMedicinal Product Information IG</span>
@@ -531,7 +465,6 @@
     <span>ePI List</span>
     <span class="hl7-chip">HL7 FHIR R5</span>
   </div>
-
   <!-- Hero -->
   <header class="hero">
     <div class="fhir-badge">
@@ -541,32 +474,28 @@
     <h1>ePI List Use Cases</h1>
     <p>The FHIR <code>List</code> resource is incredibly versatile. In the ePI ecosystem, it serves two primary tracking paradigms: monitoring various products across different jurisdictions, and managing all language instances for a single product within one jurisdiction.</p>
   </header>
-
   <main>
-
     <!-- ==============================================
          USE CASE 1
          ============================================== -->
     <div style="margin-top: 80px; padding-top: 50px; border-top: 1px solid var(--border); margin-bottom: 24px;">
       <span class="chip mode" style="background:rgba(167,139,250,0.15); border:1px solid rgba(167,139,250,0.3); color:#c4b5fd; font-size:10px; padding: 4px 12px; margin-bottom: 14px; display:inline-block;">USE CASE 1</span>
       <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 8px;">Multi-Language Single Product Tracker</h2>
-      <p style="color: var(--muted); max-width: 800px; font-size: 0.95rem; margin-bottom: 32px;">Tracking all 24 language instances (SmPC and PIL) for a centrally authorized product within the EU.</p>
+      <p style="color: var(--muted); max-width: 800px; font-size: 0.95rem; margin-bottom: 32px;">Tracking all 4 language instances (SmPC and PIL) for a centrally authorized product within the EU.</p>
     </div>
-
     <!-- Stats 2 -->
     <div class="stats">
-      <div class="stat"><div class="val c-accent">48</div><div class="lbl">Total ePIs</div></div>
-      <div class="stat"><div class="val c-teal">24</div><div class="lbl">SmPCs</div></div>
-      <div class="stat"><div class="val c-purple">24</div><div class="lbl">PILs</div></div>
-      <div class="stat"><div class="val c-green">24</div><div class="lbl">Languages</div></div>
+      <div class="stat"><div class="val c-accent">8</div><div class="lbl">Total ePIs</div></div>
+      <div class="stat"><div class="val c-teal">4</div><div class="lbl">SmPCs</div></div>
+      <div class="stat"><div class="val c-purple">4</div><div class="lbl">PILs</div></div>
+      <div class="stat"><div class="val c-green">4</div><div class="lbl">Languages</div></div>
       <div class="stat"><div class="val c-amber">1</div><div class="lbl">Jurisdiction</div></div>
     </div>
-
     <div class="list-hdr" style="box-shadow: 0 4px 24px rgba(167,139,250,0.1);">
       <div class="hdr-grid">
         <div class="hdr-field">
           <label>Resource ID</label>
-          <div class="v"><code>epi-list-biktarvy-ema</code></div>
+          <div class="v"><code>epi-list-fictionalmed-a-ema</code></div>
         </div>
         <div class="hdr-field">
           <label>Status</label>
@@ -574,7 +503,7 @@
         </div>
         <div class="hdr-field">
           <label>Title</label>
-          <div class="v">Biktarvy ePI Language Tracker — EU</div>
+          <div class="v">FictionalMed A ePI Language Tracker — EU</div>
         </div>
         <div class="hdr-field">
           <label>Jurisdiction</label>
@@ -582,17 +511,15 @@
         </div>
         <div class="hdr-field" style="grid-column: 1 / -1">
           <label>Note</label>
-          <div class="v">Tracks all approved language instances (SmPC & PIL) for Biktarvy within the EU Centralised Procedure.</div>
+          <div class="v">Tracks all approved language instances (SmPC & PIL) for FictionalMed A within the EU Centralised Procedure.</div>
         </div>
       </div>
     </div>
-
     <div class="sec-hdr">
       <span class="icon" style="background:rgba(167,139,250,0.1); color:#c4b5fd;">🌍</span>
       <h2>Selected Language Entries (8 of 48)</h2>
       <span class="line"></span>
     </div>
-
     <div class="entries">
       
       <!-- EN SmPC -->
@@ -600,173 +527,172 @@
         <div class="entry-top">
           <div class="entry-num">1</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Summary of Product Characteristics)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Summary of Product Characteristics)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-smpc-en</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:9c552d9b-10db-409a-9929-75bb53380fce</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">SmPC</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">Master</span></div></div>
         </div>
       </div>
-
       <!-- EN PIL -->
       <div class="entry">
         <div class="entry-top">
           <div class="entry-num">2</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Patient Information Leaflet)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Patient Information Leaflet)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-pil-en</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:7f68d8b3-3d47-420e-8af4-b6a439192c2b</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">en (English)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">PIL</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip current" style="font-size:10px">Master</span></div></div>
         </div>
       </div>
-
       <!-- FR SmPC -->
       <div class="entry">
         <div class="entry-top" style="background:rgba(255,255,255,0.01);">
           <div class="entry-num">3</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Résumé des Caractéristiques du Produit)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Résumé des Caractéristiques du Produit)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-smpc-fr</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:b958951c-7b9a-41d4-89fd-fa1b73b32992</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">fr (French)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">SmPC</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
         </div>
       </div>
-
       <!-- FR PIL -->
       <div class="entry">
         <div class="entry-top" style="background:rgba(255,255,255,0.01);">
           <div class="entry-num">4</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Notice Patient)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Notice Patient)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-pil-fr</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:3efd996a-6795-4036-ad2e-6e8207f41c82</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">fr (French)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">PIL</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
         </div>
       </div>
-
       <!-- DE SmPC -->
       <div class="entry">
         <div class="entry-top">
           <div class="entry-num">5</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Zusammenfassung der Merkmale)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Zusammenfassung der Merkmale)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-smpc-de</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:f18cdff1-8577-4ed1-a299-a7bc937e186e</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">de (German)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">SmPC</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
         </div>
       </div>
-
       <!-- DE PIL -->
       <div class="entry">
         <div class="entry-top">
           <div class="entry-num">6</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Packungsbeilage)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Packungsbeilage)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-pil-de</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:a97d2af7-e2e1-43ee-8599-e861704519b4</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">de (German)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">PIL</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
         </div>
       </div>
-
       <!-- ES SmPC -->
       <div class="entry">
         <div class="entry-top" style="background:rgba(255,255,255,0.01);">
           <div class="entry-num">7</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Ficha Técnica)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Ficha Técnica)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-smpc-es</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:e89079a6-925f-4a0f-9ca6-0bf25df222ac</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">es (Spanish)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">SmPC</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
         </div>
       </div>
-
       <!-- ES PIL -->
       <div class="entry">
         <div class="entry-top" style="background:rgba(255,255,255,0.01);">
           <div class="entry-num">8</div>
           <div class="entry-title">
-            <div class="name">Biktarvy 50mg/200mg/25mg (Prospecto)</div>
+            <div class="name">FictionalMed A 50mg/200mg/25mg (Prospecto)</div>
           </div>
           <div class="entry-badges">
-            <span class="type-badge t3">Type 3</span>
+            
             <span class="chip current"><span class="dot" style="background:#4ade80;width:5px;height:5px"></span>current</span>
           </div>
         </div>
         <div class="entry-body">
-          <div class="ef"><label>Reference</label><div class="v"><code>Bundle/biktarvy-pil-es</code></div></div>
+          <div class="ef"><label>Reference</label><div class="v"><code>urn:uuid:65e21916-cddd-49d6-afca-971177392fde</code></div></div>
+          <div class="ef"><label>Date Added</label><div class="v" style="color:#fff;font-weight:600;">2026-03-27</div></div>
           <div class="ef"><label>Language</label><div class="v" style="color:#fff;font-weight:600;">es (Spanish)</div></div>
-          <div class="ef"><label>Document Type</label><div class="v">PIL</div></div>
+          
           <div class="ef"><label>Flag</label><div class="v"><span class="chip mode" style="font-size:10px">Translation</span></div></div>
         </div>
       </div>
-
     </div>
-
     <!-- JSON Accordion -->
     <details>
       <summary>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4h10M2 7h7M2 10h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        View List/epi-list-biktarvy-ema (FHIR JSON)
+        View List/epi-list-fictionalmed-a-ema (FHIR JSON)
         <span class="chevron">▼</span>
       </summary>
       <pre>{
   <span class="k">"resourceType"</span>: <span class="s">"List"</span>,
-  <span class="k">"id"</span>:           <span class="s">"epi-list-biktarvy-ema"</span>,
+  <span class="k">"id"</span>:           <span class="s">"epi-list-fictionalmed-a-ema"</span>,
   <span class="k">"meta"</span>: {
     <span class="k">"profile"</span>: [
       <span class="s">"http://hl7.org/fhir/uv/epi/StructureDefinition/List-uv-epi"</span>
@@ -774,7 +700,7 @@
   },
   <span class="k">"status"</span>: <span class="s">"current"</span>,
   <span class="k">"mode"</span>:   <span class="s">"working"</span>,
-  <span class="k">"title"</span>:  <span class="s">"Biktarvy ePI Language Tracker — EU"</span>,
+  <span class="k">"title"</span>:  <span class="s">"FictionalMed A ePI Language Tracker — EU"</span>,
   <span class="k">"code"</span>: {
     <span class="k">"coding"</span>: [{
       <span class="k">"system"</span>:  <span class="s">"http://loinc.org"</span>,
@@ -782,75 +708,27 @@
       <span class="k">"display"</span>: <span class="s">"Human Pharmacy Label"</span>
     }]
   },
-  <span class="k">"subject"</span>: { <span class="k">"reference"</span>: <span class="s">"Organization/gilead"</span> },
+  <span class="k">"subject"</span>: { <span class="k">"reference"</span>: <span class="s">"Organization/acme"</span> },
   <span class="k">"date"</span>: <span class="s">"2025-06-15"</span>,
   <span class="k">"note"</span>: [{
-    <span class="k">"text"</span>: <span class="s">"Tracks all 24 approved language instances (SmPC & PIL) for Biktarvy within the EU Centralised Procedure."</span>
+    <span class="k">"text"</span>: <span class="s">"Tracks all 24 approved language instances (SmPC & PIL) for FictionalMed A within the EU Centralised Procedure."</span>
   }],
   <span class="k">"entry"</span>: [
     {
       <span class="k">"flag"</span>: { <span class="k">"text"</span>: <span class="s">"Master"</span> },
-      <span class="k">"item"</span>: { <span class="k">"reference"</span>: <span class="s">"Bundle/biktarvy-smpc-en"</span>,
-                <span class="k">"display"</span>:   <span class="s">"Biktarvy SmPC (English)"</span> }
+      <span class="k">"item"</span>: { <span class="k">"reference"</span>: <span class="s">"Bundle/fictionalmed-a-smpc-en"</span>,
+                <span class="k">"display"</span>:   <span class="s">"FictionalMed A SmPC (English)"</span> }
     },
     {
       <span class="k">"flag"</span>: { <span class="k">"text"</span>: <span class="s">"Translation"</span> },
-      <span class="k">"item"</span>: { <span class="k">"reference"</span>: <span class="s">"Bundle/biktarvy-smpc-fr"</span>,
-                <span class="k">"display"</span>:   <span class="s">"Biktarvy SmPC (French)"</span> }
+      <span class="k">"item"</span>: { <span class="k">"reference"</span>: <span class="s">"Bundle/fictionalmed-a-smpc-fr"</span>,
+                <span class="k">"display"</span>:   <span class="s">"FictionalMed A SmPC (French)"</span> }
     }
     <span class="s">// ... 46 more instances for DE, ES, IT, NL, etc.</span>
   ]
 }
 </pre>
     </details>
-
-    <!-- Field Table -->
-    <div class="field-table-wrap">
-      <h3>📌 Key FHIR List Fields Used</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Field</th>
-            <th>Value(s)</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>List.status</td>
-            <td><span class="chip current" style="font-size:10px">current</span></td>
-            <td>Indicates this list is actively maintained</td>
-          </tr>
-          <tr>
-            <td>List.mode</td>
-            <td><span class="chip mode" style="font-size:10px">working</span></td>
-            <td>A live working list that changes over time</td>
-          </tr>
-          <tr>
-            <td>List.code</td>
-            <td><code style="font-family:monospace;font-size:0.78rem;background:var(--surface-2);padding:2px 6px;border-radius:4px;border:1px solid var(--border);color:var(--teal)">LOINC 34390-5</code></td>
-            <td>Classifies list as a Human Pharmacy Label catalogue</td>
-          </tr>
-          <tr>
-            <td>List.entry.item</td>
-            <td style="color:#86efac">Bundle reference</td>
-            <td>Points to the ePI Bundle (the actual document)</td>
-          </tr>
-          <tr>
-            <td>List.entry.flag</td>
-            <td style="color:#86efac">Free text / coded</td>
-            <td>Approval status, template type, or Master vs Translation</td>
-          </tr>
-          <tr>
-            <td>List.entry.deleted</td>
-            <td style="color:#f87171">true / false</td>
-            <td>Marks withdrawn ePIs (requires <code style="font-size:0.74rem">mode=working</code>)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-  </main>
-
+    </main>
 </body>
 </html>
