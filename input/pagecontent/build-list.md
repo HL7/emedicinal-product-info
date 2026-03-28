@@ -1,5 +1,3 @@
-# Build List of ePIs
-
 The FHIR `List` resource is a versatile configuration tool within the ePI ecosystem. It is primarily used to track and manage collections of ePI documents, acting as a real-time registry of authorized product information.
 
 ## Primary Use Cases
