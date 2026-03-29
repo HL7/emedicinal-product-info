@@ -51,8 +51,12 @@ Description: "This profile represents the constraints applied to the Composition
 * date ^definition = "The official date when this version of the ePI was authorized or last significantly changed effectively."
 * author 1..
 * author only Reference(Organization-uv-epi)
-* author ^short = "Organization responsible for content"
-* author ^definition = "The organization responsible for the content of this ePI, typically the Marketing Authorization Holder (MAH) or the Regulatory Authority."
+* author ^short = "Organization responsible for content (Marketing Authorization Holder)"
+* author ^definition = "The organization responsible for the content of this ePI, specifically the Marketing Authorization Holder (MAH)."
+* attester 0..
+* attester.party only Reference(Organization-uv-epi)
+* attester.party ^short = "Organization that attests to the content (Regulator)"
+* attester.party ^definition = "The regulatory authority that attests to the accuracy of this ePI."
 * title 1..
 * title ^short = "Official Title of the ePI"
 * title ^definition = "The official title of the ePI document, usually derived from the product name and document type."
