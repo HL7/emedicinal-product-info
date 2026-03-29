@@ -1,315 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paracetamol 500 mg (Type 1) - ePI</title>
-    <link rel="stylesheet" href="../epi-styles.css">
-    <style>
-        :root {
-            --background-color: #f5f5f7;
-            --card-background: #ffffff;
-            --card-inner-bg: #fbfbfd;
-            --text-color: #1d1d1f;
-            --secondary-text-color: #86868b;
-            --accent-color: #0071e3;
-            --sidebar-width: 260px;
-            --card-border-radius: 18px;
-            --card-inner-radius: 14px;
-            --section-spacing: 24px;
-            --sidebar-bg: #ffffff;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .layout-container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            gap: 32px;
-            align-items: flex-start;
-        }
-
-        .sidebar {
-            width: var(--sidebar-width);
-            flex-shrink: 0;
-            position: sticky;
-            top: 20px;
-            background-color: var(--sidebar-bg);
-            border-radius: var(--card-border-radius);
-            padding: 24px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .sidebar h2 {
-            font-size: 14px;
-            text-transform: uppercase;
-            color: var(--secondary-text-color);
-            letter-spacing: 0.1em;
-            margin-bottom: 16px;
-            margin-top: 0;
-        }
-
-        .nav-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-item {
-            margin-bottom: 8px;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 10px 14px;
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            border-radius: 10px;
-            transition: background-color 0.2s, color 0.2s;
-        }
-
-        .nav-link:hover {
-            background-color: #f2f2f7;
-            color: var(--accent-color);
-        }
-
-        .nav-link.active {
-            background-color: var(--accent-color);
-            color: #ffffff;
-        }
-
-        .main-content {
-            flex-grow: 1;
-            min-width: 0;
-        }
-
-        .card {
-            background-color: var(--card-background);
-            border-radius: var(--card-border-radius);
-            padding: 32px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            margin-bottom: var(--section-spacing);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-        }
-
-        details.card {
-            padding: 0;
-        }
-
-        details.card>summary {
-            padding: 32px;
-            cursor: pointer;
-            list-style: none;
-            outline: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        details.card>summary::-webkit-details-marker {
-            display: none;
-        }
-
-        details.card>summary::after {
-            content: '+';
-            font-size: 28px;
-            font-weight: 300;
-            color: var(--secondary-text-color);
-            transition: transform 0.3s;
-        }
-
-        details.card[open]>summary::after {
-            transform: rotate(45deg);
-        }
-
-        .section-title {
-            font-size: 28px;
-            margin: 0 0 24px 0;
-            font-weight: 600;
-        }
-
-        .metadata-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 16px;
-            margin-top: 24px;
-            padding-top: 24px;
-            border-top: 1px solid #f2f2f7;
-        }
-
-        .metadata-label {
-            font-size: 12px;
-            color: var(--secondary-text-color);
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-
-        .metadata-value {
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .narrative-card {
-            background-color: var(--card-inner-bg);
-            border-radius: var(--card-inner-radius);
-            padding: 24px;
-            margin-bottom: 20px;
-            border: 1px solid #f2f2f7;
-        }
-
-        .narrative-card h3 {
-            margin-top: 0;
-            color: var(--text-color);
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 6px 14px;
-            background-color: #f2f2f7;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--secondary-text-color);
-        }
-
-        .item-status {
-            font-size: 12px;
-            background: rgba(52, 199, 89, 0.1);
-            color: #248a3d;
-            padding: 4px 10px;
-            border-radius: 20px;
-            margin-left: 12px;
-        }
-
-        /* Composition section accent */
-        .card-composition {
-            border-left: 6px solid var(--accent-color);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paracetamol 500 mg — ePI Type 1 (Vulcan FHIR IG)</title>
+  <meta name="description" content="FHIR R5 Bundle document (ePI Type 1) for Paracetamol 500 mg tablets — Vulcan eMedicinal Product Information IG example." />
+  <style>
+    :root{--bg:#fff;--surface:#fff;--sf2:#f9fafb;--bd:#e5e7eb;--bd2:#d1d5db;--accent:#2563eb;--green:#16a34a;--teal:#0891b2;--purple:#7c3aed;--text:#111827;--muted:#6b7280;--faint:#9ca3af;--r:8px;--tr:0.15s ease}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    .crumb{background:var(--sf2);border-bottom:1px solid var(--bd);padding:9px 28px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+    .crumb .ig{font-weight:600;color:var(--text)}.crumb .sep{color:var(--faint)}
+    .crumb .badge{margin-left:auto;background:#eff6ff;border:1px solid #bfdbfe;color:var(--accent);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.07em;padding:3px 10px;border-radius:99px}
+    .hero{border-bottom:1px solid var(--bd);padding:44px 32px 32px;text-align:center}
+    .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+    .hero .sub{font-size:.97rem;color:var(--muted);margin-bottom:20px}
+    .chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px}
+    .chip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
+    .ch-g{background:#dcfce7;border:1px solid #bbf7d0;color:#15803d}
+    .ch-b{background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8}
+    .ch-gr{background:var(--sf2);border:1px solid var(--bd);color:var(--muted)}
+    .ch-am{background:#fffbeb;border:1px solid #fde68a;color:#92400e}
+    .tabnav{border-bottom:1px solid var(--bd)}
+    .tabnav-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex}
+    .tb{padding:13px 20px;font-size:.875rem;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:color var(--tr),border-color var(--tr);white-space:nowrap}
+    .tb:hover{color:var(--text)}.tb.on{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
+    .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}.panel.on{display:block}
+    .sc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
+    .sc.ab{border-left:3px solid var(--accent)}.sc.at{border-left:3px solid var(--teal)}.sc.ap{border-left:3px solid var(--purple)}
+    .sc-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:12px 18px 4px}
+    .sc-body{padding:10px 18px 16px}
+    .dg{display:grid;gap:14px}.dg4{grid-template-columns:repeat(4,1fr)}.dg3{grid-template-columns:repeat(3,1fr)}
+    .di label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
+    .di .v{font-size:.855rem;font-weight:600;color:var(--text)}.di .vm{font-family:ui-monospace,'SF Mono',monospace;font-size:.76rem;color:var(--teal)}
+    .cc-row{display:flex;flex-wrap:wrap;gap:10px;padding:12px 18px 16px}
+    .cc{display:flex;flex-direction:column;align-items:center;border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;min-width:108px}
+    .cc .n{font-size:1.5rem;font-weight:700;line-height:1;margin-bottom:4px}.cc .l{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:center}
+    .type1-note{background:#fffbeb;border:1px solid #fde68a;border-radius:var(--r);padding:12px 16px;margin-bottom:20px;font-size:.82rem;color:#92400e;display:flex;align-items:flex-start;gap:10px}
+    .type1-note .icon{font-size:1rem;flex-shrink:0;margin-top:1px}
+    .ns{background:var(--surface);border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);padding:16px 18px;margin-bottom:10px}
+    .ns h3{font-size:.935rem;font-weight:600;margin-bottom:6px}
+    .ns p{font-size:.855rem;color:var(--muted);margin-bottom:6px;line-height:1.7}.ns p:last-child{margin-bottom:0}
+    .ns ul{padding-left:18px;font-size:.855rem;color:var(--muted)}
+    @media(max-width:640px){.dg4,.dg3{grid-template-columns:1fr 1fr}}
+  </style>
 </head>
+<body>
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 
-<body><!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-    <div class="layout-container">
-        <!-- Sidebar Navigation -->
-        <div class="sidebar">
-            <h2>Navigation</h2>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#document" class="nav-link active">Document</a></li>
-                    <li class="nav-item"><a href="#leaflet" class="nav-link">Composition</a></li>
-                </ul>
-            </nav>
-        </div>
+<div class="crumb">
+  <span class="ig">Vulcan eMedicinal Product Information IG</span>
+  <span class="sep">&#8250;</span><span>Examples</span>
+  <span class="sep">&#8250;</span><span>ePI Type 1</span>
+  <span class="badge">HL7 FHIR R5</span>
+</div>
 
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <!-- Document Card -->
-            <div id="document" class="card">
-                <h1 class="section-title">Paracetamol</h1>
-                <div style="font-size: 18px; color: var(--secondary-text-color); font-weight: 500;">
-                    500 mg tablets (ePI Type 1)
-                </div>
+<header class="hero">
+  <h1>Paracetamol 500 mg tablets</h1>
+  <p class="sub">Patient Information Leaflet (PIL)</p>
+  <div class="chips">
+    <span class="chip ch-g">&#9679; Active</span>
+    <span class="chip ch-gr">Version 1.0</span>
+    <span class="chip ch-gr">EN</span>
+    <span class="chip ch-b">ePI Type 1</span>
+  </div>
+</header>
 
-                <div class="metadata-grid">
-                    <div class="metadata-item">
-                        <span class="metadata-label">Status</span>
-                        <span class="metadata-value"><span class="item-status"
-                                style="margin-left:0">Active</span></span>
-                    </div>
-                    <div class="metadata-item">
-                        <span class="metadata-label">Version</span>
-                        <span class="metadata-value">1.0</span>
-                    </div>
-                    <div class="metadata-item">
-                        <span class="metadata-label">Language</span>
-                        <span class="metadata-value">English</span>
-                    </div>
-                    <div class="metadata-item">
-                        <span class="metadata-label">Type</span>
-                        <span class="metadata-value">ePI Type 1</span>
-                    </div>
-                </div>
+<nav class="tabnav">
+  <div class="tabnav-inner">
+    <button class="tb on" onclick="sw('d',this)">Document</button>
+    <button class="tb" onclick="sw('c',this)">Composition</button>
+  </div>
+</nav>
 
-                <div style="margin-top: 24px;">
-                    <span class="badge">Prescription Only</span>
-                </div>
-            </div>
-
-            <!-- Composition / Leaflet Card -->
-            <details id="leaflet" class="card card-composition" open>
-                <summary>
-                    <h2 class="section-title">Composition</h2>
-                </summary>
-                <div class="card-content">
-                    <div class="narrative-card">
-                        <h3>1. What Paracetamol is and what it is used for</h3>
-                        <p>Paracetamol contains the active substance paracetamol, which belongs to a group of medicines
-                            called analgesics (painkillers) and antipyretics (medicines to reduce fever).</p>
-                        <p>Paracetamol is used to relieve mild to moderate pain and fever.</p>
-                    </div>
-
-                    <div class="narrative-card">
-                        <h3>2. What you need to know before you take Paracetamol</h3>
-                        <p><strong>Do not take Paracetamol:</strong> if you are allergic to paracetamol or any of the
-                            other ingredients of this medicine.</p>
-                        <p><strong>Warnings and precautions:</strong> Talk to your doctor or pharmacist before taking
-                            Paracetamol if you have liver or kidney problems.</p>
-                    </div>
-
-                    <div class="narrative-card">
-                        <h3>3. How to take Paracetamol</h3>
-                        <p>Always take this medicine exactly as described in this leaflet or as your doctor or
-                            pharmacist has told you.</p>
-                        <p>The recommended dose is 1 tablet every 4 to 6 hours as needed. Do not take more than 6
-                            tablets in any 24-hour period.</p>
-                    </div>
-
-                    <div class="narrative-card">
-                        <h3>4. Possible side effects</h3>
-                        <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.
-                        </p>
-                        <p>Stop taking the medicine and tell your doctor immediately if you experience allergic
-                            reactions such as skin rash or swelling.</p>
-                    </div>
-
-                    <div class="narrative-card">
-                        <h3>5. How to store Paracetamol</h3>
-                        <p>Keep this medicine out of the sight and reach of children. Do not use this medicine after the
-                            expiry date which is stated on the carton.</p>
-                        <p>This medicine does not require any special storage conditions.</p>
-                    </div>
-
-                    <div class="narrative-card">
-                        <h3>6. Contents of the pack and other information</h3>
-                        <p><strong>What Paracetamol contains:</strong> The active substance is paracetamol. The other
-                            ingredients are pregelatinized starch, povidone, stearic acid, talc, magnesium stearate, and
-                            hypromellose.</p>
-                        <p><strong>What Paracetamol looks like and contents of the pack:</strong> Paracetamol tablets
-                            are white and round. They are available in blister packs of 30 or 50 tablets.</p>
-                    </div>
-                </div>
-            </details>
-        </div>
+<!-- DOCUMENT -->
+<div id="pd" class="panel on">
+  <div class="type1-note">
+    <span class="icon">&#8505;</span>
+    <span><strong>ePI Type 1</strong> is a document-only ePI. It contains a Composition with the narrative text of the product information. It does not include structured product data (MedicinalProductDefinition, PackagedProductDefinition, or Organization resources).</span>
+  </div>
+  <div class="sc ab">
+    <div class="sc-lbl">Bundle Metadata</div>
+    <div class="sc-body">
+      <div class="dg dg4" style="margin-bottom:12px">
+        <div class="di"><label>Resource ID</label><div class="v vm">urn:uuid:c3e8a1f0-2b9d&#8230;</div></div>
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">1.0</div></div>
+        <div class="di"><label>Date</label><div class="v">2026-01-15</div></div>
+      </div>
+      <div class="dg dg3">
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+        <div class="di"><label>Author (MAH)</label><div class="v">Generic Pharma Ltd.</div></div>
+        <div class="di"><label>Attester (Regulator)</label><div class="v">MHRA</div></div>
+      </div>
     </div>
+  </div>
+  <div class="sc at">
+    <div class="sc-lbl">Composition</div>
+    <div class="sc-body">
+      <div class="dg dg3" style="margin-bottom:12px">
+        <div class="di"><label>Identifier</label><div class="v vm">urn:uuid:d9f2b5e3-7a1c&#8230;</div></div>
+        <div class="di"><label>Title</label><div class="v">Paracetamol 500 mg — PIL</div></div>
+        <div class="di"><label>Type</label><div class="v"><span class="chip ch-am">PIL</span></div></div>
+      </div>
+      <div class="dg dg3">
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">1.0</div></div>
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sc ap">
+    <div class="sc-lbl">Contained Resources</div>
+    <div class="cc-row">
+      <div class="cc"><span class="n" style="color:var(--accent)">1</span><span class="l">Compositions</span></div>
+      <div class="cc"><span class="n" style="color:var(--muted)">1</span><span class="l">Total Resources</span></div>
+    </div>
+  </div>
+</div>
 
-    <script src="../navigation.js"></script>
+<!-- COMPOSITION -->
+<div id="pc" class="panel">
+  <div class="ns"><h3>1. What Paracetamol 500 mg tablets is and what it is used for</h3>
+    <p>Paracetamol belongs to a group of medicines called analgesics (painkillers) and antipyretics (medicines that reduce fever).</p>
+    <p>Paracetamol 500 mg tablets are used to treat mild to moderate pain such as headache, migraine, nerve pain, toothache, sore throat, period pains, aches and pains, and to reduce fever.</p>
+  </div>
+  <div class="ns"><h3>2. What you need to know before you take Paracetamol 500 mg tablets</h3>
+    <p><strong>Do not take Paracetamol 500 mg tablets:</strong></p>
+    <ul>
+      <li>If you are allergic to paracetamol or any of the other ingredients of this medicine.</li>
+      <li>If you have severe liver problems.</li>
+    </ul>
+    <p><strong>Warnings and precautions:</strong> Talk to your doctor or pharmacist before taking this medicine if you have liver or kidney problems, are a regular user of alcohol, are underweight or malnourished, or if you are taking any other medicines containing paracetamol.</p>
+    <p><strong>Children:</strong> Do not give this medicine to children under 16 years of age without medical advice.</p>
+  </div>
+  <div class="ns"><h3>3. How to take Paracetamol 500 mg tablets</h3>
+    <p>Always take this medicine exactly as described in this leaflet or as your doctor or pharmacist has told you.</p>
+    <p><strong>Adults and children aged 16 years and over:</strong> 1–2 tablets up to 4 times in 24 hours. Leave at least 4 hours between doses. Do not take more than 8 tablets (4 g) in 24 hours.</p>
+    <p>Swallow the tablets whole with a glass of water. Do not exceed the stated dose.</p>
+  </div>
+  <div class="ns"><h3>4. Possible side effects</h3>
+    <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
+    <p><strong>Rare (may affect up to 1 in 1,000 people):</strong> Allergic reactions including skin rash, swelling of the face, lips, tongue or throat. Stop taking the medicine and seek immediate medical attention.</p>
+    <p><strong>Very rare (may affect up to 1 in 10,000 people):</strong> Blood disorders, liver and kidney damage (if taken in overdose).</p>
+  </div>
+  <div class="ns"><h3>5. How to store Paracetamol 500 mg tablets</h3>
+    <p>Keep this medicine out of the sight and reach of children.</p>
+    <p>Do not use this medicine after the expiry date which is stated on the carton and blister strip after EXP. The expiry date refers to the last day of that month.</p>
+    <p>This medicine does not require any special storage conditions.</p>
+    <p>Do not throw away any medicines via wastewater or household waste. Ask your pharmacist how to throw away medicines you no longer use.</p>
+  </div>
+  <div class="ns"><h3>6. Contents of the pack and other information</h3>
+    <p><strong>What Paracetamol 500 mg tablets contains:</strong> The active substance is paracetamol (500 mg). The other ingredients are pregelatinized starch, povidone K30, stearic acid, talc, magnesium stearate, and hypromellose.</p>
+    <p><strong>What Paracetamol 500 mg tablets looks like and contents of the pack:</strong> White, round, biconvex tablets with a score line on one side. Available in packs of 16, 32 or 100 tablets.</p>
+    <p><strong>Marketing Authorisation Holder:</strong> Generic Pharma Ltd., 1 Medicine Road, London, EC1A 1BB, United Kingdom.</p>
+    <p><strong>Manufacturer:</strong> Generic Manufacturing Co. Ltd., 2 Factory Lane, Manchester, M1 2AB, United Kingdom.</p>
+    <p>This leaflet was last revised in January 2026.</p>
+  </div>
+</div>
+
+<script>
+//<![CDATA[
+function sw(id,btn){
+  var ids=['d','c'];
+  for(var i=0;i<ids.length;i++){var p=document.getElementById('p'+ids[i]);if(p){p.className='panel'+(id===ids[i]?' on':'');}}
+  var btns=document.querySelectorAll('.tb');
+  for(var j=0;j<btns.length;j++){btns[j].className='tb';}
+  btn.className='tb on';
+}
+//]]>
+</script>
 </body>
-
 </html>

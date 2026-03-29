@@ -1,886 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WonderDrug 500 mg - ePI</title>
-    <link rel="stylesheet" href="../epi-styles.css">
-    <style>
-        :root {
-            --background-color: #f5f5f7;
-            --card-background: #ffffff;
-            --card-inner-bg: #fbfbfd;
-            --text-color: #1d1d1f;
-            --secondary-text-color: #86868b;
-            --accent-color: #0071e3;
-            --sidebar-width: 260px;
-            --card-border-radius: 18px;
-            --card-inner-radius: 14px;
-            --section-spacing: 24px;
-            --sidebar-bg: #ffffff;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.47059;
-            font-weight: 400;
-            letter-spacing: -0.022em;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Layout Engine */
-        .layout-container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            gap: 32px;
-            align-items: flex-start;
-            /* CRITICAL: Allows sibling to stay sticky */
-        }
-
-        /* Locked Sidebar Navigation */
-        .sidebar {
-            width: var(--sidebar-width);
-            flex-shrink: 0;
-            position: -webkit-sticky;
-            position: sticky;
-            top: 20px;
-            /* Locked from top */
-            height: auto;
-            max-height: calc(100vh - 40px);
-            overflow-y: auto;
-            background-color: var(--sidebar-bg);
-            border-radius: var(--card-border-radius);
-            padding: 24px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .sidebar h2 {
-            font-size: 14px;
-            text-transform: uppercase;
-            color: var(--secondary-text-color);
-            letter-spacing: 0.1em;
-            margin-bottom: 16px;
-            margin-top: 0;
-        }
-
-        .nav-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-item {
-            margin-bottom: 8px;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 10px 14px;
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            border-radius: 10px;
-            transition: background-color 0.2s, color 0.2s;
-        }
-
-        .nav-link:hover {
-            background-color: #f2f2f7;
-            color: var(--accent-color);
-        }
-
-        .nav-link.active {
-            background-color: var(--accent-color);
-            color: #ffffff;
-        }
-
-        /* Main Content Area */
-        .main-content {
-            flex-grow: 1;
-            min-width: 0;
-        }
-
-        /* Base Card System */
-        .card {
-            background-color: var(--card-background);
-            border-radius: var(--card-border-radius);
-            padding: 32px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            margin-bottom: var(--section-spacing);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-        }
-
-        details.card {
-            padding: 0;
-        }
-
-        details.card>summary {
-            padding: 32px;
-            cursor: pointer;
-            list-style: none;
-            outline: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        details.card>summary::-webkit-details-marker {
-            display: none;
-        }
-
-        details.card>summary::after {
-            content: '+';
-            font-size: 28px;
-            font-weight: 300;
-            color: var(--secondary-text-color);
-            transition: transform 0.3s;
-        }
-
-        details.card[open]>summary::after {
-            transform: rotate(45deg);
-        }
-
-        .card h2.section-title {
-            font-size: 28px;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        details.card>.card-content {
-            padding: 0 32px 32px 32px;
-        }
-
-        /* Color Accents */
-        .card-clinical {
-            border-left: 6px solid #30b0c7;
-        }
-
-        .card-products {
-            background-color: #f5f5f7;
-        }
-
-        /* Inner Cards */
-        .inner-card,
-        .leaflet-card {
-            background-color: var(--card-inner-bg);
-            border-radius: var(--card-inner-radius);
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #f2f2f7;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .inner-card::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 6px;
-            opacity: 0.8;
-        }
-
-        /* Specific card colors */
-        .card-details::before {
-            background-color: var(--accent-color);
-        }
-
-        .card-auth::before {
-            background-color: #34c759;
-        }
-
-        .card-pack::before {
-            background-color: #af52de;
-        }
-
-        .card-phys::before {
-            background-color: #ff9500;
-        }
-
-        /* Accordions */
-        .accordion-item {
-            background-color: #ffffff;
-            border-radius: 14px;
-            margin-bottom: 16px;
-            overflow: hidden;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .accordion-summary {
-            padding: 20px 24px;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            font-size: 18px;
-        }
-
-        .accordion-summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .accordion-summary::after {
-            content: '+';
-            font-size: 24px;
-            font-weight: 300;
-            color: var(--secondary-text-color);
-            transition: transform 0.3s;
-        }
-
-        .accordion-item[open] .accordion-summary::after {
-            transform: rotate(45deg);
-        }
-
-        .accordion-content {
-            padding: 24px;
-            border-top: 1px solid #f2f2f7;
-        }
-
-        /* Metadata & Data Rows */
-        .metadata-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 16px;
-            margin-top: 24px;
-            padding-top: 24px;
-            border-top: 1px solid #f2f2f7;
-        }
-
-        .metadata-label {
-            font-size: 12px;
-            color: var(--secondary-text-color);
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-
-        .metadata-value {
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .data-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        .data-label {
-            color: var(--secondary-text-color);
-        }
-
-        .data-value {
-            font-weight: 600;
-            text-align: right;
-        }
-
-        .item-status {
-            font-size: 12px;
-            background: rgba(52, 199, 89, 0.1);
-            color: #248a3d;
-            padding: 4px 10px;
-            border-radius: 20px;
-            margin-left: 12px;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 6px 14px;
-            border-radius: 20px;
-            background-color: var(--text-color);
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        @media (max-width: 900px) {
-            .layout-container {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                position: static;
-                margin-bottom: 24px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WonderDrug 100/200/500 mg — ePI Type 3 (Vulcan FHIR IG)</title>
+  <meta name="description" content="FHIR R5 Bundle document (ePI Type 3) for WonderDrug tablets — Vulcan eMedicinal Product Information IG example." />
+  <style>
+    :root{--bg:#fff;--surface:#fff;--sf2:#f9fafb;--bd:#e5e7eb;--bd2:#d1d5db;--accent:#2563eb;--green:#16a34a;--rose:#dc2626;--amber:#d97706;--purple:#7c3aed;--teal:#0891b2;--text:#111827;--muted:#6b7280;--faint:#9ca3af;--r:8px;--rl:12px;--tr:0.15s ease}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    .crumb{background:var(--sf2);border-bottom:1px solid var(--bd);padding:9px 28px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+    .crumb .ig{font-weight:600;color:var(--text)}.crumb .sep{color:var(--faint)}
+    .crumb .badge{margin-left:auto;background:#eff6ff;border:1px solid #bfdbfe;color:var(--accent);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.07em;padding:3px 10px;border-radius:99px}
+    .hero{border-bottom:1px solid var(--bd);padding:44px 32px 32px;text-align:center}
+    .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+    .hero .sub{font-size:.97rem;color:var(--muted);margin-bottom:20px}
+    .chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px}
+    .chip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
+    .ch-g{background:#dcfce7;border:1px solid #bbf7d0;color:#15803d}
+    .ch-b{background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8}
+    .ch-gr{background:var(--sf2);border:1px solid var(--bd);color:var(--muted)}
+    .ch-dk{background:#111827;border:1px solid #111827;color:#fff}
+    .ch-t{background:#f0fdfa;border:1px solid #99f6e4;color:#0f766e}
+    .tabnav{border-bottom:1px solid var(--bd)}
+    .tabnav-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex}
+    .tb{padding:13px 20px;font-size:.875rem;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:color var(--tr),border-color var(--tr);white-space:nowrap}
+    .tb:hover{color:var(--text)}.tb.on{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
+    .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}.panel.on{display:block}
+    .sc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
+    .sc.ab{border-left:3px solid var(--accent)}.sc.at{border-left:3px solid var(--teal)}.sc.ap{border-left:3px solid var(--purple)}
+    .sc-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:12px 18px 4px}
+    .sc-body{padding:10px 18px 16px}
+    .dg{display:grid;gap:14px}.dg4{grid-template-columns:repeat(4,1fr)}.dg3{grid-template-columns:repeat(3,1fr)}
+    .di label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
+    .di .v{font-size:.855rem;font-weight:600;color:var(--text)}.di .vm{font-family:ui-monospace,'SF Mono',monospace;font-size:.76rem;color:var(--teal)}
+    .cc-row{display:flex;flex-wrap:wrap;gap:10px;padding:12px 18px 16px}
+    .cc{display:flex;flex-direction:column;align-items:center;border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;min-width:108px}
+    .cc .n{font-size:1.5rem;font-weight:700;line-height:1;margin-bottom:4px}.cc .l{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:center}
+    .ns{background:var(--surface);border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);padding:16px 18px;margin-bottom:10px}
+    .ns h3{font-size:.935rem;font-weight:600;margin-bottom:6px}
+    .ns p{font-size:.855rem;color:var(--muted);margin-bottom:6px;line-height:1.7}.ns p:last-child{margin-bottom:0}
+    .ns ul{padding-left:18px;font-size:.855rem;color:var(--muted)}
+    .og{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:10px}
+    .oc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+    .och{padding:12px 18px 8px;border-bottom:1px solid var(--bd)}
+    .och .role{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+    .och .name{font-size:1.05rem;font-weight:700}
+    .ocb{padding:10px 18px}
+    .or{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--bd);font-size:.81rem}
+    .or:last-child{border-bottom:none}.or .ol{color:var(--muted)}.or .ov{font-weight:500;text-align:right}
+    .or .ovm{font-family:ui-monospace,'SF Mono',monospace;font-size:.74rem;color:var(--teal)}
+    .onote{font-size:11px;color:var(--faint);font-style:italic;margin-top:6px}
+    .ps-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;font-size:.84rem;color:var(--muted)}
+    .pf{border:1px solid var(--bd);border-radius:var(--r);padding:5px 12px;font-size:.81rem;color:var(--text);outline:none}
+    .pa{margin-bottom:10px;border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);overflow:hidden}
+    .pah{display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;list-style:none;background:var(--surface);user-select:none}
+    .pah::-webkit-details-marker{display:none}.pah::marker{display:none}
+    details[open]>.pah{border-bottom:1px solid var(--bd)}
+    details[open]>.pah .pchev{transform:rotate(180deg)}
+    .pnum{width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
+    .pname{font-size:.88rem;font-weight:600}.psub{font-size:.78rem;color:var(--muted);margin-left:2px}
+    .pbadges{display:flex;gap:6px;margin-left:auto;align-items:center}
+    .pchev{font-size:11px;color:var(--faint);margin-left:6px;transition:transform var(--tr)}
+    .pc{padding:12px 16px;background:var(--sf2);display:flex;flex-direction:column;gap:10px}
+    .is{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+    .isl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:10px 14px 2px}
+    .isb{padding:6px 14px 12px}
+    .ifs{display:flex;flex-wrap:wrap}
+    .inf{flex:1;min-width:150px;padding:8px 12px;border-right:1px solid var(--bd)}.inf:last-child{border-right:none}
+    .inf .il{font-size:.81rem;color:var(--muted)}.inf .il::after{content:': '}
+    .inf .iv{font-size:.875rem;font-weight:700;color:var(--text)}
+    .ec{display:grid;grid-template-columns:1fr 1fr}
+    .ei{font-size:.81rem;color:var(--muted);padding:5px 0;border-bottom:1px solid var(--bd)}
+    .ei:nth-last-child(-n+2){border-bottom:none}
+    .ap-in{display:flex;align-items:flex-start;gap:20px}
+    .ap-data{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:2px 16px}
+    .apf{font-size:.81rem;padding:4px 0}
+    .apf .al{color:var(--muted)}.apf .al::after{content:': '}.apf .av{font-weight:700;color:var(--text)}
+    .tab-svgs{display:flex;gap:12px;align-items:center;flex-shrink:0}
+    .tab-fig{text-align:center}
+    .tab-fig figcaption{font-size:9px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
+    .pkgs{display:flex;gap:10px;flex-wrap:wrap}
+    .pkg{flex:1;min-width:190px;background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);padding:12px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+    .pki .pn{font-size:.83rem;font-weight:600;margin-bottom:2px}.pki .pt{font-size:.74rem;color:var(--muted);margin-bottom:7px}
+    .pkt{display:flex;gap:5px;flex-wrap:wrap}
+    .pka{flex-shrink:0;text-align:center}
+    .pka-box{width:68px;height:50px;border:1px dashed var(--bd2);border-radius:4px;display:flex;align-items:center;justify-content:center;background:var(--sf2)}
+    .pka figcaption{font-size:9px;color:var(--faint);margin-top:2px}
+    .mag{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .mai .ml{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
+    .mai .mv{font-size:.85rem;font-weight:600;color:var(--text)}.mai .mvm{font-family:ui-monospace,'SF Mono',monospace;font-size:.79rem;color:var(--teal)}
+    @media(max-width:640px){.dg4,.dg3{grid-template-columns:1fr 1fr}.og{grid-template-columns:1fr}.ec{grid-template-columns:1fr}.ei{border-bottom:1px solid var(--bd) !important}.ap-in{flex-direction:column}.pkgs{flex-direction:column}.mag{grid-template-columns:1fr 1fr}}
+  </style>
 </head>
+<body>
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 
-<body><!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-    <div class="layout-container">
-        <!-- Sidebar Navigation -->
-        <div class="sidebar">
-            <h2>Navigation</h2>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#document" class="nav-link active">Document</a></li>
-                    <li class="nav-item"><a href="#leaflet" class="nav-link">Composition</a></li>
-                    <li class="nav-item"><a href="#organizations" class="nav-link">Organization</a></li>
-                    <li class="nav-item"><a href="#products" class="nav-link">Product Details</a></li>
-                    <li class="nav-item"><a href="#clinical" class="nav-link">Clinical Details</a></li>
-                </ul>
-            </nav>
-        </div>
+<div class="crumb">
+  <span class="ig">Vulcan eMedicinal Product Information IG</span>
+  <span class="sep">&#8250;</span><span>Examples</span>
+  <span class="sep">&#8250;</span><span>ePI Type 3</span>
+  <span class="badge">HL7 FHIR R5</span>
+</div>
 
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <!-- Document Card -->
-            <div id="document" class="card card-document">
-                <h1>WonderDrug</h1>
-                <div style="font-size: 20px; color: var(--secondary-text-color); font-weight: 600;">
-                    100 mg, 200 mg and 500 mg tablets
-                </div>
+<header class="hero">
+  <h1>WonderDrug</h1>
+  <p class="sub">100 mg, 200 mg and 500 mg tablets</p>
+  <div class="chips">
+    <span class="chip ch-g">&#9679; Active</span>
+    <span class="chip ch-gr">Version 2.1</span>
+    <span class="chip ch-gr">EN</span>
+    <span class="chip ch-b">ePI Type 3</span>
+    <span class="chip ch-dk">Prescription Only</span>
+  </div>
+</header>
 
-                <div class="metadata-grid">
-                    <div class="metadata-item">
-                        <span class="metadata-label">Status</span>
-                        <span class="metadata-value"><span class="item-status"
-                                style="margin-left:0">Active</span></span>
-                    </div>
-                    <div class="metadata-item">
-                        <span class="metadata-label">Version</span>
-                        <span class="metadata-value">2.1</span>
-                    </div>
-                    <div class="metadata-item">
-                        <span class="metadata-label">Language</span>
-                        <span class="metadata-value">English (EN)</span>
-                    </div>
-                    <div class="metadata-item">
-                        <span class="metadata-label">Type</span>
-                        <span class="metadata-value">ePI Type 3</span>
-                    </div>
-                </div>
+<nav class="tabnav">
+  <div class="tabnav-inner">
+    <button class="tb on" onclick="sw('d',this)">Document</button>
+    <button class="tb" onclick="sw('c',this)">Composition</button>
+    <button class="tb" onclick="sw('o',this)">Organization</button>
+    <button class="tb" onclick="sw('p',this)">Product Details</button>
+  </div>
+</nav>
 
-                <div style="margin-top: 24px;">
-                    <span class="badge">Prescription Only</span>
-                </div>
-            </div>
-
-
-            <!-- Leaflet Card (Composition) - Now Collapsible -->
-            <details id="leaflet" class="card card-composition" open>
-                <summary>
-                    <h2 class="section-title">Composition</h2>
-                </summary>
-                <div class="card-content">
-                    <div class="narrative-content">
-                        <div class="leaflet-card">
-                            <h3>1. What WonderDrug is and what it is used for</h3>
-                            <p>WonderDrug contains paracetamol, which belongs to a group of medicines called analgesics
-                                (painkillers) and antipyretics (medicines to reduce fever).</p>
-                            <p>WonderDrug is used to relieve mild to moderate pain and fever.</p>
-                        </div>
-                        <div class="leaflet-card">
-                            <h3>2. What you need to know before you take WonderDrug</h3>
-                            <p><strong>Do not take WonderDrug:</strong> if you are allergic to paracetamol or any of the
-                                other ingredients of this medicine.</p>
-                            <p><strong>Warnings and precautions:</strong> Talk to your doctor or pharmacist before
-                                taking WonderDrug if you have liver or kidney problems.</p>
-                        </div>
-                        <div class="leaflet-card">
-                            <h3>3. How to take WonderDrug</h3>
-                            <p>Always take this medicine exactly as described in this leaflet or as your doctor or
-                                pharmacist has told you.</p>
-                            <p>The recommended dose is 1 tablet every 4 to 6 hours as needed. Do not take more than 6
-                                tablets in any 24-hour period.</p>
-                        </div>
-                        <div class="leaflet-card">
-                            <h3>4. Possible side effects</h3>
-                            <p>Like all medicines, this medicine can cause side effects, although not everybody gets
-                                them.</p>
-                            <p>Stop taking the medicine and tell your doctor immediately if you experience allergic
-                                reactions such as skin rash or swelling.</p>
-                        </div>
-                        <div class="leaflet-card">
-                            <h3>5. How to store WonderDrug</h3>
-                            <p>Keep this medicine out of the sight and reach of children. Do not use this medicine after
-                                the expiry date which is stated on the carton.</p>
-                            <p>This medicine does not require any special storage conditions.</p>
-                        </div>
-                        <div class="leaflet-card">
-                            <h3>6. Contents of the pack and other information</h3>
-                            <p><strong>What WonderDrug contains:</strong> The active substance is paracetamol. The other
-                                ingredients are pregelatinized starch, povidone, stearic acid, talc, magnesium stearate,
-                                and hypromellose.</p>
-                            <p><strong>What WonderDrug looks like and contents of the pack:</strong> WonderDrug tablets
-                                are white and round. They are available in blister packs of 30 or 50 tablets.</p>
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Organization Card - NEW Section -->
-            <div id="organizations" class="card card-organization">
-                <h2 class="section-title">Organization</h2>
-                <div class="card-content">
-                    <!-- MAH Organization -->
-                    <div class="inner-card">
-                        <h3 style="color: var(--accent-color); margin-top:0">Marketing Authorization Holder</h3>
-                        <div class="data-row">
-                            <span class="data-label">Name</span>
-                            <span class="data-value">Acme Pharma Inc.</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Identifier</span>
-                            <span class="data-value">LOC-100000000 (OMS)</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Type</span>
-                            <span class="data-value">Marketing Authorization Holder</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Address</span>
-                            <span class="data-value">123 Pharma Way, 102 37 Prague, Czech Republic</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Email</span>
-                            <span class="data-value">contact@acmepharma.com</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Phone</span>
-                            <span class="data-value">+420 222 333 444</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Website</span>
-                            <span class="data-value">https://www.acmepharma.com</span>
-                        </div>
-                    </div>
-
-                    <!-- Manufacturer Organization -->
-                    <div class="inner-card" style="margin-top: 24px;">
-                        <h3 style="color: #34c759; margin-top:0">Manufacturer</h3>
-                        <div class="data-row">
-                            <span class="data-label">Name</span>
-                            <span class="data-value">Global Manufacturing Solutions Ltd.</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Identifier</span>
-                            <span class="data-value">LOC-200000000 (OMS)</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Type</span>
-                            <span class="data-value">Manufacturer</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Address</span>
-                            <span class="data-value">456 Industry Road, Berlin, Germany</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Email</span>
-                            <span class="data-value">qa@globalman.de</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Phone</span>
-                            <span class="data-value">+49 30 1234567</span>
-                        </div>
-                        <div class="data-row">
-                            <span class="data-label">Website</span>
-                            <span class="data-value">https://www.globalman.solutions</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product Details Card - Now Collapsible -->
-            <details id="products" class="card card-products" open>
-                <summary>
-                    <h2 class="section-title">Product Details</h2>
-                </summary>
-                <div class="card-content">
-                    <!-- Product 1: 500 mg -->
-                    <details class="accordion-item" open>
-                        <summary class="accordion-summary">
-                            <div>
-                                WonderDrug 500 mg tablets
-                                <span class="item-status">Active</span>
-                            </div>
-                        </summary>
-
-                        <div class="accordion-content">
-                            <div class="clinical-grid">
-                                <!-- Ingredients -->
-                                <div class="inner-card">
-                                    <h3 style="color: var(--accent-color); margin-top:0">Ingredients</h3>
-                                    <div class="data-row">
-                                        <span class="data-label">Active Substance</span>
-                                        <span class="data-value">Paracetamol</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Strength</span>
-                                        <span class="data-value">500 mg</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Form</span>
-                                        <span class="data-value">Tablet</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Route</span>
-                                        <span class="data-value">Oral use</span>
-                                    </div>
-                                    <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #f2f2f7;">
-                                        <div class="metadata-label" style="margin-bottom: 8px;">Full Ingredient List
-                                        </div>
-                                        <div style="font-size: 14px; line-height: 1.6;">
-                                            Paracetamol, Pregelatinized starch, Povidone, Stearic acid, Talc, Magnesium
-                                            stearate, Hypromellose.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Regulatory -->
-                                <div class="inner-card">
-                                    <h3 style="color: #34c759; margin-top:0">Regulatory Data</h3>
-                                    <div class="data-row">
-                                        <span class="data-label">Holder</span>
-                                        <span class="data-value">Acme Pharma Inc.</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Number</span>
-                                        <span class="data-value">MA-123456789</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Region</span>
-                                        <span class="data-value">Estonia (EE)</span>
-                                    </div>
-                                </div>
-
-                                <!-- Packaging -->
-                                <div class="inner-card">
-                                    <h3 style="color: #af52de; margin-top:0">Packaging</h3>
-                                    <div class="data-row">
-                                        <span class="data-label">Type</span>
-                                        <span class="data-value">Box</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Content</span>
-                                        <span class="data-value">1 x Blister</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Quantity</span>
-                                        <span class="data-value">30 Tablets</span>
-                                    </div>
-                                </div>
-
-                                <!-- Appearance -->
-                                <div class="inner-card">
-                                    <h3 style="color: #ff9500; margin-top:0">Appearance</h3>
-                                    <div
-                                        style="display: flex; justify-content: space-around; margin: 20px 0; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));">
-                                        <!-- Front of tablet 3D SVG -->
-                                        <svg width="80" height="80" viewBox="0 0 100 100">
-                                            <defs>
-                                                <radialGradient id="tabletGrad" cx="40%" cy="40%" r="50%" fx="30%"
-                                                    fy="30%">
-                                                    <stop offset="0%" stop-color="#ffffff" />
-                                                    <stop offset="100%" stop-color="#e5e5e7" />
-                                                </radialGradient>
-                                            </defs>
-                                            <circle cx="50" cy="50" r="45" fill="url(#tabletGrad)" stroke="#d2d2d7"
-                                                stroke-width="0.5" />
-                                            <ellipse cx="50" cy="48" rx="42" ry="40" fill="none" stroke="#ffffff"
-                                                stroke-width="1.5" opacity="0.6" />
-                                            <text x="50" y="55" font-family="Arial" font-size="10" font-weight="600"
-                                                text-anchor="middle" fill="#86868b"
-                                                style="text-transform: uppercase; letter-spacing: 1px;">FRONT</text>
-                                        </svg>
-                                        <!-- Back of tablet 3D SVG -->
-                                        <svg width="80" height="80" viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="45" fill="url(#tabletGrad)" stroke="#d2d2d7"
-                                                stroke-width="0.5" />
-                                            <line x1="15" y1="50" x2="85" y2="50" stroke="#d2d2d7" stroke-width="1"
-                                                stroke-dasharray="2,2" opacity="0.5" />
-                                            <ellipse cx="50" cy="48" rx="42" ry="40" fill="none" stroke="#ffffff"
-                                                stroke-width="1.5" opacity="0.6" />
-                                            <text x="50" y="42" font-family="Arial" font-size="8" font-weight="600"
-                                                text-anchor="middle" fill="#86868b">W-500</text>
-                                            <text x="50" y="65" font-family="Arial" font-size="9" font-weight="bold"
-                                                text-anchor="middle" fill="#86868b"
-                                                style="text-transform: uppercase;">BACK</text>
-                                        </svg>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Colour</span>
-                                        <span class="data-value">White</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Shape</span>
-                                        <span class="data-value">Round</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Flavour</span>
-                                        <span class="data-value">None</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Size</span>
-                                        <span class="data-value">12 mm</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Imprint</span>
-                                        <span class="data-value">W-500</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </details>
-
-                    <!-- Product 2: 100 mg -->
-                    <details class="accordion-item">
-                        <summary class="accordion-summary">
-                            <div>
-                                WonderDrug 100 mg tablets
-                                <span class="item-status">Active</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="clinical-grid">
-                                <!-- Ingredients -->
-                                <div class="inner-card">
-                                    <h3 style="color: var(--accent-color); margin-top:0">Ingredients</h3>
-                                    <div class="data-row">
-                                        <span class="data-label">Active Substance</span>
-                                        <span class="data-value">Paracetamol</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Strength</span>
-                                        <span class="data-value">100 mg</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Form</span>
-                                        <span class="data-value">Tablet</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Route</span>
-                                        <span class="data-value">Oral use</span>
-                                    </div>
-                                    <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #f2f2f7;">
-                                        <div class="metadata-label" style="margin-bottom: 8px;">Full Ingredient List
-                                        </div>
-                                        <div style="font-size: 14px; line-height: 1.6;">
-                                            Paracetamol, Pregelatinized starch, Povidone, Stearic acid, Talc, Magnesium
-                                            stearate, Hypromellose.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Regulatory -->
-                                <div class="inner-card">
-                                    <h3 style="color: #34c759; margin-top:0">Regulatory Data</h3>
-                                    <div class="data-row">
-                                        <span class="data-label">Holder</span>
-                                        <span class="data-value">Acme Pharma Inc.</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Number</span>
-                                        <span class="data-value">PL 12345/6790</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Region</span>
-                                        <span class="data-value">United Kingdom</span>
-                                    </div>
-                                </div>
-
-                                <!-- Packaging -->
-                                <div class="inner-card">
-                                    <h3 style="color: #5856d6; margin-top:0">Packaging</h3>
-                                    <div class="data-row">
-                                        <span class="data-label">Type</span>
-                                        <span class="data-value">Blister Pack</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Content</span>
-                                        <span class="data-value">PVC/Aluminum</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Quantity</span>
-                                        <span class="data-value">30 Tablets</span>
-                                    </div>
-                                </div>
-
-                                <!-- Appearance -->
-                                <div class="inner-card">
-                                    <h3 style="color: #ff9500; margin-top:0">Appearance</h3>
-                                    <div
-                                        style="display: flex; justify-content: space-around; margin: 20px 0; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));">
-                                        <!-- Front of tablet 3D SVG -->
-                                        <svg width="60" height="60" viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="45" fill="url(#tabletGrad)" stroke="#d2d2d7"
-                                                stroke-width="0.5" />
-                                            <ellipse cx="50" cy="48" rx="42" ry="40" fill="none" stroke="#ffffff"
-                                                stroke-width="1.5" opacity="0.6" />
-                                            <text x="50" y="55" font-family="Arial" font-size="10" font-weight="600"
-                                                text-anchor="middle" fill="#86868b"
-                                                style="text-transform: uppercase; letter-spacing: 1px;">FRONT</text>
-                                        </svg>
-                                        <!-- Back of tablet 3D SVG -->
-                                        <svg width="60" height="60" viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="45" fill="url(#tabletGrad)" stroke="#d2d2d7"
-                                                stroke-width="0.5" />
-                                            <line x1="15" y1="50" x2="85" y2="50" stroke="#d2d2d7" stroke-width="1"
-                                                stroke-dasharray="2,2" opacity="0.5" />
-                                            <ellipse cx="50" cy="48" rx="42" ry="40" fill="none" stroke="#ffffff"
-                                                stroke-width="1.5" opacity="0.6" />
-                                            <text x="50" y="42" font-family="Arial" font-size="8" font-weight="600"
-                                                text-anchor="middle" fill="#86868b">W-100</text>
-                                            <text x="50" y="65" font-family="Arial" font-size="9" font-weight="bold"
-                                                text-anchor="middle" fill="#86868b"
-                                                style="text-transform: uppercase;">BACK</text>
-                                        </svg>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Colour</span>
-                                        <span class="data-value">White</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Shape</span>
-                                        <span class="data-value">Round</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Flavour</span>
-                                        <span class="data-value">None</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Size</span>
-                                        <span class="data-value">6 mm</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Imprint</span>
-                                        <span class="data-value">W-100</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </details>
-
-                    <!-- Product 3: 200 mg - NEW Variant -->
-                    <details class="accordion-item">
-                        <summary class="accordion-summary" style="border-left: 4px solid #34c759;">
-                            <div>
-                                WonderDrug 200 mg tablets
-                                <span class="item-status">Active</span>
-                            </div>
-                        </summary>
-
-                        <div class="accordion-content">
-                            <div class="clinical-grid">
-                                <div class="inner-card">
-                                    <h3 style="color: #34c759; margin-top:0">Ingredients</h3>
-                                    <div class="data-row">
-                                        <span class="data-label">Active Substance</span>
-                                        <span class="data-value">Paracetamol</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Strength</span>
-                                        <span class="data-value">200 mg</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Form</span>
-                                        <span class="data-value">Tablet</span>
-                                    </div>
-                                </div>
-
-                                <div class="inner-card">
-                                    <h3 style="color: #34c759; margin-top:0">Appearance</h3>
-                                    <div
-                                        style="display: flex; justify-content: center; margin: 20px 0; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));">
-                                        <img src="paracetamol_200mg_green_hex_pill.png"
-                                            alt="200mg Green Hexagonal Tablet"
-                                            style="width:120px; height:auto; border-radius: 12px;">
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Colour</span>
-                                        <span class="data-value">Green</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Shape</span>
-                                        <span class="data-value">Hexagonal</span>
-                                    </div>
-                                    <div class="data-row">
-                                        <span class="data-label">Imprint</span>
-                                        <span class="data-value">W-200</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </details>
-                </div>
-            </details>
-
-            <!-- Clinical Details Card - Now Collapsible & LAST -->
-            <details id="clinical" class="card card-clinical" open>
-                <summary>
-                    <h2 class="section-title">Clinical Particulars</h2>
-                </summary>
-                <div class="card-content">
-                    <!-- Indications -->
-                    <details class="accordion-item" open>
-                        <summary class="accordion-summary" style="color: #34c759;">
-                            Indications
-                        </summary>
-                        <div class="accordion-content">
-                            <ul>
-                                <li>Relief of mild to moderate pain</li>
-                                <li>Treatment of fever</li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <!-- Contraindications -->
-                    <details class="accordion-item">
-                        <summary class="accordion-summary" style="color: #ff3b30;">
-                            Contraindications
-                        </summary>
-                        <div class="accordion-content">
-                            <p>Hypersensitivity to paracetamol or any excipients.</p>
-                        </div>
-                    </details>
-
-                    <!-- Interactions -->
-                    <details class="accordion-item">
-                        <summary class="accordion-summary" style="color: #af52de;">
-                            Interactions
-                        </summary>
-                        <div class="accordion-content">
-                            <p>Increased effect of oral anticoagulants (e.g. warfarin).</p>
-                        </div>
-                    </details>
-
-                    <!-- Side Effects -->
-                    <details class="accordion-item">
-                        <summary class="accordion-summary" style="color: #ff9500;">
-                            Side Effects
-                        </summary>
-                        <div class="accordion-content">
-                            <ul>
-                                <li>Skin rash (rare)</li>
-                                <li>Nausea</li>
-                            </ul>
-                        </div>
-                    </details>
-                </div>
-            </details>
-
-            <footer
-                style="text-align: center; color: var(--secondary-text-color); font-size: 12px; margin-top: 40px; border-top: 1px solid #d2d2d7; padding-top: 20px;">
-                <p>ePI Type 3 Example • Generated from FHIR Bundle</p>
-                <p>Identifier: WONDERDRUG-BUNDLE-TYPE3 • Date: 2023-10-27</p>
-            </footer>
-        </div>
+<!-- DOCUMENT -->
+<div id="pd" class="panel on">
+  <div class="sc ab">
+    <div class="sc-lbl">Bundle Metadata</div>
+    <div class="sc-body">
+      <div class="dg dg4" style="margin-bottom:12px">
+        <div class="di"><label>Resource ID</label><div class="v vm">urn:uuid:a7f3c2d1-8e4b&#8230;</div></div>
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">2.1</div></div>
+        <div class="di"><label>Date</label><div class="v">2026-03-27</div></div>
+      </div>
+      <div class="dg dg4">
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+        <div class="di"><label>Jurisdiction</label><div class="v">European Union &#127466;&#127482;</div></div>
+        <div class="di"><label>Author (MAH)</label><div class="v">Acme Pharma Inc.</div></div>
+        <div class="di"><label>Attester (Regulator)</label><div class="v">EMA</div></div>
+      </div>
     </div>
+  </div>
+  <div class="sc at">
+    <div class="sc-lbl">Composition</div>
+    <div class="sc-body">
+      <div class="dg dg3" style="margin-bottom:12px">
+        <div class="di"><label>Identifier</label><div class="v vm">urn:uuid:b8e1f4a2-3d7c&#8230;</div></div>
+        <div class="di"><label>Title</label><div class="v">WonderDrug SmPC</div></div>
+        <div class="di"><label>Type</label><div class="v"><span class="chip ch-b">SmPC</span></div></div>
+      </div>
+      <div class="dg dg3">
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">2.1</div></div>
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sc ap">
+    <div class="sc-lbl">Contained Resources</div>
+    <div class="cc-row">
+      <div class="cc"><span class="n" style="color:var(--accent)">1</span><span class="l">Compositions</span></div>
+      <div class="cc"><span class="n" style="color:var(--teal)">2</span><span class="l">Organizations</span></div>
+      <div class="cc"><span class="n" style="color:var(--green)">3</span><span class="l">Medicinal Products</span></div>
+      <div class="cc"><span class="n" style="color:var(--amber)">5</span><span class="l">Packaged Products</span></div>
+      <div class="cc"><span class="n" style="color:var(--purple)">1</span><span class="l">Regulatory Authorizations</span></div>
+    </div>
+  </div>
+</div>
 
-    <script src="navigation.js"></script>
+<!-- COMPOSITION -->
+<div id="pc" class="panel">
+  <div class="ns"><h3>1. Name of the medicinal product</h3><p>WonderDrug 100 mg, 200 mg and 500 mg tablets (paracetamol)</p></div>
+  <div class="ns"><h3>2. Qualitative and quantitative composition</h3>
+    <p>Each tablet contains 100 mg, 200 mg or 500 mg of paracetamol.</p>
+    <p><strong>Excipients:</strong> Pregelatinized starch, povidone K30, stearic acid, talc, magnesium stearate, hypromellose.</p>
+  </div>
+  <div class="ns"><h3>3. Pharmaceutical form</h3><p>Tablet. White, round tablets (100 mg and 500 mg) and green hexagonal tablets (200 mg).</p></div>
+  <div class="ns"><h3>4. Clinical particulars</h3>
+    <p><strong>Indications:</strong> Symptomatic treatment of mild to moderate pain and fever in adults and children over 12 years.</p>
+    <p><strong>Contraindications:</strong> Hypersensitivity to paracetamol or any excipients. Severe hepatic impairment.</p>
+    <p><strong>Dose:</strong> Adults and children over 12 years: 500 mg every 4–6 hours. Maximum 4 g (8 tablets of 500 mg) in 24 hours.</p>
+  </div>
+  <div class="ns"><h3>5. Pharmacological properties</h3>
+    <p>Paracetamol is an analgesic and antipyretic. ATC Code: N02BE01.</p>
+  </div>
+  <div class="ns"><h3>6. Pharmaceutical particulars</h3>
+    <p><strong>Storage:</strong> No special storage conditions required. Keep out of reach of children.</p>
+    <p><strong>Shelf life:</strong> 36 months.</p>
+  </div>
+</div>
+
+<!-- ORGANIZATION -->
+<div id="po" class="panel">
+  <div class="og">
+    <div class="oc" style="border-left:3px solid var(--accent)">
+      <div class="och"><div class="role" style="color:var(--accent)">Marketing Authorization Holder</div><div class="name">Acme Pharma Inc.</div></div>
+      <div class="ocb">
+        <div class="or"><span class="ol">Identifier</span><span class="ov ovm">LOC-100000000 (OMS)</span></div>
+        <div class="or"><span class="ol">Type</span><span class="ov"><span class="chip ch-b">MAH</span></span></div>
+        <div class="or"><span class="ol">Address</span><span class="ov">123 Pharma Way, 102 37 Prague, Czech Republic</span></div>
+        <div class="or"><span class="ol">Email</span><span class="ov">contact@acmepharma.com</span></div>
+        <div class="or"><span class="ol">Phone</span><span class="ov">+420 222 333 444</span></div>
+        <div class="or"><span class="ol">Website</span><span class="ov">https://www.acmepharma.com</span></div>
+      </div>
+    </div>
+    <div class="oc" style="border-left:3px solid var(--green)">
+      <div class="och"><div class="role" style="color:var(--green)">Manufacturer</div><div class="name">Global Manufacturing Solutions Ltd.</div></div>
+      <div class="ocb">
+        <div class="or"><span class="ol">Identifier</span><span class="ov ovm">LOC-200000000 (OMS)</span></div>
+        <div class="or"><span class="ol">Type</span><span class="ov"><span class="chip ch-t">Manufacturer</span></span></div>
+        <div class="or"><span class="ol">Address</span><span class="ov">456 Industry Road, Berlin, Germany</span></div>
+        <div class="or"><span class="ol">Email</span><span class="ov">qa@globalman.de</span></div>
+        <div class="or"><span class="ol">Phone</span><span class="ov">+49 30 1234567</span></div>
+        <div class="or"><span class="ol">Website</span><span class="ov">https://www.globalman.solutions</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="onote">Organization data sourced from the OMS (Organisation Management Service) identifier system.</p>
+</div>
+
+<!-- PRODUCT DETAILS -->
+<div id="pp" class="panel">
+  <div class="ps-row">
+    <span>3 Medicinal Products &middot; 5 Package Configurations</span>
+    <input class="pf" type="text" placeholder="Filter by substance or strength&#8230;" />
+  </div>
+  <defs><radialGradient id="tg3" cx="40%" cy="35%" r="55%"><stop offset="0%" stop-color="#fff" /><stop offset="100%" stop-color="#e5e5e7" /></radialGradient></defs>
+
+  <!-- Product 1: 500 mg -->
+  <details class="pa" open="open">
+    <summary class="pah">
+      <span class="pnum">1</span>
+      <span class="pname">WonderDrug 500 mg tablets</span><span class="psub">Paracetamol</span>
+      <div class="pbadges"><span class="chip ch-g">Active</span><span class="chip ch-gr">Oral &middot; Tablet</span></div>
+      <span class="pchev">&#9660;</span>
+    </summary>
+    <div class="pc">
+      <div class="is"><div class="isl">Substance &amp; Form</div><div class="isb"><div class="ifs">
+        <div class="inf"><span class="il">Active Substance</span><span class="iv">Paracetamol</span></div>
+        <div class="inf"><span class="il">Strength</span><span class="iv">500 mg</span></div>
+        <div class="inf"><span class="il">Dose Form</span><span class="iv">Tablet</span></div>
+        <div class="inf"><span class="il">Route</span><span class="iv">Oral</span></div>
+      </div></div></div>
+      <div class="is"><div class="isl">Excipients</div><div class="isb"><div class="ec">
+        <div class="ei">Pregelatinized starch</div><div class="ei">Talc</div>
+        <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
+        <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
+      </div></div></div>
+      <div class="is"><div class="isl">Physical Appearance</div><div class="isb"><div class="ap-in">
+        <div class="ap-data">
+          <div class="apf"><span class="al">Colour</span><span class="av">White</span></div>
+          <div class="apf"><span class="al">Shape</span><span class="av">Round</span></div>
+          <div class="apf"><span class="al">Size</span><span class="av">12 mm</span></div>
+          <div class="apf"><span class="al">Imprint</span><span class="av">W-500</span></div>
+        </div>
+        <div class="tab-svgs">
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg3)" stroke="#d1d5db" stroke-width="1" /><ellipse cx="50" cy="47" rx="43" ry="41" fill="none" stroke="#fff" stroke-width="2" opacity="0.5" /></svg><figcaption>Front</figcaption></figure>
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg3)" stroke="#d1d5db" stroke-width="1" /><line x1="15" y1="50" x2="85" y2="50" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,2" opacity="0.6" /><text x="50" y="54" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#6b7280">W-500</text></svg><figcaption>Back</figcaption></figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Packaging (2)</div><div class="isb"><div class="pkgs">
+        <div class="pkg">
+          <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
+          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+        </div>
+        <div class="pkg">
+          <div class="pki"><div class="pn">Box of 50 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 50</span></div></div>
+          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
+        <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
+        <div class="mai"><div class="ml">Number</div><div class="mv mvm">MA-123456789</div></div>
+        <div class="mai"><div class="ml">Region</div><div class="mv">Estonia (EE)</div></div>
+      </div></div></div>
+    </div>
+  </details>
+
+  <!-- Product 2: 100 mg -->
+  <details class="pa">
+    <summary class="pah">
+      <span class="pnum">2</span>
+      <span class="pname">WonderDrug 100 mg tablets</span><span class="psub">Paracetamol</span>
+      <div class="pbadges"><span class="chip ch-g">Active</span><span class="chip ch-gr">Oral &middot; Tablet</span></div>
+      <span class="pchev">&#9660;</span>
+    </summary>
+    <div class="pc">
+      <div class="is"><div class="isl">Substance &amp; Form</div><div class="isb"><div class="ifs">
+        <div class="inf"><span class="il">Active Substance</span><span class="iv">Paracetamol</span></div>
+        <div class="inf"><span class="il">Strength</span><span class="iv">100 mg</span></div>
+        <div class="inf"><span class="il">Dose Form</span><span class="iv">Tablet</span></div>
+        <div class="inf"><span class="il">Route</span><span class="iv">Oral</span></div>
+      </div></div></div>
+      <div class="is"><div class="isl">Excipients</div><div class="isb"><div class="ec">
+        <div class="ei">Pregelatinized starch</div><div class="ei">Talc</div>
+        <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
+        <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
+      </div></div></div>
+      <div class="is"><div class="isl">Physical Appearance</div><div class="isb"><div class="ap-in">
+        <div class="ap-data">
+          <div class="apf"><span class="al">Colour</span><span class="av">White</span></div>
+          <div class="apf"><span class="al">Shape</span><span class="av">Round</span></div>
+          <div class="apf"><span class="al">Size</span><span class="av">6 mm</span></div>
+          <div class="apf"><span class="al">Imprint</span><span class="av">W-100</span></div>
+        </div>
+        <div class="tab-svgs">
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg3)" stroke="#d1d5db" stroke-width="1" /></svg><figcaption>Front</figcaption></figure>
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg3)" stroke="#d1d5db" stroke-width="1" /><text x="50" y="54" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#6b7280">W-100</text></svg><figcaption>Back</figcaption></figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Packaging (2)</div><div class="isb"><div class="pkgs">
+        <div class="pkg">
+          <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
+          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+        </div>
+        <div class="pkg">
+          <div class="pki"><div class="pn">Blister Pack 50</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 50</span></div></div>
+          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
+        <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
+        <div class="mai"><div class="ml">Number</div><div class="mv mvm">PL 12345/6790</div></div>
+        <div class="mai"><div class="ml">Region</div><div class="mv">United Kingdom</div></div>
+      </div></div></div>
+    </div>
+  </details>
+
+  <!-- Product 3: 200 mg — uses actual product image -->
+  <details class="pa">
+    <summary class="pah">
+      <span class="pnum">3</span>
+      <span class="pname">WonderDrug 200 mg tablets</span><span class="psub">Paracetamol</span>
+      <div class="pbadges"><span class="chip ch-g">Active</span><span class="chip ch-gr">Oral &middot; Tablet</span></div>
+      <span class="pchev">&#9660;</span>
+    </summary>
+    <div class="pc">
+      <div class="is"><div class="isl">Substance &amp; Form</div><div class="isb"><div class="ifs">
+        <div class="inf"><span class="il">Active Substance</span><span class="iv">Paracetamol</span></div>
+        <div class="inf"><span class="il">Strength</span><span class="iv">200 mg</span></div>
+        <div class="inf"><span class="il">Dose Form</span><span class="iv">Tablet</span></div>
+        <div class="inf"><span class="il">Route</span><span class="iv">Oral</span></div>
+      </div></div></div>
+      <div class="is"><div class="isl">Excipients</div><div class="isb"><div class="ec">
+        <div class="ei">Pregelatinized starch</div><div class="ei">Talc</div>
+        <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
+        <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
+      </div></div></div>
+      <div class="is"><div class="isl">Physical Appearance</div><div class="isb"><div class="ap-in">
+        <div class="ap-data">
+          <div class="apf"><span class="al">Colour</span><span class="av">Green</span></div>
+          <div class="apf"><span class="al">Shape</span><span class="av">Hexagonal</span></div>
+          <div class="apf"><span class="al">Size</span><span class="av">9 mm</span></div>
+          <div class="apf"><span class="al">Imprint</span><span class="av">W-200</span></div>
+        </div>
+        <div class="tab-svgs">
+          <figure class="tab-fig">
+            <img src="paracetamol_200mg_green_hex_pill.png" alt="WonderDrug 200mg green hexagonal tablet" style="width:68px;height:68px;object-fit:contain;border-radius:6px" />
+            <figcaption>Product</figcaption>
+          </figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Packaging (1)</div><div class="isb"><div class="pkgs">
+        <div class="pkg">
+          <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
+          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#e9d5ff" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
+        <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
+        <div class="mai"><div class="ml">Number</div><div class="mv mvm">MA-987654321</div></div>
+        <div class="mai"><div class="ml">Region</div><div class="mv">Germany (DE)</div></div>
+      </div></div></div>
+    </div>
+  </details>
+</div>
+
+<script>
+//<![CDATA[
+function sw(id,btn){
+  var ids=['d','c','o','p'];
+  for(var i=0;i<ids.length;i++){var p=document.getElementById('p'+ids[i]);if(p){p.className='panel'+(id===ids[i]?' on':'');}}
+  var btns=document.querySelectorAll('.tb');
+  for(var j=0;j<btns.length;j++){btns[j].className='tb';}
+  btn.className='tb on';
+}
+//]]>
+</script>
 </body>
-
 </html>

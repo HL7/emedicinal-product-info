@@ -69,3 +69,5 @@ Description: "PackagedProductDefinition (ePI)"
 * packaging.property.type.coding.code 1..1
 * packaging.property.type.coding.display 1..1
 * packaging.packaging ^short = "Nested packaging."
+* attachedDocument only Reference(DocumentReference)
+* attachedDocument ^short = "Pack artwork images or other related documents associated with this package."

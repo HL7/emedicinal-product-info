@@ -115,6 +115,34 @@ The following table maps the additional resources required for Type 2.
   </tbody>
 </table>
 
+### Pack Artwork
+
+Pack artwork (e.g., carton images, blister images, label scans) should be attached to the relevant `PackagedProductDefinition` using the native **`PackagedProductDefinition.attachedDocument`** element, referencing a `DocumentReference` resource.
+
+This is preferred over using a `Binary` resource directly or a custom extension because:
+
+* `attachedDocument` is a **native FHIR R5 element** — no extension is required.
+* The `DocumentReference` carries rich metadata: document type code, status, effective date, and content format.
+* Multiple formats can be attached in a single `DocumentReference` (e.g., thumbnail and hi-res in separate `content.attachment` entries).
+* The association is explicit and portable within a self-contained ePI `Bundle`.
+
+#### Recommended Pattern
+
+```text
+PackagedProductDefinition
+  .attachedDocument → Reference(DocumentReference)
+
+DocumentReference
+  .type    = <code for "pack-artwork">
+  .status  = current
+  .date    = <approval date of artwork>
+  .content[0].attachment.contentType = image/png
+  .content[0].attachment.data        = <base64-encoded image>
+  .content[0].attachment.title       = "Box 30 Tablets — Pack Artwork"
+```
+
+The `entry.flag` value `pack-artwork` on a List entry indicates that the ePI Bundle referenced in that entry contains pack labeling artwork attached via this pattern.
+
 ### Conceptual Workflow
 Building a Type 2 ePI requires integrating regulatory Master Data with the narrative content:
 
