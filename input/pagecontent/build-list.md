@@ -4,20 +4,20 @@ The FHIR `List` resource is a versatile configuration tool within the ePI ecosys
 
 There are four primary industry use cases for implementing the ePI Tracking List:
 
-### 1. Medicinal Product
+### Medicinal Product
 A list of ePIs for a given medicinal product. Regulatory agencies or Marketing Authorization Holders can use this `List` to track all localized language instances and document types (e.g., SmPC, PIL) for a single authorized product.
-👉 [View Medicinal Product Showcase](epi-list-showcase-1.html)
+👉 [View Medicinal Product Showcase](examples/epi-list-showcase-1.html){:target="_blank"}
 
-### 2. Medicinal Product Group
+### Medicinal Product Group
 A list of ePIs for a given class or category of drugs. Health authorities or researchers can use a `List` to track all ePIs related to a specific therapeutic category, such as all approved respiratory vaccines or oncology products.
-👉 [View Drug Category Showcase](epi-list-showcase-3.html)
+👉 [View Drug Category Showcase](examples/epi-list-showcase-3.html){:target="_blank"}
 
-### 3. Jurisdiction
+### Jurisdiction
 A list of ePIs authorized by a health authority within their jurisdiction. For example, all ePIs authorized by PMDA for use in Japan, or all ePIs centrally authorized for use by the EMA.
 
-### 4. Jurisdiction Group
+### Jurisdiction Group
 A list of ePIs authorized by multiple health authorities for use within a region. Regional health authorities or global organizations can use a `List` to track approved ePI documents across an entire region (e.g., all ePIs authorized by ASEAN member countries).
-👉 [View Jurisdiction Group Showcase](epi-list-showcase-2.html)
+👉 [View Jurisdiction Group Showcase](examples/epi-list-showcase-2.html){:target="_blank"}
 
 ---
 
