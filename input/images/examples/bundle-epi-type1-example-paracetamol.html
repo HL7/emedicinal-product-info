@@ -24,8 +24,11 @@
     .tabnav{border-bottom:1px solid var(--bd)}
     .tabnav-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex}
     .tb{padding:13px 20px;font-size:.875rem;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:color var(--tr),border-color var(--tr);white-space:nowrap}
-    .tb:hover{color:var(--text)}.tb.on{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
-    .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}.panel.on{display:block}
+    .tb:hover{color:var(--text)}
+    .trd{display:none}
+    #t-d:checked~.tabnav .tb[for="t-d"],#t-c:checked~.tabnav .tb[for="t-c"]{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
+    .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}
+    #t-d:checked~#pd,#t-c:checked~#pc{display:block}
     .sc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
     .sc.ab{border-left:3px solid var(--accent)}.sc.at{border-left:3px solid var(--teal)}.sc.ap{border-left:3px solid var(--purple)}
     .sc-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:12px 18px 4px}
@@ -66,15 +69,18 @@
   </div>
 </header>
 
+<input type="radio" name="tabs" id="t-d" class="trd" checked>
+<input type="radio" name="tabs" id="t-c" class="trd">
+
 <nav class="tabnav">
   <div class="tabnav-inner">
-    <button class="tb on" onclick="sw('d',this)">Document</button>
-    <button class="tb" onclick="sw('c',this)">Composition</button>
+    <label class="tb" for="t-d">Document</label>
+    <label class="tb" for="t-c">Composition</label>
   </div>
 </nav>
 
 <!-- DOCUMENT -->
-<div id="pd" class="panel on">
+<div id="pd" class="panel">
   <div class="type1-note">
     <span class="icon">&#8505;</span>
     <span><strong>ePI Type 1</strong> is a document-only ePI. It contains a Composition with the narrative text of the product information. It does not include structured product data (MedicinalProductDefinition, PackagedProductDefinition, or Organization resources).</span>
@@ -159,16 +165,5 @@
   </div>
 </div>
 
-<script>
-//<![CDATA[
-function sw(id,btn){
-  var ids=['d','c'];
-  for(var i=0;i<ids.length;i++){var p=document.getElementById('p'+ids[i]);if(p){p.className='panel'+(id===ids[i]?' on':'');}}
-  var btns=document.querySelectorAll('.tb');
-  for(var j=0;j<btns.length;j++){btns[j].className='tb';}
-  btn.className='tb on';
-}
-//]]>
-</script>
 </body>
 </html>
