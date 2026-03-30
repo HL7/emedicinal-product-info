@@ -37,10 +37,51 @@
     .tb{display:inline-block;padding:13px 20px;font-size:.875rem;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:color var(--tr),border-color var(--tr);white-space:nowrap}
     .tb:hover{color:var(--text)}
     .trd{display:none}
-    #t-d:checked~.tabnav .tb[for="t-d"],#t-c:checked~.tabnav .tb[for="t-c"],#t-o:checked~.tabnav .tb[for="t-o"],#t-p:checked~.tabnav .tb[for="t-p"]{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
+    #t-d:checked~.tabnav .tb[for="t-d"],#t-c:checked~.tabnav .tb[for="t-c"],#t-o:checked~.tabnav .tb[for="t-o"],#t-p:checked~.tabnav .tb[for="t-p"],#t-cl:checked~.tabnav .tb[for="t-cl"]{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
     /* panels */
     .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}
-    #t-d:checked~#pd,#t-c:checked~#pc,#t-o:checked~#po,#t-p:checked~#pp{display:block}
+    #t-d:checked~#pd,#t-c:checked~#pc,#t-o:checked~#po,#t-p:checked~#pp,#t-cl:checked~#pcl{display:block}
+    /* clinical summary cards */
+    .csum{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}
+    .cscard{border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;display:flex;justify-content:space-between;align-items:flex-start}
+    .cscard .csn{font-size:1.6rem;font-weight:700;line-height:1;margin-bottom:3px}
+    .cscard .csl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+    .cscard .csi{font-size:1.1rem;opacity:.7}
+    .cscard.ci{border-top:3px solid var(--accent)}.cscard.cc{border-top:3px solid var(--rose)}
+    .cscard.cx{border-top:3px solid var(--amber)}.cscard.cu{border-top:3px solid var(--purple)}
+    .cscard.cw{border-top:3px solid #ea580c}
+    /* clinical sections */
+    .cls{border:1px solid var(--bd);border-radius:var(--r);margin-bottom:10px;overflow:hidden}
+    .clsh{display:flex;align-items:center;gap:8px;padding:11px 16px;background:var(--sf2);border-bottom:1px solid var(--bd)}
+    .clsh .clsicon{font-size:.85rem}
+    .clsh .clstitle{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);flex:1}
+    .clsh .clscount{font-size:10px;font-weight:600;background:var(--bd);color:var(--muted);padding:1px 7px;border-radius:99px}
+    .clsb{padding:10px 16px 14px}
+    /* clinical table */
+    .ctbl{width:100%;border-collapse:collapse;font-size:.81rem}
+    .ctbl th{text-align:left;padding:6px 10px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);background:var(--sf2);border-bottom:1px solid var(--bd)}
+    .ctbl td{padding:8px 10px;border-bottom:1px solid var(--bd);vertical-align:top}
+    .ctbl tr:last-child td{border-bottom:none}
+    /* severity badges */
+    .sev-h{background:#fee2e2;color:#b91c1c;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
+    .sev-m{background:#fef9c3;color:#854d0e;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
+    .sev-l{background:#dcfce7;color:#166534;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
+    /* contraindication rows */
+    .cxrow{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--bd);font-size:.83rem}
+    .cxrow:last-child{border-bottom:none}
+    .cxrow .cxicon{color:var(--rose);font-size:.9rem;flex-shrink:0}
+    /* SOC groups */
+    .soc{margin-bottom:8px}
+    .soc-hdr{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding:4px 0 3px;border-bottom:1px solid var(--bd);margin-bottom:4px}
+    .soc-item{display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:.8rem;border-bottom:1px solid var(--bd)}
+    .soc-item:last-child{border-bottom:none}
+    .soc-item .si-name{color:var(--text)}
+    .soc-item .si-freq{font-size:10px;color:var(--muted)}
+    /* warning callouts */
+    .wbox{background:#fff7ed;border:1px solid #fed7aa;border-left:3px solid #ea580c;border-radius:var(--r);padding:10px 14px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start;font-size:.83rem}
+    .wbox:last-child{margin-bottom:0}
+    .wbox .wicon{color:#ea580c;flex-shrink:0;margin-top:1px}
+    @media(max-width:640px){.csum{grid-template-columns:1fr 1fr}}
     /* section cards */
     .sc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
     .sc.ab{border-left:3px solid var(--accent)} .sc.at{border-left:3px solid var(--teal)}
@@ -156,6 +197,7 @@
 <input type="radio" name="tabs" id="t-c" class="trd">
 <input type="radio" name="tabs" id="t-o" class="trd">
 <input type="radio" name="tabs" id="t-p" class="trd">
+<input type="radio" name="tabs" id="t-cl" class="trd">
 
 <nav class="tabnav">
   <div class="tabnav-inner">
@@ -163,6 +205,7 @@
     <label class="tb" for="t-c">Composition</label>
     <label class="tb" for="t-o">Organization</label>
     <label class="tb" for="t-p">Product Details</label>
+    <label class="tb" for="t-cl">Clinical Details</label>
   </div>
 </nav>
 
@@ -430,6 +473,92 @@
   </details>
 </div>
 
+<!-- CLINICAL DETAILS -->
+<div id="pcl" class="panel">
+  <!-- Summary count cards -->
+  <div class="csum">
+    <div class="cscard ci"><div><div class="csn" style="color:var(--accent)">1</div><div class="csl">Indication</div></div><div class="csi">&#127919;</div></div>
+    <div class="cscard cc"><div><div class="csn" style="color:var(--rose)">2</div><div class="csl">Contraindications</div></div><div class="csi">&#9940;</div></div>
+    <div class="cscard cx"><div><div class="csn" style="color:var(--amber)">4</div><div class="csl">Interactions</div></div><div class="csi">&#9889;</div></div>
+    <div class="cscard cu"><div><div class="csn" style="color:var(--purple)">12</div><div class="csl">Side Effects</div></div><div class="csi">&#128137;</div></div>
+    <div class="cscard cw"><div><div class="csn" style="color:#ea580c">3</div><div class="csl">Warnings</div></div><div class="csi">&#9888;</div></div>
+  </div>
+
+  <!-- Indications -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#127919;</span><span class="clstitle">Indications</span><span class="clscount">1</span></div>
+    <div class="clsb">
+      <table class="ctbl">
+        <thead><tr><th>Condition</th><th>Population</th><th>Severity</th></tr></thead>
+        <tbody>
+          <tr><td>Hypertension</td><td>Adults &#8805;18 years</td><td>Moderate to severe</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Contraindications -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9940;</span><span class="clstitle">Contraindications</span><span class="clscount">2</span></div>
+    <div class="clsb">
+      <div class="cxrow"><span class="cxicon">&#8856;</span><span>Severe hepatic impairment (Child-Pugh C)</span></div>
+      <div class="cxrow"><span class="cxicon">&#8856;</span><span>Known hypersensitivity to WonderDrug or any excipient</span></div>
+    </div>
+  </div>
+
+  <!-- Interactions -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9889;</span><span class="clstitle">Interactions</span><span class="clscount">4</span></div>
+    <div class="clsb">
+      <table class="ctbl">
+        <thead><tr><th>Interacting Substance</th><th>Type</th><th>Severity</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr><td>Warfarin</td><td>Pharmacodynamic</td><td><span class="sev-h">High</span></td><td>Increased anticoagulation risk</td></tr>
+          <tr><td>NSAIDs</td><td>Pharmacodynamic</td><td><span class="sev-m">Moderate</span></td><td>Reduced antihypertensive effect</td></tr>
+          <tr><td>Rifampicin</td><td>Pharmacokinetic</td><td><span class="sev-m">Moderate</span></td><td>Reduced plasma levels</td></tr>
+          <tr><td>Potassium supplements</td><td>Pharmacodynamic</td><td><span class="sev-l">Low</span></td><td>Risk of hyperkalaemia</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Undesirable Effects -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#128137;</span><span class="clstitle">Undesirable Effects</span><span class="clscount">12</span></div>
+    <div class="clsb">
+      <div class="soc">
+        <div class="soc-hdr">Cardiac disorders</div>
+        <div class="soc-item"><span class="si-name">Palpitations</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+        <div class="soc-item"><span class="si-name">Bradycardia</span><span class="si-freq">Uncommon (&#8805;1/1,000)</span></div>
+      </div>
+      <div class="soc">
+        <div class="soc-hdr">Renal and urinary disorders</div>
+        <div class="soc-item"><span class="si-name">Renal impairment</span><span class="si-freq">Uncommon (&#8805;1/1,000)</span></div>
+        <div class="soc-item"><span class="si-name">Proteinuria</span><span class="si-freq">Rare (&#8805;1/10,000)</span></div>
+      </div>
+      <div class="soc">
+        <div class="soc-hdr">Nervous system disorders</div>
+        <div class="soc-item"><span class="si-name">Headache</span><span class="si-freq">Very common (&#8805;1/10)</span></div>
+        <div class="soc-item"><span class="si-name">Dizziness</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+      </div>
+      <div class="soc" style="margin-bottom:0">
+        <div class="soc-hdr">Gastrointestinal disorders</div>
+        <div class="soc-item"><span class="si-name">Nausea</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+        <div class="soc-item"><span class="si-name">Diarrhoea</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Warnings -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9888;</span><span class="clstitle">Warnings &amp; Precautions</span><span class="clscount">3</span></div>
+    <div class="clsb">
+      <div class="wbox"><span class="wicon">&#9650;</span><span>Patients with renal impairment (CrCl &lt;30 mL/min) require dose adjustment. Monitor renal function regularly.</span></div>
+      <div class="wbox"><span class="wicon">&#9650;</span><span>Risk of hypotension on first dose, particularly in volume-depleted or sodium-depleted patients. Initiate at lowest dose.</span></div>
+      <div class="wbox"><span class="wicon">&#9650;</span><span>Not recommended during pregnancy (2nd and 3rd trimester) due to risk of foetal toxicity.</span></div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
