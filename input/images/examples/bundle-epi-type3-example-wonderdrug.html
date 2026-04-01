@@ -121,8 +121,19 @@
     .pki .pn{font-size:.83rem;font-weight:600;margin-bottom:2px}.pki .pt{font-size:.74rem;color:var(--muted);margin-bottom:7px}
     .pkt{display:flex;gap:5px;flex-wrap:wrap}
     .pka{flex-shrink:0;text-align:center}
-    .pka-box{width:68px;height:50px;border:1px dashed var(--bd2);border-radius:4px;display:flex;align-items:center;justify-content:center;background:var(--sf2)}
-    .pka figcaption{font-size:9px;color:var(--faint);margin-top:2px}
+    .pka-box{width:68px;height:50px;border:1px dashed var(--bd2);border-radius:4px;display:flex;align-items:center;justify-content:center;background:var(--sf2);cursor:pointer;transition:border-color var(--tr),box-shadow var(--tr)}
+    .pka-box:hover{border-color:var(--accent);box-shadow:0 0 0 2px rgba(37,99,235,.1)}
+    a.pka-link{text-decoration:none;color:inherit}
+    .pka figcaption{font-size:9px;color:var(--accent);margin-top:2px;font-weight:500}
+    .artwork-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9000;align-items:center;justify-content:center}
+    .artwork-modal:target{display:flex}
+    .artwork-modal-card{background:#fff;border-radius:12px;padding:28px 32px 24px;max-width:420px;width:90%;box-shadow:0 24px 64px rgba(0,0,0,.35);position:relative;text-align:center}
+    .artwork-modal-close{position:absolute;top:12px;right:16px;font-size:1.3rem;color:var(--muted);text-decoration:none;line-height:1;padding:4px 8px;border-radius:4px}
+    .artwork-modal-close:hover{background:var(--sf2);color:var(--text)}
+    .artwork-modal-title{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:14px}
+    .artwork-modal-img{display:flex;justify-content:center;margin-bottom:16px}
+    .artwork-modal-src{font-size:10px;color:var(--faint);margin-top:6px;font-style:italic}
+    .artwork-modal-src code{font-family:ui-monospace,'SF Mono',monospace;font-size:9px;background:var(--sf2);padding:1px 5px;border-radius:3px}
     .mag{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
     .mai .ml{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
     .mai .mv{font-size:.85rem;font-weight:600;color:var(--text)}.mai .mvm{font-family:ui-monospace,'SF Mono',monospace;font-size:.79rem;color:var(--teal)}
@@ -307,11 +318,11 @@
       <div class="is"><div class="isl">Packaging (2)</div><div class="isb"><div class="pkgs">
         <div class="pkg">
           <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
-          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+          <a href="#art-wd100-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
         </div>
         <div class="pkg">
           <div class="pki"><div class="pn">Box of 50 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 50</span></div></div>
-          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+          <a href="#art-wd100-50" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
         </div>
       </div></div></div>
       <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
@@ -357,11 +368,11 @@
       <div class="is"><div class="isl">Packaging (2)</div><div class="isb"><div class="pkgs">
         <div class="pkg">
           <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
-          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+          <a href="#art-wd200-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
         </div>
         <div class="pkg">
           <div class="pki"><div class="pn">Blister Pack 50</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 50</span></div></div>
-          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+          <a href="#art-wd200-50" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
         </div>
       </div></div></div>
       <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
@@ -409,7 +420,7 @@
       <div class="is"><div class="isl">Packaging (1)</div><div class="isb"><div class="pkgs">
         <div class="pkg">
           <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
-          <figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#e9d5ff" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>Pack artwork</figcaption></figure>
+          <a href="#art-wd500-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#e9d5ff" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
         </div>
       </div></div></div>
       <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
@@ -488,6 +499,127 @@
       <div class="wbox"><span class="wicon">&#9650;</span><span>Risk of hypotension on first dose, particularly in volume-depleted or sodium-depleted patients. Initiate at lowest dose.</span></div>
       <div class="wbox"><span class="wicon">&#9650;</span><span>Not recommended during pregnancy (2nd and 3rd trimester) due to risk of foetal toxicity.</span></div>
     </div>
+  </div>
+</div>
+
+<!-- Pack Artwork Modals (CSS :target lightbox — no JS) -->
+<div id="art-wd100-30" class="artwork-modal">
+  <div class="artwork-modal-card">
+    <a href="#" class="artwork-modal-close" aria-label="Close">&#10005;</a>
+    <div class="artwork-modal-title">Pack Artwork &mdash; WonderDrug 100 mg / 30 tablets</div>
+    <div class="artwork-modal-img">
+      <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="252" height="192" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+        <rect x="4" y="4" width="252" height="62" rx="10" fill="#bfdbfe"/>
+        <rect x="4" y="52" width="252" height="14" fill="#bfdbfe"/>
+        <text x="130" y="42" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#1d4ed8">WonderDrug</text>
+        <text x="130" y="90" font-family="Arial" font-size="13" text-anchor="middle" fill="#1e40af">100 mg tablets</text>
+        <text x="130" y="112" font-family="Arial" font-size="10" text-anchor="middle" fill="#6b7280">acmedrug hydrochloride</text>
+        <rect x="30" y="125" width="200" height="1" fill="#bfdbfe"/>
+        <text x="130" y="148" font-family="Arial" font-size="11" text-anchor="middle" fill="#374151">30 film-coated tablets</text>
+        <text x="130" y="165" font-family="Arial" font-size="9" text-anchor="middle" fill="#9ca3af">For oral use</text>
+        <text x="130" y="182" font-family="Arial" font-size="8" text-anchor="middle" fill="#9ca3af">MA-987654321 | Acme Pharma Inc.</text>
+        <rect x="210" y="128" width="36" height="36" rx="4" fill="none" stroke="#9ca3af" stroke-width="1"/>
+        <text x="228" y="151" font-family="Arial" font-size="7" text-anchor="middle" fill="#9ca3af">RX</text>
+      </svg>
+    </div>
+    <div class="artwork-modal-src">Source: <code>PackagedProductDefinition.attachedDocument</code> &#8594; <code>DocumentReference/pack-art-wd100-30</code></div>
+  </div>
+</div>
+
+<div id="art-wd100-50" class="artwork-modal">
+  <div class="artwork-modal-card">
+    <a href="#" class="artwork-modal-close" aria-label="Close">&#10005;</a>
+    <div class="artwork-modal-title">Pack Artwork &mdash; WonderDrug 100 mg / 50 tablets</div>
+    <div class="artwork-modal-img">
+      <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="252" height="192" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+        <rect x="4" y="4" width="252" height="62" rx="10" fill="#bfdbfe"/>
+        <rect x="4" y="52" width="252" height="14" fill="#bfdbfe"/>
+        <text x="130" y="42" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#1d4ed8">WonderDrug</text>
+        <text x="130" y="90" font-family="Arial" font-size="13" text-anchor="middle" fill="#1e40af">100 mg tablets</text>
+        <text x="130" y="112" font-family="Arial" font-size="10" text-anchor="middle" fill="#6b7280">acmedrug hydrochloride</text>
+        <rect x="30" y="125" width="200" height="1" fill="#bfdbfe"/>
+        <text x="130" y="148" font-family="Arial" font-size="11" text-anchor="middle" fill="#374151">50 film-coated tablets</text>
+        <text x="130" y="165" font-family="Arial" font-size="9" text-anchor="middle" fill="#9ca3af">For oral use</text>
+        <text x="130" y="182" font-family="Arial" font-size="8" text-anchor="middle" fill="#9ca3af">MA-987654321 | Acme Pharma Inc.</text>
+        <rect x="210" y="128" width="36" height="36" rx="4" fill="none" stroke="#9ca3af" stroke-width="1"/>
+        <text x="228" y="151" font-family="Arial" font-size="7" text-anchor="middle" fill="#9ca3af">RX</text>
+      </svg>
+    </div>
+    <div class="artwork-modal-src">Source: <code>PackagedProductDefinition.attachedDocument</code> &#8594; <code>DocumentReference/pack-art-wd100-50</code></div>
+  </div>
+</div>
+
+<div id="art-wd200-30" class="artwork-modal">
+  <div class="artwork-modal-card">
+    <a href="#" class="artwork-modal-close" aria-label="Close">&#10005;</a>
+    <div class="artwork-modal-title">Pack Artwork &mdash; WonderDrug 200 mg / 30 tablets</div>
+    <div class="artwork-modal-img">
+      <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="252" height="192" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="2"/>
+        <rect x="4" y="4" width="252" height="62" rx="10" fill="#99f6e4"/>
+        <rect x="4" y="52" width="252" height="14" fill="#99f6e4"/>
+        <text x="130" y="42" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#0f766e">WonderDrug</text>
+        <text x="130" y="90" font-family="Arial" font-size="13" text-anchor="middle" fill="#0d9488">200 mg tablets</text>
+        <text x="130" y="112" font-family="Arial" font-size="10" text-anchor="middle" fill="#6b7280">acmedrug hydrochloride</text>
+        <rect x="30" y="125" width="200" height="1" fill="#99f6e4"/>
+        <text x="130" y="148" font-family="Arial" font-size="11" text-anchor="middle" fill="#374151">30 film-coated tablets</text>
+        <text x="130" y="165" font-family="Arial" font-size="9" text-anchor="middle" fill="#9ca3af">For oral use</text>
+        <text x="130" y="182" font-family="Arial" font-size="8" text-anchor="middle" fill="#9ca3af">MA-987654321 | Acme Pharma Inc.</text>
+        <rect x="210" y="128" width="36" height="36" rx="4" fill="none" stroke="#9ca3af" stroke-width="1"/>
+        <text x="228" y="151" font-family="Arial" font-size="7" text-anchor="middle" fill="#9ca3af">RX</text>
+      </svg>
+    </div>
+    <div class="artwork-modal-src">Source: <code>PackagedProductDefinition.attachedDocument</code> &#8594; <code>DocumentReference/pack-art-wd200-30</code></div>
+  </div>
+</div>
+
+<div id="art-wd200-50" class="artwork-modal">
+  <div class="artwork-modal-card">
+    <a href="#" class="artwork-modal-close" aria-label="Close">&#10005;</a>
+    <div class="artwork-modal-title">Pack Artwork &mdash; WonderDrug 200 mg / 50 tablets</div>
+    <div class="artwork-modal-img">
+      <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="252" height="192" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="2"/>
+        <rect x="4" y="4" width="252" height="62" rx="10" fill="#99f6e4"/>
+        <rect x="4" y="52" width="252" height="14" fill="#99f6e4"/>
+        <text x="130" y="42" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#0f766e">WonderDrug</text>
+        <text x="130" y="90" font-family="Arial" font-size="13" text-anchor="middle" fill="#0d9488">200 mg tablets</text>
+        <text x="130" y="112" font-family="Arial" font-size="10" text-anchor="middle" fill="#6b7280">acmedrug hydrochloride</text>
+        <rect x="30" y="125" width="200" height="1" fill="#99f6e4"/>
+        <text x="130" y="148" font-family="Arial" font-size="11" text-anchor="middle" fill="#374151">50 film-coated tablets</text>
+        <text x="130" y="165" font-family="Arial" font-size="9" text-anchor="middle" fill="#9ca3af">For oral use</text>
+        <text x="130" y="182" font-family="Arial" font-size="8" text-anchor="middle" fill="#9ca3af">MA-987654321 | Acme Pharma Inc.</text>
+        <rect x="210" y="128" width="36" height="36" rx="4" fill="none" stroke="#9ca3af" stroke-width="1"/>
+        <text x="228" y="151" font-family="Arial" font-size="7" text-anchor="middle" fill="#9ca3af">RX</text>
+      </svg>
+    </div>
+    <div class="artwork-modal-src">Source: <code>PackagedProductDefinition.attachedDocument</code> &#8594; <code>DocumentReference/pack-art-wd200-50</code></div>
+  </div>
+</div>
+
+<div id="art-wd500-30" class="artwork-modal">
+  <div class="artwork-modal-card">
+    <a href="#" class="artwork-modal-close" aria-label="Close">&#10005;</a>
+    <div class="artwork-modal-title">Pack Artwork &mdash; WonderDrug 500 mg / 30 tablets</div>
+    <div class="artwork-modal-img">
+      <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="252" height="192" rx="10" fill="#faf5ff" stroke="#e9d5ff" stroke-width="2"/>
+        <rect x="4" y="4" width="252" height="62" rx="10" fill="#e9d5ff"/>
+        <rect x="4" y="52" width="252" height="14" fill="#e9d5ff"/>
+        <text x="130" y="42" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#7e22ce">WonderDrug</text>
+        <text x="130" y="90" font-family="Arial" font-size="13" text-anchor="middle" fill="#9333ea">500 mg tablets</text>
+        <text x="130" y="112" font-family="Arial" font-size="10" text-anchor="middle" fill="#6b7280">acmedrug hydrochloride</text>
+        <rect x="30" y="125" width="200" height="1" fill="#e9d5ff"/>
+        <text x="130" y="148" font-family="Arial" font-size="11" text-anchor="middle" fill="#374151">30 film-coated tablets</text>
+        <text x="130" y="165" font-family="Arial" font-size="9" text-anchor="middle" fill="#9ca3af">For oral use</text>
+        <text x="130" y="182" font-family="Arial" font-size="8" text-anchor="middle" fill="#9ca3af">MA-987654321 | Acme Pharma Inc.</text>
+        <rect x="210" y="128" width="36" height="36" rx="4" fill="none" stroke="#9ca3af" stroke-width="1"/>
+        <text x="228" y="151" font-family="Arial" font-size="7" text-anchor="middle" fill="#9ca3af">RX</text>
+      </svg>
+    </div>
+    <div class="artwork-modal-src">Source: <code>PackagedProductDefinition.attachedDocument</code> &#8594; <code>DocumentReference/pack-art-wd500-30</code></div>
   </div>
 </div>
 
