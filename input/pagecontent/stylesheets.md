@@ -37,6 +37,7 @@ View the fully rendered HTML examples below to see the stylesheets in action:
 **Individual Product ePIs:**
 *   **Type 1 (Paracetamol)**: [bundle-epi-type1-example-paracetamol.html](examples/bundle-epi-type1-example-paracetamol.html){:target="_blank"}
 *   **Type 2 (Paracetamol)**: [bundle-epi-type2-example-paracetamol.html](examples/bundle-epi-type2-example-paracetamol.html){:target="_blank"}
+*   **Type 2 Blister/Carton (WonderDrug)**: [bundle-epi-type2-example-blister-carton.html](examples/bundle-epi-type2-example-blister-carton.html){:target="_blank"}
 *   **Type 3 (WonderDrug)**: [bundle-epi-type3-example-wonderdrug.html](examples/bundle-epi-type3-example-wonderdrug.html){:target="_blank"}
 
 **ePI Tracking Lists (`List` resource):**

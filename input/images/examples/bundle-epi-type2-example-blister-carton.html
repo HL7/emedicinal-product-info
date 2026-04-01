@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WonderDrug 500 mg — Blister in Carton (ePI Type 2)</title>
+  <meta name="description" content="FHIR R5 Bundle document (ePI Type 2) for WonderDrug tablets — example containing GTIN, SKU, and SVGs for nested packaging." />
+  <style>
+    :root {
+      --bg:#fff; --surface:#fff; --sf2:#f9fafb; --bd:#e5e7eb; --bd2:#d1d5db;
+      --accent:#2563eb; --green:#16a34a; --rose:#dc2626; --amber:#d97706;
+      --purple:#7c3aed; --teal:#0891b2; --text:#111827; --muted:#6b7280; --faint:#9ca3af;
+      --r:8px; --rl:12px; --tr:0.15s ease;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    /* breadcrumb */
+    .crumb{background:var(--sf2);border-bottom:1px solid var(--bd);padding:9px 28px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+    .crumb .ig{font-weight:600;color:var(--text)} .crumb .sep{color:var(--faint)}
+    .crumb .badge{margin-left:auto;background:#eff6ff;border:1px solid #bfdbfe;color:var(--accent);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.07em;padding:3px 10px;border-radius:99px}
+    /* hero */
+    .hero{border-bottom:1px solid var(--bd);padding:44px 32px 32px;text-align:center}
+    .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+    .hero .sub{font-size:.97rem;color:var(--muted);margin-bottom:20px}
+    .chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px}
+    .chip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
+    .ch-g{background:#dcfce7;border:1px solid #bbf7d0;color:#15803d}
+    .ch-b{background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8}
+    .ch-gr{background:var(--sf2);border:1px solid var(--bd);color:var(--muted)}
+    .ch-dk{background:#111827;border:1px solid #111827;color:#fff}
+    .ch-t{background:#f0fdfa;border:1px solid #99f6e4;color:#0f766e}
+    .ch-p{background:#faf5ff;border:1px solid #e9d5ff;color:#7e22ce}
+    .ch-am{background:#fffbeb;border:1px solid #fde68a;color:#92400e}
+    /* tabs */
+    .tabnav{border-bottom:1px solid var(--bd)}
+    .tabnav-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex}
+    .tb{display:inline-block;padding:13px 20px;font-size:.875rem;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:color var(--tr),border-color var(--tr);white-space:nowrap}
+    .tb:hover{color:var(--text)}
+    .trd{display:none}
+    #t-d:checked~.tabnav .tb[for="t-d"],#t-c:checked~.tabnav .tb[for="t-c"],#t-o:checked~.tabnav .tb[for="t-o"],#t-p:checked~.tabnav .tb[for="t-p"],#t-cl:checked~.tabnav .tb[for="t-cl"]{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
+    /* panels */
+    .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}
+    #t-d:checked~#pd,#t-c:checked~#pc,#t-o:checked~#po,#t-p:checked~#pp,#t-cl:checked~#pcl{display:block}
+    /* clinical summary cards */
+    .csum{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}
+    .cscard{border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;display:flex;justify-content:space-between;align-items:flex-start}
+    .cscard .csn{font-size:1.6rem;font-weight:700;line-height:1;margin-bottom:3px}
+    .cscard .csl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+    .cscard .csi{font-size:1.1rem;opacity:.7}
+    .cscard.ci{border-top:3px solid var(--accent)}.cscard.cc{border-top:3px solid var(--rose)}
+    .cscard.cx{border-top:3px solid var(--amber)}.cscard.cu{border-top:3px solid var(--purple)}
+    .cscard.cw{border-top:3px solid #ea580c}
+    /* clinical sections */
+    .cls{border:1px solid var(--bd);border-radius:var(--r);margin-bottom:10px;overflow:hidden}
+    .clsh{display:flex;align-items:center;gap:8px;padding:11px 16px;background:var(--sf2);border-bottom:1px solid var(--bd)}
+    .clsh .clsicon{font-size:.85rem}
+    .clsh .clstitle{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);flex:1}
+    .clsh .clscount{font-size:10px;font-weight:600;background:var(--bd);color:var(--muted);padding:1px 7px;border-radius:99px}
+    .clsb{padding:10px 16px 14px}
+    /* clinical table */
+    .ctbl{width:100%;border-collapse:collapse;font-size:.81rem}
+    .ctbl th{text-align:left;padding:6px 10px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);background:var(--sf2);border-bottom:1px solid var(--bd)}
+    .ctbl td{padding:8px 10px;border-bottom:1px solid var(--bd);vertical-align:top}
+    .ctbl tr:last-child td{border-bottom:none}
+    /* severity badges */
+    .sev-h{background:#fee2e2;color:#b91c1c;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
+    .sev-m{background:#fef9c3;color:#854d0e;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
+    .sev-l{background:#dcfce7;color:#166534;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
+    /* contraindication rows */
+    .cxrow{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--bd);font-size:.83rem}
+    .cxrow:last-child{border-bottom:none}
+    .cxrow .cxicon{color:var(--rose);font-size:.9rem;flex-shrink:0}
+    /* SOC groups */
+    .soc{margin-bottom:8px}
+    .soc-hdr{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding:4px 0 3px;border-bottom:1px solid var(--bd);margin-bottom:4px}
+    .soc-item{display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:.8rem;border-bottom:1px solid var(--bd)}
+    .soc-item:last-child{border-bottom:none}
+    .soc-item .si-name{color:var(--text)}
+    .soc-item .si-freq{font-size:10px;color:var(--muted)}
+    /* warning callouts */
+    .wbox{background:#fff7ed;border:1px solid #fed7aa;border-left:3px solid #ea580c;border-radius:var(--r);padding:10px 14px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start;font-size:.83rem}
+    .wbox:last-child{margin-bottom:0}
+    .wbox .wicon{color:#ea580c;flex-shrink:0;margin-top:1px}
+    @media(max-width:640px){.csum{grid-template-columns:1fr 1fr}}
+    /* section cards */
+    .sc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
+    .sc.ab{border-left:3px solid var(--accent)} .sc.at{border-left:3px solid var(--teal)}
+    .sc.ap{border-left:3px solid var(--purple)} .sc.ag{border-left:3px solid var(--green)}
+    .sc.aam{border-left:3px solid var(--amber)}
+    .sc-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:12px 18px 4px}
+    .sc-body{padding:10px 18px 16px}
+    /* data grid */
+    .dg{display:grid;gap:14px}
+    .dg4{grid-template-columns:repeat(4,1fr)} .dg3{grid-template-columns:repeat(3,1fr)} .dg2{grid-template-columns:repeat(2,1fr)}
+    .di label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
+    .di .v{font-size:.855rem;font-weight:600;color:var(--text)}
+    .di .vm{font-family:ui-monospace,'SF Mono',monospace;font-size:.76rem;color:var(--teal)}
+    /* count chips */
+    .cc-row{display:flex;flex-wrap:wrap;gap:10px;padding:12px 18px 16px}
+    .cc{display:flex;flex-direction:column;align-items:center;border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;min-width:108px}
+    .cc .n{font-size:1.5rem;font-weight:700;line-height:1;margin-bottom:4px}
+    .cc .l{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:center}
+    /* narrative */
+    .ns{background:var(--surface);border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);padding:16px 18px;margin-bottom:10px}
+    .ns h3{font-size:.935rem;font-weight:600;margin-bottom:6px}
+    .ns p{font-size:.855rem;color:var(--muted);margin-bottom:6px;line-height:1.7} .ns p:last-child{margin-bottom:0}
+    .ns ul{padding-left:18px;font-size:.855rem;color:var(--muted)}
+    /* org */
+    .og{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:10px}
+    .oc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+    .och{padding:12px 18px 8px;border-bottom:1px solid var(--bd)}
+    .och .role{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+    .och .name{font-size:1.05rem;font-weight:700}
+    .ocb{padding:10px 18px}
+    .or{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--bd);font-size:.81rem}
+    .or:last-child{border-bottom:none} .or .ol{color:var(--muted)} .or .ov{font-weight:500;text-align:right}
+    .or .ovm{font-family:ui-monospace,'SF Mono',monospace;font-size:.74rem;color:var(--teal)}
+    .onote{font-size:11px;color:var(--faint);font-style:italic;margin-top:6px}
+    /* product accordion */
+    .ps-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;font-size:.84rem;color:var(--muted)}
+    .pf{border:1px solid var(--bd);border-radius:var(--r);padding:5px 12px;font-size:.81rem;color:var(--text);outline:none}
+    .pa{margin-bottom:10px;border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);overflow:hidden}
+    .pah{display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;list-style:none;background:var(--surface);user-select:none}
+    .pah::-webkit-details-marker{display:none} .pah::marker{display:none}
+    details[open] > .pah{border-bottom:1px solid var(--bd)}
+    details[open] > .pah .pchev{transform:rotate(180deg)}
+    .pnum{width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
+    .pname{font-size:.88rem;font-weight:600} .psub{font-size:.78rem;color:var(--muted);margin-left:2px}
+    .pbadges{display:flex;gap:6px;margin-left:auto;align-items:center}
+    .pchev{font-size:11px;color:var(--faint);margin-left:6px;transition:transform var(--tr)}
+    .pc{padding:12px 16px;background:var(--sf2);display:flex;flex-direction:column;gap:10px}
+    /* inner section cards */
+    .is{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+    .isl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:10px 14px 2px}
+    .isb{padding:6px 14px 12px}
+    /* inline fields */
+    .ifs{display:flex;flex-wrap:wrap}
+    .inf{flex:1;min-width:150px;padding:8px 12px;border-right:1px solid var(--bd)}
+    .inf:last-child{border-right:none}
+    .inf .il{font-size:.81rem;color:var(--muted)} .inf .il::after{content:': '}
+    .inf .iv{font-size:.875rem;font-weight:700;color:var(--text)}
+    /* excipients */
+    .ec{display:grid;grid-template-columns:1fr 1fr}
+    .ei{font-size:.81rem;color:var(--muted);padding:5px 0;border-bottom:1px solid var(--bd)}
+    .ei:nth-last-child(-n+2){border-bottom:none}
+    /* appearance */
+    .ap-in{display:flex;align-items:flex-start;gap:20px}
+    .ap-data{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:2px 16px}
+    .apf{font-size:.81rem;padding:4px 0}
+    .apf .al{color:var(--muted)} .apf .al::after{content:': '} .apf .av{font-weight:700;color:var(--text)}
+    .tab-svgs{display:flex;gap:12px;align-items:center;flex-shrink:0}
+    .tab-fig{text-align:center}
+    .tab-fig figcaption{font-size:9px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
+    /* packaging */
+    .pkgs{display:flex;gap:10px;flex-wrap:wrap;flex-direction:column}
+    .pkg{flex:1;min-width:190px;background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);padding:12px;display:block;}
+    .pkg-row{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+    .pki .pn{font-size:.83rem;font-weight:600;margin-bottom:2px} .pki .pt{font-size:.74rem;color:var(--muted);margin-bottom:7px}
+    .pkt{display:flex;gap:5px;flex-wrap:wrap}
+    .pka{flex-shrink:0;text-align:center}
+    .pka-box{height:50px;border:1px dashed var(--bd2);border-radius:4px;display:flex;align-items:center;justify-content:center;background:var(--sf2);cursor:pointer;transition:border-color var(--tr),box-shadow var(--tr);padding:0 10px;}
+    .pka-box:hover{border-color:var(--accent);box-shadow:0 0 0 2px rgba(37,99,235,.1)}
+    a.pka-link{text-decoration:none;color:inherit}
+    .pka figcaption{font-size:9px;color:var(--accent);margin-top:2px;font-weight:500}
+    /* pack artwork lightbox */
+    .artwork-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9000;align-items:center;justify-content:center}
+    .artwork-modal:target{display:flex}
+    .artwork-modal-card{background:#fff;border-radius:12px;padding:28px 32px 24px;max-width:540px;width:90%;box-shadow:0 24px 64px rgba(0,0,0,.35);position:relative;text-align:center}
+    .artwork-modal-close{position:absolute;top:12px;right:16px;font-size:1.3rem;color:var(--muted);text-decoration:none;line-height:1;padding:4px 8px;border-radius:4px}
+    .artwork-modal-close:hover{background:var(--sf2);color:var(--text)}
+    .artwork-modal-title{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:14px}
+    .artwork-modal-img{display:flex;justify-content:center;margin-bottom:16px}
+    .artwork-modal-src{font-size:10px;color:var(--faint);margin-top:6px;font-style:italic}
+    .artwork-modal-src code{font-family:ui-monospace,'SF Mono',monospace;font-size:9px;background:var(--sf2);padding:1px 5px;border-radius:3px}
+    /* MA */
+    .mag{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .mai .ml{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
+    .mai .mv{font-size:.85rem;font-weight:600;color:var(--text)}
+    .mai .mvm{font-family:ui-monospace,'SF Mono',monospace;font-size:.79rem;color:var(--teal)}
+    @media(max-width:640px){
+      .dg4,.dg3{grid-template-columns:1fr 1fr} .og{grid-template-columns:1fr}
+      .ec{grid-template-columns:1fr} .ei{border-bottom:1px solid var(--bd) !important}
+      .ap-in{flex-direction:column} .pkgs{flex-direction:column} .mag{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+
+<div class="crumb">
+  <span class="ig">Vulcan eMedicinal Product Information IG</span>
+  <span class="sep">&#8250;</span><span>Examples</span>
+  <span class="sep">&#8250;</span><span>ePI Type 2 (Nested Packaging)</span>
+  <span class="badge">HL7 FHIR R5</span>
+</div>
+
+<header class="hero">
+  <h1>WonderDrug</h1>
+  <p class="sub">500 mg tablets (Blister in Carton) &middot; Contains GTIN &amp; SKU</p>
+  <div class="chips">
+    <span class="chip ch-g">&#9679; Active</span>
+    <span class="chip ch-gr">Version 1.0</span>
+    <span class="chip ch-gr">EN</span>
+    <span class="chip ch-b">ePI Type 2</span>
+    <span class="chip ch-dk">Prescription Only</span>
+  </div>
+</header>
+
+<input type="radio" name="tabs" id="t-d" class="trd" checked>
+<input type="radio" name="tabs" id="t-c" class="trd">
+<input type="radio" name="tabs" id="t-o" class="trd">
+<input type="radio" name="tabs" id="t-p" class="trd">
+<input type="radio" name="tabs" id="t-cl" class="trd">
+
+<nav class="tabnav">
+  <div class="tabnav-inner">
+    <label class="tb" for="t-d">Document</label>
+    <label class="tb" for="t-c">Composition</label>
+    <label class="tb" for="t-o">Organization</label>
+    <label class="tb" for="t-p">Product Details</label>
+    <label class="tb" for="t-cl">Clinical Details</label>
+  </div>
+</nav>
+
+<!-- DOCUMENT -->
+<div id="pd" class="panel">
+  <div class="sc ab">
+    <div class="sc-lbl">Bundle Metadata</div>
+    <div class="sc-body">
+      <div class="dg dg4" style="margin-bottom:12px">
+        <div class="di"><label>Resource ID</label><div class="v vm">urn:uuid:68abf6a2-11c9...</div></div>
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">1.0</div></div>
+        <div class="di"><label>Date</label><div class="v">2026-03-31</div></div>
+      </div>
+      <div class="dg dg4">
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+        <div class="di"><label>Jurisdiction</label><div class="v">European Union &#127466;&#127482;</div></div>
+        <div class="di"><label>Author (MAH)</label><div class="v">Acme Pharma Inc.</div></div>
+        <div class="di"><label>Attester (Regulator)</label><div class="v">EMA</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sc at">
+    <div class="sc-lbl">Composition</div>
+    <div class="sc-body">
+      <div class="dg dg3" style="margin-bottom:12px">
+        <div class="di"><label>Identifier</label><div class="v vm">urn:uuid:99f7ca41-2a1d...</div></div>
+        <div class="di"><label>Title</label><div class="v">WonderDrug 500 mg SmPC</div></div>
+        <div class="di"><label>Type</label><div class="v"><span class="chip ch-b">SmPC</span></div></div>
+      </div>
+      <div class="dg dg3">
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">1.0</div></div>
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sc ap">
+    <div class="sc-lbl">Contained Resources</div>
+    <div class="cc-row">
+      <div class="cc"><span class="n" style="color:var(--accent)">1</span><span class="l">Compositions</span></div>
+      <div class="cc"><span class="n" style="color:var(--teal)">2</span><span class="l">Organizations</span></div>
+      <div class="cc"><span class="n" style="color:var(--green)">1</span><span class="l">Medicinal Products</span></div>
+      <div class="cc"><span class="n" style="color:var(--amber)">1</span><span class="l">Packaged Products</span></div>
+      <div class="cc"><span class="n" style="color:var(--purple)">1</span><span class="l">Regulatory Authorizations</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPOSITION -->
+<div id="pc" class="panel">
+  <div class="ns"><h3>1. What WonderDrug is and what it is used for</h3>
+    <p>WonderDrug contains the active substance paracetamol. It is an analgesic and antipyretic medicine.</p>
+    <p>WonderDrug is used for the symptomatic treatment of mild to moderate pain and/or fever.</p>
+  </div>
+  <div class="ns"><h3>2. What you need to know before you take WonderDrug</h3>
+    <p><strong>Do not take WonderDrug</strong> if you are allergic to paracetamol or any of the other ingredients.</p>
+    <p><strong>Warnings and precautions:</strong> Talk to your doctor before taking WonderDrug if you have liver or kidney problems.</p>
+  </div>
+  <div class="ns"><h3>3. How to take WonderDrug</h3>
+    <p>Always take this medicine exactly as described in this leaflet or as your doctor has told you.</p>
+    <p>The recommended dose is 1 tablet every 4 to 6 hours as needed. Do not exceed 6 tablets in 24 hours.</p>
+  </div>
+  <div class="ns"><h3>4. Possible side effects</h3>
+    <p>Like all medicines, this medicine can cause side effects, although not everybody gets them.</p>
+  </div>
+  <div class="ns"><h3>5. How to store WonderDrug</h3>
+    <p>Keep this medicine out of the sight and reach of children.</p>
+    <p>This medicine does not require any special storage conditions.</p>
+  </div>
+  <div class="ns"><h3>6. Contents of the pack and other information</h3>
+    <p><strong>What WonderDrug contains:</strong> The active substance is paracetamol. Excipients: pregelatinized starch, povidone K30, stearic acid, talc, magnesium stearate, hypromellose.</p>
+    <p><strong>What WonderDrug looks like:</strong> White oval tablets available in cartons containing 2 blister packs (10 tablets each).</p>
+  </div>
+</div>
+
+<!-- ORGANIZATION -->
+<div id="po" class="panel">
+  <div class="og">
+    <div class="oc" style="border-left:3px solid var(--accent)">
+      <div class="och"><div class="role" style="color:var(--accent)">Marketing Authorization Holder</div><div class="name">Acme Pharma Inc.</div></div>
+      <div class="ocb">
+        <div class="or"><span class="ol">Identifier</span><span class="ov ovm">LOC-100000000 (OMS)</span></div>
+        <div class="or"><span class="ol">Type</span><span class="ov"><span class="chip ch-b">MAH</span></span></div>
+        <div class="or"><span class="ol">Address</span><span class="ov">123 Pharma Way, 102 37 Prague, Czech Republic</span></div>
+        <div class="or"><span class="ol">Email</span><span class="ov">contact@acmepharma.com</span></div>
+        <div class="or"><span class="ol">website</span><span class="ov">https://www.acmepharma.com</span></div>
+      </div>
+    </div>
+    <div class="oc" style="border-left:3px solid var(--green)">
+      <div class="och"><div class="role" style="color:var(--green)">Manufacturer</div><div class="name">Global Manufacturing Solutions Ltd.</div></div>
+      <div class="ocb">
+        <div class="or"><span class="ol">Identifier</span><span class="ov ovm">LOC-200000000 (OMS)</span></div>
+        <div class="or"><span class="ol">Type</span><span class="ov"><span class="chip ch-t">Manufacturer</span></span></div>
+        <div class="or"><span class="ol">Address</span><span class="ov">456 Industry Road, Berlin, Germany</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="onote">Organization data sourced from the OMS (Organisation Management Service) identifier system.</p>
+</div>
+
+<!-- PRODUCT DETAILS -->
+<div id="pp" class="panel">
+  <div class="ps-row">
+    <span>1 Medicinal Product &middot; 1 Package Configuration</span>
+    <input class="pf" type="text" placeholder="Filter by substance or strength&#8230;" />
+  </div>
+  <defs><radialGradient id="tg" cx="40%" cy="35%" r="55%"><stop offset="0%" stop-color="#fff" /><stop offset="100%" stop-color="#e5e5e7" /></radialGradient></defs>
+
+  <details class="pa" open="open">
+    <summary class="pah">
+      <span class="pnum">1</span>
+      <span class="pname">WonderDrug 500 mg tablets</span><span class="psub">Paracetamol</span>
+      <div class="pbadges"><span class="chip ch-g">Active</span><span class="chip ch-gr">Oral &middot; Tablet</span></div>
+      <span class="pchev">&#9660;</span>
+    </summary>
+    <div class="pc">
+      <div class="is"><div class="isl">Substance &amp; Form</div><div class="isb"><div class="ifs">
+        <div class="inf"><span class="il">Active Substance</span><span class="iv">Paracetamol</span></div>
+        <div class="inf"><span class="il">Strength</span><span class="iv">500 mg</span></div>
+        <div class="inf"><span class="il">Dose Form</span><span class="iv">Tablet</span></div>
+        <div class="inf"><span class="il">Route</span><span class="iv">Oral</span></div>
+      </div></div></div>
+      <div class="is"><div class="isl">Excipients</div><div class="isb"><div class="ec">
+        <div class="ei">Pregelatinized starch</div><div class="ei">Talc</div>
+        <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
+        <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
+      </div></div></div>
+      <div class="is"><div class="isl">Physical Appearance</div><div class="isb"><div class="ap-in">
+        <div class="ap-data">
+          <div class="apf"><span class="al">Colour</span><span class="av">White</span></div>
+          <div class="apf"><span class="al">Shape</span><span class="av">Oval</span></div>
+          <div class="apf"><span class="al">Size</span><span class="av">9 mm</span></div>
+          <div class="apf"><span class="al">Imprint</span><span class="av">W-500</span></div>
+        </div>
+        <div class="tab-svgs">
+          <figure class="tab-fig">
+            <svg width="68" height="50" viewBox="0 0 100 72"><ellipse cx="50" cy="36" rx="48" ry="34" fill="url(#tg)" stroke="#d1d5db" stroke-width="1" /></svg>
+            <figcaption>Front</figcaption>
+          </figure>
+          <figure class="tab-fig">
+            <svg width="68" height="50" viewBox="0 0 100 72"><ellipse cx="50" cy="36" rx="48" ry="34" fill="url(#tg)" stroke="#d1d5db" stroke-width="1" /><text x="50" y="40" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#6b7280">W-500</text></svg>
+            <figcaption>Back</figcaption>
+          </figure>
+        </div>
+      </div></div></div>
+      
+      <!-- New Blister/Carton Packaging with GTIN and SKU -->
+      <div class="is"><div class="isl">Packaging (1)</div><div class="isb"><div class="pkgs">
+        <div class="pkg">
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Carton of 20 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px;">
+                GTIN: 09876543210987 &nbsp;|&nbsp; SKU: WD500-CARTON-20
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 20 (2 x 10)</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Carton</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: 2 x Blister PVC/Al</span>
+              </div>
+            </div>
+            <a href="#art-wd500-carton" class="pka-link">
+              <figure class="pka">
+                <div class="pka-box">
+                  <!-- Thumbnail SVG: Carton + Blister -->
+                  <svg width="60" height="32" viewBox="0 0 60 32">
+                    <!-- Carton -->
+                    <rect x="2" y="2" width="28" height="28" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5" rx="2" />
+                    <!-- Blister -->
+                    <rect x="34" y="8" width="24" height="16" fill="#f3f4f6" stroke="#d1d5db" rx="1" />
+                    <circle cx="38" cy="12" r="2" fill="#fff" stroke="#d1d5db" />
+                    <circle cx="44" cy="12" r="2" fill="#fff" stroke="#d1d5db" />
+                    <circle cx="50" cy="12" r="2" fill="#fff" stroke="#d1d5db" />
+                    <circle cx="38" cy="20" r="2" fill="#fff" stroke="#d1d5db" />
+                    <circle cx="44" cy="20" r="2" fill="#fff" stroke="#d1d5db" />
+                    <circle cx="50" cy="20" r="2" fill="#fff" stroke="#d1d5db" />
+                  </svg>
+                </div>
+                <figcaption>View artwork &#8599;</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div></div></div>
+      
+      <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
+        <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
+        <div class="mai"><div class="ml">Number</div><div class="mv mvm">MA-987654321</div></div>
+        <div class="mai"><div class="ml">Region</div><div class="mv">Germany (DE)</div></div>
+      </div></div></div>
+    </div>
+  </details>
+</div>
+
+<!-- CLINICAL DETAILS -->
+<div id="pcl" class="panel">
+  <!-- Summary count cards -->
+  <div class="csum">
+    <div class="cscard ci"><div><div class="csn" style="color:var(--accent)">1</div><div class="csl">Indication</div></div><div class="csi">&#127919;</div></div>
+    <div class="cscard cc"><div><div class="csn" style="color:var(--rose)">2</div><div class="csl">Contraindications</div></div><div class="csi">&#9940;</div></div>
+    <div class="cscard cx"><div><div class="csn" style="color:var(--amber)">4</div><div class="csl">Interactions</div></div><div class="csi">&#9889;</div></div>
+  </div>
+
+  <!-- Indications -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#127919;</span><span class="clstitle">Indications</span><span class="clscount">1</span></div>
+    <div class="clsb">
+      <table class="ctbl">
+        <thead><tr><th>Condition</th><th>Population</th><th>Severity</th></tr></thead>
+        <tbody>
+          <tr><td>Hypertension</td><td>Adults &#8805;18 years</td><td>Moderate to severe</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Contraindications -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9940;</span><span class="clstitle">Contraindications</span><span class="clscount">2</span></div>
+    <div class="clsb">
+      <div class="cxrow"><span class="cxicon">&#8856;</span><span>Severe hepatic impairment (Child-Pugh C)</span></div>
+      <div class="cxrow"><span class="cxicon">&#8856;</span><span>Known hypersensitivity to WonderDrug or any excipient</span></div>
+    </div>
+  </div>
+
+  <!-- Interactions -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9889;</span><span class="clstitle">Interactions</span><span class="clscount">4</span></div>
+    <div class="clsb">
+      <table class="ctbl">
+        <thead><tr><th>Interacting Substance</th><th>Type</th><th>Severity</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr><td>Warfarin</td><td>Pharmacodynamic</td><td><span class="sev-h">High</span></td><td>Increased anticoagulation risk</td></tr>
+          <tr><td>NSAIDs</td><td>Pharmacodynamic</td><td><span class="sev-m">Moderate</span></td><td>Reduced antihypertensive effect</td></tr>
+          <tr><td>Rifampicin</td><td>Pharmacokinetic</td><td><span class="sev-m">Moderate</span></td><td>Reduced plasma levels</td></tr>
+          <tr><td>Potassium supplements</td><td>Pharmacodynamic</td><td><span class="sev-l">Low</span></td><td>Risk of hyperkalaemia</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Pack Artwork Modal (CSS :target lightbox — no JS) -->
+<div id="art-wd500-carton" class="artwork-modal">
+  <div class="artwork-modal-card" style="max-width:480px;">
+    <a href="#" class="artwork-modal-close" aria-label="Close">&#10005;</a>
+    <div class="artwork-modal-title" style="margin-bottom:24px;">Pack Artwork &mdash; WonderDrug 500 mg (Carton + 2x Blister)</div>
+    <div class="artwork-modal-img">
+      <svg width="420" height="200" viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- Connectivity Background Line to show relation -->
+        <path d="M 180 100 L 220 50" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4" />
+        <path d="M 180 100 L 220 150" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4" />
+
+        <!-- Carton (Outer) -->
+        <g transform="translate(10, 20)">
+          <rect x="0" y="0" width="160" height="160" rx="8" fill="#faf5ff" stroke="#e9d5ff" stroke-width="2"/>
+          <rect x="0" y="0" width="160" height="40" rx="8" fill="#e9d5ff"/>
+          <text x="80" y="25" font-family="Arial" font-size="14" font-weight="700" text-anchor="middle" fill="#7e22ce">WonderDrug</text>
+          <text x="80" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#9333ea">500 mg tablets</text>
+          <text x="80" y="90" font-family="Arial" font-size="10" text-anchor="middle" fill="#6b7280">20 tablets (2 x 10)</text>
+          <rect x="40" y="105" width="80" height="1" fill="#e9d5ff"/>
+          <text x="80" y="125" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" text-anchor="middle" fill="#374151">GTIN: 09876543210987</text>
+          <text x="80" y="140" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" text-anchor="middle" fill="#374151">SKU: WD500-CARTON-20</text>
+        </g>
+        
+        <!-- Blister 1 (Inner) -->
+        <g transform="translate(220, 25)">
+          <rect x="0" y="0" width="180" height="60" rx="4" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+          <text x="90" y="25" font-family="Arial" font-size="8" text-anchor="middle" fill="#9ca3af" transform="rotate(-5 90 25)">WonderDrug 500 mg | Lot: AB1234</text>
+          <!-- 10 Pills -->
+          <circle cx="20" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="55" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="90" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="125" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="160" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          
+          <circle cx="20" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="55" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="90" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="125" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="160" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+        </g>
+        
+        <!-- Blister 2 (Inner) -->
+        <g transform="translate(220, 115)">
+          <rect x="0" y="0" width="180" height="60" rx="4" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+          <text x="90" y="25" font-family="Arial" font-size="8" text-anchor="middle" fill="#9ca3af" transform="rotate(-5 90 25)">WonderDrug 500 mg | Lot: AB1234</text>
+          <!-- 10 Pills -->
+          <circle cx="20" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="55" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="90" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="125" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="160" cy="15" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          
+          <circle cx="20" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="55" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="90" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="125" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+          <circle cx="160" cy="45" r="7" fill="#fff" stroke="#d1d5db" stroke-width="1.5"/>
+        </g>
+
+      </svg>
+    </div>
+    <div class="artwork-modal-src">Source: <code>PackagedProductDefinition.attachedDocument</code> &#8594; <code>DocumentReference/art-wd500-carton</code></div>
+  </div>
+</div>
+
+</body>
+</html>
