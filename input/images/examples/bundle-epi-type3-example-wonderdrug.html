@@ -5,140 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WonderDrug 100/200/500 mg — ePI Type 3 (Vulcan FHIR IG)</title>
   <meta name="description" content="FHIR R5 Bundle document (ePI Type 3) for WonderDrug tablets — Vulcan eMedicinal Product Information IG example." />
+  <!-- Shared ePI design system -->
+  <link rel="stylesheet" href="../epi-styles.css" />
+  <!-- Page-local: tab & panel activation for this file's radio IDs -->
   <style>
-    :root{--bg:#fff;--surface:#fff;--sf2:#f9fafb;--bd:#e5e7eb;--bd2:#d1d5db;--accent:#2563eb;--green:#16a34a;--rose:#dc2626;--amber:#d97706;--purple:#7c3aed;--teal:#0891b2;--text:#111827;--muted:#6b7280;--faint:#9ca3af;--r:8px;--rl:12px;--tr:0.15s ease}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    .crumb{background:var(--sf2);border-bottom:1px solid var(--bd);padding:9px 28px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
-    .crumb .ig{font-weight:600;color:var(--text)}.crumb .sep{color:var(--faint)}
-    .crumb .badge{margin-left:auto;background:#eff6ff;border:1px solid #bfdbfe;color:var(--accent);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.07em;padding:3px 10px;border-radius:99px}
-    .hero{border-bottom:1px solid var(--bd);padding:44px 32px 32px;text-align:center}
-    .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
-    .hero .sub{font-size:.97rem;color:var(--muted);margin-bottom:20px}
-    .chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px}
-    .chip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
-    .ch-g{background:#dcfce7;border:1px solid #bbf7d0;color:#15803d}
-    .ch-b{background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8}
-    .ch-gr{background:var(--sf2);border:1px solid var(--bd);color:var(--muted)}
-    .ch-dk{background:#111827;border:1px solid #111827;color:#fff}
-    .ch-t{background:#f0fdfa;border:1px solid #99f6e4;color:#0f766e}
-    .tabnav{border-bottom:1px solid var(--bd)}
-    .tabnav-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex}
-    .tb{display:inline-block;padding:13px 20px;font-size:.875rem;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:color var(--tr),border-color var(--tr);white-space:nowrap}
-    .tb:hover{color:var(--text)}
-    .trd{display:none}
-    #t-d:checked~.tabnav .tb[for="t-d"],#t-c:checked~.tabnav .tb[for="t-c"],#t-o:checked~.tabnav .tb[for="t-o"],#t-p:checked~.tabnav .tb[for="t-p"],#t-cl:checked~.tabnav .tb[for="t-cl"]{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
-    .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}
-    #t-d:checked~#pd,#t-c:checked~#pc,#t-o:checked~#po,#t-p:checked~#pp,#t-cl:checked~#pcl{display:block}
-    /* clinical summary cards */
-    .csum{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}
-    .cscard{border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;display:flex;justify-content:space-between;align-items:flex-start}
-    .cscard .csn{font-size:1.6rem;font-weight:700;line-height:1;margin-bottom:3px}
-    .cscard .csl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-    .cscard .csi{font-size:1.1rem;opacity:.7}
-    .cscard.ci{border-top:3px solid var(--accent)}.cscard.cc{border-top:3px solid var(--rose)}
-    .cscard.cx{border-top:3px solid var(--amber)}.cscard.cu{border-top:3px solid var(--purple)}
-    .cscard.cw{border-top:3px solid #ea580c}
-    .cls{border:1px solid var(--bd);border-radius:var(--r);margin-bottom:10px;overflow:hidden}
-    .clsh{display:flex;align-items:center;gap:8px;padding:11px 16px;background:var(--sf2);border-bottom:1px solid var(--bd)}
-    .clsh .clsicon{font-size:.85rem}
-    .clsh .clstitle{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);flex:1}
-    .clsh .clscount{font-size:10px;font-weight:600;background:var(--bd);color:var(--muted);padding:1px 7px;border-radius:99px}
-    .clsb{padding:10px 16px 14px}
-    .ctbl{width:100%;border-collapse:collapse;font-size:.81rem}
-    .ctbl th{text-align:left;padding:6px 10px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);background:var(--sf2);border-bottom:1px solid var(--bd)}
-    .ctbl td{padding:8px 10px;border-bottom:1px solid var(--bd);vertical-align:top}
-    .ctbl tr:last-child td{border-bottom:none}
-    .sev-h{background:#fee2e2;color:#b91c1c;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
-    .sev-m{background:#fef9c3;color:#854d0e;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
-    .sev-l{background:#dcfce7;color:#166534;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600}
-    .cxrow{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--bd);font-size:.83rem}
-    .cxrow:last-child{border-bottom:none}
-    .cxrow .cxicon{color:var(--rose);font-size:.9rem;flex-shrink:0}
-    .soc{margin-bottom:8px}
-    .soc-hdr{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding:4px 0 3px;border-bottom:1px solid var(--bd);margin-bottom:4px}
-    .soc-item{display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:.8rem;border-bottom:1px solid var(--bd)}
-    .soc-item:last-child{border-bottom:none}
-    .soc-item .si-name{color:var(--text)}.soc-item .si-freq{font-size:10px;color:var(--muted)}
-    .wbox{background:#fff7ed;border:1px solid #fed7aa;border-left:3px solid #ea580c;border-radius:var(--r);padding:10px 14px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start;font-size:.83rem}
-    .wbox:last-child{margin-bottom:0}.wbox .wicon{color:#ea580c;flex-shrink:0;margin-top:1px}
-    @media(max-width:640px){.csum{grid-template-columns:1fr 1fr}}
-    .sc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
-    .sc.ab{border-left:3px solid var(--accent)}.sc.at{border-left:3px solid var(--teal)}.sc.ap{border-left:3px solid var(--purple)}
-    .sc-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:12px 18px 4px}
-    .sc-body{padding:10px 18px 16px}
-    .dg{display:grid;gap:14px}.dg4{grid-template-columns:repeat(4,1fr)}.dg3{grid-template-columns:repeat(3,1fr)}
-    .di label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
-    .di .v{font-size:.855rem;font-weight:600;color:var(--text)}.di .vm{font-family:ui-monospace,'SF Mono',monospace;font-size:.76rem;color:var(--teal)}
-    .cc-row{display:flex;flex-wrap:wrap;gap:10px;padding:12px 18px 16px}
-    .cc{display:flex;flex-direction:column;align-items:center;border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;min-width:108px}
-    .cc .n{font-size:1.5rem;font-weight:700;line-height:1;margin-bottom:4px}.cc .l{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:center}
-    .ns{background:var(--surface);border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);padding:16px 18px;margin-bottom:10px}
-    .ns h3{font-size:.935rem;font-weight:600;margin-bottom:6px}
-    .ns p{font-size:.855rem;color:var(--muted);margin-bottom:6px;line-height:1.7}.ns p:last-child{margin-bottom:0}
-    .ns ul{padding-left:18px;font-size:.855rem;color:var(--muted)}
-    .og{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:10px}
-    .oc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
-    .och{padding:12px 18px 8px;border-bottom:1px solid var(--bd)}
-    .och .role{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
-    .och .name{font-size:1.05rem;font-weight:700}
-    .ocb{padding:10px 18px}
-    .or{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--bd);font-size:.81rem}
-    .or:last-child{border-bottom:none}.or .ol{color:var(--muted)}.or .ov{font-weight:500;text-align:right}
-    .or .ovm{font-family:ui-monospace,'SF Mono',monospace;font-size:.74rem;color:var(--teal)}
-    .onote{font-size:11px;color:var(--faint);font-style:italic;margin-top:6px}
-    .ps-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;font-size:.84rem;color:var(--muted)}
-    .pf{border:1px solid var(--bd);border-radius:var(--r);padding:5px 12px;font-size:.81rem;color:var(--text);outline:none}
-    .pa{margin-bottom:10px;border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);overflow:hidden}
-    .pah{display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;list-style:none;background:var(--surface);user-select:none}
-    .pah::-webkit-details-marker{display:none}.pah::marker{display:none}
-    details[open]>.pah{border-bottom:1px solid var(--bd)}
-    details[open]>.pah .pchev{transform:rotate(180deg)}
-    .pnum{width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
-    .pname{font-size:.88rem;font-weight:600}.psub{font-size:.78rem;color:var(--muted);margin-left:2px}
-    .pbadges{display:flex;gap:6px;margin-left:auto;align-items:center}
-    .pchev{font-size:11px;color:var(--faint);margin-left:6px;transition:transform var(--tr)}
-    .pc{padding:12px 16px;background:var(--sf2);display:flex;flex-direction:column;gap:10px}
-    .is{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
-    .isl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:10px 14px 2px}
-    .isb{padding:6px 14px 12px}
-    .ifs{display:flex;flex-wrap:wrap}
-    .inf{flex:1;min-width:150px;padding:8px 12px;border-right:1px solid var(--bd)}.inf:last-child{border-right:none}
-    .inf .il{font-size:.81rem;color:var(--muted)}.inf .il::after{content:': '}
-    .inf .iv{font-size:.875rem;font-weight:700;color:var(--text)}
-    .ec{display:grid;grid-template-columns:1fr 1fr}
-    .ei{font-size:.81rem;color:var(--muted);padding:5px 0;border-bottom:1px solid var(--bd)}
-    .ei:nth-last-child(-n+2){border-bottom:none}
-    .ap-in{display:flex;align-items:flex-start;gap:20px}
-    .ap-data{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:2px 16px}
-    .apf{font-size:.81rem;padding:4px 0}
-    .apf .al{color:var(--muted)}.apf .al::after{content:': '}.apf .av{font-weight:700;color:var(--text)}
-    .tab-svgs{display:flex;gap:12px;align-items:center;flex-shrink:0}
-    .tab-fig{text-align:center}
-    .tab-fig figcaption{font-size:9px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
-    .pkgs{display:flex;gap:10px;flex-wrap:wrap}
-    .pkg{flex:1;min-width:190px;background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);padding:12px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-    .pki .pn{font-size:.83rem;font-weight:600;margin-bottom:2px}.pki .pt{font-size:.74rem;color:var(--muted);margin-bottom:7px}
-    .pkt{display:flex;gap:5px;flex-wrap:wrap}
-    .pka{flex-shrink:0;text-align:center}
-    .pka-box{width:68px;height:50px;border:1px dashed var(--bd2);border-radius:4px;display:flex;align-items:center;justify-content:center;background:var(--sf2);cursor:pointer;transition:border-color var(--tr),box-shadow var(--tr)}
-    .pka-box:hover{border-color:var(--accent);box-shadow:0 0 0 2px rgba(37,99,235,.1)}
-    a.pka-link{text-decoration:none;color:inherit}
-    .pka figcaption{font-size:9px;color:var(--accent);margin-top:2px;font-weight:500}
-    .artwork-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9000;align-items:center;justify-content:center}
-    .artwork-modal:target{display:flex}
-    .artwork-modal-card{background:#fff;border-radius:12px;padding:28px 32px 24px;max-width:420px;width:90%;box-shadow:0 24px 64px rgba(0,0,0,.35);position:relative;text-align:center}
-    .artwork-modal-close{position:absolute;top:12px;right:16px;font-size:1.3rem;color:var(--muted);text-decoration:none;line-height:1;padding:4px 8px;border-radius:4px}
-    .artwork-modal-close:hover{background:var(--sf2);color:var(--text)}
-    .artwork-modal-title{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:14px}
-    .artwork-modal-img{display:flex;justify-content:center;margin-bottom:16px}
-    .artwork-modal-src{font-size:10px;color:var(--faint);margin-top:6px;font-style:italic}
-    .artwork-modal-src code{font-family:ui-monospace,'SF Mono',monospace;font-size:9px;background:var(--sf2);padding:1px 5px;border-radius:3px}
-    .mag{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .mai .ml{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
-    .mai .mv{font-size:.85rem;font-weight:600;color:var(--text)}.mai .mvm{font-family:ui-monospace,'SF Mono',monospace;font-size:.79rem;color:var(--teal)}
-    @media(max-width:640px){.dg4,.dg3{grid-template-columns:1fr 1fr}.og{grid-template-columns:1fr}.ec{grid-template-columns:1fr}.ei{border-bottom:1px solid var(--bd) !important}.ap-in{flex-direction:column}.pkgs{flex-direction:column}.mag{grid-template-columns:1fr 1fr}}
+    #t-d:checked  ~ .tabnav .tb[for="t-d"],
+    #t-c:checked  ~ .tabnav .tb[for="t-c"],
+    #t-o:checked  ~ .tabnav .tb[for="t-o"],
+    #t-p:checked  ~ .tabnav .tb[for="t-p"],
+    #t-cl:checked ~ .tabnav .tb[for="t-cl"] { color: var(--text); font-weight: 600; border-bottom-color: var(--accent); }
+    #t-d:checked  ~ #pd,
+    #t-c:checked  ~ #pc,
+    #t-o:checked  ~ #po,
+    #t-p:checked  ~ #pp,
+    #t-cl:checked ~ #pcl { display: block; }
   </style>
+
 </head>
 <body>
 <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
@@ -317,14 +199,73 @@
       </div></div></div>
       <div class="is"><div class="isl">Packaging (2)</div><div class="isb"><div class="pkgs">
         <div class="pkg">
-          <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
-          <a href="#art-wd100-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 30 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px;">
+                GTIN: 09876543210130 &nbsp;|&nbsp; SKU: WD500-BOX-30
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 30</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+            <a href="#art-wd100-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          </div>
         </div>
         <div class="pkg">
-          <div class="pki"><div class="pn">Box of 50 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 50</span></div></div>
-          <a href="#art-wd100-50" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 50 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px;">
+                GTIN: 09876543210150 &nbsp;|&nbsp; SKU: WD500-BOX-50
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 50</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+            <a href="#art-wd100-50" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#bfdbfe" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          </div>
         </div>
       </div></div></div>
+      <div class="is" style="border-left:3px solid var(--green)">
+        <div class="isl" style="padding-bottom:6px;color:var(--green)">Shelf Life &amp; Storage Conditions</div>
+        <div style="padding:8px 14px 4px;display:flex;align-items:center;gap:10px">
+          <span class="shelf-pill">
+            <span>&#128197;</span><span class="shelf-n">36</span><span style="font-size:.75rem;font-weight:600">months</span>
+          </span>
+          <span style="font-size:.8rem;color:var(--muted)">Shelf life of the medicinal product as packaged for sale</span>
+        </div>
+        <div style="font-size:9px;color:var(--faint);padding:2px 14px 8px">
+          Source: <code style="font-family:ui-monospace,'SF Mono',monospace;font-size:9px;background:var(--sf2);padding:1px 4px;border-radius:3px">PackagedProductDefinition.shelfLifeStorage.period</code>
+        </div>
+        <div class="storage-grid">
+          <div class="storage-item">
+            <span class="storage-icon">&#127777;</span>
+            <div class="storage-text"><div class="sl">Temperature</div><div class="sv">Store below 25°C</div><div class="sd">Do not freeze</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128167;</span>
+            <div class="storage-text"><div class="sl">Moisture</div><div class="sv">Keep dry</div><div class="sd">Protect from moisture</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#9728;</span>
+            <div class="storage-text"><div class="sl">Light</div><div class="sv">Protect from light</div><div class="sd">Keep in original packaging</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128100;</span>
+            <div class="storage-text"><div class="sl">Safety</div><div class="sv">Out of reach of children</div></div>
+          </div>
+        </div>
+        <div class="storage-src">
+          FHIR source: <code>PackagedProductDefinition.shelfLifeStorage</code> &rarr; type (<code>ShelfLifeType</code>) + storage condition (<code>specialPrecautionsForStorage</code>)
+        </div>
+      </div>
       <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
         <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
         <div class="mai"><div class="ml">Number</div><div class="mv mvm">MA-123456789</div></div>
@@ -367,14 +308,73 @@
       </div></div></div>
       <div class="is"><div class="isl">Packaging (2)</div><div class="isb"><div class="pkgs">
         <div class="pkg">
-          <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
-          <a href="#art-wd200-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 30 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px;">
+                GTIN: 09876543210230 &nbsp;|&nbsp; SKU: WD100-BOX-30
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 30</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+            <a href="#art-wd200-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          </div>
         </div>
         <div class="pkg">
-          <div class="pki"><div class="pn">Blister Pack 50</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 50</span></div></div>
-          <a href="#art-wd200-50" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Blister Pack 50</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px;">
+                GTIN: 09876543210250 &nbsp;|&nbsp; SKU: WD100-BLISTER-50
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 50</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+            <a href="#art-wd200-50" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#99f6e4" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">50 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          </div>
         </div>
       </div></div></div>
+      <div class="is" style="border-left:3px solid var(--green)">
+        <div class="isl" style="padding-bottom:6px;color:var(--green)">Shelf Life &amp; Storage Conditions</div>
+        <div style="padding:8px 14px 4px;display:flex;align-items:center;gap:10px">
+          <span class="shelf-pill">
+            <span>&#128197;</span><span class="shelf-n">36</span><span style="font-size:.75rem;font-weight:600">months</span>
+          </span>
+          <span style="font-size:.8rem;color:var(--muted)">Shelf life of the medicinal product as packaged for sale</span>
+        </div>
+        <div style="font-size:9px;color:var(--faint);padding:2px 14px 8px">
+          Source: <code style="font-family:ui-monospace,'SF Mono',monospace;font-size:9px;background:var(--sf2);padding:1px 4px;border-radius:3px">PackagedProductDefinition.shelfLifeStorage.period</code>
+        </div>
+        <div class="storage-grid">
+          <div class="storage-item">
+            <span class="storage-icon">&#127777;</span>
+            <div class="storage-text"><div class="sl">Temperature</div><div class="sv">Store below 25°C</div><div class="sd">Do not freeze</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128167;</span>
+            <div class="storage-text"><div class="sl">Moisture</div><div class="sv">Keep dry</div><div class="sd">Protect from moisture</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#9728;</span>
+            <div class="storage-text"><div class="sl">Light</div><div class="sv">Protect from light</div><div class="sd">Keep in original packaging</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128100;</span>
+            <div class="storage-text"><div class="sl">Safety</div><div class="sv">Out of reach of children</div></div>
+          </div>
+        </div>
+        <div class="storage-src">
+          FHIR source: <code>PackagedProductDefinition.shelfLifeStorage</code> &rarr; type (<code>ShelfLifeType</code>) + storage condition (<code>specialPrecautionsForStorage</code>)
+        </div>
+      </div>
       <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
         <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
         <div class="mai"><div class="ml">Number</div><div class="mv mvm">PL 12345/6790</div></div>
@@ -419,10 +419,56 @@
       </div></div></div>
       <div class="is"><div class="isl">Packaging (1)</div><div class="isb"><div class="pkgs">
         <div class="pkg">
-          <div class="pki"><div class="pn">Box of 30 Tablets</div><div class="pt">Blister PVC/Al</div><div class="pkt"><span class="chip ch-g">Active</span><span class="chip ch-gr">Qty: 30</span></div></div>
-          <a href="#art-wd500-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#e9d5ff" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 30 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px;">
+                GTIN: 09876543210530 &nbsp;|&nbsp; SKU: WD200-BOX-30
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 30</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+            <a href="#art-wd500-30" class="pka-link"><figure class="pka"><div class="pka-box"><svg width="40" height="32" viewBox="0 0 40 32"><rect x="1" y="1" width="38" height="30" rx="3" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5" /><rect x="5" y="5" width="30" height="9" rx="2" fill="#e9d5ff" /><text x="20" y="27" font-size="5" font-family="Arial" text-anchor="middle" fill="#6b7280">30 tabs</text></svg></div><figcaption>View artwork &#8599;</figcaption></figure></a>
+          </div>
         </div>
       </div></div></div>
+      <div class="is" style="border-left:3px solid var(--green)">
+        <div class="isl" style="padding-bottom:6px;color:var(--green)">Shelf Life &amp; Storage Conditions</div>
+        <div style="padding:8px 14px 4px;display:flex;align-items:center;gap:10px">
+          <span class="shelf-pill">
+            <span>&#128197;</span><span class="shelf-n">36</span><span style="font-size:.75rem;font-weight:600">months</span>
+          </span>
+          <span style="font-size:.8rem;color:var(--muted)">Shelf life of the medicinal product as packaged for sale</span>
+        </div>
+        <div style="font-size:9px;color:var(--faint);padding:2px 14px 8px">
+          Source: <code style="font-family:ui-monospace,'SF Mono',monospace;font-size:9px;background:var(--sf2);padding:1px 4px;border-radius:3px">PackagedProductDefinition.shelfLifeStorage.period</code>
+        </div>
+        <div class="storage-grid">
+          <div class="storage-item">
+            <span class="storage-icon">&#127777;</span>
+            <div class="storage-text"><div class="sl">Temperature</div><div class="sv">Store below 25°C</div><div class="sd">Do not freeze</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128167;</span>
+            <div class="storage-text"><div class="sl">Moisture</div><div class="sv">Keep dry</div><div class="sd">Protect from moisture</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#9728;</span>
+            <div class="storage-text"><div class="sl">Light</div><div class="sv">Protect from light</div><div class="sd">Keep in original packaging</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128100;</span>
+            <div class="storage-text"><div class="sl">Safety</div><div class="sv">Out of reach of children</div></div>
+          </div>
+        </div>
+        <div class="storage-src">
+          FHIR source: <code>PackagedProductDefinition.shelfLifeStorage</code> &rarr; type (<code>ShelfLifeType</code>) + storage condition (<code>specialPrecautionsForStorage</code>)
+        </div>
+      </div>
       <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
         <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
         <div class="mai"><div class="ml">Number</div><div class="mv mvm">MA-987654321</div></div>
@@ -438,6 +484,7 @@
     <div class="cscard ci"><div><div class="csn" style="color:var(--accent)">1</div><div class="csl">Indication</div></div><div class="csi">&#127919;</div></div>
     <div class="cscard cc"><div><div class="csn" style="color:var(--rose)">2</div><div class="csl">Contraindications</div></div><div class="csi">&#9940;</div></div>
     <div class="cscard cx"><div><div class="csn" style="color:var(--amber)">4</div><div class="csl">Interactions</div></div><div class="csi">&#9889;</div></div>
+    <div class="cscard cd"><div><div class="csn" style="color:var(--teal)">3</div><div class="csl">Dosage Regimens</div></div><div class="csi">&#128138;</div></div>
     <div class="cscard cu"><div><div class="csn" style="color:var(--purple)">12</div><div class="csl">Side Effects</div></div><div class="csi">&#128137;</div></div>
     <div class="cscard cw"><div><div class="csn" style="color:#ea580c">3</div><div class="csl">Warnings</div></div><div class="csi">&#9888;</div></div>
   </div>
@@ -498,6 +545,64 @@
       <div class="wbox"><span class="wicon">&#9650;</span><span>Patients with renal impairment (CrCl &lt;30 mL/min) require dose adjustment. Monitor renal function regularly.</span></div>
       <div class="wbox"><span class="wicon">&#9650;</span><span>Risk of hypotension on first dose, particularly in volume-depleted or sodium-depleted patients. Initiate at lowest dose.</span></div>
       <div class="wbox"><span class="wicon">&#9650;</span><span>Not recommended during pregnancy (2nd and 3rd trimester) due to risk of foetal toxicity.</span></div>
+    </div>
+  </div>
+  
+  <div class="cls" style="border-left:3px solid var(--teal)">
+    <div class="clsh">
+      <span class="clsicon">&#128138;</span>
+      <span class="clstitle">Dosage Regimen</span>
+      <span class="clscount">3</span><span class="chip ch-mk" style="margin-left:6px;font-size:9px">MedicationKnowledge</span>
+    </div>
+    <div class="clsb">
+      <input type="radio" name="drtabs" id="dr-adult"  class="dr-trd" checked>
+      <input type="radio" name="drtabs" id="dr-ped"    class="dr-trd">
+      <input type="radio" name="drtabs" id="dr-renal"  class="dr-trd">
+      <div class="dr-tabs">
+        <label class="dr-tb" for="dr-adult">Adults &amp; Adolescents (&ge;12 y)</label>
+        <label class="dr-tb" for="dr-ped">Children (6–11 y)</label>
+        <label class="dr-tb" for="dr-renal">Renal Impairment</label>
+      </div>
+      <div class="dr-panel dr-panel-adult">
+        <div class="dose-card">
+          <div class="dose-card-hdr"><span class="d-pop">Adults &amp; Adolescents (&ge;12 years / &ge;50 kg)</span><span class="dose-badge">Standard</span></div>
+          <div class="dose-body">
+            <div class="dose-row"><span class="dose-label">Single dose</span><span class="dose-value">500 mg – 1,000 mg</span></div>
+            <div class="dose-row"><span class="dose-label">Dose interval</span><span class="dose-value">Every 4–6 hours as needed</span></div>
+            <div class="dose-row"><span class="dose-label">Daily maximum</span><span class="dose-value">4,000 mg (4 g)</span></div>
+            <div class="dose-row"><span class="dose-label">Route</span><span class="dose-value">Oral</span></div>
+            <div class="dose-row"><span class="dose-label">Administration</span><span class="dose-value">With or without food; swallow whole with water</span></div>
+            <div class="timing-strip"><span class="timing-pill">&#128197; Morning dose</span><span class="timing-pill">&#127752; Midday dose</span><span class="timing-pill">&#127762; Afternoon dose</span><span class="timing-pill">&#127761; Evening dose</span><span class="timing-pill max">&#9888; Max 4 doses/day</span></div>
+          </div>
+        </div>
+        <div class="mk-src">FHIR source: <code>MedicationKnowledge/mk-wonderdrug-500mg</code> &rarr; <code>dosingGuideline[0].dosage[0]</code> (patientCharacteristic: age &ge;12y, body weight &ge;50kg)</div>
+      </div>
+      <div class="dr-panel dr-panel-ped">
+        <div class="dose-card">
+          <div class="dose-card-hdr"><span class="d-pop">Children (6–11 years / 21–50 kg)</span><span class="dose-badge" style="background:#fef9c3;border-color:#fde68a;color:#854d0e">Weight-based</span></div>
+          <div class="dose-body">
+            <div class="dose-row"><span class="dose-label">Single dose</span><span class="dose-value">10–15 mg/kg</span></div>
+            <div class="dose-row"><span class="dose-label">Maximum single dose</span><span class="dose-value">500 mg</span></div>
+            <div class="dose-row"><span class="dose-label">Dose interval</span><span class="dose-value">Every 4–6 hours as needed</span></div>
+            <div class="dose-row"><span class="dose-label">Daily maximum</span><span class="dose-value">60 mg/kg/day (max 2,000 mg)</span></div>
+            <div class="dose-row"><span class="dose-label">Route</span><span class="dose-value">Oral</span></div>
+          </div>
+        </div>
+        <div class="mk-src">FHIR source: <code>MedicationKnowledge/mk-wonderdrug-500mg</code> &rarr; <code>dosingGuideline[1].dosage[0]</code> (patientCharacteristic: age 6–11y)</div>
+      </div>
+      <div class="dr-panel dr-panel-renal">
+        <div class="renal-alert"><span class="ra-icon">&#9888;</span><span>Dose adjustment required in severe renal impairment (CrCl &lt;30 mL/min). Extend the dosing interval to at least every 8 hours. Maximum 3 doses in 24 hours.</span></div>
+        <div class="dose-card">
+          <div class="dose-card-hdr"><span class="d-pop">Renal Impairment — Severe (CrCl &lt;30 mL/min)</span><span class="dose-badge" style="background:#fee2e2;border-color:#fecaca;color:#b91c1c">Adjusted</span></div>
+          <div class="dose-body">
+            <div class="dose-row"><span class="dose-label">Single dose</span><span class="dose-value">500 mg</span></div>
+            <div class="dose-row"><span class="dose-label">Dose interval</span><span class="dose-value">Every 8 hours minimum</span></div>
+            <div class="dose-row"><span class="dose-label">Daily maximum</span><span class="dose-value">1,500 mg (3 doses)</span></div>
+            <div class="dose-row"><span class="dose-label">Monitoring</span><span class="dose-value">Monitor renal function regularly</span></div>
+          </div>
+        </div>
+        <div class="mk-src">FHIR source: <code>MedicationKnowledge/mk-wonderdrug-500mg</code> &rarr; <code>dosingGuideline[2].dosage[0]</code> (patientCharacteristic: GFR &lt;30 mL/min/1.73m²)</div>
+      </div>
     </div>
   </div>
 </div>

@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/emedicinal-product-info/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/emedicinal-product-info" defaultVersion="1.0.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/emedicinal-product-info" url="http://hl7.org/fhir/uv/emedicinal-product-info">
-<version code="current" url="http://build.fhir.org/ig/HL7/emedicinal-product-info"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/emedicinal-product-info/2023Jan" ciUrl="https://build.fhir.org/ig/HL7/emedicinal-product-info" defaultVersion="1.0.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/emedicinal-product-info" url="http://hl7.org/fhir/uv/emedicinal-product-info">
+<version code="current" url="https://build.fhir.org/ig/HL7/emedicinal-product-info"/>
 <version code="1.0.0" url="http://hl7.org/fhir/uv/emedicinal-product-info/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/emedicinal-product-info/2023Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="List/ListEpiASEANExample" key="List-ListEpiASEANExample" name="ASEAN Cross-Jurisdictional ePI Tracking List Example"/>
 <artifact deprecated="true" id="ValueSet/additionalMonitoringIndicator" key="ValueSet-additionalMonitoringIndicator" name="Additional Monitoring Indicator"/>
 <artifact id="ValueSet/administrableDoseForm" key="ValueSet-AdministrableDoseForm" name="Administrable Pharmaceutical Dose Form"/>
 <artifact deprecated="true" id="AdministrableProductDefinition/373b9bf3-1fae-47a1-a7cd-230106def069" key="AdministrableProductDefinition-373b9bf3-1fae-47a1-a7cd-230106def069" name="Administrable Product for DrugX 75 mg tablets"/>
 <artifact id="StructureDefinition/AdministrableProductDefinition-uv-epi" key="StructureDefinition-AdministrableProductDefinition-uv-epi" name="AdministrableProductDefinition (ePI)"/>
 <artifact id="AdministrableProductDefinition/apd-epi-type2-example-paracetamol" key="AdministrableProductDefinition-apd-epi-type2-example-paracetamol" name="AdministrableProductDefinition - WonderDrug 500 mg"/>
+<artifact id="AdministrableProductDefinition/apd-epi-type2-example-blister-carton" key="AdministrableProductDefinition-apd-epi-type2-example-blister-carton" name="AdministrableProductDefinition - WonderDrug 500 mg Carton"/>
 <artifact deprecated="true" id="ValueSet/admProductIdSystems" key="ValueSet-admProductIdSystems" name="AdministrableProductDefinition identifier systems"/>
 <artifact id="StructureDefinition/ext-epi-authorisation-type" key="StructureDefinition-ext-epi-authorisation-type" name="Authorisation Type"/>
 <artifact deprecated="true" id="ValueSet/authorizationStatus" key="ValueSet-authorizationStatus" name="Authorization Status"/>
 <artifact id="CodeSystem/benefit-and-risk-relationship" key="CodeSystem-benefit-and-risk-relationship" name="Benefit and Risk Relationship"/>
-<artifact id="StructureDefinition/binary-epi" key="StructureDefinition-binary-epi" name="Binary - ePI"/>
 <artifact deprecated="true" id="StructureDefinition/Bundle-uv-epi" key="StructureDefinition-Bundle-uv-epi" name="Bundle - ePI"/>
 <artifact id="StructureDefinition/bundle-epi-type1" key="StructureDefinition-bundle-epi-type1" name="Bundle - ePI Type 1"/>
 <artifact id="Bundle/bundle-epi-type1-example-paracetamol" key="Bundle-bundle-epi-type1-example-paracetamol" name="Bundle - ePI Type 1 Paracetamol Example"/>
 <artifact id="StructureDefinition/bundle-epi-type2" key="StructureDefinition-bundle-epi-type2" name="Bundle - ePI Type 2"/>
 <artifact id="Bundle/bundle-epi-type2-example-paracetamol" key="Bundle-bundle-epi-type2-example-paracetamol" name="Bundle - ePI Type 2 Paracetamol Example"/>
+<artifact id="Bundle/bundle-epi-type2-example-blister-carton" key="Bundle-bundle-epi-type2-example-blister-carton" name="Bundle - ePI Type 2 WonderDrug Blister in Carton Example"/>
 <artifact id="StructureDefinition/bundle-epi-type3" key="StructureDefinition-bundle-epi-type3" name="Bundle - ePI Type 3"/>
 <artifact id="Bundle/bundle-epi-type3-example-wonderdrug" key="Bundle-bundle-epi-type3-example-wonderdrug" name="Bundle - ePI Type 3 WonderDrug Example"/>
 <artifact deprecated="true" id="Bundle/bundlepackageleaflet75" key="Bundle-bundlepackageleaflet75" name="Bundle Vulcan DrugX FHIR Package Insert"/>
@@ -47,7 +49,8 @@
 <artifact deprecated="true" id="StructureDefinition/Composition-uv-epi" key="StructureDefinition-Composition-uv-epi" name="Composition (ePI)"/>
 <artifact id="Composition/composition-paracetamol-t1" key="Composition-composition-paracetamol-t1" name="Composition - Paracetamol 500 mg tablets"/>
 <artifact id="Composition/composition-epi-type2-example-paracetamol" key="Composition-composition-epi-type2-example-paracetamol" name="Composition - Type 2 Paracetamol"/>
-<artifact id="StructureDefinition/composition-epi-type1" key="StructureDefinition-composition-epi-type1" name="Composition - ePI Type 1-3"/>
+<artifact id="Composition/composition-epi-type2-example-blister-carton" key="Composition-composition-epi-type2-example-blister-carton" name="Composition - Type 2 WonderDrug Blister in Carton"/>
+<artifact id="StructureDefinition/composition-epi-type1" key="StructureDefinition-composition-epi-type1" name="Composition - ePI Type 1 to 4"/>
 <artifact id="Composition/composition-epi-type3-example-wonderdrug" key="Composition-composition-epi-type3-example-wonderdrug" name="Composition - ePI Type 3 WonderDrug SMPC"/>
 <artifact deprecated="true" id="Composition/e63f72b2-993f-48b1-b7cb-539b1ed71571" key="Composition-e63f72b2-993f-48b1-b7cb-539b1ed71571" name="Composition for cava 75 mg Package Leaflet"/>
 <artifact deprecated="true" id="ValueSet/containerType" key="ValueSet-containerType" name="Container Type"/>
@@ -69,18 +72,23 @@
 <artifact id="Ingredient/ingredient-epi-type2-example-paracetamol-excipient-2" key="Ingredient-ingredient-epi-type2-example-paracetamol-excipient-2" name="Ingredient - Maize starch"/>
 <artifact deprecated="true" id="Ingredient/1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" key="Ingredient-1cdfb0bc-55f0-43ff-b750-8f3a0d9970bd" name="Ingredient - Microcrystalline cellulose"/>
 <artifact id="Ingredient/ingredient-epi-type2-example-paracetamol-active" key="Ingredient-ingredient-epi-type2-example-paracetamol-active" name="Ingredient - Paracetamol"/>
+<artifact id="Ingredient/ingredient-epi-type2-example-blister-carton-active" key="Ingredient-ingredient-epi-type2-example-blister-carton-active" name="Ingredient - Paracetamol 500mg"/>
 <artifact id="Ingredient/ingredient-epi-type2-example-paracetamol-excipient-1" key="Ingredient-ingredient-epi-type2-example-paracetamol-excipient-1" name="Ingredient - Pregelatinised starch"/>
 <artifact deprecated="true" id="Ingredient/09c13040-8fd5-4818-972d-f01d4ee169b6" key="Ingredient-09c13040-8fd5-4818-972d-f01d4ee169b6" name="Ingredient - Silicon dioxide"/>
 <artifact deprecated="true" id="Ingredient/a88891dc-7e9e-4d84-b462-95e53de3b6a6" key="Ingredient-a88891dc-7e9e-4d84-b462-95e53de3b6a6" name="Ingredient - Titanium Dioxide"/>
 <artifact deprecated="true" id="Ingredient/745c01bc-936e-45ca-9880-57e97608f43e" key="Ingredient-745c01bc-936e-45ca-9880-57e97608f43e" name="Ingredient - acetaminophen"/>
 <artifact id="ValueSet/ingredientRole" key="ValueSet-ingredientRole" name="Ingredient Role"/>
 <artifact deprecated="true" id="ValueSet/roleClassIngredientEntity" key="ValueSet-roleClassIngredientEntity" name="Ingredient Role; e.g., inactive, active base, active moiety"/>
+<artifact id="StructureDefinition/ext-epi-jurisdiction" key="StructureDefinition-ext-epi-jurisdiction" name="Jurisdiction"/>
+<artifact id="StructureDefinition/ext-epi-entry-language" key="StructureDefinition-ext-epi-entry-language" name="Language"/>
 <artifact deprecated="true" id="ValueSet/legalStatusOfSupply" key="ValueSet-legalStatusOfSupply" name="Legal Status for the Supply"/>
 <artifact id="StructureDefinition/List-uv-epi" key="StructureDefinition-List-uv-epi" name="List (ePI)"/>
+<artifact id="List/ListEpiExample" key="List-ListEpiExample" name="List Example"/>
 <artifact id="ValueSet/manufacturedDoseForm" key="ValueSet-manufacturedDoseForm" name="Manufactured Dose Form"/>
 <artifact deprecated="true" id="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468" key="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468" name="Manufactured Item - 75 mg tablet"/>
 <artifact id="StructureDefinition/ManufacturedItemDefinition-uv-epi" key="StructureDefinition-ManufacturedItemDefinition-uv-epi" name="ManufacturedItemDefinition (ePI)"/>
 <artifact id="ManufacturedItemDefinition/mid-epi-type2-example-paracetamol" key="ManufacturedItemDefinition-mid-epi-type2-example-paracetamol" name="ManufacturedItemDefinition - WonderDrug 500 mg"/>
+<artifact id="ManufacturedItemDefinition/mid-epi-type2-example-blister-carton" key="ManufacturedItemDefinition-mid-epi-type2-example-blister-carton" name="ManufacturedItemDefinition - WonderDrug 500 mg Carton"/>
 <artifact deprecated="true" id="ValueSet/manufacturedItemIdSystems" key="ValueSet-manufacturedItemIdSystems" name="ManufacturedItemDefinition identifier systems"/>
 <artifact deprecated="true" id="ValueSet/marketingStatus" key="ValueSet-marketingStatus" name="Marketing Status"/>
 <artifact id="ValueSet/meddra" key="ValueSet-meddra" name="MedDRA Terms for clinical diseases and symptoms"/>
@@ -92,6 +100,7 @@
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg" key="MedicinalProductDefinition-mpd-epi-type2-example-paracetamol-100mg" name="MedicinalProductDefinition - WonderDrug 100 mg tablets"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg" key="MedicinalProductDefinition-mpd-epi-type2-example-paracetamol-200mg" name="MedicinalProductDefinition - WonderDrug 200 mg tablets"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-paracetamol" key="MedicinalProductDefinition-mpd-epi-type2-example-paracetamol" name="MedicinalProductDefinition - WonderDrug 500 mg tablets Type 2"/>
+<artifact id="MedicinalProductDefinition/mpd-epi-type2-example-blister-carton" key="MedicinalProductDefinition-mpd-epi-type2-example-blister-carton" name="MedicinalProductDefinition - WonderDrug 500 mg tablets Type 2 Carton"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug" key="MedicinalProductDefinition-mpd-epi-type3-example-wonderdrug" name="MedicinalProductDefinition - WonderDrug 500 mg tablets Type 3"/>
 <artifact deprecated="true" id="ValueSet/VsMedProductIdSystems" key="ValueSet-VsMedProductIdSystems" name="MedicinalProductDefinition identifier systems"/>
 <artifact id="StructureDefinition/ext-epi-medicine-domain" key="StructureDefinition-ext-epi-medicine-domain" name="Medicine Domain"/>
@@ -108,9 +117,11 @@
 <artifact deprecated="true" id="ValueSet/packageMaterial" key="ValueSet-packageMaterial" name="Package Material"/>
 <artifact id="StructureDefinition/PackagedProductDefinition-uv-epi" key="StructureDefinition-PackagedProductDefinition-uv-epi" name="PackagedProductDefinition (ePI)"/>
 <artifact id="PackagedProductDefinition/ppd-epi-type2-example-paracetamol" key="PackagedProductDefinition-ppd-epi-type2-example-paracetamol" name="PackagedProductDefinition - WonderDrug 500 mg"/>
+<artifact id="PackagedProductDefinition/ppd-epi-type2-example-blister-carton" key="PackagedProductDefinition-ppd-epi-type2-example-blister-carton" name="PackagedProductDefinition - WonderDrug 500 mg Carton"/>
 <artifact deprecated="true" id="ValueSet/packagedProductIdSystems" key="ValueSet-packagedProductIdSystems" name="PackagedProductDefinition identifier systems"/>
 <artifact deprecated="true" id="PackagedProductDefinition/eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" key="PackagedProductDefinition-eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" name="Packaging - Blister"/>
 <artifact deprecated="true" id="ValueSet/partType" key="ValueSet-partType" name="Part Type"/>
+<artifact id="ValueSet/patient-characteristic-type" key="ValueSet-patient-characteristic-type" name="Patient Characteristic Type (ePI)"/>
 <artifact deprecated="true" id="ValueSet/pediatricUseIndicator" key="ValueSet-pediatricUseIndicator" name="Pediatric Use Indicator"/>
 <artifact deprecated="true" id="ValueSet/pharmaceuticalDoseFormPart" key="ValueSet-pharmaceuticalDoseFormPart" name="Pharmaceutical Dose Form of the medicinal product"/>
 <artifact id="StructureDefinition/ext-epi-procedure-number" key="StructureDefinition-ext-epi-procedure-number" name="Procedure Number"/>
@@ -123,7 +134,9 @@
 <artifact deprecated="true" id="RegulatedAuthorization/297e405a-b6f9-4273-bc01-ae031efe47f8" key="RegulatedAuthorization-297e405a-b6f9-4273-bc01-ae031efe47f8" name="Regulated Authorization for the 75 mg tablet"/>
 <artifact id="StructureDefinition/RegulatedAuthorization-uv-epi" key="StructureDefinition-RegulatedAuthorization-uv-epi" name="RegulatedAuthorization (ePI)"/>
 <artifact id="RegulatedAuthorization/ra-epi-type2-example-paracetamol" key="RegulatedAuthorization-ra-epi-type2-example-paracetamol" name="RegulatedAuthorization - WonderDrug 500 mg"/>
+<artifact id="RegulatedAuthorization/ra-epi-type2-example-blister-carton" key="RegulatedAuthorization-ra-epi-type2-example-blister-carton" name="RegulatedAuthorization - WonderDrug 500 mg Carton"/>
 <artifact deprecated="true" id="ValueSet/regulatoryActivityType" key="ValueSet-regulatoryActivityType" name="Regulatory Activity Type"/>
+<artifact id="StructureDefinition/ext-epi-regulatory-agency" key="StructureDefinition-ext-epi-regulatory-agency" name="Regulatory Agency"/>
 <artifact id="ValueSet/routeOfAdministration" key="ValueSet-routeOfAdministration" name="Route Of Administration"/>
 <artifact deprecated="true" id="ValueSet/propertyScore" key="ValueSet-propertyScore" name="Score on the product"/>
 <artifact deprecated="true" id="ValueSet/sectionCode" key="ValueSet-sectionCode" name="Section Codes"/>
@@ -144,10 +157,15 @@
 <artifact id="ValueSet/unitofPresentation" key="ValueSet-unitofPresentation" name="Units of Presentation"/>
 <artifact id="StructureDefinition/ext-epi-version-number" key="StructureDefinition-ext-epi-version-number" name="Version Number"/>
 <artifact deprecated="true" id="ValueSet/atcClassification" key="ValueSet-atcClassification" name="WHO ATC"/>
+<artifact id="StructureDefinition/binary-epi" key="StructureDefinition-binary-epi" name="binary (ePI)"/>
 <artifact id="CodeSystem/epi-ig" key="CodeSystem-gravitate" name="eMedicinal Product Information Code System"/>
 <artifact deprecated="true" id="Bundle/bundlepackageleaflet75type1" key="Bundle-bundlepackageleaflet75type1" name="ePI Bundle Type 1 - DrugX Package Insert"/>
 <artifact deprecated="true" id="Bundle/bundlepackageleaflet75type2" key="Bundle-bundlepackageleaflet75type2" name="ePI Bundle Type 2 - DrugX Package Insert"/>
 <artifact deprecated="true" id="Bundle/bundlepackageleaflet75type3" key="Bundle-bundlepackageleaflet75type3" name="ePI Bundle Type 3 - DrugX Package Insert"/>
+<artifact id="CodeSystem/epi-list-entry-flag-cs" key="CodeSystem-epi-list-entry-flag-cs" name="ePI List Entry Flag CodeSystem"/>
+<artifact id="ValueSet/epi-list-entry-flag-vs" key="ValueSet-epi-list-entry-flag-vs" name="ePI List Entry Flag ValueSet"/>
+<artifact id="CodeSystem/epi-list-type-cs" key="CodeSystem-epi-list-type-cs" name="ePI List Type CodeSystem"/>
+<artifact id="ValueSet/epi-list-type-vs" key="ValueSet-epi-list-type-vs" name="ePI List Type ValueSet"/>
 <artifact deprecated="true" id="ValueSet/epiType" key="ValueSet-epiType" name="ePI document types"/>
 <artifact deprecated="true" id="CapabilityStatement/epi-server" key="CapabilityStatement-epi-server" name="epi-server"/>
 <artifact deprecated="true" id="ClinicalUseDefinition/f7d8f2a0-27eb-4e37-8036-58f3d5aa6537" key="ClinicalUseDefinition-f7d8f2a0-27eb-4e37-8036-58f3d5aa6537" name="interactiongrapefruitjuice"/>
@@ -158,6 +176,7 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page deprecated="true" key="background" name="Background"/>
 <page deprecated="true" key="best-practice" name="Best Practice"/>
+<page key="build-list" name="Build List of ePIs"/>
 <page key="build-epi1" name="Build ePI Type 1"/>
 <page key="build-epi2" name="Build ePI Type 2"/>
 <page key="build-epi3" name="Build ePI Type 3"/>

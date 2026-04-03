@@ -1,383 +1,564 @@
+/* ============================================================
+   epi-styles.css
+   Vulcan eMedicinal Product Information IG — Shared Stylesheet
+   
+   Purpose : Single source of truth applied to ALL ePI HTML showcases.
+             Each HTML file links this sheet and adds only a tiny
+             page-local <style> block for its own radio-input tab IDs.
+   
+   Covers  :
+     1.  Design tokens (CSS custom properties)
+     2.  Base reset & typography
+     3.  Page chrome  (breadcrumb, hero, notice bars, chips)
+     4.  Tab navigation  (CSS-only radio + label pattern)
+     5.  Shared document panel cards  (.sc, .dg, .di, .cc, .ns)
+     6.  Organisation cards  (.og, .oc, .or)
+     7.  Product Details panel
+         7a. Product accordion  (.pa, .pah, .pc)
+         7b. Inner section cards  (.is, .ifs, .inf)
+         7c. Excipients, physical appearance, tablet figures
+         7d. Packaging  (.pkgs, .pkg, .pka)
+         7e. Shelf Life & Storage Conditions   ← NEW
+         7f. Marketing Authorization grid  (.mag)
+     8.  Artwork lightbox  (.artwork-modal)
+     9.  Clinical Details panel
+         9a. Summary count cards  (.cscard)  ← icon alignment fix
+         9b. Section containers  (.cls / .clsh)
+         9c. Clinical data table  (.ctbl)
+         9d. Severity badges
+         9e. Contraindication rows  (.cxrow)
+         9f. SOC adverse-event groups  (.soc)
+         9g. Warning boxes  (.wbox)
+         9h. Dosage Regimen / MedicationKnowledge  ← NEW
+    10.  Type 1–specific (type1-note)
+    11.  Mockup / annotation helpers  (change-tag, compare-wrap)
+    12.  Responsive overrides
+   ============================================================ */
+
+
+/* ============================================================
+   1. DESIGN TOKENS
+   ============================================================ */
 :root {
-    --background-color: #f5f5f7;
-    --card-background: #ffffff;
-    --card-inner-bg: #fbfbfd;
-    --text-color: #1d1d1f;
-    --secondary-text-color: #86868b;
-    --accent-color: #0071e3;
-    --sidebar-width: 260px;
-    --card-border-radius: 18px;
-    --card-inner-radius: 14px;
-    --section-spacing: 24px;
-    --sidebar-bg: #ffffff;
+    /* Core palette */
+    --bg:      #fff;
+    --surface: #fff;
+    --sf2:     #f9fafb;
+    --bd:      #e5e7eb;
+    --bd2:     #d1d5db;
+    --accent:  #2563eb;
+    --green:   #16a34a;
+    --rose:    #dc2626;
+    --amber:   #d97706;
+    --purple:  #7c3aed;
+    --teal:    #0891b2;
+    --text:    #111827;
+    --muted:   #6b7280;
+    --faint:   #9ca3af;
+
+    /* Shape & motion */
+    --r:  8px;
+    --rl: 12px;
+    --tr: 0.15s ease;
 }
 
+
+/* ============================================================
+   2. BASE RESET & TYPOGRAPHY
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.47059;
-    font-weight: 400;
-    letter-spacing: -0.022em;
-    margin: 0;
-    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+                 Arial, sans-serif, "Apple Color Emoji";
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Layout Engine */
-.layout-container {
+
+/* ============================================================
+   3. PAGE CHROME
+   ============================================================ */
+
+/* Breadcrumb bar */
+.crumb {
+    background: var(--sf2);
+    border-bottom: 1px solid var(--bd);
+    padding: 9px 28px;
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    gap: 32px;
-}
-
-/* Sidebar Navigation */
-.sidebar {
-    width: var(--sidebar-width);
-    flex-shrink: 0;
-    position: sticky;
-    top: 40px;
-    height: fit-content;
-    background-color: var(--sidebar-bg);
-    border-radius: var(--card-border-radius);
-    padding: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.sidebar h2 {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: var(--secondary-text-color);
-    letter-spacing: 0.1em;
-    margin-bottom: 16px;
-    margin-top: 0;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-item {
-    margin-bottom: 8px;
-}
-
-.nav-link {
-    display: block;
-    padding: 10px 14px;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 10px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.nav-link:hover {
-    background-color: #f2f2f7;
-    color: var(--accent-color);
-}
-
-.nav-link.active {
-    background-color: var(--accent-color);
-    color: #ffffff;
-}
-
-/* Main Content Area */
-.main-content {
-    flex-grow: 1;
-    min-width: 0;
-}
-
-/* Base Card System */
-.card {
-    background-color: var(--card-background);
-    border-radius: var(--card-border-radius);
-    padding: 32px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    margin-bottom: var(--section-spacing);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    /* For collapsible cards */
-}
-
-/* Collapsible Card Header Styling */
-details.card {
-    padding: 0;
-    /* Let summary and content handle padding */
-}
-
-details.card>summary {
-    padding: 32px;
-    cursor: pointer;
-    list-style: none;
-    outline: none;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    transition: background-color 0.2s;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--muted);
 }
-
-details.card>summary:hover {
-    background-color: #fbfbfd;
-}
-
-details.card>summary::-webkit-details-marker {
-    display: none;
-}
-
-details.card>summary::after {
-    content: '+';
-    font-size: 28px;
-    font-weight: 300;
-    color: var(--secondary-text-color);
-    transition: transform 0.3s;
-}
-
-details.card[open]>summary::after {
-    transform: rotate(45deg);
-}
-
-.card h2.section-title,
-details.card>summary h2.section-title {
-    font-size: 28px;
-    margin: 0;
-    font-weight: 600;
-}
-
-/* Card Content Container (for padding when open) */
-details.card>.card-content {
-    padding: 0 32px 32px 32px;
-}
-
-/* Document Card (Header/Metadata) */
-.card-document {
-    background: linear-gradient(135deg, #ffffff 0%, #f9f9fb 100%);
-}
-
-.card-document h1 {
-    font-size: 36px;
-    margin: 0 0 8px 0;
+.crumb .ig  { font-weight: 600; color: var(--text); }
+.crumb .sep { color: var(--faint); }
+.crumb .badge {
+    margin-left: auto;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: var(--accent);
     font-weight: 700;
-}
-
-.metadata-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 16px;
-    margin-top: 24px;
-    padding-top: 24px;
-    border-top: 1px solid #f2f2f7;
-}
-
-.metadata-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.metadata-label {
-    font-size: 12px;
-    color: var(--secondary-text-color);
+    font-size: 10px;
     text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 4px;
+    letter-spacing: .07em;
+    padding: 3px 10px;
+    border-radius: 99px;
+}
+/* Amber variant used by mockup */
+.crumb .badge-amber {
+    background: #fef3c7;
+    border-color: #fde68a;
+    color: #92400e;
 }
 
-.metadata-value {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-/* Composition Card (Narrative) */
-.card-composition .narrative-content {
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-.inner-card,
-.leaflet-card {
-    background-color: var(--card-inner-bg);
-    border-radius: var(--card-inner-radius);
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #f2f2f7;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Color Accents for Inner Cards */
-.inner-card::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 6px;
-    opacity: 0.8;
-}
-
-.card-details::before {
-    background-color: var(--accent-color);
-}
-
-.card-auth::before {
-    background-color: #34c759;
-}
-
-.card-pack::before {
-    background-color: #af52de;
-}
-
-.card-phys::before {
-    background-color: #ff9500;
-}
-
-/* Clinical Details Card */
-.card-clinical {
-    border-left: 6px solid #30b0c7;
-    /* Teal for clinical knowledge */
-}
-
-/* Product Details Card (Accordion Wrapper) */
-.card-products {
-    background-color: #f5f5f7;
-    padding: 24px;
-}
-
-/* Accordion Sub-cards (Used in Product and Clinical Sections) */
-.accordion-item {
-    background-color: #ffffff;
-    border-radius: 14px;
-    margin-bottom: 16px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.accordion-summary {
-    padding: 20px 24px;
-    cursor: pointer;
-    list-style: none;
+/* Notice / alert bar */
+.notice-bar {
+    background: #fffbeb;
+    border-bottom: 1px solid #fde68a;
+    padding: 10px 28px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-weight: 600;
-    font-size: 18px;
-    background-color: #ffffff;
-    transition: background-color 0.2s;
-}
-
-.accordion-summary:hover {
-    background-color: #f9f9fb;
-}
-
-.accordion-summary::-webkit-details-marker {
-    display: none;
-}
-
-.accordion-summary::after {
-    content: '+';
-    font-size: 24px;
-    font-weight: 300;
-    color: var(--secondary-text-color);
-    transition: transform 0.3s;
-}
-
-.accordion-item[open] .accordion-summary::after {
-    transform: rotate(45deg);
-}
-
-.accordion-content {
-    padding: 24px;
-    border-top: 1px solid #f2f2f7;
-}
-
-.item-status {
+    gap: 10px;
     font-size: 12px;
-    background: rgba(52, 199, 89, 0.1);
-    color: #248a3d;
-    padding: 4px 10px;
-    border-radius: 20px;
-    margin-left: 12px;
+    color: #78350f;
 }
+.notice-bar strong { font-weight: 700; }
+.notice-icon { font-size: 1rem; flex-shrink: 0; }
 
-/* Grid for Clinical Details inside product content */
-.clinical-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* Hero header */
+.hero {
+    border-bottom: 1px solid var(--bd);
+    padding: 44px 32px 32px;
+    text-align: center;
 }
+.hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    margin-bottom: 6px;
+}
+.hero .sub { font-size: .97rem; color: var(--muted); margin-bottom: 20px; }
 
-/* Utilities */
-.badge {
+/* Chip / pill badges */
+.chips { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.chip  { display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 99px; font-size: 11px; font-weight: 600; }
+
+.ch-g  { background: #dcfce7; border: 1px solid #bbf7d0; color: #15803d; }
+.ch-b  { background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; }
+.ch-gr { background: var(--sf2); border: 1px solid var(--bd); color: var(--muted); }
+.ch-dk { background: #111827; border: 1px solid #111827; color: #fff; }
+.ch-t  { background: #f0fdfa; border: 1px solid #99f6e4; color: #0f766e; }
+.ch-p  { background: #faf5ff; border: 1px solid #e9d5ff; color: #7e22ce; }
+.ch-am { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+.ch-mk { background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; }
+
+
+/* ============================================================
+   4. TAB NAVIGATION  (CSS-only radio button pattern)
+   Every HTML file supplies its own checked ~ .tb / panel rules.
+   ============================================================ */
+.trd { display: none; }
+
+.tabnav { border-bottom: 1px solid var(--bd); }
+.tabnav-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+}
+.tb {
     display: inline-block;
-    padding: 6px 14px;
-    border-radius: 20px;
-    background-color: var(--text-color);
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.pill {
-    background-color: #e8e8ed;
-    color: var(--text-color);
-    padding: 6px 16px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 600;
-    display: inline-block;
+    padding: 13px 20px;
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--muted);
+    background: none;
     border: none;
+    border-bottom: 2px solid transparent;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: color var(--tr), border-color var(--tr);
+    white-space: nowrap;
+}
+.tb:hover { color: var(--text); }
+
+/* Panels — hidden by default; each page reveals via :checked ~ */
+.panel {
+    display: none;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 28px 24px 80px;
 }
 
-.pill:hover {
-    background-color: #d2d2d7;
-}
 
-/* Tablet visual remains */
-.tablet-visual {
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-    border: 2px solid #e5e5e5;
-    border-radius: 50%;
-    margin: 0 auto 12px;
+/* ============================================================
+   5. SHARED DOCUMENT PANEL CARDS
+   Used in Document tab (all types) and Type 1 Document panel.
+   ============================================================ */
+
+/* Section card + colour accents */
+.sc { background: var(--surface); border: 1px solid var(--bd); border-radius: var(--r); margin-bottom: 14px; overflow: hidden; }
+.sc.ab  { border-left: 3px solid var(--accent); }
+.sc.at  { border-left: 3px solid var(--teal);   }
+.sc.ap  { border-left: 3px solid var(--purple);  }
+.sc.ag  { border-left: 3px solid var(--green);   }
+.sc.aam { border-left: 3px solid var(--amber);   }
+
+.sc-lbl  { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--faint); padding: 12px 18px 4px; }
+.sc-body { padding: 10px 18px 16px; }
+
+/* Data grids */
+.dg  { display: grid; gap: 14px; }
+.dg4 { grid-template-columns: repeat(4, 1fr); }
+.dg3 { grid-template-columns: repeat(3, 1fr); }
+.dg2 { grid-template-columns: repeat(2, 1fr); }
+
+.di label { display: block; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin-bottom: 3px; }
+.di .v    { font-size: .855rem; font-weight: 600; color: var(--text); }
+.di .vm   { font-family: ui-monospace, "SF Mono", monospace; font-size: .76rem; color: var(--teal); }
+
+/* Count chips row (contained resources) */
+.cc-row { display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 18px 16px; }
+.cc {
+    display: flex; flex-direction: column; align-items: center;
+    border: 1px solid var(--bd); border-radius: var(--r);
+    padding: 12px 14px; min-width: 108px;
+}
+.cc .n { font-size: 1.5rem; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+.cc .l { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); text-align: center; }
+
+/* Narrative sections (Composition tab) */
+.ns { background: var(--surface); border: 1px solid var(--bd); border-left: 3px solid var(--accent); border-radius: var(--r); padding: 16px 18px; margin-bottom: 10px; }
+.ns h3 { font-size: .935rem; font-weight: 600; margin-bottom: 6px; }
+.ns p  { font-size: .855rem; color: var(--muted); margin-bottom: 6px; line-height: 1.7; }
+.ns p:last-child { margin-bottom: 0; }
+.ns ul { padding-left: 18px; font-size: .855rem; color: var(--muted); }
+
+/* Type 1–specific info banner */
+.type1-note {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: var(--r);
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: .82rem;
+    color: #92400e;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+    gap: 10px;
 }
+.type1-note .icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
 
-.data-row {
+
+/* ============================================================
+   6. ORGANISATION CARDS
+   ============================================================ */
+.og  { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 10px; }
+.oc  { background: var(--surface); border: 1px solid var(--bd); border-radius: var(--r); overflow: hidden; }
+.och { padding: 12px 18px 8px; border-bottom: 1px solid var(--bd); }
+.och .role { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; }
+.och .name { font-size: 1.05rem; font-weight: 700; }
+.ocb { padding: 10px 18px; }
+.or  { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid var(--bd); font-size: .81rem; }
+.or:last-child { border-bottom: none; }
+.or .ol  { color: var(--muted); }
+.or .ov  { font-weight: 500; text-align: right; }
+.or .ovm { font-family: ui-monospace, "SF Mono", monospace; font-size: .74rem; color: var(--teal); }
+.onote   { font-size: 11px; color: var(--faint); font-style: italic; margin-top: 6px; }
+
+
+/* ============================================================
+   7. PRODUCT DETAILS PANEL
+   ============================================================ */
+
+/* 7a. Product accordion */
+.ps-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; font-size: .84rem; color: var(--muted); }
+.pf     { border: 1px solid var(--bd); border-radius: var(--r); padding: 5px 12px; font-size: .81rem; color: var(--text); outline: none; }
+
+.pa  { margin-bottom: 10px; border: 1px solid var(--bd); border-left: 3px solid var(--accent); border-radius: var(--r); overflow: hidden; }
+.pah {
+    display: flex; align-items: center; gap: 10px;
+    padding: 13px 16px;
+    cursor: pointer; list-style: none;
+    background: var(--surface);
+    user-select: none;
+}
+.pah::-webkit-details-marker, .pah::marker { display: none; }
+details[open] > .pah           { border-bottom: 1px solid var(--bd); }
+details[open] > .pah .pchev   { transform: rotate(180deg); }
+
+.pnum    { width: 22px; height: 22px; border-radius: 50%; background: var(--teal); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; }
+.pname   { font-size: .88rem; font-weight: 600; }
+.psub    { font-size: .78rem; color: var(--muted); margin-left: 2px; }
+.pbadges { display: flex; gap: 6px; margin-left: auto; align-items: center; }
+.pchev   { font-size: 11px; color: var(--faint); margin-left: 6px; transition: transform var(--tr); }
+
+.pc { padding: 12px 16px; background: var(--sf2); display: flex; flex-direction: column; gap: 10px; }
+
+/* 7b. Inner section cards */
+.is  { background: var(--surface); border: 1px solid var(--bd); border-radius: var(--r); overflow: hidden; }
+.isl { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--faint); padding: 10px 14px 2px; }
+.isb { padding: 6px 14px 12px; }
+
+/* 7c. Inline field strip */
+.ifs { display: flex; flex-wrap: wrap; }
+.inf { flex: 1; min-width: 150px; padding: 8px 12px; border-right: 1px solid var(--bd); }
+.inf:last-child { border-right: none; }
+.inf .il { font-size: .81rem; color: var(--muted); }
+.inf .il::after { content: ': '; }
+.inf .iv { font-size: .875rem; font-weight: 700; color: var(--text); }
+
+/* Excipients grid */
+.ec { display: grid; grid-template-columns: 1fr 1fr; }
+.ei { font-size: .81rem; color: var(--muted); padding: 5px 0; border-bottom: 1px solid var(--bd); }
+.ei:nth-last-child(-n+2) { border-bottom: none; }
+
+/* Physical appearance */
+.ap-in   { display: flex; align-items: flex-start; gap: 20px; }
+.ap-data { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; }
+.apf     { font-size: .81rem; padding: 4px 0; }
+.apf .al { color: var(--muted); }
+.apf .al::after { content: ': '; }
+.apf .av { font-weight: 700; color: var(--text); }
+
+/* Tablet figures */
+.tab-svgs { display: flex; gap: 12px; align-items: center; flex-shrink: 0; }
+.tab-fig  { text-align: center; }
+.tab-fig figcaption { font-size: 9px; color: var(--faint); text-transform: uppercase; letter-spacing: .08em; margin-top: 3px; }
+
+/* 7d. Packaging */
+.pkgs { display: flex; gap: 10px; flex-wrap: wrap; flex-direction: column; }
+.pkg  { flex: 1; min-width: 190px; background: var(--surface); border: 1px solid var(--bd); border-radius: var(--r); padding: 12px; display: block; }
+.pkg-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.pki .pn { font-size: .83rem; font-weight: 600; margin-bottom: 2px; }
+.pki .pt { font-size: .74rem; color: var(--muted); margin-bottom: 7px; }
+.pkt     { display: flex; gap: 5px; flex-wrap: wrap; }
+.pka     { flex-shrink: 0; text-align: center; }
+.pka-box {
+    height: 50px;
+    border: 1px dashed var(--bd2);
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--sf2);
+    cursor: pointer;
+    transition: border-color var(--tr), box-shadow var(--tr);
+    padding: 0 10px;
+}
+.pka-box:hover { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(37,99,235,.1); }
+a.pka-link     { text-decoration: none; color: inherit; }
+.pka figcaption { font-size: 9px; color: var(--accent); margin-top: 2px; font-weight: 500; }
+
+/* 7e. Shelf Life & Storage Conditions */
+.shelf-pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46;
+    font-size: .8rem; font-weight: 700;
+    padding: 3px 10px; border-radius: 99px;
+}
+.shelf-pill .shelf-n { font-size: 1.05rem; font-weight: 800; }
+
+.storage-grid  { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.storage-item  { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--bd); border-right: 1px solid var(--bd); }
+.storage-item:nth-child(even)      { border-right: none; }
+.storage-item:nth-last-child(-n+2) { border-bottom: none; }
+.storage-icon  { font-size: 1.15rem; flex-shrink: 0; margin-top: 1px; line-height: 1; }
+.storage-text .sl { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin-bottom: 1px; }
+.storage-text .sv { font-size: .855rem; font-weight: 600; color: var(--text); }
+.storage-text .sd { font-size: .77rem; color: var(--muted); margin-top: 1px; }
+.storage-src  { font-size: 10px; color: var(--faint); font-style: italic; padding: 8px 14px; border-top: 1px solid var(--bd); background: var(--sf2); }
+.storage-src code { font-family: ui-monospace, "SF Mono", monospace; font-size: 9px; background: var(--bd); padding: 1px 4px; border-radius: 3px; }
+
+/* 7f. Marketing Authorization */
+.mag { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.mai .ml  { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin-bottom: 3px; }
+.mai .mv  { font-size: .85rem; font-weight: 600; color: var(--text); }
+.mai .mvm { font-family: ui-monospace, "SF Mono", monospace; font-size: .79rem; color: var(--teal); }
+
+
+/* ============================================================
+   8. ARTWORK LIGHTBOX  (CSS-only :target modal)
+   ============================================================ */
+.artwork-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.65); z-index: 9000; align-items: center; justify-content: center; }
+.artwork-modal:target { display: flex; }
+.artwork-modal-card  { background: #fff; border-radius: 12px; padding: 28px 32px 24px; max-width: 540px; width: 90%; box-shadow: 0 24px 64px rgba(0,0,0,.35); position: relative; text-align: center; }
+.artwork-modal-close { position: absolute; top: 12px; right: 16px; font-size: 1.3rem; color: var(--muted); text-decoration: none; line-height: 1; padding: 4px 8px; border-radius: 4px; }
+.artwork-modal-close:hover { background: var(--sf2); color: var(--text); }
+.artwork-modal-title { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin-bottom: 14px; }
+.artwork-modal-img   { display: flex; justify-content: center; margin-bottom: 16px; }
+.artwork-modal-src   { font-size: 10px; color: var(--faint); margin-top: 6px; font-style: italic; }
+.artwork-modal-src code { font-family: ui-monospace, "SF Mono", monospace; font-size: 9px; background: var(--sf2); padding: 1px 5px; border-radius: 3px; }
+
+
+/* ============================================================
+   9. CLINICAL DETAILS PANEL
+   ============================================================ */
+
+/* 9a. Summary count cards
+   IMPORTANT: explicit flex-direction:row + align-items:flex-start
+   keeps the icon anchored top-right in every browser. */
+.csum {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.cscard {
+    border: 1px solid var(--bd);
+    border-radius: var(--r);
+    padding: 14px 16px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 14px;
+    align-items: flex-start;
 }
+.cscard .csn { font-size: 1.6rem; font-weight: 700; line-height: 1; margin-bottom: 3px; }
+.cscard .csl { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+.cscard .csi { font-size: 1.1rem; opacity: .7; flex-shrink: 0; }
 
-.data-label {
-    color: var(--secondary-text-color);
+.cscard.ci { border-top: 3px solid var(--accent); }
+.cscard.cc { border-top: 3px solid var(--rose);   }
+.cscard.cx { border-top: 3px solid var(--amber);  }
+.cscard.cu { border-top: 3px solid var(--purple); }
+.cscard.cw { border-top: 3px solid #ea580c;       }
+.cscard.cd { border-top: 3px solid var(--teal);   }
+
+/* 9b. Section containers — flex-direction:row enforced */
+.cls  { border: 1px solid var(--bd); border-radius: var(--r); margin-bottom: 10px; overflow: hidden; }
+.clsh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    background: var(--sf2);
+    border-bottom: 1px solid var(--bd);
 }
+.clsh .clsicon  { font-size: .85rem; flex-shrink: 0; }
+.clsh .clstitle { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--faint); flex: 1; }
+.clsh .clscount { font-size: 10px; font-weight: 600; background: var(--bd); color: var(--muted); padding: 1px 7px; border-radius: 99px; flex-shrink: 0; }
+.clsb { padding: 10px 16px 14px; }
 
-.data-value {
+/* 9c. Clinical data table */
+.ctbl { width: 100%; border-collapse: collapse; font-size: .81rem; }
+.ctbl th { text-align: left; padding: 6px 10px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--faint); background: var(--sf2); border-bottom: 1px solid var(--bd); }
+.ctbl td { padding: 8px 10px; border-bottom: 1px solid var(--bd); vertical-align: top; }
+.ctbl tr:last-child td { border-bottom: none; }
+
+/* 9d. Severity badges */
+.sev-h { background: #fee2e2; color: #b91c1c; padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+.sev-m { background: #fef9c3; color: #854d0e; padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+.sev-l { background: #dcfce7; color: #166534; padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+
+/* 9e. Contraindication rows */
+.cxrow { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--bd); font-size: .83rem; }
+.cxrow:last-child { border-bottom: none; }
+.cxrow .cxicon { color: var(--rose); font-size: .9rem; flex-shrink: 0; }
+
+/* 9f. SOC adverse-event groups */
+.soc      { margin-bottom: 8px; }
+.soc-hdr  { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); padding: 4px 0 3px; border-bottom: 1px solid var(--bd); margin-bottom: 4px; }
+.soc-item { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; font-size: .8rem; border-bottom: 1px solid var(--bd); }
+.soc-item:last-child { border-bottom: none; }
+.soc-item .si-name { color: var(--text); }
+.soc-item .si-freq { font-size: 10px; color: var(--muted); }
+
+/* 9g. Warning boxes */
+.wbox { background: #fff7ed; border: 1px solid #fed7aa; border-left: 3px solid #ea580c; border-radius: var(--r); padding: 10px 14px; margin-bottom: 8px; display: flex; gap: 10px; align-items: flex-start; font-size: .83rem; }
+.wbox:last-child { margin-bottom: 0; }
+.wbox .wicon { color: #ea580c; flex-shrink: 0; margin-top: 1px; }
+
+/* 9h. Dosage Regimen — MedicationKnowledge */
+.mk-src { font-size: 10px; color: var(--faint); font-style: italic; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--bd); }
+.mk-src code { font-family: ui-monospace, "SF Mono", monospace; font-size: 9px; background: var(--sf2); padding: 1px 5px; border-radius: 3px; }
+
+/* Population sub-tabs (CSS-only, nested radio) */
+.dr-tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--bd); margin-bottom: 12px; }
+.dr-trd  { display: none; }
+.dr-tb   { padding: 8px 14px; font-size: .77rem; font-weight: 500; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: color var(--tr), border-color var(--tr); }
+.dr-tb:hover { color: var(--text); }
+
+/* Active sub-tab states — each page's radio IDs drive these */
+#dr-adult:checked ~ .dr-tabs .dr-tb[for="dr-adult"],
+#dr-ped:checked   ~ .dr-tabs .dr-tb[for="dr-ped"],
+#dr-renal:checked ~ .dr-tabs .dr-tb[for="dr-renal"] {
+    color: var(--text);
     font-weight: 600;
-    text-align: right;
+    border-bottom-color: var(--teal);
 }
 
-/* Responsive Design */
-@media (max-width: 900px) {
-    .layout-container {
-        flex-direction: column;
-    }
+/* Dosage panels */
+.dr-panel { display: none; }
+#dr-adult:checked ~ .dr-panel-adult,
+#dr-ped:checked   ~ .dr-panel-ped,
+#dr-renal:checked ~ .dr-panel-renal { display: block; }
 
-    .sidebar {
-        width: 100%;
-        position: static;
-        margin-bottom: 24px;
-    }
+/* Dosage detail cards */
+.dose-card         { border: 1px solid var(--bd); border-radius: var(--r); overflow: hidden; margin-bottom: 8px; }
+.dose-card:last-child { margin-bottom: 0; }
+.dose-card-hdr     { display: flex; align-items: center; justify-content: space-between; padding: 9px 14px; background: var(--sf2); border-bottom: 1px solid var(--bd); }
+.dose-card-hdr .d-pop { font-size: .82rem; font-weight: 700; color: var(--text); }
+.dose-badge        { background: #e0f2fe; border: 1px solid #bae6fd; color: #075985; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 99px; }
+.dose-badge.weight { background: #fef9c3; border-color: #fde68a; color: #854d0e; }
+.dose-badge.adjust { background: #fee2e2; border-color: #fecaca; color: #b91c1c; }
+.dose-body         { padding: 10px 14px; }
+.dose-row          { display: flex; justify-content: space-between; align-items: flex-start; padding: 5px 0; border-bottom: 1px solid var(--bd); font-size: .82rem; }
+.dose-row:last-child { border-bottom: none; }
+.dose-label        { color: var(--muted); flex-shrink: 0; min-width: 140px; }
+.dose-value        { font-weight: 600; color: var(--text); text-align: right; }
+
+.timing-strip      { display: flex; gap: 4px; margin-top: 8px; flex-wrap: wrap; }
+.timing-pill       { background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 99px; }
+.timing-pill.max   { background: #fee2e2; border-color: #fecaca; color: #b91c1c; }
+
+.renal-alert       { background: #fff7ed; border: 1px solid #fed7aa; border-left: 3px solid #ea580c; border-radius: var(--r); padding: 10px 14px; display: flex; gap: 10px; align-items: flex-start; font-size: .82rem; margin-bottom: 8px; }
+.renal-alert .ra-icon { color: #ea580c; flex-shrink: 0; margin-top: 2px; }
+
+
+/* ============================================================
+  11. MOCKUP / ANNOTATION HELPERS  (used in mockup file only)
+   ============================================================ */
+.change-tag {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: #fef3c7; border: 1px solid #fde68a; color: #92400e;
+    font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+    padding: 2px 7px; border-radius: 4px; margin-left: 6px; vertical-align: middle;
+}
+.change-block { background: #fffbeb; border: 1px dashed #fcd34d; border-radius: var(--r); padding: 10px 14px; margin-top: 10px; font-size: .8rem; color: #78350f; }
+.change-block strong { font-weight: 700; }
+
+.section-sep { margin: 32px 0 20px; padding-bottom: 8px; border-bottom: 2px solid var(--bd); }
+.section-sep h2 { font-size: .95rem; font-weight: 700; letter-spacing: .02em; color: var(--text); margin-bottom: 2px; }
+.section-sep p  { font-size: .82rem; color: var(--muted); }
+
+.compare-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.compare-box  { border: 1px solid var(--bd); border-radius: var(--r); overflow: hidden; }
+.compare-hdr  { padding: 8px 14px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; border-bottom: 1px solid var(--bd); }
+.compare-hdr.before { background: #fef2f2; color: #b91c1c; border-bottom-color: #fecaca; }
+.compare-hdr.after  { background: #f0fdf4; color: #15803d; border-bottom-color: #bbf7d0; }
+.compare-body { padding: 12px 14px; }
+
+
+/* ============================================================
+   12. RESPONSIVE OVERRIDES
+   ============================================================ */
+@media (max-width: 900px) {
+    .csum { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+    .dg4, .dg3            { grid-template-columns: 1fr 1fr; }
+    .og                   { grid-template-columns: 1fr; }
+    .ec                   { grid-template-columns: 1fr; }
+    .ei                   { border-bottom: 1px solid var(--bd) !important; }
+    .ap-in                { flex-direction: column; }
+    .pkgs                 { flex-direction: column; }
+    .mag                  { grid-template-columns: 1fr 1fr; }
+    .storage-grid         { grid-template-columns: 1fr; }
+    .storage-item         { border-right: none !important; }
+    .storage-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--bd); }
+    .storage-item:last-child           { border-bottom: none; }
+    .compare-wrap         { grid-template-columns: 1fr; }
+    .csum                 { grid-template-columns: 1fr 1fr; }
 }

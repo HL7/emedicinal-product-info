@@ -5,47 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paracetamol 500 mg — ePI Type 1 (Vulcan FHIR IG)</title>
   <meta name="description" content="FHIR R5 Bundle document (ePI Type 1) for Paracetamol 500 mg tablets — Vulcan eMedicinal Product Information IG example." />
+  <!-- Shared ePI design system -->
+  <link rel="stylesheet" href="../epi-styles.css" />
+  <!-- Page-local: tab activation for this file's radio IDs -->
   <style>
-    :root{--bg:#fff;--surface:#fff;--sf2:#f9fafb;--bd:#e5e7eb;--bd2:#d1d5db;--accent:#2563eb;--green:#16a34a;--teal:#0891b2;--purple:#7c3aed;--text:#111827;--muted:#6b7280;--faint:#9ca3af;--r:8px;--tr:0.15s ease}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    .crumb{background:var(--sf2);border-bottom:1px solid var(--bd);padding:9px 28px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
-    .crumb .ig{font-weight:600;color:var(--text)}.crumb .sep{color:var(--faint)}
-    .crumb .badge{margin-left:auto;background:#eff6ff;border:1px solid #bfdbfe;color:var(--accent);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.07em;padding:3px 10px;border-radius:99px}
-    .hero{border-bottom:1px solid var(--bd);padding:44px 32px 32px;text-align:center}
-    .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
-    .hero .sub{font-size:.97rem;color:var(--muted);margin-bottom:20px}
-    .chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px}
-    .chip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
-    .ch-g{background:#dcfce7;border:1px solid #bbf7d0;color:#15803d}
-    .ch-b{background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8}
-    .ch-gr{background:var(--sf2);border:1px solid var(--bd);color:var(--muted)}
-    .ch-am{background:#fffbeb;border:1px solid #fde68a;color:#92400e}
-    .tabnav{border-bottom:1px solid var(--bd)}
-    .tabnav-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex}
-    .tb{padding:13px 20px;font-size:.875rem;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:color var(--tr),border-color var(--tr);white-space:nowrap}
-    .tb:hover{color:var(--text)}
-    .trd{display:none}
-    #t-d:checked~.tabnav .tb[for="t-d"],#t-c:checked~.tabnav .tb[for="t-c"]{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
-    .panel{display:none;max-width:960px;margin:0 auto;padding:28px 24px 80px}
-    #t-d:checked~#pd,#t-c:checked~#pc{display:block}
-    .sc{background:var(--surface);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
-    .sc.ab{border-left:3px solid var(--accent)}.sc.at{border-left:3px solid var(--teal)}.sc.ap{border-left:3px solid var(--purple)}
-    .sc-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);padding:12px 18px 4px}
-    .sc-body{padding:10px 18px 16px}
-    .dg{display:grid;gap:14px}.dg4{grid-template-columns:repeat(4,1fr)}.dg3{grid-template-columns:repeat(3,1fr)}
-    .di label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:3px}
-    .di .v{font-size:.855rem;font-weight:600;color:var(--text)}.di .vm{font-family:ui-monospace,'SF Mono',monospace;font-size:.76rem;color:var(--teal)}
-    .cc-row{display:flex;flex-wrap:wrap;gap:10px;padding:12px 18px 16px}
-    .cc{display:flex;flex-direction:column;align-items:center;border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;min-width:108px}
-    .cc .n{font-size:1.5rem;font-weight:700;line-height:1;margin-bottom:4px}.cc .l{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:center}
-    .type1-note{background:#fffbeb;border:1px solid #fde68a;border-radius:var(--r);padding:12px 16px;margin-bottom:20px;font-size:.82rem;color:#92400e;display:flex;align-items:flex-start;gap:10px}
-    .type1-note .icon{font-size:1rem;flex-shrink:0;margin-top:1px}
-    .ns{background:var(--surface);border:1px solid var(--bd);border-left:3px solid var(--accent);border-radius:var(--r);padding:16px 18px;margin-bottom:10px}
-    .ns h3{font-size:.935rem;font-weight:600;margin-bottom:6px}
-    .ns p{font-size:.855rem;color:var(--muted);margin-bottom:6px;line-height:1.7}.ns p:last-child{margin-bottom:0}
-    .ns ul{padding-left:18px;font-size:.855rem;color:var(--muted)}
-    @media(max-width:640px){.dg4,.dg3{grid-template-columns:1fr 1fr}}
+    #t-d:checked ~ .tabnav .tb[for="t-d"],
+    #t-c:checked ~ .tabnav .tb[for="t-c"] { color: var(--text); font-weight: 600; border-bottom-color: var(--accent); }
+    #t-d:checked ~ #pd,
+    #t-c:checked ~ #pc { display: block; }
   </style>
 </head>
 <body>
