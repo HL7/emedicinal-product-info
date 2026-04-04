@@ -1,4 +1,9 @@
-The **Build ePI** section provides the technical implementation guidance, resource mapping, and step-by-step instructions required to create valid ePI documents. It also describes how to set up an [ePI Repository](tech-details.html) to manage a catalog of authorized labels.
+<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85rem; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0; font-size:1rem;">📋</span>
+  <span><strong>New to ePI?</strong> Before diving into a specific type, review the <a href="build-epi1.html#prerequisites" style="color:#1d4ed8; font-weight:600;">Pre-requisites</a> — including reading the Vulcan ePI IG, your national guidance, and selecting a structured authoring tool.</span>
+</div>
+
+The **Build ePI** section provides step-by-step instructions for creating valid ePI documents at each maturity level, from a basic digital label (Type 1) through to full clinical decision support (Type 3). It also describes how to set up an [ePI Repository](tech-details.html) to manage a catalogue of authorised labels.
 
 ePI is not a single resource but a collection of interlinked FHIR resources. Depending on the **ePI Type** (Maturity Level) being implemented, different resources are required to capture the necessary narrative and structured data.
 
@@ -72,6 +77,6 @@ Implementation guidance is organized by the depth of structured data required:
 *   **[Type 3: Clinical Guidance](build-epi3.html)**
     *   *Focus*: Clinical decision support.
     *   *Key Features*: Type 2 + structured indications, contraindications, and warnings.
-*   **[Type 4: Digital-First Components](build-epi4.html)**
+*   **[Type 4: Integrated Narrative & Data](build-epi4.html)**
     *   *Focus*: Advanced automation and personalization.
-    *   *Key Features*: Fully granular, computable components designed for dynamic assembly.
+    *   *Key Features*: Direct linkage between specific sections of the human-readable text and their corresponding machine-readable FHIR resources.
