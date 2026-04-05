@@ -47,22 +47,36 @@
       <span style="background:#7c3aed; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">PackagedProductDefinition</span>
     </div>
 
-    <div style="border-left:2px solid #e5e7eb; margin-left:62px; padding-left:14px; margin-bottom:8px;">
-      <div style="margin-bottom:8px;">
-        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">contains</span>
-        <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">ManufacturedItemDefinition</span>
+    <div style="border-left:2px solid #e5e7eb; margin-left:62px; padding-left:14px;">
+      
+      <!-- Manufactured Item Branch -->
+      <div style="margin-bottom:16px;">
+        <div style="margin-bottom:8px;">
+          <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">contains</span>
+          <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">ManufacturedItemDefinition</span>
+        </div>
+        <div style="border-left:2px solid #e5e7eb; margin-left:32px; padding-left:14px;">
+          <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">made of</span>
+          <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">Ingredient</span>
+          <span style="color:#9ca3af; margin:0 6px;">→</span>
+          <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">SubstanceDefinition</span>
+        </div>
       </div>
-      <div>
-        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">relates to</span>
-        <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">AdministrableProductDefinition</span>
-      </div>
-    </div>
 
-    <div style="border-left:2px solid #e5e7eb; margin-left:86px; padding-left:14px;">
-      <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">made of</span>
-      <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">Ingredient</span>
-      <span style="color:#9ca3af; margin:0 6px;">→</span>
-      <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">SubstanceDefinition</span>
+      <!-- Administrable Product Branch -->
+      <div>
+        <div style="margin-bottom:8px;">
+          <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">relates to</span>
+          <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">AdministrableProductDefinition</span>
+        </div>
+        <div style="border-left:2px solid #e5e7eb; margin-left:32px; padding-left:14px;">
+          <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">made of</span>
+          <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">Ingredient</span>
+          <span style="color:#9ca3af; margin:0 6px;">→</span>
+          <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">SubstanceDefinition</span>
+        </div>
+      </div>
+
     </div>
 
   </div>
