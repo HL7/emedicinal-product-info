@@ -42,6 +42,28 @@
   <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">🖼️ Binary (images)</span>
 </div>
 
+<!-- RESOURCE CHAIN VISUAL -->
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px 20px; margin-bottom:28px;">
+  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:12px;">How the Type 1 resources connect</div>
+  <div style="font-size:.8em;">
+    
+    <div style="margin-bottom:8px;">
+      <span style="background:#eff6ff; border:1px solid #bfdbfe; color:#1d4ed8; padding:5px 12px; border-radius:6px; font-weight:600;">Bundle</span>
+    </div>
+    
+    <div style="border-left:2px solid #e5e7eb; margin-left:14px; padding-left:14px; margin-bottom:8px;">
+      <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">contains</span>
+      <span style="background:#f0fdfa; border:1px solid #99f6e4; color:#0f766e; padding:5px 12px; border-radius:6px; font-weight:600;">Composition</span>
+    </div>
+
+    <div style="border-left:2px solid #e5e7eb; margin-left:38px; padding-left:14px;">
+      <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">references</span>
+      <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; padding:5px 12px; border-radius:6px; font-weight:600;">Binary (Images)</span>
+    </div>
+
+  </div>
+</div>
+
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- STEPS -->

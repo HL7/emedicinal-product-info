@@ -26,26 +26,45 @@
 <!-- RESOURCE CHAIN VISUAL -->
 <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px 20px; margin-bottom:28px;">
   <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:12px;">How the Type 2 resources connect</div>
-  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-size:.78em; font-weight:600;">
-    <span style="background:#003087; color:#fff; padding:5px 12px; border-radius:6px;">MedicinalProductDefinition</span>
-    <span style="color:#9ca3af;">←</span>
-    <span style="background:#2563eb; color:#fff; padding:5px 12px; border-radius:6px;">RegulatedAuthorization</span>
-    <span style="color:#9ca3af; font-size:.7em; align-self:flex-end; padding-bottom:2px;">references</span>
-    <span style="background:#0891b2; color:#fff; padding:5px 12px; border-radius:6px;">Organization</span>
-  </div>
-  <div style="margin:8px 0 8px 20px; color:#9ca3af; font-size:.8em;">↓</div>
-  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-size:.78em; font-weight:600; margin-left:20px;">
-    <span style="background:#7c3aed; color:#fff; padding:5px 12px; border-radius:6px;">PackagedProductDefinition</span>
-    <span style="color:#9ca3af;">→</span>
-    <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px;">ManufacturedItemDefinition</span>
-    <span style="color:#9ca3af;">→</span>
-    <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px;">AdministrableProductDefinition</span>
-  </div>
-  <div style="margin:8px 0 8px 40px; color:#9ca3af; font-size:.8em;">↓</div>
-  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-size:.78em; font-weight:600; margin-left:40px;">
-    <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px;">Ingredient</span>
-    <span style="color:#9ca3af;">→</span>
-    <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px;">SubstanceDefinition</span>
+  <div style="font-size:.8em;">
+    
+    <div style="margin-bottom:8px;">
+      <span style="background:#0891b2; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">Organization</span>
+    </div>
+    
+    <div style="border-left:2px solid #e5e7eb; margin-left:14px; padding-left:14px; margin-bottom:8px;">
+      <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">holder of</span>
+      <span style="background:#2563eb; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">RegulatedAuthorization</span>
+    </div>
+
+    <div style="border-left:2px solid #e5e7eb; margin-left:14px; padding-left:14px; margin-bottom:8px;">
+      <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject is</span>
+      <span style="background:#003087; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">MedicinalProductDefinition</span>
+    </div>
+
+    <div style="border-left:2px solid #e5e7eb; margin-left:38px; padding-left:14px; margin-bottom:8px;">
+      <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">comprised of</span>
+      <span style="background:#7c3aed; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">PackagedProductDefinition</span>
+    </div>
+
+    <div style="border-left:2px solid #e5e7eb; margin-left:62px; padding-left:14px; margin-bottom:8px;">
+      <div style="margin-bottom:8px;">
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">contains</span>
+        <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">ManufacturedItemDefinition</span>
+      </div>
+      <div>
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">relates to</span>
+        <span style="background:#16a34a; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">AdministrableProductDefinition</span>
+      </div>
+    </div>
+
+    <div style="border-left:2px solid #e5e7eb; margin-left:86px; padding-left:14px;">
+      <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">made of</span>
+      <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">Ingredient</span>
+      <span style="color:#9ca3af; margin:0 6px;">→</span>
+      <span style="background:#d97706; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">SubstanceDefinition</span>
+    </div>
+
   </div>
 </div>
 

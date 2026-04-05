@@ -17,6 +17,45 @@
   <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">💊 MedicationKnowledge (optional)</span>
 </div>
 
+<!-- RESOURCE CHAIN VISUAL -->
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px 20px; margin-bottom:28px;">
+  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:12px;">How the Type 3 resources connect</div>
+  <div style="font-size:.8em;">
+    
+    <div style="margin-bottom:8px;">
+      <span style="background:#003087; color:#fff; padding:5px 12px; border-radius:6px; font-weight:600;">MedicinalProductDefinition</span>
+    </div>
+    
+    <div style="border-left:2px solid #e5e7eb; margin-left:14px; padding-left:14px;">
+      <div style="margin-bottom:8px;">
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject of</span>
+        <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; padding:5px 12px; border-radius:6px; font-weight:600;">ClinicalUseDefinition (Indications)</span>
+      </div>
+      <div style="margin-bottom:8px;">
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject of</span>
+        <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; padding:5px 12px; border-radius:6px; font-weight:600;">ClinicalUseDefinition (Contraindications)</span>
+      </div>
+      <div style="margin-bottom:8px;">
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject of</span>
+        <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; padding:5px 12px; border-radius:6px; font-weight:600;">ClinicalUseDefinition (Warnings)</span>
+      </div>
+      <div style="margin-bottom:8px;">
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject of</span>
+        <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; padding:5px 12px; border-radius:6px; font-weight:600;">ClinicalUseDefinition (Undesirable Effects)</span>
+      </div>
+      <div style="margin-bottom:8px;">
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject of</span>
+        <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; padding:5px 12px; border-radius:6px; font-weight:600;">ClinicalUseDefinition (Interactions)</span>
+      </div>
+      <div>
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject of</span>
+        <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; padding:5px 12px; border-radius:6px; font-weight:600;">MedicationKnowledge</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- GRANULARITY CALLOUT -->
 <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:28px;">
   <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#1d4ed8; margin-bottom:6px;">⚡ The Granularity Rule applies here too</div>
