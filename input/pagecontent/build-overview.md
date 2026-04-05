@@ -1,5 +1,5 @@
-<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85rem; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
-  <span style="flex-shrink:0; font-size:1rem;">📋</span>
+<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85em; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0; font-size:1em;">📋</span>
   <span><strong>New to ePI?</strong> Before diving into a specific type, review the <a href="build-epi1.html#prerequisites" style="color:#1d4ed8; font-weight:600;">Pre-requisites</a> — including reading the Vulcan ePI IG, your national guidance, and selecting a structured authoring tool.</span>
 </div>
 
