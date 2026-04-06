@@ -1,76 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Technical Style Guide — Mockup</title>
 <style>
-  .tsg-page *, .tsg-page *::before, .tsg-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  .tsg-page { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; }
-  .tsg-page .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
-  .tsg-page .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
-  .tsg-page .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; }
-  .tsg-page .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-  .tsg-page .hero p { font-size:.95em; color:#6b7280; max-width:580px; margin:0 auto 20px; line-height:1.6; }
-  .tsg-page .page-nav { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px 20px; margin-bottom:36px; display:flex; flex-wrap:wrap; gap:8px; }
-  .tsg-page .page-nav a { font-size:.78em; font-weight:600; color:#2563eb; text-decoration:none; padding:4px 10px; border-radius:6px; background:#f0f4ff; }
-  .tsg-page .section-title { font-size:1.05em; font-weight:700; color:#111827; margin: 36px 0 14px; display:flex; align-items:center; gap:8px; }
-  .tsg-page .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
-  .tsg-page .alert-note { background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:14px; font-size:.85em; color:#1e40af; line-height:1.6; }
-  .tsg-page .alert-note .alabel { font-weight:800; text-transform:uppercase; font-size:.72em; letter-spacing:.1em; display:block; margin-bottom:4px; }
-  .tsg-page .alert-important { background:#fef3c7; border:1px solid #fde68a; border-left:4px solid #f59e0b; border-radius:8px; padding:14px 18px; margin-bottom:28px; font-size:.85em; color:#78350f; line-height:1.6; }
-  .tsg-page .alert-important .alabel { font-weight:800; text-transform:uppercase; font-size:.72em; letter-spacing:.1em; display:block; margin-bottom:4px; }
-  .tsg-page .topic-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px; }
-  .tsg-page .topic-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:18px; }
-  .tsg-page .topic-card .icon { font-size:1.3em; margin-bottom:8px; }
-  .tsg-page .topic-card .ttitle { font-weight:700; color:#003087; margin-bottom:5px; font-size:.88em; }
-  .tsg-page .topic-card p { font-size:.79em; color:#4b5563; line-height:1.5; }
-  .tsg-page .rule-section { margin-bottom:28px; }
-  .tsg-page .rule-header { background:#f0f4ff; border:1px solid #e5e7eb; border-bottom:none; border-radius:10px 10px 0 0; padding:10px 16px; font-weight:700; color:#1d4ed8; font-size:.88em; }
-  .tsg-page .rule-body { background:#fff; border:1px solid #e5e7eb; border-radius:0 0 10px 10px; overflow:hidden; }
-  .tsg-page .rule-row { display:grid; grid-template-columns:220px 1fr; gap:0; border-bottom:1px solid #f3f4f6; }
-  .tsg-page .rule-row:last-child { border-bottom:none; }
-  .tsg-page .rule-col { padding:10px 14px; font-size:.82em; line-height:1.6; color:#374151; }
-  .tsg-page .rule-col:first-child { background:#fafafa; border-right:1px solid #f3f4f6; font-weight:600; color:#111827; }
-  .tsg-page .class-table { width:100%; border-collapse:collapse; font-size:.82em; margin-bottom:28px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
-  .tsg-page .class-table thead { background:#f0f4ff; }
-  .tsg-page .class-table th { padding:9px 12px; font-weight:700; color:#374151; font-size:.78em; text-transform:uppercase; letter-spacing:.05em; border-bottom:1px solid #e5e7eb; text-align:left; }
-  .tsg-page .class-table td { padding:9px 12px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:middle; }
-  .tsg-page .class-table tr:last-child td { border-bottom:none; }
-  .tsg-page .class-name { font-family:monospace; font-weight:700; color:#2563eb; }
-  .tsg-page .class-css { font-family:monospace; font-size:.78em; color:#6b7280; }
-  .tsg-page .ref-table { width:100%; border-collapse:collapse; font-size:.82em; margin-bottom:28px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
-  .tsg-page .ref-table thead { background:#f0f4ff; }
-  .tsg-page .ref-table th { padding:9px 12px; font-weight:700; color:#374151; font-size:.78em; text-transform:uppercase; letter-spacing:.05em; border-bottom:1px solid #e5e7eb; text-align:left; }
-  .tsg-page .ref-table td { padding:9px 12px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:middle; }
-  .tsg-page .ref-table tr:last-child td { border-bottom:none; }
-  .tsg-page .mono { font-family:monospace; color:#2563eb; }
-  .tsg-page .example-table { width:100%; border-collapse:collapse; font-size:.82em; margin-bottom:20px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
-  .tsg-page .example-table thead { background:#003087; color:#fff; }
-  .tsg-page .example-table th { padding:9px 14px; font-weight:700; font-size:.78em; text-align:left; }
-  .tsg-page .example-table td { padding:10px 14px; border-bottom:1px solid #f3f4f6; vertical-align:top; }
-  .tsg-page .example-table tr:last-child td { border-bottom:none; }
-  .tsg-page .example-table pre { font-family:monospace; font-size:.79em; color:#1e293b; background:#f8fafc; border:1px solid #e5e7eb; border-radius:6px; padding:10px; white-space:pre-wrap; }
-  .tsg-page .mini-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:28px; }
-  .tsg-page .mini-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px 18px; }
-  .tsg-page .mini-card .mtitle { font-weight:700; color:#111827; font-size:.88em; margin-bottom:6px; display:flex; align-items:center; gap:8px; }
-  .tsg-page .mini-card p { font-size:.8em; color:#4b5563; line-height:1.55; }
-  .tsg-page .table-tags { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:20px; }
-  .tsg-page .tag-chip { background:#f0f4ff; border:1px solid #bfdbfe; border-radius:6px; padding:6px 10px; font-family:monospace; font-size:.8em; color:#1d4ed8; }
-  .tsg-page .tag-chip span { display:block; font-family:sans-serif; color:#6b7280; font-size:.85em; margin-top:2px; }
-  .tsg-page .ref-list { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px 24px; margin-bottom:20px; }
-  .tsg-page .ref-list h4 { font-size:.88em; font-weight:700; color:#003087; margin-bottom:12px; }
-  .tsg-page .ref-list ul { list-style:none; padding:0; }
-  .tsg-page .ref-list ul li { font-size:.82em; color:#374151; line-height:1.7; padding: 5px 0; border-bottom:1px solid #f3f4f6; }
-  .tsg-page .ref-list ul li:last-child { border-bottom:none; }
-  .tsg-page .ref-list ul li a { color:#2563eb; text-decoration:none; }
-  .tsg-page .do { color:#065f46; font-weight:700; font-size:.72em; text-transform:uppercase; }
-  .tsg-page .dont { color:#991b1b; font-weight:700; font-size:.72em; text-transform:uppercase; }
-  .tsg-page code { font-family:monospace; font-size:.88em; background:#f0f4ff; color:#2563eb; padding:1px 5px; border-radius:3px; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f9fafb; color: #111827; }
+  nav { background: #1e3a5f; color: #fff; padding: 12px 32px; display: flex; align-items: center; gap: 32px; font-size:.85em; }
+  nav .logo { font-weight: 800; }
+  nav a { color: #93c5fd; text-decoration: none; }
+  .breadcrumb { background:#fff; border-bottom:1px solid #e5e7eb; padding: 10px 32px; font-size:.78em; color:#6b7280; }
+  .breadcrumb span { color:#2563eb; }
+  .content { max-width: 960px; margin: 0 auto; padding: 0 32px 64px; }
+
+  /* HERO */
+  .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
+  .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
+  .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; }
+  .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .hero p { font-size:.95em; color:#6b7280; max-width:580px; margin:0 auto 20px; line-height:1.6; }
+  .hero-chips { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
+  .hero-chip { font-size:.72em; font-weight:700; padding:4px 12px; border-radius:100px; background:#f0f4ff; color:#1d4ed8; border:1px solid #bfdbfe; }
+
+  /* ON-PAGE NAV */
+  .page-nav { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px 20px; margin-bottom:36px; display:flex; flex-wrap:wrap; gap:8px; }
+  .page-nav a { font-size:.78em; font-weight:600; color:#2563eb; text-decoration:none; padding:4px 10px; border-radius:6px; background:#f0f4ff; }
+  .page-nav a:hover { background:#dbeafe; }
+
+  .section-title { font-size:1.05em; font-weight:700; color:#111827; margin: 36px 0 14px; display:flex; align-items:center; gap:8px; }
+  .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
+
+  /* ALERTS */
+  .alert-note { background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:14px; font-size:.85em; color:#1e40af; line-height:1.6; }
+  .alert-note .alabel { font-weight:800; text-transform:uppercase; font-size:.72em; letter-spacing:.1em; display:block; margin-bottom:4px; }
+  .alert-important { background:#fef3c7; border:1px solid #fde68a; border-left:4px solid #f59e0b; border-radius:8px; padding:14px 18px; margin-bottom:28px; font-size:.85em; color:#78350f; line-height:1.6; }
+  .alert-important .alabel { font-weight:800; text-transform:uppercase; font-size:.72em; letter-spacing:.1em; display:block; margin-bottom:4px; }
+
+  /* TOPIC GRID */
+  .topic-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px; }
+  .topic-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:18px; }
+  .topic-card .icon { font-size:1.3em; margin-bottom:8px; }
+  .topic-card .ttitle { font-weight:700; color:#003087; margin-bottom:5px; font-size:.88em; }
+  .topic-card p { font-size:.79em; color:#4b5563; line-height:1.5; }
+
+  /* RULE PANELS */
+  .rule-section { margin-bottom:28px; }
+  .rule-header { background:#f0f4ff; border:1px solid #e5e7eb; border-bottom:none; border-radius:10px 10px 0 0; padding:10px 16px; font-weight:700; color:#1d4ed8; font-size:.88em; }
+  .rule-body { background:#fff; border:1px solid #e5e7eb; border-radius:0 0 10px 10px; overflow:hidden; }
+  .rule-row { display:grid; grid-template-columns:220px 1fr; gap:0; border-bottom:1px solid #f3f4f6; }
+  .rule-row:last-child { border-bottom:none; }
+  .rule-col { padding:10px 14px; font-size:.82em; line-height:1.6; color:#374151; }
+  .rule-col:first-child { background:#fafafa; border-right:1px solid #f3f4f6; font-weight:600; color:#111827; }
+  code { font-family:monospace; font-size:.88em; background:#f0f4ff; color:#2563eb; padding:1px 5px; border-radius:3px; }
+
+  /* STANDARD TABLES */
+  .ref-table { width:100%; border-collapse:collapse; font-size:.82em; margin-bottom:28px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
+  .ref-table thead { background:#f0f4ff; }
+  .ref-table th { padding:9px 12px; font-weight:700; color:#374151; font-size:.78em; text-transform:uppercase; letter-spacing:.05em; border-bottom:1px solid #e5e7eb; text-align:left; }
+  .ref-table td { padding:9px 12px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:middle; }
+  .ref-table tr:last-child td { border-bottom:none; }
+  .mono { font-family:monospace; color:#2563eb; }
+
+  /* INLINE STYLE CLASSES */
+  .class-table { width:100%; border-collapse:collapse; font-size:.82em; margin-bottom:28px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
+  .class-table thead { background:#f0f4ff; }
+  .class-table th { padding:9px 12px; font-weight:700; color:#374151; font-size:.78em; text-transform:uppercase; letter-spacing:.05em; border-bottom:1px solid #e5e7eb; text-align:left; }
+  .class-table td { padding:9px 12px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:middle; }
+  .class-table tr:last-child td { border-bottom:none; }
+  .class-name { font-family:monospace; font-weight:700; color:#2563eb; }
+  .class-css { font-family:monospace; font-size:.78em; color:#6b7280; }
+  .preview-bold { font-weight:700; }
+  .preview-italic { font-style:italic; }
+  .preview-underline { text-decoration:underline; }
+  .preview-strike { text-decoration:line-through; }
+
+  /* EXAMPLE TABLES */
+  .example-table { width:100%; border-collapse:collapse; font-size:.82em; margin-bottom:20px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
+  .example-table thead { background:#003087; color:#fff; }
+  .example-table th { padding:9px 14px; font-weight:700; font-size:.78em; text-align:left; }
+  .example-table td { padding:10px 14px; border-bottom:1px solid #f3f4f6; vertical-align:top; }
+  .example-table tr:last-child td { border-bottom:none; }
+  .example-table pre { font-family:monospace; font-size:.79em; color:#1e293b; background:#f8fafc; border:1px solid #e5e7eb; border-radius:6px; padding:10px; white-space:pre-wrap; }
+
+  /* DOS/DONTS */
+  .do { color:#065f46; font-weight:700; font-size:.72em; text-transform:uppercase; }
+  .dont { color:#991b1b; font-weight:700; font-size:.72em; text-transform:uppercase; }
+
+  /* MINI CARDS */
+  .mini-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:28px; }
+  .mini-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px 18px; }
+  .mini-card .mtitle { font-weight:700; color:#111827; font-size:.88em; margin-bottom:6px; display:flex; align-items:center; gap:8px; }
+  .mini-card p { font-size:.8em; color:#4b5563; line-height:1.55; }
+  .mini-card ul { font-size:.8em; color:#4b5563; padding-left:16px; line-height:1.8; }
+
+  /* REFERENCES */
+  .ref-list { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px 24px; margin-bottom:20px; }
+  .ref-list h4 { font-size:.88em; font-weight:700; color:#003087; margin-bottom:12px; }
+  .ref-list ul { list-style:none; padding:0; }
+  .ref-list ul li { font-size:.82em; color:#374151; line-height:1.7; padding: 5px 0; border-bottom:1px solid #f3f4f6; }
+  .ref-list ul li:last-child { border-bottom:none; }
+  .ref-list ul li a { color:#2563eb; text-decoration:none; }
+
+  .section-label { font-size:.72em; font-weight:800; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:6px; display:block; }
+
+  .table-tags { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:20px; }
+  .tag-chip { background:#f0f4ff; border:1px solid #bfdbfe; border-radius:6px; padding:6px 10px; font-family:monospace; font-size:.8em; color:#1d4ed8; }
+  .tag-chip span { display:block; font-family:sans-serif; color:#6b7280; font-size:.85em; margin-top:2px; }
 </style>
+</head>
+<body>
 
-<div class="tsg-page">
+<nav>
+  <div class="logo">Vulcan ePI Implementation Guide</div>
+  <a href="#">Home</a>
+  <a href="#">Getting Started</a>
+  <a href="#">Build ePIs</a>
+  <a href="#">Technical Details</a>
+  <a href="#">Artifacts</a>
+</nav>
+<div class="breadcrumb">Technical Details → <span>Technical Style Guide</span></div>
 
+<div class="content">
+
+  <!-- HERO -->
   <div class="hero">
     <div class="eyebrow">Technical Details · XHTML &amp; Narrative</div>
     <h1>Implementation Rules <span>&amp; Best Practices</span></h1>
     <p>Standard formatting and content structures for ePI narrative content — ensuring consistency, quality, and global interoperability across jurisdictions.</p>
+    <div class="hero-chips">
+      <span class="hero-chip">XHTML Compliance</span>
+      <span class="hero-chip">Accessibility</span>
+      <span class="hero-chip">Mobile-First</span>
+      <span class="hero-chip">Unicode UTF-8</span>
+      <span class="hero-chip">AI-Ready</span>
+    </div>
   </div>
 
+  <!-- QUICK NAV -->
   <div class="page-nav">
     <span style="font-size:.78em; font-weight:700; color:#6b7280; align-self:center;">Jump to:</span>
     <a href="#guidance">Guidance</a>
@@ -88,6 +155,7 @@
     <a href="#references">References</a>
   </div>
 
+  <!-- KEY ALERTS -->
   <div class="alert-note">
     <span class="alabel">ℹ️ Scope</span>
     This guide covers technical structure, XHTML compliance, and internal style attributes (text, tables, images). It does <strong>not</strong> include regulatory content requirements or external brand-specific styling.
@@ -97,6 +165,7 @@
     <strong>Do not include inline styling</strong> (fonts, colors, layouts) within the ePI document. Styling must remain in a separate stylesheet (CSS or XSLT). The <strong>only exceptions</strong> are basic inline formatting: bold, underline, italics, and text alignment.
   </div>
 
+  <!-- TOPIC OVERVIEW -->
   <div class="section-title" id="guidance">What This Guide Covers</div>
   <div class="topic-grid">
     <div class="topic-card"><div class="icon">📄</div><div class="ttitle">Structure &amp; Formatting</div><p>Separate content from style using external CSS/XSLT.</p></div>
@@ -107,6 +176,7 @@
     <div class="topic-card"><div class="icon">🔣</div><div class="ttitle">Characters &amp; Symbols</div><p>Escape characters, diacriticals, common symbols, and named entities for XML-safe content.</p></div>
   </div>
 
+  <!-- NARRATIVE TEXT -->
   <div class="section-title" id="narrative">Narrative Text — Allowed Elements</div>
   <div class="rule-section">
     <div class="rule-header">📝 Valid Top-Level Tags in ePI Narrative</div>
@@ -119,6 +189,7 @@
     </div>
   </div>
 
+  <!-- DOS AND DON'TS -->
   <div class="section-title">Key Rules — Dos and Don'ts</div>
   <div class="rule-section">
     <div class="rule-header">✅ Formatting Rules</div>
@@ -132,14 +203,15 @@
     </div>
   </div>
 
+  <!-- STYLE CLASSES -->
   <div class="section-title" id="style-classes">Inline Style Classes Reference</div>
   <table class="class-table">
     <thead><tr><th>Class Name</th><th>Preview</th><th>CSS Equivalent</th></tr></thead>
     <tbody>
-      <tr><td><span class="class-name">bold</span></td><td><strong>Bold Text</strong></td><td><span class="class-css">{ font-weight: bold }</span></td></tr>
-      <tr><td><span class="class-name">italics</span></td><td><em>Italics Text</em></td><td><span class="class-css">{ font-style: italic }</span></td></tr>
-      <tr><td><span class="class-name">underline</span></td><td><u>Underlined Text</u></td><td><span class="class-css">{ text-decoration: underline }</span></td></tr>
-      <tr><td><span class="class-name">strikethrough</span></td><td><s>Strikethrough Text</s></td><td><span class="class-css">{ text-decoration: line-through }</span></td></tr>
+      <tr><td><span class="class-name">bold</span></td><td><span class="preview-bold">Bold Text</span></td><td><span class="class-css">{ font-weight: bold }</span></td></tr>
+      <tr><td><span class="class-name">italics</span></td><td><span class="preview-italic">Italics Text</span></td><td><span class="class-css">{ font-style: italic }</span></td></tr>
+      <tr><td><span class="class-name">underline</span></td><td><span class="preview-underline">Underlined Text</span></td><td><span class="class-css">{ text-decoration: underline }</span></td></tr>
+      <tr><td><span class="class-name">strikethrough</span></td><td><span class="preview-strike">Strikethrough Text</span></td><td><span class="class-css">{ text-decoration: line-through }</span></td></tr>
       <tr><td><span class="class-name">left / right / center / justify</span></td><td>Text Alignment</td><td><span class="class-css">{ text-align: left|right|center|justify }</span></td></tr>
       <tr><td><span class="class-name">border-left / right / top / bottom</span></td><td><span style="border-left:2px solid #374151; padding-left:6px;">Border Side</span></td><td><span class="class-css">{ border-[side]: 1px solid grey }</span></td></tr>
       <tr><td><span class="class-name">arabic / little-roman / big-roman</span></td><td>1, 2, 3 / i, ii, iii / I, II, III</td><td><span class="class-css">{ list-style-type: decimal|lower-roman|upper-roman }</span></td></tr>
@@ -148,6 +220,7 @@
     </tbody>
   </table>
 
+  <!-- LISTS -->
   <div class="section-title" id="lists">Lists</div>
   <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;"><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags must only contain <code>&lt;li&gt;</code> children. <code>&lt;li&gt;</code> items can contain <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, headings, images, and tables as children.</p>
   <table class="example-table">
@@ -180,6 +253,7 @@
     </tbody>
   </table>
 
+  <!-- HYPERLINKS -->
   <div class="section-title" id="hyperlinks">Hyperlinks</div>
   <div class="mini-grid">
     <div class="mini-card">
@@ -192,8 +266,9 @@
     </div>
   </div>
 
+  <!-- ESCAPE CHARACTERS -->
   <div class="section-title" id="escape">Escape Characters</div>
-  <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;">The following characters are reserved in XML and <strong>must be escaped</strong>. Web browsers automatically convert escaped forms back to normal display characters.</p>
+  <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;">The following characters are reserved in XML and <strong>must be escaped</strong>. Web browsers automatically convert escaped forms back to normal display characters — the escaped form is only for the underlying XML.</p>
   <table class="ref-table">
     <thead><tr><th>Character Name</th><th>Display</th><th>Escaped Form (XML)</th></tr></thead>
     <tbody>
@@ -205,6 +280,7 @@
     </tbody>
   </table>
 
+  <!-- COMMON SYMBOLS -->
   <div class="section-title" id="symbols">Common Symbols</div>
   <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;">Symbols can be added as regular UTF-8 text or replaced with named entities. Refer to W3C resources for a comprehensive list.</p>
   <table class="ref-table">
@@ -216,16 +292,21 @@
       <tr><td class="mono">≤</td><td>Less than or equal to</td><td class="mono">—</td><td class="mono">&amp;#8804;</td></tr>
       <tr><td class="mono">≥</td><td>Greater than or equal to</td><td class="mono">—</td><td class="mono">&amp;#8806;</td></tr>
       <tr><td class="mono">&amp;</td><td>Ampersand</td><td class="mono">&amp;amp;</td><td class="mono">&amp;#38;</td></tr>
+      <tr><td class="mono">&quot;</td><td>Double quotation mark</td><td class="mono">&amp;quot;</td><td class="mono">&amp;#34;</td></tr>
+      <tr><td class="mono">&cent;</td><td>Cent</td><td class="mono">&amp;cent;</td><td class="mono">&amp;#162;</td></tr>
+      <tr><td class="mono">&pound;</td><td>Pound</td><td class="mono">&amp;pound;</td><td class="mono">&amp;#163;</td></tr>
+      <tr><td class="mono">&yen;</td><td>Yen</td><td class="mono">&amp;yen;</td><td class="mono">&amp;#165;</td></tr>
+      <tr><td class="mono">&euro;</td><td>Euro</td><td class="mono">&amp;euro;</td><td class="mono">&amp;#8364;</td></tr>
       <tr><td class="mono">&copy;</td><td>Copyright</td><td class="mono">&amp;copy;</td><td class="mono">&amp;#169;</td></tr>
       <tr><td class="mono">&reg;</td><td>Registered trademark</td><td class="mono">&amp;reg;</td><td class="mono">&amp;#174;</td></tr>
       <tr><td class="mono">&deg;</td><td>Degree sign</td><td class="mono">&amp;deg;</td><td class="mono">&amp;#176;</td></tr>
-      <tr><td class="mono">&euro;</td><td>Euro</td><td class="mono">&amp;euro;</td><td class="mono">&amp;#8364;</td></tr>
       <tr><td class="mono">&beta;</td><td>Beta</td><td class="mono">&amp;beta;</td><td class="mono">—</td></tr>
     </tbody>
   </table>
 
+  <!-- DIACRITICAL MARKS -->
   <div class="section-title" id="diacriticals">Diacritical Marks</div>
-  <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;">Diacritical marks use combining numeric character references. Refer to W3C resources for a comprehensive list.</p>
+  <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;">Diacritical marks work similarly to symbols — use combining numeric character references. Refer to W3C resources for a comprehensive list.</p>
   <table class="ref-table">
     <thead><tr><th>Mark</th><th>Character</th><th>Construct</th><th>Result</th></tr></thead>
     <tbody>
@@ -235,11 +316,14 @@
       <tr><td class="mono">~</td><td class="mono">a</td><td class="mono">a&amp;#771;</td><td class="mono">ã</td></tr>
       <tr><td class="mono">`</td><td class="mono">O</td><td class="mono">O&amp;#768;</td><td class="mono">Ò</td></tr>
       <tr><td class="mono">´</td><td class="mono">O</td><td class="mono">O&amp;#769;</td><td class="mono">Ó</td></tr>
+      <tr><td class="mono">^</td><td class="mono">O</td><td class="mono">O&amp;#770;</td><td class="mono">Ô</td></tr>
+      <tr><td class="mono">~</td><td class="mono">O</td><td class="mono">O&amp;#771;</td><td class="mono">Õ</td></tr>
     </tbody>
   </table>
 
+  <!-- TABLES -->
   <div class="section-title" id="tables">Tables</div>
-  <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;">Only <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;caption&gt;</code>, and <code>&lt;colgroup&gt;</code> are permitted as direct children of <code>&lt;table&gt;</code>. <strong>Do not use tables for layout and alignment.</strong></p>
+  <p style="font-size:.84em; color:#4b5563; line-height:1.6; margin-bottom:14px;">Only <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;caption&gt;</code>, and <code>&lt;colgroup&gt;</code> are permitted as direct children of <code>&lt;table&gt;</code>. <strong>Do not use tables for layout and alignment</strong> — use CSS alternatives instead.</p>
   <div class="table-tags">
     <div class="tag-chip"><code>&lt;table&gt;</code><span>Defines a table</span></div>
     <div class="tag-chip"><code>&lt;caption&gt;</code><span>Table title (keep inside table)</span></div>
@@ -249,9 +333,34 @@
     <div class="tag-chip"><code>&lt;tr&gt;</code><span>Defines a row</span></div>
     <div class="tag-chip"><code>&lt;th&gt;</code><span>Defines a header cell</span></div>
     <div class="tag-chip"><code>&lt;td&gt;</code><span>Defines a data cell</span></div>
+    <div class="tag-chip"><code>&lt;colgroup&gt;</code> / <code>&lt;col&gt;</code><span>Column grouping &amp; formatting</span></div>
     <div class="tag-chip"><code>colspan</code> / <code>rowspan</code><span>Merge cells across columns / rows</span></div>
   </div>
+  <span class="section-label">Examples — Column &amp; Row Spanning</span>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:28px;">
+    <div>
+      <p style="font-size:.78em; color:#6b7280; margin-bottom:6px; font-weight:600;">Merge columns (colspan="2")</p>
+      <table style="width:100%; border-collapse:collapse; font-size:.82em; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+        <thead style="background:#003087; color:#fff;"><tr><th style="padding:8px;">Header 1</th><th style="padding:8px;">Header 2</th><th style="padding:8px;">Header 3</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:8px; border:1px solid #f3f4f6;" colspan="2">cols 1–2 merged</td><td style="padding:8px; border:1px solid #f3f4f6;">3</td></tr>
+          <tr><td style="padding:8px; border:1px solid #f3f4f6;">4</td><td style="padding:8px; border:1px solid #f3f4f6;">5</td><td style="padding:8px; border:1px solid #f3f4f6;">6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p style="font-size:.78em; color:#6b7280; margin-bottom:6px; font-weight:600;">Merge rows (rowspan="2")</p>
+      <table style="width:100%; border-collapse:collapse; font-size:.82em; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+        <thead style="background:#003087; color:#fff;"><tr><th style="padding:8px;">Header 1</th><th style="padding:8px;">Header 2</th><th style="padding:8px;">Header 3</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:8px; border:1px solid #f3f4f6;">1</td><td style="padding:8px; border:1px solid #f3f4f6;">2</td><td style="padding:8px; border:1px solid #f3f4f6;" rowspan="2">rows 1–2 merged</td></tr>
+          <tr><td style="padding:8px; border:1px solid #f3f4f6;">4</td><td style="padding:8px; border:1px solid #f3f4f6;">5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
+  <!-- IMAGES -->
   <div class="section-title" id="images">Images</div>
   <div class="mini-grid">
     <div class="mini-card">
@@ -272,12 +381,14 @@
     </div>
   </div>
 
+  <!-- AUDIO AND VIDEO -->
   <div class="section-title">Audio &amp; Video</div>
   <div class="alert-note">
     <span class="alabel">ℹ️ Best Practice</span>
-    Do <strong>not</strong> embed audio or video files directly within an ePI. Instead, link to external copies using the <code>&lt;a&gt;</code> tag. <strong>Always check local regulations</strong> to confirm if audio and video are permitted in your jurisdiction.
+    Do <strong>not</strong> embed audio or video files directly within an ePI — their large size makes the document impractical to exchange. Instead, link to external copies using the <code>&lt;a&gt;</code> tag. <strong>Always check local regulations</strong> to confirm if audio and video are permitted in your jurisdiction.
   </div>
 
+  <!-- LANGUAGES -->
   <div class="section-title" id="languages">Languages</div>
   <div class="mini-grid">
     <div class="mini-card">
@@ -290,6 +401,7 @@
     </div>
   </div>
 
+  <!-- MATH FORMULAS -->
   <div class="section-title" id="math">Math Formulas</div>
   <div class="rule-section">
     <div class="rule-header">∑ MathML is not currently supported in FHIR ePI</div>
@@ -299,6 +411,7 @@
     </div>
   </div>
 
+  <!-- REFERENCES -->
   <div class="section-title" id="references">Appendices &amp; References</div>
   <div class="ref-list">
     <h4>📚 Key References</h4>
@@ -321,3 +434,5 @@
   </div>
 
 </div>
+</body>
+</html>

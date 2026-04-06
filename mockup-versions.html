@@ -1,78 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Version Control — Technical Details Mockup</title>
 <style>
-  .ver-page *, .ver-page *::before, .ver-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  .ver-page { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; }
-  .ver-page .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
-  .ver-page .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
-  .ver-page .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
-  .ver-page .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-  .ver-page .hero p { font-size:.95em; color:#6b7280; max-width:580px; margin:0 auto; line-height:1.6; }
-  .ver-page .section-title { font-size:1.1em; font-weight:700; color:#111827; margin: 36px 0 14px; display:flex; align-items:center; gap:8px; }
-  .ver-page .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
-  .ver-page .id-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:36px; }
-  .ver-page .id-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px; }
-  .ver-page .id-card .id-tag { font-size:.68em; font-weight:800; text-transform:uppercase; letter-spacing:.1em; padding:3px 9px; border-radius:100px; display:inline-block; margin-bottom:10px; }
-  .ver-page .id-card .id-tag.server { background:#fef3c7; color:#92400e; }
-  .ver-page .id-card .id-tag.business { background:#eff6ff; color:#1e40af; }
-  .ver-page .id-card .id-name { font-family:monospace; font-weight:700; color:#111827; font-size:.95em; margin-bottom:6px; }
-  .ver-page .id-card p { font-size:.82em; color:#4b5563; line-height:1.6; }
-  .ver-page .pipeline { display:flex; gap:0; margin-bottom:8px; }
-  .ver-page .pipeline-step { flex:1; text-align:center; padding:14px 8px 12px; }
-  .ver-page .pipeline-step .picon { font-size:1.3em; margin-bottom:6px; }
-  .ver-page .pipeline-step .plabel { font-size:.72em; font-weight:800; text-transform:uppercase; letter-spacing:.08em; margin-bottom:4px; font-family:monospace; }
-  .ver-page .pipeline-step .pdesc { font-size:.73em; color:#6b7280; line-height:1.4; }
-  .ver-page .ps-preliminary { background:#fefce8; border:1px solid #fde68a; border-right:none; border-radius:10px 0 0 10px; }
-  .ver-page .ps-final { background:#ecfdf5; border:1px solid #a7f3d0; border-right:none; }
-  .ver-page .ps-deprecated { background:#fef2f2; border:1px solid #fecaca; border-right:none; }
-  .ver-page .ps-cancelled { background:#f9fafb; border:1px solid #e5e7eb; border-right:none; }
-  .ver-page .ps-error { background:#fef2f2; border:1px solid #fecaca; border-radius:0 10px 10px 0; }
-  .ver-page .ps-preliminary .plabel { color:#92400e; }
-  .ver-page .ps-final .plabel { color:#065f46; }
-  .ver-page .ps-deprecated .plabel { color:#991b1b; }
-  .ver-page .ps-cancelled .plabel { color:#374151; }
-  .ver-page .ps-error .plabel { color:#991b1b; }
-  .ver-page .pipeline-arrow { display:flex; align-items:center; color:#9ca3af; font-size:.9em; flex-shrink:0; padding: 0 2px; }
-  .ver-page .relates-table { width:100%; border-collapse:collapse; font-size:.83em; margin-bottom:36px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
-  .ver-page .relates-table thead { background:#f0f4ff; }
-  .ver-page .relates-table th { text-align:left; padding:11px 14px; font-weight:700; color:#374151; font-size:.78em; text-transform:uppercase; letter-spacing:.06em; border-bottom:1px solid #e5e7eb; }
-  .ver-page .relates-table td { padding:11px 14px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:top; }
-  .ver-page .relates-table tr:last-child td { border-bottom:none; }
-  .ver-page .rel-code { font-family:monospace; font-weight:700; font-size:.85em; }
-  .ver-page .rel-derived { color:#1d4ed8; }
-  .ver-page .rel-amends { color:#7c3aed; }
-  .ver-page .rel-replaces { color:#065f46; }
-  .ver-page .rel-retracts { color:#991b1b; }
-  .ver-page .lifecycle-table { width:100%; border-collapse:collapse; font-size:.78em; margin-bottom:36px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
-  .ver-page .lifecycle-table thead { background:#003087; color:#fff; }
-  .ver-page .lifecycle-table th { text-align:left; padding:10px 12px; font-weight:700; font-size:.78em; }
-  .ver-page .lifecycle-table td { padding:9px 12px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:top; }
-  .ver-page .lifecycle-table tr:last-child td { border-bottom:none; }
-  .ver-page .lifecycle-table tr:nth-child(even) { background:#f9fafb; }
-  .ver-page .status-chip { font-size:.72em; font-weight:700; padding:2px 8px; border-radius:100px; display:inline-block; }
-  .ver-page .status-preliminary { background:#fefce8; color:#92400e; }
-  .ver-page .status-final { background:#ecfdf5; color:#065f46; }
-  .ver-page .uuid { font-family:monospace; font-size:.82em; color:#374151; }
-  .ver-page .rel-chip { font-family:monospace; font-size:.75em; background:#eff6ff; color:#1e40af; padding:1px 6px; border-radius:3px; }
-  .ver-page .step-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px; }
-  .ver-page .step-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px; }
-  .ver-page .step-card .num { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; background:#003087; color:#fff; border-radius:50%; font-size:.72em; font-weight:800; margin-bottom:10px; }
-  .ver-page .step-card .stitle { font-weight:700; color:#111827; margin-bottom:8px; font-size:.9em; }
-  .ver-page .step-card ul { font-size:.8em; color:#4b5563; padding-left:14px; line-height:1.8; }
-  .ver-page .diagram-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px; }
-  .ver-page .diagram-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
-  .ver-page .diagram-card .fig-label { background:#f0f4ff; padding:10px 14px; font-size:.78em; font-weight:700; color:#1d4ed8; border-bottom:1px solid #e5e7eb; }
-  .ver-page .diagram-card img { width:100%; height:auto; display:block; }
-  .ver-page .diagram-card .fig-caption { padding:10px 14px; font-size:.75em; color:#6b7280; line-height:1.4; }
-  .ver-page code { font-family:monospace; font-size:.88em; background:#f0f4ff; color:#2563eb; padding:1px 5px; border-radius:3px; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f9fafb; color: #111827; }
+
+  nav { background: #1e3a5f; color: #fff; padding: 12px 32px; display: flex; align-items: center; gap: 32px; font-size:.85em; }
+  nav .logo { font-weight: 800; }
+  nav a { color: #93c5fd; text-decoration: none; }
+
+  .breadcrumb { background:#fff; border-bottom:1px solid #e5e7eb; padding: 10px 32px; font-size:.78em; color:#6b7280; }
+  .breadcrumb span { color:#2563eb; }
+
+  .content { max-width: 960px; margin: 0 auto; padding: 0 32px 64px; }
+
+  /* HERO */
+  .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
+  .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
+  .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
+  .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .hero p { font-size:.95em; color:#6b7280; max-width:580px; margin:0 auto; line-height:1.6; }
+
+  .section-title { font-size:1.1em; font-weight:700; color:#111827; margin: 36px 0 14px; display:flex; align-items:center; gap:8px; }
+  .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
+
+  /* IDENTIFIER CARDS – 2×2 */
+  .id-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:36px; }
+  .id-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px; }
+  .id-card .id-tag { font-size:.68em; font-weight:800; text-transform:uppercase; letter-spacing:.1em; padding:3px 9px; border-radius:100px; display:inline-block; margin-bottom:10px; }
+  .id-card .id-tag.server { background:#fef3c7; color:#92400e; }
+  .id-card .id-tag.business { background:#eff6ff; color:#1e40af; }
+  .id-card .id-name { font-family:monospace; font-weight:700; color:#111827; font-size:.95em; margin-bottom:6px; }
+  .id-card p { font-size:.82em; color:#4b5563; line-height:1.6; }
+
+  /* STATUS PIPELINE */
+  .pipeline { display:flex; gap:0; margin-bottom:8px; }
+  .pipeline-step { flex:1; text-align:center; padding:14px 8px 12px; position:relative; }
+  .pipeline-step .picon { font-size:1.3em; margin-bottom:6px; }
+  .pipeline-step .plabel { font-size:.72em; font-weight:800; text-transform:uppercase; letter-spacing:.08em; margin-bottom:4px; font-family:monospace; }
+  .pipeline-step .pdesc { font-size:.73em; color:#6b7280; line-height:1.4; }
+  .ps-preliminary { background:#fefce8; border:1px solid #fde68a; border-right:none; border-radius:10px 0 0 10px; }
+  .ps-final { background:#ecfdf5; border:1px solid #a7f3d0; border-right:none; }
+  .ps-deprecated { background:#fef2f2; border:1px solid #fecaca; border-right:none; }
+  .ps-cancelled { background:#f9fafb; border:1px solid #e5e7eb; border-right:none; }
+  .ps-error { background:#fef2f2; border:1px solid #fecaca; border-radius:0 10px 10px 0; }
+  .ps-preliminary .plabel { color:#92400e; }
+  .ps-final .plabel { color:#065f46; }
+  .ps-deprecated .plabel { color:#991b1b; }
+  .ps-cancelled .plabel { color:#374151; }
+  .ps-error .plabel { color:#991b1b; }
+  .pipeline-arrow { display:flex; align-items:center; color:#9ca3af; font-size:.9em; flex-shrink:0; padding: 0 2px; }
+
+  /* relatesTo TABLE */
+  .relates-table { width:100%; border-collapse:collapse; font-size:.83em; margin-bottom:36px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
+  .relates-table thead { background:#f0f4ff; }
+  .relates-table th { text-align:left; padding:11px 14px; font-weight:700; color:#374151; font-size:.78em; text-transform:uppercase; letter-spacing:.06em; border-bottom:1px solid #e5e7eb; }
+  .relates-table td { padding:11px 14px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:top; }
+  .relates-table tr:last-child td { border-bottom:none; }
+  .rel-code { font-family:monospace; font-weight:700; font-size:.85em; }
+  .rel-derived { color:#1d4ed8; }
+  .rel-amends { color:#7c3aed; }
+  .rel-replaces { color:#065f46; }
+  .rel-retracts { color:#991b1b; }
+
+  /* LIFECYCLE TABLE */
+  .lifecycle-table { width:100%; border-collapse:collapse; font-size:.78em; margin-bottom:36px; background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
+  .lifecycle-table thead { background:#003087; color:#fff; }
+  .lifecycle-table th { text-align:left; padding:10px 12px; font-weight:700; font-size:.78em; }
+  .lifecycle-table td { padding:9px 12px; border-bottom:1px solid #f3f4f6; color:#374151; vertical-align:top; }
+  .lifecycle-table tr:last-child td { border-bottom:none; }
+  .lifecycle-table tr:nth-child(even) { background:#f9fafb; }
+  .status-chip { font-size:.72em; font-weight:700; padding:2px 8px; border-radius:100px; display:inline-block; }
+  .status-preliminary { background:#fefce8; color:#92400e; }
+  .status-final { background:#ecfdf5; color:#065f46; }
+  .uuid { font-family:monospace; font-size:.82em; color:#374151; }
+  .rel-chip { font-family:monospace; font-size:.75em; background:#eff6ff; color:#1e40af; padding:1px 6px; border-radius:3px; }
+
+  /* STEP CARDS */
+  .step-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px; }
+  .step-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px; }
+  .step-card .num { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; background:#003087; color:#fff; border-radius:50%; font-size:.72em; font-weight:800; margin-bottom:10px; }
+  .step-card .stitle { font-weight:700; color:#111827; margin-bottom:8px; font-size:.9em; }
+  .step-card ul { font-size:.8em; color:#4b5563; padding-left:14px; line-height:1.8; }
+  code { font-family:monospace; font-size:.88em; background:#f0f4ff; color:#2563eb; padding:1px 5px; border-radius:3px; }
+
+  /* DIAGRAM PLACEHOLDER */
+  .diagram-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px; }
+  .diagram-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; }
+  .diagram-card .fig-label { background:#f0f4ff; padding:10px 14px; font-size:.78em; font-weight:700; color:#1d4ed8; border-bottom:1px solid #e5e7eb; }
+  .diagram-card img { width:100%; height:auto; display:block; }
+  .diagram-card .fig-caption { padding:10px 14px; font-size:.75em; color:#6b7280; line-height:1.4; }
 </style>
+</head>
+<body>
 
-<div class="ver-page">
+<nav>
+  <div class="logo">Vulcan ePI Implementation Guide</div>
+  <a href="#">Home</a>
+  <a href="#">Getting Started</a>
+  <a href="#">Build ePIs</a>
+  <a href="#">Technical Details</a>
+  <a href="#">Artifacts</a>
+</nav>
 
+<div class="breadcrumb">Technical Details → <span>Version Control</span></div>
+
+<div class="content">
+
+  <!-- HERO -->
   <div class="hero">
     <div class="eyebrow">Technical Details · Lifecycle Management</div>
     <h1>Managing the <span>ePI Lifecycle</span></h1>
     <p>A structured approach to versioning, auditing, and traceability for ePI documents — from initial draft through regulatory approval, variation, and eventual withdrawal.</p>
   </div>
 
+  <!-- IDENTIFIER REFERENCE -->
   <div class="section-title">Version Identifiers at a Glance</div>
   <div class="id-grid">
     <div class="id-card">
@@ -97,6 +142,7 @@
     </div>
   </div>
 
+  <!-- STATUS PIPELINE -->
   <div class="section-title">Composition.status — Lifecycle States</div>
   <div class="pipeline">
     <div class="pipeline-step ps-preliminary">
@@ -131,6 +177,7 @@
   </div>
   <p style="font-size:.78em; color:#6b7280; margin-bottom:36px; margin-top:8px;">The arrows indicate the normal approval flow. The vertical bar separates terminal error states that can occur from any point in the lifecycle.</p>
 
+  <!-- RELATES TO TABLE -->
   <div class="section-title">Composition.relatesTo — Relationship Types</div>
   <table class="relates-table">
     <thead>
@@ -156,6 +203,7 @@
     </tbody>
   </table>
 
+  <!-- STEP-BY-STEP SCENARIO -->
   <div class="section-title">Version Control — Step by Step</div>
   <div class="step-grid">
     <div class="step-card">
@@ -188,6 +236,7 @@
     </div>
   </div>
 
+  <!-- LIFECYCLE TABLE -->
   <div class="section-title">ePI Lifecycle — Worked Example</div>
   <table class="lifecycle-table">
     <thead>
@@ -259,8 +308,9 @@
       </tr>
     </tbody>
   </table>
-  <p style="font-size:.78em; color:#6b7280; margin-bottom:36px; margin-top:-24px;">Rows 7–9 (intermediate draft updates) are omitted for brevity.</p>
+  <p style="font-size:.78em; color:#6b7280; margin-bottom:36px; margin-top:-24px;">Rows 7–9 (intermediate draft updates) are omitted for brevity. See the full table in the source file.</p>
 
+  <!-- DIAGRAMS -->
   <div class="section-title">Graphical Lifecycle Views</div>
   <div class="diagram-row">
     <div class="diagram-card">
@@ -281,3 +331,5 @@
   </div>
 
 </div>
+</body>
+</html>
