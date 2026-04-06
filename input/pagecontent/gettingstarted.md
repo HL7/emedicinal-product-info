@@ -1,120 +1,124 @@
-Not sure where to start? Whether you're a regulator evaluating the standard, a vendor building an authoring tool, or a developer creating the FHIR resources — this page will point you in the right direction. Start with the path that best describes your role, then follow the steps that apply to you.
+<!-- GETTING STARTED HEADER -->
+<div style="margin-bottom:32px;">
+  <h2 style="font-size:1.7em; font-weight:800; color:#111827; margin-bottom:10px;">Getting Started with ePI</h2>
+  <p style="font-size:.95em; color:#6b7280; line-height:1.6; max-width:640px;">Whether you are a Health Authority defining the rules, a Pharmaceutical company mapping your portfolio, or a Technology Vendor building an authoring platform — choose your path below.</p>
+</div>
 
----
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
 
-### Choose Your Path
+<!-- PERSONA ROUTING GRID -->
+<h2 style="font-size:1.2em; font-weight:700; color:#111827; margin-bottom:16px;">Choose Your Path</h2>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px;">
+  <!-- Pharmaceutical Industry -->
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:24px; position:relative; overflow:hidden;">
+    <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#2563eb;"></div>
+    <div style="font-size:1.4em; margin-bottom:10px; margin-top:4px;">🏢</div>
+    <div style="font-weight:700; color:#111827; font-size:1em; margin-bottom:6px;">Pharmaceutical Industry</div>
+    <p style="font-size:.82em; color:#6b7280; line-height:1.5; margin-bottom:14px;">You are responsible for converting existing drug labels into the ePI standard.</p>
+    <ol style="font-size:.82em; color:#374151; padding-left:16px; line-height:1.9; margin:0;">
+      <li>Review the <a href="index.html" style="color:#2563eb; font-weight:600;">Interactive Showcases</a></li>
+      <li>Read the <a href="build-overview.html" style="color:#2563eb; font-weight:600;">Build Overview</a></li>
+      <li>Select a structured authoring tool vendor</li>
+      <li>Assess your internal ingredient data quality</li>
+    </ol>
+  </div>
+  <!-- Health Authorities -->
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:24px; position:relative; overflow:hidden;">
+    <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#10b981;"></div>
+    <div style="font-size:1.4em; margin-bottom:10px; margin-top:4px;">🏛️</div>
+    <div style="font-weight:700; color:#111827; font-size:1em; margin-bottom:6px;">Health Authorities</div>
+    <p style="font-size:.82em; color:#6b7280; line-height:1.5; margin-bottom:14px;">You are defining digital interoperability strategies at a national or regional level.</p>
+    <ol style="font-size:.82em; color:#374151; padding-left:16px; line-height:1.9; margin:0;">
+      <li>Review the <a href="build-list.html" style="color:#10b981; font-weight:600;">Build List of ePIs</a> guide</li>
+      <li>Understand the <a href="build-overview.html" style="color:#10b981; font-weight:600;">Four ePI Types</a></li>
+      <li>Establish national controlled terminologies</li>
+      <li>Test with the <a href="examples/epi-list-showcase-2.html" style="color:#10b981; font-weight:600;">Jurisdiction Showcases</a></li>
+    </ol>
+  </div>
+  <!-- Technology Vendors -->
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:24px; position:relative; overflow:hidden;">
+    <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#8b5cf6;"></div>
+    <div style="font-size:1.4em; margin-bottom:10px; margin-top:4px;">💻</div>
+    <div style="font-weight:700; color:#111827; font-size:1em; margin-bottom:6px;">Technology Vendors</div>
+    <p style="font-size:.82em; color:#6b7280; line-height:1.5; margin-bottom:14px;">You are building FHIR editing tools, viewers, or server architectures.</p>
+    <ol style="font-size:.82em; color:#374151; padding-left:16px; line-height:1.9; margin:0;">
+      <li>Study the <a href="artifacts.html" style="color:#8b5cf6; font-weight:600;">FHIR Profiles</a></li>
+      <li>Copy the <a href="stylesheets.html" style="color:#8b5cf6; font-weight:600;">CSS Style Sheets</a></li>
+      <li>Review the <a href="build-epi2.html" style="color:#8b5cf6; font-weight:600;">Product Architecture</a> mapping</li>
+      <li>Validate with the <a href="https://validator.fhir.org" style="color:#8b5cf6; font-weight:600;">HL7 Validator</a></li>
+    </ol>
+  </div>
+</div>
 
-<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 24px;">
-  <thead>
-    <tr style="background-color: #003087; color: #ffffff;">
-      <th style="padding: 14px 12px; border: 1px solid #d0d0d0; text-align: left; width: 33%;">🏛️ Regulator / Business Analyst</th>
-      <th style="padding: 14px 12px; border: 1px solid #d0d0d0; text-align: left; width: 33%;">🏭 Vendor / Implementer</th>
-      <th style="padding: 14px 12px; border: 1px solid #d0d0d0; text-align: left;">👩‍💻 FHIR Developer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #d0d0d0; vertical-align: top;">
-        <em>You want to understand what ePI is, what it enables, and how your organization should position itself.</em><br><br>
-        <ol style="margin: 0; padding-left: 16px;">
-          <li>Read the <a href="index.html">Home page</a> for context and benefits</li>
-          <li>Review the <a href="index.html#epi-maturity--use-cases">ePI Types</a> to identify the right starting point</li>
-          <li>Review the <a href="build-overview.html">ePI Structure overview</a></li>
-          <li>Share the <a href="https://github.com/HL7/emedicinal-product-info" target="_blank">GitHub repository</a> with your technical team</li>
-        </ol>
-      </td>
-      <td style="padding: 12px; border: 1px solid #d0d0d0; vertical-align: top;">
-        <em>You are building a system that creates, stores, or renders ePI documents.</em><br><br>
-        <ol style="margin: 0; padding-left: 16px;">
-          <li>Review the <a href="index.html#epi-maturity--use-cases">ePI Types</a> to select your target scope</li>
-          <li>Review the rendered HTML examples below</li>
-          <li>Examine the underlying FHIR JSON</li>
-          <li>Review the <a href="stylesheets.html">provided stylesheets</a> for rendering</li>
-          <li>Set up a FHIR R5 server (e.g., HAPI FHIR) for storage and API exchange</li>
-        </ol>
-      </td>
-      <td style="padding: 12px; border: 1px solid #d0d0d0; vertical-align: top;">
-        <em>You are mapping, profiling, or validating FHIR resources for ePI.</em><br><br>
-        <ol style="margin: 0; padding-left: 16px;">
-          <li>Review the <a href="build-overview.html">ePI Structure overview</a></li>
-          <li>Study the <a href="artifacts.html">Profiles &amp; Extensions</a> in the Artifacts tab</li>
-          <li>Examine the FHIR JSON examples</li>
-          <li>Validate your Bundle using the <a href="https://validator.fhir.org" target="_blank">Official FHIR Validator</a></li>
-          <li>Reference the <a href="tech-details.html">Technical Details</a> page for implementation notes</li>
-        </ol>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
 
----
+<!-- THE JOURNEY IS INCREMENTAL -->
+<div style="background:linear-gradient(135deg,#eff6ff,#f0fdf4); border:1px solid #bfdbfe; border-radius:12px; padding:28px 32px; display:flex; align-items:center; gap:32px; margin-bottom:36px; flex-wrap:wrap;">
+  <div style="flex:1; min-width:260px;">
+    <div style="font-weight:700; color:#111827; font-size:1.05em; margin-bottom:8px;">The journey is incremental</div>
+    <p style="font-size:.88em; color:#374151; line-height:1.6; margin:0;">You don't need to model complex clinical algorithms on day one. Start with <strong>Type 1</strong> to digitize the paper layout, then add <strong>Type 2</strong> product data for automated supply chain tracking.</p>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:10px; flex-shrink:0;">
+    <a href="build-epi1.html" style="display:block; background:#2563eb; color:#fff; padding:11px 22px; border-radius:7px; font-weight:600; font-size:.88em; text-decoration:none; text-align:center;">Start with Type 1 →</a>
+    <a href="build-epi2.html" style="display:block; background:#10b981; color:#fff; padding:11px 22px; border-radius:7px; font-weight:600; font-size:.88em; text-decoration:none; text-align:center;">Jump to Type 2 →</a>
+    <a href="build-epi3.html" style="display:block; background:#8b5cf6; color:#fff; padding:11px 22px; border-radius:7px; font-weight:600; font-size:.88em; text-decoration:none; text-align:center;">Jump to Type 3 →</a>
+  </div>
+</div>
 
-### Prerequisites
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
 
-Before you start building, make sure you have the following in place:
+<!-- PRE-REQUISITES -->
+<h2 style="font-size:1.2em; font-weight:700; color:#111827; margin-bottom:16px;">Prerequisites</h2>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px;">
+  <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px;">
+    <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:6px;">Required</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:6px;">Structured Authoring Tool</div>
+    <p style="font-size:.82em; color:#6b7280; line-height:1.5; margin:0;">An ePI authoring tool to create FHIR resources, supporting rich text, product metadata, and versioning.</p>
+  </div>
+  <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px;">
+    <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:6px;">Required</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:6px;">Style Sheets</div>
+    <p style="font-size:.82em; color:#6b7280; line-height:1.5; margin:0;">CSS to render FHIR JSON/XML as human-readable views. Use the <a href="stylesheets.html" style="color:#2563eb; font-weight:600;">provided stylesheet</a> as your foundation.</p>
+  </div>
+  <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px;">
+    <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:6px;">Recommended</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:6px;">FHIR R5 Server</div>
+    <p style="font-size:.82em; color:#6b7280; line-height:1.5; margin:0;">A central storage system (e.g., HAPI FHIR, Google Cloud Healthcare API) for searching, versioning, and sharing ePIs via the API.</p>
+  </div>
+</div>
 
-**Component Authoring Tool** *(Required)*
-A structured authoring tool to create FHIR resources, supporting rich text, product metadata, and lifecycle management (versioning).
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
 
-**Style Sheets** *(Required)*
-Converting raw FHIR JSON/XML into human-readable views requires CSS. Use the [provided stylesheet](stylesheets.html) in this IG as a foundation.
+<!-- EXAMPLE DOCUMENTS -->
+<h2 style="font-size:1.2em; font-weight:700; color:#111827; margin-bottom:8px;">Example ePI Documents</h2>
+<p style="font-size:.88em; color:#6b7280; margin-bottom:16px;">See how raw FHIR data is transformed into a modern, user-friendly interface.</p>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px;">
+  <a href="examples/bundle-epi-type1-example-paracetamol.html" target="_blank" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px; display:block; text-align:center;">
+    <div style="font-size:1.4em; margin-bottom:8px;">📱</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:4px; font-size:.95em;">ePI Type 1</div>
+    <div style="font-size:.78em; color:#6b7280; margin-bottom:10px;">Digital Label</div>
+    <div style="font-size:.78em; font-weight:700; color:#3b82f6;">Open →</div>
+  </a>
+  <a href="examples/bundle-epi-type2-example-paracetamol.html" target="_blank" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px; display:block; text-align:center;">
+    <div style="font-size:1.4em; margin-bottom:8px;">🔍</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:4px; font-size:.95em;">ePI Type 2</div>
+    <div style="font-size:.78em; color:#6b7280; margin-bottom:10px;">Product Information</div>
+    <div style="font-size:.78em; font-weight:700; color:#10b981;">Open →</div>
+  </a>
+  <a href="examples/bundle-epi-type3-example-wonderdrug.html" target="_blank" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px; display:block; text-align:center;">
+    <div style="font-size:1.4em; margin-bottom:8px;">⚡</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:4px; font-size:.95em;">ePI Type 3</div>
+    <div style="font-size:.78em; color:#6b7280; margin-bottom:10px;">Clinical Information</div>
+    <div style="font-size:.78em; font-weight:700; color:#8b5cf6;">Open →</div>
+  </a>
+</div>
 
-**FHIR R5 Server** *(Recommended)*
-A central storage system (e.g., HAPI FHIR, Google Cloud Healthcare API) for searching, versioning, and sharing ePI documents via standard APIs.
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
 
----
-
-### Required Skills
-
-To successfully implement ePI, your team should have familiarity with the following:
-
-<table style="width:100%; border-collapse: collapse; border: 1px solid #d0d0d0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">
-  <thead>
-    <tr style="background-color: #003087; color: #ffffff;">
-      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left; width: 50%;">Technical Staff</th>
-      <th style="padding: 12px; border: 1px solid #d0d0d0; text-align: left;">Regulatory / Business Staff</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">FHIR R5 Core Specification</td>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">National Regulatory Guidance on ePI</td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">JSON &amp; XML Editing</td>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">Medicinal Product Metadata</td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">RESTful APIs</td>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">Controlled Terminology (SNOMED, MedDRA)</td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">CSS &amp; XSLT</td>
-      <td style="padding: 12px; border: 1px solid #d0d0d0;">Structured Authoring Workflows</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-### Example ePI Documents
-
-See how raw FHIR data is transformed into a modern, user-friendly interface. The examples below use a 2-pane design with structured navigation:
-
-*   [**ePI Type 1 (Paracetamol)**](examples/bundle-epi-type1-example-paracetamol.html){:target="_blank"} — Narrative-focused digital reproduction
-*   [**ePI Type 2 (Paracetamol)**](examples/bundle-epi-type2-example-paracetamol.html){:target="_blank"} — Adds structured product identification
-*   [**ePI Type 3 (WonderDrug)**](examples/bundle-epi-type3-example-wonderdrug.html){:target="_blank"} — Full structured clinical data with dosing
-
-**Underlying FHIR JSON**:
-*   [Type 1 JSON](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type1-example-paracetamol.json){:target="_blank"}
-*   [Type 2 JSON](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type2-example-paracetamol.json){:target="_blank"}
-*   [Type 3 JSON](https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/bundle-epi-type3-example-wonderdrug.json){:target="_blank"}
-
----
-
-### Validate &amp; Build
-
-Once you have reviewed the examples:
-
-1.  **Validate your ePI** — Use the [Official FHIR Validator](https://validator.fhir.org){:target="_blank"} with the ePI IG package to check for compliance with the profiles defined in this guide.
-2.  **Build your own** — Use the provided examples as a template. Start with Type 2 if you are unsure — it offers the best balance of implementability and clinical value.
+<!-- VALIDATE & BUILD -->
+<h2 style="font-size:1.2em; font-weight:700; color:#111827; margin-bottom:12px;">Validate &amp; Build</h2>
+<p style="font-size:.88em; color:#374151; line-height:1.6; margin-bottom:10px;">Once you have reviewed the examples:</p>
+<ol style="font-size:.88em; color:#374151; padding-left:20px; line-height:1.9; margin-bottom:32px;">
+  <li><strong>Validate your ePI</strong> — Use the <a href="https://validator.fhir.org" target="_blank" style="color:#2563eb; font-weight:600;">Official FHIR Validator</a> with the ePI IG package to check compliance with the profiles defined in this guide.</li>
+  <li><strong>Build your own</strong> — Use the provided examples as a template. Start with Type 2 if you are unsure — it offers the best balance of implementability and value.</li>
+</ol>
