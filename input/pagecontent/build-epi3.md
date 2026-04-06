@@ -8,7 +8,7 @@
 
 <!-- WHAT IS TYPE 3 -->
 <h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 3?</h2>
-<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 3 unlocks <strong>structured, machine readable clinical information</strong>. It takes the narrative clinical sections already present in Type 1 — indications, contraindications, interactions, warnings — and expresses them as <strong>computable, structured FHIR resources</strong>. Electronic Medical Record (EMR) systems, pharmacovigilance tools, and patient-facing apps can then query and act on this data directly, without parsing free text.</p>
+<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 3 unlocks <strong>structured, machine readable clinical information</strong>. It takes the narrative clinical sections already present in Type 1 — indications, contraindications, interactions, undesirable effects, warnings, population demographics — and expresses them as <strong>computable, structured FHIR resources</strong>. Electronic Medical Record (EMR) systems, pharmacovigilance tools, and patient-facing apps can then query and act on this data directly, without parsing free text.</p>
 
 <div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">You will add these FHIR resources (on top of Types 1 &amp; 2)</span></div>
 <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px;">
@@ -178,7 +178,7 @@
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
     <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Add MedicationKnowledge for dosage regimens <span style="font-size:.76em; font-weight:500; color:#6b7280;">(optional)</span></div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">The <strong>MedicationKnowledge</strong> resource provides computable dosing rules and therapeutic classification. It is optional but enables EMR systems to automatically suggest or validate dosing for specific patient populations.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">The <strong>MedicationKnowledge</strong> resource provides computable dosing rules and therapeutic classification. It can facilitate healthcare systems' ability to interpret authorized dosing information for specific patient populations.</p>
       <table style="width:100%; border-collapse:collapse; font-size:.84em; margin-bottom:14px;">
         <thead><tr style="background:#003087; color:#fff;">
           <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left; width:35%;">What it captures</th>
@@ -193,7 +193,7 @@
       </table>
       <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">💡</span>
-        <span><strong>Tip:</strong> MedicationKnowledge is valuable but complex to author. Consider adding it in a later iteration once the ClinicalUseDefinitions are validated and accepted. Your authoring tool may offer templates for common dosing patterns.</span>
+        <span><strong>Tip:</strong> MedicationKnowledge is valuable but complex to author. Consider adding it in a later iteration once the ClinicalUseDefinitions are validated and accepted. Your authoring tool should offer templates for common dosing patterns.</span>
       </div>
     </div>
   </div>
@@ -218,6 +218,21 @@
   </div>
 </div>
 
+<!-- STEP 5 -->
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">5</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Manage lifecycle and version control</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Once your ePI is authorized and published, any future changes must follow a structured versioning process. A new version of the label requires careful updates to the Bundle, Composition, and List resources to maintain historical traceability.</p>
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:10px;">
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#1d4ed8; margin-bottom:6px;">🔄 See Version Control Guide</div>
+        <p style="font-size:.88em; color:#1e40af; line-height:1.7; margin:0;">Before creating a v2.0 or subsequent version of this ePI, read the comprehensive <a href="versions.html" style="color:#1d4ed8; font-weight:600; text-decoration:underline;">Version Control</a> guide. It explains how to deprecate old versions, link new versions to the historical record, and increment your identifiers correctly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT'S NEXT -->
@@ -230,7 +245,7 @@
   </a>
   <a href="build-epi2.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:4px;">← Previous</div>
-    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Build ePI Type 2</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 2 Product Identification</div>
     <div style="font-size:.82em; color:#6b7280;">Return to the product identification step to review or update the structured product resources.</div>
   </a>
 </div>

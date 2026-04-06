@@ -8,7 +8,7 @@
 
 <!-- WHAT IS TYPE 2 -->
 <h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 2?</h2>
-<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 2 extends the narrative label (Type 1) by adding <strong>structured, machine-readable product information</strong>. This enables national drug catalogues, regulatory portals, and supply-chain systems to search, filter, and retrieve products by name, strength, ingredient, or authorisation number — without reading the narrative text.</p>
+<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 2 extends the digital label (Type 1) by adding <strong>structured, machine-readable product information</strong>. This enables national drug catalogues, regulatory portals, and supply-chain systems to search, filter, and retrieve products by name, strength, ingredient, or authorisation number — without reading the narrative text.</p>
 
 <div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">You will add these FHIR resources (on top of Type 1)</span></div>
 <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px;">
@@ -93,7 +93,7 @@
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
     <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Gather your regulatory master data</div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Before authoring any FHIR resources, collect the structured data from your regulatory and supply-chain systems. This is the data that already exists — you are digitalising it, not inventing it.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Before authoring any FHIR resources, collect the structured data from the authorized label and your regulatory and supply-chain systems. This data that already exists — you are digitalising it, not inventing it. For example:</p>
       <table style="width:100%; border-collapse:collapse; font-size:.84em; margin-bottom:10px;">
         <thead><tr style="background:#003087; color:#fff;">
           <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left; width:40%;">Data item</th>
@@ -163,6 +163,10 @@
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0; color:#003087; font-weight:700;">vii</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong>SubstanceDefinition</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">The chemical definition of each substance, with standard codes</td></tr>
         </tbody>
       </table>
+      <div style="background:#fefce8; border:1px solid #fef08a; border-left:4px solid #eab308; border-radius:8px; padding:14px 18px; margin-top:14px;">
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#854d0e; margin-bottom:6px;">Consult Local Guidance</div>
+        <p style="font-size:.88em; color:#713f12; line-height:1.7; margin:0;">Always consult your local regulator's implementation guidance when building this chain. While the Vulcan ePI profile defines this complete set of product resources, some regulators require the full chain, whereas others may only mandate a subset.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -213,6 +217,21 @@
   </div>
 </div>
 
+<!-- STEP 6 -->
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">6</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Manage lifecycle and version control</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Once your ePI is authorized and published, any future changes must follow a structured versioning process. A new version of the label requires careful updates to the Bundle, Composition, and List resources to maintain historical traceability.</p>
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:10px;">
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#1d4ed8; margin-bottom:6px;">🔄 See Version Control Guide</div>
+        <p style="font-size:.88em; color:#1e40af; line-height:1.7; margin:0;">Before creating a v2.0 or subsequent version of this ePI, read the comprehensive <a href="versions.html" style="color:#1d4ed8; font-weight:600; text-decoration:underline;">Version Control</a> guide. It explains how to deprecate old versions, link new versions to the historical record, and increment your identifiers correctly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT'S NEXT -->
@@ -220,12 +239,12 @@
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
   <a href="build-epi3.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>
-    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Build ePI Type 3</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 3 Clinical Information</div>
     <div style="font-size:.82em; color:#6b7280;">Add structured clinical definitions — indications, contraindications, warnings — to unlock clinical decision support.</div>
   </a>
   <a href="build-epi1.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:4px;">← Previous</div>
-    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Build ePI Type 1</div>
-    <div style="font-size:.82em; color:#6b7280;">Return to the narrative reproduction step if you need to revisit the Type 1 foundation.</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 1 Digital Label</div>
+    <div style="font-size:.82em; color:#6b7280;">Return to the Digital Label step if you need to revisit the Type 1 foundation.</div>
   </a>
 </div>

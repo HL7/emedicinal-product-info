@@ -10,7 +10,6 @@
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:4px;">Step A</div>
     <div style="font-weight:700; color:#111827; margin-bottom:6px;">Read the Global ePI IG</div>
     <div style="font-size:.84em; color:#6b7280; margin-bottom:10px;">Familiarise yourself with the Vulcan eMedicinal Product Information standard and its four ePI types.</div>
-    <a href="https://build.fhir.org/ig/HL7/vulcan-epi/" target="_blank" style="font-size:.8em; color:#2563eb; font-weight:600;">Open the Vulcan ePI IG →</a>
   </div>
   <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #0891b2; border-radius:8px; padding:18px 20px;">
     <div style="font-size:1.4em; margin-bottom:8px;">🏛️</div>
@@ -23,8 +22,7 @@
     <div style="font-size:1.4em; margin-bottom:8px;">🛠️</div>
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:4px;">Step C</div>
     <div style="font-weight:700; color:#111827; margin-bottom:6px;">Get a structured authoring tool</div>
-    <div style="font-size:.84em; color:#6b7280; margin-bottom:10px;">Use a certified ePI authoring platform or an advanced XML/JSON editor. Manual authoring is possible but error-prone.</div>
-    <span style="font-size:.8em; color:#6b7280; font-style:italic;">Consult your vendor or regulator for approved tools</span>
+    <div style="font-size:.84em; color:#6b7280; margin-bottom:10px;">There are numerous structured authoring tools available. Consult different vendors to find the right tool that fits your needs and budget</div>
   </div>
 </div>
 </div>
@@ -33,7 +31,7 @@
 
 <!-- WHAT IS TYPE 1 -->
 <h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 1?</h2>
-<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 1 is the digital equivalent of your existing paper label — a Summary of Product Characteristics (SmPC), Patient Information Leaflet (PIL), or other authorised document — converted into a structured FHIR document. It preserves the full narrative text and embedded images, making the document machine-readable while remaining human-readable.</p>
+<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 1 is the digital equivalent of your existing DOCX or PDF label (e.g., a Summary of Product Characteristics (SmPC), Patient Information Leaflet (PIL), Instructions For Use, Product Monograph, Medication Guide) converted into a structured FHIR document. It preserves the regulator's required template headings, full narrative text, tables, and embedded images, making the document machine-readable while remaining human-readable.</p>
 
 <div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">You will create these FHIR resources</span></div>
 <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px;">
@@ -78,7 +76,7 @@
       <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:10px;">Obtain the most recent <strong>regulator-approved</strong> version of the label in Word format (DOCX or DOC). This is your source of truth. Always use the version that matches the current marketing authorisation.</p>
       <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">💡</span>
-        <span><strong>Tip:</strong> If only a PDF exists, convert it to DOCX using a document conversion tool before proceeding. Review the output carefully — formatting artefacts from PDF conversion can introduce errors.</span>
+        <span><strong>Tip:</strong> If only a PDF exists, some structured authoring tools can convert it to DOCX or directly to ePI. Review the output carefully — formatting artefacts from PDF conversion can introduce errors.</span>
       </div>
     </div>
   </div>
@@ -98,14 +96,14 @@
         </tr></thead>
         <tbody>
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Which jurisdiction?</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><code style="font-family:monospace; font-size:.8em; color:#0891b2;">identifier.system</code> (regulator's namespace)</td></tr>
-          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">SmPC, PIL, or package leaflet?</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><code style="font-family:monospace; font-size:.8em; color:#0891b2;">Composition.type</code> (document type code)</td></tr>
+          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">What template type is this (e.g. SmPC, package leaflet, instructions for use, or other local template type)?</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><code style="font-family:monospace; font-size:.8em; color:#0891b2;">Composition.type</code> (document type code)</td></tr>
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Which language(s)?</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><code style="font-family:monospace; font-size:.8em; color:#0891b2;">Composition.language</code> (ISO 639-1, e.g. <strong>en</strong>)</td></tr>
           <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Which medicinal product?</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><code style="font-family:monospace; font-size:.8em; color:#0891b2;">Composition.title</code> + Type 2 product linkage</td></tr>
         </tbody>
       </table>
       <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">💡</span>
-        <span><strong>One document per language:</strong> Each language version is a separate ePI Bundle. Do not mix languages within a single document.</span>
+        <span><strong>One ePI document per language:</strong> Each language version is a separate ePI document (e.g., one ePI for French, a separate ePI for Japanese). Do not mix languages within a single ePI document.</span>
       </div>
     </div>
   </div>
@@ -117,10 +115,14 @@
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
     <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Convert DOCX content to ePI sections — apply the Granularity Rule</div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Map each top-level heading in the Word document to a top-level <code style="font-family:monospace; font-size:.8em; color:#0891b2;">&lt;section&gt;</code> in the Composition. Narrative text goes inside each section's <code style="font-family:monospace; font-size:.8em; color:#0891b2;">&lt;text&gt;</code> element as XHTML.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Map each top-level section heading in the regulator's Word document to a top-level <code style="font-family:monospace; font-size:.8em; color:#0891b2;">&lt;section&gt;</code> in the Composition resource. Narrative text goes inside each section's <code style="font-family:monospace; font-size:.8em; color:#0891b2;">&lt;text&gt;</code> element as XHTML. Reproduce the authorized content exactly as it appears in the Word document. This includes formatting, tables, and lists.</p>
+      <div style="background:#fefce8; border:1px solid #fef08a; border-left:4px solid #eab308; border-radius:8px; padding:14px 18px; margin-bottom:16px;">
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#854d0e; margin-bottom:6px;">Formatting vs. Styling</div>
+        <p style="font-size:.88em; color:#713f12; line-height:1.7; margin:0;"><strong>Embedded formatting is required</strong> for structural and semantic meaning (e.g., using standard HTML tags for bold, underline, italics, or text alignment). However, <strong>styles should never be embedded inline</strong> (e.g., hardcoded fonts, font sizes, text colors, or rigid table borders). All visual presentation must be handled externally. Refer to the <a href="stylesheets.html" style="color:#d97706; font-weight:600;">Style Sheets</a> page for details.</p>
+      </div>
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:16px;">
         <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#1d4ed8; margin-bottom:6px;">⚡ The ePI Granularity Rule</div>
-        <p style="font-size:.88em; color:#1e40af; line-height:1.7; margin:0;">In a Word document, sections like <strong>Indications</strong> are typically one large block of text. In an ePI, <strong>each individual item must be its own child subsection</strong>. This granularity enables automated clinical decision support, structured search, and multilingual comparison.</p>
+        <p style="font-size:.88em; color:#1e40af; line-height:1.7; margin:0;">In a Word document, sections like <strong>Indications</strong> are typically one large block of text. In an ePI, <strong>each individual item should be its own child subsection</strong>. This granularity enables more advanced use cases like personalization, dynamic content generation, healthcare interoperability, and advanced search.</p>
       </div>
       <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example 1 — Indications</div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;">
@@ -165,7 +167,7 @@
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
     <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Convert images to Base64 Binary</div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Physical labels often contain diagrams, instructional graphics, or logos. These must be embedded directly inside the ePI — not linked to external files — so the document is fully self-contained.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Labels often contain diagrams, instructional graphics, or logos. These must be embedded directly inside the ePI — not linked to external files — so the document is fully self-contained.</p>
       <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:14px;">
         <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:12px 14px; text-align:center;">
           <div style="font-size:1.3em; margin-bottom:6px;">🖼️</div>
@@ -175,7 +177,7 @@
         <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:12px 14px; text-align:center;">
           <div style="font-size:1.3em; margin-bottom:6px;">🔢</div>
           <div style="font-size:.78em; font-weight:700; color:#111827; margin-bottom:4px;">B. Encode to Base64</div>
-          <div style="font-size:.76em; color:#6b7280;">Use a free online tool or your authoring platform to convert the image to a Base64 string</div>
+          <div style="font-size:.76em; color:#6b7280;">Use a reputable online tools or your authoring platform to convert the image to a Base64 string</div>
         </div>
         <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:12px 14px; text-align:center;">
           <div style="font-size:1.3em; margin-bottom:6px;">🔗</div>
@@ -219,6 +221,21 @@
   </div>
 </div>
 
+<!-- STEP 6 -->
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">6</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Manage lifecycle and version control</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Once your ePI is authorized and published, any future changes must follow a structured versioning process. A new version of the label requires careful updates to the Bundle, Composition, and List resources to maintain historical traceability.</p>
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:10px;">
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#1d4ed8; margin-bottom:6px;">🔄 See Version Control Guide</div>
+        <p style="font-size:.88em; color:#1e40af; line-height:1.7; margin:0;">Before creating a v2.0 or subsequent version of this ePI, read the comprehensive <a href="versions.html" style="color:#1d4ed8; font-weight:600; text-decoration:underline;">Version Control</a> guide. It explains how to deprecate old versions, link new versions to the historical record, and increment your identifiers correctly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT'S NEXT -->
@@ -226,8 +243,8 @@
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
   <a href="build-epi2.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>
-    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Build ePI Type 2</div>
-    <div style="font-size:.82em; color:#6b7280;">Add structured product identifiers, organisation records, ingredients, and pack information to enable machine-level lookup.</div>
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 2 Product Identification</div>
+    <div style="font-size:.82em; color:#6b7280;">Add structured product information, organisation records, ingredients, and pack information to enable machine-level lookup.</div>
   </a>
   <a href="build-overview.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:4px;">Reference</div>

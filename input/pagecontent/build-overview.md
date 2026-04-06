@@ -1,9 +1,9 @@
 <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85em; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
   <span style="flex-shrink:0; font-size:1em;">📋</span>
-  <span><strong>New to ePI?</strong> Before diving into a specific type, review the <a href="build-epi1.html#prerequisites" style="color:#1d4ed8; font-weight:600;">Pre-requisites</a> — including reading the Vulcan ePI IG, your national guidance, and selecting a structured authoring tool.</span>
+  <span><strong>New to ePI?</strong> Before building an ePI, reading this Vulcan ePI IG, your national regulator's ePI guidance, and select a structured authoring tool.</span>
 </div>
 
-The **Build ePI** section provides step-by-step instructions for creating valid ePI documents at each maturity level, from a basic digital label (Type 1) through to full clinical decision support (Type 3). It also describes how to set up an [ePI Repository](tech-details.html) to manage a catalogue of authorised labels.
+The **Build ePI** section provides step-by-step instructions for creating valid ePI documents at each maturity level, from a basic digital label (Type 1) through to structured clinical information (Type 3). It also describes how to set up an [ePI Repository](tech-details.html) to manage a catalogue of authorised labels.
 
 ePI is not a single resource but a collection of interlinked FHIR resources. Depending on the **ePI Type** (Maturity Level) being implemented, different resources are required to capture the necessary narrative and structured data.
 
@@ -62,21 +62,25 @@ The table below identifies the primary FHIR resources used across the four ePI t
       <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>ClinicalUseDefinition</strong></td>
       <td style="padding: 10px; border: 1px solid #d0d0d0;">Structures indications, contraindications, and interaction alerts.</td>
     </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>MedicationKnowledge</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines the authorized dosage and administration instructions.</td>
+    </tr>
   </tbody>
 </table>
 
 ### Select Your Implementation Path
 Implementation guidance is organized by the depth of structured data required:
 
-*   **[Type 1: Narrative Reproduction](build-epi1.html)**
+*   **[Type 1: Digital Label](build-epi1.html)**
     *   *Focus*: Digitizing the official label template (SmPC/PIL/Artwork).
-    *   *Key Features*: HTML5/XHTML narrative, embedded images, and document metadata.
-*   **[Type 2: Product Identification](build-epi2.html)**
-    *   *Focus*: Structured supply chain and search capabilities.
-    *   *Key Features*: Type 1 + structured ingredients, form, packaging, and authorization.
-*   **[Type 3: Clinical Guidance](build-epi3.html)**
-    *   *Focus*: Clinical decision support.
+    *   *Key Features*: Structured narrative text, structured tables, embedded images, and document metadata.
+*   **[Type 2: Product Information](build-epi2.html)**
+    *   *Focus*: Structured product information for advanced search capabilities.
+    *   *Key Features*: Type 1 + structured ingredients, strength, organization, pharmaceutical dose form, packaging, and authorization.
+*   **[Type 3: Clinical Information](build-epi3.html)**
+    *   *Focus*: structured Clinical information.
     *   *Key Features*: Type 2 + structured indications, contraindications, and warnings.
-*   **[Type 4: Integrated Narrative & Data](build-epi4.html)**
-    *   *Focus*: Advanced automation and personalization.
-    *   *Key Features*: Direct linkage between specific sections of the human-readable text and their corresponding machine-readable FHIR resources.
+*   **[Type 4: Dynamic Digital Label](build-epi4.html)**
+    *   *Focus*: Personalization and dynamic content generation.
+    *   *Key Features*: Direct links between specific sections of the text and their corresponding machine-readable FHIR resources.
