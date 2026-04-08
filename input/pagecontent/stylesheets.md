@@ -157,6 +157,14 @@
         </div>
         <div class="ex-arrow">Open →</div>
       </a>
+      <a class="ex-card" href="examples/bundle-epi-type3-example-wonderdrug-jp.html" target="_blank">
+        <div class="ex-icon">🇯🇵</div>
+        <div class="ex-text">
+          <div class="ex-title">ePI Type 3 — WonderDrug (JP)</div>
+          <div class="ex-sub">Clinical Information</div>
+        </div>
+        <div class="ex-arrow">Open →</div>
+      </a>
     </div>
   </div>
 
