@@ -141,14 +141,6 @@
         </div>
         <div class="ex-arrow">Open →</div>
       </a>
-      <a class="ex-card" href="examples/bundle-epi-type2-example-blister-carton.html" target="_blank">
-        <div class="ex-icon">📦</div>
-        <div class="ex-text">
-          <div class="ex-title">ePI Type 2 — WonderDrug (Blister/Carton)</div>
-          <div class="ex-sub">Nested Packaging Example</div>
-        </div>
-        <div class="ex-arrow">Open →</div>
-      </a>
       <a class="ex-card" href="examples/bundle-epi-type3-example-wonderdrug.html" target="_blank">
         <div class="ex-icon">⚡</div>
         <div class="ex-text">
