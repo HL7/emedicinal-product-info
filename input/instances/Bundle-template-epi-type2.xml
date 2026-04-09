@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: THIS TYPE 2 TEMPLATE IS CURRENTLY IN DEVELOPMENT AND SUBJECT TO CHANGE-->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="template-epi-type2"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi"/>
+    <!-- 
+      VERSION CONTROL BEST PRACTICE:
+      Bundle.meta.versionId is managed by the server. 
+    -->
+    <versionId value="1"/>
+  </meta>
+  
+  <identifier>
+    <system value="http://ema.europa.eu/identifier"/>
+    <value value="wonderdrug-epi-bundle-identifier-type2"/>
+  </identifier>
+  
+  <type value="document"/>
+  <timestamp value="2026-04-08T19:10:10Z"/>
+  
+  <!-- 
+    NOTE: See Bundle-template-epi-type1.xml for standard Composition configurations, 
+    structure, and best practices. In Type 2 ePIs, the Composition is the same as Type 1, but we omit it here for brevity to focus on the product and packaging structures.
+  -->
+  <entry>
+    <fullUrl value="urn:uuid:11111111-1111-1111-1111-111111111111"/>
+    <resource>
+      <Composition>
+        <id value="11111111-1111-1111-1111-111111111111"/>
+      </Composition>
+    </resource>
+  </entry>
+  
+  <!-- Placeholder for MedicinalProductDefinition -->
+  <entry>
+    <fullUrl value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="22222222-2222-2222-2222-222222222222"/>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for Organization -->
+  <entry>
+    <fullUrl value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+    <resource>
+      <Organization>
+        <id value="33333333-3333-3333-3333-333333333333"/>
+      </Organization>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for PackagedProductDefinition -->
+  <entry>
+    <fullUrl value="urn:uuid:44444444-4444-4444-4444-444444444444"/>
+    <resource>
+      <PackagedProductDefinition>
+        <id value="44444444-4444-4444-4444-444444444444"/>
+      </PackagedProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for ManufacturedItemDefinition -->
+  <entry>
+    <fullUrl value="urn:uuid:55555555-5555-5555-5555-555555555555"/>
+    <resource>
+      <ManufacturedItemDefinition>
+        <id value="55555555-5555-5555-5555-555555555555"/>
+      </ManufacturedItemDefinition>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for RegulatedAuthorization -->
+  <entry>
+    <fullUrl value="urn:uuid:66666666-6666-6666-6666-666666666666"/>
+    <resource>
+      <RegulatedAuthorization>
+        <id value="66666666-6666-6666-6666-666666666666"/>
+      </RegulatedAuthorization>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for AdministrableProductDefinition -->
+  <entry>
+    <fullUrl value="urn:uuid:77777777-7777-7777-7777-777777777777"/>
+    <resource>
+      <AdministrableProductDefinition>
+        <id value="77777777-7777-7777-7777-777777777777"/>
+      </AdministrableProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for Ingredient -->
+  <entry>
+    <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888888"/>
+    <resource>
+      <Ingredient>
+        <id value="88888888-8888-8888-8888-888888888888"/>
+      </Ingredient>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for SubstanceDefinition -->
+  <entry>
+    <fullUrl value="urn:uuid:99999999-9999-9999-9999-999999999999"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="99999999-9999-9999-9999-999999999999"/>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+</Bundle>

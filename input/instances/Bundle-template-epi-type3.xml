@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: THIS TYPE 3 TEMPLATE IS CURRENTLY IN DEVELOPMENT AND SUBJECT TO CHANGE-->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="template-epi-type3"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi"/>
+    <versionId value="1"/>
+  </meta>
+  
+  <identifier>
+    <system value="http://ema.europa.eu/identifier"/>
+    <value value="wonderdrug-epi-bundle-identifier-type3"/>
+  </identifier>
+  
+  <type value="document"/>
+  <timestamp value="2026-04-08T19:10:10Z"/>
+  
+  <!-- 
+    NOTE: See Bundle-template-epi-type1.xml for standard Composition configurations, 
+    structure, and best practices. In Type 3 ePIs, the Composition is the same as Type 1, but we omit it here for brevity to focus on the clinical data structures.
+  -->
+
+  <!-- 
+    NOTE: See Bundle-template-epi-type2.xml for standard product and packaging configurations, 
+    structure, and best practices. In Type 3 ePIs, the product details are the same as Type 2, but we omit them here for brevity to focus on the clinical data structures.
+  -->
+
+  <!--
+    TYPE 3 CLINICAL INFORMATION BEST PRACTICES
+    A Type 3 ePI introduces machine-readable clinical data structures representing 
+    the rules set forth in the narrative sections (e.g. indications, contraindications, dosages).
+  -->
+
+  <!-- Placeholder for ClinicalUseDefinition -->
+  <entry>
+    <fullUrl value="urn:uuid:66666666-6666-6666-6666-666666666666"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="66666666-6666-6666-6666-666666666666"/>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- Placeholder for MedicationKnowledge -->
+  <entry>
+    <fullUrl value="urn:uuid:77777777-7777-7777-7777-777777777777"/>
+    <resource>
+      <MedicationKnowledge>
+        <id value="77777777-7777-7777-7777-777777777777"/>
+      </MedicationKnowledge>
+    </resource>
+  </entry>
+</Bundle>
