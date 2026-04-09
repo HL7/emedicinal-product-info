@@ -18,10 +18,10 @@ Usage: #example
 * date = "2026-03-15"
 
 // subject needs to reference MedicinalProductDefinition
-* subject[0] = Reference(medicinalproductdefinition-paracetamol)
+* subject[0] = Reference(mpd-epi-type2-example-paracetamol)
 
 // source needs to reference Organization
-* source = Reference(organization-mah-paracetamol)
+* source = Reference(org-epi-type2-example-acme)
 
 // entry needs to reference a Bundle
 * entry[0].date = "2026-03-27"
