@@ -47,9 +47,40 @@
 <div class="ss-page">
 
   <div class="hero">
-    <div class="eyebrow">Technical Details · CSS &amp; Rendering</div>
-    <h1>Rendering ePI <span>for Humans</span></h1>
-    <p>Raw FHIR JSON or XML is not suitable for patients, healthcare professionals, or regulators. This page provides CSS stylesheets and worked examples for transforming structured data into modern, accessible web interfaces.</p>
+    <div class="eyebrow">Technical Details · Templates &amp; Stylesheets</div>
+    <h1>Building &amp; Rendering ePI</h1>
+    <p>This page provides direct access to the raw XML FHIR templates for building ePIs, along with the CSS stylesheets and worked HTML examples for transforming that structured data into modern, accessible web interfaces.</p>
+  </div>
+
+  <div class="section-title">ePI XML Build Templates</div>
+  <div class="ex-section">
+    <p>Fully annotated, copy-pasteable XML examples serving as foundational build templates for ePI construction. Click to view the raw source files on GitHub.</p>
+    <div class="ex-grid">
+      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/instances/Bundle-template-epi-type1.xml" target="_blank">
+        <div class="ex-icon">📄</div>
+        <div class="ex-text">
+          <div class="ex-title">ePI Type 1 Template</div>
+          <div class="ex-sub">Digital Label (XML)</div>
+        </div>
+        <div class="ex-arrow">GitHub →</div>
+      </a>
+      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/instances/Bundle-template-epi-type2.xml" target="_blank">
+        <div class="ex-icon">📄</div>
+        <div class="ex-text">
+          <div class="ex-title">ePI Type 2 Template</div>
+          <div class="ex-sub">Product Identification (XML)</div>
+        </div>
+        <div class="ex-arrow">GitHub →</div>
+      </a>
+      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/instances/Bundle-template-epi-type3.xml" target="_blank">
+        <div class="ex-icon">📄</div>
+        <div class="ex-text">
+          <div class="ex-title">ePI Type 3 Template</div>
+          <div class="ex-sub">Clinical Information (XML)</div>
+        </div>
+        <div class="ex-arrow">GitHub →</div>
+      </a>
+    </div>
   </div>
 
   <div class="alert-note">

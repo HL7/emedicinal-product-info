@@ -10,6 +10,16 @@ Description: "Organization (ePI) - ported from OrganizationUvEpi"
 * identifier.system 1..1
 * identifier.value 1..1
 * name 1..
+* name ^short = "Name used for the organization. For example, can include name in Japanese and English."
+* alias MS
+* alias ^short = "A list of alternate names that the organization is known as. For example, can include alias in Japanese and English."
+* description MS
+* address MS
+* address.text MS
+* address.line MS
+* address.city MS
+* address.district MS
+* address.postalCode MS
 * contact.telecom ^slicing.discriminator.type = #value
 * contact.telecom ^slicing.discriminator.path = "system"
 * contact.telecom ^slicing.rules = #open
