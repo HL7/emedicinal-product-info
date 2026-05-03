@@ -20,6 +20,10 @@ Description: "Ingredient (ePI)"
 * function.coding.system 1..1
 * function.coding.code 1..1
 * function.coding.display 1..1
+* group.coding 1..1
+* group.coding.system 1..1
+* group.coding.code 1..1
+* group.coding.display 1..1
 * allergenicIndicator ^short = "If the ingredient is a known or suspected allergen."
 * manufacturer.manufacturer only Reference(Organization-uv-epi)
 * substance ^short = "The substance that comprises this ingredient"

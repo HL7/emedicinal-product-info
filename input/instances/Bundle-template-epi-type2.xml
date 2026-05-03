@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- NOTE: THIS TYPE 2 TEMPLATE IS CURRENTLY IN DEVELOPMENT AND SUBJECT TO CHANGE-->
 <Bundle xmlns="http://hl7.org/fhir">
+  <!-- Bundle.id: A logical id of the resource. -->
   <id value="template-epi-type2"/>
+  <!-- Bundle.meta: Metadata about the resource. -->
   <meta>
+    <!-- Bundle.meta.lastUpdated: The date and time when the resource was last updated. -->
+    <lastUpdated value="2026-04-08T19:10:10Z"/>
+    <!-- Bundle.meta.profile: Declares the structure definition that this resource conforms to. -->
     <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi"/>
     <!-- 
       VERSION CONTROL BEST PRACTICE:
@@ -11,12 +16,19 @@
     <versionId value="1"/>
   </meta>
   
+  <!-- 
+    VERSION CONTROL BEST PRACTICE: 
+    Bundle.identifier stays constant across all versions of an ePI.
+    This business identifier groups all versions of one ePI together, surviving server migrations.
+  -->
   <identifier>
     <system value="http://ema.europa.eu/identifier"/>
     <value value="wonderdrug-epi-bundle-identifier-type2"/>
   </identifier>
   
+  <!-- Bundle.type: Must be 'document' for an ePI. -->
   <type value="document"/>
+  <!-- Bundle.timestamp: When the bundle was assembled. -->
   <timestamp value="2026-04-08T19:10:10Z"/>
   
   <!-- 
@@ -24,90 +36,850 @@
     structure, and best practices. In Type 2 ePIs, the Composition is the same as Type 1, but we omit it here for brevity to focus on the product and packaging structures.
   -->
   <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
     <fullUrl value="urn:uuid:11111111-1111-1111-1111-111111111111"/>
+    <!-- entry.resource: The resource in the entry. -->
     <resource>
+      <!-- Composition: The document composition. -->
       <Composition>
+        <!-- Composition.id: A logical id of the resource. -->
         <id value="11111111-1111-1111-1111-111111111111"/>
+        <!-- Composition.meta: Metadata about the resource. -->
+        <meta>
+          <!-- Composition.meta.profile: Declares the structure definition that this resource conforms to. -->
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-uv-epi"/>
+        </meta>
+        
+        <!-- Composition.language: The base language of the document. -->
+        <language value="en"/>
+        
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="wonderdrug-composition-identifier-type2"/>
+        </identifier>
+        
+        <!-- Composition.version: An explicitly assigned version of the document. -->
+        <version value="1" />
+
+        <status value="final"/>
+
+        <type>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
+            <code value="100000155538"/>
+            <display value="Package leaflet"/>
+          </coding>
+        </type>
+        
+        <subject>
+          <!-- Reference to MedicinalProductDefinition below -->
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        
+        <!-- Composition.date: The document's creation date. -->
+        <date value="2026-04-08"/>
+        
+        <author>
+          <reference value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+          <display value="WonderDrug Pharma Inc."/>
+        </author>
+        
+        <title value="WonderDrug 500 mg powder for solution for injection - Type 2"/>
       </Composition>
     </resource>
   </entry>
   
-  <!-- Placeholder for MedicinalProductDefinition -->
+  <!-- 
+    Organization entry.
+    Typically the Marketing Authorization Holder (MAH) and/or the Manufacturer.
+  -->
   <entry>
-    <fullUrl value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
-    <resource>
-      <MedicinalProductDefinition>
-        <id value="22222222-2222-2222-2222-222222222222"/>
-      </MedicinalProductDefinition>
-    </resource>
-  </entry>
-
-  <!-- Placeholder for Organization -->
-  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
     <fullUrl value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
     <resource>
       <Organization>
+        <!-- Organization.id: A logical id of the resource. -->
         <id value="33333333-3333-3333-3333-333333333333"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"/>
+        </meta>
+        <!-- Organization.identifier: An identifier for this organization. e.g. SPOR OMS / DUNS -->
+        <identifier>
+          <system value="http://spor.ema.europa.eu/v1/locations"/>
+          <value value="LOC-100000000"/>
+        </identifier>
+        <!-- Organization.name: The name of the organization. -->
+        <name value="WonderDrug Pharma Inc."/>
+        <contact>
+          <telecom>
+            <system value="phone"/>
+            <value value="+420 123 456 789"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@wonderdrug.cz"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.wonderdrug.cz"/>
+          </telecom>
+          <address>
+            <line value="123 Pharma Way"/>
+            <city value="Prague"/>
+            <state value="Central Bohemian Region"/>
+            <country value="Czech Republic"/>
+          </address>
+        </contact>
       </Organization>
     </resource>
   </entry>
 
-  <!-- Placeholder for PackagedProductDefinition -->
+  <!-- 
+    MedicinalProductDefinition entry.
+    The core regulatory definition of the medicinal product.
+  -->
   <entry>
-    <fullUrl value="urn:uuid:44444444-4444-4444-4444-444444444444"/>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
     <resource>
-      <PackagedProductDefinition>
-        <id value="44444444-4444-4444-4444-444444444444"/>
-      </PackagedProductDefinition>
+      <MedicinalProductDefinition>
+        <!-- MedicinalProductDefinition.id: A logical id of the resource. -->
+        <id value="22222222-2222-2222-2222-222222222222"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+        </meta>
+        <!-- MedicinalProductDefinition.identifier: Business identifier for this product. -->
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-500MG-POWDER"/>
+        </identifier>
+        <!-- MedicinalProductDefinition.domain: If this medicine applies to human or veterinary uses. -->
+        <domain>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+            <code value="Human"/>
+            <display value="Human use"/> 
+          </coding>
+        </domain>
+        <!-- MedicinalProductDefinition.status: The status within the lifecycle of this product record. -->
+        <status>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/> 
+          </coding>
+        </status>
+        <!-- MedicinalProductDefinition.legalStatusOfSupply: The legal status of supply of the medicinal product. -->
+        <legalStatusOfSupply>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000072051"/>
+            <code value="100000072084"/>
+            <display value="Medicinal product subject to medical prescription"/> 
+          </coding>
+        </legalStatusOfSupply>
+        <!-- MedicinalProductDefinition.name: The full product name expressed as free text : Proprietary Name (Non-Proprietary Name) strength dose form -->
+        <name>
+          <productName value="WonderDrug 500 mg powder for solution for injection"/>
+          <!-- MedicinalProductDefinition.name.part: Structured name parts. -->
+          <part>
+            <part value="WonderDrug"/>
+            <type>
+              <coding><!-- Appropriate international code or local code should be used -->
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="InventedNamePart"/>
+                <display value="Invented name part"/> 
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="paracetamol"/>
+            <type>
+              <coding><!-- Appropriate international code or local code should be used -->
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="NonproprietaryNamePart"/>
+                <display value="Nonproprietary name part"/> 
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="500 mg"/>
+            <type>
+              <coding><!-- Appropriate international code or local code should be used -->
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="StrengthPart"/>
+                <display value="Strength part"/> 
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="powder for solution for injection"/>
+            <type>
+              <coding><!-- Appropriate international code or local code should be used -->
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="DoseFormPart"/>
+                <display value="Pharmaceutical dose form part"/> 
+              </coding>
+            </type>
+          </part>
+          <!-- MedicinalProductDefinition.name.usage: Country and language where this name applies. -->
+          <usage>
+            <country>
+              <coding><!-- Appropriate ISO country code should be used -->
+                <system value="urn:iso:std:iso:3166"/>
+                <code value="EE"/>
+                <display value="Estonia"/> 
+              </coding>
+            </country>
+            <jurisdiction>
+              <coding><!-- Appropriate jurisdiction code should be used -->
+                <system value="urn:iso:std:iso:3166"/>
+                <code value="EE"/>
+                <display value="Estonia"/> 
+              </coding>
+            </jurisdiction>
+            <language>
+              <coding><!-- Appropriate ISO language code should be used -->
+                <system value="urn:ietf:bcp:47"/>
+                <code value="et"/>
+                <display value="Estonian"/> 
+              </coding>
+            </language>
+          </usage>
+        </name>
+        <!-- MedicinalProductDefinition.contact: A product specific contact, person (in a role), or an organization. -->
+        <contact>
+          <contact>
+            <reference value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+          </contact>
+        </contact>
+      </MedicinalProductDefinition>
     </resource>
   </entry>
 
-  <!-- Placeholder for ManufacturedItemDefinition -->
+  <!-- 
+    RegulatedAuthorization entry.
+    Represents the marketing authorization details.
+  -->
   <entry>
-    <fullUrl value="urn:uuid:55555555-5555-5555-5555-555555555555"/>
-    <resource>
-      <ManufacturedItemDefinition>
-        <id value="55555555-5555-5555-5555-555555555555"/>
-      </ManufacturedItemDefinition>
-    </resource>
-  </entry>
-
-  <!-- Placeholder for RegulatedAuthorization -->
-  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
     <fullUrl value="urn:uuid:66666666-6666-6666-6666-666666666666"/>
     <resource>
       <RegulatedAuthorization>
+        <!-- RegulatedAuthorization.id: A logical id of the resource. -->
         <id value="66666666-6666-6666-6666-666666666666"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"/>
+        </meta>
+        <!-- RegulatedAuthorization.identifier: The authorization number. -->
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="MA-123456789"/>
+        </identifier>
+        <!-- RegulatedAuthorization.subject: The product this authorization is for. -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- RegulatedAuthorization.type: The type of authorization. -->
+        <type>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/220000000060"/>
+            <code value="220000000061"/>
+            <display value="Marketing Authorisation"/> 
+          </coding>
+        </type>
+        <!-- RegulatedAuthorization.region: The region this authorization applies to. -->
+        <region>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EE"/>
+            <display value="Estonia"/> 
+          </coding>
+        </region>
+        <!-- RegulatedAuthorization.holder: The Organization for the MAH. -->
+        <holder>
+          <reference value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+        </holder>
       </RegulatedAuthorization>
     </resource>
   </entry>
 
-  <!-- Placeholder for AdministrableProductDefinition -->
+  <!-- 
+    KEY CONCEPT: ManufacturedItemDefinition vs AdministrableProductDefinition
+    
+    ManufacturedItemDefinition describes the PHYSICAL ITEM as it exists in the primary packaging, coming out of the manufacturing process. In this scenario, we have TWO manufactured items:
+    1. A vial containing lyophilized powder (the active drug).
+    2. An ampoule containing the diluent (solvent).
+    
+    AdministrableProductDefinition describes what the PATIENT ACTUALLY RECEIVES — 
+    in this case, a single "Solution for injection" created after the powder is 
+    reconstituted with the diluent. The AdministrableProductDefinition.producedFrom 
+    element links back to BOTH of these ManufacturedItemDefinitions to show they 
+    are used together to prepare it.
+  -->
+
+  <!-- ManufacturedItemDefinition 1: The powder vial -->
   <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:55555555-5555-5555-5555-555555555555"/>
+    <resource>
+      <ManufacturedItemDefinition>
+        <!-- ManufacturedItemDefinition.id: A logical id of the resource. -->
+        <id value="55555555-5555-5555-5555-555555555555"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"/>
+        </meta>
+        <!-- ManufacturedItemDefinition.identifier: Business identifier for this manufactured item. -->
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="mid-powder-vial"/>
+        </identifier>
+        <!-- ManufacturedItemDefinition.status: The status of this item. -->
+        <status value="active"/>
+        <!-- ManufacturedItemDefinition.manufacturedDoseForm: The dose form of the manufactured item. -->
+        <manufacturedDoseForm>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000073660"/>
+            <code value="100000073800"/>
+            <display value="Powder for solution for injection"/> 
+          </coding>
+        </manufacturedDoseForm>
+        <!-- ManufacturedItemDefinition.unitOfPresentation: The presentation unit. -->
+        <unitOfPresentation>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/200000000014"/>
+            <code value="200000002158"/>
+            <display value="Vial"/> 
+          </coding>
+        </unitOfPresentation>
+        <!-- ManufacturedItemDefinition.manufacturer: The manufacturer organization. -->
+        <manufacturer>
+          <reference value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+        </manufacturer>
+        <!-- ManufacturedItemDefinition.property: The physical characteristics of the manufactured item as it exists in the primary packaging (e.g., size, colour, shape, flavour, imprint)-->
+        <property>
+          <type>
+            <coding><!-- Appropriate international code or local code should be used -->
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+              <code value="color"/>
+              <display value="Color"/> 
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding><!-- Appropriate international code or local code should be used -->
+              <system value="http://spor.ema.europa.eu/v1/lists/100000073664"/>
+              <code value="100000073586"/>
+              <display value="White"/> 
+            </coding>
+          </valueCodeableConcept>
+        </property>
+        <!-- Example property: Adding an image of the powder -->
+        <property>
+          <type>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+              <code value="image"/>
+              <display value="Image"/> 
+            </coding>
+          </type>
+          <valueAttachment>
+            <contentType value="image/svg+xml"/>
+            <data value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSJibHVlIi8+PC9zdmc+"/>
+          </valueAttachment>
+        </property>
+      </ManufacturedItemDefinition>
+    </resource>
+  </entry>
+
+  <!-- ManufacturedItemDefinition 2: The diluent ampoule -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:55555555-5555-5555-5555-555555555556"/>
+    <resource>
+      <ManufacturedItemDefinition>
+        <!-- ManufacturedItemDefinition.id: A logical id of the resource. -->
+        <id value="55555555-5555-5555-5555-555555555556"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"/>
+        </meta>
+        <!-- ManufacturedItemDefinition.identifier: Business identifier for this manufactured item. -->
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="mid-diluent-ampoule"/>
+        </identifier>
+        <!-- ManufacturedItemDefinition.status: The status of this item. -->
+        <status value="active"/>
+        <!-- ManufacturedItemDefinition.manufacturedDoseForm: The dose form of the manufactured item. -->
+        <manufacturedDoseForm>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000073660"/>
+            <code value="100000073860"/>
+            <display value="Solvent for solution for injection"/> 
+          </coding>
+        </manufacturedDoseForm>
+        <!-- ManufacturedItemDefinition.unitOfPresentation: The presentation unit. -->
+        <unitOfPresentation>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/200000000014"/>
+            <code value="200000002120"/>
+            <display value="Ampoule"/> 
+          </coding>
+        </unitOfPresentation>
+        <!-- ManufacturedItemDefinition.manufacturer: The manufacturer organization. -->
+        <manufacturer>
+          <reference value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+        </manufacturer>
+        <!-- ManufacturedItemDefinition.property: The physical characteristics of the manufactured item as it exists in the primary packaging. -->
+        <property>
+          <type>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+              <code value="color"/>
+              <display value="Color"/> 
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://spor.ema.europa.eu/v1/lists/100000073664"/>
+              <code value="100000073575"/>
+              <display value="Clear"/> 
+            </coding>
+          </valueCodeableConcept>
+        </property>
+        <!-- Example property: Adding an image of the diluent -->
+        <property>
+          <type>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+              <code value="image"/>
+              <display value="Image"/> 
+            </coding>
+          </type>
+          <valueAttachment>
+            <contentType value="image/svg+xml"/>
+            <data value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSJibHVlIi8+PC9zdmc+"/>
+          </valueAttachment>
+        </property>
+      </ManufacturedItemDefinition>
+    </resource>
+  </entry>
+
+  <!-- 
+    AdministrableProductDefinition entry.
+    The reconstituted solution as it is administered.
+  -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
     <fullUrl value="urn:uuid:77777777-7777-7777-7777-777777777777"/>
     <resource>
       <AdministrableProductDefinition>
+        <!-- AdministrableProductDefinition.id: A logical id of the resource. -->
         <id value="77777777-7777-7777-7777-777777777777"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"/>
+        </meta>
+        <!-- AdministrableProductDefinition.identifier: Business identifier for this administrable product. -->
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="apd-solution-for-injection"/>
+        </identifier>
+        <!-- AdministrableProductDefinition.status: The status. -->
+        <status value="active"/>
+        <!-- AdministrableProductDefinition.formOf: The medicinal product this applies to. -->
+        <formOf>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </formOf>
+        <!-- AdministrableProductDefinition.administrableDoseForm: The dose form as administered. -->
+        <administrableDoseForm>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000073660"/>
+            <code value="100000073863"/>
+            <display value="Solution for injection"/> 
+          </coding>
+        </administrableDoseForm>
+        <!-- AdministrableProductDefinition.unitOfPresentation: The presentation unit. -->
+        <unitOfPresentation>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/200000000014"/>
+            <code value="200000002158"/>
+            <display value="Vial"/> 
+          </coding>
+        </unitOfPresentation>
+        <!-- AdministrableProductDefinition.producedFrom: The manufactured items this is produced from. -->
+        <producedFrom>
+          <reference value="urn:uuid:55555555-5555-5555-5555-555555555555"/>
+        </producedFrom>
+        <producedFrom>
+          <reference value="urn:uuid:55555555-5555-5555-5555-555555555556"/>
+        </producedFrom>
+        <!-- AdministrableProductDefinition.routeOfAdministration: The route of administration. -->
+        <routeOfAdministration>
+          <code>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://spor.ema.europa.eu/v1/lists/100000073611"/>
+              <code value="100000073619"/>
+              <display value="Intravenous use"/> 
+            </coding>
+          </code>
+        </routeOfAdministration>
+        <!-- AdministrableProductDefinition.property: Characteristics e.g. a product's onset of action. -->
+        <property>
+          <type>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+              <code value="color"/>
+              <display value="Color"/> 
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://spor.ema.europa.eu/v1/lists/100000073664"/>
+              <code value="100000073575"/>
+              <display value="Clear"/> 
+            </coding>
+          </valueCodeableConcept>
+        </property>
+        <!-- Example property: Adding an image of the solution -->
+        <property>
+          <type>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+              <code value="image"/>
+              <display value="Image"/> 
+            </coding>
+          </type>
+          <valueAttachment>
+            <contentType value="image/svg+xml"/>
+            <data value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSJibHVlIi8+PC9zdmc+"/>
+          </valueAttachment>
+        </property>
       </AdministrableProductDefinition>
     </resource>
   </entry>
 
-  <!-- Placeholder for Ingredient -->
+  <!-- 
+    PackagedProductDefinition entry.
+    Describes the physical packaging. In this case, a box containing the vial and the diluent ampoule.
+  -->
   <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:44444444-4444-4444-4444-444444444444"/>
+    <resource>
+      <PackagedProductDefinition>
+        <!-- PackagedProductDefinition.id: A logical id of the resource. -->
+        <id value="44444444-4444-4444-4444-444444444444"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"/>
+        </meta>
+        <!-- PackagedProductDefinition.identifier: Business identifier for this package. -->
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="ppd-box"/>
+        </identifier>
+        <!-- PackagedProductDefinition.packageFor: The medicinal product this package is for. -->
+        <packageFor>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </packageFor>
+        <!-- PackagedProductDefinition.copackagedIndicator: If the drug product is supplied with another item such as a diluent. -->
+        <copackagedIndicator value="true"/>
+        <!-- PackagedProductDefinition.packaging: The outermost packaging. -->
+        <packaging>
+          <!-- PackagedProductDefinition.packaging.type: The type of packaging. -->
+          <type>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://spor.ema.europa.eu/v1/lists/100000073346"/>
+              <code value="100000073498"/>
+              <display value="Box"/> 
+            </coding>
+          </type>
+          <quantity value="1"/>
+          
+          <!-- PackagedProductDefinition.packaging.packaging (Inner package 1: Vial) -->
+          <packaging>
+            <type>
+              <coding><!-- Appropriate local code should be used -->
+                <system value="http://spor.ema.europa.eu/v1/lists/100000073346"/>
+                <code value="100000073496"/>
+                <display value="Vial"/> 
+              </coding>
+            </type>
+            <quantity value="1"/>
+            <!-- Contains the powder manufactured item -->
+            <containedItem>
+              <item>
+                <reference>
+                  <reference value="urn:uuid:55555555-5555-5555-5555-555555555555"/>
+                </reference>
+              </item>
+              <amount>
+                <value value="1"/>
+              </amount>
+            </containedItem>
+          </packaging>
+
+          <!-- PackagedProductDefinition.packaging.packaging (Inner package 2: Ampoule) -->
+          <packaging>
+            <type>
+              <coding><!-- Appropriate local code should be used -->
+                <system value="http://spor.ema.europa.eu/v1/lists/100000073346"/>
+                <code value="100000073497"/>
+                <display value="Ampoule"/> 
+              </coding>
+            </type>
+            <quantity value="1"/>
+            <!-- Contains the diluent manufactured item -->
+            <containedItem>
+              <item>
+                <reference>
+                  <reference value="urn:uuid:55555555-5555-5555-5555-555555555556"/>
+                </reference>
+              </item>
+              <amount>
+                <value value="1"/>
+              </amount>
+            </containedItem>
+          </packaging>
+        </packaging>
+      </PackagedProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- 
+    Ingredient 1: Active substance in the powder vial
+  -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
     <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888888"/>
     <resource>
       <Ingredient>
+        <!-- Ingredient.id: A logical id of the resource. -->
         <id value="88888888-8888-8888-8888-888888888888"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
+        <!-- Ingredient.status: The status. -->
+        <status value="active"/>
+        <!-- Ingredient.for: The manufactured item this ingredient belongs to. -->
+        <for>
+          <reference value="urn:uuid:55555555-5555-5555-5555-555555555555"/>
+        </for>
+        <!-- Ingredient.role: Role of this ingredient (e.g., Active or excipient). -->
+        <role>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000072050"/>
+            <code value="100000072072"/>
+            <display value="Active"/> 
+          </coding>
+        </role>
+        <!-- Ingredient.function: Function of this ingredient. -->
+        <function>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000072050"/>
+            <code value="100000072072"/>
+            <display value="Active"/> 
+          </coding>
+        </function>
+        <!-- Ingredient.group: A classification of the ingredient according to where in the physical item it tends to be used. -->
+        <group>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000072050"/>
+            <code value="100000072072"/>
+            <display value="Active"/> 
+          </coding>
+        </group>
+        <!-- Ingredient.substance: The actual substance the ingredient is related to -->
+        <substance>
+          <code>
+            <concept>
+              <coding><!-- Recommend using US FDA's Global Substance Registration System (G-SRS) and UNII codes since it is publicly available and the most comprehensive drug substance database.   -->
+                <system value="https://gsrs.ncats.nih.gov/ginas/app/ui/"/>
+                <code value="WONDER-UNII-CODE"/>
+                <display value="WonderDrugium"/> 
+              </coding>
+            </concept>
+          </code>
+          <!-- Ingredient.substance.strength: The presentation strength/amount of the substance. -->
+          <strength>
+            <presentationRatio>
+              <numerator>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="vial"/>
+                <system value="http://standardterms.edqm.eu"/>
+                <code value="15053000"/>
+              </denominator>
+            </presentationRatio>
+            <concentrationRatio>
+              <numerator>
+                <value value="50"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="mL"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mL"/>
+              </denominator>
+            </concentrationRatio>
+          </strength>
+        </substance>
       </Ingredient>
     </resource>
   </entry>
 
-  <!-- Placeholder for SubstanceDefinition -->
+  <!-- 
+    Ingredient 2: Excipient in the powder vial
+  -->
   <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888889"/>
+    <resource>
+      <Ingredient>
+        <!-- Ingredient.id: A logical id of the resource. -->
+        <id value="88888888-8888-8888-8888-888888888889"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
+        <status value="active"/>
+        <for>
+          <reference value="urn:uuid:55555555-5555-5555-5555-555555555555"/>
+        </for>
+        <role>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000072050"/>
+            <code value="100000072082"/>
+            <display value="Excipient"/> 
+          </coding>
+        </role>
+        <!-- Ingredient.function: Function of this ingredient. -->
+        <function>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://hl7.org/fhir/ingredient-function"/>
+            <code value="AlkalizingAgent"/>
+            <display value="Alkalizing Agent"/> 
+          </coding>
+        </function>
+        <!-- Ingredient.group: A classification of the ingredient according to where in the physical item it tends to be used. -->
+        <group>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://snomed.info/sct"/>
+            <code value="385049006"/>
+            <display value="Core"/> 
+          </coding>
+        </group>
+        <substance>
+          <code>
+            <concept>
+              <coding><!-- Recommend using US FDA's Global Substance Registration System (G-SRS) and UNII codes since it is publicly available and the most comprehensive drug substance database.   -->
+                <system value="https://gsrs.ncats.nih.gov/ginas/app/ui/"/>
+                <code value="3OWL53L36A"/>
+                <display value="Mannitol"/> 
+              </coding>
+            </concept>
+          </code>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+
+  <!-- 
+    Ingredient 3: Excipient in the diluent ampoule
+  -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:88888888-8888-8888-8888-88888888888a"/>
+    <resource>
+      <Ingredient>
+        <!-- Ingredient.id: A logical id of the resource. -->
+        <id value="88888888-8888-8888-8888-88888888888a"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
+        <status value="active"/>
+        <for>
+          <reference value="urn:uuid:55555555-5555-5555-5555-555555555556"/>
+        </for>
+        <role>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000072050"/>
+            <code value="100000072082"/>
+            <display value="Excipient"/> 
+          </coding>
+        </role>
+        <!-- Ingredient.function: Function of this ingredient. -->
+        <function>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://hl7.org/fhir/ingredient-function"/>
+            <code value="Solvent"/>
+            <display value="Solvent"/> 
+          </coding>
+        </function>
+        <!-- Ingredient.group: A classification of the ingredient according to where in the physical item it tends to be used. -->
+        <group>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://snomed.info/sct"/>
+            <code value="736542009"/>
+            <display value="Pharmaceutical liquid"/> 
+          </coding>
+        </group>
+        <substance>
+          <code>
+            <concept>
+              <coding><!-- Recommend using US FDA's Global Substance Registration System (G-SRS) and UNII codes since it is publicly available and the most comprehensive drug substance database.   -->
+                <system value="https://gsrs.ncats.nih.gov/ginas/app/ui/"/>
+                <code value="451W47IQ8X"/>
+                <display value="Sodium chloride"/> 
+              </coding>
+            </concept>
+          </code>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+
+  <!-- 
+    SubstanceDefinition entry.
+    Defines the active substance itself.
+  -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
     <fullUrl value="urn:uuid:99999999-9999-9999-9999-999999999999"/>
     <resource>
       <SubstanceDefinition>
+        <!-- SubstanceDefinition.id: A logical id of the resource. -->
         <id value="99999999-9999-9999-9999-999999999999"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-uv-epi"/>
+        </meta>
+        <!-- SubstanceDefinition.identifier: The substance identifier. -->
+        <identifier>
+          <system value="https://gsrs.ncats.nih.gov/ginas/app/ui/"/>
+          <value value="WONDER-UNII-CODE"/>
+        </identifier>
+        <!-- SubstanceDefinition.name: The substance name. -->
+        <name>
+          <name value="WonderDrugium"/>
+          <type>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="http://spor.ema.europa.eu/v1/lists/100000072050"/>
+              <code value="100000072072"/>
+              <display value="Active"/> 
+            </coding>
+          </type>
+          <language>
+            <coding><!-- Appropriate local code should be used -->
+              <system value="urn:ietf:bcp:47"/>
+              <code value="en"/>
+              <display value="English"/> 
+            </coding>
+          </language>
+        </name>
       </SubstanceDefinition>
     </resource>
   </entry>
