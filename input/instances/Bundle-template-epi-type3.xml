@@ -17,13 +17,76 @@
   
   <!-- 
     NOTE: See Bundle-template-epi-type1.xml for standard Composition configurations, 
-    structure, and best practices. In Type 3 ePIs, the Composition is the same as Type 1, but we omit it here for brevity to focus on the clinical data structures.
+    structure, and best practices. In Type 3 ePIs, the Composition is the same as Type 1, 
+    but we omit the full structure here for brevity to focus on the clinical data structures.
   -->
+  <entry>
+    <fullUrl value="urn:uuid:11111111-1111-1111-1111-111111111111"/>
+    <resource>
+      <Composition>
+        <id value="11111111-1111-1111-1111-111111111111"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-uv-epi"/>
+        </meta>
+        <status value="final"/>
+        <type>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
+            <code value="100000155532"/>
+            <display value="Summary of Product Characteristics"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <date value="2026-04-08T19:10:10Z"/>
+        <author>
+          <reference value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+        </author>
+        <title value="WonderDrug 500 mg powder for solution for injection - Summary of Product Characteristics"/>
+      </Composition>
+    </resource>
+  </entry>
 
-  <!-- 
-    NOTE: See Bundle-template-epi-type2.xml for standard product and packaging configurations, 
-    structure, and best practices. In Type 3 ePIs, the product details are the same as Type 2, but we omit them here for brevity to focus on the clinical data structures.
-  -->
+  <entry>
+    <fullUrl value="urn:uuid:33333333-3333-3333-3333-333333333333"/>
+    <resource>
+      <Organization>
+        <id value="33333333-3333-3333-3333-333333333333"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"/>
+        </meta>
+        <active value="true"/>
+        <type>
+          <coding><!-- Appropriate local code should be used -->
+            <system value="http://spor.ema.europa.eu/v1/lists/220000000000"/>
+            <code value="220000000034"/>
+            <display value="Marketing authorisation holder"/>
+          </coding>
+        </type>
+        <name value="WonderDrug Pharma Inc."/>
+      </Organization>
+    </resource>
+  </entry>
+
+  <entry>
+    <fullUrl value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="22222222-2222-2222-2222-222222222222"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-500MG-TYPE3"/>
+        </identifier>
+        <name>
+          <productName value="WonderDrug 500 mg powder for solution for injection"/>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
 
   <!--
     TYPE 3 CLINICAL INFORMATION BEST PRACTICES
@@ -31,22 +94,880 @@
     the rules set forth in the narrative sections (e.g. indications, contraindications, dosages).
   -->
 
-  <!-- Placeholder for ClinicalUseDefinition -->
+  <!-- 
+    KEY CONCEPT: The Granularity Rule
+    
+    Each discrete clinical concept gets its own ClinicalUseDefinition resource.
+    Do NOT combine multiple indications, contraindications, or warnings into a 
+    single resource. This one-concept-per-resource pattern enables precise machine 
+    queries (e.g., "find all products contraindicated in hepatic impairment") and 
+    mirrors the granularity expected by clinical decision support systems.
+  -->
+
+  <!-- 
+    KEY CONCEPT: The Five ClinicalUseDefinition Types
+    
+    FHIR provides five distinct ClinicalUseDefinition types, each with its own 
+    backbone element:
+    
+    1. indication      -> indication.diseaseSymptomProcedure, .intendedEffect, .otherTherapy
+    2. contraindication -> contraindication.diseaseSymptomProcedure, .otherTherapy
+    3. interaction      -> interaction.interactant, .type, .effect, .incidence, .management
+    4. undesirable-effect -> undesirableEffect.symptomConditionEffect, .classification, .frequencyOfOccurrence
+    5. warning          -> warning.code
+    
+    Each type has a dedicated ePI profile with specific constraints.
+  -->
+
+  <!-- =========================================================================
+       CLINICAL USE DEFINITIONS - INDICATIONS
+       ========================================================================= -->
+
+  <!-- Indication 1: Moderate to severe pain -->
   <entry>
-    <fullUrl value="urn:uuid:66666666-6666-6666-6666-666666666666"/>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:aaaa1111-1111-1111-1111-111111111111"/>
     <resource>
       <ClinicalUseDefinition>
-        <id value="66666666-6666-6666-6666-666666666666"/>
+        <id value="aaaa1111-1111-1111-1111-111111111111"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-INDICATION-1"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="indication"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="indication"/>
+            <display value="Indication"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.indication.diseaseSymptomProcedure: The situation that is being defined as indication. -->
+        <indication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <coding><!-- Appropriate local or international code should be used (e.g. SNOMED CT) -->
+                <system value="http://snomed.info/sct"/>
+                <code value="22253000"/>
+                <display value="Pain"/> 
+              </coding>
+            </concept>
+          </diseaseSymptomProcedure>
+          <!-- ClinicalUseDefinition.indication.intendedEffect: The intended effect of the product. -->
+          <intendedEffect>
+            <concept>
+              <coding><!-- Appropriate local code should be used -->
+                <system value="http://snomed.info/sct"/>
+                <code value="384812002"/>
+                <display value="To relieve pain"/> 
+              </coding>
+            </concept>
+          </intendedEffect>
+          <otherTherapy>
+            <relationshipType>
+              <coding>
+                <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship"/>
+                <code value="indicated-in-combination-with"/>
+                <display value="Indicated in combination with"/>
+              </coding>
+            </relationshipType>
+            <treatment>
+              <concept>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="387517004"/>
+                  <display value="Paracetamol"/>
+                </coding>
+              </concept>
+            </treatment>
+          </otherTherapy>
+        </indication>
       </ClinicalUseDefinition>
     </resource>
   </entry>
 
-  <!-- Placeholder for MedicationKnowledge -->
+  <!-- Indication 2: Post-operative pain -->
   <entry>
-    <fullUrl value="urn:uuid:77777777-7777-7777-7777-777777777777"/>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:aaaa2222-2222-2222-2222-222222222222"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="aaaa2222-2222-2222-2222-222222222222"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-INDICATION-2"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="indication"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="indication"/>
+            <display value="Indication"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.indication.diseaseSymptomProcedure: The situation that is being defined as indication. -->
+        <indication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <coding><!-- Appropriate local or international code should be used (e.g. SNOMED CT) -->
+                <system value="http://snomed.info/sct"/>
+                <code value="74627003"/>
+                <display value="Post-operative pain"/> 
+              </coding>
+            </concept>
+          </diseaseSymptomProcedure>
+          <!-- ClinicalUseDefinition.indication.intendedEffect: The intended effect of the product. -->
+          <intendedEffect>
+            <concept>
+              <coding><!-- Appropriate local code should be used -->
+                <system value="http://snomed.info/sct"/>
+                <code value="384812002"/>
+                <display value="To relieve pain"/> 
+              </coding>
+            </concept>
+          </intendedEffect>
+          <otherTherapy>
+            <relationshipType>
+              <coding>
+                <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship"/>
+                <code value="indicated-in-combination-with"/>
+                <display value="Indicated in combination with"/>
+              </coding>
+            </relationshipType>
+            <treatment>
+              <concept>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="387517004"/>
+                  <display value="Paracetamol"/>
+                </coding>
+              </concept>
+            </treatment>
+          </otherTherapy>
+        </indication>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- =========================================================================
+       CLINICAL USE DEFINITIONS - CONTRAINDICATIONS
+       ========================================================================= -->
+
+  <!-- Contraindication 1: Hypersensitivity -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:bbbb1111-1111-1111-1111-111111111111"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="bbbb1111-1111-1111-1111-111111111111"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-CONTRAINDICATION-1"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="contraindication"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="contraindication"/>
+            <display value="Contraindication"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.contraindication.diseaseSymptomProcedure: The situation that is being defined as contraindication. -->
+        <contraindication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <coding><!-- Appropriate local or international code should be used (e.g. SNOMED CT) -->
+                <system value="http://snomed.info/sct"/>
+                <code value="416098002"/>
+                <display value="Drug allergy"/> 
+              </coding>
+            </concept>
+          </diseaseSymptomProcedure>
+          <otherTherapy>
+            <relationshipType>
+              <coding>
+                <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship"/>
+                <code value="contraindicated-only-with"/>
+                <display value="Only contraindicated with"/>
+              </coding>
+            </relationshipType>
+            <treatment>
+              <concept>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="763158003"/>
+                  <display value="Medicinal product (product)"/>
+                </coding>
+              </concept>
+            </treatment>
+          </otherTherapy>
+        </contraindication>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- Contraindication 2: Severe hepatic impairment -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:bbbb2222-2222-2222-2222-222222222222"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="bbbb2222-2222-2222-2222-222222222222"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-CONTRAINDICATION-2"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="contraindication"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="contraindication"/>
+            <display value="Contraindication"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.contraindication.diseaseSymptomProcedure: The situation that is being defined as contraindication. -->
+        <contraindication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <coding><!-- Appropriate local or international code should be used (e.g. SNOMED CT) -->
+                <system value="http://snomed.info/sct"/>
+                <code value="197315008"/>
+                <display value="Severe hepatic impairment"/> 
+              </coding>
+            </concept>
+          </diseaseSymptomProcedure>
+          <otherTherapy>
+            <relationshipType>
+              <coding>
+                <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship"/>
+                <code value="contraindicated-only-with"/>
+                <display value="Only contraindicated with"/>
+              </coding>
+            </relationshipType>
+            <treatment>
+              <concept>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="763158003"/>
+                  <display value="Medicinal product (product)"/>
+                </coding>
+              </concept>
+            </treatment>
+          </otherTherapy>
+        </contraindication>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- =========================================================================
+       CLINICAL USE DEFINITIONS - INTERACTIONS
+       ========================================================================= -->
+
+  <!-- Interaction 1: Warfarin -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:cccc1111-1111-1111-1111-111111111111"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cccc1111-1111-1111-1111-111111111111"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-INTERACTION-1"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="interaction"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="interaction"/>
+            <display value="Interaction"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.interaction: The interaction details. -->
+        <interaction>
+          <!-- ClinicalUseDefinition.interaction.interactant: The specific interacting substance. -->
+          <interactant>
+            <itemCodeableConcept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="372756006"/>
+                <display value="Warfarin"/> 
+              </coding>
+            </itemCodeableConcept>
+          </interactant>
+          <!-- ClinicalUseDefinition.interaction.type: The type of the interaction. -->
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/interaction-type"/>
+              <code value="drug-drug"/>
+              <display value="Drug to drug interaction"/>
+            </coding>
+          </type>
+          <!-- ClinicalUseDefinition.interaction.effect: The clinical consequence of the interaction. -->
+          <effect>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="404684003"/>
+                <display value="Clinical finding (finding)"/> 
+              </coding>
+              <text value="Enhanced anticoagulant effect"/>
+            </concept>
+          </effect>
+          <incidence>
+            <coding>
+              <system value="http://spor.ema.europa.eu/v1/lists/100000000053"/>
+              <code value="100000000055"/>
+              <display value="Common"/>
+            </coding>
+          </incidence>
+          <management>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="273902008"/>
+              <display value="Dose reduction"/>
+            </coding>
+          </management>
+        </interaction>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- Interaction 2: Methotrexate -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:cccc2222-2222-2222-2222-222222222222"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cccc2222-2222-2222-2222-222222222222"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-INTERACTION-2"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="interaction"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="interaction"/>
+            <display value="Interaction"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.interaction: The interaction details. -->
+        <interaction>
+          <!-- ClinicalUseDefinition.interaction.interactant: The specific interacting substance. -->
+          <interactant>
+            <itemCodeableConcept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="387381009"/>
+                <display value="Methotrexate"/> 
+              </coding>
+            </itemCodeableConcept>
+          </interactant>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/interaction-type"/>
+              <code value="drug-drug"/>
+              <display value="Drug to drug interaction"/>
+            </coding>
+          </type>
+          <!-- ClinicalUseDefinition.interaction.effect: The clinical consequence of the interaction. -->
+          <effect>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="404684003"/>
+                <display value="Clinical finding (finding)"/> 
+              </coding>
+              <text value="Increased toxicity of methotrexate"/>
+            </concept>
+          </effect>
+          <incidence>
+            <coding>
+              <system value="http://spor.ema.europa.eu/v1/lists/100000000053"/>
+              <code value="100000000055"/>
+              <display value="Common"/>
+            </coding>
+          </incidence>
+          <management>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="273902008"/>
+              <display value="Dose reduction"/>
+            </coding>
+          </management>
+        </interaction>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- =========================================================================
+       CLINICAL USE DEFINITIONS - UNDESIRABLE EFFECTS
+       ========================================================================= -->
+
+  <!-- 
+    NOTE ON TERMINOLOGY: 
+    Undesirable effects can be coded using various terminologies depending on regional requirements.
+    While SNOMED CT and ICD-10/ICD-11 are commonly used, the build-epi3.md guide recommends MedDRA
+    (Medical Dictionary for Regulatory Activities) for adverse events. As MedDRA is a licensed 
+    terminology, the codes below are representative examples. Please ensure you use the appropriate terminology 
+    such as SNOMED, ICD, or MedDRA based on your jurisdiction's requirements.
+  -->
+
+  <!-- Undesirable Effect 1: Nausea -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:dddd1111-1111-1111-1111-111111111111"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="dddd1111-1111-1111-1111-111111111111"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-ADVERSE-1"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="undesirable-effect"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="undesirable-effect"/>
+            <display value="Undesirable Effect"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.undesirableEffect.symptomConditionEffect: The symptom or condition. -->
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding><!-- Note: Can be MedDRA, SNOMED, or ICD depending on jurisdiction -->
+                <system value="https://www.meddra.org"/>
+                <code value="10028813"/>
+                <display value="Nausea"/> 
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <classification>
+            <coding>
+              <system value="https://www.meddra.org"/>
+              <code value="10017947"/>
+              <display value="Gastrointestinal disorders"/>
+            </coding>
+          </classification>
+          <!-- ClinicalUseDefinition.undesirableEffect.frequencyOfOccurrence: The frequency of the effect. -->
+          <frequencyOfOccurrence>
+            <coding>
+              <system value="http://spor.ema.europa.eu/v1/lists/100000000053"/>
+              <code value="100000000055"/>
+              <display value="Common"/> 
+            </coding>
+          </frequencyOfOccurrence>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- Undesirable Effect 2: Injection site reaction -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:dddd2222-2222-2222-2222-222222222222"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="dddd2222-2222-2222-2222-222222222222"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-ADVERSE-2"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="undesirable-effect"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="undesirable-effect"/>
+            <display value="Undesirable Effect"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.undesirableEffect.symptomConditionEffect: The symptom or condition. -->
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding><!-- Note: Can be MedDRA, SNOMED, or ICD depending on jurisdiction -->
+                <system value="https://www.meddra.org"/>
+                <code value="10022095"/>
+                <display value="Injection site reaction"/> 
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <classification>
+            <coding>
+              <system value="https://www.meddra.org"/>
+              <code value="10018065"/>
+              <display value="General disorders and administration site conditions"/>
+            </coding>
+          </classification>
+          <!-- ClinicalUseDefinition.undesirableEffect.frequencyOfOccurrence: The frequency of the effect. -->
+          <frequencyOfOccurrence>
+            <coding>
+              <system value="http://spor.ema.europa.eu/v1/lists/100000000053"/>
+              <code value="100000000056"/>
+              <display value="Uncommon"/> 
+            </coding>
+          </frequencyOfOccurrence>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- =========================================================================
+       CLINICAL USE DEFINITIONS - WARNINGS
+       ========================================================================= -->
+
+  <!-- Warning 1: Renal impairment -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:eeee1111-1111-1111-1111-111111111111"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="eeee1111-1111-1111-1111-111111111111"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-WARNING-1"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="warning"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="warning"/>
+            <display value="Warning"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.warning.code: A coded or un-coded concept identifying the warning. -->
+        <warning>
+          <code>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="723188008"/>
+                <display value="Renal impairment"/> 
+              </coding>
+              <text value="Use with caution in patients with renal impairment"/>
+            </concept>
+          </code>
+        </warning>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- Warning 2: Elderly patients -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:eeee2222-2222-2222-2222-222222222222"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="eeee2222-2222-2222-2222-222222222222"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-WARNING-2"/>
+        </identifier>
+        <!-- ClinicalUseDefinition.type: The type of the clinical use definition. -->
+        <type value="warning"/>
+        <!-- ClinicalUseDefinition.category: The category of the clinical use definition. -->
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig"/>
+            <code value="warning"/>
+            <display value="Warning"/> 
+          </coding>
+        </category>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
+        <!-- ClinicalUseDefinition.subject: The subject of the clinical use definition (the Medicinal Product). -->
+        <subject>
+          <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
+        </subject>
+        <!-- ClinicalUseDefinition.warning.code: A coded or un-coded concept identifying the warning. -->
+        <warning>
+          <code>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="105436006"/>
+                <display value="Elderly patient"/> 
+              </coding>
+              <text value="Caution is advised when treating elderly patients"/>
+            </concept>
+          </code>
+        </warning>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- =========================================================================
+       MEDICATION KNOWLEDGE
+       ========================================================================= -->
+
+  <!-- 
+    KEY CONCEPT: MedicationKnowledge
+    
+    The MedicationKnowledge resource provides computable dosing rules and therapeutic 
+    classification. It facilitates healthcare systems' ability to interpret authorized 
+    dosing information. The indicationGuideline element can specify structured dosage 
+    instructions tied to specific indications.
+  -->
+
+  <!-- MedicationKnowledge: Dosing regimen -->
+  <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
+    <fullUrl value="urn:uuid:ffff1111-1111-1111-1111-111111111111"/>
     <resource>
       <MedicationKnowledge>
-        <id value="77777777-7777-7777-7777-777777777777"/>
+        <id value="ffff1111-1111-1111-1111-111111111111"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicationKnowledge-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-MEDICATIONKNOWLEDGE-1"/>
+        </identifier>
+        <!-- MedicationKnowledge.status: A code to indicate if the medication is in active use. -->
+        <status value="active"/>
+        <!-- MedicationKnowledge.indicationGuideline: Guidelines for administration of the medication. -->
+        <indicationGuideline>
+          <!-- MedicationKnowledge.indicationGuideline.indication: The indication for which the guideline applies. -->
+          <indication>
+            <reference>
+              <reference value="urn:uuid:aaaa1111-1111-1111-1111-111111111111"/>
+            </reference>
+          </indication>
+          <!-- MedicationKnowledge.indicationGuideline.dosingGuideline: Guidelines for dosage of the medication. -->
+          <dosingGuideline>
+            <!-- MedicationKnowledge.indicationGuideline.dosingGuideline.treatmentIntent: The intent of the treatment. -->
+            <treatmentIntent>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="384812002"/>
+                <display value="To relieve pain"/> 
+              </coding>
+            </treatmentIntent>
+            <!-- MedicationKnowledge.indicationGuideline.dosingGuideline.dosage: Dosage for the medication. -->
+            <dosage>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                  <code value="ordered"/>
+                  <display value="Ordered"/> 
+                </coding>
+              </type>
+              <dosage>
+                <text value="Adults: 500 mg IV every 6 hours"/>
+                <timing>
+                  <repeat>
+                    <frequency value="1"/>
+                    <period value="6"/>
+                    <periodUnit value="h"/>
+                  </repeat>
+                </timing>
+                <doseAndRate>
+                  <type>
+                    <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                      <code value="ordered"/>
+                      <display value="Ordered"/> 
+                    </coding>
+                  </type>
+                  <doseQuantity>
+                    <value value="500"/>
+                    <unit value="mg"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mg"/>
+                  </doseQuantity>
+                </doseAndRate>
+              </dosage>
+            </dosage>
+            <dosage>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                  <code value="maximum"/>
+                  <display value="Maximum"/> 
+                </coding>
+              </type>
+              <dosage>
+                <text value="Maximum 2 g/day"/>
+                <maxDosePerPeriod>
+                  <numerator>
+                    <value value="2"/>
+                    <unit value="g"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="g"/>
+                  </numerator>
+                  <denominator>
+                    <value value="1"/>
+                    <unit value="d"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="d"/>
+                  </denominator>
+                </maxDosePerPeriod>
+              </dosage>
+            </dosage>
+            <patientCharacteristic>
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="133936004"/>
+                  <display value="Adult"/>
+                </coding>
+              </type>
+            </patientCharacteristic>
+          </dosingGuideline>
+        </indicationGuideline>
       </MedicationKnowledge>
     </resource>
   </entry>
