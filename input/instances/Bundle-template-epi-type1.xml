@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- NOTE: THIS TYPE 1 TEMPLATE IS CURRENTLY IN DEVELOPMENT AND SUBJECT TO CHANGE-->
 <Bundle xmlns="http://hl7.org/fhir">
+  <!-- Bundle.id: A logical id of the resource. -->
   <id value="template-epi-type1"/>
+  <!-- Bundle.meta: Metadata about the resource. -->
   <meta>
+    <!-- Bundle.meta.lastUpdated: The date and time when the resource was last updated. -->
     <lastUpdated value="2026-04-08T19:10:10Z"/>
+    <!-- Bundle.meta.profile: Declares the structure definition that this resource conforms to. -->
     <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi"/>
     <!-- 
       VERSION CONTROL BEST PRACTICE:
@@ -23,27 +27,41 @@
     <value value="wonderdrug-epi-bundle-identifier"/>
   </identifier>
   
+  <!-- Bundle.type: Must be 'document' for an ePI. -->
   <type value="document"/>
+  <!-- Bundle.timestamp: When the bundle was assembled. -->
   <timestamp value="2026-04-08T19:10:10Z"/>
   
   <!-- 
     The first entry MUST be the Composition resource.
   -->
   <entry>
+    <!-- entry.fullUrl: A unique URI for the resource. -->
     <fullUrl value="urn:uuid:11111111-1111-1111-1111-111111111111"/>
+    <!-- entry.resource: The resource in the entry. -->
     <resource>
+      <!-- Composition: The document composition. -->
       <Composition>
+        <!-- Composition.id: A logical id of the resource. -->
         <id value="11111111-1111-1111-1111-111111111111"/>
+        <!-- Composition.meta: Metadata about the resource. -->
         <meta>
+          <!-- Composition.meta.profile: Declares the structure definition that this resource conforms to. -->
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-uv-epi"/>
         </meta>
         
+        <!-- Composition.language: The base language of the document. -->
         <language value="en"/>
         
+        <!-- Composition.contained: Inline resources that are used solely within this Composition, such as images. -->
         <contained>
+          <!-- Binary: A resource used to store binary data like images. -->
           <Binary>
+            <!-- Binary.id: A logical id of the resource. -->
             <id value="binary-image-1"/>
+            <!-- Binary.contentType: MimeType of the binary content. -->
             <contentType value="image/jpeg"/>
+            <!-- Binary.data: The actual base64 encoded binary data. -->
             <data value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAtJREFUGFdjYAACAAAFAAGq1i6/AAAAAElFTkSuQmCC"/> <!-- Example base64 -->
           </Binary>
         </contained>
@@ -58,6 +76,7 @@
           <value value="wonderdrug-composition-identifier"/>
         </identifier>
         
+        <!-- Composition.version: An explicitly assigned version of the document. -->
         <version value="1" />
 
         <!-- 
@@ -101,6 +120,7 @@
           <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
         </subject>
         
+        <!-- Composition.date: The document's creation date. -->
         <date value="2026-04-08"/>
         
         <!-- Since Type 1 does not include an organization resource, instead we include a reference to a unique identifier for the organization -->
@@ -118,8 +138,11 @@
           <div xmlns="http://www.w3.org/1999/xhtml"><p>WonderDrug® ePI Type 1 - Digital Label</p></div>
         </text>
         
+        <!-- Composition.attester: The regulator responsible for the authorization of the ePI. -->
         <attester>
+          <!-- Composition.attester.mode: The type of attestation. -->
           <mode value="official"/>
+          <!-- Composition.attester.party: The regulator who authorized the ePI. -->
           <party>
             <reference value="urn:uuid:44444444-4444-4444-4444-444444444444"/>
             <display value="Regulatory Authority"/>
@@ -142,10 +165,10 @@
         <section id="c0006a1e-bc00-42e8-962c-c2d7beffbb70">
           <title value="Summary of Product Characteristics"/>
           <code>
-            <coding>
+            <coding><!-- Appropriate local code should be used -->
               <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
               <code value="100000155538"/>
-                <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+              <display value="Appropriate display term"/> 
             </coding>
           </code>
           <text>
@@ -158,20 +181,20 @@
           <section id="e5d9491a-2144-4664-b518-e77cb86692ec">
             <title value="1. NAME OF THE MEDICINAL PRODUCT"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <!-- LEVEL 3 SECTIONS -->
             <section id="758e304e-851a-433f-bb66-ac4b2c1a77b2"><!-- Section for medicinal product #1-->
               <title value="WonderDrug 500 mg tablets"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -182,10 +205,10 @@
             <section id="645a9d4f-b48a-48fc-ae17-6e1f3fb5f4fe"><!-- Section for medicinal product #2-->
               <title value="WonderDrug 250 mg capsules"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -198,10 +221,10 @@
           <section id="77091c93-46a5-4b4c-ae3f-c9a7dfceb320">
             <title value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <text>
@@ -213,10 +236,10 @@
           <section id="19c3b56c-6ff0-405e-8208-86fb19dde23f">
             <title value="3. PHARMACEUTICAL FORM"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <text>
@@ -228,10 +251,10 @@
           <section id="1c3aa681-0f43-4133-9eab-57c98b0b9903">
             <title value="4. CLINICAL PARTICULARS"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             
@@ -239,10 +262,10 @@
             <section id="40e150f1-fc8e-4594-8645-28f426f8d104">
               <title value="4.1 Therapeutic indications"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -253,10 +276,10 @@
               <section id="c5978f3b-2062-4ca2-a7bf-9609865d1ef1"><!-- Section for Indication #1-->
                 <title value="Indication 1"/>
                 <code>
-                  <coding>
+                  <coding><!-- Appropriate local code should be used -->
                     <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                     <code value="100000155538"/>
-                      <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                    <display value="Appropriate display term"/> 
                   </coding>
                 </code>
                 <text>
@@ -267,10 +290,10 @@
               <section id="204fb95e-e577-4c21-a0f4-5876e4a752c5"><!-- Section for Indication #2-->
                 <title value="Indication 2"/>
                 <code>
-                  <coding>
+                  <coding><!-- Appropriate local code should be used -->
                     <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                     <code value="100000155538"/>
-                      <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                    <display value="Appropriate display term"/> 
                   </coding>
                 </code>
                 <text>
@@ -281,10 +304,10 @@
               <section id="9801e19b-19d2-4e26-ad84-02d99c4539d9"><!-- Section for Indication #3-->
                 <title value="Indication 3"/>
                 <code>
-                  <coding>
+                  <coding><!-- Appropriate local code should be used -->
                     <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                     <code value="100000155538"/>
-                      <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                    <display value="Appropriate display term"/> 
                   </coding>
                 </code>
                 <text>
@@ -297,20 +320,20 @@
             <section id="391012c8-ca05-4386-9fa5-b36aedf9e896">
               <title value="4.2 Posology and method of administration"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <!-- LEVEL 4 SECTIONS -->
               <section id="37641c00-8cc9-42fc-a5b3-26bd3d9420a2">
                 <title value="Posology"/>
                 <code>
-                  <coding>
+                  <coding><!-- Appropriate local code should be used -->
                     <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                     <code value="100000155538"/>
-                      <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                    <display value="Appropriate display term"/> 
                   </coding>
                 </code>
                 <text>
@@ -321,10 +344,10 @@
               <section id="cb278eb7-b5e9-40d1-9642-6162a622674d">
                 <title value="Paediatric population"/>
                 <code>
-                  <coding>
+                  <coding><!-- Appropriate local code should be used -->
                     <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                     <code value="100000155538"/>
-                      <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                    <display value="Appropriate display term"/> 
                   </coding>
                 </code>
                 <text>
@@ -338,10 +361,10 @@
             <section id="ef3f28ef-2206-42b2-8e59-ccacd7e4e3b0">
               <title value="4.3 Contraindications"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -352,10 +375,10 @@
             <section id="13a92684-1742-4f1b-884a-1556d14d0dec">
               <title value="4.4 Special warnings and precautions for use"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -366,10 +389,10 @@
             <section id="de7effe9-3ef2-4ed0-9077-2568627c8b8d">
               <title value="4.5 Interaction with other medicinal products and other forms of interaction"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -380,10 +403,10 @@
             <section id="79ef924b-7979-4fe0-8d1f-76f2c2e3bce1">
               <title value="4.6 Fertility, pregnancy and lactation"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -394,10 +417,10 @@
             <section id="4d3b45af-7119-4698-aa29-320077622d92">
               <title value="4.7 Effects on ability to drive and use machines"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -408,10 +431,10 @@
             <section id="6741a644-b635-4f0a-bb16-ff8a5b19910e">
               <title value="4.8 Undesirable effects"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -422,10 +445,10 @@
             <section id="579251c9-7e61-44a5-9bcf-5356e2772a19">
               <title value="4.9 Overdose"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -438,19 +461,19 @@
           <section id="537b78c3-bdae-4b4b-9781-4e4d745f47c3">
             <title value="5. PHARMACOLOGICAL PROPERTIES"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <section id="71abeebf-ad0a-4a92-bd5e-e5cb870a1a67">
               <title value="5.1 Pharmacodynamic properties"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -461,10 +484,10 @@
             <section id="0b64c4be-cbcc-49d1-b8f9-090a61f3e65e">
               <title value="5.2 Pharmacokinetic properties"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -475,10 +498,10 @@
             <section id="a854bedc-1322-45fc-b925-095f41a16483">
               <title value="5.3 Preclinical safety data"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -491,19 +514,19 @@
           <section id="5d4ac527-534e-4081-b4a4-b3c8ea6ed4d3">
             <title value="6. PHARMACEUTICAL PARTICULARS"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <section id="bcbcd2b1-8ae1-48a4-95ab-1b8d02c694a3">
               <title value="6.1 List of excipients"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -514,10 +537,10 @@
             <section id="90245269-1e18-41f6-ad32-a94aa8cfee7a">
               <title value="6.2 Incompatibilities"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -528,10 +551,10 @@
             <section id="00c2f91e-2ecc-4b02-913e-69015e3f5fe4">
               <title value="6.3 Shelf life"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -542,10 +565,10 @@
             <section id="4135f11e-16a6-405b-97e6-3b6ee00dece1">
               <title value="6.4 Special precautions for storage"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -556,10 +579,10 @@
             <section id="70fbde6d-b7ef-433c-a848-5c2b46effa79">
               <title value="6.5 Nature and contents of container"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -570,10 +593,10 @@
             <section id="84cd75b5-3fc4-489d-9233-9339840f7f19">
               <title value="6.6 Special precautions for disposal"/>
               <code>
-                <coding>
+                <coding><!-- Appropriate local code should be used -->
                   <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                   <code value="100000155538"/>
-                    <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                  <display value="Appropriate display term"/> 
                 </coding>
               </code>
               <text>
@@ -586,10 +609,10 @@
           <section id="5d4eb528-3328-4fcc-aacd-e1efedfa31af">
             <title value="7. MARKETING AUTHORISATION HOLDER"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <text>
@@ -601,10 +624,10 @@
           <section id="3724252a-8698-48e0-b6a7-11166cb5d16b">
             <title value="8. MARKETING AUTHORISATION NUMBER(S)"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <text>
@@ -616,10 +639,10 @@
           <section id="001eaea7-597b-45f0-9a67-7c7d286719d1">
             <title value="9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <text>
@@ -631,10 +654,10 @@
           <section id="671a6c04-3c8c-499f-8161-9df5fea7af49">
             <title value="10. DATE OF REVISION OF THE TEXT"/>
             <code>
-              <coding>
+              <coding><!-- Appropriate local code should be used -->
                 <system value="http://spor.ema.europa.eu/v1/lists/100000155531"/>
                 <code value="100000155538"/>
-                  <display value="Appropriate display term"/> <!-- Appropriate local code should be used -->
+                <display value="Appropriate display term"/> 
               </coding>
             </code>
             <text>
