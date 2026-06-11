@@ -51,7 +51,15 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * entry[clinicalUseDefinitionInteraction][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-1"
 * entry[clinicalUseDefinitionInteraction][+].resource = cud-interaction-2
 * entry[clinicalUseDefinitionInteraction][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-2"
+// Group entries
+* entry[+].resource = group-epi-type3-example-adult-men
+* entry[=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-men"
+* entry[+].resource = group-epi-type3-example-adult-women
+* entry[=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-women"
+* entry[+].resource = group-epi-type3-example-children
+* entry[=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-children"
 // * entry[undesirableEffect]... (add if needed, keeping it covering main types)
+
 
 Instance: composition-epi-type3-example-wonderdrug
 InstanceOf: CompositionEpiType1
@@ -358,7 +366,8 @@ Description: "ClinicalUseDefinition - Indication Fever"
 * status = $publication-status#active "Active"
 * type = #indication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population.display = "Adults"
+* population = Reference(group-epi-type3-example-adult-men)
+* population.display = "Adult Men"
 * indication.diseaseSymptomProcedure.concept = $sct#386661006 "Fever"
 * category = $epi-ig#indication "Indication"
 
@@ -373,7 +382,8 @@ Description: "ClinicalUseDefinition - Indication Pain"
 * status = $publication-status#active "Active"
 * type = #indication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population.display = "Adults"
+* population = Reference(group-epi-type3-example-adult-men)
+* population.display = "Adult Men"
 * indication.diseaseSymptomProcedure.concept = $sct#22253000 "Pain"
 * category = $epi-ig#indication "Indication"
 
@@ -388,7 +398,8 @@ Description: "ClinicalUseDefinition - Contraindication Hepatic Failure"
 * status = $publication-status#active "Active"
 * type = #contraindication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population.display = "Adults"
+* population = Reference(group-epi-type3-example-adult-men)
+* population.display = "Adult Men"
 * contraindication.diseaseSymptomProcedure.concept = $sct#197270009 "Acute hepatic failure"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication "Contraindication"
 
@@ -417,7 +428,8 @@ Description: "ClinicalUseDefinition - Contraindication Paracetamol"
 * status = $publication-status#active "Active"
 * type = #contraindication
 * subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population.display = "Adults"
+* population = Reference(group-epi-type3-example-adult-men)
+* population.display = "Adult Men"
 * contraindication.otherTherapy.treatment.concept = $sct#763158003 "Medicinal product (product)"
 * contraindication.otherTherapy.relationshipType = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship#contraindicated-only-with "Only contraindicated with"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication "Contraindication"
@@ -486,3 +498,51 @@ Usage: #inline
 * id = "binaryImage-t3"
 * contentType = #image/png
 * data = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+
+Instance: group-epi-type3-example-adult-men
+InstanceOf: Group
+Usage: #example
+Title: "Group - Adult Men"
+Description: "Group - Adult Men"
+* active = true
+* type = #person
+* membership = #definitional
+* name = "Adult Men"
+* characteristic[0].code = $sct#263495000 "Gender"
+* characteristic[=].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
+* characteristic[=].exclude = false
+* characteristic[+].code = $sct#397669002 "Age"
+* characteristic[=].valueRange.low = 18 'a' "years"
+* characteristic[=].valueRange.high = 64 'a' "years"
+* characteristic[=].exclude = false
+
+Instance: group-epi-type3-example-adult-women
+InstanceOf: Group
+Usage: #example
+Title: "Group - Adult Women"
+Description: "Group - Adult Women"
+* active = true
+* type = #person
+* membership = #definitional
+* name = "Adult Women"
+* characteristic[0].code = $sct#263495000 "Gender"
+* characteristic[=].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#female "Female"
+* characteristic[=].exclude = false
+* characteristic[+].code = $sct#397669002 "Age"
+* characteristic[=].valueRange.low = 18 'a' "years"
+* characteristic[=].valueRange.high = 64 'a' "years"
+* characteristic[=].exclude = false
+
+Instance: group-epi-type3-example-children
+InstanceOf: Group
+Usage: #example
+Title: "Group - Children"
+Description: "Group - Children"
+* active = true
+* type = #person
+* membership = #definitional
+* name = "Children"
+* characteristic[0].code = $sct#397669002 "Age"
+* characteristic[=].valueRange.high = 17 'a' "years"
+* characteristic[=].exclude = false
+

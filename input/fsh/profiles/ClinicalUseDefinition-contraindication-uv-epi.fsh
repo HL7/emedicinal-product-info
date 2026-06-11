@@ -33,3 +33,7 @@ Description: "ClinicalUseDefinition Contraindication (ePI) - Profile for Contrai
 * contraindication.otherTherapy.treatment.concept.coding.system 1..1
 * contraindication.otherTherapy.treatment.concept.coding.code 1..1
 * contraindication.otherTherapy.treatment.concept.coding.display 1..1
+* population 0..*
+* population.reference 1..
+
+

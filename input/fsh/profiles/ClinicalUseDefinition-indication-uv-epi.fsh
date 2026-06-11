@@ -37,3 +37,7 @@ Description: "ClinicalUseDefinition Indication (ePI) - Profile for Indication"
 * indication.otherTherapy.treatment.concept.coding.system 1..1
 * indication.otherTherapy.treatment.concept.coding.code 1..1
 * indication.otherTherapy.treatment.concept.coding.display 1..1
+* population 0..*
+* population.reference 1..
+
+

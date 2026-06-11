@@ -158,6 +158,18 @@
         <subject>
           <reference value="urn:uuid:22222222-2222-2222-2222-222222222222"/>
         </subject>
+        <population>
+          <reference value="urn:uuid:88888888-8888-8888-8888-888888888881"/>
+          <display value="Adult Men"/>
+        </population>
+        <population>
+          <reference value="urn:uuid:88888888-8888-8888-8888-888888888882"/>
+          <display value="Adult Women"/>
+        </population>
+        <population>
+          <reference value="urn:uuid:88888888-8888-8888-8888-888888888883"/>
+          <display value="Children"/>
+        </population>
         <!-- ClinicalUseDefinition.indication.diseaseSymptomProcedure: The situation that is being defined as indication. -->
         <indication>
           <diseaseSymptomProcedure>
@@ -969,6 +981,153 @@
           </dosingGuideline>
         </indicationGuideline>
       </MedicationKnowledge>
+    </resource>
+  </entry>
+
+  <entry>
+    <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888881"/>
+    <resource>
+      <Group>
+        <id value="88888888-8888-8888-8888-888888888881"/>
+        <active value="true"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <actual value="false"/>
+        <name value="Adult Men"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="263495000"/>
+              <display value="Gender"/>
+            </coding>
+            <text value="Gender"/>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/administrative-gender"/>
+              <code value="male"/>
+              <display value="Male"/>
+            </coding>
+          </valueCodeableConcept>
+          <exclude value="false"/>
+        </characteristic>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="397669002"/>
+              <display value="Age"/>
+            </coding>
+            <text value="Age"/>
+          </code>
+          <valueRange>
+            <low>
+              <value value="18"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </low>
+            <high>
+              <value value="64"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+
+  <entry>
+    <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888882"/>
+    <resource>
+      <Group>
+        <id value="88888888-8888-8888-8888-888888888882"/>
+        <active value="true"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <actual value="false"/>
+        <name value="Adult Women"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="263495000"/>
+              <display value="Gender"/>
+            </coding>
+            <text value="Gender"/>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/administrative-gender"/>
+              <code value="female"/>
+              <display value="Female"/>
+            </coding>
+          </valueCodeableConcept>
+          <exclude value="false"/>
+        </characteristic>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="397669002"/>
+              <display value="Age"/>
+            </coding>
+            <text value="Age"/>
+          </code>
+          <valueRange>
+            <low>
+              <value value="18"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </low>
+            <high>
+              <value value="64"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+
+  <entry>
+    <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888883"/>
+    <resource>
+      <Group>
+        <id value="88888888-8888-8888-8888-888888888883"/>
+        <active value="true"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <actual value="false"/>
+        <name value="Children"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="397669002"/>
+              <display value="Age"/>
+            </coding>
+            <text value="Age"/>
+          </code>
+          <valueRange>
+            <high>
+              <value value="17"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
     </resource>
   </entry>
 </Bundle>

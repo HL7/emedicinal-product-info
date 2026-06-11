@@ -34,3 +34,7 @@ Description: "ClinicalUseDefinition Interaction (ePI) - Profile for Interaction"
 * interaction.management.coding.system 1..1
 * interaction.management.coding.code 1..1
 * interaction.management.coding.display 1..1
+* population 0..*
+* population.reference 1..
+
+
