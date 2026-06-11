@@ -249,6 +249,16 @@
     .t4-flow-node-res    { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
     .t4-flow-node-span   { background: #faf5ff; border-color: #e9d5ff; color: #7c3aed; }
     .t4-flow-arrow { font-size: .8rem; color: var(--faint); padding: 0 6px; }
+
+    /* Dosage regimen sub-tab activation */
+    #dr4-adult:checked  ~ .dr-tabs .dr-tb[for="dr4-adult"],
+    #dr4-ped:checked    ~ .dr-tabs .dr-tb[for="dr4-ped"],
+    #dr4-renal:checked  ~ .dr-tabs .dr-tb[for="dr4-renal"] {
+      color: var(--text); font-weight: 600; border-bottom: 2px solid var(--teal);
+    }
+    #dr4-adult:checked  ~ .dr-panel-adult,
+    #dr4-ped:checked    ~ .dr-panel-ped,
+    #dr4-renal:checked  ~ .dr-panel-renal { display: block; }
   </style>
 </head>
 <body>
@@ -609,13 +619,16 @@
 </div>
 
 <!-- =====================================================
-     PRODUCT DETAILS TAB — Same structure as Type 3
+     PRODUCT DETAILS TAB — Full details (matching Type 3)
      ===================================================== -->
 <div id="t4pp" class="panel">
   <div class="ps-row">
     <span>3 Medicinal Products &middot; 6 Package Configurations</span>
     <input class="pf" type="text" placeholder="Filter by substance or strength&#8230;" />
   </div>
+  <defs><radialGradient id="tg4" cx="40%" cy="35%" r="55%"><stop offset="0%" stop-color="#fff" /><stop offset="100%" stop-color="#e5e5e7" /></radialGradient></defs>
+
+  <!-- Product 1: 500 mg -->
   <details class="pa" open="open">
     <summary class="pah">
       <span class="pnum">1</span>
@@ -635,20 +648,285 @@
         <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
         <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
       </div></div></div>
+      <div class="is"><div class="isl">Physical Appearance</div><div class="isb"><div class="ap-in">
+        <div class="ap-data">
+          <div class="apf"><span class="al">Colour</span><span class="av">White</span></div>
+          <div class="apf"><span class="al">Shape</span><span class="av">Round</span></div>
+          <div class="apf"><span class="al">Size</span><span class="av">12 mm</span></div>
+          <div class="apf"><span class="al">Imprint</span><span class="av">W-500</span></div>
+        </div>
+        <div class="tab-svgs">
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg4)" stroke="#d1d5db" stroke-width="1" /><ellipse cx="50" cy="47" rx="43" ry="41" fill="none" stroke="#fff" stroke-width="2" opacity="0.5" /></svg><figcaption>Front</figcaption></figure>
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg4)" stroke="#d1d5db" stroke-width="1" /><line x1="15" y1="50" x2="85" y2="50" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,2" opacity="0.6" /><text x="50" y="54" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#6b7280">W-500</text></svg><figcaption>Back</figcaption></figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Packaging (3)</div><div class="isb"><div class="pkgs">
+        <div class="pkg">
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 30 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px">
+                GTIN: 09876543210130 &nbsp;|&nbsp; SKU: WD500-BOX-30
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 30</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pkg">
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 50 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px">
+                GTIN: 09876543210150 &nbsp;|&nbsp; SKU: WD500-BOX-50
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 50</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pkg">
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Carton of 20 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px">
+                GTIN: 09876543210987 &nbsp;|&nbsp; SKU: WD500-CARTON-20
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 20 (2 x 10)</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Carton</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: 2 x Blister PVC/Al</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div></div>
+      <div class="is" style="border-left:3px solid var(--green)">
+        <div class="isl" style="padding-bottom:6px;color:var(--green)">Shelf Life &amp; Storage Conditions</div>
+        <div style="padding:8px 14px 4px;display:flex;align-items:center;gap:10px">
+          <span class="shelf-pill">
+            <span>&#128197;</span><span class="shelf-n">36</span><span style="font-size:.75rem;font-weight:600">months</span>
+          </span>
+          <span style="font-size:.8rem;color:var(--muted)">Shelf life of the medicinal product as packaged for sale</span>
+        </div>
+        <div style="font-size:9px;color:var(--faint);padding:2px 14px 8px">
+          Source: <code style="font-family:ui-monospace,'SF Mono',monospace;font-size:9px;background:var(--sf2);padding:1px 4px;border-radius:3px">PackagedProductDefinition.shelfLifeStorage.period</code>
+        </div>
+        <div class="storage-grid">
+          <div class="storage-item">
+            <span class="storage-icon">&#127777;</span>
+            <div class="storage-text"><div class="sl">Temperature</div><div class="sv">Store below 25°C</div><div class="sd">Do not freeze</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128167;</span>
+            <div class="storage-text"><div class="sl">Moisture</div><div class="sv">Keep dry</div><div class="sd">Protect from moisture</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#9728;</span>
+            <div class="storage-text"><div class="sl">Light</div><div class="sv">Protect from light</div><div class="sd">Keep in original packaging</div></div>
+          </div>
+          <div class="storage-item">
+            <span class="storage-icon">&#128100;</span>
+            <div class="storage-text"><div class="sl">Safety</div><div class="sv">Out of reach of children</div></div>
+          </div>
+        </div>
+        <div class="storage-src">
+          FHIR source: <code>PackagedProductDefinition.shelfLifeStorage</code> &rarr; type (<code>ShelfLifeType</code>) + storage condition (<code>specialPrecautionsForStorage</code>)
+        </div>
+      </div>
+      <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
+        <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
+        <div class="mai"><div class="ml">Number</div><div class="mv mvm">MA-123456789</div></div>
+        <div class="mai"><div class="ml">Region</div><div class="mv">Estonia (EE)</div></div>
+      </div></div></div>
+    </div>
+  </details>
+
+  <!-- Product 2: 100 mg -->
+  <details class="pa">
+    <summary class="pah">
+      <span class="pnum">2</span>
+      <span class="pname">WonderDrug 100 mg tablets</span><span class="psub">Paracetamol</span>
+      <div class="pbadges"><span class="chip ch-g">Active</span><span class="chip ch-gr">Oral &middot; Tablet</span></div>
+      <span class="pchev">&#9660;</span>
+    </summary>
+    <div class="pc">
+      <div class="is"><div class="isl">Substance &amp; Form</div><div class="isb"><div class="ifs">
+        <div class="inf"><span class="il">Active Substance</span><span class="iv">Paracetamol</span></div>
+        <div class="inf"><span class="il">Strength</span><span class="iv">100 mg</span></div>
+        <div class="inf"><span class="il">Dose Form</span><span class="iv">Tablet</span></div>
+        <div class="inf"><span class="il">Route</span><span class="iv">Oral</span></div>
+      </div></div></div>
+      <div class="is"><div class="isl">Excipients</div><div class="isb"><div class="ec">
+        <div class="ei">Pregelatinized starch</div><div class="ei">Talc</div>
+        <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
+        <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
+      </div></div></div>
+      <div class="is"><div class="isl">Physical Appearance</div><div class="isb"><div class="ap-in">
+        <div class="ap-data">
+          <div class="apf"><span class="al">Colour</span><span class="av">White</span></div>
+          <div class="apf"><span class="al">Shape</span><span class="av">Round</span></div>
+          <div class="apf"><span class="al">Size</span><span class="av">6 mm</span></div>
+          <div class="apf"><span class="al">Imprint</span><span class="av">W-100</span></div>
+        </div>
+        <div class="tab-svgs">
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg4)" stroke="#d1d5db" stroke-width="1" /></svg><figcaption>Front</figcaption></figure>
+          <figure class="tab-fig"><svg width="68" height="68" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#tg4)" stroke="#d1d5db" stroke-width="1" /><text x="50" y="54" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#6b7280">W-100</text></svg><figcaption>Back</figcaption></figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Packaging (2)</div><div class="isb"><div class="pkgs">
+        <div class="pkg">
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 30 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px">
+                GTIN: 09876543210230 &nbsp;|&nbsp; SKU: WD100-BOX-30
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 30</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pkg">
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Blister Pack 50</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px">
+                GTIN: 09876543210250 &nbsp;|&nbsp; SKU: WD100-BLISTER-50
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 50</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div></div>
+      <div class="is" style="border-left:3px solid var(--green)">
+        <div class="isl" style="padding-bottom:6px;color:var(--green)">Shelf Life &amp; Storage Conditions</div>
+        <div style="padding:8px 14px 4px;display:flex;align-items:center;gap:10px">
+          <span class="shelf-pill">
+            <span>&#128197;</span><span class="shelf-n">36</span><span style="font-size:.75rem;font-weight:600">months</span>
+          </span>
+          <span style="font-size:.8rem;color:var(--muted)">Shelf life of the medicinal product as packaged for sale</span>
+        </div>
+        <div class="storage-grid">
+          <div class="storage-item"><span class="storage-icon">&#127777;</span><div class="storage-text"><div class="sl">Temperature</div><div class="sv">Store below 25°C</div><div class="sd">Do not freeze</div></div></div>
+          <div class="storage-item"><span class="storage-icon">&#128167;</span><div class="storage-text"><div class="sl">Moisture</div><div class="sv">Keep dry</div><div class="sd">Protect from moisture</div></div></div>
+          <div class="storage-item"><span class="storage-icon">&#9728;</span><div class="storage-text"><div class="sl">Light</div><div class="sv">Protect from light</div><div class="sd">Keep in original packaging</div></div></div>
+          <div class="storage-item"><span class="storage-icon">&#128100;</span><div class="storage-text"><div class="sl">Safety</div><div class="sv">Out of reach of children</div></div></div>
+        </div>
+      </div>
+      <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
+        <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
+        <div class="mai"><div class="ml">Number</div><div class="mv mvm">PL 12345/6790</div></div>
+        <div class="mai"><div class="ml">Region</div><div class="mv">United Kingdom</div></div>
+      </div></div></div>
+    </div>
+  </details>
+
+  <!-- Product 3: 200 mg -->
+  <details class="pa">
+    <summary class="pah">
+      <span class="pnum">3</span>
+      <span class="pname">WonderDrug 200 mg tablets</span><span class="psub">Paracetamol</span>
+      <div class="pbadges"><span class="chip ch-g">Active</span><span class="chip ch-gr">Oral &middot; Tablet</span></div>
+      <span class="pchev">&#9660;</span>
+    </summary>
+    <div class="pc">
+      <div class="is"><div class="isl">Substance &amp; Form</div><div class="isb"><div class="ifs">
+        <div class="inf"><span class="il">Active Substance</span><span class="iv">Paracetamol</span></div>
+        <div class="inf"><span class="il">Strength</span><span class="iv">200 mg</span></div>
+        <div class="inf"><span class="il">Dose Form</span><span class="iv">Tablet</span></div>
+        <div class="inf"><span class="il">Route</span><span class="iv">Oral</span></div>
+      </div></div></div>
+      <div class="is"><div class="isl">Excipients</div><div class="isb"><div class="ec">
+        <div class="ei">Pregelatinized starch</div><div class="ei">Talc</div>
+        <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
+        <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
+      </div></div></div>
+      <div class="is"><div class="isl">Physical Appearance</div><div class="isb"><div class="ap-in">
+        <div class="ap-data">
+          <div class="apf"><span class="al">Colour</span><span class="av">Green</span></div>
+          <div class="apf"><span class="al">Shape</span><span class="av">Hexagonal</span></div>
+          <div class="apf"><span class="al">Size</span><span class="av">9 mm</span></div>
+          <div class="apf"><span class="al">Imprint</span><span class="av">W-200</span></div>
+        </div>
+        <div class="tab-svgs">
+          <figure class="tab-fig">
+            <img src="paracetamol_200mg_green_hex_pill.png" alt="WonderDrug 200mg green hexagonal tablet" style="width:68px;height:68px;object-fit:contain;border-radius:6px" />
+            <figcaption>Product</figcaption>
+          </figure>
+        </div>
+      </div></div></div>
+      <div class="is"><div class="isl">Packaging (1)</div><div class="isb"><div class="pkgs">
+        <div class="pkg">
+          <div class="pkg-row">
+            <div class="pki">
+              <div class="pn">Box of 30 Tablets</div>
+              <div class="pt" style="font-family:ui-monospace,'SF Mono',monospace; font-size:10px; margin-bottom:10px">
+                GTIN: 09876543210530 &nbsp;|&nbsp; SKU: WD200-BOX-30
+              </div>
+              <div class="pkt">
+                <span class="chip ch-g">Active</span>
+                <span class="chip ch-gr" style="border-radius:4px;">Qty: 30</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Outer: Box</span>
+                <span class="chip ch-gr" style="border-radius:4px; font-weight:normal;">Inner: Blister PVC/Al</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div></div>
+      <div class="is" style="border-left:3px solid var(--green)">
+        <div class="isl" style="padding-bottom:6px;color:var(--green)">Shelf Life &amp; Storage Conditions</div>
+        <div style="padding:8px 14px 4px;display:flex;align-items:center;gap:10px">
+          <span class="shelf-pill">
+            <span>&#128197;</span><span class="shelf-n">36</span><span style="font-size:.75rem;font-weight:600">months</span>
+          </span>
+          <span style="font-size:.8rem;color:var(--muted)">Shelf life of the medicinal product as packaged for sale</span>
+        </div>
+        <div class="storage-grid">
+          <div class="storage-item"><span class="storage-icon">&#127777;</span><div class="storage-text"><div class="sl">Temperature</div><div class="sv">Store below 25°C</div><div class="sd">Do not freeze</div></div></div>
+          <div class="storage-item"><span class="storage-icon">&#128167;</span><div class="storage-text"><div class="sl">Moisture</div><div class="sv">Keep dry</div><div class="sd">Protect from moisture</div></div></div>
+          <div class="storage-item"><span class="storage-icon">&#9728;</span><div class="storage-text"><div class="sl">Light</div><div class="sv">Protect from light</div><div class="sd">Keep in original packaging</div></div></div>
+          <div class="storage-item"><span class="storage-icon">&#128100;</span><div class="storage-text"><div class="sl">Safety</div><div class="sv">Out of reach of children</div></div></div>
+        </div>
+      </div>
+      <div class="is"><div class="isl">Marketing Authorization</div><div class="isb"><div class="mag">
+        <div class="mai"><div class="ml">Holder</div><div class="mv">Acme Pharma Inc.</div></div>
+        <div class="mai"><div class="ml">Number</div><div class="mv mvm">MA-987654321</div></div>
+        <div class="mai"><div class="ml">Region</div><div class="mv">Germany (DE)</div></div>
+      </div></div></div>
     </div>
   </details>
 </div>
 
 <!-- =====================================================
-     CLINICAL DETAILS TAB — Same as Type 3 + entry refs
+     CLINICAL DETAILS TAB — Full details (matching Type 3) + Type 4 entry refs
      ===================================================== -->
 <div id="t4pcl" class="panel">
   <div class="csum">
     <div class="cscard ci"><div><div class="csn" style="color:var(--accent)">2</div><div class="csl">Indications</div></div><div class="csi">&#127919;</div></div>
     <div class="cscard cc"><div><div class="csn" style="color:var(--rose)">2</div><div class="csl">Contraindications</div></div><div class="csi">&#9940;</div></div>
-    <div class="cscard cx"><div><div class="csn" style="color:var(--amber)">2</div><div class="csl">Interactions</div></div><div class="csi">&#9889;</div></div>
+    <div class="cscard cx"><div><div class="csn" style="color:var(--amber)">4</div><div class="csl">Interactions</div></div><div class="csi">&#9889;</div></div>
     <div class="cscard cd"><div><div class="csn" style="color:var(--teal)">3</div><div class="csl">Dosage Regimens</div></div><div class="csi">&#128138;</div></div>
     <div class="cscard cu"><div><div class="csn" style="color:var(--purple)">12</div><div class="csl">Side Effects</div></div><div class="csi">&#128137;</div></div>
+    <div class="cscard cw"><div><div class="csn" style="color:#ea580c">3</div><div class="csl">Warnings</div></div><div class="csi">&#9888;</div></div>
   </div>
 
   <div class="t4-info-banner">
@@ -661,7 +939,7 @@
     <div class="clsh"><span class="clsicon">&#127919;</span><span class="clstitle">Indications</span><span class="clscount">2</span></div>
     <div class="clsb">
       <table class="ctbl">
-        <thead><tr><th>Condition</th><th>Population</th><th>Severity</th><th style="width:90px">Type 4 Entry</th></tr></thead>
+        <thead><tr><th>Condition</th><th>Population</th><th>Severity</th><th style="width:120px">Type 4 Entry</th></tr></thead>
         <tbody>
           <tr>
             <td>Hypertension</td>
@@ -689,17 +967,117 @@
     </div>
   </div>
 
-  <!-- Interactions -->
+  <!-- Interactions (full 4 rows) -->
   <div class="cls">
-    <div class="clsh"><span class="clsicon">&#9889;</span><span class="clstitle">Interactions</span><span class="clscount">2</span></div>
+    <div class="clsh"><span class="clsicon">&#9889;</span><span class="clstitle">Interactions</span><span class="clscount">4</span></div>
     <div class="clsb">
       <table class="ctbl">
-        <thead><tr><th>Interacting Substance</th><th>Type</th><th>Severity</th><th>Effect</th><th style="width:90px">Type 4 Entry</th></tr></thead>
+        <thead><tr><th>Interacting Substance</th><th>Type</th><th>Severity</th><th>Effect</th><th style="width:120px">Type 4 Entry</th></tr></thead>
         <tbody>
           <tr><td>Warfarin</td><td>Pharmacodynamic</td><td><span class="sev-h">High</span></td><td>Increased anticoagulation risk</td><td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-inter-1</span></td></tr>
           <tr><td>NSAIDs</td><td>Pharmacodynamic</td><td><span class="sev-m">Moderate</span></td><td>Reduced antihypertensive effect</td><td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-inter-2</span></td></tr>
+          <tr><td>Rifampicin</td><td>Pharmacokinetic</td><td><span class="sev-m">Moderate</span></td><td>Reduced plasma levels</td><td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-inter-3</span></td></tr>
+          <tr><td>Potassium supplements</td><td>Pharmacodynamic</td><td><span class="sev-l">Low</span></td><td>Risk of hyperkalaemia</td><td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-inter-4</span></td></tr>
         </tbody>
       </table>
+    </div>
+  </div>
+
+  <!-- Undesirable Effects -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#128137;</span><span class="clstitle">Undesirable Effects</span><span class="clscount">12</span></div>
+    <div class="clsb">
+      <div class="soc"><div class="soc-hdr">Cardiac disorders</div>
+        <div class="soc-item"><span class="si-name">Palpitations</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+        <div class="soc-item"><span class="si-name">Bradycardia</span><span class="si-freq">Uncommon (&#8805;1/1,000)</span></div>
+      </div>
+      <div class="soc"><div class="soc-hdr">Renal and urinary disorders</div>
+        <div class="soc-item"><span class="si-name">Renal impairment</span><span class="si-freq">Uncommon (&#8805;1/1,000)</span></div>
+        <div class="soc-item"><span class="si-name">Proteinuria</span><span class="si-freq">Rare (&#8805;1/10,000)</span></div>
+      </div>
+      <div class="soc"><div class="soc-hdr">Nervous system disorders</div>
+        <div class="soc-item"><span class="si-name">Headache</span><span class="si-freq">Very common (&#8805;1/10)</span></div>
+        <div class="soc-item"><span class="si-name">Dizziness</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+      </div>
+      <div class="soc"><div class="soc-hdr">Gastrointestinal disorders</div>
+        <div class="soc-item"><span class="si-name">Nausea</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+        <div class="soc-item"><span class="si-name">Diarrhoea</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+      </div>
+      <div class="soc" style="margin-bottom:0"><div class="soc-hdr">Skin and subcutaneous tissue disorders</div>
+        <div class="soc-item"><span class="si-name">Rash</span><span class="si-freq">Common (&#8805;1/100)</span></div>
+        <div class="soc-item"><span class="si-name">Pruritus</span><span class="si-freq">Uncommon (&#8805;1/1,000)</span></div>
+        <div class="soc-item"><span class="si-name">Urticaria</span><span class="si-freq">Rare (&#8805;1/10,000)</span></div>
+        <div class="soc-item"><span class="si-name">Angioedema</span><span class="si-freq">Very rare (&lt;1/10,000)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Warnings & Precautions -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9888;</span><span class="clstitle">Warnings &amp; Precautions</span><span class="clscount">3</span></div>
+    <div class="clsb">
+      <div class="wbox"><span class="wicon">&#9650;</span><span>Patients with renal impairment (CrCl &lt;30 mL/min) require dose adjustment. Monitor renal function regularly.</span><span class="t4-entry-ref" style="margin-left:auto;font-size:9px"><span class="ref-type">CUD</span> cud-warning-1</span></div>
+      <div class="wbox"><span class="wicon">&#9650;</span><span>Risk of hypotension on first dose, particularly in volume-depleted or sodium-depleted patients. Initiate at lowest dose.</span><span class="t4-entry-ref" style="margin-left:auto;font-size:9px"><span class="ref-type">CUD</span> cud-warning-2</span></div>
+      <div class="wbox"><span class="wicon">&#9650;</span><span>Not recommended during pregnancy (2nd and 3rd trimester) due to risk of foetal toxicity.</span><span class="t4-entry-ref" style="margin-left:auto;font-size:9px"><span class="ref-type">CUD</span> cud-warning-3</span></div>
+    </div>
+  </div>
+
+  <!-- Dosage Regimen -->
+  <div class="cls" style="border-left:3px solid var(--teal)">
+    <div class="clsh">
+      <span class="clsicon">&#128138;</span>
+      <span class="clstitle">Dosage Regimen</span>
+      <span class="clscount">3</span><span class="chip ch-mk" style="margin-left:6px;font-size:9px">MedicationKnowledge</span>
+    </div>
+    <div class="clsb">
+      <input type="radio" name="drtabs4" id="dr4-adult"  class="dr-trd" checked>
+      <input type="radio" name="drtabs4" id="dr4-ped"    class="dr-trd">
+      <input type="radio" name="drtabs4" id="dr4-renal"  class="dr-trd">
+      <div class="dr-tabs">
+        <label class="dr-tb" for="dr4-adult">Adults &amp; Adolescents (&ge;12 y)</label>
+        <label class="dr-tb" for="dr4-ped">Children (6–11 y)</label>
+        <label class="dr-tb" for="dr4-renal">Renal Impairment</label>
+      </div>
+      <div class="dr-panel dr-panel-adult">
+        <div class="dose-card">
+          <div class="dose-card-hdr"><span class="d-pop">Adults &amp; Adolescents (&ge;12 years / &ge;50 kg)</span><span class="dose-badge">Standard</span></div>
+          <div class="dose-body">
+            <div class="dose-row"><span class="dose-label">Single dose</span><span class="dose-value">500 mg – 1,000 mg</span></div>
+            <div class="dose-row"><span class="dose-label">Dose interval</span><span class="dose-value">Every 4–6 hours as needed</span></div>
+            <div class="dose-row"><span class="dose-label">Daily maximum</span><span class="dose-value">4,000 mg (4 g)</span></div>
+            <div class="dose-row"><span class="dose-label">Route</span><span class="dose-value">Oral</span></div>
+            <div class="dose-row"><span class="dose-label">Administration</span><span class="dose-value">With or without food; swallow whole with water</span></div>
+            <div class="timing-strip"><span class="timing-pill">&#128197; Morning dose</span><span class="timing-pill">&#127752; Midday dose</span><span class="timing-pill">&#127762; Afternoon dose</span><span class="timing-pill">&#127761; Evening dose</span><span class="timing-pill max">&#9888; Max 4 doses/day</span></div>
+          </div>
+        </div>
+        <div class="mk-src">FHIR source: <code>MedicationKnowledge/mk-wonderdrug-500mg</code> &rarr; <code>dosingGuideline[0].dosage[0]</code> (patientCharacteristic: age &ge;12y, body weight &ge;50kg)</div>
+      </div>
+      <div class="dr-panel dr-panel-ped">
+        <div class="dose-card">
+          <div class="dose-card-hdr"><span class="d-pop">Children (6–11 years / 21–50 kg)</span><span class="dose-badge" style="background:#fef9c3;border-color:#fde68a;color:#854d0e">Weight-based</span></div>
+          <div class="dose-body">
+            <div class="dose-row"><span class="dose-label">Single dose</span><span class="dose-value">10–15 mg/kg</span></div>
+            <div class="dose-row"><span class="dose-label">Maximum single dose</span><span class="dose-value">500 mg</span></div>
+            <div class="dose-row"><span class="dose-label">Dose interval</span><span class="dose-value">Every 4–6 hours as needed</span></div>
+            <div class="dose-row"><span class="dose-label">Daily maximum</span><span class="dose-value">60 mg/kg/day (max 2,000 mg)</span></div>
+            <div class="dose-row"><span class="dose-label">Route</span><span class="dose-value">Oral</span></div>
+          </div>
+        </div>
+        <div class="mk-src">FHIR source: <code>MedicationKnowledge/mk-wonderdrug-500mg</code> &rarr; <code>dosingGuideline[1].dosage[0]</code> (patientCharacteristic: age 6–11y)</div>
+      </div>
+      <div class="dr-panel dr-panel-renal">
+        <div class="renal-alert"><span class="ra-icon">&#9888;</span><span>Dose adjustment required in severe renal impairment (CrCl &lt;30 mL/min). Extend the dosing interval to at least every 8 hours. Maximum 3 doses in 24 hours.</span></div>
+        <div class="dose-card">
+          <div class="dose-card-hdr"><span class="d-pop">Renal Impairment — Severe (CrCl &lt;30 mL/min)</span><span class="dose-badge" style="background:#fee2e2;border-color:#fecaca;color:#b91c1c">Adjusted</span></div>
+          <div class="dose-body">
+            <div class="dose-row"><span class="dose-label">Single dose</span><span class="dose-value">500 mg</span></div>
+            <div class="dose-row"><span class="dose-label">Dose interval</span><span class="dose-value">Every 8 hours minimum</span></div>
+            <div class="dose-row"><span class="dose-label">Daily maximum</span><span class="dose-value">1,500 mg (3 doses)</span></div>
+            <div class="dose-row"><span class="dose-label">Monitoring</span><span class="dose-value">Monitor renal function regularly</span></div>
+          </div>
+        </div>
+        <div class="mk-src">FHIR source: <code>MedicationKnowledge/mk-wonderdrug-500mg</code> &rarr; <code>dosingGuideline[2].dosage[0]</code> (patientCharacteristic: GFR &lt;30 mL/min/1.73m²)</div>
+      </div>
     </div>
   </div>
 </div>
