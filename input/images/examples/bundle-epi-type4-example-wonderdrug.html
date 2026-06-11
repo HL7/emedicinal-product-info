@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WonderDrug 100/200/500 mg — ePI Type 4 (Vulcan FHIR IG)</title>
+  <meta name="description" content="FHIR R5 Bundle document (ePI Type 4) for WonderDrug tablets — Vulcan eMedicinal Product Information IG example demonstrating granular Composition sections, section.entry references, and semantic span annotations." />
+  <!-- Shared ePI design system -->
+  <link rel="stylesheet" href="../epi-styles.css" />
+  <!-- Page-local: tab & panel activation for this file's radio IDs -->
+  <style>
+    #t4-d:checked  ~ .tabnav .tb[for="t4-d"],
+    #t4-c:checked  ~ .tabnav .tb[for="t4-c"],
+    #t4-o:checked  ~ .tabnav .tb[for="t4-o"],
+    #t4-p:checked  ~ .tabnav .tb[for="t4-p"],
+    #t4-cl:checked ~ .tabnav .tb[for="t4-cl"],
+    #t4-t4:checked ~ .tabnav .tb[for="t4-t4"] { color: var(--text); font-weight: 600; border-bottom-color: var(--accent); }
+    #t4-d:checked  ~ #t4pd,
+    #t4-c:checked  ~ #t4pc,
+    #t4-o:checked  ~ #t4po,
+    #t4-p:checked  ~ #t4pp,
+    #t4-cl:checked ~ #t4pcl,
+    #t4-t4:checked ~ #t4pt4 { display: block; }
+
+    /* === TYPE 4 SPECIFIC STYLES === */
+
+    /* Granular composition sections */
+    .t4-concept { margin-bottom: 16px; }
+    .t4-concept-hdr {
+      font-size: .95rem; font-weight: 700; color: #003087;
+      padding: 10px 16px; background: #eff6ff; border: 1px solid #bfdbfe;
+      border-left: 4px solid #003087; border-radius: 6px; margin-bottom: 0;
+    }
+    .t4-domain { margin-left: 18px; margin-bottom: 0; }
+    .t4-domain-hdr {
+      font-size: .87rem; font-weight: 600; color: #7c3aed;
+      padding: 8px 14px; background: #faf5ff; border: 1px solid #e9d5ff;
+      border-left: 4px solid #7c3aed; border-radius: 6px;
+      margin-top: 8px; margin-bottom: 0;
+    }
+    .t4-topic { margin-left: 36px; margin-top: 6px; margin-bottom: 6px; }
+    .t4-topic-card {
+      background: var(--surface); border: 1px solid var(--bd);
+      border-left: 4px solid #16a34a; border-radius: 6px; overflow: hidden;
+    }
+    .t4-topic-hdr {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 8px 14px; background: #f0fdf4; border-bottom: 1px solid #bbf7d0;
+    }
+    .t4-topic-title { font-size: .83rem; font-weight: 600; color: #16a34a; }
+    .t4-topic-body { padding: 10px 14px; }
+
+    /* Narrative text area */
+    .t4-narrative {
+      font-size: .84rem; color: var(--text); line-height: 1.8;
+      padding: 10px 14px; background: var(--sf2);
+      border-radius: 4px; margin-bottom: 8px;
+    }
+    .t4-narrative-lbl {
+      font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .1em; color: var(--faint); margin-bottom: 4px;
+    }
+
+    /* Span annotation highlights */
+    .t4-span-cud {
+      background: #fef2f2; border: 1px solid #fecaca;
+      padding: 1px 6px; border-radius: 3px; font-weight: 600;
+      color: #dc2626; cursor: help; position: relative;
+    }
+    .t4-span-ingredient {
+      background: #ecfdf5; border: 1px solid #a7f3d0;
+      padding: 1px 6px; border-radius: 3px; font-weight: 600;
+      color: #065f46; cursor: help;
+    }
+    .t4-span-mpd {
+      background: #eff6ff; border: 1px solid #bfdbfe;
+      padding: 1px 6px; border-radius: 3px; font-weight: 600;
+      color: #1d4ed8; cursor: help;
+    }
+    .t4-span-substance {
+      background: #faf5ff; border: 1px solid #e9d5ff;
+      padding: 1px 6px; border-radius: 3px; font-weight: 600;
+      color: #7c3aed; cursor: help;
+    }
+    .t4-span-group {
+      background: #fff7ed; border: 1px solid #fed7aa;
+      padding: 1px 6px; border-radius: 3px; font-weight: 600;
+      color: #9a3412; cursor: help;
+    }
+    .t4-span-text {
+      background: #f3f4f6; border: 1px solid #e5e7eb;
+      padding: 1px 6px; border-radius: 3px; font-style: italic;
+      color: #6b7280;
+    }
+
+    /* Entry reference pill */
+    .t4-entry-ref {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--sf2); border: 1px solid var(--bd);
+      padding: 3px 10px; border-radius: 99px; font-size: 10px;
+      font-weight: 600; color: var(--muted); margin: 3px 2px;
+      font-family: ui-monospace, "SF Mono", monospace;
+    }
+    .t4-entry-ref .ref-type {
+      background: #dc2626; color: #fff;
+      padding: 1px 5px; border-radius: 3px;
+      font-size: 8px; font-weight: 700; letter-spacing: .04em;
+    }
+    .t4-entry-ref .ref-type-ing {
+      background: #065f46;
+    }
+    .t4-entry-ref .ref-type-mpd {
+      background: #1d4ed8;
+    }
+
+    /* Entry references box */
+    .t4-entries {
+      padding: 8px 14px;
+      border-top: 1px solid var(--bd); background: var(--sf2);
+    }
+    .t4-entries-lbl {
+      font-size: 8px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .1em; color: #dc2626; margin-bottom: 4px;
+    }
+
+    /* XHTML source block */
+    .t4-xhtml-block {
+      background: #1e1e2e; border-radius: 6px; padding: 14px 16px;
+      margin-bottom: 10px; overflow-x: auto;
+    }
+    .t4-xhtml-block pre {
+      font-family: ui-monospace, "SF Mono", "Cascadia Mono", monospace;
+      font-size: .72rem; color: #cdd6f4; line-height: 1.8; margin: 0;
+      white-space: pre-wrap; word-break: break-all;
+    }
+    .t4-xhtml-block .x-tag { color: #89b4fa; }
+    .t4-xhtml-block .x-attr { color: #a6e3a1; }
+    .t4-xhtml-block .x-val { color: #f9e2af; }
+    .t4-xhtml-block .x-txt { color: #cdd6f4; }
+    .t4-xhtml-block .x-cmt { color: #6c7086; font-style: italic; }
+    .t4-xhtml-block .x-span-hl { background: rgba(220,38,38,.15); padding: 1px 0; border-radius: 2px; }
+    .t4-xhtml-block .x-span-ing { background: rgba(6,95,70,.15); padding: 1px 0; border-radius: 2px; }
+
+    /* Legend */
+    .t4-legend {
+      display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 14px;
+      background: var(--sf2); border: 1px solid var(--bd);
+      border-radius: var(--r); margin-bottom: 14px;
+    }
+    .t4-legend-item {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: .74rem; color: var(--muted);
+    }
+    .t4-legend-swatch {
+      width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0;
+    }
+
+    /* Type 4 info banner */
+    .t4-info-banner {
+      background: #faf5ff; border: 1px solid #e9d5ff; border-left: 4px solid #7c3aed;
+      border-radius: var(--r); padding: 12px 16px; margin-bottom: 14px;
+      font-size: .82rem; color: #581c87;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .t4-info-banner .icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+
+    /* Connection lines */
+    .t4-connector {
+      display: flex; align-items: stretch; gap: 0; margin-bottom: 14px;
+    }
+    .t4-connector-line {
+      width: 3px; background: repeating-linear-gradient(to bottom, var(--bd) 0 4px, transparent 4px 8px);
+      margin: 0 14px 0 24px; flex-shrink: 0;
+    }
+    .t4-connector-content { flex: 1; }
+
+    /* Scenario cards */
+    .t4-scenario {
+      border: 1px solid var(--bd); border-radius: var(--r);
+      margin-bottom: 16px; overflow: hidden;
+    }
+    .t4-scenario-hdr {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px; border-bottom: 1px solid var(--bd);
+      background: var(--sf2);
+    }
+    .t4-scenario-num {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: #7c3aed; color: #fff; display: flex;
+      align-items: center; justify-content: center;
+      font-size: .78rem; font-weight: 700; flex-shrink: 0;
+    }
+    .t4-scenario-title { font-size: .88rem; font-weight: 700; color: var(--text); }
+    .t4-scenario-sub { font-size: .77rem; color: var(--muted); }
+    .t4-scenario-body { padding: 14px 16px; }
+
+    /* Composition hierarchy mini-tree */
+    .t4-tree { font-size: .78rem; font-family: ui-monospace, "SF Mono", monospace; line-height: 2; }
+    .t4-tree-l0 { color: #003087; font-weight: 700; }
+    .t4-tree-l1 { padding-left: 18px; color: #7c3aed; font-weight: 600; }
+    .t4-tree-l2 { padding-left: 36px; color: #16a34a; font-weight: 600; }
+    .t4-tree-arr { color: var(--faint); }
+    .t4-tree-ref { color: #dc2626; font-weight: 700; }
+    .t4-tree-ref-ing { color: #065f46; font-weight: 700; }
+
+    /* Popup tooltip for annotations */
+    .t4-anno-tip {
+      font-size: 10px; color: var(--faint); font-style: italic;
+      margin-top: 6px;
+    }
+
+    /* Resource card for entry targets */
+    .t4-res-card {
+      border: 1px solid var(--bd); border-radius: 6px; overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .t4-res-card-hdr {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 12px; background: var(--sf2);
+      border-bottom: 1px solid var(--bd);
+    }
+    .t4-res-type {
+      font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; padding: 2px 8px; border-radius: 4px;
+    }
+    .t4-res-type-cud  { background: #fee2e2; color: #b91c1c; }
+    .t4-res-type-ing  { background: #ecfdf5; color: #065f46; }
+    .t4-res-type-sub  { background: #faf5ff; color: #7c3aed; }
+    .t4-res-type-grp  { background: #fff7ed; color: #9a3412; }
+    .t4-res-name { font-size: .82rem; font-weight: 600; color: var(--text); }
+    .t4-res-card-body { padding: 8px 12px; }
+    .t4-res-field { display: flex; justify-content: space-between; padding: 3px 0; font-size: .78rem; border-bottom: 1px solid var(--bd); }
+    .t4-res-field:last-child { border-bottom: none; }
+    .t4-res-field-lbl { color: var(--muted); }
+    .t4-res-field-val { font-weight: 600; color: var(--text); text-align: right; }
+
+    /* Flow diagram */
+    .t4-flow {
+      display: flex; align-items: center; gap: 0;
+      margin: 12px 0; flex-wrap: wrap;
+    }
+    .t4-flow-node {
+      padding: 6px 12px; border-radius: 6px;
+      font-size: .76rem; font-weight: 600;
+      border: 1px solid;
+    }
+    .t4-flow-node-section { background: #f0fdf4; border-color: #bbf7d0; color: #16a34a; }
+    .t4-flow-node-entry  { background: #fee2e2; border-color: #fecaca; color: #dc2626; }
+    .t4-flow-node-res    { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
+    .t4-flow-node-span   { background: #faf5ff; border-color: #e9d5ff; color: #7c3aed; }
+    .t4-flow-arrow { font-size: .8rem; color: var(--faint); padding: 0 6px; }
+  </style>
+</head>
+<body>
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+
+<div class="crumb">
+  <span class="ig">Vulcan eMedicinal Product Information IG</span>
+  <span class="sep">&#8250;</span><span>Examples</span>
+  <span class="sep">&#8250;</span><span>ePI Type 4</span>
+  <span class="badge" style="background:#faf5ff;border-color:#e9d5ff;color:#7c3aed">HL7 FHIR R5</span>
+</div>
+
+<header class="hero">
+  <h1>WonderDrug</h1>
+  <p class="sub">100 mg, 200 mg and 500 mg tablets</p>
+  <div class="chips">
+    <span class="chip ch-g">&#9679; Active</span>
+    <span class="chip ch-gr">Version 2.1</span>
+    <span class="chip ch-gr">EN</span>
+    <span class="chip ch-p">ePI Type 4</span>
+    <span class="chip ch-dk">Prescription Only</span>
+  </div>
+</header>
+
+<input type="radio" name="t4tabs" id="t4-d" class="trd" checked>
+<input type="radio" name="t4tabs" id="t4-c" class="trd">
+<input type="radio" name="t4tabs" id="t4-o" class="trd">
+<input type="radio" name="t4tabs" id="t4-p" class="trd">
+<input type="radio" name="t4tabs" id="t4-cl" class="trd">
+<input type="radio" name="t4tabs" id="t4-t4" class="trd">
+
+<nav class="tabnav">
+  <div class="tabnav-inner">
+    <label class="tb" for="t4-d">Document</label>
+    <label class="tb" for="t4-c">Composition</label>
+    <label class="tb" for="t4-o">Organization</label>
+    <label class="tb" for="t4-p">Product Details</label>
+    <label class="tb" for="t4-cl">Clinical Details</label>
+    <label class="tb" for="t4-t4">Type 4 Features</label>
+  </div>
+</nav>
+
+<!-- =====================================================
+     DOCUMENT TAB
+     ===================================================== -->
+<div id="t4pd" class="panel">
+  <div class="sc ab">
+    <div class="sc-lbl">Bundle Metadata</div>
+    <div class="sc-body">
+      <div class="dg dg4" style="margin-bottom:12px">
+        <div class="di"><label>Resource ID</label><div class="v vm">urn:uuid:c4f9e3a1-7d2b&#8230;</div></div>
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">2.1</div></div>
+        <div class="di"><label>Date</label><div class="v">2026-03-27</div></div>
+      </div>
+      <div class="dg dg4">
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+        <div class="di"><label>Jurisdiction</label><div class="v">European Union &#127466;&#127482;</div></div>
+        <div class="di"><label>Author (MAH)</label><div class="v">Acme Pharma Inc.</div></div>
+        <div class="di"><label>Attester (Regulator)</label><div class="v">EMA</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sc at">
+    <div class="sc-lbl">Composition</div>
+    <div class="sc-body">
+      <div class="dg dg3" style="margin-bottom:12px">
+        <div class="di"><label>Identifier</label><div class="v vm">urn:uuid:d8f2a3c1-4e7b&#8230;</div></div>
+        <div class="di"><label>Title</label><div class="v">WonderDrug SmPC</div></div>
+        <div class="di"><label>Type</label><div class="v"><span class="chip ch-b">SmPC</span></div></div>
+      </div>
+      <div class="dg dg3">
+        <div class="di"><label>Status</label><div class="v"><span class="chip ch-g">active</span></div></div>
+        <div class="di"><label>Version</label><div class="v">2.1</div></div>
+        <div class="di"><label>Language</label><div class="v">EN</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sc ap">
+    <div class="sc-lbl">Contained Resources</div>
+    <div class="cc-row">
+      <div class="cc"><span class="n" style="color:var(--accent)">1</span><span class="l">Compositions</span></div>
+      <div class="cc"><span class="n" style="color:var(--teal)">2</span><span class="l">Organizations</span></div>
+      <div class="cc"><span class="n" style="color:var(--green)">3</span><span class="l">Medicinal Products</span></div>
+      <div class="cc"><span class="n" style="color:var(--amber)">6</span><span class="l">Packaged Products</span></div>
+      <div class="cc"><span class="n" style="color:var(--purple)">1</span><span class="l">Regulatory Authorizations</span></div>
+    </div>
+    <div class="cc-row">
+      <div class="cc"><span class="n" style="color:var(--rose)">5</span><span class="l">Clinical Use Definitions</span></div>
+      <div class="cc"><span class="n" style="color:#065f46">4</span><span class="l">Ingredients</span></div>
+      <div class="cc"><span class="n" style="color:#9a3412">3</span><span class="l">Groups</span></div>
+      <div class="cc"><span class="n" style="color:var(--teal)">1</span><span class="l">Medication Knowledge</span></div>
+      <div class="cc"><span class="n" style="color:#7c3aed">2</span><span class="l">Substance Definitions</span></div>
+    </div>
+  </div>
+
+  <div class="t4-info-banner">
+    <span class="icon">🔗</span>
+    <span><strong>Type 4 Enhancement:</strong> This Bundle uses granular Composition sections with mandatory <code>section.entry</code> references linking narrative text to structured FHIR resources. Narrative text includes <code>&lt;span&gt;</code> annotations that bind specific words to resource IDs.</span>
+  </div>
+</div>
+
+<!-- =====================================================
+     COMPOSITION TAB — Granular Type 4 Hierarchy
+     ===================================================== -->
+<div id="t4pc" class="panel">
+  <div class="t4-info-banner">
+    <span class="icon">📐</span>
+    <span><strong>Type 4 Composition Structure:</strong> Content is decomposed into a hierarchy of Concept → Domain → Topic. Each Topic has its own <code>section</code> containing narrative <code>text</code> with semantic <code>&lt;span&gt;</code> annotations and <code>entry</code> references linking to structured resources.</span>
+  </div>
+
+  <!-- Legend -->
+  <div class="t4-legend">
+    <div class="t4-legend-item"><span class="t4-legend-swatch" style="background:#003087"></span> Concept (Chapter)</div>
+    <div class="t4-legend-item"><span class="t4-legend-swatch" style="background:#7c3aed"></span> Domain (Section)</div>
+    <div class="t4-legend-item"><span class="t4-legend-swatch" style="background:#16a34a"></span> Topic (Subsection)</div>
+    <div class="t4-legend-item"><span class="t4-legend-swatch" style="background:#dc2626"></span> Entry → CUD Resource</div>
+    <div class="t4-legend-item"><span class="t4-legend-swatch" style="background:#065f46"></span> Entry → Ingredient</div>
+    <div class="t4-legend-item"><span class="t4-legend-swatch" style="background:#f3f4f6;border:1px solid #d1d5db"></span> Text-only (no resource)</div>
+  </div>
+
+  <!-- ——— CONCEPT 1: Product Name ——— -->
+  <div class="t4-concept">
+    <div class="t4-concept-hdr">1. Name of the Medicinal Product</div>
+    <div class="t4-domain">
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic: Product Name</span>
+            <span class="chip ch-b" style="font-size:9px">1 entry</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              <span class="t4-span-mpd" title="span class=&quot;mpd-wonderdrug-500mg&quot;">WonderDrug 500 mg tablets</span>
+              (<span class="t4-span-substance" title="span class=&quot;substance-paracetamol&quot;">paracetamol</span>)
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type ref-type-mpd">MPD</span> MedicinalProductDefinition/mpd-wonderdrug-500mg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ——— CONCEPT 2: Qualitative & Quantitative Composition ——— -->
+  <div class="t4-concept">
+    <div class="t4-concept-hdr">2. Qualitative and Quantitative Composition</div>
+    <div class="t4-domain">
+      <div class="t4-domain-hdr">2.1 Active Substance</div>
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic: Active Ingredient — Paracetamol</span>
+            <span class="chip ch-b" style="font-size:9px">1 entry</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              Each tablet contains 500 mg of
+              <span class="t4-span-ingredient" title="span class=&quot;ingredient-paracetamol-active&quot;">paracetamol</span>.
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type ref-type-ing">ING</span> Ingredient/ingredient-paracetamol-active</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="t4-domain-hdr">2.2 Excipients</div>
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic: Excipient List</span>
+            <span class="chip ch-b" style="font-size:9px">3 entries</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              Excipients with known effect:
+              <span class="t4-span-ingredient" title="span class=&quot;ingredient-pregelatinized-starch&quot;">pregelatinized starch</span>,
+              <span class="t4-span-ingredient" title="span class=&quot;ingredient-povidone-k30&quot;">povidone K30</span>,
+              <span class="t4-span-ingredient" title="span class=&quot;ingredient-magnesium-stearate&quot;">magnesium stearate</span>.
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type ref-type-ing">ING</span> Ingredient/ingredient-pregelatinized-starch</span>
+            <span class="t4-entry-ref"><span class="ref-type ref-type-ing">ING</span> Ingredient/ingredient-povidone-k30</span>
+            <span class="t4-entry-ref"><span class="ref-type ref-type-ing">ING</span> Ingredient/ingredient-magnesium-stearate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ——— CONCEPT 4: Clinical Particulars ——— -->
+  <div class="t4-concept">
+    <div class="t4-concept-hdr">4. Clinical Particulars</div>
+    <div class="t4-domain">
+      <div class="t4-domain-hdr">4.1 Therapeutic Indications</div>
+
+      <!-- TOPIC: Indication 1 -->
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic 4.1.1: Indication — Hypertension</span>
+            <span class="chip ch-b" style="font-size:9px">1 entry</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              <span class="t4-span-mpd" title="span class=&quot;mpd-wonderdrug-500mg&quot;">WonderDrug</span>
+              is indicated for the treatment of
+              <span class="t4-span-cud" title="span class=&quot;cud-indication-1&quot;">hypertension</span>
+              in
+              <span class="t4-span-group" title="span class=&quot;group-adult-men&quot;">adults ≥18 years</span>.
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type">CUD</span> ClinicalUseDefinition/cud-indication-1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOPIC: Indication 2 -->
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic 4.1.2: Indication — Symptomatic Pain</span>
+            <span class="chip ch-b" style="font-size:9px">1 entry</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              <span class="t4-span-mpd" title="span class=&quot;mpd-wonderdrug-500mg&quot;">WonderDrug</span>
+              is indicated for the
+              <span class="t4-span-text">symptomatic treatment of</span>
+              <span class="t4-span-cud" title="span class=&quot;cud-indication-2&quot;">mild to moderate pain</span>
+              and <span class="t4-span-cud" title="span class=&quot;cud-indication-2&quot;">fever</span>
+              in
+              <span class="t4-span-group" title="span class=&quot;group-children&quot;">children over 12 years</span>.
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type">CUD</span> ClinicalUseDefinition/cud-indication-2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="t4-domain-hdr">4.3 Contraindications</div>
+      <!-- TOPIC: Contraindication 1 -->
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic 4.3.1: Contraindication — Hepatic Impairment</span>
+            <span class="chip ch-b" style="font-size:9px">1 entry</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              <span class="t4-span-mpd" title="span class=&quot;mpd-wonderdrug-500mg&quot;">WonderDrug</span>
+              is contraindicated in patients with
+              <span class="t4-span-cud" title="span class=&quot;cud-contraindication-1&quot;">severe hepatic impairment (Child-Pugh C)</span>.
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type">CUD</span> ClinicalUseDefinition/cud-contraindication-1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOPIC: Contraindication 2 -->
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic 4.3.2: Contraindication — Hypersensitivity</span>
+            <span class="chip ch-b" style="font-size:9px">1 entry</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              <span class="t4-span-text">Do not take</span>
+              <span class="t4-span-mpd" title="span class=&quot;mpd-wonderdrug-500mg&quot;">WonderDrug</span>
+              <span class="t4-span-text">if you have a known</span>
+              <span class="t4-span-cud" title="span class=&quot;cud-contraindication-2&quot;">hypersensitivity</span>
+              to
+              <span class="t4-span-substance" title="span class=&quot;substance-paracetamol&quot;">paracetamol</span>
+              or any excipient listed in section 6.1.
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type">CUD</span> ClinicalUseDefinition/cud-contraindication-2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="t4-domain-hdr">4.5 Interactions</div>
+      <!-- TOPIC: Interaction 1 -->
+      <div class="t4-topic">
+        <div class="t4-topic-card">
+          <div class="t4-topic-hdr">
+            <span class="t4-topic-title">Topic 4.5.1: Interaction — Warfarin</span>
+            <span class="chip ch-b" style="font-size:9px">1 entry</span>
+          </div>
+          <div class="t4-topic-body">
+            <div class="t4-narrative-lbl">Narrative Text (with span annotations)</div>
+            <div class="t4-narrative">
+              Concomitant use of
+              <span class="t4-span-mpd" title="span class=&quot;mpd-wonderdrug-500mg&quot;">WonderDrug</span>
+              with
+              <span class="t4-span-cud" title="span class=&quot;cud-interaction-1&quot;">warfarin</span>
+              <span class="t4-span-text">may result in</span>
+              increased anticoagulation risk.
+            </div>
+          </div>
+          <div class="t4-entries">
+            <div class="t4-entries-lbl">section.entry references</div>
+            <span class="t4-entry-ref"><span class="ref-type">CUD</span> ClinicalUseDefinition/cud-interaction-1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =====================================================
+     ORGANIZATION TAB — Same as Type 3
+     ===================================================== -->
+<div id="t4po" class="panel">
+  <div class="og">
+    <div class="oc" style="border-left:3px solid var(--accent)">
+      <div class="och"><div class="role" style="color:var(--accent)">Marketing Authorization Holder</div><div class="name">Acme Pharma Inc.</div></div>
+      <div class="ocb">
+        <div class="or"><span class="ol">Identifier</span><span class="ov ovm">LOC-100000000 (OMS)</span></div>
+        <div class="or"><span class="ol">Type</span><span class="ov"><span class="chip ch-b">MAH</span></span></div>
+        <div class="or"><span class="ol">Address</span><span class="ov">123 Pharma Way, 102 37 Prague, Czech Republic</span></div>
+        <div class="or"><span class="ol">Email</span><span class="ov">contact@acmepharma.com</span></div>
+      </div>
+    </div>
+    <div class="oc" style="border-left:3px solid var(--green)">
+      <div class="och"><div class="role" style="color:var(--green)">Manufacturer</div><div class="name">Global Manufacturing Solutions Ltd.</div></div>
+      <div class="ocb">
+        <div class="or"><span class="ol">Identifier</span><span class="ov ovm">LOC-200000000 (OMS)</span></div>
+        <div class="or"><span class="ol">Type</span><span class="ov"><span class="chip ch-t">Manufacturer</span></span></div>
+        <div class="or"><span class="ol">Address</span><span class="ov">456 Industry Road, Berlin, Germany</span></div>
+        <div class="or"><span class="ol">Email</span><span class="ov">qa@globalman.de</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =====================================================
+     PRODUCT DETAILS TAB — Same structure as Type 3
+     ===================================================== -->
+<div id="t4pp" class="panel">
+  <div class="ps-row">
+    <span>3 Medicinal Products &middot; 6 Package Configurations</span>
+    <input class="pf" type="text" placeholder="Filter by substance or strength&#8230;" />
+  </div>
+  <details class="pa" open="open">
+    <summary class="pah">
+      <span class="pnum">1</span>
+      <span class="pname">WonderDrug 500 mg tablets</span><span class="psub">Paracetamol</span>
+      <div class="pbadges"><span class="chip ch-g">Active</span><span class="chip ch-gr">Oral &middot; Tablet</span></div>
+      <span class="pchev">&#9660;</span>
+    </summary>
+    <div class="pc">
+      <div class="is"><div class="isl">Substance &amp; Form</div><div class="isb"><div class="ifs">
+        <div class="inf"><span class="il">Active Substance</span><span class="iv">Paracetamol</span></div>
+        <div class="inf"><span class="il">Strength</span><span class="iv">500 mg</span></div>
+        <div class="inf"><span class="il">Dose Form</span><span class="iv">Tablet</span></div>
+        <div class="inf"><span class="il">Route</span><span class="iv">Oral</span></div>
+      </div></div></div>
+      <div class="is"><div class="isl">Excipients</div><div class="isb"><div class="ec">
+        <div class="ei">Pregelatinized starch</div><div class="ei">Talc</div>
+        <div class="ei">Povidone K30</div><div class="ei">Magnesium stearate</div>
+        <div class="ei">Stearic acid</div><div class="ei">Hypromellose</div>
+      </div></div></div>
+    </div>
+  </details>
+</div>
+
+<!-- =====================================================
+     CLINICAL DETAILS TAB — Same as Type 3 + entry refs
+     ===================================================== -->
+<div id="t4pcl" class="panel">
+  <div class="csum">
+    <div class="cscard ci"><div><div class="csn" style="color:var(--accent)">2</div><div class="csl">Indications</div></div><div class="csi">&#127919;</div></div>
+    <div class="cscard cc"><div><div class="csn" style="color:var(--rose)">2</div><div class="csl">Contraindications</div></div><div class="csi">&#9940;</div></div>
+    <div class="cscard cx"><div><div class="csn" style="color:var(--amber)">2</div><div class="csl">Interactions</div></div><div class="csi">&#9889;</div></div>
+    <div class="cscard cd"><div><div class="csn" style="color:var(--teal)">3</div><div class="csl">Dosage Regimens</div></div><div class="csi">&#128138;</div></div>
+    <div class="cscard cu"><div><div class="csn" style="color:var(--purple)">12</div><div class="csl">Side Effects</div></div><div class="csi">&#128137;</div></div>
+  </div>
+
+  <div class="t4-info-banner">
+    <span class="icon">🔗</span>
+    <span><strong>Type 4 Enhancement:</strong> Every clinical data entry below is explicitly linked from the <code>Composition.section.entry</code> element. Narrative text within the section uses <code>&lt;span class="…"&gt;</code> annotations to bind individual words to these entries.</span>
+  </div>
+
+  <!-- Indications -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#127919;</span><span class="clstitle">Indications</span><span class="clscount">2</span></div>
+    <div class="clsb">
+      <table class="ctbl">
+        <thead><tr><th>Condition</th><th>Population</th><th>Severity</th><th style="width:90px">Type 4 Entry</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Hypertension</td>
+            <td>Adults &#8805;18 years</td>
+            <td>Moderate to severe</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-indication-1</span></td>
+          </tr>
+          <tr>
+            <td>Mild to moderate pain and fever</td>
+            <td>Children &gt;12 years</td>
+            <td>Mild to moderate</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-indication-2</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Contraindications -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9940;</span><span class="clstitle">Contraindications</span><span class="clscount">2</span></div>
+    <div class="clsb">
+      <div class="cxrow"><span class="cxicon">&#8856;</span><span>Severe hepatic impairment (Child-Pugh C)</span><span class="t4-entry-ref" style="margin-left:auto;font-size:9px"><span class="ref-type">CUD</span> cud-contra-1</span></div>
+      <div class="cxrow"><span class="cxicon">&#8856;</span><span>Known hypersensitivity to WonderDrug or any excipient</span><span class="t4-entry-ref" style="margin-left:auto;font-size:9px"><span class="ref-type">CUD</span> cud-contra-2</span></div>
+    </div>
+  </div>
+
+  <!-- Interactions -->
+  <div class="cls">
+    <div class="clsh"><span class="clsicon">&#9889;</span><span class="clstitle">Interactions</span><span class="clscount">2</span></div>
+    <div class="clsb">
+      <table class="ctbl">
+        <thead><tr><th>Interacting Substance</th><th>Type</th><th>Severity</th><th>Effect</th><th style="width:90px">Type 4 Entry</th></tr></thead>
+        <tbody>
+          <tr><td>Warfarin</td><td>Pharmacodynamic</td><td><span class="sev-h">High</span></td><td>Increased anticoagulation risk</td><td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-inter-1</span></td></tr>
+          <tr><td>NSAIDs</td><td>Pharmacodynamic</td><td><span class="sev-m">Moderate</span></td><td>Reduced antihypertensive effect</td><td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-inter-2</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- =====================================================
+     TYPE 4 FEATURES TAB — Deep-dive scenarios
+     ===================================================== -->
+<div id="t4pt4" class="panel">
+
+  <!-- ===================== SCENARIO 1 ===================== -->
+  <div class="t4-scenario">
+    <div class="t4-scenario-hdr">
+      <div class="t4-scenario-num">1</div>
+      <div>
+        <div class="t4-scenario-title">Composition.section → ClinicalUseDefinition entry</div>
+        <div class="t4-scenario-sub">The Indication section uses section.entry to reference the ClinicalUseDefinition resource</div>
+      </div>
+    </div>
+    <div class="t4-scenario-body">
+
+      <!-- Flow diagram -->
+      <div style="margin-bottom:14px">
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Data Flow</div>
+        <div class="t4-flow">
+          <div class="t4-flow-node t4-flow-node-section">section 4.1.1</div>
+          <div class="t4-flow-arrow">→</div>
+          <div class="t4-flow-node t4-flow-node-span">text: &lt;span class="cud-indication-1"&gt;</div>
+          <div class="t4-flow-arrow">→</div>
+          <div class="t4-flow-node t4-flow-node-entry">entry</div>
+          <div class="t4-flow-arrow">→</div>
+          <div class="t4-flow-node t4-flow-node-res">ClinicalUseDefinition/cud-indication-1</div>
+        </div>
+      </div>
+
+      <!-- Composition hierarchy -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Composition Hierarchy</div>
+      <div class="t4-tree" style="background:var(--sf2);padding:12px 16px;border-radius:6px;margin-bottom:14px">
+        <div class="t4-tree-l0">Section 4 — Clinical Particulars <span style="color:var(--faint);font-weight:400">(no text, no entry)</span></div>
+        <div class="t4-tree-l1">Section 4.1 — Therapeutic Indications <span style="color:var(--faint);font-weight:400">(no text, no entry)</span></div>
+        <div class="t4-tree-l2">Section 4.1.1 — Indication #1 <span class="t4-tree-arr">→</span> text + <span class="t4-tree-ref">entry: CUD/cud-indication-1</span></div>
+        <div class="t4-tree-l2">Section 4.1.2 — Indication #2 <span class="t4-tree-arr">→</span> text + <span class="t4-tree-ref">entry: CUD/cud-indication-2</span></div>
+      </div>
+
+      <!-- Narrative example -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Narrative Text with Annotations (Section 4.1.1)</div>
+      <div class="t4-narrative" style="border:1px solid var(--bd);margin-bottom:8px">
+        <span class="t4-span-mpd" title="class=&quot;mpd-wonderdrug-500mg&quot;">WonderDrug</span>
+        is indicated for the treatment of
+        <span class="t4-span-cud" title="class=&quot;cud-indication-1&quot;">hypertension</span>
+        in
+        <span class="t4-span-group" title="class=&quot;group-adult-men&quot;">adults ≥18 years</span>.
+      </div>
+      <div class="t4-anno-tip">
+        💡 Hover over highlighted words to see their <code>span class</code> attribute linking to the resource ID.
+      </div>
+
+      <!-- XHTML source -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px;margin-top:14px">XHTML Source (section.text.div)</div>
+      <div class="t4-xhtml-block">
+        <pre><span class="x-tag">&lt;div</span> <span class="x-attr">xmlns</span>=<span class="x-val">"http://www.w3.org/1999/xhtml"</span><span class="x-tag">&gt;</span>
+  <span class="x-span-hl"><span class="x-tag">&lt;span</span> <span class="x-attr">class</span>=<span class="x-val">"mpd-wonderdrug-500mg"</span><span class="x-tag">&gt;</span><span class="x-txt">WonderDrug</span><span class="x-tag">&lt;/span&gt;</span></span>
+  <span class="x-txt">is indicated for the treatment of</span>
+  <span class="x-span-hl"><span class="x-tag">&lt;span</span> <span class="x-attr">class</span>=<span class="x-val">"cud-indication-1"</span><span class="x-tag">&gt;</span><span class="x-txt">hypertension</span><span class="x-tag">&lt;/span&gt;</span></span>
+  <span class="x-txt">in</span>
+  <span class="x-span-hl"><span class="x-tag">&lt;span</span> <span class="x-attr">class</span>=<span class="x-val">"group-adult-men"</span><span class="x-tag">&gt;</span><span class="x-txt">adults ≥18 years</span><span class="x-tag">&lt;/span&gt;</span></span><span class="x-txt">.</span>
+<span class="x-tag">&lt;/div&gt;</span></pre>
+      </div>
+
+      <!-- Entry reference target -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Entry Target Resource</div>
+      <div class="t4-res-card">
+        <div class="t4-res-card-hdr">
+          <span class="t4-res-type t4-res-type-cud">ClinicalUseDefinition</span>
+          <span class="t4-res-name">cud-indication-1</span>
+        </div>
+        <div class="t4-res-card-body">
+          <div class="t4-res-field"><span class="t4-res-field-lbl">type</span><span class="t4-res-field-val"><span class="chip ch-g" style="font-size:9px">indication</span></span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">indication.diseaseSymptomProcedure</span><span class="t4-res-field-val">Hypertension (SNOMED CT: 38341003)</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">indication.diseaseStatus</span><span class="t4-res-field-val">Moderate to severe</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">population</span><span class="t4-res-field-val">Reference(Group/group-adult-men)</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">subject</span><span class="t4-res-field-val">Reference(MPD/mpd-wonderdrug-500mg)</span></div>
+        </div>
+      </div>
+
+      <div class="t4-res-card">
+        <div class="t4-res-card-hdr">
+          <span class="t4-res-type t4-res-type-grp">Group</span>
+          <span class="t4-res-name">group-adult-men</span>
+        </div>
+        <div class="t4-res-card-body">
+          <div class="t4-res-field"><span class="t4-res-field-lbl">type</span><span class="t4-res-field-val">person</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">membership</span><span class="t4-res-field-val">definitional</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">characteristic: age</span><span class="t4-res-field-val">≥18 years</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">characteristic: gender</span><span class="t4-res-field-val">male</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== SCENARIO 2 ===================== -->
+  <div class="t4-scenario">
+    <div class="t4-scenario-hdr">
+      <div class="t4-scenario-num">2</div>
+      <div>
+        <div class="t4-scenario-title">Composition.section → Ingredient entry + span annotations</div>
+        <div class="t4-scenario-sub">The Composition section on ingredients connects narrative text mentions back to the Ingredient resource via entry and span tags</div>
+      </div>
+    </div>
+    <div class="t4-scenario-body">
+
+      <!-- Flow diagram -->
+      <div style="margin-bottom:14px">
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Data Flow</div>
+        <div class="t4-flow">
+          <div class="t4-flow-node t4-flow-node-section">section 2.2</div>
+          <div class="t4-flow-arrow">→</div>
+          <div class="t4-flow-node t4-flow-node-span">text: &lt;span class="ingredient-…"&gt;</div>
+          <div class="t4-flow-arrow">→</div>
+          <div class="t4-flow-node t4-flow-node-entry">entry</div>
+          <div class="t4-flow-arrow">→</div>
+          <div class="t4-flow-node t4-flow-node-res">Ingredient/ingredient-…</div>
+        </div>
+      </div>
+
+      <!-- Composition hierarchy -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Composition Hierarchy</div>
+      <div class="t4-tree" style="background:var(--sf2);padding:12px 16px;border-radius:6px;margin-bottom:14px">
+        <div class="t4-tree-l0">Section 2 — Qualitative &amp; Quantitative Composition <span style="color:var(--faint);font-weight:400">(no text, no entry)</span></div>
+        <div class="t4-tree-l1">Section 2.1 — Active Substance <span style="color:var(--faint);font-weight:400">(context only)</span></div>
+        <div class="t4-tree-l2">Topic: Active Ingredient <span class="t4-tree-arr">→</span> text + <span class="t4-tree-ref-ing">entry: Ingredient/ingredient-paracetamol-active</span></div>
+        <div class="t4-tree-l1">Section 2.2 — Excipients <span style="color:var(--faint);font-weight:400">(context only)</span></div>
+        <div class="t4-tree-l2">Topic: Excipient List <span class="t4-tree-arr">→</span> text + <span class="t4-tree-ref-ing">3 × entry: Ingredient/…</span></div>
+      </div>
+
+      <!-- Narrative example with ingredients -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Narrative Text with Ingredient Annotations (Section 2.2)</div>
+      <div class="t4-narrative" style="border:1px solid var(--bd);margin-bottom:8px">
+        Excipients with known effect:
+        <span class="t4-span-ingredient" title="class=&quot;ingredient-pregelatinized-starch&quot;">pregelatinized starch</span>,
+        <span class="t4-span-ingredient" title="class=&quot;ingredient-povidone-k30&quot;">povidone K30</span>,
+        <span class="t4-span-ingredient" title="class=&quot;ingredient-magnesium-stearate&quot;">magnesium stearate</span>.
+      </div>
+      <div class="t4-anno-tip">
+        💡 Each highlighted ingredient is wrapped in a <code>&lt;span class="ingredient-…"&gt;</code> tag that maps to the corresponding <code>Ingredient</code> resource ID.
+      </div>
+
+      <!-- XHTML source -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px;margin-top:14px">XHTML Source (section.text.div)</div>
+      <div class="t4-xhtml-block">
+        <pre><span class="x-tag">&lt;div</span> <span class="x-attr">xmlns</span>=<span class="x-val">"http://www.w3.org/1999/xhtml"</span><span class="x-tag">&gt;</span>
+  <span class="x-txt">Excipients with known effect:</span>
+  <span class="x-span-ing"><span class="x-tag">&lt;span</span> <span class="x-attr">class</span>=<span class="x-val">"ingredient-pregelatinized-starch"</span><span class="x-tag">&gt;</span><span class="x-txt">pregelatinized starch</span><span class="x-tag">&lt;/span&gt;</span></span>,
+  <span class="x-span-ing"><span class="x-tag">&lt;span</span> <span class="x-attr">class</span>=<span class="x-val">"ingredient-povidone-k30"</span><span class="x-tag">&gt;</span><span class="x-txt">povidone K30</span><span class="x-tag">&lt;/span&gt;</span></span>,
+  <span class="x-span-ing"><span class="x-tag">&lt;span</span> <span class="x-attr">class</span>=<span class="x-val">"ingredient-magnesium-stearate"</span><span class="x-tag">&gt;</span><span class="x-txt">magnesium stearate</span><span class="x-tag">&lt;/span&gt;</span></span>.
+<span class="x-tag">&lt;/div&gt;</span></pre>
+      </div>
+
+      <!-- FHIR Path: section.entry -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">section.entry references (3 entries)</div>
+      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:14px">
+        <span class="t4-entry-ref"><span class="ref-type ref-type-ing">ING</span> Ingredient/ingredient-pregelatinized-starch</span>
+        <span class="t4-entry-ref"><span class="ref-type ref-type-ing">ING</span> Ingredient/ingredient-povidone-k30</span>
+        <span class="t4-entry-ref"><span class="ref-type ref-type-ing">ING</span> Ingredient/ingredient-magnesium-stearate</span>
+      </div>
+
+      <!-- Entry target resources -->
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">Entry Target Resources</div>
+      <div class="t4-res-card">
+        <div class="t4-res-card-hdr">
+          <span class="t4-res-type t4-res-type-ing">Ingredient</span>
+          <span class="t4-res-name">ingredient-pregelatinized-starch</span>
+        </div>
+        <div class="t4-res-card-body">
+          <div class="t4-res-field"><span class="t4-res-field-lbl">role</span><span class="t4-res-field-val"><span class="chip ch-gr" style="font-size:9px">excipient</span></span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">substance.code</span><span class="t4-res-field-val">Pregelatinized starch (UNII: O8232NY3SJ)</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">for</span><span class="t4-res-field-val">Reference(MPD/mpd-wonderdrug-500mg)</span></div>
+        </div>
+      </div>
+      <div class="t4-res-card">
+        <div class="t4-res-card-hdr">
+          <span class="t4-res-type t4-res-type-ing">Ingredient</span>
+          <span class="t4-res-name">ingredient-povidone-k30</span>
+        </div>
+        <div class="t4-res-card-body">
+          <div class="t4-res-field"><span class="t4-res-field-lbl">role</span><span class="t4-res-field-val"><span class="chip ch-gr" style="font-size:9px">excipient</span></span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">substance.code</span><span class="t4-res-field-val">Povidone K30 (UNII: FZ989GH94E)</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">for</span><span class="t4-res-field-val">Reference(MPD/mpd-wonderdrug-500mg)</span></div>
+        </div>
+      </div>
+      <div class="t4-res-card">
+        <div class="t4-res-card-hdr">
+          <span class="t4-res-type t4-res-type-ing">Ingredient</span>
+          <span class="t4-res-name">ingredient-magnesium-stearate</span>
+        </div>
+        <div class="t4-res-card-body">
+          <div class="t4-res-field"><span class="t4-res-field-lbl">role</span><span class="t4-res-field-val"><span class="chip ch-gr" style="font-size:9px">excipient</span></span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">substance.code</span><span class="t4-res-field-val">Magnesium stearate (UNII: 70097M6I30)</span></div>
+          <div class="t4-res-field"><span class="t4-res-field-lbl">for</span><span class="t4-res-field-val">Reference(MPD/mpd-wonderdrug-500mg)</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== COMBINED SUMMARY ===================== -->
+  <div class="sc ap" style="margin-top:20px">
+    <div class="sc-lbl">Type 4 Linkage Summary</div>
+    <div class="sc-body">
+      <div style="font-size:.84rem;color:var(--muted);line-height:1.8;margin-bottom:12px">
+        The table below summarises how each Type 4 Composition section maps to FHIR resource entries through <code>section.entry</code> references and how narrative text uses <code>&lt;span&gt;</code> annotations for inline linking.
+      </div>
+      <table class="ctbl">
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Topic</th>
+            <th>Entry Target</th>
+            <th>Span Annotations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 – Product Name</td>
+            <td>Product Name</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type ref-type-mpd">MPD</span> mpd-wonderdrug</span></td>
+            <td><span class="t4-span-mpd" style="font-size:.75rem">WonderDrug</span>, <span class="t4-span-substance" style="font-size:.75rem">paracetamol</span></td>
+          </tr>
+          <tr>
+            <td>2.1 – Active Substance</td>
+            <td>Active Ingredient</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type ref-type-ing">ING</span> ing-paracetamol</span></td>
+            <td><span class="t4-span-ingredient" style="font-size:.75rem">paracetamol</span></td>
+          </tr>
+          <tr>
+            <td>2.2 – Excipients</td>
+            <td>Excipient List</td>
+            <td>3 × <span class="t4-entry-ref" style="font-size:9px"><span class="ref-type ref-type-ing">ING</span> excipient</span></td>
+            <td><span class="t4-span-ingredient" style="font-size:.75rem">starch</span>, <span class="t4-span-ingredient" style="font-size:.75rem">povidone</span>, <span class="t4-span-ingredient" style="font-size:.75rem">mg stearate</span></td>
+          </tr>
+          <tr>
+            <td>4.1.1 – Indication #1</td>
+            <td>Hypertension</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-indication-1</span></td>
+            <td><span class="t4-span-cud" style="font-size:.75rem">hypertension</span>, <span class="t4-span-group" style="font-size:.75rem">adults</span></td>
+          </tr>
+          <tr>
+            <td>4.1.2 – Indication #2</td>
+            <td>Pain &amp; Fever</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-indication-2</span></td>
+            <td><span class="t4-span-cud" style="font-size:.75rem">pain</span>, <span class="t4-span-cud" style="font-size:.75rem">fever</span>, <span class="t4-span-group" style="font-size:.75rem">children</span></td>
+          </tr>
+          <tr>
+            <td>4.3.1 – Contraindication</td>
+            <td>Hepatic Impairment</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-contra-1</span></td>
+            <td><span class="t4-span-cud" style="font-size:.75rem">hepatic impairment</span></td>
+          </tr>
+          <tr>
+            <td>4.3.2 – Contraindication</td>
+            <td>Hypersensitivity</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-contra-2</span></td>
+            <td><span class="t4-span-cud" style="font-size:.75rem">hypersensitivity</span>, <span class="t4-span-substance" style="font-size:.75rem">paracetamol</span></td>
+          </tr>
+          <tr>
+            <td>4.5.1 – Interaction</td>
+            <td>Warfarin</td>
+            <td><span class="t4-entry-ref" style="font-size:9px"><span class="ref-type">CUD</span> cud-inter-1</span></td>
+            <td><span class="t4-span-cud" style="font-size:.75rem">warfarin</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
