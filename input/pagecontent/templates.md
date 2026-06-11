@@ -188,6 +188,14 @@
         </div>
         <div class="ex-arrow">Open →</div>
       </a>
+      <a class="ex-card" href="examples/bundle-epi-type4-example-wonderdrug.html" target="_blank">
+        <div class="ex-icon">🔗</div>
+        <div class="ex-text">
+          <div class="ex-title">ePI Type 4 — WonderDrug</div>
+          <div class="ex-sub">Granular Linked Content</div>
+        </div>
+        <div class="ex-arrow">Open →</div>
+      </a>
     </div>
   </div>
 
