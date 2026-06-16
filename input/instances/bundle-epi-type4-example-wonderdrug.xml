@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ePI Type 4 (fully structured) example — WonderDrug 500 mg tablets
+  HL7 Electronic Medicinal Product Information (ePI) FHIR IG  •  FHIR R5
+
+  Type 4 is a MATURITY LEVEL, not a distinct StructureDefinition. There is no
+  Bundle-epi-type4 profile; a Type 4 instance claims the Type 3 Bundle profile
+  and adds, in the Composition:
+    1. granular sub-sections (Concept -> Domain -> Topic),
+    2. a mandatory section.entry reference on every content-bearing section, and
+    3. inline <span> annotations in the XHTML narrative that bind specific
+       phrases to the referenced structured resources (via class / data-fhir).
+
+  This instance is a SUPERSET example: it merges the resource inventory of the
+  ePI Type 1 (Binary / unstructured document), Type 2 (full product + packaging
+  resources) and Type 3 (clinical structured data) examples so that every
+  resource type used in the IG appears at least once. IDs and terminology codes
+  are illustrative — validate against your target IG version before use.
+
+  Resource inventory (entries):
+    Composition, Organization x2 (MAH + manufacturer),
+    MedicinalProductDefinition x3 (500/100/200 mg),
+    RegulatedAuthorization, PackagedProductDefinition,
+    ManufacturedItemDefinition, AdministrableProductDefinition,
+    Ingredient x4 (1 active + 3 excipients), SubstanceDefinition,
+    ClinicalUseDefinition x6 (indication x2, contraindication, interaction,
+    undesirable-effect, warning), MedicationKnowledge, Group x3.
+  The product header artwork is a Binary (SVG image) CONTAINED inside the
+  Composition and referenced from its section via a local "#" reference.
+-->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-epi-type4-example-wonderdrug"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2026-06-15T10:00:00Z"/>
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-epi-type3"/>
+  </meta>
+  <identifier>
+    <system value="http://ema.europa.eu/identifier"/>
+    <value value="WONDERDRUG-500MG-BUNDLE-TYPE4"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2026-06-15T10:00:00Z"/>
+
+  <!-- ============================================================ -->
+  <!-- 1. Composition  (FIRST entry — required for a document Bundle) -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000000001"/>
+    <resource>
+      <Composition>
+        <id value="composition-epi-type4-example-wonderdrug"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-epi-type1"/>
+        </meta>
+        <language value="en"/>
+        <!-- Contained: SmPC header artwork as an SVG image -->
+        <contained>
+          <Binary>
+            <id value="binary-epi-type4-example-wonderdrug-svg"/>
+            <meta>
+              <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Binary-epi"/>
+            </meta>
+            <contentType value="image/svg+xml"/>
+            <!-- base64 of an SVG image -->
+            <data value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCAzMjAgODAiPjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwNTdiOCIvPjx0ZXh0IHg9IjE2IiB5PSIzNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMwMDU3YjgiPldvbmRlckRydWcgNTAwIG1nIHRhYmxldHM8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjYwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzMzMyI+U3VtbWFyeSBvZiBQcm9kdWN0IENoYXJhY3RlcmlzdGljczwvdGV4dD48L3N2Zz4="/>
+          </Binary>
+        </contained>
+        <status value="final"/>
+        <!-- Summary of Product Characteristics (SPOR RMS) -->
+        <type>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000155532"/>
+            <display value="Summary of Product Characteristics"/>
+          </coding>
+        </type>
+        <!-- subject: the medicinal product this ePI document describes -->
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <date value="2026-06-15T10:00:00Z"/>
+        <author>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
+        </author>
+        <title value="WonderDrug 500 mg tablets — Summary of Product Characteristics"/>
+
+        <!-- ===== 1. NAME OF THE MEDICINAL PRODUCT ===== -->
+        <section>
+          <title value="1. Name of the medicinal product"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029792"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p><span class="mpd-wonderdrug-500"
+                       data-fhir="urn:uuid:00000000-0000-0000-0000-000000008888">WonderDrug
+                500 mg tablets</span></p>
+            </div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+          </entry>
+        </section>
+
+        <!-- ===== 2. QUALITATIVE AND QUANTITATIVE COMPOSITION ===== -->
+        <section>
+          <title value="2. Qualitative and quantitative composition"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029793"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p>Each tablet contains
+                <span class="ingredient-active-paracetamol"
+                      data-fhir="urn:uuid:00000000-0000-0000-0000-00000000e001">500 mg
+                of <span class="substance-paracetamol"
+                      data-fhir="urn:uuid:00000000-0000-0000-0000-00000000f001">paracetamol</span></span>
+                as the active substance.</p>
+            </div>
+          </text>
+          <!-- active ingredient + the substance backing it -->
+          <entry>
+            <reference value="urn:uuid:00000000-0000-0000-0000-00000000e001"/>
+          </entry>
+
+          <!-- 2.x Excipient with known effect -->
+          <section>
+            <title value="Excipient(s) with known effect"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029796"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Contains
+                  <span class="ingredient-pregelatinized-starch"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000007777">pregelatinised
+                  starch</span>.</p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+            </entry>
+          </section>
+        </section>
+
+        <!-- ===== 3. PHARMACEUTICAL FORM ===== -->
+        <section>
+          <title value="3. Pharmaceutical form"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029797"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p>Tablet. White, round, biconvex tablets.</p>
+            </div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:00000000-0000-0000-0000-00000000dddd"/>
+          </entry>
+        </section>
+
+        <!-- ===== 4. CLINICAL PARTICULARS (Concept) ===== -->
+        <section>
+          <title value="4. Clinical particulars"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029798"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p>Clinical particulars for WonderDrug 500 mg tablets.</p>
+            </div>
+          </text>
+
+          <!-- 4.1 Therapeutic indications (Domain) -->
+          <section>
+            <title value="4.1 Therapeutic indications"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029799"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>WonderDrug is indicated in
+                  <span class="population-adults"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006666">adults</span>
+                  for the conditions listed below.</p>
+              </div>
+            </text>
+
+            <!-- 4.1.1 Topic: indication = fever -->
+            <section>
+              <title value="4.1.1 Treatment of fever"/>
+              <text status="generated">
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>For the
+                    <span class="cud-indication-fever"
+                          data-fhir="urn:uuid:00000000-0000-0000-0000-000000003333">symptomatic
+                    treatment of fever</span>.</p>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-000000003333"/>
+              </entry>
+            </section>
+
+            <!-- 4.1.2 Topic: indication = pain -->
+            <section>
+              <title value="4.1.2 Treatment of mild to moderate pain"/>
+              <text status="generated">
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>For the
+                    <span class="cud-indication-pain"
+                          data-fhir="urn:uuid:00000000-0000-0000-0000-000000004444">treatment
+                    of mild to moderate pain</span>.</p>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-000000004444"/>
+              </entry>
+            </section>
+          </section>
+
+          <!-- 4.2 Posology and method of administration -->
+          <section>
+            <title value="4.2 Posology and method of administration"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029800"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>The recommended dose is
+                  <span class="mk-dosing-adult"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000005555">one 500 mg
+                  tablet every 4 to 6 hours, to a maximum of 4 g per day</span> in
+                  <span class="population-adults"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006666">adults</span>.</p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-000000005555"/>
+            </entry>
+          </section>
+
+          <!-- 4.3 Contraindications -->
+          <section>
+            <title value="4.3 Contraindications"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029805"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Do not take WonderDrug in
+                  <span class="cud-contraindication-hepatic"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c001">acute
+                  hepatic failure</span>.</p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c001"/>
+            </entry>
+          </section>
+
+          <!-- 4.4 Special warnings and precautions for use -->
+          <section>
+            <title value="4.4 Special warnings and precautions for use"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029806"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p><span class="cud-warning-overdose"
+                         data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c005">Do not exceed
+                  the stated dose. Overdose may cause severe liver damage.</span></p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c005"/>
+            </entry>
+          </section>
+
+          <!-- 4.5 Interaction with other medicinal products -->
+          <section>
+            <title value="4.5 Interaction with other medicinal products and other forms of interaction"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029809"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Concomitant use with
+                  <span class="cud-interaction-warfarin"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c003">warfarin</span>
+                  may enhance the anticoagulant effect.</p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c003"/>
+            </entry>
+          </section>
+
+          <!-- 4.6 Fertility, pregnancy and lactation -->
+          <section>
+            <title value="4.6 Fertility, pregnancy and lactation"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029811"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>WonderDrug can be used during pregnancy if clinically needed, at the
+                lowest effective dose for the shortest possible time.</p>
+              </div>
+            </text>
+          </section>
+
+          <!-- 4.7 Effects on ability to drive and use machines -->
+          <section>
+            <title value="4.7 Effects on ability to drive and use machines"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029815"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>WonderDrug has no or negligible influence on the ability to drive and
+                use machines.</p>
+              </div>
+            </text>
+          </section>
+
+          <!-- 4.8 Undesirable effects -->
+          <section>
+            <title value="4.8 Undesirable effects"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029816"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Rare:
+                  <span class="cud-undesirable-thrombocytopenia"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c004">thrombocytopenia</span>.</p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c004"/>
+            </entry>
+          </section>
+
+          <!-- 4.9 Overdose -->
+          <section>
+            <title value="4.9 Overdose"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029819"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>In case of overdose, seek immediate medical attention. Treatment with
+                N-acetylcysteine may be required.</p>
+              </div>
+            </text>
+          </section>
+        </section>
+
+        <!-- ===== 5. PHARMACOLOGICAL PROPERTIES ===== -->
+        <section>
+          <title value="5. Pharmacological properties"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029821"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p>Pharmacotherapeutic group: Other analgesics and antipyretics, anilides.</p>
+            </div>
+          </text>
+        </section>
+
+        <!-- ===== 6. PHARMACEUTICAL PARTICULARS ===== -->
+        <section>
+          <title value="6. Pharmaceutical particulars"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029836"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p>Pharmaceutical particulars.</p>
+            </div>
+          </text>
+
+          <!-- 6.1 List of excipients -->
+          <section>
+            <title value="6.1 List of excipients"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029837"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <ul>
+                  <li><span class="ingredient-pregelatinized-starch"
+                            data-fhir="urn:uuid:00000000-0000-0000-0000-000000007777">Pregelatinised
+                    starch</span></li>
+                  <li><span class="ingredient-maize-starch"
+                            data-fhir="urn:uuid:00000000-0000-0000-0000-00000000e002">Maize
+                    starch</span></li>
+                  <li><span class="ingredient-magnesium-stearate"
+                            data-fhir="urn:uuid:00000000-0000-0000-0000-00000000e003">Magnesium
+                    stearate</span></li>
+                </ul>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+            </entry>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
+            </entry>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
+            </entry>
+          </section>
+
+          <!-- 6.5 Nature and contents of container -->
+          <section>
+            <title value="6.5 Nature and contents of container"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029841"/>
+              </coding>
+            </code>
+            <text status="generated">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p><span class="ppd-wonderdrug"
+                         data-fhir="urn:uuid:00000000-0000-0000-0000-00000000bbbb">PVC/aluminium
+                  blister in a carton of 20 tablets</span>.</p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000bbbb"/>
+            </entry>
+          </section>
+        </section>
+
+        <!-- ===== 7. MARKETING AUTHORISATION HOLDER ===== -->
+        <section>
+          <title value="7. Marketing authorisation holder"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029844"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p><span class="org-mah"
+                       data-fhir="urn:uuid:00000000-0000-0000-0000-000000000002">WonderPharma
+                Inc., Prague, Czech Republic</span></p>
+            </div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
+          </entry>
+        </section>
+
+        <!-- ===== 8. MARKETING AUTHORISATION NUMBER(S) ===== -->
+        <section>
+          <title value="8. Marketing authorisation number(s)"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000029845"/>
+            </coding>
+          </code>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p><span class="ra-wonderdrug"
+                       data-fhir="urn:uuid:00000000-0000-0000-0000-00000000aaaa">EU/1/26/0001/001</span></p>
+            </div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:00000000-0000-0000-0000-00000000aaaa"/>
+          </entry>
+        </section>
+
+        <!-- ===== Header artwork (contained SVG image) ===== -->
+        <section>
+          <title value="Annex — Product header artwork (SVG)"/>
+          <text status="generated">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p>The product header artwork is included as a contained SVG image.</p>
+            </div>
+          </text>
+          <entry>
+            <reference value="#binary-epi-type4-example-wonderdrug-svg"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 2. Organization — Marketing Authorisation Holder (author)     -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
+    <resource>
+      <Organization>
+        <id value="org-epi-type4-example-mah"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="https://spor.ema.europa.eu/omswi"/>
+          <value value="LOC-100000000"/>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="220000000034"/>
+            <display value="Marketing authorisation holder"/>
+          </coding>
+        </type>
+        <name value="WonderPharma Inc."/>
+        <contact>
+          <address>
+            <city value="Prague"/>
+            <country value="Czech Republic"/>
+          </address>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 3. Organization — Manufacturer                                -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000000003"/>
+    <resource>
+      <Organization>
+        <id value="org-epi-type4-example-manufacturer"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Organization-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="https://spor.ema.europa.eu/omswi"/>
+          <value value="LOC-100000001"/>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="220000000035"/>
+            <display value="Manufacturer"/>
+          </coding>
+        </type>
+        <name value="WonderPharma Manufacturing s.r.o."/>
+        <contact>
+          <address>
+            <city value="Brno"/>
+            <country value="Czech Republic"/>
+          </address>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 4. MedicinalProductDefinition — WonderDrug 500 mg (primary)   -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="mpd-epi-type4-example-wonderdrug-500mg"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-500MG"/>
+        </identifier>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+          </coding>
+        </status>
+        <domain>
+          <coding>
+            <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+            <code value="Human"/>
+          </coding>
+        </domain>
+        <combinedPharmaceuticalDoseForm>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000073664"/>
+            <display value="Tablet"/>
+          </coding>
+        </combinedPharmaceuticalDoseForm>
+        <name>
+          <!-- Full name = Proprietary (Non-proprietary) strength dose form -->
+          <productName value="WonderDrug 500 mg tablets"/>
+          <type>
+            <!-- illustrative: replace with a valid SPOR/IDMP product name-type code -->
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="220000000003"/>
+              <display value="Full name"/>
+            </coding>
+          </type>
+          <!-- Proprietary (invented) name -->
+          <part>
+            <part value="WonderDrug"/>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="InventedNamePart"/>
+                <display value="Invented name part"/>
+              </coding>
+            </type>
+          </part>
+          <!-- Non-proprietary (scientific/INN) name -->
+          <part>
+            <part value="Paracetamol"/>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="ScientificNamePart"/>
+                <display value="Scientific name part"/>
+              </coding>
+            </type>
+          </part>
+          <!-- Strength -->
+          <part>
+            <part value="500 mg"/>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="StrengthPart"/>
+                <display value="Strength part"/>
+              </coding>
+            </type>
+          </part>
+          <!-- Pharmaceutical dose form -->
+          <part>
+            <part value="tablets"/>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                <code value="DoseFormPart"/>
+                <display value="Dose form part"/>
+              </coding>
+            </type>
+          </part>
+        </name>
+        <contact>
+          <contact>
+            <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
+          </contact>
+        </contact>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 5. MedicinalProductDefinition — WonderDrug 100 mg             -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000008889"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="mpd-epi-type4-example-wonderdrug-100mg"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-100MG"/>
+        </identifier>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+          </coding>
+        </status>
+        <domain>
+          <coding>
+            <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+            <code value="Human"/>
+          </coding>
+        </domain>
+        <name>
+          <productName value="WonderDrug 100 mg tablets"/>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 6. MedicinalProductDefinition — WonderDrug 200 mg             -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000008890"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="mpd-epi-type4-example-wonderdrug-200mg"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-200MG"/>
+        </identifier>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+          </coding>
+        </status>
+        <domain>
+          <coding>
+            <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+            <code value="Human"/>
+          </coding>
+        </domain>
+        <name>
+          <productName value="WonderDrug 200 mg tablets"/>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 7. RegulatedAuthorization — marketing authorisation           -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000aaaa"/>
+    <resource>
+      <RegulatedAuthorization>
+        <id value="ra-epi-type4-example-wonderdrug"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/RegulatedAuthorization-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="EU/1/26/0001/001"/>
+        </identifier>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <type>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000072100"/>
+            <display value="Marketing authorisation"/>
+          </coding>
+        </type>
+        <region>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EU"/>
+            <display value="European Union"/>
+          </coding>
+        </region>
+        <status>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="200000005004"/>
+            <display value="Valid"/>
+          </coding>
+        </status>
+        <validityPeriod>
+          <start value="2026-01-15"/>
+        </validityPeriod>
+        <holder>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
+        </holder>
+      </RegulatedAuthorization>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 8. PackagedProductDefinition — blister carton of 20           -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000bbbb"/>
+    <resource>
+      <PackagedProductDefinition>
+        <id value="ppd-epi-type4-example-wonderdrug"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/PackagedProductDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-500MG-PACK-20"/>
+        </identifier>
+        <name value="WonderDrug 500 mg tablets, 20 tablets (blister)"/>
+        <packageFor>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </packageFor>
+        <containedItemQuantity>
+          <value value="20"/>
+          <unit value="tablet"/>
+        </containedItemQuantity>
+        <packaging>
+          <type>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="100000073490"/>
+              <display value="Carton"/>
+            </coding>
+          </type>
+          <quantity value="1"/>
+          <packaging>
+            <type>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="100000073492"/>
+                <display value="Blister"/>
+              </coding>
+            </type>
+            <quantity value="2"/>
+            <containedItem>
+              <item>
+                <reference>
+                  <reference value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+                </reference>
+              </item>
+              <amount>
+                <value value="10"/>
+                <unit value="tablet"/>
+              </amount>
+            </containedItem>
+          </packaging>
+        </packaging>
+      </PackagedProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 9. ManufacturedItemDefinition — the tablet                    -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+    <resource>
+      <ManufacturedItemDefinition>
+        <id value="mid-epi-type4-example-wonderdrug"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ManufacturedItemDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-500MG-TABLET"/>
+        </identifier>
+        <status value="active"/>
+        <name value="WonderDrug 500 mg tablet"/>
+        <manufacturedDoseForm>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000073664"/>
+            <display value="Tablet"/>
+          </coding>
+        </manufacturedDoseForm>
+        <unitOfPresentation>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000073563"/>
+            <display value="Tablet"/>
+          </coding>
+        </unitOfPresentation>
+        <manufacturer>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000000003"/>
+        </manufacturer>
+      </ManufacturedItemDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 10. AdministrableProductDefinition                            -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000dddd"/>
+    <resource>
+      <AdministrableProductDefinition>
+        <id value="apd-epi-type4-example-wonderdrug"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/AdministrableProductDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="WONDERDRUG-500MG-ADMIN"/>
+        </identifier>
+        <status value="active"/>
+        <formOf>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </formOf>
+        <administrableDoseForm>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000073664"/>
+            <display value="Tablet"/>
+          </coding>
+        </administrableDoseForm>
+        <unitOfPresentation>
+          <coding>
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <code value="100000073563"/>
+            <display value="Tablet"/>
+          </coding>
+        </unitOfPresentation>
+        <producedFrom>
+          <reference value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+        </producedFrom>
+        <routeOfAdministration>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="100000073619"/>
+              <display value="Oral use"/>
+            </coding>
+          </code>
+        </routeOfAdministration>
+      </AdministrableProductDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 11. Ingredient — active: paracetamol                          -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000e001"/>
+    <resource>
+      <Ingredient>
+        <id value="ingredient-active-paracetamol"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
+        <status value="active"/>
+        <for>
+          <reference value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+        </for>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/ingredient-role"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="387517004"/>
+                <display value="Paracetamol"/>
+              </coding>
+            </concept>
+            <reference>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000f001"/>
+            </reference>
+          </code>
+          <strength>
+            <presentationRatio>
+              <numerator>
+                <value value="500"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="tablet"/>
+              </denominator>
+            </presentationRatio>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 12. Ingredient — excipient: pregelatinised starch             -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+    <resource>
+      <Ingredient>
+        <id value="ingredient-pregelatinized-starch"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
+        <status value="active"/>
+        <for>
+          <reference value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+        </for>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/ingredient-role"/>
+            <code value="excipient"/>
+            <display value="Excipient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="412330007"/>
+                <display value="Pregelatinised starch"/>
+              </coding>
+            </concept>
+          </code>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 13. Ingredient — excipient: maize starch                      -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
+    <resource>
+      <Ingredient>
+        <id value="ingredient-maize-starch"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
+        <status value="active"/>
+        <for>
+          <reference value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+        </for>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/ingredient-role"/>
+            <code value="excipient"/>
+            <display value="Excipient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="734263005"/>
+                <display value="Maize starch"/>
+              </coding>
+            </concept>
+          </code>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 14. Ingredient — excipient: magnesium stearate                -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
+    <resource>
+      <Ingredient>
+        <id value="ingredient-magnesium-stearate"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Ingredient-uv-epi"/>
+        </meta>
+        <status value="active"/>
+        <for>
+          <reference value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+        </for>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/ingredient-role"/>
+            <code value="excipient"/>
+            <display value="Excipient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="387272009"/>
+                <display value="Magnesium stearate"/>
+              </coding>
+            </concept>
+          </code>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 15. SubstanceDefinition — paracetamol                         -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000f001"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="substance-paracetamol"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-uv-epi"/>
+        </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="SUB-PARACETAMOL"/>
+        </identifier>
+        <name>
+          <name value="Paracetamol"/>
+          <type>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="200000002004"/>
+              <display value="INN"/>
+            </coding>
+          </type>
+        </name>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 16. ClinicalUseDefinition — indication: fever                 -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000003333"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-indication-fever"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
+        </meta>
+        <type value="indication"/>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <indication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="386661006"/>
+                <display value="Fever"/>
+              </coding>
+            </concept>
+          </diseaseSymptomProcedure>
+        </indication>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 17. ClinicalUseDefinition — indication: pain                  -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000004444"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-indication-pain"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
+        </meta>
+        <type value="indication"/>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <indication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="22253000"/>
+                <display value="Pain"/>
+              </coding>
+            </concept>
+          </diseaseSymptomProcedure>
+        </indication>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 18. ClinicalUseDefinition — contraindication: hepatic failure -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000c001"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-contraindication-hepatic"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"/>
+        </meta>
+        <type value="contraindication"/>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <contraindication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="197270009"/>
+                <display value="Acute hepatic failure"/>
+              </coding>
+            </concept>
+          </diseaseSymptomProcedure>
+        </contraindication>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 19. ClinicalUseDefinition — interaction: warfarin             -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000c003"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-interaction-warfarin"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
+        </meta>
+        <type value="interaction"/>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <interaction>
+          <interactant>
+            <itemCodeableConcept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="372756006"/>
+                <display value="Warfarin"/>
+              </coding>
+            </itemCodeableConcept>
+          </interactant>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="9706000"/>
+              <display value="Drug interaction"/>
+            </coding>
+          </type>
+          <effect>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="79899007"/>
+                <display value="Drug interaction with anticoagulant"/>
+              </coding>
+            </concept>
+          </effect>
+        </interaction>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 20. ClinicalUseDefinition — undesirable effect                -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000c004"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-undesirable-thrombocytopenia"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
+        </meta>
+        <type value="undesirable-effect"/>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="302215000"/>
+                <display value="Thrombocytopenia"/>
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <frequencyOfUndesirableEffect>
+            <coding>
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <code value="100000125747"/>
+              <display value="Rare"/>
+            </coding>
+          </frequencyOfUndesirableEffect>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 21. ClinicalUseDefinition — warning                           -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-00000000c005"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-warning-overdose"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"/>
+        </meta>
+        <type value="warning"/>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <warning>
+          <description value="Do not exceed the stated dose. Overdose may cause severe, potentially fatal liver damage."/>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="55342001"/>
+              <display value="Toxic effect of paracetamol"/>
+            </coding>
+          </code>
+        </warning>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 22. MedicationKnowledge — adult posology                      -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000005555"/>
+    <resource>
+      <MedicationKnowledge>
+        <id value="mk-dosing-adult"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicationKnowledge-uv-epi"/>
+        </meta>
+        <status value="active"/>
+        <indicationGuideline>
+          <indication>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="386661006"/>
+                <display value="Fever"/>
+              </coding>
+            </concept>
+          </indication>
+          <dosingGuideline>
+            <dosage>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                  <code value="ordered"/>
+                  <display value="Ordered"/>
+                </coding>
+              </type>
+              <dosage>
+                <text value="One 500 mg tablet every 4 to 6 hours as required; maximum 4 g (8 tablets) per day."/>
+                <timing>
+                  <repeat>
+                    <frequency value="1"/>
+                    <period value="4"/>
+                    <periodMax value="6"/>
+                    <periodUnit value="h"/>
+                  </repeat>
+                </timing>
+                <doseAndRate>
+                  <doseQuantity>
+                    <value value="500"/>
+                    <unit value="mg"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mg"/>
+                  </doseQuantity>
+                </doseAndRate>
+                <maxDosePerPeriod>
+                  <numerator>
+                    <value value="4"/>
+                    <unit value="g"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="g"/>
+                  </numerator>
+                  <denominator>
+                    <value value="1"/>
+                    <unit value="day"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="d"/>
+                  </denominator>
+                </maxDosePerPeriod>
+              </dosage>
+            </dosage>
+            <patientCharacteristic>
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="424144002"/>
+                  <display value="Current chronological age"/>
+                </coding>
+              </type>
+              <valueRange>
+                <low>
+                  <value value="18"/>
+                  <unit value="years"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="a"/>
+                </low>
+              </valueRange>
+            </patientCharacteristic>
+          </dosingGuideline>
+        </indicationGuideline>
+      </MedicationKnowledge>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 23. Group — population: adult men                             -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000006666"/>
+    <resource>
+      <Group>
+        <id value="group-epi-type4-example-adult-men"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <name value="Adult men (18–64 years)"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="263495000"/>
+              <display value="Gender"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="248153007"/>
+              <display value="Male"/>
+            </coding>
+          </valueCodeableConcept>
+          <exclude value="false"/>
+        </characteristic>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="424144002"/>
+              <display value="Current chronological age"/>
+            </coding>
+          </code>
+          <valueRange>
+            <low>
+              <value value="18"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </low>
+            <high>
+              <value value="64"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 24. Group — population: adult women                           -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000006667"/>
+    <resource>
+      <Group>
+        <id value="group-epi-type4-example-adult-women"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <name value="Adult women (18–64 years)"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="263495000"/>
+              <display value="Gender"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="248152002"/>
+              <display value="Female"/>
+            </coding>
+          </valueCodeableConcept>
+          <exclude value="false"/>
+        </characteristic>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="424144002"/>
+              <display value="Current chronological age"/>
+            </coding>
+          </code>
+          <valueRange>
+            <low>
+              <value value="18"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </low>
+            <high>
+              <value value="64"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+
+  <!-- ============================================================ -->
+  <!-- 25. Group — population: children                              -->
+  <!-- ============================================================ -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000006668"/>
+    <resource>
+      <Group>
+        <id value="group-epi-type4-example-children"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <name value="Children (under 18 years)"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="424144002"/>
+              <display value="Current chronological age"/>
+            </coding>
+          </code>
+          <valueRange>
+            <high>
+              <value value="17"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+
+</Bundle>
