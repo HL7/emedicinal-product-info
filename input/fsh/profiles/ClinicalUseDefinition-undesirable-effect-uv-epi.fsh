@@ -31,6 +31,7 @@ Description: "ClinicalUseDefinition Undesirable Effect (ePI) - Profile for Undes
 * undesirableEffect.frequencyOfOccurrence.coding.code 1..1
 * undesirableEffect.frequencyOfOccurrence.coding.display 1..1
 * population 0..*
+* population only Reference(GroupUvEpi)
 * population.reference 1..
 
 
