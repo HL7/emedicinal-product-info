@@ -24,6 +24,7 @@
 <artifact id="Bundle/bundle-epi-type2-example-paracetamol" key="Bundle-bundle-epi-type2-example-paracetamol" name="Bundle - ePI Type 2 Paracetamol Example"/>
 <artifact id="Bundle/bundle-epi-type2-example-blister-carton" key="Bundle-bundle-epi-type2-example-blister-carton" name="Bundle - ePI Type 2 WonderDrug Blister in Carton Example"/>
 <artifact id="StructureDefinition/bundle-epi-type3" key="StructureDefinition-bundle-epi-type3" name="Bundle - ePI Type 3"/>
+<artifact id="Bundle/bundle-epi-type3-example-diflucan" key="Bundle-bundle-epi-type3-example-diflucan" name="Bundle - ePI Type 3 Diflucan Example"/>
 <artifact id="Bundle/bundle-epi-type3-example-wonderdrug" key="Bundle-bundle-epi-type3-example-wonderdrug" name="Bundle - ePI Type 3 WonderDrug Example"/>
 <artifact deprecated="true" id="Bundle/bundlepackageleaflet75" key="Bundle-bundlepackageleaflet75" name="Bundle Vulcan DrugX FHIR Package Insert"/>
 <artifact deprecated="true" id="ValueSet/caseIdSystem" key="ValueSet-caseIdSystem" name="Case System Identifiers"/>
@@ -35,9 +36,12 @@
 <artifact id="ClinicalUseDefinition/cud-contraindication-1" key="ClinicalUseDefinition-cud-contraindication-1" name="ClinicalUseDefinition - Contraindication Hepatic Failure"/>
 <artifact id="ClinicalUseDefinition/cud-contraindication-2" key="ClinicalUseDefinition-cud-contraindication-2" name="ClinicalUseDefinition - Contraindication Paracetamol"/>
 <artifact id="ClinicalUseDefinition/cud-indication-1" key="ClinicalUseDefinition-cud-indication-1" name="ClinicalUseDefinition - Indication Fever"/>
+<artifact id="ClinicalUseDefinition/cud-diflucan-invasive" key="ClinicalUseDefinition-cud-diflucan-invasive" name="ClinicalUseDefinition - Indication Invasive Candidiasis"/>
+<artifact id="ClinicalUseDefinition/cud-diflucan-mucosal" key="ClinicalUseDefinition-cud-diflucan-mucosal" name="ClinicalUseDefinition - Indication Oropharyngeal Candidiasis"/>
 <artifact id="ClinicalUseDefinition/cud-indication-2" key="ClinicalUseDefinition-cud-indication-2" name="ClinicalUseDefinition - Indication Pain"/>
 <artifact id="ClinicalUseDefinition/cud-interaction-2" key="ClinicalUseDefinition-cud-interaction-2" name="ClinicalUseDefinition - Interaction Other"/>
 <artifact id="ClinicalUseDefinition/cud-interaction-1" key="ClinicalUseDefinition-cud-interaction-1" name="ClinicalUseDefinition - Interaction Warfarin"/>
+<artifact id="ClinicalUseDefinition/cud-diflucan-renal" key="ClinicalUseDefinition-cud-diflucan-renal" name="ClinicalUseDefinition - Warning Renal Dose Adjustment"/>
 <artifact id="StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi" key="StructureDefinition-ClinicalUseDefinition-contraindication-uv-epi" name="ClinicalUseDefinition Contraindication (ePI)"/>
 <artifact id="StructureDefinition/ClinicalUseDefinition-indication-uv-epi" key="StructureDefinition-ClinicalUseDefinition-indication-uv-epi" name="ClinicalUseDefinition Indication (ePI)"/>
 <artifact id="StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" key="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi" name="ClinicalUseDefinition Interaction (ePI)"/>
@@ -47,6 +51,7 @@
 <artifact id="ValueSet/propertyColor" key="ValueSet-propertyColor" name="Color of the product"/>
 <artifact deprecated="true" id="ValueSet/PharmaceuticalDoseForm" key="ValueSet-PharmaceuticalDoseForm" name="Combined Pharmaceutical Dose Form"/>
 <artifact deprecated="true" id="StructureDefinition/Composition-uv-epi" key="StructureDefinition-Composition-uv-epi" name="Composition (ePI)"/>
+<artifact id="Composition/composition-diflucan" key="Composition-composition-diflucan" name="Composition - Diflucan SmPC"/>
 <artifact id="Composition/composition-paracetamol-t1" key="Composition-composition-paracetamol-t1" name="Composition - Paracetamol 500 mg tablets"/>
 <artifact id="Composition/composition-epi-type2-example-paracetamol" key="Composition-composition-epi-type2-example-paracetamol" name="Composition - Type 2 Paracetamol"/>
 <artifact id="Composition/composition-epi-type2-example-blister-carton" key="Composition-composition-epi-type2-example-blister-carton" name="Composition - Type 2 WonderDrug Blister in Carton"/>
@@ -58,6 +63,19 @@
 <artifact id="ValueSet/doseForm" key="ValueSet-doseForm" name="Dose Form"/>
 <artifact id="ValueSet/propertyFlavor" key="ValueSet-propertyFlavor" name="Flavor of the product"/>
 <artifact deprecated="true" id="ValueSet/generalStatus" key="ValueSet-generalStatus" name="General Status used across ePI resources"/>
+<artifact id="StructureDefinition/Group-uv-epi" key="StructureDefinition-Group-uv-epi" name="Group (ePI)"/>
+<artifact id="Group/group-epi-type3-example-adult-men" key="Group-group-epi-type3-example-adult-men" name="Group - Adult Men"/>
+<artifact id="Group/group-epi-type3-example-adult-women" key="Group-group-epi-type3-example-adult-women" name="Group - Adult Women"/>
+<artifact id="Group/group-diflucan-adult" key="Group-group-diflucan-adult" name="Group - Adults"/>
+<artifact id="Group/group-epi-type3-example-children" key="Group-group-epi-type3-example-children" name="Group - Children"/>
+<artifact id="Group/group-diflucan-renal" key="Group-group-diflucan-renal" name="Group - Renal impairment (CrCl ≤ 50 mL/min)"/>
+<artifact id="ValueSet/group-characteristic-type" key="ValueSet-group-characteristic-type" name="Group Characteristic Type (ePI)"/>
+<artifact id="CodeSystem/epi-group-characteristic-type" key="CodeSystem-epi-group-characteristic-type" name="Group Characteristic Type Code System (ePI)"/>
+<artifact id="ValueSet/group-hepatic-function-value" key="ValueSet-group-hepatic-function-value" name="Group Hepatic Function Value (ePI)"/>
+<artifact id="ValueSet/group-immune-status-value" key="ValueSet-group-immune-status-value" name="Group Immune Status Value (ePI)"/>
+<artifact id="ValueSet/group-lifestyle-value" key="ValueSet-group-lifestyle-value" name="Group Lifestyle Value (ePI)"/>
+<artifact id="ValueSet/group-race-value" key="ValueSet-group-race-value" name="Group Race Value (ePI)"/>
+<artifact id="ValueSet/group-sex-value" key="ValueSet-group-sex-value" name="Group Sex Value (ePI)"/>
 <artifact deprecated="true" id="ValueSet/packageType" key="ValueSet-packageType" name="High level Pack Type"/>
 <artifact id="ValueSet/country" key="ValueSet-country" name="ISO Country two letter code"/>
 <artifact id="ValueSet/language" key="ValueSet-language" name="ISO language two letter code"/>
@@ -93,10 +111,12 @@
 <artifact deprecated="true" id="ValueSet/marketingStatus" key="ValueSet-marketingStatus" name="Marketing Status"/>
 <artifact id="ValueSet/meddra" key="ValueSet-meddra" name="MedDRA Terms for clinical diseases and symptoms"/>
 <artifact id="StructureDefinition/MedicationKnowledge-uv-epi" key="StructureDefinition-MedicationKnowledge-uv-epi" name="MedicationKnowledge (ePI)"/>
+<artifact id="MedicationKnowledge/mk-diflucan" key="MedicationKnowledge-mk-diflucan" name="MedicationKnowledge - Diflucan"/>
 <artifact id="MedicationKnowledge/medication-knowledge-epi-type3-example" key="MedicationKnowledge-medication-knowledge-epi-type3-example" name="MedicationKnowledge - WonderDrug"/>
 <artifact deprecated="true" id="MedicinalProductDefinition/800a51a2-d81d-49a4-a4eb-f2417d301837" key="MedicinalProductDefinition-800a51a2-d81d-49a4-a4eb-f2417d301837" name="Medicinal Product DrugX 75 tablet in a blister of x28 tablets"/>
 <artifact deprecated="true" id="ValueSet/medProductType" key="ValueSet-medProductType" name="Medicinal Product Type"/>
 <artifact id="StructureDefinition/MedicinalProductDefinition-uv-epi" key="StructureDefinition-MedicinalProductDefinition-uv-epi" name="MedicinalProductDefinition (ePI)"/>
+<artifact id="MedicinalProductDefinition/mpd-diflucan" key="MedicinalProductDefinition-mpd-diflucan" name="MedicinalProductDefinition - Diflucan 150 mg capsule"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg" key="MedicinalProductDefinition-mpd-epi-type2-example-paracetamol-100mg" name="MedicinalProductDefinition - WonderDrug 100 mg tablets"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg" key="MedicinalProductDefinition-mpd-epi-type2-example-paracetamol-200mg" name="MedicinalProductDefinition - WonderDrug 200 mg tablets"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-paracetamol" key="MedicinalProductDefinition-mpd-epi-type2-example-paracetamol" name="MedicinalProductDefinition - WonderDrug 500 mg tablets Type 2"/>
@@ -108,6 +128,7 @@
 <artifact id="StructureDefinition/Organization-uv-epi" key="StructureDefinition-Organization-uv-epi" name="Organization (ePI)"/>
 <artifact deprecated="true" id="Organization/d71bf884-90eb-47f9-81b7-fa81ecec7e75" key="Organization-d71bf884-90eb-47f9-81b7-fa81ecec7e75" name="Organization - Acme Inc."/>
 <artifact id="Organization/org-epi-type2-example-acme" key="Organization-org-epi-type2-example-acme" name="Organization - Acme Pharma Inc."/>
+<artifact id="Organization/org-diflucan" key="Organization-org-diflucan" name="Organization - Diflucan MAH"/>
 <artifact id="Organization/org-epi-type3-example-pharma" key="Organization-org-epi-type3-example-pharma" name="Organization - WonderPharma Inc."/>
 <artifact deprecated="true" id="CodeSystem/CodeSystemUvEPIRomswi" key="CodeSystem-CodeSystemUvEPIRomswi" name="Organization Management Services CodeSystem"/>
 <artifact deprecated="true" id="ValueSet/organizationIdSystems" key="ValueSet-organizationIdSystems" name="Organization identifier systems"/>
@@ -121,7 +142,6 @@
 <artifact deprecated="true" id="ValueSet/packagedProductIdSystems" key="ValueSet-packagedProductIdSystems" name="PackagedProductDefinition identifier systems"/>
 <artifact deprecated="true" id="PackagedProductDefinition/eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" key="PackagedProductDefinition-eb8392a6-2cec-4ff3-9d9e-7c5f4ae3786d" name="Packaging - Blister"/>
 <artifact deprecated="true" id="ValueSet/partType" key="ValueSet-partType" name="Part Type"/>
-<artifact id="ValueSet/patient-characteristic-type" key="ValueSet-patient-characteristic-type" name="Patient Characteristic Type (ePI)"/>
 <artifact deprecated="true" id="ValueSet/pediatricUseIndicator" key="ValueSet-pediatricUseIndicator" name="Pediatric Use Indicator"/>
 <artifact deprecated="true" id="ValueSet/pharmaceuticalDoseFormPart" key="ValueSet-pharmaceuticalDoseFormPart" name="Pharmaceutical Dose Form of the medicinal product"/>
 <artifact id="StructureDefinition/ext-epi-procedure-number" key="StructureDefinition-ext-epi-procedure-number" name="Procedure Number"/>
@@ -183,6 +203,7 @@
 <page deprecated="true" key="capability" name="Capability"/>
 <page deprecated="true" key="core-epi-structure" name="Core ePI Profile"/>
 <page key="credits" name="Credits"/>
+<page key="dosing-population-model" name="Dosing and Population Model"/>
 <page key="downloads" name="Downloads"/>
 <page key="tech-details" name="FHIR Servers"/>
 <page deprecated="true" key="general-technical-conformance-requirements" name="General Technical Conformance Requirements"/>

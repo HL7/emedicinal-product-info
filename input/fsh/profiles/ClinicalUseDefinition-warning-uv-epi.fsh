@@ -23,6 +23,7 @@ Description: "ClinicalUseDefinition Warning (ePI) - Profile for Warning"
 * warning.code.coding.code 1..1
 * warning.code.coding.display 1..1
 * population 0..*
+* population only Reference(GroupUvEpi)
 * population.reference 1..
 
 

@@ -47,6 +47,7 @@ Alias: $spor-oms = https://spor.ema.europa.eu/omswi
 Alias: $spor-rms = https://spor.ema.europa.eu/rmswi
 Alias: $spor-sms = https://spor.ema.europa.eu/smswi
 Alias: $epi-ig = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig
+Alias: $epi-gct = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-group-characteristic-type
 
 // ============= VALUE SETS  ============
 

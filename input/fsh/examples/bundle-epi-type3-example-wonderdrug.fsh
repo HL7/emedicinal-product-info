@@ -52,12 +52,12 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * entry[clinicalUseDefinitionInteraction][+].resource = cud-interaction-2
 * entry[clinicalUseDefinitionInteraction][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-2"
 // Group entries
-* entry[+].resource = group-epi-type3-example-adult-men
-* entry[=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-men"
-* entry[+].resource = group-epi-type3-example-adult-women
-* entry[=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-women"
-* entry[+].resource = group-epi-type3-example-children
-* entry[=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-children"
+* entry[group][0].resource = group-epi-type3-example-adult-men
+* entry[group][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-men"
+* entry[group][+].resource = group-epi-type3-example-adult-women
+* entry[group][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-women"
+* entry[group][+].resource = group-epi-type3-example-children
+* entry[group][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-children"
 // * entry[undesirableEffect]... (add if needed, keeping it covering main types)
 
 
@@ -449,14 +449,18 @@ Description: "ClinicalUseDefinition - Interaction Other"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction "Interaction"
 
 Instance: medication-knowledge-epi-type3-example
-InstanceOf: MedicationKnowledge
+InstanceOf: MedicationKnowledgeUvEpi
 Usage: #example
 Title: "MedicationKnowledge - WonderDrug"
 Description: "MedicationKnowledge - WonderDrug with structured dosing regimen"
 * id = "medication-knowledge-epi-type3-example"
+* identifier.system = $example-id
+* identifier.value = "medication-knowledge-epi-type3-example"
 * status = #active
-* indicationGuideline.indication[0].concept = $sct#386661006 "Fever"
-* indicationGuideline.indication[1].concept = $sct#22253000 "Pain"
+// indication links to the Indication ClinicalUseDefinitions (which carry the population via Group).
+// Dose population == indication population here, so patientCharacteristic is intentionally left empty (no double-encoding).
+* indicationGuideline.indication[0].reference = Reference(cud-indication-1)
+* indicationGuideline.indication[1].reference = Reference(cud-indication-2)
 // Structured dosing regimen: Week 1 - twice daily, Weeks 2-4 - once daily
 * indicationGuideline.dosingGuideline[0].treatmentIntent.coding = $sct#384812002 "To relieve pain"
 * indicationGuideline.dosingGuideline[0].treatmentIntent.text = "Pain relief"
@@ -500,7 +504,7 @@ Usage: #inline
 * data = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
 
 Instance: group-epi-type3-example-adult-men
-InstanceOf: Group
+InstanceOf: GroupUvEpi
 Usage: #example
 Title: "Group - Adult Men"
 Description: "Group - Adult Men"
@@ -508,16 +512,16 @@ Description: "Group - Adult Men"
 * type = #person
 * membership = #definitional
 * name = "Adult Men"
-* characteristic[0].code = $sct#263495000 "Gender"
-* characteristic[=].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
-* characteristic[=].exclude = false
-* characteristic[+].code = $sct#397669002 "Age"
-* characteristic[=].valueRange.low = 18 'a' "years"
-* characteristic[=].valueRange.high = 64 'a' "years"
-* characteristic[=].exclude = false
+* characteristic[sex].code = $epi-gct#sex "Sex"
+* characteristic[sex].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
+* characteristic[sex].exclude = false
+* characteristic[age].code = $epi-gct#age "Age"
+* characteristic[age].valueRange.low = 18 'a' "years"
+* characteristic[age].valueRange.high = 64 'a' "years"
+* characteristic[age].exclude = false
 
 Instance: group-epi-type3-example-adult-women
-InstanceOf: Group
+InstanceOf: GroupUvEpi
 Usage: #example
 Title: "Group - Adult Women"
 Description: "Group - Adult Women"
@@ -525,16 +529,16 @@ Description: "Group - Adult Women"
 * type = #person
 * membership = #definitional
 * name = "Adult Women"
-* characteristic[0].code = $sct#263495000 "Gender"
-* characteristic[=].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#female "Female"
-* characteristic[=].exclude = false
-* characteristic[+].code = $sct#397669002 "Age"
-* characteristic[=].valueRange.low = 18 'a' "years"
-* characteristic[=].valueRange.high = 64 'a' "years"
-* characteristic[=].exclude = false
+* characteristic[sex].code = $epi-gct#sex "Sex"
+* characteristic[sex].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#female "Female"
+* characteristic[sex].exclude = false
+* characteristic[age].code = $epi-gct#age "Age"
+* characteristic[age].valueRange.low = 18 'a' "years"
+* characteristic[age].valueRange.high = 64 'a' "years"
+* characteristic[age].exclude = false
 
 Instance: group-epi-type3-example-children
-InstanceOf: Group
+InstanceOf: GroupUvEpi
 Usage: #example
 Title: "Group - Children"
 Description: "Group - Children"
@@ -542,7 +546,7 @@ Description: "Group - Children"
 * type = #person
 * membership = #definitional
 * name = "Children"
-* characteristic[0].code = $sct#397669002 "Age"
-* characteristic[=].valueRange.high = 17 'a' "years"
-* characteristic[=].exclude = false
+* characteristic[age].code = $epi-gct#age "Age"
+* characteristic[age].valueRange.high = 17 'a' "years"
+* characteristic[age].exclude = false
 
