@@ -378,18 +378,18 @@
       <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Three span variants</div>
       <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:14px;">
         <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:10px 12px;">
-          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#2563eb; margin-bottom:4px;">A — Class-based (extension)</div>
+          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#2563eb; margin-bottom:4px;">A — Custom class names (using an extension)</div>
           <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span class="substance wheat-starch"&gt;wheat starch&lt;/span&gt;</div>
-          <div style="font-size:.72em; color:#6b7280; margin-top:6px;">Requires Gravitate Health HtmlElementLink extension</div>
+          <div style="font-size:.72em; color:#6b7280; margin-top:6px;">Class names are flexible and semantic but connecting them to UUIDs used as resource or element IDs requires an extension (e.g., <a href="https://build.fhir.org/ig/hl7-eu/gravitate-health/StructureDefinition-HtmlElementLink.html">HtmlElementLink</a> from Gravitate Health or <a href="https://build.fhir.org/ig/HL7/fhir-extensions/en/StructureDefinition-textLink.html">textLink</a> from the FHIR Extensions Pack).</div>
         </div>
         <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:10px 12px;">
           <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#16a34a; margin-bottom:4px;">B — UUID-based (direct)</div>
-          <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span id="69ea7db9-…"&gt;wheat starch&lt;/span&gt;</div>
+          <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span class="69ea7db9-…"&gt;wheat starch&lt;/span&gt;</div>
           <div style="font-size:.72em; color:#6b7280; margin-top:6px;">Direct link to ClinicalUseDefinition UUID</div>
         </div>
         <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:10px 12px;">
           <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#d97706; margin-bottom:4px;">A+B — Combined</div>
-          <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span class="…" id="69ea…"&gt;wheat starch&lt;/span&gt;</div>
+          <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span class="wheat-starch 69ea…"&gt;wheat starch&lt;/span&gt;</div>
           <div style="font-size:.72em; color:#6b7280; margin-top:6px;">Redundant but valid — both approaches together</div>
         </div>
       </div>
