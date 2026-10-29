@@ -133,7 +133,7 @@
 </div>
 
 <div style="text-align:center; padding:0 20px 24px;">
-  <a href="gettingstarted.html" style="color:#003087; font-weight:600; font-size:.9em; text-decoration:none;">See the full step-by-step walkthrough →</a>
+  <a href="how-it-works.html" style="color:#003087; font-weight:600; font-size:.9em; text-decoration:none;">See how ePI works, part by part →</a>
 </div>
 
 <!-- WHY ADOPT -->
