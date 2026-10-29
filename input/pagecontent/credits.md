@@ -1,21 +1,36 @@
-### Credits - test
-This Implementation Guide was developed under the auspices of the HL7 Vulcan Accelerator's Electronic Product Information project team and the Innovative Medicines Initiative's (IMI) Gravitate-Health project. Contributing individuals and organisations are as follows  (in no particular order):  
+This Implementation Guide was developed under the auspices of the HL7 Vulcan Electronic Product Information (ePI) project team, and builds on the IG work published previously (1.0.0).
 
-Current ePI project Co-Chairs:  
+Contributing individuals and organisations are:
 
-* **Craig Anderson** - Pfizer
-* **Catherine Chronaki** - HL7 Europe  
+**Current ePI project co-chairs:**
 
+* **Craig Anderson** - Johnson & Johnson
+* **Catherine Chronaki** - HL7 Europe
 
-Project Team Members:  
+**Core project team members:**
+
+* **Kim Sherwood** - Läkemedelsverket (Swedish MPA)
+* **Markus Forslund** - Läkemedelsverket (Swedish MPA)
+* **Adam Kover** - Norwegian Medical Products Agency (NOMA)
+* **Lucie Gattapaille** - ePI Digital Solutions
+* **Rik Smithies** - NProgram
+* **Jacqueline bruner** - i4i
+* **Jim Drennan** - Glemser
+* **Beverly Buckta** - Pfizer
+* **Palani Perumal** - Deevita
+* **Bill Friggle** - 4eStandards
+* **Erol Hofmans** - Netherlands Medicines Evaluation Board (MEB)
+* **Jenny Sage** - Pfizer
+* **Esther Mapletoft** - Pfizer
+* **Harri Nurmi** - Finnish Medicines Agency (Fimea)
+* **Kari Heinonen**
+
+**Past contributors:**
 
 * **Jens Kristian Villadsen** - Trifork
 * **Giorgio Cangioli** - HL7 Europe
-* **Amy Cramer** - J&J
 * **Evinn Drusys** - AEMPS
-* **Adam Kover** - Felleskatalogen
 * **Bente Jansen** - Felleskatalogen
-* **Arif Govani** - DataPharm
 * **Philippe Michiels** - DataPharm
 * **Michael Loewe** - Rote Liste
 * **Carina Bachman** - Rote Liste
@@ -25,22 +40,16 @@ Project Team Members:
 * **Adam Stiling** - Roche
 * **Niklas Jänich** - Boehringer Ingelheim
 * **Joseph Mundi** - Pfizer
-* **Beverly Buckta** - Pfizer
 
-Vulcan Program Management  
+**Project management:**
 
-* **Hugh Glover** - Bluewave Informatics/HL7 BR&R/Vulcan
-* **Michael Van Campen** - Vulcan
-* **Shani Sampson** - Vulcan
+* **Filippo Napoli** - Vulcan
 * **Bret Heale** - Vulcan
-* **Jean Duteau** - Vulcan  
+* **Jean Duteau** - Vulcan
 
-With contributions from other members who have from time to time, or quietly, participated in meetings, attended conference calls, and supported the core team during the development process.  
+With contributions from other members who have from time to time, or quietly, participated in meetings, attended conference calls, and supported the core team during the development process.
 
-If you are interested in participating in the Vulcan ePI project, further information can be found on HL7 Vulcan's Confluence pages [here](https://confluence.hl7.org/pages/viewpage.action?pageId=79515543).  
-
-### Gravitate Health 
-The Gravitate Health project is a public – private partnership with 39 members from Europe and the US, co-led by University of Oslo (coordinator) and Pfizer (industry lead), funded by the Innovative Medicines Initiative (IMI) – a joint undertaking of the European Commission, the European Federation of Pharmaceutical Industries and Associations (EFPIA), IMI2 Associated Partners. 
+If you are interested in participating in the Vulcan ePI project, information about our calls, meetings and discussions can be found on HL7 Confluence pages [here](https://confluence.hl7.org/pages/viewpage.action?pageId=79515543).
 
 ### HL7 Vulcan Accelerator 
 HL7 FHIR® accelerators are a successful catalyst for standards development and adoption. 
