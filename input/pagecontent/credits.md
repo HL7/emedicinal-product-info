@@ -13,7 +13,9 @@ Contributing individuals and organisations are:
 * **Markus Forslund** - Läkemedelsverket (Swedish MPA)
 * **Adam Kover** - Norwegian Medical Products Agency (NOMA)
 * **Lucie Gattapaille** - ePI Digital Solutions
+* **Evinn Drusys** - AEMPS
 * **Rik Smithies** - NProgram
+* **Niklas Jänich** - Boehringer Ingelheim
 * **Jacqueline bruner** - i4i
 * **Jim Drennan** - Glemser
 * **Beverly Buckta** - Pfizer
@@ -24,22 +26,6 @@ Contributing individuals and organisations are:
 * **Esther Mapletoft** - Pfizer
 * **Harri Nurmi** - Finnish Medicines Agency (Fimea)
 * **Kari Heinonen**
-
-**Past contributors:**
-
-* **Jens Kristian Villadsen** - Trifork
-* **Giorgio Cangioli** - HL7 Europe
-* **Evinn Drusys** - AEMPS
-* **Bente Jansen** - Felleskatalogen
-* **Philippe Michiels** - DataPharm
-* **Michael Loewe** - Rote Liste
-* **Carina Bachman** - Rote Liste
-* **Josephine Bergman** - Rote Liste
-* **Petter Hurlen** - Akershus University Hospital
-* **Martin Ingvar** - Karolinska Institute
-* **Adam Stiling** - Roche
-* **Niklas Jänich** - Boehringer Ingelheim
-* **Joseph Mundi** - Pfizer
 
 **Project management:**
 
