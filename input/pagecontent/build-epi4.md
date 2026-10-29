@@ -136,7 +136,7 @@
     <div style="padding:7px 12px; background:#fef2f2; border-bottom:1px solid #fecaca;"><span style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#b91c1c;">⚠ Type 1–3: Plain narrative</span></div>
     <div style="padding:10px 12px; font-size:.82em; color:#374151; line-height:1.8; font-family:'Times New Roman',serif;">
       <div>&lt;text&gt;</div>
-      <div style="padding-left:12px;">Do not take Diflucan if you are allergic to fluconazole, amoxicillin or sulphonamides.</div>
+      <div style="padding-left:12px;">Do not take Fungisynth if you are allergic to synthazole, amoxicillin or sulphonamides.</div>
       <div>&lt;/text&gt;</div>
       <br/>
       <em style="font-family:-apple-system, sans-serif; color:#6b7280; font-size:.88em;">Plain text — no programmatic link to resources</em>
@@ -146,8 +146,8 @@
     <div style="padding:7px 12px; background:#f0fdf4; border-bottom:1px solid #bbf7d0;"><span style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#15803d;">✓ Type 4: Span-annotated narrative</span></div>
     <div style="padding:10px 12px; font-size:.76em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.9;">
       &lt;text&gt;<br/>
-      &nbsp;&nbsp;Do not take <span style="background:#fef2f2; border:1px solid #fecaca; padding:1px 4px; border-radius:3px; color:#dc2626;">&lt;span class="<span style="color:#7c3aed;">cud-contra-1</span>"&gt;</span>Diflucan<span style="color:#dc2626;">&lt;/span&gt;</span>
-      if you are allergic to <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 4px; border-radius:3px; color:#065f46;">&lt;span class="<span style="color:#7c3aed;">substance-fluconazole</span>"&gt;</span>fluconazole<span style="color:#065f46;">&lt;/span&gt;</span><br/>
+      &nbsp;&nbsp;Do not take <span style="background:#fef2f2; border:1px solid #fecaca; padding:1px 4px; border-radius:3px; color:#dc2626;">&lt;span class="<span style="color:#7c3aed;">cud-contra-1</span>"&gt;</span>Fungisynth<span style="color:#dc2626;">&lt;/span&gt;</span>
+      if you are allergic to <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 4px; border-radius:3px; color:#065f46;">&lt;span class="<span style="color:#7c3aed;">substance-synthazole</span>"&gt;</span>synthazole<span style="color:#065f46;">&lt;/span&gt;</span><br/>
       &lt;/text&gt;<br/><br/>
       <em style="font-family:-apple-system, sans-serif; color:#15803d; font-size:.9em;">Each span links directly to a resource ID</em>
     </div>
@@ -240,7 +240,7 @@
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Chapter 1</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">MedicinalProductDefinition</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Product naming (separate name elements)</td></tr>
           <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Chapter 2</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">SubstanceDefinition</strong>, <strong style="font-family:monospace; font-size:.9em; color:#0891b2;">Ingredient</strong>, <strong style="font-family:monospace; font-size:.9em; color:#0891b2;">ManufacturedItemDefinition</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Qualitative/quantitative composition</td></tr>
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Section 4.1</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">ClinicalUseDefinition</strong> (type: indication)</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Therapeutic indications</td></tr>
-          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Section 4.2</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">MedicationKnowledge</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Posology, method of administration</td></tr>
+          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Section 4.2</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">ClinicalUseDefinition (indication + Dosing Guideline)</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Posology, method of administration</td></tr>
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Section 4.3</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">ClinicalUseDefinition</strong> (type: contraindication)</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Contraindications</td></tr>
           <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Section 4.4</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">ClinicalUseDefinition</strong> (type: warning)</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Special warnings</td></tr>
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Section 4.5</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong style="font-family:monospace; font-size:.9em; color:#0891b2;">ClinicalUseDefinition</strong> (type: interaction)</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Interactions</td></tr>
@@ -268,9 +268,9 @@
     <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Break statements into atomic components</div></div>
     <div style="padding:14px 20px;">
       <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Specify statements into <strong>atomic components</strong> to make the information even more specific for personalised search options. An atomic component is one piece of information within a statement that is meaningful on its own.</p>
-      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Diflucan Contraindication Decomposition</div>
+      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Fungisynth Contraindication Decomposition</div>
       <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:12px 16px; margin-bottom:12px;">
-        <div style="font-size:.84em; color:#991b1b; font-style:italic; line-height:1.6;">"Do not take Diflucan if you are allergic to fluconazole, amoxicillin or sulphonamides."</div>
+        <div style="font-size:.84em; color:#991b1b; font-style:italic; line-height:1.6;">"Do not take Fungisynth if you are allergic to synthazole, amoxicillin or sulphonamides."</div>
       </div>
       <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:8px; margin-bottom:14px;">
         <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #dc2626; border-radius:6px; padding:10px 12px; text-align:center;">
@@ -280,7 +280,7 @@
         </div>
         <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #003087; border-radius:6px; padding:10px 12px; text-align:center;">
           <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#003087; margin-bottom:4px;">Atomic #2</div>
-          <div style="font-size:.82em; font-weight:600; color:#111827;">"Diflucan"</div>
+          <div style="font-size:.82em; font-weight:600; color:#111827;">"Fungisynth"</div>
           <div style="font-size:.72em; color:#6b7280; margin-top:4px;">= trade name</div>
         </div>
         <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #d97706; border-radius:6px; padding:10px 12px; text-align:center;">
@@ -290,7 +290,7 @@
         </div>
         <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #16a34a; border-radius:6px; padding:10px 12px; text-align:center;">
           <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#16a34a; margin-bottom:4px;">Atomic #4</div>
-          <div style="font-size:.82em; font-weight:600; color:#111827;">"fluconazole"</div>
+          <div style="font-size:.82em; font-weight:600; color:#111827;">"synthazole"</div>
           <div style="font-size:.72em; color:#6b7280; margin-top:4px;">= active substance</div>
         </div>
         <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #7c3aed; border-radius:6px; padding:10px 12px; text-align:center;">
@@ -345,12 +345,12 @@
         </div>
       </div>
       <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:12px 16px; margin-bottom:14px;">
-        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:8px;">Example — Diflucan Contraindication narrative</div>
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:8px;">Example — Fungisynth Contraindication narrative</div>
         <div style="font-size:.78em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.9;">
           <span style="color:#7c3aed;">&lt;text&gt;</span><br/>
           &nbsp;&nbsp;<span style="color:#6b7280;">&lt;status&gt;</span>generated<span style="color:#6b7280;">&lt;/status&gt;</span><br/>
           &nbsp;&nbsp;<span style="color:#6b7280;">&lt;div xmlns="…"&gt;</span><br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;Do not take Diflucan if you are allergic to fluconazole.<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;Do not take Fungisynth if you are allergic to synthazole.<br/>
           &nbsp;&nbsp;<span style="color:#6b7280;">&lt;/div&gt;</span><br/>
           <span style="color:#7c3aed;">&lt;/text&gt;</span>
         </div>
@@ -424,7 +424,7 @@
       <table style="width:100%; border-collapse:collapse; font-size:.84em; margin-bottom:14px;">
         <thead><tr style="background:#003087; color:#fff;">
           <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left; width:25%;">Population Type</th>
-          <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left;">Diflucan Example</th>
+          <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left;">Fungisynth Example</th>
         </tr></thead>
         <tbody>
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong>Age range</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Premature neonate: 0–30 days</td></tr>

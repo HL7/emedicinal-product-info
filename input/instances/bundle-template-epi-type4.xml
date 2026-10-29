@@ -24,7 +24,8 @@
     ManufacturedItemDefinition, AdministrableProductDefinition,
     Ingredient x4 (1 active + 3 excipients), SubstanceDefinition,
     ClinicalUseDefinition x6 (indication x2, contraindication, interaction,
-    undesirable-effect, warning), MedicationKnowledge, Group x3.
+    undesirable-effect, warning; the fever indication carries the structured dosing),
+    Group x4.
   The product header artwork is a Binary (SVG image) CONTAINED inside the
   Composition and referenced from its section via a local "#" reference.
 -->
@@ -200,7 +201,7 @@
               <div xmlns="http://www.w3.org/1999/xhtml">
                 <p>WonderDrug is indicated in
                   <span class="population-adults"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006666">adults</span>
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006669">adults</span>
                   for the conditions listed below.</p>
               </div>
             </text>
@@ -250,15 +251,15 @@
             <text status="generated">
               <div xmlns="http://www.w3.org/1999/xhtml">
                 <p>The recommended dose is
-                  <span class="mk-dosing-adult"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000005555">one 500 mg
+                  <span class="cud-indication-fever-dosing"
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000003333">one 500 mg
                   tablet every 4 to 6 hours, to a maximum of 4 g per day</span> in
                   <span class="population-adults"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006666">adults</span>.</p>
+                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006669">adults</span>.</p>
               </div>
             </text>
             <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-000000005555"/>
+              <reference value="urn:uuid:00000000-0000-0000-0000-000000003333"/>
             </entry>
           </section>
 
@@ -1184,6 +1185,61 @@
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
         </subject>
         <indication>
+          <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline">
+            <!-- Structured dosing (draft): sits on the indication it treats -->
+            <extension url="population">
+              <valueReference>
+                <reference value="urn:uuid:00000000-0000-0000-0000-000000006669"/>
+                <display value="Adults"/>
+              </valueReference>
+            </extension>
+            <extension url="dosage">
+              <extension url="type">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                    <code value="ordered"/>
+                    <display value="Ordered"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="instruction">
+                <valueDosage>
+                  <text value="One 500 mg tablet every 4 to 6 hours as required; maximum 4 g (8 tablets) per day."/>
+                  <timing>
+                    <repeat>
+                      <frequency value="1"/>
+                      <period value="4"/>
+                      <periodMax value="6"/>
+                      <periodUnit value="h"/>
+                    </repeat>
+                  </timing>
+                  <doseAndRate>
+                    <doseQuantity>
+                      <value value="500"/>
+                      <unit value="mg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mg"/>
+                    </doseQuantity>
+                  </doseAndRate>
+                  <maxDosePerPeriod>
+                    <numerator>
+                      <value value="4"/>
+                      <unit value="g"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="g"/>
+                    </numerator>
+                    <denominator>
+                      <value value="1"/>
+                      <unit value="day"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="d"/>
+                    </denominator>
+                  </maxDosePerPeriod>
+                </valueDosage>
+              </extension>
+            </extension>
+          </extension>
           <diseaseSymptomProcedure>
             <concept>
               <coding>
@@ -1371,94 +1427,6 @@
   </entry>
 
   <!-- ============================================================ -->
-  <!-- 22. MedicationKnowledge — adult posology                      -->
-  <!-- ============================================================ -->
-  <entry>
-    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000005555"/>
-    <resource>
-      <MedicationKnowledge>
-        <id value="mk-dosing-adult"/>
-        <meta>
-          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicationKnowledge-uv-epi"/>
-        </meta>
-        <status value="active"/>
-        <indicationGuideline>
-          <indication>
-            <concept>
-              <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="386661006"/>
-                <display value="Fever"/>
-              </coding>
-            </concept>
-          </indication>
-          <dosingGuideline>
-            <dosage>
-              <type>
-                <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
-                  <code value="ordered"/>
-                  <display value="Ordered"/>
-                </coding>
-              </type>
-              <dosage>
-                <text value="One 500 mg tablet every 4 to 6 hours as required; maximum 4 g (8 tablets) per day."/>
-                <timing>
-                  <repeat>
-                    <frequency value="1"/>
-                    <period value="4"/>
-                    <periodMax value="6"/>
-                    <periodUnit value="h"/>
-                  </repeat>
-                </timing>
-                <doseAndRate>
-                  <doseQuantity>
-                    <value value="500"/>
-                    <unit value="mg"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="mg"/>
-                  </doseQuantity>
-                </doseAndRate>
-                <maxDosePerPeriod>
-                  <numerator>
-                    <value value="4"/>
-                    <unit value="g"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="g"/>
-                  </numerator>
-                  <denominator>
-                    <value value="1"/>
-                    <unit value="day"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="d"/>
-                  </denominator>
-                </maxDosePerPeriod>
-              </dosage>
-            </dosage>
-            <patientCharacteristic>
-              <type>
-                <coding>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="424144002"/>
-                  <display value="Current chronological age"/>
-                </coding>
-              </type>
-              <valueRange>
-                <low>
-                  <value value="18"/>
-                  <unit value="years"/>
-                  <system value="http://unitsofmeasure.org"/>
-                  <code value="a"/>
-                </low>
-              </valueRange>
-            </patientCharacteristic>
-          </dosingGuideline>
-        </indicationGuideline>
-      </MedicationKnowledge>
-    </resource>
-  </entry>
-
-  <!-- ============================================================ -->
   <!-- 23. Group — population: adult men                             -->
   <!-- ============================================================ -->
   <entry>
@@ -1596,6 +1564,38 @@
               <system value="http://unitsofmeasure.org"/>
               <code value="a"/>
             </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+
+  <!-- Sub-population for structured dosing: a fully defined Group -->
+  <entry>
+    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000006669"/>
+    <resource>
+      <Group>
+        <id value="group-epi-type4-example-adults"/>
+        <active value="true"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <name value="Adults (18 years and over)"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-group-characteristic-type"/>
+              <code value="age"/>
+              <display value="Age"/>
+            </coding>
+          </code>
+          <valueRange>
+            <low>
+              <value value="18"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </low>
           </valueRange>
           <exclude value="false"/>
         </characteristic>

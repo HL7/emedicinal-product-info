@@ -8,16 +8,15 @@
 //   2. value sets per coded axis - the VALUE a characteristic can take
 //
 // Age, body weight and renal function are expressed as a Range (no value set).
-// Both Group.characteristic.code and
-// MedicationKnowledge...dosingGuideline.patientCharacteristic.type bind to the
-// SAME GroupCharacteristicType value set so the two structures share one
-// vocabulary.
+// Group.characteristic.code binds to GroupCharacteristicType. Populations
+// and sub-populations (including those used by structured dosing on
+// ClinicalUseDefinition.indication) are always fully defined Groups.
 // ============================================================================
 
 CodeSystem: GroupCharacteristicTypeCS
 Id: epi-group-characteristic-type
 Title: "Group Characteristic Type Code System (ePI)"
-Description: "The axis a population characteristic describes (e.g., sex, age, body weight, organ function), for use in Group definitions and in MedicationKnowledge dosing guidelines."
+Description: "The axis a population characteristic describes (e.g., sex, age, body weight, organ function), for use in Group definitions of populations and sub-populations."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^caseSensitive = true

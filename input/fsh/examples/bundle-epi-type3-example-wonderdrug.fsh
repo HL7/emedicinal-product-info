@@ -36,8 +36,6 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * entry[administrableProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
 * entry[ingredient].resource = ingredient-epi-type2-example-paracetamol-active
 * entry[ingredient].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-active"
-* entry[medicationKnowledge].resource = medication-knowledge-epi-type3-example
-* entry[medicationKnowledge].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicationKnowledge/medication-knowledge-epi-type3-example"
 // Clinical Use Definitions
 * entry[clinicalUseDefinitionIndication][0].resource = cud-indication-1
 * entry[clinicalUseDefinitionIndication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-indication-1"
@@ -370,6 +368,8 @@ Description: "ClinicalUseDefinition - Indication Fever"
 * population.display = "Adult Men"
 * indication.diseaseSymptomProcedure.concept = $sct#386661006 "Fever"
 * category = $epi-ig#indication "Indication"
+// Structured dosing sits on the indication. Dose population = indication population, so no sub-population.
+* insert WonderDrugDosing
 
 Instance: cud-indication-2
 InstanceOf: ClinicalUseDefinitionIndicationUvEpi
@@ -386,6 +386,8 @@ Description: "ClinicalUseDefinition - Indication Pain"
 * population.display = "Adult Men"
 * indication.diseaseSymptomProcedure.concept = $sct#22253000 "Pain"
 * category = $epi-ig#indication "Indication"
+// Structured dosing sits on the indication. Dose population = indication population, so no sub-population.
+* insert WonderDrugDosing
 
 Instance: cud-contraindication-1
 InstanceOf: ClinicalUseDefinitionContraindicationUvEpi
@@ -448,54 +450,6 @@ Description: "ClinicalUseDefinition - Interaction Other"
 * interaction.interactant.itemCodeableConcept = http://www.nlm.nih.gov/research/umls/rxnorm#11289 "Warfarin"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction "Interaction"
 
-Instance: medication-knowledge-epi-type3-example
-InstanceOf: MedicationKnowledgeUvEpi
-Usage: #example
-Title: "MedicationKnowledge - WonderDrug"
-Description: "MedicationKnowledge - WonderDrug with structured dosing regimen"
-* id = "medication-knowledge-epi-type3-example"
-* identifier.system = $example-id
-* identifier.value = "medication-knowledge-epi-type3-example"
-* status = #active
-// indication links to the Indication ClinicalUseDefinitions (which carry the population via Group).
-// Dose population == indication population here, so patientCharacteristic is intentionally left empty (no double-encoding).
-* indicationGuideline.indication[0].reference = Reference(cud-indication-1)
-* indicationGuideline.indication[1].reference = Reference(cud-indication-2)
-// Structured dosing regimen: Week 1 - twice daily, Weeks 2-4 - once daily
-* indicationGuideline.dosingGuideline[0].treatmentIntent.coding = $sct#384812002 "To relieve pain"
-* indicationGuideline.dosingGuideline[0].treatmentIntent.text = "Pain relief"
-* indicationGuideline.dosingGuideline[=].dosage[0].type.text = "Initial Treatment (Week 1)"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.sequence = 1
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.text = "Take 1 tablet twice daily for the first week"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.frequency = 2
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.period = 1
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.periodUnit = #d
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.value = 7
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.unit = "days"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.system = $ucum
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.code = #d
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered "Ordered"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.value = 1
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.unit = "tablet"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.system = $edqm
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.code = #10219000
-// Maintenance dosing (Weeks 2-4)
-* indicationGuideline.dosingGuideline[=].dosage[+].type.text = "Maintenance Treatment (Weeks 2-4)"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.sequence = 2
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.text = "Take 1 tablet once daily for three more weeks"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.frequency = 1
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.period = 1
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.periodUnit = #d
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.value = 21
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.unit = "days"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.system = $ucum
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.timing.repeat.boundsDuration.code = #d
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered "Ordered"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.value = 1
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.unit = "tablet"
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.system = $edqm
-* indicationGuideline.dosingGuideline[=].dosage[=].dosage.doseAndRate.doseQuantity.code = #10219000
-
 Instance: binaryImage-t3
 InstanceOf: BinaryEpi
 Usage: #inline
@@ -550,3 +504,34 @@ Description: "Group - Children"
 * characteristic[age].valueRange.high = 17 'a' "years"
 * characteristic[age].exclude = false
 
+// ---------------------------------------------------------------------------
+// Structured dosing regimen shared by both indications (draft dosing model):
+// Week 1 - one tablet twice daily, Weeks 2-4 - one tablet once daily
+// ---------------------------------------------------------------------------
+RuleSet: WonderDrugDosing
+* indication.extension[dosingGuideline][0].extension[treatmentIntent].valueCodeableConcept = $sct#384812002 "To relieve pain"
+* indication.extension[dosingGuideline][0].extension[treatmentIntent].valueCodeableConcept.text = "Pain relief"
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[type].valueCodeableConcept.text = "Initial Treatment (Week 1)"
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.text = "Take 1 tablet twice daily for the first week"
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.timing.repeat.frequency = 2
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.timing.repeat.period = 1
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.timing.repeat.periodUnit = #d
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.timing.repeat.boundsDuration = 7 'd' "days"
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered "Ordered"
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.value = 1
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.unit = "tablet"
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.system = $edqm
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.code = #10219000
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[type].valueCodeableConcept.text = "Maintenance Treatment (Weeks 2-4)"
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.sequence = 2
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.text = "Take 1 tablet once daily for three more weeks"
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.timing.repeat.frequency = 1
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.timing.repeat.period = 1
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.timing.repeat.periodUnit = #d
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.timing.repeat.boundsDuration = 21 'd' "days"
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered "Ordered"
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.value = 1
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.unit = "tablet"
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.system = $edqm
+* indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseQuantity.code = #10219000

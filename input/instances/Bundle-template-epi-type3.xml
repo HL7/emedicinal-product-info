@@ -172,6 +172,92 @@
         </population>
         <!-- ClinicalUseDefinition.indication.diseaseSymptomProcedure: The situation that is being defined as indication. -->
         <indication>
+          <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline">
+            <!-- Structured dosing (draft): sits on the indication it treats -->
+            <extension url="population">
+              <valueReference>
+                <reference value="urn:uuid:88888888-8888-8888-8888-888888888884"/>
+                <display value="Adults"/>
+              </valueReference>
+            </extension>
+            <extension url="treatmentIntent">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="384812002"/>
+                  <display value="To relieve pain"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <extension url="dosage">
+              <extension url="type">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                    <code value="ordered"/>
+                    <display value="Ordered"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="instruction">
+                <valueDosage>
+                  <text value="Adults: 500 mg IV every 6 hours"/>
+                  <timing>
+                    <repeat>
+                      <frequency value="1"/>
+                      <period value="6"/>
+                      <periodUnit value="h"/>
+                    </repeat>
+                  </timing>
+                  <doseAndRate>
+                    <type>
+                      <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                        <code value="ordered"/>
+                        <display value="Ordered"/>
+                      </coding>
+                    </type>
+                    <doseQuantity>
+                      <value value="500"/>
+                      <unit value="mg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mg"/>
+                    </doseQuantity>
+                  </doseAndRate>
+                </valueDosage>
+              </extension>
+            </extension>
+            <extension url="dosage">
+              <extension url="type">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                    <code value="maximum"/>
+                    <display value="Maximum"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="instruction">
+                <valueDosage>
+                  <text value="Maximum 2 g/day"/>
+                  <maxDosePerPeriod>
+                    <numerator>
+                      <value value="2"/>
+                      <unit value="g"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="g"/>
+                    </numerator>
+                    <denominator>
+                      <value value="1"/>
+                      <unit value="d"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="d"/>
+                    </denominator>
+                  </maxDosePerPeriod>
+                </valueDosage>
+              </extension>
+            </extension>
+          </extension>
           <diseaseSymptomProcedure>
             <concept>
               <coding><!-- Appropriate local or international code should be used (e.g. SNOMED CT) -->
@@ -861,129 +947,6 @@
     </resource>
   </entry>
 
-  <!-- =========================================================================
-       MEDICATION KNOWLEDGE
-       ========================================================================= -->
-
-  <!-- 
-    KEY CONCEPT: MedicationKnowledge
-    
-    The MedicationKnowledge resource provides computable dosing rules and therapeutic 
-    classification. It facilitates healthcare systems' ability to interpret authorized 
-    dosing information. The indicationGuideline element can specify structured dosage 
-    instructions tied to specific indications.
-  -->
-
-  <!-- MedicationKnowledge: Dosing regimen -->
-  <entry>
-    <!-- entry.fullUrl: A unique URI for the resource. -->
-    <fullUrl value="urn:uuid:ffff1111-1111-1111-1111-111111111111"/>
-    <resource>
-      <MedicationKnowledge>
-        <id value="ffff1111-1111-1111-1111-111111111111"/>
-        <meta>
-          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicationKnowledge-uv-epi"/>
-        </meta>
-        <identifier>
-          <system value="http://ema.europa.eu/identifier"/>
-          <value value="WONDERDRUG-MEDICATIONKNOWLEDGE-1"/>
-        </identifier>
-        <!-- MedicationKnowledge.status: A code to indicate if the medication is in active use. -->
-        <status value="active"/>
-        <!-- MedicationKnowledge.indicationGuideline: Guidelines for administration of the medication. -->
-        <indicationGuideline>
-          <!-- MedicationKnowledge.indicationGuideline.indication: The indication for which the guideline applies. -->
-          <indication>
-            <reference>
-              <reference value="urn:uuid:aaaa1111-1111-1111-1111-111111111111"/>
-            </reference>
-          </indication>
-          <!-- MedicationKnowledge.indicationGuideline.dosingGuideline: Guidelines for dosage of the medication. -->
-          <dosingGuideline>
-            <!-- MedicationKnowledge.indicationGuideline.dosingGuideline.treatmentIntent: The intent of the treatment. -->
-            <treatmentIntent>
-              <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="384812002"/>
-                <display value="To relieve pain"/> 
-              </coding>
-            </treatmentIntent>
-            <!-- MedicationKnowledge.indicationGuideline.dosingGuideline.dosage: Dosage for the medication. -->
-            <dosage>
-              <type>
-                <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
-                  <code value="ordered"/>
-                  <display value="Ordered"/> 
-                </coding>
-              </type>
-              <dosage>
-                <text value="Adults: 500 mg IV every 6 hours"/>
-                <timing>
-                  <repeat>
-                    <frequency value="1"/>
-                    <period value="6"/>
-                    <periodUnit value="h"/>
-                  </repeat>
-                </timing>
-                <doseAndRate>
-                  <type>
-                    <coding>
-                      <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
-                      <code value="ordered"/>
-                      <display value="Ordered"/> 
-                    </coding>
-                  </type>
-                  <doseQuantity>
-                    <value value="500"/>
-                    <unit value="mg"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="mg"/>
-                  </doseQuantity>
-                </doseAndRate>
-              </dosage>
-            </dosage>
-            <dosage>
-              <type>
-                <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
-                  <code value="maximum"/>
-                  <display value="Maximum"/> 
-                </coding>
-              </type>
-              <dosage>
-                <text value="Maximum 2 g/day"/>
-                <maxDosePerPeriod>
-                  <numerator>
-                    <value value="2"/>
-                    <unit value="g"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="g"/>
-                  </numerator>
-                  <denominator>
-                    <value value="1"/>
-                    <unit value="d"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="d"/>
-                  </denominator>
-                </maxDosePerPeriod>
-              </dosage>
-            </dosage>
-            <patientCharacteristic>
-              <type>
-                <coding>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="133936004"/>
-                  <display value="Adult"/>
-                </coding>
-              </type>
-            </patientCharacteristic>
-          </dosingGuideline>
-        </indicationGuideline>
-      </MedicationKnowledge>
-    </resource>
-  </entry>
-
   <entry>
     <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888881"/>
     <resource>
@@ -1124,6 +1087,38 @@
               <system value="http://unitsofmeasure.org"/>
               <code value="a"/>
             </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+
+  <!-- Sub-population for structured dosing: a fully defined Group -->
+  <entry>
+    <fullUrl value="urn:uuid:88888888-8888-8888-8888-888888888884"/>
+    <resource>
+      <Group>
+        <id value="88888888-8888-8888-8888-888888888884"/>
+        <active value="true"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <name value="Adults (18 years and over)"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-group-characteristic-type"/>
+              <code value="age"/>
+              <display value="Age"/>
+            </coding>
+          </code>
+          <valueRange>
+            <low>
+              <value value="18"/>
+              <unit value="years"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="a"/>
+            </low>
           </valueRange>
           <exclude value="false"/>
         </characteristic>

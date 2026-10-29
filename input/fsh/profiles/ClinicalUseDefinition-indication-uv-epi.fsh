@@ -40,5 +40,8 @@ Description: "ClinicalUseDefinition Indication (ePI) - Profile for Indication"
 * population 0..*
 * population only Reference(GroupUvEpi)
 * population.reference 1..
-
-
+* population ^short = "Population the indication applies to (a fully defined Group)"
+// Structured dosing (draft): the regimen sits on the indication it treats.
+// Repeat dosingGuideline for each sub-population with its own regimen.
+* indication.extension contains DosingGuideline named dosingGuideline 0..*
+* indication.extension[dosingGuideline] ^short = "Structured dosing for this indication, one per (sub-)population"

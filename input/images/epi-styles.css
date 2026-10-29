@@ -29,7 +29,7 @@
          9e. Contraindication rows  (.cxrow)
          9f. SOC adverse-event groups  (.soc)
          9g. Warning boxes  (.wbox)
-         9h. Dosage Regimen / MedicationKnowledge  ← NEW
+         9h. Dosage Regimen / Structured Dosing  ← NEW
     10.  Type 1–specific (type1-note)
     11.  Mockup / annotation helpers  (change-tag, compare-wrap)
     12.  Responsive overrides
@@ -469,7 +469,7 @@ a.pka-link     { text-decoration: none; color: inherit; }
 .wbox:last-child { margin-bottom: 0; }
 .wbox .wicon { color: #ea580c; flex-shrink: 0; margin-top: 1px; }
 
-/* 9h. Dosage Regimen — MedicationKnowledge */
+/* 9h. Dosage Regimen — Structured Dosing (CUD indication) */
 .mk-src { font-size: 10px; color: var(--faint); font-style: italic; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--bd); }
 .mk-src code { font-family: ui-monospace, "SF Mono", monospace; font-size: 9px; background: var(--sf2); padding: 1px 5px; border-radius: 3px; }
 

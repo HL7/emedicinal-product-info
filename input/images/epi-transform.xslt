@@ -103,7 +103,7 @@
       <xsl:if test="f:entry/f:resource/f:MedicinalProductDefinition">
         <label class="tb" for="t-p">Product Details</label>
       </xsl:if>
-      <xsl:if test="f:entry/f:resource/f:ClinicalUseDefinition or f:entry/f:resource/f:MedicationKnowledge">
+      <xsl:if test="f:entry/f:resource/f:ClinicalUseDefinition">
         <label class="tb" for="t-cl">Clinical Details</label>
       </xsl:if>
     </div>
@@ -223,8 +223,8 @@
       <xsl:if test="f:entry/f:resource/f:ClinicalUseDefinition">
         <div class="cc"><span class="n" style="color:var(--rose)"><xsl:value-of select="count(f:entry/f:resource/f:ClinicalUseDefinition)"/></span><span class="l">Clinical Use Defs</span></div>
       </xsl:if>
-      <xsl:if test="f:entry/f:resource/f:MedicationKnowledge">
-        <div class="cc"><span class="n" style="color:var(--teal)"><xsl:value-of select="count(f:entry/f:resource/f:MedicationKnowledge)"/></span><span class="l">Medication Knowledge</span></div>
+      <xsl:if test="f:entry/f:resource/f:ClinicalUseDefinition/f:indication/f:extension[@url='http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline']">
+        <div class="cc"><span class="n" style="color:var(--teal)"><xsl:value-of select="count(f:entry/f:resource/f:ClinicalUseDefinition/f:indication/f:extension[@url='http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline'])"/></span><span class="l">Dosing Guidelines</span></div>
       </xsl:if>
       <xsl:if test="f:entry/f:resource/f:Ingredient">
         <div class="cc"><span class="n" style="color:var(--green)"><xsl:value-of select="count(f:entry/f:resource/f:Ingredient)"/></span><span class="l">Ingredients</span></div>
@@ -408,17 +408,45 @@
     </div>
   </xsl:if>
 
-  <xsl:if test="f:entry/f:resource/f:MedicationKnowledge">
+  <!-- Structured dosing (draft model): DosingGuideline extensions on ClinicalUseDefinition.indication -->
+  <xsl:if test="f:entry/f:resource/f:ClinicalUseDefinition/f:indication/f:extension[@url='http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline']">
     <div class="cls" style="border-left:3px solid var(--teal)">
-      <div class="clsh"><span class="clsicon">&#128138;</span><span class="clstitle">Medication Knowledge (Dosage)</span>
-        <span class="clscount"><xsl:value-of select="count(f:entry/f:resource/f:MedicationKnowledge)"/></span>
+      <div class="clsh"><span class="clsicon">&#128138;</span><span class="clstitle">Structured Dosing</span>
+        <span class="clscount"><xsl:value-of select="count(f:entry/f:resource/f:ClinicalUseDefinition/f:indication/f:extension[@url='http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline'])"/></span>
       </div>
       <div class="clsb">
-        <xsl:for-each select="f:entry/f:resource/f:MedicationKnowledge">
+        <xsl:for-each select="f:entry/f:resource/f:ClinicalUseDefinition/f:indication/f:extension[@url='http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline']">
           <div class="dose-card">
-            <div class="dose-card-hdr"><span class="d-pop"><xsl:value-of select="f:name/@value"/></span></div>
+            <div class="dose-card-hdr">
+              <span class="d-pop">
+                <xsl:choose>
+                  <xsl:when test="f:extension[@url='population']/f:valueReference/f:display/@value"><xsl:value-of select="f:extension[@url='population']/f:valueReference/f:display/@value"/></xsl:when>
+                  <xsl:when test="../../f:population/f:display/@value"><xsl:value-of select="../../f:population/f:display/@value"/></xsl:when>
+                  <xsl:otherwise>All patients for this indication</xsl:otherwise>
+                </xsl:choose>
+              </span>
+              <span class="dose-label">
+                <xsl:value-of select="(../f:diseaseSymptomProcedure/f:concept/f:coding/f:display/@value | ../f:diseaseSymptomProcedure/f:concept/f:text/@value)[1]"/>
+              </span>
+            </div>
             <div class="dose-body">
-              <div class="dose-row"><span class="dose-label">ID</span><span class="dose-value"><xsl:value-of select="f:id/@value"/></span></div>
+              <xsl:for-each select="f:extension[@url='dosage']">
+                <div class="dose-row">
+                  <span class="dose-label">
+                    <xsl:value-of select="(f:extension[@url='type']/f:valueCodeableConcept/f:text/@value | f:extension[@url='type']/f:valueCodeableConcept/f:coding/f:display/@value)[1]"/>
+                  </span>
+                  <span class="dose-value">
+                    <xsl:for-each select="f:extension[@url='instruction']/f:valueDosage">
+                      <div>
+                        <xsl:if test="f:extension[@url='http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosage-manufactured-item']/f:valueReference/f:display/@value">
+                          <strong><xsl:value-of select="f:extension[@url='http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosage-manufactured-item']/f:valueReference/f:display/@value"/>: </strong>
+                        </xsl:if>
+                        <xsl:value-of select="f:text/@value"/>
+                      </div>
+                    </xsl:for-each>
+                  </span>
+                </div>
+              </xsl:for-each>
             </div>
           </div>
         </xsl:for-each>
@@ -426,8 +454,8 @@
     </div>
   </xsl:if>
 
-  <xsl:if test="not(f:entry/f:resource/f:ClinicalUseDefinition) and not(f:entry/f:resource/f:MedicationKnowledge)">
-    <div class="type1-note"><span class="icon">&#128712;</span><span>No clinical data resources (ClinicalUseDefinition / MedicationKnowledge) are included in this ePI Bundle.</span></div>
+  <xsl:if test="not(f:entry/f:resource/f:ClinicalUseDefinition)">
+    <div class="type1-note"><span class="icon">&#128712;</span><span>No clinical data resources (ClinicalUseDefinition) are included in this ePI Bundle.</span></div>
   </xsl:if>
 </xsl:template>
 

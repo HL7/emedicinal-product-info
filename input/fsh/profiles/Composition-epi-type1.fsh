@@ -69,7 +69,7 @@ Description: "This profile represents the constraints applied to the Composition
 * section.id 1..
 * section.id ^short = "Section ID (XML: <section id='...'>)"
 * section.id ^definition = "The internal, unique identifier for this specific section element within the resource instance. When represented in XML, this MUST be serialized as an attribute (e.g. <section id=\"my-id\">) and NOT as a child element (<id>my-id</id>)."
-* section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi or MedicationKnowledgeUvEpi)
+* section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi)
 * section.title 1..
 * section.title ^short = "Parent Section Title"
 * section.title ^definition = "The title of the specific section in the ePI."
@@ -96,7 +96,7 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.text 0..
 * section.section.text ^short = "Text content of the nested section"
 * section.section.text ^definition = "The text content of the child section."
-* section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi or MedicationKnowledgeUvEpi)
+* section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi)
 * section.section.section 0..
 * section.section.section ^short = "Nested Content Sections"
 * section.section.section ^definition = "The nested child sections containing the actual detailed content of the ePI."
@@ -113,5 +113,5 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.section.text 0..
 * section.section.section.text ^short = "Text content of the nested section"
 * section.section.section.text ^definition = "The text content of the child section."
-* section.section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi or MedicationKnowledgeUvEpi)
+* section.section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi)
 

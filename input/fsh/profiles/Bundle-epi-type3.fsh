@@ -34,7 +34,6 @@ Description: "This profile represents the constraints applied to the Bundle reso
     clinicalUseDefinitionInteraction 0..* and
     clinicalUseDefinitionUndesirableEffect 0..* and
     clinicalUseDefinitionWarning 0..* and
-    medicationKnowledge 0..* and
     group 0..*
 * entry[composition].resource only CompositionEpiType1
 * entry[organization].resource only OrganizationUvEpi
@@ -50,5 +49,4 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[clinicalUseDefinitionInteraction].resource only ClinicalUseDefinitionInteractionUvEpi
 * entry[clinicalUseDefinitionUndesirableEffect].resource only ClinicalUseDefinitionUndesirableEffectUvEpi
 * entry[clinicalUseDefinitionWarning].resource only ClinicalUseDefinitionWarningUvEpi
-* entry[medicationKnowledge].resource only MedicationKnowledgeUvEpi
 * entry[group].resource only GroupUvEpi

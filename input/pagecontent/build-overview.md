@@ -63,8 +63,8 @@ The table below identifies the primary FHIR resources used across the four ePI t
       <td style="padding: 10px; border: 1px solid #d0d0d0;">Structures indications, contraindications, and interaction alerts.</td>
     </tr>
     <tr>
-      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>MedicationKnowledge</strong></td>
-      <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines the authorized dosage and administration instructions.</td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;"><strong>Group</strong></td>
+      <td style="padding: 10px; border: 1px solid #d0d0d0;">Defines a population or sub-population (age, weight, renal function and so on) that an indication or a dosing regimen applies to. Structured dosing itself is carried on the indication ClinicalUseDefinition.</td>
     </tr>
   </tbody>
 </table>

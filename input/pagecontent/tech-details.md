@@ -129,7 +129,7 @@
       </tr>
       <tr>
         <td><span class="resource-type">Clinical</span></td>
-        <td><span class="fhir-code">ClinicalUseDefinition</span><span class="fhir-code">MedicationKnowledge</span></td>
+        <td><span class="fhir-code">ClinicalUseDefinition</span><span class="fhir-code">Group</span></td>
         <td><span class="op-chip read">read</span><span class="op-chip search">search</span></td>
       </tr>
       <tr>

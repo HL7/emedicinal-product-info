@@ -14,7 +14,7 @@
 <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px;">
   <span style="background:#f9fafb; border:1px solid #e5e7eb; color:#6b7280; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">All Type 1 &amp; 2 resources</span>
   <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">🩺 ClinicalUseDefinition (×n)</span>
-  <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">💊 MedicationKnowledge (optional)</span>
+  <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">💊 Structured dosing on the indication (optional)</span>
 </div>
 
 <!-- RESOURCE CHAIN VISUAL -->
@@ -48,8 +48,10 @@
         <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; padding:5px 12px; border-radius:6px; font-weight:600;">ClinicalUseDefinition (Interactions)</span>
       </div>
       <div>
-        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">subject of</span>
-        <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; padding:5px 12px; border-radius:6px; font-weight:600;">MedicationKnowledge</span>
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin-right:8px;">indication carries</span>
+        <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; padding:5px 12px; border-radius:6px; font-weight:600;">Dosing Guideline (extension)</span>
+        <span style="color:#6b7280; font-size:.85em; font-style:italic; margin:0 8px;">for</span>
+        <span style="background:#f0f9ff; border:1px solid #bae6fd; color:#075985; padding:5px 12px; border-radius:6px; font-weight:600;">Group (sub-population)</span>
       </div>
     </div>
 
@@ -176,24 +178,24 @@
 <div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
   <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">4</div>
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Add MedicationKnowledge for dosage regimens <span style="font-size:.76em; font-weight:500; color:#6b7280;">(optional)</span></div></div>
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Add structured dosing to each indication <span style="font-size:.76em; font-weight:500; color:#6b7280;">(optional)</span></div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">The <strong>MedicationKnowledge</strong> resource provides computable dosing rules and therapeutic classification. It can facilitate healthcare systems' ability to interpret authorized dosing information for specific patient populations.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Structured dosing is carried on each <strong>Indication ClinicalUseDefinition</strong> with the draft <a href="StructureDefinition-ext-epi-dosing-guideline.html">Dosing Guideline</a> extension, one per sub-population that has its own regimen. Each sub-population is a fully defined <strong>Group</strong>. For co-packaged products, each dose names the manufactured item it is taken from. See <a href="dosing-population-model.html">Dosing and Population Model</a>.</p>
       <table style="width:100%; border-collapse:collapse; font-size:.84em; margin-bottom:14px;">
         <thead><tr style="background:#003087; color:#fff;">
           <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left; width:35%;">What it captures</th>
           <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left;">Example values</th>
         </tr></thead>
         <tbody>
-          <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">ATC classification</td><td style="padding:9px 12px; border:1px solid #d0d0d0;"><code style="font-family:monospace; font-size:.79em; color:#0891b2;">N02BE01</code> — Paracetamol</td></tr>
           <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Dosage by population</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Adults: 500–1000 mg every 4–6 hours; max 4 g/day</td></tr>
           <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Paediatric dosing</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">10–15 mg/kg per dose; max 4 doses per day</td></tr>
-          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Renal / hepatic adjustment</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Reduce dose frequency in severe renal impairment</td></tr>
+          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Renal / hepatic adjustment</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">A stated dose for a renal band is its own sub-population; a rule such as "give 50% of the dose" is a Warning</td></tr>
+          <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Co-packaged items</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Two 150 mg tablets of one medicine with one 100 mg tablet of another, twice daily</td></tr>
         </tbody>
       </table>
       <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">💡</span>
-        <span><strong>Tip:</strong> MedicationKnowledge is valuable but complex to author. Consider adding it in a later iteration once the ClinicalUseDefinitions are validated and accepted. Your authoring tool should offer templates for common dosing patterns.</span>
+        <span><strong>Tip:</strong> Structured dosing is valuable but complex to author. Consider adding it in a later iteration once the ClinicalUseDefinitions are validated and accepted. Always keep the authorised wording in <code>Dosage.text</code>. The dosing extensions are draft and may change.</span>
       </div>
     </div>
   </div>
