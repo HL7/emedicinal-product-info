@@ -155,37 +155,4 @@
   </div>
 </div>
 
-<hr/>
-
-<!-- SPECIFIES / DECIDE -->
-<div class="sec" id="boundaries">What this IG specifies</div>
-<p class="sub">The IG defines the content and how its parts connect. Tools and processes around it are left to each organization and regulator.</p>
-
-<div class="grid2">
-  <div class="card in">
-    <div class="t">ePI specifies</div>
-    <ul>
-      <li>The structure of the document: Bundle, Composition, sections and narrative</li>
-      <li>Metadata, identifiers, versions and lifecycle status</li>
-      <li>How annotations (tracked changes and comment threads) are recorded</li>
-      <li>The product, clinical and population resources for Types 2 to 4</li>
-      <li>Bindings to national and international controlled terminologies</li>
-      <li>Lists for tracking collections of ePIs</li>
-    </ul>
-  </div>
-  <div class="card out">
-    <div class="t">Your applications decide</div>
-    <ul>
-      <li>Which authoring tool you use, and how drafts are written</li>
-      <li>How files are submitted and exchanged with the regulator</li>
-      <li>Review workflow, routing and sign-off</li>
-      <li>Rendering and styling: layout, columns, fonts and colours</li>
-      <li>Pack artwork, comparison reports and other outputs built from the content</li>
-      <li>Search, apps, and integration with EMRs and ePrescribing</li>
-    </ul>
-  </div>
-</div>
-
-<p style="margin:6px 0 32px;"><a class="more" href="gettingstarted.html">Ready to build? Get started →</a></p>
-
 </div>

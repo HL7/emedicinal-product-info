@@ -3,7 +3,7 @@
   <div style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.22em; color:#003087; margin-bottom:16px;">HL7 FHIR R5 · Vulcan Accelerator</div>
   <h1 style="font-size:2.4em; font-weight:800; line-height:1.15; margin-bottom:16px; color:#111827;">Product information,<br/><span style="background:linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">reimagined.</span></h1>
   <p style="font-size:1.05em; color:#6b7280; max-width:520px; margin:0 auto 32px; line-height:1.55;">One global standard to replace static PDFs, fragmented XML, and proprietary regulatory formats.</p>
-  <a href="gettingstarted.html" style="display:inline-block; background:#003087; color:#fff; padding:14px 28px; border-radius:8px; font-weight:700; font-size:1em; text-decoration:none;">Get Started</a>
+  <a href="how-it-works.html" style="display:inline-block; background:#003087; color:#fff; padding:14px 28px; border-radius:8px; font-weight:700; font-size:1em; text-decoration:none;">Get Started</a>
 </div>
 
 <!-- SHOWCASE STRIP -->
