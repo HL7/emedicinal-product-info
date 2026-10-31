@@ -30,27 +30,27 @@ Description: "Bundle - ePI Type 3 Duosynth (synthavir + boostavir co-pack) Examp
 * timestamp = "2026-10-28T10:00:00Z"
 * identifier.system = $example-id
 * identifier.value = "DUOSYNTH-BUNDLE-TYPE3"
-* entry[composition].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-duosynth"
+* entry[composition].fullUrl = "urn:uuid:85d6568c-42a3-5b10-998f-52c3b8c37916"
 * entry[composition].resource = composition-duosynth
-* entry[organization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-duosynth"
+* entry[organization].fullUrl = "urn:uuid:9af38590-24a3-5d95-bb58-5cf1f3815c41"
 * entry[organization].resource = org-duosynth
-* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-duosynth"
+* entry[medicinalProduct].fullUrl = "urn:uuid:c8eca3e8-9891-57ab-96e7-a62effec65e2"
 * entry[medicinalProduct].resource = mpd-duosynth
-* entry[packagedProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-duosynth"
+* entry[packagedProduct].fullUrl = "urn:uuid:4d467f40-8d8d-513d-aa6e-2954dd7bcb69"
 * entry[packagedProduct].resource = ppd-duosynth
-* entry[manufacturedItem][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-duosynth-synthavir"
+* entry[manufacturedItem][0].fullUrl = "urn:uuid:297ef167-a40a-5eed-ad6c-7d9028387462"
 * entry[manufacturedItem][0].resource = mid-duosynth-synthavir
-* entry[manufacturedItem][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-duosynth-boostavir"
+* entry[manufacturedItem][+].fullUrl = "urn:uuid:5b05a969-250a-5cf0-b7b5-9f39f48f964b"
 * entry[manufacturedItem][=].resource = mid-duosynth-boostavir
-* entry[clinicalUseDefinitionIndication].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-duosynth-covid19"
+* entry[clinicalUseDefinitionIndication].fullUrl = "urn:uuid:6a30c23b-6692-5cdd-a634-4b1c0616105a"
 * entry[clinicalUseDefinitionIndication].resource = cud-duosynth-covid19
-* entry[group][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-duosynth-adults"
+* entry[group][0].fullUrl = "urn:uuid:0e5a0ed0-ee55-5242-b69b-84fcdb343192"
 * entry[group][0].resource = group-duosynth-adults
-* entry[group][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-duosynth-renal-normal-mild"
+* entry[group][+].fullUrl = "urn:uuid:aca16fdc-4d11-5be9-913e-237d954877ca"
 * entry[group][=].resource = group-duosynth-renal-normal-mild
-* entry[group][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-duosynth-renal-moderate"
+* entry[group][+].fullUrl = "urn:uuid:9e95915b-a0d7-5e30-98d3-1c38f050995f"
 * entry[group][=].resource = group-duosynth-renal-moderate
-* entry[group][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-duosynth-renal-severe"
+* entry[group][+].fullUrl = "urn:uuid:b4471a34-3cc9-5aa5-8180-2ce0a1cc7a51"
 * entry[group][=].resource = group-duosynth-renal-severe
 
 // ---------------------------------------------------------------------------
@@ -114,15 +114,15 @@ Description: "PackagedProductDefinition - Carton of 30 tablets in 5 daily-dose b
 * identifier.system = $example-id
 * identifier.value = "ppd-duosynth"
 * status = $publication-status#active "Active"
-* packageFor = Reference(mpd-duosynth)
+* packageFor.reference = "urn:uuid:c8eca3e8-9891-57ab-96e7-a62effec65e2"
 * description = "A carton of 5 blister cards, one per day of treatment (30 tablets). Each card holds 4 synthavir 150 mg tablets and 2 boostavir 100 mg tablets, with the morning and evening doses marked."
 * packaging.type = $spor-rms#100000073498 "Box"
 * packaging.quantity = 1
 * packaging.packaging.type = $spor-rms#100000073496 "Blister"
 * packaging.packaging.quantity = 5
-* packaging.packaging.containedItem[0].item.reference = Reference(mid-duosynth-synthavir)
+* packaging.packaging.containedItem[0].item.reference.reference = "urn:uuid:297ef167-a40a-5eed-ad6c-7d9028387462"
 * packaging.packaging.containedItem[0].amount = 4 '{tablet}' "tablet"
-* packaging.packaging.containedItem[+].item.reference = Reference(mid-duosynth-boostavir)
+* packaging.packaging.containedItem[+].item.reference.reference = "urn:uuid:5b05a969-250a-5cf0-b7b5-9f39f48f964b"
 * packaging.packaging.containedItem[=].amount = 2 '{tablet}' "tablet"
 
 // ---------------------------------------------------------------------------
@@ -199,17 +199,17 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 * identifier.value = "cud-duosynth-covid19"
 * status = $publication-status#active "Active"
 * type = #indication
-* subject = Reference(mpd-duosynth)
-* population = Reference(group-duosynth-adults)
+* subject.reference = "urn:uuid:c8eca3e8-9891-57ab-96e7-a62effec65e2"
+* population.reference = "urn:uuid:0e5a0ed0-ee55-5242-b69b-84fcdb343192"
 * population.display = "Adults"
 * indication.diseaseSymptomProcedure.concept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2"
 * indication.diseaseSymptomProcedure.concept.text = "Treatment of mild or moderate COVID-19 in adults with a high risk of the illness becoming severe"
 * category = $epi-ig#indication "Indication"
 // -- Normal renal function or mild impairment: the standard regimen --
-* indication.extension[dosingGuideline][0].extension[population].valueReference = Reference(group-duosynth-renal-normal-mild)
+* indication.extension[dosingGuideline][0].extension[population].valueReference.reference = "urn:uuid:aca16fdc-4d11-5be9-913e-237d954877ca"
 * indication.extension[dosingGuideline][0].extension[population].valueReference.display = "Adults with eGFR 60 mL/min or more"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[type].valueCodeableConcept.text = "Days 1 to 5"
-* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-synthavir)
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:297ef167-a40a-5eed-ad6c-7d9028387462"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Synthavir 150 mg film-coated tablet (pink)"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.text = "300 mg synthavir (two 150 mg tablets) twice daily, morning and evening, for 5 days"
@@ -219,7 +219,7 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.timing.repeat.boundsDuration = 5 'd' "days"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.route = $sct#26643006 "Oral route"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.doseQuantity = 300 'mg' "mg"
-* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-boostavir)
+* indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:5b05a969-250a-5cf0-b7b5-9f39f48f964b"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Boostavir 100 mg film-coated tablet (white)"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][1].valueDosage.sequence = 1
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][1].valueDosage.text = "100 mg boostavir (one 100 mg tablet) twice daily, taken together with synthavir, for 5 days"
@@ -230,10 +230,10 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][1].valueDosage.route = $sct#26643006 "Oral route"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][1].valueDosage.doseAndRate.doseQuantity = 100 'mg' "mg"
 // -- Moderate renal impairment: one synthavir tablet instead of two --
-* indication.extension[dosingGuideline][1].extension[population].valueReference = Reference(group-duosynth-renal-moderate)
+* indication.extension[dosingGuideline][1].extension[population].valueReference.reference = "urn:uuid:9e95915b-a0d7-5e30-98d3-1c38f050995f"
 * indication.extension[dosingGuideline][1].extension[population].valueReference.display = "Adults with moderate renal impairment"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[type].valueCodeableConcept.text = "Days 1 to 5"
-* indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-synthavir)
+* indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:297ef167-a40a-5eed-ad6c-7d9028387462"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Synthavir 150 mg film-coated tablet (pink)"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.text = "150 mg synthavir (one 150 mg tablet) twice daily for 5 days"
@@ -243,7 +243,7 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.timing.repeat.boundsDuration = 5 'd' "days"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.route = $sct#26643006 "Oral route"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.doseQuantity = 150 'mg' "mg"
-* indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-boostavir)
+* indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:5b05a969-250a-5cf0-b7b5-9f39f48f964b"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Boostavir 100 mg film-coated tablet (white)"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][1].valueDosage.sequence = 1
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][1].valueDosage.text = "100 mg boostavir (one 100 mg tablet) twice daily, taken together with synthavir, for 5 days"
@@ -254,17 +254,17 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][1].valueDosage.route = $sct#26643006 "Oral route"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][1].valueDosage.doseAndRate.doseQuantity = 100 'mg' "mg"
 // -- Severe renal impairment (including haemodialysis): Day 1, then Days 2 to 5 --
-* indication.extension[dosingGuideline][2].extension[population].valueReference = Reference(group-duosynth-renal-severe)
+* indication.extension[dosingGuideline][2].extension[population].valueReference.reference = "urn:uuid:b4471a34-3cc9-5aa5-8180-2ce0a1cc7a51"
 * indication.extension[dosingGuideline][2].extension[population].valueReference.display = "Adults with severe renal impairment"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[type].valueCodeableConcept.text = "Day 1"
-* indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-synthavir)
+* indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:297ef167-a40a-5eed-ad6c-7d9028387462"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Synthavir 150 mg film-coated tablet (pink)"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.text = "300 mg synthavir (two 150 mg tablets) once on Day 1"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.timing.repeat.count = 1
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.route = $sct#26643006 "Oral route"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.doseAndRate.doseQuantity = 300 'mg' "mg"
-* indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-boostavir)
+* indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:5b05a969-250a-5cf0-b7b5-9f39f48f964b"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Boostavir 100 mg film-coated tablet (white)"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][1].valueDosage.sequence = 1
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][1].valueDosage.text = "100 mg boostavir (one 100 mg tablet) once on Day 1, taken together with synthavir"
@@ -272,7 +272,7 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][1].valueDosage.route = $sct#26643006 "Oral route"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][1].valueDosage.doseAndRate.doseQuantity = 100 'mg' "mg"
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[type].valueCodeableConcept.text = "Days 2 to 5"
-* indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-synthavir)
+* indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:297ef167-a40a-5eed-ad6c-7d9028387462"
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Synthavir 150 mg film-coated tablet (pink)"
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.sequence = 2
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.text = "150 mg synthavir (one 150 mg tablet) once daily on Days 2 to 5; on dialysis days, after haemodialysis"
@@ -282,7 +282,7 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.timing.repeat.boundsDuration = 4 'd' "days"
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.route = $sct#26643006 "Oral route"
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseQuantity = 150 'mg' "mg"
-* indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference = Reference(mid-duosynth-boostavir)
+* indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.reference = "urn:uuid:5b05a969-250a-5cf0-b7b5-9f39f48f964b"
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][1].valueDosage.extension[DosageManufacturedItem].valueReference.display = "Boostavir 100 mg film-coated tablet (white)"
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][1].valueDosage.sequence = 2
 * indication.extension[dosingGuideline][2].extension[dosage][1].extension[instruction][1].valueDosage.text = "100 mg boostavir (one 100 mg tablet) once daily on Days 2 to 5, taken together with synthavir"
@@ -297,7 +297,7 @@ Description: "ClinicalUseDefinition - Indication: mild-to-moderate COVID-19 in a
 // Composition (lean)
 // ---------------------------------------------------------------------------
 Instance: composition-duosynth
-InstanceOf: CompositionEpiType1
+InstanceOf: CompositionUvEpi
 Usage: #example
 Title: "Composition - Duosynth SmPC"
 Description: "Composition - Duosynth Summary of Product Characteristics (sections used by the dosing example)"
@@ -312,9 +312,9 @@ Description: "Composition - Duosynth Summary of Product Characteristics (section
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Duosynth Summary of Product Characteristics</p></div>"
 * type = $spor-rms#100000155532 "Summary of Product Characteristics"
-* subject = Reference(mpd-duosynth)
+* subject.reference = "urn:uuid:c8eca3e8-9891-57ab-96e7-a62effec65e2"
 * date = "2026-01-31"
-* author = Reference(org-duosynth)
+* author.reference = "urn:uuid:9af38590-24a3-5d95-bb58-5cf1f3815c41"
 * title = "Duosynth film-coated tablets - Summary of Product Characteristics"
 * section.id = "duosynth-root"
 * section.title = "SUMMARY OF PRODUCT CHARACTERISTICS"
@@ -327,18 +327,18 @@ Description: "Composition - Duosynth Summary of Product Characteristics (section
 * section.section[=].code = $spor-rms#200000029799 "4.1 Therapeutic indications"
 * section.section[=].text.status = #generated
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Duosynth is used to treat mild or moderate COVID-19 in adults with a high risk of the illness becoming severe.</p></div>"
-* section.section[=].entry[0] = Reference(cud-duosynth-covid19)
+* section.section[=].entry[0].reference = "urn:uuid:6a30c23b-6692-5cdd-a634-4b1c0616105a"
 // 4.2 Posology and method of administration
 * section.section[+].id = "duosynth-4-2"
 * section.section[=].title = "4.2 Posology and method of administration"
 * section.section[=].code = $spor-rms#200000029800 "4.2 Posology and method of administration"
 * section.section[=].text.status = #generated
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Duosynth contains synthavir tablets and boostavir tablets in one pack, always taken together. Adults take two synthavir 150 mg tablets with one boostavir 100 mg tablet by mouth twice a day for 5 days. The dose is lower in moderate and severe renal impairment (see the structured dosing on the indication).</p></div>"
-* section.section[=].entry[0] = Reference(cud-duosynth-covid19)
+* section.section[=].entry[0].reference = "urn:uuid:6a30c23b-6692-5cdd-a634-4b1c0616105a"
 // 6.5 Nature and contents of container
 * section.section[+].id = "duosynth-6-5"
 * section.section[=].title = "6.5 Nature and contents of container"
 * section.section[=].code = $spor-rms#200000029841 "6.5 Nature and contents of container"
 * section.section[=].text.status = #generated
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>A carton holds 5 blister cards, one for each day of treatment (30 tablets in total). Each card holds 4 synthavir 150 mg tablets and 2 boostavir 100 mg tablets, with the morning and evening doses marked.</p></div>"
-* section.section[=].entry[0] = Reference(ppd-duosynth)
+* section.section[=].entry[0].reference = "urn:uuid:4d467f40-8d8d-513d-aa6e-2954dd7bcb69"

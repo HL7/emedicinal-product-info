@@ -30,26 +30,26 @@ Description: "Bundle - ePI Type 3 Fungisynth (synthazole) Example - structured d
 * timestamp = "2026-10-28T10:00:00Z"
 * identifier.system = $ema-id
 * identifier.value = "FUNGISYNTH-BUNDLE-TYPE3"
-* entry[composition].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-fungisynth"
+* entry[composition].fullUrl = "urn:uuid:31228ca8-a846-5d8c-8e3a-e23c11a4628d"
 * entry[composition].resource = composition-fungisynth
-* entry[organization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-fungisynth"
+* entry[organization].fullUrl = "urn:uuid:a15fa17f-0ae2-5729-ade2-4d7950ab93f2"
 * entry[organization].resource = org-fungisynth
-* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-fungisynth"
+* entry[medicinalProduct].fullUrl = "urn:uuid:841c8d66-6460-5861-9a65-c050af14879f"
 * entry[medicinalProduct].resource = mpd-fungisynth
-* entry[clinicalUseDefinitionIndication][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-fungisynth-mucosal"
+* entry[clinicalUseDefinitionIndication][0].fullUrl = "urn:uuid:a4f5f28b-6ad6-54a5-93c3-3ca65dfd9e9d"
 * entry[clinicalUseDefinitionIndication][0].resource = cud-fungisynth-mucosal
-* entry[clinicalUseDefinitionIndication][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-fungisynth-invasive"
+* entry[clinicalUseDefinitionIndication][+].fullUrl = "urn:uuid:a0abde73-1d53-561d-974e-436ed90d453e"
 * entry[clinicalUseDefinitionIndication][=].resource = cud-fungisynth-invasive
-* entry[clinicalUseDefinitionWarning].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-fungisynth-renal"
+* entry[clinicalUseDefinitionWarning].fullUrl = "urn:uuid:245e41b3-e0f3-5efe-a2ae-14d2a84fc26c"
 * entry[clinicalUseDefinitionWarning].resource = cud-fungisynth-renal
 // Every population and sub-population is a fully defined Group entry.
-* entry[group][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-fungisynth-adult"
+* entry[group][0].fullUrl = "urn:uuid:3950162d-4748-5e9a-8b7e-6b3934e2d946"
 * entry[group][0].resource = group-fungisynth-adult
-* entry[group][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-fungisynth-child"
+* entry[group][+].fullUrl = "urn:uuid:8095cfb5-29f3-550b-958e-bb99f121642e"
 * entry[group][=].resource = group-fungisynth-child
-* entry[group][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-fungisynth-term-newborn"
+* entry[group][+].fullUrl = "urn:uuid:0c28d8f4-38a7-5d57-b45a-7ba68e19eb72"
 * entry[group][=].resource = group-fungisynth-term-newborn
-* entry[group][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-fungisynth-renal"
+* entry[group][+].fullUrl = "urn:uuid:d5c67721-0cd3-5e6d-9d1d-51cd36acb687"
 * entry[group][=].resource = group-fungisynth-renal
 
 // ---------------------------------------------------------------------------
@@ -146,11 +146,11 @@ Description: "ClinicalUseDefinition - Indication: mucosal (oropharyngeal) candid
 * identifier.value = "cud-fungisynth-mucosal"
 * status = $publication-status#active "Active"
 * type = #indication
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-fungisynth)
+* subject.reference = "urn:uuid:841c8d66-6460-5861-9a65-c050af14879f"
 * indication.diseaseSymptomProcedure.concept = $sct#79740000 "Candidiasis of mouth"
 * category = $epi-ig#indication "Indication"
 // -- Adults --
-* indication.extension[dosingGuideline][0].extension[population].valueReference = Reference(group-fungisynth-adult)
+* indication.extension[dosingGuideline][0].extension[population].valueReference.reference = "urn:uuid:3950162d-4748-5e9a-8b7e-6b3934e2d946"
 * indication.extension[dosingGuideline][0].extension[population].valueReference.display = "Adults"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[type].valueCodeableConcept.text = "Loading dose (Day 1)"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
@@ -167,7 +167,7 @@ Description: "ClinicalUseDefinition - Indication: mucosal (oropharyngeal) candid
 * indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseRange.low = 100 'mg' "mg"
 * indication.extension[dosingGuideline][0].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseRange.high = 200 'mg' "mg"
 // -- Children (28 days to 11 years): weight-based mg/kg --
-* indication.extension[dosingGuideline][1].extension[population].valueReference = Reference(group-fungisynth-child)
+* indication.extension[dosingGuideline][1].extension[population].valueReference.reference = "urn:uuid:8095cfb5-29f3-550b-958e-bb99f121642e"
 * indication.extension[dosingGuideline][1].extension[population].valueReference.display = "Children (28 days to 11 years)"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[type].valueCodeableConcept.text = "Initial dose (Day 1)"
 * indication.extension[dosingGuideline][1].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
@@ -182,7 +182,7 @@ Description: "ClinicalUseDefinition - Indication: mucosal (oropharyngeal) candid
 * indication.extension[dosingGuideline][1].extension[dosage][1].extension[instruction][0].valueDosage.timing.repeat.periodUnit = #d
 * indication.extension[dosingGuideline][1].extension[dosage][1].extension[instruction][0].valueDosage.doseAndRate.doseQuantity = 3 'mg/kg' "mg/kg"
 // -- Term newborns (0 to 14 days): same mg/kg, every 72 hours --
-* indication.extension[dosingGuideline][2].extension[population].valueReference = Reference(group-fungisynth-term-newborn)
+* indication.extension[dosingGuideline][2].extension[population].valueReference.reference = "urn:uuid:0c28d8f4-38a7-5d57-b45a-7ba68e19eb72"
 * indication.extension[dosingGuideline][2].extension[population].valueReference.display = "Term newborns (0 to 14 days)"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[type].valueCodeableConcept.text = "Neonatal dose"
 * indication.extension[dosingGuideline][2].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
@@ -207,8 +207,8 @@ Description: "ClinicalUseDefinition - Indication: invasive candidiasis (adults),
 * identifier.value = "cud-fungisynth-invasive"
 * status = $publication-status#active "Active"
 * type = #indication
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-fungisynth)
-* population = Reference(group-fungisynth-adult)
+* subject.reference = "urn:uuid:841c8d66-6460-5861-9a65-c050af14879f"
+* population.reference = "urn:uuid:3950162d-4748-5e9a-8b7e-6b3934e2d946"
 * population.display = "Adults"
 * indication.diseaseSymptomProcedure.concept = $sct#70572005 "Invasive candidiasis"
 * category = $epi-ig#indication "Indication"
@@ -238,8 +238,8 @@ Description: "ClinicalUseDefinition - Warning: dosage adjustment required in ren
 * identifier.value = "cud-fungisynth-renal"
 * status = $publication-status#active "Active"
 * type = #warning
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-fungisynth)
-* population = Reference(group-fungisynth-renal)
+* subject.reference = "urn:uuid:841c8d66-6460-5861-9a65-c050af14879f"
+* population.reference = "urn:uuid:d5c67721-0cd3-5e6d-9d1d-51cd36acb687"
 * population.display = "Renal impairment (CrCl ≤ 50 mL/min)"
 * warning.code = $sct#723188008 "Renal insufficiency"
 * warning.code.text = "In renal impairment (creatinine clearance 50 mL/min or less, not on haemodialysis), give the usual first dose, then half of the usual daily dose for multiple-dose treatment. Patients on haemodialysis receive the full dose after each session. No change is needed for single-dose treatment. The rule applies to every multiple-dose indication."
@@ -249,7 +249,7 @@ Description: "ClinicalUseDefinition - Warning: dosage adjustment required in ren
 // Composition (lean) - links the structured resources into the SmPC sections
 // ---------------------------------------------------------------------------
 Instance: composition-fungisynth
-InstanceOf: CompositionEpiType1
+InstanceOf: CompositionUvEpi
 Usage: #example
 Title: "Composition - Fungisynth SmPC"
 Description: "Composition - Fungisynth Summary of Product Characteristics"
@@ -264,9 +264,9 @@ Description: "Composition - Fungisynth Summary of Product Characteristics"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Fungisynth Summary of Product Characteristics</p></div>"
 * type = $spor-rms#100000155532 "Summary of Product Characteristics"
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-fungisynth)
+* subject.reference = "urn:uuid:841c8d66-6460-5861-9a65-c050af14879f"
 * date = "2026-06-17"
-* author = Reference(org-fungisynth)
+* author.reference = "urn:uuid:a15fa17f-0ae2-5729-ade2-4d7950ab93f2"
 * title = "Fungisynth 150 mg capsule - Summary of Product Characteristics"
 * section.id = "fungisynth-root"
 * section.title = "SUMMARY OF PRODUCT CHARACTERISTICS"
@@ -279,14 +279,14 @@ Description: "Composition - Fungisynth Summary of Product Characteristics"
 * section.section[=].code = $spor-rms#200000029799 "4.1 Therapeutic indications"
 * section.section[=].text.status = #generated
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Treatment of mucosal and invasive candidiasis.</p></div>"
-* section.section[=].entry[0] = Reference(cud-fungisynth-mucosal)
-* section.section[=].entry[+] = Reference(cud-fungisynth-invasive)
+* section.section[=].entry[0].reference = "urn:uuid:a4f5f28b-6ad6-54a5-93c3-3ca65dfd9e9d"
+* section.section[=].entry[+].reference = "urn:uuid:a0abde73-1d53-561d-974e-436ed90d453e"
 // 4.2 Posology and method of administration
 * section.section[+].id = "fungisynth-4-2"
 * section.section[=].title = "4.2 Posology and method of administration"
 * section.section[=].code = $spor-rms#200000029800 "4.2 Posology and method of administration"
 * section.section[=].text.status = #generated
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Dose depends on the indication and the patient population (structured dosing is carried on each indication). Renal impairment requires dose adjustment for multiple-dose therapy.</p></div>"
-* section.section[=].entry[0] = Reference(cud-fungisynth-mucosal)
-* section.section[=].entry[+] = Reference(cud-fungisynth-invasive)
-* section.section[=].entry[+] = Reference(cud-fungisynth-renal)
+* section.section[=].entry[0].reference = "urn:uuid:a4f5f28b-6ad6-54a5-93c3-3ca65dfd9e9d"
+* section.section[=].entry[+].reference = "urn:uuid:a0abde73-1d53-561d-974e-436ed90d453e"
+* section.section[=].entry[+].reference = "urn:uuid:245e41b3-e0f3-5efe-a2ae-14d2a84fc26c"

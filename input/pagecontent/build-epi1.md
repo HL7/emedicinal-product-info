@@ -215,7 +215,7 @@
       </table>
       <div style="background:#dcfce7; border:1px solid #bbf7d0; border-left:3px solid #16a34a; border-radius:6px; padding:10px 14px; font-size:.82em; color:#14532d; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">✅</span>
-        <span><strong>Validate:</strong> Run the completed Bundle against the <a href="StructureDefinition-bundle-epi-type1.html" style="color:#15803d; font-weight:600;">Type 1 FHIR Profile</a>. Fix any errors before submitting to your regulator. Full XML/JSON examples are in the <a href="artifacts.html" style="color:#15803d; font-weight:600;">Artifacts</a> section.</span>
+        <span><strong>Validate:</strong> Run the completed Bundle against the <a href="StructureDefinition-Bundle-uv-epi.html" style="color:#15803d; font-weight:600;">Type 1 FHIR Profile</a>. Fix any errors before submitting to your regulator. Full XML/JSON examples are in the <a href="artifacts.html" style="color:#15803d; font-weight:600;">Artifacts</a> section.</span>
       </div>
     </div>
   </div>

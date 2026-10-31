@@ -2,10 +2,9 @@ This Implementation Guide was developed under the auspices of the HL7 Vulcan Ele
 
 Contributing individuals and organisations are:
 
-**Current ePI project co-chairs:**
+**Project Lead**
 
 * **Craig Anderson** - Johnson & Johnson
-* **Catherine Chronaki** - HL7 Europe
 
 **Core project team members:**
 

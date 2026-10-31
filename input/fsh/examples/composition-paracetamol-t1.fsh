@@ -1,5 +1,5 @@
 Instance: composition-paracetamol-t1
-InstanceOf: CompositionEpiType1
+InstanceOf: CompositionUvEpi
 Usage: #example
 Title: "Composition - Paracetamol 500 mg tablets"
 Description: "Paracetamol 500 mg tablets Package Leaflet"

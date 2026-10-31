@@ -5,7 +5,10 @@
 
 **New Features and Model Updates:**
 
-* Split the single ePI Bundle profile into one Bundle profile per ePI Type (Type 1, Type 2 and Type 3)
+* Added Bundle profiles for ePI Type 2 (bundle-epi-type2) and Type 3 (bundle-epi-type3). They apply the same rules as Bundle (ePI), with entry slices for product and clinical resources
+* Composition (ePI) is now a single profile used by all ePI Types
+* Bundle.language is now optional, as in the base Bundle resource (it was required in 1.0.0)
+* Bundle.entry.fullUrl must now be a UUID URN (urn:uuid:...), as the 1.0.0 examples already used, and references between resources in a Bundle use those UUID URNs
 * Added the ePI Type 4 Dynamic Digital Label, with Concept, Domain and Topic sections linked to the resources they describe
 * Added the List profile for tracking collections of ePIs (by medicinal product, product group, jurisdiction or jurisdiction group), with list extensions and the ListEntryStatus code system
 * Added the Group profile for populations and sub-populations, with the Group Characteristic Type code system and value sets
@@ -36,8 +39,6 @@
 
 **Breaking Changes:**
 
-* Replaced the Bundle - ePI profile (Bundle-uv-epi) with bundle-epi-type1, bundle-epi-type2 and bundle-epi-type3
-* Replaced the Composition (ePI) profile (Composition-uv-epi) with composition-epi-type1, used by all ePI Types
 * Removed the MedicationKnowledge profile; structured dosing is now carried on the indication ClinicalUseDefinition
 
 ### Version = 1.0.0

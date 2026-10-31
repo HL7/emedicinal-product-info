@@ -1,7 +1,7 @@
-Profile: CompositionEpiType1
+Profile: CompositionUvEpi
 Parent: Composition
-Id: composition-epi-type1
-Title: "Composition - ePI Type 1 to 4"
+Id: Composition-uv-epi
+Title: "Composition (ePI)"
 Description: "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide. This profile applies to all ePI Types (1, 2, 3, and 4)."
 * ^status = #active
 * ^version = "1.1.0"

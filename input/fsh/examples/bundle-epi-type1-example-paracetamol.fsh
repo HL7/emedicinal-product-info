@@ -1,5 +1,5 @@
 Instance: bundle-epi-type1-example-paracetamol
-InstanceOf: BundleEpiType1
+InstanceOf: BundleUvEpi
 Usage: #example
 Title: "Bundle - ePI Type 1 Paracetamol Example"
 Description: "Bundle - ePI Type 1 Paracetamol Example"
@@ -10,5 +10,5 @@ Description: "Bundle - ePI Type 1 Paracetamol Example"
 * identifier.value = "epi-paracetamol-t1"
 * type = #document
 * timestamp = "2024-03-20T10:00:00Z"
-* entry[composition].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-paracetamol-t1"
+* entry[composition].fullUrl = "urn:uuid:f902cf48-9923-5cb9-a9f0-a5006e00c8e8"
 * entry[composition].resource = composition-paracetamol-t1

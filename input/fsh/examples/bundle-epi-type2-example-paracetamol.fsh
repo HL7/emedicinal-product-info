@@ -11,31 +11,31 @@ Description: "Bundle - ePI Type 2 Paracetamol Example"
 * timestamp = "2023-01-25T12:00:00Z"
 * identifier.system = $ema-id
 * identifier.value = "WONDERDRUG-500MG-BUNDLE"
-* entry[composition].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-epi-type2-example-paracetamol"
+* entry[composition].fullUrl = "urn:uuid:a4e4e6ce-a3ab-5967-93af-a5836fec42a1"
 * entry[composition].resource = composition-epi-type2-example-paracetamol
-* entry[organization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type2-example-acme"
+* entry[organization].fullUrl = "urn:uuid:280cf9fd-4ef9-5f40-bc01-d8a8db164270"
 * entry[organization].resource = org-epi-type2-example-acme
-* entry[medicinalProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
+* entry[medicinalProduct].fullUrl = "urn:uuid:b5404984-1a18-55be-8063-3e2bf21116a7"
 * entry[medicinalProduct].resource = mpd-epi-type2-example-paracetamol
-* entry[regulatedAuthorization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-paracetamol"
+* entry[regulatedAuthorization].fullUrl = "urn:uuid:5c5de587-118c-535a-bdaa-f1701bb9b065"
 * entry[regulatedAuthorization].resource = ra-epi-type2-example-paracetamol
-* entry[packagedProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-epi-type2-example-paracetamol"
+* entry[packagedProduct].fullUrl = "urn:uuid:5d4979f2-c283-5431-b3f0-8f1ebda56791"
 * entry[packagedProduct].resource = ppd-epi-type2-example-paracetamol
-* entry[manufacturedItem].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
+* entry[manufacturedItem].fullUrl = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * entry[manufacturedItem].resource = mid-epi-type2-example-paracetamol
-* entry[administrableProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
+* entry[administrableProduct].fullUrl = "urn:uuid:b1362b59-28d2-5b9e-8887-43fbdd66d3af"
 * entry[administrableProduct].resource = apd-epi-type2-example-paracetamol
-* entry[ingredient][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-active"
+* entry[ingredient][0].fullUrl = "urn:uuid:152bb643-f0a6-53e4-b2e6-3961a062533b"
 * entry[ingredient][0].resource = ingredient-epi-type2-example-paracetamol-active
-* entry[ingredient][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-excipient-1"
+* entry[ingredient][+].fullUrl = "urn:uuid:3ab37397-d11e-5662-9d49-2b2f6a77c4b4"
 * entry[ingredient][=].resource = ingredient-epi-type2-example-paracetamol-excipient-1
-* entry[ingredient][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-excipient-2"
+* entry[ingredient][+].fullUrl = "urn:uuid:e7d3633c-ce6f-552f-b5d8-fb2bc6292b4f"
 * entry[ingredient][=].resource = ingredient-epi-type2-example-paracetamol-excipient-2
-* entry[ingredient][+].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-excipient-3"
+* entry[ingredient][+].fullUrl = "urn:uuid:4c1ccfeb-4187-5d2a-9c1d-e326f0a21b44"
 * entry[ingredient][=].resource = ingredient-epi-type2-example-paracetamol-excipient-3
 
 Instance: composition-epi-type2-example-paracetamol
-InstanceOf: CompositionEpiType1
+InstanceOf: CompositionUvEpi
 Usage: #example
 Title: "Composition - Type 2 Paracetamol"
 Description: "Composition for Type 2 Paracetamol"
@@ -51,9 +51,9 @@ Description: "Composition for Type 2 Paracetamol"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Package Leaflet: Information for the user - Paracetamol Tablets</p></div>"
 * type = $spor-rms#100000155538 "Package Leaflet"
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol)
+* subject.reference = "urn:uuid:b5404984-1a18-55be-8063-3e2bf21116a7"
 * date = "2023-01-25"
-* author = Reference(org-epi-type2-example-acme)
+* author.reference = "urn:uuid:280cf9fd-4ef9-5f40-bc01-d8a8db164270"
 * title = "Package Leaflet: Information for the user - WonderDrug 500 mg tablets"
 * section.id = "root-section"
 * section.title = "Package Leaflet"
@@ -65,8 +65,8 @@ Description: "Composition for Type 2 Paracetamol"
 * section.section[=].code = $spor-rms#100000155538 "1. What is in this leaflet"
 * section.section[=].text.status = #generated
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><h2>1. What is in this leaflet</h2><p>Read all of this leaflet carefully before you start taking this medicine because it contains important information for you.</p></div>"
-* section.entry[0] = Reference(org-epi-type2-example-acme)
-* section.entry[+] = Reference(mpd-epi-type2-example-paracetamol)
+* section.entry[0].reference = "urn:uuid:280cf9fd-4ef9-5f40-bc01-d8a8db164270"
+* section.entry[+].reference = "urn:uuid:b5404984-1a18-55be-8063-3e2bf21116a7"
 // * section.entry[+] matches other resources... keeping it simple for now, can add all 15 if needed for validation
 
 Instance: binaryImage-t2
@@ -113,7 +113,7 @@ Description: "MedicinalProductDefinition for WonderDrug 500 mg tablets (Type 2 E
 * name.part[=].type = http://hl7.org/fhir/medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
 * name.usage.country = $iso3166#EE "Estonia"
 * name.usage.language = urn:ietf:bcp:47#et "Estonian"
-* contact.contact = Reference(org-epi-type2-example-acme)
+* contact.contact.reference = "urn:uuid:280cf9fd-4ef9-5f40-bc01-d8a8db164270"
 
 Instance: ra-epi-type2-example-paracetamol
 InstanceOf: RegulatedAuthorizationUvEpi
@@ -124,10 +124,10 @@ Description: "RegulatedAuthorization - WonderDrug 500 mg"
 * identifier.system = $ema-id
 * identifier.value = "MA-123456789"
 * status = $publication-status#active "Active"
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol)
+* subject.reference = "urn:uuid:b5404984-1a18-55be-8063-3e2bf21116a7"
 * type = $spor-rms#220000000061 "Marketing Authorisation"
 * region = $iso3166#EE "Estonia"
-* holder = Reference(org-epi-type2-example-acme)
+* holder.reference = "urn:uuid:280cf9fd-4ef9-5f40-bc01-d8a8db164270"
 
 Instance: ppd-epi-type2-example-paracetamol
 InstanceOf: PackagedProductDefinitionUvEpi
@@ -138,11 +138,11 @@ Description: "PackagedProductDefinition - WonderDrug 500 mg"
 * identifier.system = $example-id
 * identifier.value = "ppd-epi-type2-example-paracetamol"
 * status = $publication-status#active "Active"
-* packageFor = Reference(mpd-epi-type2-example-paracetamol)
+* packageFor.reference = "urn:uuid:b5404984-1a18-55be-8063-3e2bf21116a7"
 * packaging.type = $spor-rms#100000073498 "Box"
 * packaging.quantity = 1
 * packaging.packaging.type = $spor-rms#100000073496 "Blister"
-* packaging.packaging.containedItem.item.reference = Reference(mid-epi-type2-example-paracetamol)
+* packaging.packaging.containedItem.item.reference.reference = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * packaging.packaging.containedItem.amount.value = 30
 * packaging.packaging.containedItem.amount.unit = "Tablet"
 * packaging.packaging.containedItem.amount.system = $edqm
@@ -179,10 +179,10 @@ Description: "AdministrableProductDefinition - WonderDrug 500 mg"
 * identifier.system = $example-id
 * identifier.value = "apd-epi-type2-example-paracetamol"
 * status = #active
-* formOf = Reference(mpd-epi-type2-example-paracetamol)
+* formOf.reference = "urn:uuid:b5404984-1a18-55be-8063-3e2bf21116a7"
 * administrableDoseForm = $spor-rms#100000073664 "Tablet"
 * unitOfPresentation = $spor-rms#200000002152 "Tablet"
-* producedFrom = Reference(mid-epi-type2-example-paracetamol)
+* producedFrom.reference = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * routeOfAdministration.code = $spor-rms#100000073619 "Oral use"
 // Physical characteristics using named slices
 * property[shape].type = $epi-ig#shape "Shape"
@@ -203,7 +203,7 @@ Description: "Ingredient - Paracetamol"
 * identifier.system = $example-id
 * identifier.value = "ingredient-epi-type2-example-paracetamol-active"
 * status = #active
-* for = Reference(mid-epi-type2-example-paracetamol)
+* for.reference = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * role = $spor-rms#100000072072 "Active"
 * function = $spor-rms#100000136065 "API"
 * group = $spor-rms#100000136179 "Chemical"
@@ -242,7 +242,7 @@ Description: "Ingredient - Pregelatinised starch"
 * identifier.system = $example-id
 * identifier.value = "ingredient-epi-type2-example-paracetamol-excipient-1"
 * status = #active
-* for = Reference(mid-epi-type2-example-paracetamol)
+* for.reference = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * role = $spor-rms#100000072082 "Excipient"
 * substance.code.concept = $spor-sms#100000000001 "Pregelatinised starch"
 
@@ -255,7 +255,7 @@ Description: "Ingredient - Maize starch"
 * identifier.system = $example-id
 * identifier.value = "ingredient-epi-type2-example-paracetamol-excipient-2"
 * status = #active
-* for = Reference(mid-epi-type2-example-paracetamol)
+* for.reference = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * role = $spor-rms#100000072082 "Excipient"
 * substance.code.concept = $spor-sms#100000000002 "Maize starch"
 
@@ -268,6 +268,6 @@ Description: "Ingredient - Magnesium stearate"
 * identifier.system = $example-id
 * identifier.value = "ingredient-epi-type2-example-paracetamol-excipient-3"
 * status = #active
-* for = Reference(mid-epi-type2-example-paracetamol)
+* for.reference = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * role = $spor-rms#100000072082 "Excipient"
 * substance.code.concept = $spor-sms#100000000003 "Magnesium stearate"

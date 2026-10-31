@@ -11,56 +11,56 @@ Description: "Bundle - ePI Type 3 WonderDrug Example"
 * timestamp = "2023-10-27T10:00:00Z"
 * identifier.system = $ema-id
 * identifier.value = "WONDERDRUG-500MG-BUNDLE-TYPE3"
-* entry[composition].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Composition/composition-epi-type3-example-wonderdrug"
+* entry[composition].fullUrl = "urn:uuid:56ac262a-ec8e-523c-8355-fb1cac488b73"
 * entry[composition].resource = composition-epi-type3-example-wonderdrug
 * entry[organization].resource = org-epi-type3-example-pharma
-* entry[organization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type3-example-pharma"
+* entry[organization].fullUrl = "urn:uuid:e60b7d08-ba9e-54ff-abab-32d7fb9c81b7"
 * entry[medicinalProduct][0].resource = mpd-epi-type3-example-wonderdrug
-* entry[medicinalProduct][0].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug"
+* entry[medicinalProduct][0].fullUrl = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
 // referenced products
 * entry[medicinalProduct][1].resource = mpd-epi-type2-example-paracetamol-100mg
-* entry[medicinalProduct][1].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-100mg"
+* entry[medicinalProduct][1].fullUrl = "urn:uuid:5ea89521-8ca3-542c-928a-e12c4f2c480c"
 * entry[medicinalProduct][2].resource = mpd-epi-type2-example-paracetamol-200mg
-* entry[medicinalProduct][2].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol-200mg"
+* entry[medicinalProduct][2].fullUrl = "urn:uuid:3ee20dff-92d1-5c1c-82dd-abcac5ac09e9"
 * entry[medicinalProduct][+].resource = mpd-epi-type2-example-paracetamol
-* entry[medicinalProduct][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type2-example-paracetamol"
+* entry[medicinalProduct][=].fullUrl = "urn:uuid:b5404984-1a18-55be-8063-3e2bf21116a7"
 * entry[organization][+].resource = org-epi-type2-example-acme
-* entry[organization][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Organization/org-epi-type2-example-acme"
+* entry[organization][=].fullUrl = "urn:uuid:280cf9fd-4ef9-5f40-bc01-d8a8db164270"
 * entry[regulatedAuthorization].resource = ra-epi-type2-example-paracetamol
-* entry[regulatedAuthorization].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/RegulatedAuthorization/ra-epi-type2-example-paracetamol"
+* entry[regulatedAuthorization].fullUrl = "urn:uuid:5c5de587-118c-535a-bdaa-f1701bb9b065"
 * entry[packagedProduct].resource = ppd-epi-type2-example-paracetamol
-* entry[packagedProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/PackagedProductDefinition/ppd-epi-type2-example-paracetamol"
+* entry[packagedProduct].fullUrl = "urn:uuid:5d4979f2-c283-5431-b3f0-8f1ebda56791"
 * entry[manufacturedItem].resource = mid-epi-type2-example-paracetamol
-* entry[manufacturedItem].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ManufacturedItemDefinition/mid-epi-type2-example-paracetamol"
+* entry[manufacturedItem].fullUrl = "urn:uuid:c658a7a4-f077-5b3b-b4fb-b6098b67092b"
 * entry[administrableProduct].resource = apd-epi-type2-example-paracetamol
-* entry[administrableProduct].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/AdministrableProductDefinition/apd-epi-type2-example-paracetamol"
+* entry[administrableProduct].fullUrl = "urn:uuid:b1362b59-28d2-5b9e-8887-43fbdd66d3af"
 * entry[ingredient].resource = ingredient-epi-type2-example-paracetamol-active
-* entry[ingredient].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Ingredient/ingredient-epi-type2-example-paracetamol-active"
+* entry[ingredient].fullUrl = "urn:uuid:152bb643-f0a6-53e4-b2e6-3961a062533b"
 // Clinical Use Definitions
 * entry[clinicalUseDefinitionIndication][0].resource = cud-indication-1
-* entry[clinicalUseDefinitionIndication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-indication-1"
+* entry[clinicalUseDefinitionIndication][=].fullUrl = "urn:uuid:0c57242f-81da-5e4d-8025-a17cffa028d8"
 * entry[clinicalUseDefinitionIndication][+].resource = cud-indication-2
-* entry[clinicalUseDefinitionIndication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-indication-2"
+* entry[clinicalUseDefinitionIndication][=].fullUrl = "urn:uuid:cbbaa06c-46dc-5937-b9d4-70688af54eb8"
 * entry[clinicalUseDefinitionContraindication][0].resource = cud-contraindication-1
-* entry[clinicalUseDefinitionContraindication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-contraindication-1"
+* entry[clinicalUseDefinitionContraindication][=].fullUrl = "urn:uuid:8111e58a-18cd-5987-bd53-0f8e6977a4eb"
 * entry[clinicalUseDefinitionContraindication][+].resource = cud-contraindication-2
-* entry[clinicalUseDefinitionContraindication][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-contraindication-2"
+* entry[clinicalUseDefinitionContraindication][=].fullUrl = "urn:uuid:fcce9860-0200-50e3-abc3-2334e8fad562"
 * entry[clinicalUseDefinitionInteraction][0].resource = cud-interaction-1
-* entry[clinicalUseDefinitionInteraction][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-1"
+* entry[clinicalUseDefinitionInteraction][=].fullUrl = "urn:uuid:6f9c6f91-a679-5271-a348-7935d692b117"
 * entry[clinicalUseDefinitionInteraction][+].resource = cud-interaction-2
-* entry[clinicalUseDefinitionInteraction][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/ClinicalUseDefinition/cud-interaction-2"
+* entry[clinicalUseDefinitionInteraction][=].fullUrl = "urn:uuid:00638826-4006-531c-9f21-1310dd60f1a6"
 // Group entries
 * entry[group][0].resource = group-epi-type3-example-adult-men
-* entry[group][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-men"
+* entry[group][=].fullUrl = "urn:uuid:78cefa22-a8c3-5eaa-8614-35f79580fa7c"
 * entry[group][+].resource = group-epi-type3-example-adult-women
-* entry[group][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-adult-women"
+* entry[group][=].fullUrl = "urn:uuid:0639a374-37e9-5229-ad5b-3e24c3138195"
 * entry[group][+].resource = group-epi-type3-example-children
-* entry[group][=].fullUrl = "http://hl7.org/fhir/uv/emedicinal-product-info/Group/group-epi-type3-example-children"
+* entry[group][=].fullUrl = "urn:uuid:2e2bb2b7-a82b-54a2-8969-1657fef20d2c"
 // * entry[undesirableEffect]... (add if needed, keeping it covering main types)
 
 
 Instance: composition-epi-type3-example-wonderdrug
-InstanceOf: CompositionEpiType1
+InstanceOf: CompositionUvEpi
 Usage: #example
 Title: "Composition - ePI Type 3 WonderDrug SMPC"
 Description: "Composition - ePI Type 3 WonderDrug Summary of Product Characteristics"
@@ -76,9 +76,9 @@ Description: "Composition - ePI Type 3 WonderDrug Summary of Product Characteris
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>WonderDrug Summary of Product Characteristics</p></div>"
 * type = $spor-rms#100000155532 "Summary of Product Characteristics"
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
+* subject.reference = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
 * date = "2023-10-27"
-* author = Reference(org-epi-type3-example-pharma)
+* author.reference = "urn:uuid:e60b7d08-ba9e-54ff-abab-32d7fb9c81b7"
 * title = "WonderDrug 500 mg tablets - Summary of Product Characteristics"
 
 // Parent Section: SUMMARY OF PRODUCT CHARACTERISTICS
@@ -329,7 +329,7 @@ Description: "MedicinalProductDefinition for WonderDrug 500 mg tablets (Type 3 E
 * name.part[=].type = http://hl7.org/fhir/medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
 * name.usage.country = $iso3166#EE "Estonia"
 * name.usage.language = urn:ietf:bcp:47#et "Estonian"
-* contact.contact = Reference(org-epi-type3-example-pharma)
+* contact.contact.reference = "urn:uuid:e60b7d08-ba9e-54ff-abab-32d7fb9c81b7"
 
 Instance: mpd-epi-type2-example-paracetamol-100mg
 InstanceOf: MedicinalProductDefinitionUvEpi
@@ -363,8 +363,8 @@ Description: "ClinicalUseDefinition - Indication Fever"
 * identifier.value = "cud-indication-1"
 * status = $publication-status#active "Active"
 * type = #indication
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population = Reference(group-epi-type3-example-adult-men)
+* subject.reference = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
+* population.reference = "urn:uuid:78cefa22-a8c3-5eaa-8614-35f79580fa7c"
 * population.display = "Adult Men"
 * indication.diseaseSymptomProcedure.concept = $sct#386661006 "Fever"
 * category = $epi-ig#indication "Indication"
@@ -381,8 +381,8 @@ Description: "ClinicalUseDefinition - Indication Pain"
 * identifier.value = "cud-indication-2"
 * status = $publication-status#active "Active"
 * type = #indication
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population = Reference(group-epi-type3-example-adult-men)
+* subject.reference = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
+* population.reference = "urn:uuid:78cefa22-a8c3-5eaa-8614-35f79580fa7c"
 * population.display = "Adult Men"
 * indication.diseaseSymptomProcedure.concept = $sct#22253000 "Pain"
 * category = $epi-ig#indication "Indication"
@@ -399,8 +399,8 @@ Description: "ClinicalUseDefinition - Contraindication Hepatic Failure"
 * identifier.value = "cud-contraindication-1"
 * status = $publication-status#active "Active"
 * type = #contraindication
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population = Reference(group-epi-type3-example-adult-men)
+* subject.reference = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
+* population.reference = "urn:uuid:78cefa22-a8c3-5eaa-8614-35f79580fa7c"
 * population.display = "Adult Men"
 * contraindication.diseaseSymptomProcedure.concept = $sct#197270009 "Acute hepatic failure"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#contraindication "Contraindication"
@@ -415,7 +415,7 @@ Description: "ClinicalUseDefinition - Interaction Warfarin"
 * identifier.value = "cud-interaction-1"
 * status = $publication-status#active "Active"
 * type = #interaction
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
+* subject.reference = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
 * interaction.interactant.itemCodeableConcept = $sct#372756006 "Warfarin"
 * interaction.effect.concept = $sct#404684003 "Clinical finding (finding)"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction "Interaction"
@@ -429,8 +429,8 @@ Description: "ClinicalUseDefinition - Contraindication Paracetamol"
 * identifier.value = "cud-contraindication-2"
 * status = $publication-status#active "Active"
 * type = #contraindication
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
-* population = Reference(group-epi-type3-example-adult-men)
+* subject.reference = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
+* population.reference = "urn:uuid:78cefa22-a8c3-5eaa-8614-35f79580fa7c"
 * population.display = "Adult Men"
 * contraindication.otherTherapy.treatment.concept = $sct#763158003 "Medicinal product (product)"
 * contraindication.otherTherapy.relationshipType = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship#contraindicated-only-with "Only contraindicated with"
@@ -446,7 +446,7 @@ Description: "ClinicalUseDefinition - Interaction Other"
 * identifier.value = "cud-interaction-2"
 * status = $publication-status#active "Active"
 * type = #interaction
-* subject = Reference(http://hl7.org/fhir/uv/emedicinal-product-info/MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug)
+* subject.reference = "urn:uuid:6bb73851-42dc-54a8-a586-669149dd79b8"
 * interaction.interactant.itemCodeableConcept = http://www.nlm.nih.gov/research/umls/rxnorm#11289 "Warfarin"
 * category = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#interaction "Interaction"
 
