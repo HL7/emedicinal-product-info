@@ -7,6 +7,8 @@
 
 * Added Bundle profiles for ePI Type 2 (bundle-epi-type2) and Type 3 (bundle-epi-type3). They apply the same rules as Bundle (ePI), with entry slices for product and clinical resources
 * Composition (ePI) is now a single profile used by all ePI Types
+* Composition.status is limited to the ePI lifecycle states (preliminary, final, deprecated, cancelled, entered-in-error), and Composition.type has an example value set of national document types
+* Clarified element descriptions on Bundle (ePI) and Composition (ePI), including the SPL Set ID and Document ID equivalents
 * Bundle.language is now optional, as in the base Bundle resource (it was required in 1.0.0)
 * Bundle.entry.fullUrl must now be a UUID URN (urn:uuid:...), as the 1.0.0 examples already used, and references between resources in a Bundle use those UUID URNs
 * Added the ePI Type 4 Dynamic Digital Label, with Concept, Domain and Topic sections linked to the resources they describe

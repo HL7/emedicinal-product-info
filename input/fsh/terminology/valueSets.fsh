@@ -219,13 +219,51 @@ Description: "Substances"
 //=========================
 ValueSet: VsEpiType
 Id: epiType
-Title: "ePI document types"
-Description: "ePI document types"
+Title: "ePI Document Type (Example)"
+Description: "Example ePI document types. Each regulator populates Composition.type from the document types of its own national drug label templates. This example includes US FDA and EMA document types; Health Canada and Japan (PMDA) document types are shown with placeholder codes from this IG until their published codes are added."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+// US FDA (LOINC)
+* $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
+* $loinc#34390-5	"HUMAN OTC DRUG LABEL"
+// EMA (SPOR RMS document types)
+* $spor-rms#100000155532 "Summary of Product Characteristics"
+* $spor-rms#100000155538 "Package Leaflet"
+* $spor-rms#100000155535 "Labelling"
+* $spor-rms#100000155533 "Annex II"
+// Health Canada and Japan (placeholders until official codes are added)
+* EpiDocumentTypeExampleCS#hc-product-monograph "Product Monograph (Health Canada)"
+* EpiDocumentTypeExampleCS#hc-patient-medication-information "Patient Medication Information (Health Canada)"
+* EpiDocumentTypeExampleCS#jp-rx-package-insert "Package insert for prescription drugs (Japan)"
+* EpiDocumentTypeExampleCS#jp-patient-drug-guide "Drug guide for patients (Japan)"
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+
+CodeSystem: EpiDocumentTypeExampleCS
+Id: epi-document-type-example
+Title: "ePI Document Type Placeholder Codes (Example)"
+Description: "Placeholder document type codes used in the example ePI Document Type value set for regulators whose official document type codes are not yet included in this IG. Not for production use: use the regulator's own code system."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* ^status = #draft
+* ^caseSensitive = true
+* ^content = #complete
+* #hc-product-monograph "Product Monograph (Health Canada)"
+* #hc-patient-medication-information "Patient Medication Information (Health Canada)"
+* #jp-rx-package-insert "Package insert for prescription drugs (Japan)"
+* #jp-patient-drug-guide "Drug guide for patients (Japan)"
+
+//==========================
+ValueSet: EpiCompositionStatus
+Id: epi-composition-status
+Title: "ePI Composition Status"
+Description: "Lifecycle states of an ePI document, as described on the Version Control page."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
-* $loinc#34390-5	"HUMAN OTC DRUG LABEL"
-* $loinc#34391-3	"HUMAN PRESCRIPTION DRUG LABEL"
-* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+* http://hl7.org/fhir/composition-status#preliminary "Preliminary"
+* http://hl7.org/fhir/composition-status#final "Final"
+* http://hl7.org/fhir/composition-status#deprecated "Deprecated"
+* http://hl7.org/fhir/composition-status#cancelled "Cancelled"
+* http://hl7.org/fhir/composition-status#entered-in-error "Entered in Error"
 
 
 //==========================

@@ -7,8 +7,8 @@ RuleSet: EpiBundleCommon
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..1
-* identifier ^short = "Persistent business identifier for the Bundle that does not change across versions. Similar to SPL SetID."
-* identifier ^definition = "Persistent business identifier for the Bundle that does not change across versions. Similar to SPL SetID."
+* identifier ^short = "Persistent business identifier (UUID) for the Bundle. Does not change across versions (same as SPL Set ID)"
+* identifier ^definition = "Persistent business identifier, as a UUID, for the Bundle. It stays the same across all versions of the ePI, so every version can be grouped together. Equivalent to the SPL Set ID."
 * type = #document (exactly)
 * timestamp 1..
 * timestamp ^short = "Persistent original date of approval."
