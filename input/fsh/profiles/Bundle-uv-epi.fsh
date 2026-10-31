@@ -13,17 +13,17 @@ RuleSet: EpiBundleCommon
 * timestamp 1..
 * timestamp ^short = "Persistent original date of approval."
 * timestamp ^definition = "Persistent original date of approval."
+* entry[composition] ^short = "Composition (ePI): carries the label content (e.g., section headings, text, images, tables)"
+* entry[composition] ^definition = "The Composition (ePI) that carries the label content (e.g., section headings, text, images, tables)."
+* entry[composition].resource only CompositionUvEpi
+
+RuleSet: EpiBundleSlicing(rules)
 * entry 1..*
 * entry obeys epi-bdl-uuid
 * entry.fullUrl 1..1
 * entry.fullUrl ^short = "UUID for the resource"
 * entry.fullUrl ^definition = "UUID for the resource, as a UUID URN (urn:uuid:...). References between resources in the Bundle use the same UUID URN."
 * entry.resource 1..1
-* entry[composition] ^short = "Composition (ePI): carries the label content (e.g., section headings, text, images, tables)"
-* entry[composition] ^definition = "The Composition (ePI) that carries the label content (e.g., section headings, text, images, tables)."
-* entry[composition].resource only CompositionUvEpi
-
-RuleSet: EpiBundleSlicing(rules)
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = {rules}
