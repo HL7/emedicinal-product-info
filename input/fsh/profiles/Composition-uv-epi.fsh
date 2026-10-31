@@ -137,4 +137,4 @@ Description: "This profile represents the constraints applied to the Composition
 
 // Terminology
 * status from EpiCompositionStatus (required)
-* type from VsEpiType (example)
+* type from VsEpiType (preferred)
