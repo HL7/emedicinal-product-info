@@ -27,5 +27,7 @@ Description: "SubstanceDefinition (ePI)"
 * structure.molecularFormula MS
 * structure.molecularFormula ^short = "Number and type of atoms in a molecule of the substance (e.g., C8H9NO2 for paracetamol)"
 * name MS
+* name.name MS
+* name.name ^short = "The actual name of the substance (e.g., paracetamol)"
 * name.language ^short = "Language of the name, as a two-letter ISO 639-1 code or IETF BCP 47 language tag (e.g., en, fr, ja)"
 * name.language ^definition = "Human language that the name is written in. Use a two-letter ISO 639-1 language code, or an IETF BCP 47 language tag where a region or script is needed (e.g., en, fr, ja, en-CA)."
