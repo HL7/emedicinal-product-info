@@ -161,7 +161,9 @@ Description: "AdministrableProductDefinition - WonderDrug 500 mg Carton"
 * property[flavor].type = $epi-ig#flavor "Flavor"
 * property[flavor].valueCodeableConcept = $spor-rms#100000000000 "None"
 * property[image].type = $epi-ig#image "Image"
-* property[image].valueCodeableConcept = $spor-rms#100000000000 "Tablet Image"
+* property[image].valueAttachment.contentType = #image/png
+* property[image].valueAttachment.data = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+* property[image].valueAttachment.title = "Tablet image"
 
 Instance: ingredient-epi-type2-example-blister-carton-active
 InstanceOf: IngredientUvEpi
