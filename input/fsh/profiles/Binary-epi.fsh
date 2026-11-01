@@ -11,3 +11,5 @@ Description: "This profile represents the constraints applied to the Binary reso
 * contentType ^definition = "MimeType of the binary content represented as a standard MIME type. This is used to clarify the image type being exchanged (e.g., SVG, PNG, JPEG)."
 * securityContext 0..0
 * data 1..
+* data ^short = "The actual base64 content of the image"
+* data ^definition = "The image itself, encoded as base64, in the format given by contentType."

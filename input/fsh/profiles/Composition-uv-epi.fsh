@@ -31,8 +31,8 @@ Description: "This profile represents the constraints applied to the Composition
 * contained ^slicing.rules = #open
 * contained contains binaryImage 0..*
 * contained[binaryImage] only BinaryEpi
-* identifier.system 1..1
-* identifier.value 1..1
+* contained[binaryImage] ^short = "All images used in the ePI, each embedded as a base64-encoded Binary resource"
+* contained[binaryImage] ^definition = "Every image used in the ePI (for example, pictograms, chemical structures, diagrams and pack artwork) is embedded in the Composition as a contained Binary resource holding the base64-encoded image. The section text displays each image by referencing the contained Binary by its id (<img src=\"#id\"/>)."
 * status 1..
 * type.coding 1..1
 * type.coding.system 1..1
