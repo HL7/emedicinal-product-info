@@ -13,7 +13,8 @@ Each population axis (sex, age, weight, race, lifestyle, renal/hepatic function,
 * ^experimental = true
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * membership = #definitional
-* membership ^short = "definitional - the group is defined by the characteristics below, not by an enumerated member list"
+* membership ^short = "definitional: the population is described by its characteristics (e.g., adults with severe renal impairment), not by a list of individuals"
+* membership ^definition = "Always definitional in ePI. The group describes the population that an indication, contraindication, interaction, undesirable effect, warning or dose applies to, using its characteristics (e.g., age, body weight, renal function). It never lists individual patients."
 * type = #person
 * characteristic 1..*
 * characteristic ^slicing.discriminator.type = #pattern

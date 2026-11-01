@@ -10,33 +10,26 @@ Description: "RegulatedAuthorization (ePI)"
 * identifier ^short = "The unique identifier for this authorization (e.g., marketing authorization number)"
 * subject 1..
 * subject only Reference(MedicinalProductDefinition-uv-epi or PackagedProductDefinition-uv-epi)
-* type.coding 1..1
-* type.coding.system 1..1
-* type.coding.code 1..1
-* type.coding.display 1..1
-* status.coding 1..1
-* status.coding.system 1..1
-* status.coding.code 1..1
-* status.coding.display 1..1
+* subject ^short = "The medicinal product or package that is being authorized"
+* type ^short = "The type of authorization (e.g., marketing authorization)"
+* description ^short = "General textual supporting information"
+* region ^short = "The territory in which the authorization has been granted"
+* status ^short = "The status that is authorized (e.g., approved, withdrawn)"
 * statusDate ^short = "The date at which the current status was assigned."
-* indication.concept.coding 1..1
-* indication.concept.coding.system 1..1
-* indication.concept.coding.code 1..1
-* indication.concept.coding.display 1..1
-* basis.coding 1..1
-* basis.coding.system 1..1
-* basis.coding.code 1..1
-* basis.coding.display 1..1
+* validityPeriod ^short = "The time period in which the regulatory approval, clearance or licensing is in effect"
+* indication only CodeableReference(ClinicalUseDefinition-indication-uv-epi)
+* indication ^short = "The condition or disease that this authorization is for"
+* intendedUse ^short = "The intended use of the product (e.g., prevention, treatment)"
+* basis ^short = "The legal or regulatory framework under which this authorization is granted (e.g., full application, generic application)"
 * holder 1..
 * holder only Reference(Organization-uv-epi)
+* holder ^short = "The organization that has been granted this authorization (the marketing authorization holder)"
 * regulator only Reference(Organization-uv-epi)
+* regulator ^short = "The regulatory authority that grants the authorization"
+* attachedDocument ^short = "Additional information or supporting documentation about the authorization"
 * case ^short = "The case or regulatory procedure for granting or amending a regulated authorization."
 * case.identifier ^short = "The identifier for the regulatory case or procedure (e.g., procedure number)"
-* case.type.coding 1..1
-* case.type.coding.system 1..1
-* case.type.coding.code 1..1
-* case.type.coding.display 1..1
-* case.status.coding 1..1
-* case.status.coding.system 1..1
-* case.status.coding.code 1..1
-* case.status.coding.display 1..1
+* case.type ^short = "The defining type of case (e.g., initial application, variation, renewal)"
+* case.status ^short = "The status associated with the case"
+* case.date[x] ^short = "Relevant date for this case, as a single date or a period"
+* case.application ^short = "Applications submitted to obtain a regulated authorization, as steps within the case"

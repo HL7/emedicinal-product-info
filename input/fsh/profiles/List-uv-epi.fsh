@@ -40,13 +40,9 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * title ^definition = "This is a simple title for the List"
 
 * code 1..1
-* code from epi-list-type-vs (required)
+* code from epi-list-type-vs (example)
 * code ^short = "What the purpose of this list is"
 * code ^definition = "This code defines the purpose of the list - why it was created."
-* code.coding 1..1
-* code.coding.system 1..1
-* code.coding.code 1..1
-* code.coding.display 1..1
 
 * subject 0..*
 * subject only Reference(MedicinalProductDefinitionUvEpi)
