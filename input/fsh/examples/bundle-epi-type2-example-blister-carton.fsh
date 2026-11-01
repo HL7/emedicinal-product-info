@@ -81,6 +81,7 @@ Description: "MedicinalProductDefinition for WonderDrug 500 mg tablets (Type 2 E
 * name.part[=].type = http://hl7.org/fhir/medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
 * name.usage.country = $iso3166#EE "Estonia"
 * name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* contact.type = $epi-ig#marketing-authorization-holder "Marketing authorization holder"
 * contact.contact.reference = "urn:uuid:280cf9fd-4ef9-5f40-bc01-d8a8db164270"
 
 Instance: ra-epi-type2-example-blister-carton

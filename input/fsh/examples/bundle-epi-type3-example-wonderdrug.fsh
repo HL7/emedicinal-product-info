@@ -329,6 +329,7 @@ Description: "MedicinalProductDefinition for WonderDrug 500 mg tablets (Type 3 E
 * name.part[=].type = http://hl7.org/fhir/medicinal-product-name-part-type#DoseFormPart "Pharmaceutical dose form part"
 * name.usage.country = $iso3166#EE "Estonia"
 * name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* contact.type = $epi-ig#marketing-authorization-holder "Marketing authorization holder"
 * contact.contact.reference = "urn:uuid:e60b7d08-ba9e-54ff-abab-32d7fb9c81b7"
 
 Instance: mpd-epi-type2-example-paracetamol-100mg

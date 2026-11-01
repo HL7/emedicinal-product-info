@@ -20,6 +20,7 @@ Coded concepts defined for ePI use only."""
 * #interaction "Interaction" "Interaction"
 * #undesirable-effect "Undesirable effect" "Undesirable effect"
 * #warning "Warning" "Warning"
+* #marketing-authorization-holder "Marketing authorization holder" "The organization that holds the marketing authorization for the medicinal product"
 
 CodeSystem: BenefitAndRiskRelationship
 Id: benefit-and-risk-relationship

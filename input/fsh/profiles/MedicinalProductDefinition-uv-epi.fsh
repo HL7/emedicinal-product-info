@@ -66,13 +66,13 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * marketingStatus.dateRange ^short = "The date when the status became effective."
 * packagedMedicinalProduct ^short = "Package representation for the product."
 * comprisedOf ^short = "Types of manufactured items that are part of this product."
-* ingredient ^short = "The ingredients of this medicinal product - when not detailed in other resources."
-* contact ^short = "A product specific contact, person (in a role), or an organization."
-* contact.type.coding 1..1
-* contact.type.coding.system 1..1
-* contact.type.coding.code 1..1
-* contact.type.coding.display 1..1
-* contact.contact ^short = "A product specific contact, person (in a role), or an organization."
+* ingredient 0..0
+* impurity 0..0
+* contact ^short = "The marketing authorization holder for this product"
+* contact.type = $epi-ig#marketing-authorization-holder "Marketing authorization holder"
+* contact.type ^short = "Marketing authorization holder"
+* contact.contact only Reference(Organization-uv-epi)
+* contact.contact ^short = "The organization that holds the marketing authorization"
 * name 1..
 * name.productName ^short = "The full product name expressed as Proprietary Name (Non-Proprietary Name) strength dose form"
 * name.type.coding 1..1
@@ -98,6 +98,7 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * name.part[InventedNamePart].type = http://hl7.org/fhir/medicinal-product-name-part-type#InventedNamePart
 * name.part[StrengthPart] ^short = "Strength"
 * name.part[StrengthPart].type = http://hl7.org/fhir/medicinal-product-name-part-type#StrengthPart
+* name.part[StrengthPart].part ^short = "The strength as text, with the number and units together (e.g., 500 mg)"
 * name.part[PharmaceuticalDosePart] ^short = "Dose Form"
 * name.part[PharmaceuticalDosePart].type = http://hl7.org/fhir/medicinal-product-name-part-type#DoseFormPart
 * name.part[TrademarkOrOtherSuffixPart] ^short = "Suffix"
