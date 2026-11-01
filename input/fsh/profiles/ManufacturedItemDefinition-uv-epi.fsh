@@ -99,6 +99,8 @@ Description: "Describes the product as the dose form in its primary packaging an
 * property[image].valueAttachment.contentType ^short = "Mime type of the image (e.g., image/png, image/jpeg)"
 * property[image].valueAttachment.data 1..1
 * property[image].valueAttachment.data ^short = "The image data, base64-encoded"
+* property[image].valueAttachment.url 0..0
+* property[image].valueAttachment ^comment = "The image is embedded in this resource as base64 data. It is not a link to a Binary or to any other location."
 * property[imprint] ^short = "The imprint on the item"
 * property[imprint].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#imprint
 * property[imprint].type.coding.code = #imprint

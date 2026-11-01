@@ -19,6 +19,7 @@ Description: "RegulatedAuthorization (ePI)"
 * validityPeriod ^short = "The time period in which the regulatory approval, clearance or licensing is in effect"
 * indication only CodeableReference(ClinicalUseDefinition-indication-uv-epi)
 * indication ^short = "The condition or disease that this authorization is for"
+* indication ^comment = "Use only when the indication is carried as a ClinicalUseDefinition (Indication) in the same Bundle (ePI Type 3). Otherwise leave this empty and give the authorized indication as text in MedicinalProductDefinition.indication."
 * intendedUse ^short = "The intended use of the product (e.g., prevention, treatment)"
 * basis ^short = "The legal or regulatory framework under which this authorization is granted (e.g., full application, generic application)"
 * holder 1..

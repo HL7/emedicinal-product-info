@@ -37,6 +37,7 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * combinedPharmaceuticalDoseForm ^short = "The dose form for a single part product, or combined form of a multiple part product."
 * route ^short = "The path by which the product is taken into or makes contact with the body."
 * indication ^short = "Narrative text of the authorized indication(s) for this product."
+* indication ^comment = "Use this text when the indication is not carried as a ClinicalUseDefinition (Indication), for example in an ePI Type 2 Bundle."
 * legalStatusOfSupply ^short = "The legal status of supply of the medicinal product as classified by the regulator."
 * additionalMonitoringIndicator.coding 1..1
 * additionalMonitoringIndicator.coding.system 1..1

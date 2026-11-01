@@ -19,7 +19,7 @@ RuleSet: EpiBundleCommon
 
 RuleSet: EpiBundleSlicing(rules)
 * entry 1..*
-* entry obeys epi-bdl-uuid
+* entry obeys epi-bdl-uuid and epi-bdl-no-binary
 * entry.fullUrl 1..1
 * entry.fullUrl ^short = "UUID for the resource"
 * entry.fullUrl ^definition = "UUID for the resource, as a UUID URN (urn:uuid:...). References between resources in the Bundle use the same UUID URN."
