@@ -18,10 +18,10 @@ Usage: #example
 * date = "2025-06-15"
 
 // subject needs to reference MedicinalProductDefinition
-* subject[0] = Reference(mpd-epi-type2-example-paracetamol)
+* subject[0] = Reference(mpd-wonderdrug-tablets)
 
 // source needs to reference Organization
-* source = Reference(org-epi-type2-example-acme)
+* source = Reference(org-wonderpharma)
 
 // 1. Brunei
 * entry[0].date = "2026-03-27"

@@ -54,9 +54,9 @@
 
   <div class="section-title">ePI XML Build Templates</div>
   <div class="ex-section">
-    <p>Fully annotated, copy-pasteable XML examples serving as foundational build templates for ePI construction. Click to view the raw source files on GitHub.</p>
+    <p>Copy-pasteable XML build templates for ePI construction. Each template is the WonderDrug 500 mg tablets example for that ePI type, with a comment before every element that says whether it is required or optional and what it holds. Each type builds on the one before: Type 2 adds the product data to Type 1, and Type 3 adds the clinical data to Type 2. Click to view the raw source files on GitHub.</p>
     <div class="ex-grid">
-      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/instances/Bundle-template-epi-type1.xml" target="_blank">
+      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/Bundle-template-epi-type1.xml" target="_blank">
         <div class="ex-icon">📄</div>
         <div class="ex-text">
           <div class="ex-title">ePI Type 1 Template</div>
@@ -64,7 +64,7 @@
         </div>
         <div class="ex-arrow">GitHub →</div>
       </a>
-      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/instances/Bundle-template-epi-type2.xml" target="_blank">
+      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/Bundle-template-epi-type2.xml" target="_blank">
         <div class="ex-icon">📄</div>
         <div class="ex-text">
           <div class="ex-title">ePI Type 2 Template</div>
@@ -72,7 +72,7 @@
         </div>
         <div class="ex-arrow">GitHub →</div>
       </a>
-      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/instances/Bundle-template-epi-type3.xml" target="_blank">
+      <a class="ex-card" href="https://github.com/HL7/emedicinal-product-info/blob/master/input/examples/Bundle-template-epi-type3.xml" target="_blank">
         <div class="ex-icon">📄</div>
         <div class="ex-text">
           <div class="ex-title">ePI Type 3 Template</div>

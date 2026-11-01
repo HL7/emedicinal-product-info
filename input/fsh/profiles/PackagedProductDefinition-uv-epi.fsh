@@ -25,7 +25,7 @@ Description: "PackagedProductDefinition (ePI)"
 * packaging.shelfLifeStorage.periodString ^short = "The shelf life time period as text, when it cannot be expressed as a duration (e.g., use within 28 days of opening)"
 * packaging.shelfLifeStorage.specialPrecautionsForStorage ^short = "Special precautions for storage (e.g., store below 25 °C, do not freeze, keep in the original package to protect from light)"
 * packaging.containedItem ^short = "The item(s) within this packaging"
-* packaging.containedItem.item only CodeableReference(ManufacturedItemDefinition-uv-epi or DeviceDefinition or PackagedProductDefinition-uv-epi)
+* packaging.containedItem.item only CodeableReference(ManufacturedItemDefinition-uv-epi or DeviceDefinition-uv-epi or PackagedProductDefinition-uv-epi)
 * packaging.containedItem.item ^short = "The manufactured item, device or package within this packaging"
 * packaging.containedItem.amount ^short = "The number of this item within this packaging (e.g., 10 tablets)"
 * packaging.packaging ^short = "Nested packaging."

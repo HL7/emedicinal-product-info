@@ -32,5 +32,5 @@ Description: "Same rules as Bundle (ePI), with additional entry slices. This pro
 * entry[packagedProduct] ^short = "The marketed package presentation(s) of the product"
 * entry[packagedProduct].resource only PackagedProductDefinitionUvEpi
 * entry[deviceDefinition] ^short = "Any device supplied in the package (e.g., oral syringe, measuring spoon, inhaler)"
-* entry[deviceDefinition].resource only DeviceDefinition
+* entry[deviceDefinition].resource only DeviceDefinitionUvEpi
 * insert EpiBundleCommon

@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ePI Type 1 (digital label) TEMPLATE
+  The SmPC as structured narrative: one Composition with its sections, headings, text and images. No product or clinical resources are included, so the Composition gives its subject and author as text.
+
+  How to use: copy this file and replace the WonderDrug content with your own product.
+  Each element is preceded by a comment that says whether it is Required or Optional
+  and what it holds, taken from the ePI profiles. Every fullUrl is a UUID (urn:uuid:...),
+  and references between resources in the Bundle use the same UUIDs.
+  Generated from the example bundle-epi-type1-example-wonderdrug by scripts/build_templates.py - do not edit by hand.
+-->
+<!-- Bundle (ePI): This profile represents the constraints applied to the Bundle resource used for an Electronic Product Information (ePI) document. It is used for ePI Type 1 (Digital Label), where the Bundle carries the Composition (ePI); other resources may also be included. The Type 2 and Type 3 Bundle profiles apply the same rules and add entry slices for product and clinical resources. -->
+<Bundle xmlns="http://hl7.org/fhir">
+  <!-- id: Optional. Logical id of this artifact -->
+  <id value="template-epi-type1"/>
+  <!-- meta: Optional. Metadata about the resource -->
+  <meta>
+    <!-- meta.versionId: Optional. Version specific identifier -->
+    <versionId value="1"/>
+    <!-- meta.lastUpdated: Optional. When the resource version last changed -->
+    <lastUpdated value="2026-10-15T09:00:00Z"/>
+    <!-- meta.profile: Optional, repeatable. Profiles this resource claims to conform to -->
+    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Bundle-uv-epi"/>
+  </meta>
+  <!-- identifier: Required. Persistent business identifier (UUID) for the Bundle. Does not change across versions (same as SPL Set ID) -->
+  <identifier>
+    <!-- identifier.system: Optional. The namespace for the identifier value -->
+    <system value="urn:ietf:rfc:3986"/>
+    <!-- identifier.value: Optional. The value that is unique -->
+    <value value="urn:uuid:824ebd41-7549-5f25-aae4-3a3a797f5593"/>
+  </identifier>
+  <!-- type: Required. document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection | subscription-notification -->
+  <type value="document"/>
+  <!-- timestamp: Required. Persistent original date of approval -->
+  <timestamp value="2026-10-15T09:00:00Z"/>
+  <!-- ===== Composition: The document itself: SmPC sections with headings, text and images. Always the first entry. ===== -->
+  <!-- entry: Required. Composition (ePI): carries the label content (e.g., section headings, text, images, tables) -->
+  <entry>
+    <!-- entry.fullUrl: Required. UUID for the resource -->
+    <fullUrl value="urn:uuid:c1036fa4-4409-59d4-8461-9cbf291b1cfb"/>
+    <!-- entry.resource: Required. A resource in the bundle -->
+    <resource>
+      <!-- Composition (ePI): This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide. This profile applies to all ePI Types (1, 2, 3, and 4). -->
+      <Composition>
+        <!-- id: Required. Unique Identifier for this ePI Instance -->
+        <id value="composition-wonderdrug-tablets-type1"/>
+        <!-- meta: Optional. Metadata about the resource -->
+        <meta>
+          <!-- meta.versionId: Required. Version Identifier -->
+          <versionId value="1"/>
+          <!-- meta.lastUpdated: Required. Date Last Changed -->
+          <lastUpdated value="2026-10-15T09:00:00Z"/>
+          <!-- meta.profile: Required, repeatable. Profile Conformity -->
+          <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-uv-epi"/>
+        </meta>
+        <!-- language: Required. Language of the ePI content -->
+        <language value="en"/>
+        <!-- text: Required. Rich text title of the ePI -->
+        <text>
+          <!-- text.status: Required. generated | extensions | additional | empty -->
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p><b>WonderDrug 500 mg tablets</b></p><p>Summary of Product Characteristics</p></div>
+        </text>
+        <!-- contained: Optional, repeatable. All images used in the ePI, each embedded as a base64-encoded Binary resource -->
+        <contained>
+          <!-- binary (ePI): This profile represents the constraints applied to the Binary resource used in the ePI FHIR Implementation Guide. It enforces usage of contained base64 data. -->
+          <Binary>
+            <!-- id: Optional. Logical id of this artifact -->
+            <id value="tablet-image"/>
+            <!-- meta: Optional. Metadata about the resource -->
+            <meta>
+              <!-- meta.profile: Optional, repeatable. Profiles this resource claims to conform to -->
+              <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/binary-epi"/>
+            </meta>
+            <!-- contentType: Required. MimeType of the binary content (e.g., image/png, image/jpeg, image/svg+xml) -->
+            <contentType value="image/png"/>
+            <!-- data: Required. The actual base64 content of the image -->
+            <data value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="/>
+          </Binary>
+        </contained>
+        <!-- identifier: Optional, repeatable. Unique business identifier (UUID) for this version of the Composition (same as SPL Document ID) -->
+        <identifier>
+          <!-- identifier.system: Optional. The namespace for the identifier value -->
+          <system value="urn:ietf:rfc:3986"/>
+          <!-- identifier.value: Optional. The value that is unique -->
+          <value value="urn:uuid:1b2a1dad-c39b-532f-906c-c4f1b90bc946"/>
+        </identifier>
+        <!-- version: Required. Document Version -->
+        <version value="1.0"/>
+        <!-- status: Required. preliminary | final | deprecated | cancelled | entered-in-error -->
+        <status value="final"/>
+        <!-- type: Required. Type of ePI document, from the regulator's national drug label template -->
+        <type>
+          <!-- type.coding: Required. Code defined by a terminology system -->
+          <coding>
+            <!-- type.coding.system: Required. Identity of the terminology system -->
+            <system value="https://spor.ema.europa.eu/rmswi"/>
+            <!-- type.coding.code: Required. Symbol in syntax defined by the system -->
+            <code value="100000155532"/>
+            <!-- type.coding.display: Required. Representation defined by the system -->
+            <display value="Summary of Product Characteristics"/>
+          </coding>
+        </type>
+        <!-- subject: Required, repeatable. The medicinal product(s) described in the ePI -->
+        <subject>
+          <!-- subject.display: Optional. Text alternative for the resource -->
+          <display value="WonderDrug 500 mg tablets"/>
+        </subject>
+        <!-- date: Required. Date of last revision for this version of the authorized ePI document -->
+        <date value="2026-10-15"/>
+        <!-- author: Required, repeatable. Organization accountable for the ePI and its content (Marketing Authorization Holder) -->
+        <author>
+          <!-- author.display: Optional. Text alternative for the resource -->
+          <display value="WonderPharma Ltd."/>
+        </author>
+        <!-- title: Required. Plain-text title of the ePI document (no rich text) -->
+        <title value="WonderDrug 500 mg tablets - Summary of Product Characteristics"/>
+        <!-- section: Required. Root (level 1) section heading for the whole ePI -->
+        <section id="smpc">
+          <!-- section.title: Required. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+          <title value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
+          <!-- section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+          <code>
+            <!-- section.code.coding: Required. Code defined by a terminology system -->
+            <coding>
+              <!-- section.code.coding.system: Required. Identity of the terminology system -->
+              <system value="https://spor.ema.europa.eu/rmswi"/>
+              <!-- section.code.coding.code: Required. Symbol in syntax defined by the system -->
+              <code value="200000029791"/>
+              <!-- section.code.coding.display: Required. Representation defined by the system -->
+              <display value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
+            </coding>
+          </code>
+          <!-- section.text: Required. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+          <text>
+            <!-- section.text.status: Required. generated | extensions | additional | empty -->
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Summary of Product Characteristics: WonderDrug 500 mg tablets</p></div>
+          </text>
+          <!-- section.section: Required, repeatable. Child (level 2) section headings -->
+          <section id="smpc-1">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="1. NAME OF THE MEDICINAL PRODUCT"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029792"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="1. NAME OF THE MEDICINAL PRODUCT"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>WonderDrug 500 mg tablets</p></div>
+            </text>
+          </section>
+          <section id="smpc-2">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029793"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Each tablet contains 500 mg paracetamol.</p><p><b>Excipient with known effect:</b> each tablet contains 25 mg lactose (as monohydrate).</p><p>For the full list of excipients, see section 6.1.</p></div>
+            </text>
+          </section>
+          <section id="smpc-3">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="3. PHARMACEUTICAL FORM"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029797"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="3. PHARMACEUTICAL FORM"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Tablet.</p><p>White, round, flat tablet, scored on one side and marked WD500 on the other. The score line is only there to help break the tablet if you have difficulty swallowing it whole.</p><p><img src="#tablet-image" alt="WonderDrug 500 mg tablet"/></p></div>
+            </text>
+          </section>
+          <section id="smpc-4">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="4. CLINICAL PARTICULARS"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029798"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="4. CLINICAL PARTICULARS"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>See sections 4.1 to 4.9.</p></div>
+            </text>
+            <!-- section.section.section: Optional, repeatable. Child (level 3) section headings -->
+            <section id="smpc-4-1">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.1 Therapeutic indications"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029799"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.1 Therapeutic indications"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>WonderDrug is indicated for the symptomatic treatment of mild to moderate pain and fever in adults and children aged 12 years and over.</p></div>
+              </text>
+            </section>
+            <section id="smpc-4-2">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.2 Posology and method of administration"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029800"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.2 Posology and method of administration"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p><b>Adults and adolescents aged 16 years and over, weighing 50 kg or more:</b> 1 or 2 tablets every 4 to 6 hours as needed. Do not take more than 8 tablets in 24 hours.</p><p><b>Adolescents aged 12 to 15 years, weighing 40 to 49 kg:</b> 1 tablet every 4 to 6 hours as needed. Do not take more than 4 tablets in 24 hours.</p><p>Leave at least 4 hours between doses. Not for children under 12 years.</p><p><b>Method of administration:</b> oral use. Swallow the tablets with water.</p></div>
+              </text>
+            </section>
+            <section id="smpc-4-3">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.3 Contraindications"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029805"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.3 Contraindications"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Hypersensitivity to paracetamol or to any of the excipients listed in section 6.1.</p><p>Severe hepatic impairment.</p></div>
+              </text>
+            </section>
+            <section id="smpc-4-4">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.4 Special warnings and precautions for use"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029806"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.4 Special warnings and precautions for use"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Do not take with any other medicine that contains paracetamol. Taking more than the recommended dose can cause serious liver damage.</p><p>This medicine contains lactose. Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicine.</p></div>
+              </text>
+            </section>
+            <section id="smpc-4-5">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.5 Interaction with other medicinal products and other forms of interaction"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029809"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.5 Interaction with other medicinal products and other forms of interaction"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>The anticoagulant effect of warfarin may be increased by prolonged regular daily use of paracetamol, with an increased risk of bleeding. Occasional doses have no significant effect. Monitor the INR during and after prolonged regular use.</p></div>
+              </text>
+            </section>
+            <section id="smpc-4-6">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.6 Fertility, pregnancy and lactation"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029811"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.6 Fertility, pregnancy and lactation"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>WonderDrug can be used during pregnancy and breast-feeding at the lowest effective dose for the shortest possible time.</p></div>
+              </text>
+            </section>
+            <section id="smpc-4-7">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.7 Effects on ability to drive and use machines"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029815"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.7 Effects on ability to drive and use machines"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>WonderDrug has no or negligible influence on the ability to drive and use machines.</p></div>
+              </text>
+            </section>
+            <section id="smpc-4-8">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.8 Undesirable effects"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029816"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.8 Undesirable effects"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><table><tr><th>Frequency</th><th>Undesirable effect</th></tr><tr><td>Rare (may affect up to 1 in 1,000 people)</td><td>Skin rash</td></tr></table></div>
+              </text>
+            </section>
+            <section id="smpc-4-9">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="4.9 Overdose"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029819"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="4.9 Overdose"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Overdose can cause liver damage, which may not be apparent for 24 to 48 hours. Patients should seek medical help immediately, even if they feel well. Treatment: acetylcysteine.</p></div>
+              </text>
+            </section>
+          </section>
+          <section id="smpc-5">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="5. PHARMACOLOGICAL PROPERTIES"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029821"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="5. PHARMACOLOGICAL PROPERTIES"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>See sections 5.1 to 5.3.</p></div>
+            </text>
+            <!-- section.section.section: Optional, repeatable. Child (level 3) section headings -->
+            <section id="smpc-5-1">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="5.1 Pharmacodynamic properties"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029822"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="5.1 Pharmacodynamic properties"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Pharmacotherapeutic group: other analgesics and antipyretics, anilides. ATC code: N02BE01.</p></div>
+              </text>
+            </section>
+            <section id="smpc-5-2">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="5.2 Pharmacokinetic properties"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029827"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="5.2 Pharmacokinetic properties"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Paracetamol is rapidly and almost completely absorbed. Peak plasma concentrations are reached 30 to 60 minutes after an oral dose.</p></div>
+              </text>
+            </section>
+            <section id="smpc-5-3">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="5.3 Preclinical safety data"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029834"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="5.3 Preclinical safety data"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>There are no preclinical data of relevance beyond those included in other sections.</p></div>
+              </text>
+            </section>
+          </section>
+          <section id="smpc-6">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="6. PHARMACEUTICAL PARTICULARS"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029836"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="6. PHARMACEUTICAL PARTICULARS"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>See sections 6.1 to 6.6.</p></div>
+            </text>
+            <!-- section.section.section: Optional, repeatable. Child (level 3) section headings -->
+            <section id="smpc-6-1">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="6.1 List of excipients"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029837"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="6.1 List of excipients"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Maize starch, lactose monohydrate, magnesium stearate.</p></div>
+              </text>
+            </section>
+            <section id="smpc-6-2">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="6.2 Incompatibilities"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029838"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="6.2 Incompatibilities"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Not applicable.</p></div>
+              </text>
+            </section>
+            <section id="smpc-6-3">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="6.3 Shelf life"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029839"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="6.3 Shelf life"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>3 years.</p></div>
+              </text>
+            </section>
+            <section id="smpc-6-4">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="6.4 Special precautions for storage"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029840"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="6.4 Special precautions for storage"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Store below 25 °C. Store in the original package to protect from light.</p></div>
+              </text>
+            </section>
+            <section id="smpc-6-5">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="6.5 Nature and contents of container"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029841"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="6.5 Nature and contents of container"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>PVC/aluminium blisters in a cardboard carton. Pack size: 20 tablets (2 blisters of 10 tablets).</p></div>
+              </text>
+            </section>
+            <section id="smpc-6-6">
+              <!-- section.section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+              <title value="6.6 Special precautions for disposal"/>
+              <!-- section.section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+              <code>
+                <!-- section.section.section.code.coding: Optional. Code defined by a terminology system -->
+                <coding>
+                  <!-- section.section.section.code.coding.system: Required. Identity of the terminology system -->
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <!-- section.section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                  <code value="200000029842"/>
+                  <!-- section.section.section.code.coding.display: Required. Representation defined by the system -->
+                  <display value="6.6 Special precautions for disposal"/>
+                </coding>
+              </code>
+              <!-- section.section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+              <text>
+                <!-- section.section.section.text.status: Required. generated | extensions | additional | empty -->
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>No special requirements.</p></div>
+              </text>
+            </section>
+          </section>
+          <section id="smpc-7">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="7. MARKETING AUTHORISATION HOLDER"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029844"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="7. MARKETING AUTHORISATION HOLDER"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>WonderPharma Ltd., 1 Example Street, Dublin 2, D02 X123, Ireland</p></div>
+            </text>
+          </section>
+          <section id="smpc-8">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="8. MARKETING AUTHORISATION NUMBER(S)"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029845"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="8. MARKETING AUTHORISATION NUMBER(S)"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>PA0000/001/001</p></div>
+            </text>
+          </section>
+          <section id="smpc-9">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029846"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>Date of first authorisation: 15 January 2020</p></div>
+            </text>
+          </section>
+          <section id="smpc-10">
+            <!-- section.section.title: Optional. Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name) -->
+            <title value="10. DATE OF REVISION OF THE TEXT"/>
+            <!-- section.section.code: Optional. Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company -->
+            <code>
+              <!-- section.section.code.coding: Optional. Code defined by a terminology system -->
+              <coding>
+                <!-- section.section.code.coding.system: Required. Identity of the terminology system -->
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <!-- section.section.code.coding.code: Required. Symbol in syntax defined by the system -->
+                <code value="200000029847"/>
+                <!-- section.section.code.coding.display: Required. Representation defined by the system -->
+                <display value="10. DATE OF REVISION OF THE TEXT"/>
+              </coding>
+            </code>
+            <!-- section.section.text: Optional. Rich text content of the section (e.g., paragraphs, tables, bulleted lists) -->
+            <text>
+              <!-- section.section.text.status: Required. generated | extensions | additional | empty -->
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><p>October 2026</p></div>
+            </text>
+          </section>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+</Bundle>
