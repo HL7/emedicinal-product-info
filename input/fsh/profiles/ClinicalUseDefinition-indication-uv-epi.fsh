@@ -7,8 +7,7 @@ Description: "ClinicalUseDefinition Indication (ePI) - Profile for Indication"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^short = "Business identifier for this clinical use definition"
 * type = #indication
 * category.coding 1..1
 * category.coding.system 1..1

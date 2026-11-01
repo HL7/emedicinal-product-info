@@ -7,9 +7,7 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier 1..
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^short = "The unique identifier or code for this medicinal product (e.g., MPID, national product code)"
 * type.coding 1..1
 * type.coding.system 1..1
 * type.coding.code 1..1

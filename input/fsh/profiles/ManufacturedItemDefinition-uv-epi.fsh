@@ -9,8 +9,7 @@ Description: "Describes the product as the dose form in its primary packaging an
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^short = "The unique identifier or code for this manufactured item"
 * status ^short = "draft|active|retired|unknown"
 * name ^short = "A descriptive name given to this item."
 * manufacturedDoseForm ^short = "Dose form in the primary packaging and before any necessary transformations"

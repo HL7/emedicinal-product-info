@@ -9,8 +9,7 @@ Description: "Describes the product as the dose form for administration to the p
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^short = "The unique identifier or code for this administrable product (e.g., PhPID)"
 * status ^short = "draft | active | retired | unknown"
 * formOf only Reference(MedicinalProductDefinition-uv-epi)
 * administrableDoseForm ^short = "Dose form for administration to the patient, after any necessary transformations"

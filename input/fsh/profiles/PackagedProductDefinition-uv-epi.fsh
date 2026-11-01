@@ -7,67 +7,27 @@ Description: "PackagedProductDefinition (ePI)"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..1
-* identifier.value 1..1
-* type.coding 1..1
-* type.coding.system 1..1
-* type.coding.code 1..1
-* type.coding.display 1..1
-* name ^short = "A name for this package. "
-* type ^short = "A high level category e.g., medicinal product pack, sample pack, shipping container."
+* identifier ^short = "The unique identifier or code for this package as a whole, not for its contents (e.g., GTIN, national pack code)"
+* name ^short = "The name for this marketed package presentation (e.g., Paracetamol 500 mg film-coated tablets, carton of 30)"
+* type ^short = "The high-level category of the package (e.g., medicinal product pack, sample pack, hospital pack, shipping container)"
+* type ^definition = "The high-level category of the package. A medicinal product pack is the package as marketed to the end user; a sample pack is supplied free of charge for promotional or trial use; a hospital pack is intended for supply to hospitals only; a shipping container is used for transport and is not supplied to the end user."
 * packageFor only Reference(MedicinalProductDefinition-uv-epi)
-* status.coding 1..1
-* status.coding.system 1..1
-* status.coding.code 1..1
-* status.coding.display 1..1
 * statusDate ^short = "The date at which the given status became applicable."
-* containedItemQuantity ^short = "A count of the contained items."
+* containedItemQuantity ^short = "The pack size: the total number of each kind of item in the package, regardless of how it is subdivided (e.g., 30 tablets, 100 mL of oral solution)"
 * description ^short = "Narrative description of the overall pack; e.g., description of a sample pack"
-* legalStatusOfSupply.code.coding 1..1
-* legalStatusOfSupply.code.coding.system 1..1
-* legalStatusOfSupply.code.coding.code 1..1
-* legalStatusOfSupply.code.coding.display 1..1
-* legalStatusOfSupply.jurisdiction.coding 1..1
-* legalStatusOfSupply.jurisdiction.coding.system 1..1
-* legalStatusOfSupply.jurisdiction.coding.code 1..1
-* legalStatusOfSupply.jurisdiction.coding.display 1..1
-* marketingStatus.country.coding 1..1
-* marketingStatus.country.coding.system 1..1
-* marketingStatus.country.coding.code 1..1
-* marketingStatus.country.coding.display 1..1
-* marketingStatus.status.coding 1..1
-* marketingStatus.status.coding.system 1..1
-* marketingStatus.status.coding.code 1..1
-* marketingStatus.status.coding.display 1..1
 * copackagedIndicator ^short = "If the drug product is supplied with another item such as a diluent or adjuvant."
 * manufacturer only Reference(Organization-uv-epi)
+* manufacturer ^short = "Manufacturer or packaging site for this package (multiple means these are all possible manufacturers or pack sites)"
 * packaging ^short = "A packaging item, as a container for medically related items, possibly with other packaging items within."
-* packaging.identifier.system 1..1
-* packaging.identifier.value 1..1
-* packaging.type.coding 1..1
-* packaging.type.coding.system 1..1
-* packaging.type.coding.code 1..1
-* packaging.type.coding.display 1..1
-* packaging.material.coding 1..1
-* packaging.material.coding.system 1..1
-* packaging.material.coding.code 1..1
-* packaging.material.coding.display 1..1
-* packaging.alternateMaterial.coding 1..1
-* packaging.alternateMaterial.coding.system 1..1
-* packaging.alternateMaterial.coding.code 1..1
-* packaging.alternateMaterial.coding.display 1..1
-* packaging.shelfLifeStorage.type.coding 1..1
-* packaging.shelfLifeStorage.type.coding.system 1..1
-* packaging.shelfLifeStorage.type.coding.code 1..1
-* packaging.shelfLifeStorage.type.coding.display 1..1
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding 1..1
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding.system 1..1
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding.code 1..1
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding.display 1..1
-* packaging.property.type.coding 1..1
-* packaging.property.type.coding.system 1..1
-* packaging.property.type.coding.code 1..1
-* packaging.property.type.coding.display 1..1
+* packaging.shelfLifeStorage ^short = "Shelf life and storage information for this packaging item"
+* packaging.shelfLifeStorage.period[x] ^short = "The shelf life time period, as a duration or as text"
+* packaging.shelfLifeStorage.periodDuration ^short = "The shelf life time period as a duration (e.g., 36 months)"
+* packaging.shelfLifeStorage.periodString ^short = "The shelf life time period as text, when it cannot be expressed as a duration (e.g., use within 28 days of opening)"
+* packaging.shelfLifeStorage.specialPrecautionsForStorage ^short = "Special precautions for storage (e.g., store below 25 °C, do not freeze, keep in the original package to protect from light)"
+* packaging.containedItem ^short = "The item(s) within this packaging"
+* packaging.containedItem.item only CodeableReference(ManufacturedItemDefinition-uv-epi or DeviceDefinition or PackagedProductDefinition-uv-epi)
+* packaging.containedItem.item ^short = "The manufactured item, device or package within this packaging"
+* packaging.containedItem.amount ^short = "The number of this item within this packaging (e.g., 10 tablets)"
 * packaging.packaging ^short = "Nested packaging."
 * attachedDocument only Reference(DocumentReference)
 * attachedDocument ^short = "Pack artwork images or other related documents associated with this package."

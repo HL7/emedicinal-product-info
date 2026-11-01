@@ -25,8 +25,6 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * identifier 1..*
 * identifier ^short = "Business identifier for this list"
 * identifier ^definition = "Business identifier for this list"
-* identifier.system 1..1
-* identifier.value 1..1
 
 * status 1..1 MS
 * status ^short = "current | retired | entered-in-error"

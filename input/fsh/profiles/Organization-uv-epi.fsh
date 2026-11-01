@@ -7,8 +7,6 @@ Description: "Organization (ePI) - ported from OrganizationUvEpi"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..1
-* identifier.value 1..1
 * identifier ^short = "Unique identifier for this organization recognized by the regulator"
 * identifier ^definition = "Unique identifier for this organization recognized by the regulator, such as the organization identifier assigned in the regulator's master data system."
 * name 1..

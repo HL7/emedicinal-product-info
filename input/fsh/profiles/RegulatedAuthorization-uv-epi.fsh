@@ -7,8 +7,7 @@ Description: "RegulatedAuthorization (ePI)"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * identifier 1..
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^short = "The unique identifier for this authorization (e.g., marketing authorization number)"
 * subject 1..
 * subject only Reference(MedicinalProductDefinition-uv-epi or PackagedProductDefinition-uv-epi)
 * type.coding 1..1
@@ -32,8 +31,7 @@ Description: "RegulatedAuthorization (ePI)"
 * holder only Reference(Organization-uv-epi)
 * regulator only Reference(Organization-uv-epi)
 * case ^short = "The case or regulatory procedure for granting or amending a regulated authorization."
-* case.identifier.system 1..1
-* case.identifier.value 1..1
+* case.identifier ^short = "The identifier for the regulatory case or procedure (e.g., procedure number)"
 * case.type.coding 1..1
 * case.type.coding.system 1..1
 * case.type.coding.code 1..1
