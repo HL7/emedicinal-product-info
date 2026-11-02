@@ -2,7 +2,7 @@
 
 <!-- PRE-REQUISITES -->
 <div id="prerequisites" style="margin-bottom:32px;">
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:6px;">Before You Start</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:6px;">Before You Start</h3>
 <p style="color:#6b7280; font-size:.92em; margin-bottom:20px;">Complete these three steps before building any ePI type.</p>
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:8px;">
   <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #2563eb; border-radius:8px; padding:18px 20px;">
@@ -30,7 +30,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT IS TYPE 1 -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 1?</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 1?</h3>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 1 is the digital equivalent of your existing DOCX or PDF label (e.g., a Summary of Product Characteristics (SmPC), Patient Information Leaflet (PIL), Instructions For Use, Product Monograph, Medication Guide) converted into a structured FHIR document. It preserves the regulator's required template headings, full narrative text, tables, and embedded images, making the document machine-readable while remaining human-readable.</p>
 
 <div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">You will create these FHIR resources</span></div>
@@ -65,7 +65,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- STEPS -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h3>
 
 <!-- STEP 1 -->
 <div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
@@ -118,7 +118,7 @@
       <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Map each top-level section heading in the regulator's Word document to a top-level <code style="font-family:monospace; font-size:.8em; color:#0891b2;">&lt;section&gt;</code> in the Composition resource. Narrative text goes inside each section's <code style="font-family:monospace; font-size:.8em; color:#0891b2;">&lt;text&gt;</code> element as XHTML. Reproduce the authorized content exactly as it appears in the Word document. This includes formatting, tables, and lists.</p>
       <div style="background:#fefce8; border:1px solid #fef08a; border-left:4px solid #eab308; border-radius:8px; padding:14px 18px; margin-bottom:16px;">
         <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#854d0e; margin-bottom:6px;">Formatting vs. Styling</div>
-        <p style="font-size:.88em; color:#713f12; line-height:1.7; margin:0;"><strong>Embedded formatting is required</strong> for structural and semantic meaning (e.g., using standard HTML tags for bold, underline, italics, or text alignment). However, <strong>styles should never be embedded inline</strong> (e.g., hardcoded fonts, font sizes, text colors, or rigid table borders). All visual presentation must be handled externally. Refer to the <a href="stylesheets.html" style="color:#d97706; font-weight:600;">Style Sheets</a> page for details.</p>
+        <p style="font-size:.88em; color:#713f12; line-height:1.7; margin:0;"><strong>Embedded formatting is required</strong> for structural and semantic meaning (e.g., using standard HTML tags for bold, underline, italics, or text alignment). However, <strong>styles should never be embedded inline</strong> (e.g., hardcoded fonts, font sizes, text colors, or rigid table borders). All visual presentation must be handled externally. Refer to the <a href="templates.html" style="color:#d97706; font-weight:600;">Style Sheets</a> page for details.</p>
       </div>
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:16px;">
         <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#1d4ed8; margin-bottom:6px;">⚡ The ePI Granularity Rule</div>
@@ -239,7 +239,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT'S NEXT -->
-<h2 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h2>
+<h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
   <a href="build-epi2.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>

@@ -74,3 +74,4 @@ Alias: $regulated-authorization-basis = http://hl7.org/fhir/regulated-authorizat
 Alias: $interaction-type = http://hl7.org/fhir/interaction-type
 Alias: $interaction-incidence = http://hl7.org/fhir/interaction-incidence
 Alias: $undesirable-effect-frequency = http://hl7.org/fhir/undesirable-effect-frequency
+Alias: $v3-race = http://terminology.hl7.org/CodeSystem/v3-Race

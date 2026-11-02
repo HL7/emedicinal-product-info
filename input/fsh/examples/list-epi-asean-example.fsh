@@ -1,7 +1,7 @@
 Instance: ListEpiASEANExample
 InstanceOf: ListUvEpi
 Title: "ASEAN Cross-Jurisdictional ePI Tracking List Example"
-Description: "An example of a List resource conforming to the List-uv-epi profile, specifically tracking ePIs across the 10 ASEAN member states using UUID references."
+Description: "An example of a List resource conforming to the List-uv-epi profile, specifically tracking ePIs across the 10 ASEAN member states identifying each ePI Bundle by its UUID."
 Usage: #example
 
 * identifier.system = "https://asean.org/fhir/list/identifier"
@@ -27,58 +27,78 @@ Usage: #example
 * entry[0].date = "2026-03-27"
 * entry[0].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[0].flag = epi-list-entry-flag-cs#national "National"
-* entry[0].item.reference = "urn:uuid:2088b90a-1158-45ad-ac19-0f47e3a96887"
+* entry[0].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[0].item.display = "ePI Bundle - Brunei"
+* entry[0].item.identifier.value = "urn:uuid:2088b90a-1158-45ad-ac19-0f47e3a96887"
 
 // 2. Cambodia
 * entry[1].date = "2026-03-27"
 * entry[1].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[1].flag = epi-list-entry-flag-cs#national "National"
-* entry[1].item.reference = "urn:uuid:48c2ae46-ceaa-4ea1-b998-ab885ca6eb65"
+* entry[1].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[1].item.display = "ePI Bundle - Cambodia"
+* entry[1].item.identifier.value = "urn:uuid:48c2ae46-ceaa-4ea1-b998-ab885ca6eb65"
 
 // 3. Indonesia
 * entry[2].date = "2026-03-27"
 * entry[2].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[2].flag = epi-list-entry-flag-cs#national "National"
-* entry[2].item.reference = "urn:uuid:c22141d8-0e86-4f40-8b09-cfad45a90710"
+* entry[2].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[2].item.display = "ePI Bundle - Indonesia"
+* entry[2].item.identifier.value = "urn:uuid:c22141d8-0e86-4f40-8b09-cfad45a90710"
 
 // 4. Laos
 * entry[3].date = "2026-03-27"
 * entry[3].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[3].flag = epi-list-entry-flag-cs#national "National"
-* entry[3].item.reference = "urn:uuid:a1b2c3d4-b4a1-4191-88fc-8f64da2f518e"
+* entry[3].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[3].item.display = "ePI Bundle - Laos"
+* entry[3].item.identifier.value = "urn:uuid:a1b2c3d4-b4a1-4191-88fc-8f64da2f518e"
 
 // 5. Malaysia
 * entry[4].date = "2026-03-27"
 * entry[4].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[4].flag = epi-list-entry-flag-cs#national "National"
-* entry[4].item.reference = "urn:uuid:abfa5222-3832-4977-bcbd-5509ba19cd75"
+* entry[4].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[4].item.display = "ePI Bundle - Malaysia"
+* entry[4].item.identifier.value = "urn:uuid:abfa5222-3832-4977-bcbd-5509ba19cd75"
 
 // 6. Myanmar
 * entry[5].date = "2026-03-27"
 * entry[5].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[5].flag = epi-list-entry-flag-cs#national "National"
-* entry[5].item.reference = "urn:uuid:7f5f90c3-fba0-4be6-8c46-1e96d7fb1178"
+* entry[5].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[5].item.display = "ePI Bundle - Myanmar"
+* entry[5].item.identifier.value = "urn:uuid:7f5f90c3-fba0-4be6-8c46-1e96d7fb1178"
 
 // 7. Philippines
 * entry[6].date = "2026-03-27"
 * entry[6].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[6].flag = epi-list-entry-flag-cs#national "National"
-* entry[6].item.reference = "urn:uuid:df35b80a-5c21-432a-bc90-953bc8682827"
+* entry[6].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[6].item.display = "ePI Bundle - Philippines"
+* entry[6].item.identifier.value = "urn:uuid:df35b80a-5c21-432a-bc90-953bc8682827"
 
 // 8. Singapore
 * entry[7].date = "2026-03-27"
 * entry[7].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[7].flag = epi-list-entry-flag-cs#national "National"
-* entry[7].item.reference = "urn:uuid:1d624a9a-efaf-4c33-87ea-25aa8cfcd9bd"
+* entry[7].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[7].item.display = "ePI Bundle - Singapore"
+* entry[7].item.identifier.value = "urn:uuid:1d624a9a-efaf-4c33-87ea-25aa8cfcd9bd"
 
 // 9. Thailand
 * entry[8].date = "2026-03-27"
 * entry[8].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[8].flag = epi-list-entry-flag-cs#national "National"
-* entry[8].item.reference = "urn:uuid:5d8a9ea8-2287-4d7a-b286-9ac747ef9ec2"
+* entry[8].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[8].item.display = "ePI Bundle - Thailand"
+* entry[8].item.identifier.value = "urn:uuid:5d8a9ea8-2287-4d7a-b286-9ac747ef9ec2"
 
 // 10. Vietnam
 * entry[9].date = "2026-03-27"
 * entry[9].extension[language].valueCodeableConcept = urn:ietf:bcp:47#en "English"
 * entry[9].flag = epi-list-entry-flag-cs#national "National"
-* entry[9].item.reference = "urn:uuid:96e8ba7a-6415-46aa-bcd0-63ceaaac8149"
+* entry[9].item.identifier.system = "urn:ietf:rfc:3986"
+* entry[9].item.display = "ePI Bundle - Vietnam"
+* entry[9].item.identifier.value = "urn:uuid:96e8ba7a-6415-46aa-bcd0-63ceaaac8149"

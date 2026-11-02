@@ -4,6 +4,7 @@ ValueSet: VsDoseForm
 Id: doseForm
 Title: "Dose Form"
 Description: "The dose form for a single part product, or combined form of a multiple part product"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $combined-dose-form
@@ -13,6 +14,7 @@ ValueSet: VsAdministrableDoseForm
 Id: administrableDoseForm
 Title: "Administrable Pharmaceutical Dose Form"
 Description: "Administrable Pharmaceutical Dose Form"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $administrable-dose-form
@@ -22,6 +24,7 @@ ValueSet: VsManufacturedDoseForm
 Id: manufacturedDoseForm
 Title: "Manufactured Dose Form"
 Description: "Manufactured Dose Form"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $manufactured-dose-form
@@ -31,6 +34,7 @@ ValueSet: VsRouteOfAdministration
 Id: routeOfAdministration
 Title: "Route Of Administration"
 Description:  "Route Of Administration"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^status = #draft
 * ^experimental = false
@@ -47,6 +51,7 @@ ValueSet: VsUnitofPresentation
 Id: unitofPresentation
 Title: "Units of Presentation"
 Description: "Units of Presentation"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $unit-of-presentation
@@ -56,6 +61,7 @@ ValueSet: VsMeddra
 Id: meddra
 Title: "MedDRA Terms for clinical diseases and symptoms"
 Description: "MedDRA Terms for clinical diseases and symptoms"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $meddra
@@ -65,6 +71,7 @@ ValueSet: VsCountry
 Id: country
 Title: "ISO Country two letter code"
 Description: "ISO Country two letter code"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-Country2
@@ -74,6 +81,7 @@ ValueSet: VsLanguage
 Id: language
 Title: "ISO language two letter code"
 Description: "ISO language two letter code"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from valueset http://hl7.org/fhir/ValueSet/all-languages
@@ -83,6 +91,7 @@ ValueSet: VsPropertyColor
 Id: propertyColor
 Title: "Color of the product"
 Description: "Color of the product"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * $ncithesaurus#C48323	"BLACK"
@@ -104,6 +113,7 @@ ValueSet: VsPropertyFlavor
 Id: propertyFlavor
 Title: "Flavor of the product"
 Description: "Flavor of the product"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * $ncithesaurus#C100097 "GINGER"
@@ -185,6 +195,7 @@ ValueSet: VsPropertyShape
 Id: propertyShape
 Title: "Shape of the product"
 Description: "Shape of the product"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * $ncithesaurus#C48335	"BULLET"
@@ -212,6 +223,7 @@ ValueSet: VsSubstance
 Id: substance
 Title: "Substances"
 Description: "Substances"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * include codes from system $ginas
@@ -221,6 +233,7 @@ ValueSet: VsEpiType
 Id: epiType
 Title: "ePI Document Type (Example)"
 Description: "Example ePI document types. Each regulator populates Composition.type from the document types of its own national drug label templates. This example includes US FDA and EMA document types; Health Canada and Japan (PMDA) document types are shown with placeholder codes from this IG until their published codes are added."
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 // US FDA (LOINC)
@@ -242,21 +255,23 @@ CodeSystem: EpiDocumentTypeExampleCS
 Id: epi-document-type-example
 Title: "ePI Document Type Placeholder Codes (Example)"
 Description: "Placeholder document type codes used in the example ePI Document Type value set for regulators whose official document type codes are not yet included in this IG. Not for production use: use the regulator's own code system."
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #hc-product-monograph "Product Monograph (Health Canada)"
-* #hc-patient-medication-information "Patient Medication Information (Health Canada)"
-* #jp-rx-package-insert "Package insert for prescription drugs (Japan)"
-* #jp-patient-drug-guide "Drug guide for patients (Japan)"
+* #hc-product-monograph "Product Monograph (Health Canada)" "The Health Canada product monograph for health care professionals."
+* #hc-patient-medication-information "Patient Medication Information (Health Canada)" "The Health Canada patient medication information for patients and caregivers."
+* #jp-rx-package-insert "Package insert for prescription drugs (Japan)" "The Japanese package insert for a prescription drug, for health care professionals."
+* #jp-patient-drug-guide "Drug guide for patients (Japan)" "The Japanese drug guide for patients."
 
 //==========================
 ValueSet: EpiCompositionStatus
 Id: epi-composition-status
 Title: "ePI Composition Status"
 Description: "Lifecycle states of an ePI document, as described on the Version Control page."
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * http://hl7.org/fhir/composition-status#preliminary "Preliminary"
@@ -271,6 +286,7 @@ ValueSet: VsSectionCode
 Id: sectionCode
 Title: "Section Codes"
 Description: "Section Codes"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
@@ -390,6 +406,7 @@ ValueSet: VsIngredientRole
 Id: ingredientRole
 Title: "Ingredient Role"
 Description: "Ingredient Role; e.g.,active, excipient"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $ingredient-role
@@ -400,6 +417,7 @@ ValueSet: VsAtcClassification
 Id: atcClassification
 Title: "WHO ATC"
 Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
 * codes from system $atc 

@@ -17,7 +17,7 @@ Usage:
 import json, os, sys, glob, re
 from xml.sax.saxutils import escape, quoteattr
 
-SRC, CORE, OUT = sys.argv[1:4]
+SRC, CORE, OUT = sys.argv[1:4]  # also set by scripts/build_demos.py before import
 
 TEMPLATES = [
     ("bundle-epi-type1-example-wonderdrug", "template-epi-type1", "ePI Type 1 (digital label)",
@@ -331,5 +331,6 @@ def build(src_id, tpl_id, label, summary):
     open(path, "w").write("\n".join(res))
     print("wrote", path)
 
-for t in TEMPLATES:
-    build(*t)
+if __name__ == "__main__":
+    for t in TEMPLATES:
+        build(*t)

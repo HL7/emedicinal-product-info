@@ -33,3 +33,18 @@ InstanceOf: BinaryEpi
 Usage: #inline
 * contentType = #image/png
 * data = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+
+Instance: substancedefinition-paracetamol
+InstanceOf: SubstanceDefinitionUvEpi
+Usage: #example
+Title: "SubstanceDefinition - Paracetamol"
+Description: "Paracetamol, the active substance of the WonderDrug products"
+* identifier.system = $ginas
+* identifier.value = "362O9ITL9D"
+* status = $publication-status#active "Active"
+* structure.molecularFormula = "C8H9NO2"
+* molecularWeight.amount = 151.16 'g/mol' "g/mol"
+* name[0].name = "Paracetamol"
+* name[=].language = urn:ietf:bcp:47#en "English"
+* name[+].name = "Acetaminophen"
+* name[=].language = urn:ietf:bcp:47#en "English"

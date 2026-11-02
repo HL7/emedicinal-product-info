@@ -9,7 +9,7 @@ RuleSet: EpiBundleCommon
 * identifier 1..1
 * identifier ^short = "Persistent business identifier (UUID) for the Bundle. Does not change across versions (same as SPL Set ID)"
 * identifier ^definition = "Persistent business identifier, as a UUID, for the Bundle. It stays the same across all versions of the ePI, so every version can be grouped together. Equivalent to the SPL Set ID."
-* type = #document (exactly)
+* type = #document
 * timestamp 1..
 * timestamp ^short = "Persistent original date of approval."
 * timestamp ^definition = "Persistent original date of approval."

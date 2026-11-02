@@ -61,7 +61,8 @@
     <tr><td>Age</td><td><code>age</code></td><td>Range (UCUM <code>a</code> years or <code>d</code> days)</td></tr>
     <tr><td>Body weight</td><td><code>body-weight</code></td><td>Range</td></tr>
     <tr><td>Race</td><td><code>race</code></td><td>CodeableConcept</td></tr>
-    <tr><td>Lifestyle</td><td><code>lifestyle</code></td><td>CodeableConcept</td></tr>
+    <tr><td>Pregnancy and lactation status</td><td><code>pregnancy-lactation-status</code></td><td>CodeableConcept (for example pregnant, breastfeeding)</td></tr>
+    <tr><td>Substance use</td><td><code>substance-use</code></td><td>CodeableConcept (for example smoker, current drinker of alcohol)</td></tr>
     <tr><td>Renal function</td><td><code>renal-function</code></td><td>Range (for example creatinine clearance or eGFR in mL/min)</td></tr>
     <tr><td>Hepatic function</td><td><code>hepatic-function</code></td><td>CodeableConcept</td></tr>
     <tr><td>Immune status</td><td><code>immune-status</code></td><td>CodeableConcept</td></tr>

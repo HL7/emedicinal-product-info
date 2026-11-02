@@ -2,8 +2,10 @@ CodeSystem: ListTypeCS
 Id: epi-list-type-cs
 Title: "ePI List Type CodeSystem"
 Description: "Codes to classify the usecase/type of an ePI list."
+* insert HL7Publisher
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 * #medicinal-product "Medicinal Product" "List of ePIs for a given medicinal product."
 * #medicinal-product-group "Medicinal Product Group" "List of ePIs for a given class or category of drugs (e.g., ePIs for vaccines or oncology drugs)."
@@ -14,6 +16,7 @@ ValueSet: ListTypeVS
 Id: epi-list-type-vs
 Title: "ePI List Type ValueSet"
 Description: "Values to classify the usecase/type of an ePI list."
+* insert HL7Publisher
 * ^status = #active
 * ^experimental = false
 * include codes from system ListTypeCS

@@ -3,8 +3,8 @@
   .epi-page { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; }
   .epi-page .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
   .epi-page .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
-  .epi-page .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
-  .epi-page .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .epi-page .hero h3 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
+  .epi-page .hero h3 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
   .epi-page .hero p { font-size:.95em; color:#6b7280; max-width:560px; margin:0 auto; line-height:1.6; }
   .epi-page .section-title { font-size:1.15em; font-weight:700; color:#111827; margin: 40px 0 16px; display:flex; align-items:center; gap:8px; }
   .epi-page .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
@@ -64,7 +64,7 @@
 
   <div class="hero">
     <div class="eyebrow">Technical Details · FHIR R5</div>
-    <h1>The Engine for <span>Global Drug Data</span></h1>
+    <h3>The Engine for <span>Global Drug Data</span></h3>
     <p>Architecture, technical capabilities, and operational requirements for a FHIR-based ePI Repository — the single source of truth for digital drug labels.</p>
   </div>
 

@@ -3,8 +3,8 @@
   .tsg-page { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; }
   .tsg-page .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
   .tsg-page .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
-  .tsg-page .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; }
-  .tsg-page .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .tsg-page .hero h3 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; }
+  .tsg-page .hero h3 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
   .tsg-page .hero p { font-size:.95em; color:#6b7280; max-width:580px; margin:0 auto 20px; line-height:1.6; }
   .tsg-page .page-nav { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px 20px; margin-bottom:36px; display:flex; flex-wrap:wrap; gap:8px; }
   .tsg-page .page-nav a { font-size:.78em; font-weight:600; color:#2563eb; text-decoration:none; padding:4px 10px; border-radius:6px; background:#f0f4ff; }
@@ -67,7 +67,7 @@
 
   <div class="hero">
     <div class="eyebrow">Technical Details · XHTML &amp; Narrative</div>
-    <h1>Implementation Rules <span>&amp; Best Practices</span></h1>
+    <h3>Implementation Rules <span>&amp; Best Practices</span></h3>
     <p>Standard formatting and content structures for ePI narrative content — ensuring consistency, quality, and global interoperability across jurisdictions.</p>
   </div>
 

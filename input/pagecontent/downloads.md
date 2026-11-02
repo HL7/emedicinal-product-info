@@ -13,3 +13,11 @@ In addition there are format specific definitions files.
 * [XML](../examples.xml.zip)
 * [JSON](../examples.json.zip)
 * [TTl](../examples.ttl.zip)
+
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+### Intellectual property statements
+
+{% include ip-statements.xhtml %}

@@ -32,7 +32,7 @@ Description: "This profile represents the constraints applied to the Composition
 * contained contains binaryImage 0..*
 * contained[binaryImage] only BinaryEpi
 * contained[binaryImage] ^short = "All images used in the ePI, each embedded as a base64-encoded Binary resource"
-* contained[binaryImage] ^definition = "Every image used in the ePI (for example, pictograms, chemical structures, diagrams and pack artwork) is embedded in the Composition as a contained Binary resource holding the base64-encoded image. The section text displays each image by referencing the contained Binary by its id (<img src=\"#id\"/>)."
+* contained[binaryImage] ^definition = "Every image used in the ePI (for example, pictograms, chemical structures, diagrams and pack artwork) is embedded in the Composition as a contained Binary resource holding the base64-encoded image. The section text displays each image by referencing the contained Binary by its id (`<img src=\"#id\"/>`)."
 * status 1..
 * type.coding 1..1
 * type.coding.system 1..1
@@ -101,9 +101,9 @@ Description: "This profile represents the constraints applied to the Composition
 * section ^short = "Root (level 1) section heading for the whole ePI"
 * section ^definition = "The single root section (level 1) for the whole ePI. All other section headings are nested beneath it."
 * section.id ^short = "Section ID (XML: <section id='...'>) used for hypertext links to and across sections"
-* section.id ^definition = "Unique identifier for this section, used for hypertext links to and between sections. In XML it is serialized as an attribute (<section id=\"...\">), not as a child element."
+* section.id ^definition = "Unique identifier for this section, used for hypertext links to and between sections. In XML it is serialized as an attribute (`<section id=\"...\">`), not as a child element."
 * section.title ^short = "Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name)"
-* section.title ^definition = "The section heading as worded by the company: the regulator's template heading, with placeholders such as <product name> replaced by the brand name."
+* section.title ^definition = "The section heading as worded by the company: the regulator's template heading, with placeholders such as `<product name>` replaced by the brand name."
 * section.code ^short = "Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company"
 * section.code ^definition = "Regulator-defined code and display name for this section or sub-section heading, taken from the regulator's national drug label template. The company cannot modify the code or display; both must comply with the regulator's rules. Company wording of the heading goes in title."
 * section.text ^short = "Rich text content of the section (e.g., paragraphs, tables, bulleted lists)"
@@ -113,9 +113,9 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section ^short = "Child (level 2) section headings"
 * section.section ^definition = "Level 2 section headings, nested under the root section."
 * section.section.id ^short = "Section ID (XML: <section id='...'>) used for hypertext links to and across sections"
-* section.section.id ^definition = "Unique identifier for this section, used for hypertext links to and between sections. In XML it is serialized as an attribute (<section id=\"...\">), not as a child element."
+* section.section.id ^definition = "Unique identifier for this section, used for hypertext links to and between sections. In XML it is serialized as an attribute (`<section id=\"...\">`), not as a child element."
 * section.section.title ^short = "Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name)"
-* section.section.title ^definition = "The section heading as worded by the company: the regulator's template heading, with placeholders such as <product name> replaced by the brand name."
+* section.section.title ^definition = "The section heading as worded by the company: the regulator's template heading, with placeholders such as `<product name>` replaced by the brand name."
 * section.section.code ^short = "Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company"
 * section.section.code ^definition = "Regulator-defined code and display name for this section or sub-section heading, taken from the regulator's national drug label template. The company cannot modify the code or display; both must comply with the regulator's rules. Company wording of the heading goes in title."
 * section.section.text ^short = "Rich text content of the section (e.g., paragraphs, tables, bulleted lists)"
@@ -125,9 +125,9 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.section ^short = "Child (level 3) section headings"
 * section.section.section ^definition = "Level 3 sub-section headings, nested under a level 2 section."
 * section.section.section.id ^short = "Section ID (XML: <section id='...'>) used for hypertext links to and across sections"
-* section.section.section.id ^definition = "Unique identifier for this section, used for hypertext links to and between sections. In XML it is serialized as an attribute (<section id=\"...\">), not as a child element."
+* section.section.section.id ^definition = "Unique identifier for this section, used for hypertext links to and between sections. In XML it is serialized as an attribute (`<section id=\"...\">`), not as a child element."
 * section.section.section.title ^short = "Section heading as worded by the company (e.g., template heading with <placeholders> replaced by the brand name)"
-* section.section.section.title ^definition = "The section heading as worded by the company: the regulator's template heading, with placeholders such as <product name> replaced by the brand name."
+* section.section.section.title ^definition = "The section heading as worded by the company: the regulator's template heading, with placeholders such as `<product name>` replaced by the brand name."
 * section.section.section.code ^short = "Regulator-defined code and display for this heading. Fixed by the regulator's template; not modifiable by the company"
 * section.section.section.code ^definition = "Regulator-defined code and display name for this section or sub-section heading, taken from the regulator's national drug label template. The company cannot modify the code or display; both must comply with the regulator's rules. Company wording of the heading goes in title."
 * section.section.section.text ^short = "Rich text content of the section (e.g., paragraphs, tables, bulleted lists)"

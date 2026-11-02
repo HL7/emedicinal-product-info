@@ -3,8 +3,8 @@
   .tc-page { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; }
   .tc-page .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
   .tc-page .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
-  .tc-page .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
-  .tc-page .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .tc-page .hero h3 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
+  .tc-page .hero h3 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
   .tc-page .hero p { font-size:.95em; color:#6b7280; max-width:560px; margin:0 auto; line-height:1.6; }
   .tc-page .section-title { font-size:1.1em; font-weight:700; color:#111827; margin: 36px 0 14px; display:flex; align-items:center; gap:8px; }
   .tc-page .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
@@ -58,7 +58,7 @@
 
   <div class="hero">
     <div class="eyebrow">Technical Details · Annotation Model</div>
-    <h1>Auditable <span>Document Evolution</span></h1>
+    <h3>Auditable <span>Document Evolution</span></h3>
     <p>A structured approach for embedding tracked changes and reviewer comments directly inside FHIR Composition narratives — enabling transparent regulatory collaboration.</p>
   </div>
 

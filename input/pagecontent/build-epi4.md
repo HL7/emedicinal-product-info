@@ -5,7 +5,7 @@
   <span><strong>Pre-requisites:</strong> Type 4 builds on top of Types 1, 2, and 3. Before starting here, ensure you have validated <a href="build-epi1.html" style="color:#92400e; font-weight:600;">Type 1</a>, <a href="build-epi2.html" style="color:#92400e; font-weight:600;">Type 2</a>, and <a href="build-epi3.html" style="color:#92400e; font-weight:600;">Type 3</a> ePIs for the product.</span>
 </div>
 <!-- WHAT IS TYPE 4 -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 4?</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 4?</h3>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 4 is a <strong>fully structured representation</strong> where narrative text is decomposed into discrete atomic components and mapped to individual FHIR resources. Each atomic component is coded using controlled terminologies (SNOMED CT, MedDRA, etc.) and appropriate metadata. The goal is to create explicit, stable links between narrative content and its corresponding structured content — enabling regulatory, clinical, and digital health systems to interpret and consume the information automatically.</p>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:20px;"><em>Conceptual examples included within this implementation guide are provided exclusively for illustrative purposes to facilitate understanding of ePI Type 4 requirements.</em></p>
 <!-- RESOURCE BADGES -->
@@ -82,7 +82,7 @@
 </div>
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 <!-- KEY DIFFERENCES -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:16px;">Key Differences from Types 1–3</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:16px;">Key Differences from Types 1–3</h3>
 <!-- DIFFERENCE 1: COMPOSITION GRANULARITY -->
 <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Difference 1 — Composition Granularity</div>
 <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:20px;">
@@ -155,7 +155,7 @@
 </div>
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 <!-- STEPS -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h3>
 <!-- STEP 1 -->
 <div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
   <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">1</div>
@@ -472,7 +472,7 @@
 </div>
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 <!-- WHAT'S NEXT -->
-<h2 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h2>
+<h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:flex; flex-direction:column; gap:14px;">
   <a href="build-list.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>

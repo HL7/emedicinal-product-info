@@ -1,0 +1,29 @@
+== Suppressed Messages ==
+
+# The EMA SPOR and MedDRA code systems are used as examples and are not available on the HL7 terminology server
+A definition for CodeSystem 'https://spor.ema.europa.eu/%' could not be found%
+A definition for CodeSystem 'http://meddra.org' could not be found%
+No definition could be found for URL value 'https://spor.ema.europa.eu/%'
+No definition could be found for URL value 'http://meddra.org'
+Error from https://tx.fhir.org/r5: Error: A definition for CodeSystem 'https://spor.ema.europa.eu/rmswi' could not be found, so the value set cannot be expanded%
+Error from https://tx.fhir.org/r5: Error: A definition for CodeSystem 'http://meddra.org' could not be found, so the value set cannot be expanded%
+
+# Placeholder codes in examples, used only where no published concept exists (see the $example-cs alias)
+A definition for CodeSystem 'http://example.org' could not be found%
+
+# Identifier systems in examples belong to regulators and are not FHIR-resolvable URLs
+No definition could be found for URL value 'https://spor.ema.europa.eu/omswi'
+No definition could be found for URL value 'http://ema.europa.eu/identifier'
+No definition could be found for URL value 'https://ema.europa.eu/fhir/list/identifier'
+No definition could be found for URL value 'https://asean.org/fhir/list/identifier'
+
+# The IG's own code systems and value sets are experimental while the content is in trial use
+Reference to experimental CodeSystem%
+Reference to draft CodeSystem%
+The definition for the element '%' binds to the value set '%' which is experimental%
+
+# ePI images are embedded in the Composition as contained Binary resources and shown with <img src="#id"/>, as the Composition (ePI) profile requires. On Bundle pages the Publisher shows the Composition narrative without its contained resources, so these references cannot be resolved there; they resolve correctly in the Composition itself
+The image source '#tablet-image' cannot be resolved
+
+# The Publisher writes the same anchors for a Bundle entry and for the resource it references on the same Bundle page; this is generated HTML that the IG cannot change
+The html source has duplicate anchor Ids: %

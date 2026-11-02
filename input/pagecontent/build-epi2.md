@@ -7,7 +7,7 @@
 </div>
 
 <!-- WHAT IS TYPE 2 -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 2?</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 2?</h3>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 2 extends the digital label (Type 1) by adding <strong>structured, machine-readable product information</strong>. This enables national drug catalogues, regulatory portals, and supply-chain systems to search, filter, and retrieve products by name, strength, ingredient, or authorisation number — without reading the narrative text.</p>
 
 <div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">You will add these FHIR resources (on top of Type 1)</span></div>
@@ -85,7 +85,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- STEPS -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h3>
 
 <!-- STEP 1 -->
 <div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
@@ -235,7 +235,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT'S NEXT -->
-<h2 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h2>
+<h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
   <a href="build-epi3.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>

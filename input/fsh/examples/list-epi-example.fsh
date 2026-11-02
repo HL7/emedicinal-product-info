@@ -15,6 +15,15 @@ Usage: #example
 
 * code = epi-list-type-cs#medicinal-product "Medicinal Product"
 
+// List-level extensions describing the regulatory context of the listed ePIs
+* extension[authorisationType].valueString = "National"
+* extension[medicineDomain].valueCoding = $medicinal-product-domain#Human "Human use"
+* extension[procedureNumber].valueIdentifier.system = "http://example.org/procedure-number"
+* extension[procedureNumber].valueIdentifier.value = "IE/H/0000/001"
+* extension[versionNumber].valueString = "1"
+* extension[jurisdiction].valueCodeableConcept = urn:iso:std:iso:3166#IE "Ireland"
+* extension[regulatoryAgency].valueReference.display = "Example Medicines Agency"
+
 * date = "2026-03-15"
 
 // subject needs to reference MedicinalProductDefinition

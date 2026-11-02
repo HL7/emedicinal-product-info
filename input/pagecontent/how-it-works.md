@@ -71,17 +71,17 @@
     </div>
     <div class="part b">
       <div class="k">B · The product it describes</div>
-      Paracetamol 500 mg tablets <span class="muted">· linked to the product record, its authorization, and its packs</span>
+      WonderDrug 500 mg tablets <span class="muted">· linked to the product record, its authorization, and its packs</span>
     </div>
     <div class="part c">
       <div class="k">C · Coded section headings</div>
-      <div class="head"><span class="chip">section code</span>1. What Paracetamol 500 mg tablets is and what it is used for</div>
-      <div class="head"><span class="chip">section code</span>2. What you need to know before you take Paracetamol 500 mg tablets</div>
+      <div class="head"><span class="chip">section code</span>1. What WonderDrug 500 mg tablets is and what it is used for</div>
+      <div class="head"><span class="chip">section code</span>2. What you need to know before you take WonderDrug 500 mg tablets</div>
       <div class="muted" style="font-style:italic;margin-top:4px;">+ every heading from the national template, coded the same way</div>
     </div>
     <div class="part d">
       <div class="k">D · Narrative content</div>
-      Paracetamol 500 mg tablets contain paracetamol, which is a painkiller (analgesic) and also reduces fever. <span class="muted">Tables, lists and 🖼️ images are carried inside the file.</span>
+      WonderDrug 500 mg tablets contain paracetamol, which is a painkiller (analgesic) and also reduces fever. <span class="muted">Tables, lists and 🖼️ images are carried inside the file.</span>
     </div>
     <div class="part e">
       <div class="k">E · Annotations (drafts only)</div>
@@ -103,7 +103,7 @@
   </div>
 </div>
 
-<p style="margin:14px 0 0;"><a class="more" href="examples/bundle-epi-type1-example-paracetamol.html" target="_blank">See a complete rendered ePI →</a></p>
+<p style="margin:14px 0 0;"><a class="more" href="examples/bundle-epi-type1-example-wonderdrug.html" target="_blank">See a complete rendered ePI →</a></p>
 
 <hr/>
 

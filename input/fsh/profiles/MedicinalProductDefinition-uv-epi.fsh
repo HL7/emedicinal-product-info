@@ -84,7 +84,7 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * name.part.type.coding.system 1..1
 * name.part.type.coding.code 1..1
 * name.part.type.coding.display 1..1
-* name.part ^slicing.discriminator.type = #pattern
+* name.part ^slicing.discriminator.type = #value
 * name.part ^slicing.discriminator.path = "type"
 * name.part ^slicing.rules = #open
 * name.part contains

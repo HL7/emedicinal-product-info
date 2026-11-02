@@ -1,7 +1,7 @@
 <!-- HERO -->
 <div style="text-align:center; padding:48px 20px 36px;">
   <div style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.22em; color:#003087; margin-bottom:16px;">HL7 FHIR R5 · Vulcan Accelerator</div>
-  <h1 style="font-size:2.4em; font-weight:800; line-height:1.15; margin-bottom:16px; color:#111827;">Product information,<br/><span style="background:linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">reimagined.</span></h1>
+  <h3 style="font-size:2.4em; font-weight:800; line-height:1.15; margin-bottom:16px; color:#111827;">Product information,<br/><span style="background:linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">reimagined.</span></h3>
   <p style="font-size:1.05em; color:#6b7280; max-width:520px; margin:0 auto 32px; line-height:1.55;">One global standard to replace static PDFs, fragmented XML, and proprietary regulatory formats.</p>
   <a href="how-it-works.html" style="display:inline-block; background:#003087; color:#fff; padding:14px 28px; border-radius:8px; font-weight:700; font-size:1em; text-decoration:none;">Get Started</a>
 </div>
@@ -9,14 +9,14 @@
 <!-- SHOWCASE STRIP -->
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb;">
   <!-- Type 1 -->
-  <a href="examples/bundle-epi-type1-example-paracetamol.html" target="_blank" style="text-decoration:none; display:block; padding:32px 24px; border-right:1px solid #e5e7eb; text-align:center;">
+  <a href="examples/bundle-epi-type1-example-wonderdrug.html" target="_blank" style="text-decoration:none; display:block; padding:32px 24px; border-right:1px solid #e5e7eb; text-align:center;">
     <div style="width:52px; height:52px; border-radius:50%; background:#eff6ff; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; font-size:1.4em;">📱</div>
     <div style="font-weight:700; color:#111827; margin-bottom:6px;">Digital Label</div>
     <div style="font-size:.82em; color:#6b7280; line-height:1.5; margin-bottom:14px; max-width:220px; margin-left:auto; margin-right:auto;">The draft or approved SmPC, PIL, and IFU as modern, searchable content.</div>
     <span style="display:inline-block; background:#3b82f6; color:#fff; font-size:.8em; font-weight:600; padding:7px 18px; border-radius:6px;">Try the Demo</span>
   </a>
   <!-- Type 2 -->
-  <a href="examples/bundle-epi-type2-example-paracetamol.html" target="_blank" style="text-decoration:none; display:block; padding:32px 24px; border-right:1px solid #e5e7eb; text-align:center;">
+  <a href="examples/bundle-epi-type2-example-wonderdrug.html" target="_blank" style="text-decoration:none; display:block; padding:32px 24px; border-right:1px solid #e5e7eb; text-align:center;">
     <div style="width:52px; height:52px; border-radius:50%; background:#ecfdf5; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; font-size:1.4em;">🔍</div>
     <div style="font-weight:700; color:#111827; margin-bottom:6px;">Product Data</div>
     <div style="font-size:.82em; color:#6b7280; line-height:1.5; margin-bottom:14px; max-width:220px; margin-left:auto; margin-right:auto;">GTINs, ingredients, packaging layers — structured and machine-readable.</div>
@@ -37,7 +37,7 @@
 
 <!-- ABOUT THIS IG -->
 <div style="padding-top:40px;"></div>
-<h2 id="about" style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:12px;">About This IG</h2>
+<h4 id="about" style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:12px;">About This IG</h4>
 
 <div style="margin-bottom:24px;">
   <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:12px;">The Electronic Medicinal Product Information (ePI) Implementation Guide defines how HL7 FHIR R5 is used to represent the product information for medicinal products, both draft and approved — the healthcare professional label, the patient leaflet, instructions for use, and pack artwork — as structured, machine-readable documents.</p>
@@ -48,7 +48,7 @@
 </div>
 
 <!-- SCOPE -->
-<h2 id="scope" style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">Scope</h2>
+<h4 id="scope" style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">Scope</h4>
 
 <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">This Implementation Guide focuses on the draft and approved product information for human biopharmaceutical drugs, across every national label template and terminology.</p>
 
@@ -86,7 +86,7 @@
 
 <!-- HOW IT WORKS — 5-STEP PIPELINE -->
 <div style="text-align:center; margin-bottom:28px;">
-  <h2 id="how-it-works" style="font-size:1.5em; font-weight:800; color:#111827; margin-bottom:8px;">How It Works</h2>
+  <h4 id="how-it-works" style="font-size:1.5em; font-weight:800; color:#111827; margin-bottom:8px;">How It Works</h4>
   <p style="font-size:.92em; color:#6b7280; max-width:540px; margin:0 auto; line-height:1.55;">Five steps from a draft label to approved data every downstream system can use.</p>
 </div>
 
@@ -138,7 +138,7 @@
 
 <!-- WHY ADOPT -->
 <div style="text-align:center; padding:16px 20px 8px;">
-  <h2 id="why-adopt" style="font-size:1.5em; font-weight:800; color:#111827; margin-bottom:10px;">Why adopt ePI</h2>
+  <h4 id="why-adopt" style="font-size:1.5em; font-weight:800; color:#111827; margin-bottom:10px;">Why adopt ePI</h4>
   <p style="font-size:.95em; color:#6b7280; max-width:520px; margin:0 auto 28px; line-height:1.55;">A single FHIR-based document model that enables safety, speed, and global interoperability.</p>
 </div>
 
@@ -189,6 +189,6 @@
     <div style="font-size:1.4em; margin-bottom:10px;">🎨</div>
     <div style="font-weight:700; color:#003087; margin-bottom:6px;">Dynamic, Web-friendly Content</div>
     <p style="font-size:.88em; color:#4b5563; line-height:1.6; margin:0 0 12px; flex:1;">Change how the label looks at the push of a button: one, two, or three columns, font, font size, colours, and styling, all from the same content.</p>
-    <a href="examples/bundle-epi-type1-example-paracetamol.html" style="color:#003087; font-weight:600; font-size:.85em; text-decoration:none;">Try the demo →</a>
+    <a href="examples/bundle-epi-type1-example-wonderdrug.html" style="color:#003087; font-weight:600; font-size:.85em; text-decoration:none;">Try the demo →</a>
   </div>
 </div>

@@ -3,6 +3,7 @@ Id: epi-ig
 Title: "eMedicinal Product Information Code System"
 Description: """eMedicinal Product Information Code System.
 Coded concepts defined for ePI use only."""
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^caseSensitive = false
@@ -26,6 +27,7 @@ CodeSystem: BenefitAndRiskRelationship
 Id: benefit-and-risk-relationship
 Title: "Benefit and Risk Relationship"
 Description: "Benefit and Risk Relationship"
+* insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^caseSensitive = false

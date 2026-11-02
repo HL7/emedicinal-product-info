@@ -5,7 +5,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   exclude-result-prefixes="f xhtml">
 
-<xsl:output method="html" indent="yes" encoding="UTF-8"/>
+<xsl:output method="xml" indent="yes" encoding="UTF-8" omit-xml-declaration="yes"/>
+<xsl:key name="entry-by-url" match="f:entry" use="f:fullUrl/@value"/>
 <xsl:param name="css-path" select="'epi-styles.css'"/>
 
 <!-- ============================================================
@@ -45,6 +46,7 @@
     </style>
   </head>
   <body>
+    <xsl:comment>ReleaseHeader</xsl:comment><p id="publish-box">Publish Box goes here</p><xsl:comment>EndReleaseHeader</xsl:comment>
     <xsl:apply-templates select="f:Bundle"/>
   </body>
   </html>
@@ -67,7 +69,7 @@
   <header class="hero">
     <h1><xsl:value-of select="$comp/f:title/@value"/></h1>
     <xsl:if test="$comp/f:text/xhtml:div">
-      <p class="sub"><xsl:value-of select="$comp/f:text/xhtml:div"/></p>
+      <p class="sub"><xsl:for-each select="$comp/f:text/xhtml:div//text()[normalize-space()]"><xsl:if test="position() &gt; 1"> &#183; </xsl:if><xsl:value-of select="normalize-space(.)"/></xsl:for-each></p>
     </xsl:if>
     <div class="chips">
       <xsl:if test="$comp/f:status/@value">
@@ -279,7 +281,11 @@
     <xsl:if test="@id">
       <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
     </xsl:if>
-    <h3><xsl:value-of select="f:title/@value"/></h3>
+    <xsl:choose>
+      <xsl:when test="$depth = 1"><h2><xsl:value-of select="f:title/@value"/></h2></xsl:when>
+      <xsl:when test="$depth = 2"><h3><xsl:value-of select="f:title/@value"/></h3></xsl:when>
+      <xsl:otherwise><h4><xsl:value-of select="f:title/@value"/></h4></xsl:otherwise>
+    </xsl:choose>
     <!-- Render narrative XHTML -->
     <xsl:if test="f:text/xhtml:div">
       <xsl:apply-templates select="f:text/xhtml:div/node()" mode="copy-xhtml"/>
@@ -299,6 +305,19 @@
     <xsl:copy-of select="@*"/>
     <xsl:apply-templates mode="copy-xhtml"/>
   </xsl:element>
+</xsl:template>
+<xsl:template match="xhtml:img[starts-with(@src,'#')]" mode="copy-xhtml">
+  <xsl:variable name="bid" select="substring-after(@src,'#')"/>
+  <xsl:variable name="bin" select="ancestor::f:Composition/f:contained/f:Binary[f:id/@value=$bid]"/>
+  <img>
+    <xsl:copy-of select="@*[local-name()!='src']"/>
+    <xsl:attribute name="src">
+      <xsl:choose>
+        <xsl:when test="$bin">data:<xsl:value-of select="$bin/f:contentType/@value"/>;base64,<xsl:value-of select="$bin/f:data/@value"/></xsl:when>
+        <xsl:otherwise><xsl:value-of select="@src"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
+  </img>
 </xsl:template>
 <xsl:template match="text()" mode="copy-xhtml">
   <xsl:value-of select="."/>
@@ -376,6 +395,33 @@
       </div>
     </details>
   </xsl:for-each>
+  <xsl:if test="f:entry/f:resource/f:ManufacturedItemDefinition | f:entry/f:resource/f:AdministrableProductDefinition | f:entry/f:resource/f:PackagedProductDefinition">
+    <div class="is"><div class="isl">Manufactured items, administrable products and packs</div>
+      <div class="isb"><div class="ifs">
+        <xsl:for-each select="f:entry/f:resource/f:ManufacturedItemDefinition">
+          <div class="inf"><span class="il">Manufactured item</span><span class="iv"><xsl:value-of select="(f:name/@value | f:manufacturedDoseForm/f:coding/f:display/@value)[1]"/> (<xsl:value-of select="f:manufacturedDoseForm/f:coding/f:display/@value"/>)</span></div>
+        </xsl:for-each>
+        <xsl:for-each select="f:entry/f:resource/f:AdministrableProductDefinition">
+          <div class="inf"><span class="il">Administrable product</span><span class="iv"><xsl:value-of select="f:administrableDoseForm/f:coding/f:display/@value"/><xsl:if test="f:description/@value"> — <xsl:value-of select="f:description/@value"/></xsl:if></span></div>
+        </xsl:for-each>
+        <xsl:for-each select="f:entry/f:resource/f:PackagedProductDefinition">
+          <div class="inf"><span class="il">Pack</span><span class="iv"><xsl:value-of select="(f:name/@value | f:description/@value)[1]"/></span></div>
+        </xsl:for-each>
+        <xsl:for-each select="f:entry/f:resource/f:DeviceDefinition">
+          <div class="inf"><span class="il">Device in pack</span><span class="iv"><xsl:value-of select="(f:deviceName/f:name/@value | f:description/@value)[1]"/></span></div>
+        </xsl:for-each>
+      </div></div>
+    </div>
+  </xsl:if>
+  <xsl:if test="f:entry/f:resource/f:Ingredient">
+    <div class="is"><div class="isl">Ingredients</div>
+      <div class="isb"><div class="ifs">
+        <xsl:for-each select="f:entry/f:resource/f:Ingredient">
+          <div class="inf"><span class="il"><xsl:value-of select="f:role/f:coding/f:display/@value"/></span><span class="iv"><xsl:value-of select="(f:substance/f:code/f:concept/f:text/@value | f:substance/f:code/f:concept/f:coding/f:display/@value)[1]"/><xsl:if test="f:substance/f:strength/f:textConcentration/@value"> — <xsl:value-of select="f:substance/f:strength/f:textConcentration/@value"/></xsl:if></span></div>
+        </xsl:for-each>
+      </div></div>
+    </div>
+  </xsl:if>
   <xsl:if test="not(f:entry/f:resource/f:MedicinalProductDefinition)">
     <div class="type1-note"><span class="icon">&#128712;</span><span>No MedicinalProductDefinition resources are included in this ePI Bundle. Product data is referenced by identifier only (Type 1 ePI).</span></div>
   </xsl:if>
@@ -401,6 +447,17 @@
               <xsl:if test="f:contraindication/f:diseaseSymptomProcedure/f:concept/f:text/@value">
                 — <xsl:value-of select="f:contraindication/f:diseaseSymptomProcedure/f:concept/f:text/@value"/>
               </xsl:if>
+              <xsl:if test="f:interaction/f:interactant/f:itemCodeableConcept">
+                — <xsl:value-of select="(f:interaction/f:interactant/f:itemCodeableConcept/f:text/@value | f:interaction/f:interactant/f:itemCodeableConcept/f:coding/f:display/@value)[1]"/>
+                <xsl:if test="f:interaction/f:effect/f:concept/f:text/@value">: <xsl:value-of select="f:interaction/f:effect/f:concept/f:text/@value"/></xsl:if>
+              </xsl:if>
+              <xsl:if test="f:undesirableEffect/f:symptomConditionEffect/f:concept">
+                — <xsl:value-of select="(f:undesirableEffect/f:symptomConditionEffect/f:concept/f:text/@value | f:undesirableEffect/f:symptomConditionEffect/f:concept/f:coding/f:display/@value)[1]"/>
+                <xsl:if test="f:undesirableEffect/f:frequencyOfOccurrence/f:coding/f:display/@value"> (<xsl:value-of select="f:undesirableEffect/f:frequencyOfOccurrence/f:coding/f:display/@value"/>)</xsl:if>
+              </xsl:if>
+              <xsl:if test="f:warning/f:description/@value">
+                — <xsl:value-of select="f:warning/f:description/@value"/>
+              </xsl:if>
             </span>
           </div>
         </xsl:for-each>
@@ -421,7 +478,9 @@
               <span class="d-pop">
                 <xsl:choose>
                   <xsl:when test="f:extension[@url='population']/f:valueReference/f:display/@value"><xsl:value-of select="f:extension[@url='population']/f:valueReference/f:display/@value"/></xsl:when>
+                  <xsl:when test="key('entry-by-url', f:extension[@url='population']/f:valueReference/f:reference/@value)/f:resource/f:Group/f:name/@value"><xsl:value-of select="key('entry-by-url', f:extension[@url='population']/f:valueReference/f:reference/@value)/f:resource/f:Group/f:name/@value"/></xsl:when>
                   <xsl:when test="../../f:population/f:display/@value"><xsl:value-of select="../../f:population/f:display/@value"/></xsl:when>
+                  <xsl:when test="key('entry-by-url', ../../f:population/f:reference/@value)/f:resource/f:Group/f:name/@value"><xsl:value-of select="key('entry-by-url', ../../f:population/f:reference/@value)/f:resource/f:Group/f:name/@value"/></xsl:when>
                   <xsl:otherwise>All patients for this indication</xsl:otherwise>
                 </xsl:choose>
               </span>

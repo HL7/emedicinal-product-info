@@ -7,7 +7,7 @@
 </div>
 
 <!-- WHAT IS TYPE 3 -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 3?</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 3?</h3>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 3 unlocks <strong>structured, machine readable clinical information</strong>. It takes the narrative clinical sections already present in Type 1 — indications, contraindications, interactions, undesirable effects, warnings, population demographics — and expresses them as <strong>computable, structured FHIR resources</strong>. Electronic Medical Record (EMR) systems, pharmacovigilance tools, and patient-facing apps can then query and act on this data directly, without parsing free text.</p>
 
 <div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">You will add these FHIR resources (on top of Types 1 &amp; 2)</span></div>
@@ -67,7 +67,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- STEPS -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Step-by-Step Workflow</h3>
 
 <!-- STEP 1 -->
 <div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
@@ -214,7 +214,7 @@
       </div>
       <div style="background:#dcfce7; border:1px solid #bbf7d0; border-left:3px solid #16a34a; border-radius:6px; padding:10px 14px; font-size:.82em; color:#14532d; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">✅</span>
-        <span><strong>Validate:</strong> Run the completed Bundle against the <a href="StructureDefinition-bundle-epi-type3.html" style="color:#15803d; font-weight:600;">Type 3 FHIR Profile</a>. Fix any errors before submission. Full XML/JSON examples are in the <a href="artifacts.html" style="color:#15803d; font-weight:600;">Artifacts</a> section. An interactive showcase of a Type 3 ePI is also available in the <a href="stylesheets.html" style="color:#15803d; font-weight:600;">Style Sheets</a> section.</span>
+        <span><strong>Validate:</strong> Run the completed Bundle against the <a href="StructureDefinition-bundle-epi-type3.html" style="color:#15803d; font-weight:600;">Type 3 FHIR Profile</a>. Fix any errors before submission. Full XML/JSON examples are in the <a href="artifacts.html" style="color:#15803d; font-weight:600;">Artifacts</a> section. An interactive showcase of a Type 3 ePI is also available in the <a href="templates.html" style="color:#15803d; font-weight:600;">Style Sheets</a> section.</span>
       </div>
     </div>
   </div>
@@ -238,7 +238,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT'S NEXT -->
-<h2 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h2>
+<h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
   <a href="build-list.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>

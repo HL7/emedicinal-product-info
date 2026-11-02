@@ -12,7 +12,7 @@ license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 International / Biomedical Research and Regulation
-  url: http://hl7.org/Special/committees/rcrim
+  url: http://www.hl7.org/Special/committees/rcrim
 
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
@@ -101,8 +101,10 @@ menu:
 
 parameters:
   jira-code: uv-emedicinal-product-info
-  path-suppressed-warnings: input/ignoreWarnings.xml
+  path-suppressed-warnings: input/ignoreWarnings.txt
   autoload-resources: true
+  apply-publisher: true
+  apply-contact: true
 
 #parameters:
   #show-inherited-invariants: false
@@ -127,4 +129,5 @@ parameters:
 
 instanceOptions:
   manualSliceOrdering: true
+
 

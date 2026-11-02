@@ -72,6 +72,8 @@ InstanceOf: MedicinalProductDefinitionUvEpi
 Usage: #example
 Title: "MedicinalProductDefinition - Duosynth"
 Description: "MedicinalProductDefinition - Duosynth film-coated tablets (synthavir tablets co-packaged with boostavir tablets)"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><b>Duosynth film-coated tablets</b></p><p>Synthavir 150 mg tablets co-packaged with boostavir 100 mg tablets.</p></div>"
 * id = "mpd-duosynth"
 * identifier.system = $example-id
 * identifier.value = "DUOSYNTH-150-100"
@@ -121,9 +123,9 @@ Description: "PackagedProductDefinition - Carton of 30 tablets in 5 daily-dose b
 * packaging.packaging.type = $spor-rms#100000073496 "Blister"
 * packaging.packaging.quantity = 5
 * packaging.packaging.containedItem[0].item.reference.reference = "urn:uuid:297ef167-a40a-5eed-ad6c-7d9028387462"
-* packaging.packaging.containedItem[0].amount = 4 '{tablet}' "tablet"
+* packaging.packaging.containedItem[0].amount = 4 $unit-of-presentation#200000002152 "Tablet"
 * packaging.packaging.containedItem[+].item.reference.reference = "urn:uuid:5b05a969-250a-5cf0-b7b5-9f39f48f964b"
-* packaging.packaging.containedItem[=].amount = 2 '{tablet}' "tablet"
+* packaging.packaging.containedItem[=].amount = 2 $unit-of-presentation#200000002152 "Tablet"
 
 // ---------------------------------------------------------------------------
 // Population (indication) and sub-populations (dosing), each fully defined
@@ -131,7 +133,7 @@ Description: "PackagedProductDefinition - Carton of 30 tablets in 5 daily-dose b
 Instance: group-duosynth-adults
 InstanceOf: GroupUvEpi
 Usage: #example
-Title: "Group - Adults"
+Title: "Group - Adults (Duosynth)"
 Description: "Adults 18 years and over"
 * type = #person
 * membership = #definitional

@@ -71,6 +71,8 @@ InstanceOf: MedicinalProductDefinitionUvEpi
 Usage: #example
 Title: "MedicinalProductDefinition - Fungisynth 150 mg capsule"
 Description: "MedicinalProductDefinition - Fungisynth (synthazole) 150 mg capsule"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><b>Fungisynth 150 mg capsule</b></p><p>Capsule containing 150 mg synthazole.</p></div>"
 * id = "mpd-fungisynth"
 * identifier.system = $ema-id
 * identifier.value = "FUNGISYNTH-150MG"
@@ -83,7 +85,7 @@ Description: "MedicinalProductDefinition - Fungisynth (synthazole) 150 mg capsul
 Instance: group-fungisynth-adult
 InstanceOf: GroupUvEpi
 Usage: #example
-Title: "Group - Adults"
+Title: "Group - Adults (Fungisynth)"
 Description: "Group - Adults (18 years and over)"
 * type = #person
 * membership = #definitional

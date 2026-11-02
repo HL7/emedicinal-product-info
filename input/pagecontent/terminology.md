@@ -3,8 +3,8 @@
   .term-page { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; }
   .term-page .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
   .term-page .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
-  .term-page .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
-  .term-page .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .term-page .hero h3 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
+  .term-page .hero h3 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
   .term-page .hero p { font-size:.95em; color:#6b7280; max-width:560px; margin:0 auto; line-height:1.6; }
   .term-page .section-title { font-size:1.1em; font-weight:700; color:#111827; margin: 36px 0 14px; display:flex; align-items:center; gap:8px; }
   .term-page .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
@@ -27,7 +27,7 @@
   .term-page .term-card .term-example { font-family:monospace; font-size:.78em; background:#f8fafc; border:1px solid #e5e7eb; border-radius:5px; padding:4px 8px; color:#374151; margin-top:auto; }
   .term-page .harmonization-banner { background: linear-gradient(135deg, #003087 0%, #1d4ed8 100%); border-radius:12px; padding:28px 32px; margin-bottom:36px; color:#fff; display:flex; align-items:flex-start; gap:20px; }
   .term-page .harmonization-banner .hicon { font-size:2em; flex-shrink:0; }
-  .term-page .harmonization-banner h3 { font-size:1.05em; font-weight:800; margin-bottom:8px; }
+  .term-page .harmonization-banner h4 { font-size:1.05em; font-weight:800; margin-bottom:8px; }
   .term-page .harmonization-banner p { font-size:.85em; color:#bfdbfe; line-height:1.6; }
   .term-page .harmonization-banner strong { color:#fff; }
   .term-page .harmonization-badge { display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:100px; padding:4px 12px; font-size:.72em; font-weight:700; margin-top:10px; color:#fff; }
@@ -41,7 +41,7 @@
 
   <div class="hero">
     <div class="eyebrow">Technical Details · Code Systems</div>
-    <h1>Controlled <span>Terminology</span></h1>
+    <h3>Controlled <span>Terminology</span></h3>
     <p>Standardized code systems make drug label information precise and machine-readable — enabling global interoperability with EHRs, ePrescribing apps, and regulatory systems.</p>
   </div>
 
@@ -102,7 +102,7 @@
   <div class="harmonization-banner">
     <div class="hicon">🌐</div>
     <div class="hbody">
-      <h3>International Harmonization</h3>
+      <h4>International Harmonization</h4>
       <p>By using <strong>EDQM</strong> and <strong>SNOMED CT</strong>, a single ePI Type 2 or Type 3 document can be understood and processed by healthcare systems in <strong>multiple jurisdictions</strong> with minimal adaptation — reducing duplication and supporting global regulatory convergence.</p>
       <span class="harmonization-badge">✅ Supported by Type 2 &amp; Type 3 ePI</span>
     </div>

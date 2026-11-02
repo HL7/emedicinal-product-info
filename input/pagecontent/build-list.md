@@ -1,12 +1,12 @@
 <div style="margin-bottom:32px;">
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is an ePI Tracking List?</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is an ePI Tracking List?</h3>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">The FHIR <code style="font-family:monospace; font-size:.8em; color:#0891b2;">List</code> resource is a versatile configuration tool within the ePI ecosystem. It is primarily used to track and manage collections of ePI documents, acting as a real-time registry of authorized product information.</p>
 </div>
 
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- USE CASES -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">Primary Use Cases</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">Primary Use Cases</h3>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">There are four primary industry use cases for implementing the ePI Tracking List:</p>
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:28px;">
@@ -42,7 +42,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- STEPS -->
-<h2 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">How to Build the List</h2>
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">How to Build the List</h3>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:20px;">Building an ePI Tracking List from a business process perspective is simple:</p>
 
 <!-- STEP 1 -->
@@ -120,7 +120,7 @@
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
 <!-- WHAT'S NEXT -->
-<h2 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h2>
+<h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:grid; grid-template-columns:1fr; gap:14px;">
   <a href="versions.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>

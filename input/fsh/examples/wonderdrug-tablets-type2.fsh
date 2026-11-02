@@ -220,6 +220,8 @@ InstanceOf: MedicinalProductDefinitionUvEpi
 Usage: #example
 Title: "MedicinalProductDefinition - WonderDrug 500 mg tablets"
 Description: "The medicinal product WonderDrug 500 mg tablets"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><b>WonderDrug 500 mg tablets</b></p><p>Human medicinal product, not subject to medical prescription. Marketing authorization holder: WonderPharma Ltd.</p></div>"
 * identifier.system = $example-prod
 * identifier.value = "WONDERDRUG-500-TAB"
 * type = $medicinal-product-type#MedicinalProduct "Medicinal Product"
@@ -331,7 +333,7 @@ Description: "The tablet as taken by the patient. No transformation is needed, s
 Instance: ingredient-wonderdrug-tablets-paracetamol
 InstanceOf: IngredientUvEpi
 Usage: #example
-Title: "Ingredient - Paracetamol (active)"
+Title: "Ingredient - Paracetamol (active), WonderDrug tablets"
 Description: "Paracetamol (active)"
 * identifier.system = $example-id
 * identifier.value = "ingredient-wonderdrug-tablets-paracetamol"

@@ -156,6 +156,8 @@ InstanceOf: MedicinalProductDefinitionUvEpi
 Usage: #example
 Title: "MedicinalProductDefinition - WonderDrug 250 mg/5 mL powder for oral suspension"
 Description: "The medicinal product WonderDrug 250 mg/5 mL powder for oral suspension"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p><b>WonderDrug 250 mg/5 mL powder for oral suspension</b></p><p>Human medicinal product, not subject to medical prescription. Marketing authorization holder: WonderPharma Ltd.</p></div>"
 * identifier.system = $example-prod
 * identifier.value = "WONDERDRUG-250-5ML-POS"
 * type = $medicinal-product-type#MedicinalProduct "Medicinal Product"
@@ -276,7 +278,7 @@ Description: "The oral suspension that is given to the patient, made by adding w
 Instance: ingredient-wonderdrug-powder-paracetamol
 InstanceOf: IngredientUvEpi
 Usage: #example
-Title: "Ingredient - Paracetamol (active)"
+Title: "Ingredient - Paracetamol (active), WonderDrug powder for oral suspension"
 Description: "Paracetamol (active)"
 * identifier.system = $example-id
 * identifier.value = "ingredient-wonderdrug-powder-paracetamol"

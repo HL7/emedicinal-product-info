@@ -3,8 +3,8 @@
   .ss-page { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; }
   .ss-page .hero { text-align: center; padding: 48px 20px 36px; border-bottom: 1px solid #e5e7eb; margin-bottom: 40px; }
   .ss-page .hero .eyebrow { font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#003087; margin-bottom:14px; }
-  .ss-page .hero h1 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
-  .ss-page .hero h1 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .ss-page .hero h3 { font-size:2em; font-weight:800; color:#111827; margin-bottom:12px; line-height:1.2; }
+  .ss-page .hero h3 span { background: linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
   .ss-page .hero p { font-size:.95em; color:#6b7280; max-width:560px; margin:0 auto; line-height:1.6; }
   .ss-page .section-title { font-size:1.1em; font-weight:700; color:#111827; margin: 36px 0 14px; display:flex; align-items:center; gap:8px; }
   .ss-page .section-title::after { content:''; flex:1; height:1px; background:#e5e7eb; margin-left:8px; }
@@ -48,7 +48,7 @@
 
   <div class="hero">
     <div class="eyebrow">Technical Details · Templates &amp; Stylesheets</div>
-    <h1>Building &amp; Rendering ePI</h1>
+    <h3>Building &amp; Rendering ePI</h3>
     <p>This page provides direct access to the raw XML FHIR templates for building ePIs, along with the CSS stylesheets and worked HTML examples for transforming that structured data into modern, accessible web interfaces.</p>
   </div>
 
@@ -154,28 +154,36 @@
 
   <div class="section-title">Rendered Examples — Individual Product ePIs</div>
   <div class="ex-section">
-    <p>See the <code>epi-styles.css</code> stylesheet applied to real FHIR Bundle examples:</p>
+    <p>See the <code>epi-styles.css</code> stylesheet applied to the IG's example Bundles. The WonderDrug pages are generated from the examples with <code>epi-transform.xslt</code> by <code>scripts/build_demos.py</code>:</p>
     <div class="ex-grid">
-      <a class="ex-card" href="examples/bundle-epi-type1-example-paracetamol.html" target="_blank">
+      <a class="ex-card" href="examples/bundle-epi-type1-example-wonderdrug.html" target="_blank">
         <div class="ex-icon">📱</div>
         <div class="ex-text">
-          <div class="ex-title">ePI Type 1 — Paracetamol</div>
+          <div class="ex-title">ePI Type 1 — WonderDrug tablets</div>
           <div class="ex-sub">Digital Label</div>
         </div>
         <div class="ex-arrow">Open →</div>
       </a>
-      <a class="ex-card" href="examples/bundle-epi-type2-example-paracetamol.html" target="_blank">
+      <a class="ex-card" href="examples/bundle-epi-type2-example-wonderdrug.html" target="_blank">
         <div class="ex-icon">🔍</div>
         <div class="ex-text">
-          <div class="ex-title">ePI Type 2 — Paracetamol</div>
+          <div class="ex-title">ePI Type 2 — WonderDrug tablets</div>
           <div class="ex-sub">Product Identification</div>
+        </div>
+        <div class="ex-arrow">Open →</div>
+      </a>
+      <a class="ex-card" href="examples/bundle-epi-type2-example-wonderdrug-suspension.html" target="_blank">
+        <div class="ex-icon">🧪</div>
+        <div class="ex-text">
+          <div class="ex-title">ePI Type 2 — WonderDrug powder for oral suspension</div>
+          <div class="ex-sub">Product Identification (reconstituted product)</div>
         </div>
         <div class="ex-arrow">Open →</div>
       </a>
       <a class="ex-card" href="examples/bundle-epi-type3-example-wonderdrug.html" target="_blank">
         <div class="ex-icon">⚡</div>
         <div class="ex-text">
-          <div class="ex-title">ePI Type 3 — WonderDrug</div>
+          <div class="ex-title">ePI Type 3 — WonderDrug tablets</div>
           <div class="ex-sub">Clinical Information</div>
         </div>
         <div class="ex-arrow">Open →</div>

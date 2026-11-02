@@ -2,8 +2,10 @@ CodeSystem: ListEntryFlagCS
 Id: epi-list-entry-flag-cs
 Title: "ePI List Entry Flag CodeSystem"
 Description: "Codes to classify the component type or lifecycle status of an ePI list entry."
+* insert HL7Publisher
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 // Component Types
 * #smpc "Summary of Product Characteristics" "The entry is a Summary of Product Characteristics."
@@ -23,6 +25,7 @@ ValueSet: ListEntryFlagVS
 Id: epi-list-entry-flag-vs
 Title: "ePI List Entry Flag ValueSet"
 Description: "Values to classify the component type or lifecycle status of an ePI list entry."
+* insert HL7Publisher
 * ^status = #active
 * ^experimental = false
 * include codes from system ListEntryFlagCS

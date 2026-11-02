@@ -917,6 +917,12 @@
           <!-- meta.profile: Optional, repeatable. Profiles this resource claims to conform to -->
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/MedicinalProductDefinition-uv-epi"/>
         </meta>
+        <!-- text: Optional. Text summary of the resource, for human interpretation -->
+        <text>
+          <!-- text.status: Required. generated | extensions | additional | empty -->
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>WonderDrug 500 mg tablets</b></p><p>Human medicinal product, not subject to medical prescription. Marketing authorization holder: WonderPharma Ltd.</p></div>
+        </text>
         <!-- identifier: Required, repeatable. The unique identifier or code for this medicinal product (e.g., MPID, national product code) -->
         <identifier>
           <!-- identifier.system: Optional. The namespace for the identifier value -->
