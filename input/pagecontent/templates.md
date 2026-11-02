@@ -154,7 +154,7 @@
 
   <div class="section-title">Rendered Examples — Individual Product ePIs</div>
   <div class="ex-section">
-    <p>See the <code>epi-styles.css</code> stylesheet applied to the IG's example Bundles. The WonderDrug pages are generated from the examples with <code>epi-transform.xslt</code> by <code>scripts/build_demos.py</code>:</p>
+    <p>See the <code>epi-styles.css</code> stylesheet applied to the IG's example Bundles. The WonderDrug pages are generated from the example Bundles by <code>scripts/build_demos.py</code>, and every value on them comes from the Bundle. Each page also shows the package leaflet and, for the suspension, the instructions for use in their own tabs: these are separate ePI Type 1 documents for the same product (<code>bundle-epi-type1-example-wonderdrug-pil</code>, <code>bundle-epi-type1-example-wonderdrug-suspension-pil</code> and <code>bundle-epi-type1-example-wonderdrug-suspension-ifu</code>). <code>epi-transform.xslt</code> is a simpler XSLT rendering that implementers can reuse:</p>
     <div class="ex-grid">
       <a class="ex-card" href="examples/bundle-epi-type1-example-wonderdrug.html" target="_blank">
         <div class="ex-icon">📱</div>

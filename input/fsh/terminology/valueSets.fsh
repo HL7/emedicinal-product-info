@@ -232,7 +232,7 @@ Description: "Substances"
 ValueSet: VsEpiType
 Id: epiType
 Title: "ePI Document Type (Example)"
-Description: "Example ePI document types. Each regulator populates Composition.type from the document types of its own national drug label templates. This example includes US FDA and EMA document types; Health Canada and Japan (PMDA) document types are shown with placeholder codes from this IG until their published codes are added."
+Description: "Example ePI document types. Each regulator populates Composition.type from the document types of its own national drug label templates. This example includes US FDA and EMA document types; Health Canada and Japan (PMDA) document types, and a standalone instructions for use document, are shown with placeholder codes from this IG until published codes are added."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
@@ -249,12 +249,14 @@ Description: "Example ePI document types. Each regulator populates Composition.t
 * EpiDocumentTypeExampleCS#hc-patient-medication-information "Patient Medication Information (Health Canada)"
 * EpiDocumentTypeExampleCS#jp-rx-package-insert "Package insert for prescription drugs (Japan)"
 * EpiDocumentTypeExampleCS#jp-patient-drug-guide "Drug guide for patients (Japan)"
+// Instructions for use (placeholder until a regulator code is added)
+* EpiDocumentTypeExampleCS#instructions-for-use "Instructions for use"
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 
 CodeSystem: EpiDocumentTypeExampleCS
 Id: epi-document-type-example
 Title: "ePI Document Type Placeholder Codes (Example)"
-Description: "Placeholder document type codes used in the example ePI Document Type value set for regulators whose official document type codes are not yet included in this IG. Not for production use: use the regulator's own code system."
+Description: "Placeholder document type codes used in the example ePI Document Type value set for regulators whose official document type codes are not yet included in this IG, and for document types such as a standalone instructions for use that have no published code yet. Not for production use: use the regulator's own code system."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
@@ -265,6 +267,7 @@ Description: "Placeholder document type codes used in the example ePI Document T
 * #hc-patient-medication-information "Patient Medication Information (Health Canada)" "The Health Canada patient medication information for patients and caregivers."
 * #jp-rx-package-insert "Package insert for prescription drugs (Japan)" "The Japanese package insert for a prescription drug, for health care professionals."
 * #jp-patient-drug-guide "Drug guide for patients (Japan)" "The Japanese drug guide for patients."
+* #instructions-for-use "Instructions for use" "Step-by-step instructions for patients and caregivers on how to prepare, use, store and dispose of a medicinal product or its administration device, published as a standalone document."
 
 //==========================
 ValueSet: EpiCompositionStatus
