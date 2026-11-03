@@ -41,6 +41,7 @@ Alias: $example-prod = http://example.org/sid/product
 
 // New aliases from Phase 2
 Alias: $structuredefinition-wg = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+Alias: $textLink = http://hl7.org/fhir/StructureDefinition/textLink
 Alias: $example-id = http://example.org/identifier
 Alias: $ema-id = http://ema.europa.eu/identifier
 Alias: $spor-oms = https://spor.ema.europa.eu/omswi

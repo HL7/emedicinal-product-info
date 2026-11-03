@@ -6,7 +6,7 @@
 </div>
 <!-- WHAT IS TYPE 4 -->
 <h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 4?</h3>
-<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 4 is a <strong>fully structured representation</strong> where narrative text is decomposed into discrete atomic components and mapped to individual FHIR resources. Each atomic component is coded using controlled terminologies (SNOMED CT, MedDRA, etc.) and appropriate metadata. The goal is to create explicit, stable links between narrative content and its corresponding structured content — enabling regulatory, clinical, and digital health systems to interpret and consume the information automatically.</p>
+<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 4 creates a bridge between the unstructured narrative parts of the ePI and its structured parts. Phrases in the narrative text are linked to the FHIR resources that hold the same information as coded data, so systems can move reliably between what a reader sees and what a machine can process.</p>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:20px;"><em>Conceptual examples included within this implementation guide are provided exclusively for illustrative purposes to facilitate understanding of ePI Type 4 requirements.</em></p>
 <!-- RESOURCE BADGES -->
 <div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">Resources used in Type 4 (on top of Types 1, 2 &amp; 3)</span></div>
@@ -15,6 +15,7 @@
   <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">🔗 Granular Composition Sections</span>
   <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">📎 section.entry references</span>
   <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">🏷️ &lt;span&gt; annotations</span>
+  <span style="background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">🔀 textLink extension</span>
   <span style="background:#fff7ed; border:1px solid #fed7aa; color:#9a3412; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">🧬 Atomic components</span>
 </div>
 <!-- TYPE 4 VALUE PROPOSITION -->
@@ -24,10 +25,10 @@
     <div style="font-size:.86em; color:#14532d; line-height:1.6;">
       <strong>For Regulatory &amp; Industry:</strong>
       <ul style="margin:6px 0 0 18px; padding:0;">
-        <li>Granular regulatory traceability</li>
-        <li>Statement-level updates without affecting neighbouring content</li>
-        <li>Clear alignment between narrative text and coded data</li>
-        <li>Machine-readable linking for automated processing</li>
+        <li>Trace each statement back to its source data</li>
+        <li>Reuse the same structured data across ePIs</li>
+        <li>Each phrase is clearly linked to its coded data</li>
+        <li>Systems can process the content automatically</li>
       </ul>
     </div>
     <div style="font-size:.86em; color:#14532d; line-height:1.6;">
@@ -101,14 +102,14 @@
     <div style="padding:10px 12px; font-size:.76em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.9;">
       <span style="color:#003087;">Section 4</span> <span style="color:#9ca3af;">← container only (no text/entry)</span><br/>
       &nbsp;&nbsp;<span style="color:#7c3aed;">Section 4.1</span> <span style="color:#9ca3af;">← context (no text/entry)</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#16a34a;">Section 4.1.1</span> → Indication #1 + <span style="color:#dc2626;">entry</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#16a34a;">Section 4.1.2</span> → Indication #2 + <span style="color:#dc2626;">entry</span><br/>
-      <br/><em style="font-family:-apple-system, sans-serif; color:#15803d; font-size:.9em;">Each topic has its own section + linked entry</em>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#16a34a;">Section 4.1.1</span> → Indication #1<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#16a34a;">Section 4.1.2</span> → Indication #2<br/>
+      <br/><em style="font-family:-apple-system, sans-serif; color:#15803d; font-size:.9em;">Each topic has its own section</em>
     </div>
   </div>
 </div>
 <!-- DIFFERENCE 2: SECTION.ENTRY -->
-<div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Difference 2 — Mandatory section.entry References</div>
+<div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Difference 2 — section.entry References</div>
 <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:20px;">
   <div style="border:1px solid #fecaca; border-radius:8px; overflow:hidden;">
     <div style="padding:7px 12px; background:#fef2f2; border-bottom:1px solid #fecaca;"><span style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#b91c1c;">⚠ Type 1–3: No entry linking</span></div>
@@ -118,13 +119,13 @@
     </div>
   </div>
   <div style="border:1px solid #bbf7d0; border-radius:8px; overflow:hidden;">
-    <div style="padding:7px 12px; background:#f0fdf4; border-bottom:1px solid #bbf7d0;"><span style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#15803d;">✓ Type 4: Mandatory entry linkage</span></div>
+    <div style="padding:7px 12px; background:#f0fdf4; border-bottom:1px solid #bbf7d0;"><span style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#15803d;">✓ Type 4: Entry linkage</span></div>
     <div style="padding:10px 12px; font-size:.82em; color:#374151; line-height:1.8;">
-      Every content-bearing section <strong>must</strong> include an <code style="font-family:monospace; font-size:.9em; color:#0891b2;">entry</code> referencing the structured FHIR resource(s) representing that section's meaning:<br/>
+      Every content-bearing section can include an <code style="font-family:monospace; font-size:.9em; color:#0891b2;">entry</code> referencing the structured FHIR resource(s) representing that section's meaning:<br/>
       <span style="font-family:monospace; font-size:.85em; word-break:break-word; overflow-wrap:break-word;">
-        &bull; Section 1 → <span style="color:#003087;">MedicinalProductDefinition</span><br/>
-        &bull; Section 4.1.1 → <span style="color:#7c3aed;">ClinicalUseDefinition</span><br/>
-        &bull; Section 2 → <span style="color:#16a34a;">ManufacturedItemDefinition</span> + <span style="color:#d97706;">Ingredient</span>
+        &bull; Section 1 section.entry → <span style="color:#003087;">MedicinalProductDefinition</span><br/>
+        &bull; Section 2 section.entry → <span style="color:#16a34a;">ManufacturedItemDefinition</span> + <span style="color:#d97706;">Ingredient</span><br/>
+        &bull; Section 4.1.1 section.entry → <span style="color:#7c3aed;">ClinicalUseDefinition</span>
       </span>
     </div>
   </div>
@@ -146,10 +147,23 @@
     <div style="padding:7px 12px; background:#f0fdf4; border-bottom:1px solid #bbf7d0;"><span style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#15803d;">✓ Type 4: Span-annotated narrative</span></div>
     <div style="padding:10px 12px; font-size:.76em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.9;">
       &lt;text&gt;<br/>
-      &nbsp;&nbsp;Do not take <span style="background:#fef2f2; border:1px solid #fecaca; padding:1px 4px; border-radius:3px; color:#dc2626;">&lt;span class="<span style="color:#7c3aed;">cud-contra-1</span>"&gt;</span>Fungisynth<span style="color:#dc2626;">&lt;/span&gt;</span>
-      if you are allergic to <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 4px; border-radius:3px; color:#065f46;">&lt;span class="<span style="color:#7c3aed;">substance-synthazole</span>"&gt;</span>synthazole<span style="color:#065f46;">&lt;/span&gt;</span><br/>
-      &lt;/text&gt;<br/><br/>
-      <em style="font-family:-apple-system, sans-serif; color:#15803d; font-size:.9em;">Each span links directly to a resource ID</em>
+      &nbsp;&nbsp;&lt;extension url="http://hl7.org/fhir/StructureDefinition/textLink"&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;extension url="htmlid"&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;valueString value="<span style="color:#16a34a; font-weight:700;">sp-43-01</span>"/&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/extension&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;extension url="data"&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;valueUri value="<span style="color:#dc2626; font-weight:700;">urn:uuid:&lt;CUD-id&gt;</span>"/&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/extension&gt;<br/>
+      &nbsp;&nbsp;&lt;/extension&gt;<br/>
+      &nbsp;&nbsp;&lt;status value="generated"/&gt;<br/>
+      &nbsp;&nbsp;&lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;Do not take Fungisynth if you are allergic to <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 4px; border-radius:3px; color:#065f46;">&lt;span id="<span style="color:#16a34a; font-weight:700;">sp-43-01</span>"&gt;synthazole&lt;/span&gt;</span>.<br/>
+      &nbsp;&nbsp;&lt;/div&gt;<br/>
+      &lt;/text&gt;<br/>
+      &lt;entry&gt;<br/>
+      &nbsp;&nbsp;&lt;reference value="<span style="color:#dc2626; font-weight:700;">urn:uuid:&lt;CUD-id&gt;</span>"/&gt;<br/>
+      &lt;/entry&gt;<br/><br/>
+      <em style="font-family:-apple-system, sans-serif; color:#15803d; font-size:.9em;">Each span id is linked by a textLink extension to a resource (or an element within it) referenced in section.entry</em>
     </div>
   </div>
 </div>
@@ -203,22 +217,6 @@
           </div>
         </div>
       </div>
-      <!-- INDICATION EXAMPLES -->
-      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Handling Indications in Narrative</div>
-      <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:12px 16px; margin-bottom:14px; font-size:.82em; line-height:1.8;">
-        <div style="margin-bottom:10px;">
-          <strong>Pattern A — One indication per section:</strong><br/>
-          <span style="color:#6b7280;">Authored text:</span> Paracetamol is used for the treatment of <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 6px; border-radius:3px; color:#065f46; font-weight:600;">Entry: CUD indication#1 → headache</span>
-        </div>
-        <div style="margin-bottom:10px;">
-          <strong>Pattern B — Multiple codable indications in one section:</strong><br/>
-          <span style="color:#6b7280;">Authored text:</span> Paracetamol is used for the treatment of <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 6px; border-radius:3px; color:#065f46; font-weight:600;">Entry: CUD#1 → headache</span> and <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 6px; border-radius:3px; color:#065f46; font-weight:600;">Entry: CUD#2 → menstrual pain</span>
-        </div>
-        <div>
-          <strong>Pattern C — Codable indication + text-only narrative:</strong><br/>
-          <span style="color:#6b7280;">Authored text:</span> Paracetamol is used for the treatment of <span style="background:#f9fafb; border:1px solid #e5e7eb; padding:1px 6px; border-radius:3px; color:#6b7280; font-style:italic;">Text-only: mild to moderate pain such as</span> <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 6px; border-radius:3px; color:#065f46; font-weight:600;">Entry: CUD#1 → headache</span> and <span style="background:#ecfdf5; border:1px solid #a7f3d0; padding:1px 6px; border-radius:3px; color:#065f46; font-weight:600;">Entry: CUD#2 → menstrual pain</span>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -255,19 +253,10 @@
 <div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
   <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">4</div>
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Apply subdomains to statements</div></div>
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Refine statements with subdomains and atomic components</div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">One topic could be divided into separate statements on which subdomains, narratives, integrated coding and attributes could be applied. <strong>Subdomains</strong> refine a particular dimension, condition, or type of information conveyed by the Topic.</p>
-    </div>
-  </div>
-</div>
-<!-- STEP 5 -->
-<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
-  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">5</div>
-  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Break statements into atomic components</div></div>
-    <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Specify statements into <strong>atomic components</strong> to make the information even more specific for personalised search options. An atomic component is one piece of information within a statement that is meaningful on its own.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Each topic is divided into separate statements, as decomposed in step 2. Apply a <strong>subdomain</strong> to each statement to refine the particular dimension, condition or type of information it conveys within the topic.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Then break each statement into <strong>atomic components</strong> to make the information more specific for personalised search options. An atomic component is one piece of information within a statement that is meaningful on its own.</p>
       <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Fungisynth Contraindication Decomposition</div>
       <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:12px 16px; margin-bottom:12px;">
         <div style="font-size:.84em; color:#991b1b; font-style:italic; line-height:1.6;">"Do not take Fungisynth if you are allergic to synthazole, amoxicillin or sulphonamides."</div>
@@ -311,161 +300,53 @@
     </div>
   </div>
 </div>
-<!-- STEP 6 -->
-<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
-  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">6</div>
+<!-- STEP 5 -->
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">5</div>
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Populate resource narrative text (<code style="font-family:monospace; font-size:.9em; color:#0891b2;">&lt;text&gt;</code>)</div></div>
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Apply semantic text annotation (<code style="font-family:monospace; font-size:.9em; color:#0891b2;">&lt;span&gt;</code> tagging and <code style="font-family:monospace; font-size:.9em; color:#0891b2;">textLink</code>)</div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">To make use of structured resources and facilitate narrative-data linking, parts of the narrative text are proposed to be generated from structured resource content, rather than authored independently. Each resource (ClinicalUseDefinition, etc.) includes a narrative block in the <code style="font-family:monospace; font-size:.9em; color:#0891b2;">&lt;text&gt;</code> element.</p>
-      <!-- NARRATIVE TYPES -->
-      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:16px 20px; margin-bottom:16px;">
-        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#1d4ed8; margin-bottom:10px;">📝 Narrative Types in Type 4</div>
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <div style="display:flex; gap:10px; align-items:flex-start; font-size:.84em;">
-            <span style="background:#2563eb; color:#fff; padding:2px 8px; border-radius:4px; font-size:.75em; font-weight:700; flex-shrink:0; margin-top:2px;">AUTH</span>
-            <span style="color:#1e3a5f;"><strong>Authored narrative text:</strong> Human-written, authoritative text entered directly into <code>&lt;text&gt;</code>. Unlike generated text, its origin is human authoring, and it frequently contains annotations linking to structured resources (e.g., "Paracetamol is used for the treatment of mild to moderate pain").</span>
-          </div>
-          <div style="display:flex; gap:10px; align-items:flex-start; font-size:.84em;">
-            <span style="background:#7c3aed; color:#fff; padding:2px 8px; border-radius:4px; font-size:.75em; font-weight:700; flex-shrink:0; margin-top:2px;">GEN</span>
-            <span style="color:#1e3a5f;"><strong>Generated display text:</strong> Rendered automatically from structured, coded data elements.</span>
-          </div>
-          <div style="display:flex; gap:10px; align-items:flex-start; font-size:.84em;">
-            <span style="background:#0891b2; color:#fff; padding:2px 8px; border-radius:4px; font-size:.75em; font-weight:700; flex-shrink:0; margin-top:2px;">VAL</span>
-            <span style="color:#1e3a5f;"><strong>Value-based narrative elements:</strong> Short textual values from structured data fields (dose amounts, frequencies, durations).</span>
-          </div>
-          <div style="display:flex; gap:10px; align-items:flex-start; font-size:.84em;">
-            <span style="background:#16a34a; color:#fff; padding:2px 8px; border-radius:4px; font-size:.75em; font-weight:700; flex-shrink:0; margin-top:2px;">ANN</span>
-            <span style="color:#1e3a5f;"><strong>Annotated narrative text:</strong> Includes <code>&lt;span class="…"&gt;</code> markup linking specific phrases to structured FHIR resources.</span>
-          </div>
-          <div style="display:flex; gap:10px; align-items:flex-start; font-size:.84em;">
-            <span style="background:#6b7280; color:#fff; padding:2px 8px; border-radius:4px; font-size:.75em; font-weight:700; flex-shrink:0; margin-top:2px;">TXT</span>
-            <span style="color:#1e3a5f;"><strong>Text-only narrative:</strong> Human-written descriptive filler or "glue" phrases (e.g., "such as") used purely for readability. It has no corresponding structured resource and represents no formal clinical concept.</span>
-          </div>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Wrap specific words in the narrative with <code style="font-family:monospace; font-size:.9em; color:#0891b2;">&lt;span id="…"&gt;</code>, then record what each span refers to using the HL7 <a href="https://build.fhir.org/ig/HL7/fhir-extensions/en/StructureDefinition-textLink.html" style="color:#0891b2; font-weight:600;">textLink</a> extension on the section's <code style="font-family:monospace; font-size:.9em; color:#0891b2;">text</code>. The extension connects the span's <code style="font-family:monospace; font-size:.9em; color:#0891b2;">id</code> to a resource (or an element inside a resource) that is referenced in <code style="font-family:monospace; font-size:.9em; color:#0891b2;">section.entry</code>. Together these create a fully traceable, machine-readable link between narrative and structure.</p>
+      <!-- THREE-PART CHAIN -->
+      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">How the link works — three parts in one section</div>
+      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:14px;">
+        <div style="border:1px solid #e5e7eb; border-left:4px solid #16a34a; border-radius:6px; padding:10px 12px; background:#f9fafb;">
+          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#16a34a; margin-bottom:4px;">① Span in the narrative (section.text.div)</div>
+          <div style="font-size:.74em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;p&gt;▼ &lt;span id="<span style="color:#16a34a; font-weight:700;">sp-root-01</span>"&gt;<br/>&nbsp;&nbsp;This medicinal product is subject to additional monitoring&lt;/span&gt;. …&lt;/p&gt;</div>
+          <div style="font-size:.72em; color:#6b7280; margin-top:6px;">The <code>id</code> is a local anchor, unique within the narrative. It carries no resource ids itself; the link to the resource is made only through the <code>textLink</code> extension.</div>
+        </div>
+        <div style="border:1px solid #e5e7eb; border-left:4px solid #0891b2; border-radius:6px; padding:10px 12px; background:#f9fafb;">
+          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#0891b2; margin-bottom:4px;">② textLink extension on section.text</div>
+          <div style="font-size:.74em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;text&gt;<br/>&nbsp;&nbsp;&lt;extension url="http://hl7.org/fhir/StructureDefinition/textLink"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;extension url="htmlid"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;valueString value="<span style="color:#16a34a; font-weight:700;">sp-root-01</span>"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/extension&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;extension url="data"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;valueUri value="<span style="color:#dc2626; font-weight:700;">urn:uuid:57fc8390-081a-511a-983b-ee6a80253c6f</span><span style="color:#7c3aed; font-weight:700;">#addmon</span>"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/extension&gt;<br/>&nbsp;&nbsp;&lt;/extension&gt;<br/>&nbsp;&nbsp;&lt;status value="generated"/&gt;<br/>&nbsp;&nbsp;&lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;…&lt;/div&gt;<br/>&lt;/text&gt;</div>
+          <div style="font-size:.72em; color:#6b7280; margin-top:6px;"><code>htmlid</code> = the span <code>id</code>. <code>data</code> = the target resource's <code>fullUrl</code>, optionally followed by <code>#</code> and the <code>id</code> of an element inside that resource (here <code>#addmon</code> → <code>MedicinalProductDefinition.additionalMonitoringIndicator</code> with <code>id="addmon"</code>).</div>
+        </div>
+        <div style="border:1px solid #e5e7eb; border-left:4px solid #dc2626; border-radius:6px; padding:10px 12px; background:#f9fafb;">
+          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#dc2626; margin-bottom:4px;">③ section.entry reference</div>
+          <div style="font-size:.74em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;entry&gt;<br/>&nbsp;&nbsp;&lt;reference value="<span style="color:#dc2626; font-weight:700;">urn:uuid:57fc8390-081a-511a-983b-ee6a80253c6f</span>"/&gt;<br/>&lt;/entry&gt;</div>
+          <div style="font-size:.72em; color:#6b7280; margin-top:6px;">The resource part of <code>data</code> (before the <code>#</code>) must match a <code>section.entry</code> reference in the same section and a <code>fullUrl</code> in the Bundle.</div>
         </div>
       </div>
-      <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:12px 16px; margin-bottom:14px;">
-        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:8px;">Example — Fungisynth Contraindication narrative</div>
-        <div style="font-size:.78em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.9;">
-          <span style="color:#7c3aed;">&lt;text&gt;</span><br/>
-          &nbsp;&nbsp;<span style="color:#6b7280;">&lt;status&gt;</span>generated<span style="color:#6b7280;">&lt;/status&gt;</span><br/>
-          &nbsp;&nbsp;<span style="color:#6b7280;">&lt;div xmlns="…"&gt;</span><br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;Do not take Fungisynth if you are allergic to synthazole.<br/>
-          &nbsp;&nbsp;<span style="color:#6b7280;">&lt;/div&gt;</span><br/>
-          <span style="color:#7c3aed;">&lt;/text&gt;</span>
-        </div>
+      <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start; margin-bottom:14px;">
+        <span style="flex-shrink:0;">💡</span>
+        <span><strong>Several resources in one section:</strong> each <code>textLink</code> holds one <code>data</code> target, and several spans can point to that target by repeating <code>htmlid</code>. To link spans to different resources, add one <code>textLink</code> per target. This IG&#39;s Composition profile allows <code>textLink</code> to repeat, in anticipation of a requested change to the HL7 extensions pack. Until that change is published, the <code>textLink</code> extension itself allows only one occurrence per narrative, so validators report an error when a section has more than one. For content that must validate today, split a section that refers to several resources (for example a list of excipients, or two indications) into sub-sections, each describing one resource.</span>
       </div>
-    </div>
-  </div>
-</div>
-<!-- STEP 7 -->
-<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
-  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">7</div>
-  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Apply semantic text annotation (<code style="font-family:monospace; font-size:.9em; color:#0891b2;">&lt;span&gt;</code> tagging)</div></div>
-    <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Embed <code style="font-family:monospace; font-size:.9em; color:#0891b2;">&lt;span class="…"&gt;</code> within narrative text to bind specific words to structured FHIR resources. Together with <code style="font-family:monospace; font-size:.9em; color:#0891b2;">section.entry</code>, spans create a fully traceable link between narrative and structure.</p>
       <div style="background:#fefce8; border:1px solid #fef08a; border-left:4px solid #eab308; border-radius:8px; padding:14px 18px; margin-bottom:14px;">
-        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#854d0e; margin-bottom:6px;">Rules for Span Tags</div>
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#854d0e; margin-bottom:6px;">Rules for Span Tags and textLink</div>
         <ul style="font-size:.86em; color:#713f12; line-height:1.7; margin:0; padding-left:18px;">
-          <li>A span class must correspond to the ID of the referenced structured resource</li>
+          <li>Every <code>&lt;span id&gt;</code> that carries meaning must have a matching <code>textLink</code> <code>htmlid</code> in the same <code>section.text</code>, and every <code>htmlid</code> must match a span <code>id</code> in that narrative</li>
+          <li>Span <code>id</code> values must be unique within the narrative and must start with a letter (XHTML <code>id</code> rules), so use a prefix such as <code>sp-</code> rather than a bare UUID</li>
+          <li>The resource in <code>data</code> must also be referenced in <code>section.entry</code> of the same section</li>
+          <li>Where <code>data</code> includes a <code>#fragment</code>, the target resource must contain an element with that <code>id</code></li>
+          <li>The <code>textLink</code> extension is the only permitted way to link a span to a resource; do not encode resource ids in the span <code>class</code> or <code>id</code></li>
           <li>Spans should wrap the <strong>minimal phrase</strong> representing the formal coded concept</li>
-          <li>Span classes must be stable identifiers matching the resource ID</li>
-          <li><strong>Required</strong> when text mentions age/sex/condition constraints or coded concepts</li>
+          <li>Span <code>id</code> values should be stable between versions of the ePI so that links survive updates</li>
+          <li><strong>Required</strong> when text mentions age, sex, or condition constraints or coded concepts</li>
           <li><strong>Optional</strong> when text does not refer to any structured resource</li>
         </ul>
       </div>
-      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Three span variants</div>
-      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:14px;">
-        <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:10px 12px;">
-          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#2563eb; margin-bottom:4px;">A — Class-based (extension)</div>
-          <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span class="substance wheat-starch"&gt;wheat starch&lt;/span&gt;</div>
-          <div style="font-size:.72em; color:#6b7280; margin-top:6px;">Requires Gravitate Health HtmlElementLink extension</div>
-        </div>
-        <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:10px 12px;">
-          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#16a34a; margin-bottom:4px;">B — UUID-based (direct)</div>
-          <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span id="69ea7db9-…"&gt;wheat starch&lt;/span&gt;</div>
-          <div style="font-size:.72em; color:#6b7280; margin-top:6px;">Direct link to ClinicalUseDefinition UUID</div>
-        </div>
-        <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:10px 12px;">
-          <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#d97706; margin-bottom:4px;">A+B — Combined</div>
-          <div style="font-size:.74em; font-family:monospace; word-break:break-all; color:#374151; line-height:1.8;">&lt;span class="…" id="69ea…"&gt;wheat starch&lt;/span&gt;</div>
-          <div style="font-size:.72em; color:#6b7280; margin-top:6px;">Redundant but valid — both approaches together</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- STEP 8 -->
-<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
-  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">8</div>
-  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Apply relationships between topics</div></div>
-    <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">A main topic (such as an interaction) may be connected to other information that should be read in conjunction. Type 4 ePI requires explicit relationships between related topics.</p>
-      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — St. John's Wort / Ritonavir Interaction</div>
-      <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:14px 16px; font-size:.82em; line-height:1.8;">
-        <span style="background:#faf5ff; border:1px solid #e9d5ff; padding:2px 8px; border-radius:4px; color:#7c3aed; font-weight:600;">Drug-drug interaction:</span> Ritonavir levels may increase on stopping St John's wort.<br/>
-        <span style="background:#eff6ff; border:1px solid #bfdbfe; padding:2px 8px; border-radius:4px; color:#1d4ed8; font-weight:600;">→ Relationship to posology:</span> The dose of ritonavir may need adjusting.<br/>
-        <span style="background:#fff7ed; border:1px solid #fed7aa; padding:2px 8px; border-radius:4px; color:#9a3412; font-weight:600;">Effect:</span> The inducing effect may persist for at least 2 weeks after cessation.<br/>
-        <span style="background:#fef2f2; border:1px solid #fecaca; padding:2px 8px; border-radius:4px; color:#dc2626; font-weight:600;">→ Relationship to CUD Contraindication + AnchorLink:</span> (see section 4.3).
-      </div>
-    </div>
-  </div>
-</div>
-<!-- STEP 9 -->
-<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
-  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">9</div>
-  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Assign attribute labels</div></div>
-    <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Attribute labels support regulatory granularity, filtering, and automation. Information applicable only to a certain population should be marked with attributes for that group.</p>
-      <div style="overflow-x:auto; max-width:100%;">
-      <table style="width:100%; border-collapse:collapse; font-size:.84em; margin-bottom:14px;">
-        <thead><tr style="background:#003087; color:#fff;">
-          <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left; width:25%;">Population Type</th>
-          <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left;">Fungisynth Example</th>
-        </tr></thead>
-        <tbody>
-          <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong>Age range</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Premature neonate: 0–30 days</td></tr>
-          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong>Sex</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Male only conditions</td></tr>
-          <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong>Physiological state</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Pregnancy, lactation</td></tr>
-          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;"><strong>Comorbidity</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Renal impairment requiring dose adjustment</td></tr>
-        </tbody>
-      </table>
-      </div>
-      <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
-        <span style="flex-shrink:0;">💡</span>
-        <span><strong>Tip:</strong> If the indication applies to all patients, no population attribute is required. If using a modal structure, an option where no active choice results in the attribute "All" may apply.</span>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- STEP 10 -->
-<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
-  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.78em; font-weight:700; margin-top:2px;">10</div>
-  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Apply controlled terminology, coding, and finalise</div></div>
-    <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Use controlled terminology and coded data where available. Portions of text can then be generated automatically from structured resources rather than authored manually.</p>
-      <div style="overflow-x:auto; max-width:100%;">
-      <table style="width:100%; border-collapse:collapse; font-size:.84em; margin-bottom:14px;">
-        <thead><tr style="background:#003087; color:#fff;">
-          <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left; width:30%;">Component</th>
-          <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left; width:25%;">Terminology</th>
-          <th style="padding:9px 12px; border:1px solid #d0d0d0; text-align:left;">Rationale</th>
-        </tr></thead>
-        <tbody>
-          <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Clinical content (indication, etc.)</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">SNOMED CT</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Detailed clinical concepts</td></tr>
-          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Adverse effects</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">MedDRA</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Regulatory standard for pharmacovigilance</td></tr>
-          <tr><td style="padding:9px 12px; border:1px solid #d0d0d0;">Substances</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">SNOMED CT</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Substance hierarchy fits clinical contexts</td></tr>
-          <tr style="background:#f9fafb;"><td style="padding:9px 12px; border:1px solid #d0d0d0;">Age groups</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">SNOMED CT</td><td style="padding:9px 12px; border:1px solid #d0d0d0;">Standardised age group concepts</td></tr>
-        </tbody>
-      </table>
-      </div>
-      <div style="background:#dcfce7; border:1px solid #bbf7d0; border-left:3px solid #16a34a; border-radius:6px; padding:10px 14px; font-size:.82em; color:#14532d; display:flex; gap:10px; align-items:flex-start;">
-        <span style="flex-shrink:0;">✅</span>
-        <span><strong>Finalise:</strong> Package the updated Type 4 content into the official ePI Bundle. Validate against the Type 4 FHIR Profile. Full examples are in the <a href="artifacts.html" style="color:#15803d; font-weight:600;">Artifacts</a> section.</span>
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:3px solid #2563eb; border-radius:6px; padding:10px 14px; font-size:.82em; color:#1e3a5f; display:flex; gap:10px; align-items:flex-start;">
+        <span style="flex-shrink:0;">↔️</span>
+        <span><strong>Reverse direction (optional):</strong> <code>textLink</code> goes from narrative to data. To go from a data element back to the narrative that expresses it, the related <a href="https://build.fhir.org/ig/HL7/fhir-extensions/en/StructureDefinition-narrativeLink.html" style="color:#1d4ed8; font-weight:600;">narrativeLink</a> extension can be placed on the element, with a <code>valueUrl</code> pointing to the span <code>id</code> in the narrative.</span>
       </div>
     </div>
   </div>

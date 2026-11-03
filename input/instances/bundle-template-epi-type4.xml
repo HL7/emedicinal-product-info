@@ -8,8 +8,13 @@
   and adds, in the Composition:
     1. granular sub-sections (Concept -> Domain -> Topic),
     2. a mandatory section.entry reference on every content-bearing section, and
-    3. inline <span> annotations in the XHTML narrative that bind specific
-       phrases to the referenced structured resources (via class / data-fhir).
+    3. <span id="..."> annotations in the XHTML narrative, each linked to the
+       resource it describes by the HL7 textLink extension on section.text
+       (htmlid = span id; data = target fullUrl, optionally #element-id).
+       textLink can appear once per narrative and has one data target, so each
+       section links to ONE resource (or one element in it); content about
+       several resources is split into sub-sections (see 6.1).
+       Resource ids are never encoded in the span class or id.
 
   This instance is a SUPERSET example: it merges the resource inventory of the
   ePI Type 1 (Binary / unstructured document), Type 2 (full product + packaging
@@ -25,7 +30,7 @@
     Ingredient x4 (1 active + 3 excipients), SubstanceDefinition,
     ClinicalUseDefinition x6 (indication x2, contraindication, interaction,
     undesirable-effect, warning; the fever indication carries the structured dosing),
-    Group x4.
+    Group x1 (adults, the dosing population).
   The product header artwork is a Binary (SVG image) CONTAINED inside the
   Composition and referenced from its section via a local "#" reference.
 -->
@@ -52,21 +57,32 @@
       <Composition>
         <id value="composition-epi-type4-example-wonderdrug"/>
         <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2026-06-15T10:00:00Z"/>
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Composition-uv-epi"/>
         </meta>
         <language value="en"/>
+        <!-- Rich text title of the ePI -->
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+            <p><b>WonderDrug 500 mg tablets</b></p>
+            <p>Summary of Product Characteristics</p>
+          </div>
+        </text>
         <!-- Contained: SmPC header artwork as an SVG image -->
         <contained>
           <Binary>
             <id value="binary-epi-type4-example-wonderdrug-svg"/>
             <meta>
-              <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/Binary-epi"/>
+              <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/binary-epi"/>
             </meta>
             <contentType value="image/svg+xml"/>
             <!-- base64 of an SVG image -->
             <data value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCAzMjAgODAiPjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwNTdiOCIvPjx0ZXh0IHg9IjE2IiB5PSIzNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMwMDU3YjgiPldvbmRlckRydWcgNTAwIG1nIHRhYmxldHM8L3RleHQ+PHRleHQgeD0iMTYiIHk9IjYwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzMzMyI+U3VtbWFyeSBvZiBQcm9kdWN0IENoYXJhY3RlcmlzdGljczwvdGV4dD48L3N2Zz4="/>
           </Binary>
         </contained>
+        <version value="1.0"/>
         <status value="final"/>
         <!-- Summary of Product Characteristics (SPOR RMS) -->
         <type>
@@ -76,145 +92,264 @@
             <display value="Summary of Product Characteristics"/>
           </coding>
         </type>
-        <!-- subject: the medicinal product this ePI document describes -->
+        <!-- subject: the medicinal product(s) this ePI document describes (all three strengths) -->
         <subject>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+        </subject>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008889"/>
+        </subject>
+        <subject>
+          <reference value="urn:uuid:00000000-0000-0000-0000-000000008890"/>
         </subject>
         <date value="2026-06-15T10:00:00Z"/>
         <author>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
         </author>
         <title value="WonderDrug 500 mg tablets — Summary of Product Characteristics"/>
-
-        <!-- ===== 1. NAME OF THE MEDICINAL PRODUCT ===== -->
-        <section>
-          <title value="1. Name of the medicinal product"/>
+        <!-- Root (level 1) section: every SmPC heading is nested beneath it -->
+        <section id="smpc">
+          <title value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
           <code>
             <coding>
               <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029792"/>
+              <code value="200000029791"/>
+              <display value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
             </coding>
           </code>
-          <text status="generated">
+          <text>
+            <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">
-              <p><span class="mpd-wonderdrug-500"
-                       data-fhir="urn:uuid:00000000-0000-0000-0000-000000008888">WonderDrug
-                500 mg tablets</span></p>
+              <p>Summary of Product Characteristics for WonderDrug 500 mg tablets</p>
             </div>
           </text>
-          <entry>
-            <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
-          </entry>
-        </section>
 
-        <!-- ===== 2. QUALITATIVE AND QUANTITATIVE COMPOSITION ===== -->
-        <section>
-          <title value="2. Qualitative and quantitative composition"/>
-          <code>
-            <coding>
-              <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029793"/>
-            </coding>
-          </code>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p>Each tablet contains
-                <span class="ingredient-active-paracetamol"
-                      data-fhir="urn:uuid:00000000-0000-0000-0000-00000000e001">500 mg
-                of <span class="substance-paracetamol"
-                      data-fhir="urn:uuid:00000000-0000-0000-0000-00000000f001">paracetamol</span></span>
-                as the active substance.</p>
-            </div>
-          </text>
-          <!-- active ingredient + the substance backing it -->
-          <entry>
-            <reference value="urn:uuid:00000000-0000-0000-0000-00000000e001"/>
-          </entry>
-
-          <!-- 2.x Excipient with known effect -->
-          <section>
-            <title value="Excipient(s) with known effect"/>
+          <!-- ===== 1. NAME OF THE MEDICINAL PRODUCT ===== -->
+          <section id="smpc-1">
+            <title value="1. Name of the medicinal product"/>
             <code>
               <coding>
                 <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029796"/>
+                <code value="200000029792"/>
+                <display value="1. NAME OF THE MEDICINAL PRODUCT"/>
               </coding>
             </code>
-            <text status="generated">
+            <text>
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                <extension url="htmlid">
+                  <valueString value="sp-01"/>
+                </extension>
+                <extension url="data">
+                  <valueUri value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
+                </extension>
+              </extension>
+              <status value="generated"/>
               <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>Contains
-                  <span class="ingredient-pregelatinized-starch"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000007777">pregelatinised
-                  starch</span>.</p>
+                <p><span id="sp-01">WonderDrug
+                  500 mg tablets</span></p>
               </div>
             </text>
             <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+              <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
             </entry>
           </section>
-        </section>
 
-        <!-- ===== 3. PHARMACEUTICAL FORM ===== -->
-        <section>
-          <title value="3. Pharmaceutical form"/>
-          <code>
-            <coding>
-              <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029797"/>
-            </coding>
-          </code>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p>Tablet. White, round, biconvex tablets.</p>
-            </div>
-          </text>
-          <entry>
-            <reference value="urn:uuid:00000000-0000-0000-0000-00000000dddd"/>
-          </entry>
-        </section>
-
-        <!-- ===== 4. CLINICAL PARTICULARS (Concept) ===== -->
-        <section>
-          <title value="4. Clinical particulars"/>
-          <code>
-            <coding>
-              <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029798"/>
-            </coding>
-          </code>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p>Clinical particulars for WonderDrug 500 mg tablets.</p>
-            </div>
-          </text>
-
-          <!-- 4.1 Therapeutic indications (Domain) -->
-          <section>
-            <title value="4.1 Therapeutic indications"/>
+          <!-- ===== 2. QUALITATIVE AND QUANTITATIVE COMPOSITION ===== -->
+          <section id="smpc-2">
+            <title value="2. Qualitative and quantitative composition"/>
             <code>
               <coding>
                 <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029799"/>
+                <code value="200000029793"/>
+                <display value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
               </coding>
             </code>
-            <text status="generated">
+            <text>
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                <extension url="htmlid">
+                  <valueString value="sp-02"/>
+                </extension>
+                <extension url="data">
+                  <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e001"/>
+                </extension>
+              </extension>
+              <status value="generated"/>
               <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>WonderDrug is indicated in
-                  <span class="population-adults"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006669">adults</span>
-                  for the conditions listed below.</p>
+                <p>Each tablet contains
+                  <span id="sp-02">500 mg
+                  of paracetamol</span>
+                  as the active substance.</p>
+              </div>
+            </text>
+            <!-- one linked target per section: the active Ingredient (its substance is referenced from Ingredient.substance) -->
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000e001"/>
+            </entry>
+
+            <!-- 2.x Excipient with known effect -->
+            <section id="smpc-2-1">
+              <title value="Excipient(s) with known effect"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029796"/>
+                  <display value="Excipient(s) with known effect"/>
+                </coding>
+              </code>
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-03"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>Contains
+                    <span id="sp-03">pregelatinised
+                    starch</span>.</p>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+              </entry>
+            </section>
+          </section>
+
+          <!-- ===== 3. PHARMACEUTICAL FORM ===== -->
+          <section id="smpc-3">
+            <title value="3. Pharmaceutical form"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029797"/>
+                <display value="3. PHARMACEUTICAL FORM"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Tablet. White, round, biconvex tablets.</p>
+              </div>
+            </text>
+            <entry>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000dddd"/>
+            </entry>
+          </section>
+
+          <!-- ===== 4. CLINICAL PARTICULARS (Concept) ===== -->
+          <section id="smpc-4">
+            <title value="4. Clinical particulars"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029798"/>
+                <display value="4. CLINICAL PARTICULARS"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Clinical particulars for WonderDrug 500 mg tablets.</p>
               </div>
             </text>
 
-            <!-- 4.1.1 Topic: indication = fever -->
-            <section>
-              <title value="4.1.1 Treatment of fever"/>
-              <text status="generated">
+            <!-- 4.1 Therapeutic indications (Domain) -->
+            <section id="smpc-4-1">
+              <title value="4.1 Therapeutic indications"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029799"/>
+                  <display value="4.1 Therapeutic indications"/>
+                </coding>
+              </code>
+              <text>
+                <status value="generated"/>
                 <div xmlns="http://www.w3.org/1999/xhtml">
-                  <p>For the
-                    <span class="cud-indication-fever"
-                          data-fhir="urn:uuid:00000000-0000-0000-0000-000000003333">symptomatic
-                    treatment of fever</span>.</p>
+                  <p>WonderDrug is indicated in adults for the conditions listed below.</p>
+                </div>
+              </text>
+
+              <!-- 4.1.1 Topic: indication = fever -->
+              <section id="smpc-4-1-1">
+                <title value="4.1.1 Treatment of fever"/>
+                <text>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                    <extension url="htmlid">
+                      <valueString value="sp-04"/>
+                    </extension>
+                    <extension url="data">
+                      <valueUri value="urn:uuid:00000000-0000-0000-0000-000000003333"/>
+                    </extension>
+                  </extension>
+                  <status value="generated"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <p>For the
+                      <span id="sp-04">symptomatic
+                      treatment of fever</span>.</p>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:00000000-0000-0000-0000-000000003333"/>
+                </entry>
+              </section>
+
+              <!-- 4.1.2 Topic: indication = pain -->
+              <section id="smpc-4-1-2">
+                <title value="4.1.2 Treatment of mild to moderate pain"/>
+                <text>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                    <extension url="htmlid">
+                      <valueString value="sp-05"/>
+                    </extension>
+                    <extension url="data">
+                      <valueUri value="urn:uuid:00000000-0000-0000-0000-000000004444"/>
+                    </extension>
+                  </extension>
+                  <status value="generated"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <p>For the
+                      <span id="sp-05">treatment
+                      of mild to moderate pain</span>.</p>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:00000000-0000-0000-0000-000000004444"/>
+                </entry>
+              </section>
+            </section>
+
+            <!-- 4.2 Posology and method of administration -->
+            <section id="smpc-4-2">
+              <title value="4.2 Posology and method of administration"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029800"/>
+                  <display value="4.2 Posology and method of administration"/>
+                </coding>
+              </code>
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-06"/>
+                  </extension>
+                  <extension url="htmlid">
+                    <valueString value="sp-07"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-000000003333#fever-dosing"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>The recommended dose is
+                    <span id="sp-06">one 500 mg
+                    tablet every 4 to 6 hours, to a maximum of 4 g per day</span> in
+                    <span id="sp-07">adults</span>.</p>
                 </div>
               </text>
               <entry>
@@ -222,325 +357,391 @@
               </entry>
             </section>
 
-            <!-- 4.1.2 Topic: indication = pain -->
-            <section>
-              <title value="4.1.2 Treatment of mild to moderate pain"/>
-              <text status="generated">
+            <!-- 4.3 Contraindications -->
+            <section id="smpc-4-3">
+              <title value="4.3 Contraindications"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029805"/>
+                  <display value="4.3 Contraindications"/>
+                </coding>
+              </code>
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-08"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000c001"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
                 <div xmlns="http://www.w3.org/1999/xhtml">
-                  <p>For the
-                    <span class="cud-indication-pain"
-                          data-fhir="urn:uuid:00000000-0000-0000-0000-000000004444">treatment
-                    of mild to moderate pain</span>.</p>
+                  <p>Do not take WonderDrug in
+                    <span id="sp-08">acute
+                    hepatic failure</span>.</p>
                 </div>
               </text>
               <entry>
-                <reference value="urn:uuid:00000000-0000-0000-0000-000000004444"/>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000c001"/>
+              </entry>
+            </section>
+
+            <!-- 4.4 Special warnings and precautions for use -->
+            <section id="smpc-4-4">
+              <title value="4.4 Special warnings and precautions for use"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029806"/>
+                  <display value="4.4 Special warnings and precautions for use"/>
+                </coding>
+              </code>
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-09"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000c005"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p><span id="sp-09">Do not exceed
+                    the stated dose. Overdose may cause severe liver damage.</span></p>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000c005"/>
+              </entry>
+            </section>
+
+            <!-- 4.5 Interaction with other medicinal products -->
+            <section id="smpc-4-5">
+              <title value="4.5 Interaction with other medicinal products and other forms of interaction"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029809"/>
+                  <display value="4.5 Interaction with other medicinal products and other forms of interaction"/>
+                </coding>
+              </code>
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-10"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000c003"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>Concomitant use with
+                    <span id="sp-10">warfarin</span>
+                    may enhance the anticoagulant effect.</p>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000c003"/>
+              </entry>
+            </section>
+
+            <!-- 4.6 Fertility, pregnancy and lactation -->
+            <section id="smpc-4-6">
+              <title value="4.6 Fertility, pregnancy and lactation"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029811"/>
+                  <display value="4.6 Fertility, pregnancy and lactation"/>
+                </coding>
+              </code>
+              <text>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>WonderDrug can be used during pregnancy if clinically needed, at the
+                  lowest effective dose for the shortest possible time.</p>
+                </div>
+              </text>
+            </section>
+
+            <!-- 4.7 Effects on ability to drive and use machines -->
+            <section id="smpc-4-7">
+              <title value="4.7 Effects on ability to drive and use machines"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029815"/>
+                  <display value="4.7 Effects on ability to drive and use machines"/>
+                </coding>
+              </code>
+              <text>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>WonderDrug has no or negligible influence on the ability to drive and
+                  use machines.</p>
+                </div>
+              </text>
+            </section>
+
+            <!-- 4.8 Undesirable effects -->
+            <section id="smpc-4-8">
+              <title value="4.8 Undesirable effects"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029816"/>
+                  <display value="4.8 Undesirable effects"/>
+                </coding>
+              </code>
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-11"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000c004"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>Rare:
+                    <span id="sp-11">thrombocytopenia</span>.</p>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000c004"/>
+              </entry>
+            </section>
+
+            <!-- 4.9 Overdose -->
+            <section id="smpc-4-9">
+              <title value="4.9 Overdose"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029819"/>
+                  <display value="4.9 Overdose"/>
+                </coding>
+              </code>
+              <text>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p>In case of overdose, seek immediate medical attention. Treatment with
+                  N-acetylcysteine may be required.</p>
+                </div>
+              </text>
+            </section>
+          </section>
+
+          <!-- ===== 5. PHARMACOLOGICAL PROPERTIES ===== -->
+          <section id="smpc-5">
+            <title value="5. Pharmacological properties"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029821"/>
+                <display value="5. PHARMACOLOGICAL PROPERTIES"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Pharmacotherapeutic group: Other analgesics and antipyretics, anilides.</p>
+              </div>
+            </text>
+          </section>
+
+          <!-- ===== 6. PHARMACEUTICAL PARTICULARS ===== -->
+          <section id="smpc-6">
+            <title value="6. Pharmaceutical particulars"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/rmswi"/>
+                <code value="200000029836"/>
+                <display value="6. PHARMACEUTICAL PARTICULARS"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Pharmaceutical particulars.</p>
+              </div>
+            </text>
+
+            <!-- 6.1 List of excipients -->
+            <section id="smpc-6-1">
+              <title value="6.1 List of excipients"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029837"/>
+                  <display value="6.1 List of excipients"/>
+                </coding>
+              </code>
+              <!-- Type 4: one excipient per sub-section, so each narrative links to one resource -->
+              <section id="smpc-6-1-1">
+                <text>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                    <extension url="htmlid">
+                      <valueString value="sp-12"/>
+                    </extension>
+                    <extension url="data">
+                      <valueUri value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+                    </extension>
+                  </extension>
+                  <status value="generated"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <p><span id="sp-12">Pregelatinised starch</span></p>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+                </entry>
+              </section>
+              <section id="smpc-6-1-2">
+                <text>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                    <extension url="htmlid">
+                      <valueString value="sp-13"/>
+                    </extension>
+                    <extension url="data">
+                      <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
+                    </extension>
+                  </extension>
+                  <status value="generated"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <p><span id="sp-13">Maize starch</span></p>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
+                </entry>
+              </section>
+              <section id="smpc-6-1-3">
+                <text>
+                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                    <extension url="htmlid">
+                      <valueString value="sp-14"/>
+                    </extension>
+                    <extension url="data">
+                      <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
+                    </extension>
+                  </extension>
+                  <status value="generated"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                    <p><span id="sp-14">Magnesium stearate</span></p>
+                  </div>
+                </text>
+                <entry>
+                  <reference value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
+                </entry>
+              </section>
+            </section>
+
+            <!-- 6.5 Nature and contents of container -->
+            <section id="smpc-6-5">
+              <title value="6.5 Nature and contents of container"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/rmswi"/>
+                  <code value="200000029841"/>
+                  <display value="6.5 Nature and contents of container"/>
+                </coding>
+              </code>
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-15"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000bbbb"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p><span id="sp-15">PVC/aluminium
+                    blister in a carton of 20 tablets</span>.</p>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000bbbb"/>
               </entry>
             </section>
           </section>
 
-          <!-- 4.2 Posology and method of administration -->
-          <section>
-            <title value="4.2 Posology and method of administration"/>
+          <!-- ===== 7. MARKETING AUTHORISATION HOLDER ===== -->
+          <section id="smpc-7">
+            <title value="7. Marketing authorisation holder"/>
             <code>
               <coding>
                 <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029800"/>
+                <code value="200000029844"/>
+                <display value="7. MARKETING AUTHORISATION HOLDER"/>
               </coding>
             </code>
-            <text status="generated">
+            <text>
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                <extension url="htmlid">
+                  <valueString value="sp-16"/>
+                </extension>
+                <extension url="data">
+                  <valueUri value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
+                </extension>
+              </extension>
+              <status value="generated"/>
               <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>The recommended dose is
-                  <span class="cud-indication-fever-dosing"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000003333">one 500 mg
-                  tablet every 4 to 6 hours, to a maximum of 4 g per day</span> in
-                  <span class="population-adults"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-000000006669">adults</span>.</p>
+                <p><span id="sp-16">WonderPharma
+                  Inc., Prague, Czech Republic</span></p>
               </div>
             </text>
             <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-000000003333"/>
+              <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
             </entry>
           </section>
 
-          <!-- 4.3 Contraindications -->
-          <section>
-            <title value="4.3 Contraindications"/>
+          <!-- ===== 8. MARKETING AUTHORISATION NUMBER(S) ===== -->
+          <section id="smpc-8">
+            <title value="8. Marketing authorisation number(s)"/>
             <code>
               <coding>
                 <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029805"/>
+                <code value="200000029845"/>
+                <display value="8. MARKETING AUTHORISATION NUMBER(S)"/>
               </coding>
             </code>
-            <text status="generated">
+            <text>
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                <extension url="htmlid">
+                  <valueString value="sp-17"/>
+                </extension>
+                <extension url="data">
+                  <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000aaaa"/>
+                </extension>
+              </extension>
+              <status value="generated"/>
               <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>Do not take WonderDrug in
-                  <span class="cud-contraindication-hepatic"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c001">acute
-                  hepatic failure</span>.</p>
+                <p><span id="sp-17">EU/1/26/0001/001</span></p>
               </div>
             </text>
             <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c001"/>
+              <reference value="urn:uuid:00000000-0000-0000-0000-00000000aaaa"/>
             </entry>
           </section>
 
-          <!-- 4.4 Special warnings and precautions for use -->
-          <section>
-            <title value="4.4 Special warnings and precautions for use"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029806"/>
-              </coding>
-            </code>
-            <text status="generated">
+          <!-- ===== Header artwork (contained SVG image) ===== -->
+          <section id="smpc-annex">
+            <title value="Annex — Product header artwork (SVG)"/>
+            <text>
+              <status value="generated"/>
               <div xmlns="http://www.w3.org/1999/xhtml">
-                <p><span class="cud-warning-overdose"
-                         data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c005">Do not exceed
-                  the stated dose. Overdose may cause severe liver damage.</span></p>
-              </div>
-            </text>
-            <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c005"/>
-            </entry>
-          </section>
-
-          <!-- 4.5 Interaction with other medicinal products -->
-          <section>
-            <title value="4.5 Interaction with other medicinal products and other forms of interaction"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029809"/>
-              </coding>
-            </code>
-            <text status="generated">
-              <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>Concomitant use with
-                  <span class="cud-interaction-warfarin"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c003">warfarin</span>
-                  may enhance the anticoagulant effect.</p>
-              </div>
-            </text>
-            <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c003"/>
-            </entry>
-          </section>
-
-          <!-- 4.6 Fertility, pregnancy and lactation -->
-          <section>
-            <title value="4.6 Fertility, pregnancy and lactation"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029811"/>
-              </coding>
-            </code>
-            <text status="generated">
-              <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>WonderDrug can be used during pregnancy if clinically needed, at the
-                lowest effective dose for the shortest possible time.</p>
+                <p><img src="#binary-epi-type4-example-wonderdrug-svg" alt="WonderDrug 500 mg tablets header artwork"/></p>
               </div>
             </text>
           </section>
-
-          <!-- 4.7 Effects on ability to drive and use machines -->
-          <section>
-            <title value="4.7 Effects on ability to drive and use machines"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029815"/>
-              </coding>
-            </code>
-            <text status="generated">
-              <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>WonderDrug has no or negligible influence on the ability to drive and
-                use machines.</p>
-              </div>
-            </text>
-          </section>
-
-          <!-- 4.8 Undesirable effects -->
-          <section>
-            <title value="4.8 Undesirable effects"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029816"/>
-              </coding>
-            </code>
-            <text status="generated">
-              <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>Rare:
-                  <span class="cud-undesirable-thrombocytopenia"
-                        data-fhir="urn:uuid:00000000-0000-0000-0000-00000000c004">thrombocytopenia</span>.</p>
-              </div>
-            </text>
-            <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-00000000c004"/>
-            </entry>
-          </section>
-
-          <!-- 4.9 Overdose -->
-          <section>
-            <title value="4.9 Overdose"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029819"/>
-              </coding>
-            </code>
-            <text status="generated">
-              <div xmlns="http://www.w3.org/1999/xhtml">
-                <p>In case of overdose, seek immediate medical attention. Treatment with
-                N-acetylcysteine may be required.</p>
-              </div>
-            </text>
-          </section>
-        </section>
-
-        <!-- ===== 5. PHARMACOLOGICAL PROPERTIES ===== -->
-        <section>
-          <title value="5. Pharmacological properties"/>
-          <code>
-            <coding>
-              <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029821"/>
-            </coding>
-          </code>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p>Pharmacotherapeutic group: Other analgesics and antipyretics, anilides.</p>
-            </div>
-          </text>
-        </section>
-
-        <!-- ===== 6. PHARMACEUTICAL PARTICULARS ===== -->
-        <section>
-          <title value="6. Pharmaceutical particulars"/>
-          <code>
-            <coding>
-              <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029836"/>
-            </coding>
-          </code>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p>Pharmaceutical particulars.</p>
-            </div>
-          </text>
-
-          <!-- 6.1 List of excipients -->
-          <section>
-            <title value="6.1 List of excipients"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029837"/>
-              </coding>
-            </code>
-            <text status="generated">
-              <div xmlns="http://www.w3.org/1999/xhtml">
-                <ul>
-                  <li><span class="ingredient-pregelatinized-starch"
-                            data-fhir="urn:uuid:00000000-0000-0000-0000-000000007777">Pregelatinised
-                    starch</span></li>
-                  <li><span class="ingredient-maize-starch"
-                            data-fhir="urn:uuid:00000000-0000-0000-0000-00000000e002">Maize
-                    starch</span></li>
-                  <li><span class="ingredient-magnesium-stearate"
-                            data-fhir="urn:uuid:00000000-0000-0000-0000-00000000e003">Magnesium
-                    stearate</span></li>
-                </ul>
-              </div>
-            </text>
-            <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
-            </entry>
-            <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
-            </entry>
-            <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
-            </entry>
-          </section>
-
-          <!-- 6.5 Nature and contents of container -->
-          <section>
-            <title value="6.5 Nature and contents of container"/>
-            <code>
-              <coding>
-                <system value="https://spor.ema.europa.eu/rmswi"/>
-                <code value="200000029841"/>
-              </coding>
-            </code>
-            <text status="generated">
-              <div xmlns="http://www.w3.org/1999/xhtml">
-                <p><span class="ppd-wonderdrug"
-                         data-fhir="urn:uuid:00000000-0000-0000-0000-00000000bbbb">PVC/aluminium
-                  blister in a carton of 20 tablets</span>.</p>
-              </div>
-            </text>
-            <entry>
-              <reference value="urn:uuid:00000000-0000-0000-0000-00000000bbbb"/>
-            </entry>
-          </section>
-        </section>
-
-        <!-- ===== 7. MARKETING AUTHORISATION HOLDER ===== -->
-        <section>
-          <title value="7. Marketing authorisation holder"/>
-          <code>
-            <coding>
-              <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029844"/>
-            </coding>
-          </code>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p><span class="org-mah"
-                       data-fhir="urn:uuid:00000000-0000-0000-0000-000000000002">WonderPharma
-                Inc., Prague, Czech Republic</span></p>
-            </div>
-          </text>
-          <entry>
-            <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
-          </entry>
-        </section>
-
-        <!-- ===== 8. MARKETING AUTHORISATION NUMBER(S) ===== -->
-        <section>
-          <title value="8. Marketing authorisation number(s)"/>
-          <code>
-            <coding>
-              <system value="https://spor.ema.europa.eu/rmswi"/>
-              <code value="200000029845"/>
-            </coding>
-          </code>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p><span class="ra-wonderdrug"
-                       data-fhir="urn:uuid:00000000-0000-0000-0000-00000000aaaa">EU/1/26/0001/001</span></p>
-            </div>
-          </text>
-          <entry>
-            <reference value="urn:uuid:00000000-0000-0000-0000-00000000aaaa"/>
-          </entry>
-        </section>
-
-        <!-- ===== Header artwork (contained SVG image) ===== -->
-        <section>
-          <title value="Annex — Product header artwork (SVG)"/>
-          <text status="generated">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <p>The product header artwork is included as a contained SVG image.</p>
-            </div>
-          </text>
-          <entry>
-            <reference value="#binary-epi-type4-example-wonderdrug-svg"/>
-          </entry>
         </section>
       </Composition>
     </resource>
@@ -629,18 +830,20 @@
           <system value="http://ema.europa.eu/identifier"/>
           <value value="WONDERDRUG-500MG"/>
         </identifier>
-        <status>
-          <coding>
-            <system value="http://hl7.org/fhir/publication-status"/>
-            <code value="active"/>
-          </coding>
-        </status>
         <domain>
           <coding>
             <system value="http://hl7.org/fhir/medicinal-product-domain"/>
             <code value="Human"/>
+            <display value="Human use"/>
           </coding>
         </domain>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
         <combinedPharmaceuticalDoseForm>
           <coding>
             <system value="https://spor.ema.europa.eu/rmswi"/>
@@ -648,6 +851,11 @@
             <display value="Tablet"/>
           </coding>
         </combinedPharmaceuticalDoseForm>
+        <contact>
+          <contact>
+            <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
+          </contact>
+        </contact>
         <name>
           <!-- Full name = Proprietary (Non-proprietary) strength dose form -->
           <productName value="WonderDrug 500 mg tablets"/>
@@ -699,16 +907,11 @@
               <coding>
                 <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
                 <code value="DoseFormPart"/>
-                <display value="Dose form part"/>
+                <display value="Pharmaceutical dose form part"/>
               </coding>
             </type>
           </part>
         </name>
-        <contact>
-          <contact>
-            <reference value="urn:uuid:00000000-0000-0000-0000-000000000002"/>
-          </contact>
-        </contact>
       </MedicinalProductDefinition>
     </resource>
   </entry>
@@ -728,18 +931,20 @@
           <system value="http://ema.europa.eu/identifier"/>
           <value value="WONDERDRUG-100MG"/>
         </identifier>
-        <status>
-          <coding>
-            <system value="http://hl7.org/fhir/publication-status"/>
-            <code value="active"/>
-          </coding>
-        </status>
         <domain>
           <coding>
             <system value="http://hl7.org/fhir/medicinal-product-domain"/>
             <code value="Human"/>
+            <display value="Human use"/>
           </coding>
         </domain>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
         <name>
           <productName value="WonderDrug 100 mg tablets"/>
         </name>
@@ -762,18 +967,20 @@
           <system value="http://ema.europa.eu/identifier"/>
           <value value="WONDERDRUG-200MG"/>
         </identifier>
-        <status>
-          <coding>
-            <system value="http://hl7.org/fhir/publication-status"/>
-            <code value="active"/>
-          </coding>
-        </status>
         <domain>
           <coding>
             <system value="http://hl7.org/fhir/medicinal-product-domain"/>
             <code value="Human"/>
+            <display value="Human use"/>
           </coding>
         </domain>
+        <status>
+          <coding>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </status>
         <name>
           <productName value="WonderDrug 200 mg tablets"/>
         </name>
@@ -993,7 +1200,7 @@
         <role>
           <coding>
             <system value="http://hl7.org/fhir/ingredient-role"/>
-            <code value="active"/>
+            <code value="100000072072"/>
             <display value="Active"/>
           </coding>
         </role>
@@ -1047,7 +1254,7 @@
         <role>
           <coding>
             <system value="http://hl7.org/fhir/ingredient-role"/>
-            <code value="excipient"/>
+            <code value="100000072082"/>
             <display value="Excipient"/>
           </coding>
         </role>
@@ -1084,7 +1291,7 @@
         <role>
           <coding>
             <system value="http://hl7.org/fhir/ingredient-role"/>
-            <code value="excipient"/>
+            <code value="100000072082"/>
             <display value="Excipient"/>
           </coding>
         </role>
@@ -1121,7 +1328,7 @@
         <role>
           <coding>
             <system value="http://hl7.org/fhir/ingredient-role"/>
-            <code value="excipient"/>
+            <code value="100000072082"/>
             <display value="Excipient"/>
           </coding>
         </role>
@@ -1180,12 +1387,16 @@
         <meta>
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
         </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="cud-indication-fever"/>
+        </identifier>
         <type value="indication"/>
         <subject>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
         </subject>
         <indication>
-          <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline">
+          <extension id="fever-dosing" url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosing-guideline">
             <!-- Structured dosing (draft): sits on the indication it treats -->
             <extension url="population">
               <valueReference>
@@ -1265,6 +1476,10 @@
         <meta>
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
         </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="cud-indication-pain"/>
+        </identifier>
         <type value="indication"/>
         <subject>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
@@ -1295,6 +1510,10 @@
         <meta>
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-contraindication-uv-epi"/>
         </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="cud-contraindication-hepatic"/>
+        </identifier>
         <type value="contraindication"/>
         <subject>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
@@ -1325,6 +1544,10 @@
         <meta>
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
         </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="cud-interaction-warfarin"/>
+        </identifier>
         <type value="interaction"/>
         <subject>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
@@ -1371,6 +1594,10 @@
         <meta>
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
         </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="cud-undesirable-thrombocytopenia"/>
+        </identifier>
         <type value="undesirable-effect"/>
         <subject>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
@@ -1385,13 +1612,13 @@
               </coding>
             </concept>
           </symptomConditionEffect>
-          <frequencyOfUndesirableEffect>
+          <frequencyOfOccurrence>
             <coding>
               <system value="https://spor.ema.europa.eu/rmswi"/>
               <code value="100000125747"/>
               <display value="Rare"/>
             </coding>
-          </frequencyOfUndesirableEffect>
+          </frequencyOfOccurrence>
         </undesirableEffect>
       </ClinicalUseDefinition>
     </resource>
@@ -1408,6 +1635,10 @@
         <meta>
           <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi"/>
         </meta>
+        <identifier>
+          <system value="http://ema.europa.eu/identifier"/>
+          <value value="cud-warning-overdose"/>
+        </identifier>
         <type value="warning"/>
         <subject>
           <reference value="urn:uuid:00000000-0000-0000-0000-000000008888"/>
@@ -1423,151 +1654,6 @@
           </code>
         </warning>
       </ClinicalUseDefinition>
-    </resource>
-  </entry>
-
-  <!-- ============================================================ -->
-  <!-- 23. Group — population: adult men                             -->
-  <!-- ============================================================ -->
-  <entry>
-    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000006666"/>
-    <resource>
-      <Group>
-        <id value="group-epi-type4-example-adult-men"/>
-        <type value="person"/>
-        <membership value="definitional"/>
-        <name value="Adult men (18–64 years)"/>
-        <characteristic>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="263495000"/>
-              <display value="Gender"/>
-            </coding>
-          </code>
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="248153007"/>
-              <display value="Male"/>
-            </coding>
-          </valueCodeableConcept>
-          <exclude value="false"/>
-        </characteristic>
-        <characteristic>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="424144002"/>
-              <display value="Current chronological age"/>
-            </coding>
-          </code>
-          <valueRange>
-            <low>
-              <value value="18"/>
-              <unit value="years"/>
-              <system value="http://unitsofmeasure.org"/>
-              <code value="a"/>
-            </low>
-            <high>
-              <value value="64"/>
-              <unit value="years"/>
-              <system value="http://unitsofmeasure.org"/>
-              <code value="a"/>
-            </high>
-          </valueRange>
-          <exclude value="false"/>
-        </characteristic>
-      </Group>
-    </resource>
-  </entry>
-
-  <!-- ============================================================ -->
-  <!-- 24. Group — population: adult women                           -->
-  <!-- ============================================================ -->
-  <entry>
-    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000006667"/>
-    <resource>
-      <Group>
-        <id value="group-epi-type4-example-adult-women"/>
-        <type value="person"/>
-        <membership value="definitional"/>
-        <name value="Adult women (18–64 years)"/>
-        <characteristic>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="263495000"/>
-              <display value="Gender"/>
-            </coding>
-          </code>
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="248152002"/>
-              <display value="Female"/>
-            </coding>
-          </valueCodeableConcept>
-          <exclude value="false"/>
-        </characteristic>
-        <characteristic>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="424144002"/>
-              <display value="Current chronological age"/>
-            </coding>
-          </code>
-          <valueRange>
-            <low>
-              <value value="18"/>
-              <unit value="years"/>
-              <system value="http://unitsofmeasure.org"/>
-              <code value="a"/>
-            </low>
-            <high>
-              <value value="64"/>
-              <unit value="years"/>
-              <system value="http://unitsofmeasure.org"/>
-              <code value="a"/>
-            </high>
-          </valueRange>
-          <exclude value="false"/>
-        </characteristic>
-      </Group>
-    </resource>
-  </entry>
-
-  <!-- ============================================================ -->
-  <!-- 25. Group — population: children                              -->
-  <!-- ============================================================ -->
-  <entry>
-    <fullUrl value="urn:uuid:00000000-0000-0000-0000-000000006668"/>
-    <resource>
-      <Group>
-        <id value="group-epi-type4-example-children"/>
-        <type value="person"/>
-        <membership value="definitional"/>
-        <name value="Children (under 18 years)"/>
-        <characteristic>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="424144002"/>
-              <display value="Current chronological age"/>
-            </coding>
-          </code>
-          <valueRange>
-            <high>
-              <value value="17"/>
-              <unit value="years"/>
-              <system value="http://unitsofmeasure.org"/>
-              <code value="a"/>
-            </high>
-          </valueRange>
-          <exclude value="false"/>
-        </characteristic>
-      </Group>
     </resource>
   </entry>
 

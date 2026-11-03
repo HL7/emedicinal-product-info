@@ -13,6 +13,9 @@
 //    ClinicalUseDefinition.population and the dosing guideline has no
 //    population of its own (invasive candidiasis, adults).
 //  * Loading + maintenance phases, dose ranges, mg/kg doses, every-72-hours timing.
+//  * Narrative linking (Type 4 pattern): phrases are wrapped in <span id> and linked
+//    to their resource with the textLink extension (one target per section, so 4.1
+//    has one sub-section per indication).
 //  * The renal-impairment rule ("50% of the recommended dose") is a modifier of
 //    every indication, so it stays a single Warning + Group, not extra dose rows.
 // ============================================================================
@@ -280,15 +283,29 @@ Description: "Composition - Fungisynth Summary of Product Characteristics"
 * section.section[=].title = "4.1 Therapeutic indications"
 * section.section[=].code = $spor-rms#200000029799 "4.1 Therapeutic indications"
 * section.section[=].text.status = #generated
-* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Treatment of mucosal and invasive candidiasis.</p></div>"
-* section.section[=].entry[0].reference = "urn:uuid:a4f5f28b-6ad6-54a5-93c3-3ca65dfd9e9d"
-* section.section[=].entry[+].reference = "urn:uuid:a0abde73-1d53-561d-974e-436ed90d453e"
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Fungisynth is indicated for the treatment of the following fungal infections.</p></div>"
+// Type 4 narrative linking: textLink appears once per narrative with one target, so each indication gets its own sub-section;
+// the <span id> in each sub-section is linked to its ClinicalUseDefinition by the textLink on section.text
+* section.section[=].section[0].id = "fungisynth-4-1-mucosal"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p><span id='sp-01'>Mucosal (oropharyngeal) candidiasis</span>.</p></div>"
+* section.section[=].section[=].text.extension[textLink].extension[htmlid].valueString = "sp-01"
+* section.section[=].section[=].text.extension[textLink].extension[data].valueUri = "urn:uuid:a4f5f28b-6ad6-54a5-93c3-3ca65dfd9e9d"
+* section.section[=].section[=].entry.reference = "urn:uuid:a4f5f28b-6ad6-54a5-93c3-3ca65dfd9e9d"
+* section.section[=].section[+].id = "fungisynth-4-1-invasive"
+* section.section[=].section[=].text.status = #generated
+* section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p><span id='sp-02'>Invasive candidiasis</span>.</p></div>"
+* section.section[=].section[=].text.extension[textLink].extension[htmlid].valueString = "sp-02"
+* section.section[=].section[=].text.extension[textLink].extension[data].valueUri = "urn:uuid:a0abde73-1d53-561d-974e-436ed90d453e"
+* section.section[=].section[=].entry.reference = "urn:uuid:a0abde73-1d53-561d-974e-436ed90d453e"
 // 4.2 Posology and method of administration
 * section.section[+].id = "fungisynth-4-2"
 * section.section[=].title = "4.2 Posology and method of administration"
 * section.section[=].code = $spor-rms#200000029800 "4.2 Posology and method of administration"
 * section.section[=].text.status = #generated
-* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Dose depends on the indication and the patient population (structured dosing is carried on each indication). Renal impairment requires dose adjustment for multiple-dose therapy.</p></div>"
+* section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Dose depends on the indication and the patient population (structured dosing is carried on each indication). <span id='sp-03'>Renal impairment requires dose adjustment for multiple-dose therapy</span>.</p></div>"
+* section.section[=].text.extension[textLink].extension[htmlid].valueString = "sp-03"
+* section.section[=].text.extension[textLink].extension[data].valueUri = "urn:uuid:245e41b3-e0f3-5efe-a2ae-14d2a84fc26c"
 * section.section[=].entry[0].reference = "urn:uuid:a4f5f28b-6ad6-54a5-93c3-3ca65dfd9e9d"
 * section.section[=].entry[+].reference = "urn:uuid:a0abde73-1d53-561d-974e-436ed90d453e"
 * section.section[=].entry[+].reference = "urn:uuid:245e41b3-e0f3-5efe-a2ae-14d2a84fc26c"

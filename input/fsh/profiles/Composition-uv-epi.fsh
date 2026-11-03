@@ -58,6 +58,7 @@ Description: "This profile represents the constraints applied to the Composition
 * section.code.coding.code 1..1
 * section.code.coding.display 1..1
 * section.text 1..
+* section.text.extension contains $textLink named textLink 0..*
 * section.section 1..
 * section.section.id 1..
 * section.section.title 0..
@@ -66,6 +67,7 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.code.coding.code 1..1
 * section.section.code.coding.display 1..1
 * section.section.text 0..
+* section.section.text.extension contains $textLink named textLink 0..*
 * section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi)
 * section.section.section 0..
 * section.section.section.id 1..
@@ -75,6 +77,7 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.section.code.coding.code 1..1
 * section.section.section.code.coding.display 1..1
 * section.section.section.text 0..
+* section.section.section.text.extension contains $textLink named textLink 0..*
 * section.section.section.entry only Reference(MedicinalProductDefinitionUvEpi or IngredientUvEpi or ManufacturedItemDefinitionUvEpi or AdministrableProductDefinitionUvEpi or SubstanceDefinitionUvEpi or PackagedProductDefinitionUvEpi or ClinicalUseDefinitionIndicationUvEpi or ClinicalUseDefinitionContraindicationUvEpi or ClinicalUseDefinitionInteractionUvEpi or ClinicalUseDefinitionUndesirableEffectUvEpi or ClinicalUseDefinitionWarningUvEpi or OrganizationUvEpi or RegulatedAuthorizationUvEpi)
 
 // Element descriptions
@@ -108,6 +111,8 @@ Description: "This profile represents the constraints applied to the Composition
 * section.code ^definition = "Regulator-defined code and display name for this section or sub-section heading, taken from the regulator's national drug label template. The company cannot modify the code or display; both must comply with the regulator's rules. Company wording of the heading goes in title."
 * section.text ^short = "Rich text content of the section (e.g., paragraphs, tables, bulleted lists)"
 * section.text ^definition = "Rich text content of the section, such as paragraphs, tables and bulleted lists."
+* section.text.extension[textLink] ^short = "Links <span id> phrases in the section narrative to a resource (or element) referenced in section.entry (ePI Type 4)"
+* section.text.extension[textLink] ^definition = "Links a phrase in the section narrative to the structured resource it describes. The phrase is wrapped in `<span id=\"...\">` in text.div; htmlid holds that span id and data holds the fullUrl of the target resource, optionally followed by `#` and the id of an element inside that resource. The resource part of data must match a section.entry reference in the same section. Each textLink has one data target; several spans can point to the same target by repeating htmlid. The profile allows textLink to repeat (one per target), in anticipation of a change to the HL7 extensions pack: the textLink extension (5.4.0) currently allows only one occurrence per narrative, so until that change is published validators accept one textLink per section, and content that refers to several resources should be split into sub-sections, one per resource. Resource ids must not be encoded in the span class or id. Used in ePI Type 4."
 * section.entry ^short = "Semantic link from the section text to related structured content"
 * section.entry ^definition = "Reference to a structured resource that the section's text describes, linking narrative to structured content. For example, the indications section references the ClinicalUseDefinition - Indication."
 * section.section ^short = "Child (level 2) section headings"
@@ -120,6 +125,8 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.code ^definition = "Regulator-defined code and display name for this section or sub-section heading, taken from the regulator's national drug label template. The company cannot modify the code or display; both must comply with the regulator's rules. Company wording of the heading goes in title."
 * section.section.text ^short = "Rich text content of the section (e.g., paragraphs, tables, bulleted lists)"
 * section.section.text ^definition = "Rich text content of the section, such as paragraphs, tables and bulleted lists."
+* section.section.text.extension[textLink] ^short = "Links <span id> phrases in the section narrative to a resource (or element) referenced in section.entry (ePI Type 4)"
+* section.section.text.extension[textLink] ^definition = "Links a phrase in the section narrative to the structured resource it describes. The phrase is wrapped in `<span id=\"...\">` in text.div; htmlid holds that span id and data holds the fullUrl of the target resource, optionally followed by `#` and the id of an element inside that resource. The resource part of data must match a section.entry reference in the same section. Each textLink has one data target; several spans can point to the same target by repeating htmlid. The profile allows textLink to repeat (one per target), in anticipation of a change to the HL7 extensions pack: the textLink extension (5.4.0) currently allows only one occurrence per narrative, so until that change is published validators accept one textLink per section, and content that refers to several resources should be split into sub-sections, one per resource. Resource ids must not be encoded in the span class or id. Used in ePI Type 4."
 * section.section.entry ^short = "Semantic link from the section text to related structured content"
 * section.section.entry ^definition = "Reference to a structured resource that the section's text describes, linking narrative to structured content. For example, the indications section references the ClinicalUseDefinition - Indication."
 * section.section.section ^short = "Child (level 3) section headings"
@@ -132,6 +139,8 @@ Description: "This profile represents the constraints applied to the Composition
 * section.section.section.code ^definition = "Regulator-defined code and display name for this section or sub-section heading, taken from the regulator's national drug label template. The company cannot modify the code or display; both must comply with the regulator's rules. Company wording of the heading goes in title."
 * section.section.section.text ^short = "Rich text content of the section (e.g., paragraphs, tables, bulleted lists)"
 * section.section.section.text ^definition = "Rich text content of the section, such as paragraphs, tables and bulleted lists."
+* section.section.section.text.extension[textLink] ^short = "Links <span id> phrases in the section narrative to a resource (or element) referenced in section.entry (ePI Type 4)"
+* section.section.section.text.extension[textLink] ^definition = "Links a phrase in the section narrative to the structured resource it describes. The phrase is wrapped in `<span id=\"...\">` in text.div; htmlid holds that span id and data holds the fullUrl of the target resource, optionally followed by `#` and the id of an element inside that resource. The resource part of data must match a section.entry reference in the same section. Each textLink has one data target; several spans can point to the same target by repeating htmlid. The profile allows textLink to repeat (one per target), in anticipation of a change to the HL7 extensions pack: the textLink extension (5.4.0) currently allows only one occurrence per narrative, so until that change is published validators accept one textLink per section, and content that refers to several resources should be split into sub-sections, one per resource. Resource ids must not be encoded in the span class or id. Used in ePI Type 4."
 * section.section.section.entry ^short = "Semantic link from the section text to related structured content"
 * section.section.section.entry ^definition = "Reference to a structured resource that the section's text describes, linking narrative to structured content. For example, the indications section references the ClinicalUseDefinition - Indication."
 
