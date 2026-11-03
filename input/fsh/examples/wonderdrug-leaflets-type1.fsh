@@ -284,7 +284,7 @@ Description: "Instructions for use for WonderDrug 250 mg/5 mL powder for oral su
 * title = "WonderDrug 250 mg/5 mL powder for oral suspension - Instructions for use"
 * section.id = "ifu"
 * section.title = "INSTRUCTIONS FOR USE"
-* section.code = $loinc#59845-8 "INSTRUCTIONS FOR USE SECTION"
+* section.code = $loinc#59845-8 "FDA package insert Instructions for use section"
 * section.text.status = #generated
 * section.text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p><b>WonderDrug 250 mg/5 mL powder for oral suspension</b></p><p>Read these instructions before you prepare the suspension and each time before you give a dose. Use only the 5 mL oral syringe that comes with this medicine.</p><p><img src='#ifu-steps-image' alt='Four steps: shake the bottle, insert the syringe, draw up the dose, give it slowly'/></p></div>"
 * section.section[0].id = "ifu-1"

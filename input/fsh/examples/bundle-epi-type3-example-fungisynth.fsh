@@ -253,9 +253,10 @@ Description: "ClinicalUseDefinition - Warning: dosage adjustment required in ren
 // ---------------------------------------------------------------------------
 // Composition (lean) - links the structured resources into the SmPC sections
 // ---------------------------------------------------------------------------
+// Inline: the textLink data targets (urn:uuid fullUrls) only resolve inside the Bundle
 Instance: composition-fungisynth
 InstanceOf: CompositionUvEpi
-Usage: #example
+Usage: #inline
 Title: "Composition - Fungisynth SmPC"
 Description: "Composition - Fungisynth Summary of Product Characteristics"
 * id = "composition-fungisynth"

@@ -51,8 +51,8 @@
 </header>
 
 <!-- TAB RADIOS -->
-<input type="radio" name="tabs" id="t-p"  class="trd" checked>
-<input type="radio" name="tabs" id="t-cl" class="trd">
+<input type="radio" name="tabs" id="t-p"  class="trd" checked="checked"/>
+<input type="radio" name="tabs" id="t-cl" class="trd"/>
 
 <nav class="tabnav">
   <div class="tabnav-inner">
@@ -81,7 +81,7 @@
     <input class="pf" type="text" placeholder="Filter by substance or strength&#8230;" />
   </div>
 
-  <defs><radialGradient id="tg" cx="40%" cy="35%" r="55%"><stop offset="0%" stop-color="#fff" /><stop offset="100%" stop-color="#e5e5e7" /></radialGradient></defs>
+  
 
   <details class="pa" open="open">
     <summary class="pah">
@@ -117,11 +117,11 @@
         </div>
         <div class="tab-svgs">
           <figure class="tab-fig">
-            <svg width="68" height="50" viewBox="0 0 100 72"><ellipse cx="50" cy="36" rx="48" ry="34" fill="url(#tg)" stroke="#d1d5db" stroke-width="1" /></svg>
+            <svg width="68" height="50" viewBox="0 0 100 72"><ellipse cx="50" cy="36" rx="48" ry="34" fill="#eeeef0" stroke="#d1d5db" stroke-width="1" /></svg>
             <figcaption>Front</figcaption>
           </figure>
           <figure class="tab-fig">
-            <svg width="68" height="50" viewBox="0 0 100 72"><ellipse cx="50" cy="36" rx="48" ry="34" fill="url(#tg)" stroke="#d1d5db" stroke-width="1" /><text x="50" y="40" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#6b7280">W-500</text></svg>
+            <svg width="68" height="50" viewBox="0 0 100 72"><ellipse cx="50" cy="36" rx="48" ry="34" fill="#eeeef0" stroke="#d1d5db" stroke-width="1" /><text x="50" y="40" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle" fill="#6b7280">W-500</text></svg>
             <figcaption>Back</figcaption>
           </figure>
         </div>
@@ -311,7 +311,7 @@
     <strong>Root cause:</strong> The <code>.cscard</code> summary tiles use <code>justify-content:space-between; align-items:flex-start</code>
     which correctly places the icon in the upper-right corner. The <code>.clsh</code> (section header) had an
     implicit <code>flex-direction:column</code> applied in some render paths, pushing the count badge below the title.
-    <br><br>
+    <br/><br/>
     <strong>Fix:</strong> Ensure <code>.clsh</code> always uses <code>display:flex; flex-direction:row; align-items:center</code>
     (already enforced in the stylesheet above). The icon/count badge ordering in the markup is:
     <code>.clsicon → .clstitle (flex:1) → .clscount</code> — no structural change needed.
@@ -387,9 +387,9 @@
       </div>
 
       <!-- Population sub-tabs (CSS-only) -->
-      <input type="radio" name="drtabs" id="dr-adult"  class="dr-trd" checked>
-      <input type="radio" name="drtabs" id="dr-ped"    class="dr-trd">
-      <input type="radio" name="drtabs" id="dr-renal"  class="dr-trd">
+      <input type="radio" name="drtabs" id="dr-adult"  class="dr-trd" checked="checked"/>
+      <input type="radio" name="drtabs" id="dr-ped"    class="dr-trd"/>
+      <input type="radio" name="drtabs" id="dr-renal"  class="dr-trd"/>
 
       <div class="dr-tabs">
         <label class="dr-tb" for="dr-adult">Adults &amp; Adolescents (&ge;12 y)</label>

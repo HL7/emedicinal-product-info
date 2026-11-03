@@ -114,7 +114,7 @@
     }
     .meta-chip strong { color: var(--text); font-weight: 600; }
     .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
-    main { max-width: 1080px; margin: 0 auto; padding: 40px 24px 80px; }
+    .main { max-width: 1080px; margin: 0 auto; padding: 40px 24px 80px; }
     .sec-hdr { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
     .sec-hdr .icon {
       width: 28px; height: 28px; border-radius: 6px;
@@ -220,7 +220,7 @@
     td:last-child  { color: var(--muted); }
     @media (max-width: 640px) {
       .hero { padding: 32px 16px 28px; }
-      main  { padding: 20px 14px 60px; }
+      .main  { padding: 20px 14px 60px; }
       .entry-body { grid-template-columns: 1fr 1fr; }
       .ef { border-right: none; border-bottom: 1px solid var(--border); }
       .ef:last-child { border-bottom: none; }
@@ -247,7 +247,7 @@
     <h1>ePI List Use Cases</h1>
     <p>The FHIR <code>List</code> resource is incredibly versatile. In the ePI ecosystem, it serves two primary tracking paradigms: monitoring various products across different jurisdictions, and managing all language instances for a single product within one jurisdiction.</p>
   </header>
-  <main>
+  <div class="main">
     <!-- ==============================================
          USE CASE 2
          ============================================== -->
@@ -488,6 +488,6 @@
       </div>
     </div>
 
-  </main>
+  </div>
 </body>
 </html>

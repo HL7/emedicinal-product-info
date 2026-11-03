@@ -1,9 +1,12 @@
 == Suppressed Messages ==
 
 # The EMA SPOR and MedDRA code systems are used as examples and are not available on the HL7 terminology server
-A definition for CodeSystem 'https://spor.ema.europa.eu/%' could not be found%
+A definition for CodeSystem 'https://spor.ema.europa.eu/rmswi' could not be found%
+A definition for CodeSystem 'https://spor.ema.europa.eu/smswi' could not be found%
+A definition for CodeSystem 'https://spor.ema.europa.eu/v1/lists/%
 A definition for CodeSystem 'http://meddra.org' could not be found%
-No definition could be found for URL value 'https://spor.ema.europa.eu/%'
+No definition could be found for URL value 'https://spor.ema.europa.eu/rmswi'
+No definition could be found for URL value 'https://spor.ema.europa.eu/smswi'
 No definition could be found for URL value 'http://meddra.org'
 Error from https://tx.fhir.org/r5: Error: A definition for CodeSystem 'https://spor.ema.europa.eu/rmswi' could not be found, so the value set cannot be expanded%
 Error from https://tx.fhir.org/r5: Error: A definition for CodeSystem 'http://meddra.org' could not be found, so the value set cannot be expanded%
@@ -20,10 +23,22 @@ No definition could be found for URL value 'https://asean.org/fhir/list/identifi
 # The IG's own code systems and value sets are experimental while the content is in trial use
 Reference to experimental CodeSystem%
 Reference to draft CodeSystem%
-The definition for the element '%' binds to the value set '%' which is experimental%
+
+# Core FHIR R5 value sets inherited from the base resources are marked experimental in R5; the IG's own epiType value set is an example while in trial use
+The definition for the element 'ClinicalUseDefinition.population.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Composition.type' binds to the value set 'http://hl7.org/fhir/uv/emedicinal-product-info/ValueSet/epiType' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'DeviceDefinition.correctiveAction.scope' binds to the value set 'http://hl7.org/fhir/ValueSet/device-correctiveactionscope|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'DeviceDefinition.deviceName.type' binds to the value set 'http://hl7.org/fhir/ValueSet/device-nametype|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'DeviceDefinition.link.relation' binds to the value set 'http://hl7.org/fhir/ValueSet/devicedefinition-relationtype|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'DeviceDefinition.productionIdentifierInUDI' binds to the value set 'http://hl7.org/fhir/ValueSet/device-productidentifierinudi|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'DeviceDefinition.regulatoryIdentifier.type' binds to the value set 'http://hl7.org/fhir/ValueSet/devicedefinition-regulatory-identifier-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'List.entry.item.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'List.mode' binds to the value set 'http://hl7.org/fhir/ValueSet/list-mode|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'SubstanceDefinition.sourceMaterial.countryOfOrigin' binds to the value set 'http://hl7.org/fhir/ValueSet/country|5.0.0' which is experimental, but this structure is not labeled as experimental
 
 # ePI images are embedded in the Composition as contained Binary resources and shown with <img src="#id"/>, as the Composition (ePI) profile requires. On Bundle pages the Publisher shows the Composition narrative without its contained resources, so these references cannot be resolved there; they resolve correctly in the Composition itself
 The image source '#tablet-image' cannot be resolved
+The image source '#ifu-steps-image' cannot be resolved
 
 # The Publisher writes the same anchors for a Bundle entry and for the resource it references on the same Bundle page; this is generated HTML that the IG cannot change
 The html source has duplicate anchor Ids: %

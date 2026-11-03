@@ -19,6 +19,8 @@ extension:
     valueCode: brr
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: trial-use
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 2
 
 # textLink (narrative-to-data linking, ePI Type 4) is first published in the 5.4.0 extensions pack
 dependencies:
@@ -38,6 +40,10 @@ resources:
   Bundle/template-epi-type3:
     name: ePI Type 3 Template
     description: Annotated XML template for an ePI Type 3 (clinical data) Bundle, with a comment before every element.
+    exampleCanonical: http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type3
+  Bundle/bundle-epi-type4-example-wonderdrug:
+    name: ePI Type 4 Example - WonderDrug 500 mg tablets
+    description: ePI Type 4 (dynamic digital label) example. It validates against the Type 3 Bundle profile and adds granular sub-sections, a section.entry on every content section, and span ids in the narrative linked to the structured resources with the textLink extension.
     exampleCanonical: http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type3
 
 pages:
