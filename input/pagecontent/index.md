@@ -192,3 +192,29 @@
     <a href="examples/bundle-epi-type1-example-wonderdrug.html" style="color:#003087; font-weight:600; font-size:.85em; text-decoration:none;">Try the demo →</a>
   </div>
 </div>
+
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:32px 0;"/>
+
+<!-- GOVERNANCE -->
+<h3 id="governance-participation" style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:12px;">Governance &amp; Participation</h3>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:32px;">
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px;">
+    <div style="font-size:1.3em; margin-bottom:8px;">🤝</div>
+    <div style="font-weight:700; color:#003087; margin-bottom:6px;">Governance &amp; Collaboration</div>
+    <p style="font-size:.85em; color:#4b5563; line-height:1.6; margin:0;">The ePI implementation guide is developed under the HL7 Vulcan Accelerator with active participation from regulators, pharmaceutical companies, and technology vendors. Project details are on the <a href="https://confluence.hl7.org/spaces/VA/pages/79515543/Electronic+Medicinal+Product+Information+ePI">Vulcan ePI project page</a>, and contributors are listed in the <a href="credits.html">Acknowledgements</a>.</p>
+  </div>
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px;">
+    <div style="font-size:1.3em; margin-bottom:8px;">🚀</div>
+    <div style="font-weight:700; color:#003087; margin-bottom:6px;">Get Involved</div>
+    <p style="font-size:.85em; color:#4b5563; line-height:1.6; margin:0;">Join the project calls. Review the guide and try the examples. We welcome industry, solution providers, and regulators from every region to contribute.</p>
+  </div>
+</div>
+
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:32px 0;"/>
+
+<!-- INTELLECTUAL PROPERTY -->
+<h3 id="ip-statements" style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:12px;">Intellectual Property Considerations</h3>
+
+<p>This implementation guide and the underlying FHIR specification are licensed as public domain under the <a href="http://hl7.org/fhir/R5/license.html#license">FHIR license</a>. The license page also describes rules for the use of the FHIR name and logo.</p>
+
+{% include ip-statements.xhtml %}

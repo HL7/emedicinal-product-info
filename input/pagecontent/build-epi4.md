@@ -6,10 +6,10 @@
 </div>
 <!-- WHAT IS TYPE 4 -->
 <h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 4?</h3>
-<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 4 creates a bridge between the unstructured narrative parts of the ePI and its structured parts. Phrases in the narrative text are linked to the FHIR resources that hold the same information as coded data, so systems can move reliably between what a reader sees and what a machine can process.</p>
+<p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:16px;">An ePI Type 4 creates a bridge between the unstructured narrative parts of the ePI and its structured parts. Phrases in the narrative text are linked to the FHIR resources that hold the same information as coded data, so systems can move reliably between what a reader sees and what a machine can process. To do this, the narrative is decomposed into topics and atomic components, each mapped to a FHIR resource and coded with controlled terminology, so that systems can maintain, interpret and consume the information automatically.</p>
 <p style="color:#374151; font-size:.94em; line-height:1.7; margin-bottom:20px;"><em>Conceptual examples included within this implementation guide are provided exclusively for illustrative purposes to facilitate understanding of ePI Type 4 requirements.</em></p>
-<!-- RESOURCE BADGES -->
-<div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">Resources used in Type 4 (on top of Types 1, 2 &amp; 3)</span></div>
+<!-- ELEMENT BADGES -->
+<div style="margin-bottom:8px;"><span style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af;">Elements used in Type 4 (on top of Types 1, 2 &amp; 3)</span></div>
 <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px;">
   <span style="background:#f9fafb; border:1px solid #e5e7eb; color:#6b7280; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">All Type 1, 2 &amp; 3 resources</span>
   <span style="background:#faf5ff; border:1px solid #e9d5ff; color:#7e22ce; font-size:.78em; font-weight:600; padding:4px 12px; border-radius:99px;">🔗 Granular Composition Sections</span>
@@ -26,16 +26,17 @@
       <strong>For Regulatory &amp; Industry:</strong>
       <ul style="margin:6px 0 0 18px; padding:0;">
         <li>Trace each statement back to its source data</li>
-        <li>Reuse the same structured data across ePIs</li>
+        <li>Reuse the same structured data across ePIs, so authoring can be automated</li>
         <li>Each phrase is clearly linked to its coded data</li>
         <li>Systems can process the content automatically</li>
+        <li>Generate some sections from structured data</li>
       </ul>
     </div>
     <div style="font-size:.86em; color:#14532d; line-height:1.6;">
       <strong>For End Users &amp; Systems:</strong>
       <ul style="margin:6px 0 0 18px; padding:0;">
-        <li>Potential for personalised information extraction</li>
-        <li>Retrieval of data from harmonised, structured sources</li>
+        <li>Potential for personalisation and individual information extraction</li>
+        <li>Retrieval of data from harmonised, structured sources enables interoperability with other e-health systems</li>
         <li>Structure-based information extraction by AI tools</li>
         <li>Dynamic content generation and filtering</li>
       </ul>
@@ -80,6 +81,23 @@
       </div>
     </div>
   </div>
+</div>
+<!-- CORE CONCEPTS -->
+<h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:12px;" id="core-concepts">Core concepts</h3>
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:14px 20px; margin-bottom:28px;">
+  <ul style="font-size:.88em; color:#374151; line-height:1.7; margin:0; padding-left:18px;">
+    <li style="margin-bottom:6px;"><strong>Composition:</strong> the FHIR resource that holds the structure and narrative of the ePI, in the order and with the content the regulator approves. Its sections form the hierarchy Concept → Domain → Topic, the technical analogue of chapter → section → subsection in the document.</li>
+    <li style="margin-bottom:6px;"><strong>Chapter, Section and Subsection:</strong> units of the human-facing document, used to organise content for reading. For example, the chapter "4. Clinical particulars", the section "4.1 Therapeutic indications" and the subsection "Posology".</li>
+    <li style="margin-bottom:6px;"><strong>Concept:</strong> the technical unit directly under the Composition. A Concept groups Domains and corresponds to a chapter.</li>
+    <li style="margin-bottom:6px;"><strong>Domain:</strong> groups Topics of the same regulatory intent and corresponds to a section. A Domain is also a top-level semantic category for filtering and mapping, such as <code>CUD.interaction</code> or <code>CUD.warning</code>.</li>
+    <li style="margin-bottom:6px;"><strong>Subdomain:</strong> a more specific category within a Domain that refines the dimension, condition or type of information a statement conveys, such as the population or the effect within <code>CUD.warning</code>.</li>
+    <li style="margin-bottom:6px;"><strong>Topic:</strong> a single coherent regulatory or clinical message, treated as one technical content unit for structuring, rendering and filtering. A Topic corresponds to a subsection.</li>
+    <li style="margin-bottom:6px;"><strong>Atomic component:</strong> one piece of information within a statement that is meaningful on its own, such as a substance, a condition or a population.</li>
+    <li style="margin-bottom:6px;"><strong>Section entries (<code>section.entry</code>):</strong> references from a section to the structured resources that represent its meaning.</li>
+    <li style="margin-bottom:6px;"><strong>Structured resources:</strong> FHIR resources that encode meaning, codes and references in machine-readable form, such as ClinicalUseDefinition, Ingredient, ManufacturedItemDefinition and Group. A Topic may reference several resources.</li>
+    <li style="margin-bottom:6px;"><strong>Metadata:</strong> machine-readable information carried in the Bundle, such as identifiers, the language, the document type and the codes for standard sections.</li>
+    <li><strong>Narrative:</strong> the human-readable text in <code>section.text</code>. Phrases in it can be linked to structured resources with span ids and the textLink extension (step 5). Narrative that does not refer to any structured resource still sits under its Topic.</li>
+  </ul>
 </div>
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 <!-- KEY DIFFERENCES -->
@@ -174,11 +192,11 @@
 <div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
   <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">1</div>
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
-    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Create the overall content structure for the ePI template</div></div>
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Create content structure</div></div>
     <div style="padding:14px 20px;">
       <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Set up the document structure according to the regulatory template (e.g. QRD), as with ePI Type 1–3. Divide the information into separate <strong>Concepts</strong> (corresponding to Chapters), then into <strong>Domains</strong> (corresponding to Sections), and finally into <strong>Topics</strong> (corresponding to Subsections).</p>
       <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:6px; padding:12px 16px; margin-bottom:14px;">
-        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:8px;">Example mapping: QRD → Type 4 hierarchy</div>
+        <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#9ca3af; margin-bottom:8px;">Example mapping: QRD template → Type 4 hierarchy</div>
         <div style="font-size:.78em; font-family:ui-monospace,'SF Mono',monospace; word-break:break-all; color:#374151; line-height:1.9;">
           <span style="color:#003087; font-weight:700;">Concept</span> (Chapter): <span style="color:#374151;">"4. Clinical particulars"</span><br/>
           &nbsp;&nbsp;<span style="color:#7c3aed; font-weight:700;">Domain</span> (Section): <span style="color:#374151;">"4.1 Therapeutic indications"</span><br/>
@@ -189,7 +207,7 @@
       </div>
       <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">💡</span>
-        <span><strong>Concept Definitions:</strong> A <strong>Topic</strong> represents a statement with one discrete clinical or regulatory message. Topics of the same regulatory intent are grouped within a <strong>Domain</strong>. A <strong>Concept</strong> groups Domains together and acts as the technical analogue of a document chapter.</span>
+        <span><strong>Concept, Domain and Topic</strong> are defined in <a href="#core-concepts" style="color:#92400e; font-weight:600;">Core concepts</a> above.</span>
       </div>
     </div>
   </div>
@@ -200,7 +218,7 @@
   <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
     <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Decompose content into granular parts of information</div></div>
     <div style="padding:14px 20px;">
-      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Instead of adding all content as plain narrative text (as in Type 1), structure the content as a hierarchy of discrete meaning. Each information part applies to a specific situation, further divided into separate smaller information elements as applicable. In Type 4, the same implicit approach authors already use with formatting and sub-headings is applied more explicitly and consistently, down to individual statements.</p>
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Instead of adding all content as plain narrative text (as in Type 1), structure the content as a hierarchy of discrete meaning. Each information part applies to a specific situation, further divided into separate smaller information elements, decomposed and mapped to FHIR resources as described below, as applicable. In Type 4, the same implicit approach authors already use with formatting and sub-headings is applied more explicitly and consistently, down to individual statements.</p>
       <!-- BEFORE/AFTER -->
       <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Dosing Decomposition</div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;">
@@ -215,6 +233,15 @@
             <strong>Statement 2:</strong> "1 tablet for children."<br/><br/>
             <em style="color:#15803d; font-size:.9em;">Discrete statements — each is its own structural unit</em>
           </div>
+        </div>
+      </div>
+      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Codable indication with a qualifier</div>
+      <div style="border:1px solid #e5e7eb; border-radius:8px; padding:12px 16px; margin-bottom:14px; background:#f9fafb;">
+        <div style="font-size:.84em; color:#374151; font-style:italic; line-height:1.6; margin-bottom:8px;">"WonderDrug is used for the treatment of severe headache."</div>
+        <div style="font-size:.82em; color:#374151; line-height:1.8;">
+          <strong>"headache"</strong> → the indication, held in a ClinicalUseDefinition (type: indication)<br/>
+          <strong>"severe"</strong> → a codable qualifier of that indication<br/><br/>
+          <em style="color:#6b7280; font-size:.9em;">One phrase can carry more than one codable part. Each part is identified here and linked in steps 4 and 5.</em>
         </div>
       </div>
     </div>
@@ -257,6 +284,18 @@
     <div style="padding:14px 20px;">
       <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Each topic is divided into separate statements, as decomposed in step 2. Apply a <strong>subdomain</strong> to each statement to refine the particular dimension, condition or type of information it conveys within the topic.</p>
       <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:14px;">Then break each statement into <strong>atomic components</strong> to make the information more specific for personalised search options. An atomic component is one piece of information within a statement that is meaningful on its own.</p>
+      <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Applying subdomains</div>
+      <div style="border:1px solid #e5e7eb; border-radius:8px; padding:12px 16px; margin-bottom:14px; background:#f9fafb;">
+        <div style="font-size:.84em; color:#374151; font-style:italic; line-height:1.6; margin-bottom:8px;">"Liver impairment: Fungisynth should not be given to patients with decompensated liver disease. Patients with chronic hepatitis B or C are at an increased risk of severe and potentially fatal hepatic adverse reactions."</div>
+        <div style="font-size:.82em; color:#374151; line-height:1.8;">
+          <strong>Domain:</strong> <code>CUD.warning</code><br/>
+          <strong>Topic:</strong> Liver impairment<br/>
+          <strong>Subdomains applied to the statements:</strong><br/>
+          &nbsp;&nbsp;• Population group: patients with liver disease<br/>
+          &nbsp;&nbsp;• Comorbidity: decompensated liver disease<br/>
+          &nbsp;&nbsp;• Effect: increased risk of severe and potentially fatal hepatic adverse reactions
+        </div>
+      </div>
       <div style="font-size:.78em; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#9ca3af; margin-bottom:6px;">Example — Fungisynth Contraindication Decomposition</div>
       <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:12px 16px; margin-bottom:12px;">
         <div style="font-size:.84em; color:#991b1b; font-style:italic; line-height:1.6;">"Do not take Fungisynth if you are allergic to synthazole, amoxicillin or sulphonamides."</div>
@@ -274,7 +313,7 @@
         </div>
         <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #d97706; border-radius:6px; padding:10px 12px; text-align:center;">
           <div style="font-size:.7em; font-weight:700; text-transform:uppercase; color:#d97706; margin-bottom:4px;">Atomic #3</div>
-          <div style="font-size:.82em; font-weight:600; color:#111827;">"if you are allergic"</div>
+          <div style="font-size:.82em; font-weight:600; color:#111827;">"allergic"</div>
           <div style="font-size:.72em; color:#6b7280; margin-top:4px;">= condition</div>
         </div>
         <div style="background:#fff; border:1px solid #e5e7eb; border-top:3px solid #16a34a; border-radius:6px; padding:10px 12px; text-align:center;">
@@ -340,8 +379,6 @@
           <li>The <code>textLink</code> extension is the only permitted way to link a span to a resource; do not encode resource ids in the span <code>class</code> or <code>id</code></li>
           <li>Spans should wrap the <strong>minimal phrase</strong> representing the formal coded concept</li>
           <li>Span <code>id</code> values should be stable between versions of the ePI so that links survive updates</li>
-          <li><strong>Required</strong> when text mentions age, sex, or condition constraints or coded concepts</li>
-          <li><strong>Optional</strong> when text does not refer to any structured resource</li>
         </ul>
       </div>
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:3px solid #2563eb; border-radius:6px; padding:10px 14px; font-size:.82em; color:#1e3a5f; display:flex; gap:10px; align-items:flex-start;">

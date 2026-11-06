@@ -11,7 +11,7 @@ Contributing individuals and organisations are:
 * **Kim Sherwood** - Läkemedelsverket (Swedish MPA)
 * **Markus Forslund** - Läkemedelsverket (Swedish MPA)
 * **Adam Kover** - Norwegian Medical Products Agency (NOMA)
-* **Lucie Gattapaille** - ePI Digital Solutions
+* **Lucie Gattepaille** - ePI Digital Solutions
 * **Evinn Drusys** - AEMPS
 * **Rik Smithies** - NProgram
 * **Niklas Jänich** - Boehringer Ingelheim
@@ -19,18 +19,17 @@ Contributing individuals and organisations are:
 * **Jim Drennan** - Glemser
 * **Beverly Buckta** - Pfizer
 * **Palani Perumal** - Deevita
-* **Bill Friggle** - 4eStandards
+* **Bill Friggle**
 * **Erol Hofmans** - Netherlands Medicines Evaluation Board (MEB)
 * **Jenny Sage** - Pfizer
 * **Esther Mapletoft** - Pfizer
 * **Harri Nurmi** - Finnish Medicines Agency (Fimea)
-* **Kari Heinonen**
+* **Kari Heinonen** - Finland
 
 **Project management:**
 
 * **Filippo Napoli** - Vulcan
-* **Bret Heale** - Vulcan
-* **Jean Duteau** - Vulcan
+* **Bret Heale** - Humanized Health Consulting
 
 With contributions from other members who have from time to time, or quietly, participated in meetings, attended conference calls, and supported the core team during the development process.
 
