@@ -11,10 +11,13 @@
     3. <span id="..."> annotations in the XHTML narrative, each linked to the
        resource it describes by the HL7 textLink extension on section.text
        (htmlid = span id; data = target fullUrl, optionally #element-id).
-       textLink can appear once per narrative and has one data target, so each
-       section links to ONE resource (or one element in it); content about
-       several resources is split into sub-sections (see 6.1).
-       Resource ids are never encoded in the span class or id.
+       Each textLink has one data target and one htmlid per span that points
+       to it. A narrative that refers to several resources has one textLink
+       per target (see 4.2 and 6.1), and each target is also referenced in
+       section.entry. Resource ids are never encoded in the span class or id.
+       Note: the HL7 textLink extension currently allows one occurrence per
+       narrative, so validators report an error on 4.2 and 6.1 until the
+       requested change to the extension is published.
 
   This instance is a SUPERSET example: it merges the resource inventory of the
   ePI Type 1 (Binary / unstructured document), Type 2 (full product + packaging
@@ -335,10 +338,24 @@
               <text>
                 <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
-                    <valueString value="sp-06"/>
+                    <valueString value="sp-42-01"/>
                   </extension>
                   <extension url="htmlid">
-                    <valueString value="sp-07"/>
+                    <valueString value="sp-42-02"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
+                  </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-42-03"/>
+                  </extension>
+                  <extension url="htmlid">
+                    <valueString value="sp-42-04"/>
+                  </extension>
+                  <extension url="htmlid">
+                    <valueString value="sp-42-05"/>
                   </extension>
                   <extension url="data">
                     <valueUri value="urn:uuid:00000000-0000-0000-0000-000000003333#fever-dosing"/>
@@ -346,14 +363,21 @@
                 </extension>
                 <status value="generated"/>
                 <div xmlns="http://www.w3.org/1999/xhtml">
-                  <p>The recommended dose is
-                    <span id="sp-06">one 500 mg
-                    tablet every 4 to 6 hours, to a maximum of 4 g per day</span> in
-                    <span id="sp-07">adults</span>.</p>
+                  <p>In <span id="sp-42-03">adults</span>, the recommended dose is one 500 mg
+                    <span id="sp-42-01">tablet</span>
+                    <span id="sp-42-04">every 4 to 6 hours</span> as needed.
+                    Do not take more than 8 <span id="sp-42-02">tablets</span> in
+                    <span id="sp-42-05">24 hours</span>.</p>
                 </div>
               </text>
+              <!-- two targets in one narrative: the "tablet" spans link to the
+                   ManufacturedItemDefinition, and the population and timing spans
+                   link to the dosing guideline (id="fever-dosing") in the indication -->
               <entry>
                 <reference value="urn:uuid:00000000-0000-0000-0000-000000003333"/>
+              </entry>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
               </entry>
             </section>
 
@@ -582,64 +606,50 @@
                   <display value="6.1 List of excipients"/>
                 </coding>
               </code>
-              <!-- Type 4: one excipient per sub-section, so each narrative links to one resource -->
-              <section id="smpc-6-1-1">
-                <text>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
-                    <extension url="htmlid">
-                      <valueString value="sp-12"/>
-                    </extension>
-                    <extension url="data">
-                      <valueUri value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
-                    </extension>
+              <!-- one narrative lists all excipients; one textLink and one entry per excipient Ingredient -->
+              <text>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-61-01"/>
                   </extension>
-                  <status value="generated"/>
-                  <div xmlns="http://www.w3.org/1999/xhtml">
-                    <p><span id="sp-12">Pregelatinised starch</span></p>
-                  </div>
-                </text>
-                <entry>
-                  <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
-                </entry>
-              </section>
-              <section id="smpc-6-1-2">
-                <text>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
-                    <extension url="htmlid">
-                      <valueString value="sp-13"/>
-                    </extension>
-                    <extension url="data">
-                      <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
-                    </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
                   </extension>
-                  <status value="generated"/>
-                  <div xmlns="http://www.w3.org/1999/xhtml">
-                    <p><span id="sp-13">Maize starch</span></p>
-                  </div>
-                </text>
-                <entry>
-                  <reference value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
-                </entry>
-              </section>
-              <section id="smpc-6-1-3">
-                <text>
-                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
-                    <extension url="htmlid">
-                      <valueString value="sp-14"/>
-                    </extension>
-                    <extension url="data">
-                      <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
-                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-61-02"/>
                   </extension>
-                  <status value="generated"/>
-                  <div xmlns="http://www.w3.org/1999/xhtml">
-                    <p><span id="sp-14">Magnesium stearate</span></p>
-                  </div>
-                </text>
-                <entry>
-                  <reference value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
-                </entry>
-              </section>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
+                  </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                  <extension url="htmlid">
+                    <valueString value="sp-61-03"/>
+                  </extension>
+                  <extension url="data">
+                    <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
+                  </extension>
+                </extension>
+                <status value="generated"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <ul>
+                    <li><span id="sp-61-01">Pregelatinised starch</span></li>
+                    <li><span id="sp-61-02">Maize starch</span></li>
+                    <li><span id="sp-61-03">Magnesium stearate</span></li>
+                  </ul>
+                </div>
+              </text>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
+              </entry>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
+              </entry>
+              <entry>
+                <reference value="urn:uuid:00000000-0000-0000-0000-00000000e003"/>
+              </entry>
             </section>
 
             <!-- 6.5 Nature and contents of container -->
