@@ -57,7 +57,7 @@ Description: "Type 3 (clinical data): Type 2 plus indications with structured do
 Instance: composition-wonderdrug-tablets-type3
 InstanceOf: CompositionUvEpi
 Usage: #example
-Title: "Composition - WonderDrug 500 mg tablets (Type 3)"
+Title: "Composition - WonderDrug 500 mg tablets, Type 3 ePI"
 Description: "SmPC for WonderDrug 500 mg tablets, with sections linked to the product and clinical data"
 * meta.versionId = "1"
 * meta.lastUpdated = "2026-10-15T09:00:00Z"

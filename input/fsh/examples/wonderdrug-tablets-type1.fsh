@@ -19,7 +19,7 @@ Description: "Type 1 (digital label): the SmPC as structured narrative only"
 Instance: composition-wonderdrug-tablets-type1
 InstanceOf: CompositionUvEpi
 Usage: #example
-Title: "Composition - WonderDrug 500 mg tablets (Type 1)"
+Title: "Composition - WonderDrug 500 mg tablets, Type 1 ePI"
 Description: "SmPC for WonderDrug 500 mg tablets as a digital label (narrative only)"
 * meta.versionId = "1"
 * meta.lastUpdated = "2026-10-15T09:00:00Z"

@@ -99,7 +99,7 @@ Description: "Seed value set for immune status relevant to dosing. Extensible."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
-* $sct#234532001 "Immunocompromised"
+* $sct#370388006 "Patient immunocompromised"
 * $sct#86406008 "Human immunodeficiency virus infection"
 
 //=========================

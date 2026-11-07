@@ -26,7 +26,7 @@ Description: "Type 1 (digital label): the package leaflet for WonderDrug 500 mg 
 Instance: composition-wonderdrug-pil
 InstanceOf: CompositionUvEpi
 Usage: #example
-Title: "Composition - WonderDrug 500 mg tablets package leaflet (Type 1)"
+Title: "Composition - WonderDrug 500 mg tablets package leaflet, Type 1 ePI"
 Description: "Package leaflet for WonderDrug 500 mg tablets, structured with the EMA QRD package leaflet headings"
 * meta.versionId = "1"
 * meta.lastUpdated = "2026-10-15T09:00:00Z"

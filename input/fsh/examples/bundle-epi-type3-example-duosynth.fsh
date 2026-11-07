@@ -133,7 +133,7 @@ Description: "PackagedProductDefinition - Carton of 30 tablets in 5 daily-dose b
 Instance: group-duosynth-adults
 InstanceOf: GroupUvEpi
 Usage: #example
-Title: "Group - Adults (Duosynth)"
+Title: "Group - Adults, Duosynth"
 Description: "Adults 18 years and over"
 * type = #person
 * membership = #definitional

@@ -88,7 +88,7 @@ Description: "MedicinalProductDefinition - Fungisynth (synthazole) 150 mg capsul
 Instance: group-fungisynth-adult
 InstanceOf: GroupUvEpi
 Usage: #example
-Title: "Group - Adults (Fungisynth)"
+Title: "Group - Adults, Fungisynth"
 Description: "Group - Adults (18 years and over)"
 * type = #person
 * membership = #definitional

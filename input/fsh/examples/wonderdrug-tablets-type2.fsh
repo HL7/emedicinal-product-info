@@ -39,7 +39,7 @@ Description: "Type 2 (product data): Type 1 plus the product, authorization, pac
 Instance: composition-wonderdrug-tablets-type2
 InstanceOf: CompositionUvEpi
 Usage: #example
-Title: "Composition - WonderDrug 500 mg tablets (Type 2)"
+Title: "Composition - WonderDrug 500 mg tablets, Type 2 ePI"
 Description: "SmPC for WonderDrug 500 mg tablets, with sections linked to the product data"
 * meta.versionId = "1"
 * meta.lastUpdated = "2026-10-15T09:00:00Z"
@@ -333,7 +333,7 @@ Description: "The tablet as taken by the patient. No transformation is needed, s
 Instance: ingredient-wonderdrug-tablets-paracetamol
 InstanceOf: IngredientUvEpi
 Usage: #example
-Title: "Ingredient - Paracetamol (active), WonderDrug tablets"
+Title: "Ingredient - Paracetamol, WonderDrug tablets (active)"
 Description: "Paracetamol (active)"
 * identifier.system = $example-id
 * identifier.value = "ingredient-wonderdrug-tablets-paracetamol"

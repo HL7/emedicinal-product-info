@@ -278,7 +278,7 @@ Description: "The oral suspension that is given to the patient, made by adding w
 Instance: ingredient-wonderdrug-powder-paracetamol
 InstanceOf: IngredientUvEpi
 Usage: #example
-Title: "Ingredient - Paracetamol (active), WonderDrug powder for oral suspension"
+Title: "Ingredient - Paracetamol, WonderDrug powder for oral suspension (active)"
 Description: "Paracetamol (active)"
 * identifier.system = $example-id
 * identifier.value = "ingredient-wonderdrug-powder-paracetamol"
