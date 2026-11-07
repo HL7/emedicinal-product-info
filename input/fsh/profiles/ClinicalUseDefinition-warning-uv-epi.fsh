@@ -30,3 +30,7 @@ Description: "ClinicalUseDefinition Warning (ePI) - Profile for Warning"
 * contraindication 0..0
 * interaction 0..0
 * undesirableEffect 0..0
+
+// Terminology bindings
+* category from VsClinicalUseDefinitionCategory (preferred)
+* warning.code insert AdditionalBinding(#candidate, VsMeddra, MedDRA terms may be used in place of the base value set\, as is common in regulatory product information.)

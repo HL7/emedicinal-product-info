@@ -147,3 +147,9 @@ Description: "This profile represents the constraints applied to the Composition
 // Terminology
 * status from EpiCompositionStatus (required)
 * type from VsEpiType (preferred)
+
+// Section codes are country specific, so the value set is an example
+* section.code from VsSectionCode (example)
+* section.section.code from VsSectionCode (example)
+* section.section.section.code from VsSectionCode (example)
+* language insert AdditionalBinding(#preferred, VsLanguage, Two-letter ISO 639-1 language codes are preferred.)

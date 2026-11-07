@@ -1,10 +1,7 @@
-RuleSet: AdditionalBinding ( purpose, valueSetAlias, documentation, description)
-// RuleSet: additionalBinding ( #conformance, VsSubstance, The specific substance that interacts., The specific substance that interacts.)
-//* ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* ^binding.additional.purpose = {purpose}
-* ^binding.additional.valueSet = Canonical({valueSetAlias})
-* ^binding.additional.documentation = """{documentation}"""
-* ^binding.description = "{description} see additional bindings in JSON OR XML"
+RuleSet: AdditionalBinding (purpose, valueSetAlias, documentation)
+* ^binding.additional[+].purpose = {purpose}
+* ^binding.additional[=].valueSet = Canonical({valueSetAlias})
+* ^binding.additional[=].documentation = "{documentation}"
 
 RuleSet: BundleEntry (sliceName, card, profile, short, def )
 

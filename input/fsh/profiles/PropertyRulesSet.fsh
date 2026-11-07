@@ -1,52 +1,88 @@
-RuleSet:  PropertyRulesSet
-* property 0..*
-* property ^slicing.discriminator[0].type = #value
-* property ^slicing.discriminator[=].path = "type"
+RuleSet: PropertyRulesSet
+// Physical characteristics of a ManufacturedItemDefinition or AdministrableProductDefinition.
+// Inserted by both profiles so the property slices are defined in one place.
+* property ^short = "Describe the physical characteristics of this item."
+* property ^slicing.discriminator.type = #value
+* property ^slicing.discriminator.path = "type.coding.code"
 * property ^slicing.rules = #open
-* property ^slicing.ordered = false
 * property contains
-    // codeableconcept
     color 0..* and
-    flavor 0..*  and
-    score  0..* and
-    shape  0..* and
-    surfaceform 0..* and
-    //quantity
-    size  0..* and
-    //data
-    image  0..* and
-    //string
-    imprint 0..* 
+    flavor 0..* and
+    score 0..* and
+    shape 0..* and
+    surfaceForm 0..* and
+    size 0..* and
+    image 0..* and
+    imprint 0..*
+* property[color] ^short = "The color of the item"
+* property[color].type = $epi-ig#color
+* property[color].type.coding.code = #color
+* property[color].value[x] only CodeableConcept
+* property[color].valueCodeableConcept.coding 1..1
+* property[color].valueCodeableConcept.coding.system 1..1
+* property[color].valueCodeableConcept.coding.code 1..1
+* property[color].valueCodeableConcept.coding.display 1..1
 
-* property[color].value[x]     only CodeableConcept
-* property[flavor].value[x]     only CodeableConcept
-* property[score].value[x]     only CodeableConcept
-* property[shape].value[x]     only CodeableConcept
-* property[surfaceform].value[x]     only CodeableConcept
-* property[size].value[x]     only Quantity
-* property[image].value[x]     only Attachment
-* property[imprint].value[x]     only CodeableConcept or Attachment
+* property[flavor] ^short = "The flavor of the item"
+* property[flavor].type = $epi-ig#flavor
+* property[flavor].type.coding.code = #flavor
+* property[flavor].value[x] only CodeableConcept
+* property[flavor].valueCodeableConcept.coding 1..1
+* property[flavor].valueCodeableConcept.coding.system 1..1
+* property[flavor].valueCodeableConcept.coding.code 1..1
+* property[flavor].valueCodeableConcept.coding.display 1..1
 
-* property[imprint].valueCodeableConcept.coding 0..0 
-* property[imprint].valueCodeableConcept.text 1..1
-* property[imprint].type = $medicationknowledge-characteristic#imprintcd 
+* property[score] ^short = "The score (break line) on the item"
+* property[score].type = $epi-ig#score
+* property[score].type.coding.code = #score
+* property[score].value[x] only CodeableConcept
+* property[score].valueCodeableConcept.coding 1..1
+* property[score].valueCodeableConcept.coding.system 1..1
+* property[score].valueCodeableConcept.coding.code 1..1
+* property[score].valueCodeableConcept.coding.display 1..1
 
-* property[color].type  = $medicationknowledge-characteristic#color
-* property[color].value[x] from VsPropertyColor (example)
+* property[shape] ^short = "The shape of the item"
+* property[shape].type = $epi-ig#shape
+* property[shape].type.coding.code = #shape
+* property[shape].value[x] only CodeableConcept
+* property[shape].valueCodeableConcept.coding 1..1
+* property[shape].valueCodeableConcept.coding.system 1..1
+* property[shape].valueCodeableConcept.coding.code 1..1
+* property[shape].valueCodeableConcept.coding.display 1..1
 
-* property[flavor].type = EpiIg#flavor
-* property[flavor].value[x] from VsPropertyFlavor (example)
+* property[surfaceForm] ^short = "The surface form of the item"
+* property[surfaceForm].type = $epi-ig#surfaceform
+* property[surfaceForm].type.coding.code = #surfaceform
+* property[surfaceForm].value[x] only CodeableConcept
+* property[surfaceForm].valueCodeableConcept.coding 1..1
+* property[surfaceForm].valueCodeableConcept.coding.system 1..1
+* property[surfaceForm].valueCodeableConcept.coding.code 1..1
+* property[surfaceForm].valueCodeableConcept.coding.display 1..1
 
-* property[score].type   = $medicationknowledge-characteristic#scoring
-// * property[score].value[x] from VsPropertyScore (example)
+* property[size] ^short = "The size of the item"
+* property[size].type = $epi-ig#size
+* property[size].type.coding.code = #size
+* property[size].value[x] only Quantity
+* property[size].valueQuantity ^short = "The measured size, with a UCUM unit (e.g., 12 mm)"
 
-* property[shape].type   = $medicationknowledge-characteristic#shape
-* property[shape].value[x] from VsPropertyShape (example)
+* property[image] ^short = "An image of the item, embedded as base64-encoded data"
+* property[image].type = $epi-ig#image
+* property[image].type.coding.code = #image
+* property[image].value[x] only Attachment
+* property[image].valueAttachment ^short = "The image, embedded as an attachment"
+* property[image].valueAttachment.contentType 1..1
+* property[image].valueAttachment.contentType ^short = "Mime type of the image (e.g., image/png, image/jpeg)"
+* property[image].valueAttachment.data 1..1
+* property[image].valueAttachment.data ^short = "The image data, base64-encoded"
+* property[image].valueAttachment.url 0..0
+* property[image].valueAttachment ^comment = "The image is embedded in this resource as base64 data. It is not a link to a Binary or to any other location."
+* property[imprint] ^short = "The imprint on the item"
+* property[imprint].type = http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/epi-ig#imprint
+* property[imprint].type.coding.code = #imprint
+* property[imprint].value[x] only markdown
 
-* property[surfaceform].type   = EpiIg#surfaceform
-// * property[surfaceform].value[x] from VsPropertySurfaceForm (preferred)
-
-* property[size].type    = $medicationknowledge-characteristic#size
-
-* property[image].type   = $medicationknowledge-characteristic#image
-* property[image].value[x].data ^short = "base64 version of the product image"
+// Terminology bindings for the property values
+* property[color].valueCodeableConcept from VsPropertyColor (example)
+* property[flavor].valueCodeableConcept from VsPropertyFlavor (example)
+* property[shape].valueCodeableConcept from VsPropertyShape (example)
+* property[surfaceForm].valueCodeableConcept from VsPropertySurfaceForm (example)

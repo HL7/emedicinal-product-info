@@ -31,3 +31,6 @@ Description: "PackagedProductDefinition (ePI)"
 * packaging.packaging ^short = "Nested packaging."
 * attachedDocument only Reference(DocumentReference)
 * attachedDocument ^short = "Pack artwork images or other related documents associated with this package."
+
+// Terminology bindings
+* packaging.shelfLifeStorage.specialPrecautionsForStorage from VsSpecialPrecautionsForStorage (example)

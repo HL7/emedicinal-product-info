@@ -44,3 +44,8 @@ Description: "ClinicalUseDefinition Indication (ePI) - Profile for Indication"
 * interaction 0..0
 * undesirableEffect 0..0
 * warning 0..0
+
+// Terminology bindings
+* category from VsClinicalUseDefinitionCategory (preferred)
+* indication.diseaseSymptomProcedure insert AdditionalBinding(#candidate, VsMeddra, MedDRA terms may be used in place of the base value set\, as is common in regulatory product information.)
+* indication.comorbidity insert AdditionalBinding(#candidate, VsMeddra, MedDRA terms may be used in place of the base value set\, as is common in regulatory product information.)

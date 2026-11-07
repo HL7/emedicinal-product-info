@@ -37,3 +37,8 @@ Description: "ClinicalUseDefinition Contraindication (ePI) - Profile for Contrai
 * interaction 0..0
 * undesirableEffect 0..0
 * warning 0..0
+
+// Terminology bindings
+* category from VsClinicalUseDefinitionCategory (preferred)
+* contraindication.diseaseSymptomProcedure insert AdditionalBinding(#candidate, VsMeddra, MedDRA terms may be used in place of the base value set\, as is common in regulatory product information.)
+* contraindication.comorbidity insert AdditionalBinding(#candidate, VsMeddra, MedDRA terms may be used in place of the base value set\, as is common in regulatory product information.)

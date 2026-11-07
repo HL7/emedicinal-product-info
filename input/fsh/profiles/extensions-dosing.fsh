@@ -40,12 +40,14 @@ Description: """DRAFT. A structured dosing guideline for the indication it sits 
 * extension[population].value[x] only Reference(GroupUvEpi)
 * extension[treatmentIntent] ^short = "Intended outcome of the regimen"
 * extension[treatmentIntent].value[x] only CodeableConcept
+* extension[treatmentIntent].value[x] from http://hl7.org/fhir/ValueSet/product-intended-use (preferred)
 * extension[dosage] ^short = "One phase of the regimen, with its instructions"
 * extension[dosage].extension contains
     type 0..1 and
     instruction 1..*
 * extension[dosage].extension[type] ^short = "Kind of phase (e.g., loading, maintenance, Day 1, Days 2 to 5)"
 * extension[dosage].extension[type].value[x] only CodeableConcept
+* extension[dosage].extension[type].value[x] from VsDosagePhaseType (example)
 * extension[dosage].extension[instruction] ^short = "Dosage instruction. Instructions sharing a sequence are taken together."
 * extension[dosage].extension[instruction] ^definition = "A structured dosage instruction. Always populate Dosage.text with the authorised wording. For co-packaged products, repeat the instruction once per item with the same Dosage.sequence, and name the item with the Dosage Manufactured Item extension."
 * extension[dosage].extension[instruction].value[x] only Dosage

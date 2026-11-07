@@ -8,7 +8,7 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="List/ListEpiASEANExample" key="List-ListEpiASEANExample" name="ASEAN Cross-Jurisdictional ePI Tracking List Example"/>
 <artifact deprecated="true" id="ValueSet/additionalMonitoringIndicator" key="ValueSet-additionalMonitoringIndicator" name="Additional Monitoring Indicator"/>
-<artifact id="ValueSet/administrableDoseForm" key="ValueSet-AdministrableDoseForm" name="Administrable Pharmaceutical Dose Form"/>
+<artifact deprecated="true" id="ValueSet/administrableDoseForm" key="ValueSet-AdministrableDoseForm" name="Administrable Pharmaceutical Dose Form"/>
 <artifact deprecated="true" id="AdministrableProductDefinition/373b9bf3-1fae-47a1-a7cd-230106def069" key="AdministrableProductDefinition-373b9bf3-1fae-47a1-a7cd-230106def069" name="Administrable Product for DrugX 75 mg tablets"/>
 <artifact id="StructureDefinition/AdministrableProductDefinition-uv-epi" key="StructureDefinition-AdministrableProductDefinition-uv-epi" name="AdministrableProductDefinition (ePI)"/>
 <artifact id="AdministrableProductDefinition/apd-epi-type2-example-paracetamol" key="AdministrableProductDefinition-apd-epi-type2-example-paracetamol" name="AdministrableProductDefinition - WonderDrug 500 mg"/>
@@ -47,8 +47,16 @@
 <artifact id="StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" key="StructureDefinition-ClinicalUseDefinition-interaction-uv-epi" name="ClinicalUseDefinition Interaction (ePI)"/>
 <artifact id="StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi" key="StructureDefinition-ClinicalUseDefinition-undesirableEffect-uv-epi" name="ClinicalUseDefinition Undesirable Effect (ePI)"/>
 <artifact id="StructureDefinition/ClinicalUseDefinition-warning-uv-epi" key="StructureDefinition-ClinicalUseDefinition-warning-uv-epi" name="ClinicalUseDefinition Warning (ePI)"/>
+<artifact id="CodeSystem/epi-dosage-phase-type-example" key="CodeSystem-epi-dosage-phase-type-example" name="Dosage Phase Type (Example)"/>
+<artifact id="CodeSystem/epi-ingredient-group-example" key="CodeSystem-epi-ingredient-group-example" name="Ingredient Group (Example)"/>
+<artifact id="CodeSystem/epi-surface-form-example" key="CodeSystem-epi-surface-form-example" name="Surface Form (Example)"/>
 <artifact deprecated="true" id="CodeSystem/spor" key="CodeSystem-spor" name="Code System example for spor.ema.europa.eu-rmswi"/>
-<artifact id="ValueSet/propertyColor" key="ValueSet-propertyColor" name="Color of the product"/>
+<artifact id="ValueSet/clinical-use-definition-category-epi" key="ValueSet-clinical-use-definition-category-epi" name="ClinicalUseDefinition Category (Example)"/>
+<artifact id="ValueSet/dosage-phase-type-example" key="ValueSet-dosage-phase-type-example" name="Dosage Phase Type (Example)"/>
+<artifact id="ValueSet/ingredient-group-example" key="ValueSet-ingredient-group-example" name="Ingredient Group (Example)"/>
+<artifact id="ValueSet/marketing-status-example" key="ValueSet-marketing-status-example" name="Marketing Status (EMA SPOR example)"/>
+<artifact id="ValueSet/medicine-domain-example" key="ValueSet-medicine-domain-example" name="Medicine Domain (EMA SPOR example)"/>
+<artifact id="ValueSet/propertyColor" key="ValueSet-propertyColor" name="Color of the product (FDA SPL example)"/>
 <artifact deprecated="true" id="ValueSet/PharmaceuticalDoseForm" key="ValueSet-PharmaceuticalDoseForm" name="Combined Pharmaceutical Dose Form"/>
 <artifact deprecated="true" id="StructureDefinition/Composition-uv-epi" key="StructureDefinition-Composition-uv-epi" name="Composition (ePI)"/>
 <artifact id="Composition/composition-diflucan" key="Composition-composition-diflucan" name="Composition - Diflucan SmPC"/>
@@ -60,8 +68,8 @@
 <artifact deprecated="true" id="Composition/e63f72b2-993f-48b1-b7cb-539b1ed71571" key="Composition-e63f72b2-993f-48b1-b7cb-539b1ed71571" name="Composition for cava 75 mg Package Leaflet"/>
 <artifact deprecated="true" id="ValueSet/containerType" key="ValueSet-containerType" name="Container Type"/>
 <artifact deprecated="true" id="ValueSet/dataCarrierIdSystem" key="ValueSet-dataCarrierIdSystem" name="Data Carrier Identifiers"/>
-<artifact id="ValueSet/doseForm" key="ValueSet-doseForm" name="Dose Form"/>
-<artifact id="ValueSet/propertyFlavor" key="ValueSet-propertyFlavor" name="Flavor of the product"/>
+<artifact deprecated="true" id="ValueSet/doseForm" key="ValueSet-doseForm" name="Dose Form"/>
+<artifact id="ValueSet/propertyFlavor" key="ValueSet-propertyFlavor" name="Flavor of the product (FDA SPL example)"/>
 <artifact deprecated="true" id="ValueSet/generalStatus" key="ValueSet-generalStatus" name="General Status used across ePI resources"/>
 <artifact id="StructureDefinition/Group-uv-epi" key="StructureDefinition-Group-uv-epi" name="Group (ePI)"/>
 <artifact id="Group/group-epi-type3-example-adult-men" key="Group-group-epi-type3-example-adult-men" name="Group - Adult Men"/>
@@ -78,7 +86,7 @@
 <artifact id="ValueSet/group-sex-value" key="ValueSet-group-sex-value" name="Group Sex Value (ePI)"/>
 <artifact deprecated="true" id="ValueSet/packageType" key="ValueSet-packageType" name="High level Pack Type"/>
 <artifact id="ValueSet/country" key="ValueSet-country" name="ISO Country two letter code"/>
-<artifact id="ValueSet/language" key="ValueSet-language" name="ISO language two letter code"/>
+<artifact id="ValueSet/language" key="ValueSet-language" name="Language (two-letter code)"/>
 <artifact id="StructureDefinition/Ingredient-uv-epi" key="StructureDefinition-Ingredient-uv-epi" name="Ingredient (ePI)"/>
 <artifact deprecated="true" id="Ingredient/a4b7b60c-998f-4f93-89c7-860396af0fe3" key="Ingredient-a4b7b60c-998f-4f93-89c7-860396af0fe3" name="Ingredient - Carnauba wax"/>
 <artifact deprecated="true" id="Ingredient/fbf58407-83d3-42db-be3d-506b2006d431" key="Ingredient-fbf58407-83d3-42db-be3d-506b2006d431" name="Ingredient - Croscarmellose sodium"/>
@@ -95,14 +103,15 @@
 <artifact deprecated="true" id="Ingredient/09c13040-8fd5-4818-972d-f01d4ee169b6" key="Ingredient-09c13040-8fd5-4818-972d-f01d4ee169b6" name="Ingredient - Silicon dioxide"/>
 <artifact deprecated="true" id="Ingredient/a88891dc-7e9e-4d84-b462-95e53de3b6a6" key="Ingredient-a88891dc-7e9e-4d84-b462-95e53de3b6a6" name="Ingredient - Titanium Dioxide"/>
 <artifact deprecated="true" id="Ingredient/745c01bc-936e-45ca-9880-57e97608f43e" key="Ingredient-745c01bc-936e-45ca-9880-57e97608f43e" name="Ingredient - acetaminophen"/>
-<artifact id="ValueSet/ingredientRole" key="ValueSet-ingredientRole" name="Ingredient Role"/>
+<artifact deprecated="true" id="ValueSet/ingredientRole" key="ValueSet-ingredientRole" name="Ingredient Role"/>
+<artifact id="ValueSet/propertySurfaceForm" key="ValueSet-propertySurfaceForm" name="Surface form of the product (Example)"/>
 <artifact deprecated="true" id="ValueSet/roleClassIngredientEntity" key="ValueSet-roleClassIngredientEntity" name="Ingredient Role; e.g., inactive, active base, active moiety"/>
 <artifact id="StructureDefinition/ext-epi-jurisdiction" key="StructureDefinition-ext-epi-jurisdiction" name="Jurisdiction"/>
 <artifact id="StructureDefinition/ext-epi-entry-language" key="StructureDefinition-ext-epi-entry-language" name="Language"/>
 <artifact deprecated="true" id="ValueSet/legalStatusOfSupply" key="ValueSet-legalStatusOfSupply" name="Legal Status for the Supply"/>
 <artifact id="StructureDefinition/List-uv-epi" key="StructureDefinition-List-uv-epi" name="List (ePI)"/>
 <artifact id="List/ListEpiExample" key="List-ListEpiExample" name="List Example"/>
-<artifact id="ValueSet/manufacturedDoseForm" key="ValueSet-manufacturedDoseForm" name="Manufactured Dose Form"/>
+<artifact deprecated="true" id="ValueSet/manufacturedDoseForm" key="ValueSet-manufacturedDoseForm" name="Manufactured Dose Form"/>
 <artifact deprecated="true" id="ManufacturedItemDefinition/3214f286-b8ec-4ef5-bc8d-0aec39d97468" key="ManufacturedItemDefinition-3214f286-b8ec-4ef5-bc8d-0aec39d97468" name="Manufactured Item - 75 mg tablet"/>
 <artifact id="StructureDefinition/ManufacturedItemDefinition-uv-epi" key="StructureDefinition-ManufacturedItemDefinition-uv-epi" name="ManufacturedItemDefinition (ePI)"/>
 <artifact id="ManufacturedItemDefinition/mid-epi-type2-example-paracetamol" key="ManufacturedItemDefinition-mid-epi-type2-example-paracetamol" name="ManufacturedItemDefinition - WonderDrug 500 mg"/>
@@ -122,6 +131,8 @@
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-paracetamol" key="MedicinalProductDefinition-mpd-epi-type2-example-paracetamol" name="MedicinalProductDefinition - WonderDrug 500 mg tablets Type 2"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type2-example-blister-carton" key="MedicinalProductDefinition-mpd-epi-type2-example-blister-carton" name="MedicinalProductDefinition - WonderDrug 500 mg tablets Type 2 Carton"/>
 <artifact id="MedicinalProductDefinition/mpd-epi-type3-example-wonderdrug" key="MedicinalProductDefinition-mpd-epi-type3-example-wonderdrug" name="MedicinalProductDefinition - WonderDrug 500 mg tablets Type 3"/>
+<artifact id="ValueSet/special-precautions-for-storage-example" key="ValueSet-special-precautions-for-storage-example" name="Special Precautions for Storage (EMA SPOR example)"/>
+<artifact id="ValueSet/strength-basis-example" key="ValueSet-strength-basis-example" name="Strength Basis (Example)"/>
 <artifact deprecated="true" id="ValueSet/VsMedProductIdSystems" key="ValueSet-VsMedProductIdSystems" name="MedicinalProductDefinition identifier systems"/>
 <artifact id="StructureDefinition/ext-epi-medicine-domain" key="StructureDefinition-ext-epi-medicine-domain" name="Medicine Domain"/>
 <artifact deprecated="true" id="ValueSet/nonproprietaryNamePart" key="ValueSet-nonproprietaryNamePart" name="Non-proprietary Name of the active ingredient(s)"/>
@@ -157,16 +168,16 @@
 <artifact id="RegulatedAuthorization/ra-epi-type2-example-blister-carton" key="RegulatedAuthorization-ra-epi-type2-example-blister-carton" name="RegulatedAuthorization - WonderDrug 500 mg Carton"/>
 <artifact deprecated="true" id="ValueSet/regulatoryActivityType" key="ValueSet-regulatoryActivityType" name="Regulatory Activity Type"/>
 <artifact id="StructureDefinition/ext-epi-regulatory-agency" key="StructureDefinition-ext-epi-regulatory-agency" name="Regulatory Agency"/>
-<artifact id="ValueSet/routeOfAdministration" key="ValueSet-routeOfAdministration" name="Route Of Administration"/>
+<artifact deprecated="true" id="ValueSet/routeOfAdministration" key="ValueSet-routeOfAdministration" name="Route Of Administration"/>
 <artifact deprecated="true" id="ValueSet/propertyScore" key="ValueSet-propertyScore" name="Score on the product"/>
-<artifact deprecated="true" id="ValueSet/sectionCode" key="ValueSet-sectionCode" name="Section Codes"/>
-<artifact id="ValueSet/propertyShape" key="ValueSet-propertyShape" name="Shape of the product"/>
+<artifact id="ValueSet/sectionCode" key="ValueSet-sectionCode" name="Section Codes (Example)"/>
+<artifact id="ValueSet/propertyShape" key="ValueSet-propertyShape" name="Shape of the product (FDA SPL example)"/>
 <artifact deprecated="true" id="ValueSet/shelfLifeType" key="ValueSet-shelfLifeType" name="Shelf Life Type"/>
 <artifact deprecated="true" id="ValueSet/specialPrecautionsForStorage" key="ValueSet-specialPrecautionsForStorage" name="Special Precautions For Storage"/>
 <artifact deprecated="true" id="ValueSet/strengthPart" key="ValueSet-strengthPart" name="Strength of the medicinal product name"/>
 <artifact deprecated="true" id="SubstanceDefinition/da33bd51-a726-4232-aaa0-4168b9bfe249" key="SubstanceDefinition-da33bd51-a726-4232-aaa0-4168b9bfe249" name="Substance - acetaminophen"/>
 <artifact id="StructureDefinition/SubstanceDefinition-uv-epi" key="StructureDefinition-SubstanceDefinition-uv-epi" name="SubstanceDefinition (ePI)"/>
-<artifact id="ValueSet/substance" key="ValueSet-substance" name="Substances"/>
+<artifact id="ValueSet/substance" key="ValueSet-substance" name="Substances (UNII example)"/>
 <artifact deprecated="true" id="CodeSystem/CodeSystemUvEPIRsmswi" key="CodeSystem-CodeSystemUvEPIRsmswi" name="Substances Management Services CodeSystem"/>
 <artifact deprecated="true" id="ValueSet/propertySurfaceForm" key="ValueSet-VsPropertySurfaceForm" name="Surface form of the product"/>
 <artifact deprecated="true" id="ValueSet/exampleUseCodesForList" key="ValueSet-exampleUseCodesForList" name="The topic of this list"/>
@@ -174,7 +185,7 @@
 <artifact deprecated="true" id="ValueSet/operationType" key="ValueSet-operationType" name="Type of operation"/>
 <artifact deprecated="true" id="ValueSet/organizationType" key="ValueSet-organizationType" name="Type of organization"/>
 <artifact deprecated="true" id="ValueSet/unitofMeasure" key="ValueSet-unitofMeasure" name="Units of Measure"/>
-<artifact id="ValueSet/unitofPresentation" key="ValueSet-unitofPresentation" name="Units of Presentation"/>
+<artifact deprecated="true" id="ValueSet/unitofPresentation" key="ValueSet-unitofPresentation" name="Units of Presentation"/>
 <artifact id="StructureDefinition/ext-epi-version-number" key="StructureDefinition-ext-epi-version-number" name="Version Number"/>
 <artifact deprecated="true" id="ValueSet/atcClassification" key="ValueSet-atcClassification" name="WHO ATC"/>
 <artifact id="StructureDefinition/binary-epi" key="StructureDefinition-binary-epi" name="binary (ePI)"/>

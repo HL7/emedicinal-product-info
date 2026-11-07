@@ -37,3 +37,9 @@ Description: "Ingredient (ePI)"
 * substance.strength.referenceStrength.strength[x] ^short = "The strength expressed in terms of the reference substance"
 * substance.strength.referenceStrength.measurementPoint ^short = "The point or distance at which the reference strength is measured"
 * substance.strength.referenceStrength.country ^short = "The countries where the reference strength range applies"
+
+// Terminology bindings
+* substance.code from VsSubstance (example)
+* substance.strength.referenceStrength.substance from VsSubstance (example)
+* group from VsIngredientGroup (example)
+* substance.strength.basis from VsStrengthBasis (example)

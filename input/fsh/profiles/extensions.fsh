@@ -12,6 +12,7 @@ Id: ext-epi-medicine-domain
 Title: "Medicine Domain"
 Description: "Medicine domain for this list"
 * value[x] only Coding
+* value[x] from VsMedicineDomain (example)
 * ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-medicine-domain"
 * ^context[+].type = #element
 * ^context[=].expression = "List"
@@ -39,6 +40,7 @@ Id: ext-epi-jurisdiction
 Title: "Jurisdiction"
 Description: "Jurisdiction for this list"
 * value[x] only CodeableConcept
+* value[x] from http://hl7.org/fhir/ValueSet/jurisdiction (example)
 * ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-jurisdiction"
 * ^context[+].type = #element
 * ^context[=].expression = "List"
@@ -48,6 +50,7 @@ Id: ext-epi-entry-language
 Title: "Language"
 Description: "Language of the document referenced in this entry"
 * value[x] only CodeableConcept
+* value[x] from VsLanguage (preferred)
 * ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-entry-language"
 * ^context[+].type = #element
 * ^context[=].expression = "List.entry"

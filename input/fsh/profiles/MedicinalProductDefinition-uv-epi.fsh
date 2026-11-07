@@ -117,3 +117,10 @@ Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDef
 * name.usage.language.coding.system 1..1
 * name.usage.language.coding.code 1..1
 * name.usage.language.coding.display 1..1
+
+* name.usage.language insert AdditionalBinding(#preferred, VsLanguage, Two-letter ISO 639-1 language codes are preferred.)
+
+// Terminology bindings
+* marketingStatus.country from VsCountry (example)
+* marketingStatus.jurisdiction from http://hl7.org/fhir/ValueSet/jurisdiction (example)
+* marketingStatus.status from VsMarketingStatus (example)

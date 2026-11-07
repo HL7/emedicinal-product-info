@@ -1,61 +1,3 @@
-
-//=========================
-ValueSet: VsDoseForm
-Id: doseForm
-Title: "Dose Form"
-Description: "The dose form for a single part product, or combined form of a multiple part product"
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = false
-* codes from system $combined-dose-form
-
-//=========================
-ValueSet: VsAdministrableDoseForm
-Id: administrableDoseForm
-Title: "Administrable Pharmaceutical Dose Form"
-Description: "Administrable Pharmaceutical Dose Form"
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = false
-* codes from system $administrable-dose-form
-
-//=========================
-ValueSet: VsManufacturedDoseForm
-Id: manufacturedDoseForm
-Title: "Manufactured Dose Form"
-Description: "Manufactured Dose Form"
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = false
-* codes from system $manufactured-dose-form
-
-//=========================
-ValueSet: VsRouteOfAdministration
-Id: routeOfAdministration
-Title: "Route Of Administration"
-Description:  "Route Of Administration"
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^status = #draft
-* ^experimental = false
-* ^copyright = """This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
-
-The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the Creative Commons Attribution 4.0 International Public License. For more information, see SNOMED IPS Terminology
-
-The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org"""
-
-* include codes from system $sct where concept descendent-of #284009009
-
-//==========================
-ValueSet: VsUnitofPresentation
-Id: unitofPresentation
-Title: "Units of Presentation"
-Description: "Units of Presentation"
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = false
-* codes from system $unit-of-presentation
-
 //==========================
 ValueSet: VsMeddra
 Id: meddra
@@ -79,18 +21,201 @@ Description: "ISO Country two letter code"
 //==========================
 ValueSet: VsLanguage
 Id: language
-Title: "ISO language two letter code"
-Description: "ISO language two letter code"
+Title: "Language (two-letter code)"
+Description: "Two-letter language codes from ISO 639-1, used as IETF BCP 47 language tags (e.g., en, fr, ja)."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
-* codes from valueset http://hl7.org/fhir/ValueSet/all-languages
+* $bcp47#aa "Afar"
+* $bcp47#ab "Abkhazian"
+* $bcp47#ae "Avestan"
+* $bcp47#af "Afrikaans"
+* $bcp47#ak "Akan"
+* $bcp47#am "Amharic"
+* $bcp47#an "Aragonese"
+* $bcp47#ar "Arabic"
+* $bcp47#as "Assamese"
+* $bcp47#av "Avaric"
+* $bcp47#ay "Aymara"
+* $bcp47#az "Azerbaijani"
+* $bcp47#ba "Bashkir"
+* $bcp47#be "Belarusian"
+* $bcp47#bg "Bulgarian"
+* $bcp47#bi "Bislama"
+* $bcp47#bm "Bambara"
+* $bcp47#bn "Bengali"
+* $bcp47#bo "Tibetan"
+* $bcp47#br "Breton"
+* $bcp47#bs "Bosnian"
+* $bcp47#ca "Catalan"
+* $bcp47#ce "Chechen"
+* $bcp47#ch "Chamorro"
+* $bcp47#co "Corsican"
+* $bcp47#cr "Cree"
+* $bcp47#cs "Czech"
+* $bcp47#cu "Church Slavic"
+* $bcp47#cv "Chuvash"
+* $bcp47#cy "Welsh"
+* $bcp47#da "Danish"
+* $bcp47#de "German"
+* $bcp47#dv "Divehi"
+* $bcp47#dz "Dzongkha"
+* $bcp47#ee "Ewe"
+* $bcp47#el "Modern Greek (1453-)"
+* $bcp47#en "English"
+* $bcp47#eo "Esperanto"
+* $bcp47#es "Spanish"
+* $bcp47#et "Estonian"
+* $bcp47#eu "Basque"
+* $bcp47#fa "Persian"
+* $bcp47#ff "Fulah"
+* $bcp47#fi "Finnish"
+* $bcp47#fj "Fijian"
+* $bcp47#fo "Faroese"
+* $bcp47#fr "French"
+* $bcp47#fy "Western Frisian"
+* $bcp47#ga "Irish"
+* $bcp47#gd "Scottish Gaelic"
+* $bcp47#gl "Galician"
+* $bcp47#gn "Guarani"
+* $bcp47#gu "Gujarati"
+* $bcp47#gv "Manx"
+* $bcp47#ha "Hausa"
+* $bcp47#he "Hebrew"
+* $bcp47#hi "Hindi"
+* $bcp47#ho "Hiri Motu"
+* $bcp47#hr "Croatian"
+* $bcp47#ht "Haitian"
+* $bcp47#hu "Hungarian"
+* $bcp47#hy "Armenian"
+* $bcp47#hz "Herero"
+* $bcp47#ia "Interlingua (International Auxiliary Language Association)"
+* $bcp47#id "Indonesian"
+* $bcp47#ie "Interlingue"
+* $bcp47#ig "Igbo"
+* $bcp47#ii "Sichuan Yi"
+* $bcp47#ik "Inupiaq"
+* $bcp47#io "Ido"
+* $bcp47#is "Icelandic"
+* $bcp47#it "Italian"
+* $bcp47#iu "Inuktitut"
+* $bcp47#ja "Japanese"
+* $bcp47#jv "Javanese"
+* $bcp47#ka "Georgian"
+* $bcp47#kg "Kongo"
+* $bcp47#ki "Kikuyu"
+* $bcp47#kj "Kuanyama"
+* $bcp47#kk "Kazakh"
+* $bcp47#kl "Kalaallisut"
+* $bcp47#km "Khmer"
+* $bcp47#kn "Kannada"
+* $bcp47#ko "Korean"
+* $bcp47#kr "Kanuri"
+* $bcp47#ks "Kashmiri"
+* $bcp47#ku "Kurdish"
+* $bcp47#kv "Komi"
+* $bcp47#kw "Cornish"
+* $bcp47#ky "Kirghiz"
+* $bcp47#la "Latin"
+* $bcp47#lb "Luxembourgish"
+* $bcp47#lg "Ganda"
+* $bcp47#li "Limburgan"
+* $bcp47#ln "Lingala"
+* $bcp47#lo "Lao"
+* $bcp47#lt "Lithuanian"
+* $bcp47#lu "Luba-Katanga"
+* $bcp47#lv "Latvian"
+* $bcp47#mg "Malagasy"
+* $bcp47#mh "Marshallese"
+* $bcp47#mi "Maori"
+* $bcp47#mk "Macedonian"
+* $bcp47#ml "Malayalam"
+* $bcp47#mn "Mongolian"
+* $bcp47#mr "Marathi"
+* $bcp47#ms "Malay (macrolanguage)"
+* $bcp47#mt "Maltese"
+* $bcp47#my "Burmese"
+* $bcp47#na "Nauru"
+* $bcp47#nb "Norwegian Bokmål"
+* $bcp47#nd "North Ndebele"
+* $bcp47#ne "Nepali (macrolanguage)"
+* $bcp47#ng "Ndonga"
+* $bcp47#nl "Dutch"
+* $bcp47#nn "Norwegian Nynorsk"
+* $bcp47#no "Norwegian"
+* $bcp47#nr "South Ndebele"
+* $bcp47#nv "Navajo"
+* $bcp47#ny "Chichewa"
+* $bcp47#oc "Occitan (post 1500)"
+* $bcp47#oj "Ojibwa"
+* $bcp47#om "Oromo"
+* $bcp47#or "Oriya (macrolanguage)"
+* $bcp47#os "Ossetian"
+* $bcp47#pa "Panjabi"
+* $bcp47#pi "Pali"
+* $bcp47#pl "Polish"
+* $bcp47#ps "Pushto"
+* $bcp47#pt "Portuguese"
+* $bcp47#qu "Quechua"
+* $bcp47#rm "Romansh"
+* $bcp47#rn "Rundi"
+* $bcp47#ro "Romanian"
+* $bcp47#ru "Russian"
+* $bcp47#rw "Kinyarwanda"
+* $bcp47#sa "Sanskrit"
+* $bcp47#sc "Sardinian"
+* $bcp47#sd "Sindhi"
+* $bcp47#se "Northern Sami"
+* $bcp47#sg "Sango"
+* $bcp47#sh "Serbo-Croatian"
+* $bcp47#si "Sinhala"
+* $bcp47#sk "Slovak"
+* $bcp47#sl "Slovenian"
+* $bcp47#sm "Samoan"
+* $bcp47#sn "Shona"
+* $bcp47#so "Somali"
+* $bcp47#sq "Albanian"
+* $bcp47#sr "Serbian"
+* $bcp47#ss "Swati"
+* $bcp47#st "Southern Sotho"
+* $bcp47#su "Sundanese"
+* $bcp47#sv "Swedish"
+* $bcp47#sw "Swahili (macrolanguage)"
+* $bcp47#ta "Tamil"
+* $bcp47#te "Telugu"
+* $bcp47#tg "Tajik"
+* $bcp47#th "Thai"
+* $bcp47#ti "Tigrinya"
+* $bcp47#tk "Turkmen"
+* $bcp47#tl "Tagalog"
+* $bcp47#tn "Tswana"
+* $bcp47#to "Tonga (Tonga Islands)"
+* $bcp47#tr "Turkish"
+* $bcp47#ts "Tsonga"
+* $bcp47#tt "Tatar"
+* $bcp47#tw "Twi"
+* $bcp47#ty "Tahitian"
+* $bcp47#ug "Uighur"
+* $bcp47#uk "Ukrainian"
+* $bcp47#ur "Urdu"
+* $bcp47#uz "Uzbek"
+* $bcp47#ve "Venda"
+* $bcp47#vi "Vietnamese"
+* $bcp47#vo "Volapük"
+* $bcp47#wa "Walloon"
+* $bcp47#wo "Wolof"
+* $bcp47#xh "Xhosa"
+* $bcp47#yi "Yiddish"
+* $bcp47#yo "Yoruba"
+* $bcp47#za "Zhuang"
+* $bcp47#zh "Chinese"
+* $bcp47#zu "Zulu"
 
 //==========================
 ValueSet: VsPropertyColor
 Id: propertyColor
-Title: "Color of the product"
-Description: "Color of the product"
+Title: "Color of the product (FDA SPL example)"
+Description: "Example color codes: the NCI Thesaurus terms used for COLOR in FDA Structured Product Labeling (SPL). Regulators may use their own lists, such as EMA SPOR RMS."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
@@ -111,8 +236,8 @@ Description: "Color of the product"
 //==========================
 ValueSet: VsPropertyFlavor
 Id: propertyFlavor
-Title: "Flavor of the product"
-Description: "Flavor of the product"
+Title: "Flavor of the product (FDA SPL example)"
+Description: "Example flavor codes: the NCI Thesaurus terms used for FLAVOR in FDA Structured Product Labeling (SPL). Regulators may use their own lists, such as EMA SPOR RMS."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
@@ -193,8 +318,8 @@ Description: "Flavor of the product"
 //==========================
 ValueSet: VsPropertyShape
 Id: propertyShape
-Title: "Shape of the product"
-Description: "Shape of the product"
+Title: "Shape of the product (FDA SPL example)"
+Description: "Example shape codes: the NCI Thesaurus terms used for SHAPE in FDA Structured Product Labeling (SPL). Regulators may use their own lists, such as EMA SPOR RMS."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
@@ -221,8 +346,8 @@ Description: "Shape of the product"
 //==========================
 ValueSet: VsSubstance
 Id: substance
-Title: "Substances"
-Description: "Substances"
+Title: "Substances (UNII example)"
+Description: "Example substance codes: Unique Ingredient Identifiers (UNII) from the FDA Global Substance Registration System (GSRS). Regulators may use their own substance lists, such as EMA SPOR SMS."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
@@ -287,8 +412,8 @@ Description: "Lifecycle states of an ePI document, as described on the Version C
 //==========================
 ValueSet: VsSectionCode
 Id: sectionCode
-Title: "Section Codes"
-Description: "Section Codes"
+Title: "Section Codes (Example)"
+Description: "Example section codes. Section codes are country specific: each regulator populates Composition.section.code from the headings of its own national drug label templates. This example uses LOINC section codes."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = false
@@ -404,25 +529,111 @@ Description: "Section Codes"
 * $loinc#43685-7 "WARNINGS AND PRECAUTIONS SECTION"
 * $loinc#34071-1 "WARNINGS SECTION"
 
- //==========================
-ValueSet: VsIngredientRole
-Id: ingredientRole
-Title: "Ingredient Role"
-Description: "Ingredient Role; e.g.,active, excipient"
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = false
-* codes from system $ingredient-role
+
+
 
 
 //==========================
-ValueSet: VsAtcClassification
-Id: atcClassification
-Title: "WHO ATC"
-Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system"
+ValueSet: VsClinicalUseDefinitionCategory
+Id: clinical-use-definition-category-epi
+Title: "ClinicalUseDefinition Category (Example)"
+Description: "Example categories used to group ClinicalUseDefinition resources under subject headings in an ePI."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = false
-* codes from system $atc 
-* ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"
+* ^experimental = true
+* $epi-ig#indication "Indication"
+* $epi-ig#contraindication "Contraindication"
+* $epi-ig#interaction "Interaction"
+* $epi-ig#undesirable-effect "Undesirable effect"
+* $epi-ig#warning "Warning"
 
+//==========================
+ValueSet: VsPropertySurfaceForm
+Id: propertySurfaceForm
+Title: "Surface form of the product (Example)"
+Description: "Example surface forms of a tablet or other solid item."
+* insert HL7Publisher
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* include codes from system EpiSurfaceFormExampleCS
+
+//==========================
+ValueSet: VsMarketingStatus
+Id: marketing-status-example
+Title: "Marketing Status (EMA SPOR example)"
+Description: "Example marketing status codes from the EMA SPOR RMS Marketing Status list (100000072052)."
+* insert HL7Publisher
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* $spor-rms#100000072083 "Marketed"
+* $spor-rms#100000072074 "Not marketed"
+* $spor-rms#200000026055 "Never marketed"
+* $spor-rms#230000000000 "Temporarily unavailable"
+* $spor-rms#100000072075 "No data provided"
+
+//==========================
+ValueSet: VsSpecialPrecautionsForStorage
+Id: special-precautions-for-storage-example
+Title: "Special Precautions for Storage (EMA SPOR example)"
+Description: "Example storage precaution codes from the EMA SPOR RMS Special Precautions for Storage list (100000073344)."
+* insert HL7Publisher
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* $spor-rms#100000073410 "Do not store above 25°C"
+* $spor-rms#100000073411 "Do not store above 30°C"
+* $spor-rms#100000073412 "Store below 25°C"
+* $spor-rms#100000073413 "Store below 30°C"
+* $spor-rms#100000073416 "Store in a freezer"
+* $spor-rms#100000073417 "Store and transport frozen"
+* $spor-rms#100000073420 "Do not freeze"
+* $spor-rms#100000073421 "Store in the original package"
+* $spor-rms#100000073424 "This medicinal product does not require any special storage conditions"
+* $spor-rms#100000073425 "This medicinal product does not require any special temperature storage conditions"
+* $spor-rms#100000073432 "Protect from direct sunlight"
+* $spor-rms#200000010387 "Protect from heat"
+* $spor-rms#200000010388 "Store upright"
+* $spor-rms#200000043310 "Do not shake"
+
+//==========================
+ValueSet: VsMedicineDomain
+Id: medicine-domain-example
+Title: "Medicine Domain (EMA SPOR example)"
+Description: "Example medicine domain codes from the EMA SPOR RMS Domain list (100000000004)."
+* insert HL7Publisher
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* $spor-rms#100000000012 "Human use"
+* $spor-rms#100000000013 "Veterinary use"
+* $spor-rms#100000000014 "Human and Veterinary use"
+
+//==========================
+ValueSet: VsDosagePhaseType
+Id: dosage-phase-type-example
+Title: "Dosage Phase Type (Example)"
+Description: "Example kinds of phase in a dosing regimen. Day ranges (e.g., Day 1, Days 2 to 5) are given as text."
+* insert HL7Publisher
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* include codes from system EpiDosagePhaseTypeExampleCS
+
+//==========================
+ValueSet: VsIngredientGroup
+Id: ingredient-group-example
+Title: "Ingredient Group (Example)"
+Description: "Example groups for where an ingredient is used in the physical item."
+* insert HL7Publisher
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* include codes from system EpiIngredientGroupExampleCS
+
+//==========================
+ValueSet: VsStrengthBasis
+Id: strength-basis-example
+Title: "Strength Basis (Example)"
+Description: "Example codes for the basis of an ingredient strength, from the HL7 v3 RoleClass codes in the RoleClassActiveIngredient value set (http://terminology.hl7.org/ValueSet/v3-RoleClassActiveIngredient). ACTI is left out because it does not state a basis of strength."
+* insert HL7Publisher
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
+* ^experimental = true
+* $roleclass#ACTIB "active ingredient - basis of strength"
+* $roleclass#ACTIM "active ingredient - moiety is basis of strength"
+* $roleclass#ACTIR "active ingredient - reference substance is basis of strength"

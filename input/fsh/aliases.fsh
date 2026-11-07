@@ -22,6 +22,7 @@ Alias: $publication-status = http://hl7.org/fhir/publication-status
 Alias: $meddra = http://meddra.org
 Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $ncithesaurus =  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl // see https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.html
+Alias: $bcp47 = urn:ietf:bcp:47
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $loinc = http://loinc.org

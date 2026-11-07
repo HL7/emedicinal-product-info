@@ -31,3 +31,7 @@ Description: "ClinicalUseDefinition Undesirable Effect (ePI) - Profile for Undes
 * contraindication 0..0
 * interaction 0..0
 * warning 0..0
+
+// Terminology bindings
+* category from VsClinicalUseDefinitionCategory (preferred)
+* undesirableEffect.symptomConditionEffect insert AdditionalBinding(#candidate, VsMeddra, MedDRA terms may be used in place of the base value set\, as is common in regulatory product information.)
