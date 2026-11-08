@@ -395,20 +395,6 @@ Description: "Placeholder document type codes used in the example ePI Document T
 * #instructions-for-use "Instructions for use" "Step-by-step instructions for patients and caregivers on how to prepare, use, store and dispose of a medicinal product or its administration device, published as a standalone document."
 
 //==========================
-ValueSet: EpiClinicalUseDefinitionCategory
-Id: epi-clinical-use-definition-category
-Title: "ePI Clinical Use Definition Category"
-Description: "Categories used by this IG to group clinical use definitions. The ePI use case calls for codings other than the FHIR core preferred value set (Pregnancy, Overdose, DriveAndMachines), which a preferred binding allows. The ePI ClinicalUseDefinition profiles reference this value set as an additional (candidate) binding on category."
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = true
-* $epi-ig#indication "Indication"
-* $epi-ig#contraindication "Contraindication"
-* $epi-ig#interaction "Interaction"
-* $epi-ig#undesirable-effect "Undesirable effect"
-* $epi-ig#warning "Warning"
-
-//==========================
 ValueSet: EpiCompositionStatus
 Id: epi-composition-status
 Title: "ePI Composition Status"
