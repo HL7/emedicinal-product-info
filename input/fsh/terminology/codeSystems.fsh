@@ -23,18 +23,6 @@ Coded concepts defined for ePI use only."""
 * #warning "Warning" "Warning"
 * #marketing-authorization-holder "Marketing authorization holder" "The organization that holds the marketing authorization for the medicinal product"
 
-CodeSystem: BenefitAndRiskRelationship
-Id: benefit-and-risk-relationship
-Title: "Benefit and Risk Relationship"
-Description: "Benefit and Risk Relationship"
-* insert HL7Publisher
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
-* ^experimental = true
-* ^caseSensitive = false
-* ^url = "http://hl7.org/fhir/uv/emedicinal-product-info/CodeSystem/benefit-and-risk-relationship"
-* #contraindicated-only-with "Only contraindicated with" "Only contraindicated with"
-* #not-recommended-with "Not recommended with" "Not recommended with"
-
 CodeSystem: EpiSurfaceFormExampleCS
 Id: epi-surface-form-example
 Title: "Surface Form (Example)"
