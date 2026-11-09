@@ -14,7 +14,7 @@
 //    population of its own (invasive candidiasis, adults).
 //  * Loading + maintenance phases, dose ranges, mg/kg doses, every-72-hours timing.
 //  * Narrative linking (Type 4 pattern): phrases are wrapped in <span id> and linked
-//    to their resource with the textLink extension. Each indication is its own
+//    to their resource with the ePI Text Link extension. Each indication is its own
 //    Type 4 Topic, so 4.1 has one sub-section per indication.
 //  * The renal-impairment rule ("50% of the recommended dose") is a modifier of
 //    every indication, so it stays a single Warning + Group, not extra dose rows.
@@ -253,7 +253,7 @@ Description: "ClinicalUseDefinition - Warning: dosage adjustment required in ren
 // ---------------------------------------------------------------------------
 // Composition (lean) - links the structured resources into the SmPC sections
 // ---------------------------------------------------------------------------
-// Inline: the textLink data targets (urn:uuid fullUrls) only resolve inside the Bundle
+// Inline: the ePI Text Link data targets (urn:uuid fullUrls) only resolve inside the Bundle
 Instance: composition-fungisynth
 InstanceOf: CompositionUvEpi
 Usage: #inline
@@ -286,7 +286,7 @@ Description: "Composition - Fungisynth Summary of Product Characteristics"
 * section.section[=].text.status = #generated
 * section.section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p>Fungisynth is indicated for the treatment of the following fungal infections.</p></div>"
 // Type 4 narrative linking: each indication is its own Topic, so it gets its own sub-section;
-// the <span id> in each sub-section is linked to its ClinicalUseDefinition by the textLink on section.text
+// the <span id> in each sub-section is linked to its ClinicalUseDefinition by the ePI Text Link on section.text
 * section.section[=].section[0].id = "fungisynth-4-1-mucosal"
 * section.section[=].section[=].text.status = #generated
 * section.section[=].section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'><p><span id='sp-01'>Mucosal (oropharyngeal) candidiasis</span>.</p></div>"

@@ -9,15 +9,15 @@
     1. granular sub-sections (Concept -> Domain -> Topic),
     2. a mandatory section.entry reference on every content-bearing section, and
     3. span annotations (id attribute) in the XHTML narrative, each linked to the
-       resource it describes by the HL7 textLink extension on section.text
-       (htmlid = span id; data = target fullUrl, optionally #element-id).
-       Each textLink has one data target and one htmlid per span that points
-       to it. A narrative that refers to several resources has one textLink
-       per target (see 4.2 and 6.1), and each target is also referenced in
-       section.entry. Resource ids are never encoded in the span class or id.
-       Note: the HL7 textLink extension currently allows one occurrence per
-       narrative, so validators report an error on 4.2 and 6.1 until the
-       requested change to the extension is published.
+       resource it describes by the ePI Text Link extension on section.text
+       (http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link;
+       htmlid = span id; data = target fullUrl, optionally #element-id).
+       Each ePI Text Link has one data target and one htmlid per span that
+       points to it. A narrative that refers to several resources has one ePI
+       Text Link per target (see 4.2 and 6.1), and each target is also
+       referenced in section.entry. Resource ids are never encoded in the span
+       class or id. Unlike the core textLink extension, the ePI Text Link
+       extension may repeat on the same narrative.
 
   This instance is a SUPERSET example: it merges the resource inventory of the
   ePI Type 1 (Binary / unstructured document), Type 2 (full product + packaging
@@ -606,7 +606,7 @@
                   <display value="6.1 List of excipients"/>
                 </coding>
               </code>
-              <!-- one narrative lists all excipients; one textLink and one entry per excipient Ingredient -->
+              <!-- one narrative lists all excipients; one ePI Text Link and one entry per excipient Ingredient -->
               <text>
                 <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
                   <extension url="htmlid">
