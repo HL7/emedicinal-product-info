@@ -4,7 +4,6 @@ Id: Composition-uv-epi
 Title: "Composition (ePI)"
 Description: "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide. This profile applies to all ePI Types (1, 2, 3, and 4)."
 * ^status = #active
-* ^version = "1.1.0"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
 * id 1..
