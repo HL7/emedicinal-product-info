@@ -22,7 +22,7 @@ Each population axis (sex, age, weight, race, pregnancy and lactation status, su
 * characteristic ^slicing.rules = #open
 * characteristic ^short = "One population axis. Combine multiple characteristics with AND. Open: add further axes as needed."
 * characteristic contains
-    sex 0..1 and
+    clinical-use-sex 0..1 and
     age 0..1 and
     bodyWeight 0..1 and
     race 0..* and
@@ -31,10 +31,10 @@ Each population axis (sex, age, weight, race, pregnancy and lactation status, su
     renalFunction 0..1 and
     hepaticFunction 0..1 and
     immuneStatus 0..*
-// --- sex ---
-* characteristic[sex].code = $epi-gct#sex
-* characteristic[sex].value[x] only CodeableConcept
-* characteristic[sex].valueCodeableConcept from GroupSexValue (extensible)
+// --- clinical-use-sex ---
+* characteristic[clinical-use-sex].code = $epi-gct#sex
+* characteristic[clinical-use-sex].value[x] only CodeableConcept
+* characteristic[clinical-use-sex].valueCodeableConcept from SexValuesForGroup (extensible)
 // --- age (range) ---
 * characteristic[age].code = $epi-gct#age
 * characteristic[age].value[x] only Range

@@ -386,6 +386,12 @@
           <li>Span <code>id</code> values should be stable between versions of the ePI so that links survive updates</li>
         </ul>
       </div>
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:4px solid #16a34a; border-radius:8px; padding:14px 18px; margin-bottom:14px; font-size:.86em; color:#14532d; line-height:1.7;">
+        <div style="font-size:.84em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#166534; margin-bottom:6px;">Checking ePI Text Links</div>
+        <p style="margin:0 0 8px;">Because the ePI Text Link is specific to this IG, a general FHIR validator may check it only as an ordinary extension, and not check that the links point to anything. As a helpful starting point, this IG provides a small script, <a href="scripts/check-epi-text-links.py" style="color:#15803d; font-weight:600;">check-epi-text-links.py</a> (Python 3, no extra packages), that checks every ePI Text Link in a Bundle against the rules above.</p>
+        <p style="margin:0 0 8px;">Download it and run <code>python3 check-epi-text-links.py my-epi-bundle.json</code> (XML Bundles work too, and several files can be given at once). It lists each problem with its location in the Bundle, for example an <code>htmlid</code> with no matching span, or a <code>data</code> value that matches no Bundle entry, and exits with 1 if it finds an error.</p>
+        <p style="margin:0;">The script does not replace a FHIR validator, which still checks everything else in the Bundle.</p>
+      </div>
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:3px solid #2563eb; border-radius:6px; padding:10px 14px; font-size:.82em; color:#1e3a5f; display:flex; gap:10px; align-items:flex-start;">
         <span style="flex-shrink:0;">↔️</span>
         <span><strong>Reverse direction (optional):</strong> The ePI Text Link goes from narrative to data. To go from a data element back to the narrative that expresses it, the related <a href="https://build.fhir.org/ig/HL7/fhir-extensions/en/StructureDefinition-narrativeLink.html" style="color:#1d4ed8; font-weight:600;">narrativeLink</a> extension can be placed on the element, with a <code>valueUrl</code> pointing to the span <code>id</code> in the narrative.</span>

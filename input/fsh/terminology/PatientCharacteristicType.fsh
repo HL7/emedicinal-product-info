@@ -21,7 +21,7 @@ Description: "The axis a population characteristic describes (e.g., sex, age, bo
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
 * ^caseSensitive = true
-* #sex "Sex" "Administrative/biological sex of the population."
+* #sex "Sex" "Sex parameter for clinical use of the population (e.g., for dosing, pharmacokinetics, or safety warnings)."
 * #age "Age" "Age of the population, expressed as a range."
 * #body-weight "Body weight" "Body weight of the population, expressed as a range."
 * #race "Race" "Race / ethnic grouping of the population."
@@ -42,9 +42,9 @@ Description: "The axis a population characteristic describes. Extensible: real p
 * include codes from system GroupCharacteristicTypeCS
 
 //=========================
-ValueSet: GroupSexValue
-Id: group-sex-value
-Title: "Group Sex Value (ePI)"
+ValueSet: SexValuesForGroup
+Id: sex-values-for-group
+Title: "Sex Values for Group (ePI)"
 Description: "Sex values for a population characteristic."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
