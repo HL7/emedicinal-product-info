@@ -1024,17 +1024,13 @@
           </coding>
         </type>
         <region>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="EU"/>
-            <display value="European Union"/>
-          </coding>
+          <text value="European Union"/>
         </region>
         <status>
           <coding>
-            <system value="https://spor.ema.europa.eu/rmswi"/>
-            <code value="200000005004"/>
-            <display value="Valid"/>
+            <system value="http://hl7.org/fhir/publication-status"/>
+            <code value="active"/>
+            <display value="Active"/>
           </coding>
         </status>
         <validityPeriod>
@@ -1272,10 +1268,11 @@
           <code>
             <concept>
               <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="412330007"/>
-                <display value="Pregelatinised starch"/>
+                <system value="http://fdasis.nlm.nih.gov"/>
+                <code value="O8232NY3SJ"/>
+                <display value="STARCH, CORN"/>
               </coding>
+              <text value="Pregelatinised maize starch"/>
             </concept>
           </code>
         </substance>
@@ -1309,9 +1306,9 @@
           <code>
             <concept>
               <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="734263005"/>
-                <display value="Maize starch"/>
+                <system value="http://fdasis.nlm.nih.gov"/>
+                <code value="O8232NY3SJ"/>
+                <display value="STARCH, CORN"/>
               </coding>
             </concept>
           </code>
@@ -1346,9 +1343,9 @@
           <code>
             <concept>
               <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="387272009"/>
-                <display value="Magnesium stearate"/>
+                <system value="http://fdasis.nlm.nih.gov"/>
+                <code value="70097M6I30"/>
+                <display value="MAGNESIUM STEARATE"/>
               </coding>
             </concept>
           </code>
@@ -1575,16 +1572,16 @@
           <type>
             <coding>
               <system value="http://snomed.info/sct"/>
-              <code value="9706000"/>
-              <display value="Drug interaction"/>
+              <code value="404204005"/>
+              <display value="Drug interaction with drug"/>
             </coding>
           </type>
           <effect>
             <concept>
               <coding>
                 <system value="http://snomed.info/sct"/>
-                <code value="79899007"/>
-                <display value="Drug interaction with anticoagulant"/>
+                <code value="448178009"/>
+                <display value="Adverse drug interaction with drug"/>
               </coding>
             </concept>
           </effect>

@@ -49,7 +49,7 @@ Description: "Example surface forms of a tablet or other solid item, defined in 
 
 CodeSystem: EpiDosagePhaseTypeExampleCS
 Id: epi-dosage-phase-type-example
-Title: "Dosage Phase Type (Example)"
+Title: "Dosage Phase Type Code System (Example)"
 Description: "Example kinds of phase in a dosing regimen, defined in this IG until a published code system is chosen."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
@@ -64,7 +64,7 @@ Description: "Example kinds of phase in a dosing regimen, defined in this IG unt
 
 CodeSystem: EpiIngredientGroupExampleCS
 Id: epi-ingredient-group-example
-Title: "Ingredient Group (Example)"
+Title: "Ingredient Group Code System (Example)"
 Description: "Example groups for where an ingredient is used in the physical item, defined in this IG until a published code system is chosen."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr

@@ -21,7 +21,7 @@ Description: "ISO Country two letter code"
 //==========================
 ValueSet: VsLanguage
 Id: language
-Title: "Language (two-letter code)"
+Title: "Language Value Set (two-letter code)"
 Description: "Two-letter language codes from ISO 639-1, used as IETF BCP 47 language tags (e.g., en, fr, ja)."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
@@ -597,7 +597,7 @@ Description: "Example storage precaution codes from the EMA SPOR RMS Special Pre
 //==========================
 ValueSet: VsMedicineDomain
 Id: medicine-domain-example
-Title: "Medicine Domain (EMA SPOR example)"
+Title: "Medicine Domain Value Set (EMA SPOR example)"
 Description: "Example medicine domain codes from the EMA SPOR RMS Domain list (100000000004)."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
