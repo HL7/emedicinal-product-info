@@ -6,5 +6,20 @@
   "title" : "Narrative Conformance Statements",
   "status" : "active",
   "experimental" : false,
-  "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes"
+  "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes",
+  "statement" : [{
+    "key" : "srv-content-negotiation",
+    "conformance" : ["SHOULD"],
+    "requirement" : "Servers SHOULD support the `_format` parameter and `Accept` headers so clients can choose JSON or XML."
+  },
+  {
+    "key" : "srv-format",
+    "conformance" : ["SHALL"],
+    "requirement" : "Servers SHALL support both **JSON** and **XML**."
+  },
+  {
+    "key" : "srv-validate",
+    "conformance" : ["SHOULD"],
+    "requirement" : "Servers SHOULD validate incoming ePIs against the profiles in this Implementation Guide."
+  }]
 }

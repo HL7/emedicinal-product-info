@@ -73,16 +73,16 @@
   <div class="req-box">
     <div class="req-header">📋 Server Requirements</div>
     <div class="req-item">
-      <span class="req-badge must">MUST</span>
-      <div class="req-text"><strong>Format Support</strong> — Support both <strong>JSON</strong> and <strong>XML</strong>.</div>
+      <span class="req-badge must">shall</span>
+      <div class="req-text"><strong>Format Support</strong> — <span class="fhir-conformance" id="srv-format">Servers SHALL support both <strong>JSON</strong> and <strong>XML</strong>.</span></div>
     </div>
     <div class="req-item">
-      <span class="req-badge should">SHOULD</span>
-      <div class="req-text"><strong>Profile Validation</strong> — Validate incoming ePIs against the profiles in this Implementation Guide.</div>
+      <span class="req-badge should">should</span>
+      <div class="req-text"><strong>Profile Validation</strong> — <span class="fhir-conformance" id="srv-validate">Servers SHOULD validate incoming ePIs against the profiles in this Implementation Guide.</span></div>
     </div>
     <div class="req-item">
-      <span class="req-badge should">SHOULD</span>
-      <div class="req-text"><strong>Content Negotiation</strong> — Support the <code>_format</code> parameter and <code>Accept</code> headers so clients can choose JSON or XML.</div>
+      <span class="req-badge should">should</span>
+      <div class="req-text"><strong>Content Negotiation</strong> — <span class="fhir-conformance" id="srv-content-negotiation">Servers SHOULD support the <code>_format</code> parameter and <code>Accept</code> headers so clients can choose JSON or XML.</span></div>
     </div>
   </div>
 
