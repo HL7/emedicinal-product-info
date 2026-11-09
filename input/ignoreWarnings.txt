@@ -135,3 +135,8 @@ INFORMATION: CodeSystem/epi-list-entry-flag-cs: CodeSystem: Most code systems de
 
 # epi-group-characteristic-type: IG-specific population axes used to slice the Group (ePI) profile, so they are maintained in this IG and will not move to THO.
 INFORMATION: CodeSystem/epi-group-characteristic-type: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# NCI Thesaurus is an external code system that the HL7 terminology server holds only as a fragment. The color, flavor and shape value sets use its FDA SPL terms, and their codes and displays are still validated
+INFORMATION: ValueSet/propertyColor: ValueSet.compose.include[0]: The value set references CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' which has status 'fragment'
+INFORMATION: ValueSet/propertyFlavor: ValueSet.compose.include[0]: The value set references CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' which has status 'fragment'
+INFORMATION: ValueSet/propertyShape: ValueSet.compose.include[0]: The value set references CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' which has status 'fragment'
