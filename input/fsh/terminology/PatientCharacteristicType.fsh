@@ -73,6 +73,7 @@ Description: "Seed value set for pregnancy and lactation status relevant to dosi
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#77386006 "Pregnant"
 * $sct#866041003 "Mother currently breastfeeding"
 
@@ -84,6 +85,7 @@ Description: "Seed value set for tobacco, alcohol and recreational drug use rele
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#77176002 "Smoker"
 * $sct#8392000 "Non-smoker"
 * $sct#219006 "Current drinker of alcohol"
@@ -99,6 +101,7 @@ Description: "Seed value set for immune status relevant to dosing. Extensible."
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#370388006 "Patient immunocompromised"
 * $sct#86406008 "Human immunodeficiency virus infection"
 
@@ -110,5 +113,6 @@ Description: "Seed value set for hepatic function / degree of hepatic impairment
 * insert HL7Publisher
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #brr
 * ^experimental = true
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#59927004 "Hepatic failure"
 * $sct#235856003 "Disorder of liver"
