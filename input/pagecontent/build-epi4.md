@@ -2,7 +2,7 @@
 <!-- HEADER NOTE -->
 <div style="background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #d97706; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
   <span style="flex-shrink:0; font-size:1em;">📋</span>
-  <span><strong>Pre-requisites:</strong> Type 4 builds on top of Types 1, 2, and 3. Before starting here, ensure you have validated <a href="build-epi1.html" style="color:#92400e; font-weight:600;">Type 1</a>, <a href="build-epi2.html" style="color:#92400e; font-weight:600;">Type 2</a>, and <a href="build-epi3.html" style="color:#92400e; font-weight:600;">Type 3</a> ePIs for the product.</span>
+  <span><strong>Pre-requisites:</strong> Type 4 builds on top of Types 1, 2, and 3. Before starting here, ensure you have validated <a href="steps-to-create-epi1.html" style="color:#92400e; font-weight:600;">Type 1</a>, <a href="steps-to-create-epi2.html" style="color:#92400e; font-weight:600;">Type 2</a>, and <a href="steps-to-create-epi3.html" style="color:#92400e; font-weight:600;">Type 3</a> ePIs for the product.</span>
 </div>
 <!-- WHAT IS TYPE 4 -->
 <h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:8px;">What is ePI Type 4?</h3>
@@ -402,7 +402,7 @@
     <div style="font-weight:700; color:#111827; margin-bottom:4px;">Build a List of ePIs</div>
     <div style="font-size:.82em; color:#6b7280;">Learn how to group and track multiple ePI documents across products, jurisdictions, and languages.</div>
   </a>
-  <a href="build-epi3.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; display:block;">
+  <a href="steps-to-create-epi3.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:4px;">← Previous</div>
     <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 3 Clinical Information</div>
     <div style="font-size:.82em; color:#6b7280;">Return to the clinical information step to review structured ClinicalUseDefinitions.</div>

@@ -3,7 +3,7 @@
 <!-- HEADER NOTE -->
 <div style="background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #d97706; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
   <span style="flex-shrink:0; font-size:1em;">📋</span>
-  <span><strong>Pre-requisites:</strong> Before starting Type 2, ensure you have completed the <a href="build-epi1.html#prerequisites" style="color:#92400e; font-weight:600;">Pre-requisites</a> on the Build ePI Type 1 page and have already built a working Type 1 ePI for the product. Type 2 <em>extends</em> Type 1 — it does not replace it.</span>
+  <span><strong>Pre-requisites:</strong> Before starting Type 2, ensure you have completed the <a href="steps-to-create-epi1.html#prerequisites" style="color:#92400e; font-weight:600;">Pre-requisites</a> on the Build ePI Type 1 page and have already built a working Type 1 ePI for the product. Type 2 <em>extends</em> Type 1 — it does not replace it.</span>
 </div>
 
 <!-- WHAT IS TYPE 2 -->
@@ -237,12 +237,12 @@
 <!-- WHAT'S NEXT -->
 <h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-  <a href="build-epi3.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
+  <a href="steps-to-create-epi3.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>
     <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 3 Clinical Information</div>
     <div style="font-size:.82em; color:#6b7280;">Add structured clinical definitions — indications, contraindications, warnings — to unlock clinical decision support.</div>
   </a>
-  <a href="build-epi1.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; display:block;">
+  <a href="steps-to-create-epi1.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#6b7280; margin-bottom:4px;">← Previous</div>
     <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 1 Digital Label</div>
     <div style="font-size:.82em; color:#6b7280;">Return to the Digital Label step if you need to revisit the Type 1 foundation.</div>

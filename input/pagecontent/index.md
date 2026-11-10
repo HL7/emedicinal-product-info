@@ -44,7 +44,7 @@
   <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:12px;">Today, product information is largely exchanged and published as static PDF or Word documents, alongside a patchwork of regional XML formats and proprietary systems. The same content is re-keyed many times across companies, regulators, and downstream systems, and each national template, heading structure, and terminology adds another variation to manage. Updates are slow to reach prescribers and patients, and the information cannot easily be consumed by clinical systems.</p>
   <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:12px;">This guide provides a single global baseline built on <a href="build-overview.html">Bundle, Composition, and the FHIR medication definition resources</a>. It accommodates every national label template and its section and sub-section headings, and binds to national and international <a href="terminology.html">controlled terminologies</a>. Regulators can then localize the baseline in their own national guidance rather than inventing a new format.</p>
   <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:12px;">ePI is not only for approved labels. It also supports draft labels submitted for regulatory review, in both annotated and clean versions. The guide defines how to express <a href="tracked-changes.html">annotations — tracked changes and comment threads — directly in the XML</a>, so draft labels can be exchanged and reviewed without the need for DOCX.</p>
-  <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">ePI is designed to mature in steps: from a <a href="build-epi1.html">Type 1 digital label</a>, to <a href="build-epi2.html">Type 2 product identification</a>, to <a href="build-epi3.html">Type 3 clinical information</a>, and the <a href="build-epi4.html">Type 4 dynamic digital label</a>. Each type adds structured data while keeping the approved narrative intact. The guide is developed under the HL7 Vulcan Accelerator with regulators, pharmaceutical companies, and technology vendors.</p>
+  <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">ePI is designed to mature in steps: from a <a href="steps-to-create-epi1.html">Type 1 digital label</a>, to <a href="steps-to-create-epi2.html">Type 2 product identification</a>, to <a href="steps-to-create-epi3.html">Type 3 clinical information</a>, and the <a href="build-epi4.html">Type 4 dynamic digital label</a>. Each type adds structured data while keeping the approved narrative intact. The guide is developed under the HL7 Vulcan Accelerator with regulators, pharmaceutical companies, and technology vendors.</p>
 </div>
 
 <!-- SCOPE -->
@@ -153,13 +153,13 @@
     <div style="font-size:1.4em; margin-bottom:10px;">🛡️</div>
     <div style="font-weight:700; color:#003087; margin-bottom:6px;">Patient Safety</div>
     <p style="font-size:.88em; color:#4b5563; line-height:1.6; margin:0 0 12px; flex:1;">Machine-readable ingredients and interactions allow health systems to flag allergies and interactions automatically.</p>
-    <a href="build-epi3.html" style="color:#003087; font-weight:600; font-size:.85em; text-decoration:none;">Type 3 clinical information →</a>
+    <a href="steps-to-create-epi3.html" style="color:#003087; font-weight:600; font-size:.85em; text-decoration:none;">Type 3 clinical information →</a>
   </div>
   <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; padding:24px; display:flex; flex-direction:column;">
     <div style="font-size:1.4em; margin-bottom:10px;">📦</div>
     <div style="font-weight:700; color:#003087; margin-bottom:6px;">Supply Chain Agility</div>
     <p style="font-size:.88em; color:#4b5563; line-height:1.6; margin:0 0 12px; flex:1;">Query therapeutic alternatives instantly during drug shortages. Cross-border substitute packaging at your fingertips.</p>
-    <a href="build-epi2.html" style="color:#003087; font-weight:600; font-size:.85em; text-decoration:none;">Type 2 product identification →</a>
+    <a href="steps-to-create-epi2.html" style="color:#003087; font-weight:600; font-size:.85em; text-decoration:none;">Type 2 product identification →</a>
   </div>
   <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; padding:24px; display:flex; flex-direction:column;">
     <div style="font-size:1.4em; margin-bottom:10px;">🔗</div>

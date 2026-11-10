@@ -241,7 +241,7 @@
 <!-- WHAT'S NEXT -->
 <h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-  <a href="build-epi2.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
+  <a href="steps-to-create-epi2.html" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
     <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Next →</div>
     <div style="font-weight:700; color:#111827; margin-bottom:4px;">Type 2 Product Identification</div>
     <div style="font-size:.82em; color:#6b7280;">Add structured product information, organisation records, ingredients, and pack information to enable machine-level lookup.</div>

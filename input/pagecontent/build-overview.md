@@ -72,13 +72,13 @@ The table below identifies the primary FHIR resources used across the four ePI t
 ### Select Your Implementation Path
 Implementation guidance is organized by the depth of structured data required:
 
-*   **[Type 1: Digital Label](build-epi1.html)**
+*   **[Type 1: Digital Label](steps-to-create-epi1.html)**
     *   *Focus*: Digitizing the official label template (SmPC/PIL/Artwork).
     *   *Key Features*: Structured narrative text, structured tables, embedded images, and document metadata.
-*   **[Type 2: Product Information](build-epi2.html)**
+*   **[Type 2: Product Information](steps-to-create-epi2.html)**
     *   *Focus*: Structured product information for advanced search capabilities.
     *   *Key Features*: Type 1 + structured ingredients, strength, organization, pharmaceutical dose form, packaging, and authorization.
-*   **[Type 3: Clinical Information](build-epi3.html)**
+*   **[Type 3: Clinical Information](steps-to-create-epi3.html)**
     *   *Focus*: structured Clinical information.
     *   *Key Features*: Type 2 + structured indications, contraindications, and warnings.
 *   **[Type 4: Dynamic Digital Label](build-epi4.html)**

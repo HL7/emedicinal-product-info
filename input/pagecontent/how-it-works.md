@@ -112,9 +112,9 @@
 <p class="sub">ePI is a set of linked FHIR resources, adopted in layers. Each ePI Type keeps everything from the Types before it and adds one more layer of structure.</p>
 
 <div class="types">
-  <a href="build-epi1.html" style="border-top-color:#2563eb;"><div class="n" style="color:#2563eb">Type 1</div><div class="t">Digital label</div><p>The document: a Bundle with a Composition holding the metadata, coded sections, narrative and images.</p></a>
-  <a href="build-epi2.html" style="border-top-color:#16a34a;"><div class="n" style="color:#16a34a">Type 2</div><div class="t">Product identification</div><p>Adds the product, its authorization, packs, manufactured items and ingredients.</p></a>
-  <a href="build-epi3.html" style="border-top-color:#7c3aed;"><div class="n" style="color:#7c3aed">Type 3</div><div class="t">Clinical information</div><p>Adds indications, contraindications, interactions, undesirable effects, warnings and dosing as coded data.</p></a>
+  <a href="steps-to-create-epi1.html" style="border-top-color:#2563eb;"><div class="n" style="color:#2563eb">Type 1</div><div class="t">Digital label</div><p>The document: a Bundle with a Composition holding the metadata, coded sections, narrative and images.</p></a>
+  <a href="steps-to-create-epi2.html" style="border-top-color:#16a34a;"><div class="n" style="color:#16a34a">Type 2</div><div class="t">Product identification</div><p>Adds the product, its authorization, packs, manufactured items and ingredients.</p></a>
+  <a href="steps-to-create-epi3.html" style="border-top-color:#7c3aed;"><div class="n" style="color:#7c3aed">Type 3</div><div class="t">Clinical information</div><p>Adds indications, contraindications, interactions, undesirable effects, warnings and dosing as coded data.</p></a>
   <a href="build-epi4.html" style="border-top-color:#ea580c;"><div class="n" style="color:#ea580c">Type 4</div><div class="t">Dynamic digital label</div><p>Breaks the text into atomic topics, each linked to the exact resources it describes.</p></a>
 </div>
 
