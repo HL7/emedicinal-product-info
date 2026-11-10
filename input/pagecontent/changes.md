@@ -5,6 +5,7 @@
 
 **New Features and Model Updates:**
 
+* References in the ePI profiles now point to the ePI profile of the target wherever one exists (for example Composition.subject, custodian and section.author; MedicinalProductDefinition.comprisedOf; Ingredient.substance.code; Organization.partOf; List.entry.item). Target types that have no ePI profile are still allowed, and ePI Bundles can still carry any resource
 * Added Bundle profiles for ePI Type 2 (bundle-epi-type2) and Type 3 (bundle-epi-type3). They apply the same rules as Bundle (ePI), with entry slices for product and clinical resources
 * Composition (ePI) is now a single profile used by all ePI Types
 * Composition.status is limited to the ePI lifecycle states (preliminary, final, deprecated, cancelled, entered-in-error), and Composition.type has an example value set of national document types
