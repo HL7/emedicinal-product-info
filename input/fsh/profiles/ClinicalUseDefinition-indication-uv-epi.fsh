@@ -3,6 +3,8 @@ Parent: ClinicalUseDefinition
 Id: ClinicalUseDefinition-indication-uv-epi
 Title: "ClinicalUseDefinition Indication (ePI)"
 Description: "ClinicalUseDefinition Indication (ePI) - Profile for Indication"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* indication.otherTherapy.treatment only CodeableReference(MedicinalProductDefinitionUvEpi or Medication or Substance or SubstanceDefinitionUvEpi or NutritionProduct or BiologicallyDerivedProduct or ActivityDefinition)
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

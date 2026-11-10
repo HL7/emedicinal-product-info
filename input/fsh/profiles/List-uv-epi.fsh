@@ -75,7 +75,7 @@ Description: "List (ePI) - ported from Business Friendly ePI Outline"
 * entry.date ^short = "When item added to list"
 * entry.date ^definition = "When this item was added to the list."
 * entry.item 1..1
-* entry.item only Reference(Bundle)
+* entry.item only Reference(BundleUvEpi or BundleEpiType2 or BundleEpiType3)
 * entry.item ^short = "Actual entry"
 * entry.item ^definition = "A reference to the actual resource from which data was derived."
 * entry.item.reference MS

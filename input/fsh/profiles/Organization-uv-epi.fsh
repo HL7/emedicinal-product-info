@@ -3,6 +3,10 @@ Parent: Organization
 Id: Organization-uv-epi
 Title: "Organization (ePI)"
 Description: "Organization (ePI) - ported from OrganizationUvEpi"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* contact.organization only Reference(OrganizationUvEpi)
+* partOf only Reference(OrganizationUvEpi)
+* qualification.issuer only Reference(OrganizationUvEpi)
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

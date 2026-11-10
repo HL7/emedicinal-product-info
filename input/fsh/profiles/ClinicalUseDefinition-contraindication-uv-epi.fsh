@@ -3,6 +3,8 @@ Parent: ClinicalUseDefinition
 Id: ClinicalUseDefinition-contraindication-uv-epi
 Title: "ClinicalUseDefinition Contraindication (ePI)"
 Description: "ClinicalUseDefinition Contraindication (ePI) - Profile for Contraindication"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* contraindication.otherTherapy.treatment only CodeableReference(MedicinalProductDefinitionUvEpi or Medication or Substance or SubstanceDefinitionUvEpi or NutritionProduct or BiologicallyDerivedProduct or ActivityDefinition)
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

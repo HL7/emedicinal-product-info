@@ -3,6 +3,11 @@ Parent: Composition
 Id: Composition-uv-epi
 Title: "Composition (ePI)"
 Description: "This profile represents the constraints applied to the Composition resource used in the Electronic Product Information (ePI) FHIR Implementation Guide. This profile applies to all ePI Types (1, 2, 3, and 4)."
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* custodian only Reference(OrganizationUvEpi)
+* section.author only Reference(Practitioner or PractitionerRole or Device or Patient or RelatedPerson or OrganizationUvEpi)
+* section.section.author only Reference(Practitioner or PractitionerRole or Device or Patient or RelatedPerson or OrganizationUvEpi)
+* section.section.section.author only Reference(Practitioner or PractitionerRole or Device or Patient or RelatedPerson or OrganizationUvEpi)
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr
@@ -38,7 +43,7 @@ Description: "This profile represents the constraints applied to the Composition
 * type.coding.code 1..1
 * type.coding.display 1..1
 * subject 1..
-* subject only Reference(MedicinalProductDefinition)
+* subject only Reference(MedicinalProductDefinitionUvEpi)
 * date 1..
 * author 1..
 * author only Reference(Organization-uv-epi)

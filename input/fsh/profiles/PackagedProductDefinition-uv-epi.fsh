@@ -3,6 +3,8 @@ Parent: PackagedProductDefinition
 Id: PackagedProductDefinition-uv-epi
 Title: "PackagedProductDefinition (ePI)"
 Description: "PackagedProductDefinition (ePI)"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* packaging.manufacturer only Reference(OrganizationUvEpi)
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

@@ -3,6 +3,9 @@ Parent: SubstanceDefinition
 Id: SubstanceDefinition-uv-epi
 Title: "SubstanceDefinition (ePI)"
 Description: "SubstanceDefinition (ePI)"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* supplier only Reference(OrganizationUvEpi)
+* relationship.substanceDefinition[x] only Reference(SubstanceDefinitionUvEpi) or CodeableConcept
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

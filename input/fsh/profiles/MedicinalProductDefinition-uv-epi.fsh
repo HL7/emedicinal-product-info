@@ -3,6 +3,10 @@ Parent: MedicinalProductDefinition
 Id: MedicinalProductDefinition-uv-epi
 Title: "MedicinalProductDefinition (ePI)"
 Description: "MedicinalProductDefinition (ePI) - ported from MedicinalProductDefinitionUvEpi"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* comprisedOf only Reference(ManufacturedItemDefinitionUvEpi or DeviceDefinitionUvEpi)
+* crossReference.product only CodeableReference(MedicinalProductDefinitionUvEpi)
+* operation.organization only Reference(OrganizationUvEpi)
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

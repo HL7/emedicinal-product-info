@@ -2,6 +2,8 @@ RuleSet: PropertyRulesSet
 // Physical characteristics of a ManufacturedItemDefinition or AdministrableProductDefinition.
 // Inserted by both profiles so the property slices are defined in one place.
 * property ^short = "Describe the physical characteristics of this item."
+// Lock-down: the Binary target of property.value[x] points to the ePI Binary profile; the other value types are kept.
+* property.value[x] only CodeableConcept or Quantity or date or boolean or markdown or Attachment or Reference(BinaryEpi)
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type.coding.code"
 * property ^slicing.rules = #open

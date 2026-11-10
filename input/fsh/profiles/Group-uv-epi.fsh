@@ -5,6 +5,8 @@ Title: "Group (ePI)"
 Description: """Group (ePI) - a definitional population used to stratify clinical use and dosing.
 
 A Group is the single, canonical representation of a population in an ePI. It is referenced from:
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* managingEntity only Reference(OrganizationUvEpi or RelatedPerson or Practitioner or PractitionerRole)
 * ClinicalUseDefinition.population - the population an indication / contraindication / interaction / undesirable effect / warning applies to, and
 * (conceptually) the population a structured dose is intended for.
 

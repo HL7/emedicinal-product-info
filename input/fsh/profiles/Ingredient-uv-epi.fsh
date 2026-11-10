@@ -3,6 +3,9 @@ Parent: Ingredient
 Id: Ingredient-uv-epi
 Title: "Ingredient (ePI)"
 Description: "Ingredient (ePI)"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* substance.code only CodeableReference(SubstanceDefinitionUvEpi)
+* substance.strength.referenceStrength.substance only CodeableReference(SubstanceDefinitionUvEpi)
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

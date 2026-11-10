@@ -3,6 +3,8 @@ Parent: ClinicalUseDefinition
 Id: ClinicalUseDefinition-interaction-uv-epi
 Title: "ClinicalUseDefinition Interaction (ePI)"
 Description: "ClinicalUseDefinition Interaction (ePI) - Profile for Interaction"
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* interaction.interactant.item[x] only Reference(MedicinalProductDefinitionUvEpi or Medication or Substance or NutritionProduct or BiologicallyDerivedProduct or ObservationDefinition) or CodeableConcept
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #brr

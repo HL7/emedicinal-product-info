@@ -3,6 +3,8 @@ Parent: AdministrableProductDefinition
 Id: AdministrableProductDefinition-uv-epi
 Title: "AdministrableProductDefinition (ePI)"
 Description: "Describes the product as the dose form for administration to the patient, after any necessary transformation (e.g., solution for injection)."
+// Lock-down: references to resources that have an ePI profile point to that profile; target types without an ePI profile are kept.
+* device only Reference(DeviceDefinitionUvEpi)
 * ^status = #active
 * . ^short = "Describes the product as the dose form for administration to the patient, after any necessary transformation (e.g., solution for injection)"
 * . ^definition = "Describes the product as the dose form for administration to the patient, after any necessary transformation (e.g., solution for injection)."
