@@ -9,15 +9,16 @@
     1. granular sub-sections (Concept -> Domain -> Topic),
     2. a mandatory section.entry reference on every content-bearing section, and
     3. span annotations (id attribute) in the XHTML narrative, each linked to the
-       resource it describes by the ePI Text Link extension on section.text
-       (http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link;
+       resource it describes by the core textLink extension on section.text
+       (http://hl7.org/fhir/StructureDefinition/textLink;
        htmlid = span id; data = target fullUrl, optionally #element-id).
-       Each ePI Text Link has one data target and one htmlid per span that
-       points to it. A narrative that refers to several resources has one ePI
-       Text Link per target (see 4.2 and 6.1), and each target is also
+       Each textLink has one data target and one htmlid per span that
+       points to it. A narrative that refers to several resources has one
+       textLink per target (see 4.2 and 6.1), and each target is also
        referenced in section.entry. Resource ids are never encoded in the span
-       class or id. Unlike the core textLink extension, the ePI Text Link
-       extension may repeat on the same narrative.
+       class or id. The core textLink currently allows one occurrence per
+       narrative; 4.2 and 6.1 deliberately repeat it to show the use case of
+       change request FHIR-59812, so validators report errors there.
 
   This instance is a SUPERSET example: it merges the resource inventory of the
   ePI Type 1 (Binary / unstructured document), Type 2 (full product + packaging
@@ -138,7 +139,7 @@
               </coding>
             </code>
             <text>
-              <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                 <extension url="htmlid">
                   <valueString value="sp-01"/>
                 </extension>
@@ -168,7 +169,7 @@
               </coding>
             </code>
             <text>
-              <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                 <extension url="htmlid">
                   <valueString value="sp-02"/>
                 </extension>
@@ -200,7 +201,7 @@
                 </coding>
               </code>
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-03"/>
                   </extension>
@@ -280,7 +281,7 @@
               <section id="smpc-4-1-1">
                 <title value="4.1.1 Treatment of fever"/>
                 <text>
-                  <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                     <extension url="htmlid">
                       <valueString value="sp-04"/>
                     </extension>
@@ -304,7 +305,7 @@
               <section id="smpc-4-1-2">
                 <title value="4.1.2 Treatment of mild to moderate pain"/>
                 <text>
-                  <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                  <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                     <extension url="htmlid">
                       <valueString value="sp-05"/>
                     </extension>
@@ -336,7 +337,7 @@
                 </coding>
               </code>
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-42-01"/>
                   </extension>
@@ -347,7 +348,7 @@
                     <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000cccc"/>
                   </extension>
                 </extension>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-42-03"/>
                   </extension>
@@ -392,7 +393,7 @@
                 </coding>
               </code>
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-08"/>
                   </extension>
@@ -423,7 +424,7 @@
                 </coding>
               </code>
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-09"/>
                   </extension>
@@ -453,7 +454,7 @@
                 </coding>
               </code>
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-10"/>
                   </extension>
@@ -522,7 +523,7 @@
                 </coding>
               </code>
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-11"/>
                   </extension>
@@ -606,9 +607,9 @@
                   <display value="6.1 List of excipients"/>
                 </coding>
               </code>
-              <!-- one narrative lists all excipients; one ePI Text Link and one entry per excipient Ingredient -->
+              <!-- one narrative lists all excipients; one textLink and one entry per excipient Ingredient -->
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-61-01"/>
                   </extension>
@@ -616,7 +617,7 @@
                     <valueUri value="urn:uuid:00000000-0000-0000-0000-000000007777"/>
                   </extension>
                 </extension>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-61-02"/>
                   </extension>
@@ -624,7 +625,7 @@
                     <valueUri value="urn:uuid:00000000-0000-0000-0000-00000000e002"/>
                   </extension>
                 </extension>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-61-03"/>
                   </extension>
@@ -663,7 +664,7 @@
                 </coding>
               </code>
               <text>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                   <extension url="htmlid">
                     <valueString value="sp-15"/>
                   </extension>
@@ -694,7 +695,7 @@
               </coding>
             </code>
             <text>
-              <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                 <extension url="htmlid">
                   <valueString value="sp-16"/>
                 </extension>
@@ -724,7 +725,7 @@
               </coding>
             </code>
             <text>
-              <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/epi-text-link">
+              <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
                 <extension url="htmlid">
                   <valueString value="sp-17"/>
                 </extension>

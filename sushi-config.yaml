@@ -22,7 +22,7 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
     valueInteger: 2
 
-# Extensions pack 5.4.0. ePI Type 4 links narrative to data with the IG's own epi-text-link extension, a repeatable equivalent of the core textLink extension (first published in 5.4.0)
+# Extensions pack 5.4.0. ePI Type 4 links narrative to data with the core textLink extension (first published in 5.4.0)
 dependencies:
   hl7.fhir.uv.extensions.r5: 5.4.0
 
@@ -43,7 +43,7 @@ resources:
     exampleCanonical: http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type3
   Bundle/bundle-epi-type4-example-wonderdrug:
     name: ePI Type 4 Example - WonderDrug 500 mg tablets
-    description: ePI Type 4 (dynamic digital label) example. It validates against the Type 3 Bundle profile and adds granular sub-sections, a section.entry on every content section, and span ids in the narrative linked to the structured resources with the ePI Text Link extension.
+    description: ePI Type 4 (dynamic digital label) example. It validates against the Type 3 Bundle profile and adds granular sub-sections, a section.entry on every content section, and span ids in the narrative linked to the structured resources with the textLink extension.
     exampleCanonical: http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/bundle-epi-type3
 
 pages:
