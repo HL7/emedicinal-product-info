@@ -386,7 +386,7 @@
           <li>Span <code>id</code> values should be stable between versions of the ePI so that links survive updates</li>
         </ul>
       </div>
-      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:4px solid #16a34a; border-radius:8px; padding:14px 18px; margin-bottom:14px; font-size:.86em; color:#14532d; line-height:1.7;">
+      <div id="checking-epi-text-links" style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:4px solid #16a34a; border-radius:8px; padding:14px 18px; margin-bottom:14px; font-size:.86em; color:#14532d; line-height:1.7;">
         <div style="font-size:.84em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#166534; margin-bottom:6px;">Checking ePI Text Links</div>
         <p style="margin:0 0 8px;">Because the ePI Text Link is specific to this IG, a general FHIR validator may check it only as an ordinary extension, and not check that the links point to anything. As a helpful starting point, this IG provides a small script, <a href="scripts/check-epi-text-links.py" style="color:#15803d; font-weight:600;">check-epi-text-links.py</a> (Python 3, no extra packages), that checks every ePI Text Link in a Bundle against the rules above.</p>
         <p style="margin:0 0 8px;">Download it and run <code>python3 check-epi-text-links.py my-epi-bundle.json</code> (XML Bundles work too, and several files can be given at once). It lists each problem with its location in the Bundle, for example an <code>htmlid</code> with no matching span, or a <code>data</code> value that matches no Bundle entry, and exits with 1 if it finds an error.</p>
