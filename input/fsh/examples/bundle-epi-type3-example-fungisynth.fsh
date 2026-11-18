@@ -215,7 +215,7 @@ Description: "ClinicalUseDefinition - Indication: invasive candidiasis (adults),
 * subject.reference = "urn:uuid:841c8d66-6460-5861-9a65-c050af14879f"
 * population.reference = "urn:uuid:3950162d-4748-5e9a-8b7e-6b3934e2d946"
 * population.display = "Adults"
-* indication.diseaseSymptomProcedure.concept = $sct#70572005 "Invasive candidiasis"
+* indication.diseaseSymptomProcedure.concept = $sct#70572005 "Disseminated candidiasis"
 * category = $epi-ig#indication "Indication"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[type].valueCodeableConcept.text = "Loading dose (Day 1)"
 * indication.extension[dosingGuideline][0].extension[dosage][0].extension[instruction][0].valueDosage.sequence = 1
