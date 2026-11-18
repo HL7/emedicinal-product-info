@@ -2,6 +2,11 @@
 <link href="{{site.data.info.assets}}assets/css/hl7.css" rel="stylesheet"/>
 <link href="{{site.data.info.assets}}assets/css/fhir-ig.css" rel="stylesheet"/>
 <style>
+    /* Hide the template's table-of-contents box when it has no entries (pages whose headings are HTML, not markdown) */
+    div.markdown-toc:not(:has(li)) {
+        display: none !important;
+    }
+
     /* GitHub-style Alerts for ePI IG */
 
     .markdown-alert {

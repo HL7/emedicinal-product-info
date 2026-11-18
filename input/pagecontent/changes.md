@@ -1,6 +1,3 @@
-* TOC
-{:toc}
-
 ### Version = 2.0.0-ballot
 
 Version 2.0.0-ballot is a major update of the ePI IG. It adds Bundle profiles for ePI Types 2 and 3 and the Type 4 Dynamic Digital Label; new profiles for List, Group, Binary and DeviceDefinition; structured dosing for indications; and a set of ePI extensions. It also tightens the existing profiles: identifiers and codings are now mandatory, Composition.status is limited to the ePI lifecycle states, Bundle entries use UUID fullUrls, references point to the ePI profiles, one profile id was renamed, and the 1.0.0 identifier-system and EMA-specific value sets were replaced by example value sets. The documentation has been rewritten, with new How It Works, build, dosing, technical and version control pages, and the DrugX examples have been replaced by the WonderDrug example set.
